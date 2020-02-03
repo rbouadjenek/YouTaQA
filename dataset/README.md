@@ -34,3 +34,15 @@ CoQA is a large-scale dataset for building Conversational Question Answering sys
 CoQA contains 127,000+ questions with answers collected from 8000+ conversations. Each conversation is collected by pairing two crowdworkers to chat about a passage in the form of questions and answers. The unique features of CoQA include 1) the questions are conversational; 2) the answers can be free-form text; 3) each answer also comes with an evidence subsequence highlighted in the passage; and 4) the passages are collected from seven diverse domains. CoQA has a lot of challenging phenomena not present in existing reading comprehension datasets, e.g., coreference and pragmatic reasoning.
 
 **Website:** https://stanfordnlp.github.io/coqa/
+
+## 5- Google Natural Questions
+
+### Open Domain Question Answering
+A core goal in artificial intelligence is to build systems that can read the web, and then answer complex questions about any topic. These question-answering (QA) systems could have a big impact on the way that we access information. Furthermore, open-domain question answering is a benchmark task in the development of Artificial Intelligence, since understanding text and being able to answer questions about it is something that we generally associate with intelligence.
+
+### The Natural Questions Dataset
+To help spur development in open-domain question answering, we have created the Natural Questions (NQ) corpus, along with a challenge website based on this data. The NQ corpus contains questions from real users, and it requires QA systems to read and comprehend an entire Wikipedia article that may or may not contain the answer to the question. The inclusion of real user questions, and the requirement that solutions should read an entire page to find the answer, cause NQ to be a more realistic and challenging task than prior QA datasets.
+
+To view some examples, please go to the visualization page. For a full description of the methodology used to create the corpus, see Natural Questions: a Benchmark for Question Answering Research.
+ 
+ **Website:** https://ai.google.com/research/NaturalQuestions/dataset
