@@ -1,6 +1,6 @@
 # Description of the datasets
 
-## SQuAD2.0: The Stanford Question Answering Dataset
+## 1- SQuAD2.0: The Stanford Question Answering Dataset
 
 ### What is SQuAD?
 Stanford Question Answering Dataset (SQuAD) is a reading comprehension dataset, consisting of questions posed by crowdworkers on a set of Wikipedia articles, where the answer to every question is a segment of text, or span, from the corresponding reading passage, or the question might be unanswerable.
@@ -9,13 +9,13 @@ SQuAD2.0 combines the 100,000 questions in SQuAD1.1 with over 50,000 unanswerabl
 
 **Website:** https://rajpurkar.github.io/SQuAD-explorer/
 
-## HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering
+## 2- HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering
 ### What is HotpotQA?
 HotpotQA is a question answering dataset featuring natural, multi-hop questions, with strong supervision for supporting facts to enable more explainable question answering systems. It is collected by a team of NLP researchers at Carnegie Mellon University, Stanford University, and Université de Montréal.
 
 **Website:** https://hotpotqa.github.io/
 
-## QuAC: Question Answering in Context
+## 3- QuAC: Question Answering in Context
 
 ### What is QuAC?
 Question Answering in Context is a dataset for modeling, understanding, and participating in information seeking dialog. Data instances consist of an interactive dialog between two crowd workers: (1) a student who poses a sequence of freeform questions to learn as much as possible about a hidden Wikipedia text, and (2) a teacher who answers the questions by providing short excerpts (spans) from the text. QuAC introduces challenges not found in existing machine comprehension datasets: its questions are often more open-ended, unanswerable, or only meaningful within the dialog context.
@@ -26,7 +26,7 @@ No, QuAC shares many principles with SQuAD 2.0 such as span based evaluation and
 
 **Website:** https://quac.ai/
 
-## CoQA: A Conversational Question Answering Challenge 
+## 4- CoQA: A Conversational Question Answering Challenge 
 
 ### What is CoQA?
 CoQA is a large-scale dataset for building Conversational Question Answering systems. The goal of the CoQA challenge is to measure the ability of machines to understand a text passage and answer a series of interconnected questions that appear in a conversation. CoQA is pronounced as coca .
