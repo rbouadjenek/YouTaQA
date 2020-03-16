@@ -46,3 +46,8 @@ To help spur development in open-domain question answering, we have created the 
 To view some examples, please go to the visualization page. For a full description of the methodology used to create the corpus, see Natural Questions: a Benchmark for Question Answering Research.
  
  **Website:** https://ai.google.com/research/NaturalQuestions/dataset
+
+
+## 6- Others
+
+http://nlpprogress.com/english/question_answering.html
