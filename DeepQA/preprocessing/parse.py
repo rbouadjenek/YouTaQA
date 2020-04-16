@@ -1,10 +1,16 @@
-from tqdm import tqdm
-from pathlib import Path
+import getopt
 import os.path
-import sys, getopt
+import sys
+from pathlib import Path
+from tqdm import tqdm
 
 
 def get_name(page_id):
+    '''
+    This function generates the filename and the repository where to store the filename.
+    :param page_id: the wikipedia page id.
+    :return: the repository where to store the file and the filename.
+    '''
     name = str(page_id)
     while len(name) < 8:
         name = "0" + name
@@ -12,6 +18,12 @@ def get_name(page_id):
 
 
 def process(file, dest):
+    '''
+    This is the main function that processes the big wikipedia file.
+    :param file: the file to process.
+    :param dest: the repository where to store the data.
+    :return:
+    '''
     print('Reading file in progress...')
     if not dest.endswith('/'):
         dest += '/'
@@ -86,5 +98,5 @@ def main(argv):
 
 if __name__ == "__main__":
     main(sys.argv[1:])
-    #process("/home/reda/NetBeansProjects/DeepQA/enwiki-20200401/enwiki-20200401-pages-articles-multistream.xml",
+    # process("/home/reda/NetBeansProjects/DeepQA/enwiki-20200401/enwiki-20200401-pages-articles-multistream.xml",
     #        "/home/reda/NetBeansProjects/DeepQA/enwiki-20200401/")
