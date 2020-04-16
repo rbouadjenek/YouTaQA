@@ -6,24 +6,27 @@ from tqdm import tqdm
 
 
 def get_name(page_id):
-    '''
+    """
     This function generates the filename and the repository where to store the filename.
     :param page_id: the wikipedia page id.
     :return: the repository where to store the file and the filename.
-    '''
+    """
     name = str(page_id)
+    if len(name) > 8:
+        print('Error.')
+        sys.exit(2)
     while len(name) < 8:
         name = "0" + name
     return name[0:2] + "/" + name[2:4] + "/" + name[4:6] + "/", name + ".xml"
 
 
 def process(file, dest):
-    '''
+    """
     This is the main function that processes the big wikipedia file.
     :param file: the file to process.
     :param dest: the repository where to store the data.
     :return:
-    '''
+    """
     print('Reading file in progress...')
     if not dest.endswith('/'):
         dest += '/'
