@@ -1,6 +1,6 @@
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 #  Copyright (c) 2020. Reda Bouadjenek, Deakin University                      +
-#  reda.bouadjenek@deakin.edu.au                                               +
+#     Email:  reda.bouadjenek@deakin.edu.au                                    +
 #                                                                              +
 #  Licensed under the Apache License, Version 2.0 (the "License");             +
 #   you may not use this file except in compliance with the License.           +
