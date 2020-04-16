@@ -85,7 +85,6 @@ def main(argv):
 
 
 if __name__ == "__main__":
-    #print(len(sys.argv))
     main(sys.argv[1:])
-    process("/home/reda/NetBeansProjects/DeepQA/enwiki-20200401/enwiki-20200401-pages-articles-multistream.xml",
-            "/home/reda/NetBeansProjects/DeepQA/enwiki-20200401/")
+    #process("/home/reda/NetBeansProjects/DeepQA/enwiki-20200401/enwiki-20200401-pages-articles-multistream.xml",
+    #        "/home/reda/NetBeansProjects/DeepQA/enwiki-20200401/")
