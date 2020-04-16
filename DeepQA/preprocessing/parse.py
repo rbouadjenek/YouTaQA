@@ -1,8 +1,46 @@
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#  Copyright (c) 2020. Reda Bouadjenek, Deakin University
+#
+#  Licensed under the Apache License, Version 2.0 (the "License");
+#  you may not use this file except in compliance with the License.
+#  You may obtain a copy of the License at:
+#
+#       http://www.apache.org/licenses/LICENSE-2.0
+#
+#   Unless required by applicable law or agreed to in writing, software
+#    distributed under the License is distributed on an "AS IS" BASIS,
+#    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#     See the License for the specific language governing permissions and
+#      limitations under the License.
+#
+#
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#
+#  Licensed under the Apache License, Version 2.0 (the "License");
+#  you may not use this file except in compliance with the License.
+#  You may obtain a copy of the License at:
+#
+#       http://www.apache.org/licenses/LICENSE-2.0
+#
+#   Unless required by applicable law or agreed to in writing, software
+#    distributed under the License is distributed on an "AS IS" BASIS,
+#    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#     See the License for the specific language governing permissions and
+#      limitations under the License.
+#
+#
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 import getopt
 import os.path
 import sys
 from pathlib import Path
 from tqdm import tqdm
+
+"""
+This python script aims at preprocessing the Wikipedia dump file into 
+files for each wikipedia page organized hierarchically based on page ids.
+"""
 
 
 def get_name(page_id):
@@ -12,25 +50,22 @@ def get_name(page_id):
     :return: the repository where to store the file and the filename.
     """
     name = str(page_id)
-    if len(name) > 8:
-        print('Error.')
-        sys.exit(2)
-    while len(name) < 8:
+    while len(name) < 9:
         name = "0" + name
-    return name[0:2] + "/" + name[2:4] + "/" + name[4:6] + "/", name + ".xml"
+    return name[0:2] + "/" + name[2:4] + "/" + name[4:7] + "/", name + ".xml"
 
 
-def process(file, dest):
+def process(file, destination_folder):
     """
     This is the main function that processes the big wikipedia file.
     :param file: the file to process.
-    :param dest: the repository where to store the data.
+    :param destination_folder: the repository where to store the data.
     :return:
     """
     print('Reading file in progress...')
-    if not dest.endswith('/'):
-        dest += '/'
-    dest += 'wikipedia/'
+    if not destination_folder.endswith('/'):
+        destination_folder += '/'
+    destination_folder += 'wikipedia/'
     num_lines = sum(1 for line in open(file))
     print('Start processing....')
     read = False
@@ -57,13 +92,12 @@ def process(file, dest):
                     read = False
                     # Write to file.
                     repo, file_name = get_name(page_id)
-                    repo = dest + repo
+                    repo = destination_folder + repo
                     absolute_file = repo + file_name
                     Path(repo).mkdir(parents=True, exist_ok=True)
                     f = open(absolute_file, "w+")
                     f.write(content)
                     f.close()
-                    # print(dest + get_name(page_id))
                     content = ""
                     page_id = -1
                 elif read:
@@ -71,16 +105,22 @@ def process(file, dest):
 
 
 def main(argv):
+    """
+    Main function that read input arguments to lunch the script. 
+    :param argv: 
+    :return: 
+    """
+
     input_file = ''
     destination = ''
     try:
         opts, args = getopt.getopt(argv, "hi:o:", ["ifile=", "ofile="])
     except getopt.GetoptError:
-        print('test.py -i <inputfile> -o <outputfile>')
+        print('parse.py -i <input_file> -o <output_file>')
         sys.exit(2)
     for opt, arg in opts:
         if opt == '-h':
-            print('test.py -i <inputfile> -o <outputfile>')
+            print('parse.py -i <input_file> -o <output_file>')
             sys.exit()
         elif opt in ("-i", "--ifile"):
             input_file = arg
@@ -95,11 +135,14 @@ def main(argv):
     if input_file != '' and destination != '':
         process(input_file, destination)
     else:
-        print('test.py -i <inputfile> -o <outputfile>')
+        print('parse.py -i <input_file> -o <output_file>')
         sys.exit(2)
 
 
 if __name__ == "__main__":
+    """
+    The main function.
+    """
     main(sys.argv[1:])
     # process("/home/reda/NetBeansProjects/DeepQA/enwiki-20200401/enwiki-20200401-pages-articles-multistream.xml",
     #        "/home/reda/NetBeansProjects/DeepQA/enwiki-20200401/")
