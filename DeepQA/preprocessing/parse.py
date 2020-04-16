@@ -35,7 +35,7 @@ def get_name(page_id):
     :return: the repository where to store the file and the filename.
     """
     name = str(page_id)
-    while len(name) < 9:
+    while len(name) < 8:
         name = "0" + name
     return name[0:2] + "/" + name[2:4] + "/" + name[4:6] + "/", name + ".xml"
 
