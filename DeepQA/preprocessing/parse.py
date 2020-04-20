@@ -80,7 +80,7 @@ def process(file, destination_folder):
                     repo = destination_folder + repo
                     absolute_file = repo + file_name
                     Path(repo).mkdir(parents=True, exist_ok=True)
-                    f = open(absolute_file, "w+")
+                    f = open(absolute_file, "w+", encoding="utf-8")
                     f.write(content)
                     f.close()
                     content = ""
