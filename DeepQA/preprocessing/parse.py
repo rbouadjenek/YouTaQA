@@ -51,13 +51,13 @@ def process(file, destination_folder):
     if not destination_folder.endswith('/'):
         destination_folder += '/'
     destination_folder += 'wikipedia/'
-    num_lines = sum(1 for line in open(file))
+    num_lines = sum(1 for line in open(file, encoding="utf-8"))
     print('Start processing....')
     read = False
     content = ""
     page_id = -1
     with tqdm(total=num_lines) as pbar:
-        with open(file) as f:
+        with open(file, encoding="utf-8") as f:
             for line in f:
                 pbar.update(1)
                 if line.strip().lower().startswith('<page>'):
