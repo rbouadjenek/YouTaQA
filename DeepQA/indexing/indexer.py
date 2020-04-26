@@ -6,9 +6,10 @@ import sys
 
 import wiki_extractor
 from tqdm import tqdm
-from whoosh import index
+from whoosh import index, qparser, scoring
 from whoosh.analysis import *
 from whoosh.fields import Schema, TEXT, ID
+from whoosh.qparser import MultifieldParser
 from xml.dom import minidom
 
 
@@ -23,14 +24,23 @@ class Document:
         :param file: the file from which to created an document.
         """
 
+        '''
+        This part process the xml file.
+        '''
         root = minidom.parse(file)
-        self.id = get_text(root.getElementsByTagName('id'))
-        self.title = get_text(root.getElementsByTagName('title'))
+        for child in root.childNodes[0].childNodes:
+            if child.nodeName == 'id':
+                self.id = child.firstChild.nodeValue
+            elif child.nodeName == 'title':
+                self.title = child.firstChild.nodeValue
+            elif child.nodeName == 'revision':
+                for child2 in child.childNodes:
+                    if child2.nodeName == 'text':
+                        text = child2.firstChild.nodeValue
         self.sections = []
         '''
-        Parse the wikipedia content using wiki_extractor.
+        Parse the wikipedia content using wiki_extractor to extract section.
         '''
-        text = get_text(root.getElementsByTagName('text'))
         extractor = wiki_extractor.Extractor('', '', '', '')
         text = extractor.transform(text)
         text = extractor.wiki2text(text)
@@ -57,23 +67,6 @@ class Section:
 
     def add_text(self, text):
         self.text += "\n" + text
-
-
-def get_text(nodelist):
-    """
-    This method extracts text from an xml node.
-    :param nodelist:
-    :return:
-    """
-    # Iterate all Nodes aggregate TEXT_NODE
-    rc = []
-    for node in nodelist:
-        if node.nodeType == node.TEXT_NODE:
-            rc.append(node.data)
-        else:
-            # Recursive
-            rc.append(get_text(node.childNodes))
-    return ''.join(rc)
 
 
 class Indexer:
@@ -145,6 +138,28 @@ class Indexer:
         self.writer.commit()
 
 
+def search(searchDir, query):
+    """
+    Method that searches through documents
+    searchDir : the path to the folder that contains the index.
+    """
+    if index.exists_in(searchDir) is True:
+        searchIndex = index.open_dir(searchDir)
+        print(type(searchIndex))
+        QueryParse = MultifieldParser(["title_article", "content_section"],
+                                      schema=Schema(id_article=ID(stored=True),
+                                                    title_article=TEXT(analyzer=Indexer.analyzer, stored=True),
+                                                    id_section=ID(stored=True),
+                                                    title_section=TEXT(analyzer=Indexer.analyzer, stored=True),
+                                                    content_section=TEXT(analyzer=Indexer.analyzer, stored=True)),
+                                      group=qparser.OrGroup)
+        Query = QueryParse.parse(query)
+        searcher = searchIndex.searcher(weighting=scoring.BM25F())
+        result = searcher.search(Query)
+
+    return result
+
+
 def main(argv):
     """
     Main function that read input arguments to lunch the script.
@@ -182,10 +197,12 @@ if __name__ == "__main__":
     """
     The main function.
     """
-    # doc = Document("/home/reda/NetBeansProjects/DeepQA/enwiki-20200401/wikipedia/00/00/00/00000012.xml")..
+    # doc = Document("/home/reda/NetBeansProjects/DeepQA/enwiki-20200401/wikipedia/00/00/00/00000012.xml")
     if len(sys.argv) <= 1:
         sys.argv.append('-i')
-        sys.argv.append('/home/reda/NetBeansProjects/DeepQA/enwiki-20200401/wikipedia/00/')
+        sys.argv.append('/home/reda/NetBeansProjects/DeepQA/enwiki-20200401/wikipedia/')
         sys.argv.append('-o')
         sys.argv.append('/home/reda/NetBeansProjects/DeepQA/index_v1.0/')
     main(sys.argv[1:])
+    #results = search('/home/reda/NetBeansProjects/DeepQA/index_v1.0/', 'autism')
+    #print(results[0])
