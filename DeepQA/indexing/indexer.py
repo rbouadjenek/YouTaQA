@@ -36,7 +36,10 @@ class Document:
             elif child.nodeName == 'revision':
                 for child2 in child.childNodes:
                     if child2.nodeName == 'text':
-                        text = child2.firstChild.nodeValue
+                        if child2.firstChild != None:
+                            text = child2.firstChild.nodeValue
+                        else:
+                            text = ''
         self.sections = []
         '''
         Parse the wikipedia content using wiki_extractor to extract section.
