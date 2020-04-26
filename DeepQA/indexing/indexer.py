@@ -118,7 +118,6 @@ class Indexer:
         # TODO: check how commit works and check how to close this writer and how to get the number of indexed
         #  documents.
         self.close()
-        # print("The total number of documents indexed is " + str(self.writer.searcher().document_number()))
 
     def index_document(self, doc):
         """
@@ -200,12 +199,5 @@ if __name__ == "__main__":
     """
     The main function.
     """
-    # doc = Document("/home/reda/NetBeansProjects/DeepQA/enwiki-20200401/wikipedia/00/00/00/00000012.xml")
-    if len(sys.argv) <= 1:
-        sys.argv.append('-i')
-        sys.argv.append('/home/reda/NetBeansProjects/DeepQA/enwiki-20200401/wikipedia/')
-        sys.argv.append('-o')
-        sys.argv.append('/home/reda/NetBeansProjects/DeepQA/index_v1.0/')
     main(sys.argv[1:])
-    #results = search('/home/reda/NetBeansProjects/DeepQA/index_v1.0/', 'autism')
-    #print(results[0])
+
