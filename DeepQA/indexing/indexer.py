@@ -228,27 +228,27 @@ class Indexer:
         # close the index
         self.writer.commit()
 
-
-def search(searchDir, query):
-    """
-    Method that searches through documents
-    searchDir : the path to the folder that contains the index.
-    """
-    if index.exists_in(searchDir) is True:
-        searchIndex = index.open_dir(searchDir)
-        print(type(searchIndex))
-        QueryParse = MultifieldParser(["title_article", "content_section"],
-                                      schema=Schema(id_article=ID(stored=True),
-                                                    title_article=TEXT(analyzer=Indexer.analyzer, stored=True),
-                                                    id_section=ID(stored=True),
-                                                    title_section=TEXT(analyzer=Indexer.analyzer, stored=True),
-                                                    content_section=TEXT(analyzer=Indexer.analyzer, stored=True)),
-                                      group=qparser.OrGroup)
-        Query = QueryParse.parse(query)
-        searcher = searchIndex.searcher(weighting=scoring.BM25F())
-        result = searcher.search(Query)
-
-    return result
+class Searcher:
+    
+    def search(searchDir, query):
+        """
+        Method that searches through documents
+        searchDir : the path to the folder that contains the index.
+        """
+        if index.exists_in(searchDir) is True:
+            searchIndex = index.open_dir(searchDir)
+            print(type(searchIndex))
+            QueryParse = MultifieldParser(["title_article", "content_section"],
+                                                        schema=Schema(id_article=ID(stored=True),
+                                                        title_article=TEXT(analyzer=Indexer.analyzer, stored=True),
+                                                        id_section=ID(stored=True),
+                                                        title_section=TEXT(analyzer=Indexer.analyzer, stored=True),
+                                                        content_section=TEXT(analyzer=Indexer.analyzer, stored=True)),
+                                                        group=qparser.OrGroup)
+            Query = QueryParse.parse(query)
+            searcher = searchIndex.searcher(weighting=scoring.BM25F())
+            result = searcher.search(Query)
+            return result
 
 
 def main(argv):
