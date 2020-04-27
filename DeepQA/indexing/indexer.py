@@ -3,7 +3,6 @@ import glob
 import os
 import os.path
 import sys
-
 import wiki_extractor
 from tqdm import tqdm
 from whoosh import index, qparser, scoring
@@ -78,7 +77,7 @@ class Indexer:
         the methods of indexing documents.
     """
     # TODO: adding stopwords to the filter.
-    analyzer = RegexTokenizer() | LowercaseFilter() | IntraWordFilter() | StopFilter() | StemFilter()
+    analyzer = RegexTokenizer() | LowercaseFilter() | IntraWordFilter(splitwords=True, splitnums=True) | StopFilter() | StemFilter()
 
     def __init__(self, index_dir):
         """
