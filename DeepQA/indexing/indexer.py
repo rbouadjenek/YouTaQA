@@ -64,7 +64,7 @@ class Section:
     """
 
     def __init__(self, title, text):
-        self.title = title
+        self.title = title.strip("=")
         self.text = text
 
     def add_text(self, text):
