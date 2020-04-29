@@ -1,0 +1,180 @@
+  <page>
+    <title>Condition number</title>
+    <ns>0</ns>
+    <id>6934</id>
+    <revision>
+      <id>942338588</id>
+      <parentid>941447474</parentid>
+      <timestamp>2020-02-24T02:32:06Z</timestamp>
+      <contributor>
+        <username>Prakash Nadkarni</username>
+        <id>4076044</id>
+      </contributor>
+      <minor />
+      <comment>Added a non-mathematical definition of &quot;ill-conditioned problem&quot;.</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">In the field of [[numerical analysis]], the '''condition number''' of a function measures how much the output value of the function can change for a small change in the input argument. This is used to measure how [[sensitivity analysis|sensitive]] a function is to changes or errors in the input, and how much error in the output results from an error in the input. Very frequently, one is solving the inverse problem: given &lt;math&gt;f(x) = y,&lt;/math&gt; one is solving for ''x,'' and thus the condition number of the (local) inverse must be used. In [[linear regression]] the condition number of the [[moment matrix]] can be used as a diagnostic for [[multicollinearity]].&lt;ref&gt;{{cite book |first=David A. |last=Belsley |first2=Edwin |last2=Kuh |authorlink2=Edwin Kuh |first3=Roy E. |last3=Welsch |chapter=The Condition Number |title=Regression Diagnostics: Identifying Influential Data and Sources of Collinearity |location=New York |publisher=John Wiley &amp; Sons |year=1980 |isbn=0-471-05856-4 |pages=100–104 | chapterurl =https://books.google.com/books?id=GECBEUJVNe0C&amp;pg=PA100 }}&lt;/ref&gt;&lt;ref&gt;{{cite book |first=M. Hashem |last=Pesaran |authorlink=M. Hashem Pesaran |chapter =The Multicollinearity Problem |title=Time Series and Panel Data Econometrics |location=New York |publisher=Oxford University Press |year=2015 | isbn=978-0-19-875998-0 |pages=67–72 [p. 70] |chapterurl=https://books.google.com/books?id=7RokCwAAQBAJ&amp;pg=PA70 }}&lt;/ref&gt;
+
+The condition number is an application of the derivative, and is formally defined as the value of the asymptotic worst-case relative change in output for a relative change in input. The &quot;function&quot; is the solution of a problem and the &quot;arguments&quot; are the data in the problem. The condition number is frequently applied to questions in linear algebra, in which case the derivative is straightforward but the error could be in many different directions, and is thus computed from the geometry of the matrix. More generally, condition numbers can be defined for non-linear functions in several variables.
+
+A problem with a low condition number is said to be '''well-conditioned''', while a problem with a high condition number is said to be '''ill-conditioned'''. In non-mathematical terms, an ill-conditioned problem is one where, for a small change in the inputs (the [[independent variables]] or the right-hand-side of an equation) there is a large change in the answer or [[dependent variable]]. This means that the correct solution/answer to the equation becomes hard to find. The condition number is a property of the problem.  Paired with the problem are any number of algorithms that can be used to solve the problem, that is, to calculate the solution.  Some algorithms have a property called '''[[Numerical stability|backward stability]]'''. In general, a backward stable algorithm can be expected to accurately solve well-conditioned problems. Numerical analysis textbooks give formulas for the condition numbers of problems and identify known backward stable algorithms.
+
+As a rule of thumb, if the condition number &lt;math&gt;\kappa(A) = 10^k&lt;/math&gt;, then you may lose up to &lt;math&gt;k&lt;/math&gt; digits of accuracy on top of what would be lost to the numerical method due to loss of precision from arithmetic methods.&lt;ref name=&quot;Numerical Mathematics and Computing, by Cheney and Kincaid&quot;&gt;{{cite book|url=https://books.google.com/books?id=ZUfVZELlrMEC&amp;pg=PA321 |title= Numerical Mathematics and Computing |last1=Cheney |last2=Kincaid |isbn= 978-0-495-11475-8 |date=2007-08-03 }}&lt;/ref&gt; However, the condition number does not give the exact value of the maximum inaccuracy that may occur in the algorithm. It generally just bounds it with an estimate (whose computed value depends on the choice of the norm to measure the inaccuracy).
+
+== General definition in the context of error analysis ==
+
+Given a problem &lt;math&gt;f&lt;/math&gt; and an algorithm &lt;math&gt;\tilde{f}&lt;/math&gt; with an input ''x'', the ''absolute'' error is &lt;math&gt;\left\|f(x) - \tilde{f}(x)\right\|&lt;/math&gt; and the ''relative'' error is &lt;math&gt;\left\|f(x) - \tilde{f}(x)\right\| / \left\|f(x)\right\|&lt;/math&gt;.
+
+In this context, the ''absolute'' condition number of a problem ''f'' is
+
+: &lt;math&gt; \lim_{\varepsilon \rightarrow 0} \sup_{\|\delta x\| \leq \varepsilon} \frac{\|\delta f\|}{\|\delta x\|} &lt;/math&gt;
+
+and the ''relative'' condition number is
+
+: &lt;math&gt; \lim_{\varepsilon \rightarrow 0} \sup_{\|\delta x \| \leq \varepsilon} \frac{\|\delta f(x)\| / \|f(x)\|}{\|\delta x\| / \|x\|} &lt;/math&gt;
+
+== Matrices ==&lt;!-- This section is linked from [[Invertible matrix]] --&gt;
+
+For example, the condition number associated with the [[linear equation]]
+''Ax''&amp;nbsp;=&amp;nbsp;''b'' gives a bound on how inaccurate the solution ''x'' will be after approximation. Note that this is before the effects of [[round-off error]] are taken into account; conditioning is a property of the matrix, not the [[algorithm]] or [[floating-point]] accuracy of the computer used to solve the corresponding system. In particular, one should think of the condition number as being (very roughly) the rate at which the solution ''x'' will change with respect to a change in ''b''.  Thus, if the condition number is large, even a small error in ''b'' may cause a large error in ''x''. On the other hand, if the condition number is small, then the error in ''x'' will not be much bigger than the error in ''b''.
+
+The condition number is defined more precisely to be the maximum ratio of the [[relative error]] in ''x'' to the relative error in ''b''.
+
+Let ''e'' be the error in ''b''. Assuming that ''A'' is a nonsingular matrix, the error in the solution ''A''&lt;sup&gt;−1&lt;/sup&gt;''b'' is ''A''&lt;sup&gt;−1&lt;/sup&gt;''e''. The ratio of the relative error in the solution to the relative error in ''b'' is
+
+: &lt;math&gt;\frac{\frac{\left\|A^{-1} e\right\|}{\left\|A^{-1} b\right\|}}{\frac{\|e\|}{\|b\|}}.&lt;/math&gt;
+
+This is easily transformed to
+
+: &lt;math&gt;\frac{\left\|A^{-1} e\right\|}{\|e\|} \frac{\|b\|}{\left\|A^{-1} b\right\|}.&lt;/math&gt;
+
+The maximum value (for nonzero ''b'' and ''e'') is then seen to be the product of the two [[operator norm]]s as follows:
+
+:&lt;math&gt;\begin{align}
+  \max_{e,b \neq 0} \left\{ \frac{\left\| A^{-1}e \right\|}{\| e \|} \frac{\| b \|}{\left\| A^{-1}b \right\|} \right\}
+    &amp;= \max_{e \neq 0} \left\{\frac{\left\| A^{-1}e\right\| }{\| e\|} \right\} \, \max_{b \neq 0} \left\{ \frac {\| b \|}{\left\| A^{-1}b \right\|} \right\} \\
+    &amp;= \max_{e \neq 0} \left\{\frac{\left\| A^{-1}e\right\|}{\| e \|}\right\} \, \max_{x \neq 0} \left \{\frac {\| Ax \| }{\| x \|} \right\} \\
+    &amp;= \left\| A^{-1} \right \| \, \|A\|.
+\end{align}&lt;/math&gt;
+
+The same definition is used for any consistent [[matrix norm|norm]], i.e. one that satisfies
+
+: &lt;math&gt;\kappa(A) = \left\| A^{-1} \right\| \, \left\| A \right\| \ge \left\| A^{-1} A \right\| = 1.&lt;/math&gt;
+
+When the condition number is exactly one (which can only happen if ''A'' is a scalar multiple of a [[Isometry#Linear isometry|linear isometry]]), then a solution algorithm can find (in principle, meaning if the algorithm introduces no errors of its own) an approximation of the solution whose precision is no worse than that of the data.
+
+However, it does not mean that the algorithm will converge rapidly to this solution, just that it will not diverge arbitrarily because of inaccuracy on the source data (backward error), provided that the forward error introduced by the algorithm does not diverge as well because of accumulating intermediate rounding errors.{{clarify|date=October 2014}}
+
+The condition number may also be infinite, but this implies that the problem is [[well-posed problem|ill-posed]] (does not possess a unique, well-defined solution for each choice of data; that is, the matrix is not invertible), and no algorithm can be expected to reliably find a solution.
+
+The definition of the condition number depends on the choice of norm, as can be illustrated by two examples.
+
+If &lt;math&gt;\|\cdot\|&lt;/math&gt; is the [[matrix norm|norm]] defined in the square-summable [[sequence space]] [[Lp space|ℓ&lt;sup&gt;2&lt;/sup&gt;]] (which matches the usual distance in a standard Euclidean space and is usually noted as &lt;math&gt;\|\cdot\|_2&lt;/math&gt;), then
+
+: &lt;math&gt;\kappa(A) = \frac{\sigma_\text{max}(A)}{\sigma_\text{min}(A)},&lt;/math&gt;
+
+where &lt;math&gt;\sigma_\text{max}(A)&lt;/math&gt; and &lt;math&gt;\sigma_\text{min}(A)&lt;/math&gt; are maximal and minimal [[singular value]]s of &lt;math&gt;A&lt;/math&gt; respectively. Hence:
+
+* If &lt;math&gt;A&lt;/math&gt; is [[normal matrix|normal]], then
+::&lt;math&gt;\kappa(A) = \frac{\left|\lambda_\text{max}(A)\right|}{\left|\lambda_\text{min}(A)\right|},&lt;/math&gt;
+:where &lt;math&gt;\lambda_\text{max}(A)&lt;/math&gt; and &lt;math&gt;\lambda_\text{min}(A) &lt;/math&gt; are maximal and minimal (by moduli) [[eigenvalue]]s of &lt;math&gt;A&lt;/math&gt; respectively.
+
+* If &lt;math&gt;A&lt;/math&gt; is [[unitary matrix|unitary]], then &lt;math&gt;\kappa(A) = 1.&lt;/math&gt;
+
+The condition number with respect to ''L''&lt;sup&gt;2&lt;/sup&gt; arises so often in numerical [[linear algebra]] that it is given a name, the '''condition number of a matrix'''.
+
+If &lt;math&gt;\|\cdot\|&lt;/math&gt; is the [[matrix norm|norm]] defined in the [[sequence space]] [[Lp space|ℓ&lt;sup&gt;∞&lt;/sup&gt;]] of all [[Bounded operator|bounded]] sequences (which matches the maximum of distances measured on projections into the base subspaces and is usually denoted by &lt;math&gt;\|\cdot\|_\infty&lt;/math&gt;), and &lt;math&gt;A&lt;/math&gt; is [[triangular matrix|lower triangular]] non-singular (i.e., &lt;math&gt;\forall i, a_{ii} \ne 0&lt;/math&gt;), then
+
+: &lt;math&gt;\kappa(A) \geq \frac{\max_i\big(|a_{ii}|\big)}{\min_i\big(|a_{ii}|\big)}.&lt;/math&gt;
+
+The condition number computed with this norm is generally larger than the condition number computed with square-summable sequences, but it can be evaluated more easily (and this is often the only practicably computable condition number, when the problem to solve involves a ''non-linear algebra''{{what?|date=October 2014}}, for example when approximating irrational and transcendental functions or numbers with numerical methods).
+
+If the condition number is not too much larger than one, the matrix is well-conditioned, which means that its inverse can be computed with good accuracy. If the condition number is very large, then the matrix is said to be ill-conditioned. Practically, such a matrix is almost singular, and the computation of its inverse, or solution of a linear system of equations is prone to large numerical errors. A matrix that is not invertible has condition number equal to infinity.
+
+== Nonlinear ==
+Condition numbers can also be defined for nonlinear functions, and can be computed using calculus. The condition number varies with the point; in some cases one can use the maximum (or supremum) condition number over the domain of the function or domain of the question as an overall condition number, while in other cases the condition number at a particular point is of more interest.
+
+=== One variable ===
+{{See also|Significance arithmetic#Transcendental functions}}
+
+The condition number of a differentiable function &lt;math&gt;f&lt;/math&gt; in one variable as a function is &lt;math&gt;\left|xf'/f\right|&lt;/math&gt;. Evaluated at a point &lt;math&gt;x&lt;/math&gt;, this is
+
+: &lt;math&gt;\left|\frac{xf'(x)}{f(x)}\right|.&lt;/math&gt;
+
+Most elegantly, this can be understood as (the absolute value of) the ratio of the [[logarithmic derivative]] of &lt;math&gt;f&lt;/math&gt;, which is &lt;math&gt;(\log f)' = f'/f&lt;/math&gt;, and the logarithmic derivative of &lt;math&gt;x&lt;/math&gt;, which is &lt;math&gt;(\log x)' = x'/x = 1/x&lt;/math&gt;, yielding a ratio of &lt;math&gt;xf'/f&lt;/math&gt;. This is because the logarithmic derivative is the infinitesimal rate of relative change in a function: it is the derivative &lt;math&gt;f'&lt;/math&gt; scaled by the value of &lt;math&gt;f&lt;/math&gt;. Note that if a function has a zero at a point, its condition number at the point is infinite, as infinitesimal changes in the input can change the output from zero to positive or negative, yielding a ratio with zero in the denominator, hence infinite relative change.
+
+More directly, given a small change &lt;math&gt;\Delta x&lt;/math&gt; in &lt;math&gt;x&lt;/math&gt;, the relative change in &lt;math&gt;x&lt;/math&gt; is &lt;math&gt;[(x + \Delta x) - x] / x = (\Delta x) / x&lt;/math&gt;, while the relative change in &lt;math&gt;f(x)&lt;/math&gt; is &lt;math&gt;[f(x + \Delta x) - f(x)] / f(x)&lt;/math&gt;. Taking the ratio yields
+
+: &lt;math&gt;\frac{[f(x + \Delta x) - f(x)] / f(x)}{(\Delta x) / x} = \frac{x}{f(x)} \frac{f(x + \Delta x) - f(x)}{(x + \Delta x) - x} = \frac{x}{f(x)} \frac{f(x + \Delta x) - f(x)}{\Delta x}.&lt;/math&gt;
+
+The last term is the [[difference quotient]] (the slope of the secant line), and taking the limit yields the derivative.
+
+Condition numbers of common [[elementary function]]s are particularly important in computing [[significant figures]] and can be computed immediately from the derivative; see [[Significance arithmetic#Transcendental functions|significance arithmetic of transcendental functions]]. A few important ones are given below:
+{| class=&quot;wikitable&quot;
+! Name || Symbol || Condition number
+|-
+| Addition / subtraction || &lt;math&gt;x + a&lt;/math&gt; || &lt;math&gt;\left|\frac{x}{x+a}\right|&lt;/math&gt;
+|-
+| Scalar multiplication || &lt;math&gt;a x&lt;/math&gt; || &lt;math&gt;1&lt;/math&gt;
+|-
+| Division || &lt;math&gt;1 / x&lt;/math&gt; || &lt;math&gt;1&lt;/math&gt;
+|-
+| Polynomial || &lt;math&gt;x^n&lt;/math&gt; || &lt;math&gt;|n|&lt;/math&gt;
+|-
+| Exponential function || &lt;math&gt;e^x&lt;/math&gt; || &lt;math&gt;|x|&lt;/math&gt;
+|-
+| Natural logarithm function || &lt;math&gt;\ln(x)&lt;/math&gt; || &lt;math&gt;\left|\frac{1}{\ln(x)}\right|&lt;/math&gt;
+|-
+| Sine function || &lt;math&gt;\sin(x)&lt;/math&gt; || &lt;math&gt;|x\cot(x)|&lt;/math&gt;
+|-
+| Cosine function || &lt;math&gt;\cos(x)&lt;/math&gt; || &lt;math&gt;|x\tan(x)|&lt;/math&gt;
+|-
+| Tangent function || &lt;math&gt;\tan(x)&lt;/math&gt; || &lt;math&gt;|x(\tan(x)+\cot(x))|&lt;/math&gt;
+|-
+| Inverse sine function || &lt;math&gt;\arcsin(x)&lt;/math&gt; || &lt;math&gt;\frac{x}{\sqrt{1-x^2}\arcsin(x)}&lt;/math&gt;
+|-
+| Inverse cosine function || &lt;math&gt;\arccos(x)&lt;/math&gt; || &lt;math&gt;\frac{|x|}{\sqrt{1-x^2}\arccos(x)}&lt;/math&gt;
+|-
+| Inverse tangent function || &lt;math&gt;\arctan(x)&lt;/math&gt; || &lt;math&gt;\frac{x}{(1+x^2)\arctan(x)}&lt;/math&gt;
+|}
+
+=== Several variables ===
+
+Condition numbers can be defined for any function &lt;math&gt;f&lt;/math&gt; mapping its data from some [[function domain|domain]] (e.g. an &lt;math&gt;m&lt;/math&gt;-tuple of real numbers &lt;math&gt;x&lt;/math&gt;) into some [[codomain]] (e.g. an &lt;math&gt;n&lt;/math&gt;-tuple of real numbers &lt;math&gt;f(x)&lt;/math&gt;), where both the domain and codomain are [[Banach space]]s. They express how sensitive that function is to small changes (or small errors) in its arguments. This is crucial in assessing the sensitivity and potential accuracy difficulties of numerous computational problems, for example, [[polynomial]] [[root finding]] or computing [[eigenvalue]]s.
+
+The condition number of &lt;math&gt;f&lt;/math&gt; at a point &lt;math&gt;x&lt;/math&gt; (specifically, its '''relative condition number'''&lt;ref name=TrefethenBau /&gt;) is then defined to be the maximum ratio of the fractional change in &lt;math&gt;f(x)&lt;/math&gt; to any fractional change in &lt;math&gt;x&lt;/math&gt;, in the limit where the change &lt;math&gt;\delta x&lt;/math&gt; in &lt;math&gt;x&lt;/math&gt; becomes infinitesimally small:&lt;ref name=TrefethenBau&gt;{{cite book |isbn= 978-0-89871-361-9 |first1=L. N. |last1= Trefethen |first2= D. |last2=Bau |title=Numerical Linear Algebra |publisher=SIAM |year=1997 |url=https://books.google.com/books?id=JaPtxOytY7kC&amp;printsec=frontcover&amp;dq=978-0898713619#v=onepage&amp;q&amp;f=false}}&lt;/ref&gt;
+
+: &lt;math&gt;\lim_{\varepsilon \to 0^+} \sup_{\|\delta x\| \leq \varepsilon} \left[ \left. \frac{\left\|f(x + \delta x) - f(x)\right\|}{\|f(x)\|} \right/ \frac{\|\delta x\|}{\|x\|} \right],&lt;/math&gt;
+
+where &lt;math&gt;\|\cdot\|&lt;/math&gt; is a [[Norm (mathematics)|norm]] on the domain/codomain of &lt;math&gt;f&lt;/math&gt;.
+
+If &lt;math&gt;f&lt;/math&gt; is differentiable, this is equivalent to:&lt;ref name=TrefethenBau /&gt;
+
+: &lt;math&gt;\frac{\|J(x)\|}{\|f(x) \| / \|x\|},&lt;/math&gt;
+
+where {{tmath|J(x)}} denotes the [[Jacobian matrix]] of [[partial derivative]]s of &lt;math&gt;f&lt;/math&gt; at &lt;math&gt;x&lt;/math&gt;, and &lt;math&gt;\|J(x)\|&lt;/math&gt; is the [[induced norm]] on the matrix.
+
+== See also ==
+* [[Numerical methods for linear least squares]]
+* [[Ill-posed problem]]
+* [[Singular value]]
+
+== References ==
+{{Reflist}}
+
+== Further reading ==
+* {{cite book |first=James |last=Demmel |authorlink=James Demmel |chapter=Nearest Defective Matrices and the Geometry of Ill-conditioning |pages=35–55 |title=Reliable Numerical Computation |editor-first=M. G. |editor-last=Cox |editor2-first=S. |editor2-last=Hammarling |location=Oxford |publisher=Clarendon Press |year=1990 |isbn=0-19-853564-3 }}
+
+== External links ==
+* [https://web.archive.org/web/20070121001740/http://numericalmethods.eng.usf.edu/mws/gen/04sle/mws_gen_sle_spe_adequacy.pdf Condition Number of a Matrix] at ''Holistic Numerical Methods Institute''
+* {{planetmath reference|id=3480|title=Matrix condition number}}
+* [http://www.mathworks.in/help/techdoc/ref/cond.html MATLAB library function to determine condition number]
+* [https://www.encyclopediaofmath.org/index.php/Condition_number Condition number – Encyclopedia of Mathematics]
+* [https://nhigham.com/2019/01/23/who-invented-the-matrix-condition-number/ Who Invented the Matrix Condition Number? by Nick Higham]
+
+[[Category:Numerical analysis]]
+[[Category:Matrices]]</text>
+      <sha1>0vlt9nvudgh99qz4de9qlbduxv45i0w</sha1>
+    </revision>
+  </page>

@@ -1,0 +1,237 @@
+  <page>
+    <title>Chemical vapor deposition</title>
+    <ns>0</ns>
+    <id>6111</id>
+    <revision>
+      <id>939843840</id>
+      <parentid>939842753</parentid>
+      <timestamp>2020-02-09T02:06:30Z</timestamp>
+      <contributor>
+        <ip>162.234.142.224</ip>
+      </contributor>
+      <comment>Undid revision 939842753 by [[Special:Contributions/162.234.142.224|162.234.142.224]] ([[User talk:162.234.142.224|talk]])</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{for|the scientific journal named ''Chemical Vapor Deposition''|Chemical Vapor Deposition (journal)}}
+[[File:PICT0111.JPG|thumb|[[direct current|DC]] [[plasma physics|plasma]] (violet) enhances the growth of carbon nanotubes in laboratory-scale PECVD apparatus]]
+
+'''Chemical vapor deposition''' ('''CVD''') is a [[vacuum deposition]] method used to produce high quality, high-performance, solid materials. The process is often used in the [[semiconductor industry]] to produce [[thin film]]s.
+
+In typical CVD, the [[wafer (electronics)|wafer]] (substrate) is exposed to one or more [[Volatility (chemistry)|volatile]] [[wikt:precursor|precursors]], which [[chemical reaction|react]] and/or [[chemical decomposition|decompose]] on the substrate surface to produce the desired deposit. Frequently, volatile [[by-product]]s are also produced, which are removed by gas flow through the reaction chamber.
+
+[[Microfabrication]] processes widely use CVD to deposit materials in various forms, including: [[Single crystal|monocrystalline]], [[polycrystalline]], [[amorphous]], and [[Epitaxy|epitaxial]]. These materials include: [[silicon]] ([[Silicon dioxide|dioxide]], [[silicon carbide|carbide]], [[silicon nitride|nitride]], [[silicon oxynitride|oxynitride]]), carbon ([[carbon (fiber)|fiber]], [[carbon nanofibers|nanofibers]], [[carbon nanotube|nanotubes]], [[Synthetic diamond|diamond]] and [[graphene]]), [[fluorocarbon]]s, [[Electrical filament|filaments]], [[tungsten]], [[titanium nitride]] and various [[high-k dielectric]]s.
+
+== Types ==
+[[File:ThermalCVD.PNG|thumb|Hot-wall thermal CVD (batch operation type)]]
+[[File:PlasmaCVD.PNG|thumb|Plasma assisted CVD]]
+
+CVD is practiced in a variety of formats. These processes generally differ in the means by which chemical reactions are initiated.
+* Classified by operating conditions:
+** ''Atmospheric pressure CVD'' (APCVD) – CVD at atmospheric pressure.
+** ''Low-pressure CVD'' (LPCVD) – CVD at sub-atmospheric pressures.&lt;ref&gt;{{cite web|url=http://www.crystec.com/klllpcvde.htm|title=Low Pressure Chemical Vapor Deposition – Technology and Equipment|publisher=Crystec Technology Trading GmbH}}&lt;/ref&gt; Reduced pressures tend to reduce unwanted gas-phase reactions and improve film uniformity across the wafer.
+** ''Ultrahigh vacuum CVD'' (UHVCVD) – CVD at very low pressure, typically below 10&lt;sup&gt;−6&lt;/sup&gt; [[Pascal (unit)|Pa]] (≈10&lt;sup&gt;−8&lt;/sup&gt; [[torr]]). Note that in other fields, a lower division between high and [[ultra-high vacuum]] is common, often 10&lt;sup&gt;−7&lt;/sup&gt; Pa.
+
+Most modern CVD is either LPCVD or UHVCVD.
+* Classified by physical characteristics of vapor:
+** ''Aerosol assisted CVD'' (AACVD) – CVD in which the precursors are transported to the substrate by means of a liquid/gas aerosol, which can be generated ultrasonically. This technique is suitable for use with non-volatile precursors.
+** ''Direct liquid injection CVD'' (DLICVD) – CVD in which the precursors are in liquid form (liquid or solid dissolved in a convenient solvent). Liquid solutions are injected in a vaporization chamber towards injectors (typically car injectors). The precursor vapors are then transported to the substrate as in classical CVD. This technique is suitable for use on liquid or solid precursors. High growth rates can be reached using this technique.
+* Classified by type of substrate heating:
+** Hot wall CVD – CVD in which the chamber is heated by an external power source and the substrate is heated by radiation from the heated chamber walls.
+** Cold wall CVD – CVD in which only the substrate is directly heated either by induction or by passing current through the substrate itself or a heater in contact with the substrate. The chamber walls are at room temperature.
+* Plasma methods (see also [[Plasma processing]]):
+** ''Microwave plasma-assisted CVD'' (MPCVD)
+** ''[[Plasma-enhanced chemical vapor deposition|Plasma-Enhanced CVD]]'' (PECVD) – CVD that utilizes [[Plasma (physics)|plasma]] to enhance chemical reaction rates of the precursors.&lt;ref&gt;{{citation|url=http://www.crystec.com/tridepe.htm|title=Crystec Technology Trading GmbH, Plasma Enhanced Chemical Vapor Deposition – Technology and Equipment}}&lt;/ref&gt; PECVD processing allows deposition at lower temperatures, which is often critical in the manufacture of semiconductors. The lower temperatures also allow for the deposition of organic coatings, such as plasma polymers, that have been used for nanoparticle surface functionalization.&lt;ref&gt;{{cite journal|last=Tavares|first=Jason|author2=Swanson, E.J. |author3=Coulombe, S. |title=Plasma Synthesis of Coated Metal Nanoparticles with Surface Properties Tailored for Dispersion|journal=Plasma Processes and Polymers|year=2008|volume=5|issue=8|page=759|doi=10.1002/ppap.200800074}}&lt;/ref&gt;
+** ''Remote plasma-enhanced CVD'' (RPECVD) – Similar to PECVD except that the wafer substrate is not directly in the plasma discharge region. Removing the wafer from the plasma region allows processing temperatures down to room temperature.
+** ''[[LEPECVD|Low-Energy Plasma-Enhanced chemical vapor deposition]]'' (LEPECVD) - CVD employing a high density, low energy plasma to obtain epitaxial deposition of semiconductor materials at high rates and low temperatures.
+* ''Atomic-layer CVD'' ([[ALCVD]]) – Deposits successive layers of different substances to produce layered, [[crystal]]line films. See [[Atomic layer epitaxy]].
+* ''[[Combustion Chemical Vapor Deposition]]'' (CCVD) – Combustion Chemical Vapor Deposition or flame pyrolysis is an open-atmosphere, flame-based technique for depositing high-quality thin films and nanomaterials.
+* ''Hot filament CVD'' (HFCVD) – also known as catalytic CVD (Cat-CVD) or more commonly, initiated CVD (iCVD), this process uses a hot filament to chemically decompose the source gases.&lt;ref&gt;{{cite conference | first=R.E.I. | last=Schropp |author2=B. Stannowski |author3=A.M. Brockhoff |author4=P.A.T.T. van Veenendaal |author5=J.K. Rath | title=Hot wire CVD of heterogeneous and polycrystalline silicon semiconducting thin films for application in thin film transistors and solar cells | booktitle=Materials Physics and Mechanics | pages=73–82 | url=http://www.ipme.ru/e-journals/MPM/no_2100/schropp/schropp.pdf }}&lt;/ref&gt; The filament temperature and substrate temperature thus are independently controlled, allowing colder temperatures for better absorption rates at the substrate and higher temperatures necessary for decomposition of precursors to free radicals at the filament.&lt;ref&gt;{{cite journal|last=Gleason|first=Karen K.|author2=Kenneth K.S. Lau |author3=Jeffrey A. Caulfield |title=Structure and Morphology of Fluorocarbon Films Grown by Hot Filament Chemical Vapor Deposition|journal=Chemistry of Materials|date=2000|volume=12|issue=10|page=3032|doi=10.1021/cm000499w|url=https://semanticscholar.org/paper/a8d371449f5b6a3269e555bb6666a2cea19d6708}}&lt;/ref&gt;
+* ''[[Hybrid Physical-Chemical Vapor Deposition]]'' (HPCVD) – This process involves both chemical decomposition of precursor gas and [[vaporization]] of a solid source.
+* ''[[Metalorganic chemical vapor deposition]]'' (MOCVD) – This CVD process is based on [[metalorganic]] precursors.
+* ''Rapid thermal CVD'' (RTCVD) – This CVD process uses heating lamps or other methods to rapidly heat the wafer substrate. Heating only the substrate rather than the gas or chamber walls helps reduce unwanted gas-phase reactions that can lead to [[particle (ecology)|particle]] formation.
+* ''Vapor-phase epitaxy'' (VPE)
+* ''Photo-initiated CVD'' (PICVD) – This process uses UV light to stimulate chemical reactions. It is similar to plasma processing, given that plasmas are strong emitters of UV radiation. Under certain conditions, PICVD can be operated at or near atmospheric pressure.&lt;ref&gt;{{cite journal|last=Dorval Dion|first=C.A.|author2=Tavares, J.R.|title=Photo-Initiated Chemical Vapour Deposition as a Scalable Particle Functionalization Technology (A Practical Review)|journal=Powder Technology|volume=239|pages=484–491|year=2013|doi=10.1016/j.powtec.2013.02.024|url=https://zenodo.org/record/968600}}&lt;/ref&gt;
+* ''[[Laser Chemical vapor deposition]] (LCVD)'' - This CVD process uses lasers to heat spots or lines on a substrate in semiconductor applications. In MEMS and in fiber production the lasers are used rapidly to break down the precursor gas—process temperature can exceed 2000&amp;nbsp;°C—to build up a solid structure in much the same way as laser sintering based 3-D printers build up solids from powders.
+
+== Uses ==
+CVD is commonly used to deposit conformal films and augment substrate surfaces in ways  that more traditional surface modification techniques are not capable of. CVD is extremely useful in the process of [[atomic layer deposition]] at depositing extremely thin layers of material. A variety of applications for such films exist.  [[Gallium arsenide]] is used in some [[integrated circuit]]s (ICs) and  photovoltaic devices. Amorphous polysilicon is used in photovoltaic devices.  Certain [[carbide]]s and [[nitride]]s confer wear-resistance.&lt;ref&gt;Wahl, Georg ''et al.'' (2000) &quot;Thin Films&quot; in ''Ullmann's Encyclopedia of Industrial Chemistry'', Wiley-VCH, Weinheim. {{DOI|10.1002/14356007.a26_681}}&lt;/ref&gt; Polymerization by CVD, perhaps the most versatile of all applications, allows for super-thin coatings which possess some very desirable qualities, such as lubricity, hydrophobicity and weather-resistance to name a few.&lt;ref&gt;{{cite journal|last=Gleason|first=Karen|author2=Ayse Asatekin |author3=Miles C. Barr |author4=Samaan H. Baxamusa |author5=Kenneth K.S. Lau |author6=Wyatt Tenhaeff |author7=Jingjing Xu |title=Designing polymer surfaces via vapor deposition|journal=Materials Today|date=May 2010|volume=13|issue=5|pages=26–33|doi=10.1016/S1369-7021(10)70081-X}}&lt;/ref&gt; CVD of [[metal-organic framework]]s, a class of crystalline nanoporous materials, has recently been demonstrated.&lt;ref&gt;{{cite journal
+ |last=Stassen |first=I
+ |last2=Styles  |first2=M
+ |last3=Grenci  |first3=G
+ |last4=Van Gorp  |first4=H
+ |last5=Vanderlinden  |first5=W
+ |last6=De Feyter  |first6=S
+ |last7=Falcaro  |first7=P
+ |last8=De Vos  |first8=D
+ |last9=Vereecken  |first9=P
+ |last10=Ameloot  |first10=R
+ |year=2015
+ |title=Chemical vapour deposition of zeolitic imidazolate framework thin films
+ |journal=[[Nature Materials]]
+ |volume=15
+ |issue=3
+ |pages=304–10
+ |doi=10.1038/nmat4509
+|pmid=26657328
+ |bibcode=2016NatMa..15..304S}}&lt;/ref&gt; Applications for these films are anticipated in gas sensing and [[low-k dielectric]]s
+CVD techniques are adventageous for membrane coatings as well, such as those in desalination or water treatment, as these coatings can be sufficiently uniform (conformal) and thin that they do not clog membrane pores.&lt;ref name=&quot;Servi Guillen-Burrieza Warsinger Livernois 2017 pp. 470–479&quot;&gt;{{cite journal | last=Servi | first=Amelia T. | last2=Guillen-Burrieza | first2=Elena | last3=Warsinger | first3=David M. | last4=Livernois | first4=William | last5=Notarangelo | first5=Katie | last6=Kharraz | first6=Jehad | last7=Lienhard V | first7=John H. | last8=Arafat | first8=Hassan A. | last9=Gleason | first9=Karen K. | title=The effects of iCVD film thickness and conformality on the permeability and wetting of MD membranes | journal=Journal of Membrane Science | volume=523 | year=2017 | issn=0376-7388 | doi=10.1016/j.memsci.2016.10.008 | pages=470–479| hdl=1721.1/108260 | url=http://dspace.mit.edu/bitstream/1721.1/108260/1/The%20effects%20of%20iCVD%20film%20thickness%20and%20conformality%20on%20the%20permeability%20and%20wetting%20of%20MD%20membranes%2c%20Servi%2c%20Dspace.pdf }}&lt;/ref&gt;
+
+==Commercially important materials prepared by CVD==
+
+=== Polysilicon ===
+[[Polycrystalline silicon]] is deposited from [[trichlorosilane]] (SiHCl&lt;sub&gt;3&lt;/sub&gt;) or [[silane]] (SiH&lt;sub&gt;4&lt;/sub&gt;), using the following reactions:&lt;ref name=Ullmann&gt;{{ Ullmann | author = Simmler, W. | title = Silicon Compounds, Inorganic | doi = 10.1002/14356007.a24_001 }}&lt;/ref&gt;
+:SiHCl&lt;sub&gt;3&lt;/sub&gt; → Si + Cl&lt;sub&gt;2&lt;/sub&gt;  +  HCl
+:SiH&lt;sub&gt;4&lt;/sub&gt; → Si + 2 H&lt;sub&gt;2&lt;/sub&gt;
+
+This reaction is usually performed in LPCVD systems, with either pure silane feedstock, or a solution of silane with 70–80% [[nitrogen]]. Temperatures between 600 and 650&amp;nbsp;°C and pressures between 25 and 150 Pa yield a growth rate between 10 and 20 [[nanometre|nm]] per minute. An alternative process uses a [[hydrogen]]-based solution. The hydrogen reduces the growth rate, but the temperature is raised to 850 or even 1050&amp;nbsp;°C to compensate. Polysilicon may be grown directly with doping, if gases such as [[phosphine]], [[arsine]] or [[diborane]] are added to the CVD chamber. Diborane increases the growth rate, but arsine and phosphine decrease it.
+
+=== Silicon dioxide ===
+Silicon dioxide (usually called simply &quot;oxide&quot; in the semiconductor industry) may be deposited by several different processes. Common source gases include [[silane]] and [[oxygen]], [[dichlorosilane]] (SiCl&lt;sub&gt;2&lt;/sub&gt;H&lt;sub&gt;2&lt;/sub&gt;) and [[nitrous oxide]]&lt;ref&gt;Proceedings of the Third World Congress of Chemical Engineering, Tokyo, p. 290 (1986)&lt;/ref&gt; (N&lt;sub&gt;2&lt;/sub&gt;O), or [[tetraethylorthosilicate]] (TEOS; Si(OC&lt;sub&gt;2&lt;/sub&gt;H&lt;sub&gt;5&lt;/sub&gt;)&lt;sub&gt;4&lt;/sub&gt;). The reactions are as follows:&lt;ref name=&quot;cao:2011&quot;&gt;{{cite book|last1=Cao|first1=Guozhong|last2=Wang|first2=Ying|title=Nanostructures and Nanomaterials -- Synthesis, Properties and Applications|date=2011|publisher=World Scientific Publishing|isbn=978-981-4322-50-8|page=248|doi=10.1142/7885}}&lt;/ref&gt;
+
+:SiH&lt;sub&gt;4&lt;/sub&gt; + O&lt;sub&gt;2&lt;/sub&gt; → SiO&lt;sub&gt;2&lt;/sub&gt; + 2 H&lt;sub&gt;2&lt;/sub&gt;
+
+:SiCl&lt;sub&gt;2&lt;/sub&gt;H&lt;sub&gt;2&lt;/sub&gt; + 2 N&lt;sub&gt;2&lt;/sub&gt;O → SiO&lt;sub&gt;2&lt;/sub&gt; + 2 N&lt;sub&gt;2&lt;/sub&gt; + 2 HCl
+
+:Si(OC&lt;sub&gt;2&lt;/sub&gt;H&lt;sub&gt;5&lt;/sub&gt;)&lt;sub&gt;4&lt;/sub&gt; → SiO&lt;sub&gt;2&lt;/sub&gt; + byproducts
+
+The choice of source gas depends on the thermal stability of the substrate; for instance, [[aluminium]] is sensitive to high temperature. Silane deposits between 300 and 500&amp;nbsp;°C, dichlorosilane at around 900&amp;nbsp;°C, and TEOS between 650 and 750&amp;nbsp;°C, resulting in a layer of ''low- temperature oxide'' (LTO). However, silane produces a lower-quality oxide than the other methods (lower [[dielectric strength]], for instance), and it deposits non[[conformal film|conformally]]. Any of these reactions may be used in LPCVD, but the silane reaction is also done in APCVD. CVD oxide invariably has lower quality than [[thermal oxidation|thermal oxide]], but thermal oxidation can only be used in the earliest stages of IC manufacturing.
+
+Oxide may also be grown with impurities ([[alloy]]ing or &quot;[[doping (semiconductor)|doping]]&quot;). This may have two purposes. During further process steps that occur at high temperature, the impurities may [[atomic diffusion|diffuse]] from the oxide into adjacent layers (most notably silicon) and dope them. Oxides containing 5–15% impurities by mass are often used for this purpose. In addition, silicon dioxide alloyed with [[phosphorus pentoxide]] (&quot;P-glass&quot;) can be used to smooth out uneven surfaces. P-glass softens and reflows at temperatures above 1000&amp;nbsp;°C. This process requires a phosphorus concentration of at least 6%, but concentrations above 8% can corrode aluminium. Phosphorus is deposited from phosphine gas and oxygen:
+
+:4 PH&lt;sub&gt;3&lt;/sub&gt; + 5 O&lt;sub&gt;2&lt;/sub&gt; → 2 P&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;5&lt;/sub&gt; + 6 H&lt;sub&gt;2&lt;/sub&gt;
+
+[[Glass]]es containing both boron and phosphorus (borophosphosilicate glass, BPSG) undergo viscous flow at lower temperatures; around 850&amp;nbsp;°C is achievable with glasses containing around 5 weight % of both constituents, but stability in air can be difficult to achieve. Phosphorus oxide in high concentrations interacts with ambient moisture to produce phosphoric acid. Crystals of BPO&lt;sub&gt;4&lt;/sub&gt; can also precipitate from the flowing glass on cooling; these crystals are not readily etched in the standard reactive plasmas used to pattern oxides, and will result in circuit defects in integrated circuit manufacturing.
+
+Besides these intentional impurities, CVD oxide may contain byproducts of the deposition. TEOS produces a relatively pure oxide, whereas silane introduces hydrogen impurities, and dichlorosilane introduces [[chlorine]].
+
+Lower temperature deposition of silicon dioxide and doped glasses from TEOS using ozone rather than oxygen has also been explored (350 to 500&amp;nbsp;°C). Ozone glasses have excellent conformality but tend to be hygroscopic – that is, they absorb water from the air due to the incorporation of silanol (Si-OH) in the glass. Infrared spectroscopy and mechanical strain as a function of temperature are valuable diagnostic tools for diagnosing such problems.
+
+==== Silicon nitride ====
+Silicon nitride is often used as an insulator and chemical barrier in manufacturing ICs. The following two reactions deposit silicon nitride from the gas phase:
+
+:3 SiH&lt;sub&gt;4&lt;/sub&gt; + 4 NH&lt;sub&gt;3&lt;/sub&gt; → Si&lt;sub&gt;3&lt;/sub&gt;N&lt;sub&gt;4&lt;/sub&gt; + 12 H&lt;sub&gt;2&lt;/sub&gt;
+
+:3 SiCl&lt;sub&gt;2&lt;/sub&gt;H&lt;sub&gt;2&lt;/sub&gt; + 4 NH&lt;sub&gt;3&lt;/sub&gt; → Si&lt;sub&gt;3&lt;/sub&gt;N&lt;sub&gt;4&lt;/sub&gt; + 6 HCl + 6 H&lt;sub&gt;2&lt;/sub&gt;
+
+Silicon nitride deposited by LPCVD contains up to 8% hydrogen. It also experiences strong tensile [[stress (physics)|stress]], which may crack films thicker than 200&amp;nbsp;nm. However, it has higher [[resistivity]] and dielectric strength than most insulators commonly available in microfabrication (10&lt;sup&gt;16&lt;/sup&gt; [[ohm|Ω]]·cm and 10 M[[volt|V]]/cm, respectively).
+
+Another two reactions may be used in plasma to deposit SiNH:
+
+:2 SiH&lt;sub&gt;4&lt;/sub&gt; + N&lt;sub&gt;2&lt;/sub&gt; → 2 SiNH + 3 H&lt;sub&gt;2&lt;/sub&gt;
+
+:SiH&lt;sub&gt;4&lt;/sub&gt; + NH&lt;sub&gt;3&lt;/sub&gt; → SiNH + 3 H&lt;sub&gt;2&lt;/sub&gt;
+
+These films have much less tensile stress, but worse electrical properties (resistivity 10&lt;sup&gt;6&lt;/sup&gt; to 10&lt;sup&gt;15&lt;/sup&gt; Ω·cm, and dielectric strength 1 to 5 MV/cm).&lt;ref&gt;{{cite book|page = 384| title = Semiconductor devices: physics and technology|author = Sze, S.M. | publisher = Wiley-India| year = 2008|isbn =978-81-265-1681-0}}&lt;/ref&gt;
+
+=== Metals ===
+CVD for [[tungsten]] is achieved from [[tungsten hexafluoride]] (WF&lt;sub&gt;6&lt;/sub&gt;), which may be deposited in two ways:
+
+:WF&lt;sub&gt;6&lt;/sub&gt; → W + 3 F&lt;sub&gt;2&lt;/sub&gt;
+:WF&lt;sub&gt;6&lt;/sub&gt; + 3 H&lt;sub&gt;2&lt;/sub&gt; → W + 6 HF
+
+Other metals, notably aluminium and [[copper]], can be deposited by CVD. {{As of|2010}}, commercially cost-effective CVD for copper did not exist, although volatile sources exist, such as Cu([[hexafluoroacetylacetone|hfac]])&lt;sub&gt;2&lt;/sub&gt;. Copper is typically deposited by [[electroplating]]. Aluminum can be deposited from [[triisobutylaluminium]] (TIBAL) and related [[organoaluminium compound]]s.
+
+CVD for [[molybdenum]], [[tantalum]], [[titanium]], nickel is widely used.{{Citation needed|date=October 2010}} These metals can form useful [[silicide]]s when deposited onto silicon. Mo, Ta and Ti are deposited by LPCVD, from their pentachlorides. Nickel, molybdenum, and tungsten can be deposited at low temperatures from their carbonyl precursors. In general, for an arbitrary metal ''M'', the chloride deposition reaction is as follows:
+
+:2 MCl&lt;sub&gt;5&lt;/sub&gt; + 5 H&lt;sub&gt;2&lt;/sub&gt; → 2 M + 10 HCl
+
+whereas the carbonyl decomposition reaction can happen spontaneously under thermal treatment or acoustic cavitation and is as follows:
+
+:M(CO)&lt;sub&gt;n&lt;/sub&gt; → M + n CO
+
+the decomposition of metal carbonyls is often violently precipitated by moisture or air, where oxygen reacts with the metal precursor to form metal or metal oxide along with carbon dioxide.
+
+[[Niobium(V) oxide]] layers can be produced by the thermal decomposition of [[niobium(V) ethoxide]] with the loss of [[diethyl ether]]&lt;ref&gt;{{cite journal | doi =  10.1149/1.2059247 | title =  Electrochromic Properties of Niobium Oxide Thin Films Prepared by Chemical Vapor Deposition | year =  1994 | last1 =  Maruyama | first1 =  Toshiro | journal =  Journal of the Electrochemical Society | volume =  141 | issue =  10 | pages =  2868}}&lt;/ref&gt;&lt;ref&gt;{{cite thesis | title = Atomic Layer Deposition of High Permittivity Oxides: Film Growth and In Situ Studies |  author = Rahtu, Antti | publisher = University of Helsinki | year = 2002 | isbn = 952-10-0646-3| hdl = 10138/21065 }}&lt;/ref&gt; according to the equation:
+
+:2 Nb(OC&lt;sub&gt;2&lt;/sub&gt;H&lt;sub&gt;5&lt;/sub&gt;)&lt;sub&gt;5&lt;/sub&gt; → Nb&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;5&lt;/sub&gt; + 5 C&lt;sub&gt;2&lt;/sub&gt;H&lt;sub&gt;5&lt;/sub&gt;OC&lt;sub&gt;2&lt;/sub&gt;H&lt;sub&gt;5&lt;/sub&gt;
+
+=== Graphene ===
+Many variations of CVD can be utilized to synthesize graphene. Although many advancements have been made, the processes listed below are not commercially viable yet.
+* Carbon source
+
+The most popular carbon source that is used to produce graphene is methane gas. One of the less popular choices is petroleum asphalt, notable for being inexpensive but more difficult to work with.&lt;ref name=&quot;:0&quot;&gt;{{Cite journal|title = Synthesis of three-dimensional graphene from petroleum asphalt by chemical vapor deposition|journal = Materials Letters|date = 2014-05-01|pages = 285–288|volume = 122|doi = 10.1016/j.matlet.2014.02.077|first = Zhuchen|last = Liu|first2 = Zhiqiang|last2 = Tu|first3 = Yongfeng|last3 = Li|first4 = Fan|last4 = Yang|first5 = Shuang|last5 = Han|first6 = Wang|last6 = Yang|first7 = Liqiang|last7 = Zhang|first8 = Gang|last8 = Wang|first9 = Chunming|last9 = Xu}}&lt;/ref&gt;
+
+Although methane is the most popular carbon source, hydrogen is required during the preparation process to promote carbon deposition on the substrate. If the flow ratio of methane and hydrogen are not appropriate, it will cause undesirable results. During the growth of graphene, the role of methane is to provide a carbon source, the role of hydrogen is to provide H atoms to corrode amorphous C,&lt;ref&gt;{{Cite journal|last=Park|first=Hye Jin|last2=Meyer|first2=Jannik|last3=Roth|first3=Siegmar|last4=Skákalová|first4=Viera|date=Spring 2010|title=Growth and properties of few-layer graphene prepared by chemical vapor deposition|journal=Carbon|volume=48|issue=4|pages=1088–1094|doi=10.1016/j.carbon.2009.11.030|issn=0008-6223|arxiv=0910.5841}}&lt;/ref&gt; and improve the quality of graphene. But excessive H atoms can also corrode graphene.&lt;ref&gt;{{Cite journal|last=Wei|first=Dacheng|last2=Lu|first2=Yunhao|last3=Han|first3=Cheng|last4=Niu|first4=Tianchao|last5=Chen|first5=Wei|last6=Wee|first6=Andrew Thye Shen|date=2013-10-31|title=Critical Crystal Growth of Graphene on Dielectric Substrates at Low Temperature for Electronic Devices|journal=Angewandte Chemie|volume=125|issue=52|pages=14371–14376|doi=10.1002/ange.201306086|issn=0044-8249}}&lt;/ref&gt; As a result, the integrity of the crystal lattice is destroyed, and the quality of graphene is deteriorated.&lt;ref&gt;{{Cite journal|last=Chen|first=Jianyi|last2=Guo|first2=Yunlong|last3=Wen|first3=Yugeng|last4=Huang|first4=Liping|last5=Xue|first5=Yunzhou|last6=Geng|first6=Dechao|last7=Wu|first7=Bin|last8=Luo|first8=Birong|last9=Yu|first9=Gui|date=2013-02-14|title=Graphene: Two-Stage Metal-Catalyst-Free Growth of High-Quality Polycrystalline Graphene Films on Silicon Nitride Substrates (Adv. Mater. 7/2013)|journal=Advanced Materials|volume=25|issue=7|pages=992–997|doi=10.1002/adma.201370040|issn=0935-9648}}&lt;/ref&gt; Therefore, by optimizing the flow rate of methane and hydrogen gases in the growth process, the quality of graphene can be improved.
+
+* Use of catalyst
+The use of catalyst is viable in changing the physical process of graphene production. Notable examples include iron nanoparticles, nickel foam, and gallium vapor. These catalysts can either be used in situ during graphene buildup,&lt;ref name=&quot;:0&quot; /&gt;&lt;ref name=&quot;:1&quot;&gt;{{Cite journal|title = Novel synthesis route to graphene using iron nanoparticles|journal = Journal of Materials Research|date = 2014|pages = 1522–1527|volume = 29|issue = 14|doi = 10.1557/jmr.2014.165|first = Rajen B.|last = Patel|first2 = Chi|last2 = Yu|first3 = Tsengming|last3 = Chou|first4 = Zafar|last4 = Iqbal|bibcode = 2014JMatR..29.1522P}}&lt;/ref&gt; or situated at some distance away at the deposition area.&lt;ref name=&quot;:2&quot;&gt;{{Cite journal|title = Direct synthesis of large area graphene on insulating substrate by gallium vapor-assisted chemical vapor deposition|journal = Applied Physics Letters|date = 2015|pages = 093112|volume = 106|issue = 9|doi = 10.1063/1.4914114|first = Katsuhisa|last = Murakami|first2 = Shunsuke|last2 = Tanaka|first3 = Ayaka|last3 = Hirukawa|first4 = Takaki|last4 = Hiyama|first5 = Tomoya|last5 = Kuwajima|first6 = Emi|last6 = Kano|first7 = Masaki|last7 = Takeguchi|first8 = Jun-ichi|last8 = Fujita|bibcode = 2015ApPhL.106i3112M}}&lt;/ref&gt; Some catalysts require another step to remove them from the sample material.&lt;ref name=&quot;:1&quot; /&gt;
+
+The direct growth of high-quality, large single-crystalline domains of graphene on a dielectric substrate is of vital importance for applications in electronics and optoelectronics. Combining the advantages of both catalytic CVD and the ultra-flat dielectric substrate, gaseous catalyst-assisted CVD&lt;ref&gt;{{cite journal |title=Silane-catalysed fast growth of large single-crystalline graphene on hexagonal boron nitride |journal=Nature Communications  |volume=6  |year=2015|page=6499|doi=10.1038/ncomms7499 |pmid=25757864  |pmc=4382696  |last1=Tang |first1=Shujie |last2=Wang |first2=Haomin|last3=Wang |first3=Huishan |arxiv=1503.02806|bibcode=2015NatCo...6.6499T}}&lt;/ref&gt; paves the way for synthesizing high-quality graphene for device applications while avoiding the transfer process.
+* Physical conditions
+Physical conditions such as surrounding pressure, temperature, carrier gas, and chamber material play a big role in production of graphene.
+
+Most systems use LPCVD with pressures ranging from 1 to 1500 Pa.&lt;ref name=&quot;:0&quot; /&gt;&lt;ref name=&quot;:2&quot; /&gt;&lt;ref name=&quot;:3&quot;&gt;{{Cite journal|title = CVD synthesis of nitrogen-doped graphene using urea|journal = Science China Physics, Mechanics &amp; Astronomy|date = 2015-09-05|pages = 107801|volume = 58|issue = 10|doi = 10.1007/s11433-015-5717-0|first = CanKun|last = Zhang|first2 = WeiYi|last2 = Lin|first3 = ZhiJuan|last3 = Zhao|first4 = PingPing|last4 = Zhuang|first5 = LinJie|last5 = Zhan|first6 = YingHui|last6 = Zhou|first7 = WeiWei|last7 = Cai|bibcode = 2015SCPMA..58.7801Z}}&lt;/ref&gt;&lt;ref name=&quot;:4&quot;&gt;{{Cite journal|title = Synthesis of CVD-graphene on rapidly heated copper foils|journal = Nanoscale|volume = 6|issue = 9|pages = 4728–34|doi = 10.1039/c3nr06434d|pmid = 24658264|first = Sang-Min|last = Kim|first2 = Jae-Hyun|last2 = Kim|first3 = Kwang-Seop|last3 = Kim|first4 = Yun|last4 = Hwangbo|first5 = Jong-Hyuk|last5 = Yoon|first6 = Eun-Kyu|last6 = Lee|first7 = Jaechul|last7 = Ryu|first8 = Hak-Joo|last8 = Lee|first9 = Seungmin|last9 = Cho|bibcode = 2014Nanos...6.4728K|year = 2014|url = https://semanticscholar.org/paper/c15769b1d1a448d883fce139fc1ce16e705c926a}}&lt;/ref&gt; However, some still use APCVD.&lt;ref name=&quot;:1&quot; /&gt; Low pressures are used more commonly as they help prevent unwanted reactions and produce more uniform thickness of deposition on the substrate.
+
+On the other hand, temperatures used range from 800–1050&amp;nbsp;°C.&lt;ref name=&quot;:0&quot; /&gt;&lt;ref name=&quot;:1&quot; /&gt;&lt;ref name=&quot;:2&quot; /&gt;&lt;ref name=&quot;:3&quot; /&gt;&lt;ref name=&quot;:4&quot; /&gt; High temperatures translate to an increase of the rate of reaction. Caution has to be exercised as high temperatures do pose higher danger levels in addition to greater energy costs.
+* Carrier gas
+Hydrogen gas and inert gases such as argon are flowed into the system.&lt;ref name=&quot;:0&quot; /&gt;&lt;ref name=&quot;:1&quot; /&gt;&lt;ref name=&quot;:2&quot; /&gt;&lt;ref name=&quot;:3&quot; /&gt;&lt;ref name=&quot;:4&quot; /&gt; These gases act as a carrier, enhancing surface reaction and improving reaction rate, thereby increasing deposition of graphene onto the substrate.
+* Chamber material
+Standard quartz tubing and chambers are used in CVD of graphene.&lt;ref name=&quot;:0&quot; /&gt;&lt;ref name=&quot;:1&quot; /&gt;&lt;ref name=&quot;:2&quot; /&gt;&lt;ref name=&quot;:3&quot; /&gt;&lt;ref name=&quot;:4&quot; /&gt; Quartz is chosen because it has a very high melting point and is chemically inert. In other words, quartz does not interfere with any physical or chemical reactions regardless of the conditions.
+* Methods of analysis of results
+Raman spectroscopy, X-ray spectroscopy, transmission electron microscopy (TEM), and scanning electron microscopy (SEM) are used to examine and characterize the graphene samples.&lt;ref name=&quot;:0&quot; /&gt;&lt;ref name=&quot;:1&quot; /&gt;&lt;ref name=&quot;:2&quot; /&gt;&lt;ref name=&quot;:3&quot; /&gt;&lt;ref name=&quot;:4&quot; /&gt;
+
+Raman spectroscopy is used to characterize and identify the graphene particles; X-ray spectroscopy is used to characterize chemical states; TEM is used to provide fine details regarding the internal composition of graphene; SEM is used to examine the surface and topography.
+
+Sometimes, atomic force microscopy (AFM) is used to measure local properties such as friction and magnetism.&lt;ref name=&quot;:3&quot; /&gt;&lt;ref name=&quot;:4&quot; /&gt;
+
+Cold wall CVD technique can be used to study the underlying surface science involved in graphene nucleation and growth as it allows unprecedented control of process parameters like gas flow rates, temperature and pressure as demonstrated in a recent study. The study was carried out in a home-built vertical cold wall system utilizing resistive heating by passing direct current through the substrate. It provided conclusive insight into a typical surface-mediated nucleation and growth mechanism involved in two-dimensional materials grown using catalytic CVD under conditions sought out in the semiconductor industry.&lt;ref&gt;{{cite journal|last1=Das|first1=Shantanu|last2=Drucker|first2=Jeff|title=Nucleation and growth of single layer graphene on electrodeposited Cu by cold wall chemical vapor deposition|journal=Nanotechnology|volume=28|issue=10|pages=105601|doi=10.1088/1361-6528/aa593b|pmid=28084218|bibcode=2017Nanot..28j5601D|year=2017|url=https://zenodo.org/record/895408}}&lt;/ref&gt;&lt;ref&gt;{{cite journal|last1=Das|first1=Shantanu|last2=Drucker|first2=Jeff|title=Pre-coalescence scaling of graphene island sizes|journal=Journal of Applied Physics|date=28 May 2018|volume=123|issue=20|pages=205306|doi=10.1063/1.5021341|bibcode=2018JAP...123t5306D}}&lt;/ref&gt;
+
+===Graphene nanoribbon===
+In spite of graphene's exciting electronic and thermal properties, it is unsuitable as a transistor for future digital devices, due to the absence of a bandgap between the conduction and valence bands. This makes it impossible to switch between on and off states with respect to electron flow. Scaling things down, graphene nanoribbons of less than 10&amp;nbsp;nm in width do exhibit electronic bandgaps and are therefore potential candidates for digital devices. Precise control over their dimensions, and hence electronic properties, however, represents a challenging goal, and the ribbons typically possess rough edges that are detrimental to their performance.
+
+=== Diamond ===
+[[File:Single-crystal CVD diamond disc.jpg|thumb|Free-standing single-crystal CVD diamond disc]]
+[[File:Apollo synthetic diamond.jpg|thumb|alt=A colorless faceted gem|Colorless gem cut from diamond grown by chemical vapor deposition]]
+{{See also|Synthetic diamond#Chemical vapor deposition}}
+CVD can be used to produce a [[synthetic diamond]] by creating the circumstances necessary for carbon atoms in a gas to settle on a substrate in crystalline form. CVD of diamonds has received much attention in the materials sciences because it allows many new applications that had previously been considered too expensive. CVD diamond growth typically occurs under low pressure (1–27 [[pascal (unit)|kPa]]; 0.145–3.926 [[pounds per square inch|psi]]; 7.5–203 [[Torr]])  and involves feeding varying amounts of gases into a chamber, energizing them and providing conditions for diamond growth on the substrate. The gases always include a carbon source, and typically include hydrogen as well, though the amounts used vary greatly depending on the type of diamond being grown. Energy sources include [[hot filament]], [[microwave]] power, and [[Electric arc|arc discharges]], among others. The energy source is intended to generate a plasma in which the gases are broken down and more complex chemistries occur. The actual chemical process for diamond growth is still under study and is complicated by the very wide variety of diamond growth processes used.
+
+Using CVD, films of diamond can be grown over large areas of substrate with control over the properties of the diamond produced. In the past, when high pressure high temperature (HPHT) techniques were used to produce a diamond, the result was typically very small free standing diamonds of varying sizes. With CVD diamond growth areas of greater than fifteen centimeters (six inches) diameter have been achieved and much larger areas are likely to be successfully coated with diamond in the future. Improving this process is key to enabling several important applications.
+
+The growth of diamond directly on a substrate allows the addition of many of diamond's important qualities to other materials. Since diamond has the highest [[thermal conductivity]] of any bulk material, layering diamond onto high heat producing electronics (such as optics and transistors) allows the diamond to be used as a heat sink.&lt;ref name=&quot;poly1&quot;&gt;{{cite journal|doi=10.1016/0925-9635(94)90108-2|title=Diamond protective coatings for optical components|year=1994|last1=Costello|first1=M|last2=Tossell|first2=D|last3=Reece|first3=D|last4=Brierley|first4=C|last5=Savage|first5=J|journal=Diamond and Related Materials|volume=3|issue=8|pages=1137–1141|bibcode = 1994DRM.....3.1137C }}&lt;/ref&gt;&lt;ref name=&quot;heat2&quot;&gt;{{cite journal|doi=10.1016/j.diamond.2005.05.008|title=Comparative study of thermally conductive fillers in underfill for the electronic components|year=2005|last1=Sun Lee|first1=Woong|last2=Yu|first2=Jin|journal=Diamond and Related Materials|volume=14|issue=10|pages=1647–1653|bibcode = 2005DRM....14.1647S }}&lt;/ref&gt; Diamond films are being grown on valve rings, cutting tools, and other objects that benefit from diamond's hardness and exceedingly low wear rate. In each case the diamond growth must be carefully done to achieve the necessary adhesion onto the substrate.  Diamond's very high scratch resistance and thermal conductivity, combined with a lower [[coefficient of thermal expansion]] than [[Pyrex]] glass, a [[coefficient of friction]] close to that of Teflon ([[polytetrafluoroethylene]]) and strong [[lipophilicity]] would make it a nearly ideal non-stick coating for cookware if large substrate areas could be coated economically.
+
+CVD growth allows one to control the properties of the diamond produced. In the area of diamond growth, the word &quot;diamond&quot; is used as a description of any material primarily made up of [[Orbital hybridisation#sp3|sp3-bonded]] carbon, and there are many different types of diamond included in this. By regulating the processing parameters—especially the gases introduced, but also including the pressure the system is operated under, the temperature of the diamond, and the method of generating plasma—many different materials that can be considered diamond can be made. Single crystal diamond can be made containing various [[dopant]]s.&lt;ref name=&quot;single&quot;&gt;{{cite journal|doi=10.1016/j.diamond.2003.10.017|url=https://www.researchgate.net/publication/223368741|title=Single crystal diamond for electronic applications|year=2004|last1=Isberg|first1=J|journal=Diamond and Related Materials|volume=13|issue=2|pages=320–324|bibcode = 2004DRM....13..320I }}&lt;/ref&gt; [[Synthetic diamond#Crystallinity|Polycrystalline diamond]] consisting of grain sizes from several [[nanometer]]s to several [[micrometre|micrometers]] can be grown.&lt;ref name=&quot;poly1&quot;/&gt;&lt;ref name=&quot;poly2&quot;&gt;{{cite journal|doi=10.1016/S0925-9635(01)00385-5|title=Ultrananocrystalline diamond thin films for MEMS and moving mechanical assembly devices|year=2001|last1=Krauss|first1=A|journal=Diamond and Related Materials|volume=10|issue=11|pages=1952–1961|bibcode = 2001DRM....10.1952K }}&lt;/ref&gt; Some polycrystalline diamond grains are surrounded by thin, non-diamond carbon, while others are not. These different factors affect the diamond's hardness, smoothness, conductivity, optical properties and more.
+
+==Chalcogenides==
+Commercially, [[mercury cadmium telluride]] is of continuing interest for detection of infrared radiation.  Consisting of an [[alloy]] of CdTe and HgTe, this material can be prepared from the dimethyl derivatives of the respective elements.
+
+== See also ==
+{{div col|colwidth=25em}}
+* [[Apollo Diamond]]
+* [[Atomic layer deposition]]
+* [[Bubbler cylinder]]
+* [[Carbonyl metallurgy]]
+* [[Electrostatic spray assisted vapour deposition]]
+* [[Element Six]]
+* [[Ion plating]]
+* [[Metalorganic vapour phase epitaxy]]
+* [[Virtual metrology]]
+* Researcher : [[Lisa McElwee-White]]
+{{div col end}}
+
+==References==
+{{reflist|30em}}
+
+== Further reading ==
+* {{cite book |last=Jaeger |first=Richard C. |title=Introduction to Microelectronic Fabrication |edition=2nd |year=2002 |publisher=Prentice Hall |location=Upper Saddle River |isbn=978-0-201-44494-0 |chapter=Film Deposition}}
+* {{cite book |last=Smith |first=Donald |title=Thin-Film Deposition: Principles and Practice |year=1995 |publisher=MacGraw-Hill |isbn=978-0-07-058502-7}}
+* {{cite book |last=Dobkin and Zuraw |title=Principles of Chemical Vapor Deposition |year=2003 |publisher=Kluwer |isbn=978-1-4020-1248-8}}
+* K. Okada &quot;Plasma-enhanced chemical vapor deposition of nanocrystalline diamond&quot; [https://dx.doi.org/10.1016/j.stam.2007.08.008 Sci. Technol. Adv. Mater. 8 (2007) 624] ''free-download review''
+* T. Liu, D. Raabe and S. Zaefferer &quot;A 3D tomographic EBSD analysis of a CVD diamond thin film&quot; [https://dx.doi.org/10.1088/1468-6996/9/3/035013 Sci. Technol. Adv. Mater. 9 (2008) 035013] ''free-download''
+* Christoph Wild &quot;CVD Diamond Properties and Useful Formula&quot; [http://www.diamond-materials.com/downloads/cvd_diamond_booklet.pdf CVD Diamond Booklet (2008) PDF] ''free-download''
+* Dennis W. Hess, [http://www.dtic.mil/cgi-bin/GetTRDoc?AD=ADA204709#page=74 CHEMICAL VAPOR DEPOSITION OF DIELECTRIC AND METAL FILMS]''free-download'' from Electronic Materials and Processing: Proceedings of the First Electronic Materials and Processing Congress held in conjunction with the 1988 World Materials Congress Chicago, Illinois, USA,  24–30 September 1988, Edited by Prabjit Singh (Sponsored by the Electronic Materials and Processing Division of ASM INTERNATIONAL)
+
+{{Glass science}}
+
+[[Category:Chemical processes]]
+[[Category:Coatings]]
+[[Category:Glass coating and surface modification]]
+[[Category:Industrial processes]]
+[[Category:Plasma processing]]
+[[Category:Semiconductor device fabrication]]
+[[Category:Synthetic diamond]]
+[[Category:Thin film deposition]]
+[[Category:Vacuum]]
+[[Category:Forming processes]]</text>
+      <sha1>057iqe3j9pz4es70lad3xvgtirlxpdu</sha1>
+    </revision>
+  </page>

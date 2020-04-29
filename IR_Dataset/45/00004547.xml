@@ -1,0 +1,563 @@
+  <page>
+    <title>Bash (Unix shell)</title>
+    <ns>0</ns>
+    <id>4547</id>
+    <revision>
+      <id>939287184</id>
+      <parentid>938275619</parentid>
+      <timestamp>2020-02-05T14:48:59Z</timestamp>
+      <contributor>
+        <ip>149.125.124.170</ip>
+      </contributor>
+      <comment>Removed 'fake' (i.e. 'fake' support for multi-dimensional arrays).</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{Use mdy dates|date=March 2014}}
+{{Infobox software
+| name = Bash
+| logo = Gnu-bash-logo.svg
+| screenshot = Bash screenshot.png
+| caption = Screenshot of a Bash session
+| author = [[Brian Fox (computer programmer)|Brian Fox]]
+| released = {{start date and age|1989|06|08}}
+| programming language = [[C (programming language)|C]]
+| operating system = {{Plainlist|
+* [[Unix-like]],&lt;ref&gt;{{cite web|url=ftp://ftp.cwru.edu/pub/bash/FAQ|archive-url=https://web.archive.org/web/20180901171316/ftp://ftp.cwru.edu/pub/bash/FAQ|archive-date=September 1, 2018|url-status=dead|title=Bash FAQ, version 4.14|access-date=April 9, 2016|df=mdy-all}}&lt;/ref&gt;
+* [[macOS]] (only latest [[GNU GPL#Version 2|GPLv2]] release; GPLv3 releases available through third parties
+* [[Windows]] (newer [[GNU GPL#Version 3|GPLv3+]] version)&lt;ref&gt;{{cite web|url=https://github.com/Microsoft/BashOnWindows/issues/107|title=Missing source code - GPL compliance? · Issue #107 · Microsoft/WSL|website=GitHub}}&lt;/ref&gt;&lt;ref&gt;{{cite web|title=GNU Bash|url=http://www.softpedia.com/get/System/System-Miscellaneous/GNU-Bash.shtml|website=[[Softpedia]]|publisher=SoftNews|accessdate=9 April 2016}}&lt;/ref&gt;
+ }}
+| platform = [[GNU]]
+| language = Multilingual ([[gettext]])
+| genre = [[Unix shell]], [[command language]]
+| license = [[GNU GPL#Version 3|GPLv3+]]&lt;ref name=&quot;license&quot;&gt;{{cite web | author = GNU Project | authorlink = GNU Project | title = README file | url = https://www.gnu.org/software/bash/ | quote = Bash is free software, distributed under the terms of the [GNU] General Public License as published by the Free Software Foundation, version 3 of the License (or any later version).}}&lt;/ref&gt;
+| website = {{URL|https://www.gnu.org/software/bash/}}
+}}
+
+'''GNU Bash''' or simply '''Bash''' is a [[Unix shell]] and [[command language]] written by [[Brian Fox (computer programmer)|Brian Fox]] for the [[GNU Project]] as a [[free software]] replacement for the [[Bourne shell]].&lt;ref name=&quot;GNUBSD&quot;&gt;
+{{Cite newsgroup
+  | title = GNU + BSD = ?
+  | author = [[Richard Stallman]] (forwarded with comments by Chet Ramey)
+  | date = February 10, 1988
+  | newsgroup = comp.unix.questions
+  |message-id=2362@mandrill.CWRU.Edu
+  | url=https://groups.google.com/forum/#!original/comp.unix.questions/iNjWwkyroR8/yedr9yDWSuQJ
+  | accessdate = March 22, 2011
+  | quote = For a year and a half, the GNU shell was &quot;just about done&quot;. The author made repeated promises to deliver what he had done, and never kept them. Finally I could no longer believe he would ever deliver anything. So Foundation staff member Brian Fox is now implementing an imitation of the Bourne shell.
+}}
+&lt;/ref&gt;&lt;ref&gt;
+{{Citation
+  | last = Hamilton
+  | first = Naomi
+  | title = The A-Z of Programming Languages: BASH/Bourne-Again Shell
+  | journal = Computerworld
+  | page = 2
+  | date = May 30, 2008
+  | accessdate = March 21, 2011
+  | url = http://www.computerworld.com.au/article/222764/a-z_programming_languages_bash_bourne-again_shell/?pp=2&amp;fp=16&amp;fpid=1
+  | quote = When Richard Stallman decided to create a full replacement for the then-encumbered Unix systems, he knew that he would eventually have to have replacements for all of the common utilities, especially the standard shell, and those replacements would have to have acceptable licensing.
+}}
+&lt;/ref&gt; First released in 1989,&lt;ref name=BashBeta&gt;
+{{Cite newsgroup
+  | title = Bash is in beta release!
+  | author = Brian Fox (forwarded by Leonard H. Tower Jr.)
+  | date = June 8, 1989
+  | newsgroup = gnu.announce
+  | url = https://groups.google.com/group/gnu.announce/msg/a509f48ffb298c35?hl=en
+  | accessdate = October 28, 2010 
+}}
+&lt;/ref&gt; it has been used widely as the default [[login]] shell for most [[Linux]] distributions and [[Apple Inc.|Apple's]] [[macOS Mojave]] and earlier versions. A version [[Windows Subsystem for Linux|is also available for Windows 10]].&lt;ref&gt;{{cite web|url=http://www.windowscentral.com/how-install-bash-shell-command-line-windows-10|title=How to install Bash shell command-line tool on Windows 10|date=September 28, 2016|publisher=}}&lt;/ref&gt; It is also the default user shell in [[Solaris_(operating_system)|Solaris]] 11.&lt;ref&gt;{{cite web|url=https://docs.oracle.com/cd/E23824_01/html/E24456/userenv-1.html|title=User Environment Feature Changes|date=|publisher=Oracle}}&lt;/ref&gt;
+
+Bash is a [[Command-line interpreter|command processor]] that typically runs in a [[terminal emulator|text window]] where the user types commands that cause actions. Bash can also read and execute commands from a file, called a [[shell script]]. Like all Unix shells, it supports filename [[glob (programming)|globbing]] (wildcard matching), [[Pipeline (Unix)|piping]], [[here document]]s, [[command substitution]], [[Variable (programming)|variables]], and [[control flow|control structures]] for [[Conditional (programming)|condition-testing]] and [[iteration]]. The [[Keyword (computer programming)|keywords]], [[Syntax (programming languages)|syntax]], [[Scope_(computer_science)#Dynamic_scoping|dynamically scoped]] variables and other basic features of the [[Language (computer science)|language]] are all copied from [[Bourne shell|sh]]. Other features, e.g., [[C shell#History|history]], are copied from [[C shell|csh]] and [[Korn shell|ksh]]. Bash is a [[POSIX]]-compliant shell, but with a number of extensions.
+
+The shell's name is an acronym for ''Bourne-again shell'', a [[pun]] on the name of the [[Bourne shell]] that it replaces&lt;ref&gt;[http://www.ddj.com/cpp/184404693 C Programming] by Al Stevens, [[Dr. Dobb's Journal]], July 1, 2001&lt;/ref&gt; and the notion of being &quot;[[born again]]&quot;.&lt;ref&gt;
+{{cite web
+  | author = [[Richard Stallman]]
+  | title = About the GNU Project
+  | publisher = [[Free Software Foundation]]
+  | date = November 12, 2010
+  | url = https://www.gnu.org/gnu/thegnuproject.html
+  | quote = &quot;Bourne Again Shell&quot; is a play on the name ''Bourne Shell'', which was the usual shell on Unix.
+  | accessdate = March 13, 2011
+| archiveurl= https://web.archive.org/web/20110424064815/https://www.gnu.org/gnu/thegnuproject.html| archivedate=April 24, 2011 | url-status= live}}
+&lt;/ref&gt;&lt;ref&gt;
+{{Citation
+ |last        = Gattol
+ |first       = Markus
+ |title       = Bourne-again Shell
+ |date        = March 13, 2011
+ |url         = http://www.markus-gattol.name/ws/bash.html
+ |quote       = The name is a pun on the name of the Bourne shell (sh), an early and important Unix shell written by Stephen Bourne and distributed with Version 7 Unix circa 1978, and the concept of being &quot;born again&quot;.
+ |accessdate  = March 13, 2011
+ |url-status     = dead
+ |archiveurl  = https://web.archive.org/web/20110309092607/http://www.markus-gattol.name/ws/bash.html
+ |archivedate = March 9, 2011
+ |df          = mdy-all
+}}
+&lt;/ref&gt;
+
+A [[shellshock_(software_bug)|security hole]] in Bash dating from version 1.03 (August 1989),&lt;ref name=&quot;Seclists-20141004&quot;&gt;{{cite web |last=Chazelas |first=Stephane |title=oss-sec mailing list archives |url=http://seclists.org/oss-sec/2014/q4/102 |date=4 October 2014 |work=Seclists.org |accessdate=4 October 2014}}&lt;/ref&gt; dubbed [[Shellshock (software bug)|Shellshock]], was discovered in early September 2014 and quickly led to a range of [[Attack (computing)|attacks]] across the [[Internet]].&lt;ref name=&quot;TR-20140924&quot;&gt;{{cite web |last=Leyden |first=John |title=Patch Bash NOW: 'Shell Shock' bug blasts OS X, Linux systems wide open |url=https://www.theregister.co.uk/2014/09/24/bash_shell_vuln/ |work=[[The Register]] |date=September 24, 2014 |accessdate=September 25, 2014}}&lt;/ref&gt;&lt;ref name=&quot;NYT-20140925-NP&quot;&gt;{{cite news |last=Perlroth |first=Nicole |title=Security Experts Expect ‘Shellshock’ Software Bug in Bash to Be Significant |url=https://www.nytimes.com/2014/09/26/technology/security-experts-expect-shellshock-software-bug-to-be-significant.html |date=September 25, 2014 |work=[[The New York Times]] |accessdate=September 25, 2014 }}&lt;/ref&gt;&lt;ref name=&quot;ZDN-20140929&quot;&gt;{{cite web |last=Seltzer |first=Larry |title=Shellshock makes Heartbleed look insignificant |archiveurl=https://web.archive.org/web/20160514191755/http://www.zdnet.com/article/hackers-jump-on-the-shellshock-bash-bandwagon/ |archivedate=May 14, 2016 |url=http://www.zdnet.com/shellshock-makes-heartbleed-look-insignificant-7000034143/ |date=29 September 2014 |work=[[ZDNet]]}}&lt;/ref&gt; Patches to fix the bugs were made available soon after the bugs were identified.
+
+==History== 
+[[Brian Fox (computer programmer)|Brian Fox]] began [[Computer programming|coding]] Bash on January 10, 1988&lt;ref&gt;
+{{Citation
+  | author = Brian Fox
+  | title = shell.c
+  | place =
+  | publisher = [[Free Software Foundation]]
+  | date = August 29, 1996
+  | url = http://ftp.gnu.org/gnu/bash/bash-1.14.7.tar.gz
+  | quote = Birthdate: Sunday, January 10th, 1988. Initial author: Brian Fox
+ }}
+&lt;/ref&gt; after [[Richard Stallman]] became dissatisfied with the lack of progress being made by a prior developer.&lt;ref name=GNUBSD/&gt; Stallman and the [[Free Software Foundation]] (FSF) considered a free shell that could run existing shell scripts so strategic to a completely free system built from BSD and GNU code that this was one of the few projects they funded themselves, with Fox undertaking the work as an employee of FSF.&lt;ref name=GNUBSD/&gt;&lt;ref&gt;
+{{cite web
+  | author = [[Richard Stallman]]
+  | title = About the GNU Project
+  | publisher = [[Free Software Foundation]]
+  | date = October 3, 2010
+  | url = https://www.gnu.org/gnu/thegnuproject.html
+  | accessdate = March 21, 2011
+  | quote = Free Software Foundation employees have written and maintained a number of GNU software packages. Two notable ones are the C library and the shell. … We funded development of these programs because the GNU Project was not just about tools or a development environment. Our goal was a complete operating system, and these programs were needed for that goal.
+| archiveurl= https://web.archive.org/web/20110424064815/https://www.gnu.org/gnu/thegnuproject.html| archivedate=April 24, 2011 | url-status= live}}
+&lt;/ref&gt; Fox released Bash as a beta, version .99, on June 8, 1989&lt;ref name=BashBeta/&gt; and remained the primary maintainer until sometime between mid-1992&lt;ref&gt;
+{{Cite newsgroup
+  | title = January 1993 GNU's Bulletin
+  | author = len (g...@prep.ai.mit.edu)
+  | date = April 20, 1993
+  | newsgroup = gnu.announce
+  |message-id= gnusenet930421bulletin@prep.ai.mit.edu
+  | url = https://groups.google.com/group/gnu.misc.discuss/msg/4f42c739cd7e8bd8
+  | accessdate = October 28, 2010
+}}
+&lt;/ref&gt; and mid-1994,&lt;ref name=&quot;Bourne shell grammar&quot;&gt;{{cite web|first=Chet|last=Ramey|title=Bash - the GNU shell (Reflections and Lessons Learned)|url=http://www.linuxjournal.com/article/2800#N0xa50890.0xb46380|accessdate=November 13, 2008| date=August 1, 1994|work=[[Linux Journal]]| archiveurl= https://web.archive.org/web/20081205082152/http://www.linuxjournal.com/article/2800| archivedate=December 5, 2008 | url-status= live}}&lt;/ref&gt; when he was laid off from FSF&lt;ref&gt;
+{{Citation
+  | title = Dates in your Computerworld interview
+  | author = Chet Ramey
+  | date = October 31, 2010
+  | url = https://www.scribd.com/doc/40556434/2010-10-31-Chet-Ramey-Early-Bash-Dates
+  | accessdate = October 31, 2010
+}}
+&lt;/ref&gt; and his responsibility was transitioned to another early contributor, Chet Ramey.&lt;ref&gt;
+{{Cite newsgroup
+  | title = Bash 0.99 fixes &amp; improvements
+  | author = Chet Ramey
+  | date = June 12, 1989
+  | newsgroup = gnu.bash.bug
+  |message-id=
+  | url = https://groups.google.com/group/gnu.bash.bug/msg/1fc7b688f5d44438?hl=en
+  | accessdate = November 1, 2010
+}}
+&lt;/ref&gt;&lt;ref&gt;
+{{Cite newsgroup
+  | title = Some bash-1.02 fixes
+  | author = Chet Ramey
+  | date = July 24, 1989
+  | newsgroup = gnu.bash.bug
+  |message-id=
+  | url = https://groups.google.com/group/gnu.bash.bug/msg/072a03645663caea?hl=en
+  | accessdate = October 30, 2010
+}}
+&lt;/ref&gt;&lt;ref&gt;
+{{Cite newsgroup
+| title = Availability of bash 1.05
+| author = Brian Fox
+| date = March 2, 1990
+| newsgroup = gnu.bash.bug
+|message-id=
+| url = https://groups.google.com/group/gnu.bash.bug/msg/e6112ccc8866e2f4?hl=en
+| accessdate = October 30, 2010
+}}
+&lt;/ref&gt;
+
+Since then, Bash has become by far the most popular shell among users of Linux, becoming the default interactive shell on that operating system's various distributions&lt;ref&gt;
+{{cite book
+| title = CompTIA Linux+ Powered by Linux Professional Institute Study Guide: Exam LX0-103 and Exam LX0-104
+| edition = 3rd
+| publisher = John Wiley &amp; Sons, Inc.
+| date = April 2015
+| isbn = 978-1-119-02122-3
+| last = Bresnahan
+| first = Christine
+| last2 = Blum
+| first2 = Richard
+| url = https://books.google.com/books?id=2P3zBgAAQBAJ&amp;pg=PA5&amp;dq=%22most+popular%22+linux+shell&amp;hl=en&amp;sa=X&amp;ved=0ahUKEwiDhpnX4JPNAhWCKGMKHQCmCoEQ6AEIRjAH#v=onepage&amp;q=%22most%20popular%22%20linux%20shell&amp;f=false
+| quote = In Linux, most users run bash because it is the most popular shell.
+| page = 5
+| accessdate = June 6, 2016
+}}&lt;/ref&gt;&lt;ref&gt;
+{{cite book
+| title = Mastering Linux
+| publisher = John Wiley &amp; Sons, Inc.
+| date = February 2006
+| isbn = 978-0-7821-5277-7
+| last = Danesh
+| first = Arman
+| last2 = Jang
+| first2 = Michael
+| url = https://books.google.com/books?id=tIjrVYbZmUAC&amp;pg=PA363&amp;dq=bash+most+popular+unix+shell&amp;hl=en&amp;sa=X&amp;ved=0ahUKEwjnipq_3JPNAhUH52MKHUD-DA04ChDoAQgpMAA#v=onepage&amp;q=bash%20most%20popular%20unix%20shell&amp;f=false
+| quote = The Bourne Again Shell (bash) is the most common shell installed with Linux distributions.
+| page = 363
+| accessdate = June 6, 2016
+}}&lt;/ref&gt; (although [[Almquist shell]] may be the default scripting shell) and on Apple's macOS releases before [[MacOS Catalina|Catalina]] in October 2019.&lt;ref&gt;
+{{Cite book
+| title = Beginning Shell Scripting
+| publisher = John Wiley &amp; Sons, Inc.
+| date = April 2005
+| isbn = 978-0-7645-9791-6
+| last = Foster-Johnson
+| first = Eric
+| last2 = Welch
+| first2 = John C.
+| last3 = Anderson
+| first3 = Micah
+| url = https://books.google.com/books?id=dwIRERUpQPEC&amp;pg=PA6&amp;dq=bash+most+popular+unix+shell&amp;hl=en&amp;sa=X&amp;ved=0ahUKEwi_3fnR2pPNAhUX3GMKHTEdAZoQ6AEIQTAF#v=onepage&amp;q=bash%20most%20popular%20unix%20shell&amp;f=false
+| quote = Bash is by far the most popular shell and forms the default shell on Linux and Mac OSX systems.
+| page = 6
+| accessdate = June 6, 2016
+}}&lt;/ref&gt;&lt;ref name=&quot;zsh1&quot;&gt;{{cite web|url=https://support.apple.com/en-us/HT208050|title=Use zsh as the default shell on your Mac - Apple Support|accessdate=1 July 2019}}&lt;/ref&gt;&lt;ref name=&quot;zsh2&quot;&gt;{{Cite web|url=https://www.theverge.com/2019/6/4/18651872/apple-macos-catalina-zsh-bash-shell-replacement-features|title=Apple replaces bash with zsh as the default shell in macOS Catalina|last=Warren|first=Tom|date=June 4, 2019|website=The Verge|access-date=June 13, 2019}}&lt;/ref&gt; Bash has also been ported to [[Microsoft Windows]] and distributed with [[Cygwin]] and [[MinGW]], to [[DOS]] by the [[DJGPP]] project, to [[Novell NetWare]] and to [[Android (operating system)|Android]] via various terminal emulation applications.
+
+In September 2014, Stéphane Chazelas, a Unix/Linux specialist,&lt;ref&gt;{{cite news |last1=Juliana |first1=Cino |title=Linux bash exit status and how to set exit status in bash - Techolac |url=https://www.techolac.com/linux/linux-bash-exit-status-and-how-to-set-exit-status-in-bash/ |accessdate=21 June 2019 |date=10 June 2017}}&lt;/ref&gt; discovered a [[security bug]] in the program. The bug, first disclosed on September 24, was named [[Shellshock (software bug)|Shellshock]] and assigned the numbers [http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6271 CVE-2014-6271], CVE-2014-6277&lt;ref&gt;{{cite web|url=https://cve.mitre.org/cgi-bin/cvename.cgi?name=2014-6277|title=CVE-2014-6277|website=cve.mitre.org}}&lt;/ref&gt; and [http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-7169 CVE-2014-7169]. The bug was regarded as severe, since [[Common Gateway Interface|CGI]] scripts using Bash could be vulnerable, enabling [[arbitrary code execution]]. The bug was related to how Bash passes function definitions to subshells through [[environment variable]]s.&lt;ref&gt;{{Cite web
+| author = Huzaifa Sidhpurwala
+| title = Bash specially-crafted environment variables code injection attack
+| publisher = [[Red Hat]]
+| url = https://securityblog.redhat.com/2014/09/24/bash-specially-crafted-environment-variables-code-injection-attack/
+| date = 2014-09-24
+}}&lt;/ref&gt;
+
+==Features==
+The Bash [[command (computing)|command]] syntax is a [[superset]] of the Bourne shell command syntax. Bash supports [[brace expansion]], [[command line completion]] (Programmable Completion),&lt;ref&gt;https://www.gnu.org/software/bash/manual/bash.html#Programmable-Completion&lt;/ref&gt; basic debugging&lt;ref&gt;{{cite web|url=http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_02_03.html|title=Debugging Bash scripts|website=tldp.org}}&lt;/ref&gt; and [[Signal (IPC)|signal handling]] (using &lt;code&gt;trap&lt;/code&gt;) since bash 2.05a&lt;ref&gt;https://wiki-dev.bash-hackers.org/scripting/bashchanges&lt;/ref&gt; among other features. Bash can execute the vast majority of Bourne shell scripts without modification, with the exception of Bourne shell scripts stumbling into fringe syntax behavior interpreted differently in Bash or attempting to run a system command matching a newer Bash builtin, etc. Bash command syntax includes ideas drawn from the [[Korn shell]] (ksh) and the [[C shell]] (csh) such as command line editing, [[command history]] (&lt;code&gt;history&lt;/code&gt; command),&lt;ref&gt;https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html#Bash-History-Builtins&lt;/ref&gt; the directory stack, the &lt;code&gt;$RANDOM&lt;/code&gt; and &lt;code&gt;$PPID&lt;/code&gt; variables, and POSIX [[command substitution]] syntax &lt;code&gt;$(…)&lt;/code&gt;.
+
+When a user presses the [[tab key]] within an interactive command-shell, Bash automatically uses [[command line completion]], since beta version 2.04,&lt;ref&gt;{{cite web|url=http://www.caliban.org/bash/index.shtml|title=Working more productively with bash 2.x/3.x|website=www.caliban.org}}&lt;/ref&gt; to match partly typed program names, filenames and variable names. The Bash command-line completion system is very flexible and customizable, and is often packaged with functions that complete arguments and filenames for specific programs and tasks.
+
+Bash's syntax has many extensions lacking in the Bourne shell. Bash can perform integer calculations (&quot;arithmetic evaluation&quot;) without spawning external processes. It uses the &lt;code&gt;((…))&lt;/code&gt; command and the &lt;code&gt;$((…))&lt;/code&gt; variable syntax for this purpose. Its syntax simplifies [[redirection (computing)|I/O redirection]]. For example, it can redirect [[standard out]]put (stdout) and [[Standard error stream|standard error]] (stderr) at the same time using the &lt;code&gt;&amp;&gt;&lt;/code&gt; operator. This is simpler to type than the Bourne shell equivalent '&lt;code&gt;command &gt; file 2&gt;&amp;1&lt;/code&gt;'. Bash supports [[process substitution]] using the &lt;code&gt;&lt;(command)&lt;/code&gt; and &lt;code&gt;&gt;(command)&lt;/code&gt;syntax, which substitutes the output of (or input to) a command where a filename is normally used. (This is implemented through ''/proc/fd/'' unnamed pipes on systems that support that, or via temporary [[named pipe]]s where necessary).
+
+When using the 'function' keyword, Bash function declarations are not compatible with Bourne/Korn/POSIX scripts (the Korn shell has the same problem when using 'function'), but Bash accepts the same function declaration syntax as the Bourne and Korn shells, and is POSIX-conformant. Because of these and other differences, Bash shell scripts are rarely runnable under the Bourne or Korn shell interpreters unless deliberately written with that compatibility in mind, which is becoming less common as Linux becomes more widespread. But in POSIX mode, Bash conforms with POSIX more closely.&lt;ref name=&quot;GNUBASHREF&quot;&gt;
+{{Citation
+  | title = The GNU Bash Reference Manual, for Bash, Version 4.1
+  | date = December 23, 2009
+  | chapter = 6.11 Bash POSIX Mode
+  | chapterurl = https://www.gnu.org/software/bash/manual/html_node/Bash-POSIX-Mode.html
+  | accessdate = October 26, 2010
+  | url = https://www.gnu.org/software/bash/manual/html_node/index.html
+| archiveurl= https://web.archive.org/web/20101203065400/https://www.gnu.org/software/bash/manual/html_node/index.html| archivedate= December 3, 2010 | url-status= live}}
+&lt;/ref&gt;
+
+Bash supports [[here document]]s. Since version 2.05b Bash can redirect [[Stdin|standard input]] (stdin) from a &quot;here string&quot; using the &lt;code&gt;&lt;&lt;&lt;&lt;/code&gt; operator.
+
+Bash 3.0 supports in-process [[regular expression]] matching using a syntax reminiscent of [[Perl]].&lt;ref&gt;{{Cite web|url=http://www.tldp.org/LDP/abs/html/bashver3.html#BASH3REF|title=Advanced Bash-Scripting Guide|last=|first=|date=|website=www.tldp.org|at=Section 37.2 (Bash, version 3)|access-date=2017-03-05}}&lt;/ref&gt;&lt;ref&gt;The syntax matches that shown on the &lt;code&gt;[http://www.tin.org/bin/man.cgi?section=7&amp;topic=regex regex(7)]&lt;/code&gt; [[man page]].&lt;/ref&gt;
+
+In February 2009,&lt;ref&gt;{{cite web|url=http://tldp.org/LDP/abs/html/bashver4.html|title=Bash, version 4|website=tldp.org}}&lt;/ref&gt; Bash 4.0 introduced support for [[associative arrays]].&lt;ref name=GNUBASHREF/&gt;&lt;ref&gt;&quot;The shell provides associative array variables, with the appropriate support to create, delete, assign values to, and expand them.&quot; http://tiswww.case.edu/php/chet/bash/NEWS&lt;/ref&gt; Associative array indices are strings, in a manner similar to [[AWK]] or [[Tcl]].  Numeric and multidimensional indices are treated as strings. Bash 4.x has not been integrated in newer version of MacOS due to license restrictions.&lt;ref&gt;{{cite web|url=https://apple.stackexchange.com/questions/193411/update-bash-to-version-4-0-on-osx|title=macos - Update bash to version 4.0 on OSX|website=Ask Different}}&lt;/ref&gt; Associative array example:&lt;ref&gt;{{cite web|url=https://www.gnu.org/software/bash/manual/html_node/Arrays.html|title=Arrays (Bash Reference Manual)|website=www.gnu.org}}&lt;/ref&gt;
+
+&lt;source lang=&quot;console&quot;&gt;
+$ declare -A aa        # declare an associative array 'aa' faking a bi-dimensional indexed array
+$ i=1; j=2             # initialize some indices
+$ aa[$i,$j]=5          # associate value &quot;5&quot; to key &quot;$i,$j&quot; (i.e. the string &quot;1,2&quot;)
+$ echo ${aa[$i,$j]}    # print the stored value at key &quot;$i,$j&quot;
+5
+&lt;/source&gt;
+
+
+===Brace expansion===
+Brace expansion, also called alternation, is a feature copied from the [[C shell]]. It generates a set of alternative combinations. Generated results need not exist as files. The results of each expanded string are not sorted and left to right order is preserved:
+
+&lt;source lang=&quot;console&quot;&gt;
+$ echo a{p,c,d,b}e
+ape ace ade abe
+$ echo {a,b,c}{d,e,f}
+ad ae af bd be bf cd ce cf
+&lt;/source&gt;
+Users should not use brace expansions in portable shell scripts, because the [[Bourne shell]] does not produce the same output.
+
+&lt;source lang=&quot;console&quot;&gt;
+$ # A traditional shell does not produce the same output
+$ /bin/sh -c 'echo a{p,c,d,b}e'
+a{p,c,d,b}e
+&lt;/source&gt;
+
+When brace expansion is combined with wildcards, the braces are expanded first, and then the resulting wildcards are substituted normally. Hence, a listing of JPEG and PNG images in the current directory could be obtained using:
+
+&lt;source lang=&quot;bash&quot;&gt;
+ls *.{jpg,jpeg,png}    # expands to *.jpg *.jpeg *.png - after which,
+                       # the wildcards are processed
+echo *.{png,jp{e,}g}   # echo just show the expansions -
+                       # and braces in braces are possible.
+&lt;/source&gt;
+
+In addition to alternation, brace expansion can be used for sequential ranges between two integers or characters separated by double dots. Newer versions of Bash allow a third integer to specify the increment.
+
+&lt;source lang=&quot;console&quot;&gt;
+$ echo {1..10}
+1 2 3 4 5 6 7 8 9 10
+$ echo file{1..4}.txt
+file1.txt file2.txt file3.txt file4.txt
+$ echo {a..e}
+a b c d e
+$ echo {1..10..3}
+1 4 7 10
+$ echo {a..j..3}
+a d g j
+&lt;/source&gt;
+
+When brace expansion is combined with variable expansion the variable expansion is performed ''after'' the brace expansion, which in some cases may necessitate the use of the &lt;code&gt;eval&lt;/code&gt; built-in, thus:
+
+&lt;source lang=&quot;console&quot;&gt;
+$ start=1; end=10
+$ echo {$start..$end}  # fails to expand due to the evaluation order
+{1..10}
+$ eval echo {$start..$end} # variable expansion occurs then resulting string is evaluated
+1 2 3 4 5 6 7 8 9 10
+&lt;/source&gt;
+
+===Startup scripts===
+
+{{Section howto|date=January 2019}}
+
+When Bash starts, it executes the commands in a variety of [[Hidden file and hidden directory#Unix and Unix-like environments|dot files]]. Though similar to Bash shell script commands, which have execute permission enabled and an [[interpreter directive]] like &lt;code&gt;#!/bin/bash&lt;/code&gt;, the initialization files used by Bash require neither.
+
+====Execution order of startup files====
+&lt;!-- A little margin for readability --&gt;
+&lt;div style=&quot;margin: 1.5em 3em&quot;&gt;
+
+=====When started as an interactive login shell=====
+Bash reads and executes &lt;code&gt;/etc/profile&lt;/code&gt; (if it exists). (Often this file calls &lt;code&gt;/etc/bash.bashrc&lt;/code&gt;.)
+
+After reading that file, it looks for &lt;code&gt;~/.bash_profile&lt;/code&gt;, &lt;code&gt;~/.bash_login&lt;/code&gt;, and &lt;code&gt;~/.profile&lt;/code&gt; ''in that order'', and reads and executes the first one that exists and is readable.
+
+=====When a login shell exits=====
+Bash reads and executes &lt;code&gt;~/.bash_logout&lt;/code&gt; (if it exists).
+
+=====When started as an interactive shell (but not a login shell)=====
+Bash reads and executes &lt;code&gt;/etc/bash.bashrc&lt;/code&gt; and then &lt;code&gt;~/.bashrc&lt;/code&gt; (if it exists). This may be inhibited by using the &lt;code&gt;--norc&lt;/code&gt; option. The &lt;code&gt;--rcfile file&lt;/code&gt; option forces Bash to read and execute commands from &lt;code&gt;file&lt;/code&gt; instead of &lt;code&gt;~/.bashrc&lt;/code&gt;.
+&lt;/div&gt;
+
+====Comparison with the Bourne shell and csh startup sequences====
+Elements of Bash derive from the [[Bourne shell]] and [[C shell|csh]]. These allow limited startup file sharing with the Bourne shell and provide some startup features familiar to csh users.
+
+&lt;!-- A little margin for readability --&gt;
+&lt;div style=&quot;margin: 1.5em 3em&quot;&gt;
+
+=====Setting inheritable environment variables=====
+The Bourne shell uses the &lt;code&gt;~/.profile&lt;/code&gt; at login to set environment variables that subprocesses then inherit. Bash can use the &lt;code&gt;~/.profile&lt;/code&gt; in a compatible way, by executing it explicitly from the Bash-specific &lt;code&gt;~/.bash_profile&lt;/code&gt; or &lt;code&gt;~/.bash_login&lt;/code&gt; with the line below. Bash-specific syntax can be kept out of the &lt;code&gt;~/.profile&lt;/code&gt; to keep the latter compatible with the Bourne shell.
+&lt;source lang=&quot;bash&quot;&gt;. ~/.profile&lt;/source&gt;
+
+=====Aliases and functions=====
+These two facilities, [[alias (command)|aliases]] from ''csh'' and the more general functions that largely supersede them from Bourne shell, were not typically inheritable from the login shell, and had to be redefined in each subshell spawned from the login shell. Although there is an &lt;code&gt;ENV&lt;/code&gt; environment variable that could be applied to the problem, both ''csh'' and Bash support per-subshell startup files that address it directly. In Bash, the &lt;code&gt;~/.bashrc&lt;/code&gt; is called for interactive subshells. If user-defined functions from the &lt;code&gt;~/.bashrc&lt;/code&gt; are desired in the login shell as well, the &lt;code&gt;~/.bash_login&lt;/code&gt; can include the line below after any setting up of environment variables:
+&lt;source lang=&quot;bash&quot;&gt;. ~/.bashrc&lt;/source&gt;
+
+=====Commands performed only at login and logout=====
+The ''csh'' supports a &lt;code&gt;~/.login&lt;/code&gt; file for purposes of tasks performed only during initial login, such as displaying system load, disk status, whether email has come in, logging the login time, etc. The Bourne shell can emulate this in the &lt;code&gt;~/.profile&lt;/code&gt;, but does not predefine a file name. To achieve similar semantics to the csh model, the &lt;code&gt;~/.bash_profile&lt;/code&gt; can contain the line below, after the environment setup and function setup:
+&lt;source lang=&quot;bash&quot;&gt;. ~/.bash_login&lt;/source&gt;
+Likewise, the ''csh'' has a &lt;code&gt;~/.logout&lt;/code&gt; file run only when the login shell exits. The Bash equivalent is &lt;code&gt;~/.bash_logout&lt;/code&gt;, and requires no special setup. In the Bourne shell, the [[Trap_(computing)|&lt;code&gt;trap&lt;/code&gt;]] built-in can be used to achieve a similar effect.
+&lt;/div&gt;
+
+=====Legacy-compatible Bash startup example=====
+The skeleton &lt;code&gt;~/.bash_profile&lt;/code&gt; below is compatible with the Bourne shell and gives semantics similar to csh for the &lt;code&gt;~/.bashrc&lt;/code&gt; and &lt;code&gt;~/.bash_login&lt;/code&gt;. The &lt;code&gt;[ -r ''filename'' ]&lt;/code&gt; are tests to see if the ''filename'' exists and is readable, simply skipping the part after the &lt;code&gt;&amp;&amp;&lt;/code&gt; if it is not.
+
+&lt;source lang=&quot;bash&quot;&gt;
+[ -r ~/.profile ] &amp;&amp; . ~/.profile             # set up environment, once, Bourne-sh syntax only
+if [ -n &quot;$PS1&quot; ] ; then                       # are we interactive?
+   [ -r ~/.bashrc     ] &amp;&amp; . ~/.bashrc        # tty/prompt/function setup for interactive shells
+   [ -r ~/.bash_login ] &amp;&amp; . ~/.bash_login    # any at-login tasks for login shell only
+fi                                            # End of &quot;if&quot; block
+&lt;/source&gt;
+
+====Operating system issues in Bash startup====
+Some versions of [[Unix]] and [[Linux]] contain Bash system startup scripts, generally under the &lt;code&gt;/etc&lt;/code&gt; directories. Bash calls these as part of its standard initialization, but other startup files can read them in a different order than the documented Bash startup sequence. The default content of the root user's files may also have issues, as well as the skeleton files the system provides to new user accounts upon setup. The startup scripts that launch the [[X window system]] may also do surprising things with the user's Bash startup scripts in an attempt to set up user-environment variables before launching the [[window manager]]. These issues can often be addressed using a &lt;code&gt;~/.xsession&lt;/code&gt; or &lt;code&gt;~/.xprofile&lt;/code&gt; file to read the &lt;code&gt;~/.profile&lt;/code&gt; — which provides the environment variables that Bash shell windows spawned from the window manager need, such as [[xterm]] or [[Gnome Terminal]].
+
+===Portability===
+Invoking Bash with the &lt;code&gt;--posix&lt;/code&gt; option or stating &lt;code&gt;set -o posix&lt;/code&gt; in a script causes Bash to conform very closely to the [[Posix#POSIX.2|POSIX 1003.2 standard]].&lt;ref name=tldp /&gt;
+Bash shell scripts intended for [[portability (computer science)|portability]] should at least take into account the Bourne shell it intends to replace. Bash has certain features that the traditional Bourne shell lacks. They include:&lt;ref name=tldp&gt;{{cite web|author=Mendel Cooper|title=Portability Issues|url=http://tldp.org/LDP/abs/html/portabilityissues.html|work=The Linux Documentation Project|publisher=ibiblio.org}}&lt;/ref&gt;
+
+* Certain extended invocation options
+* Command substitution using $( ) notation (this feature is part of the POSIX 1003.2 standard though)
+* Brace expansion
+* Certain array operations, and associative arrays
+* The double brackets extended test construct
+* The double-parentheses arithmetic-evaluation construct
+* Certain string-manipulation operations
+* Process substitution
+* A Regular Expression matching operator
+* Bash-specific builtins
+* [[Coprocess]]es
+
+A &quot;bashism&quot; is a portion of bash code that does not run properly on other Unix shells.&lt;ref&gt;{{cite web|url=https://linux.die.net/man/1/checkbashisms|title=checkbashisms(1) - Linux man page|website=linux.die.net}}&lt;/ref&gt;
+
+===Keyboard shortcuts===
+{{Main article|GNU Readline}}
+Bash uses readline to provide keyboard shortcuts for command line editing using the default ([[Emacs]]) key bindings. [[Vi-binding]]s can be enabled by running &lt;code&gt;set -o vi&lt;/code&gt;.&lt;ref&gt;{{cite web|url=http://www.hypexr.org/bash_tutorial.php#emacs |title=BASH Help - A Bash Tutorial |publisher=Hypexr.org |date=October 5, 2012 |accessdate=July 21, 2013}}&lt;/ref&gt;
+
+===Process management===
+The Bash shell has two modes of execution for commands: [[batch (Unix) |batch]], and concurrent mode.
+
+To execute commands in batch (i.e., in sequence) they must be separated by the character &quot;;&quot;, or on separate lines:
+
+&lt;source lang=&quot;bash&quot;&gt;
+command1; command2
+&lt;/source&gt;
+
+in this example, when command1 is finished, command2 is executed.
+
+A [[background execution]] of command1 can occur using (symbol &amp;) at the end of an execution command, and process will be executed in background returning immediately control to the shell and allowing continued execution of commands.
+&lt;source lang=&quot;bash&quot;&gt;command1 &amp;&lt;/source&gt;
+
+Or to have a concurrent execution of two command1 and command2, they must be executed in the Bash shell in the following way:
+
+&lt;source lang=&quot;bash&quot;&gt;
+command1 &amp; command2
+&lt;/source&gt;
+
+In this case command1 is executed in the background ''&amp;'' symbol, returning immediately control to the shell that executes command2 in the foreground.
+
+A process can be stopped and returned control to bash by typing {{Key press|Ctrl|z}} while the process is running in the foreground.&lt;ref&gt;{{cite web|url=https://www.gnu.org/software/bash/manual/bash.html#index-background|title=Bash Reference Manual|website=www.gnu.org}}&lt;/ref&gt;
+
+A list of all processes, both in the background and stopped, can be achieved by running &lt;code&gt;jobs&lt;/code&gt;:
+&lt;source lang=&quot;console&quot;&gt;
+$ jobs
+[1]-  Running                  command1 &amp;
+[2]+  Stopped                  command2
+&lt;/source&gt;
+
+In the output, the number in brackets refers to the job id. The plus sign signifies the default process for &lt;code&gt;bg&lt;/code&gt; and &lt;code&gt;fg&lt;/code&gt;. The text &quot;Running&quot; and &quot;Stopped&quot; refer to the [[Process state]]. The last string is the command that started the process. 
+
+The state of a process can be changed using various commands. The &lt;code&gt;fg&lt;/code&gt; command brings a process to the foreground, while the &lt;code&gt;bg&lt;/code&gt; sets a stopped process running in the background. &lt;code&gt;bg&lt;/code&gt; and &lt;code&gt;fg&lt;/code&gt; can take a job id as their first argument, to specify the process to act on. Without one, they use the default process, identified by a plus sign in the output of &lt;code&gt;jobs&lt;/code&gt;. The &lt;code&gt;[[Kill_(command)|kill]]&lt;/code&gt; command can be used to end a process prematurely, by sending it a [[Signal (IPC)|signal]]. The job id must be specified after a percent sign:
+
+&lt;source lang=&quot;bash&quot;&gt;
+kill -s SIGKILL %1 or kill -9 %1
+&lt;/source&gt;
+
+===Conditional execution===
+Bash supplies &quot;conditional execution&quot; command separators that make execution of a command contingent on the [[Exit status|exit code]] set by a precedent command. For example:
+
+&lt;source lang=&quot;bash&quot;&gt;
+cd &quot;$SOMEWHERE&quot; &amp;&amp; ./do_something || echo &quot;An error occurred&quot; &gt;&amp;2
+&lt;/source&gt;
+
+Where ''./do_something'' is only executed if the ''cd'' (change directory) command was &quot;successful&quot; (returned an exit status of zero) and the ''echo'' command would only be executed if either the ''cd'' or the ''./do_something'' command return an &quot;error&quot; (non-zero exit status).
+
+For all commands the exit status is stored in the special variable &lt;code&gt;$?&lt;/code&gt;. Bash also supports {{code|2=bash|if ...;then ...;else ...;fi}} and {{code|2=bash|case $VARIABLE in $pattern)...;;$other_pattern)...;; esac}} forms of conditional command evaluation.
+
+===Bug reporting===
+{{Redirect|bashbug|the widely reported September 2014 bug found in Bash|Shellshock (software bug)}}
+An external command called ''bashbug'' reports Bash shell bugs. When the command is invoked, it brings up the user's default editor with a form to fill in. The form is mailed to the Bash maintainers (or optionally to other email addresses).&lt;ref&gt;
+[http://linux.die.net/man/1/bashbug bashbug(1)], die.net
+&lt;/ref&gt;&lt;ref&gt;
+[https://developer.apple.com/library/prerelease/mac/documentation/Darwin/Reference/ManPages/man1/bashbug.1.html &quot;Linux / Unix Command: bashbug&quot;], apple.com
+&lt;/ref&gt;
+
+===Programmable completion===
+Bash programmable completion, &lt;code&gt;complete&lt;/code&gt; and &lt;code&gt;compgen&lt;/code&gt; commands&lt;ref&gt;https://tiswww.case.edu/php/chet/bash/bashref.html#Programmable-Completion&lt;/ref&gt; have been available since the beta version of 2.04&lt;ref&gt;http://www.caliban.org/bash/index.shtml&lt;/ref&gt; in 2000&lt;ref&gt;https://ftp.swin.edu.au/gnu/bash/&lt;/ref&gt; and offers at least Pathname and filename completion.
+
+==Release History==
+{| class=&quot;wikitable&quot;
+|-
+! VERSION
+! RELEASE DATE
+|-
+| bash-5.0 
+| 2019-01-07
+|-
+| bash-5.0-rc1 
+| 2018-12-20
+|-
+| bash-5.0-beta2 
+| 2018-11-28
+|-
+| bash-5.0-beta 
+| 2018-09-17
+|-
+| bash-5.0-alpha 
+| 2018-05-22
+|-
+| bash-4.4 
+| 2016-09-15
+|-
+| bash-4.4-rc2 
+| 2016-08-22
+|-
+| bash-4.4-rc1 
+| 2016-02-24
+|-
+| bash-4.4-beta2 
+| 2016-07-11
+|-
+| bash-4.4-beta 
+| 2015-10-12
+|-
+| bash-4.3 
+| 2014-02-26
+|-
+| bash-4.2 
+| 2011-02-13
+|-
+| bash-4.1 
+| 2009-12-31
+|-
+| bash-4.0 
+| 2009-02-20
+|-
+| bash-4.0-rc1 
+| 2009-01-12
+|-
+| bash-3.2 
+| 2006-10-11
+|-
+| bash-3.1 
+| 2005-12-08
+|-
+| bash-3.0 
+| 2004-08-03
+|-
+| bash-2.05b 
+| 2002-07-17
+|-
+| bash-2.05a 
+| 2001-11-16
+|-
+| bash-2.05 
+| 2001-04-09
+|-
+| bash-2.04 
+| 2000-03-21
+|-
+| bash-2.03 
+| 1999-02-19
+|-
+| bash-2.02 
+| 1998-04-18
+|-
+| bash-2.01 
+| 1997-06-05
+|-
+| bash-2.0 
+| 1996-12-31
+|}
+
+==See also==
+{{Portal|Free and open-source software}}
+* [[Comparison of command shells]]
+
+==References==
+{{Reflist|30em}}
+
+==External links==
+{{Commons category|GNU Bash|Bash}}
+{{Wikibooks|Bash Shell Scripting}}
+* {{official website|https://www.gnu.org/software/bash/}}
+* [http://www.computerworld.com.au/article/222764/ 2008 interview with GNU Bash's maintainer, Chet Ramey]
+* [https://github.com/lanl/MPI-Bash MPI-Bash]: A [[Message_Passing_Interface|MPI]]-enabled plugin for the Bourne-Again Shell by [[Scott Pakin]]
+* [https://wiki.bash-hackers.org/scripting/bashchanges List of bash changes]
+
+{{GNU}}
+{{Unix shells}}{{Programming languages}}
+
+{{DEFAULTSORT:Bash (Unix Shell)}}
+[[Category:1989 software]]
+[[Category:Cross-platform free software]]
+[[Category:Domain-specific programming languages]]
+[[Category:Free software programmed in C]]
+[[Category:GNU Project software]]
+[[Category:Scripting languages]]
+[[Category:Text-oriented programming languages]]
+[[Category:Unix shells]]</text>
+      <sha1>aknmmvcu839w9qssxx12geoqsadnq0d</sha1>
+    </revision>
+  </page>

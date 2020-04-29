@@ -1,0 +1,281 @@
+  <page>
+    <title>Blitz BASIC</title>
+    <ns>0</ns>
+    <id>4840</id>
+    <revision>
+      <id>938558951</id>
+      <parentid>922968576</parentid>
+      <timestamp>2020-01-31T23:08:23Z</timestamp>
+      <contributor>
+        <username>A876</username>
+        <id>1234701</id>
+      </contributor>
+      <comment>+current ext links. updated descriptions. mention Monkey X. +commas.</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{Use dmy dates|date=January 2016}}
+{{Infobox software
+| title                  = BlitzBasic
+| name                   = BlitzBasic &lt;!--space in name needed to match other template names--&gt;
+| logo                   = BlitzBasicLogo.gif
+| logo size              = 300px
+| logo caption           = 
+| screenshot             = &lt;!-- [[File: ]] --&gt;
+| caption                = 
+| collapsible            = 
+| author                 = 
+| developer              = [[Blitz Research]].
+| released               = &lt;!-- {{Start date|YYYY|MM|DD|df=yes/no}} --&gt;
+| discontinued           = Yes
+| latest release version = 
+| latest release date    = &lt;!-- {{Start date and age|YYYY|MM|DD|df=yes/no}} --&gt;
+| latest preview version = 
+| latest preview date    = &lt;!-- {{Start date and age|YYYY|MM|DD|df=yes/no}} --&gt;
+| programming language   = Compiled to [[C++]], but the languages are dialects of [[BASIC]]
+| operating system       = [[Microsoft Windows]]
+| platform               = [[Microsoft Windows]]
+| size                   = 
+| language               = [[English language|English]]
+| genre                  = [[Game creation system]]
+| license                = [[zlib license]]
+| alexa                  = 
+| website                = {{URL|www.blitzbasic.com}}{{dead link|date=January 2018}}
+}}
+
+'''Blitz BASIC''' is the [[programming language]] dialect that was interpreted by the first Blitz compilers, devised by [[New Zealand]]-based developer Mark Sibly. Being derived from [[BASIC]], Blitz syntax was designed to be easy to pick up for beginners first learning to program. The languages are game-programming oriented but are often found general-purpose enough to be used for most types of application. The Blitz language evolved as new products were released, with recent incarnations offering support for more advanced programming techniques such as [[object-oriented programming|object-orientation]] and [[multithreading (software)|multithreading]]. This led to the languages losing their BASIC moniker in later years.&lt;ref&gt;{{cite web|url=http://www.blitzbasic.com|title=The Official Blitz Website|website=www.blitzbasic.com|url-status=dead|archive-url=https://web.archive.org/web/20170603205639/http://www.blitzbasic.com/|archive-date=3 June 2016|df=dmy-all}}&lt;/ref&gt;
+
+==History==
+
+The first iteration of the Blitz language was created for the [[Amiga]] platform and published by the [[Australia]]n firm Memory and Storage Technology. Returning to [[New Zealand]], Blitz BASIC 2 was published several years later by Acid Software (a local Amiga game publisher). Since then, Blitz compilers have been released on several [[computing platform|platforms]]. Following the demise of the Amiga as a commercially viable platform, the Blitz BASIC 2 source code was released to the Amiga community. Development continues to this day under the name AmiBlitz.{{citation needed|date=October 2019}}
+
+===BlitzBasic===
+[[Idigicon]] published BlitzBasic for [[Microsoft Windows]] in October 2000. The language included a built-in API for performing basic 2D graphics and audio operations. Following the release of Blitz3D, BlitzBasic is often synonymously referred to as Blitz2D.
+
+Recognition of BlitzBasic increased when a limited range of &quot;free&quot; versions were distributed in popular UK computer magazines such as ''[[PC Format]]''. This resulted in a legal dispute between the developer and publisher which was eventually resolved amicably.
+
+===BlitzPlus===
+In February 2003, Blitz Research Ltd. released BlitzPlus also for Microsoft Windows. It lacked the 3D engine of Blitz3D, but did bring new features to the 2D side of the language by implementing limited Microsoft Windows control support for creating native [[graphical user interface|GUIs]]. Backwards compatibility of the 2D engine was also extended, allowing compiled BlitzPlus games and applications to run on systems that might only have [[DirectX]] 1.
+
+===BlitzMax===
+{{Infobox programming language
+| name                   = BlitzMax
+| logo                   =
+| paradigm               = [[imperative programming|imperative]], [[object-oriented programming|object-oriented]], [[modular programming|modular]], [[reflection (computer programming)|reflective]]
+| year                   = 2004
+| designer               = Mark Sibly
+| developer              = [https://web.archive.org/web/20160331013346/http://www.blitzbasic.com/ Blitz Research Ltd.]
+| discontinued           = Yes
+| latest release version = 1.51
+| latest release date    = {{Start date and age|df=yes|2015|09|21}}
+| typing                 = [[Static typing|Static]], [[Weak typing|Weak]], [[Strong typing|Strong]] (optional)
+| implementations        =
+| dialects               = Official BlitzMax, bmx-ng
+| influenced_by          = BlitzBasic
+| influenced             = Monkey
+| operating_system       = [[Microsoft Windows]], [[Mac OS X]], [[Linux]]
+}}
+
+The first BlitzMax compiler was released in December 2004 for [[Mac OS X]]. This made it the first Blitz dialect that could be compiled on *nix platforms. Compilers for Microsoft Windows and [[Linux]] were subsequently released in May 2005. BlitzMax brought the largest change of language structure to the modern range of Blitz products by extending the type system to include object-oriented concepts and modifying the graphics API to better suit [[OpenGL]]. BlitzMax was also the first of the Blitz languages to represent strings internally using [[UCS-2]], allowing native-support for string literals composed of non-[[ASCII]] characters.
+
+BlitzMax's platform-agnostic command-set allows developers to compile and run source code on multiple platforms. However the official compiler and build chain will only generate binaries for the platform that it is executing on. Unofficially, users have been able to get Linux and Mac OS X to cross-compile to the Windows platform.
+
+BlitzMax is also the first [[modular programming|modular]] version of the Blitz languages, improving the extensibility of the command-set. In addition, all of the standard modules shipped with the compiler are open-source and so can be tweaked and recompiled by the programmer if necessary. The official BlitzMax [[cross-platform]] [[graphical user interface|GUI]] module (known as MaxGUI) allows developers to write GUI interfaces for their applications on Linux ([[FLTK]]), Mac ([[Cocoa (API)|Cocoa]]) and Windows. Various user-contributed modules extend the use of the language by wrapping such libraries as [[wxWidgets]], [[Cairo (graphics)|Cairo]], and [[Fontconfig]] as well as a selection of database modules. There are also a selection of third-party 3D modules available namely MiniB3D&lt;ref&gt;{{cite web|url=http://www.blitzbasic.com/Community/topics.php?forum=119|title=Blitz News|website=www.blitzbasic.com|access-date=12 December 2007|archive-url=https://web.archive.org/web/20080126114117/http://www.blitzbasic.com/Community/topics.php?forum=119|archive-date=26 January 2008|url-status=dead|df=dmy-all}}&lt;/ref&gt; - an open-source OpenGL engine which can be compiled and used on all three of BlitzMax's supported platforms.
+
+In October 2007, BlitzMax 1.26 was released which included the addition of a [[reflection (computer programming)|reflection]] module.&lt;ref&gt;{{cite web|url=http://www.blitzbasic.com/Community/posts.php?topic=72891#814878|title=BlitzMax update 1.26 now available!|website=www.blitzbasic.com|access-date=11 January 2011|archive-url=https://web.archive.org/web/20110526130312/http://www.blitzbasic.com/Community/posts.php?topic=72891#814878|archive-date=26 May 2011|url-status=dead|df=dmy-all}}&lt;/ref&gt; BlitzMax 1.32 shipped new [[thread (computing)|threading]] and [[Lua (programming language)|Lua]] scripting modules and most of the standard library functions have been updated so that they are [[unicode]] friendly.&lt;ref&gt;[http://www.blitzbasic.com/Community/posts.php?topic=83917#947391 BlitzMax V132 for Windows and MacIntel now up!] {{Webarchive|url=https://web.archive.org/web/20110526130325/http://www.blitzbasic.com/Community/posts.php?topic=83917#947391 |date=26 May 2011}} on blitzbasic.com&lt;/ref&gt;
+
+===Blitz3D SDK===
+Blitz3D SDK is a 3D graphics engine based on the engine in Blitz3D. It was marketed for use with [[C++]], [[C Sharp (programming language)|C#]], BlitzMax, and [[PureBasic]], however it could also be used with other languages that follow compatible calling conventions.
+
+===Max3D module===
+In 2008, the source code to Max3D - a C++-based cross-platform 3D engine - was released under a [[BSD license]]. This engine focused on OpenGL but had an abstract backend for other graphics drivers (such as DirectX) and made use of several open-source libraries, namely [[Open Asset Import Library|Assimp]], [[Boost (C++ libraries)|Boost]], and [[Open Dynamics Engine|ODE]].
+
+Despite the excitement in the Blitz community of Max3D being the eagerly awaited successor to Blitz3D, interest and support died off soon after the source code was released and eventually development came to a halt. There is no indication that Blitz Research will pick up the project again.
+
+===Open-source release===
+BlitzPlus was released as [[open-source software|open-source]] on 28 April 2014 under the [[zlib license]] on [[GitHub]].&lt;ref&gt;[http://www.blitzbasic.com/Home/_index_.php BlitzPlus Source Code Released] {{Webarchive|url=https://web.archive.org/web/20160716133612/http://www.blitzbasic.com/Home/_index_.php |date=16 July 2016}} by simonh (2014-04-29)&lt;/ref&gt;&lt;ref&gt;[http://www.blitzbasic.com/Community/posts.php?topic=102907 Blitz3D open sourced!] {{webarchive|url=https://web.archive.org/web/20160906075242/http://www.blitzbasic.com/Community/posts.php?topic=102907 |date=6 September 2016}} on Blitz3D Forums by (2014)&lt;/ref&gt; Blitz3D followed soon after and was released as Open Source on 3 August 2014.&lt;ref&gt;[http://www.blitzbasic.com/Home/_index_.php Blitz3D Now Free and Open Source!] {{Webarchive|url=https://web.archive.org/web/20160716133612/http://www.blitzbasic.com/Home/_index_.php |date=16 July 2016}} by simonh (2014-08-03)&lt;/ref&gt;&lt;ref&gt;[https://github.com/blitz-research/blitz3d blitz3d] on GitHub&lt;/ref&gt; BlitzMax was later released as Open Source on 21 September 2015.&lt;ref&gt;[https://github.com/blitz-research/blitzmax blitzmax] on GitHub&lt;/ref&gt;
+
+==Sample code==
+The following code creates a windowed application that shows the current time in binary and decimal format. This code is written in BlitzBasic, but will compile and run in both Blitz3D and BlitzPlus. See below for the same example written in BlitzMax.
+&lt;!-- Copy, modify and redistribute these sources with no limit --&gt;
+{| class=&quot;wikitable nowrap&quot;
+! BlitzBasic version
+! BlitzMax version
+|-style=&quot;vertical-align:bottom&quot;
+|
+&lt;source lang=&quot;BlitzBasic&quot;&gt;
+ AppTitle &quot;Binary Clock&quot;
+ Graphics 150,80,16,3
+
+ ;create a timer that means the main loop will be
+ ;executed twice a second
+ secondtimer=CreateTimer(2)
+ ;#####################################################
+ Repeat ;               MAIN LOOP
+ 	Hour = Left(CurrentTime$(),2)
+ 	Minute = Mid(CurrentTime$(),4,2)
+ 	Second = Right(CurrentTime$(),2)
+
+ 	If Hour &gt;= 12 Then PM = 1
+ 	If Hour &gt; 12 Then Hour = Hour - 12
+ 	If Hour = 0 Then Hour = 12
+
+ 	;should do this otherwise the PM dot will be
+ 	;left up once the clock rolls past midnight!
+ 	Cls
+
+ 	Color(0,255,0) ;make the text green for the PM part
+ 	If PM = 1 Then Text 5,5,&quot;PM&quot;
+ 	;set the text colour back to white for the rest
+ 	Color(255,255,255)
+
+ 	For bit=0 To 5
+ 		xpos=20*(6-bit)
+
+ 		binaryMask=2^bit
+
+ 		;do hours
+ 		If (bit&lt;4)
+ 			If (hour And binaryMask)
+ 				Text xpos,5,&quot;1&quot;
+ 			Else
+ 				Text xpos,5,&quot;0&quot;
+ 			EndIf
+ 		EndIf
+
+ 		;do the minutes
+ 		If (minute And binaryMask)
+ 			Text xpos,25,&quot;1&quot;
+ 		Else
+ 			Text xpos,25,&quot;0&quot;
+ 		EndIf
+
+ 		;do the seconds
+ 		If (second And binaryMask)
+ 			Text xpos,45,&quot;1&quot;
+ 		Else
+ 			Text xpos,45,&quot;0&quot;
+ 		EndIf
+ 	Next
+
+ 	;make the text red for the decimal time
+ 	Color(255,0,0)
+ 	Text 5,65,&quot;Decimal: &quot; + CurrentTime$()
+ 	;set the text back to white for the rest
+ 	Color(255,255,255)
+
+ 	;will wait half a second
+ 	WaitTimer(secondTimer)
+ Forever
+ ;#####################################################
+
+&lt;/source&gt;
+|
+&lt;source lang=&quot;BlitzMax&quot;&gt;
+ AppTitle = &quot;Binary Clock&quot;
+ Graphics 145,85
+
+ secondtimer = CreateTimer(2)
+
+ Repeat
+         Hour = CurrentTime()[..2].ToInt()
+         Minute = CurrentTime()[4..6].ToInt()
+         Second = CurrentTime()[6..].ToInt()
+
+         If Hour &gt;= 12 Then PM = 1
+         If Hour &gt; 12 Then Hour = Hour - 12
+         If Hour = 0 Then Hour = 12
+
+         'should do this otherwise the PM dot will be
+         'Left up once the clock rolls past midnight!
+         Cls
+
+         SetColor(0,255,0) 'make the text green For the PM part
+         If PM  = 1 Then DrawText &quot;PM&quot;,5,5
+         'set the text colour back To white For the rest
+         SetColor(255,255,255)
+
+         For bit=0 Until 6
+                 xpos=20*(6-bit)
+                 binaryMask=2^bit
+                 'do hours
+                 If (bit&lt;4)
+                         If (hour &amp; binaryMask)
+                                 DrawText &quot;1&quot;,xpos,5
+                         Else
+                                 DrawText &quot;0&quot;,xpos,5
+                         EndIf
+                 EndIf
+
+                 'do the minutes
+                 If (minute &amp; binaryMask)
+                         DrawText &quot;1&quot;, xpos,25
+                 Else
+                         DrawText &quot;0&quot;, xpos,25
+                 EndIf
+
+                 'do the seconds
+                 If (second &amp; binaryMask)
+                         DrawText &quot;1&quot;,xpos,45
+                 Else
+                         DrawText &quot;0&quot;,xpos,45
+                 EndIf
+         Next
+
+         'make the text red For the decimal time
+         SetColor(255,0,0)
+         DrawText &quot;Decimal: &quot; + CurrentTime(),5,65
+         'set the text back To white For the rest
+         SetColor(255,255,255)
+
+ 	 Flip
+
+         'will wait half a second
+         WaitTimer(secondTimer)
+ 	 If KeyHit(KEY_ESCAPE) Then Exit
+ Forever
+&lt;/source&gt;
+|}
+
+==Software written using BlitzBasic==
+&lt;!-- Please read [[WP:EL]] and do not add non-notable links here. Spam will be removed and warnings left on user talk pages. --&gt;
+*''[[Eschalon: Book I]]'' - BlitzMax
+*''[[Eschalon: Book II]]'' - BlitzMax
+*''[[Fairway Solitaire]]'' - BlitzMax
+*''[[GridWars]]'' - BlitzMax
+*''[http://tvtower.org/en/index TVTower (open source clone of MadTV)]'' - BlitzMax
+*''[[Platypus (video game)|Platypus]]'' - Blitz2D (Mac port, BlitzMax)
+*''[[SCP – Containment Breach]]'' - Blitz3D
+*''[[Worms (1995 video game)|Worms]]'' - originally titled ''Total Wormage'' and developed in Blitz Basic on the Amiga before its commercial release&lt;ref&gt;IGN. [http://uk.ps2.ign.com/articles/136/136825p1.html Worms Blast Preview] on ign.com&lt;/ref&gt;
+
+==Legacy==
+In 2011, BRL released a new cross-platform programming language called Monkey and its first official module called Mojo. Monkey has a similar syntax to BlitzMax, but instead of compiling direct to assembly code, it translates Monkey source files directly into [[source code]] for a chosen language, framework or platform e.g. Windows, [[Mac OS X]], [[iOS]], Android, [[HTML5]], and [[Adobe Flash]].
+
+Development of Monkey X has been halted in favor of Monkey 2, an updated version of the language by Mark Sibly.
+
+==References==
+{{Reflist|30em}}
+
+==External links==
+*[https://blitzresearch.itch.io/ Blitz Research subsite] on [[itch.io]] (BlitzPlus, Blitz 3D, Monkey X, Monkey 2)
+**[https://blitzresearch.itch.io/monkeyx Monkey X subsite] (open source)
+**[https://blitzresearch.itch.io/monkey2 Monkey 2 subsite]
+*[https://github.com/blitz-research blitz-research (Mark Sibly)] on [[GitHub]] (BlitzPlus, BlitzMax, Blitz3D, Monkey, BlitzMax, Blitz3D for MSVC-CE 2017)
+*[https://web.archive.org/web/20170603205639/http://www.blitzbasic.com/ Blitz Research website] (archived 3 June 2017)
+*[https://web.archive.org/web/20170715134814/http://monkey-x.com/ Monkey X website] (archived 15 July 2017)
+
+{{BASIC}}
+
+[[Category:Amiga development software]]
+[[Category:Articles with example BASIC code]]
+[[Category:BASIC compilers]]
+[[Category:BASIC programming language family]]
+[[Category:Formerly proprietary software]]
+[[Category:Free game engines]]
+[[Category:Free software]]
+[[Category:Object-oriented programming languages]]
+[[Category:Software using the zlib license]]
+[[Category:Video game development software]]
+[[Category:Video game IDE]]</text>
+      <sha1>6pzedr7lrgmwv5t6oeixpxkddbotjj3</sha1>
+    </revision>
+  </page>

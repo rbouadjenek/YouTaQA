@@ -1,0 +1,484 @@
+  <page>
+    <title>Ada (programming language)</title>
+    <ns>0</ns>
+    <id>1242</id>
+    <revision>
+      <id>941919030</id>
+      <parentid>941899076</parentid>
+      <timestamp>2020-02-21T13:06:55Z</timestamp>
+      <contributor>
+        <username>SUM1</username>
+        <id>12712128</id>
+      </contributor>
+      <comment>Changing [[Wikipedia:Short description|short description]] from &quot;Programming language&quot; to &quot;High-level programming language first released in 1980&quot; ([[Wikipedia:Shortdesc helper|Shortdesc helper]])</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{short description|High-level programming language first released in 1980}}
+{{infobox programming language
+| name = Ada
+| logo = Ada_Mascot_with_slogan.svg
+| logo_size = 200px
+| logo_alt = Ada mascot with the slogan &quot;Time-tested, safe and secure&quot;
+| paradigm = [[multi-paradigm programming language|Multi-paradigm]]
+| designer = * MIL-STD-1815/Ada 83: [[Jean Ichbiah]]
+* Ada 95: Tucker Taft
+* Ada 2005: Tucker Taft
+* Ada 2012: Tucker Taft
+| developer = 
+| typing = [[static typing|static]], [[Strongly typed programming language|strong]], [[type safety|safe]], [[nominative type system|nominative]]
+| implementations = AdaCore [[GNAT]] (free download: http://libre.adacore.com/download),&lt;br /&gt;[[Green Hills Software]] Optimising Ada 95 compiler,&lt;br /&gt;[[PTC, Inc.]] PTC ApexAda and PTC ObjectAda,&lt;ref&gt;{{cite web|url=http://www.ptc.com/developer-tools/objectada |title=PTC ObjectAda |publisher=PTC.com |date=|accessdate=2014-01-27}}&lt;/ref&gt;&lt;br /&gt;{{cite web|url=https://www.mapusoft.com/ada-to-c-changer/|title=MapuSoft Ada-C/C++ changer}}, previously known as &quot;AdaMagic with C Intermediate&quot;,&lt;ref&gt;{{cite web|url=http://ada-auth.org/cpl/details/151.html|title=AdaMagic with C Intermediate certificate}}&lt;/ref&gt;&lt;br /&gt;[[DDC-I]] Score
+| dialects = [[SPARK (programming language)|SPARK]], [[Ravenscar profile]]
+| influenced = [[C++]], [[Chapel (programming language)|Chapel]],&lt;ref name=&quot;chplspec&quot;&gt;{{cite web|title=Chapel spec (Acknowledgements)|url=http://chapel.cray.com/spec/spec-0.98.pdf|date=2015-10-01|accessdate=2016-01-14|publisher=Cray Inc}}&lt;/ref&gt; {{cite web|url=http://www.iuma.ulpgc.es/users/gsd/Drago/|title=Drago}}, [[Eiffel (programming language)|Eiffel]], {{cite web|url=https://cs.nyu.edu/cs/faculty/goldberg/griffin.html|title=Griffin}}, [[Java (programming language)|Java]], [[Nim (programming language)|Nim]], [[ParaSail (programming language)|ParaSail]], [[PL/SQL]], [[PL/pgSQL]], [[Ruby (programming language)|Ruby]], [[Seed7]], {{cite web|url=https://www.sparforte.com/|title=SPARforte}}, [[ParaSail (programming language)#Description|Sparkel]], [[SQL/PSM]], [[VHDL]]
+| license = 
+| website = {{URL|www.adaic.org}}
+| year = {{Start date and age|1980|2}}
+| latest_release_version = Ada 2012 TC1&lt;ref&gt;{{cite web|url=http://www.adaic.org/2016/01/technical-corrigendum-for-ada-2012-published-by-iso/ |title=Technical Corrigendum for Ada 2012 published by ISO |publisher=Ada Resource Association |date=2016-01-29 |accessdate=2016-02-23}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.ada-auth.org/standards/ada12_w_tc1.html |title=Consolidated Ada 2012 Language Reference Manual |publisher=Ada Conformity Assessment Authority |accessdate=2016-02-23 |url-status=dead |archiveurl=https://web.archive.org/web/20160303001815/http://www.ada-auth.org/standards/ada12_w_tc1.html |archivedate=2016-03-03 }}&lt;/ref&gt;
+| latest_release_date = {{start date and age|2016|02|01}}
+| latest_preview_version = Ada 2012 TC1&lt;ref&gt;{{cite web|url=http://www.ada-auth.org/corrigendum1-12.html |title=Technical Corrigendum 1 for Ada 2012 |publisher=Ada Conformity Assessment Authority |accessdate=2016-02-23 |url-status=dead |archiveurl=https://web.archive.org/web/20160302231200/http://www.ada-auth.org/corrigendum1-12.html |archivedate=2016-03-02 }}&lt;/ref&gt;
+| latest_preview_date = {{start date and age|2015|04}} &lt;!-- Draft 3 of Ada 2012 TC1 (ISO/IEC 8652:2012/Cor 1:2016), see [http://www.ada-auth.org/standards/ada12_w_tc1.html] and [http://www.ada-auth.org/corrigendum1-12.html] --&gt;
+| turing-complete = Yes
+| influenced_by = [[ALGOL 68]], [[Pascal (programming language)|Pascal]], [[C++]] (Ada 95), [[Smalltalk]] (Ada 95), [[Modula-2]] (Ada 95) [[Java (programming language)|Java]] (Ada 2005), [[Eiffel (programming language)|Eiffel]] (Ada 2012)
+| operating_system = [[Cross-platform]] (multi-platform)
+| file_ext = .adb, .ads
+| wikibooks = Ada Programming
+}}
+
+'''Ada''' is a [[structured programming|structured]], [[statically typed]], [[Imperative programming|imperative]], and [[Object-oriented programming|object-oriented]] [[High-level programming language|high-level]] [[computer programming|computer]] [[programming language]], extended from [[Pascal (programming language)|Pascal]] and other languages. It has built-in language support for [[design by contract|design-by-contract]], extremely strong typing, explicit concurrency, tasks, synchronous message passing, protected objects, and [[nondeterministic programming|non-determinism]]. Ada improves code safety and maintainability by using the compiler to find errors in favor of runtime errors. Ada is an international standard; the current version (known as Ada 2012&lt;ref&gt;{{cite web|last=Ganssle |first=Jack |url=http://www.adaic.org/ |title=Ada Resource Association – News and resource for the Ada programming language |publisher=Adaic.org |date=2013-05-29 |accessdate=2013-06-14}}&lt;/ref&gt;) is defined by ISO/IEC 8652:2012.&lt;ref name=ISO_IEC_8652_2012&gt;{{cite web|url=http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=61507|title=ISO/IEC 8652:2012 ''Information technology -- Programming languages -- Ada''|publisher=International Organization for Standardization|accessdate=2012-12-23}}&lt;/ref&gt;
+
+Ada was originally designed by a team led by French [[computer scientist]] [[Jean Ichbiah]] of [[Groupe Bull|CII Honeywell Bull]] under contract to the [[United States Department of Defense]] (DoD) from 1977 to 1983 to supersede over 450 programming languages used by the DoD at that time.&lt;ref name=&quot;Um&quot;&gt;{{cite web|title=The Ada Programming Language|url=http://groups.engin.umd.umich.edu/CIS/course.des/cis400/ada/ada.html|website=University of Mich|accessdate=27 May 2016|archive-url=https://web.archive.org/web/20160522063844/http://groups.engin.umd.umich.edu/CIS/course.des/cis400/ada/ada.html|archive-date=2016-05-22|url-status=dead}}&lt;/ref&gt;  Ada was named after [[Ada Lovelace]] (1815–1852), who has been credited as the first computer programmer.&lt;ref&gt;{{cite journal|doi=10.1109/MAHC.2003.1253887|title=Lovelace &amp; Babbage and the creation of the 1843 'notes'|journal=IEEE Annals of the History of Computing|volume=25|issue=4|pages=16–26|year=2003|last1=Fuegi|first1=J|last2=Francis|first2=J|url=https://semanticscholar.org/paper/81bbf32d2642a7a8c6b0a867379a4e9e99d872bc}}&lt;/ref&gt;
+
+== Features ==
+Ada was originally targeted at [[embedded system|embedded]] and [[real-time computing|real-time]] systems. The Ada&amp;nbsp;95 revision, designed by [[Tucker Taft|S. Tucker Taft]] of [[Intermetrics]] between 1992 and 1995, improved support for systems, numerical, financial, and [[object-oriented programming]] (OOP).
+
+Features of Ada include: [[strongly typed languages|strong typing]], [[modularity (programming)|modularity mechanisms]] (packages), [[run-time checking]], [[Parallel computing|parallel processing]] ([[Task (computing)|tasks]], synchronous [[message passing]], [[protected objects]], and nondeterministic [[Switch statement|select statements]]), [[exception handling]], and [[generic programming|generics]]. Ada&amp;nbsp;95 added support for [[object-oriented programming]], including [[dynamic dispatch]].
+
+The syntax of Ada minimizes choices of ways to perform basic operations, and prefers English keywords (such as &quot;or else&quot; and &quot;and then&quot;) to symbols (such as &quot;||&quot; and &quot;&amp;&amp;&quot;). Ada uses the basic arithmetical operators &quot;+&quot;, &quot;-&quot;, &quot;*&quot;, and &quot;/&quot;, but avoids using other symbols. Code blocks are delimited by words such as &quot;declare&quot;, &quot;begin&quot;, and &quot;end&quot;, where the &quot;end&quot; (in most cases) is followed by the identifier of the block it closes (e.g., ''if ... end if'', ''loop ... end loop''). In the case of conditional blocks this avoids a ''[[dangling else]]'' that could pair with the wrong nested if-expression in other languages like C or Java.
+
+Ada is designed for development of very large software systems. Ada packages can be compiled separately.  Ada package specifications (the package interface) can also be compiled separately without the implementation to check for consistency.  This makes it possible to detect problems early during the design phase, before implementation starts.
+
+A large number of compile-time checks are supported to help avoid bugs that would not be detectable until run-time in some other languages or would require explicit checks to be added to the source code.  For example, the syntax requires explicitly named closing of blocks to prevent errors due to mismatched end tokens. The adherence to strong typing allows detection of many common software errors (wrong parameters, range violations, invalid references, mismatched types, etc.) either during compile-time, or otherwise during run-time. As concurrency is part of the language specification, the compiler can in some cases detect potential deadlocks.{{citation needed|date=March 2016}} Compilers also commonly check for misspelled identifiers, visibility of packages, redundant declarations, etc. and can provide warnings and useful suggestions on how to fix the error.
+
+Ada also supports run-time checks to protect against access to unallocated memory, [[buffer overflow]] errors, range violations, [[off-by-one error]]s, array access errors, and other detectable bugs. These checks can be disabled in the interest of runtime efficiency, but can often be compiled efficiently. It also includes facilities to help [[software verification|program verification]]. For these reasons, Ada is widely used in critical systems, where any [[anomaly in software|anomaly]] might lead to very serious consequences, e.g., accidental death, injury or severe financial loss. Examples of systems where Ada is used include [[avionics]], [[air traffic control]], railways, banking, military and space technology.&lt;ref&gt;{{cite web|title=Ada helps churn out less-buggy code|url=http://gcn.com/Articles/1999/06/30/Ada-helps-churn-out-lessbuggy-code.aspx|publisher=Government Computer News|accessdate=2010-09-14|author=S. Tucker Taft|author2=Florence Olsen|pages=2–3|date=1999-06-30}}&lt;/ref&gt;&lt;ref name=Ada_usage&gt;{{cite web|last=Feldman|first=Michael|title=Who's using Ada?|url=http://www.seas.gwu.edu/~mfeldman/ada-project-summary.html#Banking_and_Financial_Systems_|publisher=SIGAda Education Working Group}}&lt;/ref&gt;
+
+{{anchor|Access type}}Ada's dynamic [[memory management]] is high-level and type-safe.  Ada does not have generic or untyped [[pointer (computer programming)|pointers]]; nor does it implicitly declare any pointer type.  Instead, all dynamic memory allocation and deallocation must take place through explicitly declared ''access types''.
+Each access type has an associated ''storage pool'' that handles the low-level details of memory management; the programmer can either use the default storage pool or define new ones (this is particularly relevant for [[Non-Uniform Memory Access]]).  It is even possible to declare several different access types that all designate the same type but use different storage pools.
+Also, the language provides for ''accessibility checks'', both at compile time and at run time, that ensures that an ''access value'' cannot outlive the type of the object it points to.
+
+Though the semantics of the language allow automatic [[garbage collection (computer science)|garbage collection]] of inaccessible objects, most implementations do not support it by default, as it would cause unpredictable behaviour in real-time systems.  Ada does support a limited form of [[region-based memory management]]; also, creative use of storage pools can provide for a limited form of automatic garbage collection, since destroying a storage pool also destroys all the objects in the pool.
+
+A double-[[dash]] (&quot;--&quot;), resembling an [[em dash]], denotes comment text.  Comments stop at end of line, to prevent unclosed comments from accidentally voiding whole sections of source code.  Disabling a whole block of code now requires the prefixing of each line (or column) individually with &quot;--&quot;. While clearly denoting disabled code with a column of repeated &quot;--&quot; down the page this renders the experimental dis/re-enablement of large blocks a more drawn out process.
+
+The semicolon (&quot;;&quot;) is a [[statement terminator]], and the null or no-operation statement is &lt;code&gt;null;&lt;/code&gt;. A single &lt;code&gt;;&lt;/code&gt; without a statement to terminate is not allowed.
+
+Unlike most [[International Organization for Standardization|ISO]] standards, the Ada language definition (known as the ''Ada Reference Manual'' or ''ARM'', or sometimes the ''Language Reference Manual'' or ''LRM'') is [[free content]]. Thus, it is a common reference for Ada programmers and not just programmers implementing Ada compilers. Apart from the reference manual, there is also an extensive rationale document which explains the language design and the use of various language constructs. This document is also widely used by programmers. When the language was revised, a new rationale document was written.
+
+One notable [[free software]] tool that is used by many Ada programmers to aid them in writing Ada source code is the [[GNAT Programming Studio]].
+
+== History ==
+In the 1970s the [[United States Department of Defense|US Department of Defense]] (DoD) became concerned by the number of different programming languages being used for its embedded computer system projects, many of which were obsolete or hardware-dependent, and none of which supported safe modular programming. In 1975, a [[working group]], the [[High Order Language Working Group]] (HOLWG), was formed with the intent to reduce this number by finding or creating a programming language generally suitable for the department's and the [[Ministry of Defence (United Kingdom)|UK Ministry of Defence]] requirements. After many iterations beginning with an original [http://iment.com/maida/computer/requirements/strawman.htm Straw man proposal] the eventual programming language was named Ada. The total number of high-level programming languages in use for such projects fell from over 450 in 1983 to 37 by 1996.
+
+The HOLWG working group crafted the [[Steelman language requirements]], a series of documents stating the requirements they felt a programming language should satisfy. Many existing languages were formally reviewed, but the team concluded in 1977 that no existing language met the specifications.
+
+Requests for proposals for a new programming language were issued and four contractors were hired to develop their proposals under the names of Red ([[Intermetrics]] led by Benjamin Brosgol), Green ([[CII Honeywell Bull]], led by [[Jean Ichbiah]]), Blue ([[SofTech, Inc.|SofTech]], led by John Goodenough)&lt;ref&gt;{{cite web|url=http://www.sei.cmu.edu/about/people/jbg.cfm |title=John Goodenough &amp;#124; SEI Staff Profile |publisher=Sei.cmu.edu |date= |accessdate=2014-01-27}}&lt;/ref&gt; and Yellow ([[SRI International]], led by Jay Spitzen).&lt;!-- Though Intermetrics and Bull have previous links, I am including them for parallelism. --&gt; In April 1978, after public scrutiny, the Red and Green proposals passed to the next phase. In May 1979, the Green proposal, designed by Jean Ichbiah at CII Honeywell Bull, was chosen and given the name Ada—after [[Ada Lovelace|Augusta Ada, Countess of Lovelace]]. This proposal was influenced by the programming language [[LIS programming language|LIS]] that Ichbiah and his group had developed in the 1970s. The preliminary Ada reference manual was published in ACM SIGPLAN Notices in June 1979. The Military Standard reference manual was approved on December 10, 1980 ([[Ada Lovelace]]'s birthday), and
+given the number MIL-STD-1815 in honor of Ada Lovelace's birth year. In 1981, [[C. A. R. Hoare]] took advantage of his [[Turing Award]] speech to criticize Ada for being overly complex and hence unreliable,&lt;ref&gt;C.A.R. Hoare, &quot;[http://zoo.cs.yale.edu/classes/cs422/2011/bib/hoare81emperor.pdf The Emperor's Old Clothes].&quot; Communications of the ACM, 1981.&lt;/ref&gt; but subsequently seemed to recant in the foreword he wrote for an Ada textbook.&lt;ref&gt;D.A. Watt, B.A. Wichmann and W. Findlay, &quot;Ada: Language and Methodology.&quot; Prentice-Hall, 1987.&lt;/ref&gt;
+
+Ada attracted much attention from the programming community as a whole during its early days.  Its backers and others predicted that it might become a dominant language for general purpose programming and not just defense-related work.&lt;ref name=&quot;sward&quot; /&gt;  Ichbiah publicly stated that within ten years, only two programming languages would remain: Ada and [[Lisp (programming language)|Lisp]].&lt;ref name=SIGAda-Rosen&gt;J-P. Rosen, &quot;The Ada Paradox(es)&quot;, ''Ada Letters'', ACM SIGAda, Vol. 24, No. 2, August 2009, pp. 28-35.&lt;/ref&gt;  Early Ada compilers struggled to implement the large, complex language, and both compile-time and run-time performance tended to be slow and tools primitive.&lt;ref name=&quot;sward&quot; /&gt;   Compiler vendors expended most of their efforts in passing the massive, language-conformance-testing, government-required &quot;ACVC&quot; validation suite that was required in another novel feature of the Ada language effort.&lt;ref name=SIGAda-Rosen /&gt;  [[The Jargon File]], a dictionary of  computer hacker slang originating in 1975–1983, notes in an [http://www.catb.org/jargon/oldversions/jarg262.txt entry on Ada] that &quot;it is precisely what one might expect given that kind of endorsement by fiat; designed by committee...difficult to use, and overall a disastrous, multi-billion-dollar boondoggle...Ada Lovelace...would almost certainly blanch at the use her name has been latterly put to; the kindest thing that has been said about it is that there is probably a good small language screaming to get out from inside its vast, {elephantine} bulk.&quot;
+
+The first validated Ada implementation was the NYU Ada/Ed translator,&lt;ref&gt;{{cite web |url=http://oai.dtic.mil/oai/oai?verb=getRecord&amp;metadataPrefix=html&amp;identifier=ADA136759 |title=Ada Compiler Validation Summary Report: NYU Ada/ED, Version 19.7 V-001 |authors=SofTech Inc., Waltham, MA |date=1983-04-11 |accessdate=2010-12-16 |archive-url=https://web.archive.org/web/20120312080046/http://oai.dtic.mil/oai/oai?verb=getRecord&amp;metadataPrefix=html&amp;identifier=ADA136759 |archive-date=2012-03-12 |url-status=dead }}&lt;/ref&gt; certified on April 11, 1983. NYU Ada/Ed is implemented in the high-level set language [[SETL]].&lt;ref&gt;{{cite journal |title=The NYU Ada Translator and Interpreter |first1=Robert B. K. |last1=Dewar |first2=Gerald A. |last2=Fisher Jr. |first3=Edmond |last3=Schonberg |first4=Robert |last4=Froelich |first5=Stephen |last5=Bryant |first6=Clinton F. |last6=Goss |first7=Michael |last7=Burke |journal=ACM SIGPLAN Notices – Proceedings of the ACM-SIGPLAN Symposium on the Ada Programming Language |volume=15 |issue=11 |pages=194–201 |date=November 1980|isbn=0-89791-030-3 |doi=10.1145/948632.948659}}&lt;/ref&gt;  A number of commercial companies began offering Ada compilers and associated development tools, including [[Alsys]], [[TeleSoft]], [[DDC-I]], [[Advanced Computer Techniques]], [[Tartan Laboratories]], [[TLD Systems]], [[Verdix]], and others.&lt;ref&gt;{{cite news | title=Ada Validated Compilers List | publisher=Ada Information Clearinghouse | date=July 1, 1992 | pages=1–36}}&lt;/ref&gt;
+
+[[File:Ada Lovelace 1838.jpg|right|caption|thumbnail|157px|[[Ada Lovelace|Augusta Ada King]], Countess of Lovelace.]]
+In 1991, the US Department of Defense began to require the use of Ada (the ''Ada mandate'') for all software,&lt;ref&gt;{{cite web|url=http://archive.adaic.com/pol-hist/policy/mandate.txt |title=The Congressional Ada Mandate |author=Ada Information Clearinghouse |date=1983-04-11 |accessdate=2015-06-07 |url-status=dead |archiveurl=https://web.archive.org/web/20160304073005/http://archive.adaic.com/pol-hist/policy/mandate.txt |archivedate=2016-03-04 }}&lt;/ref&gt; though exceptions to this rule were often granted.&lt;ref name=&quot;sward&quot; /&gt;  The Department of Defense Ada mandate was effectively removed in 1997, as the DoD began to embrace  [[Commercial off-the-shelf|COTS]] technology.&lt;ref name=&quot;sward&quot;&gt;{{cite conference |contribution=The rise, fall and persistence of Ada |first=Ricky E. |last=Sward |date=November 2010 |title=SIGAda '10: Proceedings of the ACM SIGAda annual international conference on SIGAda |pages=71–74 |url=http://dl.acm.org/citation.cfm?id=1879063.1879081&amp;coll=DL&amp;dl=GUIDE&amp;CFID=551420221&amp;CFTOKEN=60383966 | doi=10.1145/1879063.1879081}}&lt;/ref&gt; Similar requirements existed in other [[North Atlantic Treaty Organisation|NATO]] countries: Ada was required for NATO systems involving command and control and other functions, and Ada was the mandated or preferred language for defense-related applications in countries such as Sweden, Germany, and Canada.&lt;ref&gt;{{cite book | url=http://www.dtic.mil/dtic/tr/fulltext/u2/a217657.pdf | first= Nicholas J. | last=Babiak | title=Ada, the New DoD Weapon System Computer Language – Panacea or Calamity | publisher=[[Air University (United States Air Force)]] | date=1989 | pages=39–40}}&lt;/ref&gt;
+
+By the late 1980s and early 1990s, Ada compilers had improved in performance, but there were still barriers to full exploitation of Ada's abilities, including a tasking model that was different from what most real-time programmers were used to.&lt;ref name=SIGAda-Rosen /&gt;
+
+Because of Ada's [[Safety-critical system|safety-critical]] support features, it is now used not only for military applications, but also in commercial projects where a software bug can have severe consequences, e.g., [[avionics]] and [[air traffic control]], commercial rockets such as the [[Ariane (rocket family)|Ariane 4 and 5]], [[satellite]]s and other space systems, railway transport and banking.&lt;ref name=Ada_usage /&gt;
+For example, the [[Airplane Information Management System]], the [[Aircraft flight control systems|fly-by-wire]] system software in the [[Boeing 777]], was written in Ada.&lt;ref name=&quot;hads&quot; /&gt;&lt;ref name=&quot;wolfe&quot; /&gt;  Developed by [[Honeywell Aerospace|Honeywell Air Transport Systems]] in collaboration with consultants from [[DDC-I]], it became arguably the best-known of any Ada project, civilian or military.&lt;ref name=&quot;hads&quot;&gt;{{cite book | chapter=The HADS Team | first=Karl | last=Rehmer | year= 2009 | title=Beautiful Teams: Inspiring and Cautionary Tales from Veteran Team Leaders | editor-first=Andrew | editor-last=Stellman | editor2-first= Jennifer | editor2-last=Greene | publisher=O'Reilly | location=Sebastopol, California | pages=299–312}}&lt;/ref&gt;&lt;ref name=&quot;wolfe&quot;&gt;{{cite journal|url=http://queue.acm.org/detail.cfm?id=1035608 |title=There's Still Some Life Left in Ada |first=Alexander |last=Wolfe |journal=[[ACM Queue]] |volume=2 |issue=7 |pages=28 |date=October 2004 |doi=10.1145/1035594.1035608}}&lt;/ref&gt; The Canadian Automated Air Traffic System was written in 1 million lines of Ada ([[Source lines of code|SLOC]] count). It featured advanced distributed processing, a distributed Ada database, and object-oriented design. Ada is also used in other air traffic systems, e.g., the UK's next-generation Interim Future Area Control Tools Support (iFACTS) air traffic control system is designed and implemented using [[SPARK (programming language)|SPARK]] Ada.&lt;ref&gt;{{cite web|last=AdaCore|title=GNAT Pro Chosen for UK's Next Generation ATC System|url=http://www.adacore.com/2007/06/19/adacore-gnat-pro-chosen-for-uk-next-generation/|access-date=2011-03-01|archive-url=https://web.archive.org/web/20101224163518/http://www.adacore.com/2007/06/19/adacore-gnat-pro-chosen-for-uk-next-generation/|archive-date=2010-12-24|url-status=dead}}&lt;/ref&gt;
+It is also used in the [[France|French]] [[Transmission Voie-Machine|TVM]] in-[[cab signalling]] system on the [[TGV]] high-speed rail system, and the metro suburban trains in Paris, London, Hong Kong and New York City.&lt;ref name=Ada_usage /&gt;&lt;ref&gt;{{cite web|last=AdaCore|title=Look Who's Using Ada|url=http://www.adacore.com/home/ada_answers/lookwho/|access-date=2011-03-01|archive-url=https://web.archive.org/web/20101224102110/http://www.adacore.com/home/ada_answers/lookwho|archive-date=2010-12-24|url-status=dead}}&lt;/ref&gt;
+
+== Standardization ==
+The language became an [[American National Standards Institute|ANSI]] standard in 1983 ([https://web.archive.org/web/20040625113309/http://archive.adaic.com/standards/83lrm/html/Welcome.html ANSI/MIL-STD 1815A]), and after translation in French and without any further changes in English became
+an [[International standard|ISO standard]] in 1987 (ISO-8652:1987). This version of the language is commonly known as Ada&amp;nbsp;83, from the date of its adoption by ANSI, but is sometimes referred to also as Ada&amp;nbsp;87, from the date of its adoption by ISO.
+
+Ada&amp;nbsp;95, the joint ISO/ANSI standard ([http://www.adaic.org/standards/95lrm/html/RM-TTL.html ISO-8652:1995]) was published in February 1995, making Ada&amp;nbsp;95 the first ISO standard object-oriented programming language. To help with the standard revision and future acceptance, the [[US Air Force]] funded the development of the [[GNAT]] [[Compiler]]. Presently, the GNAT Compiler is part of the [[GNU Compiler Collection]].
+
+Work has continued on improving and updating the technical content of the Ada programming language. A Technical Corrigendum to Ada&amp;nbsp;95 was published in October 2001, and a major Amendment, [http://www.iso.org/iso/en/CatalogueDetailPage.CatalogueDetail?CSNUMBER=45001 ISO/IEC 8652:1995/Amd 1:2007] was published on March 9, 2007. At the Ada-Europe 2012 conference in Stockholm, the Ada Resource Association (ARA) and Ada-Europe announced the completion of the design of the latest version of the Ada programming language and the submission of the reference manual to the International Organization for Standardization (ISO) for approval. ISO/IEC 8652:2012 was published in December 2012.&lt;ref name=ISO_IEC_8652_2012 /&gt;
+
+Other related standards include [[ISO 8651]]-3:1988 ''Information processing systems—Computer graphics—Graphical Kernel System (GKS) language bindings—Part 3: Ada''.
+
+== Language constructs ==
+Ada is an [[ALGOL]]-like programming language featuring control structures with reserved words such as ''if'', ''then'', ''else'', ''while'', ''for'', and so on. However, Ada also has many data structuring facilities and other abstractions which were not included in the original [[ALGOL 60]], such as [[type system|type definitions]], [[record (computer science)|records]], [[pointer (computer programming)|pointers]], [[enumerated type|enumerations]]. Such constructs were in part inherited from or inspired by [[Pascal (programming language)|Pascal]].
+
+=== &quot;Hello, world!&quot; in Ada ===
+A common example of a language's [[Syntax (programming languages)|syntax]] is the [[Hello world program]]:
+(hello.adb)
+&lt;syntaxhighlight lang=&quot;ada&quot;&gt;
+with Ada.Text_IO; use Ada.Text_IO;
+procedure Hello is
+begin
+  Put_Line (&quot;Hello, world!&quot;);
+end Hello;
+&lt;/syntaxhighlight&gt;
+This program can be compiled by using the freely available open source compiler [[GNAT]], by executing
+&lt;syntaxhighlight lang=&quot;bash&quot;&gt;gnatmake hello.adb&lt;/syntaxhighlight&gt;
+
+=== Data types ===
+Ada's type system is not based on a set of predefined [[primitive types]] but allows users to declare their own types. This declaration in turn is not based on the internal representation of the type but on describing the goal which should be achieved. This allows the compiler to determine a suitable memory size for the type, and to check for violations of the type definition at compile time and run time (i.e., range violations, buffer overruns, type consistency, etc.). Ada supports numerical types defined by a range, modulo types, aggregate types (records and arrays), and enumeration types. Access types define a reference to an instance of a specified type; untyped pointers are not permitted.
+Special types provided by the language are task types and protected types.
+
+For example, a date might be represented as:
+
+&lt;syntaxhighlight lang=&quot;ada&quot;&gt;
+type Day_type   is range    1 ..   31;
+type Month_type is range    1 ..   12;
+type Year_type  is range 1800 .. 2100;
+type Hours is mod 24;
+type Weekday is (Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday);
+
+type Date is
+   record
+     Day   : Day_type;
+     Month : Month_type;
+     Year  : Year_type;
+   end record;
+&lt;/syntaxhighlight&gt;
+
+Types can be refined by declaring subtypes:
+&lt;syntaxhighlight lang=&quot;ada&quot;&gt;
+subtype Working_Hours is Hours range 0 .. 12;            -- at most 12 Hours to work a day
+subtype Working_Day is Weekday range Monday .. Friday;   -- Days to work
+
+Work_Load: constant array(Working_Day) of Working_Hours  -- implicit type declaration
+   := (Friday =&gt; 6, Monday =&gt; 4, others =&gt; 10);           -- lookup table for working hours with initialization
+
+&lt;/syntaxhighlight&gt;
+
+Types can have modifiers such as ''limited, abstract, private'' etc. Private types can only be accessed and limited types can only be modified or copied within the scope of the package that defines them.&lt;ref&gt;{{cite web|title=Ada Syntax Card |url=http://www.digilife.be/quickreferences/QRC/Ada%20Syntax%20Card.pdf |accessdate=28 February 2011 |url-status=dead |archiveurl=https://web.archive.org/web/20110706133825/http://www.digilife.be/quickreferences/QRC/Ada%20Syntax%20Card.pdf |archivedate=6 July 2011 }}&lt;/ref&gt;
+Ada 95 adds additional features for object-oriented extension of types.
+
+=== Control structures ===
+Ada is a [[structured programming]] language, meaning that the flow of control is structured into standard statements. All standard constructs and deep-level early exit are supported, so the use of the also supported &quot;[[goto (command)|go to]]&quot; commands is seldom needed.
+
+&lt;syntaxhighlight lang=&quot;ada&quot;&gt;
+-- while a is not equal to b, loop.
+while a /= b loop
+  Ada.Text_IO.Put_Line (&quot;Waiting&quot;);
+end loop;
+
+if a &gt; b then
+  Ada.Text_IO.Put_Line (&quot;Condition met&quot;);
+else
+  Ada.Text_IO.Put_Line (&quot;Condition not met&quot;);
+end if;
+
+for i in 1 .. 10 loop
+  Ada.Text_IO.Put (&quot;Iteration: &quot;);
+  Ada.Text_IO.Put (i);
+  Ada.Text_IO.Put_Line;
+end loop;
+
+loop
+  a := a + 1;
+  exit when a = 10;
+end loop;
+
+case i is
+  when 0 =&gt; Ada.Text_IO.Put (&quot;zero&quot;);
+  when 1 =&gt; Ada.Text_IO.Put (&quot;one&quot;);
+  when 2 =&gt; Ada.Text_IO.Put (&quot;two&quot;);
+  -- case statements have to cover all possible cases:
+  when others =&gt; Ada.Text_IO.Put (&quot;none of the above&quot;);
+end case;
+
+for aWeekday in Weekday'Range loop               -- loop over an enumeration
+   Put_Line ( Weekday'Image(aWeekday) );         -- output string representation of an enumeration
+   if aWeekday in Working_Day then               -- check of a subtype of an enumeration
+      Put_Line ( &quot; to work for &quot; &amp;
+               Working_Hours'Image (Work_Load(aWeekday)) ); -- access into a lookup table
+   end if;
+end loop;
+&lt;/syntaxhighlight&gt;
+
+=== Packages, procedures and functions ===
+Among the parts of an Ada program are packages, procedures and functions.
+
+Example:
+Package specification (example.ads)
+&lt;syntaxhighlight lang=&quot;ada&quot;&gt;
+package Example is
+     type Number is range 1 .. 11;
+     procedure Print_and_Increment (j: in out Number);
+end Example;
+&lt;/syntaxhighlight&gt;
+Package body (example.adb)
+&lt;syntaxhighlight lang=&quot;ada&quot;&gt;
+with Ada.Text_IO;
+package body Example is
+
+  i : Number := Number'First;
+
+  procedure Print_and_Increment (j: in out Number) is
+
+    function Next (k: in Number) return Number is
+    begin
+      return k + 1;
+    end Next;
+
+  begin
+    Ada.Text_IO.Put_Line ( &quot;The total is: &quot; &amp; Number'Image(j) );
+    j := Next (j);
+  end Print_and_Increment;
+
+-- package initialization executed when the package is elaborated
+begin
+  while i &lt; Number'Last loop
+    Print_and_Increment (i);
+  end loop;
+end Example;
+&lt;/syntaxhighlight&gt;
+This program can be compiled, e.g., by using the freely available open-source compiler [[GNAT]], by executing
+&lt;syntaxhighlight lang=&quot;bash&quot;&gt;gnatmake -z example.adb&lt;/syntaxhighlight&gt;
+
+Packages, procedures and functions can nest to any depth, and each can also be the logical outermost block.
+
+Each package, procedure or function can have its own declarations of constants, types, variables, and other procedures, functions and packages, which can be declared in any order.
+
+=== Concurrency ===
+Ada has language support for task-based concurrency. The fundamental concurrent unit in Ada is a ''task'', which is a built-in limited type. Tasks are specified in two parts – the task declaration defines the task interface (similar to a type declaration), the task body specifies the implementation of the task.
+Depending on the implementation, Ada tasks are either mapped to operating system threads or processes, or are scheduled internally by the Ada runtime.
+
+Tasks can have entries for synchronisation (a form of [[message passing|synchronous message passing]]). Task entries are declared in the task specification. Each task entry can have one or more ''accept'' statements within the task body. If the control flow of the task reaches an accept statement, the task is blocked until the corresponding entry is called by another task (similarly, a calling task is blocked until the called task reaches the corresponding accept statement). Task entries can have parameters similar to procedures, allowing tasks to synchronously exchange data. In conjunction with ''select'' statements it is possible to define ''guards'' on accept statements (similar to Dijkstra's [[guarded commands]]).
+
+Ada also offers ''[[protected object]]s'' for [[mutual exclusion]]. Protected objects are a [[Monitor (synchronization)|monitor-like]] construct, but use guards instead of conditional variables for signaling (similar to conditional critical regions). Protected objects combine the data encapsulation and safe mutual exclusion from monitors, and entry guards from conditional critical regions.  The main advantage over classical monitors is that conditional variables are not required for signaling, avoiding potential deadlocks due to incorrect locking semantics. Like tasks, the protected object is a built-in limited type, and it also has a declaration part and a body.
+
+A protected object consists of encapsulated private data (which can only be accessed from within the protected object), and procedures, functions and entries which are guaranteed to be mutually exclusive (with the only exception of functions, which are required to be side effect free and can therefore run concurrently with other functions). A task calling a protected object is blocked if another task is currently executing inside the same protected object, and released when this other task leaves the protected object. Blocked tasks are queued on the protected object ordered by time of arrival.
+
+Protected object entries are similar to procedures, but additionally have ''guards''. If a guard evaluates to false, a calling task is blocked and added to the queue of that entry; now another task can be admitted to the protected object, as no task is currently executing inside the protected object. Guards are re-evaluated whenever a task leaves the protected object, as this is the only time when the evaluation of guards can have changed.
+
+Calls to entries can be ''requeued'' to other entries with the same signature. A task that is requeued is blocked and added to the queue of the target entry; this means that the protected object is released and allows admission of another task.
+
+The ''select'' statement in Ada can be used to implement non-blocking entry calls and accepts, non-deterministic selection of entries (also with guards), time-outs and aborts.
+
+The following example illustrates some concepts of concurrent programming in Ada.
+&lt;syntaxhighlight lang=&quot;ada&quot;&gt;
+with Ada.Text_IO; use Ada.Text_IO;
+
+procedure Traffic is
+
+   type Airplane_ID is range 1..10;             -- 10 airplanes
+
+   task type Airplane (ID: Airplane_ID);        -- task representing airplanes, with ID as initialisation parameter
+   type Airplane_Access is access Airplane;     -- reference type to Airplane
+
+   protected type Runway is                     -- the shared runway (protected to allow concurrent access)
+      entry Assign_Aircraft (ID: Airplane_ID);  -- all entries are guaranteed mutually exclusive
+      entry Cleared_Runway (ID: Airplane_ID);
+      entry Wait_For_Clear;
+   private
+      Clear: Boolean := True;                   -- protected private data - generally more than just a flag...
+   end Runway;
+   type Runway_Access is access all Runway;
+
+   -- the air traffic controller task takes requests for takeoff and landing
+   task type Controller (My_Runway: Runway_Access) is
+      -- task entries for synchronous message passing
+      entry Request_Takeoff (ID: in Airplane_ID; Takeoff: out Runway_Access);
+      entry Request_Approach(ID: in Airplane_ID; Approach: out Runway_Access);
+   end Controller;
+
+   --  allocation of instances
+   Runway1    : aliased Runway;              -- instantiate a runway
+   Controller1: Controller (Runway1'Access); -- and a controller to manage it
+
+   ------ the implementations of the above types ------
+   protected body Runway is
+      entry Assign_Aircraft (ID: Airplane_ID)
+ when Clear is   -- the entry guard - calling tasks are blocked until the condition is true
+      begin
+       Clear := False;
+       Put_Line (Airplane_ID'Image (ID) &amp; &quot; on runway &quot;);
+      end;
+
+      entry Cleared_Runway (ID: Airplane_ID)
+ when not Clear is
+      begin
+         Clear := True;
+         Put_Line (Airplane_ID'Image (ID) &amp; &quot; cleared runway &quot;);
+      end;
+
+      entry Wait_For_Clear
+ when Clear is
+      begin
+         null;      -- no need to do anything here - a task can only enter if &quot;Clear&quot; is true
+      end;
+   end Runway;
+
+   task body Controller is
+   begin
+      loop
+         My_Runway.Wait_For_Clear;   -- wait until runway is available (blocking call)
+         select                      -- wait for two types of requests (whichever is runnable first)
+            when Request_Approach'count = 0 =&gt;  -- guard statement - only accept if there are no tasks queuing on Request_Approach
+             accept Request_Takeoff (ID: in Airplane_ID; Takeoff: out Runway_Access)
+             do                                 -- start of synchronized part
+               My_Runway.Assign_Aircraft (ID);  -- reserve runway (potentially blocking call if protected object busy or entry guard false)
+               Takeoff := My_Runway;            -- assign &quot;out&quot; parameter value to tell airplane which runway
+             end Request_Takeoff;               -- end of the synchronised part
+         or
+            accept Request_Approach (ID: in Airplane_ID; Approach: out Runway_Access) do
+               My_Runway.Assign_Aircraft (ID);
+               Approach := My_Runway;
+            end Request_Approach;
+         or                          -- terminate if no tasks left who could call
+            terminate;
+         end select;
+      end loop;
+   end;
+
+   task body Airplane is
+      Rwy : Runway_Access;
+   begin
+      Controller1.Request_Takeoff (ID, Rwy); -- This call blocks until Controller task accepts and completes the accept block
+      Put_Line (Airplane_ID'Image (ID) &amp; &quot;  taking off...&quot;);
+      delay 2.0;
+      Rwy.Cleared_Runway (ID);               -- call will not block as &quot;Clear&quot; in Rwy is now false and no other tasks should be inside protected object
+      delay 5.0; -- fly around a bit...
+      loop
+         select   -- try to request a runway
+            Controller1.Request_Approach (ID, Rwy); -- this is a blocking call - will run on controller reaching accept block and return on completion
+            exit; -- if call returned we're clear for landing - leave select block and proceed...
+         or
+            delay 3.0;  -- timeout - if no answer in 3 seconds, do something else (everything in following block)
+            Put_Line (Airplane_ID'Image (ID) &amp; &quot;   in holding pattern&quot;);  -- simply print a message
+         end select;
+      end loop;
+      delay 4.0;  -- do landing approach...
+      Put_Line (Airplane_ID'Image (ID) &amp; &quot;            touched down!&quot;);
+      Rwy.Cleared_Runway (ID);  -- notify runway that we're done here.
+   end;
+
+   New_Airplane: Airplane_Access;
+
+begin
+   for I in Airplane_ID'Range loop  -- create a few airplane tasks
+      New_Airplane := new Airplane (I); -- will start running directly after creation
+      delay 4.0;
+   end loop;
+end Traffic;
+&lt;/syntaxhighlight&gt;
+
+=== Pragmas ===
+A pragma is a [[compiler directive]] that conveys information to the compiler to allow specific manipulation of compiled output.&lt;ref name=&quot;Ada '83 Language Reference Manual&quot;&gt;{{cite web |url=http://archive.adaic.com/standards/83lrm/html/lrm-02-08.html#2.8 |title=Ada 83 LRM, Sec 2.8: Pragmas |publisher=Archive.adaic.com |date= |accessdate=2014-01-27}}&lt;/ref&gt;  Certain pragmas are built into the language,&lt;ref name=&quot;Ada '83 Language Reference Manual AppendixB&quot;&gt;{{cite web |url=http://archive.adaic.com/standards/83lrm/html/lrm-B.html |title=Ada 83 LRM, Appendix/Annex B: Predefined Language Pragmas |publisher=Archive.adaic.com |accessdate=2014-01-27 |url-status=dead |archiveurl=https://web.archive.org/web/20120206005541/http://archive.adaic.com/standards/83lrm/html/lrm-B.html |archivedate=2012-02-06 }}&lt;/ref&gt; while others are implementation-specific.
+
+Examples of common usage of compiler pragmas would be to disable certain features, such as run-time type checking or array subscript boundary checking, or to instruct the compiler to insert object code instead of a function call (as C/C++ does with inline functions).
+
+== See also ==
+* [[APSE]] – a specification for a programming environment to support software development in Ada
+* [[Ravenscar profile]] – a subset of the Ada tasking features designed for safety-critical hard real-time computing
+* [[SPARK (programming language)]] – a programming language consisting of a highly restricted subset of Ada, annotated with meta information describing desired component behavior and individual runtime requirements
+
+== References ==
+{{Reflist}}
+
+=== International standards ===
+* [[ISO 8652|ISO/IEC 8652]]: Information technology—Programming languages—Ada
+* [[ISO 15291|ISO/IEC 15291]]: Information technology—Programming languages—Ada Semantic Interface Specification ([[wikt:ASIS|ASIS]])
+* [[ISO 18009|ISO/IEC 18009]]: Information technology—Programming languages—Ada: Conformity assessment of a language processor ([[wikt:ACATS|ACATS]])
+* [[IEEE 1003|IEEE Standard 1003.5b-1996]], the [[POSIX]] Ada binding
+* [https://web.archive.org/web/20041209184612/http://www.omg.org/technology/documents/formal/ada_language_mapping.htm Ada Language Mapping Specification], the [[CORBA]] [[Interface description language|IDL]] to Ada mapping
+
+=== Rationale ===
+(These documents have been published in various forms including print.)
+* {{citation |url=http://archive.adaic.com/standards/83rat/html/Welcome.html |first1=Jean D. |last1=Ichbiah |first2=John G. P. |last2=Barnes |first3=Robert J. |last3=Firth |first4=Mike |last4=Woodger |title=Rationale for the Design of the Ada Programming Language |year=1986 |url-status=dead |archiveurl=https://web.archive.org/web/20070202205233/http://archive.adaic.com/standards/83rat/html/Welcome.html |archivedate=2007-02-02 }}
+* {{citation |url=http://www.adaic.org/resources/add_content/standards/95rat/rat95html/rat95-contents.html |first1= John G. P. |last=Barnes |title=Ada 95 rationale : the language : the standard libraries |year=1995}}
+* {{citation |url=http://www.adaic.org/standards/05rat/html/Rat-TTL.html |first=John |last=Barnes |title=Rationale for Ada 2005 |origyear=2005 |year=2006}}
+
+=== Books ===
+{{Refbegin|30em}}
+* {{citation |authorlink=Grady Booch |first=Grady |last=Booch |title=Software Engineering with Ada |location=California |publisher=The Benjamin/Cummings Publishing Company, Inc. |year=1987 |isbn=0-8053-0604-8 |url-access=registration |url=https://archive.org/details/softwareengineer0002booc }}
+* Jan Skansholm: ''Ada&amp;nbsp;95 From the Beginning'', Addison-Wesley, {{ISBN|0-201-40376-5}}
+* Geoff Gilpin: ''Ada: A Guided Tour and Tutorial'', Prentice hall, {{ISBN|978-0-13-004045-9}}
+* [[John Barnes (computer scientist)|John Barnes]]: ''Programming in Ada&amp;nbsp;2005'', Addison-Wesley, 2006, {{ISBN|0-321-34078-7}}
+* John Barnes: ''Programming in Ada plus Language Reference Manual'', Addison-Wesley, {{ISBN|0-201-56539-0}}
+* John Barnes: ''Programming in Ada&amp;nbsp;95'', Addison-Wesley, {{ISBN|0-201-34293-6}}
+* John Barnes: ''High Integrity Ada: The SPARK Approach'', Addison-Wesley, 1997, {{ISBN|0-201-17517-7}}
+* John Barnes: ''High Integrity Software: The SPARK Approach to Safety and Security'', Addison-Wesley, 2003, {{ISBN|0-321-13616-0}}
+* John Beidler: ''Data Structures and Algorithms: An Object-Oriented Approach Using Ada&amp;nbsp;95'', Springer-Verlag, 1997, {{ISBN|0-387-94834-1}}
+* [[Dean W. Gonzalez]]: ''Ada Programmer's Handbook'', Benjamin-Cummings Publishing Company, 1991, {{ISBN|0-8053-2529-8}}
+* [[M. Ben-Ari]]: ''Ada for Software Engineers'', John Wiley &amp; Sons, 1998, {{ISBN|0-471-97912-0}}
+*  Norman Cohen: ''Ada as a Second Language'', McGraw-Hill Science/Engineering/Math, {{ISBN|0-07-011607-5}}
+* [[Alan Burns (professor)|Alan Burns]], [[Andy Wellings]]: ''Real-Time Systems and Programming Languages. Ada&amp;nbsp;95, Real-Time Java and Real-Time POSIX.'', Addison-Wesley, {{ISBN|0-201-72988-1}}
+* [[Alan Burns (professor)|Alan Burns]], [[Andy Wellings]]: ''Concurrency in Ada'', Cambridge University Press, 1995, {{ISBN|0-521-62911-X}}
+* Colin Atkinson: ''Object-Oriented Reuse, Concurrency and Distribution: An Ada-Based Approach'', Addison-Wesley, {{ISBN|0-201-56527-7}}
+* [[Grady Booch]], Doug Bryan: ''Software Engineering with Ada'', Addison-Wesley, {{ISBN|0-8053-0608-0}}
+* Do-While Jones: ''Ada in Action: With Practical Programming Examples'', John Wiley &amp; Sons Inc, {{ISBN|0-471-60708-8}}
+* Daniel Stubbs, Neil W. Webre: ''Data Structures with Abstract Data Types and Ada'', Brooks Cole, {{ISBN|0-534-14448-9}}
+* Pascal Ledru: ''Distributed Programming in Ada with Protected Objects'', Dissertation.com, {{ISBN|1-58112-034-6}}
+* Fintan Culwin: ''Ada, a Developmental Approach'', Prentice Hall, {{ISBN|0-13-264680-3}}
+* John English, Fintan Culwin: ''Ada&amp;nbsp;95 the Craft of Object Oriented Programming'', Prentice Hall, {{ISBN|0-13-230350-7}}
+* David R. Musser, [[Alexander Stepanov]]: ''The Ada Generic Library: Linear List Processing Packages'', Springer-Verlag, {{ISBN|0-387-97133-5}}
+* Michael B. Feldman: ''Software Construction and Data Structures with Ada&amp;nbsp;95'', Addison-Wesley, {{ISBN|0-201-88795-9}}
+* [[Simon Johnston]]: ''Ada&amp;nbsp;95 for C and C++ Programmers'', Addison-Wesley, {{ISBN|0-201-40363-3}}
+* &quot;''Ada: Problem Solving and Program Design.''&quot; Feldman, Michael B. &amp; Koffman, Elliot B., {{ISBN|0-201-52279-9}}. Addison-Wesley Publishing Company; 1992 &amp; 1993. 795 pages.
+* Michael B. Feldman, [[Elliot Koffman|Elliot B. Koffman]]: ''Ada&amp;nbsp;95'', Addison-Wesley, {{ISBN|0-201-36123-X}}
+* [[Nell B. Dale]], Chip Weems, John McCormick: ''Programming and Problem Solving with Ada&amp;nbsp;95'', Jones &amp; Bartlett Publishers, {{ISBN|0-7637-0293-5}}
+* Nell B. Dale, John McCormick: ''Ada Plus Data Structures: An Object-Oriented Approach, 2nd edition'', Jones &amp; Bartlett Publishers, {{ISBN|0-7637-3794-1}}
+* Bruce C. Krell: ''Developing With Ada: Life-Cycle Methods'', Bantam Dell Pub Group, {{ISBN|0-553-09102-6}}
+* Judy Bishop: ''Distributed Ada: Developments and Experiences'', Cambridge University Press, {{ISBN|0-521-39251-9}}
+* Bo Sanden: ''Software Systems Construction With Examples in Ada'', Prentice Hall, {{ISBN|0-13-030834-X}}
+* Bruce Hillam: ''Introduction to Abstract Data Types Using Ada'', Prentice Hall, {{ISBN|0-13-045949-6}}
+* David Rudd: ''Introduction to Software Design and Development With Ada'', Brooks Cole, {{ISBN|0-314-02829-3}}
+* Ian C. Pyle: ''Developing Safety Systems: A Guide Using Ada'', Prentice Hall, {{ISBN|0-13-204298-3}}
+* Louis Baker: ''Artificial Intelligence With Ada'', McGraw-Hill, {{ISBN|0-07-003350-1}}
+* [[Alan Burns (professor)|Alan Burns]], [[Andy Wellings]]: ''HRT-HOOD: A Structured Design Method for Hard Real-Time Ada Systems'', North-Holland, {{ISBN|0-444-82164-3}}
+* Walter Savitch, Charles Peterson: ''Ada: An Introduction to the Art and Science of Programming'', Benjamin-Cummings Publishing Company, {{ISBN|0-8053-7070-6}}
+* Mark Allen Weiss: ''Data Structures and Algorithm Analysis in Ada'', Benjamin-Cummings Publishing Company, {{ISBN|0-8053-9055-3}}
+* Henry Ledgard: ''ADA:  An Introduction''  (Second Edition), Springer-Verlag, {{ISBN|0-387-90814-5}}
+* Dines Bjørner; Ole N. Oest (eds.): ''Towards a Formal Description of Ada'', London: Springer-Verlag, 1980. {{ISBN|3-540-10283-3}}
+{{Refend}}
+
+=== Archives ===
+* [http://purl.umn.edu/41474 Ada Programming Language Materials, 1981–1990]. [[Charles Babbage Institute]], University of Minnesota. Includes literature on software products designed for the Ada language; U.S. government publications, including Ada 9X project reports, technical reports, working papers, newsletters; and user group information.
+
+== External links ==
+&lt;!--======================== {{No more links}} ============================
+    | PLEASE BE CAUTIOUS IN ADDING MORE LINKS TO THIS ARTICLE. Wikipedia  |
+    | is not a collection of links nor should it be used for advertising. |
+    |                                                                     |
+    |           Excessive or inappropriate links WILL BE DELETED.         |
+    | See [[Wikipedia:External links]] &amp; [[Wikipedia:Spam]] for details.  |
+    |                                                                     |
+    | If there are already plentiful links, please propose additions or   |
+    | replacements on this article's discussion page, or submit your link |
+    | to the relevant category at the Open Directory Project (dmoz.org)   |
+    | and link back to that category using the {{dmoz}} template.         |
+    ======================= {{No more links}} =============================--&gt;
+* [https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=37152 DOD ADA PROGRAMMING LANGUAGE (ANSI/MIL STD 1815A-1983) specification]
+* [http://www.open-std.org/JTC1/SC22/WG9/ JTC1/SC22/WG9 ISO home of Ada Standards]
+{{Commons category|Ada (programming language)}}
+{{Wikibooks|Ada Programming}}
+{{Wikisourcecat|Ada}}
+{{Wikiversity|Ada}}
+* {{dmoz|Computers/Programming/Languages/Ada/ Ada programming language}}
+
+{{Pascal programming language family}}
+{{Programming languages}}
+{{Authority control}}
+{{Embedded systems}}
+
+[[Category:Programming languages]]
+[[Category:.NET programming languages]]
+[[Category:Ada (programming language)| ]]
+[[Category:Avionics programming languages]]
+[[Category:Embedded systems]]
+[[Category:High Integrity Programming Language]]
+[[Category:Multi-paradigm programming languages]]
+[[Category:Programming language standards]]
+[[Category:Programming languages created in 1980]]
+[[Category:Programming languages with an ISO standard]]
+[[Category:Statically typed programming languages]]
+[[Category:Systems programming languages]]
+[[Category:1980 software]]
+[[Category:High-level programming languages]]</text>
+      <sha1>gshkwemsuqpyexhk9ghp5qi1nxlprwd</sha1>
+    </revision>
+  </page>

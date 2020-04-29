@@ -1,0 +1,135 @@
+  <page>
+    <title>Conjecture</title>
+    <ns>0</ns>
+    <id>6138</id>
+    <revision>
+      <id>934775736</id>
+      <parentid>931535546</parentid>
+      <timestamp>2020-01-08T11:02:10Z</timestamp>
+      <contributor>
+        <username>Allforrous</username>
+        <id>12120664</id>
+      </contributor>
+      <comment>/* External links */ Commonscatinline template.</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{about||text reconstruction|Conjecture (textual criticism)}}
+[[File:RiemannCriticalLine.svg|thumb|350px|The real part (red) and imaginary part (blue) of the Riemann zeta function along the critical line Re(''s'') = 1/2. The first non-trivial zeros can be seen at Im(''s'') = ±14.135, ±21.022 and ±25.011. The [[Riemann hypothesis]], a famous conjecture, says that all non-trivial zeros of the zeta function lie along the critical line.]]
+
+In [[mathematics]], a '''conjecture''' is a [[Consequent|conclusion]] or a [[proposition]] which is suspected to be true due to preliminary supporting evidence, but for which no [[Formal proof|proof]] or disproof has yet been found.&lt;ref name=&quot;:0&quot;&gt;{{Cite web|url=https://mathvault.ca/math-glossary/#conjecture|title=The Definitive Glossary of Higher Mathematical Jargon — Conjecture|last=|first=|date=2019-08-01|website=Math Vault|language=en-US|url-status=live|archive-url=|archive-date=|access-date=2019-11-12}}&lt;/ref&gt;&lt;ref&gt;{{Cite web|url=https://www.merriam-webster.com/dictionary/conjecture|title=Definition of CONJECTURE|website=www.merriam-webster.com|language=en|access-date=2019-11-12}}&lt;/ref&gt;&lt;ref&gt;{{cite book|title=Oxford Dictionary of English|edition=2010}}&lt;/ref&gt;&lt;ref&gt;{{cite book|last1=Schwartz|first1=JL|title=Shuttling between the particular and the general: reflections on the role of conjecture and hypothesis in the generation of knowledge in science and mathematics.|date=1995|page=93|url=https://books.google.com/?id=JyKelnvECc4C&amp;pg=PA93&amp;lpg=PA93&amp;dq=%22although+counterpoint+between+the+particular+and+the+general%22#v=onepage&amp;q=%22although%20counterpoint%20between%20the%20particular%20and%20the%20general%22&amp;f=false|isbn=9780195115772}}&lt;/ref&gt; Some conjectures, such as the [[Riemann hypothesis]] (still a conjecture) or [[Fermat's Last Theorem]] (a conjecture until proven in 1995 by [[Andrew Wiles]]), have shaped much of mathematical history as new areas of mathematics are developed in order to prove them.&lt;ref&gt;{{Cite web|url=http://mathworld.wolfram.com/FermatsLastTheorem.html|title=Fermat's Last Theorem|last=Weisstein|first=Eric W.|website=mathworld.wolfram.com|language=en|access-date=2019-11-12}}&lt;/ref&gt;
+
+==Important examples==
+
+===Fermat's Last Theorem===
+{{main|Fermat's Last Theorem}}
+In [[number theory]], [[Fermat's Last Theorem]] (sometimes called '''Fermat's conjecture''', especially in older texts) states that no three [[positive number|positive]] [[integer]]s &lt;math&gt;a&lt;/math&gt;, ''&lt;math&gt;b&lt;/math&gt;'', and ''&lt;math&gt;c&lt;/math&gt;'' can satisfy the equation ''&lt;math&gt;a^n + b^n = c^n&lt;/math&gt;'' for any integer value of ''&lt;math&gt;n&lt;/math&gt;'' greater than two.
+
+This theorem was first conjectured by [[Pierre de Fermat]] in 1637 in the margin of a copy of ''[[Arithmetica]]'', where he claimed that he had a proof that was too large to fit in the margin.&lt;ref&gt;{{citation|first=Oystein|last=Ore|title=Number Theory and Its History|year=1988|origyear=1948|publisher=Dover|isbn=978-0-486-65620-5|pages=[https://archive.org/details/numbertheoryitsh0000orey/page/203 203–204]|url=https://archive.org/details/numbertheoryitsh0000orey/page/203}}&lt;/ref&gt; [[Wiles' proof of Fermat's Last Theorem|The first successful proof]] was released in 1994 by [[Andrew Wiles]], and formally published in 1995, after 358 years of effort by mathematicians. The unsolved problem stimulated the development of [[algebraic number theory]] in the 19th century, and the proof of the [[modularity theorem]] in the 20th century. It is among the most notable theorems in the [[history of mathematics]], and prior to its proof it was in the ''[[Guinness Book of World Records]]'' for &quot;most difficult mathematical problems&quot;.&lt;ref&gt;{{Cite book|title=The Guinness Book of World Records|last=|first=|publisher=Guinness Publishing Ltd.|year=1995|isbn=|location=|pages=|chapter=Science and Technology}}&lt;/ref&gt;
+
+===Four color theorem===
+{{Main|Four color theorem}}
+[[File:Map of United States vivid colors shown.png|thumb|A four-coloring of a map of the states of the United States (ignoring lakes).]]
+
+In [[mathematics]], the [[four color theorem]], or the four color map theorem, states that given any separation of a plane into [[wikt:contiguity|contiguous]] regions, producing a figure called a ''map'', no more than four colors are required to color the regions of the map—so that no two adjacent regions have the same color. Two regions are called ''adjacent'' if they share a common boundary that is not a corner, where corners are the points shared by three or more regions.&lt;ref&gt;{{cite journal |title=Formal Proof—The Four-Color Theorem |authorlink=Georges Gonthier|author=Georges Gonthier |journal=Notices of the AMS |volume=55 |issue=11 |date=December 2008 |pages=1382–1393}}From this paper: Definitions: A planar map is a set of pairwise disjoint subsets of the plane, called regions. A simple map is one whose regions are connected open sets. Two regions of a map are adjacent if their respective closures have a common point that is not a corner of the map. A point is a corner of a map if and only if it belongs to the closures of at least three regions. Theorem: The regions of any simple planar map can be colored with only four colors, in such a way that any two adjacent regions have different colors.&lt;/ref&gt; For example, in the map of the United States of America, Utah and Arizona are adjacent, but Utah and New Mexico, which only share a [[Four Corners Monument|point]] that also belongs to Arizona and Colorado, are not.
+
+[[August Ferdinand Möbius|Möbius]] mentioned the problem in his lectures as early as 1840.&lt;ref name=&quot;rouse_ball_1960&quot;&gt;[[W. W. Rouse Ball]] (1960) ''The Four Color Theorem'', in Mathematical Recreations and Essays, Macmillan, New York, pp 222-232.&lt;/ref&gt; The conjecture was first proposed on October 23, 1852&lt;ref name=MacKenzie&gt;Donald MacKenzie, ''Mechanizing Proof: Computing, Risk, and Trust'' (MIT Press, 2004) p103&lt;/ref&gt; when [[Francis Guthrie]], while trying to color the map of countries of England, noticed that only four different colors were needed. The [[five color theorem]], which has a short elementary proof, states that five colors suffice to color a map and was proven in the late 19th century;&lt;ref&gt;{{Cite journal|last=Heawood|first=P. J.|date=1890|title=Map-Colour Theorems|url=|journal=Quarterly Journal of Mathematics|location=Oxford|volume=24|pages=332–338|via=}}&lt;/ref&gt; however, proving that four colors suffice turned out to be significantly harder. A number of false proofs and false [[counterexample]]s have appeared since the first statement of the four color theorem in 1852.
+
+The four color theorem was ultimately proven in 1976 by [[Kenneth Appel]] and [[Wolfgang Haken]]. It was the first major [[theorem]] to be [[computer-assisted proof#List of theorems proved with the help of computer programs|proved using a computer]]. Appel and Haken's approach started by showing that there is a particular set of 1,936 maps, each of which cannot be part of a smallest-sized counterexample to the four color theorem (i.e., if they did appear, one could make a smaller counter-example). Appel and Haken used a special-purpose computer program to confirm that each of these maps had this property. Additionally, any map that could potentially be a counterexample must have a portion that looks like one of these 1,936 maps. Showing this with hundreds of pages of hand analysis, Appel and Haken concluded that no smallest counterexample exists because any must contain, yet do not contain, one of these 1,936 maps. This contradiction means there are no counterexamples at all and that the theorem is therefore true. Initially, their proof was not accepted by mathematicians at all because the [[computer-assisted proof]] was infeasible for a human to check by hand&lt;ref&gt;{{Cite journal|last=Swart|first=E. R.|date=1980|title=The Philosophical Implications of the Four-Color Problem|journal=The American Mathematical Monthly|volume=87|issue=9|pages=697–702|doi=10.2307/2321855|issn=0002-9890|jstor=2321855}}&lt;/ref&gt;. However, the proof has since then gained wider acceptance, although doubts still remain.&lt;ref&gt;{{Cite book|title=Four colors suffice : how the map problem was solved|last=Wilson|first=Robin|publisher=Princeton University Press|year=2014|isbn=9780691158228|edition=Revised color|location=Princeton, New Jersey|pages=216–222|oclc=847985591}}&lt;/ref&gt;
+
+===Hauptvermutung===
+{{main|Hauptvermutung}}
+
+The [[Hauptvermutung]] (German for main conjecture) of [[geometric topology]] is the conjecture that any two [[Triangulation (topology)|triangulations]] of a [[triangulable space]] have a common refinement, a single triangulation that is a subdivision of both of them. It was originally formulated in 1908, by [[Ernst Steinitz|Steinitz]] and [[Heinrich Franz Friedrich Tietze|Tietze]].&lt;ref&gt;{{Cite web|url=https://www.maths.ed.ac.uk/~v1ranick/haupt/|title=Triangulation and the Hauptvermutung|website=www.maths.ed.ac.uk|access-date=2019-11-12}}&lt;/ref&gt;
+
+This conjecture is now known to be false. The non-manifold version was disproved by [[John Milnor]]&lt;ref&gt;{{Cite journal|first=John W.|last= Milnor |title=Two complexes which are homeomorphic but combinatorially distinct|journal= [[Annals of Mathematics]]|volume=74|year=1961|issue= 2 |pages=575&amp;ndash;590|mr=133127|doi=10.2307/1970299|jstor=1970299}}&lt;/ref&gt; in 1961 using [[Analytic torsion|Reidemeister torsion]].
+
+The [[manifold]] version is true in [[dimension]]s {{nowrap|1=''m'' ≤ 3}}. The cases {{nowrap|1=''m'' = 2 and 3}} were proved by [[Tibor Radó]] and [[Edwin E. Moise]]&lt;ref&gt;{{cite book | last = Moise | first = Edwin E. | title = Geometric Topology in Dimensions 2 and 3 | publisher = New York : Springer-Verlag | location = New York | year = 1977 | isbn = 978-0-387-90220-3 }}&lt;/ref&gt; in the 1920s and 1950s, respectively.
+
+===Weil conjectures===
+{{main|Weil conjectures}}
+In [[mathematics]], the [[Weil conjectures]] were some highly influential proposals by {{harvs|txt|authorlink=André Weil|first=André |last=Weil|year=1949}} on the [[generating function]]s (known as [[local zeta-function]]s) derived from counting the number of points on [[algebraic variety|algebraic varieties]] over [[finite field]]s.
+
+A variety ''V'' over a finite field with ''q'' elements has a finite number of [[rational point]]s, as well as points over every finite field with ''q''&lt;sup&gt;''k''&lt;/sup&gt; elements containing that field. The generating function has coefficients derived from the numbers ''N''&lt;sub&gt;''k''&lt;/sub&gt; of points over the (essentially unique) field with ''q''&lt;sup&gt;''k''&lt;/sup&gt; elements.
+
+Weil conjectured that such ''zeta-functions'' should be [[rational function]]s, should satisfy a form of [[functional equation]], and should have their zeroes in restricted places. The last two parts were quite consciously modeled on the [[Riemann zeta function]] and [[Riemann hypothesis]]. The rationality was proved by {{harvtxt|Dwork|1960}}, the functional equation by {{harvtxt|Grothendieck|1965}}, and the analogue of the Riemann hypothesis was  proved by {{harvtxt|Deligne|1974}}
+
+===Poincaré conjecture===
+{{main|Poincaré conjecture}} 
+In [[mathematics]], the [[Poincaré conjecture]] is a [[theorem]] about the [[Characterization (mathematics)|characterization]] of the [[3-sphere]], which is the hypersphere that bounds the [[unit ball]] in four-dimensional space. The conjecture states that: {{quote|Every [[simply connected]], [[closed manifold|closed]] 3-[[manifold]] is [[homeomorphic]] to the 3-sphere.|sign=|source=}} An equivalent form of the conjecture involves a coarser form of equivalence than homeomorphism called [[homotopy equivalence]]: if a 3-manifold is ''homotopy equivalent'' to the 3-sphere, then it is necessarily ''homeomorphic'' to it.
+
+Originally conjectured by [[Henri Poincaré]], the theorem concerns a space that locally looks like ordinary three-dimensional space but is connected, finite in size, and lacks any boundary (a [[Closed manifold|closed]] [[3-manifold]]). The Poincaré conjecture claims that if such a space has the additional property that each [[path (topology)|loop]] in the space can be continuously tightened to a point, then it is necessarily a three-dimensional sphere. An [[generalized Poincaré conjecture|analogous result]] has been known in higher dimensions for some time.
+
+After nearly a century of effort by mathematicians, [[Grigori Perelman]] presented a proof of the conjecture in three papers made available in 2002 and 2003 on [[arXiv]]. The proof followed on from the program of [[Richard S. Hamilton]] to use the [[Ricci flow]] to attempt to solve the problem. Hamilton later introduced a modification of the standard Ricci flow, called ''Ricci flow with surgery'' to systematically excise singular regions as they develop, in a controlled way, but was unable to prove this method &quot;converged&quot; in three dimensions.&lt;ref&gt;{{cite journal | last = Hamilton | first = Richard S. | authorlink = Richard S. Hamilton | title = Four-manifolds with positive isotropic curvature | journal = Communications in Analysis and Geometry | volume = 5 | issue = 1 | pages = 1&amp;ndash;92 | year = 1997 | doi =  10.4310/CAG.1997.v5.n1.a1| mr = 1456308 | zbl = 0892.53018}}&lt;/ref&gt;  Perelman completed this portion of the proof. Several teams of mathematicians have verified that Perelman's proof is correct.
+
+The Poincaré conjecture, before being proven, was one of the most important open questions in [[topology]].
+
+===Riemann hypothesis===
+{{main|Riemann hypothesis}}
+In mathematics, the [[Riemann hypothesis]], proposed by {{harvs|txt|first=Bernhard|last= Riemann|year=1859|author-link=Bernhard Riemann}}, is a conjecture that the non-trivial [[root of a function|zeros]] of the [[Riemann zeta function]] all have [[real part]] 1/2.  The name is also used for some closely related analogues, such as the [[Riemann hypothesis for curves over finite fields]].
+
+The Riemann hypothesis implies results about the distribution of [[prime numbers]]. Along with suitable generalizations, some mathematicians consider it the most important unresolved problem in [[pure mathematics]].&lt;ref&gt;{{Cite web|url=http://www.claymath.org/sites/default/files/official_problem_description.pdf|title=The Riemann Hypothesis – official problem description|last=Bombieri|first=Enrico|date=2000|website=Clay Mathematics Institute|url-status=live|archive-url=|archive-date=|access-date=2019-11-12}}&lt;/ref&gt; The Riemann hypothesis, along with the [[Goldbach conjecture]], is part of [[Hilbert's eighth problem]] in [[David Hilbert]]'s list of [[Hilbert's problems|23 unsolved problems]]; it is also one of the [[Clay Mathematics Institute]] [[Millennium Prize Problems]].
+
+===P versus NP problem===
+{{main|P versus NP problem}}
+The [[P versus NP problem]] is a major [[List of unsolved problems in computer science|unsolved problem in computer science]]. Informally, it asks whether every problem whose solution can be quickly verified by a computer can also be quickly solved by a computer; it is widely conjectured that the answer is no. It was essentially first mentioned in a 1956 letter written by [[Kurt Gödel]] to [[John von Neumann]].  Gödel asked whether a certain NP-complete problem could be solved in quadratic or linear time.&lt;ref&gt;Juris Hartmanis 1989, [http://ecommons.library.cornell.edu/bitstream/1813/6910/1/89-994.pdf Gödel, von Neumann, and the P = NP problem], Bulletin of the
+European Association for Theoretical Computer Science, vol. 38, pp. 101–107&lt;/ref&gt; The precise statement of the P=NP problem was introduced in 1971 by [[Stephen Cook]] in his seminal paper &quot;The complexity of theorem proving procedures&quot;&lt;ref&gt;{{Cite book|last=Cook|first=Stephen|authorlink=Stephen Cook|year=1971|chapter=The complexity of theorem proving procedures|chapterurl=http://portal.acm.org/citation.cfm?coll=GUIDE&amp;dl=GUIDE&amp;id=805047|title=Proceedings of the Third Annual ACM Symposium on Theory of Computing|pages=151–158}}&lt;/ref&gt; and is considered by many to be the most important open problem in the field.&lt;ref&gt;[[Lance Fortnow]], [https://wayback.archive-it.org/all/20110224135332/http://www.cs.uchicago.edu/~fortnow/papers/pnp-cacm.pdf ''The status of the '''P''' versus '''NP''' problem''], Communications of the ACM 52 (2009), no.&amp;nbsp;9, pp.&amp;nbsp;78–86. {{doi|10.1145/1562164.1562186}}&lt;/ref&gt; It is one of the seven [[Millennium Prize Problems]] selected by the [[Clay Mathematics Institute]] to carry a US$1,000,000 prize for the first correct solution.
+
+===Other conjectures===
+* [[Goldbach's conjecture]]
+* The [[twin prime conjecture]]
+* The [[Collatz conjecture]]
+* The [[Manin conjecture]]
+* The [[Maldacena conjecture]]
+* The [[Euler's sum of powers conjecture|Euler conjecture]], proposed by Euler in the 18th century but for which counterexamples for a number of exponents (starting with n=4) were found beginning in the mid 20th century
+* The [[Second Hardy–Littlewood conjecture|Hardy-Littlewood conjectures]] are a pair of conjectures concerning the distribution of prime numbers, the first of which expands upon the aforementioned twin prime conjecture. Neither one has either been proven or disproven, but it ''has'' been proven that both cannot simultaneously be true (i.e., at least one must be false). It has not been proven which one is false, but it is widely believed that the first conjecture is true and the second one is false.&lt;ref&gt;{{cite journal | first=Ian | last=Richards | title=On the Incompatibility of Two Conjectures Concerning Primes | journal=Bull. Amer. Math. Soc. | volume=80 | pages=419–438 | year=1974 | doi=10.1090/S0002-9904-1974-13434-8 }}&lt;/ref&gt;
+* The [[Langlands program]]&lt;ref&gt;{{citation|last=Langlands|first=Robert|title=Letter to Prof. Weil|year=1967|url=http://publications.ias.edu/rpl/section/21}}&lt;/ref&gt; is a far-reaching web of these ideas of '[[unifying conjecture]]s' that link different subfields of mathematics (e.g. between [[number theory]] and [[representation theory]] of [[Lie group]]s). Some of these conjectures have since been proved.
+
+==Resolution of conjectures==
+
+===Proof===
+Formal mathematics is based on ''provable'' truth. In mathematics, any number of cases supporting a conjecture, no matter how large, is insufficient for establishing the conjecture's veracity, since a single [[counterexample]] could immediately bring down the conjecture. Mathematical journals sometimes publish the minor results of research teams having extended the search for a counterexample farther than previously done. For instance, the [[Collatz conjecture]], which concerns whether or not certain [[sequence]]s of [[integer]]s terminate, has been tested for all integers up to 1.2 &amp;times; 10&lt;sup&gt;12&lt;/sup&gt; (over a trillion). However, the failure to find a counterexample after extensive search does not constitute a proof that no counterexample exists, nor that the conjecture is true—because the conjecture might be false but with a very large minimal counterexample.
+
+Instead, a conjecture is considered proven only when it has been shown that it is logically impossible for it to be false. There are various methods of doing so; see [[Mathematical proof#Methods|methods of mathematical proof]] for more details.
+
+One method of proof, applicable when there are only a finite number of cases that could lead to counterexamples, is known as &quot;[[Proof by exhaustion|brute force]]&quot;: in this approach, all possible cases are considered and shown not to give counterexamples. In some occasions, the number of cases is quite large, in which case a brute-force proof may require as a practical matter the use of a computer algorithm to check all the cases. For example, the validity of the 1976 and 1997 brute-force proofs of the [[four color theorem]] by computer was initially doubted, but was eventually confirmed in 2005 by [[theorem-proving]] software.
+
+When a conjecture has been [[mathematical proof|proven]], it is no longer a conjecture but a [[theorem]]. Many important theorems were once conjectures, such as the [[Geometrization conjecture|Geometrization theorem]] (which resolved the [[Poincaré conjecture]]), [[Fermat's Last Theorem]], and others.
+
+===Disproof===
+Conjectures disproven through counterexample are sometimes referred to as ''false conjectures'' (cf. the [[Pólya conjecture]] and [[Euler's sum of powers conjecture]]). In the case of the latter, the first counterexample found for the n=4 case involved numbers in the millions, although it has been subsequently found that the minimal counterexample is actually smaller.
+
+===Independent conjectures===
+Not every conjecture ends up being proven true or false. The [[continuum hypothesis]], which tries to ascertain the relative [[cardinal number|cardinality]] of certain [[infinite set]]s, was eventually shown to be [[Independence (mathematical logic)|independent]] from the generally accepted set of [[Zermelo–Fraenkel axioms]] of set theory. It is therefore possible to adopt this statement, or its negation, as a new [[axiom]] in a consistent manner (much as [[Euclid]]'s [[parallel postulate]] can be taken either as true or false in an axiomatic system for geometry).
+
+In this case, if a proof uses this statement, researchers will often look for a new proof that ''doesn't'' require the hypothesis (in the same way that it is desirable that statements in [[Euclidean geometry]] be proved using only the axioms of neutral geometry, i.e. without the parallel postulate). The one major exception to this in practice is the [[axiom of choice]], as the majority of researchers usually do not worry whether a result requires it—unless they are studying this axiom in particular.
+
+==Conditional proofs==
+Sometimes, a conjecture is called a ''hypothesis'' when it is used frequently and repeatedly as an assumption in proofs of other results.&lt;ref name=&quot;:0&quot; /&gt; For example, the [[Riemann hypothesis]] is a conjecture from [[number theory]] that — amongst other things — makes predictions about the distribution of [[prime number]]s. Few number theorists doubt that the Riemann hypothesis is true. In fact, in anticipation of its eventual proof, some have even proceeded to develop further proofs which are contingent on the truth of this conjecture. These are called ''[[conditional proof]]s'': the conjectures assumed appear in the hypotheses of the theorem, for the time being.
+
+These &quot;proofs&quot;, however, would fall apart if it turned out that the hypothesis was false, so there is considerable interest in verifying the truth or falsity of conjectures of this type.
+
+==In other sciences==
+[[Karl Popper]] pioneered the use of the term &quot;conjecture&quot; in [[Philosophy of science|scientific philosophy]].&lt;ref&gt;{{cite book|last=Popper|first=Karl|title=Conjectures and refutations : the growth of scientific knowledge|year=2004|publisher=Routledge|location=London|isbn=0-415-28594-1}}&lt;/ref&gt; Conjecture is related to [[hypothesis]], which in [[science]] refers to a testable conjecture.
+
+==See also==
+* [[Bold hypothesis]]
+* [[Hypotheticals]]
+* [[List of conjectures]]
+
+==References==
+{{Reflist}}
+
+==External links==
+{{Wiktionary|conjecture}}
+*{{Commonscatinline|Conjectures}}
+*[http://garden.irmacs.sfu.ca/ Open Problem Garden]
+*[http://unsolvedproblems.org/ Unsolved Problems web site]
+
+{{Portal bar|Mathematics|Science}}
+
+[[Category:Conjectures| ]]
+[[Category:Concepts in the philosophy of science]]
+[[Category:Statements]]</text>
+      <sha1>gvwq7r109pja3abpcrw41zl0bcdy64a</sha1>
+    </revision>
+  </page>

@@ -1,0 +1,195 @@
+  <page>
+    <title>C*-algebra</title>
+    <ns>0</ns>
+    <id>7184</id>
+    <revision>
+      <id>931273257</id>
+      <parentid>928246711</parentid>
+      <timestamp>2019-12-18T00:40:50Z</timestamp>
+      <contributor>
+        <username>InternetArchiveBot</username>
+        <id>27015025</id>
+      </contributor>
+      <comment>Bluelinking 2 books for [[WP:V|verifiability]].) #IABot (v2.1alpha3</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{Use American English|date=January 2019}}{{Short description|Topological complex vector space
+}}
+{{refimprove|date=February 2013}}
+'''C&lt;sup&gt;∗&lt;/sup&gt;-algebras''' &lt;!-- &quot;C*&quot; is almost fine, but some fonts render the star like ∗, i.e., not superscirpt, nor small. --&gt;(pronounced &quot;C-star&quot;) are subjects of research in [[functional analysis]], a branch of [[mathematics]].  A C*-algebra is a [[Banach algebra]] together with an involution satisfying the properties of the [[Hermitian_adjoint|adjoint]]. A particular case is that of a [[complex number|complex]] [[algebra over a field|algebra]] ''A'' of [[continuous linear operator]]s on a [[complex number|complex]] [[Hilbert space]] with two additional properties:
+
+* ''A'' is a topologically [[closed set]] in the [[norm topology]] of operators.
+* ''A'' is closed under the operation of taking [[adjoint of an operator|adjoint]]s of operators.
+
+Another important class of non-Hilbert C*-algebra include the algebra of continuous functions &lt;math&gt;C_0(X)&lt;/math&gt;.
+
+C*-algebras were first considered primarily for their use in [[quantum mechanics]] to [[model (abstract)|model]] algebras of physical [[observable]]s.  This line of research began with [[Werner Heisenberg]]'s [[matrix mechanics]] and in a more mathematically developed form with [[Pascual Jordan]] around 1933.  Subsequently, [[John von Neumann]] attempted to establish a general framework for these algebras which culminated in a series of papers on rings of operators.  These papers considered a special class of C*-algebras which are now known as [[von Neumann algebra]]s.
+
+Around 1943, the work of [[Israel Gelfand]] and [[Mark Naimark]] yielded an abstract characterisation of C*-algebras making no reference to operators on a Hilbert space.
+
+C*-algebras are now an important tool in the theory of [[unitary representation]]s of [[locally compact group]]s, and are also used in algebraic formulations of quantum mechanics. Another active area of research is the program to obtain classification, or to determine the extent of which classification is possible, for separable simple [[nuclear C*-algebra]]s.
+
+== Abstract characterization ==
+
+We begin with the abstract characterization of C*-algebras given in the 1943 paper by Gelfand and Naimark.
+
+A C*-algebra, ''A'', is a [[Banach algebra]] over the field of [[complex number]]s, together with a [[Map (mathematics)|map]] &lt;math display=&quot;inline&quot;&gt; x \mapsto x^* &lt;/math&gt; for &lt;math display=&quot;inline&quot;&gt; x\in A&lt;/math&gt;     with the following properties:
+
+* It is an [[Semigroup with involution|involution]], for every ''x'' in ''A'':
+::&lt;math&gt; x^{**} = (x^*)^* =  x &lt;/math&gt;
+
+* For all ''x'', ''y'' in ''A'':
+::&lt;math&gt; (x + y)^* = x^* + y^* &lt;/math&gt;
+::&lt;math&gt; (x y)^* = y^* x^*&lt;/math&gt;
+
+* For every complex number λ in '''C''' and every ''x'' in ''A'':
+::&lt;math&gt; (\lambda x)^* = \overline{\lambda} x^* .&lt;/math&gt;
+
+* For all ''x'' in ''A'':
+::&lt;math&gt;  \|x^* x \| = \|x\|\|x^*\|.&lt;/math&gt;
+
+'''Remark.''' The first three identities say that ''A'' is a [[*-algebra]]. The last identity is called the '''C* identity''' and is equivalent to:
+
+&lt;math&gt;\|xx^*\| = \|x\|^2,&lt;/math&gt;
+
+which is sometimes called the B*-identity. For history behind the names C*- and B*-algebras, see the [[#Some_history:_B.2A-algebras_and_C.2A-algebras|history]] section below.
+
+The C*-identity is a very strong requirement. For instance, together with the [[spectral radius|spectral radius formula]], it implies that the C*-norm is uniquely determined by the algebraic structure:
+
+::&lt;math&gt; \|x\|^2 = \|x^* x\| = \sup\{|\lambda| : x^* x - \lambda \,1 \text{ is not invertible} \}.&lt;/math&gt;
+
+A [[bounded linear map]], ''π'' : ''A'' → ''B'', between C*-algebras ''A'' and ''B'' is called a '''*-homomorphism''' if
+
+* For ''x'' and ''y'' in ''A''
+
+::&lt;math&gt; \pi(x y) = \pi(x) \pi(y) \,&lt;/math&gt;
+
+* For ''x'' in ''A''
+
+::&lt;math&gt; \pi(x^*) = \pi(x)^* \,&lt;/math&gt;
+
+In the case of C*-algebras, any *-homomorphism ''π'' between C*-algebras is [[Contraction (operator theory)|contractive]], i.e. bounded with norm ≤ 1. Furthermore, an injective *-homomorphism between C*-algebras is [[isometry|isometric]]. These are consequences of the C*-identity.
+
+A bijective *-homomorphism ''π'' is called a '''C*-isomorphism''', in which case ''A'' and ''B'' are said to be '''isomorphic'''.
+
+== Some history: B*-algebras and C*-algebras ==
+The term B*-algebra was introduced by C. E. Rickart in 1946 to describe [[Banach *-algebra]]s that satisfy the condition:
+
+* &lt;math&gt;\lVert x x^* \rVert = \lVert x \rVert ^2&lt;/math&gt; for all ''x'' in the given B*-algebra. (B*-condition)
+
+This condition automatically implies that the *-involution is isometric, that is, &lt;math&gt;\lVert x \rVert = \lVert x^* \rVert &lt;/math&gt;. Hence, &lt;math&gt;\lVert xx^*\rVert = \lVert x \rVert \lVert x^*\rVert&lt;/math&gt;, and therefore, a B*-algebra is also a C*-algebra. Conversely, the C*-condition implies the B*-condition. This is nontrivial, and can be proved without using the condition &lt;math&gt;\lVert x \rVert = \lVert x^* \rVert&lt;/math&gt;.&lt;ref&gt;{{harvnb|Doran|Belfi|1986|pp=5–6}}, [https://books.google.com/books?id=6jNbsnJVjMoC&amp;pg=PA5 Google Books].&lt;/ref&gt; For these reasons, the term B*-algebra is rarely used in current terminology, and has been replaced by the term 'C*-algebra'.
+
+The term C*-algebra was introduced by [[Irving Segal|I. E. Segal]] in 1947 to describe norm-closed subalgebras of ''B''(''H''), namely, the space of bounded operators on some Hilbert space ''H''. 'C' stood for 'closed'.&lt;ref&gt;{{harvnb|Doran|Belfi|1986|p=6}}, [https://books.google.com/books?id=6jNbsnJVjMoC&amp;pg=PA6 Google Books].&lt;/ref&gt;&lt;ref&gt;{{harvnb|Segal|1947}}&lt;/ref&gt; In his paper Segal defines a C*-algebra as a &quot;uniformly closed, self-adjoint algebra of bounded operators on a Hilbert space&quot;.&lt;ref&gt;{{harvnb|Segal|1947|p=75}}&lt;/ref&gt;
+
+== Structure of C*-algebras ==
+
+C*-algebras have a large number of properties that are technically convenient. Some of these properties can be established by using the [[continuous functional calculus]] or by reduction to commutative  C*-algebras.  In the latter case, we can use the fact that the structure of these is completely determined by the [[Gelfand isomorphism]].
+
+=== Self-adjoint elements ===
+
+Self-adjoint elements are those of the form ''x''=''x''*. The set of elements of a C*-algebra ''A'' of the form ''x*x'' forms a closed [[convex cone]].  This cone is identical to the elements of the form ''xx*''. Elements of this cone are called ''non-negative'' (or sometimes ''positive'', even though this terminology conflicts with its use for elements of '''R'''.)
+
+The set of self-adjoint elements of a C*-algebra ''A'' naturally has the structure of a [[partial order|partially ordered]] [[vector space]]; the ordering is usually denoted ≥. In this ordering, a self-adjoint element ''x'' of ''A'' satisfies ''x'' ≥ 0 if and only if the [[Spectrum (functional analysis)|spectrum]] of ''x''  is non-negative,{{clarify|Under the Gelfand representation?|date=August 2014}} if and only if ''x'' = ''s*s'' for some ''s''. Two self-adjoint elements ''x'' and ''y'' of ''A'' satisfy ''x'' ≥ ''y'' if ''x''−''y'' ≥ 0.
+
+This partially ordered subspace allows the definition of a [[positive linear functional]] on a C*-algebra, which in turn is used to define the [[State (functional analysis)|states]] of a C*-algebra, which in turn can be used to construct the [[spectrum of a C*-algebra]] using the [[GNS construction]].
+
+=== Quotients and approximate identities ===
+
+Any C*-algebra ''A'' has an [[approximate identity]].  In fact, there is a directed family {''e''&lt;sub&gt;λ&lt;/sub&gt;}&lt;sub&gt;λ∈I&lt;/sub&gt; of self-adjoint elements of ''A'' such that
+
+:: &lt;math&gt; x e_\lambda \rightarrow x &lt;/math&gt;
+:: &lt;math&gt; 0 \leq e_\lambda \leq e_\mu \leq 1\quad \mbox{ whenever } \lambda \leq \mu. &lt;/math&gt;
+
+: In case ''A'' is separable, ''A'' has a sequential approximate identity. More generally, ''A'' will have a sequential approximate identity if and only if ''A'' contains a '''[[Hereditary C*-subalgebra|strictly positive element]]''', i.e. a positive element ''h'' such that ''hAh'' is dense in ''A''.
+
+Using approximate identities, one can show that the algebraic [[quotient]] of a C*-algebra by a closed proper two-sided [[Ideal (ring theory)|ideal]], with the natural norm, is a C*-algebra.
+
+Similarly, a closed two-sided ideal of a C*-algebra is itself a C*-algebra.
+
+== Examples ==
+
+=== Finite-dimensional C*-algebras ===
+The algebra M(''n'', '''C''') of ''n'' × ''n'' [[matrix (mathematics)|matrices]] over '''C''' becomes a C*-algebra if we consider matrices as operators on the Euclidean space, '''C'''&lt;sup&gt;''n''&lt;/sup&gt;, and  use the [[operator norm]] ||&amp;middot;|| on matrices. The involution is given by the [[conjugate transpose]].  More generally, one can consider finite [[direct sum of modules|direct sum]]s of matrix algebras. In fact, all C*-algebras that are finite dimensional as vector spaces are of this form, up to isomorphism. The self-adjoint requirement means finite-dimensional C*-algebras are [[Semisimple algebra|semisimple]], from which fact one can deduce the following theorem of [[Artin–Wedderburn theorem|Artin–Wedderburn]] type:
+
+&lt;blockquote&gt;'''Theorem.'''  A finite-dimensional C*-algebra, ''A'', is [[Canonical form|canonically]] isomorphic to a finite direct sum
+:&lt;math&gt; A = \bigoplus_{e \in \min A } A e&lt;/math&gt;
+where min ''A'' is the set of minimal nonzero self-adjoint central projections of ''A''.&lt;/blockquote&gt;
+
+Each C*-algebra, ''Ae'', is isomorphic (in a noncanonical way) to the full matrix algebra M(dim(''e''), '''C'''). The finite family indexed on min ''A'' given by {dim(''e'')}&lt;sub&gt;''e''&lt;/sub&gt; is called the ''dimension vector'' of ''A''.  This vector uniquely determines the isomorphism class of a finite-dimensional C*-algebra. In the language of [[operator K-theory|K-theory]], this vector is the [[ordered group|positive cone]] of the ''K''&lt;sub&gt;0&lt;/sub&gt; group of ''A''.
+
+A '''†-algebra''' (or, more explicitly, a ''†-closed algebra'') is the name occasionally used in [[physics]]&lt;ref&gt;John A. Holbrook, David W. Kribs, and Raymond Laflamme. &quot;Noiseless Subsystems and the Structure of the Commutant in Quantum Error Correction.&quot; ''Quantum Information Processing''. Volume 2, Number 5, pp. 381&amp;ndash;419.  Oct 2003.&lt;/ref&gt; for a finite-dimensional C*-algebra.  The [[dagger (typography)|dagger]], †, is used in the name because physicists typically use the symbol to denote a [[Hermitian adjoint]], and are often not worried about the subtleties associated with an infinite number of dimensions.  (Mathematicians usually use the asterisk, *, to denote the Hermitian adjoint.) †-algebras feature prominently in [[quantum mechanics]], and especially [[quantum information science]].
+
+An immediate generalization of finite dimensional C*-algebras are the [[approximately finite dimensional C*-algebra]]s.
+
+=== C*-algebras of operators ===
+The prototypical example of a C*-algebra is the algebra ''B(H)'' of bounded (equivalently continuous) [[linear operator]]s defined on a complex [[Hilbert space]] ''H''; here ''x*'' denotes the [[adjoint operator]] of the operator ''x'' : ''H'' → ''H''. In fact, every C*-algebra, ''A'', is *-isomorphic to a norm-closed adjoint closed subalgebra of ''B''(''H'') for a suitable Hilbert space, ''H''; this is the content of the [[Gelfand–Naimark theorem]].
+
+=== C*-algebras of compact operators ===
+Let ''H'' be a [[separable space|separable]] infinite-dimensional Hilbert space. The algebra ''K''(''H'') of [[Compact operator on Hilbert space|compact operator]]s on ''H'' is a [[norm closed]] subalgebra of ''B''(''H''). It is also closed under involution; hence it is a  C*-algebra.
+
+Concrete C*-algebras of compact operators admit a characterization similar to Wedderburn's theorem for finite dimensional C*-algebras:
+
+&lt;blockquote&gt;'''Theorem.''' If ''A'' is a C*-subalgebra of ''K''(''H''), then there exists Hilbert spaces {''H&lt;sub&gt;i&lt;/sub&gt;''}&lt;sub&gt;''i''∈''I''&lt;/sub&gt; such that
+:&lt;math&gt; A \cong \bigoplus_{i \in I } K(H_i),&lt;/math&gt;
+where the (C*-)direct sum consists of elements (''T&lt;sub&gt;i&lt;/sub&gt;'') of the Cartesian product Π ''K''(''H&lt;sub&gt;i&lt;/sub&gt;'') with ||''T&lt;sub&gt;i&lt;/sub&gt;''|| → 0.&lt;/blockquote&gt;
+
+Though ''K''(''H'')  does not have an identity element, a sequential [[approximate identity]] for ''K''(''H'') can be developed. To be specific, ''H'' is isomorphic to the space  of square summable sequences ''l''&lt;sup&gt;2&lt;/sup&gt;; we may assume that ''H'' = ''l''&lt;sup&gt;2&lt;/sup&gt;.  For each natural number ''n'' let ''H&lt;sub&gt;n&lt;/sub&gt;'' be the subspace of sequences of ''l''&lt;sup&gt;2&lt;/sup&gt; which vanish for indices ''k'' ≤ ''n'' and let ''e&lt;sub&gt;n&lt;/sub&gt;'' be the orthogonal projection onto ''H&lt;sub&gt;n&lt;/sub&gt;''. The sequence {''e&lt;sub&gt;n&lt;/sub&gt;''}&lt;sub&gt;''n''&lt;/sub&gt; is an approximate identity for ''K''(''H'').
+
+''K''(''H'') is a two-sided closed ideal of ''B''(''H''). For separable Hilbert spaces, it is the unique ideal. The [[quotient]] of ''B''(''H'') by ''K''(''H'') is the [[Calkin algebra]].
+
+=== Commutative C*-algebras ===
+Let ''X'' be a [[locally compact]] Hausdorff space.  The space &lt;math&gt;C_0(X)&lt;/math&gt; of complex-valued continuous functions on ''X'' that ''vanish at infinity'' (defined in the article on [[locally compact|local compactness]]) form a commutative C*-algebra &lt;math&gt;C_0(X)&lt;/math&gt; under pointwise multiplication and addition. The involution is pointwise conjugation. &lt;math&gt;C_0(X)&lt;/math&gt; has a multiplicative unit element if and only if &lt;math&gt;X&lt;/math&gt; is  compact.  As does any C*-algebra, &lt;math&gt;C_0(X)&lt;/math&gt; has an [[approximate identity]]. In the case of &lt;math&gt;C_0(X)&lt;/math&gt; this is immediate: consider the directed set of compact subsets of &lt;math&gt;X&lt;/math&gt;, and for each compact &lt;math&gt;K&lt;/math&gt; let &lt;math&gt;f_K&lt;/math&gt; be a function of compact support which is identically 1 on &lt;math&gt;K&lt;/math&gt;.  Such functions exist by the [[Tietze extension theorem]] which applies to locally compact Hausdorff spaces. Any such sequence of functions &lt;math&gt;\{f_K\}&lt;/math&gt; is an approximate identity.
+
+The [[Gelfand representation]] states that every commutative C*-algebra is *-isomorphic to the algebra &lt;math&gt;C_0(X)&lt;/math&gt;, where &lt;math&gt;X&lt;/math&gt; is the space of [[Character (mathematics)|characters]] equipped with the [[Weak topology|weak* topology]]. Furthermore, if &lt;math&gt;C_0(X)&lt;/math&gt; is [[isomorphism|isomorphic]] to &lt;math&gt;C_0(Y)&lt;/math&gt; as C*-algebras, it follows that &lt;math&gt;X&lt;/math&gt; and &lt;math&gt;Y&lt;/math&gt; are [[homeomorphism|homeomorphic]]. This characterization is one of the motivations for the [[noncommutative topology]] and [[noncommutative geometry]] programs.
+
+=== C*-enveloping algebra ===
+Given a Banach *-algebra ''A'' with an [[approximate identity]], there is a unique (up to C*-isomorphism) C*-algebra '''E'''(''A'') and *-morphism π from ''A'' into '''E'''(''A'') which is [[universal morphism|universal]], that is, every other continuous *-morphism {{nowrap|π ' : ''A'' → ''B''}} factors uniquely through π.  The algebra '''E'''(''A'') is called the '''C*-enveloping algebra''' of the Banach *-algebra ''A''.
+
+Of particular importance is the C*-algebra of a [[locally compact group]] ''G''.  This is defined as the enveloping C*-algebra of the [[group algebra]] of ''G''.  The  C*-algebra of ''G''  provides context for general [[harmonic analysis]] of ''G'' in the case ''G'' is non-abelian.  In particular, the dual of a locally compact group is defined to be the primitive ideal space of the group C*-algebra.  See [[spectrum of a C*-algebra]].
+
+=== Von Neumann algebras ===
+
+[[Von Neumann algebra]]s, known as W* algebras before the 1960s, are a special kind of C*-algebra. They are required to be closed in the [[weak operator topology]], which is weaker than the norm topology.
+
+The [[Sherman–Takeda theorem]] implies that any C*-algebra has a universal enveloping W*-algebra, such that any homomorphism to a W*-algebra factors through it.
+
+== Type for C*-algebras ==
+A C*-algebra ''A'' is of type I if and only if for all non-degenerate representations π of ''A'' the von Neumann algebra π(''A'')′′ (that is, the bicommutant of π(''A'')) is a type I von Neumann algebra. In fact it is sufficient to consider only factor representations, i.e. representations π for which π(''A'')′′ is a factor.
+
+A locally compact group is said to be of type I if and only if its [[group C^*-algebra|group C*-algebra]] is type I.
+
+However, if a C*-algebra has non-type I representations, then by results of [[James Glimm]] it also has representations of type II and type III. Thus for C*-algebras and locally compact groups, it is only meaningful to speak of type I and non type I properties.
+
+== C*-algebras and quantum field theory ==
+In [[quantum mechanics]], one typically describes a physical system with a C*-algebra ''A'' with unit element; the self-adjoint elements of ''A'' (elements ''x'' with ''x*'' = ''x'') are thought of as the ''observables'', the measurable quantities, of the system. A ''state'' of the system is defined as a positive functional on ''A'' (a '''C'''-linear map φ : ''A'' → '''C''' with φ(''u*u'') ≥ 0 for all ''u'' ∈ ''A'') such that φ(1) = 1. The expected value of the observable ''x'', if the system is in state φ, is then φ(''x'').
+
+This C*-algebra approach is used in the Haag-Kastler axiomatization of [[local quantum field theory]], where every open set of [[Minkowski spacetime]] is associated with a C*-algebra.
+
+== See also ==
+* [[Banach algebra]]
+* [[Star-algebra|*-algebra]]
+* [[Hilbert C*-module]]
+* [[Operator K-theory]]
+* [[Operator system]], a unital subspace of a C*-algebra that is *-closed.
+* [[Gelfand–Naimark–Segal construction]]
+
+== Notes ==
+{{reflist}}
+
+== References ==
+* {{citation|first=W.|last=Arveson|authorlink=William Arveson|title=An Invitation to C*-Algebra|publisher=Springer-Verlag|year=1976|isbn=0-387-90176-0}}. An excellent introduction to the subject, accessible for those with a knowledge of basic [[functional analysis]].
+* {{citation|first=Alain|last=Connes|authorlink=Alain Connes|url=https://archive.org/details/noncommutativege0000conn|title=Non-commutative geometry|isbn=0-12-185860-X|url-access=registration}}.  This book is widely regarded as a source of new research material, providing much supporting intuition, but it is difficult.
+* {{citation|first=Jacques|last=Dixmier|authorlink=Jacques Dixmier|title=Les C*-algèbres et leurs représentations|publisher=Gauthier-Villars|year=1969|isbn=0-7204-0762-1|url-access=registration|url=https://archive.org/details/calgebras0000dixm}}. This is a somewhat dated reference, but is still considered as a high-quality technical exposition. It is available in English from North Holland press.
+* {{citation|last1=Doran|first1=Robert S.|authorlink=Robert S. Doran|first2=Victor A.|last2=Belfi|title=Characterizations of C*-algebras: The Gelfand-Naimark Theorems|publisher=CRC Press|year=1986|isbn=978-0-8247-7569-8}}.
+* {{citation|first=G.|last1=Emch|title=Algebraic Methods in Statistical Mechanics and Quantum Field Theory|publisher=Wiley-Interscience|year=1972|isbn=0-471-23900-3}}. Mathematically rigorous reference which provides extensive physics background.
+*{{springer|id=c/c020020|title=C* algebra|author=A.I. Shtern}}
+* {{citation|first=S.|last=Sakai|authorlink=Shoichiro Sakai|title=C*-algebras and W*-algebras|publisher=Springer|year=1971|isbn=3-540-63633-1}}.
+*{{citation|first=Irving|last=Segal|authorlink=Irving Segal|title=Irreducible representations of operator algebras|journal=Bulletin of the American Mathematical Society|year=1947|volume=53|pages=73–88|doi=10.1090/S0002-9904-1947-08742-5|issue=2}}.
+
+{{Functional Analysis}}
+
+[[Category:C*-algebras| ]]
+[[Category:Functional analysis]]</text>
+      <sha1>m5sitchrp0qum0whlzfsro8i2ca1v2m</sha1>
+    </revision>
+  </page>

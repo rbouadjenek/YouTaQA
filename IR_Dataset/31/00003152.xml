@@ -1,0 +1,192 @@
+  <page>
+    <title>AIM-54 Phoenix</title>
+    <ns>0</ns>
+    <id>3152</id>
+    <revision>
+      <id>932089737</id>
+      <parentid>929292568</parentid>
+      <timestamp>2019-12-23T10:34:28Z</timestamp>
+      <contributor>
+        <username>Mythbusters844</username>
+        <id>20565355</id>
+      </contributor>
+      <minor />
+      <comment>/* Introduction */ Reverted my kill count edit</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{Refimprove|date=April 2016}}
+{{Infobox weapon
+| is_missile      = yes
+| name            = AIM-54 Phoenix
+| image           = File:AIM-54_PHOENIX_Sideview.png
+| caption         = Side-view of the AIM-54C
+| origin          = United States
+| type            = [[air-to-air missile|Long-range air-to-air missile]]
+| used_by         = [[United States Navy]] (former)&lt;br /&gt;[[Islamic Republic of Iran Air Force|Iranian Air Force]]
+| manufacturer    = [[Hughes Aircraft Company]]&lt;br /&gt;[[Raytheon Corporation]]
+| unit_cost       = {{US$|link=yes}}477,131
+| propellant      =
+| production_date = 1966
+| service         = 1974–present
+| engine          = [[Solid propellant]] rocket motor
+| weight          = {{convert|1000|-|1040|lb|kg|abbr=on}}
+| length          = {{convert|13|ft|m|abbr=on}}
+| height          =
+| diameter        = {{convert|15|in|mm|abbr=on}}
+| wingspan        = {{convert|3|ft|mm|abbr=on}}
+| speed           = [[mach number|Mach]] 5&lt;ref&gt;{{cite book|title=the great book of modern warplanes|year=1987|publisher=Salamander Books Ltd.|location=New York City}}&lt;/ref&gt;
+| vehicle_range   = {{convert|100|nmi|km|abbr=on}}
+| ceiling         = {{convert|100000|ft|km|abbr=on}}
+| altitude        = {{convert|80000|ft|km|abbr=on}}
+| filling         = {{convert|135|lb|kg|abbr=on}}, [[high explosive]]
+| guidance        = [[Semi-active radar homing]] and terminal phase [[active radar homing]]
+| detonation      = [[Proximity fuze]]
+| launch_platform = [[Grumman F-14 Tomcat]]
+}}
+
+The '''AIM-54 Phoenix''' is a radar-guided, long-range [[air-to-air missile]] (AAM), carried in clusters of up to six missiles on the [[Grumman F-14 Tomcat]], its only operational launch platform. The Phoenix was the United States' only long-range air-to-air missile. The combination of Phoenix missile and the [[AN/AWG-9]] guidance radar was the first aerial weapons system that could simultaneously engage multiple targets. Due to its active radar tracking, the [[Multiservice tactical brevity code#F|brevity code]] &quot;Fox Three&quot; was used when firing the AIM-54.
+
+Both  the missile and the aircraft were used by Iran and the [[United States Navy]]. In US service both are now retired, the AIM-54 Phoenix in 2004 and the F-14 in 2006. They were replaced by the shorter-range [[AIM-120 AMRAAM]], employed on the [[F/A-18 Hornet]] and [[F/A-18E/F Super Hornet]]—in [[AIM-120 AMRAAM#Air-to-air missile versions|its AIM-120D version]], the latest version of the AMRAAM just matches the Phoenix's maximum range.&lt;ref&gt;{{cite web|url=https://www.flightglobal.com/news/articles/new-long-range-missile-project-emerges-in-us-budget-442816/|title=New long-range missile project emerges in US budget|date=November 2, 2017|publisher=}}&lt;/ref&gt; 
+
+The AIM-54 is credited with 62 air-to-air kills, all scored by Iran during the long [[Iran–Iraq War]].&lt;ref&gt;{{cite web|url=http://csbaonline.org/uploads/documents/Air-to-Air-Report-.pdf|title=Trends in Air-to-Air Combat: Implications for Future Air Superiority|page=22|author=John Stillion|publisher=Center for Strategic and Budgetary Assessments (CSBA)}}&lt;/ref&gt;&lt;ref name=Cooper2004&gt;Cooper, Tom; Bishop, Farzad. ''Iranian F-14 Tomcat Units in Combat'', p. 85. Oxford: Osprey Publishing, 2004. {{ISBN|1 84176 787 5}}.&lt;/ref&gt; Following the retirement of the F-14 by the U.S. Navy, the weapon's only current operator is the [[Islamic Republic of Iran Air Force]]. 
+
+==Development==
+
+===Background===
+Since 1951, the Navy faced the initial threat from the [[Tupolev Tu-4|Tupolev Tu-4K 'Bull']] carrying&lt;ref name=&quot;google&quot;&gt;{{cite book|title=V-1 Flying Bomb, 1942–52: Hitler's Infamous &quot;Doodlebug&quot;|author1=Zaloga, S.J.|author2=Laurier, J.|date=2005|publisher=Osprey Publishing, Limited |isbn=9781841767918 |url=https://books.google.com/books?id=kGyc0NZEe_QC|accessdate=3 October 2014}}&lt;/ref&gt; [[anti-ship missile]]s or nuclear bombs.
+
+Eventually, during the height of the Cold War, the threat would have expanded into regimental-size raids of [[Tu-16 Badger]] and [[Tu-22M Backfire]] bombers equipped with low-flying, long-range, high-speed, nuclear-armed cruise missiles and considerable [[electronic countermeasures]] (ECM) of various types. This combination was considered capable of saturating fleet defenses and threatening carrier groups. 
+
+The Navy would require a long-range, long-endurance [[interceptor aircraft]] to defend [[carrier battle group]]s against this threat. The proposed [[F6D Missileer]] was intended to fulfill this mission and oppose the attack as far as possible from the fleet it was defending. The weapon needed for interceptor aircraft, the Bendix [[AAM-N-10 Eagle]], was to be an air-to-air missile of unprecedented range when compared to contemporary [[AIM-7 Sparrow]] missiles. It would work together with [[Northrop Grumman Electronic Systems|Westinghouse]] [[AN/APQ-81]] radar. The Missileer project was cancelled in December 1960.
+
+===AIM-54===
+[[File:AIM-54A first test A-3A NAN11-66.jpg|thumb|left|An AIM-54A launched from the [[Douglas A-3 Skywarrior|NA-3A]]-testbed in 1966]]
+
+In the early 1960s, the U.S. Navy made the next interceptor attempt with the [[General Dynamics–Grumman F-111B|F-111B]], and they needed a new missile design. At the same time, the [[USAF]] canceled the projects for their land-based high-speed interceptor aircraft, the [[North American XF-108 Rapier]] and the [[Lockheed YF-12]], and left the capable [[AIM-47 Falcon]] missile at a quite advanced stage of development, but with no effective launch platform.
+
+The AIM-54 Phoenix, developed for the F-111B fleet air defense fighter, had an airframe with four cruciform fins that was a scaled-up version of the AIM-47. One characteristic of the Missileer ancestry was that the radar sent it [[mid-course correction]]s, which allowed the fire control system to &quot;loft&quot; the missile up over the target into thinner air where it had better range.
+
+The F-111B was canceled in 1968. Its weapons system, the AIM-54 working with the [[AWG-9 radar]], migrated to the new U.S. Navy fighter project, the VFX, which would later become the [[F-14|F-14 Tomcat]].
+
+In 1977, development of a significantly improved Phoenix version, the AIM-54C, was developed to better counter projected threats from tactical anti-naval aircraft and cruise missiles, and its final upgrade included a re-programmable memory capability to keep pace with emerging ECM.&lt;ref name=&quot;designation-systems&quot;&gt;{{cite web|url=http://www.designation-systems.net/dusrm/m-54.html|title=Raytheon AIM-54 Phoenix|publisher=designation-systems.net|accessdate=3 October 2014}}&lt;/ref&gt;
+
+==Usage in comparison to other weapon systems==
+The AIM-54/AWG-9 combination had multiple track capability (up to 24 targets) and launch (up to six Phoenixes can be launched nearly simultaneously); the large {{convert|1000|lb|kg|-2|abbr=on}} missile is equipped with a conventional warhead.
+
+On the F-14, four missiles can be carried under the fuselage tunnel attached to special aerodynamic pallets, plus two under glove stations. A full load of six Phoenix missiles and the unique launch rails weighs in at over {{convert|8000|lb|kg|-2|abbr=on}}, about twice the weight of Sparrows, putting it above the allowable bringback load (which also would include enough fuel for go-around attempts).&lt;ref&gt;{{Cite book|url=https://books.google.com/books?id=kM8RUfGqYU0C&amp;pg=PA152&amp;lpg=PA152&amp;dq=aim-54+%22bringback%22&amp;source=bl&amp;ots=AMYjVMN89U&amp;sig=ACfU3U3j07K2WHWsXHePhWUVdDmtj1bxvQ&amp;hl=en&amp;sa=X&amp;ved=2ahUKEwin1tL2pezjAhUvqlkKHWFRCnYQ6AEwAHoECAkQAQ#v=onepage&amp;q=aim-54%20%22bringback%22&amp;f=false|title=Carrier|last=Clancy|first=Tom|date=1999-02-01|publisher=Penguin|isbn=9781101002254|language=en}}&lt;/ref&gt; As such, carrying six Phoenix missiles would necessitate the jettison of at least some of the Phoenix missiles if they were not used.  The most common air superiority payload is a mix of two Phoenix, four [[AIM-7 Sparrow|Sparrow]], and two [[AIM-9 Sidewinder|Sidewinder]] missiles.
+
+Most other US aircraft relied on the smaller, [[Semi-active radar homing|semi-active]] medium-range [[AIM-7 Sparrow]]. Semi-active guidance meant the aircraft no longer had a search capability while supporting the launched Sparrow, reducing [[situational awareness]].
+
+The Tomcat's radar could track up to 24 targets in [[track-while-scan]] mode, with the AWG-9 selecting up to six potential targets for the missiles. The pilot or [[radar intercept officer]] (RIO) could then launch the Phoenix missiles once parameters were met. The large tactical information display (TID) in the RIO's cockpit gave information to the aircrew (the pilot had the ability to monitor the RIO's display) and the radar could continually search and track multiple targets after Phoenix missiles were launched, thereby maintaining situational awareness of the battlespace.
+
+The [[Link 4]] datalink allowed US Navy Tomcats to share information with the [[E-2 Hawkeye|E-2C Hawkeye]] [[airborne early warning|AEW]] aircraft. During [[Operation Desert Shield (Gulf War)|Desert Shield]] in 1990, the Link 4A was introduced; this allowed the Tomcats to have a fighter-to-fighter datalink capability, further enhancing overall situational awareness. The F-14D entered service with the JTIDS that brought the even better [[Link 16]] datalink &quot;picture&quot; to the cockpit.
+
+===Active guidance===
+[[File:F-14A VF-1 launching AIM-54 Phoenix.JPEG|thumb|AIM-54 Phoenix seconds after launch (1991)]]
+
+The Phoenix has several guidance modes and achieves its longest range by using mid-course updates from the F-14A/B AWG-9 radar (APG-71 radar in the F-14D) as it climbs to cruise between {{convert|80000|ft|m|-3|abbr=on}} and {{convert|100000|ft|m|-4|abbr=on}} at close to Mach 5. The Phoenix uses this high altitude to gain gravitational potential energy, which is later converted into kinetic energy as the missile dives at high velocity towards its target. At around {{convert|11|mi|km}} from the target, the missile activates its own radar to provide terminal guidance.&lt;ref name=&quot;Directory&quot;&gt;[http://www.designation-systems.net/dusrm/m-54.html &quot;AIM-54&quot;] (2004). Directory of US Military Rockets and Missiles. Retrieved 28 November 2010.&lt;/ref&gt; Minimum engagement range for the Phoenix is around {{convert|2|mi|km|abbr=on}} and active homing would initiate upon launch.&lt;ref name=&quot;Directory&quot;/&gt;
+
+==Service history==
+
+===U.S. combat experience===
+[[File:AIM-54 Phoenix destroys QF-4 drone 1983.jpeg|thumb|An AIM-54 hitting a [[McDonnell F-4 Phantom II|QF-4B]] target drone, 1983.]]
+
+* On January 5, 1999, a pair of US F-14s fired two Phoenixes at Iraqi [[MiG-25]]s southeast of [[Baghdad]]. Both AIM-54s' rocket motors failed and neither missile hit its target.&lt;ref&gt;{{cite web|url=http://archive.defense.gov/Transcripts/Transcript.aspx?TranscriptID=852|title=Defense.gov Transcript: DoD News Briefing January 5, 1999|publisher=}}&lt;/ref&gt;&lt;ref&gt;Parsons, Dave, George Hall and Bob Lawson. (2006). ''Grumman F-14 Tomcat: Bye-Bye Baby...!: Images &amp; Reminiscences From 35 Years of Active Service''. Zenith Press, p. 73. {{ISBN|0-7603-3981-3}}.&lt;/ref&gt;
+* On September 9, 1999, another US F-14 launched an AIM-54 at an Iraqi [[MiG-23]] that was heading south into the no-fly zone from Al Taqaddum air base west of Baghdad. The missile missed, eventually going into the ground after the Iraqi fighter reversed course and fled north.&lt;ref&gt;Tony Holmes, &quot;US Navy F-14 Tomcat Units of Operation Iraqi Freedom&quot;, Osprey Publishing (2005). Chapter One – OSW, pp. 16–7.&lt;/ref&gt;
+
+[[File:AIM-54 Phoenix cropped.jpg|thumb|left|An AIM-54 Phoenix being attached to an F-14 wing pylon before the forward fins were installed (2003).]]
+
+The AIM-54 Phoenix was retired from USN service on September 30, 2004. F-14 Tomcats were retired on September 22, 2006. They were replaced by shorter-range [[AIM-120 AMRAAM]]s, employed on the [[F/A-18E/F Super Hornet]].
+
+Despite the much-vaunted capabilities, the Phoenix was rarely used in combat, with only two confirmed launches and no confirmed targets destroyed in US Navy service. The USAF [[F-15 Eagle]] had responsibility for overland [[combat air patrol]] duties in Operation [[Desert Storm]] in 1991, primarily because of the onboard F-15 [[identification friend or foe|IFF]] capabilities. The Tomcat did not have the requisite IFF capability mandated by the [[JFACC]] to satisfy the rules of engagement to utilize the Phoenix capability at [[beyond visual range]]. The AIM-54 was not adopted by any foreign nation besides [[Iran]], or any other US armed service, and was not used on any aircraft other than the F-14.
+
+===Iranian combat experience===
+[[File:Irani F-14 Tomcats carrying AIM-54 Phoenixs.jpg|thumb|Iranian F-14 Tomcats armed with multiple missiles, including AIM-54 Phoenix, 1986.]]
+{{further|Grumman F-14 Tomcat#Iran|List of Iranian aerial victories during the Iran–Iraq war}}
+
+On January 7, 1974 as part of Project ''Persian King'', the [[Imperial Iranian Air Force]] placed an order for 424 AIM-54As, later increasing it by 290 missiles that June.&lt;ref name=Cooper2004/&gt; Of the initial order, 274 missiles and 10 training rounds were delivered for US$150 million&lt;ref&gt;[https://www.navy.mil/navydata/fact_display.asp?cid=2200&amp;tid=700&amp;ct=2 AIM-54 Phoenix Missile]&lt;/ref&gt;, until the [[Iranian Revolution|1979 Revolution]] ended deliveries and left the remaining 150 missiles embargoed and the additional order of 290 cancelled.
+
+According to Tom Cooper and Farzad Bishop, during the [[Iran-Iraq War]] AIM-54s fired by [[Islamic Republic of Iran Air Force|IRIAF]] Tomcats achieved 78 victories against Iraqi [[MiG-21]]/[[MiG-23|23]]/[[MiG-25|25]]s, [[Tu-22]]s, [[Su-17|Su-20/22s]], [[Dassault Mirage F1|Mirage F 1s]], [[Super Étendard]]s, and even two [[Exocet|AM-39 Exocet]]s and a [[C-601]]. This includes two occasions where one AIM-54 was responsible for the downing of two Iraqi aircraft, as well as an incident on January 7, 1981 where a Phoenix fired at a four-ship of MiG-23s downed three and damaged the fourth.&lt;ref name=Cooper2004/&gt;
+
+The US refused to supply spare parts and maintenance after the 1979 Revolution, except for a brief period during the [[Iran-Contra Affair]]. According to Cooper, the Islamic Republic of Iran Air Force kept its F-14 fighters and AIM-54 missiles in regular use during the entire Iran–Iraq War, though periodic lack of spares grounded large parts of the fleet at times. During late 1987, the stock of AIM-54 missiles was at its lowest, with fewer than 50 operational missiles available. The missiles needed fresh [[thermal batteries]] that could only be purchased from the US. Iran found a clandestine buyer that supplied it with batteries, which cost up to US$10,000 each. Iran received spares and parts for both the F-14s and AIM-54s from various sources during the Iran–Iraq War, and has received more spares after the conflict. Iran started a program to build spares for the planes and missiles, and although there are claims that it no longer relies on outside sources to keep its F-14s and AIM-54s operational, there is evidence that Iran continues to procure parts clandestinely.&lt;ref&gt;{{cite magazine | last = Theimer| first = Sharon | title = Iran Gets Army Gear in Pentagon Sale | url = https://www.forbes.com/feeds/ap/2007/01/16/ap3334088.html | magazine = Forbes | accessdate = 17 January 2007 |archiveurl = https://web.archive.org/web/20070119084031/http://www.forbes.com/feeds/ap/2007/01/16/ap3334088.html | archivedate = 19 January 2007}}&lt;/ref&gt;
+
+Both the F-14 Tomcat and AIM-54 Phoenix missile continue in the service of the [[Islamic Republic of Iran Air Force]]. Iran claimed to be working on building an equivalent missile&lt;ref&gt;{{citation | publisher = Press TV | place = IR | url = http://www.presstv.ir/detail/142412.html | title = Iran eyes missile stronger than Phoenix}}.&lt;/ref&gt; and in 2013 unveiled the [[Fakour-90]], an upgraded and reverse-engineered version of the Phoenix.&lt;ref&gt;{{cite web|url=http://theaviationist.com/2013/09/26/farouk-missile/|title=Iranian F-14 Tomcat’s 'new' indigenous air-to-air missile is actually an (improved?) AIM-54 Phoenix replica |publisher=The Aviationist |last=Cenciotti|first=David|accessdate=8 November 2015}}&lt;/ref&gt;
+
+==Variants==
+[[File:Phoenix missile at Grumman Memorial Park.jpg|thumb|An AIM-54A &quot;Phoenix&quot; missile on display at [[Grumman Memorial Park]] in New York State]]
+
+;{{vanchor |AIM-54A}}: Original model that became operational with the [[U.S. Navy]] in about 1974, and it was also exported to Iran before the [[Iran hostage crisis]] beginning in 1979.
+;{{vanchor |AIM-54B}}: Also known as the 'Dry' missile. A version with simplified construction and no coolant conditioning. Did not enter series production. Developmental work started in January 1972. 7 X-AIM-54B missiles were created for testing, 6 of them by modifying pilot production IVE/PIP rounds. After two successful test firings, the 'Dry' missile effort was cancelled for being &quot;not cost effective&quot;.&lt;ref name= DeptNav_FY83&gt;{{Citation | publisher = Department of the Navy | title = Supporting data for fiscal year 1983 | contribution = Budget estimates descriptive summaries}}.&lt;/ref&gt;
+;{{vanchor |AIM-54C}}: The only improved model that was ever produced. It used [[digital electronics]] in the place of the analog electronics of the AIM-54A. This model had better abilities to shoot down low and high-altitude [[antiship missile]]s. This model took over from the AIM-54A beginning in 1986.
+;{{vanchor |AIM-54 ECCM}}/[[sealed round]]: More capabilities in [[electronic counter-countermeasure]]s. It did not require coolant conditioning during flights on board F-14s and not fired (the usual situation). Deployed beginning in 1988. Because the AIM-54 ECCM/Sealed received no coolant, F-14s carrying this version of the missile could not exceed a specified airspeed.
+
+There were also test, evaluation, ground training, and captive air training versions of the missile; designated ATM-54, AEM-54, DATM-54A, and CATM-54. The flight versions had A and C versions. The DATM-54 was not made in a C version as there was no change in the ground handling characteristics.
+
+;{{vanchor |Sea Phoenix}}: A 1970s proposal for a ship launched version of the Phoenix as an alternative/replacement for the [[RIM-7 Sea Sparrow|Sea Sparrow]] point defense system. It would also have provided a medium-range SAM capability for smaller and/or non-Aegis equipped vessels (such as the [[Aircraft Carrier (Medium)|CVV]]). The Sea Phoenix system would have included a modified shipborne version of the [[AN/AWG-9]] radar. Hughes Aircraft touted the fact that 27 out of 29 major elements of the standard (airborne) AN/AWG-9 could be used in the shipborne version with little modification. Each system would have consisted of one AWG-9 radar, with associated controls and displays, and a fixed 12-cell launcher for the Phoenix missiles. In the case of an aircraft carrier, for example, at least three systems would have been fitted in order to give overlapping coverage throughout the full 360°.&lt;ref name=JanesWS76&gt;{{Citation | publisher = Jane's | title = Weapon Systems | year = 1977}}.&lt;/ref&gt;{{Page needed | date = January 2014}} Both land and ship based tests of modified Phoenix (AIM-54A) missiles and a containerised AWG-9 (originally the 14th example off the AN/AWG-9 production line) were successfully carried out from 1974 onwards.&lt;ref name =Tarpgaard&gt;{{Citation | first = PT | last = Tarpgaard | title = The Sea Phoenix—A Warship Design Study | journal = ASNE | volume = 88 | number = 2 | pages = 31–44 | year = 1976}}.&lt;/ref&gt; 
+;AIM-54B: A land based version for the [[United States Marine Corps|USMC]] was also proposed. It has been suggested that the AIM-54B would have been used in operational Sea Phoenix systems, although that version had been cancelled by the second half of the 1970s. Ultimately, a mix of budgetary and political issues meant that, despite being technically and operationally attractive, further development of the Sea Phoenix did not proceed.
+;{{vanchor |Fakour 90}}: In February 2013 Iran reportedly tested an indigenous long-range air-to-air missile.&lt;ref&gt;{{Citation|title=Iran test-fires latest air-to-air missile |date=Feb 10, 2013 |url=http://www.presstv.ir/detail/2013/02/10/288204/iran-testfires-latest-airtoair-missile/ |publisher=Press TV |place=[[Iran|IR]] |url-status=dead |archiveurl=https://web.archive.org/web/20130930084002/http://www.presstv.ir/detail/2013/02/10/288204/iran-testfires-latest-airtoair-missile/ |archivedate=2013-09-30 }}.&lt;/ref&gt; In September 2013 it displayed the [[Fakour-90]] on a military parade. It looked almost identical to the AIM-54 Phoenix.&lt;ref&gt;{{Citation | title = Farouk missile | date = Sep 26, 2013 | url = http://theaviationist.com/2013/09/26/farouk-missile/ | newspaper = The Avionist}}.&lt;/ref&gt; In July 2018 as reported by Jane's, Iran started mass production of the Fakour-90.&lt;ref&gt;http://www.janes.com/article/81942/iran-announces-mass-production-of-fakour-air-to-air-missile&lt;/ref&gt;
+
+==Operators==
+[[File:AIM-54 operators.png|thumb|400px|Map with AIM-54 Phoenix operators in blue with former operators in red]]
+
+===Current operators===
+*{{flag|Iran}} – [[Islamic Republic of Iran Air Force]]
+
+===Former operators===
+*{{flag|United States}} – [[United States Navy]]: Retired in 2004
+
+==Characteristics==
+[[File:AIM-54C 350px.png|framed|right|350px|A technical drawing of AIM-54C]]
+
+The following is a list of AIM-54 Phoenix specifications:&lt;ref&gt;{{Cite web|url=http://www.navy.mil/navydata/fact_display.asp?cid=2200&amp;tid=700&amp;ct=2|title=Fact File: AIM-54 Phoenix Missile|work=U.S. Navy|accessdate=14 July 2011| archiveurl= https://web.archive.org/web/20110629140605/http://www.navy.mil/navydata/fact_display.asp?cid=2200&amp;tid=700&amp;ct=2| archivedate= 29 June 2011 | url-status= live}}&lt;/ref&gt;
+* Primary function: long-range, air-launched, air-intercept missile
+* Contractor: [[Hughes Aircraft Company]] and [[Raytheon Corporation]]
+* Unit cost: about $477,000, but this varied greatly
+* Power plant: solid propellant rocket motor built by [[Hercules Inc.|Hercules Incorporated]]
+* Length: {{convert|13|ft|m|abbr=on}}
+* Weight: {{convert|1000|-|1040|lb|kg}}
+* Diameter: {{convert|15|in|mm|abbr=on}}
+* Wing span: {{convert|3|ft|mm|abbr=on}}
+* Range: over {{convert|100|nmi|mi km}} (actual range is classified)
+* Speed: 3,000+ mph (4,680+ km/h)
+* Guidance system: semi-active and active radar homing
+* Warheads: [[proximity fuze]], high explosive
+* Warhead weight: {{convert|135|lb|kg}}
+* Users: US ([[U.S. Navy]]), Iran ([[Islamic Republic of Iran Air Force|IRIAF]])
+* Date deployed: 1974
+* Date retired (U.S.): September 30, 2004
+
+==See also==
+{{aircontent
+| see also = 
+* [[1962 United States Tri-Service missile and drone designation system]]
+* [[AIM-47 Falcon]]
+* [[AIM-152 AAAM]] (Proposed successor.)
+* [[F-14 Tomcat operational history]]
+* [[FMRAAM]]
+* [[Meteor (missile)]]
+* [[R-33 (missile)]] (AA-9 Amos), the Russian air-to-air missile most similar to the AIM-54 Phoenix, and [[R-37 (missile)]]
+* [[Fakour-90]]
+| lists    = 
+* [[List of military aircraft of the United States]]
+* [[List of missiles]]
+}}
+
+==References==
+{{Reflist}}
+
+== External links ==
+{{Commons category|AIM-54 Phoenix}}
+* [http://www.nasa.gov/centers/dryden/research/Phoenix/phoenixmissile.html NASA Dryden Flight Research Center – Phoenix Missile Hypersonic Testbed]
+
+{{Raytheon}}
+{{US missiles}}
+{{USN missiles}}
+
+{{DEFAULTSORT:AIM-054}}
+[[Category:Cold War air-to-air missiles of the United States]]
+[[Category:Raytheon products]]
+[[Category:Military equipment 1970–1979]]</text>
+      <sha1>cn1b7cc9u2cy1cnqfvjjpfkd90q96re</sha1>
+    </revision>
+  </page>

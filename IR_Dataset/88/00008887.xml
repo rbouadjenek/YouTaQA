@@ -1,0 +1,140 @@
+  <page>
+    <title>Direct product</title>
+    <ns>0</ns>
+    <id>8887</id>
+    <revision>
+      <id>943100555</id>
+      <parentid>940542252</parentid>
+      <timestamp>2020-02-28T20:53:32Z</timestamp>
+      <contributor>
+        <ip>170.75.138.113</ip>
+      </contributor>
+      <comment>Change &quot;direct sum&quot; to &quot;direct product&quot; for consistent terminology.</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">In [[mathematics]], one can often define a '''direct product''' of objects already known, giving a new one. This generalizes the [[Cartesian product]] of the underlying [[Set (mathematics)|sets]], together with a suitably defined structure on the product set. More abstractly, one talks about the [[Product (category theory)|product in category theory]], which formalizes these notions.
+
+Examples are the product of sets, [[Group (mathematics)|groups]] (described below), [[Product ring|rings]], and other [[algebraic structures]]. The [[product topology|product]] of [[topological space]]s is another instance.
+
+There is also the [[direct sum]] – in some areas this is used interchangeably, while in others it is a different concept.
+
+== Examples ==
+
+* If we think of &lt;math&gt;\mathbb{R}&lt;/math&gt; as the set of real numbers, then the direct product &lt;math&gt;\mathbb{R}\times \mathbb{R}&lt;/math&gt; is just the Cartesian product &lt;math&gt;\{ (x,y) \mid x,y \in \mathbb{R} \}&lt;/math&gt;.
+* If we think of &lt;math&gt;\mathbb{R}&lt;/math&gt; as the [[group (mathematics)|group]] of real numbers under addition, then the direct product &lt;math&gt;\mathbb{R}\times \mathbb{R}&lt;/math&gt; still has &lt;math&gt;\{ (x,y) \mid x,y \in \mathbb{R} \}&lt;/math&gt; as its underlying set. The difference between this and the preceding example is that &lt;math&gt;\mathbb{R}\times \mathbb{R}&lt;/math&gt; is now a group, and so we have to also say how to add their elements. This is done by defining &lt;math&gt;(a,b) + (c,d) = (a+c, b+d)&lt;/math&gt;.
+* If we think of &lt;math&gt;\mathbb{R}&lt;/math&gt; as the [[ring (mathematics)|ring]] of real numbers, then the direct product &lt;math&gt;\mathbb{R}\times \mathbb{R}&lt;/math&gt; again has &lt;math&gt;\{ (x,y) \mid x,y \in \mathbb{R} \}&lt;/math&gt; as its underlying set. The ring structure ring consists of addition defined by &lt;math&gt;(a,b) + (c,d) = (a+c, b+d)&lt;/math&gt; and multiplication defined by &lt;math&gt;(a,b) (c,d) = (ac, bd)&lt;/math&gt;.
+* However, if we think of &lt;math&gt;\mathbb{R}&lt;/math&gt; as the [[field (mathematics)|field]] of real numbers, then the direct product &lt;math&gt;\mathbb{R}\times \mathbb{R}&lt;/math&gt; does not exist – naively defining addition and multiplication componentwise as in the above example would not result in a field since the element &lt;math&gt;(1,0)&lt;/math&gt; does not have a [[multiplicative inverse]].
+
+In a similar manner, we can talk about the direct product of finitely many algebraic structures, e.g. &lt;math&gt;\mathbb{R} \times \mathbb{R} \times \mathbb{R} \times \mathbb{R}&lt;/math&gt;. This relies on the fact that the direct product is [[associative]] [[up to]] [[isomorphism]]. That is, &lt;math&gt;(A \times B) \times C \cong A \times (B \times C)&lt;/math&gt; for any algebraic structures &lt;math&gt;A&lt;/math&gt;, &lt;math&gt;B&lt;/math&gt;, and &lt;math&gt;C&lt;/math&gt; of the same kind. The direct product is also [[commutative]] up to isomorphism, i.e. &lt;math&gt;A \times B \cong B \times A&lt;/math&gt; for any algebraic structures &lt;math&gt;A&lt;/math&gt; and &lt;math&gt;B&lt;/math&gt; of the same kind. We can even talk about the direct product of infinitely many algebraic structures; for example we can take the direct product of [[countably infinite|countably]] many copies of &lt;math&gt;\mathbb R&lt;/math&gt;, which we write as &lt;math&gt;\mathbb{R} \times \mathbb{R} \times \mathbb{R} \times \dotsb&lt;/math&gt;.
+
+== Group direct product ==
+{{main|Direct product of groups}}
+In [[group (mathematics)|group theory]] one can define the direct product of two groups (''G'', ∘) and (''H'', ∙), denoted by ''G'' × ''H''. For [[abelian group]]s which are written additively, it may also be called the [[Direct sum of groups|direct sum of two groups]], denoted by &lt;math&gt;G \oplus H&lt;/math&gt;.
+
+It is defined as follows:
+* the [[Set (mathematics)|set]] of the elements of the new group is the ''Cartesian product'' of the sets of elements of ''G'' and ''H'', that is {(''g'', ''h''): ''g'' ∈ ''G'', ''h'' ∈ ''H''};
+* on these elements put an operation, defined element-wise:
+*: (''g'', ''h'') × (''g{{'}}'', ''h' '') = (''g'' ∘ ''g{{'}}'', ''h'' ∙ ''h{{'}}'')
+(Note that (''G'', ∘) may be the same as (''H'', ∙))
+
+This construction gives a new group. It has a [[normal subgroup]] isomorphic to ''G'' (given by the elements of the form (''g'', 1)), and one isomorphic to ''H'' (comprising the elements (1, ''h'')).
+
+The reverse also holds, there is the following recognition theorem: If a group ''K'' contains two normal subgroups ''G'' and ''H'', such that ''K''= ''GH'' and the intersection of ''G'' and ''H'' contains only the identity, then ''K'' is isomorphic to ''G'' × ''H''. A relaxation of these conditions, requiring only one subgroup to be normal, gives the [[semidirect product]].
+
+As an example, take as ''G'' and ''H'' two copies of the unique (up to isomorphisms) group of order 2, ''C''&lt;sub&gt;2&lt;/sub&gt;: say {1, ''a''} and {1, ''b''}. Then ''C''&lt;sub&gt;2&lt;/sub&gt;×''C''&lt;sub&gt;2&lt;/sub&gt; = {(1,1), (1,''b''), (''a'',1), (''a'',''b'')}, with the operation element by element. For instance, (1,''b'')*(''a'',1) = (1*''a'', ''b''*1) = (''a'',''b''), and (1,''b'')*(1,''b'') = (1,''b''&lt;sup&gt;2&lt;/sup&gt;) = (1,1).
+
+With a direct product, we get some natural [[group homomorphism]]s for free: the projection maps define by
+:&lt;math&gt;\begin{align}
+  \pi_1: G \times H \to G, \ \ \pi_1(g, h) &amp;= g \\
+  \pi_2: G \times H \to H, \ \ \pi_2(g, h) &amp;= h
+\end{align}&lt;/math&gt;
+called the '''coordinate functions'''.
+
+Also, every homomorphism ''f'' to the direct product is totally determined by its component functions 
+&lt;math&gt;f_i = \pi_i \circ f&lt;/math&gt;.
+
+For any group (''G'', ∘) and any integer ''n'' ≥ 0, repeated application of the direct product gives the group of all ''n''-[[tuple]]s  ''G''&lt;sup&gt;''n''&lt;/sup&gt; (for ''n''&amp;nbsp;=&amp;nbsp;0 we get the [[trivial group]]), for example '''Z'''&lt;sup&gt;''n''&lt;/sup&gt; and '''R'''&lt;sup&gt;''n''&lt;/sup&gt;.
+
+== Direct product of modules ==
+The direct product for [[module (mathematics)|modules]] (not to be confused with the [[Tensor product of modules|tensor product]]) is very similar to the one defined for groups above, using the Cartesian product with the operation of addition being componentwise, and the scalar multiplication just distributing over all the components. Starting from '''R''' we get [[Euclidean space]] '''R'''&lt;sup&gt;''n''&lt;/sup&gt;, the prototypical example of a real ''n''-dimensional vector space. The direct product of '''R'''&lt;sup&gt;''m''&lt;/sup&gt; and '''R'''&lt;sup&gt;''n''&lt;/sup&gt; is '''R'''&lt;sup&gt;''m''+''n''&lt;/sup&gt;.
+
+Note that a direct product for a finite index &lt;math&gt;\prod_{i=1}^n X_i &lt;/math&gt; is identical to the [[Direct sum of modules|direct sum]] &lt;math&gt;\bigoplus_{i=1}^n X_i &lt;/math&gt;. The direct sum and direct product differ only for infinite indices, where the elements of a direct sum are zero for all but for a finite number of entries. They are dual in the sense of [[category theory]]: the direct sum is the [[coproduct]], while the direct product is the product.
+
+For example, consider &lt;math&gt;X=\prod_{i=1}^\infty \mathbb{R} &lt;/math&gt; and &lt;math&gt;Y=\bigoplus_{i=1}^\infty \mathbb{R}&lt;/math&gt;, the infinite direct product and direct sum of the real numbers. Only sequences with a finite number of non-zero elements are in ''Y''. For example, (1,0,0,0,...) is in ''Y'' but (1,1,1,1,...) is not. Both of these sequences are in the direct product ''X''; in fact, ''Y'' is a proper subset of ''X'' (that is, ''Y''&amp;nbsp;⊂&amp;nbsp;''X'').&lt;ref&gt;{{Cite web|url=http://mathworld.wolfram.com/DirectProduct.html|title=Direct Product|last=W.|first=Weisstein, Eric|website=mathworld.wolfram.com|language=en|access-date=2018-02-10}}&lt;/ref&gt;&lt;ref&gt;{{Cite web|url=http://mathworld.wolfram.com/GroupDirectProduct.html|title=Group Direct Product|last=W.|first=Weisstein, Eric|website=mathworld.wolfram.com|language=en|access-date=2018-02-10}}&lt;/ref&gt;
+
+== Topological space direct product ==
+The direct product for a collection of [[topological space]]s ''X&lt;sub&gt;i&lt;/sub&gt;'' for ''i'' in ''I'', some index set, once again makes use of the Cartesian product
+
+:&lt;math&gt;\prod_{i \in I} X_i. &lt;/math&gt;
+
+Defining the [[topology]] is a little tricky. For finitely many factors, this is the obvious and natural thing to do: simply take as a [[basis (topology)|basis]] of open sets to be the collection of all Cartesian products of open subsets from each factor:
+
+:&lt;math&gt;\mathcal B = \{ U_1 \times \cdots \times U_n\ |\ U_i\ \mathrm{open\ in}\ X_i \}.&lt;/math&gt;
+
+This topology is called the [[product topology]]. For example, directly defining the product topology on '''R'''&lt;sup&gt;2&lt;/sup&gt; by the open sets of '''R''' (disjoint unions of open intervals), the basis for this topology would consist of all disjoint unions of open rectangles in the plane (as it turns out, it coincides with the usual [[metric space|metric]] topology).
+
+The product topology for infinite products has a twist, and this has to do with being able to make all the projection maps continuous and to make all functions into the product  continuous if and only if all its component functions are continuous (i.e. to satisfy the categorical definition of product: the morphisms here are continuous functions): we take as a basis of open sets to be the collection of all Cartesian products of open subsets from each factor, as before, with the proviso that all but finitely many of the open subsets are the entire factor:
+
+:&lt;math&gt;\mathcal B = \left\{ \prod_{i \in I} U_i\ \Big|\ (\exists j_1,\ldots,j_n)(U_{j_i}\ \mathrm{open\ in}\ X_{j_i})\ \mathrm{and}\ (\forall i \neq j_1,\ldots,j_n)(U_i = X_i) \right\}.&lt;/math&gt;
+
+The more natural-sounding topology would be, in this case, to take products of infinitely many open subsets as before, and this does yield a somewhat interesting topology, the [[box topology]]. However it is not too difficult to find an example of bunch of continuous component functions whose product function is not continuous (see the separate entry box topology for an example and more). The problem which makes the twist necessary is ultimately rooted in the fact that the intersection of open sets is only guaranteed to be open for finitely many sets in the definition of topology.
+
+Products (with the product topology) are nice with respect to preserving properties of their factors; for example, the product of Hausdorff spaces is Hausdorff; the product of connected spaces is connected, and the product of compact spaces is compact. That last one, called [[Tychonoff's theorem]], is yet another equivalence to the [[axiom of choice]].
+
+For more properties and equivalent formulations, see the separate entry [[product topology]].
+
+== Direct product of binary relations ==
+On the Cartesian product of two sets with [[binary relation]]s R and S, define (''a'', ''b'')T(''c'', ''d'') as ''a''R''c'' and ''b''S''d''. If R and S are both [[reflexive relation|reflexive]], [[irreflexive relation|irreflexive]], [[transitive relation|transitive]], [[symmetric relation|symmetric]], or [[antisymmetric relation|antisymmetric]], then T will be also.&lt;ref&gt;[http://cr.yp.to/2005-261/bender1/EO.pdf Equivalence and Order]&lt;/ref&gt; Combining properties it follows that this also applies for being a [[preorder]] and being an [[equivalence relation]]. However if R and S are [[total relation]]s, T is in not general total.
+
+== Direct product in universal algebra ==
+If Σ is a fixed [[Signature (logic)|signature]], ''I'' is an arbitrary (possibly infinite) index set, and ('''A'''&lt;sub&gt;''i''&lt;/sub&gt;)&lt;sub&gt;''i''∈''I''&lt;/sub&gt; is an [[indexed family]] of Σ algebras, the '''direct product''' '''A''' = ∏&lt;sub&gt;''i''∈''I''&lt;/sub&gt; '''A'''&lt;sub&gt;''i''&lt;/sub&gt; is a Σ algebra defined as follows:
+* The universe set ''A'' of '''A''' is the Cartesian product of the universe sets ''A''&lt;sub&gt;''i''&lt;/sub&gt; of '''A'''&lt;sub&gt;''i''&lt;/sub&gt;, formally: ''A'' = ∏&lt;sub&gt;''i''∈''I''&lt;/sub&gt; ''A''&lt;sub&gt;''i''&lt;/sub&gt;;
+* For each ''n'' and each ''n''-ary operation symbol {{nowrap|''f'' ∈ Σ}}, its interpretation ''f''&lt;sup&gt;'''A'''&lt;/sup&gt; in '''A''' is defined componentwise, formally: for all {{nowrap|''a''&lt;sub&gt;1&lt;/sub&gt;, …, ''a''&lt;sub&gt;''n''&lt;/sub&gt; ∈ ''A''}} and each {{nowrap|''i'' ∈ ''I''}}, the ''i''th component of {{nowrap|''f''&lt;sup&gt;'''A'''&lt;/sup&gt;(''a''&lt;sub&gt;1&lt;/sub&gt;, …, ''a''&lt;sub&gt;''n''&lt;/sub&gt;)}} is defined as {{nowrap|''f''&lt;sup&gt;'''A'''&lt;sub&gt;''i''&lt;/sub&gt;&lt;/sup&gt;(''a''&lt;sub&gt;1&lt;/sub&gt;(''i''), …, ''a''&lt;sub&gt;''n''&lt;/sub&gt;(''i''))}}.
+For each {{nowrap|''i'' ∈ ''I''}}, the ''i''th projection {{nowrap|π&lt;sub&gt;''i''&lt;/sub&gt; : ''A'' → ''A''&lt;sub&gt;''i''&lt;/sub&gt;}} is defined by {{nowrap|1=π&lt;sub&gt;''i''&lt;/sub&gt;(''a'') = ''a''(''i'')}}. It is a [[surjective homomorphism]] between the Σ algebras '''A''' and '''A'''&lt;sub&gt;''i''&lt;/sub&gt;.&lt;ref&gt;Stanley N. Burris and H.P. Sankappanavar, 1981. ''[http://www.thoralf.uwaterloo.ca/htdocs/ualg.html A Course in Universal Algebra.]''  Springer-Verlag. {{ISBN|3-540-90578-2}}. Here: Def.7.8, p.53 (=p. 67 in pdf file)&lt;/ref&gt;
+
+As a special case, if the index set {{nowrap|1=''I'' = { 1, 2 },}} the direct product of two Σ algebras '''A'''&lt;sub&gt;1&lt;/sub&gt; and '''A'''&lt;sub&gt;2&lt;/sub&gt; is obtained, written as {{nowrap|1='''A''' = '''A'''&lt;sub&gt;1&lt;/sub&gt; × '''A'''&lt;sub&gt;2&lt;/sub&gt;}}. If Σ just contains one binary operation ''f'', the [[#Group direct product|above]] definition of the direct product of groups is obtained, using the notation {{nowrap|1=''A''&lt;sub&gt;1&lt;/sub&gt; = ''G''}}, {{nowrap|1=''A''&lt;sub&gt;2&lt;/sub&gt; = ''H''}}, {{nowrap|1=''f''&lt;sup&gt;'''A'''&lt;sub&gt;1&lt;/sub&gt;&lt;/sup&gt; = ∘}}, {{nowrap|1=''f''&lt;sup&gt;'''A'''&lt;sub&gt;2&lt;/sub&gt;&lt;/sup&gt; = ∙}}, and {{nowrap|1=''f''&lt;sup&gt;'''A'''&lt;/sup&gt; = ×}}. Similarly, the definition of the direct product of modules is subsumed here.
+
+== Categorical product ==
+{{Main|Product (category theory)}}
+
+The direct product can be abstracted to an arbitrary [[category theory|category]]. In a general category, given a collection of objects ''A&lt;sub&gt;i&lt;/sub&gt;'' ''and'' a collection of [[morphism]]s ''p&lt;sub&gt;i&lt;/sub&gt;'' from ''A'' to ''A&lt;sub&gt;i&lt;/sub&gt;''{{clarify|Is A a single object from A_i, or all A_i?|date=February 2012}} with ''i'' ranging in some index set ''I'', an object ''A'' is said to be a '''categorical product''' in the category if, for any object ''B'' and any collection of morphisms ''f&lt;sub&gt;i&lt;/sub&gt;'' from ''B'' to ''A&lt;sub&gt;i&lt;/sub&gt;'', there exists a unique morphism ''f'' from ''B'' to ''A'' such that ''f&lt;sub&gt;i&lt;/sub&gt; = p&lt;sub&gt;i&lt;/sub&gt; f'' and this object ''A'' is unique. This not only works for two factors, but arbitrarily (even infinitely) many.
+
+For groups we similarly define the direct product of a more general, arbitrary collection of groups ''G&lt;sub&gt;i&lt;/sub&gt;'' for ''i'' in ''I'', ''I'' an index set. Denoting the Cartesian product of the groups by ''G'' we define multiplication on ''G''  with the operation of componentwise multiplication; and corresponding to the ''p&lt;sub&gt;i&lt;/sub&gt;'' in the definition above are the projection maps
+
+:&lt;math&gt;\pi_i \colon G \to G_i\quad \mathrm{by} \quad \pi_i(g) = g_i&lt;/math&gt;,
+
+the functions that take &lt;math&gt;(g_j)_{j \in I}&lt;/math&gt; to its ''i''th component ''g&lt;sub&gt;i&lt;/sub&gt;''.
+&lt;!-- this is easier to visualize as a [[commutative diagram]]; eventually somebody should insert a relevant diagram for the categorical product here! --&gt;
+
+== Internal and external direct product ==
+&lt;!-- linked from [[Internal direct product]] and [[External direct product]] --&gt;
+{{see also|Internal direct sum}}
+
+Some authors draw a distinction between an '''internal direct product''' and an '''external direct product.''' If &lt;math&gt;A, B \subset X&lt;/math&gt; and &lt;math&gt;A \times B \cong X&lt;/math&gt;, then we say that ''X'' is an ''internal'' direct product of ''A'' and ''B'', while if ''A'' and ''B'' are not subobjects then we say that this is an ''external'' direct product.
+
+==Metric and norm==
+A metric on a Cartesian product of metric spaces, and a norm on a direct product of normed vector spaces, can be defined in various ways, see for example [[Norm (mathematics)#p-norm|p-norm]].
+
+==See also==
+*[[Direct sum]]
+*[[Cartesian product]]
+*[[Coproduct]]
+*[[Free product]]
+*[[Semidirect product]]
+*[[Zappa–Szep product]]
+*[[Tensor product of graphs]]
+*[[Total order#Orders on the Cartesian product of totally ordered sets|Orders on the Cartesian product of totally ordered sets]]
+
+== Notes ==
+&lt;references /&gt;
+
+== References ==
+*{{Lang Algebra}}
+
+{{DEFAULTSORT:Direct Product}}
+[[Category:Abstract algebra]]
+
+[[ru:Прямое произведение#Прямое произведение групп]]</text>
+      <sha1>m0xrh8v7pn6fdo7ihapnjmft5jui8zb</sha1>
+    </revision>
+  </page>

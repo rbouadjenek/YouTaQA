@@ -1,0 +1,136 @@
+  <page>
+    <title>Dual-tone multi-frequency signaling</title>
+    <ns>0</ns>
+    <id>8488</id>
+    <revision>
+      <id>931956618</id>
+      <parentid>931907908</parentid>
+      <timestamp>2019-12-22T13:07:06Z</timestamp>
+      <contributor>
+        <username>Kbrose</username>
+        <id>3938795</id>
+      </contributor>
+      <comment>Undid revision 931907908 by [[Special:Contributions/Lcodyh803|Lcodyh803]] ([[User talk:Lcodyh803|talk]])</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{Redirect|Tone dialing|Ornette Coleman album|Tone Dialing (album)}}
+{{For|the video game|TouchTone}}
+[[File:66a3aDTMFpad.jpg|thumb|The keypads on telephones for the [[Autovon]] systems used all 16 DTMF signals. The red keys in the fourth column produce the A, B, C, and D DTMF events.]]
+'''Dual-tone multi-frequency signaling''' ('''DTMF''') is a [[Signalling (telecommunications)|telecommunication signaling]] system using the voice-frequency band over telephone lines between [[telephone]] equipment and other communications devices and [[Automatic telephone exchange|switching centers]].&lt;ref name=&quot;Dodd1&quot;&gt;{{Cite book |url=https://www.worldcat.org/oclc/779863446 |title=The essential guide to telecommunications |last=Z. |first=Dodd, Annabel |date=2012 |publisher=Prentice Hall |isbn=9780137058914 |edition=5th |location=Upper Saddle River, NJ |oclc=779863446}}&lt;/ref&gt; DTMF was first developed in the [[Bell System]] in the United States, and became known under the trademark '''Touch-Tone''' for use in [[push-button telephone]]s supplied to telephone customers, starting in 1963.  DTMF is standardized as [[ITU-T]] Recommendation Q.23.&lt;ref&gt;{{cite report |series=Recommendation |id=Q.23 |title=Technical features of push-button telephone sets |url=http://www.itu.int/rec/T-REC-Q.23/en |publisher=ITU}}&lt;/ref&gt; It is also known in the UK as ''MF4''.
+
+The Touch-Tone system using a [[telephone keypad]] gradually replaced the use of [[rotary dial]] and has become the industry standard for  [[landline]] and mobile service. Other [[multi-frequency]] systems are used for internal signaling within the telephone network.
+
+==Multifrequency signaling==
+Prior to the development of DTMF, telephone numbers were dialed by users with a loop-disconnect (LD) signaling, more commonly known as [[pulse dialing]] (dial pulse, DP) in the U.S. It functions by interrupting the current in the [[local loop]] between the telephone exchange and the [[calling party]]'s telephone at a precise rate with a switch in the telephone that is operated by the [[rotary dial]] as it spins back to its rest position after having been rotated to each desired number. The exchange equipment responds to the dial pulses either directly by operating relays, or by storing the number in a digit register recording the dialed number. The physical distance for which this type of dialing was possible was restricted by electrical distortions and was possible only on direct metallic links between end points of a line. Placing calls over longer distances required either operator assistance or provision of special [[subscriber trunk dialing]] equipment. Operators used an earlier type of [[multi-frequency]] signaling.
+
+'''Multi-frequency signaling''' ('''MF''') is a group of signaling methods that use a mixture of two [[pure tone]] (pure [[sine wave]]) sounds. Various MF signaling [[Communications protocol|protocols]] were devised by the [[Bell System]] and [[CCITT]]. The earliest of these were for [[in-band]] signaling between switching centers, where [[Long distance calling|long-distance]] [[Switchboard operator|telephone operators]] used a 16-[[Numerical digit|digit]] [[keypad]] to input the next portion of the destination telephone number in order to contact the next downstream long-distance telephone operator. This semi-automated signaling and switching proved successful in both speed and cost effectiveness. Based on this prior success with using MF by specialists to establish long-distance [[telephone call]]s, dual-tone multi-frequency signaling was developed for end-user signaling without the assistance of operators.
+
+The DTMF system uses a set of eight audio frequencies transmitted in pairs to represent 16 signals, represented by the ten digits, the letters A to D, and the symbols ''#'' and ''*''. As the signals are audible tones in the voice frequency range, they can be transmitted through electrical repeaters and amplifiers, and over radio and microwave links, thus eliminating the need for intermediate operators on long-distance circuits.
+
+AT&amp;T described the product as &quot;a method for pushbutton signaling from customer stations using the voice transmission path.&quot;&lt;ref&gt;AT&amp;T, ''Compatibility Bulletin No. 105''&lt;/ref&gt; In order to prevent consumer telephones from interfering with the MF-based routing and switching between telephone switching centers, DTMF frequencies differ from all of the pre-existing MF signaling protocols between switching centers: MF/R1, [[R2 signalling|R2]], CCS4, CCS5, and others that were later replaced by [[Signalling System No 7|SS7]] digital signaling. DTMF was known throughout the Bell System by the trademark ''Touch-Tone''. The term was first used by AT&amp;T in commerce on July 5, 1960, and was introduced to the public on November 18, 1963, when the first [[push-button telephone]] was made available to the public. As a parent company of Bell Systems, AT&amp;T held the trademark from September 4, 1962, to March 13, 1984. It is standardized by [[ITU-T]] Recommendation [[Q.23]]. In the UK, it is also known as MF4.
+
+Other vendors of compatible telephone equipment called the Touch-Tone feature ''tone dialing'' or ''DTMF'', or used their other trade names such as ''Digitone'' by [[Northern Electric Company]] in Canada.
+
+As a method of [[in-band signaling]], DTMF signals were also used by [[cable television]] [[Broadcasting|broadcasters]] to indicate the start and stop times of local commercial insertion points during station breaks for the benefit of cable companies. Until [[out-of-band signaling]] equipment was developed in the 1990s, fast, unacknowledged DTMF tone sequences could be heard during the commercial breaks of cable channels in the United States and elsewhere.{{Citation needed|date=March 2008}} Previously, terrestrial television stations used DTMF tones to control remote transmitters.{{Citation needed|date=March 2014}}  In [[IP telephony]], DTMF signals can also be delivered as either in-band or out-of-band tones,&lt;ref&gt;H. Schulzrinne and T. Taylor, ''RTP Payload for DTMF Digits, Telephony Tones, and Telephony Signals'', IETF RFC 4733, December 2006.&lt;/ref&gt; or even as a part of signaling protocols,&lt;ref&gt;C. Holmberg, E. Burger, H. Kaplan, ''Session Initiation Protocol (SIP) INFO Method and Package Framework'', IETF RFC 6086, January 2011.&lt;/ref&gt; as long as both endpoints agree on a common approach to adopt.
+
+== #, *, A, B, C, and D ==
+[[File:DTMF keypad layout.svg|thumb|DTMF keypad layout.]]
+{{Listen
+|filename=DTMF dialing.ogg
+|title=DTMF dialing
+|description=How DTMF dialing sounds.
+|format=[[Ogg]]}}
+The engineers had envisioned telephones being used to access computers and automated response systems.&lt;ref name=&quot;Keith&quot;&gt;{{cite book |first=Keith |last=Houston |title=Shady Characters: The Secret Life of Punctuation, Symbols, and Other Typographical Marks |url=https://books.google.com/books?id=3R2SAAAAQBAJ&amp;pg=PT45#v=onepage|date=24 September 2013 |publisher=W. W. Norton |isbn=978-0-393-24154-9 |page=45}}&lt;/ref&gt; They consulted with companies to determine the requirements. This led to the addition of the [[number sign]]&lt;nowiki&gt; (#, ''pound'' or &quot;diamond&quot; in this context, &quot;hash&quot;, &quot;square&quot; or &quot;gate&quot; in the UK, and &quot;&lt;/nowiki&gt;[[octothorpe]]&lt;nowiki&gt;'' by the original engineers) and &lt;/nowiki&gt;[[asterisk]] or &quot;star&quot; (*) keys as well as a group of keys for menu selection: A, B, C and D. In the end, the lettered keys were dropped from most phones, and it was many years before the two symbol keys became widely used for [[vertical service code]]s such as *67 in the United States of America and Canada to suppress [[caller ID]].
+
+Public [[payphone]]s that accept credit cards use these additional codes to send the information from the [[magnetic strip]].
+
+The [[Autovon|AUTOVON]] telephone system of the [[United States Armed Forces]] used these signals to assert certain privilege and priority levels when placing telephone calls.&lt;ref&gt;[http://www.tech-faq.com/abcd.shtml &quot;What are the ABCD tones?&quot; — Tech FAQ]&lt;/ref&gt;  Precedence is still a feature of military telephone networks, but using number combinations. For example, entering 93 before a number is a priority call.
+
+Present-day uses of the signals ''A'', ''B'', ''C'' and ''D'' are rare in telephone networks, and are exclusive to network control. For example, key ''A'' is used in some networks for cycling through a list of carriers. The signals are used in radio phone patch and repeater operations to allow, among other uses, control of the repeater while connected to an active telephone line.
+
+The signals *, #, A, B, C and D are still widely used worldwide by [[amateur radio]] operators and commercial two-way radio systems for equipment control, repeater control, remote-base operations and some telephone communications systems.
+
+DTMF signaling tones can also be heard at the start or end of some [[VHS]] (Video Home System) cassette tapes.{{cn|date=August 2019}} Information on the master version of the video tape is encoded in the DTMF tone. The encoded tone provides information to automatic duplication machines, such as format, duration and volume levels, in order to replicate the original video as closely as possible.
+
+DTMF tones are used in some [[caller ID]] systems to transfer the caller ID information, but in the United States the [[Bell 202 modem|Bell 202]] modulated [[frequency-shift keying]] (FSK) signaling is used to transfer the data.
+
+==Keypad==
+[[File:MultiTone1.png|thumb|right|Combination of 1209 Hz and 697 Hz sine waves, representing DTMF &quot;1&quot;]]
+The DTMF [[telephone keypad]] is laid out as a matrix of push buttons in which each row represents the low  frequency component and each column represents the high frequency component of the DTMF signal. The commonly used keypad has four rows and three columns, but a fourth column is present for some applications. Pressing a key sends a combination of the row and column frequencies. For example, the ''1'' key produces a superimposition of a 697 [[hertz|Hz]] low tone and a 1209 Hz high tone. Initial pushbutton designs employed levers, enabling each button to activate one row and one column contact. The tones are decoded by the switching center to determine the keys pressed by the user.
+
+{| class=&quot;wikitable&quot;
+|+ DTMF keypad frequencies (with sound clips)
+|-
+!align=center|
+!align=center| 1209&amp;nbsp;Hz
+!align=center| 1336&amp;nbsp;Hz
+!align=center| 1477&amp;nbsp;Hz
+!align=center| 1633&amp;nbsp;Hz
+|-
+!align=center| 697&amp;nbsp;Hz
+|align=center| [[:Media:Dtmf1.ogg|1]]
+|align=center| [[:Media:Dtmf2.ogg|2]]
+|align=center| [[:Media:Dtmf3.ogg|3]]
+|align=center| [[:Media:DtmfA.ogg|A]]
+|-
+!align=center| 770&amp;nbsp;Hz
+|align=center| [[:Media:Dtmf4.ogg|4]]
+|align=center| [[:Media:Dtmf5.ogg|5]]
+|align=center| [[:Media:Dtmf6.ogg|6]]
+|align=center| [[:Media:DtmfB.ogg|B]]
+|-
+!align=center| 852&amp;nbsp;Hz
+|align=center| [[:Media:Dtmf7.ogg|7]]
+|align=center| [[:Media:Dtmf8.ogg|8]]
+|align=center| [[:Media:Dtmf9.ogg|9]]
+|align=center| [[:Media:DtmfC.ogg|C]]
+|-
+!align=center| 941&amp;nbsp;Hz
+|align=center| [[:Media:DtmfStar.ogg|*]]
+|align=center| [[:Media:Dtmf0.ogg|0]]
+|align=center| [[:Media:Dtmf-.ogg|#]]
+|align=center| [[:Media:DtmfD.ogg|D]]
+|}
+
+==Decoding==
+[[File:1&amp;1 NetXXL powered by FRITZ! - CMD CM8870CSI on mainboard-1833.jpg|thumb|Two CMD CM8870CSI DTMF Receivers]]
+DTMF was originally decoded by tuned [[Filter_bank|filter banks]]. By the end of the 20th century, [[digital signal processing]] became the predominant technology for decoding. DTMF decoding algorithms typically use the [[Goertzel algorithm]]. As DTMF signaling is often transmitted in-band with voice or other audio signals present simultaneously, the DTMF signal definition includes strict limits for timing (minimum duration and interdigit spacing), frequency deviations, harmonics, and amplitude relation of the two components with respect to each other (''twist'').&lt;ref&gt;W. D. Reeves, ''Subscriber Loop Signaling and Transmission Handbook—Analog'', IEEE (1992), p.27&lt;/ref&gt;
+
+==Other multiple frequency signals==
+National telephone systems define other tones, outside the DTMF specification, that indicate the status of lines, equipment, or the result of calls, and for control of equipment for troubleshooting or service purposes. Such [[call-progress tone]]s are often also composed of multiple frequencies and are standardized in each country. The Bell System defined them in the [[Precise Tone Plan]].&lt;ref&gt;AT&amp;T, ''Notes on Distance Dialing'', 1968&lt;/ref&gt;
+
+==See also==
+* [[Selective calling]]
+* [[Special information tone]]
+
+==References==
+{{reflist}}
+
+==Further reading==
+* [http://www.itu.int/rec/T-REC-F.902/en ITU's recommendations for implementing DTMF services]
+* {{Citation
+ | last=Schenker
+ | first=L
+ | title=Pushbutton Calling with a Two-Group Voice-Frequency Code
+ | journal=The Bell System Technical Journal
+ | volume=39
+ | issue=1
+ | year=1960
+ | pages=235–255
+ | issn=0005-8580
+ | url=http://www.alcatel-lucent.com/bstj/vol39-1960/articles/bstj39-1-235.pdf |ref=none
+ }}.
+* {{cite journal|url=https://archive.org/details/bstj39-4-995|last1=Deininger|first1=R.L.|title=Human Factors Engineering Studies of the Design and Use of Pushbutton Telephone Sets|journal=Bell System Technical Journal|date=July 4, 1960|volume=39|issue=4|pages=995–1012}}
+* Frank Durda, [https://web.archive.org/web/20110925184759/http://nemesis.lonestar.org/reference/telecom/signaling/dtmf.html Dual Tone Multi-Frequency (Touch-Tone®) Reference], 2006.
+* [http://www.itu.int/rec/T-REC-Q.24/en ITU-T Recommendation Q.24 - Multifrequency push-button signal reception]
+
+{{Telsigs}}
+{{Telecommunications}}
+{{Western Electric}}
+
+{{DEFAULTSORT:Dual-Tone Multi-Frequency Signaling}}
+[[Category:Telephony signals]]
+[[Category:Broadcast engineering]]</text>
+      <sha1>iyb4oyqb05tiwkdho3rq55tghlqulg4</sha1>
+    </revision>
+  </page>

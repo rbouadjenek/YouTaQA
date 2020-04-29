@@ -1,0 +1,71 @@
+  <page>
+    <title>Atomic semantics</title>
+    <ns>0</ns>
+    <id>2014</id>
+    <revision>
+      <id>921182867</id>
+      <parentid>860019668</parentid>
+      <timestamp>2019-10-14T11:54:55Z</timestamp>
+      <contributor>
+        <username>Strickesel</username>
+        <id>36932059</id>
+      </contributor>
+      <minor />
+      <comment>spaces</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">'''Atomic semantics''' is a type of guarantee provided by a [[data register]] shared by several [[central processing unit|processors]] in a [[parallel machine]] or in a network of computers working together.
+Atomic semantics are very strong. An atomic register provides strong guarantees even when there is concurrency and failures.
+
+A read/write register R stores a value and is accessed by two basic operations: read and write(v). A read  returns the value stored in R and write(v) changes the value stored in R to v.
+A register is called atomic if it satisfies the two following properties:
+
+1) Each invocation op of a read or write operation:
+
+•Must appear as if it were executed at a single point τ(op) in time.
+
+•τ (op) works as follow:
+τb(op) ≤ τ (op) ≤ τe(op): where τb(op) and τe(op) indicate the time when the operation op begins and ends.
+
+•If op1 ≠ op2, then τ (op1)≠τ (op2)
+
+2) Each read operation returns the value written by the last write operation before the read, in the sequence where all operations are ordered by their τ values.
+
+'''Atomic/Linearizable register:'''
+
+Termination: when a node is correct, sooner or later each read and write operation will complete.
+
+'''Safety Property''' (Linearization points for read and write and failed operations):
+
+Read operation:It appears as if happened at all nodes at some times between the invocation and response time.
+
+Write operation: Similar to read operation, it appears as if happened at all nodes at some times between the invocation and response time.
+
+Failed operation(The atomic term comes from this notion):It appears as if it is completed at every single node or it never happened at any node.
+
+Example : We know that an atomic register is one that is linearizable to a sequential safe register.
+
+[[File:Atomic register1.jpg|centre|atomic]]
+
+The following picture shows where we should put the linearization point for each operation:
+
+[[File:Atomic register.jpg|center|Atomic register]]
+
+ 
+An atomic register could be defined for a variable with a single writer but multi- readers (SWMR), single-writer/single-reader (SWSR), or multi-writer/multi-reader (MWMR). Here is an example of a multi-reader multi-writer atomic register which is accessed by three processes (P1, P2, P3). Note that R. read() → v means that the corresponding read operation returns v, which is the value of the register. Therefore, the following execution of the register R could satisfies the definition of the atomic registers:
+R.write(1), R.read()→1, R.write(3), R.write(2), R.read()→2, R.read()→2.
+
+[[File:Atomic MWMR1.jpg|center|Atomic MWMR1]]
+
+==See also==
+*[[Regular semantics]]
+*[[Safe semantics]]
+
+==References==
+* Atomic semantics are defined formally in Lamport's &quot;On Interprocess Communication&quot; Distributed Computing 1, 2 (1986), 77-101. (Also appeared as SRC Research Report 8).
+
+{{DEFAULTSORT:Atomic Semantics}}
+[[Category:Concurrency control]]</text>
+      <sha1>6oyvxgn4poi8ld2ox5n1unrcq4k3kbe</sha1>
+    </revision>
+  </page>

@@ -1,0 +1,69 @@
+  <page>
+    <title>Exploit (computer security)</title>
+    <ns>0</ns>
+    <id>9875</id>
+    <revision>
+      <id>939265758</id>
+      <parentid>927621218</parentid>
+      <timestamp>2020-02-05T11:14:33Z</timestamp>
+      <contributor>
+        <username>Pancho507</username>
+        <id>23914831</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{Information security}}
+An '''exploit''' (from the English verb ''to exploit'', meaning &quot;to use something to one’s own advantage&quot;) is a piece of [[software]], a chunk of data, or a sequence of commands that takes advantage of a [[software bug|bug]] or [[vulnerability (computer science)|vulnerability]] to cause unintended or unanticipated behavior to occur on computer software, hardware, or something electronic (usually computerized). Such behavior frequently includes things like gaining control of a computer system, allowing [[privilege escalation]], or a [[denial-of-service attack|denial-of-service (DoS or related DDoS) attack]].
+
+==Classification==
+There are several methods of classifying exploits. The most common is by how the exploit communicates to the vulnerable software.
+
+A ''remote exploit''&lt;ref&gt;{{cite web|title=Remote Exploits - Exploit Database|url=https://www.exploit-db.com/remote/|website=www.exploit-db.com}}&lt;/ref&gt; works over a network and exploits the security vulnerability without any prior access to the vulnerable system.
+
+A ''local exploit''&lt;ref&gt;{{cite web|title=Privilege Escalation and Local Exploits - Exploit Database|url=https://www.exploit-db.com/local/|website=www.exploit-db.com}}&lt;/ref&gt; requires prior access to the vulnerable system and usually increases the privileges of the person running the exploit past those granted by the system administrator. Exploits against client applications also exist, usually consisting of modified servers that send an exploit if accessed with a client application.
+
+Exploits against client applications may also require some interaction with the user and thus may be used in combination with the [[social engineering (security)|social engineering]] method. Another classification is by the action against the vulnerable system; unauthorized data access, arbitrary code execution, and denial of service are examples.
+
+Many exploits are designed to provide superuser-level access to a computer system. However, it is also possible to use several exploits, first to gain low-level access, then to escalate privileges repeatedly until one reaches the highest administrative level (often called &quot;root&quot;).
+
+After an exploit is made known to the authors of the affected software, the vulnerability is often fixed through a patch and the exploit becomes unusable. That is the reason why some [[Black hat hacking|black hat]] [[Hacker (computer security)|hackers]] as well as military or intelligence agencies hackers do not publish their exploits but keep them private.
+
+Exploits unknown to everyone but the people that found and developed them are referred to as ''[[Zero-day (computing)|zero day]] exploits''.
+
+===Types===
+Exploitations are commonly categorized and named&lt;ref&gt;{{cite web|title=Exploits Database by Offensive Security|url=https://www.exploit-db.com/|website=www.exploit-db.com}}&lt;/ref&gt;&lt;ref&gt;{{cite web|title=Exploit Database {{!}} Rapid7|url=https://www.rapid7.com/db/modules/|website=www.rapid7.com}}&lt;/ref&gt; by the type of vulnerability they exploit (see [[Vulnerability (computing)|vulnerabilities]] for a list), whether they are local/remote and the result of running the exploit (e.g. [[Elevation of Privilege (computing)|EoP]], [[Denial of Service (computing)|DoS]], [[Spoofing attack|spoofing]]).
+
+===Pivoting===
+'''Pivoting''' refers to a method used by [[penetration test]]ers that uses the compromised system to attack other systems on the same network to avoid restrictions such as [[Firewall (computing)|firewall]] configurations, which may prohibit direct access to all machines. For example, if an attacker compromises a web server on a corporate network, the attacker can then use the compromised web server to attack other systems on the network. These types of attacks are often called multi-layered attacks. Pivoting is also known as ''island hopping''.
+
+Pivoting can further be distinguished into [[Proxy server|proxy]] pivoting and [[VPN]] pivoting. '''Proxy pivoting''' generally describes the practice of channeling traffic through a compromised target using a proxy payload on the machine and launching attacks from the computer.&lt;ref&gt;&lt;!--is this a separate source? Fix (and with separate cite web): [http://www.metasploit.com/redmine/projects/framework/wiki/Pivoting Metasploit Framework Pivoting], --&gt;{{cite web |url=https://www.digitalbond.com/index.php/2010/07/12/metasploit-basics-part-3-pivoting-and-interfaces/ |title=Metasploit Basics – Part 3: Pivoting and Interfaces |work=Digital Bond}}&lt;/ref&gt; This type of pivoting is restricted to certain [[Transmission Control Protocol|TCP]] and [[User Datagram Protocol|UDP]] ports that are supported by the proxy.
+
+'''VPN pivoting''' enables the attacker to create an encrypted layer to tunnel into the compromised machine to route any network traffic through that target machine, for example, to run a vulnerability scan on the internal network through the compromised machine, effectively giving the attacker full network access as if they were behind the firewall.
+
+Typically, the proxy or VPN applications enabling pivoting are executed on the target computer as the [[payload (software)]] of an exploit.
+
+Pivoting is usually done by infiltrating a part of a network infrastructure (as an example, a vulnerable printer or thermostat) and using a scanner to find other devices connected to attack them. By attacking a vulnerable piece of networking, an attacker could infect most or all of a network and gain complete control.
+
+==See also==
+* [[Computer security]]
+* [[Computer virus]]
+* [[Crimeware]]
+* [[Exploit kit]]
+* ''[[Hacking: The Art of Exploitation]]'' (second edition)
+* [[IT risk]]
+* [[Metasploit Project|Metasploit]]
+* [[Shellcode]]
+* [[w3af]]
+* [[Sqlmap]]
+
+==Notes==
+{{reflist}}
+
+==External links==
+*{{Commonscat-inline|Computer security exploits}}
+
+{{DEFAULTSORT:Exploit (Computer Security)}}
+[[Category:Computer security exploits| ]]</text>
+      <sha1>hhpv78zyda9wnlghblla04z0m3ulfsp</sha1>
+    </revision>
+  </page>

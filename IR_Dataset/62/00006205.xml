@@ -1,0 +1,122 @@
+  <page>
+    <title>Chaitin's constant</title>
+    <ns>0</ns>
+    <id>6205</id>
+    <revision>
+      <id>930464807</id>
+      <parentid>926793446</parentid>
+      <timestamp>2019-12-12T17:39:26Z</timestamp>
+      <contributor>
+        <username>Citation bot</username>
+        <id>7903804</id>
+      </contributor>
+      <minor />
+      <comment>Add: pmid. | You can [[WP:UCB|use this bot]] yourself. [[WP:DBUG|Report bugs here]].| Activated by [[User:Nemo bis]] | via #UCB_webform</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{About|the &amp;Omega; constant from information theory|the &amp;Omega; constant from analysis|omega constant}}
+{{Use dmy dates|date=July 2012}}
+{{More footnotes|date=November 2011}}
+In the [[computer science]] subfield of [[algorithmic information theory]], a '''Chaitin constant''' ('''Chaitin omega number''')&lt;ref&gt;[[mathworld.wolfram.com]], [http://mathworld.wolfram.com/ChaitinsConstant.html Chaitin's Constant]. Retrieved 28 May 2012&lt;/ref&gt; or '''halting probability''' is a [[real number]] that, informally speaking, represents the [[probability]] that a randomly constructed program will halt. These numbers are formed from a construction due to [[Gregory Chaitin]].
+
+Although there are infinitely many halting probabilities, one for each method of encoding programs, it is common to use the letter &amp;Omega; to refer to them as if there were only one.  Because &amp;Omega; depends on the program encoding used, it is sometimes called '''Chaitin's construction''' instead of '''Chaitin's constant''' when not referring to any specific encoding.
+
+Each halting probability is a [[normal number|normal]] and [[transcendental number|transcendental]] real number that is not [[computable number|computable]], which means that there is no [[algorithm]] to compute its digits. Indeed, each halting probability is [[Algorithmically random sequence|Martin-Löf random]], meaning there is not even any algorithm which can reliably guess its digits.
+
+== Background ==
+The definition of a halting probability relies on the existence of a '''prefix-free universal computable function.'''  Such a function, intuitively, represents a programming language with the property that no valid program can be obtained as a proper extension of another valid program.
+
+Suppose that ''F'' is a [[partial function]] that takes one argument, a finite binary string, and possibly returns a single binary string as output. The function ''F'' is called '''[[Computable function|computable]]''' if there is a [[Turing machine]] that computes it (in the sense that for any finite binary strings ''x'' and ''y,''  ''F(x) = y'' if and only if the Turing machine halts with ''y'' on its tape when given the input ''x'').
+
+The function ''F'' is called '''[[Computational universality|universal]]''' if the following property holds:  for every computable function ''f'' of a single variable there is a string ''w'' such that for all ''x'', ''F''(''w''&amp;nbsp;''x'') = ''f''(''x''); here ''w''&amp;nbsp;''x'' represents the [[concatenation]] of the two strings ''w'' and ''x''.  This means that ''F'' can be used to simulate any computable function of one variable.  Informally, ''w'' represents a &quot;script&quot; for the computable function ''f'', and ''F'' represents an &quot;interpreter&quot; that parses the script as a prefix of its input and then executes it on the remainder of input.
+
+The '''[[Domain of a function|domain]]''' of ''F'' is the set of all inputs ''p'' on which it is defined. For ''F'' that are universal, such a ''p'' can generally be seen both as the concatenation of a program part and a data part, and as a single program for the function ''F''.
+
+The function ''F'' is called '''prefix-free''' if there are no two elements ''p'', ''p&amp;prime;'' in its domain such that ''p&amp;prime;'' is a proper extension of ''p''. This can be rephrased as: the domain of ''F'' is a [[prefix-free code]] (instantaneous code) on the set of finite binary strings. A simple way to enforce prefix-free-ness is to use machines whose means of input is a binary stream from which bits can be read one at a time. There is no end-of-stream marker; the end of input is determined by when the universal machine decides to stop reading more bits. Here, the difference between the two notions of program mentioned in the last paragraph becomes clear; one is easily recognized by some grammar, while the other requires arbitrary computation to recognize.
+
+The domain of any universal computable function is a [[computably enumerable set]] but never a [[computable set]].  The domain is always [[Turing degree|Turing equivalent]] to the [[halting problem]].
+
+== Definition ==
+Let ''P''&lt;sub&gt;F&lt;/sub&gt; be the domain of a prefix-free universal computable function ''F''.  The constant &amp;Omega;&lt;sub&gt;F&lt;/sub&gt; is then defined as
+:&lt;math&gt;\Omega_F = \sum_{p \in P_F} 2^{-|p|}&lt;/math&gt;,
+where &lt;math&gt;\left|p\right|&lt;/math&gt; denotes the length of a string ''p''. This is an [[series (mathematics)|infinite sum]] which has one summand for every ''p'' in the domain of ''F''.  The requirement that the domain be prefix-free, together with [[Kraft's inequality]], ensures that this sum converges to a [[real number]] between 0 and 1.  If ''F'' is clear from context then &amp;Omega;&lt;sub&gt;F&lt;/sub&gt; may be denoted simply &amp;Omega;, although different prefix-free universal computable functions lead to different values of &amp;Omega;.
+
+== Relationship to the halting problem ==
+Knowing the first ''N'' bits of &amp;Omega;, one could calculate the [[halting problem]] for all programs of a size up to ''N''. Let the program ''p'' for which the halting problem is to be solved be ''N'' bits long. In [[Dovetailing (computer science)|dovetailing]] fashion, all programs of all lengths are run, until enough have halted to jointly contribute enough probability to match these first ''N'' bits. If the program ''p'' hasn't halted yet, then it never will, since its contribution to the halting probability would affect the first ''N'' bits. Thus, the halting problem would be solved for ''p''.
+
+Because many outstanding problems in number theory, such as [[Goldbach's conjecture]], are equivalent to solving the halting problem for special programs (which would basically search for counter-examples and halt if one is found), knowing enough bits of Chaitin's constant would also imply knowing the answer to these problems. But as the halting problem is not generally solvable, and therefore calculating any but the first few bits of Chaitin's constant is not possible, this just reduces hard problems to impossible ones, much like trying to build an [[Oracle machine#Oracles and halting problems|oracle machine for the halting problem]] would be.
+
+== Interpretation as a probability ==
+The [[Cantor space]] is the collection of all infinite sequences of 0s and 1s. A halting probability can be interpreted as the [[measure theory|measure]] of a certain subset of Cantor space under the usual [[probability measure]] on Cantor space.  It is from this interpretation that halting probabilities take their name.
+
+The probability measure on Cantor space, sometimes called the fair-coin measure, is defined so that for any binary string ''x'' the set of sequences that begin with ''x'' has measure 2&lt;sup&gt;−|''x''|&lt;/sup&gt;. This implies that for each natural number ''n'', the set of sequences ''f'' in Cantor space such that ''f''(''n'') = 1 has measure 1/2, and the set of sequences whose ''n''th element is 0 also has measure 1/2.
+
+Let ''F'' be a prefix-free universal computable function. The domain ''P'' of ''F'' consists of an infinite set of binary strings
+:&lt;math&gt;P = \{p_1,p_2,\ldots\}&lt;/math&gt;.
+Each of these strings ''p''&lt;sub&gt;''i''&lt;/sub&gt; determines a subset ''S''&lt;sub&gt;''i''&lt;/sub&gt; of Cantor space; the set ''S''&lt;sub&gt;''i''&lt;/sub&gt; contains all sequences in cantor space that begin with ''p''&lt;sub&gt;''i''&lt;/sub&gt;. These sets are disjoint because ''P'' is a prefix-free set.  The sum
+:&lt;math&gt;\sum_{p \in P} 2^{-|p|}&lt;/math&gt;
+represents the measure of the set 
+:&lt;math&gt;\bigcup_{i \in \mathbb{N}} S_i&lt;/math&gt;.
+
+In this way, &amp;Omega;&lt;sub&gt;''F''&lt;/sub&gt; represents the probability that a randomly selected infinite sequence of 0s and 1s begins with a bit string (of some finite length) that is in the domain of ''F''. It is for this reason that &amp;Omega;&lt;sub&gt;''F''&lt;/sub&gt; is called a halting probability.
+
+== Properties ==
+Each Chaitin constant &amp;Omega; has the following properties:
+
+* It is [[algorithmic randomness|algorithmically random]] (also known as Martin-Löf random or 1-random).&lt;ref&gt;Downey/Hirschfeld, Theorem 6.1.3&lt;/ref&gt; This means that the shortest program to output the first ''n'' bits of &amp;Omega; must be of size at least ''n''-O(1). This is because, as in the Goldbach example, those ''n'' bits enable us to find out exactly which programs halt among all those of length at most ''n''.
+* As a consequence, it is a [[normal number]], which means that its digits are equidistributed as if they were generated by tossing a fair coin.
+* It is not a [[computable number]]; there is no computable function that enumerates its binary expansion, as discussed below.
+* The set of [[Rational number|rational numbers]] ''q'' such that ''q'' &lt; &amp;Omega; is [[computably enumerable set|computably enumerable]];&lt;ref&gt;Downey/Hirschfeld, Theorem 5.1.11&lt;/ref&gt; a real number with such a property is called a '''left-c.e. real number''' in [[recursion theory]].
+* The set of rational numbers ''q'' such that ''q'' &gt; &amp;Omega; is not computably enumerable. (Reason: every left-c.e. real with this property is computable, which &amp;Omega; isn't.)
+* &amp;Omega; is an [[arithmetical number]].
+* It is [[Turing degree|Turing equivalent]] to the [[halting problem]] and thus at level &lt;math&gt;\Delta^0_2&lt;/math&gt; of the [[arithmetical hierarchy]].
+
+Not every set that is Turing equivalent to the halting problem is a halting probability.  A [[equivalence relation#Comparing equivalence relations|finer]] equivalence relation, '''Solovay equivalence''', can be used to characterize the halting probabilities among the left-c.e. reals.&lt;ref name=&quot;:0&quot;&gt;Downey/Hirschfeldt, p.405&lt;/ref&gt; One can show that a real number in [0,1] is a Chaitin constant (i.e. the halting probability of some prefix-free universal computable function) if and only if it is left-c.e. and algorithmically random.&lt;ref name=&quot;:0&quot; /&gt; &amp;Omega; is among the few [[Definable real number|definable]] algorithmically random numbers and is the best-known algorithmically random number, but it is not at all typical of all algorithmically random numbers.&lt;ref&gt;Downey/Hirschfeld, p.228-229&lt;/ref&gt;
+
+== Uncomputability ==
+A real number is called computable if there is an algorithm which, given ''n'', returns the first ''n'' digits of the number.  This is equivalent to the existence of a program that enumerates the digits of the real number.
+
+No halting probability is computable. The proof of this fact relies on an algorithm which, given the first ''n'' digits of &amp;Omega;, solves Turing's [[halting problem]] for programs of length up to ''n''. Since the halting problem is [[Undecidable problem|undecidable]], &amp;Omega; cannot be computed.
+
+The algorithm proceeds as follows.  Given the first ''n'' digits of &amp;Omega; and a ''k'' ≤ ''n'', the algorithm enumerates the domain of ''F'' until enough elements of the domain have been found so that the probability they represent is within 2&lt;sup&gt;−(''k''+1)&lt;/sup&gt; of &amp;Omega;. After this point, no additional program of length ''k'' can be in the domain, because each of these would add 2&lt;sup&gt;−''k''&lt;/sup&gt; to the measure, which is impossible.  Thus the set of strings of length ''k'' in the domain is exactly the set of such strings already enumerated.
+
+== Algorithmic randomness ==
+A real number is random if the binary sequence representing the real number is an [[algorithmically random sequence]]. 
+Calude, Hertling, Khoussainov, and Wang showed&lt;ref&gt;Calude, Hertling, Khoussainov, and Wang: Recursively enumerable reals and Chaitin's &amp;Omega; numbers. Theoretical Computer Science 255:125–149, (2001) http://webpages.uncc.edu/yonwang/papers/TCS01.pdf &lt;/ref&gt;
+that a recursively enumerable real number is an algorithmically random sequence if and only if it is a Chaitin's &amp;Omega; number.
+
+== Incompleteness theorem for halting probabilities ==
+{{Main|Chaitin's incompleteness theorem}}
+
+For each specific consistent effectively represented [[axiomatic system]] for the [[natural numbers]], such as [[Peano axioms|Peano arithmetic]], there exists a constant ''N'' such that no bit of &amp;Omega; after the ''N''th can be proven to be 1 or 0 within that system. The constant ''N'' depends on how the [[formal system]] is effectively represented, and thus does not directly reflect the complexity of the axiomatic system. This incompleteness result is similar to [[Gödel's incompleteness theorem]] in that it shows that no consistent formal theory for arithmetic can be complete.
+
+== Super Omega ==
+As mentioned above, the first n bits of [[Gregory Chaitin]]'s constant &amp;Omega; are random or incompressible in the sense that we cannot compute them by a halting algorithm with fewer than n-O(1) bits. However, consider the short but never halting algorithm which systematically lists and runs all possible programs; whenever one of them halts its probability gets added to the output (initialized by zero). After finite time the first n bits of the output will never change any more (it does not matter that this time itself is not computable by a halting program). So there is a short non-halting algorithm whose output converges (after finite time) onto the first n bits of &amp;Omega;. In other words, the [[enumerable]] first n bits of &amp;Omega; are highly compressible in the sense that they are [[limit-computable]] by a very short algorithm; they are not [[random]] with respect to the set of enumerating algorithms. [[Jürgen Schmidhuber]] (2000) constructed a limit-computable &quot;Super &amp;Omega;&quot; which in a sense is much more random than the original limit-computable &amp;Omega;, as one cannot significantly compress the Super &amp;Omega; by any enumerating non-halting algorithm.
+
+For an alternative &quot;Super &amp;Omega;&quot;, the [[universality probability]] of a [[prefix-free code|prefix-free]] [[Universal Turing Machine]] (UTM){{Snd}} namely, the probability that it remains universal even when every input of it (as a [[binary string]]) is prefixed by a random binary string{{Snd}} can be seen as the non-halting probability of a machine with oracle the third iteration of the [[halting problem]] (i.e., &lt;math&gt;O^{(3)}&lt;/math&gt;using [[Turing jump|Turing Jump notation]]).&lt;ref&gt;{{cite journal |author=Barmpalias, G. and Dowe D.L. |title=Universality probability of a prefix-free machine |journal=Philosophical Transactions of the Royal Society A |volume=370 |issue=1 | pages=3488–3511 (Theme Issue 'The foundations of computation, physics and mentality: the Turing legacy' compiled and edited by Barry Cooper and Samson Abramsky) |date=2012 |doi=10.1098/rsta.2011.0319|pmid=22711870 }}&lt;/ref&gt;
+
+== See also ==
+* [[Incompleteness theorem]]
+* [[Kolmogorov complexity]]
+
+== References ==
+&lt;references /&gt;
+* Cristian S. Calude (2002). ''Information and Randomness: An Algorithmic Perspective'', second edition. Springer.  {{ISBN|3-540-43466-6}}
+* Cristian S. Calude, Michael J. Dinneen, and Chi-Kou Shu. ''[http://www.cs.auckland.ac.nz/~cristian/Calude361_370.pdf Computing a Glimpse of Randomness].''
+* R. Downey, and D. Hirschfeldt (2010), ''Algorithmic Randomness and Complexity'', Springer-Verlag.
+* Ming Li and Paul Vitányi (1997).  ''An Introduction to Kolmogorov Complexity and Its Applications''. Springer. [http://citeseer.ist.psu.edu/li97introduction.html Introduction chapter full-text].
+* [[Jürgen Schmidhuber]] (2000). Algorithmic Theories of Everything (arXiv: quant-ph/ 0011122). Journal reference:  J. Schmidhuber (2002). Hierarchies of generalized Kolmogorov complexities and nonenumerable universal measures computable in the limit. International Journal of Foundations of Computer Science 13(4):587-612.
+
+== External links ==
+* [https://arxiv.org/pdf/1707.08109.pdf Aspects of Chaitin's Omega] Survey article discussing recent advances in the study of Chaitin's Omega. 
+* [http://www.plus.maths.org.uk/issue37/features/omega/index.html Omega and why maths has no TOEs] article based on one written by [[Gregory Chaitin]] which appeared in the August 2004 edition of Mathematics Today, on the occasion of the 50th anniversary of Alan Turing's death.
+* [https://web.archive.org/web/20160211170316/https://www.cs.auckland.ac.nz/~chaitin/sciamer3.html ''The Limits of Reason''], Gregory Chaitin, originally appeared in Scientific American, March 2006.
+* [http://www.idsia.ch/~juergen/kolmogorov.html Limit-computable Super Omega more random than Omega] and generalizations of algorithmic information, by [[Jürgen Schmidhuber]]
+{{Irrational number}}
+[[Category:Algorithmic information theory]]
+[[Category:Theory of computation]]
+[[Category:Transcendental numbers]]
+[[Category:Real transcendental numbers]]</text>
+      <sha1>da8ocei0db4adhxft496gq96j4v5ga2</sha1>
+    </revision>
+  </page>

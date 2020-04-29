@@ -1,0 +1,434 @@
+  <page>
+    <title>Centimetre–gram–second system of units</title>
+    <ns>0</ns>
+    <id>7346</id>
+    <revision>
+      <id>942328222</id>
+      <parentid>940461951</parentid>
+      <timestamp>2020-02-24T01:03:56Z</timestamp>
+      <contributor>
+        <username>InternetArchiveBot</username>
+        <id>27015025</id>
+      </contributor>
+      <comment>Bluelink 2 books for [[Wikipedia:Verifiability|verifiability]]. [goog]) #IABot (v2.0) ([[User:GreenC bot|GreenC bot]]</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{short description|Physical system of measurement that uses the centimetre, gram, and second as base units}}
+{{redirect|CGS}}
+{{outline|Outline of the metric system}}
+
+The '''centimetre–gram–second system of units''' (abbreviated '''CGS''' or '''cgs''') is a variant of the [[metric system]] based on the [[centimetre]] as the unit of [[length]], the [[gram]] as the unit of [[mass]], and the [[second]] as the unit of [[time]]. All CGS [[mechanics|mechanical]] units are unambiguously derived from these three base units, but there are several different ways of extending the CGS system to cover [[electromagnetism]].&lt;ref&gt;{{Cite news|url=https://www.britannica.com/science/centimetre-gram-second-system|title=Centimetre-gram-second system {{!}} physics|encyclopedia=Encyclopedia Britannica|access-date=2018-03-27|language=en}}{{failed verification|date=April 2018|reason=article is about viscosity, not electromagnetism}}&lt;/ref&gt;&lt;ref&gt;{{Cite web|url=https://www.maplesoft.com/support/help/maple/view.aspx?path=Units/CGS|title=The Centimeter-Gram-Second (CGS) System of Units - Maple Programming Help|website=www.maplesoft.com|access-date=2018-03-27}}&lt;/ref&gt;&lt;ref&gt;{{cite document | title = Babel of units: The evolution of units systems in classical electromagnetism | last = Carron | first = Neal J.| date = 21 May 2015|arxiv = 1506.01951}}&lt;/ref&gt;
+
+The CGS system has been largely supplanted by the [[MKS system of units|MKS system]] based on the [[metre]], [[kilogram]], and second, which was in turn extended and replaced by the [[International System of Units]] (SI). In many fields of science and engineering, SI is the only system of units in use but there remain certain subfields where CGS is prevalent.
+
+In measurements of purely mechanical systems (involving units of length, mass, [[force]], [[energy]], [[pressure]], and so on), the differences between CGS and SI are straightforward and rather trivial; the [[Unit conversion|unit-conversion factors]] are all [[Exponentiation#Powers of ten|powers of 10]] as {{nowrap|1=100 cm = 1 m}} and {{nowrap|1=1000 g = 1 kg}}. For example, the CGS unit of force is the [[dyne]] which is defined as {{nowrap|1=1 g⋅cm/s&lt;sup&gt;2&lt;/sup&gt;}}, so the SI unit of force, the [[newton (unit)|newton]] ({{nowrap|1=1 kg⋅m/s&lt;sup&gt;2&lt;/sup&gt;}}), is equal to 100,000 dynes.
+
+On the other hand, in measurements of electromagnetic phenomena (involving units of [[charge (physics)|charge]], electric and magnetic fields, [[voltage]], and so on), converting between CGS and SI is more subtle. Formulas for physical laws of electromagnetism (such as [[Maxwell's equations]]) need to be adjusted depending on which system of units one uses. This is because there is no [[one-to-one correspondence]] between electromagnetic units in SI and those in CGS, as is the case for mechanical units. Furthermore, within CGS, there are several plausible choices of electromagnetic units, leading to different unit &quot;sub-systems&quot;, including [[Gaussian units]], &quot;ESU&quot;, &quot;EMU&quot;, and [[Lorentz–Heaviside units]]. Among these choices, Gaussian units are the most common today, and &quot;CGS units&quot; often used specifically refers to CGS-Gaussian units.
+
+==History==
+The CGS system goes back to a proposal in 1832 by the German mathematician [[Carl Friedrich Gauss]] to base a system of absolute units on the three fundamental units of length, mass and time.&lt;ref&gt;{{citation | first = C. F. | last = Gauss| authorlink = Carl Friedrich Gauss | title = Intensitas vis magneticae terrestris ad mensuram absolutam revocata | journal = Commentationes Societatis Regiae Scientiarum Gottingensis Recentiores | volume = 8 | year = 1832 | pages = 3–44}}. [http://www.21stcenturysciencetech.com/translations/gaussMagnetic.pdf English translation].&lt;/ref&gt; Gauss chose the units of millimetre, milligram and second.&lt;ref&gt;{{cite book
+| first1 = William
+| last1 = Hallock
+| first2 = Herbert Treadwell
+| last2 = Wade
+| page = 200
+| year = 1906
+| place = New York
+| title = Outlines of the evolution of weights and measures and the metric system
+| publisher = The Macmillan Co
+| url = https://archive.org/stream/outlinesofevolut00halluoft#page/200/mode/2up
+}}&lt;/ref&gt; In 1873, a committee of the British Association for the Advancement of Science, including physicists [[James Clerk Maxwell]] and [[William Thomson, 1st Baron Kelvin|William Thomson]] recommended the general adoption of centimetre, gram and second as fundamental units, and to express all derived electromagnetic units in these fundamental units, using the prefix &quot;C.G.S. unit of ...&quot;.&lt;ref&gt;{{cite conference 
+|url= https://www.biodiversitylibrary.org/item/94452#page/323/mode/1up
+|title=First Report of the Committee for the Selection and Nomenclature of Dynamical and Electrical Units 
+|date=September 1873
+|conference= Forty-third Meeting of the British Association for the Advancement of Science
+|editor-first= Professor |editor-last = Everett |editor-link = Joseph David Everett
+|first1 = Sir W |last1 = Thomson |author1-link = William Thomson, 1st Baron Kelvin
+|first2 = Professor GC |last2 = Foster |author2-link = Carey Foster
+|first3 = Professor JC |last3 = Maxwell |author3-link = James Clerk Maxwell
+|first4 = Mr GJ |last4 = Stoney |author4-link = George Johnstone Stoney
+|first5 = Professor Fleeming |last5 = Jenkin |author5-link = Fleeming Jenkin
+|first6 = Dr |last6 = Siemens |author6-link = Carl Wilhelm Siemens
+|first7 = Mr FJ |last7 = Bramwell |author7-link = Frederick Bramwell
+|publisher= John Murray
+|location= Bradford
+|page = 223
+|accessdate= 2012-04-08}}&lt;/ref&gt;
+
+The sizes of many CGS units turned out to be inconvenient for practical purposes. For example, many everyday objects are hundreds or thousands of centimetres long, such as humans, rooms and buildings. Thus the CGS system never gained wide general use outside the field of science. Starting in the 1880s, and more significantly by the mid-20th century, CGS was gradually superseded internationally for scientific purposes by the MKS (metre–kilogram–second) system, which in turn developed into the modern [[SI]] standard.
+
+Since the international adoption of the MKS standard in the 1940s and the SI standard in the 1960s, the technical use of CGS units has gradually declined worldwide, in the United States more slowly than elsewhere. CGS units are today no longer accepted by the house styles of most scientific journals, textbook publishers, or standards bodies, although they are commonly used in astronomical journals such as ''[[The Astrophysical Journal]]''. CGS units are still occasionally encountered in technical literature, especially in the United States in the fields of [[material science]], [[electrodynamics]] and [[astronomy]]. The continued usage of CGS units is most prevalent in magnetism and related fields because the B and H fields have the same units in free space and there is a lot of potential for confusion when converting published measurements from cgs to MKS.&lt;ref&gt;{{cite journal|last1=Bennett|first1=L. H.|last2=Page|first2=C. H.|last3=Swartzendruber|first3=L. J.|title=Comments on units in magnetism|journal=Journal of Research of the National Bureau of Standards|date=January–February 1978|volume=83|issue=1|pages=9&amp;ndash;12|doi=10.6028/jres.083.002}}&lt;/ref&gt;
+
+The units [[gram]] and [[centimetre]] remain useful ''as [[Metric prefix|prefix]]ed units'' within the SI system, especially for instructional physics and chemistry experiments, where they match the small scale of table-top setups. However, where [[SI derived unit|derived unit]]s are needed, the SI ones are generally used and taught instead of the CGS ones today. For example, a physics lab course might ask students to record lengths in centimetres, and masses in grams, but force (a derived unit) in [[newton (unit)|newton]]s, a usage consistent with the SI system.
+
+==Definition of CGS units in mechanics==
+In mechanics, the CGS and SI systems of units are built in an identical way. The two systems differ only in the scale of two out of the three base units (centimetre versus metre and gram versus kilogram, respectively), while the third unit (second as the unit of time) is the same in both systems.
+
+There is a one-to-one correspondence between the base units of mechanics in CGS and SI, and the laws of mechanics are not affected by the choice of units. The definitions of all [[derived unit]]s in terms of the three base units are therefore the same in both systems, and there is an unambiguous one-to-one correspondence of derived units:
+
+:&lt;math&gt;v = \frac{dx}{dt}&lt;/math&gt;&amp;nbsp; (definition of [[velocity]])
+:&lt;math&gt;F=m\frac{d^2x}{dt^2}&lt;/math&gt;&amp;nbsp; ([[Newton's laws of motion|Newton's second law of motion]])
+:&lt;math&gt;E = \int \vec{F}\cdot \mathrm{d\,}\vec{x}&lt;/math&gt;&amp;nbsp; ([[energy]] defined in terms of [[Mechanical work|work]])
+:&lt;math&gt;p = \frac{F}{L^2} &lt;/math&gt;&amp;nbsp; ([[pressure]] defined as force per unit area)
+:&lt;math&gt;\eta = \tau/\frac{dv}{dx}&lt;/math&gt;&amp;nbsp; (dynamic [[viscosity]] defined as [[shear stress]] per unit velocity [[gradient]]).
+
+Thus, for example, the CGS unit of pressure, [[barye]], is related to the CGS base units of length, mass, and time in the same way as the SI unit of pressure, [[pascal (unit)|pascal]], is related to the SI base units of length, mass, and time:
+
+:1&amp;nbsp;unit of pressure = 1&amp;nbsp;unit of force/(1&amp;nbsp;unit of length)&lt;sup&gt;2&lt;/sup&gt; = 1&amp;nbsp;unit of mass/(1&amp;nbsp;unit of length⋅(1&amp;nbsp;unit of time)&lt;sup&gt;2&lt;/sup&gt;)
+:1 Ba = 1 g/(cm⋅s&lt;sup&gt;2&lt;/sup&gt;)
+:1 Pa = 1&amp;nbsp;kg/(m⋅s&lt;sup&gt;2&lt;/sup&gt;).
+
+Expressing a CGS derived unit in terms of the SI base units, or vice versa, requires combining the scale factors that relate the two systems:
+
+:1 Ba = 1 g/(cm⋅s&lt;sup&gt;2&lt;/sup&gt;) = 10&lt;sup&gt;−3&lt;/sup&gt; kg/(10&lt;sup&gt;−2 &lt;/sup&gt;m⋅s&lt;sup&gt;2&lt;/sup&gt;) = 10&lt;sup&gt;−1&lt;/sup&gt; kg/(m⋅s&lt;sup&gt;2&lt;/sup&gt;) = 10&lt;sup&gt;−1&lt;/sup&gt; Pa.
+
+===Definitions and conversion factors of CGS units in mechanics===
+{|class=&quot;wikitable&quot; style=&quot;text-align: left;&quot;
+|-
+! Quantity 
+! Quantity symbol !! CGS unit name !! Unit&lt;br&gt;symbol!! Unit definition !! Equivalent&lt;br&gt;in SI units 
+|-
+! length, position 
+| style=&quot;text-align:center;&quot;| ''L'', ''x''|| [[centimetre]] || style=&quot;text-align:center;&quot;| cm || 1/100 of [[metre]] || = 10&lt;sup&gt;−2&lt;/sup&gt;&amp;nbsp;m
+|-
+! [[mass]] 
+| style=&quot;text-align:center;&quot;| ''m''|| [[gram]] || style=&quot;text-align:center;&quot;|g || 1/1000 of [[kilogram]] || = 10&lt;sup&gt;−3&lt;/sup&gt;&amp;nbsp;kg
+|-
+! time 
+| style=&quot;text-align:center;&quot;| ''t''|| second|| style=&quot;text-align:center;&quot;|s|| 1 second || = 1&amp;nbsp;s
+|-
+! [[velocity]] 
+| style=&quot;text-align:center;&quot;| ''v''|| centimetre per second || style=&quot;text-align:center;&quot;|cm/s || cm/s || = 10&lt;sup&gt;−2&lt;/sup&gt;&amp;nbsp;m/s
+|-
+! [[acceleration]] 
+| style=&quot;text-align:center;&quot;| ''a''|| [[gal (unit)|gal]] || style=&quot;text-align:center;&quot;|Gal || cm/s&lt;sup&gt;2&lt;/sup&gt; || = 10&lt;sup&gt;−2&lt;/sup&gt;&amp;nbsp;m/s&lt;sup&gt;2&lt;/sup&gt;
+|-
+! [[force (physics)|force]] 
+| style=&quot;text-align:center;&quot;| ''F''|| [[dyne]] || style=&quot;text-align:center;&quot;|dyn || g⋅cm/s&lt;sup&gt;2&lt;/sup&gt; || = 10&lt;sup&gt;−5&lt;/sup&gt;&amp;nbsp;[[newton (unit)|N]]
+|-
+! [[energy]] 
+| style=&quot;text-align:center;&quot;| ''E''|| [[erg]] || style=&quot;text-align:center;&quot;|erg || g⋅cm&lt;sup&gt;2&lt;/sup&gt;/s&lt;sup&gt;2&lt;/sup&gt; || = 10&lt;sup&gt;−7&lt;/sup&gt;&amp;nbsp;[[joule|J]]
+|-
+! [[power (physics)|power]] 
+| style=&quot;text-align:center;&quot;| ''P''|| [[erg]] per second|| style=&quot;text-align:center;&quot;|erg/s || g⋅cm&lt;sup&gt;2&lt;/sup&gt;/s&lt;sup&gt;3&lt;/sup&gt; || = 10&lt;sup&gt;−7&lt;/sup&gt;&amp;nbsp;[[watt|W]]
+|-
+! [[pressure]] 
+| style=&quot;text-align:center;&quot;| ''p''|| [[barye]] || style=&quot;text-align:center;&quot;| Ba|| g/(cm⋅s&lt;sup&gt;2&lt;/sup&gt;) || = 10&lt;sup&gt;−1&lt;/sup&gt;&amp;nbsp;[[pascal (unit)|Pa]]
+|-
+! dynamic [[viscosity]] 
+| style=&quot;text-align:center;&quot;| ''μ''|| [[Poise (unit)|poise]] || style=&quot;text-align:center;&quot;|P|| g/(cm⋅s) || = 10&lt;sup&gt;−1&lt;/sup&gt;&amp;nbsp;[[pascal second|Pa⋅s]]
+|-
+! kinematic [[viscosity]]
+| style=&quot;text-align:center;&quot;| ''ν''|| [[stokes (unit)|stokes]] || style=&quot;text-align:center;&quot;|St|| cm&lt;sup&gt;2&lt;/sup&gt;/s || = 10&lt;sup&gt;−4&lt;/sup&gt;&amp;nbsp;m&lt;sup&gt;2&lt;/sup&gt;/s
+|-
+! [[wavenumber]]
+| style=&quot;text-align:center;&quot;| ''k'' || [[Wavenumber|kayser]] (K) || style=&quot;text-align:center;&quot;|cm&lt;sup&gt;−1&lt;/sup&gt;&lt;ref name=K&gt;{{cite web|title=Atomic Spectroscopy|url=http://physics.nist.gov/Pubs/AtSpec/node01.html|website=Atomic Spectroscopy|publisher=NIST|accessdate=25 October 2015}}&lt;/ref&gt;|| cm&lt;sup&gt;−1&lt;/sup&gt; || = 100 m&lt;sup&gt;−1&lt;/sup&gt;
+|}
+
+==Derivation of CGS units in electromagnetism==
+
+===CGS approach to electromagnetic units===
+The conversion factors relating [[electromagnetism|electromagnetic]] units in the CGS and SI systems are made more complex by the differences in the formulae expressing physical laws of electromagnetism as assumed by each system of units, specifically in the nature of the constants that appear in these formulae. This illustrates the fundamental difference in the ways the two systems are built: 
+* In SI, the unit of [[electric current]], the ampere (A), was historically defined such that the [[magnetism|magnetic]] force exerted by two infinitely long, thin, parallel wires 1 [[metre]] apart and carrying a current of 1&amp;nbsp;[[ampere]] is exactly {{val|2|e=-7|u=[[newton (unit)|N]]/[[metre|m]]}}. This definition results in all [[International System of Units#Derived units|SI electromagnetic units]] being consistent (subject to factors of some [[integer]] powers of 10) with the EMU CGS system described in further sections. The ampere is a base unit of the SI system, with the same status as the metre, kilogram, and second. Thus the relationship in the definition of the ampere with the metre and newton is disregarded, and the ampere is not treated as dimensionally equivalent to any combination of other base units. As a result, electromagnetic laws in SI require an additional constant of proportionality (see ''[[Vacuum permittivity]]'') to relate electromagnetic units to kinematic units. (This constant of proportionality is derivable directly from the above definition of the ampere.) All other electric and magnetic units are derived from these four base units using the most basic common definitions: for example, [[charge (physics)|electric charge]] ''q'' is defined as current ''I'' multiplied by time ''t'',
+::&lt;math&gt;q=I \, t&lt;/math&gt;,
+:therefore the unit of electric charge, the [[coulomb]] (C), is defined as 1&amp;nbsp;C = 1&amp;nbsp;A⋅s.
+* The CGS system avoids introducing new base quantities and units, and instead ''derives'' all electric and magnetic units directly from the centimetre, gram, and second by specifying the form of the expression of physical laws that relate electromagnetic phenomena to mechanics.
+
+===Alternate derivations of CGS units in electromagnetism===
+Electromagnetic relationships to length, time and mass may be derived by several equally appealing methods. Two of them rely on the forces observed on charges. Two fundamental laws relate (seemingly independently of each other) the electric charge or its [[derivative|rate of change]] (electric current) to a mechanical quantity such as force. They can be written&lt;ref name=Jack&gt;{{cite book 
+| author=Jackson, John David 
+| title=Classical Electrodynamics 
+| edition=3rd 
+| pages=775–784
+| location=New York 
+| publisher=Wiley 
+| year=1999 
+| isbn=0-471-30932-X}}&lt;/ref&gt; in system-independent form as follows:
+
+*The first is [[Coulomb's law]], &lt;math&gt;F = k_{\rm C} \frac{q \, q^\prime}{d^2}&lt;/math&gt;, which describes the electrostatic force ''F'' between electric charges &lt;math&gt;q&lt;/math&gt; and &lt;math&gt;q^\prime&lt;/math&gt;, separated by distance ''d''. Here &lt;math&gt;k_{\rm C}&lt;/math&gt; is a constant which depends on how exactly the unit of charge is derived from the base units.
+*The second is [[Ampère's force law]], &lt;math&gt;\frac{dF}{dL} = 2 k_{\rm A}\frac{I \, I^\prime}{d}&lt;/math&gt;, which describes the magnetic force ''F'' per unit length ''L'' between currents ''I'' and ''I&amp;prime;'' flowing in two straight parallel wires of infinite length, separated by a distance ''d'' that is much greater than the wire diameters. Since &lt;math&gt;I=q/t\,&lt;/math&gt; and &lt;math&gt; I^\prime=q^\prime/t&lt;/math&gt;, the constant &lt;math&gt;k_{\rm A}&lt;/math&gt; also depends on how the unit of charge is derived from the base units.
+
+[[Maxwell's equations|Maxwell's theory of electromagnetism]] relates these two laws to each other. It states that the ratio of proportionality constants &lt;math&gt;k_{\rm C}&lt;/math&gt; and &lt;math&gt;k_{\rm A}&lt;/math&gt; must obey &lt;math&gt;k_{\rm C} / k_{\rm A} = c^2&lt;/math&gt;, where ''c'' is the [[speed of light]] in [[vacuum]]. Therefore, if one derives the unit of charge from the Coulomb's law by setting &lt;math&gt;k_{\rm C}=1&lt;/math&gt; then Ampère's force law will contain a prefactor &lt;math&gt;2/c^2&lt;/math&gt;. Alternatively, deriving the unit of current, and therefore the unit of charge, from the Ampère's force law by setting &lt;math&gt; k_{\rm A} = 1&lt;/math&gt; or &lt;math&gt;k_{\rm A} = 1/2&lt;/math&gt;, will lead to a constant prefactor in the Coulomb's law.
+
+Indeed, both of these mutually exclusive approaches have been practiced by the users of CGS system, leading to the two independent and mutually exclusive branches of CGS, described in the subsections below. However, the freedom of choice in deriving electromagnetic units from the units of length, mass, and time is not limited to the definition of charge. While the electric field can be related to the work performed by it on a moving electric charge, the magnetic force is always perpendicular to the velocity of the moving charge, and thus the work performed by the magnetic field on any charge is always zero. This leads to a choice between two laws of magnetism, each relating magnetic field to mechanical quantities and electric charge:
+* The first law describes the [[Lorentz force]] produced by a magnetic field '''B''' on a charge '''q''' moving with velocity '''v''':
+:: &lt;math&gt; \mathbf{F} = \alpha_{\rm L} q\;\mathbf{v} \times \mathbf{B}\;. &lt;/math&gt;
+* The second describes the creation of a static magnetic field '''B''' by an electric current ''I'' of finite length d'''l''' at a point displaced by a vector '''r''', known as [[Biot–Savart law]]:
+:: &lt;math&gt; d\mathbf{B} = \alpha_{\rm B}\frac{I d\mathbf{l} \times \mathbf{\hat r}}{r^2}\;,&lt;/math&gt; where ''r'' and &lt;math&gt;\mathbf{\hat r}&lt;/math&gt; are the length and the unit vector in the direction of vector '''r''' respectively.
+These two laws can be used to derive [[Ampère's force law]] above, resulting in the relationship: &lt;math&gt;k_{\rm A} = \alpha_{\rm L} \cdot \alpha_{\rm B}\;&lt;/math&gt;. Therefore, if the unit of charge is based on the [[Ampère's force law]] such that &lt;math&gt;k_{\rm A} = 1&lt;/math&gt;, it is natural to derive the unit of magnetic field by setting &lt;math&gt;\alpha_{\rm L} = \alpha_{\rm B}=1\;&lt;/math&gt;. However, if it is not the case, a choice has to be made as to which of the two laws above is a more convenient basis for deriving the unit of magnetic field.
+
+Furthermore, if we wish to describe the [[electric displacement field]] '''D''' and the [[magnetic field]] '''H''' in a medium other than vacuum, we need to also define the constants ε&lt;sub&gt;0&lt;/sub&gt; and μ&lt;sub&gt;0&lt;/sub&gt;, which are the [[vacuum permittivity]] and [[magnetic constant|permeability]], respectively. &lt;!-- These two values are related by &lt;math&gt;\sqrt{\mu_0\epsilon_0}=\alpha_{\rm B} / c&lt;/math&gt;. // removed this statement - seems impossible to prove! --&gt; Then we have&lt;ref name=Jack/&gt; (generally) &lt;math&gt;\mathbf{D} = \epsilon_0 \mathbf{E} + \lambda \mathbf{P}&lt;/math&gt; and &lt;math&gt;\mathbf{H} = \mathbf{B} / \mu_0 - \lambda^\prime \mathbf{M}&lt;/math&gt;, where '''P''' and '''M''' are [[polarization density]] and [[magnetization]] vectors. The units of '''P''' and '''M''' are usually so chosen that the factors λ and λ′ are equal to the &quot;rationalization constants&quot; &lt;math&gt;4 \pi k_{\rm C} \epsilon_0&lt;/math&gt; and &lt;math&gt;4 \pi \alpha_{\rm B} / (\mu_0 \alpha_{\rm L})&lt;/math&gt;, respectively. If the rationalization constants are equal, then &lt;math&gt;c^2 = 1 / (\epsilon_0 \mu_0 \alpha_{\rm L}^2)&lt;/math&gt;. If they are equal to one, then the system is said to be &quot;rationalized&quot;:&lt;ref&gt;{{cite book
+| author = Cardarelli, F.
+| year = 2004
+| title = Encyclopaedia of Scientific Units, Weights and Measures: Their SI Equivalences and Origins
+| publisher = Springer
+| edition = 2nd
+| page = [https://archive.org/details/encyclopaediaofs0000card/page/20 20]
+| isbn= 1-85233-682-X
+| url= https://archive.org/details/encyclopaediaofs0000card
+| url-access = registration
+}}&lt;/ref&gt; the laws for systems of [[spherical geometry]] contain factors of 4π (for example, [[point charge]]s), those of cylindrical geometry – factors of 2π (for example, [[wire]]s), and those of planar geometry contain no factors of π (for example, parallel-plate [[capacitor]]s). However, the original CGS system used λ = λ′ = 4π, or, equivalently, &lt;math&gt;k_{\rm C} \epsilon_0 = \alpha_{\rm B} / (\mu_0 \alpha_{\rm L}) = 1&lt;/math&gt;. Therefore, Gaussian, ESU, and EMU subsystems of CGS (described below) are not rationalized.
+
+===Various extensions of the CGS system to electromagnetism===
+The table below shows the values of the above constants used in some common CGS subsystems:
+
+{| class=&quot;wikitable&quot; style=&quot;text-align: center;&quot;
+|-
+! system !! style=&quot;width:75px;&quot;| &lt;math&gt;k_{\rm C}&lt;/math&gt; !!width=75| &lt;math&gt;\alpha_{\rm B}&lt;/math&gt; !!width=75| &lt;math&gt;\epsilon_0&lt;/math&gt;!!width=75|&lt;math&gt;\mu_0&lt;/math&gt;!! &lt;math&gt;k_{\rm A}=\frac{k_{\rm C}}{c^2}&lt;/math&gt;!! &lt;math&gt;\alpha_{\rm L}=\frac{k_{\rm C}}{\alpha_{\rm B}c^2}&lt;/math&gt;!! &lt;math&gt;\lambda=4\pi k_{\rm C}\epsilon_0&lt;/math&gt;!! style=&quot;width:75px;&quot;|&lt;math&gt;\lambda'=\frac{4\pi\alpha_{\rm B}}{\mu_0\alpha_{\rm L}}&lt;/math&gt;
+|-
+| style=&quot;text-align:left;&quot;| Electrostatic&lt;ref name=Jack/&gt; CGS&lt;br&gt;(ESU, esu, or stat-) || 1 || ''c''&lt;sup&gt;−2&lt;/sup&gt; || 1 ||''c''&lt;sup&gt;−2&lt;/sup&gt; ||''c''&lt;sup&gt;−2&lt;/sup&gt; || 1 || 4π || 4π
+|-
+| style=&quot;text-align:left;&quot;| Electromagnetic&lt;ref name=Jack/&gt; CGS&lt;br&gt;(EMU, emu, or ab-) || ''c''&lt;sup&gt;2&lt;/sup&gt; || 1 || ''c''&lt;sup&gt;−2&lt;/sup&gt;|| 1|| 1|| 1|| 4π || 4π
+|-
+| style=&quot;text-align:left;&quot;| [[Gaussian units|Gaussian]]&lt;ref name=Jack/&gt; CGS || 1 || ''c''&lt;sup&gt;−1&lt;/sup&gt; || 1 || 1 || ''c''&lt;sup&gt;−2&lt;/sup&gt; || ''c''&lt;sup&gt;−1&lt;/sup&gt; || 4π || 4π
+|-
+| style=&quot;text-align:left;&quot;| [[Lorentz–Heaviside units|Lorentz–Heaviside]]&lt;ref name=Jack/&gt; CGS || &lt;math&gt;\frac{1}{4\pi}&lt;/math&gt; || &lt;math&gt;\frac{1}{4\pi c}&lt;/math&gt; || 1 || 1 ||&lt;math&gt;\frac{1}{4\pi c^2}&lt;/math&gt; || ''c''&lt;sup&gt;−1&lt;/sup&gt; || 1 ||1
+|-
+| [[SI]] || &lt;math&gt;\frac{c^2}{b}&lt;/math&gt; || &lt;math&gt;\frac{1}{b}&lt;/math&gt; || &lt;math&gt;\frac{b}{4\pi c^2}&lt;/math&gt;||&lt;math&gt;\frac{4\pi}{b}&lt;/math&gt;||&lt;math&gt;\frac{1}{b}&lt;/math&gt; ||1 ||1||1
+|}
+The constant ''b'' in SI system is a unit-based scaling factor defined as: &lt;math&gt;b=10^7\,\mathrm{A}^2/\mathrm{N} = 10^7\,\mathrm{m/H}=4\pi/\mu_0=4\pi\epsilon_0 c^2=c^2 / k_{\rm C}\;&lt;/math&gt;.
+
+Also, note the following correspondence of the above constants to those in Jackson&lt;ref name=Jack/&gt; and Leung:&lt;ref name=leu/&gt;
+::&lt;math&gt;k_{\rm C}=k_1=k_{\rm E}&lt;/math&gt;
+::&lt;math&gt;\alpha_{\rm B}=\alpha\cdot k_2=k_{\rm B}&lt;/math&gt;
+::&lt;math&gt;k_{\rm A}=k_2=k_{\rm E}/c^2&lt;/math&gt;
+::&lt;math&gt;\alpha_{\rm L}=k_3=k_{\rm F}&lt;/math&gt;
+
+In system-independent form, [[Maxwell's equations]] can be written as:&lt;ref name=Jack/&gt;&lt;ref name=leu&gt;{{cite journal 
+| author = Leung, P. T.
+| title = A note on the 'system-free' expressions of Maxwell's equations
+| year = 2004
+| journal = European Journal of Physics
+| volume = 25
+| issue = 2
+| pages = N1–N4
+| doi = 10.1088/0143-0807/25/2/N01|bibcode = 2004EJPh...25N...1L | url = https://semanticscholar.org/paper/c2f1aac67c8f2d239e815a82950f9996b303614a
+}}&lt;/ref&gt;
+
+&lt;math&gt;\begin{array}{ccl}
+\vec \nabla \cdot \vec E &amp; = &amp; 4 \pi k_{\rm C} \rho \\
+\vec \nabla \cdot \vec B &amp; = &amp; 0 \\
+\vec \nabla \times \vec E &amp; = &amp; \displaystyle{- \alpha_{\rm L} \frac{\partial \vec B}{\partial t}} \\
+\vec \nabla \times \vec B &amp; = &amp; \displaystyle{4 \pi \alpha_{\rm B} \vec J + \frac{\alpha_{\rm B}}{k_{\rm C}}\frac{\partial \vec E}{\partial t}}
+\end{array}&lt;/math&gt;
+
+Note that of all these variants, only in Gaussian and Heaviside–Lorentz systems &lt;math&gt;\alpha_{\rm L}&lt;/math&gt; equals &lt;math&gt;c^{-1}&lt;/math&gt; rather than 1. As a result, vectors &lt;math&gt;\vec E&lt;/math&gt; and &lt;math&gt;\vec B&lt;/math&gt; of an [[electromagnetic wave]] propagating in vacuum have the same units and are equal in [[Magnitude (mathematics)#Euclidean vectors|magnitude]] in these two variants of CGS.
+
+==={{anchor|ESU}}Electrostatic units (ESU)===
+{{main|Electrostatic units}}
+In one variant of the CGS system, '''Electrostatic units''' ('''ESU'''), charge is defined via the force it exerts on other charges, and current is then defined as charge per time. It is done by setting the [[Coulomb force constant]] &lt;math&gt;k_{\rm C} = 1&lt;/math&gt;, so that [[Coulomb's law]] does not contain an explicit [[Proportionality (mathematics)|prefactor]].
+
+The ESU unit of charge, '''franklin''' ('''Fr'''), also known as '''[[statcoulomb]]''' or '''esu charge''', is therefore defined as follows:&lt;ref name=cardsgc&gt;{{cite book
+| author = Cardarelli, F.
+| year = 2004
+| title = Encyclopaedia of Scientific Units, Weights and Measures: Their SI Equivalences and Origins
+| publisher = Springer
+| edition = 2nd
+| pages = [https://archive.org/details/encyclopaediaofs0000card/page/20 20]–25
+| isbn= 1-85233-682-X
+| url= https://archive.org/details/encyclopaediaofs0000card
+| url-access = registration
+}}&lt;/ref&gt; {{quote|text=two equal point charges spaced 1 [[centimetre]] apart are said to be of 1 franklin each if the electrostatic force between them is 1 [[dyne]].}} Therefore, in '''electrostatic CGS units''', a franklin is equal to a centimetre times square root of dyne:
+: &lt;math&gt;\mathrm{1\,Fr = 1\,statcoulomb = 1\,esu\; charge = 1\,cm\sqrt{dyne}=1\,g^{1/2} \cdot cm^{3/2} \cdot s^{-1}}&lt;/math&gt;.
+The unit of current is defined as:
+: &lt;math&gt;\mathrm{1\,Fr/s = 1\,statampere = 1\,esu\; current = 1\,(cm/s)\sqrt{dyne}=1\,g^{1/2} \cdot cm^{3/2} \cdot s^{-2}}&lt;/math&gt;.
+
+Dimensionally in the ESU CGS system, charge ''q'' is therefore equivalent to m&lt;sup&gt;1/2&lt;/sup&gt;L&lt;sup&gt;3/2&lt;/sup&gt;t&lt;sup&gt;−1&lt;/sup&gt;. Hence, neither charge nor current is an independent physical quantity in ESU CGS. This reduction of units is the consequence of the [[Buckingham π theorem]].
+
+====ESU notation====
+All electromagnetic units in ESU CGS system that do not have proper names are denoted by a corresponding SI name with an attached prefix &quot;stat&quot; or with a separate abbreviation &quot;esu&quot;.&lt;ref name=cardsgc/&gt;
+
+==={{anchor|EMU}}Electromagnetic units (EMU)===
+In another variant of the CGS system, '''electromagnetic units''' ('''EMU'''s), current is defined via the force existing between two thin, parallel, infinitely long wires carrying it, and charge is then defined as current multiplied by time. (This approach was eventually used to define the SI unit of [[ampere]] as well). In the EMU CGS subsystem, this is done by setting the Ampere force constant &lt;math&gt;k_{\rm A} = 1&lt;/math&gt;, so that [[Ampère's force law]] simply contains 2 as an explicit [[Proportionality (mathematics)|prefactor]] (this prefactor 2 is itself a result of integrating a more general formulation of Ampère's law over the length of the infinite wire).
+
+The EMU unit of current, '''biot''' ('''Bi'''), also known as '''[[abampere]]''' or '''emu current''', is therefore defined as follows:&lt;ref name=cardsgc/&gt;
+{{quote|text=The '''biot''' is that constant current which, if maintained in two straight parallel conductors of infinite length, of negligible circular cross-section, and placed one [[centimetre]] apart in [[vacuum]], would produce between these conductors a force equal to two [[dyne]]s per centimetre of length.}} Therefore, in '''electromagnetic CGS units''', a biot is equal to a square root of dyne:
+: &lt;math&gt;\mathrm{1\,Bi = 1\,abampere = 1\,emu\; current= 1\,\sqrt{dyne}=1\,g^{1/2} \cdot cm^{1/2} \cdot s^{-1}}&lt;/math&gt;.
+The unit of charge in CGS EMU is:
+: &lt;math&gt;\mathrm{1\,Bi\cdot s = 1\,abcoulomb = 1\,emu\, charge= 1\,s\cdot\sqrt{dyne}=1\,g^{1/2} \cdot cm^{1/2}}&lt;/math&gt;.
+
+Dimensionally in the EMU CGS system, charge ''q'' is therefore equivalent to M&lt;sup&gt;1/2&lt;/sup&gt;L&lt;sup&gt;1/2&lt;/sup&gt;. Hence, neither charge nor current is an independent physical quantity in EMU CGS.
+
+====EMU notation====
+All electromagnetic units in EMU CGS system that do not have proper names are denoted by a corresponding SI name with an attached prefix &quot;ab&quot; or with a separate abbreviation &quot;emu&quot;.&lt;ref name=cardsgc/&gt;
+
+===Relations between ESU and EMU units===
+The ESU and EMU subsystems of CGS are connected by the fundamental relationship &lt;math&gt;k_{\rm C} / k_{\rm A} = c^2&lt;/math&gt; (see above), where ''c'' = 29,979,245,800 ≈ 3⋅10&lt;sup&gt;10&lt;/sup&gt; is the [[speed of light]] in vacuum in centimetres per second. Therefore, the ratio of the corresponding &quot;primary&quot; electrical and magnetic units (e.g. current, charge, voltage, etc. – quantities proportional to those that enter directly into [[Coulomb's law]] or [[Ampère's force law]]) is equal either to ''c''&lt;sup&gt;−1&lt;/sup&gt; or ''c'':&lt;ref name=cardsgc/&gt;
+:&lt;math&gt;\mathrm{\frac{1\,statcoulomb}{1\,abcoulomb}}=
+\mathrm{\frac{1\,statampere}{1\,abampere}}=c^{-1}&lt;/math&gt;
+and
+:&lt;math&gt;\mathrm{\frac{1\,statvolt}{1\,abvolt}}=
+\mathrm{\frac{1\,stattesla}{1\,gauss}}=c&lt;/math&gt;.
+Units derived from these may have ratios equal to higher powers of ''c'', for example:
+:&lt;math&gt;\mathrm{\frac{1\,statohm}{1\,abohm}}=
+\mathrm{\frac{1\,statvolt}{1\,abvolt}}\times\mathrm{\frac{1\,abampere}{1\,statampere}}=c^2&lt;/math&gt;.
+
+===Practical cgs units===
+The practical cgs system is a hybrid system that uses the [[volt]] and the [[ampere]] as the unit of voltage and current respectively. Doing this avoids the inconveniently large and small quantities that arise for electromagnetic units in the esu and emu systems. This system was at one time widely used by electrical engineers because the volt and ampere had been adopted as international standard units by the International Electrical Congress of 1881.&lt;ref&gt;{{cite book |first=Paul |last=Tunbridge |title=Lord Kelvin: His Influence on Electrical Measurements and Units |pages=34–40 |publisher=IET |year=1992 |isbn=0-86341-237-8 }}&lt;/ref&gt; As well as the volt and amp, the [[farad]] (capacitance), [[ohm]] (resistance), [[coulomb]] (electric charge), and [[henry (unit)|henry]] are consequently also used in the practical system and are the same as the SI units. However, [[intensive properties]] (that is, anything that is per unit length, area, or volume) will not be the same as SI since the cgs unit of distance is the centimetre. For instance [[electric field strength]] is in units of volts per centimetre, [[magnetic field strength]] is in [[oersted]]s and [[resistivity]] is in ohm-cm.&lt;ref&gt;{{cite book |first=Heinz E. |last=Knoepfel |title=Magnetic Fields: A Comprehensive Theoretical Treatise for Practical Use |page=543 |location= |publisher=Wiley |year=2000 |isbn=3-527-61742-6 }}&lt;/ref&gt;
+
+Some [[physicists]] and [[electrical engineers]] in North America still use these hybrid units.&lt;ref&gt;Knoepfel, p. xx{{failed verification|date=April 2018}}&lt;/ref&gt;
+
+===Other variants===
+There were at various points in time about half a dozen systems of electromagnetic units in use, most based on the CGS system.&lt;ref&gt;{{cite journal 
+|author1=Bennett, L. H. |author2=Page, C. H. |author3=Swartzendruber, L. J. | title = Comments on units in magnetism
+| year = 1978
+| journal = Journal of Research of the National Bureau of Standards
+| volume = 83
+| issue = 1
+| pages = 9–12
+| doi = 10.6028/jres.083.002}}&lt;/ref&gt; These also include the [[Gaussian units]] and the [[Heaviside–Lorentz units]].
+
+==Electromagnetic units in various CGS systems==
+{| class=&quot;wikitable&quot;
+|+ Conversion of SI units in electromagnetism to ESU, EMU, and Gaussian subsystems of CGS&lt;ref name=cardsgc/&gt;&lt;br&gt;''c'' = 29,979,245,800
+! Quantity
+! Symbol !! SI unit !! ESU unit !! EMU unit !! [[Gaussian units|Gaussian unit]]
+|-
+! [[electric charge]]
+| style=&quot;text-align:center;&quot;| ''q'' ||1 [[Coulomb|C]] || ↔ (10&lt;sup&gt;−1&lt;/sup&gt; ''c'') [[Statcoulomb|statC]]|| ↔ (10&lt;sup&gt;−1&lt;/sup&gt;) [[Abcoulomb|abC]] || ↔ (10&lt;sup&gt;−1&lt;/sup&gt; ''c'') [[Statcoulomb|Fr]]
+|-
+! [[electric flux]] 
+| style=&quot;text-align:center;&quot;| ''Φ''&lt;sub&gt;E&lt;/sub&gt; ||1 [[Volt|V]]⋅[[Metre|m]] || ↔ (4π×10&lt;sup&gt;−1&lt;/sup&gt; ''c'') [[Statcoulomb|statC]]|| ↔ (10&lt;sup&gt;−1&lt;/sup&gt;) [[Abcoulomb|abC]] || ↔ (4π×10&lt;sup&gt;−1&lt;/sup&gt; ''c'') [[Statcoulomb|Fr]]
+|-
+! [[electric current]] 
+| style=&quot;text-align:center;&quot;| ''I'' ||1 [[Ampere|A]] || ↔ (10&lt;sup&gt;−1&lt;/sup&gt; ''c'') [[StatAmpere|statA]] || ↔ (10&lt;sup&gt;−1&lt;/sup&gt;) [[Abampere|abA]]|| ↔ (10&lt;sup&gt;−1&lt;/sup&gt; ''c'') [[Statcoulomb|Fr]]⋅s&lt;sup&gt;−1&lt;/sup&gt;
+|-
+! [[electric potential]] / [[voltage]] 
+| style=&quot;text-align:center;&quot;|''φ'' / ''V''||1 [[Volt|V]]|| ↔ (10&lt;sup&gt;8&lt;/sup&gt; ''c''&lt;sup&gt;−1&lt;/sup&gt;) [[statvolt|statV]] || ↔ (10&lt;sup&gt;8&lt;/sup&gt;) [[abvolt|abV]] || ↔ (10&lt;sup&gt;8&lt;/sup&gt; ''c''&lt;sup&gt;−1&lt;/sup&gt;) [[statvolt|statV]]
+|-
+! [[electric field]] 
+| style=&quot;text-align:center;&quot;|'''E'''||1 [[Volt|V]]/[[Metre|m]] || ↔ (10&lt;sup&gt;6&lt;/sup&gt; ''c''&lt;sup&gt;−1&lt;/sup&gt;) [[statvolt|statV]]/[[Centimetre|cm]] || ↔ (10&lt;sup&gt;6&lt;/sup&gt;) [[abvolt|abV]]/[[Centimetre|cm]]|| ↔ (10&lt;sup&gt;6&lt;/sup&gt; ''c''&lt;sup&gt;−1&lt;/sup&gt;) [[statvolt|statV]]/[[Centimetre|cm]]
+|-
+! [[electric displacement field]] 
+| style=&quot;text-align:center;&quot;|'''D'''||1 [[Coulomb|C]]/[[Square metre|m&lt;sup&gt;2&lt;/sup&gt;]] || ↔ (10&lt;sup&gt;−5&lt;/sup&gt; ''c'') [[statcoulomb|statC]]/[[square centimetre|cm&lt;sup&gt;2&lt;/sup&gt;]] || ↔ (10&lt;sup&gt;−5&lt;/sup&gt;) [[Abcoulomb|abC]]/[[square centimetre|cm&lt;sup&gt;2&lt;/sup&gt;]] || ↔ (10&lt;sup&gt;−5&lt;/sup&gt; ''c'') [[statcoulomb|Fr]]/[[square centimetre|cm&lt;sup&gt;2&lt;/sup&gt;]] 
+|-
+! [[electric dipole moment]] 
+| style=&quot;text-align:center;&quot;|'''p'''||1 [[Coulomb|C]]⋅[[meter|m]] || ↔ (10 ''c'') [[Statcoulomb|statC]]⋅[[centimeter|cm]] || ↔ (10) [[Abcoulomb|abC]]⋅[[centimeter|cm]] || ↔ (10&lt;sup&gt;19&lt;/sup&gt; ''c'') [[Debye|D]] 
+|-
+! [[magnetic dipole moment]] 
+| style=&quot;text-align:center;&quot;|'''μ'''||1 [[Ampere|A]]⋅[[Square metre|m&lt;sup&gt;2&lt;/sup&gt;]] || ↔ (10&lt;sup&gt;3&lt;/sup&gt; ''c'') [[Statcoulomb|statC]]⋅[[square centimetre|cm&lt;sup&gt;2&lt;/sup&gt;]] || ↔ (10&lt;sup&gt;3&lt;/sup&gt;) [[Abampere|abA]]⋅[[square centimetre|cm&lt;sup&gt;2&lt;/sup&gt;]] || ↔ (10&lt;sup&gt;3&lt;/sup&gt;) [[erg]]/[[Gauss (unit)|G]] 
+|-
+! [[Magnetic field|magnetic B field]] 
+| style=&quot;text-align:center;&quot;|'''B'''||1 [[tesla (unit)|T]] || ↔ (10&lt;sup&gt;4&lt;/sup&gt; ''c''&lt;sup&gt;−1&lt;/sup&gt;) statT || ↔ (10&lt;sup&gt;4&lt;/sup&gt;) [[Gauss (unit)|G]] || ↔ (10&lt;sup&gt;4&lt;/sup&gt;) [[Gauss (unit)|G]] 
+|-
+! [[Magnetic field|magnetic H field]] 
+| style=&quot;text-align:center;&quot;|'''H'''||1 [[Ampere|A]]/[[Metre|m]] || ↔ (4π×10&lt;sup&gt;−3&lt;/sup&gt; ''c'') [[StatAmpere|statA]]/[[Centimetre|cm]] || ↔ (4π×10&lt;sup&gt;−3&lt;/sup&gt;) [[oersted|Oe]]|| ↔ (4π×10&lt;sup&gt;−3&lt;/sup&gt;) [[oersted|Oe]]
+|-
+! [[magnetic flux]]
+| style=&quot;text-align:center;&quot;|''Φ''&lt;sub&gt;m&lt;/sub&gt;||1 [[Weber (unit)|Wb]] || ↔ (10&lt;sup&gt;8&lt;/sup&gt; ''c''&lt;sup&gt;−1&lt;/sup&gt;) statWb || ↔ (10&lt;sup&gt;8&lt;/sup&gt;) [[Maxwell (unit)|Mx]] || ↔ (10&lt;sup&gt;8&lt;/sup&gt;) [[Maxwell (unit)|Mx]]
+|-
+! [[electrical resistance|resistance]]
+| style=&quot;text-align:center;&quot;|''R''||1 [[Ohm|Ω]] || ↔ (10&lt;sup&gt;9&lt;/sup&gt; ''c''&lt;sup&gt;−2&lt;/sup&gt;) [[Second|s]]/[[Centimetre|cm]]|| ↔ (10&lt;sup&gt;9&lt;/sup&gt;) [[Abohm|abΩ]] || ↔ (10&lt;sup&gt;9&lt;/sup&gt; ''c''&lt;sup&gt;−2&lt;/sup&gt;) [[Second|s]]/[[Centimetre|cm]]
+|-
+! [[electrical resistivity|resistivity]]
+| style=&quot;text-align:center;&quot;|''ρ'' ||1 [[Ohm|Ω]]⋅[[Metre|m]] || ↔ (10&lt;sup&gt;11&lt;/sup&gt; ''c''&lt;sup&gt;−2&lt;/sup&gt;) [[Second|s]] || ↔ (10&lt;sup&gt;11&lt;/sup&gt;) [[Abohm|abΩ]]⋅[[Centimetre|cm]] || ↔ (10&lt;sup&gt;11&lt;/sup&gt; ''c''&lt;sup&gt;−2&lt;/sup&gt;) [[Second|s]]
+|-
+! [[capacitance]]
+| style=&quot;text-align:center;&quot;|''C''||1 [[Farad|F]] || ↔ (10&lt;sup&gt;−9&lt;/sup&gt; ''c''&lt;sup&gt;2&lt;/sup&gt;) [[Centimetre|cm]]|| ↔ (10&lt;sup&gt;−9&lt;/sup&gt;) [[Abfarad|abF]] || ↔ (10&lt;sup&gt;−9&lt;/sup&gt; ''c''&lt;sup&gt;2&lt;/sup&gt;) [[Centimetre|cm]]
+|-
+! [[inductance]]
+| style=&quot;text-align:center;&quot;|''L''||1 [[Henry (unit)|H]] || ↔ (10&lt;sup&gt;9&lt;/sup&gt; ''c''&lt;sup&gt;−2&lt;/sup&gt;) [[Centimetre|cm]]&lt;sup&gt;−1&lt;/sup&gt;⋅[[Second|s]]&lt;sup&gt;2&lt;/sup&gt;|| ↔ (10&lt;sup&gt;9&lt;/sup&gt;) [[Abhenry|abH]] || ↔ (10&lt;sup&gt;9&lt;/sup&gt; ''c''&lt;sup&gt;−2&lt;/sup&gt;) [[Centimetre|cm]]&lt;sup&gt;−1&lt;/sup&gt;⋅[[Second|s]]&lt;sup&gt;2&lt;/sup&gt; 
+|}
+
+In this table, ''c'' = 29,979,245,800 is the numeric value of the [[speed of light]] in vacuum when expressed in units of centimetres per second. The symbol &quot;↔&quot; is used instead of &quot;=&quot; as a reminder that the SI and CGS units are ''corresponding'' but not ''equal'' because they have incompatible dimensions. For example, according to the next-to-last row of the table, if a capacitor has a capacitance of 1&amp;nbsp;F in SI, then it has a capacitance of (10&lt;sup&gt;−9&lt;/sup&gt; ''c''&lt;sup&gt;2&lt;/sup&gt;) cm in ESU; ''but'' it is usually incorrect to replace &quot;1&amp;nbsp;F&quot; with &quot;(10&lt;sup&gt;−9&lt;/sup&gt;&amp;nbsp;''c''&lt;sup&gt;2&lt;/sup&gt;) cm&quot; within an equation or formula. (This warning is a special aspect of electromagnetism units in CGS. By contrast, for example, it is ''always'' correct to replace &quot;1&amp;nbsp;m&quot; with &quot;100&amp;nbsp;cm&quot; within an equation or formula.)
+
+One can think of the SI value of the [[Coulomb constant]] ''k''&lt;sub&gt;C&lt;/sub&gt; as:
+:&lt;math&gt;k_{\rm C}=\frac{1}{4\pi\epsilon_0}=\frac{\mu_0 (c/100)^2}{4\pi}=10^{-7}{\rm N}/{\rm A}^2\cdot 10^{-4}\cdot c^2 = 10^{-11}{\rm N}\cdot c^2/{\rm A}^2 .&lt;/math&gt;
+This explains why SI to ESU conversions involving factors of ''c''&lt;sup&gt;2&lt;/sup&gt; lead to significant simplifications of the ESU units, such as 1&amp;nbsp;statF = 1&amp;nbsp;cm and 1&amp;nbsp;statΩ = 1&amp;nbsp;s/cm: this is the consequence of the fact that in ESU system ''k''&lt;sub&gt;C&lt;/sub&gt; = 1. For example, a centimetre of capacitance is the capacitance of a sphere of radius 1&amp;nbsp;cm in vacuum. The capacitance ''C'' between two concentric spheres of radii ''R'' and ''r'' in ESU CGS system is:
+: &lt;math&gt;\frac{1}{\frac{1}{r}-\frac{1}{R}}&lt;/math&gt;.
+By taking the limit as ''R'' goes to infinity we see ''C'' equals ''r''.
+
+==Physical constants in CGS units==
+{| class=&quot;wikitable&quot;
+|+ Commonly used physical constants in CGS units&lt;ref name=&quot;textbook&quot;&gt;{{Cite book | year=1978 |author1=A.P. French |author2=Edwind F. Taylor | title= An Introduction to Quantum Physics | publisher=W.W. Norton &amp; Company}}&lt;/ref&gt;
+! Constant
+! Symbol
+! Value
+|-
+! [[Atomic mass unit]]
+| style=&quot;text-align:center;&quot;| u
+| 1.660&amp;nbsp;538&amp;nbsp;782 × 10&lt;sup&gt;−24&lt;/sup&gt;&amp;nbsp;[[Gram|g]]
+|-
+! rowspan=&quot;2&quot;|[[Bohr magneton]]
+| style=&quot;text-align:center;&quot; rowspan=&quot;2&quot;|''μ''&lt;sub&gt;B&lt;/sub&gt;
+| 9.274&amp;nbsp;009&amp;nbsp;15 × 10&lt;sup&gt;−21&lt;/sup&gt;&amp;nbsp;[[erg]]/[[Gauss (unit)|G]] (EMU, Gaussian)
+|-
+| 2.780&amp;nbsp;278&amp;nbsp;00 × 10&lt;sup&gt;−10&lt;/sup&gt;&amp;nbsp;statA⋅cm&lt;sup&gt;2&lt;/sup&gt; (ESU)
+|-
+! [[Bohr radius]]
+| style=&quot;text-align:center;&quot;| ''a''&lt;sub&gt;0&lt;/sub&gt;
+| 5.291&amp;nbsp;772&amp;nbsp;0859 × 10&lt;sup&gt;−9&lt;/sup&gt;&amp;nbsp;[[Centimetre|cm]]
+|-
+! [[Boltzmann constant]]
+| style=&quot;text-align:center;&quot;| ''k''
+| 1.380&amp;nbsp;6504 × 10&lt;sup&gt;−16&lt;/sup&gt;&amp;nbsp;[[erg]]/[[Kelvin|K]]
+|-
+! [[Electron|Electron mass]]
+| style=&quot;text-align:center;&quot;| ''m''&lt;sub&gt;e&lt;/sub&gt;
+| 9.109&amp;nbsp;382&amp;nbsp;15 × 10&lt;sup&gt;−28&lt;/sup&gt;&amp;nbsp;[[Gram|g]]
+|-
+! rowspan=&quot;2&quot;|[[Elementary charge]]
+| style=&quot;text-align:center;&quot; rowspan=&quot;2&quot;|''e''
+| 4.803&amp;nbsp;204&amp;nbsp;27 × 10&lt;sup&gt;−10&lt;/sup&gt;&amp;nbsp;[[Statcoulomb|Fr]] (ESU, Gaussian)
+|-
+| 1.602&amp;nbsp;176&amp;nbsp;487 × 10&lt;sup&gt;−20&lt;/sup&gt;&amp;nbsp;[[Abcoulomb|abC]] (EMU)
+|-
+! [[Fine-structure constant]]
+| style=&quot;text-align:center;&quot;| ''α'' ≈ 1/137
+| 7.297&amp;nbsp;352&amp;nbsp;570 × 10&lt;sup&gt;−3&lt;/sup&gt;
+|-
+! [[Gravitational constant]]
+| style=&quot;text-align:center;&quot;| ''G''
+| 6.674&amp;nbsp;28 × 10&lt;sup&gt;−8&lt;/sup&gt; 
+[[dyne|Dyn]][[Centimetre|cm]]&lt;sup&gt;2&lt;/sup&gt;/([[Gram|g]]&lt;sup&gt;2&lt;/sup&gt;)
+|-
+! rowspan=&quot;2&quot;|[[Planck constant]]
+| style=&quot;text-align:center;&quot;| ''h''
+| 6.626&amp;nbsp;068&amp;nbsp;85 × 10&lt;sup&gt;−27&lt;/sup&gt;&amp;nbsp;[[erg]]⋅[[Second|s]]
+|-
+| style=&quot;text-align:center;&quot;| ''ħ''
+| 1.054&amp;nbsp;5716 × 10&lt;sup&gt;−27&lt;/sup&gt;&amp;nbsp;[[erg]]⋅[[Second|s]]
+|-
+! [[Speed of light|Speed of light in vacuum]]
+| style=&quot;text-align:center;&quot;| ''c''
+| ≡&amp;nbsp;2.997&amp;nbsp;924&amp;nbsp;58 × 10&lt;sup&gt;10&lt;/sup&gt;&amp;nbsp;[[Centimetre|cm]]/[[Second|s]]
+|}
+
+==Advantages and disadvantages==
+While the absence of explicit prefactors in some CGS subsystems simplifies some theoretical calculations, it has the disadvantage that sometimes the units in CGS are hard to define through experiment. Also, lack of unique unit names leads to a great confusion: thus &quot;15 emu&quot; may mean either 15 [[abvolt]]s, or 15 emu units of [[electric dipole moment]], or 15 emu units of [[magnetic susceptibility]], sometimes (but not always) per [[gram]], or per [[mole (unit)|mole]]. On the other hand, SI starts with a unit of current, the [[ampere]], that is easier to determine through experiment, but which requires extra multiplicative factors in the electromagnetic equations. With its system of uniquely named units, the SI also removes any confusion in usage: 1.0 ampere is a fixed value of a specified quantity, and so are 1.0 [[henry (unit)|henry]], 1.0 [[ohm]], and 1.0 volt.
+
+A key virtue of the [[Gaussian units|Gaussian CGS system]] is that electric and magnetic fields have the same units, 4''πε''&lt;sub&gt;0&lt;/sub&gt; is replaced by 1, and the only dimensional constant appearing in the [[Maxwell equations]] is ''c'', the speed of light. The [[Lorentz–Heaviside units|Heaviside–Lorentz system]] has these desirable properties as well (with ''ε''&lt;sub&gt;0&lt;/sub&gt; equaling 1), but it is a &quot;rationalized&quot; system (as is SI) in which the charges and fields are defined in such a way that there are many fewer factors of 4''π'' appearing in the formulas, and it is in Heaviside–Lorentz units that the Maxwell equations take their simplest form.
+
+In SI, and other rationalized systems (for example, [[Lorentz–Heaviside units|Heaviside–Lorentz]]), the unit of current was chosen such that electromagnetic equations concerning charged spheres contain 4π, those concerning coils of current and straight wires contain 2π and those dealing with charged surfaces lack π entirely, which was the most convenient choice for applications in [[electrical engineering]]. However, modern [[calculator|hand calculator]]s and [[personal computer]]s have eliminated this &quot;advantage&quot;. In some fields where formulas concerning spheres are common (for example, in astrophysics), it has been argued{{by whom|date=July 2014}} that the nonrationalized CGS system can be somewhat more convenient notationally.
+
+Specialized unit systems are used to simplify formulas even further than ''either'' SI ''or'' CGS, by eliminating constants through some system of [[natural units]]. For example, in [[particle physics]] a system is in use where every quantity is expressed by only one unit of energy, the [[electronvolt]], with lengths, times, and so on all converted into electronvolts by inserting factors of [[speed of light|speed of light ''c'']] and the [[Planck constant|Planck constant ''ħ'']]. This unit system is very convenient for calculations in [[particle physics]], but it would be considered impractical in other contexts.
+
+==See also==
+*[[International System of Units]]
+*[[International System of Electrical and Magnetic Units]]
+* [[List of scientific units named after people]]
+* [[Metre–tonne–second system of units]]
+* [[United States customary units]]
+*
+
+==References and notes==
+&lt;div class=&quot;references&quot;&gt;
+&lt;references/&gt;
+&lt;/div&gt;
+
+==General literature==
+* {{cite book | author=Griffiths, David J. | authorlink=David Griffiths (physicist) | title=Introduction to Electrodynamics (3rd ed.) | publisher=[[Prentice Hall]] | year=1999 | isbn=0-13-805326-X | chapter=Appendix C: Units | chapter-url-access=registration | chapter-url=https://archive.org/details/introductiontoel00grif_0 | url-access=registration | url=https://archive.org/details/introductiontoel00grif_0 }}
+* {{cite book | author=Jackson, John D. |authorlink=John David Jackson (physicist) | title=Classical Electrodynamics (3rd ed.) | publisher=[[John Wiley &amp; Sons|Wiley]] | year=1999 | isbn=0-471-30932-X | chapter=Appendix on Units and Dimensions }}
+* {{cite book | author=Kent, William |authorlink=William Kent (Consulting Engineer) | title=The Mechanical Engineer's Pocket-book (5th ed.) |publisher=[[John Wiley &amp; Sons|Wiley]] | year=1900 | chapter=Electrical Engineering. Standards of Measurement page 1024 }}
+* {{cite web | url=http://bohr.physics.berkeley.edu/classes/221/1112/notes/emunits.pdf | title=Gaussian, SI and Other Systems of Units in Electromagnetic Theory | work=Physics 221A, [[University of California]], Berkeley lecture notes|authorlink1=Robert Grayson Littlejohn | author=Littlejohn, Robert | date=Fall 2017 | accessdate=2017-12-15 }}
+
+{{systems of measurement}}
+
+{{DEFAULTSORT:Centimetre-gram-second system of units}}
+[[Category:Centimetre–gram–second system of units| ]]
+[[Category:Metrology]]
+[[Category:Systems of units]]
+[[Category:Metric system]]</text>
+      <sha1>jtv0trg4cc6kgtf2d4263qv7aqvd22p</sha1>
+    </revision>
+  </page>

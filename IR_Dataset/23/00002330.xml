@@ -1,0 +1,92 @@
+  <page>
+    <title>Abbe number</title>
+    <ns>0</ns>
+    <id>2330</id>
+    <revision>
+      <id>934566334</id>
+      <parentid>934564875</parentid>
+      <timestamp>2020-01-07T06:34:47Z</timestamp>
+      <contributor>
+        <ip>81.6.34.246</ip>
+      </contributor>
+      <comment>/* See also */</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{Short description|material dispersion property}}
+In [[optics]] and [[lens design]], the '''Abbe number''', also known as the '''V-number''' or '''constringence''' of a [[Transparency (optics)|transparent]] material, is an approximate measure of the material's [[dispersion (optics)|dispersion]] (change of [[refractive]] index versus wavelength), with high values of ''V'' indicating low dispersion. It is named after [[Ernst Abbe]] (1840–1905), the German physicist who defined it.
+
+[[File:Abbe_number_calculation.svg|right|thumb|300px|Refractive index variation for SF11 flint glass, BK7 borosilicate glass and fused quartz, and calculation for two Abbe numbers for SF11.]]
+The Abbe number,&lt;ref&gt;{{cite book|last=Hovestadt|first=H.|title=Jena Glass and Its Scientific and Industrial Applications|url=https://archive.org/details/jenaglassitsscie00hoveuoft|year=1902|publisher=Macmillan and Co.|location=London|pages=1–81}}&lt;/ref&gt;&lt;ref&gt;{{cite book|last=Bergmann|first=Ludwig|title=Optics of Waves and Particles|year=1999|publisher=Walter de Gruyter|location=Berlin|isbn=3-11-014318-6|pages=198–201|author2=Clemens Schaefer}}&lt;/ref&gt; ''V&lt;sub&gt;D&lt;/sub&gt;'', of a material is defined as
+
+:&lt;math&gt;V_D = \frac{ n_D - 1 }{ n_F - n_C },&lt;/math&gt;
+
+where ''n''&lt;sub&gt;C&lt;/sub&gt;, ''n''&lt;sub&gt;D&lt;/sub&gt; and ''n''&lt;sub&gt;F&lt;/sub&gt; are the refractive indices of the material at the wavelengths of the [[Fraunhofer lines|Fraunhofer]] C, D&lt;sub&gt;1&lt;/sub&gt;, and F [[spectral line]]s (656.3&amp;nbsp;[[nanometre|nm]], 589.3 nm, and 486.1&amp;nbsp;nm respectively). 
+
+Abbe numbers are used to classify [[glass]] and other optical materials in terms of their chromaticity. For example, the higher dispersion [[flint glass]]es have ''V''&amp;nbsp;&lt;&amp;nbsp;55 whereas the lower dispersion [[crown glass (optics)|crown glass]]es have larger Abbe numbers. Values of ''V'' range from below 25 for very dense flint glasses, around 34 for [[polycarbonate]] plastics, up to 65 for common crown glasses, and 75 to 85 for some fluorite and phosphate crown glasses. 
+
+[[File:Eyesensitivity.svg|thumb|Most of the human eye's wavelength sensitivity curve, shown here, is bracketted by the Abbe number reference wavelengths of 486.1&amp;nbsp;nm (blue) and 656.3&amp;nbsp;nm (red)]]Abbe numbers are used in the design of [[achromatic lens]]es, as their ''reciprocal'' is proportional to dispersion (slope of refractive index versus wavelength) in the wavelength region where the human eye is most sensitive (see graph). For different wavelength regions, or for higher precision in characterizing a system's chromaticity (such as in the design of [[apochromat]]s), the full dispersion relation (refractive index as a function of wavelength) is used.
+
+== Abbe diagram ==
+[[Image:Abbe-diagram 2.svg|right|thumb|380px|An Abbe diagram, also known as 'the glass veil',  plots the Abbe number against refractive index for a range of different glasses (red dots). Glasses are classified using the Schott Glass letter-number code to reflect their composition and position on the diagram.]]
+[[Image:SpiderGraph Abbe Number-en.svg|250px|thumb|Influences of selected [[glass]] component additions on the Abbe number of a specific base glass.&lt;ref&gt;[http://glassproperties.com/abbe_number/ Abbe number calculation of glasses]&lt;/ref&gt;]]
+An '''Abbe diagram''', also called 'the glass veil', is produced by plotting the Abbe number ''V''&lt;sub&gt;d&lt;/sub&gt; of a material versus its refractive index ''n''&lt;sub&gt;d&lt;/sub&gt;. Glasses can then be categorised and selected according to their positions on the diagram. This can be a letter-number code, as used in the [[Schott Glass]] catalogue, or a 6-digit [[glass code]].
+
+Glasses' Abbe numbers, along with their mean refractive indices, are used in the calculation of the required [[refractive power]]s of the elements of [[achromatic lenses]] in order to cancel [[chromatic aberration]] to first order. Note that these two parameters which enter into the equations for design of achromatic doublets are exactly what is plotted on an Abbe diagram.
+
+Due to the difficulty and inconvenience in producing sodium and hydrogen lines, alternate definitions of the Abbe number are often substituted ([[ISO]] 7944).&lt;ref&gt;{{cite web|last=Meister|first=Darryl|title=Understanding Reference Wavelengths|url=http://opticampus.opti.vision/files/memo_on_reference_wavelengths.pdf|publisher=Carl Zeiss Vision|accessdate=2013-03-13}}&lt;/ref&gt; Rather than the standard definition, above, using the refractive index variation between the F and C [[Fraunhofer lines#Naming|hydrogen lines]], an alternative measure using the subscript &quot;e&quot;
+:&lt;math&gt; V_e = \frac{n_e-1}{ n_{F'} - n_{C'}}&lt;/math&gt;
+takes the difference between the refractive indices of the blue and red cadmium lines at 480.0&amp;nbsp;nm and 643.8&amp;nbsp;nm (with ''n&lt;sub&gt;e&lt;/sub&gt;'' referring to the wavelength of the  mercury e-line, 546.073&amp;nbsp;nm). Other definitions can similarly be employed; the following table lists standard wavelengths at which n is commonly determined, including the standard subscripts employed.&lt;ref&gt;L. D. Pye, V. D. Frechette, N. J. Kreidl: &quot;Borate Glasses&quot;; Plenum Press, New York, 1977&lt;/ref&gt;
+
+{| class=&quot;wikitable&quot;
+|-
+! λ in nm !! [[Fraunhofer lines|Fraunhofer's symbol]] !! Light source !! Color
+|-
+| 365.01 || i || [[Mercury (element)|Hg]] || [[Ultraviolet light|UV-A]]
+|-
+| 404.66 || h || Hg || violet
+|-
+| 435.84 || g || Hg || blue
+|-
+| 479.99 || F' || [[Cadmium|Cd]] || blue
+|-
+| 486.13 || F || [[Hydrogen|H]] || blue
+|-
+| 546.07 || e || Hg || green
+|-
+| 587.56 || d || He || yellow
+|-
+| 589.3 || D || Na || yellow
+|-
+| 643.85 || C' || Cd || red
+|-
+| 656.27 || C || H || red
+|-
+| 706.52 || r || He || red
+|-
+| 768.2 || A' || K || [[Infrared light|IR-A]]
+|-
+| 852.11 || s || Cs || IR-A
+|-
+| 1013.98 || t || Hg || IR-A
+|}
+
+==See also==
+*[[Abbe prism]]
+*[[Abbe refractometer]]
+*[[Calculation of glass properties]], including Abbe number
+*[[Glass code]]
+*[[Sellmeier equation]], more comprehensive and physically based modeling of dispersion
+
+==References==
+{{reflist}}
+
+==External links==
+*[https://web.archive.org/web/20151011033820/http://www.lacroixoptical.com/sites/default/files/content/LaCroix%20Dynamic%20Material%20Selection%20Data%20Tool%20vJanuary%202015.xlsm Abbe graph and data for 356 glasses from Ohara, Hoya, and Schott]
+
+{{DEFAULTSORT:Abbe Number}}
+[[Category:Dimensionless numbers]]
+[[Category:Optics]]
+[[Category:Glass physics]]</text>
+      <sha1>fmmygyefii3losvjip7515zv0dgqk6f</sha1>
+    </revision>
+  </page>

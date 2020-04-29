@@ -1,0 +1,503 @@
+  <page>
+    <title>APL (programming language)</title>
+    <ns>0</ns>
+    <id>1451</id>
+    <revision>
+      <id>941726472</id>
+      <parentid>941724962</parentid>
+      <timestamp>2020-02-20T08:17:39Z</timestamp>
+      <contributor>
+        <username>AnomieBOT</username>
+        <id>7611264</id>
+      </contributor>
+      <minor />
+      <comment>Dating maintenance tags: {{Cn}}</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{distinguish |Address programming language}}
+{{short description|Functional, symbolic programming language for operating on multidimensional arrays}}
+{{infobox programming language
+| name                   = APL
+| paradigm               = [[Array programming|Array]], [[Functional programming|functional]], [[Structured programming|structured]], [[Modular programming|modular]]
+| year                   = {{Start date and age|1966|11|27}}&lt;ref name=&quot;Birthdate&quot;/&gt;
+| designer               = [[Kenneth E. Iverson]]
+| developer              = [[Lawrence M. Breed|Larry Breed]], [[Richard H. Lathwell|Dick Lathwell]], [[Roger Moore (computer scientist)|Roger Moore]] and others
+| latest release version = ISO/IEC 13751:2001
+| latest release date    = {{Start date and age|2001|02|01}}
+| typing                 = [[Type system|Dynamic]]
+| platform               = [[Cross platform]]
+| license                = [[Proprietary software|Proprietary]], [[Open-source software|open source]]
+| implementations        = {{startflatlist}}
+*APL\360
+*APL\1130
+*APL*Plus
+*Sharp APL
+*APL2
+*Dyalog APL
+*NARS2000
+*[[APLX]]
+*GNU APL
+{{endflatlist}}
+| influenced by          = [[Mathematical notation]]
+| influenced             = 
+{{startflatlist}}
+* [[A+ (programming language)|A and A+]]
+* [[FP (programming language)|FP]]
+* [[J (programming language)|J]]
+* [[K (programming language)|K]]
+* [[LYaPAS]]
+* [[MATLAB]]
+* [[Nial]]
+* [[Polymorphic Programming Language|PPL]]
+* [[S (programming language)|S]]
+* [[Speakeasy (computational environment)|Speakeasy]]
+* [[Wolfram Language]]
+{{endflatlist}}
+}}
+{{APLcode}}
+
+'''APL''' (named after the book ''A Programming Language'')&lt;ref name=&quot;aplbook&quot;&gt;{{cite book |last=Iverson |first=Kenneth E. |author-link=Kenneth E. Iverson |title=A Programming Language |publisher=Wiley |year=1962 |isbn=978-0-471-43014-8 |url=http://www.softwarepreservation.org/projects/apl/Books/APROGRAMMING%20LANGUAGE/view |access-date=2014-10-27 |archive-url=https://web.archive.org/web/20141027152546/http://www.softwarepreservation.org/projects/apl/Books/APROGRAMMING%20LANGUAGE/view |archive-date=2014-10-27 |url-status=dead }}&lt;/ref&gt; is a [[programming language]] developed in the 1960s by [[Kenneth E. Iverson]]. Its central datatype is the [[Array data type#Multi-dimensional arrays|multidimensional array]]. It uses a large range of [[APL syntax and symbols|special graphic symbols]]&lt;ref&gt;{{cite journal|last1=McIntyre|first1=Donald B.|title=Language as an Intellectual Tool: From Hieroglyphics to APL|journal=IBM Systems Journal|date=1991|volume=30|issue=4|pages=554–581|doi=10.1147/sj.304.0554|url=http://domino.research.ibm.com/tchjr/journalindex.nsf/e90fc5d047e64ebf85256bc80066919c/9c834f5a16efa82085256bfa00685c72!OpenDocument|access-date=January 9, 2015|archive-url=https://web.archive.org/web/20160304051735/http://domino.research.ibm.com/tchjr/journalindex.nsf/e90fc5d047e64ebf85256bc80066919c/9c834f5a16efa82085256bfa00685c72!OpenDocument|archive-date=March 4, 2016|url-status=dead}}&lt;/ref&gt; to represent most functions and operators, leading to very concise code. It has been an important influence on the development of concept modeling, [[spreadsheet]]s, [[functional programming]],&lt;ref&gt;{{cite web |url=http://awards.acm.org/citation.cfm?id=0703524&amp;srt=all&amp;aw=140&amp;ao=AMTURING |archive-url=https://web.archive.org/web/20080212043802/https://awards.acm.org/citation.cfm?id=0703524&amp;srt=all&amp;aw=140&amp;ao=AMTURING |archive-date=February 12, 2008 |title=ACM Award Citation&amp;nbsp;– John Backus |publisher=Awards.acm.org |date= 1977 |access-date=February 3, 2010}}&lt;/ref&gt; and computer math packages.&lt;ref name=&quot;mworks&quot; /&gt; It has also inspired several other programming languages.&lt;ref name=&quot;jinsp&quot; /&gt;&lt;ref name=&quot;kinsp&quot; /&gt;
+
+== History ==
+=== Mathematical notation===
+A [[mathematical notation]] for manipulating arrays was developed by [[Kenneth E. Iverson]], starting in 1957 at [[Harvard University]]. In 1960, he began work for [[IBM]] where he developed this notation with [[Adin Falkoff]] and published it in his book ''A Programming Language'' in 1962.&lt;ref name=&quot;aplbook&quot; /&gt; The preface states its premise:
+{{quote|Applied mathematics is largely concerned with the design and analysis of explicit procedures for calculating the exact or approximate values of various functions. Such explicit procedures are called algorithms or ''programs''. Because an effective notation for the description of programs exhibits considerable syntactic structure, it is called a ''programming language''.
+}}
+
+This notation was used inside IBM for short research reports on computer systems, such as the [[Burroughs B5000]] and its stack mechanism when [[stack machine]]s versus [[register machine]]s were being evaluated by IBM for upcoming computers.
+
+Iverson also used his notation in a draft of the chapter ''A Programming Language'', written for a book he was writing with [[Fred Brooks]], ''Automatic Data Processing'', which would be published in 1963.&lt;ref&gt;Iverson, Kenneth E., [http://www.softwarepreservation.org/projects/apl/book/Iverson-AutomaticDataProcessing-color.pdf/view &quot;Automatic Data Processing: Chapter 6: A programming language&quot;] {{webarchive|url=https://web.archive.org/web/20090604091847/http://www.softwarepreservation.org/projects/apl/book/Iverson-AutomaticDataProcessing-color.pdf/view |date=June 4, 2009}}, 1960, Draft copy for Brooks and Iverson 1963 book, ''Automatic Data Processing''.&lt;/ref&gt;&lt;ref&gt;[[Fred Brooks|Brooks, Fred]]; Iverson, Kenneth, (1963), ''Automatic Data Processing'', John Wiley &amp; Sons Inc.&lt;/ref&gt;
+
+In 1979, Iverson received the [[Turing Award]] for his work on APL.&lt;ref&gt;{{cite web |url=http://awards.acm.org/citation.cfm?id=9147499&amp;srt=all&amp;aw=140&amp;ao=AMTURING |title=Turing Award Citation 1979 |publisher=Awards.acm.org |access-date=February 3, 2010 |archive-url=https://web.archive.org/web/20091223064709/http://awards.acm.org/citation.cfm?id=9147499&amp;srt=all&amp;aw=140&amp;ao=AMTURING |archive-date=2009-12-23 |url-status=dead }}&lt;/ref&gt;
+
+=== Development into a computer programming language ===
+As early as 1962, the first attempt to use the notation to describe a complete computer system happened after Falkoff discussed with William C. Carter his work to standardize the instruction set for the machines that later became the [[IBM System/360]] family.
+
+In 1963, Herbert Hellerman, working at the IBM Systems Research Institute, implemented a part of the notation on an [[IBM 1620]] computer, and it was used by students in a special high school course on calculating transcendental functions by series summation. Students tested their code in Hellerman's lab. This implementation of a part of the notation was called Personalized Array Translator (PAT).&lt;ref&gt;Hellerman, H., &quot;Experimental Personalized Array Translator System&quot;, ''Communications of the ACM'', 7, 433 (July, 1964).&lt;/ref&gt;
+
+In 1963, Falkoff, Iverson, and [[Edward H. Sussenguth Jr.]], all working at IBM, used the notation for a formal description of the [[IBM System/360]] series machine architecture and functionality, which resulted in a paper published in ''[[IBM Systems Journal]]'' in 1964. After this was published, the team turned their attention to an implementation of the notation on a computer system. One of the motivations for this focus of implementation was the interest of John L. Lawrence who had new duties with [[Science Research Associates]], an educational company bought by IBM in 1964. Lawrence asked Iverson and his group to help use the language as a tool to develop and use computers in education.&lt;ref&gt;Falkoff, Adin D.; Iverson, Kenneth E., [http://www.jsoftware.com/papers/APLEvol.htm &quot;The Evolution of APL&quot;], ACM SIGPLAN Notices 13, 1978-08.&lt;/ref&gt;
+
+After [[Lawrence M. Breed]] and [[Philip S. Abrams]] of Stanford University joined the team at IBM Research, they continued their prior work on an implementation programmed in [[FORTRAN IV]] for a part of the notation which had been done for the [[IBM 7090]] computer running on the [[IBM 7090/94 IBSYS|IBSYS]] operating system. This work was finished in late 1965 and later named IVSYS (for Iverson system). The basis of this implementation was described in detail by Abrams in a Stanford University Technical Report, &quot;An Interpreter for Iverson Notation&quot; in 1966, the academic aspect of this was formally supervised by [[Niklaus Wirth]].&lt;ref&gt;Abrams, Philip S., [http://infolab.stanford.edu/TR/CS-TR-66-47.html ''An interpreter for &quot;Iverson notation&quot;''], Technical Report: CS-TR-66-47, Department of Computer Science, Stanford University, August 1966;&lt;/ref&gt; Like Hellerman's PAT system earlier, this implementation did not include the APL character set but used special English reserved words for functions and operators. The system was later adapted for a [[time-sharing]] system and, by November 1966, it had been reprogrammed for the [[IBM System/360 Model 50]] computer running in a time sharing mode and was used internally at IBM.&lt;ref&gt;{{cite journal |last=Haigh |first=Thomas |year=2005 |title=Biographies: Kenneth E. Iverson |journal=IEEE Annals of the History of Computing|doi=10.1109/MAHC.2005.4 }}&lt;/ref&gt;
+
+=== Hardware ===
+[[File:IBM Selectric Globe Wiki.jpg|thumb|IBM typeballs (one OCR) with clip, {{€|2}} coin for scale]]
+
+[[File:APL-keybd2.svg|thumb|A programmer's view of the IBM 2741 keyboard layout with the APL typing element print head inserted]]
+
+A key development in the ability to use APL effectively, before the wide use of cathode ray tube ([[Computer monitor#Cathode ray tube|CRT]]) terminals, was the development of a special [[IBM Selectric typewriter]] interchangeable typing element with all the special APL characters on it. This was used on paper printing terminal workstations using the Selectric typewriter and typing element mechanism, such as the [[IBM 1050]] and [[IBM 2741]] terminal. Keycaps could be placed over the normal keys to show which APL characters would be entered and typed when that key was struck. For the first time, a programmer could type in and see proper APL characters as used in Iverson's notation and not be forced to use awkward English keyword representations of them. Falkoff and Iverson had the special APL Selectric typing elements, 987 and 988, designed in late 1964, although no APL computer system was available to use them.&lt;ref name=&quot;APLQQ91&quot;&gt;Breed, Larry, [http://portal.acm.org/citation.cfm?id=138094.140933 &quot;The First APL Terminal Session&quot;], ''APL Quote Quad'', Association for Computing Machinery, Volume 22, Number 1, September 1991, p.2-4.&lt;/ref&gt; Iverson cited Falkoff as the inspiration for the idea of using an IBM Selectric typing element for the APL character set.&lt;ref&gt;[http://www.computerhistory.org/tdih/?setdate=December 19, 2009 Adin Falkoff] – Computer History Museum. &quot;Iverson credited him for choosing the name APL and the introduction of the IBM golf-ball typewriter with the replacement typehead, which provided the famous character set to represent programs.&quot;&lt;/ref&gt;
+
+Many APL symbols, even with the APL characters on the Selectric typing element, still had to be typed in by over-striking two extant element characters. An example is the ''grade up'' character, which had to be made from a ''delta'' (shift-H) and a ''[[Sheffer stroke]]'' (shift-M). This was necessary because the APL character set was much larger than the 88 characters allowed on the typing element, even when letters were restricted to upper-case (capitals).
+
+=== Commercial availability ===
+The first APL interactive login and creation of an APL workspace was in 1966 by Larry Breed using an IBM 1050 terminal at the IBM Mohansic Labs near [[Thomas J. Watson Research Center]], the home of APL, in [[Yorktown Heights, New York]].&lt;ref name=&quot;APLQQ91&quot;/&gt;
+
+IBM was chiefly responsible for introducing APL to the marketplace. APL was first available in 1967 for the [[IBM 1130]] as ''APL\1130''.&lt;ref&gt;{{cite journal |url=http://www.vector.org.uk/archive/v223/APL_1130.htm |title=How We Got to APL\1130 |last=Breed |first=Larry |author-link=Larry Breed |journal=Vector (British APL Association) |volume=22 |issue=3 |date=August 2006 |issn=0955-1433 |access-date=2007-04-02 |archive-url=https://web.archive.org/web/20080512031437/http://www.vector.org.uk/archive/v223/APL_1130.htm |archive-date=2008-05-12 |url-status=dead }}&lt;/ref&gt;&lt;ref&gt;[http://bitsavers.org/pdf/ibm/1130/lang/1130-03.3.001_APL_1130_May69.pdf APL\1130 Manual] {{Webarchive|url=https://web.archive.org/web/20110221034650/http://www.bitsavers.org/pdf/ibm/1130/lang/1130-03.3.001_APL_1130_May69.pdf |date=2011-02-21 }}, May 1969&lt;/ref&gt; It would run in as little as 8k 16-bit words of memory, and used a dedicated 1 megabyte hard disk.
+
+APL gained its foothold on mainframe timesharing systems from the late 1960s through the early 1980s, in part because it would support multiple users on lower-specification systems that had no [[Memory management unit|dynamic address translation]] hardware.&lt;ref&gt;{{cite web|url=http://www.quadibloc.com/comp/aplint.htm |title=Remembering APL |publisher=Quadibloc.com |date= |access-date=June 17, 2013}}&lt;/ref&gt; Additional improvements in performance for selected [[IBM System/370]] mainframe systems included the ''APL Assist Microcode'' in which some support for APL execution was included in the processor's [[firmware]], as distinct from being implemented entirely by higher-level software. Somewhat later, as suitably performing hardware was finally growing available in the mid- to late-1980s, many users migrated their applications to the personal computer environment.
+
+Early IBM APL interpreters for IBM 360 and IBM 370 hardware implemented their own multi-user management instead of relying on the host services, thus they were their own timesharing systems. First introduced in 1966, the ''APL\360''&lt;ref name=&quot;IBM APL\360 1968&quot;&gt;Falkoff, Adin; Iverson, Kenneth E., [http://bitsavers.org/pdf/ibm/apl/APL_360_Users_Manual_Aug68.pdf &quot;APL\360 Users Guide&quot;] {{Webarchive|url=https://web.archive.org/web/20120229200744/http://bitsavers.org/pdf/ibm/apl/APL_360_Users_Manual_Aug68.pdf |date=2012-02-29 }}, IBM Research, Thomas J. Watson Research Center, Yorktown Heights, NY, August 1968.&lt;/ref&gt;&lt;ref&gt;[http://bitsavers.org/pdf/ibm/apl/APL_360_Terminal_System_Mar67.pdf &quot;APL\360 Terminal System&quot;] {{Webarchive|url=https://web.archive.org/web/20100711092528/http://bitsavers.org/pdf/ibm/apl/APL_360_Terminal_System_Mar67.pdf |date=2010-07-11 }}, IBM Research, Thomas J. Watson Research Center, March 1967.&lt;/ref&gt;&lt;ref name=&quot;apl360&quot;&gt;{{cite book |last=Pakin |first=Sandra |title=APL\360 Reference Manual |publisher=Science Research Associates, Inc. |year=1968 |isbn=978-0-574-16135-2}}&lt;/ref&gt; system was a multi-user interpreter. The ability to programmatically communicate with the operating system for information and setting interpreter system variables was done through special privileged &quot;I-beam&quot; functions, using both [[Monad (functional programming)|monadic]] and [[Dyadics|dyadic]] operations.&lt;ref&gt;Falkoff, Adin D.; Iverson, Kenneth E.,[http://www.research.ibm.com/journal/rd/174/ibmrd1704F.pdf ''The Design of APL''], ''IBM Journal of Research and Development'', Volume 17, Number 4, July 1973. &quot;These environmental defined functions were based on the use of still another class of functions—called &quot;I-beams&quot; because of the shape of the symbol used for them—which provide a more general facility for communication between APL programs and the less abstract parts of the system. The I-beam functions were first introduced by the system programmers to allow them to execute System/360 instructions from within APL programs, and thus use APL as a direct aid in their programming activity. The obvious convenience of functions of this kind, which appeared to be part of the language, led to the introduction of the monadic I-beam function for direct use by anyone. Various arguments to this function yielded information about the environment such as available space and time of day.&quot;&lt;/ref&gt;
+
+In 1973, IBM released ''APL.SV'', which was a continuation of the same product, but which offered [[shared variable]]s as a means to access facilities outside of the APL system, such as operating system files. In the mid-1970s, the IBM mainframe interpreter was even adapted for use on the [[IBM 5100]] desktop computer, which had a small CRT and an APL keyboard, when most other small computers of the time only offered [[BASIC]]. In the 1980s, the ''VSAPL'' program product enjoyed wide use with [[Conversational Monitor System]] (CMS), [[Time Sharing Option]] (TSO), [[VSPC]], [[MUSIC/SP]], and [[CICS]] users.
+
+In 1973-1974, Patrick E. Hagerty directed the implementation of the University of Maryland APL interpreter for the 1100 line of the Sperry [[UNIVAC 1100/2200 series]] mainframe computers.&lt;ref&gt;{{cite web |last=Minker |first=Jack |title=Beginning of Computing and Computer Sciences at the University of Maryland |url=http://www.cs.umd.edu/department/dept-history/minker-report.pdf |publisher=University of Maryland |access-date=May 23, 2011 |location=Section 2.3.4 |page=38 |date=January 2004 |archive-url= https://web.archive.org/web/20110610064807/http://www.cs.umd.edu/department/dept-history/minker-report.pdf |archive-date= June 10, 2011}}&lt;/ref&gt; At the time, Sperry had nothing. In 1974, student Alan Stebbens was assigned the task of implementing an internal function.&lt;ref&gt;{{cite web |last=Stebbens |first=Alan |title=How it all began |url=http://lathwellproductions.ca/wordpress/film}}&lt;/ref&gt; Xerox APL was available from June 1975 for Xerox 560 and Sigma 6, 7, and 9 mainframes running [[Universal_Time-Sharing_System#CP-V | CP-V]] and for [[Honeywell CP-6]].&lt;ref&gt;{{cite web |title=Xerox APL Language and Operations Reference Manual |url=http://www.softwarepreservation.org/projects/apl/Books/197506_Xerox%20APL%20Language%20and%20Operations%20Reference%20Manual_90131C.pdf}}&lt;/ref&gt;
+
+In the 1960s and 1970s, several timesharing firms arose that sold APL services using modified versions of the IBM APL\360&lt;ref name=&quot;apl360&quot; /&gt; interpreter. In North America, the better-known ones were [[I. P. Sharp Associates]], [[Scientific Time Sharing Corporation]] (STSC), Time Sharing Resources (TSR), and [[The Computer Company]] (TCC). CompuServe also entered the market in 1978 with an APL Interpreter based on a modified version of Digital Equipment Corp and Carnegie Mellon's, which ran on DEC's KI and KL 36-bit machines. CompuServe's APL was available both to its commercial market and the consumer information service.  With the advent first of less expensive mainframes such as the [[IBM 4300]], and later the personal computer, by the mid-1980s, the timesharing industry was all but gone.
+
+''Sharp APL'' was available from [[I. P. Sharp Associates]], first as a timesharing service in the 1960s, and later as a program product starting around 1979. ''Sharp APL'' was an advanced APL implementation with many language extensions, such as ''packages'' (the ability to put one or more objects into a single variable), file system, nested arrays, and [[shared variable]]s.
+
+APL interpreters were available from other mainframe and mini-computer manufacturers also, notably [[Burroughs Corporation|Burroughs]], [[Control Data Corporation]] (CDC), [[Data General]], [[Digital Equipment Corporation]] (DEC), [[Harris Corporation|Harris]], [[Hewlett-Packard]] (HP), [[Siemens AG]], [[Xerox]], and others.
+
+Garth Foster of [[Syracuse University]] sponsored regular meetings of the APL implementers' community at Syracuse's Minnowbrook Conference Center in [[Blue Mountain Lake, New York]]. In later years, Eugene McDonnell organized similar meetings at the [[Asilomar Conference Grounds]] near Monterey, California, and at Pajaro Dunes near Watsonville, California. The SIGAPL special interest group of the [[Association for Computing Machinery]] continues to support the APL community.&lt;ref&gt;{{cite web |url=http://www.sigapl.org/ |title=SIGAPL |publisher=Sigapl.org |date= |access-date=June 17, 2013}}&lt;/ref&gt;
+
+=== Microcomputers ===
+On microcomputers, which became available from the mid 1970s onwards, [[BASIC]] became the dominant programming language.&lt;ref&gt;{{cite web|url=http://time.com/69316/basic/|title=Fifty Years of BASIC, the Programming Language That Made Computers Personal|date=April 29, 2014|website=time.com|publisher=TIME|access-date=April 29, 2018}}&lt;/ref&gt; Nevertheless, some microcomputers provided APL instead - the first being the [[Intel 8008]]-based [[MCM/70]] which was released in 1974&lt;ref&gt;{{cite web|url=http://www.old-computers.com/museum/computer.asp?c=346|title=MCM Computers M70/M700|website=old-computers.com|access-date=April 8, 2018|archive-url=https://web.archive.org/web/20180403063223/http://www.old-computers.com/museum/computer.asp?c=346|archive-date=April 3, 2018|url-status=dead}}&lt;/ref&gt;&lt;ref&gt;{{cite book|last=Stachniak|first=Stachniak |date=2011|title=Inventing the PC: The MCM/70 Story|publisher=McGill Queens's University Press |isbn=978-0-7735-3852-8|url=https://books.google.co.uk/books?id=cyWOA2FED7EC}}&lt;/ref&gt; and which was primarily used in education.&lt;ref&gt;{{cite magazine |last=Miller |first=Michael |date=December 17, 2014 |title=PCs That Paved the Way for the Altair |url=http://uk.pcmag.com/opinion/38348/opinion/pcs-that-paved-the-way-for-the-altair |magazine=PCMagazine |publisher=Ziff Davis |access-date=April 29, 2018 }}&lt;/ref&gt; Another machine of this time was the [[VideoBrain Family Computer]], released in 1977, which was supplied with its dialect of APL called APL/S.&lt;ref&gt;[https://books.google.com/books?id=OQEAAAAAMBAJ&amp;pg=PA133&amp;lpg=PA133&amp;dq=videobrain+family+computer+apl/s#v=onepage&amp;q=videobrain%20family%20computer%20apl%2Fs &quot;VideoBrain Family Computer&quot;], ''[[Popular Science]]'', November 1978, advertisement.&lt;/ref&gt;
+
+The [[Commodore SuperPET]], introduced in 1981, included an APL interpreter developed by the [[University of Waterloo]].&lt;ref&gt;{{cite magazine |date=December 1981 |title=A Look at SuperPet |url=https://archive.org/stream/1981-12-compute-magazine/Compute_Issue_019_1981_Dec#page/n131/mode/2up |magazine=COMPUTE! The Journal for Progressive Computing |location= |publisher=Small System Services Inc |access-date=April 29, 2018 }}&lt;/ref&gt;
+
+In 1976, Bill Gates claimed in his [[Open Letter to Hobbyists]] that [[Microsoft Corporation]] was implementing APL for the [[Intel 8080]] and [[Motorola 6800]] but had &quot;very little incentive to make [it] available to hobbyists&quot; because of [[software piracy]].&lt;ref&gt;{{cite magazine |last=Gates |first=Bill |date=January 31, 1976 |title=An Open Letter to Hobbyists |url=http://www.digibarn.com/collections/newsletters/homebrew/V2_01/index.html |magazine=Homebrew Computer Club Newsletter |access-date=April 29, 2018}}&lt;/ref&gt; It was never released.
+
+=== APL2 ===
+Starting in the early 1980s, IBM APL development, under the leadership of [[Jim Brown (computer scientist)|Jim Brown]], implemented a new version of the APL language that contained as its primary enhancement the concept of ''nested arrays'', where an array can contain other arrays, and new language features which facilitated integrating nested arrays into program workflow. Ken Iverson, no longer in control of the development of the APL language, left IBM and joined [[I. P. Sharp Associates]], where one of his major contributions was directing the evolution of Sharp APL to be more in accord with his vision.&lt;ref&gt;{{cite web |last1=Hui |first1=Roger |title=Remembering Ken Iverson |url=http://keiapl.org/rhui/remember.htm|website=keiapl.org|publisher=KEIAPL |access-date=January 10, 2015}}&lt;/ref&gt;&lt;ref&gt;{{cite web |last1=ACM A.M. Turing Award |title=Kenneth E. Iverson – Citation |url=http://amturing.acm.org/award_winners/iverson_9147499.cfm |website=amturing.acm.org|publisher=ACM |access-date=January 10, 2015}}&lt;/ref&gt;&lt;ref&gt;{{cite web |last1=ACM SIGPLAN |title=APL2: The Early Years |url=http://www.sigapl.org/Articles/JimBrown-TechCompromise.php |website=www.sigapl.org|publisher=ACM |access-date=January 10, 2015}}&lt;/ref&gt;
+
+As other vendors were busy developing APL interpreters for new hardware, notably [[Unix]]-based [[microcomputer]]s, APL2 was almost always the standard chosen for new APL interpreter developments. Even today, most APL vendors or their users cite APL2 compatibility, as a selling point for those products.&lt;ref&gt;{{cite web|last1=Micro APL|title=Overview of the APL System|url=http://www.microapl.co.uk/apl/apl_concepts_chapter1.html|website=www.microapl.co.uk|publisher=Micro APL|access-date=January 10, 2015}}&lt;/ref&gt;&lt;ref&gt;{{cite web|last1=Robertson|first1=Graeme|title=A Personal View of APL2010|url=http://archive.vector.org.uk/art10500450|website=archive.vector.org.uk|publisher=Vector – Journal of the British APL Association|access-date=January 10, 2015}}&lt;/ref&gt;
+
+''APL2'' for IBM mainframe computers is still available.  IBM cites its use for problem solving, system design, prototyping, engineering and scientific computations, expert systems,&lt;ref&gt;{{cite journal|last1=Rodriguez|first1=P.|last2=Rojas|first2=J.|last3=Alfonseca|first3=M.|last4=Burgos|first4=J. I.|title=An Expert System in Chemical Synthesis written in APL2/PC|journal=ACM SIGAPL APL Quote Quad|date=1989|volume=19|issue=4|pages=299–303|doi=10.1145/75144.75185}}&lt;/ref&gt; for teaching mathematics and other subjects, visualization and database access&lt;ref&gt;{{cite web|last1=IBM|title=APL2: A Programming Language for Problem Solving, Visualization and Database Access|url=http://www-03.ibm.com/software/products/en/apl2|website=www-03.ibm.com|publisher=IBM|access-date=January 10, 2015}}&lt;/ref&gt; and was first available for [[Conversational Monitor System|CMS]] and [[Time Sharing Option|TSO]] in 1984.&lt;ref name=&quot;FalkoffIBMFamily&quot;&gt;{{cite journal |url=https://pdfs.semanticscholar.org/f7c4/72cdf7f4cb57d34c08d09f6c9a5340372678.pdf|title=The IBM family of APL systems |first=Adin D. |last=Falkoff |year=1991 |journal=IBM Systems Journal |volume=30 |issue=4 |pages=416–432 |access-date=April 15, 2018 |doi=10.1147/sj.304.0416}}&lt;/ref&gt; The APL2 Workstation edition (Windows, [[OS/2]], [[IBM AIX|AIX]], [[Linux]], and [[Solaris (operating system)|Solaris]]) followed much later in the early 1990s.{{Citation needed|date=April 2010}}
+
+=== Modern implementations ===
+Various implementations of APL by APLX, Dyalog, et al., include extensions for [[object-oriented programming]], support for [[.NET Framework]], XML-array conversion primitives, graphing, operating system interfaces, and [[lambda calculus]] expressions.
+
+=== Derivative languages ===
+APL has formed the basis of, or influenced, the following languages:{{cn|Reason=Not contesting these statements at all; some of them are nearly self-evident (J and K, for example), but still, WP quality standards require sources|date=February 2020}}
+
+* [[A+ (programming language)|A and A+]], an alternative APL, the latter with graphical extensions.
+* [[FP (programming language)|FP]], a functional programming language.
+*Ivy, an interpreter for an APL-like language developed by [[Rob Pike]], and which uses [[ASCII]] as input.&lt;ref&gt;{{Cite web|url=https://godoc.org/robpike.io/ivy|title=Ivy|last=Pike|first=Rob|date=2018-03-25|website=GoDoc|archive-url=https://web.archive.org/web/20190813210651/https://godoc.org/robpike.io/ivy|archive-date=2019-08-13|url-status=}}&lt;/ref&gt;
+* [[J (programming language)|J]], which was also designed by Iverson, and which uses [[ASCII]] with [[Digraph (computing)|digraphs]] instead of special symbols.&lt;ref name=&quot;jinsp&quot;&gt;{{cite web |url=http://www.jsoftware.com/jwiki/Essays/Bibliography |title=A Bibliography of APL and J |publisher=Jsoftware.com |date= |access-date=March 2, 2010}}&lt;/ref&gt;
+* [[K (programming language)|K]], a proprietary variant of APL developed by Arthur Whitney.&lt;ref name=&quot;kinsp&quot;&gt;{{cite web |url=http://kx.com/Company/press-releases/arthur-interview.php |title=An Interview with Arthur Whitney |publisher=Kx Systems |date=January 4, 2004 |access-date=March 2, 2010 |url-status=dead |archive-url=https://web.archive.org/web/20090404064737/http://kx.com/Company/press-releases/arthur-interview.php |archive-date=April 4, 2009}}&lt;/ref&gt;
+* [[LYaPAS]], a [[Soviet Union|Russian]] extension to APL.
+* [[MATLAB]], a numerical computation tool.&lt;ref name=&quot;mworks&quot;&gt;{{cite web |url=http://www.mathworks.com/company/newsletters/news_notes/clevescorner/jan06.pdf |title=The Growth of MATLAB |last=Moler |first=Cleve |access-date=February 3, 2010 |url-status=dead |archive-url=https://web.archive.org/web/20090411120119/http://www.mathworks.com/company/newsletters/news_notes/clevescorner/jan06.pdf |archive-date=April 11, 2009 }}&lt;/ref&gt;
+* [[Nial]], a high-level array programming language with a functional programming notation.
+* [[Polymorphic Programming Language]], an interactive, extensible language with a similar base language.
+* [[S (programming language)|S]], a statistical programming language.
+* [[Speakeasy (computational environment)|Speakeasy]], a numerical computing interactive environment.
+* [[Wolfram Language]], the programming language of [[Mathematica]].&lt;ref&gt;{{Cite web|url=https://www.wolfram.com/language/faq/|title=Wolfram Language FAQ|quote=LISP and APL were two early influences|publisher=Wolfram|access-date=February 20, 2020}}&lt;/ref&gt;
+
+== Language characteristics ==
+=== Character set ===
+{{Main|APL (codepage)|APL syntax and symbols#Monadic functions|l2=syntax and symbols.}}
+
+APL has been both criticized and praised for its choice of a unique, non-standard character set. Some who learn it become ardent adherents, suggesting that there is some weight behind Iverson's idea that the notation used does make a difference. In the 1960s and 1970s, few terminal devices and even display monitors could reproduce the APL character set. The most popular ones employed the [[IBM Selectric]] print mechanism used with a special APL type element. One of the early APL [[Computer terminal|line terminals]] (line-mode operation only, ''not'' full screen) was the Texas Instruments TI Model 745 (circa 1977) with the full APL character set&lt;ref&gt;{{cite journal |last1=Texas Instruments |title=TI 745 full page ad: Introducing a New Set of Characters |journal=Computerworld|date=1977 |volume=11 |issue=27 |page=32 |url=https://books.google.com/?id=wMe6erbb5V4C&amp;pg=PA32&amp;lpg=PA32&amp;dq=apl+terminal+%22texas+instruments%22&amp;q=apl%20terminal%20%22texas%20instruments%22 |access-date=January 20, 2015}}&lt;/ref&gt; which featured [[Duplex (telecommunications)|half and full duplex]] [[telecommunication]]s modes, for interacting with an APL [[time-sharing]] service or remote mainframe to run a remote computer job, [[Remote job entry|called an RJE]].
+
+Over time, with the universal use of high-quality graphic displays, printing devices and [[Unicode]] support, the APL character font problem has largely been eliminated. However, entering APL characters requires the use of [[input method editor]]s, keyboard mappings, virtual/on-screen APL symbol sets,&lt;ref&gt;{{cite web|last1=Dyalog|title=APL Fonts and Keyboards|url=http://www.dyalog.com/apl-font-keyboard.htm|website=www.dyalog.com|publisher=Dyalog|access-date=January 19, 2015}}&lt;/ref&gt;&lt;ref&gt;{{cite web|last1=Smith|first1=Bob|title=NARS2000 Keyboard|url=http://www.sudleyplace.com/APL/Keyboard.ahtml|website=www.sudleyplace.com|publisher=Bob Smith / NARS2000|access-date=January 19, 2015}}&lt;/ref&gt; or easy-reference printed keyboard cards which can frustrate beginners accustomed to other programming languages.&lt;ref&gt;{{cite web|last1=MicroAPL Ltd|title=Introduction to APL – APL Symbols|url=http://www.microapl.co.uk/apl/introduction_chapter1.html|website=www.microapl.co.uk|publisher=MicroAPL Ltd|access-date=January 8, 2015}}&lt;/ref&gt;&lt;ref&gt;{{cite journal|last1=Brown|first1=James A.|last2=Hawks|first2=Brent|last3=Trimble|first3=Ray|title=Extending the APL character set|journal=ACM SIGAPL APL Quote Quad|date=1993|volume=24|issue=1|pages=41–46|doi=10.1145/166198.166203}}&lt;/ref&gt;&lt;ref&gt;{{cite web|last1=Kromberg|first1=Morten|title=Unicode Support for APL|url=http://archive.vector.org.uk/art10500090|website=archive.vector.org.uk|publisher=Vector, Journal of the British APL Association|access-date=January 8, 2015}}&lt;/ref&gt; With beginners who have no prior experience with other programming languages, a study involving high school students found that typing and using APL characters did not hinder the students in any measurable way.&lt;ref&gt;{{cite web|last1=Hsu|first1=Aaron|title=Computer Science Outreach and Education with APL|url=http://video.dyalog.com/Dyalog13/?v=kIItfQJEVdM|publisher=Dyalog, Ltd.|access-date=July 15, 2016}}&lt;/ref&gt;
+
+In defense of APL use, APL requires less coding to type in, and keyboard mappings become memorized over time. Also, special APL keyboards are manufactured and in use today, as are freely available downloadable fonts for operating systems such as Microsoft Windows.&lt;ref&gt;Dyalog, Inc. APL fonts and keyboards. http://www.dyalog.com/apl-font-keyboard.htm&lt;/ref&gt; The reported productivity gains assume that one will spend enough time working in APL to make it worthwhile to memorize the symbols, their semantics, and keyboard mappings, not to mention a substantial number of idioms for common tasks.{{citation needed|date=July 2015}}
+
+=== Design ===
+Unlike traditionally structured programming languages, APL code is typically structured as chains of [[unary operation|monadic]] or [[binary operation|dyadic]] [[function (programming)|functions]], and [[higher-order function|operators]]&lt;ref name=&quot;MicroAOL_Operators&quot;&gt;{{cite web|last1=MicroAPL|title=Operators|url=http://www.microapl.co.uk/apl/apl_concepts_chapter5.html|website=www.microapl.co.uk|publisher=MicroAPL|access-date=January 12, 2015}}&lt;/ref&gt; acting on [[array data type|arrays]].&lt;ref&gt;{{cite web|last1=Primitive Functions|title=Primitive Functions|url=http://www.microapl.co.uk/apl_help/ch_020_010_140.htm|website=www.microapl.co.uk/|access-date=January 1, 2015}}&lt;/ref&gt; APL has many nonstandard ''primitives'' (functions and operators) that are indicated by a single symbol or a combination of a few symbols. All primitives are defined to have the same [[operator precedence|precedence]], and always associate to the right. Thus, APL is ''read'' or best understood from [[APL syntax and symbols#Syntax rules|right-to-left]].
+
+Early APL implementations (circa 1970 or so) had no programming loop-[[control flow|flow control]] structures, such as &lt;code&gt;do&lt;/code&gt; or &lt;code&gt;while&lt;/code&gt; loops, and &lt;code&gt;if-then-else&lt;/code&gt; constructs. Instead, they used array operations, and use of [[structured programming]] constructs was often not necessary, since an operation could be performed on a full array in one statement. For example, the &lt;code&gt;iota&lt;/code&gt; function (&lt;code&gt;ι&lt;/code&gt;) can replace for-loop [[iteration]]: ιN when applied to a scalar positive integer yields a one-dimensional array (vector), 1 2 3 ... N. More recent implementations of APL generally include comprehensive control structures, so that data structure and program control flow can be clearly and cleanly separated.
+
+The APL environment is called a ''workspace''. In a workspace the user can define programs and data, i.e., the data values exist also outside the programs, and the user can also manipulate the data without having to define a program.&lt;ref&gt;{{cite web|last1=Workspace|title=The Workspace|url=http://www.microapl.co.uk/apl/apl_concepts_chapter2.html|website=www.microapl.co.uk|access-date=January 1, 2015}}&lt;/ref&gt; In the examples below, the APL interpreter first types six spaces before awaiting the user's input. Its own output starts in column one.
+{| class=&quot;wikitable&quot;
+|-
+| width=&quot;200pt&quot; | &lt;source lang=&quot;apl&quot;&gt;      n ← 4 5 6 7&lt;/source&gt;
+| Assigns [[coordinate vector|vector]] of values, {4 5 6 7}, to variable &lt;tt&gt;n&lt;/tt&gt;, an array create operation. An equivalent yet more concise APL expression would be &lt;source lang=&quot;apl&quot; inline&gt;n ← 3 + ⍳4&lt;/source&gt;. Multiple values are stored in array &lt;code&gt;n&lt;/code&gt;, the operation performed ''without formal loops or control flow language''.
+|-
+| &lt;source lang=&quot;apl&quot;&gt;      n 
+4 5 6 7&lt;/source&gt;
+| Display the contents of &lt;tt&gt;n&lt;/tt&gt;, currently an array or vector.
+|-
+| &lt;source lang=&quot;apl&quot;&gt;      n+4
+8 9 10 11&lt;/source&gt;
+| 4 is now added to all elements of vector &lt;tt&gt;n&lt;/tt&gt;, creating a 4-element vector {8 9 10 11}.&lt;br /&gt; As above, APL's interpreter displays the result because the expression's value was not assigned to a variable (with a &lt;tt&gt;←&lt;/tt&gt;).
+|-
+| &lt;source lang=&quot;apl&quot;&gt;      +/n
+22&lt;/source&gt;
+| APL displays the sum of components of the vector &lt;tt&gt;n&lt;/tt&gt;, i.e., &lt;tt&gt;22 (= 4 + 5 + 6 + 7)&lt;/tt&gt; using a very compact notation: read +/ as &quot;plus, over...&quot; and a slight change would be &quot;multiply, over...&quot;
+|-
+| &lt;source lang=&quot;apl&quot;&gt;      m ← +/(3+⍳4)
+      m
+22&lt;/source&gt;
+| These operations can be combined into one statement, remembering that APL evaluates expressions right to left: first &lt;source lang=&quot;apl&quot; inline&gt;⍳4&lt;/source&gt; creates an array, &lt;source lang=&quot;apl&quot; inline&gt;[1,2,3,4]&lt;/source&gt;, then 3 is added to each component, which are summed together and the result stored in variable &lt;tt&gt;m&lt;/tt&gt;, finally displayed.
+In normal mathematical notation, it is equivalent to: &lt;math&gt;\displaystyle m= \sum\limits_{i=1}^4 (i+3)&lt;/math&gt;. Recall that mathematical expressions are not read or evaluated from right-to-left.
+|}
+
+The user can save the workspace with all values, programs, and execution status.
+
+APL uses a set of non-[[ASCII]] symbols, which are an extension of traditional arithmetic and algebraic notation. Having single character names for single instruction, multiple data ([[SIMD]]) vector functions is one way that APL enables compact formulation of algorithms for data transformation such as computing [[Conway's Game of Life]] in one line of code.&lt;ref&gt;{{cite web|url=http://catpad.net/michael/apl |title=example |publisher=Catpad.net |access-date=June 17, 2013 |url-status=dead |archive-url=https://web.archive.org/web/20130708114840/http://catpad.net/michael/apl/ |archive-date=July 8, 2013 }}&lt;/ref&gt; In nearly all versions of APL, it is theoretically possible to express any computable function in one expression, that is, in one line of code.
+
+Because of the unusual [[character set]], many programmers use special [[computer keyboard|keyboards]] with APL keytops to write APL code.&lt;ref&gt;{{cite web|last1=APL Symbols|title=Entering APL Symbols|url=http://www.microapl.co.uk/apl/introduction_chapter2.html|website=www.microapl.co.uk|access-date=January 1, 2015}}&lt;/ref&gt; Although there are various ways to write APL code using only ASCII characters,&lt;ref&gt;[http://www.math.uwaterloo.ca/apl_archives/apl/translit.schemes Dickey, Lee, A list of APL Transliteration Schemes], 1993&lt;/ref&gt; in practice it is almost never done. (This may be thought to support Iverson's thesis about [[Linguistic relativity|notation as a tool of thought]].&lt;ref&gt;Iverson K.E.,
+&quot;[http://www.jsoftware.com/papers/tot.htm Notation as a Tool of Thought] {{Webarchive|url=https://web.archive.org/web/20130920071911/http://www.jsoftware.com/papers/tot.htm |date=2013-09-20 }}&quot;, ''Communications of the ACM'', 23: 444-465 (August 1980).&lt;/ref&gt;) Most if not all modern implementations use standard keyboard layouts, with special mappings or [[input method editor]]s to access non-ASCII characters. Historically, the APL font has been distinctive, with uppercase italic alphabetic characters and upright numerals and symbols. Most vendors continue to display the APL character set in a custom font.
+
+Advocates of APL{{Who|date=March 2015}} claim that the examples of so-called ''write-only code'' (badly written and almost incomprehensible code) are almost invariably examples of poor programming practice or novice mistakes, which can occur in any language. Advocates also claim that they are far more productive with APL than with more conventional computer languages, and that working software can be implemented in far less time and with far fewer programmers than using other technology.{{cn|date=December 2019}}
+
+They also may claim that because it is compact and terse, APL lends itself well to larger-scale software development and complexity, because the number of lines of code can be reduced greatly. Many APL advocates and practitioners also view standard programming languages such as [[COBOL]] and [[Java (programming language)|Java]] as being comparatively tedious. APL is often found where time-to-market is important, such as with trading systems.&lt;ref&gt;{{cite web |last1=Batenburg |title=APL Efficiency |url=http://www.ekevanbatenburg.nl/PRVAPL.HTML |website=www.ekevanbatenburg.nl |access-date=January 1, 2015}}&lt;/ref&gt;&lt;ref&gt;{{cite web |last=Vaxman |title=APL Great Programming |url=http://www.vaxman.de/publications/apl_slides.pdf |website=www.vaxman.de |access-date=January 1, 2015}}&lt;/ref&gt;&lt;ref&gt;{{cite journal |last=Janko |first=Wolfgang |title=Investigation into the efficiency of using APL for the programming of an inference machine |journal= ACM SIGAPL APL Quote Quad|date=May 1987 |volume=17 |issue=4 |pages=450–456 |doi=10.1145/384282.28372}}&lt;/ref&gt;&lt;ref&gt;{{cite web |last=Borealis |title=Why APL? |url=http://www.aplborealis.com/whyapl.html |website=www.aplborealis.com |access-date=January 1, 2015}}&lt;/ref&gt;
+
+=== Terminology ===
+APL makes a clear distinction between ''functions'' and ''operators''.&lt;ref name=&quot;MicroAOL_Operators&quot; /&gt;&lt;ref&gt;{{cite web |last=Iverson |first=Kenneth E. |author-link=Kenneth E. Iverson |title=A Dictionary of APL |url=http://www.jsoftware.com/papers/APLDictionary.htm|website=www.jsoftware.com |publisher=JSoftware; Iverson Estate |access-date=January 20, 2015}}&lt;/ref&gt; Functions take arrays (variables or constants or expressions) as arguments, and return arrays as results. Operators (similar to [[higher-order function]]s) take functions or arrays as arguments, and derive related functions. For example, the ''sum'' function is derived by applying the ''reduction'' operator to the ''addition'' function. Applying the same reduction operator to the ''maximum'' function (which returns the larger of two numbers) derives a function which returns the largest of a group (vector) of numbers. In the J language, Iverson substituted the terms ''verb'' for ''function'' and ''adverb'' or ''conjunction'' for ''operator''.
+
+APL also identifies those features built into the language, and represented by a symbol, or a fixed combination of symbols, as ''primitives''. Most primitives are either functions or operators. Coding APL is largely a process of writing non-primitive functions and (in some versions of APL) operators. However a few primitives are considered to be neither functions nor operators, most noticeably assignment.
+
+Some words used in APL literature have meanings that differ from those in both mathematics and the generality of computer science.
+
+{| class=&quot;wikitable&quot;
+|-
+! Term
+! Description
+|-
+! function
+| operation or mapping that takes zero, one (right) or two (left &amp; right) arguments which may be scalars, arrays, or more complicated structures, and may return a similarly complex result. A function may be:
+* Primitive: built-in and represented by a single glyph;&lt;ref name=&quot;aplxch6&quot;&gt;{{cite web |url=http://www.microapl.co.uk/APL/apl_concepts_chapter6.html |title=APL concepts |publisher=Microapl.co.uk |access-date=February 3, 2010}}&lt;/ref&gt;
+* Defined: as a named and ordered collection of program statements;&lt;ref name=&quot;aplxch6&quot; /&gt;
+* Derived: as a combination of an operator with its arguments.&lt;ref name=&quot;aplxch6&quot; /&gt;
+|-
+! array
+| data valued object of zero or more [[orthogonal]] dimensions in [[Row- and column-major order|row-major]] order in which each item is a primitive scalar datum or another array.&lt;ref&gt;{{cite web |url=http://www.nial.com/ArrayTheory.html |title=Nested array theory |publisher=Nial.com |access-date=February 3, 2010 |archive-url=https://web.archive.org/web/20110709072354/http://www.nial.com/ArrayTheory.html |archive-date=2011-07-09 |url-status=dead }}&lt;/ref&gt;
+|-
+! niladic
+| not taking or requiring any arguments,&lt;ref name=&quot;Bohman_Froberg&quot;&gt;&quot;Programmera i APL&quot;, Bohman, Fröberg, [[Studentlitteratur]], {{ISBN|91-44-13162-3}}&lt;/ref&gt;
+|-
+! monadic
+| requiring only one argument; on the right for a function, on the left for an operator, unary&lt;ref name=&quot;Bohman_Froberg&quot; /&gt;
+|-
+! dyadic
+| requiring both a left and a right argument, binary&lt;ref name=&quot;Bohman_Froberg&quot; /&gt;
+|-
+! ambivalent or monadic
+| capable of use in a monadic or dyadic context, permitting its left argument to be elided&lt;ref name=&quot;aplxch6&quot; /&gt;
+|-
+! operator
+| operation or mapping that takes one (left) or two (left &amp; right) function or array valued arguments (operands) and derives a function. An operator may be:
+* Primitive: built-in and represented by a single glyph;&lt;ref name=&quot;aplxch6&quot; /&gt;
+* Defined: as a named and ordered collection of program statements.&lt;ref name=&quot;aplxch6&quot; /&gt;
+|}
+
+=== Syntax ===
+{{Main|APL syntax and symbols}}
+APL has explicit representations of functions, operators, and syntax, thus providing a basis for the clear and explicit statement of extended facilities in the language, and tools to experiment on them.&lt;ref&gt;{{cite web |last=Iverson |first=Kenneth E. |author-link=Kenneth E. Iverson |title=APL Syntax and Semantics |url=http://www.jsoftware.com/papers/APLSyntaxSemantics.htm|website=www.jsoftware.com |publisher=I. P. Sharp Associates |access-date=January 11, 2015}}&lt;/ref&gt;
+
+=== Examples ===
+==== Hello, World ====
+This displays &quot;[[Hello, world]]&quot;:
+
+&lt;source lang=&quot;apl&quot;&gt;
+'Hello, world'
+&lt;/source&gt;
+'Hello World,' sample user session on YouTube&lt;ref&gt;{{cite web|last1=Dyalog APL/W|title=Producing a standalone 'Hello World' program in APL|url=https://www.youtube.com/watch?v=X8HGPJhHSRY|website=www.youtube.com|publisher=Dyalog-APLtrainer|access-date=January 11, 2015}}&lt;/ref&gt;
+
+A design theme in APL is to define default actions in some cases that would produce syntax errors in most other programming languages.
+
+The 'Hello, world' string constant above displays, because display is the default action on any expression for which no action is specified explicitly (e.g. assignment, function parameter).
+
+==== Exponentiation ====
+Another example of this theme is that exponentiation in APL is written as &quot;{{code|2⋆3}}&quot;, which indicates raising 2 to the power 3 (this would be written as &quot;{{code|2^3}}&quot; in some other languages and &quot;{{code|2**3}}&quot; in FORTRAN and Python): many languages use * to signify multiplication as in 2*3 but APL uses {{code|2×3}} for that. However, if no base is specified (as with the statement &quot;{{code|⋆3}}&quot; in APL, or &quot;{{code|^3}}&quot; in other languages), in most other programming languages one would have a syntax error. APL however assumes the missing base to be the natural logarithm constant [[e (mathematical constant)|e]] (2.71828....), and so interpreting &quot;{{code|⋆3}}&quot; as &quot;{{code|2.71828⋆3}}&quot;.
+
+====Simple statistics====
+Suppose that {{code|X}} is an array of numbers. Then {{code|(+/X)÷⍴X}} gives its average. Reading ''right-to-left'', {{code|⍴X}} gives the number of elements in X, and since {{code|÷}} is a dyadic operator, the term to its left is required as well. It is in parenthesis since otherwise X would be taken (so that the summation would be of {{code|X÷⍴X}}, of each element of X divided by the number of elements in X), and {{code|+/X}} adds all the elements of X. Building on this, {{code|2=apl|((+/((X - (+/X)÷⍴X)*2))÷⍴X)*0.5}} calculates the standard deviation. Further, since assignment is an operator, it can appear within an expression, so 
+{{sxhl|2=apl|SD←((+/((X - AV←(T←+/X)÷⍴X)*2))÷⍴X)*0.5}}
+would place suitable values into T, AV and SD. Naturally, one would make this expression into a function for repeated use rather than retyping it each time.
+
+==== ''Pick 6'' lottery numbers ====
+This following immediate-mode expression generates a typical set of ''Pick 6'' [[lottery]] numbers: six [[pseudo-random]] [[integer]]s ranging from 1 to 40, ''guaranteed non-repeating'', and displays them sorted in ascending order:
+
+&lt;source lang=&quot;apl&quot;&gt;
+x[⍋x←6?40]
+&lt;/source&gt;
+
+The above does a lot, concisely; although it seems complex to a new [[wiktionary:APLer|APLer]]. It combines the following APL ''functions'' (also called ''primitives''&lt;ref&gt;{{cite web|last1=MicroAPL|title=APL Primitives|url=http://www.microapl.co.uk/apl_help/ch_020_020.htm|website=www.microapl.co.uk|publisher=MicroAPL|access-date=January 11, 2015}}&lt;/ref&gt; and ''glyphs''&lt;ref&gt;{{cite web|last1=NARS2000|title=APL Font – Extra APL Glyphs|url=http://wiki.nars2000.org/index.php/APL_Font|website=wiki.nars2000.org|publisher=NARS2000|access-date=January 11, 2015}}&lt;/ref&gt;):
+* The first to be executed (APL executes from rightmost to leftmost) is dyadic function &lt;code&gt;?&lt;/code&gt; (named &lt;code&gt;deal&lt;/code&gt; when dyadic) that returns a [[array data structure|vector]] consisting of a select number (left argument: 6 in this case) of random integers ranging from 1 to a specified maximum (right argument: 40 in this case), which, if said maximum ≥ vector length, is guaranteed to be non-repeating; thus, generate/create 6 random integers ranging from 1-40.&lt;ref&gt;{{cite web|last1=Fox|first1=Ralph L.|title=Systematically Random Numbers|url=http://www.sigapl.org/article1.php|website=www.sigapl.org|publisher=SIGAPL|access-date=January 11, 2015}}&lt;/ref&gt;
+* This vector is then ''assigned'' (&lt;code&gt;←&lt;/code&gt;) to the variable &lt;code&gt;x&lt;/code&gt;, because it is needed later.
+* This vector is then ''sorted'' in ascending order by a monadic &lt;code&gt;⍋&lt;/code&gt; function, which has as its right argument everything to the right of it up to the next unbalanced ''close-bracket'' or close-parenthesis. The result of &lt;code&gt;⍋&lt;/code&gt; is the indices that will put its argument into ascending order.
+* Then the output of &lt;code&gt;⍋&lt;/code&gt; is used to index the variable &lt;code&gt;x&lt;/code&gt;, which we saved earlier for this purpose, thereby selecting its items in ''ascending'' sequence.
+
+Since there is no function to the left of the left-most x to tell APL what to do with the result, it simply outputs it to the display (on a single line, separated by spaces) without needing any explicit instruction to do that.
+
+&lt;code&gt;?&lt;/code&gt; also has a monadic equivalent called &lt;code&gt;roll&lt;/code&gt;, which simply returns one random integer between 1 and its sole operand [to the right of it], inclusive. Thus, a [[role-playing game]] program might use the expression &lt;code&gt;?20&lt;/code&gt; to roll a twenty-sided die.
+
+==== Prime numbers ====
+The following expression finds all [[prime number]]s from 1 to R. In both time and space, the calculation complexity is &lt;math&gt;O(R^2)\,\!&lt;/math&gt; (in [[Big O notation]]).
+
+&lt;source lang=&quot;apl&quot;&gt;
+(~R∊R∘.×R)/R←1↓ιR
+&lt;/source&gt;
+
+Executed from right to left, this means:
+* ''[[Iota]]'' &lt;code&gt;ι&lt;/code&gt; creates a vector containing [[integer]]s from &lt;code&gt;1&lt;/code&gt; to &lt;code&gt;R&lt;/code&gt; (if &lt;code&gt;R= 6&lt;/code&gt; at the start of the program, &lt;code&gt;ιR&lt;/code&gt; is &lt;code&gt;1 2 3 4 5 6&lt;/code&gt;)
+* ''Drop'' first element of this vector (&lt;code&gt;↓&lt;/code&gt; function), i.e., &lt;code&gt;1&lt;/code&gt;. So &lt;code&gt;1↓ιR&lt;/code&gt; is &lt;code&gt;2 3 4 5 6&lt;/code&gt;
+* ''Set'' &lt;code&gt;R&lt;/code&gt; to the new vector (&lt;code&gt;←&lt;/code&gt;, ''assignment'' primitive), i.e., &lt;code&gt;2 3 4 5 6&lt;/code&gt;
+* The &lt;code&gt;/&lt;/code&gt; ''reduction'' operator is dyadic (binary) and the interpreter first evaluates its left argument (fully in parentheses):
+* Generate ''[[outer product]]'' of &lt;code&gt;R&lt;/code&gt; multiplied by &lt;code&gt;R&lt;/code&gt;, i.e., a matrix that is the ''[[multiplication table]]'' of R by R (&lt;code&gt;°.×&lt;/code&gt; operator), i.e.,
+
+{| class=&quot;wikitable&quot; {{ts|ar}}
+|-
+| 4
+| 6
+| 8
+| 10
+| 12
+|-
+| 6
+| 9
+| 12
+| 15
+| 18
+|-
+| 8
+| 12
+| 16
+| 20
+| 24
+|-
+| 10
+| 15
+| 20
+| 25
+| 30
+|-
+| 12
+| 18
+| 24
+| 30
+| 36
+|}
+* Build a vector the same length as &lt;code&gt;R&lt;/code&gt; with &lt;code&gt;1&lt;/code&gt; in each place where the corresponding number in &lt;code&gt;R&lt;/code&gt; is in the outer product matrix (&lt;code&gt;∈&lt;/code&gt;, ''set inclusion'' or ''element of'' or ''[[Epsilon]]'' operator), i.e., &lt;code&gt;0 0 1 0 1&lt;/code&gt;
+* Logically negate (''not'') values in the vector (change zeros to ones and ones to zeros) (&lt;code&gt;∼&lt;/code&gt;, logical ''not'' or ''[[Tilde]]'' operator), i.e., &lt;code&gt;1 1 0 1 0&lt;/code&gt;
+* Select the items in &lt;code&gt;R&lt;/code&gt; for which the corresponding element is &lt;code&gt;1&lt;/code&gt; (&lt;code&gt;/&lt;/code&gt; ''reduction'' operator), i.e., &lt;code&gt;2 3 5&lt;/code&gt;
+(Note, this assumes the APL origin is 1, i.e., indices start with 1. APL can be set to use 0 as the origin, so that &lt;code&gt;ι6&lt;/code&gt; is &lt;code&gt;0 1 2 3 4 5&lt;/code&gt;, which is convenient for some calculations.)
+
+==== Sorting ====
+The following expression [[sorting|sorts]] a word list stored in matrix X according to word length:
+
+&lt;source lang=&quot;apl&quot;&gt;
+X[⍋X+.≠' ';]
+&lt;/source&gt;
+
+==== Game of Life ====
+The following function &quot;life&quot;, written in Dyalog APL, takes a boolean matrix and calculates the new generation according to [[Conway's Game of Life]]. It demonstrates the power of APL to implement a complex algorithm in very little code, but it is also very hard to follow unless one has advanced knowledge of APL.
+
+&lt;source lang=&quot;apl&quot;&gt;
+life←{↑1 ⍵∨.∧3 4=+/,¯1 0 1∘.⊖¯1 0 1∘.⌽⊂⍵}
+&lt;/source&gt;
+
+==== HTML tags removal ====
+In the following example, also Dyalog, the first line assigns some HTML code to a variable &lt;code&gt;txt&lt;/code&gt; and then uses an APL expression to remove all the HTML tags ([http://aplwiki.com/AplIn20Minutes#Extract_content_from_Code explanation]):
+
+&lt;source lang=&quot;apl&quot;&gt;
+      txt←'&lt;html&gt;&lt;body&gt;&lt;p&gt;This is &lt;em&gt;emphasized&lt;/em&gt; text.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;'
+      {⍵ /⍨ ~{⍵∨≠\⍵}⍵∊'&lt;&gt;'} txt
+This is emphasized text.
+&lt;/source&gt;
+
+== Use ==
+APL is used for many purposes including [[financial software|financial]] and [[insurance]] applications,&lt;ref name=&quot;simcorp&quot;/&gt; [[artificial intelligence]],&lt;ref&gt;{{cite journal|last1=Lee|first1=Georges|last2=Lelouche|first2=Ruddy|last3=Meissonnier|first3=Vincent|last4=Zarri|first4=Gian Piero|title=Using APL in an Artificial Intelligence environment|journal=ACM SIGAPL APL Quote Quad|date=September 1, 1982|volume=13|issue=1|pages=183–191|doi=10.1145/390006.802242|url=https://www.researchgate.net/publication/234789115|access-date=April 3, 2018}}&lt;/ref&gt;&lt;ref&gt;{{cite journal|last1=Fordyce|first1=K.|last2=Sullivan|first2=G.|title=Artificial Intelligence Development Aids|journal=APL Quote Quad|date=1985|volume=APL 85 Conf. Proc.|issue=15|doi=10.1145/255315.255347|pages=106–113}}&lt;/ref&gt;
+[[neural networks]]&lt;ref&gt;{{cite journal|last=Alfonseca|first=Manuel|title=Neural networks in APL|journal=ACM SIGAPL APL Quote Quad|date=July 1990|volume=20|issue=4|pages=2–6|doi=10.1145/97811.97816|url=https://www.researchgate.net/publication/220731305|access-date=April 3, 2018}}&lt;/ref&gt;
+and [[robotics]].&lt;ref&gt;{{cite web|last1=Kromberg|first1=Morten|title=Robot Programming in APL|url=http://begriffs.com/posts/2014-11-26-robots-in-apl.html|website=www.dyalog.com/|access-date=January 6, 2015}}&lt;/ref&gt; It has been argued that APL is a [[calculation]] tool and not a programming language;&lt;ref&gt;{{cite journal|last=Holmes| first= W N|date= May 1978| title=Is APL a Programming Language?|journal=[[The Computer Journal]]| volume=21|issue=2|pages=128–131|doi=10.1093/comjnl/21.2.128}}&lt;/ref&gt; its symbolic nature and array capabilities have made it popular with [[domain expert]]s and [[data scientist]]s&lt;ref name=&quot;Hsu&quot;&gt;{{cite web|url=https://confengine.com/functional-conf-2017/proposal/4620/design-patterns-vs-anti-pattern-in-apl|title=Design Patterns vs. Anti-pattern in APL|last=Hsu|first=Aaron|date=November 18, 2017|website=functionalconf.com|access-date=2018-04-07}}&lt;/ref&gt; who do not have or require the skills of a [[computer programmer]].
+
+APL is well suited to [[image manipulation]] and [[computer animation]], where graphic transformations can be encoded as matrix multiplications. One of the first commercial computer graphics houses, [[Digital Effects (studio)|Digital Effects]], produced an APL graphics product named ''Visions'', which was used to create television commercials and animation for the 1982 film ''[[Tron]]''.&lt;ref&gt;{{cite book|last1=Magnenat-Thalmann|first1=Nadia|last2=Thalmann|first2=Daniel|date=1985|title=Computer Animation Theory and Practice|url=https://books.google.co.uk/books?id=neGoCAAAQBAJ&amp;pg=PA38|publisher=[[Springer-Verlag]]|page=38|isbn=9784431684336|quote=[[Digital Effects]] is another production house that worked on Tron. They used a laser-scanning system to digitize, store and reproduce images. Judson Rosebush, president of Digital Effects, is the primary designer of APL VISION and FORTRAN VISION, two computer animation packages that are currently used.|access-date=April 3, 2018}}&lt;/ref&gt; Latterly, the [https://stormwind.fi/en/ Stormwind] [[Simulation video game|boating simulator]] uses APL to implement its core logic, its interfacing to the rendering pipeline middleware and a major part of its [[physics engine]].&lt;ref&gt;{{cite web|url=https://www.optima-systems.co.uk/stormwind-simulator-dyalog-16|title=Stormwind Simulator at Dyalog '16|last=Gutsell|first=Sam|date=October 17, 2017|website=www.optima-systems.co.uk|publisher=Optima Systems|access-date=April 3, 2018|quote=Stormwind is a [3D boating simulator] that has gained a huge amount of interest in the APL community.}}&lt;/ref&gt;
+
+Today, APL remains in use in a wide range of commercial and scientific applications, for example
+[[investment management]],&lt;ref name=&quot;simcorp&quot;&gt;{{cite web|url=https://www.simcorp.com/-/media/files/investor/annual-reports/simcorp-annual-report-2017.pdf|title=2017 Annual Report|date=February 1, 2018|publisher=SimCorp|access-date=April 3, 2018|quote=Sofia is a front-to-back investment management platform like SimCorp Dimension. ... Sofia is based on the APL coding language just like some parts of SimCorp Dimension.}}&lt;/ref&gt;
+[[asset management]],&lt;ref&gt;{{cite web|url=https://www.tieto.com/sites/default/files/migrated/documents/Case_OP-Pohjola_fi2806.pdf|title=OP-Pohjola ja Tieto hoitivat sovelluksen muutostyöt sujuvalla yhteistyöllä|website=www.tieto.com|publisher=[[Tieto]]|access-date=April 3, 2018|language=Finnish|trans-title=Smooth cooperation between [[OP Financial Group|OP-Pohjola]] and Tieto enabled app modification|quote=}}{{Dead link|date=August 2019 |bot=InternetArchiveBot |fix-attempted=yes }}&lt;/ref&gt;
+[[health care]],&lt;ref&gt;{{cite web|url=http://profdoccare.se/var-ide/om-oss/vi-idag/|title=Vi idag|website=profdoccare.se|access-date=April 3, 2018|language=Swedish|trans-title=We today|quote=Through the choice of APL as a technical platform, it is relatively easy to quickly build a solution that can be called a executable prototype (translated from the original)}}&lt;/ref&gt;
+and [[DNA profiling]],&lt;ref&gt;{{cite web|last1=Brenner|first1=Charles|title=DNA Identification Technology and APL|url=http://dna-view.com/DNAtechID.htm|website=dna-view.com|publisher=Presentation at the 2005 APL User Conference|access-date=January 9, 2015}}&lt;/ref&gt;&lt;ref&gt;{{cite web|last1=Brenner|first1=Charles|title=There's DNA Everywhere – an Opportunity for APL|url=https://www.youtube.com/watch?v=oXlP3r6PzeE|website=www.youtube.com|publisher=YouTube|access-date=January 9, 2015}}&lt;/ref&gt; 
+and by hobbyists.&lt;ref&gt;{{cite web|url=https://codegolf.stackexchange.com/questions/17665/tips-for-golfing-in-apl|title=Tips for golfing in APL|website=stackexchange.com|access-date=April 3, 2018}}&lt;/ref&gt;
+
+==Notable implementations==
+===APL\360===
+The first implementation of APL using recognizable APL symbols was APL\360 which ran on the [[IBM System/360]], and was completed in November 1966&lt;ref name=&quot;Birthdate&quot;&gt;{{cite web|url=http://www.jsoftware.com/papers/APLQA.htm#APL_birthday|title=APL Quotations and Anecdotes|website=jsoftware.com|publisher=[[J (programming language)|jsoftware]]|access-date=April 14, 2018}}&lt;/ref&gt; though at that time remained in use only within IBM.&lt;ref name=&quot;FalkoffIBMFamily&quot;/&gt; In 1973 its implementors, [[Lawrence M. Breed|Larry Breed]], [[Richard H. Lathwell|Dick Lathwell]] and [[Roger Moore (computer scientist)|Roger Moore]], were awarded the [[Grace Murray Hopper Award]] from the [[Association for Computing Machinery]] (ACM). It was given &quot;for their work in the design and implementation of APL\360, setting new standards in simplicity, efficiency, reliability and response time for interactive systems.&quot;&lt;ref&gt;{{cite web |title=Awards – 1973 – Lawrence Breed |publisher=Association for Computing Machinery |url=http://awards.acm.org/citation.cfm?id=0694605&amp;srt=all&amp;aw=145&amp;ao=GMHOPPER&amp;yr=1973|url-status=dead|archive-url=https://web.archive.org/web/20120402212031/http://awards.acm.org/citation.cfm?id=0694605&amp;srt=all&amp;aw=145&amp;ao=GMHOPPER&amp;yr=1973|archive-date=April 2, 2012}}&lt;/ref&gt;&lt;ref&gt;{{cite web |title=Awards – 1973 – Richard Lathwell|publisher=Association for Computing Machinery |url=http://awards.acm.org/citation.cfm?id=3412588&amp;srt=all&amp;aw=145&amp;ao=GMHOPPER&amp;yr=1973|url-status=dead|archive-url=https://web.archive.org/web/20120402212035/http://awards.acm.org/citation.cfm?id=3412588&amp;srt=all&amp;aw=145&amp;ao=GMHOPPER&amp;yr=1973|archive-date=April 2, 2012}}&lt;/ref&gt;&lt;ref&gt;{{cite web |title=Awards – 1973 – Roger Moore|publisher=Association for Computing Machinery |url=http://awards.acm.org/citation.cfm?id=4987585&amp;srt=all&amp;aw=145&amp;ao=GMHOPPER&amp;yr=1973|url-status=dead|archive-url=https://web.archive.org/web/20120402212037/http://awards.acm.org/citation.cfm?id=4987585&amp;srt=all&amp;aw=145&amp;ao=GMHOPPER&amp;yr=1973|archive-date=April 2, 2012}}&lt;/ref&gt;
+
+In 1975, the [[IBM 5100]] microcomputer offered APL\360&lt;ref&gt;{{cite web|url=http://www.old-computers.com/museum/computer.asp?c=795|title=IBM 5100|website=old-computers.com|access-date=April 8, 2018|archive-url=https://web.archive.org/web/20180430050157/http://www.old-computers.com/museum/computer.asp?c=795|archive-date=April 30, 2018|url-status=dead}}&lt;/ref&gt; as one of two built-in ROM-based interpreted languages for the computer, complete with a keyboard and display that supported all the special symbols used in the language.&lt;ref name=&quot;byte197512&quot;&gt;{{cite news| url=https://archive.org/stream/byte-magazine-1975-12/1975_12_BYTE_00-04_Assembling_an_Altair#page/n91/mode/2up | title=Welcome, IBM, to personal computing | work=BYTE | date=December 1975 | accessdate=April 29, 2018|pages=90}}&lt;/ref&gt;
+
+Significant developments to APL\360 included CMS/APL, which made use of the [[Virtual memory|virtual storage]] capabilities of [[Conversational Monitor System|CMS]] and APLSV, which introduced [[shared variable]]s, system variables and system functions. It was subsequently ported to the [[IBM System/370]] and [[Virtual Storage Personal Computing|VSPC]] platforms until its final release in 1983, after which it was replaced by APL2.&lt;ref name=&quot;FalkoffIBMFamily&quot;/&gt;
+
+===APL\1130===
+In 1968, APL\1130 became the first publicly available APL system,&lt;ref&gt;{{cite web|url=http://www.sigapl.org/APLChronology.php|title=Chronology of APL and its Influences on Computer Language Development|website=www.sigapl.org|publisher=ACM|access-date=April 29, 2018}}
+&lt;/ref&gt; created by IBM for the [[IBM 1130]]. It became the most popular [[IBM Type-III Library]] software that IBM released.&lt;ref&gt;{{cite journal|url=http://www.vector.org.uk/archive/v223/APL_1130.htm|title=How We Got To APL\1130|author=Larry Breed|authorlink=Lawrence M. Breed|journal=Vector (British APL Association)|volume=22|issue=3|date=August 2006|issn=0955-1433|accessdate=April 29, 2018|archive-url=https://web.archive.org/web/20080512031437/http://www.vector.org.uk/archive/v223/APL_1130.htm|archive-date=May 12, 2008|url-status=dead}}&lt;/ref&gt;
+
+===APL*Plus and Sharp APL===
+{{Main|I. P. Sharp Associates|Scientific Time Sharing Corporation}}
+
+APL*Plus and Sharp APL are versions of APL\360 with added business-oriented extensions such as data formatting and facilities to store APL arrays in external files. They were jointly developed by two companies, employing various members of the original IBM APL\360 development team.&lt;ref&gt;{{cite web |url=http://rogerdmoore.ca/INF/ERInstallationHistory.htm |title=History of I. P. Sharp Associates Timesharing and Network |author=Roger Moore|author-link=Roger Moore (computer scientist) |date=2005&lt;!-- Not in article. Found on webpage of links above-before article page. --&gt; |website=Rogerdmoore.ca |publisher=Roger Moore |access-date=March 7, 2018}}&lt;/ref&gt;
+ 
+The two companies were [[I. P. Sharp Associates]] (IPSA), an APL\360 services company formed in 1964 by Ian Sharp, Roger Moore and others, and [[Scientific Time Sharing Corporation|STSC]], a time-sharing and consulting service company formed in 1969 by Lawrence Breed and others. Together the two developed APL*Plus and thereafter continued to work together but develop APL separately as APL*Plus and Sharp APL. STSC ported APL*Plus to many platforms with versions being made for the VAX 11,&lt;ref&gt;{{cite magazine|last=Blumenthal|first=Marcia|date=May 18, 1981|title=VAX-11s Acquire APL Processor|url=https://books.google.co.uk/books?id=MCFtKT_NaYIC&amp;pg=PA2&amp;lpg=PA2&amp;dq=vax+apl&amp;q=vax%20apl|magazine=Computerworld|access-date= April 22, 2018}}&lt;/ref&gt; PC and UNIX, whereas IPSA took a different approach to the arrival of the [[Personal Computer]] and made Sharp APL available on this platform using additional [[PC-based IBM-compatible mainframes|PC-XT/360]] hardware. In 1993, [[Soliton Incorporated]] was formed to support Sharp APL and it developed Sharp APL into SAX (Sharp APL for Unix). {{as of|2018}}, APL*Plus continues as APL2000 APL+Win.
+
+In 1985, Ian Sharp, and Dan Dyer of STSC, jointly received the [[Iverson Award|Kenneth E. Iverson Award for Outstanding Contribution to APL]].&lt;ref name=&quot;IversonAwards&quot;/&gt;
+
+===APL2===
+APL2 was a significant re-implementation of APL by IBM which was developed from 1971 and first released in 1984. It provides many additions to the language, of which the most notable is nested (non-rectangular) array support.&lt;ref name=&quot;FalkoffIBMFamily&quot;/&gt; {{as of|2018}} it is available for mainframe computers running [[z/OS]] or [[z/VM]] and workstations running [[IBM AIX|AIX]], [[Linux]], [[Solaris (operating system)|Sun Solaris]], and [[Microsoft Windows]].&lt;ref&gt;{{cite web|url=http://www-01.ibm.com/support/docview.wss?uid=swg22012321|title=APL2: What's New|website=ibm.com|publisher=ibm|access-date=April 22, 2018}}&lt;/ref&gt;
+
+The entire APL2 Products and Services Team was awarded the Iverson Award in 2007.&lt;ref name=&quot;IversonAwards&quot;/&gt;
+
+===Dyalog APL===
+Dyalog APL was first released by [[United Kingdom|British]] company Dyalog Ltd.&lt;ref&gt;{{cite web |title=Dyalog Ltd website |url=https://www.dyalog.com/ |accessdate=6 June 2018}}&lt;/ref&gt; in 1983&lt;ref&gt;{{Cite journal|title = Dyalog at 25|journal = Vector Magazine|publisher = British APL Association|date = September 2008|url = http://www.vector.org.uk/archive/v234b/d25.pdf|accessdate = April 14, 2018}}{{Dead link|date=April 2019 |bot=InternetArchiveBot |fix-attempted=yes }}&lt;/ref&gt; and, {{as of|2018|lc=y}}, is available for [[IBM AIX|AIX]], [[Linux]] (including on the [[Raspberry Pi]]), [[macOS]] and [[Microsoft Windows]] platforms. It is based on APL2, with extensions to support [[object-oriented programming]]&lt;ref&gt;{{cite journal|author=Kromberg, Morten|title=Arrays of Objects|journal=Proceedings of the 2007 Symposium on Dynamic Languages|date=22 October 2007|url=https://www.dyalog.com/uploads/documents/Papers/Arrays%20of%20Objects.pdf|accessdate=27 August 2018}}&lt;/ref&gt; and [[functional programming]].&lt;ref&gt;{{cite web|url=http://archive.vector.org.uk/art10007770|title=D: A functional subset of Dyalog APL|last=Scholes|first=John|publisher=British APL Asscociation}}&lt;/ref&gt; Licences are free for personal/non-commercial use.&lt;ref&gt;{{Cite web | url=https://www.dyalog.com/prices-and-licences.htm#personal |title = Dyalog - Prices and Licences}}&lt;/ref&gt;
+
+In 1995, two of the development team - [[John M. Scholes (computer scientist)|John Scholes]] and Peter Donnelly - were awarded the Iverson Award for their work on the interpreter.&lt;ref name=&quot;IversonAwards&quot;&gt;{{cite web |title=Kenneth E. Iverson Award for Outstanding Contribution to APL|publisher=[[SIGPLAN]] Chapter on Array Programming Languages (SIGAPL)|url=http://www.sigapl.org/award.htm|url-status=dead|archive-url=https://web.archive.org/web/20120226063703/http://www.sigapl.org/award.htm|archive-date=February 26, 2012}}&lt;/ref&gt; Gitte Christensen and Morten Kromberg were joint recipients of the Iverson Award in 2016.&lt;ref&gt;{{cite web |title=2016 Iverson Award Recognises Dyalog's CEO and CXO |url=http://www.dyalog.com/dyalogue-newsletters.htm?nl=27&amp;a=158 |accessdate=6 June 2018}}&lt;/ref&gt;
+
+===NARS2000===
+NARS2000 is an open-source APL interpreter written by Bob Smith, a prominent APL developer and implementor from [[Scientific Time Sharing Corporation|STSC]] in the 1970s and 1980s. NARS2000 contains advanced features and new datatypes and runs natively on [[Microsoft Windows]], and other platforms under [[Wine (software)|Wine]].&lt;ref name=&quot;NARS2000&quot;&gt;{{cite web |title=Nested Arrays Research System – NARS2000: An Experimental APL Interpreter |url=http://www.nars2000.org/ |website=NARS2000 |publisher=Sudley Place Software |access-date=July 10, 2015}}&lt;/ref&gt;
+
+===APLX===
+{{main|APLX}}
+
+APLX is a [[cross-platform]] [[Programming language dialect|dialect]] of APL, based on APL2 and with several extensions, which was first released by [[United Kingdom|British]] company MicroAPL in 2002. Although no longer in development or on commercial sale it is now available free of charge from Dyalog.&lt;ref&gt;{{cite web |title=APLX has been withdrawn from commercial sale but can be downloaded free of charge|url=http://microapl.com/apl/|publisher=Microapl.com|access-date=April 14, 2018}}&lt;/ref&gt;
+
+===GNU APL===
+GNU APL is a free implementation of Extended APL as specified in ISO/IEC 13751:2001 and is thus similar to APL2. It runs on GNU/Linux and on Windows using [[Cygwin]], and uses [[Unicode]] internally. It was written by Jürgen Sauermann.&lt;ref name=&quot;GNU&quot;&gt;{{cite web |url=http://directory.fsf.org/wiki/GNU_APL |title=GNU APL|date= |website=directory.fsf.org |publisher=[[Free Software Directory]] |access-date=September 28, 2013}}&lt;/ref&gt;
+
+[[Richard Stallman]], founder of the [[GNU Project]], was an early adopter of APL, using it to write a text editor as a high school student in the summer of 1969.&lt;ref name=&quot;Berättar&quot;&gt;{{cite web|last=Stallman|first=Richard M|url=http://www.lysator.liu.se/history/garb/txt/87-2-rms.txt|title=RMS Berättar|accessdate=April 22, 2018|archive-url=https://web.archive.org/web/20181126072301/http://www.lysator.liu.se/history/garb/txt/87-2-rms.txt|archive-date=November 26, 2018|url-status=dead}}&lt;/ref&gt;
+
+== Interpretation and compilation of APL ==
+APL is traditionally an [[interpreted language]], having language characteristics such as [[Strong and weak typing|weak variable typing]] not well suited to [[compiler|compilation]].&lt;ref&gt;{{cite book |last=Budd |first=Timothy |title=An APL Compiler |publisher=Springer-Verlag |year=1988 |isbn=978-0-387-96643-4 | url=https://books.google.co.uk/books?id=rTb2BwAAQBAJ&amp;pg=PA1}}&lt;/ref&gt; However, with arrays as its core data structure&lt;ref&gt;{{cite web|last1=SIGAPL|title=What is APL?|url=http://www.sigapl.org/about.php|website=www.sigapl.org|publisher=SIGAPL|access-date=January 20, 2015}}&lt;/ref&gt; it provides opportunities for performance gains through [[Data parallelism|parallelism]],&lt;ref&gt;{{cite journal|last1=Ju|first1=Dz-Ching|last2=Ching|first2=Wai-Mee|title=Exploitation of APL data parallelism on a shared-memory MIMD machine|journal=Newsletter ACM SIGPLAN Notices|date=1991|volume=26|issue=7|pages=61–72|doi=10.1145/109625.109633}}&lt;/ref&gt; [[parallel computing]],&lt;ref&gt;{{cite web|last1=Hsu|first1=Aaron W.|last2=Bowman|first2=William J.|title=Revisiting APL in the Modern Era|url=http://www.cs.princeton.edu/~dpw/obt/abstracts/obt12_submission_11.pdf|website=www.cs.princeton.edu|publisher=Indiana University / Princeton|access-date=January 20, 2015}}&lt;/ref&gt;&lt;ref&gt;{{cite journal|last1=Ching|first1=W.-M.|last2=Ju|first2=D.|title=Execution of automatically parallelized APL programs on RP3|journal=IBM Journal of Research &amp; Development|date=1991|volume=35|issue=5/6|pages=767–777|url=http://domino.research.ibm.com/tchjr/journalindex.nsf/c469af92ea9eceac85256bd50048567c/f892e104dfc4d0fd85256bfa0067fb42!OpenDocument|access-date=January 20, 2015|doi=10.1147/rd.355.0767}}&lt;/ref&gt; [[Massively parallel (computing)|massively parallel]] applications,&lt;ref&gt;{{cite journal|last1=Blelloch|first1=Guy E.|last2=Sabot|first2=Gary W.|title=Compiling Collection-Oriented Languages onto Massively Parallel Computers|journal=Journal of Parallel and Distributed Computing|volume=8|issue=2|citeseerx=10.1.1.51.5088|pages=119–134|quote=Collection oriented languages include APL, APL2|year=1990|doi=10.1016/0743-7315(90)90087-6}}&lt;/ref&gt;&lt;ref&gt;{{cite web|last1=Jendrsczok|first1=Johannes|last2=Hoffmann|first2=Rolf|last3=Ediger|first3=Patrick|last4=Keller|first4=Jörg|title=Implementing APL-like data parallel functions on a GCA machine|url=https://www.fernuni-hagen.de/imperia/md/content/fakultaetfuermathematikundinformatik/pv/97-08/papergca_09_1_.pdf|website=www.fernuni-hagen.de|publisher=Fernuni-Hagen.De|access-date=January 22, 2015|pages=1–6|quote=GCA – Global Cellular Automation.  Inherently massively parallel. 'APL has been chosen because of the ability to express matrix and vector' structures.|archive-url=https://web.archive.org/web/20150122211834/https://www.fernuni-hagen.de/imperia/md/content/fakultaetfuermathematikundinformatik/pv/97-08/papergca_09_1_.pdf|archive-date=January 22, 2015|url-status=dead}}&lt;/ref&gt; and [[very-large-scale integration]] (VLSI),&lt;ref&gt;{{cite book|last1=Brenner of IBM T.J.Watson Research Center|first1=Norman|title=VLSI circuit design using APL with fortran subroutines|journal=ACM SIGAPL APL Quote Quad|date=1984|volume=14|issue=4|pages=77–79|doi=10.1145/800058.801079|publisher=ACM SIGAPL|quote=APL for interactiveness and ease of coding|isbn=978-0897911375}}&lt;/ref&gt;&lt;ref&gt;{{cite book |doi=10.1109/PACRIM.1989.48437 |quote=VLSI module generators are described. APL and C, as examples of interpreted and compiled languages, can be interfaced to an advanced graphics display|chapter=Towards a graphics/Procedural environment for constructing VLSI module generators|title=Conference Proceeding IEEE Pacific Rim Conference on Communications, Computers and Signal Processing|pages=606–611|year=1989|last1=Gamble|first1=D.J.|last2=Hobson|first2=R.F.}}&lt;/ref&gt; and from the outset APL has been regarded as a high-performance language&lt;ref&gt;{{cite journal |last=Lee |first=Robert S. |title=Two Implementations of APL |journal=PC Magazine |date=1983 |volume=2 |issue=5 |page=379 |url=https://books.google.com/?id=qURs4j9vKn4C&amp;pg=PA379&amp;lpg=PA379&amp;dq=%22IBM+APL%27s+fast+execution%22&amp;q=%22IBM%20APL%27s%20fast%20execution%22 |access-date=January 20, 2015}}&lt;/ref&gt; - for example, it was noted for the speed with which it could perform complicated matrix operations &quot;because it operates on arrays and performs operations like matrix inversion internally&quot;.&lt;ref&gt;{{cite web |last1=MARTHA and LLAMA |title=The APL Computer Language |url=http://marthallama.org/apl/ |website=marthallama.org |publisher=MarthaLlama |access-date=January 20, 2015}}&lt;/ref&gt;
+
+Nevertheless, APL is rarely purely interpreted and compilation or partial compilation techniques that are, or have been, used include the following:
+
+=== Idiom recognition ===
+Most APL interpreters support [[Programming idiom|idiom]] recognition&lt;ref&gt;{{cite book |last=Metzger |first=Robert |last2=Wen | first2=Zhaofang |title=Automatic Algorithm Recognition and Replacement: A New Approach to Program Optimization|publisher=The MIT press |year=2000 |isbn=9780262133685 | url=https://books.google.co.uk/books?id=u38h_fV3UqgC&amp;pg=PA12 |access-date=May 6, 2018}}&lt;/ref&gt; and evaluate common idioms as single operations.&lt;ref&gt;{{cite journal |last1=Snyder |first1=Lawrence |date=1982 |title=Recognition and Selection of Idioms for Code Optimization |journal=Acta Informatica |volume=17 |issue=3 |doi=10.1007/BF00264357 }}&lt;/ref&gt;&lt;ref&gt;{{cite journal |last1=Cheng |first1=Feng Sheng |date=1981 |title=Idiom matching: an optimization technique for an APL compiler |url=https://lib.dr.iastate.edu/cgi/viewcontent.cgi?article=7896&amp;context=rtd |publisher=Iowa State University  |access-date=May 6, 2018 }}&lt;/ref&gt; For example, by evaluating the idiom &lt;code&gt;BV/⍳⍴A&lt;/code&gt; as a single operation (where &lt;code&gt;BV&lt;/code&gt; is a Boolean vector and &lt;code&gt;A&lt;/code&gt; is an array), the creation of two intermediate arrays is avoided.&lt;ref&gt;{{cite web |url=http://help.dyalog.com/16.0/Content/Language/Defined%20Functions%20and%20Operators/Idiom%20Recognition/Idiom%20Recognition.htm |title=Idiom Recognition |publisher=dyalog.com |access-date=May 6, 2018 }}&lt;/ref&gt;
+
+=== Optimised bytecode ===
+Weak typing in APL means that a name may reference an array (of any datatype), a function or an operator. In general, the interpreter cannot know in advance which form it will be and must therefore perform analysis, syntax checking etc. at run-time.&lt;ref&gt;{{cite journal|last=Strawn|first=George O.|date=March 1977|title=Does APL really need run‐time parsing?|journal=Journal of Software: Practice and Experience|volume=7|issue=2|pages=193–200|doi=10.1002/spe.4380070207}}&lt;/ref&gt; However, in certain circumstances, it is possible to deduce in advance what type a name is expected to reference and then generate [[bytecode]] which can be executed with reduced run-time overhead. This bytecode can also be optimised using compilation techniques such as [[constant folding]] or [[common subexpression elimination]].&lt;ref name=&quot;DyalogCompiler&quot;&gt;{{cite web|title=Compiler User Guide|url=http://docs.dyalog.com/16.0/Compiler%20User%20Guide.pdf|website=www.dyalog.com|publisher=Dyalog Ltd.|access-date=May 7, 2018}}&lt;/ref&gt; The interpreter will execute the bytecode when present and when any assumptions which have been made are met. Dyalog APL includes support for optimised bytecode.&lt;ref name=&quot;DyalogCompiler&quot;/&gt;
+
+=== Compilation ===
+[[Compiler|Compilation]] of APL has been the subject of research and experiment since the language first became available; the first compiler is considered to be the Burroughs APL-700&lt;ref name=&quot;DriscollOrth&quot;&gt;
+{{cite journal |last1=Driscoll Jr. |first1=Graham C. |last2=Orth |first2=Donald L. |date=November 1986 |title=Compiling APL: The Yorktown APL Translator |url=https://pdfs.semanticscholar.org/ea16/33960885633c2bb5bb9b522a153066a27836.pdf |journal=IBM Journal of Research and Development |volume=30 |issue=6 |pages=583–593 |access-date=May 7, 2018 |doi=10.1147/rd.306.0583 }}&lt;/ref&gt; which was released around 1971.&lt;ref&gt;{{cite web |url=http://www.sigapl.org/APLChronology.php |title=Chronology of APL |website=www.sigapl.org| publisher=ACM |access-date=May 7, 2018}}&lt;/ref&gt; In order to be able to compile APL, language limitations have to be imposed.&lt;ref name=&quot;DriscollOrth&quot;/&gt;&lt;ref&gt;
+{{cite journal |last1=Wai-Mee |first1=Ching |date=November 1986 |title=Program Analysis and Code Generation in an APL/370 Compiler|url=https://pdfs.semanticscholar.org/d41e/d7c9a86d649716075e1bbefc1140e8840b0e.pdf |journal=IBM Journal of Research and Development |volume=30 |issue=6 |pages=594–602 |access-date=May 7, 2018 |doi=10.1147/rd.306.0594 }}&lt;/ref&gt; APEX is a research APL compiler which was written by [[Robert Bernecky]] and is available under the [[GNU Public License]].&lt;ref&gt;{{cite web |title= The APEX Project |url= http://www.snakeisland.com/apexup.htm}}&lt;/ref&gt;
+
+The [[STSC]] APL Compiler is a hybrid of a bytecode optimiser and a compiler - it enables compilation of functions to [[machine code]] provided that its sub-functions and globals are [[Declaration (computer programming)|declared]], but the interpreter is still used as a [[runtime library]] and to execute functions which do not meet the compilation requirements.&lt;ref&gt;{{cite web |title= APL Compiler (message from Jim Weigang to the comp.lang.apl Newsgroup) |url= http://www.chilton.com/~jimw/aplcomp.html |date= Apr 5, 1994}}&lt;/ref&gt;
+
+== Standards ==
+APL has been standardized by the [[American National Standards Institute]] (ANSI) [[working group]] X3J10 and [[International Organization for Standardization]] (ISO) and [[International Electrotechnical Commission]] (IEC), ISO/IEC Joint Technical Committee 1 Subcommittee 22 Working Group 3. The Core APL language is specified in ISO 8485:1989, and the Extended APL language is specified in ISO/IEC 13751:2001.
+
+== References ==
+{{reflist|30em}}
+
+== Further reading ==
+* [http://www-public.slac.stanford.edu/sciDoc/docMeta.aspx?slacPubNumber=slac-r-114 ''An APL Machine''] (1970 Stanford doctoral dissertation by Philip Abrams)
+* [http://sigapl.org/Articles/MichaelMontalbanoPersonalViewOfAPL.php ''A Personal History Of APL''] (1982 article by [[Michael S. Montalbano]])
+* {{cite journal |url=http://www.research.ibm.com/journal/sj/304/ibmsj3004N.pdf |title=Language as an intellectual tool: From hieroglyphics to APL |year=1991 |first=Donald B. |last=McIntyre |journal=IBM Systems Journal |volume=30 |issue=4 |archive-url=https://web.archive.org/web/20060504050437/http://www.research.ibm.com/journal/sj/304/ibmsj3004N.pdf |archive-date=May 4, 2006 |doi=10.1147/sj.304.0554 |pages=554–581}}
+* {{cite journal |url=http://www.research.ibm.com/journal/sj/304/ibmsj3004O.pdf |title=A Personal view of APL |year=1991 |first=Kenneth E. |last=Iverson |author-link=Kenneth E. Iverson |journal=IBM Systems Journal |volume=30 |issue=4 |archive-url=https://web.archive.org/web/20080227012149/http://www.research.ibm.com/journal/sj/304/ibmsj3004O.pdf |archive-date=February 27, 2008 |doi=10.1147/sj.304.0582 |pages=582–593}}
+* [https://web.archive.org/web/20141027152546/http://www.softwarepreservation.org/projects/apl/Books/APROGRAMMING%20LANGUAGE/view ''A Programming Language''] by [[Kenneth E. Iverson]]
+* [http://www.softwarepreservation.org/projects/apl/Papers/197201_APL%20In%20Exposition_320-3010.pdf/view ''APL in Exposition''] by [[Kenneth E. Iverson]]
+* Brooks, Frederick P.; Kenneth Iverson (1965). ''Automatic Data Processing, System/360 Edition''. {{ISBN|0-471-10605-4}}.
+* {{cite book |last=Askoolum |first=Ajay |title=System Building with APL + Win |date= August 2006 |publisher=Wiley |isbn=978-0-470-03020-2}}
+* {{cite journal |url=http://www.research.ibm.com/journal/sj/032/falkoff.pdf |title=A Formal Description of System/360 |first1=Adin D. |last1=Falkoff |first2=Kenneth E. |last2=Iverson |author-link2=Kenneth E. Iverson |first3=Edward H. |last3=Sussenguth |author-link3=Edward H. Sussenguth |journal=IBM Systems Journal |volume=3 |issue=2 |year=1964 |archive-url=https://web.archive.org/web/20080227012111/http://www.research.ibm.com/journal/sj/032/falkoff.pdf |archive-date=February 27, 2008 |doi=10.1147/sj.32.0198 |pages=198–261}}
+* ''History of Programming Languages'', chapter 14{{Clarify|date=June 2010}}
+* {{cite book |last=Banon |first=Gerald Jean Francis |title=Bases da Computacao Grafica |publisher=Campus |location=Rio de Janeiro |year=1989 |page=141}}
+* {{cite book |last=LePage |first=Wilbur R. |title=Applied A.P.L. Programming |publisher=Prentice Hall |year=1978}}
+* {{cite journal |title=OOPAL: Integrating Array Programming in ObjectOriented Programming |journal=Proceeding OOPSLA '03 Proceedings of the 18th Annual ACM SIGPLAN Conference on Object-oriented Programing, Systems, Languages, and Applications |date=November 2003 |last=Mougin |first=Philippe |last2=Ducasse |first2=Stephane |volume=38 |issue=11 |pages=65–77 |doi=10.1145/949343.949312 |url-status=dead |archive-url=https://web.archive.org/web/20061114145417/http://www.fscript.org/documentation/OOPAL.pdf |archive-date=November 14, 2006 |url=http://www.fscript.org/documentation/OOPAL.pdf}}
+* {{cite book|last=Dyalog Limited |url=http://www.dyalog.dk/whatsnew/OO4APLERS.pdf |archive-url=https://web.archive.org/web/20071004214341/http://www.dyalog.dk/whatsnew/OO4APLERS.pdf |url-status=dead |archive-date=October 4, 2007 |title=An Introduction to Object Oriented Programming For APL Programmers |publisher=Dyalog Limited |date=September 2006}}
+* {{cite web |title=The APL Programming Language Source Code |author-first=Len |author-last=Shustek |date=October 10, 2012 |publisher=[[Computer History Museum]] (CHM) |url=http://www.computerhistory.org/atchm/the-apl-programming-language-source-code/#A-Taste-of-APL |access-date=September 6, 2017 |url-status=live |archive-url=https://web.archive.org/web/20170906205616/http://www.computerhistory.org/atchm/the-apl-programming-language-source-code/ |archive-date=September 6, 2017}}
+
+=== Video ===
+* [https://www.youtube.com/watch?v=8kUQWuK1L4w The Origins of APL] - a 1974 talk show style interview with the original developers of APL.
+* [https://www.youtube.com/watch?v=_DTpQ4Kk2wA APL demonstration] - a 1975 live demonstration of APL by [[Robert Spence (engineer)|Professor Bob Spence]], [[Imperial College London]].
+* [https://www.youtube.com/watch?v=a9xAKttWgP4 Conway's Game Of Life in APL] - a 2009 tutorial by John Scholes of Dyalog Ltd. which implements [[Conway's Game of Life]] in a single line of APL.
+* [https://www.youtube.com/watch?v=ra_JyBCI4Xg 50 Years of APL] - a 2009 introduction to APL by Graeme Robertson.
+
+== External links ==
+{{Commons category|APL (programming language)}}
+
+=== Online resources ===
+* [http://tryapl.org/ TryAPL.org], an online APL primer
+* [http://aplwiki.com/ APL Wiki]
+* {{Dmoz|Computers/Programming/Languages/APL|APL}}
+* [http://www.apl2c.de/home/Links/links.html APL2C], a source of links to APL compilers
+
+=== Providers ===
+* [https://www.ibm.com/us-en/marketplace/apl2 IBM APL2]
+* [http://www.dyalog.com/ Dyalog APL]
+* [http://www.dyalog.com/aplx.htm APLX]
+* [http://www.apl2000.com/ APL2000]
+* [http://www.nars2000.org/ NARS2000]
+* [https://www.gnu.org/software/apl/ GNU APL]
+* [http://sourceforge.net/p/openapl/wiki/Home/ OpenAPL]
+
+=== User groups and societies ===
+* [[Finland]]: [http://www.finnapl.fi/ Finnish APL Association (FinnAPL)]
+* [[France]]: [http://www.afapl.asso.fr/index.htm APL et J]
+* [[Germany]]: [https://apl-germany.de/ APL-Germany e.V.]
+* [[Japan]]: [http://japla.sakura.ne.jp/ Japan APL Association (JAPLA)]
+* [[Sweden]]: [http://swedapl.se/ Swedish APL User Group (SwedAPL)]
+* [[Switzerland]]: [https://swissinformatics.org/en/communities/sig/saug/ Swiss APL User Group (SAUG)]
+* [[United Kingdom]]: [http://www.britishaplassociation.co.uk/ The British APL Association]
+* [[United States]]: [[Association for Computing Machinery|ACM]] [http://sigapl.org/ SIGPLAN chapter on Array Programming Languages (SIGAPL)]
+
+{{APL programming language}}
+{{Programming languages}}
+{{ISO standards}}
+{{List of International Electrotechnical Commission standards}}
+
+[[Category:.NET programming languages]]
+[[Category:APL programming language family]]
+[[Category:Array programming languages]]
+[[Category:Command shells]]&lt;!-- [[IBM 5100]], per a toggle switch on the front panel --&gt;
+[[Category:Dynamic programming languages]]
+[[Category:Dynamically typed programming languages]]
+[[Category:Functional languages]]
+[[Category:IBM software]]
+[[Category:Programming languages created in 1964]]
+[[Category:Programming languages with an ISO standard]]
+[[Category:Programming languages]]
+[[Category:1966 software]]</text>
+      <sha1>2wm6pyom84vo4p19vzaj7eac2pnqaj8</sha1>
+    </revision>
+  </page>

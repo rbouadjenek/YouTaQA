@@ -1,0 +1,172 @@
+  <page>
+    <title>Ephemeris time</title>
+    <ns>0</ns>
+    <id>9994</id>
+    <revision>
+      <id>906412036</id>
+      <parentid>892572427</parentid>
+      <timestamp>2019-07-15T17:35:15Z</timestamp>
+      <contributor>
+        <username>Mark viking</username>
+        <id>17698045</id>
+      </contributor>
+      <comment>Adding local [[Wikipedia:Short description|short description]]: &quot;Time standard used in astronomical ephemerides&quot; ([[User:Galobtter/Shortdesc helper|Shortdesc helper]])</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{short description|Time standard used in astronomical ephemerides}}
+The term '''ephemeris time''' (often abbreviated '''ET''') can in principle refer to time in connection with any [[Ephemeris|astronomical ephemeris]]. In practice it has been used more specifically to refer to:
+
+# a former standard astronomical time scale adopted in 1952 by the [[International Astronomical Union|IAU]],&lt;ref name=ESAE&gt;[[#refESAE|'ESAE 1961': 'Explanatory Supplement (1961)]], esp. p.9.&lt;/ref&gt; and superseded in the 1970s.&lt;ref name=ESAA&gt;[[#refESAA|'ESAA (1992)': P K Seidelmann (ed).]], especially  [https://books.google.com/books?id=uJ4JhGJANb4C&amp;pg=PA41 at pp.41-42] and [https://books.google.com/books?id=uJ4JhGJANb4C&amp;pg=PA79 at p.79].&lt;/ref&gt;  This time scale was proposed in 1948, to overcome the drawbacks of irregularly fluctuating [[mean solar time]].  The intent was to define a uniform time (as far as was then feasible) based on Newtonian theory (see below: [[#Definition of ephemeris time (1952)|Definition of ephemeris time (1952)]]).  Ephemeris time was a first application of the concept of a [[dynamical time scale]], in which the time and time scale are defined implicitly, inferred from the observed position of an astronomical object via the dynamical theory of its motion.&lt;ref&gt;[[#refGuin1988|B Guinot and P K Seidelmann (1988)]], at p.304-5.&lt;/ref&gt;
+# a modern relativistic coordinate time scale, implemented by the [[Jet Propulsion Laboratory|JPL]] ephemeris time argument T&lt;sub&gt;eph&lt;/sub&gt;, in a series of numerically integrated [[Jet Propulsion Laboratory Development Ephemeris|Development Ephemerides]]. Among them is the [[DE405]] ephemeris in widespread current use.  The time scale represented by T&lt;sub&gt;eph&lt;/sub&gt; is closely related to, but distinct (by an offset and constant rate) from, the [[Barycentric Coordinate Time|TCB]] time scale currently adopted as a standard by the [[IAU]] (see below: [[#JPL ephemeris time argument Teph|JPL ephemeris time argument Teph]]).&lt;ref name=EMS1998&gt;[[#refEMS1998|E M Standish (1998)]].&lt;/ref&gt;
+
+Most of the following sections relate to the ephemeris time of the 1952 standard.
+
+An impression has sometimes arisen that ephemeris time was in use from 1900:  this probably arose because ET, though proposed and adopted in the period 1948–1952, was defined in detail using formulae that made retrospective use of the epoch date of 1900 [[January 0]] and of [[Simon Newcomb|Newcomb]]'s [[Newcomb's Tables of the Sun|''Tables of the Sun'']].&lt;ref name=NewcSun&gt;[[#refNewcSun|S Newcomb (1895)]].&lt;/ref&gt;&lt;ref&gt;For the components of the definition including its retrospective aspect, see [[#refClem1948|G M Clemence (1948)]], esp. p.172, and [[#refESAE|'ESAE 1961': 'Explanatory Supplement (1961)]], esp. pages 69 and 87.&lt;/ref&gt;
+
+The ephemeris time of the 1952 standard leaves a continuing legacy, through its ephemeris second which became closely duplicated in the length of the current standard SI [[second]] (see below: [[#Redefinition of the second|Redefinition of the second]]).
+
+==History (1952 standard)==
+'''Ephemeris time''' ('''ET'''), adopted as standard in 1952, was originally designed as an approach to a uniform time scale, to be freed from the effects of irregularity in the rotation of the earth, &quot;for the convenience of astronomers and other scientists&quot;, for example for use in [[ephemeris|ephemerides]] of the Sun (as observed from the Earth), the Moon, and the planets.  It was proposed in 1948 by [[Gerald Maurice Clemence|G M Clemence]].&lt;ref name=Clemence1948&gt;[[#refClem1948|G M Clemence (1948)]].&lt;/ref&gt;
+
+From the time of [[John Flamsteed]] (1646–1719) it had been believed that the Earth's daily rotation was uniform.  But in the later nineteenth and early twentieth centuries, with increasing precision of astronomical measurements, it began to be suspected, and was eventually established, that the rotation of the Earth (''i.e.'' the length of the [[day]]) showed irregularities on short time scales, and was slowing down on longer time scales.  The evidence was compiled by [[Willem de Sitter|W de Sitter]] (1927)&lt;ref&gt;[[#refSitter1927|W de Sitter (1927)]].&lt;/ref&gt; who wrote &quot;If we accept this hypothesis, then the 'astronomical time', given by the earth's rotation, and used in all practical astronomical computations, differs from the 'uniform' or 'Newtonian' time, which is defined as the independent variable of the equations of celestial mechanics&quot;.  De Sitter offered a correction to be applied to the mean solar time given by the Earth's rotation to get uniform time.
+
+Other astronomers of the period also made suggestions for obtaining uniform time, including [[Andre Danjon|A Danjon]] (1929), who suggested in effect that observed positions of the Moon, Sun and planets, when compared with their well-established gravitational ephemerides, could better and more uniformly define and determine time.&lt;ref name=Clemence1971&gt;[[#refClem1971|G M Clemence (1971)]].&lt;/ref&gt;
+
+Thus the aim developed, to provide a new time scale for astronomical and scientific purposes, to avoid the unpredictable irregularities of the [[Solar time#Mean solar time|mean solar time]] scale, and to replace for these purposes [[Universal Time]] (UT) and any other time scale based on the rotation of the Earth around its axis, such as [[sidereal time]].
+
+The American astronomer [[Gerald Maurice Clemence|G M Clemence]] (1948)&lt;ref name=&quot;Clemence1948&quot; /&gt; made a detailed proposal of this type based on the results of the English [[Astronomer Royal]] [[Harold Spencer Jones|H Spencer Jones]] (1939).&lt;ref name=HSJ1939&gt;[[#refHSJ1939|H Spencer Jones (1939)]].&lt;/ref&gt;  Clemence (1948) made it clear that his proposal was intended &quot;for the convenience of astronomers and other scientists only&quot; and that it was &quot;logical to continue the use of mean solar time for civil purposes&quot;.&lt;ref&gt;[[#refClem1948|Clemence (1948)]], at p. 171.&lt;/ref&gt;
+
+De Sitter and Clemence both referred to the proposal as 'Newtonian' or 'uniform' time. [[Dirk Brouwer|D Brouwer]] suggested the name 'ephemeris time'.&lt;ref name=ESAAp79&gt;[[#refESAA|ESAA (1992)]], see [https://books.google.com/books?id=uJ4JhGJANb4C&amp;pg=PA79 page 79].&lt;/ref&gt;
+
+Following this, an astronomical conference held in Paris in 1950 recommended &quot;that in all cases where the mean solar second is unsatisfactory as a unit of time by reason of its variability, the unit adopted should be the sidereal year at 1900.0, that the time reckoned in this unit be designated ''ephemeris time''&quot;, and gave Clemence's formula (see [[#Definition of ephemeris time (1952)|Definition of ephemeris time (1952)]]) for translating mean solar time to ephemeris time.
+
+The [[International Astronomical Union]] approved this recommendation at its 1952 general assembly.&lt;ref name=ESAAp79 /&gt;&lt;ref&gt;At the [[International Astronomical Union|IAU]] meeting in Rome 1952: see [[#refESAE|ESAE (1961)]] at sect.1C, p. 9;  also [[#refClem1971|Clemence (1971)]].&lt;/ref&gt;  Practical introduction took some time (see [[#Use of ephemeris time in official almanacs and ephemerides|Use of ephemeris time in official almanacs and ephemerides]]);  ephemeris time (ET) remained a standard until superseded in the 1970s by further time scales (see [[#Revision of time scales|Revision]]).
+ 
+During the currency of ephemeris time as a standard, the details were revised a little. The unit was redefined in terms of the tropical year at 1900.0 instead of the sidereal year;&lt;ref name=ESAAp79 /&gt; and the standard second was defined first as 1/31556925.975 of the tropical year at 1900.0,&lt;ref name=ESAAp79 /&gt;&lt;ref&gt;ESAA 1992, p. 79: citing decision of [[International Committee for Weights and Measures]] (CIPM), Sept 1954.&lt;/ref&gt; and then as the slightly modified fraction 1/31556925.9747 instead,&lt;ref&gt;[[#refESAA|ESAA (1992)]], see [https://books.google.com/books?id=uJ4JhGJANb4C&amp;pg=PA80 page 80], citing CIPM recommendation Oct 1956, adopted 1960 by the [[General Conference on Weights and Measures]] (CGPM).&lt;/ref&gt; finally being redefined in 1967/8 in terms of the cesium atomic clock standard (see below).
+
+Although ET is no longer directly in use, it leaves a continuing legacy.  Its successor time scales, such as TDT, as well as the atomic time scale [[International Atomic Time|IAT (TAI)]], were designed with a relationship that &quot;provides continuity with ephemeris time&quot;.&lt;ref name=ESAAp42&gt;[[#refESAA|ESAA (1992)]], at [https://books.google.com/books?id=uJ4JhGJANb4C&amp;pg=PA42 page 42].&lt;/ref&gt;  ET was used for the calibration of atomic clocks in the 1950s.&lt;ref name=&quot;Mark1958&quot; /&gt;  Close equality between the ET second with the later [[Second#International second|SI second]] (as defined with reference to the cesium atomic clock) has been verified to within 1 part in 10&lt;sup&gt;10&lt;/sup&gt;.&lt;ref name=&quot;refMark1988&quot;&gt;[[#refMark1988|Wm Markowitz (1988)]].&lt;/ref&gt;
+
+In this way, decisions made by the original designers of ephemeris time influenced the length of today's [[Second#International second|standard SI second]], and in turn, this has a continuing influence on the number of [[leap second]]s which have been needed for insertion into current broadcast time scales, to keep them approximately in step with [[Solar time#Mean solar time|mean solar time]].
+
+==Definition (1952)==
+Ephemeris time was defined in principle by the orbital motion of the Earth around the Sun,&lt;ref name=ESAAp79 /&gt; (but its practical implementation was usually achieved in another way, see below).
+
+Its detailed definition depended on [[Simon Newcomb]]'s [[Newcomb's Tables of the Sun|''Tables of the Sun'']] (1895),&lt;ref name=NewcSun /&gt; interpreted in a new way to accommodate certain observed discrepancies:
+
+In the introduction to ''Tables of the Sun'' the basis of the tables (p.&amp;nbsp;9) includes a formula for the Sun's mean longitude, at a time indicated by interval T (in Julian centuries of 36525 mean solar days&lt;ref&gt;The unit of _mean solar_ day is left implicit on p.9 but made explicit on p.20 of [[#refNewcSun|Newcomb (1895)]].&lt;/ref&gt;) reckoned from Greenwich Mean Noon on 0 January 1900:
+
+: Ls = 279° 41' 48&quot;.04 + 129,602,768&quot;.13T +1&quot;.089T&lt;sup&gt;2&lt;/sup&gt; . . . . . (1)
+
+Spencer Jones' work of 1939&lt;ref name=&quot;HSJ1939&quot; /&gt; showed that the positions of the Sun actually observed, when compared with those obtained from Newcomb's formula, show the need for the following correction to the formula to represent the observations:
+
+: &amp;Delta;Ls = + 1&quot;.00  + 2&quot;.97T  + 1&quot;.23T&lt;sup&gt;2&lt;/sup&gt;  + 0.0748B
+
+(where &quot;the times of observation are in Universal time, not corrected to Newtonian time&quot;, and 0.0748B represents an irregular fluctuation calculated from lunar observations&lt;ref name=Clem1948-172&gt;[[#refClem1948|Clemence (1948)]], p.172, following [[#refHSJ1939|Spencer Jones (1939)]].&lt;/ref&gt;).
+
+Thus a conventionally corrected form of Newcomb's formula, to incorporate the corrections on the basis of mean solar time, would be the sum of the two preceding expressions:
+
+: Ls =	279° 41' 49&quot;.04 + 129,602,771&quot;.10T +2&quot;.32T&lt;sup&gt;2&lt;/sup&gt; +0.0748B . . . . . (2)
+
+Clemence's 1948 proposal did not adopt a correction of this kind in terms of mean solar time:  instead, the same numbers were used as in Newcomb's original uncorrected formula (1), but now in a reverse sense, to define the time and time scale implicitly, based on the real position of the Sun:
+
+: Ls =	279° 41' 48&quot;.04 + 129,602,768&quot;.13E +1&quot;.089E&lt;sup&gt;2&lt;/sup&gt; . . . . . (3)
+
+where the time variable, here represented as E, now represents time in ephemeris centuries of 36525 ephemeris days of 86400 ephemeris seconds.  The 1961 official reference put it this way: &quot;The origin and rate of ephemeris time are defined to make the Sun's mean longitude agree with Newcomb's expression&quot;&lt;ref&gt;[[#refESAE|ESAE (1961)]] at p.70.&lt;/ref&gt;
+
+From the comparison of formulae (2) and (3), both of which express the same real solar motion in the same real time but on different time scales, Clemence arrived at an explicit expression, estimating the difference in seconds of time between ephemeris time and mean solar time, in the sense (ET-UT):
+
+: &lt;math&gt; \delta t = +24^s.349 + 72^s.3165T +29^s.949T^2 + 1.821B&lt;/math&gt; . . . . . (4)&lt;ref name=Clem1948-172 /&gt;
+
+Clemence's formula, now superseded by more modern estimations, was included in the original conference decision on ephemeris time. In view of the fluctuation term, practical determination of the difference between ephemeris time and UT depended on observation.  Inspection of the formulae above shows that the (ideally constant) unit of ephemeris time such as the ephemeris second has been for the whole of the twentieth century very slightly shorter than the corresponding (but not precisely constant) unit of mean solar time (which besides its irregular fluctuations tends gradually to increase), consistently also with the modern results of Morrison and Stephenson&lt;ref name=morr3&gt;[[#morrste2004|L V Morrison &amp; F R Stephenson (2004)]]; also [[#stemorr84|F R Stephenson, L V Morrison (1984)]], and [[#stemorr95|F R Stephenson, L V Morrison (1995)]].&lt;/ref&gt; (see article [[delta T|&amp;Delta;T]]).
+
+==Implementations==
+
+===Secondary realizations by lunar observations===
+Although ephemeris time was defined in principle by the orbital motion of the Earth around the Sun,&lt;ref&gt;[[#refClem1948|Clemence (1948)]], at pp.171-3.&lt;/ref&gt; it was usually measured in practice by the orbital motion of the Moon around the Earth.&lt;ref&gt;[[#refMark1955|W Markowitz &amp; others (1955)]]; [[#refMark1959|W Markowitz (1959)]]; also [[#refMark1958|W Markowitz, R G Hall, L Essen, J V L Parry (1958)]].&lt;/ref&gt;  These measurements can be considered as secondary realizations (in a [[metrology|metrological]] sense) of the primary definition of ET in terms of the solar motion, after a calibration of the mean motion of the Moon with respect to the mean motion of the Sun.&lt;ref name=guin88&gt;
+[[#refGuin1988|B Guinot &amp; P K Seidelmann (1988)]], at p.305.&lt;/ref&gt;
+
+Reasons for the use of lunar measurements were practically based: the Moon moves against the background of stars about 13 times as fast as the Sun's corresponding rate of motion, and the accuracy of time determinations from lunar measurements is correspondingly greater.
+
+When ephemeris time was first adopted, time scales were still based on astronomical observation, as they always had been.  The accuracy was limited by the accuracy of optical observation, and corrections of clocks and time signals were published in arrear.
+
+===Secondary realizations by atomic clocks===
+A few years later, with the invention of the [[atomic clock|cesium atomic clock]], an alternative offered itself.  Increasingly, after the calibration in 1958 of the cesium atomic clock by reference to ephemeris time,&lt;ref name=&quot;Mark1958&quot; /&gt; cesium atomic clocks running on the basis of ephemeris seconds began to be used and kept in step with ephemeris time.  The atomic clocks offered a further secondary realization of ET, on a quasi-real time basis&lt;ref name=guin88 /&gt; that soon proved to be more useful than the primary ET standard: not only more convenient, but also more precisely uniform than the primary standard itself. Such secondary realizations were used and described as 'ET', with an awareness that the time scales based on the atomic clocks were not identical to that defined by the primary ephemeris time standard, but rather, an improvement over it on account of their closer approximation to uniformity.&lt;ref&gt;[[#tr32-1306|W G Melbourne &amp; others, 1968]], section II.E.4-5, pages 15-16, including footnote 7, noted that the Jet Propulsion Laboratory spacecraft tracking and data reduction programs of that time (including the Single Precision Orbit Determination Program) used, as ET, the current US atomic clock time A.1 offset by 32.25 seconds. The discussion also noted that the usage was &quot;inaccurate&quot; (the quantity indicated was not identical with any of the other realizations of ET such as ET0, ET1), and that while A.1 gave &quot;certainly a closer approximation to uniform time than ET1&quot; there were no grounds for considering either the atomic clocks or any other measures of ET as (perfectly) uniform. Section II.F, pages 18-19, indicates that an improved time measure of (A.1 + 32.15 seconds), applied in the JPL Double Precision Orbit Determination Program, was also designated ET.&lt;/ref&gt; The atomic clocks gave rise to the [[International Atomic Time|atomic time scale]], and to what was first called Terrestrial Dynamical Time and is now [[Terrestrial Time]], defined to provide continuity with ET.&lt;ref name=ESAAp42 /&gt;
+
+The availability of atomic clocks, together with the increasing accuracy of astronomical observations (which meant that relativistic corrections were at least in the foreseeable future no longer going to be small enough to be neglected),&lt;ref&gt;[[#refWink1977|G M R Winkler and T C van Flandern (1977)]].&lt;/ref&gt; led to the eventual replacement of the ephemeris time standard by more refined time scales including [[terrestrial time]] and [[barycentric dynamical time]], to which ET can be seen as an approximation.
+
+==Revision of time scales==
+In 1976 the [[International Astronomical Union|IAU]] resolved that the theoretical basis for its current (1952) standard of Ephemeris Time was non-relativistic, and that therefore, beginning in 1984, Ephemeris Time would be replaced by two relativistic timescales intended to constitute [[Dynamical time scale|dynamical timescales]]: [[Terrestrial Time#History|Terrestrial Dynamical Time (TDT)]] and [[Barycentric Dynamical Time|Barycentric Dynamical Time (TDB)]].&lt;ref&gt;[[#refIAU1976|IAU resolutions (1976)]]; see also ESAA (1992) [https://books.google.com/books?id=uJ4JhGJANb4C&amp;pg=PA41 at p.41].&lt;/ref&gt;  Difficulties were recognized, which led to these being in turn superseded in the 1990s by time scales [[Terrestrial Time|Terrestrial Time (TT)]], [[Geocentric Coordinate Time|Geocentric Coordinate Time GCT(TCG)]] and [[Barycentric Coordinate Time|Barycentric Coordinate Time BCT(TCB)]].&lt;ref name=ESAAp42 /&gt;
+
+== JPL ephemeris time argument T&lt;sub&gt;eph&lt;/sub&gt; ==
+High-precision [[ephemeris|ephemerides]] of sun, moon and planets were developed and calculated at the [[Jet Propulsion Laboratory]] (JPL) over a long period, and the latest available were adopted for the ephemerides in the [[Astronomical Almanac]] starting in 1984. Although not an IAU standard, the ephemeris time argument T&lt;sub&gt;eph&lt;/sub&gt; has been in use at that institution since the 1960s. The time scale represented by T&lt;sub&gt;eph&lt;/sub&gt; has been characterized as a [[principle of relativity|relativistic]] coordinate time that differs from [[Terrestrial Time]] only by small periodic terms with an amplitude not exceeding 2 milliseconds of time: it is linearly related to, but distinct (by an offset and constant rate which is of the order of 0.5&amp;nbsp;s/a) from the [[Barycentric Coordinate Time|TCB]] time scale adopted in 1991 as a standard by the [[IAU]]. Thus for clocks on or near the [[geoid]], T&lt;sub&gt;eph&lt;/sub&gt; (within 2 milliseconds), but not so closely TCB, can be used as approximations to Terrestrial Time, and via the standard ephemerides T&lt;sub&gt;eph&lt;/sub&gt; is in widespread use.&lt;ref name=&quot;EMS1998&quot;/&gt;
+
+Partly in acknowledgement of the widespread use of T&lt;sub&gt;eph&lt;/sub&gt; via the JPL ephemerides, IAU resolution 3 of 2006&lt;ref&gt;[http://www.iau.org/static/resolutions/IAU2006_Resol3.pdf IAU 2006 resolution 3]&lt;/ref&gt; (re-)defined [[Barycentric Dynamical Time]] (TDB) as a current standard. As re-defined in 2006, TDB is a linear transformation of [[Barycentric Coordinate Time|TCB]]. The same IAU resolution also stated (in note 4) that the &quot;independent time argument of the JPL ephemeris [[DE405]], which is called T&lt;sub&gt;eph&lt;/sub&gt;&quot; (here the IAU source cites&lt;ref name=&quot;EMS1998&quot;/&gt;), &quot;is for practical purposes the same as [[Barycentric Dynamical Time|TDB]] defined in this Resolution&quot;. Thus the new TDB, like T&lt;sub&gt;eph&lt;/sub&gt;, is essentially a more refined continuation of the older ephemeris time ET and (apart from the {{nowrap|&lt; 2 ms}} periodic fluctuations) has the same mean rate as that established for ET in the 1950s.
+
+==Use in official almanacs and ephemerides==
+Ephemeris time based on the standard adopted in 1952 was introduced into the Astronomical Ephemeris (UK) and the [[American Ephemeris and Nautical Almanac]], replacing UT in the main ephemerides in the issues for 1960 and after.&lt;ref&gt;[[#refESAA|ESAA 1992]], [https://books.google.com/books?id=uJ4JhGJANb4C&amp;pg=PA612 at p.612].&lt;/ref&gt;  (But the ephemerides in the Nautical Almanac, by then a separate publication for the use of navigators, continued to be expressed in terms of UT.)  The ephemerides continued on this basis through 1983 (with some changes due to adoption of improved values of astronomical constants), after which, for 1984 onwards, they adopted the [[JPL]] ephemerides.
+
+Previous to the 1960 change, the 'Improved Lunar Ephemeris' had already been made available in terms of ephemeris time for the years 1952-1959&lt;ref&gt;&quot;Improved Lunar Ephemeris&quot;, US Government Printing Office, 1954.&lt;/ref&gt; (computed by [[Wallace John Eckert|W J Eckert]] from [[Ernest William Brown|Brown]]'s theory with modifications recommended by Clemence (1948)).
+
+==Redefinition of the second==
+Successive definitions of the unit of ephemeris time are mentioned above ([[#History of ephemeris time (1952 standard)|History]]).  The value adopted for the 1956/1960 standard second:
+
+:the fraction 1/31 556 925.9747 of the [[tropical year]] for 1900 [[January 0]] at 12 hours ephemeris time.
+
+was obtained from the linear time-coefficient in Newcomb's expression for the solar mean longitude (above), taken and applied with the same meaning for the time as in formula (3) above.  The relation with Newcomb's coefficient can be seen from:
+
+:1/31 556 925.9747 = 129 602 768.13 / (360&amp;times;60&amp;times;60&amp;times;36 525&amp;times;86 400).
+
+[[Caesium]] [[atomic clocks]] became operational in 1955, and quickly confirmed the evidence that the rotation of the earth fluctuated randomly.  This confirmed the unsuitability of the mean solar second of Universal Time as a measure of time interval for the most precise purposes.  After three years of comparisons with lunar observations, [[William Markowitz|Markowitz]] et al. (1958) determined that the ephemeris second corresponded to 9 192 631 770 ± 20 cycles of the chosen cesium resonance.&lt;ref name=Mark1958&gt;[[#refMark1958|W Markowitz, R G Hall, L Essen, J V L Parry (1958)]]&lt;/ref&gt;
+
+Following this, in 1967/68, the General Conference on Weights and Measures (CGPM) replaced the definition of the [[Second#International second|SI second]] by the following:
+&lt;blockquote&gt;The second is the duration of 9&amp;thinsp;192&amp;thinsp;631&amp;thinsp;770 periods of the radiation corresponding to the transition between the two hyperfine levels of the ground state of the caesium 133 atom.
+&lt;/blockquote&gt;
+Although this is an independent definition that does not refer to the older basis of ephemeris time, it uses the same quantity as the value of the ephemeris second measured by the cesium clock in 1958.  This [[Second#International second|SI second referred to atomic time]] was later verified by Markowitz (1988) to be in agreement, within 1 part in 10&lt;sup&gt;10&lt;/sup&gt;, with the second of ephemeris time as determined from lunar observations.&lt;ref name=&quot;refMark1988&quot;/&gt;
+
+For practical purposes the length of the ephemeris second can be taken as equal to the length of the second of [[Barycentric Dynamical Time|Barycentric Dynamical Time (TDB)]] or [[Terrestrial Time|Terrestrial Time (TT)]] or its predecessor TDT.
+
+The difference between ET and UT is called [[ΔT]]; it changes irregularly, but the long-term trend is [[parabola|parabolic]], decreasing from ancient times until the nineteenth century,&lt;ref name=morr3 /&gt; and increasing since then at a rate corresponding to an increase in the solar day length of 1.7&amp;nbsp;ms per century (see [[leap second]]s).
+
+[[International Atomic Time]] (TAI) was set equal to [[Universal Time|UT2]] at 1 January 1958 0:00:00 .  At that time, ΔT was already about 32.18 seconds.  The difference between Terrestrial Time (TT) (the successor to ephemeris time) and atomic time was later defined as follows:
+
+:1977 January 1.000 3725 TT = 1977 January 1.000 0000 TAI, ''i.e.''
+
+:TT − TAI = 32.184 seconds
+
+This difference may be assumed constant—the rates of TT and TAI are designed to be identical.
+
+==Notes and references==
+&lt;references/&gt;
+
+==Bibliography==
+&lt;!-- *&lt;cite id=dum1&gt; --&gt;&lt;!-- needed for redirect to 1st real item to work ok--&gt; &lt;!-- &lt;/cite&gt; --&gt;
+
+*&lt;cite id=refClem1948&gt;[[Gerald Maurice Clemence|G M Clemence]], [http://articles.adsabs.harvard.edu/full/1948AJ.....53..169C &quot;On the System of Astronomical Constants&quot;], ''Astronomical Journal'', vol.53(6) (1948), issue #1170, pp 169–179.&lt;/cite&gt;
+*&lt;cite id=refClem1971&gt;[[Gerald Maurice Clemence|G M Clemence]] (1971), [http://articles.adsabs.harvard.edu/full/1971JHA.....2...73C &quot;The Concept of Ephemeris Time&quot;], ''Journal for the History of Astronomy'', vol.2 (1971), pp. 73–79.&lt;/cite&gt;
+*&lt;cite id=refGuin1988&gt;B Guinot and P K Seidelmann (1988), [http://adsabs.harvard.edu/abs/1988A%26A...194..304G &quot;Time scales – Their history, definition and interpretation&quot;], ''Astronomy and Astrophysics'', vol. 194 (nos. 1–2) (April 1988), pp.304–308.&lt;/cite&gt;
+*&lt;cite id=refESAA&gt;'ESAA (1992)': P K Seidelmann (ed.), [https://books.google.com/books?id=uJ4JhGJANb4C &quot;Explanatory Supplement to the Astronomical Almanac&quot;], University Science Books, CA, 1992 ; {{ISBN|0-935702-68-7}}.&lt;/cite&gt;
+*&lt;cite id=refESAE&gt;'ESAE 1961': &quot;Explanatory Supplement to the Astronomical Ephemeris and the American Ephemeris and Nautical Almanac&quot; ('prepared jointly by the Nautical Almanac Offices of the United Kingdom and the United States of America', HMSO, London, 1961).&lt;/cite&gt;
+*&lt;cite id=refIAU1976&gt;[[IAU]] resolutions (1976): [http://www.iau.org/static/resolutions/IAU1976_French.pdf Resolutions adopted by the IAU in 1976 at Grenoble].&lt;/cite&gt;
+*&lt;cite id=refILE&gt;&quot;Improved Lunar Ephemeris&quot;, US Government Printing Office, 1954.&lt;/cite&gt;
+*&lt;cite id=refMark1955&gt;[[William Markowitz|W Markowitz]], R G Hall, S Edelson (1955), [http://articles.adsabs.harvard.edu/full/1955AJ.....60R.171M &quot;Ephemeris time from photographic positions of the moon&quot;], ''Astronomical Journal'', vol. 60 (1955), p.171.&lt;/cite&gt;
+*&lt;cite id=refMark1958&gt;[[William Markowitz|W Markowitz]], R G Hall, L Essen, J V L Parry (1958), [http://www.leapsecond.com/history/1958-PhysRev-v1-n3-Markowitz-Hall-Essen-Parry.pdf &quot;Frequency of cesium in terms of ephemeris time&quot;], Physical Review Letters, vol.1 (1958), 105–107.&lt;/cite&gt;
+*&lt;cite id=refMark1959&gt;[[William Markowitz|W Markowitz]] (1959), [http://adsabs.harvard.edu/full/1959AJ.....64..106M &quot;Variations in the Rotation of the Earth, Results Obtained with the Dual-Rate Moon Camera and Photographic Zenith Tubes&quot;], ''Astronomical Journal'', vol.64 (1959), pp. 106–113.&lt;/cite&gt;
+*&lt;cite id=refMark1988&gt;[[William Markowitz|Wm Markowitz]] (1988), [http://articles.adsabs.harvard.edu/full/1988IAUS..128..413M &quot;Comparisons of ET(Solar), ET(Lunar), UT and TDT&quot;], in A K Babcock &amp; G A Wilkins (eds.), ''The Earth's Rotation and Reference Frames for Geodesy and Geophysics'', IAU Symposia #128 (1988), pp 413–418.&lt;/cite&gt;
+*&lt;cite id=tr32-1306&gt;W G Melbourne, J D Mulholland, W L Sjogren, F M Sturms (1968), &quot;Constants and Related Information for Astrodynamic Calculations&quot;, NASA Technical Report 32-1306, Jet Propulsion Laboratory, July 15, 1968.&lt;/cite&gt;
+*&lt;cite id=morrste2004&gt;L V Morrison, F R Stephenson (2004), [http://articles.adsabs.harvard.edu/full/2004JHA....35..327M &quot;Historical values of the Earth's clock error &amp;Delta;T and the calculation of eclipses&quot;],  ''Journal for the History of Astronomy'' ({{ISSN|0021-8286}}), vol. 35(3) (2004), #120, pp. 327–336 (with addendum at [http://articles.adsabs.harvard.edu/full/2005JHA....36..339M vol.36, p.339]).&lt;/cite&gt;
+*&lt;cite id=refNewcSun&gt;[[Simon Newcomb]] (1895), ''[[Newcomb's Tables of the Sun|Tables of the Sun]]'' (&quot;Tables of the Motion of the Earth on its Axis and Around the Sun&quot;, in &quot;Tables of the Four Inner Planets&quot;, vol. 6, part 1, of ''Astronomical Papers prepared for the use of the American Ephemeris and Nautical Almanac'' (1895), at pages 1–169).&lt;/cite&gt;
+*&lt;cite id=refSitter1927&gt;[[Willem de Sitter|W de Sitter]] (1927), [http://articles.adsabs.harvard.edu/full/1927BAN.....4...21D &quot;On the secular accelerations and the fluctuations of the longitudes of the moon, the sun, Mercury and Venus&quot;], ''Bull. Astron. Inst. Netherlands'', vol.4 (1927), pages 21–38.&lt;/cite&gt;
+*&lt;cite id=refHSJ1939&gt;[[Harold Spencer Jones|H Spencer Jones]], [http://adsabs.harvard.edu/abs/1939MNRAS..99..541S &quot;The Rotation of the Earth, and the Secular Accelerations of the Sun, Moon and Planets&quot;], in ''Monthly Notes of the Royal Astronomical Society'', vol.99 (1939), pp 541–558.&lt;/cite&gt;
+*&lt;cite id=refEMS1998&gt;E M Standish, [http://articles.adsabs.harvard.edu/full/1998A%26A...336..381S &quot;Time scales in the JPL and CfA ephemerides&quot;], ''Astronomy &amp; Astrophysics'', vol.336 (1998), 381–384.&lt;/cite&gt;
+*&lt;cite id=stemorr84&gt;F R Stephenson, L V Morrison (1984), [http://adsabs.harvard.edu/abs/1984RSPTA.313...47S &quot;Long-term changes in the rotation of the earth – 700 B.C. to A.D. 1980&quot;], (Royal Society, Discussion on Rotation in the Solar System, London, England, Mar. 8, 9, 1984) ''Royal Society (London), Philosophical Transactions, Series A'' ({{ISSN|0080-4614}}), vol.313 (1984), #1524, pp. 47–70.&lt;/cite&gt;
+*&lt;cite id=stemorr95&gt;F R Stephenson, L V Morrison (1995), [http://adsabs.harvard.edu/abs/1995RSPTA.351..165S &quot;Long-Term Fluctuations in the Earth's Rotation: 700 BC to AD 1990&quot;], ''Royal Society (London), Philosophical Transactions, Series A'' ({{ISSN|0080-4614}}), vol.351 (1995), #1695, pp. 165–202.&lt;/cite&gt;
+*&lt;cite id=refWink1977&gt;G M R Winkler and T C van Flandern (1977), [http://articles.adsabs.harvard.edu/full/1977AJ.....82...84W &quot;Ephemeris Time, relativity, and the problem of uniform time in astronomy&quot;], ''Astronomical Journal'', vol.82 (Jan. 1977), pp. 84–92.&lt;/cite&gt;
+
+{{Time measurement and standards}}
+
+{{DEFAULTSORT:Ephemeris Time}}
+[[Category:Time scales]]
+[[Category:Time in astronomy]]</text>
+      <sha1>9w93hr20ebvn3fsu5t8xctuubjhyd44</sha1>
+    </revision>
+  </page>

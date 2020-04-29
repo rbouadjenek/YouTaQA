@@ -1,0 +1,49 @@
+  <page>
+    <title>Burnt-in timecode</title>
+    <ns>0</ns>
+    <id>4541</id>
+    <revision>
+      <id>756697464</id>
+      <parentid>750355872</parentid>
+      <timestamp>2016-12-26T06:34:36Z</timestamp>
+      <contributor>
+        <ip>71.41.210.146</ip>
+      </contributor>
+      <comment>Explained use of window dubs.</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Image:Burnt-in timecode.jpg|thumb|250px|[[Color bars]] with burnt-in timecode]]
+'''Burnt-in timecode''' (often abbreviated to '''BITC''' by analogy to [[Timecode/Vertical interval timecode|VITC]]) is a [[human-readable]] on-screen version of the [[timecode]] information for a piece of material superimposed on a video image. BITC is sometimes used in conjunction with &quot;real&quot; machine-readable timecode, but more often used in copies of original material on to a non-broadcast format such as VHS, so that the VHS copies can be traced back to their master tape and the original time codes easily located. 
+
+Many professional [[VTR]]s can &quot;burn&quot; (overlay) the tape timecode onto one of their outputs. This output (which usually also displays the setup menu or [[on-screen display]]) is known as the ''super out'' or ''monitor out''. The ''character'' switch or menu item turns this behaviour on or off. The ''character'' function is also used to display the timecode on the preview monitors in [[linear video editing|linear editing]] suites.
+
+Videotapes that are recorded with timecode numbers overlaid on the video are referred to as ''window dubs'', named after the &quot;window&quot; that displays the burnt-in timecode on-screen.
+
+When editing was done using magnetic tapes that were subject to damage from excessive wear, it was common to use a window dub as a working copy for the majority of the editing process.  Editing decisions would be made using a window dub, and no specialized equipment was needed to write down an [[edit decision list]] which would then be replicated from the high-quality masters.
+
+Timecode can also be superimposed on video using a dedicated overlay device, often called a &quot;window dub inserter&quot;.  This inputs a video signal and its separate timecode audio signal, reads the timecode, superimposes the timecode display over the video, and outputs the combined display (usually via composite), all in real time.  Stand-alone timecode generator / readers often have the window dub function built-in.  
+
+Some consumer cameras, in particular DV cameras, can &quot;burn&quot; (overlay) the tape timecode onto the composite output. This output typically is semi-transparent and may include other tape information. It is usually activated by turning on the 'display' info in one of the camera's sub-menus. While not as 'professional' as an overlay as created by a professional [[VCR]]s, it is a cheap alternative that is just as accurate.
+
+Timecode is stored in the metadata areas of captured DV AVI files, and some software is able to &quot;burn&quot; (overlay) this into the video frames. For example, DVMP Pro&lt;ref&gt;[http://www.dvmp.co.uk/dv-media-player-pro.htm DVMP Pro] {{webarchive |url=https://web.archive.org/web/20070629090029/http://www.dvmp.co.uk/dv-media-player-pro.htm |date=June 29, 2007 }} - Software for burning in timecode and other items of metadata for DV AVI files.&lt;/ref&gt; is able to &quot;burn&quot; timecode or other items of DV metadata (such as date and time, iris, shutter speed, gain, white balance mode, etc.) into DV AVI files.
+
+[[Optical character recognition|OCR]] techniques can be used to read BITC in situations where other forms of timecode are not available.
+
+==See also==
+*[[Linear timecode]]
+*[[Vertical interval timecode]]
+*[[SMPTE time code]]
+*[[MIDI timecode]]
+*[[CTL timecode]]
+*[[AES/EBU|AES-EBU embedded timecode]]
+*[[Rewritable consumer timecode]]
+
+== References ==
+{{reflist}}
+
+{{DEFAULTSORT:Burnt-In Timecode}}
+[[Category:Timecodes]]
+[[Category:Film and video technology]]</text>
+      <sha1>1da2b5fzelt7r1n2px4rohsqitqd7yh</sha1>
+    </revision>
+  </page>

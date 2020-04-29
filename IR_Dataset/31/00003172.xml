@@ -1,0 +1,187 @@
+  <page>
+    <title>ANSI C</title>
+    <ns>0</ns>
+    <id>3172</id>
+    <revision>
+      <id>938071956</id>
+      <parentid>938071934</parentid>
+      <timestamp>2020-01-28T23:29:53Z</timestamp>
+      <contributor>
+        <ip>103.100.225.86</ip>
+      </contributor>
+      <comment>/* C89 */</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{About|the programming language standard|the paper size|Paper size#ANSI paper sizes}}
+{{Refimprove|date=July 2010}}
+'''ANSI C''', '''ISO C''' and '''Standard C''' are successive standards for the [[C (programming language)|C programming language]] published by the [[American National Standards Institute]] (ANSI) and the [[International Organization for Standardization]] (ISO).  Historically, the names referred specifically to the original and best-supported version of the standard (known as '''C89''' or '''C90''').  Software developers writing in C are encouraged to conform to the standards, as doing so helps [[porting|portability]] between compilers.
+
+==History and outlook==
+The first standard for C was published by ANSI. Although this document was subsequently adopted by [[International Organization for Standardization]] (ISO) and subsequent revisions published by ISO have been adopted by ANSI, &quot;ANSI C&quot; is still used to refer to the standard.&lt;ref&gt;{{cite web|url=https://blog.ansi.org/2017/09/origin-ansi-c-iso-c/|title=The Origin of ANSI C and ISO C|author=Brad Kelechava|accessdate=2018-08-14|date=2017-09-14}}&lt;/ref&gt; While some software developers use the term ISO C, others are standards-body neutral and use Standard C.
+
+===C89===
+In 1983, the American National Standards Institute formed a committee, X3J11, to establish a standard specification of C. The standard was completed in 1989 and ratified as ANSI X3.159-1989 &quot;Programming Language C.&quot; This version of the language is often referred to as &quot;ANSI C&quot;. Later on sometimes the label &quot;C89&quot; is used to distinguish it from C90 but using the same labeling method.
+
+===C90===
+The same standard as C89 was ratified by the International Organization for Standardization as ISO/IEC 9899:1990, with only formatting changes,&lt;ref&gt;{{cite web|url=https://gcc.gnu.org/onlinedocs/gcc/Standards.html|title=Standards - Using the GNU Compiler Collection (GCC)|accessdate=2012-06-24}}&lt;/ref&gt; which is sometimes referred to as C90. Therefore, the terms &quot;C89&quot; and &quot;C90&quot; refer to essentially the same language.
+
+This standard has been withdrawn by both ANSI/INCITS&lt;ref name=&quot;ref1&quot; /&gt; and ISO/IEC.&lt;ref&gt;{{cite web|url=http://www.iso.org/iso/iso_catalogue/catalogue_ics/catalogue_detail_ics.htm?csnumber=17782|title=ISO/IEC 9899:1990 - Programming Languages -- C|accessdate=2012-06-24}}&lt;/ref&gt;
+
+===C95===
+In 1995, the [[International Organization for Standardization|ISO]] published an extension, called Amendment&amp;nbsp;1, for the ANSI-C standard. Its full name finally was ''ISO/IEC 9899:1990/AMD1:1995'' or nicknamed ''C95''. Aside from error correction there were further changes to the language capabilities,&lt;ref&gt;{{Cite web| url=http://www.lysator.liu.se/c/na1.html | title=A brief description of Normative Addendum 1 | author=Clive D.W. Feather | date=2010-09-12}}&lt;/ref&gt;&lt;ref&gt;{{Cite web|url=https://www.iso.org/standard/23909.html|title=ISO/IEC 9899:1990/Amd 1:1995|date=2013-03-22|publisher=International Organization for Standardization}}&lt;/ref&gt; such as:
+
+* Improved ''multi-byte'' and ''[[wide character]]'' support in the standard library, introducing &lt;code&gt;&lt;wchar.h&gt;&lt;/code&gt; and &lt;code&gt;&lt;wctype.h&gt;&lt;/code&gt; as well as [[Multi-byte character set|multi-byte]] [[Input/output|I/O]]
+* Addition of [[Digraph (computing)#C|digraphs]] to the language
+* Specification of standard macros for the alternative specification of operators, e.g. &lt;code&gt;and&lt;/code&gt; for &lt;code&gt;&amp;&amp;&lt;/code&gt;
+* Specification of the standard macro &lt;code&gt;__STDC_VERSION__&lt;/code&gt;
+
+In addition to the amendment, two technical corrigenda were published by ISO for C90:
+
+* ISO/IEC 9899:1990/Cor 1:1994 TCOR1 in 1994&lt;ref&gt;{{Cite web|url=http://www.iso.org/cms/render/live/en/sites/isoorg/contents/data/standard/02/42/24271.html|title=ISO/IEC 9899:1990/Cor 1:1994|website=ISO|language=en|access-date=2019-01-21}}&lt;/ref&gt;
+* ISO/IEC 9899:1990/Cor 2:1996 in 1996&lt;ref&gt;{{Cite web|url=http://www.iso.org/cms/render/live/en/sites/isoorg/contents/data/standard/02/71/27110.html|title=ISO/IEC 9899:1990/Cor 2:1996|website=ISO|language=en|access-date=2019-01-21}}&lt;/ref&gt;
+
+====Preprocessor test for C95 compatibility====
+&lt;source lang=&quot;c&quot;&gt;
+#if defined(__STDC_VERSION__) &amp;&amp; __STDC_VERSION__ &gt;= 199409L
+
+/* C95 compatible source code. */
+#elif defined(__STDC__)
+/* C89 compatible source code. */
+#endif
+&lt;/source&gt;
+
+===C99===
+{{Main article|C99}}
+In March 2000, ANSI adopted the ISO/IEC 9899:1999&lt;ref&gt;{{Cite web|url=http://www.iso.org/cms/render/live/en/sites/isoorg/contents/data/standard/02/92/29237.html|title=ISO/IEC 9899:1999|last=14:00-17:00|website=ISO|language=en|access-date=2019-01-21}}&lt;/ref&gt; standard. This standard is commonly referred to as C99. Some notable additions to the previous standard include:
+
+* New built-in [[C data types|data types]]: &lt;code&gt;long long&lt;/code&gt;, &lt;code&gt;_Bool&lt;/code&gt;, &lt;code&gt;_Complex&lt;/code&gt;, and &lt;code&gt;_Imaginary&lt;/code&gt;
+* Several new core language features, including static array indices, designated initializers, compound literals, [[variable-length array]]s, [[flexible array member]]s, variadic macros, and &lt;code&gt;[[restrict]]&lt;/code&gt; keyword
+* Several new library headers, including &lt;code&gt;[[stdint.h]]&lt;/code&gt;, &lt;code&gt;&amp;lt;tgmath.h&amp;gt;&lt;/code&gt;, &lt;code&gt;fenv.h&lt;/code&gt;, &lt;code&gt;&amp;lt;complex.h&amp;gt;&lt;/code&gt;
+* Improved compatibility with several [[C++]] features, including [[inline function]]s, single-line [[Comment (computer programming)|comments]] with &lt;code&gt;//&lt;/code&gt;, mixing [[Declaration (computer programming)|declarations]] and code, and universal character names in [[Identifier (computer programming)|identifiers]]
+* Removed several dangerous C89 language features such as implicit function declarations and implicit &lt;code&gt;int&lt;/code&gt;
+
+Three technical corrigenda were published by ISO for C99:
+
+* ISO/IEC 9899:1999/Cor 1:2001(E)
+* ISO/IEC 9899:1999/Cor 2:2004(E)
+* ISO/IEC 9899:1999/Cor 3:2007(E), notable for deprecating the standard library function [[gets()|gets]]
+
+This standard has been withdrawn by both ANSI/INCITS&lt;ref&gt;{{cite web|url=https://webstore.ansi.org/Standards/INCITS/INCITSISOIEC98992012|title=INCITS/ISO/IEC 9899-2012|publisher=ANSI}}&lt;/ref&gt; and ISO/IEC&lt;ref&gt;{{cite web|url=https://www.iso.org/standard/29237.html|title=ISO/IEC 9899:1999 - Programming Languages -- C|accessdate=2012-06-24}}&lt;/ref&gt; in favour of C11.
+
+===C11===
+{{Main article|C11 (C standard revision)|l1=C11}}
+{{As of|2018}}, &quot;C11&quot; is the previous [[open standard|standard]] for the [[C (programming language)|C programming language]]. Notable features introduced over the previous revision include improved [[Unicode]] support, type-generic expressions using the new &lt;code&gt;_Generic&lt;/code&gt; keyword, a cross-platform [[thread (computing)|multi-threading]] API (&lt;code&gt;threads.h&lt;/code&gt;) and [[linearizability|atomic]] types support in both core language and the library (&lt;code&gt;stdatomic.h&lt;/code&gt;).
+
+One technical corrigendum has been published by ISO for C11:
+
+* ISO/IEC 9899:2011/Cor 1:2012&lt;ref&gt;{{cite web|url=https://www.iso.org/standard/61717.html|title=ISO/IEC 9899:2011/Cor 1:2012|publisher=International Organization for Standardization}}&lt;/ref&gt;
+
+===C18===
+{{Main article|C18 (C standard revision)|l1=C18}}
+{{as of|2018|10}}, &quot;C18&quot; is the current [[open standard|standard]] for the [[C (programming language)|C programming language]].&lt;ref name=&quot;ISO2018&quot;&gt;{{cite web|url=https://www.iso.org/standard/74528.html|title=ISO/IEC 9899:2018 - Information technology -- Programming languages -- C|website=www.iso.org}}&lt;/ref&gt;
+
+===Other related ISO publications===
+As part of the standardization process, ISO also publishes [[International Organization for Standardization#International Standards and other publications|technical reports and specifications]] related to the C language:
+
+* ISO/IEC TR 19769:2004,&lt;ref&gt;{{cite web|url=https://www.iso.org/standard/33907.html|title=ISO/IEC TR 19769:2004|publisher=International Organization for Standardization}}&lt;/ref&gt; on library extensions to support Unicode transformation formats, integrated into C11
+* ISO/IEC TR 24731-1:2007,&lt;ref&gt;{{cite web|url=https://www.iso.org/standard/38841.html|title=ISO/IEC TR 24731-1:2007|publisher=International Organization for Standardization}}&lt;/ref&gt; on library extensions to support bounds-checked interfaces, integrated into C11
+* ISO/IEC TR 18037:2008,&lt;ref&gt;{{cite web|url=https://www.iso.org/standard/51126.html|title=ISO/IEC TR 18037:2008|publisher=International Organization for Standardization}}&lt;/ref&gt; on embedded C extensions
+* ISO/IEC TR 24732:2009,&lt;ref&gt;{{cite web|url=https://www.iso.org/standard/38842.html|title=ISO/IEC TR 24732:2009|publisher=International Organization for Standardization}}&lt;/ref&gt; on [[decimal floating point]] arithmetic, superseded by ISO/IEC TS 18661-2:2015
+* ISO/IEC TR 24747:2009,&lt;ref&gt;{{cite web|url=https://www.iso.org/standard/38857.html|title=ISO/IEC TR 24747:2009|publisher=International Organization for Standardization}}&lt;/ref&gt; on special mathematical functions,
+* ISO/IEC TR 24731-2:2010,&lt;ref&gt;{{cite web|url=https://www.iso.org/standard/51678.html|title=ISO/IEC TR 24731-2:2010|publisher=International Organization for Standardization}}&lt;/ref&gt; on library extensions to support dynamic allocation functions
+* ISO/IEC TS 17961:2013,&lt;ref&gt;{{cite web|url=https://www.iso.org/standard/61134.html|title=ISO/IEC TS 17961:2013|publisher=International Organization for Standardization}}&lt;/ref&gt; on secure coding in C
+* ISO/IEC TS 18661-1:2014,&lt;ref&gt;{{cite web|url=https://www.iso.org/standard/63146.html|title=ISO/IEC TS 18661-1:2014|publisher=International Organization for Standardization}}&lt;/ref&gt; on [[IEEE floating point|IEC 60559:2011]]-compatible binary floating-point arithmetic
+* ISO/IEC TS 18661-2:2015,&lt;ref&gt;{{cite web|url=https://www.iso.org/standard/68882.html|title=ISO/IEC TS 18661-2:2015|publisher=International Organization for Standardization}}&lt;/ref&gt; on IEC 60559:2011-compatible [[decimal floating point]] arithmetic
+* ISO/IEC TS 18661-3:2015,&lt;ref&gt;{{cite web|url=https://www.iso.org/standard/65615.html|title=ISO/IEC TS 18661-3:2015|publisher=International Organization for Standardization}}&lt;/ref&gt; on IEC 60559:2011-compatible interchange and extended floating-point types
+* ISO/IEC TS 18661-4:2015,&lt;ref&gt;{{cite web|url=https://www.iso.org/standard/65616.html|title=ISO/IEC TS 18661-4:2015|publisher=International Organization for Standardization}}&lt;/ref&gt; on IEC 60559:2011-compatible supplementary functions
+More technical specifications are in development and pending approval, including the fifth and final part of TS 18661, a software transactional memory specification, and parallel library extensions.&lt;ref&gt;See a list at https://en.cppreference.com/w/c/experimental Visited 16 January 2016.&lt;/ref&gt;
+
+==Support from major compilers==
+ANSI C is now supported by almost all the widely used compilers. GCC and Clang are two major C compilers popular today, both are based on the C11 with updates including changes from later specifications such as C17 and C18.&lt;ref&gt;{{Cite web|url=https://gcc.gnu.org/onlinedocs/gcc-8.2.0/gcc/Standards.html#C-Language|title=Using the GNU Compiler Collection (GCC): Standards|website=gcc.gnu.org|access-date=2019-02-05}}&lt;/ref&gt;&lt;ref&gt;{{Cite web|url=https://clang.llvm.org/compatibility.html#c|title=Language Compatibility|website=clang.llvm.org|access-date=2019-02-05}}&lt;/ref&gt; Any program written ''only'' in standard C and without any hardware dependent assumptions is virtually guaranteed to compile correctly on any [[system platform|platform]] with a conforming C implementation.  Without such precautions, most programs may compile only on a certain platform or with a particular compiler, due, for example, to the use of non-standard libraries, such as [[Graphical user interface|GUI]] libraries, or to the reliance on compiler- or platform-specific attributes such as the exact size of certain data types and byte [[endianness]].
+
+===Compliance detectability===
+To mitigate the differences between [[K&amp;R C]] and the ANSI C standard, the &lt;code&gt;__STDC__&lt;/code&gt; (&quot;standard c&quot;) macro can be used to split code into ANSI and K&amp;R sections.
+
+&lt;syntaxhighlight lang=&quot;c&quot;&gt;
+ #if defined(__STDC__) &amp;&amp; __STDC__
+ extern int getopt(int, char * const *, const char *);
+ #else
+ extern int getopt();
+ #endif
+&lt;/syntaxhighlight&gt;
+
+In the above example, a prototype is used in a function declaration for ANSI compliant implementations, while an obsolescent non-prototype declaration is used otherwise. Those are still ANSI-compliant as of C99. Note how this code checks both definition and evaluation: this is because some implementations may set &lt;code&gt;__STDC__&lt;/code&gt; to zero to indicate non-ANSI compliance.&lt;ref&gt;{{Cite web|url=https://www.ibm.com/support/knowledgecenter/SSPSQF_9.0.0/com.ibm.xlcpp111.aix.doc/language_ref/cplr367.html|title=Standard predefined macro names|website=www.ibm.com|language=en-US|access-date=2019-04-10}}&lt;/ref&gt;
+
+==Compilers supporting ANSI C==
+* [[Amsterdam Compiler Kit]] (C K&amp;R and C89/90)
+* [[ARM Holdings|ARM]] RealView
+* [[Clang]], using [[LLVM]] backend
+* [[GNU Compiler Collection|GCC]] (full C89/90, C99 and C11)
+* HP C/ANSI C compiler (C89 and C99)&lt;ref&gt;{{cite web|title=HP C/ANSI C developer's bundle|url=http://www.hp.com/go/c|accessdate=2015-07-12}}&lt;/ref&gt;
+* [[IBM XL C/C++]] (C11, starting with version 12.1)&lt;ref&gt;[https://www.ibm.com/developerworks/rational/library/support-iso-c11/index.html Support for ISO C11 added to IBM XL C/C++ compilers]&lt;/ref&gt;
+* [[Intel C++ Compiler|Intel's ICC]]
+* [[LabWindows/CVI]]
+* [[LCC (compiler)|LCC]]
+* [[OpenWatcom]] (C89/90 and some C99)
+* [[Visual C++|Microsoft Visual C++]] (C89/90 and some C99)
+* [[Pelles C]] (C99 and C11. Windows only.)&lt;ref&gt;[http://www.smorgasbordet.com/pellesc/ link to Pelles C pages]&lt;/ref&gt;
+* [[vbcc]] (C89/90 and C99)
+* [[Tiny C Compiler]] (C89/90 and some C99)
+* [[Oracle Developer Studio]]
+
+==See also==
+{{Portal|Computer programming}}
+* [[Behavioral Description Language]]
+* [[Compatibility of C and C++]]
+* [[C++17]], [[C++14]], [[C++11]], [[C++03]], [[C++98]], versions of the C++ programming language standard
+* [[C++ Technical Report 1]]
+
+==References==
+&lt;references&gt;
+&lt;ref name=&quot;ref1&quot;&gt;{{Cite web|url=http://www.techstreet.com/cgi-bin/detail?doc_no=incits_iso_iec%7C9899;product_id=232462|title=INCITS/ISO/IEC 9899|website=www.techstreet.com|language=en|access-date=2018-10-03}}&lt;/ref&gt;
+&lt;/references&gt;
+
+== External links ==
+* [http://www.open-std.org/jtc1/sc22/wg14/ ISO C working group]
+* [https://web.archive.org/web/20161223125339/http://flash-gordon.me.uk/ansi.c.txt ''Draft ANSI C Standard'' (ANSI X3J11/88-090)] (May 13, 1988), [https://groups.google.com/group/comp.lang.c/msg/20b174b18cdd919d?hl=en Third Public Review]
+* [https://docs.google.com/viewer?a=v&amp;pid=explorer&amp;chrome=true&amp;srcid=0BxVCLS4f8Sg5NWZmM2NjZWEtYmExMS00Y2EzLWE3ZTMtNzFmYjYwYzBiOTIw&amp;hl=en_US ''Draft ANSI C Rationale'' (ANSI X3J11/88-151)] (Nov 18, 1988)
+* [https://docs.google.com/viewer?a=v&amp;pid=explorer&amp;chrome=true&amp;srcid=0B-3PfyBhOSOxOTdjYmM1N2ItMmE0ZC00OGE3LTllODUtZDNkMDMzYWU3NDlk&amp;hl=en_US ''C Information Bulletin #1'' (ANSI X3J11/93-007)] (May 27, 1992)
+* [http://www.quut.com/c/ANSI-C-grammar-y.html ANSI C Yacc grammar]
+** [http://www.lysator.liu.se/c/ANSI-C-grammar-l.html ANSI C grammar, Lex specification]
+* {{Cite book
+ |first=Axel-Tobias
+ |last=Schreiner
+ |authorlink=Axel-Tobias Schreiner
+ |title=Object oriented programming with ANSI-C
+ |publisher=Hanser
+ |isbn=3-446-17426-5
+ |hdl=1850/8544
+}}
+* {{Cite web
+ |url          = http://webstore.ansi.org/RecordDetail.aspx?sku=ISO%2FIEC+9899%3A1999
+ |title        = ISO/IEC 9899:1999 Programming Languages -- C
+ |publisher    = American National Standards Institute
+ |access-date  = 2009-08-06
+ |archive-url  = https://web.archive.org/web/20110725123312/http://webstore.ansi.org/RecordDetail.aspx?sku=ISO%2FIEC+9899:1999
+ |archive-date = 2011-07-25
+ |url-status     = dead
+}}
+* {{Cite web
+   |url=http://publicaa.ansi.org/sites/apdl/Documents/Standards%20Action/2005%20PDFs/SAV3648.pdf
+   |title=ANSI Standards Action Vol. 36, #48
+   |publisher=American National Standards Institute
+   |date=2005-12-02
+   |access-date=2009-08-06
+   |archive-url=https://web.archive.org/web/20160304062427/http://publicaa.ansi.org/sites/apdl/Documents/Standards%20Action/2005%20PDFs/SAV3648.pdf
+   |archive-date=2016-03-04
+   |url-status=dead
+   }}
+{{List of International Electrotechnical Commission standards}}
+{{CProLang}}
+{{DEFAULTSORT:Ansi C}}
+[[Category:ANSI standards]]
+[[Category:C (programming language)]]
+[[Category:Programming language standards]]</text>
+      <sha1>nsqdtyzg1c9nv6lbw5pgj69pejmeepv</sha1>
+    </revision>
+  </page>

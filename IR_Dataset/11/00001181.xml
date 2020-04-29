@@ -1,0 +1,162 @@
+  <page>
+    <title>Astrometry</title>
+    <ns>0</ns>
+    <id>1181</id>
+    <revision>
+      <id>941411466</id>
+      <parentid>941378476</parentid>
+      <timestamp>2020-02-18T12:36:49Z</timestamp>
+      <contributor>
+        <username>Jc3s5h</username>
+        <id>9182658</id>
+      </contributor>
+      <comment>Unencyclopedic language</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Image:Interferometric astrometry.jpg|thumb|right|300px|Illustration of the use of [[interferometry]] in the optical wavelength range to determine precise positions of stars. ''Courtesy NASA/JPL-Caltech'']]
+
+'''Astrometry''' is the branch of [[astronomy]] that involves precise measurements of the positions and movements of [[star]]s and other [[Astronomical object|celestial bodies]]. The information obtained by astrometric measurements provides information on the [[kinematics]] and physical origin of the [[Solar System]] and our [[galaxy]], the [[Milky Way]].
+
+==History==
+[[File:Thousandau1 space probe.jpg|thumb|Concept art for the [[TAU (spacecraft)|TAU spacecraft]], a 1980s era study which would have used an interstellar precursor probe to expand the baseline for calculating stellar parallax in support of Astrometry]]
+The history of astrometry is linked to the history of [[star catalogue]]s, which gave astronomers reference points for objects in the sky so they could track their movements. This can be dated back to [[Hipparchus]], who around 190 BC used the catalogue of his predecessors [[Timocharis]] and [[Aristillus]] to discover Earth's [[precession]]. In doing so, he also developed the brightness scale still in use today.&lt;ref&gt;Walter, Hans G. (2000).&lt;/ref&gt; Hipparchus compiled a catalogue with at least 850 stars and their positions.&lt;ref&gt;{{cite book |title=Star maps: history, artistry, and cartography |first=Nick |last=Kanas |publisher=Springer |date=2007 |page=109 |isbn=0-387-71668-8}}&lt;/ref&gt; Hipparchus's successor, [[Ptolemy]], included a catalogue of 1,022 stars in his work the ''[[Almagest]]'', giving their location, coordinates, and brightness.&lt;ref&gt;p. 110, Kanas 2007.&lt;/ref&gt;
+
+In the 10th century, [[Abd al-Rahman al-Sufi]] carried out observations on the stars and described their positions, [[apparent magnitude|magnitude]]s and [[star color]]; furthermore, he provided drawings for each constellation, which are depicted in his ''[[Book of Fixed Stars]]''. [[Ibn Yunus]] observed more than 10,000 entries for the Sun's position for many years using a large [[astrolabe]] with a diameter of nearly 1.4 metres. His observations on [[eclipse]]s were still used centuries later in [[Simon Newcomb]]'s investigations on the motion of the Moon, while his other observations of the motions of the planets Jupiter and Saturn inspired [[Laplace]]'s ''Obliquity of the Ecliptic'' and ''Inequalities of Jupiter and Saturn''.&lt;ref&gt;[http://adsabs.harvard.edu/full/1895AJ.....15..113L Great Inequalities of Jupiter and Saturn]&lt;/ref&gt; In the 15th century, the [[Timurid dynasty|Timurid]] astronomer [[Ulugh Beg]] compiled the ''[[Zij-i-Sultani]]'', in which he catalogued 1,019 stars. Like the earlier catalogs of Hipparchus and Ptolemy, Ulugh Beg's catalogue is estimated to have been precise to within approximately 20 [[minutes of arc]].&lt;ref&gt;{{cite book |chapter=Astrometry |title=History of astronomy: an encyclopedia |first=John |last=Lankford |publisher=[[Taylor &amp; Francis]] |date=1997 |page=[https://archive.org/details/historyofastrono00john/page/49 49] |isbn=0-8153-0322-X |url-access=registration |url=https://archive.org/details/historyofastrono00john/page/49 }}&lt;/ref&gt;
+
+In the 16th century, [[Tycho Brahe]] used improved instruments, including large [[mural instrument]]s, to measure star positions more accurately than previously, with a precision of 15–35 [[Minute of arc#Symbols and abbreviations|arcsec]].&lt;ref&gt;{{cite book |title=Fundamentals of Astrometry |first1=Jean |last1=Kovalevsky |first2=P. Kenneth |last2=Seidelmann |publisher=[[Cambridge University Press]] |date=2004 |pages=2–3 |isbn=0-521-64216-7}}&lt;/ref&gt; [[Taqi al-Din Muhammad ibn Ma'ruf|Taqi al-Din]] measured the [[right ascension]] of the stars at the [[Constantinople Observatory of Taqi ad-Din]] using the &quot;observational clock&quot; he invented.&lt;ref name=Tekeli&gt;{{cite encyclopedia | first = Sevim | last = Tekeli | title = Taqi al-Din | date = 1997 | encyclopedia = Encyclopaedia of the History of Science, Technology, and Medicine in Non-Western Cultures | publisher = [[Kluwer Academic Publishers]] | isbn = 0-7923-4066-3 | url = https://www.springer.com/philosophy/philosophy+of+sciences/book/978-1-4020-4425-0 }}&lt;/ref&gt; When [[telescope]]s became commonplace, [[setting circles]] sped measurements
+
+[[James Bradley]] first tried to measure [[stellar parallax]]es in 1729. The stellar movement proved too insignificant for his [[telescope]], but he instead discovered the [[aberration of light]] and the [[astronomical nutation|nutation]] of the Earth's axis. His cataloguing of 3222 stars was refined in 1807 by [[Friedrich Bessel]], the father of modern astrometry. He made the first measurement of stellar parallax: 0.3 [[Minute of arc#Symbols and abbreviations|arcsec]] for the [[binary star]] [[61 Cygni]].
+
+Being very difficult to measure, only about 60 stellar parallaxes had been obtained by the end of the 19th century, mostly by use of the [[filar micrometer]]. [[Astrograph]]s using astronomical [[photographic plate]]s sped the process in the early 20th century.  Automated plate-measuring machines&lt;ref&gt;[http://cdsweb.cern.ch/record/1107461 CERN paper on plate measuring machine] USNO StarScan&lt;/ref&gt; and more sophisticated computer technology of the 1960s allowed more efficient compilation of [[star catalogue]]s. In the 1980s, [[charge-coupled device]]s (CCDs) replaced photographic plates and reduced optical uncertainties to one milliarcsecond. This technology made astrometry less expensive, opening the field to an amateur audience.{{citation needed|date=July 2018}}
+
+In 1989, the [[European Space Agency]]'s [[Hipparcos]] satellite took astrometry into orbit, where it could be less affected by mechanical forces of the Earth and optical distortions from its atmosphere. Operated from 1989 to 1993, Hipparcos measured large and small angles on the sky with much greater precision than any previous optical telescopes. During its 4-year run, the positions, parallaxes, and [[proper motions]] of 118,218 stars were determined with an unprecedented degree of accuracy. A new &quot;[[Hipparcos Catalogue|Tycho catalog]]&quot; drew together a database of 1,058,332 to within 20-30 [[Minute of arc#Symbols and abbreviations|mas]] (milliarcseconds). Additional catalogues were compiled for the 23,882 double/multiple stars and 11,597 [[variable star]]s also analyzed during the Hipparcos mission.&lt;ref&gt;{{cite web
+ | author=Staff | date=1 June 2007
+ | url=http://www.rssd.esa.int/index.php?project=HIPPARCOS
+ | title=The Hipparcos Space Astrometry Mission
+ | publisher=[[European Space Agency]]
+ | accessdate=2007-12-06 }}&lt;/ref&gt;
+
+Today, the catalogue most often used is [[Star catalogue#USNO-B1.0|USNO-B1.0]], an all-sky catalogue that tracks proper motions, positions, magnitudes and other characteristics for over one billion stellar objects. During the past 50 years, 7,435 [[Schmidt camera]] plates were used to complete several sky surveys that make the data in USNO-B1.0 accurate to within 0.2 arcsec.&lt;ref&gt;Kovalevsky, Jean (1995).&lt;/ref&gt;
+
+==Applications==
+[[Image:orbit3.gif|thumb|right|200px|Diagram showing how a smaller object (such as an [[extrasolar planet]]) orbiting a larger object (such as a [[star]]) could produce changes in position and velocity of the latter as they orbit their common [[center of mass]] (red cross).]]
+[[Image:Solar system barycenter.svg|thumb|right|200px|Motion of [[Barycentric coordinates (astronomy)|barycenter]] of solar system relative to the Sun.]]
+Apart from the fundamental function of providing [[astronomer]]s with a [[Frame of reference|reference frame]] to report their observations in, astrometry is also fundamental for fields like [[celestial mechanics]], [[stellar dynamics]] and [[galactic astronomy]]. In [[observational astronomy]], astrometric techniques help identify stellar objects by their unique motions. It is instrumental for keeping time, in that [[Coordinated Universal Time|UTC]] is essentially the [[International Atomic Time|atomic time]] synchronized to [[Earth]]'s rotation by means of exact astronomical observations. Astrometry is an important step in the [[cosmic distance ladder]] because it establishes [[parallax]] distance estimates for stars in the [[Milky Way]].
+
+Astrometry has also been used to support claims of [[Methods of detecting extrasolar planets#Astrometry|extrasolar planet detection]] by measuring the displacement the proposed planets cause in their parent star's apparent position on the sky, due to their mutual orbit around the center of mass of the system. Astrometry is more accurate in space missions that are not affected by the distorting effects of the Earth's atmosphere.&lt;ref&gt;Nature  462, 705 (2009) 8 December 2009 {{doi|10.1038/462705a}}&lt;/ref&gt; NASA's planned [[Space Interferometry Mission]] ([[SIM PlanetQuest]]) (now cancelled) was to utilize astrometric techniques to detect [[terrestrial planet]]s orbiting 200 or so of the nearest [[Solar analog|solar-type stars]]. The European Space Agency's [[Gaia Mission]], launched in 2013, applies astrometric techniques in its stellar census. In addition to the detection of exoplanets,&lt;ref&gt;[http://www.esa.int/esaSC/120377_index_0_m.html ESA - Space Science - Gaia overview]&lt;/ref&gt; it can also be used to determine their mass.&lt;ref&gt;{{cite news|url=https://www.esa.int/Our_Activities/Space_Science/Gaia/Infant_exoplanet_weighed_by_Hipparcos_and_Gaia |title=Infant exoplanet weighed by Hipparcos and Gaia|date=20 August 2018|accessdate=21 August 2018}}&lt;/ref&gt;
+
+Astrometric measurements are used by [[astrophysicist]]s to constrain certain models in [[celestial mechanics]]. By measuring the velocities of [[pulsar]]s, it is possible to put a limit on the [[asymmetry]] of [[supernova]] explosions. Also, astrometric results are used to determine the distribution of [[dark matter]] in the galaxy.
+
+Astronomers use astrometric techniques for the tracking of [[near-Earth objects]]. Astrometry is responsible for the detection of many record-breaking Solar System objects. To find such objects astrometrically, astronomers use telescopes to survey the sky and large-area cameras to take pictures at various determined intervals. By studying these images, they can detect Solar System objects by their movements relative to the background stars, which remain fixed. Once a movement per unit time is observed, astronomers compensate for the parallax caused by Earth's motion during this time and the heliocentric distance to this object is calculated. Using this distance and other photographs, more information about the object, including its [[orbital elements]], can be obtained.&lt;ref&gt;{{cite web
+ | first=Chadwick | last=Trujillo | author2=Rabinowitz, David
+ | date=1 June 2007
+ | url=http://www.gps.caltech.edu/%7Embrown/papers/ps/sedna.pdf
+ | format=PDF
+ | title=Discovery of a candidate inner Oort cloud planetoid
+ | publisher=European Space Agency
+ | accessdate=2007-12-06 | archiveurl= https://web.archive.org/web/20071026202421/http://www.gps.caltech.edu/~mbrown/papers/ps/sedna.pdf| archivedate= 26 October 2007 &lt;!--DASHBot--&gt;|url-status = live}}&lt;/ref&gt;
+
+[[50000 Quaoar]] and [[90377 Sedna]] are two Solar System objects discovered in this way by [[Michael E. Brown]] and others at Caltech using the [[Palomar Observatory]]'s [[Samuel Oschin telescope]] of {{convert|48|in|m}} and the Palomar-Quest large-area CCD camera. The ability of astronomers to track the positions and movements of such celestial bodies is crucial to the understanding of the Solar System and its interrelated past, present, and future with others in the Universe.&lt;ref&gt;{{cite web
+ | first=Robert Roy | last=Britt
+ | date=7 October 2002
+ | url=http://www.space.com/scienceastronomy/quaoar_discovery_021007.html
+ | title=Discovery: Largest Solar System Object Since Pluto
+ | publisher=[[SPACE.com]] | accessdate=2007-12-06
+}}&lt;/ref&gt;&lt;ref&gt;{{cite web
+ | first=Whitney | last=Clavin
+ | date=15 May 2004
+ | url=http://www.nasa.gov/vision/universe/solarsystem/planet_like_body.html
+ | title=Planet-Like Body Discovered at Fringes of Our Solar System
+ | publisher=[[NASA]] | accessdate=2007-12-06 | archiveurl= https://web.archive.org/web/20071130032242/http://www.nasa.gov/vision/universe/solarsystem/planet_like_body.html| archivedate= 30 November 2007 &lt;!--DASHBot--&gt;|url-status = live}}&lt;/ref&gt;
+
+== Statistics ==
+
+A fundamental aspect of astrometry is error correction. Various factors introduce errors into the measurement of stellar positions, including atmospheric conditions, imperfections in the instruments and errors by the observer or the measuring instruments. Many of these errors can be reduced by various techniques, such as through instrument improvements and compensations to the data. The results are then [[Error analysis (mathematics)|analyzed]] using [[statistics|statistical methods]] to compute data estimates and error ranges.{{citation needed|date=December 2018}}
+
+== Computer programs ==
+* [http://www.xparallax.com/ XParallax viu (Free application for Windows)]
+* [http://www.astrometrica.at/ Astrometrica (Application for Windows)]
+* [https://web.archive.org/web/20101015122353/http://www.astrometry.net/ Astrometry.net (Online blind astrometry)]
+
+== In fiction ==
+
+* In ''[[Star Trek: Voyager]]'', the '''Astrometrics''' lab is the [[set (drama)|set]] for various [[scene (fiction)|scene]]s. So the crew may find planets to gain resources from.
+* In [[Battlestar Galactica (2004 TV series)]] an Astrometrics lab is stated in dialogue multiple times.
+
+== See also ==
+{{cmn|colwidth=30em|
+* [[Astrometric binary]]
+* [[Barycentric celestial reference system]]
+* [[Ephemeris]]
+* [[Equatorium]]
+* [[Geodetic astronomy]]
+* [[Gaia (spacecraft)]] &amp;mdash; launched December 2013
+* [[Hipparcos|Hipparcos Space Astrometry Mission]] (ESA—1989-93)
+* [[IERS]]
+* [[List of astrometric solvers]]
+* [[Methods of detecting extrasolar planets#Astrometry|Methods of detecting extrasolar planets - Astrometry]]
+* [[Spherical astronomy]]
+* [[Star cartography]]
+* [[Star catalogue]]
+* [[United States Naval Observatory]]
+* [[United States Naval Observatory Flagstaff Station]]
+}}
+
+==References==
+{{Reflist|30em}}
+
+===Further reading===
+* {{cite book
+ | first=Jean | last=Kovalevsky
+ |author2=Seidelman, P. Kenneth | date=2004
+ | title=Fundamentals of Astrometry
+ | publisher=Cambridge University Press
+ | isbn=0-521-64216-7 }}
+* {{cite book
+ | first=Hans G. | last=Walter
+ | date=2000
+ | title=Astrometry of fundamental catalogues: the evolution from optical to radio reference frames
+ | publisher=Springer
+ | location=New York
+ | isbn=3-540-67436-5 }}
+* {{cite book
+ | first=Jean | last=Kovalevsky
+ | date=1995
+ | title=Modern Astrometry
+ | url=https://archive.org/details/modernastrometry0000kova | url-access=registration | publisher=Springer
+ | location=Berlin; New York
+ | isbn=3-540-42380-X }}
+
+==External links==
+{{Commons category}}
+*[http://www.minorplanetcenter.net/iau/info/Astrometry.html MPC Guide to Minor Body Astrometry]
+*[http://ad.usno.navy.mil/ Astrometry Department of the U.S. Naval Observatory]
+**[http://www.usno.navy.mil/USNO/astrometry/optical-IR-prod USNO Astrometric Catalog and related Products]
+*{{cite web
+ |url         = http://www.astro.virginia.edu/~rjp0i/museum/engines.html
+ |title       = Hall of Precision Astrometry
+ |publisher   = University of Virginia Department of Astronomy
+ |accessdate  = 2006-08-10
+ |archiveurl  = https://web.archive.org/web/20060826104509/http://www.astro.virginia.edu/~rjp0i/museum/engines.html
+ |archivedate = 2006-08-26
+ |url-status = dead
+ |df          = 
+}}
+*[http://www.nasa.gov/vision/universe/solarsystem/planet_like_body.html Planet-Like Body Discovered at Fringes of Our Solar System] (2004-03-15)
+&lt;!-- DEAD LINK: * http://www.space.com/scienceastronomy/quaoar_discovery_021007.html --&gt;
+*[http://www.gps.caltech.edu/~mbrown Mike Brown's Caltech Home Page]
+*[http://www.gps.caltech.edu/%7Embrown/papers/ps/sedna.pdf Scientific Paper describing Sedna's discovery]
+*[http://www.rssd.esa.int/index.php?project=HIPPARCOS The Hipparcos Space Astrometry Mission] &amp;mdash; on ESA
+
+{{Astronomy subfields|state=uncollapsed}}
+{{Astronomy navbox}}
+{{Exoplanet}}
+{{Authority control}}
+
+[[Category:Astrometry| ]]
+[[Category:Astronomical sub-disciplines]]
+[[Category:Astrological aspects]]
+[[Category:Measurement]]</text>
+      <sha1>n9kl1l73s2f1wnxfkpdg5hn54n7enki</sha1>
+    </revision>
+  </page>

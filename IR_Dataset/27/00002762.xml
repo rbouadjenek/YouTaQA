@@ -1,0 +1,85 @@
+  <page>
+    <title>Allenes</title>
+    <ns>0</ns>
+    <id>2762</id>
+    <revision>
+      <id>938566314</id>
+      <parentid>938565965</parentid>
+      <timestamp>2020-02-01T00:08:30Z</timestamp>
+      <contributor>
+        <username>Smokefoot</username>
+        <id>698909</id>
+      </contributor>
+      <comment>allenes</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{for|the given name|Allene (given name)}}
+{{For|the organic compound with the common name allene|propadiene}}
+[[File:Allene.png|right|thumb|[[Propadiene]], the simplest allene, is also known as allene]]
+'''Allenes''' are [[organic compound]] in which one [[carbon]] atom has [[double bond]]s with each of its two adjacent carbon centres.&lt;ref&gt;{{GoldBookRef|title=allenes|file=A00238}}&lt;/ref&gt;  Allenes are classified as [[polyene]]s with [[diene#Classes|cumulated dienes]]. The parent compound of this class is [[propadiene]], which is itself also called ''allene''. Compounds with an allene-type structure but with more than three carbon atoms are members of a larger class of compounds called [[cumulene]]s with X=C=Y bonding. Allenes are much more reactive than most other [[alkene]]s. For example, their reactivity with gaseous [[chlorine]] is more like the reactivity of [[alkyne]]s than that of alkenes.
+
+==Structure and bonding==
+===Geometry===
+[[File:Allene3D.png|thumb|right|3D view of propadiene (allene)]]
+The central carbon atom of allenes forms two [[sigma bond]]s and two [[pi bond]]s. The central carbon is [[orbital hybridization#sp hybrids|sp-hybridized]], and the two terminal carbon atoms are [[orbital hybridization#sp2 hybrids|sp&lt;sup&gt;2&lt;/sup&gt;-hybridized]]. The bond angle formed by the three carbon atoms is 180°, indicating linear geometry for the central carbon atom. The two terminal carbon atoms are planar, and these planes are twisted 90° from each other. The structure can also be viewed as an &quot;extended tetrahedral&quot; with a similar shape to [[methane]], an analogy that is continued into the stereochemical analysis of certain derivative molecules.
+
+===Symmetry===
+[[File:Allene symmetry.png|none|300px]]
+The symmetry and isomerism of allenes has long fascinated organic chemists.&lt;ref&gt;{{March6th}}&lt;/ref&gt; For allenes with four identical substituents, there exist two twofold axes of rotation through the center carbon, inclined at 45° to the CH&lt;sub&gt;2&lt;/sub&gt; planes at either end of the molecule. The molecule can thus be thought of as a two-bladed [[propeller]]. A third twofold axis of rotation passes through the C=C=C bonds, and there is a mirror plane passing through both CH&lt;sub&gt;2&lt;/sub&gt; planes. Thus this class of molecules belong to the D&lt;sub&gt;2d&lt;/sub&gt; [[point group]]. Because of the symmetry, an unsubstituted allene has no net [[bond dipole moment|dipole moment]].
+{{Clear}}
+{{Multiple image
+| align     = left
+| image1    = Allene chirality.png
+| width1    = 300
+| image2    = Allenes_chirality_depiction.png
+| width2    = 300
+| footer    = ''R'' and ''S'' configurations are determined by precedences of the groups attached to the axial section of the molecule when viewed along that axis. The front plane is given higher priority over the other and the final assignment is given from priority 2 to 3 (i.e. the relationship between the two planes).
+}}
+{{Clear}}
+
+An allene with two different substituents on each of the two carbon atoms will be [[chirality (chemistry)|chiral]] because there will no longer be any mirror planes. The chirality of these types of allenes was first predicted in 1875 by [[van 't Hof]], but not proven experimentally until 1935.&lt;ref&gt;{{cite journal |title= Experimental Demonstration of the Allene Asymmetry |first1= Peter |last1= Maitland |first2= W. H. |last2= Mills |journal= Nature |volume= 135 |pages= 994 |year= 1935 |doi= 10.1038/135994a0 }}&lt;/ref&gt; Where '''A''' has a greater priority than '''B''' according to the [[Cahn–Ingold–Prelog priority rules]], the configuration of the [[axial chirality]] can be determined by considering the substituents on the front atom followed by the back atom when viewed along the allene axis. For the back atom, only the group of higher priority need be considered.
+
+Chiral allenes have been recently used as building blocks in the construction of organic materials with exceptional chiroptical properties.&lt;ref&gt;{{cite journal|title=Allenes in Molecular Materials|last1=Rivera Fuentes|first1=Pablo|last2=Diederich|first2=François|journal=Angew. Chem. Int. Ed. Engl.|date=2012|volume=51|issue=12|pages=2818–2828|doi=10.1002/anie.201108001|pmid=22308109}}&lt;/ref&gt;
+{{Clear}}
+
+==Synthesis==
+Although allenes often require specialized syntheses, the parent, propadiene is produced on a large scale as an equilibrium mixture with [[methylacetylene]]:
+:H&lt;sub&gt;2&lt;/sub&gt;C=C=CH&lt;sub&gt;2&lt;/sub&gt; {{eqm}} CH&lt;sub&gt;3&lt;/sub&gt;C≡CH
+This mixture, known as [[MAPP gas]], is commercially available.
+
+Laboratory methods for the formation of allenes include:
+*from geminal dihalocyclopropanes and organolithium compounds (or metallic sodium or magnesium) in the [[Skattebøl rearrangement]] ([[Doering–LaFlamme allene synthesis]]) via rearrangement of cyclopropylidene carbenes/carbenoids
+*from reaction of certain terminal [[alkyne]]s with [[formaldehyde]], [[copper(I) bromide]], and added base ([[Crabbé–Ma allene synthesis]])&lt;ref&gt;{{OrgSynth|title=One-Step Homologation of Acetylenes to Allenes: 4-Hydroxynona-1,2-diene [1,2-Nonadien-4-ol]|last1=Crabbé|first1=Pierre|last2=Nassim|first2=Bahman|last3=Robert-Lopes|first3=Maria-Teresa|collvol=7|collvolpages=276|volume=63|page=203|date=1985|prep=CV7P0276|doi=10.15227/orgsyn.063.0203}}&lt;/ref&gt; &lt;ref&gt;{{OrgSynth|title=Buta-2,3-dien-1-ol|first1=Hongwen|last1=Luo|first2=Dengke|last2=Ma|first3=Shengming|last3=Ma|year=2017|vol=94|page=153–166|prep=v94p0153|doi=10.15227/orgsyn.094.0153}}&lt;/ref&gt;
+*from [[dehydrohalogenation]] of certain [[halide|dihalides]]&lt;ref&gt;{{OrgSynth|title=Allene|last1=Cripps|first1=H. N.|last2=Kiefer|first2=E. F.|collvol=5|collvolpages=22|volume=42|page=12|date=1962|prep=CV5P0022|doi=10.15227/orgsyn.042.0012}}&lt;/ref&gt;
+*from reaction of a triphenylphosphinyl ester with an acid halide, a [[Wittig reaction]] accompanied by dehydrohalogenation&lt;ref&gt;{{cite journal|last1=Lang|first1=Robert W.|last2=Hansen|first2=Hans-Jürgen|title=Eine einfache Allencarbonsäureester-Synthese mittels der Wittig-Reaktion|trans-title=A simple synthesis of allene carboxylic acid esters by means of the Wittig reaction|journal=[[Helv. Chim. Acta]]|volume=63|issue=2|pages=438–455|date=1980|doi=10.1002/hlca.19800630215}}&lt;/ref&gt;&lt;ref&gt;{{OrgSynth|title=α-Allenic Esters from α-Phosphoranylidene Esters and Acid Chlorides: Ethyl 2,3-Pentadienoate [2,3-Pentadienoic acid, ethyl ester]|last1=Lang|first1=Robert W.|last2=Hansen|first2=Hans-Jürgen|collvol=7|collvolpages=232|volume=62|page=202|date=1984|prep=CV7P0232|doi=10.15227/orgsyn.062.0202}}&lt;/ref&gt;
+*from propargylic alcohols via the [[Myers allene synthesis]] protocol—a [[stereospecific]] process
+
+==Occurrence==
+[[Image:Fucoxanthin.svg|thumb|422 px|[[Fucoxanthin]], the most abundant of all carotinoids, is the light-absorbing [[pigment]] in the [[chloroplast]]s of [[brown algae]], giving them a brown or olive-green color.]]
+Numerous natural products contain the allene functional group.  Noteworthy are the pigments [[fucoxanthin]] and [[peridinin]].  Little is known about the biosynthesis, although it is conjectured that they are often generated from alkyne precursors.&lt;ref&gt;{{cite book |title= Modern Allene Chemistry |chapter= 18. Allenic Natural Products and Pharmaceuticals |first1= Norbert |last1= Krause |first2= Anja |last2= Hoffmann‐Röder |editor1-first= Norbert |editor1-last= Krause |editor2-first= A. Stephen K. |editor2-last= Hashmi |year= 2004|doi= 10.1002/9783527619573.ch18 }}&lt;/ref&gt;
+
+Allenes serve as ligands in [[organometallic chemistry]]. A typical complex is Pt([[hapticity|η&lt;sup&gt;2&lt;/sup&gt;]]-allene)(PPh&lt;sub&gt;3&lt;/sub&gt;)&lt;sub&gt;2&lt;/sub&gt;. Ni(0) reagents catalyze the cyclooligomerization of allene.&lt;ref&gt;Otsuka, Sei; Nakamura, Akira &quot;Acetylene and allene complexes: their implication in homogeneous catalysis&quot; Advances in Organometallic Chemistry 1976, volume 14, pp. 245-83. {{doi|10.1016/S0065-3055(08)60654-1}}.&lt;/ref&gt; Using a suitable catalyst (e.g. [[Wilkinson's catalyst]]), it is possible to reduce just one of the double bonds of an allene.&lt;ref&gt;{{cite journal |last1 = Bhagwat|first1=M. M.|last2= Devaprabhakara|first2=D. |journal = [[Tetrahedron Letters]] |pages = 1391–1392 |year = 1972 |doi = 10.1016/S0040-4039(01)84636-0 |title = Selective hydrogenation of allenes with chlorotris-(triphenylphosphine) rhodium catalyst |volume = 13 |issue = 15}}&lt;/ref&gt;
+
+==Delta convention==
+Many rings or ring systems are known by semisystematic names that assume a maximum number of noncumulative bonds. To unambiguously specify derivatives that include cumulated bonds (and hence fewer hydrogens than would be expected from the skeleton), a lowercase delta may be used with a subscript indicating the number of cumulated double bonds from that atom, e.g. 8δ&lt;sup&gt;2&lt;/sup&gt;-Benzocyclononene. This may be combined with the λ-convention for specifying nonstandard valency states, e.g. 2λ&lt;sup&gt;4&lt;/sup&gt;δ&lt;sup&gt;2&lt;/sup&gt;,5λ&lt;sup&gt;4&lt;/sup&gt;δ&lt;sup&gt;2&lt;/sup&gt;-Thieno[3,4-c]thiophene.&lt;ref&gt;{{cite journal|url=http://www.chem.qmul.ac.uk/iupac/hetero/De.html|title=Nomenclature for cyclic organic compounds with contiguous formal double bonds (the δ-convention)|journal=Pure Appl. Chem.|volume=60|page=1395-1401|year=1988|doi=10.1351/pac198860091395}}&lt;/ref&gt;
+
+==See also==
+*Compounds with three or more adjacent carbon–carbon double bonds are called [[cumulene]]s.
+
+==References==
+{{Reflist}}
+
+==Further reading==
+* Brummond, Kay M. (editor). ''[http://www.beilstein-journals.org/bjoc/browse/singleSeries.htm?sn=14 Allene chemistry]'' (special thematic issue). ''[[Beilstein Journal of Organic Chemistry]]'' '''7''': 394–943.
+
+==External links==
+*[https://www.organic-chemistry.org/synthesis/C1C/chains/allenes.shtm Synthesis of allenes]
+
+{{Functional group|state=expanded}}
+{{Authority control}}
+
+[[Category:Cumulenes|*]]
+[[Category:Jacobus Henricus van 't Hoff]]</text>
+      <sha1>q6xyd8u4c1eci3x53ky4i1nu7prj42v</sha1>
+    </revision>
+  </page>

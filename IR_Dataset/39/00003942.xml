@@ -1,0 +1,165 @@
+  <page>
+    <title>Bijection</title>
+    <ns>0</ns>
+    <id>3942</id>
+    <revision>
+      <id>934288202</id>
+      <parentid>929637505</parentid>
+      <timestamp>2020-01-05T19:05:47Z</timestamp>
+      <contributor>
+        <username>Abrahammurciano</username>
+        <id>30763594</id>
+      </contributor>
+      <minor />
+      <comment>An invertible function is also a way to refer to a bijection</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{Functions}}
+[[Image:Bijection.svg|thumb|200px|A bijective function, ''f'': ''X'' → ''Y'', where set X is {1, 2, 3, 4} and set Y is {A, B, C, D}. For example, ''f''(1) = D.]]
+In [[mathematics]], a '''bijection''', '''bijective function''', '''one-to-one correspondence''', or '''invertible function''', is a [[function (mathematics)|function]] between the elements of two [[set (mathematics)|sets]], where each element of one set is paired with exactly one element of the other set, and each element of the other set is paired with exactly one element of the first set. There are no unpaired elements. In mathematical terms, a bijective function {{nowrap|''f'': ''X'' → ''Y''}} is a [[injective function|one-to-one (injective)]] and [[surjective function|onto (surjective)]] mapping of a set ''X'' to a set ''Y''.&lt;ref name=&quot;:0&quot;&gt;{{Cite web|url=https://mathvault.ca/math-glossary/#otoc|title=The Definitive Glossary of Higher Mathematical Jargon  — One-to-One Correspondence|last=|first=|date=2019-08-01|website=Math Vault|language=en-US|url-status=live|archive-url=|archive-date=|access-date=2019-12-07}}&lt;/ref&gt;&lt;ref&gt;{{Cite web|url=https://www.mathsisfun.com/sets/injective-surjective-bijective.html|title=Injective, Surjective and Bijective|website=www.mathsisfun.com|access-date=2019-12-07}}&lt;/ref&gt; The term ''one-to-one correspondence'' must not be confused with ''one-to-one function'' (a.k.a.  [[injective function]]) (see figures).
+{{Gallery
+|lines=4
+|align=center
+|Image:Injection.svg|An injective non-[[surjective function]] (injection, not a [[bijection]])
+|Image:Bijection.svg|An injective surjective function ([[bijection]])
+|Image:Surjection.svg|A non-injective surjective function ([[surjection]], not a [[bijection]])
+|Image:Not-Injection-Surjection.svg|A non-injective non-surjective function (also not a [[bijection]])
+}}
+
+A bijection from the set ''X'' to the set ''Y'' has an [[inverse function]] from ''Y'' to ''X''.  If ''X'' and ''Y'' are [[finite set]]s, then the existence of a bijection means they have the same number of elements. For [[infinite set]]s, the picture is more complicated, leading to the concept of [[cardinal number]]—a way to distinguish the various sizes of infinite sets.
+
+A bijective function from a set to itself is also called a ''[[permutation]]'', and the set of all permutations of a set forms a [[symmetry group]]. 
+
+Bijective functions are essential to many areas of mathematics including the definitions of [[isomorphism]], [[homeomorphism]], [[diffeomorphism]], [[permutation group]], and [[projective map]].
+
+==Definition==
+{{details|topic=notation|Function (mathematics)#Notation}}
+For a pairing between ''X'' and ''Y'' (where ''Y'' need not be different from ''X'') to be a bijection, four properties must hold:
+# each element of ''X'' must be paired with at least one element of ''Y'',
+# no element of ''X'' may be paired with more than one element of ''Y'',
+# each element of ''Y'' must be paired with at least one element of ''X'', and
+# no element of ''Y'' may be paired with more than one element of ''X''.
+
+Satisfying properties (1) and (2) means that a pairing is a [[Function (mathematics)|function]] with [[Domain of a function|domain]] ''X''. It is more common to see properties (1) and (2) written as a single statement: Every element of ''X'' is paired with exactly one element of ''Y''. Functions which satisfy property (3) are said to be &quot;[[onto]] ''Y'' &quot; and are called [[Surjective function|surjections]] (or '''surjective functions'''). Functions which satisfy property (4) are said to be &quot;[[one-to-one function]]s&quot; and are called [[Injective function|injections]] (or '''injective functions''').&lt;ref&gt;There are names associated to properties (1) and (2) as well. A relation which satisfies property (1) is called a ''total relation'' and a relation satisfying (2) is a ''single valued relation''.&lt;/ref&gt; With this terminology, a bijection is a function which is both a surjection and an injection, or using other words, a bijection is a function which is both &quot;one-to-one&quot; and &quot;onto&quot;.&lt;ref name=&quot;:0&quot; /&gt;&lt;ref&gt;{{Cite web|url=https://brilliant.org/wiki/bijection-injection-and-surjection/|title=Bijection, Injection, And Surjection {{!}} Brilliant Math &amp; Science Wiki|website=brilliant.org|language=en-us|access-date=2019-12-07}}&lt;/ref&gt;
+
+Bijections are sometimes denoted by a two-headed rightwards arrow with tail ({{unichar|2916|RIGHTWARDS TWO-HEADED ARROW WITH TAIL|ulink=Unicode}}), as in ''f'' : ''X'' ⤖ ''Y''. This symbol is a combination of the two-headed rightwards arrow ({{unichar|21A0|RIGHTWARDS TWO HEADED ARROW|ulink=Unicode}}), sometimes used to denote surjections, and the rightwards arrow with a barbed tail ({{unichar|21A3|RIGHTWARDS ARROW WITH TAIL|ulink=Unicode}}), sometimes used to denote injections.
+
+==Examples==
+
+=== Batting line-up of a baseball or cricket team===
+Consider the [[Batting order (baseball)|batting line-up]] of a [[baseball]] or [[cricket]] team (or any list of all the players of any sports team where every player holds a specific spot in a line-up). The set ''X'' will be the players on the team (of size nine in the case of baseball) and the set ''Y'' will be the positions in the batting order (1st, 2nd, 3rd, etc.) The &quot;pairing&quot; is given by which player is in what position in this order. Property (1) is satisfied since each player is somewhere in the list. Property (2) is satisfied since no player bats in two (or more) positions in the order. Property (3) says that for each position in the order, there is some player batting in that position and property (4) states that two or more players are never batting in the same position in the list.
+
+=== Seats and students of a classroom===
+In a classroom there are a certain number of seats. A bunch of students enter the room and the instructor asks them to be seated. After a quick look around the room, the instructor declares that there is a bijection between the set of students and the set of seats, where each student is paired with the seat they are sitting in. What the instructor observed in order to reach this conclusion was that:
+# Every student was in a seat (there was no one standing),
+# No student was in more than one seat,
+# Every seat had someone sitting there (there were no empty seats), and
+# No seat had more than one student in it. 
+The instructor was able to conclude that there were just as many seats as there were students, without having to count either set.
+
+==More mathematical examples and some non-examples==
+* For any set ''X'', the [[identity function]] '''1'''&lt;sub&gt;''X''&lt;/sub&gt;: ''X'' → ''X'', '''1'''&lt;sub&gt;''X''&lt;/sub&gt;(''x'') = ''x'' is bijective.
+* The function ''f'': '''R''' → '''R''', ''f''(''x'') = 2''x'' + 1 is bijective, since for each ''y'' there is a unique ''x'' = (''y'' − 1)/2 such that ''f''(''x'') = ''y''. More generally, any [[linear function]] over the reals, ''f'': '''R''' → '''R''', ''f''(''x'') = ''ax'' + ''b'' (where ''a'' is non-zero) is a bijection. Each real number ''y'' is obtained from (or paired with) the real number ''x'' = (''y'' − ''b'')/''a''.
+* The function ''f'': ''R'' → (−π/2, π/2), given by ''f''(''x'') = arctan(''x'') is bijective, since each real number ''x'' is paired with exactly one angle ''y'' in the interval (−π/2,&amp;nbsp;π/2) so that tan(''y'') = ''x'' (that is, ''y'' = arctan(''x'')). If the [[codomain]]  (−π/2,&amp;nbsp;π/2) was made larger to include an integer multiple of π/2, then this function would no longer be onto (surjective), since there is no real number which could be paired with the multiple of π/2 by this arctan function.
+* The [[exponential function]], ''g'': '''R''' → '''R''', ''g''(''x'') = e&lt;sup&gt;''x''&lt;/sup&gt;, is not bijective: for instance, there is no ''x'' in '''R''' such that ''g''(''x'') = −1, showing that ''g'' is not onto (surjective). However, if the codomain is restricted to the positive real numbers &lt;math&gt;\scriptstyle \R^+ \;\equiv\; \left(0,\, +\infty\right)&lt;/math&gt;, then ''g'' would be bijective; its inverse (see below) is the [[natural logarithm]] function ln.
+* The function ''h'': '''R''' → '''R'''&lt;sup&gt;+&lt;/sup&gt;, ''h''(''x'') = ''x''&lt;sup&gt;2&lt;/sup&gt; is not bijective: for instance, ''h''(−1) = ''h''(1) = 1, showing that ''h'' is not one-to-one (injective). However, if the [[domain of a function|domain]] is restricted to &lt;math&gt;\scriptstyle\R^+_0 \;\equiv\; \left[0,\, +\infty\right)&lt;/math&gt;, then ''h'' would be bijective; its inverse is the positive square root function.
+
+==Inverses==
+A bijection ''f'' with domain ''X'' (indicated by ''f'': ''X → Y'' in [[Function (mathematics)#Notation|functional notation]]) also defines a [[converse relation]] starting in ''Y'' and going to ''X'' (by turning the arrows around). The process of &quot;turning the arrows around&quot; for an arbitrary function does not, ''in general'', yield a function, but properties (3) and (4) of a bijection say that this inverse relation is a function with domain ''Y''. Moreover, properties (1) and (2) then say that this inverse ''function'' is a surjection and an injection, that is, the [[inverse function]] exists and is also a bijection. Functions that have inverse functions are said to be [[Invertible function|invertible]]. A function is invertible if and only if it is a bijection.
+
+Stated in concise mathematical notation, a function ''f'': ''X → Y'' is bijective if and only if it satisfies the condition
+:for every ''y'' in ''Y'' there is a unique ''x'' in ''X'' with ''y'' = ''f''(''x'').
+
+Continuing with the baseball batting line-up example, the function that is being defined takes as input the name of one of the players and outputs the position of that player in the batting order. Since this function is a bijection, it has an inverse function which takes as input a position in the batting order and outputs the player who will be batting in that position.
+
+==Composition==
+The [[composition (mathematics)|composition]] &lt;math&gt;\scriptstyle g \,\circ\, f&lt;/math&gt; of two bijections ''f'': ''X → Y'' and ''g'': ''Y → Z'' is a bijection, whose inverse is given by &lt;math&gt;\scriptstyle g \,\circ\, f&lt;/math&gt; is &lt;math&gt;\scriptstyle (g \,\circ\, f)^{-1} \;=\; (f^{-1}) \,\circ\, (g^{-1})&lt;/math&gt;.
+
+[[Image:Bijective composition.svg|thumb|300px|A bijection composed of an injection (left) and a surjection (right).]]
+Conversely, if the composition &lt;math&gt;\scriptstyle g \, \circ\, f&lt;/math&gt; of two functions is bijective, it only follows that ''f'' is [[Injective function|injective]] and ''g'' is [[surjective function|surjective]].
+
+==Bijections and cardinality==
+If ''X'' and ''Y'' are [[finite set]]s, then there exists a bijection between the two sets ''X'' and ''Y'' [[iff|if and only if]] ''X'' and ''Y'' have the same number of elements. Indeed, in [[axiomatic set theory]], this is taken as the definition of &quot;same number of elements&quot; ([[equinumerosity]]), and generalising this definition to [[infinite set]]s leads to the concept of [[cardinal number]], a way to distinguish the various sizes of infinite sets.
+
+== Properties ==
+* A function ''f'': '''R''' → '''R''' is bijective if and only if its [[graph of a function|graph]] meets every horizontal and vertical line exactly once.
+* If ''X'' is a set, then the bijective functions from ''X'' to itself, together with the operation of functional composition (∘), form a [[group (algebra)|group]], the [[symmetric group]] of ''X'', which is denoted variously by S(''X''), ''S&lt;sub&gt;X&lt;/sub&gt;'', or ''X''! (''X'' [[factorial]]).
+* Bijections preserve [[cardinalities]] of sets: for a subset ''A'' of the domain with cardinality |''A''| and subset ''B'' of the codomain with cardinality |''B''|, one has the following equalities:
+*:|''f''(''A'')| = |''A''| and |''f''&lt;sup&gt;−1&lt;/sup&gt;(''B'')| = |''B''|.
+*If ''X'' and ''Y'' are [[finite set]]s with the same cardinality, and ''f'': ''X → Y'', then the following are equivalent:
+*# ''f'' is a bijection.
+*# ''f'' is a [[surjection]].
+*# ''f'' is an [[injection (mathematics)|injection]].
+*For a finite set ''S'', there is a bijection between the set of possible [[total ordering]]s of the elements and the set of bijections from ''S'' to ''S''.  That is to say, the number of [[permutation]]s of elements of ''S'' is the same as the number of total orderings of that set—namely, ''n''!.
+
+==Bijections and category theory==
+Bijections are precisely the [[isomorphism]]s in the [[category theory|category]] '''[[Category of sets|Set]]''' of [[Set (mathematics)|sets]] and set functions.  However, the bijections are not always the isomorphisms for more complex categories.  For example, in the category '''[[Category of groups|Grp]]''' of [[Group (mathematics)|groups]], the morphisms must be [[homomorphism]]s since they must preserve the group structure, so the isomorphisms are ''group isomorphisms'' which are bijective homomorphisms.
+
+==Generalization to partial functions==
+The notion of one-to-one correspondence generalizes to [[partial functions]], where they are called '''partial bijections''', although partial bijections are only required to be injective. The reason for this relaxation is that a (proper) partial function is already undefined for a portion of its domain; thus there is no compelling reason to constrain its inverse to be a [[total function]], i.e. defined everywhere on its domain. The set of all partial bijections on a given base set is called the [[symmetric inverse semigroup]].&lt;ref name=&quot;Hollings2014&quot;&gt;{{cite book|author=Christopher Hollings|title=Mathematics across the Iron Curtain: A History of the Algebraic Theory of Semigroups|url=https://books.google.com/books?id=O9wJBAAAQBAJ&amp;pg=PA251|date=16 July 2014|publisher=American Mathematical Society|isbn=978-1-4704-1493-1|page=251}}&lt;/ref&gt;
+
+Another way of defining the same notion is to say that a partial bijection from ''A'' to ''B'' is any relation 
+''R'' (which turns out to be a partial function) with the property that ''R'' is the [[Graph of a function|graph of]] a bijection ''f'':''A′''→''B′'', where ''A′'' is a [[subset]] of ''A'' and ''B′'' is a subset of ''B''.&lt;ref name=&quot;Borceux1994&quot;&gt;{{cite book|author=Francis Borceux|title=Handbook of Categorical Algebra: Volume 2, Categories and Structures|url=https://books.google.com/books?id=5i2v9q0m5XAC&amp;pg=PA289|year=1994|publisher=Cambridge University Press|isbn=978-0-521-44179-7|page=289}}&lt;/ref&gt;
+
+When the partial bijection is on the same set, it is sometimes called a '''one-to-one partial [[transformation (function)|transformation]]'''.&lt;ref name=&quot;Grillet1995&quot;&gt;{{cite book|author=Pierre A. Grillet|title=Semigroups: An Introduction to the Structure Theory|url=https://books.google.com/books?id=yM544W1N2UUC&amp;pg=PA228|year=1995|publisher=CRC Press|isbn=978-0-8247-9662-4|page=228}}&lt;/ref&gt; An example is the [[Möbius transformation]] simply defined on the complex plane, rather than its completion to the extended complex plane.&lt;ref name=&quot;Campbell2007&quot;&gt;{{cite book|editors=C.M. Campbell, M.R. Quick, E.F. Robertson, G.C. Smith|title=Groups St Andrews 2005 Volume 2|year=2007|publisher=Cambridge University Press|isbn=978-0-521-69470-4|page=367|chapter=Groups and semigroups: connections and contrasts |author=John Meakin}} [http://www.math.unl.edu/~jmeakin2/groups%20and%20semigroups.pdf preprint] citing {{Cite journal
+ | doi = 10.1006/jabr.1997.7242
+| title = The Möbius Inverse Monoid
+| journal = Journal of Algebra
+| volume = 200
+| issue = 2
+| pages = 428
+| year = 1998
+| last1 = Lawson | first1 = M. V. 
+}}&lt;/ref&gt;
+
+==Contrast with==
+{{expand list|date=March 2013}}
+* [[Multivalued function]]
+
+==See also==
+{{Portal|Mathematics}}
+* [[Bijection, injection and surjection]]
+* [[Bijective numeration]]
+* [[Bijective proof]]
+* [[Category theory]]
+* [[Ax–Grothendieck theorem]]
+
+==Notes==
+{{reflist}}
+
+==References==
+This topic is a basic concept in set theory and can be found in any text which includes an introduction to set theory. Almost all texts that deal with an introduction to writing proofs will include a section on set theory, so the topic may be found in any of these:
+
+* {{cite book|last=Wolf|title=Proof, Logic and Conjecture: A Mathematician's Toolbox|year=1998|publisher=Freeman}}
+* {{cite book|last=Sundstrom|title=Mathematical Reasoning: Writing and Proof|year=2003|publisher=Prentice-Hall}}
+* {{cite book|last1=Smith|last2=Eggen|last3=St.Andre|title=A Transition to Advanced Mathematics (6th Ed.)|year=2006|publisher=Thomson (Brooks/Cole)}}
+* {{cite book|last=Schumacher|title=Chapter Zero: Fundamental Notions of Abstract Mathematics|year=1996|publisher=Addison-Wesley}}
+* {{cite book|last=O'Leary|title=The Structure of Proof: With Logic and Set Theory|year=2003|publisher=Prentice-Hall}}
+* {{cite book|last=Morash|title=Bridge to Abstract Mathematics|publisher=Random House}}
+* {{cite book|last=Maddox|title=Mathematical Thinking and Writing|year=2002|publisher=Harcourt/ Academic Press}}
+* {{cite book|last=Lay|title=Analysis with an introduction to proof|year=2001|publisher=Prentice Hall}}
+* {{cite book|last1=Gilbert|last2=Vanstone|title=An Introduction to Mathematical Thinking|year=2005|publisher=Pearson Prentice-Hall}}
+* {{cite book|last1=Fletcher|last2=Patty|title=Foundations of Higher Mathematics|publisher=PWS-Kent}}
+* {{cite book|last1=Iglewicz|last2=Stoyle|title=An Introduction to Mathematical Reasoning|publisher=MacMillan}}
+* {{cite book|last=Devlin|first=Keith|title=Sets, Functions, and Logic: An Introduction to Abstract Mathematics|year=2004|publisher=Chapman &amp; Hall/ CRC Press}}
+* {{cite book|last1=D'Angelo|last2=West|title=Mathematical Thinking: Problem Solving and Proofs|year=2000|publisher=Prentice Hall}}
+* {{cite book|last=Cupillari|title=The Nuts and Bolts of Proofs|url=https://archive.org/details/nutsboltsofproof00anto|url-access=registration|publisher=Wadsworth}}
+* {{cite book|last=Bond|title=Introduction to Abstract Mathematics|publisher=Brooks/Cole}}
+* {{cite book|last1=Barnier|last2=Feldman|title=Introduction to Advanced Mathematics|year=2000|publisher=Prentice Hall}}
+* {{cite book|last=Ash|title=A Primer of Abstract Mathematics|publisher=MAA}}
+
+==External links==
+{{Commons category|Bijectivity}}
+* {{springer|title=Bijection|id=p/b016230}}
+* {{MathWorld|title=Bijection|urlname=Bijection}}
+* [http://jeff560.tripod.com/i.html Earliest Uses of Some of the Words of Mathematics: entry on Injection, Surjection and Bijection has the history of Injection and related terms.]
+
+{{Set theory}}
+
+[[Category:Functions and mappings]]
+[[Category:Basic concepts in set theory]]
+[[Category:Mathematical relations]]
+[[Category:Types of functions]]</text>
+      <sha1>b8ss12u3ax86eguapgk2cw96nplqbo0</sha1>
+    </revision>
+  </page>

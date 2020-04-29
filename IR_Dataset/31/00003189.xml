@@ -1,0 +1,63 @@
+  <page>
+    <title>Ascending chain condition</title>
+    <ns>0</ns>
+    <id>3189</id>
+    <revision>
+      <id>931388667</id>
+      <parentid>920979832</parentid>
+      <timestamp>2019-12-18T16:44:23Z</timestamp>
+      <contributor>
+        <username>Joel Brennan</username>
+        <id>33522736</id>
+      </contributor>
+      <minor />
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">In [[mathematics]], the '''ascending chain condition''' ('''ACC''') and '''descending chain condition''' ('''DCC''') are finiteness properties satisfied by some [[algebraic structure]]s, most importantly [[Ideal (ring theory)|ideal]]s in certain [[commutative ring]]s.&lt;ref&gt;Hazewinkel, Gubareni &amp; Kirichenko (2004), p.6, Prop. 1.1.4.&lt;/ref&gt;&lt;ref&gt;Fraleigh &amp; Katz (1967), p. 366, Lemma 7.1&lt;/ref&gt;&lt;ref&gt;Jacobson (2009), p. 142 and 147&lt;/ref&gt; These conditions played an important role in the development of the structure theory of commutative rings in the works of [[David Hilbert]], [[Emmy Noether]], and [[Emil Artin]].
+The conditions themselves can be stated in an abstract form, so that they make sense for any [[partially ordered set]]. This point of view is useful in abstract algebraic dimension theory due to Gabriel and Rentschler.
+
+== Definition ==
+A [[partially ordered set]] (poset) ''P'' is said to satisfy the '''ascending chain condition''' (ACC) if no (infinite) strictly ascending sequence 
+:&lt;math&gt;a_1 &lt; a_2 &lt; a_3 &lt; \cdots&lt;/math&gt;
+of elements of ''P'' exists.&lt;ref name=&quot;Hazewinkel&quot;&gt;{{cite book| last = Hazewinkel| first = Michiel| title = Encyclopaedia of Mathematics| publisher = Kluwer| isbn = 1-55608-010-7 | page = 580 }}&lt;/ref&gt; 
+Equivalently,&lt;ref group=note&gt;Proof: first, a strictly increasing sequence cannot stabilize, obviously. Conversely, suppose there is an ascending sequence that does not stabilize; then clearly it contains a strictly increasing (necessarily infinite) subsequence. Notice the proof does not use the full force of the axiom of choice.{{clarify|reason=But still relies on the [[axiom of dependent choice]]?|date=October 2019}}&lt;/ref&gt; given any weakly ascending sequence
+:&lt;math&gt;a_1 \leq a_2 \leq a_3 \leq \cdots,&lt;/math&gt;
+of elements of ''P'' there exists a positive [[integer]] ''n'' such that
+:&lt;math&gt;a_n = a_{n+1} = a_{n+2} = \cdots.&lt;/math&gt;
+Similarly, ''P'' is said to satisfy the '''descending chain condition''' (DCC) if there is no [[infinite descending chain]] of elements of ''P''.&lt;ref name=&quot;Hazewinkel&quot;/&gt; Equivalently, every weakly descending sequence
+:&lt;math&gt;a_1 \geq a_2 \geq a_3 \geq \cdots&lt;/math&gt;
+of elements of ''P'' eventually stabilizes.
+
+=== Comments ===
+* The descending chain condition on ''P'' is equivalent to ''P'' being [[well-founded]]: every nonempty subset of ''P'' has a minimal element (also called the '''minimal condition''' or '''minimum condition''').{{clarify|reason=According to the 4th item, and to the article 'Infinite descending chain', equivalence requires the axiom of choice.|date=May 2018}}
+* Similarly, the ascending chain condition is equivalent to ''P'' being converse well-founded: every nonempty subset of ''P'' has a maximal element (the '''maximal condition''' or '''maximum condition''').
+* Trivially every finite poset satisfies both ACC and DCC.
+* A [[total order|totally ordered set]] that satisfies the descending chain condition is a [[well-order|well-ordered set]] (assuming the [[axiom of dependent choice]]).
+
+== See also ==
+* [[Artinian (disambiguation)|Artinian]]
+* [[Ascending chain condition for principal ideals]]
+* [[Krull dimension]]
+* [[Maximal condition on congruences]]
+* [[Noetherian]]
+
+== Notes ==
+{{reflist|group=note}}
+&lt;references/&gt;
+
+== References ==
+* [[M. F. Atiyah|Atiyah, M. F.]], and I. G. MacDonald, ''[[Introduction to Commutative Algebra]]'', Perseus Books, 1969, {{isbn|0-201-00361-9}}
+* [[Michiel Hazewinkel]], Nadiya Gubareni, V. V. Kirichenko. ''Algebras, rings and modules''. [[Kluwer Academic Publishers]], 2004. {{isbn|1-4020-2690-0}}
+* John B. Fraleigh, Victor J. Katz. ''A first course in abstract algebra''. Addison-Wesley Publishing Company. 5 ed., 1967. {{isbn|0-201-53467-3}}
+* [[Nathan Jacobson]]. Basic Algebra I. Dover, 2009. {{isbn|978-0-486-47189-1}}
+
+== External links ==
+*https://math.stackexchange.com/questions/1746921/is-the-equivalence-of-the-ascending-chain-condition-and-the-maximum-condition-eq
+
+{{DEFAULTSORT:Ascending Chain Condition}}
+[[Category:Commutative algebra]]
+[[Category:Order theory]]
+[[Category:Wellfoundedness]]</text>
+      <sha1>1lmxkl2imate764ur2ar27t38cd1c82</sha1>
+    </revision>
+  </page>

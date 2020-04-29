@@ -1,0 +1,377 @@
+  <page>
+    <title>Aberration (astronomy)</title>
+    <ns>0</ns>
+    <id>2703</id>
+    <revision>
+      <id>940908899</id>
+      <parentid>938073272</parentid>
+      <timestamp>2020-02-15T11:27:11Z</timestamp>
+      <contributor>
+        <ip>51.7.23.58</ip>
+      </contributor>
+      <comment>paragraphs and less prescriptive writing</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{distinguish-redirect|Aberration of light|Optical aberration}}
+[[File:simple stellar aberration diagram.svg|thumb|The apparent position of a star viewed from the Earth depends on the Earth's velocity. The effect is typically much smaller than illustrated.]]
+
+In [[astronomy]], '''aberration''' (also referred to as '''astronomical aberration''', '''stellar aberration''', or '''velocity aberration''') is a phenomenon which produces an [[apparent place|apparent motion]] of [[celestial object]]s about their true positions, dependent on the velocity of the observer. It causes objects to appear to be displaced towards the direction of motion of the observer compared to when the observer is stationary. The change in angle is of the order of ''v/c'' where ''c'' is the [[speed of light]] and ''v'' the [[velocity]] of the observer. In the case of &quot;stellar&quot; or &quot;annual&quot; aberration, the apparent position of a star to an observer on Earth varies periodically over the course of a year as the Earth's velocity changes as it [[orbital revolution|revolves]] around the Sun, by a maximum angle of approximately 20&amp;nbsp;[[arcsecond]]s in [[right ascension]] or [[declination]].
+
+The term ''aberration'' has historically been used to refer to a number of related phenomena concerning the propagation of light in moving bodies.&lt;ref name=&quot;schaffner&quot;&gt;{{Citation
+|author=Schaffner, Kenneth F.
+|date=1972
+|title= Nineteenth-century aether theories
+|publisher=Pergamon Press
+|location= Oxford
+|pages=99–117 und 255–273
+|isbn=0-08-015674-6}}&lt;/ref&gt; 
+Aberration is distinct from [[stellar parallax|parallax]], which is a change in the apparent position of a relatively nearby object, as measured by a moving observer, relative to more distant objects that define a reference frame. The amount of parallax depends on the distance of the object from the observer, whereas aberration does not. Aberration is also related to [[light-time correction]] and [[relativistic beaming]], although it is often considered separately from these effects.
+
+Aberration is historically significant because of its role in the development of the theories of [[light]], [[electromagnetism]] and, ultimately, the theory of [[special relativity]]. It was first observed in the late 1600s by astronomers searching for stellar parallax in order to confirm the [[heliocentrism|heliocentric model]] of the Solar System.  However, it was not understood at the time to be a different phenomenon.&lt;ref name=Williams&gt;{{Cite journal|author=Williams, M. E. W.|title=Flamsteed's Alleged Measurement of Annual Parallax for the Pole Star|journal=Journal for the History of Astronomy|volume=10|issue=2|pages=102–116|doi=10.1177/002182867901000203|bibcode=1979JHA....10..102W}}&lt;/ref&gt;
+In 1727, [[James Bradley]] provided a [[Classical physics|classical]] explanation for it in terms of the finite speed of light relative to the motion of the Earth in its orbit around the Sun,&lt;ref name=&quot;Bradley&quot;&gt;
+{{cite journal
+|last=Bradley 
+|first=James 
+|title=A Letter from the Reverend Mr. James Bradley Savilian Professor of Astronomy at Oxford, and F.R.S. to Dr.Edmond Halley Astronom. Reg. &amp;c. Giving an Account of a New Discovered Motion of the Fix'd Stars.  
+|date=1727–1728 
+|doi = 10.1098/rstl.1727.0064
+|journal=Phil. Trans. R. Soc.
+|volume = 35
+|pages = 637–661}}&lt;/ref&gt;&lt;ref name=&quot;Hirshfeld&quot;&gt;
+{{cite book 
+|last=Hirschfeld 
+|first=Alan 
+|title=Parallax:The Race to Measure the Cosmos 
+|date=2001 
+|publisher=Henry Holt 
+|location=New York, New York 
+|isbn=0-8050-7133-4}}&lt;/ref&gt; 
+which he used to make one of the earliest measurements of the speed of light. However, Bradley's theory was incompatible with 19th century theories of light, and aberration became a major motivation for the [[aether drag hypothesis|aether drag theories]] of [[Augustin-Jean Fresnel|Augustin Fresnel]] (in 1818) and [[George Gabriel Stokes|G. G. Stokes]] (in 1845), and for [[Hendrik Lorentz]]'s [[Lorentz ether theory|aether theory]] of electromagnetism in 1892. The aberration of light, together with Lorentz's elaboration of [[Maxwell's equations|Maxwell's electrodynamics]], the [[moving magnet and conductor problem]], the [[Michelson–Morley experiment|negative aether drift experiments]], as well as the [[Fizeau experiment]], led [[Albert Einstein]] to develop the theory of special relativity in 1905, which presents a general form of the equation for aberration in terms of such theory.&lt;ref name=&quot;norton&quot;&gt;{{Citation|author=Norton, John D. |date=2004 |first1=John D. |journal=Archive for History of Exact Sciences |title=Einstein's Investigations of Galilean Covariant Electrodynamics prior to 1905 |pages=45–105 |volume=59 |url=http://philsci-archive.pitt.edu/archive/00001743/ |doi=10.1007/s00407-004-0085-6 |bibcode=2004AHES...59...45N |url-status=live |archiveurl=https://web.archive.org/web/20090111103932/http://philsci-archive.pitt.edu/archive/00001743/ |archivedate=2009-01-11 }}&lt;/ref&gt;
+
+==Explanation==
+{{few sources|section|date=July 2019}}
+[[File:Sun earth relativistic aberration.svg|thumb|300px|Light rays striking the earth in the Sun's rest frame compared to the same rays in the Earth's rest frame according to special relativity. The effect is exaggerated for illustrative purposes.]]
+
+Aberration may be explained as the difference in angle of a beam of light in different [[inertial frames of reference]]. A common analogy is to consider the apparent direction of falling rain. If rain is falling vertically in the frame of reference of a person standing still, then to a person moving forwards the rain will appear to arrive at an angle, requiring the moving observer to tilt their umbrella forwards. The faster the observer moves, the more tilt is needed.
+
+The net effect is that light rays striking the moving observer from the sides in a stationary frame will come angled from ahead in the moving observer's frame. This effect is sometimes called the &quot;searchlight&quot; or &quot;headlight&quot; effect.
+
+In the case of annual aberration of starlight, the direction of incoming starlight as seen in the Earth's moving frame is tilted relative to the angle observed in the Sun's frame. Since the direction of motion of the Earth changes during its orbit, the direction of this tilting changes during the course of the year, and causes the apparent position of the star to differ from its true position as measured in the inertial frame of the Sun.
+
+While classical reasoning gives intuition for aberration, it leads to a number of physical paradoxes observable even at the classical level (see [[#Historical_theories_of_aberration|history]]). The theory of [[special relativity]] is required to correctly account for aberration. The relativistic explanation is very similar to the classical one however, and in both theories aberration may be understood as a case of [[vector space|addition of velocities]].
+
+===Classical explanation===
+In the Sun's frame, consider a beam of light with velocity equal to the speed of light c, with x and y velocity components &lt;math&gt;u_x&lt;/math&gt; and &lt;math&gt;u_y&lt;/math&gt;, at an angle &lt;math&gt;\tan(\theta) = u_y/u_x&lt;/math&gt;. If the Earth is moving at velocity &lt;math&gt;v&lt;/math&gt; in the x direction relative to the Sun, then by velocity addition the x component of the beam's velocity in the Earth's frame of reference is &lt;math&gt;u_x' = u_x + v&lt;/math&gt;, and the y velocity is unchanged, &lt;math&gt;u_y' = u_y&lt;/math&gt;. Thus the angle of the light in the Earth's frame in terms of the angle in the Sun's frame is
+
+:&lt;math&gt;\tan(\phi) = \frac{u_y'}{u_x'} = \frac{u_y}{u_x+v} = \frac{\sin(\theta)}{v/c + \cos(\theta)}&lt;/math&gt;
+
+In the case of &lt;math&gt;\theta = 90^\circ&lt;/math&gt;, this result reduces to &lt;math&gt;\tan(\theta - \phi) = v/c&lt;/math&gt;, which in the limit &lt;math&gt;v/c \ll 1&lt;/math&gt; may be approximated by &lt;math&gt;\theta - \phi = v/c&lt;/math&gt;. 
+===Relativistic explanation===
+The reasoning in the relativistic case is the same except that the [[Velocity-addition formula|relativistic velocity addition]] formulas must be used, which can be derived from [[Lorentz transformations]] between different frames of reference. These formulas are
+
+:&lt;math&gt;u_x' = (u_x + v)/(1+u_x v/c^2)&lt;/math&gt;
+:&lt;math&gt;u_y' = u_y / \gamma (1+u_x v/c^2)&lt;/math&gt;
+
+where &lt;math&gt;\gamma = 1/\sqrt{1-v^2/c^2}&lt;/math&gt;, giving the components of the light beam in the Earth's frame in terms of the components in the Sun's frame. The angle of the beam in the Earth's frame is thus &lt;ref name=Mould&gt;{{cite book |title=Basic Relativity |page=8 |url=https://books.google.com/?id=lfGE-wyJYIUC&amp;pg=PA8 |isbn=0-387-95210-1 |date=2001 |publisher=Springer |author=Richard A. Mould |edition=2nd}}&lt;/ref&gt;
+
+:&lt;math&gt;\tan(\phi) = \frac{u_y'}{u_x'} = \frac{u_y}{\gamma(u_x+v)} = \frac{\sin(\theta)}{\gamma(v/c + \cos(\theta))}&lt;/math&gt;
+
+In the case of &lt;math&gt;\theta = 90^\circ&lt;/math&gt;, this result reduces to &lt;math&gt;\sin(\theta - \phi) = v/c&lt;/math&gt;, and in the limit &lt;math&gt;v/c \ll 1&lt;/math&gt; this may be approximated by &lt;math&gt;\theta - \phi = v/c&lt;/math&gt;. This relativistic derivation keeps the speed of light &lt;math&gt;\sqrt{u_x^2 + u_y^2} = c&lt;/math&gt; constant in all frames of reference, unlike the classical derivation above.
+
+===Relationship to light-time correction and relativistic beaming===
+[[File:aberrationlighttimebeaming.gif|thumb|400px|Aberration, light-time correction, and relativistic beaming can be considered the same phenomenon depending on the frame of reference.]]
+
+Aberration is related to two other phenomena, [[light-time correction]], which is due to the motion of an observed object during the time taken by its light to reach an observer, and [[relativistic beaming]], which is an angling of the light emitted by a moving light source. It can be considered equivalent to them but in a different inertial frame of reference. In aberration, the observer is considered to be moving relative to a (for the sake of simplicity&lt;ref&gt;In fact, the light source doesn't need to be stationary, consider for example eclipsing binary stars: they are rotating with high speed —and ever changing and different velocity vectors— around each other, but they appear as '''one''' spot all the time.&lt;/ref&gt;) stationary light source, while in light-time correction and relativistic beaming the light source is considered to be moving relative to a stationary observer.
+
+Consider the case of an observer and a light source moving relative to each other at constant velocity, with a light beam moving from the source to the observer. At the moment of emission, the beam in the observer's rest frame is tilted compared to the one in the source's rest frame, as understood through relativistic beaming. During the time it takes the light beam to reach the observer the light source moves in the observer's frame, and the 'true position' of the light source is displaced relative to the apparent position the observer sees, as explained by light-time correction. Finally, the beam in the observer's frame at the moment of observation is tilted compared to the beam in source's frame, which can be understood as an aberrational effect. Thus, a person in the light source's frame would describe the apparent tilting of the beam in terms of aberration, while a person in the observer's frame would describe it as a light-time effect.
+
+The relationship between these phenomena is only valid if the observer and source's frames are inertial frames. In practice, because the Earth is not an inertial rest frame but experiences centripetal [[acceleration]] towards the Sun, many aberrational effects such as annual aberration on Earth cannot be considered light-time corrections. However, if the time between emission and detection of the light is short compared to the orbital period of the Earth, the Earth may be approximated as an inertial frame and aberrational effects are equivalent to light-time corrections.
+
+==Types==
+There are a number of types of aberration, caused by the differing components of the Earth's and observed object's motion:
+
+* '''Annual aberration''' is due to the orbital [[orbit|revolution]] of the Earth around the Sun.
+* '''Planetary aberration''' is the combination of aberration and light-time correction.
+* '''Diurnal aberration''' is due to the [[Earth's rotation|rotation]] of the Earth about its own axis.
+* '''Secular aberration''' is due to the motion of the Sun and [[Solar System]] relative to other stars in our [[Galaxy]].
+
+===Annual aberration===
+[[File:Aberration3.svg|thumb|250px|Stars at the [[ecliptic pole]]s appear to move in circles, stars exactly in the ecliptic plane move in lines, and stars at intermediate angles move in ellipses. Shown here are the apparent motions of stars with the [[ecliptic latitude]]s corresponding to these cases, and with [[ecliptic longitude]] of 270°.]]
+[[File:aberrationseasons.svg|thumb|250px|The direction of aberration of a star at the northern ecliptic pole differs at different times of the year]]
+{{see also|Stellar parallax}}
+
+Annual aberration is caused by the motion of an observer on [[Earth]] as the planet revolves around the [[Sun]]. Due to [[orbital eccentricity]], the [[orbital speed|orbital velocity]] &lt;math&gt;v&lt;/math&gt; of Earth (in the Sun's rest frame) [[Kepler orbit|varies]] periodically during the year as the planet traverses its [[elliptic orbit]] and consequently the aberration also varies periodically, typically causing stars to [[stellar parallax|appear to move]] in small [[ellipse]]s.
+
+Approximating [[Earth's orbit]] as circular, the maximum displacement of a star due to annual aberration is known as the ''constant of aberration'', conventionally represented by &lt;math&gt;\kappa&lt;/math&gt;. It may be calculated using the relation &lt;math&gt;\kappa = \theta-\phi \approx v/c &lt;/math&gt; substituting the Earth's average speed in the Sun's frame for &lt;math&gt;v&lt;/math&gt; and the [[speed of light]] &lt;math&gt;c&lt;/math&gt;. Its accepted value is 20.49552 &amp;nbsp;[[minute and second of atc|arcseconds]] (at [[J2000]]).&lt;ref name=&quot;kovalevsky&quot;&gt;{{cite book |first1=Jean |last1=Kovalevsky |first2=P. Kenneth |last2=Seidelmann |last-author-amp=yes |date=2004 |title=Fundamentals of Astrometry
+|publisher=[[Cambridge University Press]] |location=Cambridge |isbn=0-521-64216-7}}&lt;/ref&gt;
+
+Assuming a [[circular orbit]], annual aberration causes stars exactly on the [[ecliptic]] (the plane of Earth's orbit) to appear to move back and forth along a straight line, varying by &lt;math&gt;\kappa&lt;/math&gt; on either side of their position in the Sun's frame. A star that is precisely at one of the [[ecliptic pole]]s (at 90° from the ecliptic plane) will appear to move in a circle of radius &lt;math&gt;\kappa&lt;/math&gt; about its true position, and stars at intermediate [[ecliptic coordinate system|ecliptic latitudes]] will appear to move along a small [[ellipse]].
+
+For illustration, consider a star at the northern ecliptic pole viewed by an observer at a point on the [[Arctic Circle]]. Such an observer will see the star [[culmination|transit]] at the [[zenith]], once every day (strictly speaking [[sidereal day]]). At the time of the [[March equinox]], Earth's orbit carries the observer in a southwards direction, and the star's apparent [[declination]] is therefore displaced to the south by an angle of &lt;math&gt;\kappa&lt;/math&gt;. On the [[September equinox]], the star's position is displaced to the north by an equal and opposite amount. On either [[solstice]], the displacement in declination is 0. Conversely, the amount of displacement in [[right ascension]] is 0 on either [[equinox]] and at maximum on either solstice.
+
+&lt;!-- In the [[equatorial coordinate system]], the aberration's effect in [[right ascension]] (east-west) is larger than the effect in [[declination]] (north-south) except at the ecliptic poles. Despite this, its effect in declination was the first observed because very accurate clocks are needed to measure such a small variation in right ascension, but a [[transit telescope]] calibrated with a [[plumb bob|plumb line]] can detect very small changes in declination.
+--&gt;
+In actuality, Earth's orbit is slightly elliptic rather than circular, and its speed varies somewhat over the course of its orbit, which means the description above is only approximate. Aberration is more accurately calculated using  Earth's instantaneous velocity relative to the [[barycenter]] of the Solar System.&lt;ref name=kovalevsky/&gt;
+
+Note that the displacement due to aberration is orthogonal to any displacement due to [[parallax]]. If parallax were detectable, the maximum displacement to the south would occur in December, and the maximum displacement to the north in June. It is this apparently anomalous motion that so mystified early astronomers.
+
+====Solar annual aberration====
+A special case of annual aberration is the nearly constant deflection of the Sun from its position in the Sun's rest frame by &lt;math&gt;\kappa&lt;/math&gt; towards the ''west'' (as viewed from Earth), opposite to the apparent motion of the Sun along the ecliptic (which is from west to east, as seen from Earth). The deflection thus makes the Sun appear to be behind (or retarded) from its rest-frame position on the ecliptic by a position or angle &lt;math&gt;\kappa&lt;/math&gt;.
+
+This deflection may equivalently be described as a light-time effect due to motion of the Earth during the 8.3&amp;nbsp;minutes that it takes light to travel from the Sun to Earth. This is possible since the transit time of sunlight is short relative to the orbital period of the Earth, so the Earth's frame may be approximated as inertial. In the Earth's frame, the Sun moves by a distance &lt;math&gt;\Delta x = vt&lt;/math&gt; in the time it takes light to reach Earth, &lt;math&gt;t=R/c&lt;/math&gt; for the orbit of radius &lt;math&gt;R&lt;/math&gt;. This gives an angular correction &lt;math&gt;\tan(\theta) \approx \theta = \Delta x/R&lt;/math&gt; which can be solved to give &lt;math&gt;\theta = v/c = \kappa&lt;/math&gt;, the same as the aberrational correction.
+
+===Planetary aberration===
+{{see also|Light-time correction}}
+Planetary aberration is the combination of the aberration of light (due to Earth's velocity) and light-time correction (due to the object's motion and distance), as calculated in the rest frame of the Solar System. Both are determined at the instant when the moving object's light reaches the moving observer on Earth. It is so called because it is usually applied to planets and other objects in the Solar System whose motion and distance are accurately known.
+
+===Diurnal aberration===
+Diurnal aberration is caused by the velocity of the observer on the surface of the [[Earth's rotation|rotating Earth]]. It is therefore dependent not only on the time of the observation, but also the [[latitude]] and [[longitude]] of the observer. Its effect is much smaller than that of annual aberration, and is only 0.32 [[minute and second of arc|arcseconds]] in the case of an observer at the [[Equator]], where the rotational velocity is greatest.&lt;ref name=newcomb/&gt;
+
+===Secular aberration===
+The Sun and Solar System are revolving around the center of the Galaxy. Aberration due to this motion is known as secular aberration and affects the apparent positions of distant stars and [[extragalactic astronomy|extragalactic]] objects. However, since the [[galactic year]] is about 230 million years, the aberration varies very slowly and this change is extremely difficult to observe. Therefore, secular aberration is usually ignored when considering the positions of stars. In other words, star maps show the observed apparent positions of the stars, not their calculated true positions after accounting for secular aberration.
+
+For stars significantly less than 230 million [[light years]] away, the Solar System may be approximated as an inertial frame and so the effect of secular aberration is equivalent to a light-time correction. This includes stars in the [[Milky Way]], since the Milky Way is about 100,000 light years in diameter. For these stars the true position of the star is then easily computed from its [[proper motion]] and its distance.
+
+Secular aberration is typically a small number of [[arcminutes]], for example the stationary star [[Groombridge 1830]] is displaced by approximately 3&amp;nbsp;arcminutes,&lt;ref name=&quot;newcomb&quot;&gt;
+{{cite book
+|last=Newcomb
+|first=Simon 
+|authorlink= Simon Newcomb
+|title=A Compendium of Spherical Astronomy
+|date=1960 
+|publisher=Macmillan, 1906 – republished by [[Dover Publications|Dover]]}}&lt;/ref&gt; due to secular aberration. This is roughly 8 times the effect of annual aberration, as one would expect since the velocity of the Solar System relative to the center of the Galaxy is about 8 times the velocity of the Earth relative to the Sun.
+
+==Discovery and first observations==
+The discovery of the aberration of light was totally unexpected, and it was only by considerable perseverance and perspicacity that [[James Bradley|Bradley]] was able to explain it in 1727. It originated from attempts to discover whether stars possessed appreciable [[stellar parallax|parallaxes]].
+
+===Search for stellar parallax===
+The [[Nicolaus Copernicus|Copernican]] [[heliocentricity|heliocentric]] theory of the [[Solar System]] had received confirmation by the observations of [[Galileo Galilei|Galileo]] and [[Tycho Brahe]] and the mathematical investigations of [[Johannes Kepler|Kepler]] and [[Isaac Newton|Newton]].{{sfn|Eppenstein|1911|p=54}} As early as 1573, [[Thomas Digges]] had suggested that parallactic shifting of the stars should occur according to the heliocentric model, and consequently if stellar parallax could be observed it would help confirm this theory.  Many observers claimed to have determined such parallaxes, but Tycho Brahe and [[Giovanni Battista Riccioli]] concluded that they existed only in the minds of the observers, and were due to instrumental and personal errors. However, in 1680 [[Jean Picard]], in his ''Voyage d’[[Uraniborg|Uranibourg]],'' stated, as a result of ten [[year]]s' observations, that [[Polaris]], the Pole Star, exhibited variations in its position amounting to 40″ annually. Some astronomers endeavoured to explain this by parallax, but these attempts failed because the motion differed from that which parallax would produce. [[John Flamsteed]], from measurements made in 1689 and succeeding years with his mural quadrant, similarly concluded that the declination of Polaris was 40″ less in July than in September. [[Robert Hooke]], in 1674, published his observations of [[Gamma Draconis|γ Draconis]], a star of [[apparent magnitude|magnitude]] 2&lt;sup&gt;m&lt;/sup&gt; which passes practically overhead at the latitude of London (hence its observations are largely free from the complex corrections due to [[atmospheric refraction]]), and concluded that this star was 23″ more northerly in July than in October.{{sfn|Eppenstein|1911|p=54}}
+
+===James Bradley's observations===
+[[File:Bradley's observations of γ Draconis and 35 Camelopardalis as reduced by Busch.jpg|thumb|Bradley's observations of γ Draconis and 35 Camelopardalis as reduced by Busch to the year 1730.]]
+
+Consequently, when Bradley and [[Samuel Molyneux]] entered this sphere of research in 1725, there was still considerable uncertainty as to whether stellar parallaxes had been observed or not, and it was with the intention of definitely answering this question that they erected a large telescope at Molyneux's house at [[Kew]].&lt;ref name=&quot;Hirshfeld&quot;/&gt; They decided to reinvestigate the motion of γ Draconis with a telescope constructed by [[George Graham (clockmaker)|George Graham]] (1675–1751), a celebrated instrument-maker. This was fixed to a vertical chimney stack in such manner as to permit a small oscillation of the eyepiece, the amount of which (i.e. the deviation from the vertical) was regulated and measured by the introduction of a screw and a plumb line.{{sfn|Eppenstein|1911|p=54}}
+
+The instrument was set up in November 1725, and observations on γ Draconis were made starting in December. The star was observed to move 40″ southwards between September and March, and then reversed its course from March to September. {{sfn|Eppenstein|1911|p=54}} At the same time, [[HD 40873|35 Camelopardalis]], a star with a right ascension nearly exactly opposite to that of γ Draconis, was 19&quot; more northerly at the beginning of March than in September.&lt;ref&gt;Bradley, James; Rigaud, Stephen Peter (1832). Miscellaneous works and correspondence of the Rev. James Bradley, D.D., F.R.S. Oxford: University Press. p. 11.&lt;/ref&gt; These results were completely unexpected and inexplicable by existing theories.
+
+===Early hypotheses===
+[[File:Hypothetical movement of γ Draconis caused by parallax.jpg|thumb|Hypothetical observation of γ Draconis if its movement was caused by parallax.]]
+
+[[File:Hypothetical movement of γ Draconis and 35 Camelopardalis caused by nutation.jpg|thumb|Hypothetical observation of γ Draconis and 35 Camelopardalis if their movements were caused by nutation.]]
+
+Bradley and Molyneux discussed several hypotheses in the hope of finding the solution. Since the apparent motion was evidently caused neither by parallax nor observational errors, Bradley first hypothesized that it could be due to oscillations in the orientation of the Earth's axis relative to the celestial sphere&amp;nbsp;– a phenomenon known as [[astronomical nutation|nutation]]. 35 Camelopardalis was seen to possess an apparent motion which could be consistent with nutation, but since its declination varied only one half as much as that of γ Draconis, it was obvious that nutation did not supply the answer{{sfn|Eppenstein|1911|p=55}} (however, Bradley later went on to discover that the Earth does indeed nutate).&lt;ref name=berry/&gt; He also investigated the possibility that the motion was due to an irregular distribution of the [[Earth's atmosphere]], thus involving abnormal variations in the refractive index, but again obtained negative results.{{sfn|Eppenstein|1911|p=55}}
+
+On August 19, 1727, Bradley embarked upon a further series of observations using a telescope of his own erected at the Rectory, [[Wanstead]]. This instrument had the advantage of a larger field of view and he was able to obtain precise positions of a large number of stars over the course of about twenty years. During his first two years at Wanstead, he established the existence of the phenomenon of aberration beyond all doubt, and this also enabled him to formulate a set of rules that would allow the calculation of the effect on any given star at a specified date.
+
+===Development of the theory of aberration===
+Bradley eventually developed his explanation of aberration in about September 1728 and this theory was presented to the [[Royal Society]] in mid January the following year. One well-known story was that he saw the change of direction of a wind vane on a boat on the Thames, caused not by an alteration of the wind itself, but by a change of course of the boat relative to the wind direction.&lt;ref name=&quot;berry&quot;&gt;
+{{cite book
+|last=Berry
+|first=Arthur 
+|title=A Short History of Astronomy
+|url=https://archive.org/details/shorthistoryofas0000berr
+|url-access=registration
+|date=1961
+|orig-year=1898
+|publisher=[[Dover Publications|Dover]]}}&lt;/ref&gt;
+However, there is no record of this incident in Bradley's own account of the discovery, and it may therefore be [[apocrypha]]l.
+
+The following table shows the magnitude of deviation from true declination for γ Draconis and the direction, on the planes of the solstitial [[colure]] and ecliptic prime meridian, of the tangent of the velocity of the Earth in its orbit for each of the four months where the extremes are found, as well as expected deviation from true ecliptic longitude if Bradley had measured its deviation from right ascension:
+
+{| class=&quot;wikitable&quot;
+|-
+! Month !! Direction of tangential velocity of Earth on the plane of the solstitial colure !! Deviation from true declination of γ Draconis !! Direction of tangential velocity of Earth on the plane of the ecliptic prime meridian !! Expected deviation from true ecliptic longitude of γ Draconis
+|-
+| December || zero || none || ← (moving toward perihelion at fast velocity) || decrease of more than 20.2&quot;
+|-
+| March || ← (moving toward aphelion) || 19.5&quot; southward || zero || none
+|-
+| June || zero || none || → (moving toward aphelion at slow velocity) || increase of less than 20.2&quot;
+|-
+| September || → (moving toward perihelion) || 19.5&quot; northward || zero || none
+|}
+
+Bradley proposed that the aberration of light not only affected declination, but right ascension as well, so that a star in the pole of the ecliptic would describe a little ellipse with a diameter of about 40&quot;, but for simplicity, he assumed it to be a circle. Since he only observed the deviation in declination, and not in right ascension, his calculations for the maximum deviation of a star in the pole of the ecliptic are for its declination only, which will coincide with the diameter of the little circle described by such star. For eight different stars, his calculations are as follows:
+
+{| class=&quot;wikitable&quot;
+|-
+! Star !! Annual Variation (&quot;) !! Maximum deviation in declination of a star in the pole of the ecliptic (&quot;)
+|-
+| γ Draconis || 39 || 40.4
+|-
+| β Draconis || 39 || 40.2
+|-
+| η Ursa Maj. || 36 || 40.4
+|-
+| α Cass. || 34 || 40.8
+|-
+| τ Persei || 25 || 41.0
+|-
+| α Persei || 23 || 40.2
+|-
+| 35 Camel. || 19 || 40.2
+|-
+| Capella || 16 || 40.0
+|-
+| MEAN || || 40.4
+|}
+
+Based on these calculations, Bradley was able to estimate the constant of aberration at 20.2&quot;, which is equal to 0.00009793 radians, and with this was able to estimate the speed of light at {{convert|183300|mi|km}} per second.&lt;ref name=EB&gt;{{cite encyclopedia |editor-first=Dale H. |editor-last=Hoiberg |encyclopedia=Encyclopædia Britannica |title=aberration, constant of |edition=15th |date=2010 |publisher=Encyclopædia Britannica Inc. |volume=I: A-ak Bayes |location=Chicago, IL |isbn=978-1-59339-837-8 |pages=[https://archive.org/details/newencyclopaedia2009ency/page/30 30] |url-access=registration |url=https://archive.org/details/newencyclopaedia2009ency/page/30 }}&lt;/ref&gt; By projecting the little circle for a star in the pole of the ecliptic, he could simplify the calculation of the relationship between the speed of light and the speed of the Earth's annual motion in its orbit as follows:
+
+:&lt;math&gt;\cos\left(\frac{1}{2}\pi-0.00009793\right) = \sin(0.00009793) = \frac{v}{c} &lt;/math&gt;
+
+Thus, the speed of light to the speed of the Earth's annual motion in its orbit is &quot;10210 to one, from whence it would follow, that light moves, or is propagated as far as from the Sun to the Earth in 8' 12&quot;.&quot;&lt;ref name=J_Bradley/&gt;
+
+The discovery and elucidation of aberration is now regarded as a classic case of the application of [[scientific method]], in which observations are made to test a theory, but unexpected results are sometimes obtained that in turn lead to new discoveries. It is also worth noting that part of the original motivation of the search for stellar parallax was to test the Copernican theory that the Earth revolves around the Sun, but of course the existence of aberration also establishes the truth of that theory.
+
+==Historical theories of aberration==
+The phenomenon of aberration became a driving force for many physical theories during the 200 years between its observation and the conclusive explanation by Albert Einstein.
+
+The first classical explanation was provided in 1729, by James Bradley as described above, who attributed it to the finite [[speed of light]] and the motion of [[Earth]] in its orbit around the [[Sun]].&lt;ref name=&quot;Bradley&quot;/&gt;&lt;ref name=&quot;Hirshfeld&quot;/&gt; However, this explanation proved inaccurate once the wave nature of light was better understood, and correcting it became a major goal of the 19th century theories of [[luminiferous aether]]. [[Augustin-Jean Fresnel]] proposed a correction due to the motion of a medium (the aether) through which light propagated, known as [[Aether drag hypothesis|&quot;partial aether drag&quot;]]. He proposed that objects partially drag the aether along with them as they move, and this became the accepted explanation for aberration for some time. [[George Gabriel Stokes|George Stokes]] proposed a similar theory, explaining that aberration occurs due to the flow of aether induced by the motion of the Earth. Accumulated evidence against these explanations, combined with new understanding of the electromagnetic nature of light, led [[Hendrik Lorentz]] to develop an [[Lorentz ether theory|electron theory]] which featured an immobile aether, and he explained that objects contract in length as they move through the aether. Motivated by these previous theories, [[Albert Einstein]] then developed the theory of [[special relativity]] in 1905, which provides the modern account of aberration.
+
+===Bradley's classical explanation===
+[[File:Stellar aberration.JPG|thumb|250px |Figure 2: As light propagates down the telescope, the telescope moves requiring a tilt to the telescope that depends on the speed of light. The apparent angle of the star ''φ'' differs from its true angle ''θ''.]]
+
+Bradley conceived of an explanation in terms of a [[corpuscular theory of light]] in which light is made of particles.&lt;ref name=&quot;schaffner&quot;/&gt; His classical explanation appeals to the motion of the earth relative to a beam of light-particles moving at a finite velocity, and is developed in the Sun's frame of reference, unlike the classical derivation given above.
+
+Consider the case where a distant star is motionless relative to the Sun, and the star is extremely far away, so that parallax may be ignored. In the rest frame of the Sun, this means light from the star travels in parallel paths to the Earth observer, and arrives at the same angle regardless of where the Earth is in its orbit. Suppose the star is observed on Earth with a telescope, idealized as a narrow tube. The light enters the tube from the star at angle &lt;math&gt;\theta&lt;/math&gt; and travels at speed &lt;math&gt;c&lt;/math&gt; taking a time &lt;math&gt;h/c&lt;/math&gt; to reach the bottom of the tube, where it is detected. Suppose observations are made from Earth, which is moving with a speed &lt;math&gt;v&lt;/math&gt;. During the transit of the light, the tube moves a distance &lt;math&gt;vh/c&lt;/math&gt;. Consequently, for the particles of light to reach the bottom of the tube, the tube must be inclined at an angle &lt;math&gt;\phi&lt;/math&gt; different from &lt;math&gt;\theta&lt;/math&gt;, resulting in an ''apparent'' position of the star at angle &lt;math&gt;\phi&lt;/math&gt;. As the Earth proceeds in its orbit it changes direction, so &lt;math&gt;\phi&lt;/math&gt; changes with the time of year the observation is made. The apparent angle and true angle are related using trigonometry as:
+
+:&lt;math&gt;\tan(\phi) = \frac { h\sin(\theta)}{hv/c + h \cos (\theta)}=\frac { \sin(\theta)}{v/c +  \cos (\theta)}&lt;/math&gt;.
+
+In the case of &lt;math&gt;\theta = 90^\circ&lt;/math&gt;, this gives &lt;math&gt;\tan(\theta - \phi) = v/c&lt;/math&gt;. While this is different from the more accurate relativistic result described above, in the limit of small angle and low velocity they are approximately the same, within the error of the measurements of Bradley's day. These results allowed Bradley to make one of the earliest measurements of the [[Speed of light#History|speed of light]].&lt;ref name=J_Bradley&gt;{{cite journal |journal=Philosophical Transactions of the Royal Society |volume=35 |pages=637–661 |date=1729 |author =James Bradley |title=An account of a new discovered motion of the fixed stars |doi=10.1098/rstl.1727.0064}}&lt;/ref&gt;&lt;ref name=Britannica&gt;[http://www.britannica.com/EBchecked/topic/76818/James-Bradley/76818rellinks/Related-Links Encyclopædia Britannica] {{webarchive|url=https://web.archive.org/web/20131111091006/http://www.britannica.com/EBchecked/topic/76818/James-Bradley/76818rellinks/Related-Links |date=2013-11-11 }}&lt;/ref&gt;
+
+&lt;!-- 
+[[File:Aberration1.svg|frame|right|Figure 1. Diagram illustrating stellar aberration]]
+On the left side of Figure 1, the case of infinite light speed is shown. '''S''' represents the '''s'''pot where the star light enters the telescope, and '''E''' the position of the '''e'''ye piece. If light moves instantaneously, the telescope does not move, and the true direction of the star relative to the observer can be found by following the line '''ES'''. However, if light travels at finite speed, the Earth, and therefore the eye piece of the telescope, moves from '''E''' to '''E′''' during the time it takes light to travel from '''S''' to '''E'''. Consequently, the star will no longer appear in the center of the eye piece. The telescope must therefore be adjusted. When the telescope is at position '''E''' it must be oriented toward spot '''S′''' so that the star light enters the telescope at spot '''S′'''. The star light will travel along the line '''SE′''' and reach '''E′''' exactly when the moving eye piece also reaches '''E′'''. Since the telescope has been adjusted by the angle '''SES′''', the star's apparent position is hence displaced by the same angle.
+
+For the simple case where the direction of the light beam along the line '''SE''' is perpendicular to the motion of the observer then only light emitted at an angle equal to the arc cosine of the ratio of the observer's speed to the speed of light will reach the telescope. Consequently, the telescope too must be oriented at this same angle away from the light beam's trajectory in the direction of the motion to capture this emitted light.&lt;ref&gt;Tolman, R.C., &quot;The theory of the relativity of motion&quot;, University of California Press, Berkeley (1917), p.59&lt;/ref&gt;--&gt;
+=== Luminiferous aether ===
+{{See also|Luminiferous aether}}
+
+[[File:Stellar aberration versus the dragged aether.gif|thumb|250px|Young reasoned that aberration could only be explained if the aether were immobile in the frame of the Sun. On the left, stellar aberration occurs if an immobile aether is assumed, showing that the telescope must be tilted. On the right, the aberration disappears if the aether moves with the telescope, and the telescope does not need to be tilted.]]
+In the early nineteenth century the wave theory of light was being rediscovered, and in 1804 [[Thomas Young (scientist)|Thomas Young]] adapted Bradley's explanation for corpuscular light to wavelike light traveling through a medium known as the luminiferous aether. His reasoning was the same as Bradley's, but it required that this medium be immobile in the Sun's reference frame and must pass through the earth unaffected, otherwise the medium (and therefore the light) would move along with the earth and no aberration would be observed. 
+&lt;ref name=&quot;whittaker&quot;&gt;{{Citation
+ |author=Whittaker, Edmund Taylor 
+ |date=1910 
+ |title=A History of the theories of aether and electricity 
+ |edition=1. 
+ |location=Dublin 
+ |publisher=Longman, Green and Co. 
+ |url=https://archive.org/details/historyoftheorie00whitrich 
+ |url-status=live 
+ |archiveurl=https://web.archive.org/web/20160215173309/https://archive.org/details/historyoftheorie00whitrich 
+ |archivedate=2016-02-15 
+}}&lt;br /&gt;{{cite book |last=Whittaker |first=Edmund Taylor |title=A History of the Theories of Aether and Electricity| edition=2.| date=1953 |publisher=T. Nelson}}&lt;/ref&gt; He wrote:
+{{Quote|Upon consideration of the phenomena of the aberration of the stars I am disposed to believe that the luminiferous aether pervades the substance of all material bodies with little or no resistance, as freely perhaps as the wind passes through a grove of trees.|Thomas Young|1804&lt;ref name=&quot;schaffner&quot;/&gt;}}
+
+However, it soon became clear Young's theory could not account for aberration when materials with a non-vacuum [[index of refraction]] were present. An important example is of a telescope filled with water. The velocity of the light in such a telescope will be slower than in vacuum, and is given by &lt;math&gt;c/n&lt;/math&gt; rather than &lt;math&gt;c&lt;/math&gt; where &lt;math&gt;n&lt;/math&gt; is the index of refraction of the water. Thus, by Bradley and Young's reasoning the aberration angle is given by
+
+:&lt;math&gt;\tan(\phi) = \frac { \sin(\theta)}{v/(c/n) +  \cos (\theta)}&lt;/math&gt;.
+
+which predicts a medium-dependent angle of aberration. When refraction at the telescope's [[Objective (optics)|objective]] is taken into account this result deviates even more from the vacuum result. In 1810 [[François Arago]] performed a similar experiment and found that the aberration was unaffected by the medium in the telescope, providing solid evidence against Young's theory. This experiment was subsequently verified by many others in the following decades, most accurately by [[George Biddell Airy|Airy]] in 1871, with the same result.&lt;ref name=&quot;whittaker&quot;/&gt;
+
+===Aether drag models===
+{{See also|Aether drag hypothesis}}
+
+====Fresnel's aether drag====
+In 1818, [[Augustin Fresnel]] developed a modified explanation to account for the water telescope and for other aberration phenomena. He explained that the aether is generally at rest in the Sun's frame of reference, but objects partially drag the aether along with them as they move. That is, the aether in an object of index of refraction &lt;math&gt;n&lt;/math&gt; moving at velocity &lt;math&gt;v&lt;/math&gt; is partially dragged with a velocity &lt;math&gt;(1-1/n^2)v&lt;/math&gt; bringing the light along with it. This factor is known as &quot;Fresnel's dragging coefficient&quot;. This dragging effect, along with refraction at the telescope's objective, compensates for the slower speed of light in the water telescope in Bradley's explanation.{{efn|
+More in detail, Fresnel explains that the incoming light of angle &lt;math&gt;\theta&lt;/math&gt; is first refracted at the end of the telescope, to a new angle &lt;math&gt;\psi&lt;/math&gt; within the telescope. This may be accounted for by [[Snell's law]], giving &lt;math&gt;\sin(\theta - \phi) = n \sin(\psi - \phi)&lt;/math&gt;. Then drag must be accounted for. Without drag, the x and y components of the light in the telescope are &lt;math&gt;(c/n) \sin(\psi)&lt;/math&gt; and &lt;math&gt;(c/n) \cos(\psi)&lt;/math&gt;, but drag modifies the x component to &lt;math&gt;(c/n) \cos(\psi) - (1-1/n^2)v&lt;/math&gt; if the Earth moves with velocity &lt;math&gt;v&lt;/math&gt;. If &lt;math&gt;\alpha&lt;/math&gt; is angle and &lt;math&gt;v_l&lt;/math&gt; is the velocity of the light with these velocity components, then by Bradley's reasoning
+&lt;math&gt;\tan(\phi) = \frac { h \sin(\alpha)}{v t +  h \cos (\alpha)}&lt;/math&gt; 
+where &lt;math&gt;h&lt;/math&gt; is the modified path length through the water and t is the time it takes the light to travel the distance h, &lt;math&gt;t = h/v_l&lt;/math&gt;. Upon solving these equations for &lt;math&gt;\phi&lt;/math&gt; in terms of &lt;math&gt;\theta&lt;/math&gt; one obtains Bradley's vacuum result.
+
+&lt;!--Even more in detail: By trigonometry,
+:&lt;math&gt;\sin(\alpha) = (c/n) \sin(\psi)/v_l&lt;/math&gt;
+:&lt;math&gt;\cos(\alpha) = ((c/n) \cos(\psi) - (1-1/n^2)v)/v_l&lt;/math&gt;
+Plugging these into the first equation gives
+:&lt;math&gt;\tan(\phi) = \frac { \sin(\psi)}{v/nc + \cos (\psi)}&lt;/math&gt;.
+and then incorporating Snell's law gives Bradley's vacuum result.--&gt;
+
+}}     With this modification Fresnel obtained Bradley's vacuum result even for non-vacuum telescopes, and was also able to predict many other phenomena related to the propagation of light in moving bodies. Fresnel's dragging coefficient became the dominant explanation of aberration for the next decades.
+
+[[File:Stokes aether drag.svg|thumb|250px|Conceptual illustration of Stokes' aether drag theory. In the rest frame of the Sun the Earth moves to the right through the aether, in which it induces a local current. A ray of light (in red) coming from the vertical becomes dragged and tilted due to the flow of aether.]]
+
+====Stokes' aether drag====
+However, the fact that light is [[Polarization (waves)|polarized]] (discovered by Fresnel himself) led scientists such as [[Augustin-Louis Cauchy|Cauchy]] and [[George Green (mathematician)|Green]] to believe that the aether was a totally immobile elastic solid as opposed to Fresnel's fluid aether. There was thus renewed need for an explanation of aberration consistent both with Fresnel's predictions (and Arago's observations) as well as polarization.
+
+In 1845, [[Sir George Stokes, 1st Baronet|Stokes]] proposed a 'putty-like' aether which acts as a liquid on large scales but as a solid on small scales, thus supporting both the transverse vibrations required for polarized light and the aether flow required to explain aberration. Making only the assumptions that the fluid is [[Potential flow|irrotational]] and that the [[Boundary value problem|boundary conditions]] of the flow are such that the aether has zero velocity far from the Earth, but moves at the Earth's velocity at its surface and within it, he was able to completely account for aberration.{{efn|
+[[File:Stokes aether drag proof.svg|center|600px|The propagating wavefront moving through the aether.]]
+Stokes' derivation may be summarized as follows: Consider a wavefront moving in the downwards z direction. Say the aether has velocity field &lt;math&gt;u,v,w&lt;/math&gt; as a function of &lt;math&gt;x,y,z&lt;/math&gt;. Now, motion of the aether in the x and y directions does not affect the wavefront, but the motion in the z direction advances it (in addition to the amount it advances at speed c). If the z velocity of the aether varies over space, for example if it is slower for higher x as shown in the figure, then the wavefront becomes angled, by an angle &lt;math&gt;\tan(\alpha) = tdw/dx &lt;/math&gt;. Now, say in time t the wavefront has moved by a span &lt;math&gt;dz \approx c t&lt;/math&gt; (assuming the speed of the aether is negligible compared to the speed of light). Then for each distance &lt;math&gt;dz&lt;/math&gt; the ray descends, it is bent by an angle &lt;math&gt;\alpha \approx (dw/dx) (dz/c)&lt;/math&gt;, and so the total angle by which it has changed after travelling through the entire fluid is
+
+:&lt;math&gt; \alpha \approx \frac{1}{c} \int \frac{\partial w}{\partial x} dz&lt;/math&gt;
+
+If the fluid is [[Potential flow|irrotational]] it will satisfy the [[Cauchy–Riemann equations]], one of which is
+
+:&lt;math&gt;\frac{\partial w}{\partial x} = \frac{\partial u}{\partial z}&lt;/math&gt;.
+
+Inserting this into the previous result gives an aberration angle &lt;math&gt; \alpha = (u_2 - u_1)/c&lt;/math&gt; where the &lt;math&gt;u&lt;/math&gt;s represent the x component of the aether's velocity at the start and end of the ray. Far from the earth the aether has zero velocity, so &lt;math&gt;u_2 = 0&lt;/math&gt; and at the surface of the earth it has the earth's velocity &lt;math&gt;v&lt;/math&gt;. Thus we finally get
+
+:&lt;math&gt; \alpha \approx \frac{v}{c}&lt;/math&gt;
+
+which is the known aberration result. 
+}}
+The velocity of the aether outside of the Earth would decrease as a function of distance from the Earth so light rays from stars would be progressively dragged as they approached the surface of the Earth. The Earth's motion would be unaffected by the aether due to [[D'Alembert's paradox]].
+
+Both Fresnel and Stokes' theories were popular. However, the question of aberration was put aside during much of the second half of the 19th century as focus of inquiry turned to the electromagnetic properties of aether.
+
+===Lorentz' length contraction===
+{{See also|Lorentz ether theory}}
+In the 1880s once electromagnetism was better understood, interest turned again to the problem of aberration. By this time flaws were known to both Fresnel's and Stokes' theories. Fresnel's theory required that the relative velocity of aether and matter to be different for light of different colors, and it was shown that the boundary conditions Stokes had assumed in his theory were inconsistent with his assumption of irrotational flow.&lt;ref name=&quot;schaffner&quot;/&gt;&lt;ref name=&quot;whittaker&quot;/&gt;&lt;ref name=Jan&gt;{{Citation|author=Janssen, Michel|author2=Stachel, John|last-author-amp=yes |editor=John Stachel |title=Going Critical |publisher=Springer|isbn=1-4020-1308-6|date=2010|chapter=The Optics and Electrodynamics of Moving Bodies|chapter-url=http://www.mpiwg-berlin.mpg.de/Preprints/P265.PDF}}&lt;/ref&gt; At the same time, the modern theories of electromagnetic aether could not account for aberration at all. Many scientists such as [[James Clerk Maxwell|Maxwell]], [[Oliver Heaviside|Heaviside]] and [[Heinrich Hertz|Hertz]] unsuccessfully attempted to solve these problems by incorporating either Fresnel or Stokes' theories into [[Maxwell's equations|Maxwell's new electromagnetic laws]].
+
+Hendrik Lorentz spent considerable effort along these lines. After working on this problem for a decade, the issues with Stokes' theory caused him to abandon it and to follow Fresnel's suggestion of a (mostly) stationary aether (1892, 1895). However, in Lorentz's model the aether was ''completely'' immobile, like the electromagnetic aethers of Cauchy, Green and Maxwell and unlike Fresnel's aether. He obtained Fresnel's dragging coefficient from modifications of Maxwell's electromagnetic theory, including a modification of the time coordinates in moving frames (&quot;local time&quot;). In order to explain the [[Michelson–Morley experiment]] (1887), which apparently contradicted both Fresnel's and Lorentz's immobile aether theories, and apparently confirmed Stokes' complete aether drag, Lorentz theorized (1892) that objects undergo &quot;[[length contraction]]&quot; by a factor of &lt;math&gt;\sqrt{1-v^2/c^2}&lt;/math&gt; in the direction of their motion through the aether. In this way, aberration (and all related optical phenomena) can be accounted for in the context of an immobile aether. Lorentz' theory became the basis for much research in the next decade, and beyond. Its predictions for aberration are identical to those of the relativistic theory.&lt;ref name=&quot;whittaker&quot;/&gt;&lt;ref&gt;{{Citation
+|author=Darrigol, Olivier
+|date=2000
+|title=Electrodynamics from Ampére to Einstein
+|location=Oxford
+|publisher=Clarendon Press
+|isbn=0-19-850594-9
+|url-access=registration
+|url=https://archive.org/details/electrodynamicsf0000darr
+}}&lt;/ref&gt;
+
+===Special relativity===
+{{See also|History of special relativity}}
+
+Lorentz' theory matched experiment well, but it was complicated and made many unsubstantiated physical assumptions about the microscopic nature of electromagnetic media. In his 1905 theory of special relativity, Albert Einstein reinterpreted the results of Lorentz' theory in a much simpler and more natural conceptual framework which disposed of the idea of an aether. His derivation is given [[Aberration_of_light#Relativistic_explanation|above]], and is now the accepted explanation. [[Robert S. Shankland]] reported some conversations with Einstein, in which Einstein emphasized the importance of aberration:&lt;ref name=shank&gt;{{Cite journal|author=Shankland, R. S.|title=Conversations with Albert Einstein|journal=American Journal of Physics|volume=31|issue=1|date=1963|pages=47–57|doi=10.1119/1.1969236|bibcode = 1963AmJPh..31...47S }}&lt;/ref&gt;
+
+{{Quote|He continued to say the experimental results which had influenced him most were the observations of stellar aberration and [[Fizeau experiment|Fizeau’s measurements]] on the speed of light in moving water. “They were enough,” he said.}}
+
+Other important motivations for Einstein's development of relativity were the [[moving magnet and conductor problem]] and (indirectly) the negative aether drift experiments, already mentioned by him in the introduction of his first relativity paper. Einstein wrote in a note in 1952:&lt;ref name=&quot;norton&quot; /&gt;
+
+{{Quote|My own thought was more indirectly influenced by the famous Michelson-Morley experiment. I learned of it through Lorentz’ path breaking investigation on the electrodynamics of moving bodies (1895), of which I knew before the establishment of the special theory of relativity. Lorentz’ basic assumption of a resting ether did not seem directly convincing to me, since it led to an [struck out: to me artificial appearing] interpretation of the Michelson-Morley experiment, which [struck out: did not convince me] seemed unnatural to me. My direct path to the sp. th. rel. was mainly determined by the conviction that the electromotive force induced in a conductor moving in a magnetic field is nothing other than an electric field. But the result of Fizeau’s experiment and the phenomenon of aberration also guided me.}}
+
+While Einstein's result is the same as Bradley's original equation except for an extra factor of &lt;math&gt;\gamma&lt;/math&gt;, Bradley's result does not merely give the classical limit of the relativistic case, in the sense that it gives incorrect predictions even at low relative velocities. Bradley's explanation cannot account for situations such as the water telescope, nor for many other optical effects (such as interference) that might occur within the telescope. This is because in the Earth's frame it predicts that the direction of propagation of the light beam in the telescope is not normal to the wavefronts of the beam, in contradiction with [[Maxwell's theory of electromagnetism]]. It also does not preserve the speed of light c between frames. However, Bradley did correctly infer that the effect was due to relative velocities.
+
+==See also==
+{{commons|Aberration of light}}
+* [[Apparent place]]
+* [[Stellar parallax]]
+* [[Astronomical nutation]]
+* [[Proper motion]]
+* [[Timeline of electromagnetism and classical optics]]
+* [[Stellar aberration (derivation from Lorentz transformation)]]
+* [[Relativistic aberration]]
+
+==Notes==
+{{notelist}}
+
+==References==
+{{reflist}}
+
+==Further reading==
+* P. Kenneth Seidelmann (Ed.), ''Explanatory Supplement to the Astronomical Almanac'' (University Science Books, 1992), 127-135, 700.
+* [[Stephen Peter Rigaud]], ''Miscellaneous Works and Correspondence of the Rev. James Bradley, D.D. F.R.S.'' (1832).
+* [[Charles Hutton]], ''Mathematical and Philosophical Dictionary'' (1795).
+* H. H. Turner, ''Astronomical Discovery'' (1904).
+* [[Thomas Simpson]], ''Essays on Several Curious and Useful Subjects in Speculative and Mix'd Mathematicks'' (1740).
+* [[:de:August Ludwig Busch]], ''Reduction of the Observations Made by Bradley at Kew and Wansted to Determine the Quantities of Aberration and Nutation'' (1838).
+
+==External links==
+* [http://cseligman.com/text/history/bradley.htm Courtney Seligman] on Bradley's observations
+
+{{DEFAULTSORT:Aberration Of Light}}
+[[Category:Electromagnetic radiation]]
+[[Category:Astrometry]]
+[[Category:Radiation]]</text>
+      <sha1>o977kjaqquje2w8mwzi18ju3jzbbqz7</sha1>
+    </revision>
+  </page>

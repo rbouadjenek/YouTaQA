@@ -1,0 +1,87 @@
+  <page>
+    <title>Asynchronous communication</title>
+    <ns>0</ns>
+    <id>2506</id>
+    <revision>
+      <id>930080883</id>
+      <parentid>930080845</parentid>
+      <timestamp>2019-12-10T02:53:48Z</timestamp>
+      <contributor>
+        <username>911ChickenCop</username>
+        <id>33166191</id>
+      </contributor>
+      <comment>Reverted [[WP:AGF|good faith]] edits by [[Special:Contributions/106.204.65.180|106.204.65.180]] ([[User talk:106.204.65.180|talk]]) ([[WP:TW|TW]])</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{Other uses|Asynchrony (disambiguation){{!}}Asynchrony}}
+
+In [[telecommunications]], '''asynchronous communication''' is  transmission of data, generally without the use of an external [[clock signal]], where data can be transmitted intermittently rather than in a steady stream.&lt;ref&gt;{{cite web
+| accessdate = 2011-04-27
+| location = http://www.webopedia.com/
+| publisher = Webopedia
+| title = asynchronous
+| quote = The term asynchronous is usually used to describe communications in which data can be transmitted intermittently rather than in a steady stream.
+| url = http://www.webopedia.com/TERM/A/asynchronous.html| archiveurl= https://web.archive.org/web/20110430051620/http://www.webopedia.com/TERM/A/asynchronous.html| archivedate= 30 April 2011 | url-status= live}}&lt;/ref&gt; Any timing required to recover data from the communication symbols is encoded within the symbols.
+
+The most significant aspect of asynchronous communications is that data is not transmitted at regular intervals, thus making possible variable bit rate, and that the transmitter and receiver [[clock generator]]s do not have to be exactly synchronized all the time. In asynchronous transmission, data is sent one byte at a time and each byte is preceded by start bit and stop bit.
+
+== Physical layer ==
+{{main|Asynchronous serial communication}}
+In [[asynchronous serial communication]]  the [[physical protocol layer]], the data blocks are code words of a certain [[word length]], for example [[Octet (computing)|octets]] ([[bytes]]) or [[ASCII characters]], delimited by start bits and stop bits. A variable length space can be inserted between the code words. No bit synchronization signal is required. This is sometimes called [[character oriented communication]]. Examples are the [[RS-232]]C serial standard, and [[MNP2]] and [[List of ITU-T V-Series Recommendations|V.2]] modems and older.
+
+== Data link layer and higher ==
+Asynchronous communication at the [[data link layer]] or higher protocol layers is known as [[statistical multiplexing]], for example [[asynchronous transfer mode]] (ATM). In this case the asynchronously transferred blocks are called [[data packet]]s, for example ATM cells. The opposite is [[circuit switched]] communication, which provides constant bit rate, for example [[ISDN]] and [[SONET/SDH]].
+
+The packets may be encapsulated in a [[data frame]], with a [[frame synchronization]] bit sequence indicating the start of the frame, and sometimes also a [[bit synchronization]] bit sequence, typically 01010101, for identification of the bit transition times. Note that at the physical layer, this is considered as synchronous serial communication. Examples of packet mode data link protocols that can be/are transferred using synchronous serial communication are the [[HDLC]], [[Ethernet]], [[Point-to-point protocol|PPP]] and [[USB]] protocols.
+
+== Application layer ==
+{{Original research|date=September 2007}}
+An asynchronous communication service or application does not require a constant bit rate.&lt;ref&gt;{{cite book|last1=Hargrave|first1=Frank|title=Hargrave's Communication Dictionary|date=2001|publisher=Wiley|url=https://search.credoreference.com/}}&lt;/ref&gt; Examples are [[file transfer]], [[email]] and the [[World Wide Web]]. An example of the opposite, a synchronous communication service, is realtime [[streaming media]], for example [[IP telephony]], [[IP-TV]] and [[video conferencing]].
+
+== Electronically mediated communication ==
+{{Further|Computer-mediated communication}}
+
+Electronically mediated communication often happens asynchronously in that the participants do not communicate concurrently. Examples include [[email]]&lt;ref&gt;
+{{cite book
+| last1                 = Calladine
+| first1                = Richard
+| chapter               = A taxonomy of learning technologies: simplifying online learning for learners, professors, and designers
+| editor1-last          = Khosrowpour
+| editor1-first         = Mehdi
+| title                 = Emerging Trends and Challenges in Information Technology Management: 2006 Information Resources Management Association International Conference, Washington, DC, USA, May 21-24, 2006
+| url                   = https://books.google.com/books?id=ybzS-yylJfAC
+| volume                = 1
+| publisher             = Idea Group Inc (IGI)
+| publication-date      = 2006
+| page                  = 249
+| isbn                  = 9781599040196
+| accessdate            = 2014-09-03
+| quote                 = Email and Internet Chat provide a good example of the difference between synchronous and asynchronous technologies. Email is generally responded to at the discretion of the user and hence is described as asynchronous. However, when in a Chat session each participant knows that the others are waiting for their responses. The resulting &quot;conversations&quot; are synchronous [...]
+}}
+&lt;/ref&gt;
+and [[bulletin-board system]]s, where participants send or post messages at different times. The term &quot;asynchronous communication&quot; acquired currency in the field of online learning, where teachers and students often exchange information asynchronously instead of synchronously (that is, simultaneously), as they would in face-to-face or in telephone conversations.
+
+==See also==
+* [[Synchronization in telecommunications]]
+* [[Asynchronous serial communication]]
+* [[Asynchronous system]]
+* [[Asynchronous transfer mode]] (ATM)
+* [[Asynchronous circuit]]
+* [[Asynchrony (disambiguation)|Asynchrony]]
+* [[Anisochronous]]
+* [[Baud rate]]
+* [[Plesiochronous]]
+* [[Plesiochronous Digital Hierarchy]] (PDH)
+
+==References==
+{{Reflist}}
+
+&lt;!--Interwikies--&gt;
+
+{{DEFAULTSORT:Asynchronous Communication}}
+&lt;!--Categories--&gt;
+[[Category:Synchronization]]
+[[Category:Telecommunications techniques]]</text>
+      <sha1>rt4qj3p5uld79loitswzrs9kicxhdtb</sha1>
+    </revision>
+  </page>

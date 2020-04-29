@@ -1,0 +1,266 @@
+  <page>
+    <title>Euler–Maclaurin formula</title>
+    <ns>0</ns>
+    <id>9637</id>
+    <revision>
+      <id>940432591</id>
+      <parentid>935096484</parentid>
+      <timestamp>2020-02-12T14:18:12Z</timestamp>
+      <contributor>
+        <username>Killaman slaughtermaster</username>
+        <id>20403730</id>
+      </contributor>
+      <minor />
+      <comment>/* Low-order cases */ Added missing denominators in remainders - see the definition of the integral remainder form.</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{Use American English|date = March 2019}}
+{{Short description|Summation formula}}
+In [[mathematics]], the '''Euler–Maclaurin formula''' is a formula for the difference between an [[integral]] and a closely related sum.  It can be used to approximate integrals by finite sums, or conversely to evaluate finite sums and [[series (mathematics)|infinite series]] using integrals and the machinery of calculus. For example, many asymptotic expansions are derived from the formula, and [[Faulhaber's formula]] for the sum of powers is an immediate consequence.
+
+The formula was discovered independently by [[Leonhard Euler]] and [[Colin Maclaurin]] around 1735.  Euler needed it to compute slowly converging infinite series while Maclaurin used it to calculate integrals.  It was later generalized to [[Darboux's formula]].
+
+==The formula==
+If &lt;math&gt;m&lt;/math&gt; and &lt;math&gt;n&lt;/math&gt; are [[natural number]]s and &lt;math&gt;f(x)&lt;/math&gt; is a complex or real valued [[continuous function]] for [[real number]]s &lt;math&gt;x&lt;/math&gt; in the interval &lt;math&gt;[m,n]&lt;/math&gt;, then the integral
+
+:&lt;math&gt;I = \int_m^n f(x)\,dx&lt;/math&gt;
+
+can be approximated by the sum (or vice versa)
+
+:&lt;math&gt;S = f(m + 1) + \cdots + f(n - 1) + f(n)&lt;/math&gt;
+
+(see [[Riemann sum#Right Riemann sum|rectangle method]]). The Euler–Maclaurin formula provides expressions for the difference between the sum and the integral in terms of the higher derivatives &lt;math&gt;f^{(k)}(x)&lt;/math&gt; evaluated at the end points of the interval, that is to say when &lt;math&gt;x=m&lt;/math&gt; and &lt;math&gt;x=n&lt;/math&gt;.
+
+Explicitly, for &lt;math&gt;p&lt;/math&gt; a positive integer and a function &lt;math&gt;f(x)&lt;/math&gt; that is &lt;math&gt;p&lt;/math&gt; times continuously differentiable in the interval &lt;math&gt;[m, n]&lt;/math&gt;, we have
+
+:&lt;math&gt; S - I = \sum_{k=1}^p {\frac{B_k}{k!} (f^{(k - 1)}(n) - f^{(k - 1)}(m))} + R_p,&lt;/math&gt;
+
+where &lt;math&gt;B_k&lt;/math&gt; is the &lt;math&gt;k&lt;/math&gt;th [[Bernoulli numbers|Bernoulli number]] (with &lt;math&gt;B_1=1/2&lt;/math&gt;) and &lt;math&gt;R_p&lt;/math&gt; is an [[numerical integration|error term]] which depends on &lt;math&gt;n&lt;/math&gt;, &lt;math&gt;m&lt;/math&gt;, &lt;math&gt;p&lt;/math&gt;, and &lt;math&gt;f&lt;/math&gt; and is usually small for suitable values of &lt;math&gt;p&lt;/math&gt;.
+
+The formula is often written with the subscript taking only even values, since the odd Bernoulli numbers are zero except for &lt;math&gt;B_1&lt;/math&gt;.  In this case we have&lt;ref name=&quot;:0&quot; /&gt;&lt;ref name=&quot;DLMF&quot;&gt;{{cite web|url=http://dlmf.nist.gov/2.10|title=Digital Library of Mathematical Functions: Sums and Sequences|publisher=[[National Institute of Standards and Technology]]}}&lt;/ref&gt;
+
+:&lt;math&gt;\sum_{i=m}^n f(i) =
+    \int^n_m f(x)\,dx + \frac{f(n) + f(m)}{2} +
+    \sum_{k=1}^{\lfloor p/2\rfloor} \frac{B_{2k}}{(2k)!} (f^{(2k - 1)}(n) - f^{(2k - 1)}(m)) + R_p,
+&lt;/math&gt;
+
+or alternatively
+
+:&lt;math&gt;\sum_{i=m+1}^n f(i) =
+    \int^n_m f(x)\,dx + \frac{f(n) - f(m)}{2} +
+    \sum_{k=1}^{\lfloor p/2\rfloor} \frac{B_{2k}}{(2k)!} (f^{(2k - 1)}(n) - f^{(2k - 1)}(m)) + R_p.
+&lt;/math&gt;
+
+===The remainder term===
+{{seealso|Bernoulli polynomials}}
+
+The remainder term arises because the integral is usually not exactly equal to the sum.  The formula may be derived by applying repeated [[integration by parts]] to successive intervals &lt;math&gt;[r, r+1]&lt;/math&gt; for &lt;math&gt;r = m, m + 1, \ldots, n - 1&lt;/math&gt;.  The boundary terms in these integrations lead to the main terms of the formula, and the leftover integrals form the remainder term.
+
+The remainder term has an exact expression in terms of the periodized Bernoulli functions &lt;math&gt;P_k(x)&lt;/math&gt;.  The Bernoulli polynomials may be defined recursively by &lt;math&gt;B_0(x) = 1&lt;/math&gt; and, for &lt;math&gt;k \ge 1&lt;/math&gt;,
+:&lt;math&gt;\begin{align}
+  B_k'(x) &amp;= kB_{k - 1}(x), \\
+  \int_0^1 B_k(x)\,dx &amp;= 0.
+\end{align}&lt;/math&gt;
+The periodized Bernoulli functions are defined as
+:&lt;math&gt;P_k(x) = B_k(x - \lfloor x\rfloor),&lt;/math&gt;
+where &lt;math&gt;\lfloor x \rfloor&lt;/math&gt; denotes the largest integer less than or equal to &lt;math&gt;x&lt;/math&gt; (so that &lt;math&gt;x - \lfloor x \rfloor&lt;/math&gt; always lies in the interval &lt;math&gt;[0,1)&lt;/math&gt;).
+
+With this notation, the remainder term &lt;math&gt;R_p&lt;/math&gt; equals
+:&lt;math&gt;R_p = (-1)^{p+1}\int_m^n f^{(p)}(x) \frac{P_p(x)}{p!}\,dx. &lt;/math&gt;
+
+When &lt;math&gt;k&gt;0&lt;/math&gt;, it can be shown that
+
+:&lt;math&gt;|B_k(x)| \le \frac{2 \cdot k!}{(2\pi)^k}\zeta(k),&lt;/math&gt;
+
+where &lt;math&gt;\zeta&lt;/math&gt;  denotes the [[Riemann zeta function]]; one approach to prove this inequality is to obtain the Fourier series for the polynomials &lt;math&gt;B_k(x)&lt;/math&gt;.   The bound is achieved for even &lt;math&gt;k&lt;/math&gt; when &lt;math&gt;x&lt;/math&gt; is zero.  The term &lt;math&gt;\zeta(k)&lt;/math&gt; may be omitted for odd &lt;math&gt;k&lt;/math&gt; but the proof in this case is more complex (see Lehmer).&lt;ref name=&quot;Lehmer&quot;&gt;{{cite journal|last1=Lehmer|first1=D. H. |title=On the maxima and minima of Bernoulli polynomials | date=1940 | journal=The American Mathematical Monthly|volume=47|issue=8|pages=533–538 |doi=10.2307/2303833}}&lt;/ref&gt; Using this inequality, the size of the remainder term can be estimated as
+
+:&lt;math&gt;|R_p| \leq \frac{2 \zeta(p)}{(2\pi)^p}\int_m^n |f^{(p)}(x)|\,dx.&lt;/math&gt;
+
+===Low-order cases===
+
+The Bernoulli numbers from &lt;math&gt;B_1&lt;/math&gt; to &lt;math&gt;B_7&lt;/math&gt; are &lt;math&gt;\tfrac{1}{2}, \tfrac{1}{6}, 0, -\tfrac{1}{30}, 0, \tfrac{1}{42}, 0.&lt;/math&gt; Therefore the low-order cases of the Euler-Maclaurin formula are:
+
+:&lt;math&gt;\begin{align}
+\sum_{i=m}^n f(i) - \int_m^n f(x)\,dx &amp;= \frac{f(m)+f(n)}{2} + \int_m^n f'(x)P_1(x)\,dx \\
+&amp;=\frac{f(m)+f(n)}{2} + \frac{1}{6}\frac{f'(n) - f'(m)}{2!} - \int_m^n f''(x)\frac{P_2(x)}{2!}\,dx \\
+&amp;=\frac{f(m)+f(n)}{2} + \frac{1}{6}\frac{f'(n) - f'(m)}{2!} + \int_m^n f'''(x)\frac{P_3(x)}{3!}\,dx \\
+&amp;=\frac{f(m)+f(n)}{2} + \frac{1}{6}\frac{f'(n) - f'(m)}{2!} - \frac{1}{30}\frac{f'''(n) - f'''(m)}{4!}-\int_m^n f^{(4)}(x) \frac{P_4(x)}{4!}\, dx \\
+&amp;=\frac{f(m)+f(n)}{2} + \frac{1}{6}\frac{f'(n) - f'(m)}{2!} - \frac{1}{30}\frac{f'''(n) - f'''(m)}{4!} + \int_m^n f^{(5)}(x)\frac{P_5(x)}{5!}\,dx \\
+&amp;=\frac{f(m)+f(n)}{2} + \frac{1}{6}\frac{f'(n) - f'(m)}{2!} - \frac{1}{30}\frac{f'''(n) - f'''(m)}{4!} + \frac{1}{42}\frac{f^{(5)}(n) - f^{(5)}(m)}{6!} - \int_m^n f^{(6)}(x)\frac{P_6(x)}{6!}\,dx \\
+&amp;=\frac{f(m)+f(n)}{2} + \frac{1}{6}\frac{f'(n) - f'(m)}{2!} - \frac{1}{30}\frac{f'''(n) - f'''(m)}{4!} + \frac{1}{42}\frac{f^{(5)}(n) - f^{(5)}(m)}{6!} + \int_m^n f^{(7)}(x)\frac{P_7(x)}{7!}\,dx.
+\end{align}&lt;/math&gt;
+
+==Applications==
+
+===The Basel problem===
+The [[Basel problem]] is to determine the sum
+
+:&lt;math&gt; 1 + \frac14 + \frac19 + \frac1{16} + \frac1{25} + \cdots = \sum_{n=1}^\infty \frac{1}{n^2}. &lt;/math&gt;
+
+Euler computed this sum to 20 decimal places with only a few terms of the Euler–Maclaurin formula in 1735. This probably convinced him that the sum equals &lt;math&gt;\pi^2/6&lt;/math&gt;, which he proved in the same year.&lt;ref&gt;Pengelley, David J. [http://www.math.nmsu.edu/~davidp/euler2k2.pdf &quot;Dances between continuous and discrete: Euler's summation formula&quot;], in: Robert Bradley and Ed Sandifer (Eds), ''Proceedings, Euler 2K+2 Conference (Rumford, Maine, 2002)'', [[Euler Society]], 2003.&lt;/ref&gt;
+
+===Sums involving a polynomial===
+{{seealso|Faulhaber's formula}}
+If &lt;math&gt;f&lt;/math&gt; is a [[polynomial]] and &lt;math&gt;p&lt;/math&gt; is big enough, then the remainder term vanishes.  For instance, if &lt;math&gt;f(x)=x^3&lt;/math&gt;, we can choose &lt;math&gt;p=2&lt;/math&gt; to obtain, after simplification,
+
+:&lt;math&gt;\sum_{i=0}^n i^3 = \left(\frac{n(n + 1)}{2}\right)^2.&lt;/math&gt;
+
+===Approximation of integrals===
+The formula provides a means of approximating a finite integral.  Let &lt;math&gt;a &lt; b&lt;/math&gt; be the endpoints of the interval of integration.  Fix &lt;math&gt;N&lt;/math&gt;, the number of points to use in the approximation, and denote the corresponding step size by &lt;math&gt;h = (b - a) / (N - 1)&lt;/math&gt;.  Set &lt;math&gt;x_i = a + (i-1)h&lt;/math&gt;, so that &lt;math&gt;x_1 = a&lt;/math&gt; and &lt;math&gt;x_N = b&lt;/math&gt;.  Then:&lt;ref name=&quot;Devries&quot;&gt;{{cite book |last1=Devries |first1=Paul L. |last2=Hasbrun |first2=Javier E. |title=A first course in computational physics. |edition=2nd |publisher=Jones and Bartlett Publishers |year=2011 |page=156}}&lt;/ref&gt;
+
+:&lt;math&gt;
+\begin{align}
+I &amp; = \int_a^b f(x)\,dx \\
+&amp;\sim h\left(\frac{f(x_1)}{2} + f(x_2) + \cdots + f(x_{N-1}) + \frac{f(x_N)}{2}\right) + \frac{h^2}{12}[f'(x_1) - f'(x_N)] - \frac{h^4}{720}[f'''(x_1) - f'''(x_N)] + \cdots.
+\end{align}
+&lt;/math&gt;
+
+This may be viewed as an extension of the [[trapezoid rule]] by the inclusion of correction terms.  Note that this asymptotic expansion is usually not convergent; there is some &lt;math&gt;p&lt;/math&gt;, depending upon &lt;math&gt;f&lt;/math&gt; and &lt;math&gt;h&lt;/math&gt;, such that the terms past order &lt;math&gt;p&lt;/math&gt; increase rapidly.  Thus, the remainder term generally demands close attention.&lt;ref name=&quot;Devries&quot;/&gt;
+
+The Euler–Maclaurin formula is also used for detailed [[error analysis (mathematics)|error analysis]] in [[numerical quadrature]]. It explains the superior performance of the [[trapezoidal rule]] on smooth [[periodic function]]s and is used in certain [[Series acceleration|extrapolation methods]]. [[Clenshaw–Curtis quadrature]] is essentially a change of variables to cast an arbitrary integral in terms of integrals of periodic functions where the Euler–Maclaurin approach is very accurate (in that particular case the Euler–Maclaurin formula takes the form of a [[discrete cosine transform]]). This technique is known as a periodizing transformation.
+
+===Asymptotic expansion of sums===
+In the context of computing [[asymptotic expansion]]s of sums and [[Series (mathematics)|series]], usually the most useful form of the Euler–Maclaurin formula is
+
+:&lt;math&gt;\sum_{n=a}^b f(n) \sim \int_a^b f(x)\,dx + \frac{f(b) + f(a)}{2} + \sum_{k=1}^\infty \,\frac{B_{2k}}{(2k)!} \left(f^{(2k - 1)}(b) - f^{(2k - 1)}(a)\right),&lt;/math&gt;
+
+where &lt;math&gt;a&lt;/math&gt; and &lt;math&gt;b&lt;/math&gt; are integers.&lt;ref&gt;{{harvtxt|Abramowitz|Stegun|1972}}, 23.1.30&lt;/ref&gt; Often the expansion remains valid even after taking the limits &lt;math&gt;a\rightarrow-\infty&lt;/math&gt; or &lt;math&gt;b\rightarrow +\infty&lt;/math&gt; or both.  In many cases the integral on the right-hand side can be evaluated in [[Differential Galois theory|closed form]] in terms of [[elementary function]]s even though the sum on the left-hand side cannot. Then all the terms in the asymptotic series can be expressed in terms of elementary functions.  For example,
+
+:&lt;math&gt;\sum_{k=0}^\infty \frac{1}{(z + k)^2} \sim \underbrace{\int_0^\infty\frac{1}{(z + k)^2}\,dk}_{= 1/z} + \frac{1}{2z^2} + \sum_{t = 1}^\infty \frac{B_{2t}}{z^{2t + 1}}.&lt;/math&gt;
+
+Here the left-hand side is equal to &lt;math&gt;\psi^{(1)}(z)&lt;/math&gt;, namely the first-order [[Polygamma function#Series representation|polygamma function]] defined by &lt;math&gt;\psi^{(1)}(z) = (d/dz)^2(\log \Gamma(z))&lt;/math&gt;; the [[gamma function]] &lt;math&gt;\Gamma(z) &lt;/math&gt; is equal to &lt;math&gt;(z-1)! &lt;/math&gt; if &lt;math&gt;z &lt;/math&gt; is a [[positive integer]]. This results in an asymptotic expansion for &lt;math&gt;\psi^{(1)}(z)&lt;/math&gt;.  That expansion, in turn, serves as the starting point for one of the derivations of precise error estimates for [[Stirling's approximation]] of the [[factorial]] function.
+
+====Examples====
+If {{mvar|s}} is an integer greater than 1 we have:
+:&lt;math&gt;\sum_{k=1}^n \frac{1}{k^s} \approx \frac 1{s-1}+\frac 12-\frac 1{(s-1)n^{s-1}}+\frac 1{2n^s}+\sum_{i=1}\frac{B_{2i}}{(2i)!}\left[\frac{(s+2i-2)!}{(s-1)!}-\frac{(s+2i-2)!}{(s-1)!n^{s+2i-1}}\right].&lt;/math&gt;
+
+Collecting the constants into a value of the [[Riemann zeta function]], we can write an asymptotic expansion:
+:&lt;math&gt;\sum_{k=1}^n \frac{1}{k^s} \sim\zeta(s)-\frac 1{(s-1)n^{s-1}}+\frac 1{2n^s}-\sum_{i=1}\frac{B_{2i}}{(2i)!}\frac{(s+2i-2)!}{(s-1)!n^{s+2i-1}}.&lt;/math&gt;
+
+For {{mvar|s}} equal to 2 this simplifies to
+:&lt;math&gt;\sum_{k=1}^n \frac{1}{k^2} \sim\zeta(2)-\frac 1n+\frac 1{2n^2}-\sum_{i=1}\frac{B_{2i}}{n^{2i+1}},&lt;/math&gt;
+or
+:&lt;math&gt;\sum_{k=1}^n \frac{1}{k^2} \sim \frac{\pi^2}{6} -\frac{1}{n} +\frac{1}{2n^2} -\frac{1}{6n^3}+\frac{1}{30n^5}-\frac{1}{42n^7} + \cdots.&lt;/math&gt;
+
+When {{math|s {{=}} 1}}, the corresponding technique gives an asymptotic expansion for the [[harmonic number]]s:
+:&lt;math&gt;\sum_{k=1}^n \frac{1}{k} \sim \gamma + \log n + \frac{1}{2n} - \sum_{k=1}^\infty \frac{B_{2k}}{2kn^{2k}},&lt;/math&gt;
+where &lt;math&gt;\gamma \approx 0.5772156649015328606065&lt;/math&gt; is the [[Euler–Mascheroni constant]].
+
+== Proofs ==
+
+=== Derivation by mathematical induction ===
+We outline the argument given in Apostol.&lt;ref name=&quot;:0&quot;&gt;{{Cite journal| first = T. M. | title = An Elementary View of Euler's Summation Formula | journal = The [[American Mathematical Monthly]] | volume = 106 | date = 1 May 1999 | issue = 5 | pages = 409–418  | issn = 0002-9890| last = Apostol | doi = 10.2307/2589145| authorlink= Tom M. Apostol| publisher =    Mathematical Association of America| jstor =    2589145}}&lt;/ref&gt;
+
+The [[Bernoulli polynomials]] {{math|''B&lt;sub&gt;n&lt;/sub&gt;''(''x'')}} and the periodic Bernoulli functions {{math|''P&lt;sub&gt;n&lt;/sub&gt;''(''x'')}} for {{math|''n'' {{=}} 0, 1, 2, ...}} were introduced above.
+
+The first several Bernoulli polynomials are
+
+:&lt;math&gt;\begin{align}
+  B_0(x) &amp;= 1, \\
+  B_1(x) &amp;= x - \frac{1}{2}, \\
+  B_2(x) &amp;= x^2 - x + \frac{1}{6}, \\
+  B_3(x) &amp;= x^3 - \frac{3}{2}x^2 + \frac{1}{2}x, \\
+  B_4(x) &amp;= x^4 - 2x^3 + x^2 - \frac{1}{30}, \\
+         &amp; \vdots
+\end{align}&lt;/math&gt;
+
+The values {{math|''B&lt;sub&gt;n&lt;/sub&gt;''(0)}} are the [[Bernoulli numbers]] {{math|''B''&lt;sub&gt;''n''&lt;/sub&gt;}}.  Notice that for {{math|''n''&amp;nbsp;≠&amp;nbsp;1}} we have
+
+:&lt;math&gt;B_n = B_n(0) = B_n(1),&lt;/math&gt;
+
+and for {{math|''n''&amp;nbsp;{{=}}&amp;nbsp;1}},
+
+:&lt;math&gt;B_1 = B_1(0) = -B_1(1).&lt;/math&gt;
+
+The functions {{math|''P''&lt;sub&gt;''n''&lt;/sub&gt;}} agree with the Bernoulli polynomials on the interval {{math|[0,&amp;nbsp;1]}}  and are [[periodic function|periodic]] with period 1.  Furthermore, except when {{math|''n'' {{=}} 1}}, they are also continuous. Thus,
+
+:&lt;math&gt; P_n(0) = P_n(1) = B_n \quad (n \neq 1)&lt;/math&gt;
+
+Let {{math|''k''}} be an integer, and consider the integral
+
+:&lt;math&gt; \int_k^{k + 1} f(x)\,dx = \int_k^{k + 1} u\,dv,&lt;/math&gt;
+
+where
+
+:&lt;math&gt;\begin{align}
+   u &amp;= f(x), \\
+  du &amp;= f'(x)\,dx, \\
+  dv &amp;= P_0(x)\,dx &amp;&amp; (\text{since }P_0(x) = 1), \\
+   v &amp;= P_1(x).
+\end{align}&lt;/math&gt;
+
+[[integration by parts|Integrating by parts]], we get
+
+:&lt;math&gt;\begin{align}
+ \int_k^{k + 1} f(x)\,dx &amp;= \bigl[uv\bigr]_k^{k + 1} - \int_k^{k + 1} v\,du \\
+                         &amp;= \bigl[f(x)P_1(x)\bigr]_k^{k + 1} - \int_k^{k+1} f'(x)P_1(x)\,dx \\
+                         &amp;= B_1(1)f(k+1)-B_1(0)f(k) - \int_k^{k+1} f'(x)P_1(x)\,dx.
+\end{align}&lt;/math&gt;
+
+Using &lt;math&gt;B_1(0)=-1/2&lt;/math&gt;, &lt;math&gt;B_1(1)=1/2&lt;/math&gt;, and summing the above from {{math|''k'' {{=}} 0}} to {{math|''k'' {{=}} ''n'' − 1}}, we get
+
+:&lt;math&gt;\begin{align}
+\int_0^n f(x)\, dx &amp;= \int_0^1 f(x)\,dx + \dotsb + \int_{n-1}^n f(x)\,dx  \\
+&amp;= \frac{f(0)}{2}+ f(1) + \dotsb + f(n-1) + \frac{f(n)}{2} - \int_0^n f'(x) P_1(x)\,dx.
+\end{align}&lt;/math&gt;
+
+Adding (''f''(''n'')&amp;nbsp;−&amp;nbsp;''f''(0))/2 to both sides and rearranging, we have
+
+:&lt;math&gt; \sum_{k=1}^n f(k) = \int_0^n f(x)\,dx + \frac{f(n) - f(0)}{2} + \int_0^n f'(x) P_1(x)\,dx.&lt;/math&gt;
+
+This is the {{math|''p'' {{=}} 1}} case of the summation formula.  To continue the induction, we apply integration by parts to the error term:
+
+:&lt;math&gt;\int_k^{k+1} f'(x)P_1(x)\,dx = \int_k^{k + 1} u\,dv,&lt;/math&gt;
+
+where
+
+:&lt;math&gt;\begin{align}
+   u &amp;= f'(x), \\
+  du &amp;= f''(x)\,dx, \\
+  dv &amp;= P_1(x)\,dx, \\
+   v &amp;= \frac{1}{2}P_2(x).
+\end{align}&lt;/math&gt;
+
+The result of integrating by parts is
+
+:&lt;math&gt;\begin{align}
+  \bigl[uv\bigr]_k^{k + 1} - \int_k^{k + 1} v\,du &amp;= \left[\frac{f'(x)P_2(x)}{2} \right]_k^{k+1} - \frac{1}{2}\int_k^{k+1} f''(x)P_2(x)\,dx \\
+                  &amp;= \frac{B_2}{2}(f'(k + 1) - f'(k)) - \frac{1}{2}\int_k^{k + 1} f''(x)P_2(x)\,dx.
+\end{align}&lt;/math&gt;
+
+Summing from {{math|''k'' {{=}} 0}} to {{math|''k'' {{=}} ''n'' &amp;minus; 1}} and substituting this for the lower order error term results in the {{math|''p'' {{=}} 2}} case of the formula,
+
+:&lt;math&gt;\sum_{k=1}^n f(k) = \int_0^n f(x)\,dx + \frac{f(n) - f(0)}{2} + \frac{B_2}{2}(f'(n) - f'(0)) - \frac{1}{2}\int_0^n f''(x)P_2(x)\,dx.&lt;/math&gt;
+
+This process can be iterated.  In this way we get a proof of the Euler–Maclaurin summation formula which can be formalized by [[mathematical induction]], in which the induction step relies on integration by parts and on identities for periodic Bernoulli functions.
+
+==See also==
+* [[Cesàro summation]]
+* [[Euler summation]]
+* [[Gauss–Kronrod quadrature formula]]
+* [[Darboux's formula]]
+* [[Euler–Boole summation]]
+
+==Notes==
+{{reflist}}
+
+==References==
+{{refbegin|2}}
+* {{Cite book | editor1-last=Abramowitz | editor1-first=Milton | editor1-link=Milton Abramowitz | editor2-last=Stegun | editor2-first=Irene A. | editor2-link=Irene Stegun | title=[[Abramowitz and Stegun|Handbook of Mathematical Functions with Formulas, Graphs, and Mathematical Tables]] | publisher=[[Dover Publications]] | location=New York | isbn=978-0-486-61272-0 | year=1972 | id=tenth printing | ref=harv }}, pp.&amp;nbsp;16, 806, 886
+* {{MathWorld|title=Euler–Maclaurin Integration Formulas|urlname=Euler-MaclaurinIntegrationFormulas}}
+* Gourdon, Xavier; Sebah, Pascal ''[http://numbers.computation.free.fr/Constants/Miscellaneous/bernoulli.html Introduction on Bernoulli's numbers]'', (2002)
+* {{cite book | first1=Hugh L. |last=Montgomery | authorlink=Hugh Montgomery (mathematician) |first2=Robert C. |last2=Vaughan |authorlink2=Robert Charles Vaughan (mathematician)  | title=Multiplicative number theory I. Classical theory | series=Cambridge tracts in advanced mathematics | volume=97 | year=2007 | isbn=0-521-84903-9 | pages=495–519}}
+{{refend}}
+
+{{DEFAULTSORT:Euler-Maclaurin Formula}}
+[[Category:Approximation theory]]
+[[Category:Asymptotic analysis]]
+[[Category:Hilbert space]]
+[[Category:Numerical integration (quadrature)]]
+[[Category:Articles containing proofs]]
+[[Category:Theorems in analysis]]
+[[Category:Summability methods]]
+[[Category:Leonhard Euler]]</text>
+      <sha1>lyhbcv0v27bco5vjt942jpjkdafjuvc</sha1>
+    </revision>
+  </page>

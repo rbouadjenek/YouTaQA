@@ -1,0 +1,103 @@
+  <page>
+    <title>Context-sensitive language</title>
+    <ns>0</ns>
+    <id>6212</id>
+    <revision>
+      <id>938064319</id>
+      <parentid>937858123</parentid>
+      <timestamp>2020-01-28T22:37:09Z</timestamp>
+      <contributor>
+        <username>Strickesel</username>
+        <id>36932059</id>
+      </contributor>
+      <minor />
+      <comment>Fixed a typo found by [[Wikipedia:Typo Team/moss]] – you can help!</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{missing|context for lay readers (do these apply to natural languages or computer languages? what applications do these languages have, or are they just used for research?)|date=April 2019}}
+{{redirect|Context-dependent|the type of memory|Context-dependent memory}}
+In [[formal language theory]], a '''context-sensitive language''' is a language that can be defined by a [[context-sensitive grammar]] (and equivalently by a [[noncontracting grammar]]).  Context-sensitive is one of the four types of grammars in the [[Chomsky hierarchy]].
+
+== Computational properties ==
+
+Computationally, a context-sensitive language is equivalent with a linear bounded [[nondeterministic Turing machine]], also called a [[linear bounded automaton]]. That is a non-deterministic Turing machine with a tape of only &lt;math&gt;kn&lt;/math&gt; cells, where &lt;math&gt;n&lt;/math&gt; is the size of the input and &lt;math&gt;k&lt;/math&gt; is a constant associated with the machine. This means that every formal language that can be decided by such a machine is a context-sensitive language, and every context-sensitive language can be decided by such a machine.
+
+This set of languages is also known as '''NLINSPACE''' or '''NSPACE'''(''O''(''n'')), because they can be accepted using linear space on a non-deterministic Turing machine.&lt;ref&gt;{{citation
+ | last = Rothe | first = Jörg
+ | isbn = 978-3-540-22147-0
+ | location = Berlin
+ | mr = 2164257
+ | page = 77
+ | publisher = Springer-Verlag
+ | series = Texts in Theoretical Computer Science. An EATCS Series
+ | title = Complexity theory and cryptology
+ | year = 2005}}.&lt;/ref&gt;  The class '''LINSPACE''' (or '''DSPACE'''(''O''(''n''))) is defined the same, except using a [[Deterministic automaton|deterministic]] Turing machine.  Clearly '''LINSPACE''' is a subset of '''NLINSPACE''', but it is not known whether '''LINSPACE'''='''NLINSPACE'''.&lt;ref&gt;{{citation
+ | last = Odifreddi | first = P. G.
+ | isbn = 978-0-444-50205-6
+ | location = Amsterdam
+ | mr = 1718169
+ | page = 236
+ | publisher = North-Holland Publishing Co.
+ | series = Studies in Logic and the Foundations of Mathematics
+ | title = Classical recursion theory. Vol. II
+ | volume = 143
+ | year = 1999}}.&lt;/ref&gt;
+
+== Examples ==&lt;!-- [[Bach language]] redirects here --&gt;
+
+One of the simplest context-sensitive but not context-free languages is &lt;math&gt;L = \{ a^nb^nc^n : n \ge 1 \}&lt;/math&gt;: the language of all strings consisting of {{mvar|n}} occurrences of the symbol &quot;a&quot;, then {{mvar|n}} &quot;b&quot;'s, then {{mvar|n}} &quot;c&quot;'s (abc, {{not a typo|aabbcc}}, {{not a typo|aaabbbccc}}, etc.). A superset of this language, called the Bach language,&lt;ref&gt;{{cite conference |last=Pullum |first=Geoffrey K. |year=1983 |title=Context-freeness and the computer processing of human languages |conference=Proc. 21st Annual Meeting of the [[Association for Computational Linguistics|ACL]] |url=http://www.aclweb.org/anthology/P83-1001}}&lt;/ref&gt; is defined as the set of all strings where &quot;a&quot;, &quot;b&quot; and &quot;c&quot; (or any other set of three symbols) occurs equally often ({{not a typo|aabccb}}, {{not a typo|baabcaccb}}, etc.) and is also context-sensitive.&lt;ref&gt;Bach, E. (1981). [http://people.umass.edu/ebach/papers/nels11.htm &quot;Discontinuous constituents in generalized categorial grammars&quot;] {{Webarchive|url=https://web.archive.org/web/20140121022931/http://people.umass.edu/ebach/papers/nels11.htm |date=2014-01-21 }}. ''NELS'', vol. 11, pp.&amp;nbsp;1&amp;ndash;12.&lt;/ref&gt;&lt;ref&gt;Joshi, A.; Vijay-Shanker, K.; and Weir, D. (1991). &quot;The convergence of mildly context-sensitive grammar formalisms&quot;. In: Sells, P., Shieber, S.M. and Wasow, T. (Editors). ''Foundational Issues in Natural Language Processing''. Cambridge MA: Bradford.&lt;/ref&gt;
+
+{{mvar|L}} can be shown to be a context-sensitive language by constructing a linear bounded automaton which accepts {{mvar|L}}. The language can easily be shown to be neither [[regular language|regular]] nor [[context-free language|context free]] by applying the respective [[pumping lemma]]s for each of the language classes to {{mvar|L}}.
+
+Similarly:
+ 
+&lt;math&gt;L_{Cross} = \{ a^mb^nc^{m}d^{n} : m \ge 1, n \ge 1 \}&lt;/math&gt; is another context-sensitive language; the corresponding context-sensitive grammar can be easily projected starting with two context-free grammars generating sentential forms in the formats
+&lt;math&gt;a^mC^m&lt;/math&gt;
+and
+&lt;math&gt;B^nd^n&lt;/math&gt;
+and then supplementing them with a permutation production like 
+&lt;math&gt;CB\rightarrow BC&lt;/math&gt;, a new starting symbol and standard syntactic sugar.
+
+
+&lt;math&gt;L_{MUL3} = \{ a^mb^nc^{mn} : m \ge 1, n \ge 1 \}&lt;/math&gt; is another context-sensitive language (the &quot;3&quot; in the name of this language is intended to mean a ternary alphabet); that is, the &quot;product&quot; operation defines a context-sensitive language (but the &quot;sum&quot; defines only a context-free language as the grammar &lt;math&gt;S\rightarrow aSc|R&lt;/math&gt; and &lt;math&gt;R\rightarrow bRc|bc&lt;/math&gt; shows). Because of the commutative property of the product, the most intuitive grammar for &lt;math&gt;L_{MUL3}&lt;/math&gt; is ambiguous. This problem can be avoided considering a somehow more restrictive definition of the language, e.g. &lt;math&gt;L_{ORDMUL3} = \{ a^mb^nc^{mn} : 1 &lt; m &lt; n \}&lt;/math&gt;. This can be specialized to 
+&lt;math&gt;L_{MUL1} = \{ a^{mn} : m &gt; 1,  n &gt; 1 \}&lt;/math&gt; and, from this, to &lt;math&gt;L_{m^2} = \{ a^{m^2} : m &gt; 1 \}&lt;/math&gt;, &lt;math&gt;L_{m^3} = \{ a^{m^3} : m &gt; 1 \}&lt;/math&gt;, etc.
+
+
+&lt;math&gt;L_{REP} = \{ w^{|w|} : w \in \Sigma^* \}&lt;/math&gt; is a context-sensitive language. The corresponding context-sensitive grammar can be obtained as a generalization of the context-sensitive grammars for &lt;math&gt;L_{Square} = \{ w^2 : w \in \Sigma^* \}&lt;/math&gt;, &lt;math&gt;L_{Cube} = \{ w^3 : w \in \Sigma^* \}&lt;/math&gt;, etc.
+
+
+&lt;math&gt;L_{EXP} = \{ a^{2^n} : n \ge 1  \}&lt;/math&gt; is a context-sensitive language&lt;ref&gt;Example 9.5 (p. 224) of Hopcroft, John E.; Ullman, Jeffrey D. (1979). Introduction to Automata Theory, Languages, and Computation. Addison-Wesley&lt;/ref&gt;.
+
+
+&lt;math&gt;L_{PRIMES2} = \{ w : |w| \mbox { is prime }  \}&lt;/math&gt; is a context-sensitive language (the &quot;2&quot; in the name of this language is intended to mean a binary alphabet). This was proved by Hartmanis using pumping lemmas for regular and context-free languages over a binary alphabet and, after that, sketching a linear bounded multitape automaton accepting &lt;math&gt;L_{PRIMES2}&lt;/math&gt;.&lt;ref&gt;{{cite journal | doi=10.1145/321466.321470 | url=https://ecommons.cornell.edu/bitstream/1813/5864/1/68-1.pdf | author=J. Hartmanis and H. Shank | title=On the Recognition of Primes by Automata | journal=[[Journal of the ACM]] | volume=15 | number=3 | pages=382–389 | date=Jul 1968 }}&lt;/ref&gt;
+
+
+&lt;math&gt;L_{PRIMES1} = \{ a^p : p \mbox { is prime }  \}&lt;/math&gt; is a context-sensitive language (the &quot;1&quot; in the name of this language is intended to mean an unary alphabet). This was credited by A. Salomaa to Matti Soittola by means of a linear bounded automaton over an unary alphabet&lt;ref&gt;Salomaa, Arto (1969), ''Theory of Automata'', {{ISBN|978-0-08-013376-8}}, Pergamon, 276 pages. {{doi|10.1016/C2013-0-02221-9}}&lt;/ref&gt; (pages 213-214, exercise 6.8) and also to Marti Penttonen by means of a context-sensitive grammar also over an unary alphabet (See: Formal Languages by A. Salomaa, page 14, Example 2.5).
+
+
+An example of [[recursive language]] that is not context-sensitive is any recursive language whose decision is an [[EXPSPACE]]-hard problem, say, the set of pairs of equivalent [[regular expression]]s with exponentiation.
+
+== Properties of context-sensitive languages ==
+
+* The union, intersection, concatenation of two context-sensitive languages is context-sensitive, also the [[Kleene star#Kleene plus|Kleene plus]] of a context-sensitive language is context-sensitive.&lt;ref&gt;{{cite book|author=John E. Hopcroft|author2=Jeffrey D. Ullman|title=Introduction to Automata Theory, Languages, and Computation|url=https://archive.org/details/introductiontoau00hopc|url-access=registration|publisher=Addison-Wesley|year=1979}}; Exercise 9.10, p.230. In the 2000 edition, the chapter on context-sensitive languages has been omitted.&lt;/ref&gt;
+* The complement of a context-sensitive language is itself context-sensitive&lt;ref&gt;{{cite journal | last = Immerman | first = Neil | year = 1988 | title =Nondeterministic space is closed under complementation | journal = SIAM J. Comput. | issue = 5 | pages = 935–938 | doi = 10.1137/0217058 | volume = 17 | url=http://www.cs.umass.edu/~immerman/pub/space.pdf| citeseerx = 10.1.1.54.5941 }}&lt;/ref&gt; a result known as the [[Immerman–Szelepcsényi theorem]].
+* Membership of a string in a language defined by an arbitrary context-sensitive grammar, or by an arbitrary deterministic context-sensitive grammar, is a [[PSPACE-complete]] problem.
+
+==See also==
+* [[Linear bounded automaton]]
+* [[List of parser generators for context-sensitive languages]]
+* [[Chomsky hierarchy]]
+* [[Indexed language]]s – a strict subset of the context-sensitive languages
+* [[Weir hierarchy]]
+
+==References==
+{{reflist}}
+* Sipser, M. (1996), ''Introduction to the Theory of Computation'', PWS Publishing Co.
+
+{{Formal languages and grammars}}
+
+{{DEFAULTSORT:Context-Sensitive Language}}
+[[Category:Formal languages]]</text>
+      <sha1>bmqrr3d8sfl1kprdarvczpo2keevy8l</sha1>
+    </revision>
+  </page>

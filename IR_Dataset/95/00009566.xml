@@ -1,0 +1,143 @@
+  <page>
+    <title>Empty set</title>
+    <ns>0</ns>
+    <id>9566</id>
+    <revision>
+      <id>923028293</id>
+      <parentid>923028201</parentid>
+      <timestamp>2019-10-25T21:25:51Z</timestamp>
+      <contributor>
+        <username>Joel B. Lewis</username>
+        <id>13974845</id>
+      </contributor>
+      <comment>Undid revision 923028201 by [[Special:Contributions/Galactikapedia|Galactikapedia]] ([[User talk:Galactikapedia|talk]]) not redundant: the lead is a summary of the body</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{Redirect|∅|similar symbols|Ø (disambiguation)}}
+{{Other uses of|Empty}}
+
+[[File:Nullset.svg|thumb|upright=0.4|The empty set is the set containing no elements.]]
+In [[mathematics]], the '''empty set''' is the unique [[Set (mathematics)|set]] having no [[Element (mathematics)|elements]]; its size or [[cardinality]] (count of elements in a set) is [[0|zero]]. Some [[axiomatic set theories]] ensure that the empty set exists by including an [[axiom of empty set]]; in other theories, its existence can be deduced. Many possible properties of sets are [[vacuously true]] for the empty set.
+
+In some textbooks and popularizations, the empty set is referred to as the &quot;null set&quot;.  However ''[[null set]]'' is a distinct notion within the context of [[measure theory]]. In that setting, it describes a set of measure zero; such a set is not necessarily empty.  The empty set may also be called the ''void set''.  Common notations for the empty set include &quot;{}&quot;, &quot;&lt;math&gt;\emptyset&lt;/math&gt;&quot;, and &quot;∅&quot;.
+
+==Notation==
+{{Main|Null sign}}
+[[Image:Empty set.svg|thumb|upright=0.4|A symbol for the empty set]]
+Common notations for the empty set include &quot;{}&quot;, &quot;&lt;math&gt;\emptyset&lt;/math&gt;&quot;, and &quot;∅&quot;. The latter two symbols were introduced by the [[Bourbaki group]] (specifically [[André Weil]]) in 1939, inspired by the letter [[Ø]] in the [[Norwegian orthography|Norwegian]] and [[Danish orthography|Danish]] alphabets (and not related in any way to the Greek letter [[phi (letter)|Φ]]).&lt;ref&gt;[http://jeff560.tripod.com/set.html Earliest Uses of Symbols of Set Theory and Logic.]&lt;/ref&gt; In the past, &quot;0&quot; was occasionally used as a symbol for the empty set, but this is now considered to be an improper use of notation.&lt;ref&gt;{{Cite book|url=https://archive.org/details/1979RudinW|title=Principles of Mathematical Analysis|last=Rudin|first=Walter|publisher=McGraw-Hill|year=1976|isbn=007054235X|edition=3rd|pages=300}}&lt;/ref&gt;
+
+The symbol ∅ is available at [[Unicode]] point U+2205.&lt;ref&gt;[https://www.unicode.org/charts/PDF/U2200.pdf Unicode Standard 5.2]&lt;/ref&gt; It can be coded in [[HTML]] as &lt;tt&gt;&amp;amp;empty;&lt;/tt&gt; and as &lt;tt&gt;&amp;amp;#8709;&lt;/tt&gt;. It can be coded in [[LaTeX]] as &lt;tt&gt;\varnothing&lt;/tt&gt;. The symbol &lt;math&gt;\emptyset&lt;/math&gt; is coded in LaTeX as &lt;tt&gt;\emptyset&lt;/tt&gt;.
+
+== Properties ==
+In standard [[axiomatic set theory]], by the [[axiom of extensionality|principle of extensionality]], two sets are equal if they have the same elements; therefore there can be only one set with no elements. Hence there is but one empty set, and we speak of &quot;the empty set&quot; rather than &quot;an empty set&quot;.
+
+(The mathematical symbols used below are explained in the article ''[[List of mathematical symbols]]''.)
+
+[[For any]] set ''A'':
+* The empty set is a [[subset]] of ''A'':
+*:&lt;math&gt;\forall A: \varnothing  \subseteq A&lt;/math&gt;
+* The [[union (set theory)|union]] of ''A'' with the empty set is ''A'':
+*:&lt;math&gt;\forall A: A \cup \varnothing  = A&lt;/math&gt;
+* The [[intersection (set theory)|intersection]] of ''A'' with the empty set is the empty set:
+*:&lt;math&gt;\forall A: A \cap \varnothing  = \varnothing &lt;/math&gt;
+* The [[Cartesian product]] of ''A'' and the empty set is the empty set:
+*:&lt;math&gt;\forall A: A \times \varnothing  = \varnothing &lt;/math&gt;
+
+The empty set has the following properties:
+* Its only subset is the empty set itself:
+*:&lt;math&gt;\forall A: A \subseteq \varnothing  \Rightarrow A = \varnothing &lt;/math&gt;
+* The [[power set]] of the empty set is the set containing only the empty set:
+*:&lt;math&gt;2^{\varnothing } = \{\varnothing\}&lt;/math&gt;
+* Its number of elements (that is, its [[cardinality]]) is zero:
+*:&lt;math&gt;\mathrm{|}\varnothing\mathrm{|} = 0&lt;/math&gt;
+
+The connection between the empty set and zero goes further, however: in the standard [[set-theoretic definition of natural numbers]], sets are used to [[model theory|model]] the natural numbers. In this context, zero is modelled by the empty set.
+
+For any [[property (philosophy)|property]]:
+* For every element of &lt;math&gt;\varnothing&lt;/math&gt; the property holds ([[vacuous truth]]);
+* There is no element of &lt;math&gt;\varnothing&lt;/math&gt; for which the property holds.
+
+Conversely, if for some property and some set ''V'', the following two statements hold:
+* For every element of ''V'' the property holds
+* There is no element of ''V'' for which the property holds
+then ''V''&amp;nbsp;= ∅.
+
+By the definition of [[subset]], the empty set is a subset of any set ''A''. That is, ''every'' element ''x'' of &lt;math&gt;\varnothing&lt;/math&gt; belongs to ''A''. Indeed, if it were not true that every element of &lt;math&gt;\varnothing&lt;/math&gt; is in ''A'' then there would be at least one element of &lt;math&gt;\varnothing&lt;/math&gt; that is not present in ''A''. Since there are ''no'' elements of &lt;math&gt;\varnothing&lt;/math&gt; at all, there is no element of &lt;math&gt;\varnothing&lt;/math&gt; that is not in ''A''. Any statement that begins &quot;for every element of &lt;math&gt;\varnothing&lt;/math&gt;&quot; is not making any substantive claim; it is a [[vacuous truth]]. This is often paraphrased as &quot;everything is true of the elements of the empty set.&quot;
+
+=== Operations on the empty set ===
+
+When speaking of the [[summation|sum]] of the elements of a finite set, one is inevitably led to the convention that the sum of the elements of the empty set is zero. The reason for this is that zero is the [[identity element]] for addition. Similarly, the [[multiplication|product]] of the elements of the empty set should be considered to be [[1 (number)|one]] (see [[empty product]]), since one is the identity element for multiplication.
+
+A [[derangement]] is a [[permutation]] of a set without [[fixed point (mathematics)|fixed point]]s.  The empty set can be considered a derangement of itself, because it has only one permutation (&lt;math&gt;0!=1&lt;/math&gt;), and it is vacuously true that no element (of the empty set) can be found that retains its original position.
+
+==In other areas of mathematics==
+=== Extended real numbers ===
+
+Since the empty set has no members, when it is considered as a subset of any [[ordered set]], then every member of that set will be an upper bound and lower bound for the empty set. For example, when considered as a subset of the real numbers, with its usual ordering, represented by the [[real number line]], every real number is both an upper and lower bound for the empty set.&lt;ref&gt;Bruckner, A.N., Bruckner, J.B., and Thomson, B.S. (2008). ''[http://classicalrealanalysis.info/com/documents/TBB-AllChapters-Portrait.pdf Elementary Real Analysis]'', 2nd edition, p.&amp;nbsp;9.&lt;/ref&gt; When considered as a subset of the [[extended reals]] formed by adding two &quot;numbers&quot; or &quot;points&quot; to the real numbers, namely [[negative infinity]], denoted &lt;math&gt;-\infty\!\,,&lt;/math&gt; which is defined to be less than every other extended real number, and [[positive infinity]], denoted &lt;math&gt;+\infty\!\,,&lt;/math&gt; which is defined to be greater than every other extended real number, then: 
+
+:&lt;math&gt;\sup\varnothing=\min(\{-\infty, +\infty \} \cup \mathbb{R})=-\infty,&lt;/math&gt;
+
+and
+:&lt;math&gt;\inf\varnothing=\max(\{-\infty, +\infty \} \cup \mathbb{R})=+\infty.&lt;/math&gt;
+
+That is, the least upper bound (sup or [[supremum]]) of the empty set is negative infinity, while the greatest lower bound (inf or [[infimum]]) is positive infinity. By analogy with the above, in the domain of the extended reals, negative infinity is the identity element for the maximum and supremum operators, while positive infinity is the identity element for minimum and infimum.
+
+=== Topology ===
+In any [[topological space]] ''X'', the empty set is [[open set|open]] by definition, as is ''X''. Since the [[complement (set theory)|complement]] of an open set is [[closed set|closed]] and the empty set and ''X'' are complements of each other, the empty set is also closed, making it a [[clopen set]]. Moreover, the empty set is [[compact set|compact]] by the fact that every [[finite set]] is compact.
+
+The [[closure (mathematics)|closure]] of the empty set is empty. This is known as &quot;preservation of [[nullary]] [[union (set theory)|unions]].&quot;
+
+=== Category theory ===
+If ''A'' is a set, then there exists precisely one [[function (mathematics)|function]] ''f'' from ∅ to ''A'', the [[empty function]]. As a result, the empty set is the unique [[initial object]] of the [[category theory|category]] of sets and functions.
+
+The empty set can be turned into a [[topological space]], called the empty space, in just one way: by defining the empty set to be [[open set|open]]. This empty topological space is the unique initial object in the [[category of topological spaces]] with [[continuous function (topology)|continuous maps]]. In fact, it is a [[strict initial object]]: only the empty set has a function to the empty set.
+
+=== Set theory ===
+In the [[von Neumann ordinal|von Neumann construction of the ordinals]], 0 is defined as the empty set, and the successor of an ordinal is defined as &lt;math&gt;S(\alpha)=\alpha\cup\{\alpha\}&lt;/math&gt;. Thus, we have &lt;math&gt;0=\varnothing&lt;/math&gt;, &lt;math&gt;1 = 0\cup\{0\}=\{\varnothing\}&lt;/math&gt;, &lt;math&gt;2=1\cup\{1\}=\{\varnothing,\{\varnothing\}\}&lt;/math&gt;, and so on.  The von Neumann construction, along with the [[axiom of infinity]], which guarantees the existence of at least one infinite set, can be used to construct the set of natural numbers, &lt;math&gt;\mathbb{N}_0&lt;/math&gt;, such that the [[Peano axioms]] of arithmetic are satisfied.
+
+==Questioned existence==
+=== Axiomatic set theory ===
+In [[Zermelo set theory]], the existence of the empty set is assured by the [[axiom of empty set]], and its uniqueness follows from the [[axiom of extensionality]]. However, the axiom of empty set can be shown redundant in at least two ways:
+*Standard [[first-order logic]] implies, merely from the [[logical axiom]]s, that ''something'' exists, and in the language of set theory, that thing must be a set.  Now the existence of the empty set follows easily from the [[axiom of separation]].
+*Even using [[free logic]] (which does not logically imply that something exists), there is already an axiom implying the existence of at least one set, namely the [[axiom of infinity]].
+
+=== Philosophical issues ===
+While the empty set is a standard and widely accepted mathematical concept, it remains an [[ontological]] curiosity, whose meaning and usefulness are debated by philosophers and logicians.
+
+The empty set is not the same thing as ''[[nothing]]''; rather, it is a set with nothing ''inside'' it and a set is always ''something''. This issue can be overcome by viewing a set as a bag—an empty bag undoubtedly still exists. Darling (2004) explains that the empty set is not nothing, but rather &quot;the set of all triangles with four sides, the set of all numbers that are bigger than nine but smaller than eight, and the set of all [[chess opening|opening moves]] in [[chess]] that involve a [[king (chess)|king]].&quot;&lt;ref name=&quot;Darling&quot; /&gt;
+
+The popular [[syllogism]]
+:Nothing is better than eternal happiness; a ham sandwich is better than nothing; therefore, a ham sandwich is better than eternal happiness
+is often used to demonstrate the philosophical relation between the concept of nothing and the empty set. Darling writes that the contrast can be seen by rewriting the statements &quot;Nothing is better than eternal happiness&quot; and &quot;[A] ham sandwich is better than nothing&quot; in a mathematical tone. According to Darling, the former is equivalent to &quot;The set of all things that are better than eternal happiness is &lt;math&gt;\varnothing&lt;/math&gt;&quot; and the latter to &quot;The set {ham sandwich} is better than the set &lt;math&gt;\varnothing&lt;/math&gt;&quot;. The first compares elements of sets, while the second compares the sets themselves.&lt;ref name=&quot;Darling&quot;&gt;{{cite book|title=The Universal Book of Mathematics|author=D. J. Darling|publisher= [[John Wiley and Sons]]|year=2004 |isbn=0-471-27047-4|page=106}}&lt;/ref&gt;
+
+[[Jonathan Lowe]] argues that while the empty set:
+:&quot;...was undoubtedly an important landmark in the history of mathematics, … we should not assume that its utility in calculation is dependent upon its actually denoting some object.&quot;
+
+it is also the case that:
+:&quot;All that we are ever informed about the empty set is that it (1) is a set, (2) has no members, and (3) is unique amongst sets in having no members. However, there are very many things that 'have no members', in the set-theoretical sense&amp;mdash;namely, all non-sets. It is perfectly clear why these things have no members, for they are not sets. What is unclear is how there can be, uniquely amongst sets, a ''set'' which has no members. We cannot conjure such an entity into existence by mere stipulation.&quot;&lt;ref name=&quot;Lowe&quot;&gt;{{cite book|title=Locke|author=E. J. Lowe|publisher= [[Routledge]]|year=2005|page=87}}&lt;/ref&gt;
+
+[[George Boolos]] argued that much of what has been heretofore obtained by set theory can just as easily be obtained by [[plural quantification]] over individuals, without [[wikt:reification|reifying]] sets as singular entities having other entities as members.&lt;ref&gt;[[George Boolos]] (1984), &quot;To be is to be the value of a variable&quot;, ''[[The Journal of Philosophy]]'' 91: 430–49. Reprinted in 1998, ''Logic, Logic and Logic'' ([[Richard Jeffrey]], and Burgess, J., eds.) [[Harvard University Press]], 54–72.&lt;/ref&gt;
+
+==See also==
+*[[Inhabited set]]
+*[[Nothing]]
+
+==References==
+{{reflist}}
+
+==Further reading==
+*[[Paul Halmos|Halmos, Paul]], ''[[Naive Set Theory (book)|Naive Set Theory]]''. Princeton, NJ: D. Van Nostrand Company, 1960. Reprinted by Springer-Verlag, New York, 1974. {{ISBN|0-387-90092-6}} (Springer-Verlag edition). Reprinted by Martino Fine Books, 2011. {{ISBN|978-1-61427-131-4}} (paperback edition).
+*{{Citation|last=Jech|first=Thomas|authorlink=Thomas Jech|year=2002|title=Set Theory|edition=3rd millennium|series=Springer Monographs in Mathematics|publisher=Springer|isbn=3-540-44085-2}}
+*{{Citation|last=Graham|first=Malcolm|title=Modern Elementary Mathematics|date=1975|publisher=[[Harcourt Brace Jovanovich]]|isbn=0155610392|edition=2nd}}
+
+== External links ==
+*{{MathWorld |title=Empty Set |id=EmptySet }}
+
+{{Mathematical logic}}
+{{Set theory}}
+
+{{DEFAULTSORT:Empty Set}}
+[[Category:Basic concepts in set theory]]</text>
+      <sha1>7o854g204vn4jo2xl6i0n9b8dgpjja2</sha1>
+    </revision>
+  </page>

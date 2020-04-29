@@ -1,0 +1,331 @@
+  <page>
+    <title>Cauchy distribution</title>
+    <ns>0</ns>
+    <id>7003</id>
+    <revision>
+      <id>937469275</id>
+      <parentid>935972543</parentid>
+      <timestamp>2020-01-25T06:17:52Z</timestamp>
+      <contributor>
+        <username>Ardub23</username>
+        <id>13906297</id>
+      </contributor>
+      <minor />
+      <comment>Revised section link to use {{slink}}</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{short description|Probability distribution}}
+{{distinguish-redirect|Lorentz distribution|Lorenz curve|Lorenz equation}}
+{{Probability distribution
+ | name       =Cauchy
+ | type       =density
+ | box_width  =300px
+ | pdf_image  =[[File:cauchy pdf.svg|300px|Probability density function for the Cauchy distribution]]&lt;br&gt;&lt;small&gt;The purple curve is the standard Cauchy distribution&lt;/small&gt;
+ | cdf_image  =[[File:cauchy cdf.svg|300px|Cumulative distribution function for the Cauchy distribution]]
+ | parameters =&lt;math&gt;x_0\!&lt;/math&gt; [[location parameter|location]] ([[real number|real]])&lt;br&gt;&lt;math&gt;\gamma &gt; 0&lt;/math&gt; [[scale parameter|scale]] (real)
+ | support    =&lt;math&gt;\displaystyle x \in (-\infty, +\infty)\!&lt;/math&gt;
+ | pdf        =&lt;math&gt;\frac{1}{\pi\gamma\,\left[1 + \left(\frac{x-x_0}{\gamma}\right)^2\right]}\!&lt;/math&gt;
+ | cdf        =&lt;math&gt;\frac{1}{\pi} \arctan\left(\frac{x-x_0}{\gamma}\right)+\frac{1}{2}\!&lt;/math&gt;
+ | quantile   = &lt;math&gt;x_0+\gamma\,\tan[\pi(F-\tfrac{1}{2})]&lt;/math&gt;
+ | qdf        =&lt;math&gt;\gamma\,\pi\,\sec^2(\pi\,(p-\tfrac{1}{2}))\!&lt;/math&gt;
+ | mean       =[[indeterminate form|undefined]]
+ | median     =&lt;math&gt;x_0\!&lt;/math&gt;
+ | mode       =&lt;math&gt;x_0\!&lt;/math&gt;
+ | variance   =[[indeterminate form|undefined]]
+ | skewness   =[[indeterminate form|undefined]]
+ | kurtosis   =[[indeterminate form|undefined]]
+ | entropy    =&lt;math&gt;\log(4\pi\gamma)\!&lt;/math&gt;
+ | mgf        =does not exist
+ | char       =&lt;math&gt;\displaystyle \exp(x_0\,i\,t-\gamma\,|t|)\!&lt;/math&gt;
+}}
+The '''Cauchy distribution''', named after [[Augustin Cauchy]], is a [[continuous probability distribution]].  It is also known, especially among [[physicist]]s, as the '''Lorentz distribution''' (after [[Hendrik Lorentz]]), '''Cauchy–Lorentz distribution''', '''Lorentz(ian) function''', or '''Breit–Wigner distribution'''.  The Cauchy distribution &lt;math&gt;f(x; x_0,\gamma)&lt;/math&gt; is the distribution of the {{mvar|x}}-intercept of a ray issuing from &lt;math&gt;(x_0,\gamma)&lt;/math&gt; with a uniformly distributed angle.  It is also the distribution of the [[Ratio distribution|ratio of two]] independent [[Normal Distribution | normally distributed]] random variables with mean zero.
+
+The Cauchy distribution is often used in statistics as the canonical example of a &quot;[[pathological (mathematics)|pathological]]&quot; distribution since both its [[expected value]] and its [[variance]] are undefined (but see {{slink||Explanation of undefined moments}} below). The Cauchy distribution does not have finite [[moment (mathematics)|moment]]s of order greater than or equal to one; only fractional absolute moments exist.&lt;ref name=jkb1&gt;{{cite book|author1=N. L. Johnson |author2=S. Kotz |author3=N. Balakrishnan |title=Continuous Univariate Distributions, Volume 1|publisher=Wiley|location=New York|year=1994|ref=harv}}, Chapter 16.&lt;/ref&gt; The Cauchy distribution has no [[moment generating function]].
+
+In [[mathematics]], it is closely related to the [[Poisson kernel]], which is the [[fundamental solution]] for the [[Laplace equation]] in the [[upper half-plane]].  
+
+It is one of the few distributions that is [[stable distribution|stable]] and has a probability density function that can be expressed analytically, the others being the [[normal distribution]] and the [[Lévy distribution]].
+
+==History==
+Functions with the form of the density function of the Cauchy distribution were studied by mathematicians in the 17th century, but in a different context and under the title of the [[witch of Agnesi]]. Despite its name, the first explicit analysis of the properties of the Cauchy distribution was published by the French mathematician [[Siméon Denis Poisson|Poisson]] in 1824, with Cauchy only becoming associated with it during an academic controversy in 1853.&lt;ref&gt;Cauchy and the Witch of Agnesi in ''Statistics on the Table'', S M Stigler Harvard 1999 Chapter 18&lt;/ref&gt; As such, the name of the distribution is a case of [[Stigler's law of eponymy|Stigler's Law of Eponymy]]. Poisson noted that if the mean of observations following such a distribution were taken, the mean error did not converge to any finite number. As such, [[Pierre-Simon Laplace|Laplace's]] use of the [[Central Limit Theorem]] with such a distribution was inappropriate, as it assumed a finite mean and variance. Despite this, Poisson did not regard the issue as important, in contrast to [[Irénée-Jules Bienaymé|Bienaymé]], who was to engage Cauchy in a long dispute over the matter.
+
+==Characterisation==
+
+===Probability density function===
+The Cauchy distribution has the [[probability density function]] (PDF)&lt;ref name=jkb1/&gt;&lt;ref name=feller&gt;{{cite book|last=Feller|first=William|title=An Introduction to Probability Theory and Its Applications, Volume II|edition=2|publisher=John Wiley &amp; Sons Inc.|location=New York|year=1971|pages=[https://archive.org/details/introductiontopr00fell/page/704 704]|isbn=978-0-471-25709-7|url-access=registration|url=https://archive.org/details/introductiontopr00fell/page/704}}&lt;/ref&gt;
+:&lt;math&gt;f(x; x_0,\gamma) = \frac{1}{\pi\gamma \left[1 + \left(\frac{x - x_0}{\gamma}\right)^2\right]} = { 1 \over \pi \gamma } \left[ { \gamma^2 \over (x - x_0)^2 + \gamma^2  } \right], &lt;/math&gt;
+
+where &lt;math&gt;x_0&lt;/math&gt; is the [[location parameter]], specifying the location of the peak of the distribution, and &lt;math&gt;\gamma&lt;/math&gt; is the [[scale parameter]] which specifies the half-width at half-maximum (HWHM), alternatively &lt;math&gt;2\gamma&lt;/math&gt; is [[full width at half maximum]] (FWHM). &lt;math&gt;\gamma&lt;/math&gt; is also equal to half the [[interquartile range]] and is sometimes called the [[probable error]]. [[Augustin-Louis Cauchy]] exploited such a density function in 1827 with an [[infinitesimal]] scale parameter, defining what would now be called a [[Dirac delta function]].
+
+The maximum value or amplitude of the Cauchy PDF is &lt;math&gt;\frac{1}{\pi \gamma}&lt;/math&gt;, located at &lt;math&gt;x=x_0&lt;/math&gt;.
+
+It is sometimes convenient to express the PDF  in terms of the complex parameter &lt;math&gt;\psi= x_0 + i\gamma&lt;/math&gt;
+
+:&lt;math&gt;
+f(x;\psi)=\frac{1}{\pi}\,\textrm{Im}\left(\frac{1}{x-\psi}\right)=\frac{1}{\pi}\,\textrm{Re}\left(\frac{-i}{x-\psi}\right)
+&lt;/math&gt;
+
+The special case when &lt;math&gt;x_0 = 0&lt;/math&gt; and &lt;math&gt;\gamma = 1&lt;/math&gt; is called the '''standard Cauchy distribution''' with the probability density function&lt;ref name=mathmethods&gt;{{cite book|last1=Riley|first1=Ken F.|last2=Hobson|first2=Michael P.|last3=Bence|first3=Stephen J.|title=Mathematical Methods for Physics and Engineering|edition=3|publisher=Cambridge University Press|location=Cambridge, UK|year=2006|pages=1333|isbn=978-0-511-16842-0}}&lt;/ref&gt;&lt;ref name=primer&gt;{{cite book|last1=Balakrishnan|first1=N.|last2=Nevrozov|first2=V. B.|title=A Primer on Statistical Distributions|edition=1|publisher=John Wiley &amp; Sons Inc.|location=Hoboken, New Jersey|year=2003|pages=[https://archive.org/details/primeronstatisti0000bala/page/305 305]|isbn=0-471-42798-5|url=https://archive.org/details/primeronstatisti0000bala/page/305}}&lt;/ref&gt;
+:&lt;math&gt; f(x; 0,1) = \frac{1}{\pi (1 + x^2)}. \!&lt;/math&gt;
+
+In physics, a three-parameter Lorentzian function is often used:
+:&lt;math&gt;f(x; x_0,\gamma,I) = \frac{I}{\left[1 + \left(\frac{x-x_0}{\gamma}\right)^2\right]} = I \left[ { \gamma^2 \over (x - x_0)^2 + \gamma^2  } \right], &lt;/math&gt;
+where &lt;math&gt;I&lt;/math&gt; is the height of the peak. The three-parameter Lorentzian function indicated is not, in general, a probability density function, since it does not integrate to 1, except in the special case where  &lt;math&gt;I = \frac{1}{\pi\gamma}.\!&lt;/math&gt;
+
+===Cumulative distribution function===
+The [[cumulative distribution function]] of the Cauchy distribution is:
+:&lt;math&gt;F(x; x_0,\gamma)=\frac{1}{\pi} \arctan\left(\frac{x-x_0}{\gamma}\right)+\frac{1}{2}&lt;/math&gt;
+
+and the [[quantile function]] (inverse [[cumulative distribution function|cdf]]) of the Cauchy distribution is
+:&lt;math&gt;Q(p; x_0,\gamma) = x_0 + \gamma\,\tan\left[\pi\left(p-\tfrac{1}{2}\right)\right].&lt;/math&gt;
+It follows that the first and third quartiles are &lt;math&gt;(x_0 - \gamma, x_0 + \gamma)&lt;/math&gt;, and hence the [[interquartile range]] is &lt;math&gt;2\gamma&lt;/math&gt;.
+
+For the standard distribution, the cumulative distribution function simplifies to [[Inverse trigonometric functions|arctangent function]] &lt;math&gt;\arctan(x)&lt;/math&gt;:
+:&lt;math&gt;F(x; 0,1)=\frac{1}{\pi} \arctan\left(x\right)+\frac{1}{2}&lt;/math&gt;
+
+=== Entropy ===
+
+The entropy of the Cauchy distribution is given by:
+
+: &lt;math&gt;
+\begin{align}
+H(\gamma) &amp; =-\int_{-\infty}^\infty f(x;x_0,\gamma) \log(f(x;x_0,\gamma)) \, dx \\[6pt]
+&amp; =\log(4\pi\gamma)
+\end{align}
+&lt;/math&gt;
+
+The derivative of the [[quantile function]], the quantile density function, for the Cauchy distribution is:
+
+:&lt;math&gt;Q'(p; \gamma) = \gamma\,\pi\,{\sec}^2\left[\pi\left(p-\tfrac 1 2 \right)\right].\!&lt;/math&gt;
+
+The [[differential entropy]] of a distribution can be defined in terms of its quantile density,&lt;ref&gt;{{cite journal |last1=Vasicek  |first1=Oldrich |year=1976 |title=A Test for Normality Based on Sample Entropy |journal=Journal of the Royal Statistical Society, Series B |volume=38 |issue=1 |pages=54–59 }}&lt;/ref&gt; specifically:
+
+:&lt;math&gt;H(\gamma) = \int_0^1 \log\,(Q'(p; \gamma))\,\mathrm dp = \log(4\pi\gamma)&lt;/math&gt;
+
+The Cauchy distribution is the [[maximum entropy probability distribution]] for a random variate &lt;math&gt;X&lt;/math&gt; for which 
+
+:&lt;math&gt;\operatorname{E}[\log(1+(X-x_0)^2/\gamma^2)]=\log 4&lt;/math&gt;
+
+or, alternatively, for a random variate &lt;math&gt;X&lt;/math&gt; for which 
+
+:&lt;math&gt;\operatorname{E}[\log(1+(X-x_0)^2)]=2\log(1+\gamma).&lt;/math&gt;
+
+In its standard form, it is the [[maximum entropy probability distribution]] for a random variate &lt;math&gt;X&lt;/math&gt; for which&lt;ref&gt;{{cite journal |last1=Park |first1=Sung Y. |last2=Bera |first2=Anil K. |year=2009 |title=Maximum entropy autoregressive conditional heteroskedasticity model |journal=Journal of Econometrics |volume= 150|issue= 2|pages=219–230 |publisher=Elsevier |doi= 10.1016/j.jeconom.2008.12.014|url=http://www.econ.yorku.ca/cesg/papers/berapark.pdf |accessdate=2011-06-02 |url-status=dead |archiveurl=https://web.archive.org/web/20110930062639/http://www.econ.yorku.ca/cesg/papers/berapark.pdf |archivedate=2011-09-30 }}&lt;/ref&gt; 
+
+:&lt;math&gt;\operatorname{E}\!\left[\ln(1+X^2) \right]=\ln 4.&lt;/math&gt;
+
+==Properties==
+The Cauchy distribution is an example of a distribution which has no [[mean]], [[variance]] or higher [[moment (mathematics)|moments]] defined. Its [[mode (statistics)|mode]] and [[median]] are well defined and are both equal to &lt;math&gt;x_0&lt;/math&gt;.
+
+When &lt;math&gt;U&lt;/math&gt; and &lt;math&gt;V&lt;/math&gt; are two independent [[normal distribution|normally distributed]] [[random variable]]s with [[expected value]] 0 and [[variance]] 1, then the ratio &lt;math&gt;U/V&lt;/math&gt; has the standard Cauchy distribution.
+
+If &lt;math&gt;\Sigma&lt;/math&gt; is a &lt;math&gt;p\times p&lt;/math&gt; positive-semidefinite covariance matrix with strictly positive diagonal entries, then for [[Independent and identically distributed random variables|independent and identically distributed]] &lt;math&gt;X,Y\sim N(0,\Sigma)&lt;/math&gt; and any random &lt;math&gt;p&lt;/math&gt;-vector &lt;math&gt;w&lt;/math&gt; independent of &lt;math&gt;X&lt;/math&gt; and &lt;math&gt;Y&lt;/math&gt; such that &lt;math&gt;w_1+\cdots+w_p=1&lt;/math&gt; and &lt;math&gt;w_i\geq 0, i=1,\ldots,p,&lt;/math&gt; (defining a  [[categorical distribution]]) it holds that
+
+:&lt;math&gt;\sum_{j=1}^p w_j\frac{X_j}{Y_j}\sim\mathrm{Cauchy}(0,1).&lt;/math&gt;&lt;ref name=&quot;:0&quot;&gt;{{Cite journal|authors=Pillai N. and Meng, X.L.|year=2016|title=An unexpected encounter with Cauchy and Lévy|journal=[[The Annals of Statistics]]|volume=44|issue=5|pages=2089–2097|doi=10.1214/15-AOS1407|jstor=|arxiv=1505.01957}}&lt;/ref&gt;
+
+If &lt;math&gt;X_1, \ldots, X_n&lt;/math&gt; are [[independent and identically distributed]] random variables, each with a standard Cauchy distribution, then the [[Arithmetic mean|sample mean]] &lt;math&gt;(X_1 + \cdots + X_n)/n&lt;/math&gt; has the same standard Cauchy distribution. To see that this is true, compute the [[Characteristic function (probability theory)|characteristic function]] of the sample mean:
+:&lt;math&gt;\varphi_{\overline{X}}(t) = \mathrm{E}\left[e^{i\overline{X}t}\right]&lt;/math&gt;
+
+where &lt;math&gt;\overline{X}&lt;/math&gt; is the sample mean. This example serves to show that the hypothesis of finite variance in the [[central limit theorem]] cannot be dropped. It is also an example of a more generalized version of the central limit theorem that is characteristic of all [[stable distribution]]s, of which the Cauchy distribution is a special case.
+
+The Cauchy distribution is an [[infinitely divisible probability distribution]]. It is also a strictly [[stability (probability)|stable]] distribution.&lt;ref&gt;{{cite book |authors=Campbell B. Read, N. Balakrishnan, Brani Vidakovic and Samuel Kotz |year=2006 |title=Encyclopedia of Statistical Sciences |page=778 |edition=2nd |publisher=[[John Wiley &amp; Sons]] |isbn=978-0-471-15044-2|title-link=Encyclopedia of Statistical Sciences }}&lt;/ref&gt;
+
+The standard Cauchy distribution coincides with the [[Student's t-distribution|Student's ''t''-distribution]] with one degree of freedom.
+
+Like all stable distributions, the [[location-scale family]] to which the Cauchy distribution belongs is closed under [[linear transformations]] with [[real number|real]] coefficients. In addition, the Cauchy distribution is closed under [[Möbius transformation|linear fractional transformations]] with real coefficients.&lt;ref&gt;{{cite journal|author=F. B. Knight|title=A characterization of the Cauchy type|journal=Proceedings of the American Mathematical Society|volume = 55|issue=1|year = 1976|pages= 130–135|ref=harv|doi=10.2307/2041858|jstor=2041858}}&lt;/ref&gt; In this connection, see also [[McCullagh's parametrization of the Cauchy distributions]].
+
+===Characteristic function===
+Let &lt;math&gt;X&lt;/math&gt; denote a Cauchy distributed random variable. The [[Characteristic function (probability theory)|characteristic function]] of the Cauchy distribution is given by
+
+:&lt;math&gt;\varphi_X(t; x_0,\gamma) = \operatorname{E}\left[e^{iXt} \right ] =\int_{-\infty}^\infty f(x;x_0,\gamma)e^{ixt}\,dx =  e^{ix_0t - \gamma |t|}.&lt;/math&gt;
+
+which is just the [[Fourier transform]] of the probability density. The original probability density may be expressed in terms of the characteristic function, essentially by using the inverse Fourier transform:
+
+:&lt;math&gt;f(x; x_0,\gamma) = \frac{1}{2\pi}\int_{-\infty}^\infty \varphi_X(t;x_0,\gamma)e^{-ixt} \, dt \!&lt;/math&gt;
+
+The ''n''th moment of a distribution is the ''n''th derivative of the characteristic function evaluated at &lt;math&gt;t=0&lt;/math&gt;. Observe that the characteristic function is not [[Differentiable function|differentiable]] at the origin: this corresponds to the fact that the Cauchy distribution does not have well-defined moments higher than the zeroth moment.
+
+==Explanation of undefined moments==
+
+===Mean===
+If a [[probability distribution]] has a [[probability density function|density function]] &lt;math&gt;f(x)&lt;/math&gt;, then the mean, if it exists, is given by
+:&lt;math&gt;\int_{-\infty}^\infty x f(x)\,dx. \qquad\qquad (1)\!&lt;/math&gt;
+
+We may evaluate this two-sided [[improper integral]] by computing the sum of two one-sided improper integrals. That is,
+:&lt;math&gt;\int_a^\infty x f(x)\,dx+\int_{-\infty}^a x f(x)\,dx.\qquad\qquad (2) \!&lt;/math&gt;
+for an arbitrary real number &lt;math&gt;a&lt;/math&gt;.
+
+For the integral to exist (even as an infinite value), at least one of the terms in this sum should be finite, or both should be infinite and have the same sign. But in the case of the Cauchy distribution, both the terms in this sum (2) are infinite and have opposite sign. Hence (1) is undefined, and thus so is the mean.&lt;ref name=&quot;uah&quot;&gt;{{cite web | url=http://www.math.uah.edu/stat/special/Cauchy.html | title=Cauchy Distribution | publisher=[[University of Alabama]] at Huntsville | work=Virtual Laboratories | accessdate=September 19, 2018}}&lt;/ref&gt;
+
+Note that the  [[Cauchy principal value]] of the mean of the Cauchy distribution is
+:&lt;math&gt;\lim_{a\to\infty}\int_{-a}^a x f(x)\,dx, \!&lt;/math&gt;
+
+which is zero. On the other hand, the related integral
+:&lt;math&gt;\lim_{a\to\infty}\int_{-2a}^a x f(x)\,dx, \!&lt;/math&gt;
+
+is ''not'' zero, as can be seen easily by computing the integral. This again shows that the mean (1) cannot exist.
+
+Various results in probability theory about [[expected value]]s, such as the [[strong law of large numbers]], fail to hold for the Cauchy distribution.&lt;ref name=&quot;uah&quot;/&gt;
+
+===Higher moments===
+The Cauchy distribution does not have finite moments of any order.  Some of the higher [[raw moment]]s do exist and have a value of infinity, for example the raw second moment:
+
+: &lt;math&gt;
+\begin{align}
+\operatorname{E}[X^2] &amp; \propto \int_{-\infty}^\infty \frac{x^2}{1+x^2}\,dx = \int_{-\infty}^\infty 1 - \frac{1}{1+x^2}\,dx \\[8pt]
+&amp; = \int_{-\infty}^\infty dx - \int_{-\infty}^\infty \frac{1}{1+x^2}\,dx = \int_{-\infty}^\infty dx-\pi = \infty.
+\end{align}
+&lt;/math&gt;
+
+By re-arranging the formula, one can see that the second moment is essentially the infinite integral of a constant (here 1).  Higher even-powered raw moments will also evaluate to infinity.  Odd-powered raw moments, however, are undefined, which is distinctly different from existing with the value of infinity. The odd-powered raw moments are undefined because their values are essentially equivalent to &lt;math&gt;\infty - \infty&lt;/math&gt; since the two halves of the integral both diverge and have opposite signs.  The first raw moment is the mean, which, being odd, does not exist. (See also the discussion above about this.) This in turn means that all of the [[central moment]]s and [[standardized moment]]s are undefined, since they are all based on the mean.  The variance—which is the second central moment—is likewise non-existent (despite the fact that the raw second moment exists with the value infinity).
+
+The results for higher moments follow from [[Hölder's inequality]], which implies that higher moments (or halves of moments) diverge if lower ones do.
+
+===Moments of truncated distributions===
+Consider the [[truncated distribution]] defined by restricting the standard Cauchy distribution to the interval {{math|[−10&lt;sup&gt;100&lt;/sup&gt;, 10&lt;sup&gt;100&lt;/sup&gt;]}}. Such a truncated distribution has all moments (and the central limit theorem applies for [[i.i.d.]] observations from it); yet for almost all practical purposes it behaves like a Cauchy distribution.&lt;ref&gt;{{citation| last= Hampel | first= Frank | title= Is statistics too difficult? | journal= Canadian Journal of Statistics | year= 1998 | volume= 26 | issue= 3 | pages= 497–513 | doi= 10.2307/3315772 | jstor= 3315772 | hdl= 20.500.11850/145503 | url= https://www.research-collection.ethz.ch/bitstream/20.500.11850/145503/1/eth-24416-01.pdf }}.&lt;/ref&gt;
+
+==Estimation of parameters ==
+Because the parameters of the Cauchy distribution do not correspond to a mean and variance, attempting to estimate the parameters of the Cauchy distribution by using a sample mean and a sample variance will not succeed.&lt;ref&gt;[http://www.statistics4u.info/fundstat_eng/ee_distri_cauchy.html Illustration of instability of sample means]&lt;/ref&gt; For example, if an i.i.d. sample of size ''n'' is taken from a Cauchy distribution, one may calculate the sample mean as:
+
+:&lt;math&gt;\bar{x}=\frac 1 n \sum_{i=1}^n x_i&lt;/math&gt;
+
+Although the sample values &lt;math&gt;x_i&lt;/math&gt; will be concentrated about the central value &lt;math&gt;x_0&lt;/math&gt;, the sample mean will become increasingly variable as more observations are taken, because of the increased probability of encountering sample points with a large absolute value. In fact, the distribution of the sample mean will be equal to the distribution of the observations themselves; i.e., the sample mean of a large sample is no better (or worse) an estimator of &lt;math&gt;x_0&lt;/math&gt; than any single observation from the sample. Similarly, calculating the sample variance will result in values that grow larger as more observations are taken.
+
+Therefore, more robust means of estimating the central value &lt;math&gt;x_0&lt;/math&gt; and the scaling parameter &lt;math&gt;\gamma&lt;/math&gt; are needed. One simple method is to take the median value of the sample as an estimator of &lt;math&gt;x_0&lt;/math&gt; and half the sample [[interquartile range]] as an estimator of &lt;math&gt;\gamma&lt;/math&gt;. Other, more precise and robust methods have been developed &lt;ref&gt;{{cite journal |last1=Cane |first1=Gwenda J. |year=1974 |title=Linear Estimation of Parameters of the Cauchy Distribution Based on Sample Quantiles |journal=Journal of the American Statistical Association |volume=69 |issue=345 |pages= 243–245 |jstor=2285535 |doi=10.1080/01621459.1974.10480163}}&lt;/ref&gt;&lt;ref&gt;{{cite journal |last=Zhang |first=Jin |year=2010 |title=A Highly Efficient L-estimator for the Location Parameter of the Cauchy Distribution |journal=Computational Statistics |volume=25 |issue=1 |pages=97–105 |doi=10.1007/s00180-009-0163-y}}&lt;/ref&gt;  For example, the [[truncated mean]] of the middle 24% of the sample [[order statistics]] produces an estimate for &lt;math&gt;x_0&lt;/math&gt; that is more efficient than using either the sample median or the full sample mean.&lt;ref name=rothenberg&gt;{{cite journal|last1=Rothenberg |first1=Thomas J. |last2=Fisher|first2=Franklin, M.|last3=Tilanus|first3=C.B.|year=1964|volume=59|issue=306|journal=Journal of the American Statistical Association|title=A note on estimation from a Cauchy sample|pages=460–463|doi=10.1080/01621459.1964.10482170}}&lt;/ref&gt;&lt;ref name=bloch&gt;{{cite journal|last1=Bloch|first1=Daniel|year=1966|volume=61 |issue=316 |journal=Journal of the American Statistical Association|title=A note on the estimation of the location parameters of the Cauchy distribution|pages=852&amp;ndash;855|jstor=2282794|doi=10.1080/01621459.1966.10480912}}&lt;/ref&gt; However, because of the [[fat tails]] of the Cauchy distribution, the efficiency of the estimator decreases if more than 24% of the sample is used.&lt;ref name=rothenberg/&gt;&lt;ref name=bloch/&gt;
+
+[[Maximum likelihood]] can also be used to estimate the parameters &lt;math&gt;x_0&lt;/math&gt; and &lt;math&gt;\gamma&lt;/math&gt;. However, this tends to be complicated by the fact that this requires finding the roots of a high degree polynomial, and there can be multiple roots that represent local maxima.&lt;ref name=ferguson&gt;{{cite journal|last1=Ferguson|first1=Thomas S. |year=1978 |journal=Journal of the American Statistical Association |volume=73|issue=361|pages=211–213 |title=Maximum Likelihood Estimates of the Parameters of the Cauchy Distribution for Samples of Size 3 and 4|jstor=2286549 |doi=10.1080/01621459.1978.10480031}}&lt;/ref&gt; Also, while the maximum likelihood estimator is asymptotically efficient, it is relatively inefficient for small samples.&lt;ref&gt;{{cite journal|title=The Pitman estimator of the Cauchy location parameter|last1=Cohen Freue|first1=Gabriella V.|journal=Journal of Statistical Planning and Inference|volume=137|issue=6|year=2007|page=1901|url=http://faculty.ksu.edu.sa/69424/USEPAP/Coushy%20dist.pdf|doi=10.1016/j.jspi.2006.05.002|url-status=dead|archiveurl=https://web.archive.org/web/20110816002255/http://faculty.ksu.edu.sa/69424/USEPAP/Coushy%20dist.pdf|archivedate=2011-08-16}}&lt;/ref&gt;&lt;ref&gt;{{cite book|title=Introduction to Robust Estimation &amp; Hypothesis Testing |last1=Wilcox |first1=Rand |year=2012 |publisher=Elsevier}}&lt;/ref&gt;  The log-likelihood function for the Cauchy distribution for sample size &lt;math&gt;n&lt;/math&gt; is:
+
+:&lt;math&gt;\hat\ell(\!x_0,\gamma\mid x_1,\dotsc,x_n) = - n \log (\gamma \pi) - \sum_{i=1}^n \log \left(1 + \left(\frac{x_i - x_0}{\gamma}\right)^2\right)&lt;/math&gt;
+
+Maximizing the log likelihood function with respect to &lt;math&gt;x_0&lt;/math&gt; and &lt;math&gt;\gamma&lt;/math&gt; produces the following system of equations:
+
+:&lt;math&gt; \sum_{i=1}^n \frac{x_i - x_0}{\gamma^2 + \left(x_i - \!x_0\right)^2} = 0&lt;/math&gt;
+:&lt;math&gt; \sum_{i=1}^n \frac{\left(x_i - x_0\right)^2}{\gamma^2 + \left(x_i - x_0\right)^2} - \frac{n}{2} = 0&lt;/math&gt;
+
+Note that
+
+:&lt;math&gt; \sum_{i=1}^n \frac{\left(x_i - x_0\right)^2}{\gamma^2 + \left(x_i - x_0\right)^2} &lt;/math&gt;
+
+is a monotone function in &lt;math&gt;\gamma&lt;/math&gt; and that the solution &lt;math&gt;\gamma&lt;/math&gt; must satisfy
+
+:&lt;math&gt; \min |x_i-x_0|\le \gamma\le \max |x_i-x_0|. &lt;/math&gt;
+
+Solving just for &lt;math&gt;x_0&lt;/math&gt; requires solving a polynomial of degree &lt;math&gt;2n-1&lt;/math&gt;,&lt;ref name=ferguson/&gt; and solving just for &lt;math&gt;\gamma&lt;/math&gt; requires solving a polynomial of degree &lt;math&gt;n&lt;/math&gt; (first for &lt;math&gt;\gamma^2&lt;/math&gt;, then &lt;math&gt;x_0&lt;/math&gt;). Therefore, whether solving for one parameter or for both parameters simultaneously, a [[numerical analysis|numerical]] solution on a computer is typically required. The benefit of maximum likelihood estimation is asymptotic efficiency; estimating &lt;math&gt;x_0&lt;/math&gt; using the sample median is only about 81% as asymptotically efficient as estimating &lt;math&gt;x_0&lt;/math&gt; by maximum likelihood.&lt;ref name=bloch/&gt;&lt;ref&gt;{{cite journal|last1=Barnett|first1=V. D.|year=1966|journal=Journal of the American Statistical Association |volume=61|issue=316|pages=1205–1218|title=Order Statistics Estimators of the Location of the Cauchy Distribution|jstor=2283210|doi=10.1080/01621459.1966.10482205}}&lt;/ref&gt; The truncated sample mean using the middle 24% order statistics is about 88% as asymptotically efficient an estimator of &lt;math&gt;x_0&lt;/math&gt; as the maximum likelihood estimate.&lt;ref name=bloch/&gt; When [[Newton's method]] is used to find the solution for the maximum likelihood estimate, the middle 24% order statistics can be used as an initial solution for &lt;math&gt;x_0&lt;/math&gt;.
+
+==Multivariate Cauchy distribution==
+A [[random vector]] &lt;math&gt;X=(X_1, \ldots, X_k)^T&lt;/math&gt; is said to have the multivariate Cauchy distribution if every linear combination of its components &lt;math&gt;Y=a_1X_1+ \cdots + a_kX_k&lt;/math&gt; has a Cauchy distribution. That is, for any constant vector &lt;math&gt;a\in \mathbb R^k&lt;/math&gt;, the random variable &lt;math&gt;Y=a^TX&lt;/math&gt; should have a univariate Cauchy distribution.&lt;ref name=ferg2&gt;{{cite journal|last1=Ferguson|first1=Thomas S.|title=A Representation of the Symmetric Bivariate Cauchy Distribution|journal=The Annals of Mathematical Statistics |volume= 33|issue= 4|pages=1256–1266|year=1962 |jstor=2237984|doi=10.1214/aoms/1177704357|url=http://projecteuclid.org/download/pdf_1/euclid.aoms/1177704357|accessdate=2017-01-07 }}&lt;/ref&gt;  The characteristic function of a multivariate Cauchy distribution is given by:
+
+:&lt;math&gt;\varphi_X(t) =  e^{ix_0(t)-\gamma(t)}, \!&lt;/math&gt;
+
+where &lt;math&gt;x_0(t)&lt;/math&gt; and &lt;math&gt;\gamma(t)&lt;/math&gt; are real functions with &lt;math&gt;x_0(t)&lt;/math&gt; a [[homogeneous function]] of degree one and &lt;math&gt;\gamma(t)&lt;/math&gt; a positive homogeneous function of degree one.&lt;ref name=ferg2/&gt;  More formally:&lt;ref name=ferg2/&gt;
+
+:&lt;math&gt;x_0(at) = ax_0(t),&lt;/math&gt;
+:&lt;math&gt;\gamma (at) = |a|\gamma (t),&lt;/math&gt;
+
+for all &lt;math&gt;t&lt;/math&gt;.
+
+An example of a bivariate Cauchy distribution can be given by:&lt;ref name=bivar&gt;{{cite journal|title=Non-linear Integral Equations to Approximate Bivariate Densities with Given Marginals and Dependence Function|last1=Molenberghs|first1=Geert|last2=Lesaffre|first2=Emmanuel|journal=Statistica Sinica|volume=7|year=1997|pages=713&amp;ndash;738|url=http://www3.stat.sinica.edu.tw/statistica/oldpdf/A7n310.pdf|url-status=dead|archiveurl=https://web.archive.org/web/20090914055538/http://www3.stat.sinica.edu.tw/statistica/oldpdf/A7n310.pdf|archivedate=2009-09-14}}&lt;/ref&gt;
+:&lt;math&gt;f(x, y; x_0,y_0,\gamma)= { 1 \over 2 \pi } \left[ { \gamma \over ((x - x_0)^2 + (y - y_0)^2 +\gamma^2)^{1.5}  } \right] .&lt;/math&gt;
+Note that in this example, even though there is no analogue to a covariance matrix, &lt;math&gt;x&lt;/math&gt; and &lt;math&gt;y&lt;/math&gt; are not [[Independence (probability theory)|statistically independent]].&lt;ref name=bivar/&gt;
+
+We also can write this formula for complex variable. Then the probability density function of complex cauchy is :
+
+:&lt;math&gt;f(z; z_0,\gamma)= { 1 \over 2 \pi } \left[ { \gamma \over (|z-z_0|^2 +\gamma^2)^{1.5}  } \right] .&lt;/math&gt;
+
+Analogous to the univariate density, the multidimensional Cauchy density also relates to the [[multivariate Student distribution]]. They are equivalent when the degrees of freedom parameter is equal to one. The density of a &lt;math&gt;k&lt;/math&gt; dimension Student distribution with one degree of freedom becomes:
+
+:&lt;math&gt;f({\mathbf x}; {\mathbf\mu},{\mathbf\Sigma}, k)= \frac{\Gamma\left(\frac{1+k}{2}\right)}{\Gamma(\frac{1}{2})\pi^{\frac{k}{2}}\left|{\mathbf\Sigma}\right|^{\frac{1}{2}}\left[1+({\mathbf x}-{\mathbf\mu})^T{\mathbf\Sigma}^{-1}({\mathbf x}-{\mathbf\mu})\right]^{\frac{1+k}{2}}} .&lt;/math&gt;
+
+Properties and details for this density can be obtained by taking it as a particular case of the multivariate Student density.
+
+==Transformation properties==
+*If &lt;math&gt;X \sim \operatorname{Cauchy}(x_0,\gamma)\,&lt;/math&gt; then &lt;math&gt; kX+\ell \sim \textrm{Cauchy}(x_0 k+\ell,\gamma |k|)&lt;/math&gt;&lt;ref&gt;{{Citation
+| last1  = Lemons
+| first1 = Don S.
+| title     = An Introduction to Stochastic Processes in Physics
+| publisher = The Johns Hopkins University Press
+| year    = 2002
+| isbn    = 0-8018-6866-1
+| page=35 
+}}&lt;/ref&gt;
+*If &lt;math&gt;X \sim \operatorname{Cauchy}(x_0,\gamma_0)\,&lt;/math&gt; and &lt;math&gt;Y \sim \operatorname{Cauchy}(x_1,\gamma_1)\,&lt;/math&gt; are independent, then &lt;math&gt; X+Y \sim \operatorname{Cauchy}(x_0+x_1,\gamma_0+\gamma_1)\,&lt;/math&gt; and &lt;math&gt; X-Y \sim \operatorname{Cauchy}(x_0-x_1,\gamma_0+\gamma_1)\,&lt;/math&gt;
+*If &lt;math&gt;X \sim \operatorname{Cauchy}(0,\gamma)\,&lt;/math&gt; then &lt;math&gt; \tfrac{1}{X} \sim \operatorname{Cauchy}(0,\tfrac{1}{\gamma})\,&lt;/math&gt;
+*[[McCullagh's parametrization of the Cauchy distributions]]:&lt;ref name=&quot;McCullagh1992&quot;&gt;[[Peter McCullagh|McCullagh, P.]], [http://biomet.oxfordjournals.org/cgi/content/abstract/79/2/247 &quot;Conditional inference and Cauchy models&quot;], ''[[Biometrika]]'', volume 79 (1992), pages 247&amp;ndash;259. [http://www.stat.uchicago.edu/~pmcc/pubs/paper18.pdf PDF] from McCullagh's homepage.&lt;/ref&gt; Expressing a Cauchy distribution in terms of one complex parameter &lt;math&gt;\psi=x_0+i\gamma&lt;/math&gt;, define &lt;math&gt;X \sim \operatorname{Cauchy}(\psi)&lt;/math&gt; to mean &lt;math&gt;X \sim \operatorname{Cauchy}(x_0,|\gamma|)&lt;/math&gt;. If &lt;math&gt;X \sim \operatorname{Cauchy}(\psi)&lt;/math&gt; then:
+:: &lt;math&gt;\frac{aX+b}{cX+d} \sim \operatorname{Cauchy}\left(\frac{a\psi+b}{c\psi+d}\right)&lt;/math&gt; 
+where &lt;math&gt;a&lt;/math&gt;, &lt;math&gt;b&lt;/math&gt;, &lt;math&gt;c&lt;/math&gt; and &lt;math&gt;d&lt;/math&gt; are real numbers.
+* Using the same convention as above, if &lt;math&gt;X \sim \operatorname{Cauchy}(\psi)&lt;/math&gt; then:&lt;ref name=&quot;McCullagh1992&quot;/&gt;
+:: &lt;math&gt;\frac{X-i}{X+i} \sim \operatorname{CCauchy}\left(\frac{\psi-i}{\psi+i}\right)&lt;/math&gt;
+:where &lt;math&gt;\operatorname{CCauchy}&lt;/math&gt; is the [[circular Cauchy distribution]].
+
+== Lévy measure ==
+The Cauchy distribution is the [[stable distribution]] of index 1. The [[Lévy process#L.C3.A9vy.E2.80.93Khintchine representation|Lévy–Khintchine representation]] of such a stable distribution of parameter &lt;math&gt; \gamma &lt;/math&gt; is given, for &lt;math&gt; X \sim \operatorname{Stable}(\gamma, 0, 0)\,&lt;/math&gt; by:
+
+: &lt;math&gt;\operatorname{E}\left( e^{ixX} \right) = \exp\left( \int_{ \mathbb{R} } (e^{ixy} - 1) \Pi_\gamma(dy) \right)&lt;/math&gt;
+
+where
+
+:&lt;math&gt;\Pi_\gamma(dy) = \left( c_{1, \gamma}  \frac{1}{y^{1 + \gamma}} 1_{ \left\{y &gt; 0\right\} } + c_{2,\gamma}  \frac{1}{|y|^{1 + \gamma}} 1_{\left\{ y &lt; 0 \right\}} \right) \, dy 
+&lt;/math&gt;
+
+and &lt;math&gt; c_{1, \gamma}, c_{2, \gamma} &lt;/math&gt; can be expressed explicitly.&lt;ref&gt;{{cite book |authors=Kyprianou, Andreas |year=2009 |title=Lévy processes and continuous-state branching processes:part I |page=11 |url=http://www.maths.bath.ac.uk/~ak257/LCSB/part1.pdf}}&lt;/ref&gt; In the case &lt;math&gt; \gamma = 1 &lt;/math&gt; of the Cauchy distribution, one has &lt;math&gt; c_{1, \gamma} = c_{2, \gamma}  &lt;/math&gt;.
+
+This last representation is a consequence of the formula
+
+: &lt;math&gt;|x| = \int_{\mathbb{R}} (1 - e^{ixy}) \, \frac{dy}{y^2} &lt;/math&gt;
+
+==Related distributions==
+*&lt;math&gt;\operatorname{Cauchy}(0,1) \sim \textrm{t}(\mathrm{df}=1)\,&lt;/math&gt; [[Student's t distribution|Student's ''t'' distribution]]
+*&lt;math&gt;\operatorname{Cauchy}(\mu,\sigma) \sim \textrm{t}_{(\mathrm{df}=1)}(\mu,\sigma)\,&lt;/math&gt; [[Student's t distribution#Non-standardized|non-standardized Student's ''t'' distribution]]
+*If &lt;math&gt;X, Y \sim \textrm{N}(0,1)\, X, Y&lt;/math&gt; independent, then &lt;math&gt; \tfrac X Y\sim \textrm{Cauchy}(0,1)\,&lt;/math&gt;
+*If &lt;math&gt;X \sim \textrm{U}(0,1)\,&lt;/math&gt; then &lt;math&gt; \tan \left( \pi \left(X-\tfrac{1}{2}\right) \right) \sim \textrm{Cauchy}(0,1)\,&lt;/math&gt;
+*If &lt;math&gt;X \sim \operatorname{Log-Cauchy}(0, 1)&lt;/math&gt; then &lt;math&gt;\ln(X) \sim \textrm{Cauchy}(0, 1)&lt;/math&gt;
+*The Cauchy distribution is a limiting case of a [[Pearson distribution]] of type 4{{Citation needed|date=March 2011}}
+*The Cauchy distribution is a special case of a [[Pearson distribution]] of type 7.&lt;ref name=jkb1/&gt;
+*The Cauchy distribution is a [[stable distribution]]: if &lt;math&gt;X \sim \textrm{Stable}(1, 0, \gamma, \mu)&lt;/math&gt;, then &lt;math&gt;X \sim \operatorname{Cauchy}(\mu, \gamma)&lt;/math&gt;.
+*The Cauchy distribution is a singular limit of a [[hyperbolic distribution]]{{Citation needed|date=April 2011}}
+*The [[wrapped Cauchy distribution]], taking values on a circle, is derived from the Cauchy distribution by wrapping it around the circle.
+
+==Relativistic Breit–Wigner distribution==
+{{Main article|Relativistic Breit–Wigner distribution}}
+In [[nuclear physics|nuclear]] and [[particle physics]], the energy profile of a [[resonance]] is described by the [[relativistic Breit–Wigner distribution]], while the Cauchy distribution is the (non-relativistic) Breit–Wigner distribution.{{Citation needed|date=March 2011}}
+
+==Occurrence and applications==
+
+*In [[spectroscopy]], the Cauchy distribution describes the shape of [[spectral line]]s which are subject to [[homogeneous broadening]] in which all atoms interact in the same way with the frequency range contained in the line shape. Many mechanisms cause homogeneous broadening, most notably [[Line broadening#Pressure broadening|collision broadening]].&lt;ref&gt;{{cite book |author=E. Hecht |year=1987 |title=Optics |page=603 |edition=2nd |publisher=[[Addison-Wesley]] |isbn=}}&lt;/ref&gt;  [[Spectral_line#Natural_broadening|Lifetime or natural broadening]] also gives rise to a line shape described by the Cauchy distribution.
+
+*Applications of the Cauchy distribution or its transformation can be found in fields working with exponential growth.  A 1958 paper by White &lt;ref&gt;White, J.S. (1958) The Limiting Distribution of the Serial Correlation Coefficient in the Explosive Case. The Annals of Mathematical Statistics, 29, 1188-1197.
+https://doi.org/10.1214/aoms/1177706450&lt;/ref&gt; derived the test statistic for estimators of &lt;math&gt;\hat{\beta}&lt;/math&gt; for the equation &lt;math&gt;x_{t+1}=\beta{x}_t+\varepsilon_{t+1},\beta&gt;1&lt;/math&gt; and where the maximum likelihood estimator is found using ordinary least squares showed the sampling distribution of the statistic is the Cauchy distribution.
+[[File:Cauchy distribution.png|thumb|240px|Fitted cumulative Cauchy distribution to maximum one-day rainfalls using [[CumFreq]], see also [[distribution fitting]] &lt;ref&gt;CumFreq, free software for cumulative frequency analysis and probability distribution fitting [https://www.waterlog.info/cumfreq.htm]&lt;/ref&gt;]]
+
+*The Cauchy distribution is often the distribution of observations for objects that are spinning.  The classic reference for this is called the Gull's lighthouse problem&lt;ref&gt;Gull, S.F. (1988) Bayesian Inductive Inference and Maximum Entropy. Kluwer Academic Publishers, Berlin. https://doi.org/10.1007/978-94-009-3049-0_4&lt;/ref&gt; and as in the above section as the Breit–Wigner distribution in particle physics.
+
+*In [[hydrology]] the Cauchy distribution is applied to extreme events such as annual maximum one-day rainfalls and river discharges. The blue picture illustrates an example of fitting the Cauchy distribution to ranked monthly maximum one-day rainfalls showing also the 90% [[confidence belt]] based on the [[binomial distribution]]. The rainfall data are represented by [[plotting position]]s as part of the [[cumulative frequency analysis]].
+*The expression for imaginary part of complex [[Permittivity|electrical permittivity]] according to Lorentz model is a Cauchy distribution.
+
+==See also==
+* [[Lévy flight]] and [[Lévy process]]
+* [[Cauchy process]]
+* [[Stable process]]
+* [[Slash distribution]]
+
+==References==
+{{Reflist|30em}}
+
+==External links==
+* {{springer|title=Cauchy distribution|id=p/c020850}}
+* [http://jeff560.tripod.com/c.html Earliest Uses: The entry on Cauchy distribution has some historical information.]
+* {{MathWorld | urlname=CauchyDistribution | title=Cauchy Distribution}}
+* [https://www.gnu.org/software/gsl/manual/gsl-ref.html#SEC294 GNU Scientific Library &amp;ndash; Reference Manual]
+* [http://www.jstatsoft.org/v16/i04/paper Ratios of Normal Variables by George Marsaglia]
+{{ProbDistributions|continuous-infinite}}
+
+{{DEFAULTSORT:Cauchy Distribution}}
+[[Category:Augustin-Louis Cauchy]]
+[[Category:Continuous distributions]]
+[[Category:Probability distributions with non-finite variance]]
+[[Category:Power laws]]
+[[Category:Stable distributions]]
+[[Category:Location-scale family probability distributions]]</text>
+      <sha1>5r3oa4gddiqe2dlc6juxbk37m2j16km</sha1>
+    </revision>
+  </page>

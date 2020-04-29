@@ -1,0 +1,268 @@
+  <page>
+    <title>Character encoding</title>
+    <ns>0</ns>
+    <id>5295</id>
+    <revision>
+      <id>942136297</id>
+      <parentid>940759109</parentid>
+      <timestamp>2020-02-22T20:45:58Z</timestamp>
+      <contributor>
+        <username>Jochen Burghardt</username>
+        <id>17350134</id>
+      </contributor>
+      <comment>/* top */ suggest image</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{short description|System using a prescribed set of digital values to represent textual characters}}
+{{Use dmy dates|date=January 2018}}
+[[File:Papertape-Wikipedia-example-dark1-2000px.png|thumb|[[Punched tape]] with the word &quot;Wikipedia&quot; encoded in [[ASCII]]. Presence and absence of a hole represents 1 and 0, respectively; for example, &quot;W&quot; is encoded as &quot;1010111&quot;.]]
+'''Character encoding''' is used to represent a repertoire of [[character (computing)|characters]] by some kind of [[code|encoding]] system.&lt;ref&gt;Definition from [http://techterms.com/definition/characterencoding The Tech Terms Dictionary]&lt;/ref&gt; Depending on the [[abstraction level]] and context, corresponding [[code point]]s and the resulting code space may be regarded as [[bitstream|bit patterns]], [[octet (computing)|octets]], natural [[number]]s, electrical pulses, etc. A character encoding is used in [[computation]], [[computer data storage|data storage]], and transmission of textual [[data]]. &quot;Character set&quot;, &quot;character map&quot;, &quot;codeset&quot; and &quot;[[code page]]&quot; are related, but not identical, terms.
+
+Early character codes associated with the optical or electrical [[Telegraphy|telegraph]] could only represent a subset of the characters used in written languages, sometimes restricted to upper case letters, numerals and some punctuation only. The low cost of digital representation of data in modern computer systems allows more elaborate character codes (such as [[Unicode]]) which represent most of the characters used in many written languages. Character encoding using internationally accepted standards permits worldwide interchange of text in electronic form.
+
+==History==
+
+The history of character codes illustrates the evolving need for machine-mediated character-based symbolic information over a distance, using once-novel electrical means. The earliest codes were based upon manual and hand-written encoding and cyphering systems, such as [[Bacon's cipher]], [[Braille]], [[International maritime signal flags]], and the 4-digit encoding of Chinese characters for a [[Chinese telegraph code]] ([[Hans Schjellerup]], 1869). With the adoption of electrical and electro-mechanical techniques these earliest codes were adapted to the new capabilities and limitations of the early machines. The earliest well-known electrically-transmitted character code, [[Morse code]], introduced in the 1840s, used a system of four &quot;symbols&quot; (short signal, long signal, short space, long space) to generate codes of variable length. Though most commercial use of Morse code was via machinery,{{cn|date=October 2019}} it was also used as a manual code, generatable by hand on a [[telegraph key]] and decipherable by ear, and persists in amateur radio use.  Most codes are of fixed per-character length or variable-length sequences of fixed-length codes (e.g. [[Unicode]]).
+&lt;ref&gt;{{cite web | url=http://blog.smartbear.com/development/ancient-computer-character-code-tables-and-why-theyre-still-relevant/ | title=Ancient Computer Character Code Tables – and Why They're Still Relevant | publisher=Smartbear | date=17 April 2014 | accessdate=29 April 2014 | author=Tom Henderson}}&lt;/ref&gt;
+
+Common examples of character encoding systems include [[Morse code]], the [[Baudot code]], the American Standard Code for Information Interchange ([[ASCII]]) and [[Unicode]]. [[Unicode]], a well defined and extensible encoding system, has supplanted most earlier character encodings, but the path of code development to the present is fairly well known.
+
+The [[Baudot code]], a five-bit encoding, was created by [[Émile Baudot]] in 1870, patented in 1874, modified by Donald Murray in 1901, and standardized by CCITT as International Telegraph Alphabet No. 2 (ITA2) in 1930. The name &quot;baudot&quot; has been erroneously applied to ITA2 and its many variants. ITA2 suffered from many shortcomings and was often &quot;improved&quot; by many equipment manufacturers, sometimes creating compatibility issues. In 1959 the U.S. military defined its [[Fieldata]] code, a six-or seven-bit code, introduced by the U.S. Army Signal Corps. While Fieldata addressed many of the then-modern issues (e.g. letter and digit codes arranged for machine collation), Fieldata fell short of its goals and was short-lived. In 1963 the first ASCII (American Standard Code for Information Interchange) code was released (X3.4-1963) by the ASCII committee (which contained at least one member of the Fieldata committee, W. F. Leubbert) which addressed most of the shortcomings of Fieldata, using a simpler code. Many of the changes were subtle, such as collatable character sets within certain numeric ranges. ASCII63 was a success, widely adopted by industry, and with the follow-up issue of the 1967 ASCII code (which added lower-case letters and fixed some &quot;control code&quot; issues) ASCII67 was adopted fairly widely. ASCII67's American-centric nature was somewhat addressed in the European ECMA-6 standard, which persists today as the base encoding for the UNICODE extended encoding strings.
+&lt;ref&gt;{{cite web | url=http://worldpowersystems.com/ARCHIVE/codes/index.html | title=An annotated history of some character codes | date=1 March 2010 | accessdate=1 November 2018 | author=Tom Jennings}}&lt;/ref&gt;
+
+Somewhat historically isolated, [[IBM]]'s [[Binary-coded decimal#IBM and BCD|Binary Coded Decimal]] ([[BCD (character encoding)|BCD]]) was a six-bit encoding scheme used by IBM in as early as 1959 in its [[IBM 1401|1401]] and [[IBM 1620|1620]] computers, and in its [[IBM 700/7000 series|7000 Series]] (for example, 704, 7040, 709 and 7090 computers), as well as in associated peripherals. BCD extended existing simple four-bit numeric encoding to include alphabetic and special characters, mapping it easily to punch-card encoding which was already in widespread use. It was the precursor to EBCDIC. For the most part, IBMs codes were used primarily with IBM equipment, which was more or less a closed ecosystem, and did not see much adoption outside of IBM &quot;circles&quot;. [[IBM]]'s [[EBCDIC|Extended Binary Coded Decimal Interchange Code]] (usually abbreviated as EBCDIC) is an eight-bit encoding scheme developed in 1963.
+
+The limitations of such sets soon became apparent,{{to whom|date=September 2018}} and a number of ''ad hoc'' methods were developed to extend them. The need to support more [[writing system]]s for different languages, including the [[CJK characters|CJK]] family of [[East Asian scripts]], required support for a far larger number of characters and demanded a systematic approach to character encoding rather than the previous ''ad hoc'' approaches.{{citation needed|date=September 2018}}
+
+In trying to develop universally interchangeable character encodings, researchers in the 1980s faced the dilemma that on the one hand, it seemed necessary to add more bits to accommodate additional characters, but on the other hand, for the users of the relatively small character set of the Latin alphabet (who still constituted the majority of computer users), those additional bits were a colossal waste of then-scarce and expensive computing resources (as they would always be zeroed out for such users).
+
+The compromise solution that was eventually found and developed into Unicode was to break the assumption (dating back to telegraph codes) that each character should always directly correspond to a particular sequence of bits. Instead, characters would first be mapped to a universal intermediate representation in the form of abstract numbers called [[code point]]s. Code points would then be represented in a variety of ways and with various default numbers of bits per character (code units) depending on context. To encode code points higher than the length of the code unit, such as above 256 for 8-bit units, the solution was to implement [[variable-width encoding]]s where an escape sequence would signal that subsequent bits should be parsed as a higher code point.
+
+==Terminology==
+
+; Terminology related to character encoding:
+[[File:KB Dubeolsik for Old Hangul (NG3).svg|thumb|365x365px]]
+* A ''character'' is a minimal unit of text that has semantic value.
+* A ''character set'' is a collection of characters that might be used by multiple languages. ''Example:'' The Latin character set is used by English and most European languages, though the Greek character set is used only by the Greek language.
+* A ''coded character set'' is a character set in which each character corresponds to a unique number.
+* A ''code point'' of a coded character set is any allowed value in the character set or code space.
+* A ''code space'' is a range of integers whose values are code points
+* A ''code unit'' is a bit sequence used to encode each character of a repertoire within a given encoding form.
+
+; Character repertoire (the abstract set of characters):
+
+The character repertoire is an abstract set of more than one million characters found in a wide variety of scripts including Latin, Cyrillic, Chinese, Korean, Japanese, Hebrew, and Aramaic.
+
+Other symbols such as musical notation are also included in the character repertoire. Both the Unicode and [[GB18030]] standards have a character repertoire. As new characters are added to one standard, the other standard also adds those characters, to maintain parity.
+
+The code unit size is equivalent to the bit measurement for the particular encoding:
+* A code unit in [[US-ASCII]] consists of 7 bits;
+* A code unit in [[UTF-8]], [[EBCDIC]] and GB18030 consists of 8 bits;
+* A code unit in [[UTF-16]] consists of 16 bits;
+* A code unit in [[UTF-32]] consists of 32 bits.
+
+''Example of a code unit:'' Consider a [[String (computer science)|string]] of the letters &quot;abc&quot; followed by {{unichar|10400|DESERET CAPITAL LETTER LONG I}} (represented with 1 char32_t, 2 char16_t or 4 char8_t). That string contains:
+* four characters;
+* four code points
+* either:
+*: four code units in UTF-32 (00000061, 00000062, 00000063, 00010400)
+*: five code units in UTF-16 (0061, 0062, 0063, d801, dc00), or
+*: seven code units in UTF-8  (61, 62, 63, f0, 90, 90, 80).
+
+The convention to refer to a character in Unicode is to start with 'U+' followed by the codepoint value in hexadecimal. The range of valid code points for the Unicode standard is U+0000 to U+10FFFF, inclusive, divided in 17 [[Plane (Unicode)|planes]], identified by the numbers 0 to 16. Characters in the range U+0000 to U+FFFF are in plane 0, called the [[Plane (Unicode)#Basic Multilingual Plane|Basic Multilingual Plane]] (BMP). This plane contains most commonly-used characters. Characters in the range U+10000 to U+10FFFF in the other planes are called [[supplementary characters]].
+
+The following table shows examples of code point values:
+{| class=&quot;wikitable MsoNormalTable&quot;
+! Character
+! Unicode code point
+! Glyph
+|-
+| Latin A
+| U+0041
+|Α
+|-
+| Latin sharp S
+| U+00DF
+| ß
+|-
+| Han for East
+| U+6771
+|東
+|-
+| Ampersand
+| U+0026
+| &amp;
+|-
+|Inverted exclamation mark
+|U+00A1
+|¡
+|-
+|Section sign
+|U+00A7
+|§
+|}
+
+A code point is represented by a sequence of code units. The mapping is defined by the encoding. Thus, the number of code units required to represent a code point depends on the encoding:
+* ''UTF-8:'' code points map to a sequence of one, two, three or four code units.
+* ''UTF-16:'' code units are twice as long as 8-bit code units. Therefore, any code point with a scalar value less than U+10000 is encoded with a single code unit. Code points with a value U+10000 or higher require two code units each. These pairs of code units have a unique term in UTF-16: [[UTF-16#cite note-Unicode7Ch3s8-5|&quot;Unicode surrogate pairs&quot;.]]
+* ''UTF-32:'' the 32-bit code unit is large enough that every code point is represented as a single code unit.
+* ''GB18030:'' multiple code units per code point are common, because of the small code units. Code points are mapped to one, two, or four code units.&lt;ref&gt;{{cite web | url=https://docs.oracle.com/javase/tutorial/i18n/text/terminology.html | title=The Java Tutorials - Terminology | publisher=Oracle | accessdate=25 March 2018 }}&lt;/ref&gt;
+
+=={{anchor|CCS}}Unicode encoding model==
+[[Unicode]] and its parallel standard, the ISO/IEC 10646 [[Universal Character Set]], together constitute a modern, unified character encoding. Rather than mapping characters directly to octets ([[byte]]s), they separately define what characters are available, corresponding natural numbers ([[code point]]s), how those numbers are encoded as a series of fixed-size natural numbers (code units), and finally how those units are encoded as a stream of octets. The purpose of this decomposition is to establish a universal set of characters that can be encoded in a variety of ways.&lt;ref name=utr17&gt;{{cite web |url=https://www.unicode.org/reports/tr17/ |title=Unicode Technical Report #17: Unicode Character Encoding Model |date=11 November 2008 |accessdate=8 August 2009}}&lt;/ref&gt; To describe this model correctly requires more precise terms than &quot;character set&quot; and &quot;character encoding.&quot; The terms used in the modern model follow:&lt;ref name=utr17/&gt;
+
+A '''character repertoire''' is the full set of abstract characters that a system supports. The repertoire may be closed, i.e. no additions are allowed without creating a new standard (as is the case with ASCII and most of the ISO-8859 series), or it may be open, allowing additions (as is the case with Unicode and to a limited extent the [[Windows code page]]s). The characters in a given repertoire reflect decisions that have been made about how to divide writing systems into basic information units. The basic variants of the [[Latin alphabet|Latin]], [[Greek alphabet|Greek]] and [[Cyrillic]] alphabets can be broken down into letters, digits, punctuation, and a few ''special characters'' such as the space, which can all be arranged in simple linear sequences that are displayed in the same order they are read. But even with these alphabets, [[diacritic]]s pose a complication: they can be regarded either as part of a single character containing a letter and diacritic (known as a precomposed character), or as separate characters. The former allows a far simpler text handling system but the latter allows any letter/diacritic combination to be used in text. [[Typographic ligature|Ligatures]] pose similar problems. Other writing systems, such as Arabic and Hebrew, are represented with more complex character repertoires due to the need to accommodate things like bidirectional text and [[glyph]]s that are joined together in different ways for different situations.
+
+A '''coded character set''' (CCS) is a [[function (mathematics)|function]] that maps characters to ''[[code point]]s'' (each code point represents one character). For example, in a given repertoire, the capital letter &quot;A&quot; in the Latin alphabet might be represented by the code point 65, the character &quot;B&quot; to 66, and so on. Multiple coded character sets may share the same repertoire; for example [[ISO/IEC 8859-1]] and IBM code pages 037 and 500 all cover the same repertoire but map them to different code points.
+
+A '''character encoding form''' (CEF) is the mapping of code points to ''code units'' to facilitate storage in a system that represents numbers as bit sequences of fixed length (i.e. practically any computer system). For example, a system that stores numeric information in 16-bit units can only directly represent code points 0 to 65,535 in each unit, but larger code points (say, 65,536 to 1.4&amp;nbsp;million) could be represented by using multiple 16-bit units. This correspondence is defined by a CEF.
+
+Next, a '''character encoding scheme''' (CES) is the mapping of code units to a sequence of octets to facilitate storage on an octet-based file system or transmission over an octet-based network. Simple character encoding schemes include [[UTF-8]], [[UTF-16BE]], [[UTF-32BE]], [[UTF-16LE]] or [[UTF-32LE]]; compound character encoding schemes, such as [[UTF-16]], [[UTF-32]] and [[ISO/IEC 2022]], switch between several simple schemes by using [[byte order mark]]s or [[escape sequence]]s; compressing schemes try to minimise the number of bytes used per code unit (such as [[Standard Compression Scheme for Unicode|SCSU]], [[Binary Ordered Compression for Unicode|BOCU]], and [[Punycode]]).
+
+Although [[UTF-32BE]] is a simpler CES, most systems working with Unicode use either [[UTF-8]], which is [[backward compatibility|backward compatible]] with fixed-width ASCII and maps Unicode code points to variable-width sequences of octets, or [[UTF-16BE]], which is [[backward compatibility|backward compatible]] with fixed-width UCS-2BE and maps Unicode code points to variable-width sequences of 16-bit words. See [[comparison of Unicode encodings]] for a detailed discussion.
+
+Finally, there may be a '''higher level protocol''' which supplies additional information to select the particular variant of a [[Unicode]] character, particularly where there are regional variants that have been 'unified' in Unicode as the same character. An example is the [[XML]] attribute xml:lang.
+
+The Unicode model uses the term '''character map''' for historical systems which directly assign a sequence of characters to a sequence of bytes, covering all of CCS, CEF and CES layers.&lt;ref name=&quot;utr17&quot; /&gt;
+
+== Character sets, character maps and code pages ==
+Historically, the terms &quot;character encoding&quot;, &quot;character map&quot;, &quot;character set&quot; and &quot;[[code page]]&quot; were synonymous in [[computer science]], as the same standard would specify a repertoire of characters and how they were to be encoded into a stream of code units – usually with a single character per code unit. But now the terms have related but distinct meanings,&lt;ref name=&quot;SteeleMSDN&quot;&gt;{{cite web|url=https://blogs.msdn.microsoft.com/shawnste/2005/03/15/whats-the-difference-between-an-encoding-code-page-character-set-and-unicode/|author=Shawn Steele|title=What's the difference between an Encoding, Code Page, Character Set and Unicode?|date=15 March 2005|website=MSDN}}&lt;/ref&gt; due to efforts by standards bodies to use precise terminology when writing about and unifying many different encoding systems.&lt;ref name=utr17/&gt; Regardless, the terms are still used interchangeably, with ''character set'' being nearly ubiquitous.
+
+A &quot;'''code page'''&quot; usually means a [[byte oriented|byte-oriented]] encoding, but with regard to some suite of encodings (covering different scripts), where many characters share the same [[code point|codes]] in most or all those code pages. Well-known code page suites are &quot;Windows&quot; (based on Windows-1252) and &quot;IBM&quot;/&quot;DOS&quot; (based on [[code page 437]]), see [[Windows code page]] for details. Most, but not all, encodings referred to as code pages are single-byte encodings (but see [[Octet (computing)|octet]] on byte size.)
+
+IBM's Character Data Representation Architecture (CDRA) designates with coded character set identifiers ([[CCSID]]s) and each of which is variously called a &quot;charset&quot;, &quot;character set&quot;, &quot;code page&quot;, or &quot;CHARMAP&quot;.&lt;ref name=utr17/&gt;
+
+The term &quot;code page&quot; does not occur in Unix or Linux where &quot;charmap&quot; is preferred, usually in the larger context of locales.
+
+Contrasted to [[#CCS|CCS above]], a &quot;character encoding&quot; is a map from abstract characters to [[code word]]s. A &quot;character set&quot; in [[HTTP]] (and [[MIME]]) parlance is the same as a character encoding (but not the same as CCS).
+
+&quot;[[legacy system|Legacy]] encoding&quot; is a term sometimes used to characterize old character encodings, but with an ambiguity of sense. Most of its use is in the context of [[Unicode|Unicodification]], where it refers to encodings that fail to cover all Unicode code points, or, more generally, using a somewhat different character repertoire: several code points representing one Unicode character,&lt;ref&gt;[http://www.basistech.co.jp/knowledge-center/database/uc-trillium-2.ppt &quot;Processing database information using Unicode, a case study&quot;] {{webarchive |url=https://web.archive.org/web/20060617193918/http://www.basistech.co.jp/knowledge-center/database/uc-trillium-2.ppt |date=17 June 2006 }}&lt;/ref&gt; or versa (see e.g. [[code page 437]]). Some sources refer to an encoding as ''legacy'' only because it preceded Unicode.&lt;ref&gt;{{cite web|url=http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&amp;item_id=IWS-Chapter03#79e846db|publisher=[[SIL International]]|title=Character set encoding basics|work=Implementing Writing Systems: An introduction|first=Peter|last=Constable|date=13 June 2001|accessdate=19 March 2010|archive-url=https://web.archive.org/web/20130505074221/http://scripts.sil.org/cms/SCRIPTs/page.php?site_id=nrsi&amp;item_id=IWS-Chapter03#79e846db|archive-date=5 May 2013|url-status=dead}}&lt;/ref&gt; All Windows code pages are usually referred to as legacy, both because they antedate Unicode and because they are unable to represent all 2&lt;sup&gt;21&lt;/sup&gt; possible Unicode code points.
+
+== Character encoding translation ==
+As a result of having many character encoding methods in use (and the need for backward compatibility with archived data), many computer programs have been developed to translate data between encoding schemes as a form of data [[transcoding]]. Some of these are cited below.
+
+[[Cross-platform]]:
+* [[Web browser]]s – most modern web browsers feature automatic character encoding detection. On Firefox 3, for example, see the View/Character Encoding submenu.
+* [[iconv]] – program and standardized API to convert encodings
+* [[luit]] – program that converts encoding of input and output to programs running interactively
+* convert_encoding.py – Python based utility to convert text files between arbitrary encodings and line endings.&lt;ref&gt;[https://github.com/goerz/convert_encoding.py convert_encoding.py]&lt;/ref&gt;
+* decodeh.py – algorithm and module to heuristically guess the encoding of a string.&lt;ref&gt;[http://gizmojo.org/code/decodeh/ Decodeh – heuristically decode a string or text file] {{webarchive |url=https://web.archive.org/web/20080108123255/http://gizmojo.org/code/decodeh/ |date=8 January 2008 }}&lt;/ref&gt;
+* [[International Components for Unicode]] – A set of C and Java libraries to perform charset conversion. uconv can be used from ICU4C.
+* [http://pypi.python.org/pypi/chardet chardet] – This is a translation of the [[Mozilla]] automatic-encoding-detection code into the Python computer language.
+* The newer versions of the Unix [[file (command)|file]] command attempt to do a basic detection of character encoding (also available on [[Cygwin]]).
+* [http://sourceforge.net/projects/charset charset] – [[C++]] template library with simple interface to convert between C++/user-defined streams. charset defined many character-sets and allows you to use Unicode formats with support of [[endianness]].
+[[Unix-like]]: 
+* cmv – simple tool for transcoding filenames.&lt;ref&gt;[http://cmv.fossrec.com CharsetMove – Simple Tool for Transcoding Filenames]&lt;/ref&gt;
+* convmv – convert a filename from one encoding to another.&lt;ref&gt;[http://www.j3e.de/linux/convmv/man/ Convmv – converts filenames from one encoding to another]&lt;/ref&gt;
+* cstocs – convert file contents from one encoding to another for the Czech and Slovak languages.
+* enca – analyzes encodings for given text files.&lt;ref&gt;[http://directory.fsf.org/project/enca/ Extremely Naive Charset Analyser]&lt;/ref&gt;
+* recode – convert file contents from one encoding to another&lt;ref&gt;[https://www.gnu.org/software/recode/recode.html Recode – GNU project – Free Software Foundation (FSF)]&lt;/ref&gt;
+* utrac – convert file contents from one encoding to another.&lt;ref&gt;[http://utrac.sourceforge.net/ Utrac Homepage]&lt;/ref&gt;
+
+[[Microsoft Windows|Windows]]:
+* Encoding.Convert – .NET API&lt;ref&gt;[http://msdn.microsoft.com/en-us/library/system.text.encoding.convert(VS.71).aspx Microsoft .NET Framework Class Library – Encoding.Convert Method]&lt;/ref&gt;
+* MultiByteToWideChar/WideCharToMultiByte – Convert from ANSI to Unicode &amp; Unicode to ANSI&lt;ref&gt;[http://support.microsoft.com/kb/138813 MultiByteToWideChar/WideCharToMultiByte – Convert from ANSI to Unicode &amp; Unicode to ANSI]&lt;/ref&gt;
+* cscvt – character set conversion tool&lt;ref&gt;[http://www.cscvt.de/ Kalytta's Character Set Converter]&lt;/ref&gt;
+* enca – analyzes encodings for given text files.&lt;ref&gt;[http://www.john.geek.nz/2010/02/enca-binary-compiled-for-32-bit-windows/ Extremely Naive Charset Analyser]&lt;/ref&gt;
+
+==See also==
+
+* [[Percent encoding]]
+* [[Alt code]]
+* [[Character encodings in HTML]]
+* [[:Category:Character encoding]] – articles related to character encoding in general
+* [[:Category:Character sets]] – articles detailing specific character encodings
+* [[Hexadecimal#Representing hexadecimal|Hexadecimal representations]]
+* ''[[Mojibake]]'' – character set mismap.
+* [[Mojikyo]] – a system (&quot;glyph set&quot;) that includes over 100,000 Chinese character drawings, modern and ancient, popular and obscure.
+* [[TRON (encoding)|TRON]], part of the TRON project, is an encoding system that does not use Han Unification; instead, it uses &quot;control codes&quot; to switch between 16-bit &quot;planes&quot; of characters.
+* [[Universal Character Set characters]]
+* [[Charset sniffing]] – used in some applications when character encoding metadata is not available
+
+=== Common character encodings ===
+{{Div col|colwidth=30em}}
+* [[ISO/IEC 646|ISO 646]]
+** [[ASCII]]
+* [[EBCDIC]]
+** [[EBCDIC 037|CP037]]
+** [[EBCDIC 930|CP930]]
+** [[EBCDIC 1047|CP1047]]
+* [[ISO/IEC 8859|ISO 8859]]:
+** [[ISO/IEC 8859-1|ISO 8859-1]] Western Europe
+** [[ISO/IEC 8859-2|ISO 8859-2]] Western and Central Europe
+** [[ISO/IEC 8859-3|ISO 8859-3]] Western Europe and South European (Turkish, Maltese plus Esperanto)
+** [[ISO/IEC 8859-4|ISO 8859-4]] Western Europe and Baltic countries (Lithuania, Estonia, Latvia and Lapp)
+** [[ISO/IEC 8859-5|ISO 8859-5]] Cyrillic alphabet
+** [[ISO/IEC 8859-6|ISO 8859-6]] Arabic
+** [[ISO/IEC 8859-7|ISO 8859-7]] Greek
+** [[ISO/IEC 8859-8|ISO 8859-8]] Hebrew
+** [[ISO/IEC 8859-9|ISO 8859-9]] Western Europe with amended Turkish character set
+** [[ISO/IEC 8859-10|ISO 8859-10]] Western Europe with rationalised character set for Nordic languages, including complete Icelandic set
+** [[ISO/IEC 8859-11|ISO 8859-11]] Thai
+** [[ISO/IEC 8859-13|ISO 8859-13]] Baltic languages plus Polish
+** [[ISO/IEC 8859-14|ISO 8859-14]] Celtic languages (Irish Gaelic, Scottish, Welsh)
+** [[ISO/IEC 8859-15|ISO 8859-15]] Added the Euro sign and other rationalisations to ISO 8859-1
+** [[ISO/IEC 8859-16|ISO 8859-16]] Central, Eastern and Southern European languages (Albanian, Bosnian, Croatian, Hungarian, Polish, Romanian, Serbian and Slovenian, but also French, German, Italian and Irish Gaelic)
+* [[Code page 437|CP437]], [[Code page 720|CP720]], [[Code page 737|CP737]], [[Code page 850|CP850]], [[Code page 852|CP852]], [[Code page 855|CP855]], [[Code page 857|CP857]], [[Code page 858|CP858]], [[Code page 860|CP860]], [[Code page 861|CP861]], [[Code page 862|CP862]], [[Code page 863|CP863]], [[Code page 865|CP865]], [[Code page 866|CP866]], [[Code page 869|CP869]], [[Code page 872|CP872]]
+* [[Code page#Windows (ANSI) code pages|MS-Windows character sets]]:
+** [[Windows-1250]] for Central European languages that use Latin script, (Polish, Czech, Slovak, Hungarian, Slovene, Serbian, Croatian, Bosnian, Romanian and Albanian)
+** [[Windows-1251]] for Cyrillic alphabets
+** [[Windows-1252]] for Western languages
+** [[Windows-1253]] for Greek
+** [[Windows-1254]] for Turkish
+** [[Windows-1255]] for Hebrew
+** [[Windows-1256]] for Arabic
+** [[Windows-1257]] for Baltic languages
+** [[Windows-1258]] for Vietnamese
+* [[Mac OS Roman]]
+* [[KOI8-R]], [[KOI8-U]], [[KOI7]]
+* [[MIK Code page|MIK]]
+* [[Indian Script Code for Information Interchange|ISCII]]
+* [[Tamil Script Code for Information Interchange|TSCII]]
+* [[Vietnamese Standard Code for Information Interchange|VISCII]]
+* [[JIS X 0208]] is a widely deployed standard for Japanese character encoding that has several encoding forms.
+** [[Shift JIS]] (Microsoft [[Code page 932 (Microsoft Windows)|Code page 932]] is a dialect of Shift_JIS)
+** [[Extended Unix Code|EUC-JP]]
+** [[ISO/IEC 2022|ISO-2022-JP]]
+* [[JIS X 0213]] is an extended version of JIS X 0208.
+** [[Shift JIS|Shift_JIS-2004]]
+** [[Extended Unix Code|EUC-JIS-2004]]
+** [[ISO/IEC 2022|ISO-2022-JP-2004]]
+* Chinese [[List of GB standards|Guobiao]]
+** [[GB 2312]]
+** [[GBK (character encoding)|GBK]] (Microsoft Code page 936)
+** [[GB 18030]]
+* Taiwan [[Big5]] (a more famous variant is Microsoft [[Code page 950]])
+** Hong Kong [[HKSCS]]
+* Korean
+** [[KS X 1001]] is a Korean double-byte character encoding standard
+** [[Extended Unix Code#EUC-KR|EUC-KR]]
+** [[ISO/IEC 2022|ISO-2022-KR]]
+* [[Unicode]] (and subsets thereof, such as the 16-bit 'Basic Multilingual Plane')
+** [[UTF-8]]
+** [[UTF-16]]
+** [[UTF-32]]
+* [[ANSEL]] or [[ISO/IEC 6937]]
+{{Div col end}}
+
+== References ==
+{{Reflist|30em}}
+
+== Further reading ==
+* {{cite book |title=Coded Character Sets, History and Development |work=The Systems Programming Series |last=Mackenzie |first=Charles E. |year=1980 |edition=1 |publisher=[[Addison-Wesley Publishing Company, Inc.]] |isbn=978-0-201-14460-4 |lccn=77-90165}}
+
+==External links==
+{{Commonscat|Character sets}}
+*[http://www.iana.org/assignments/character-sets Character sets registered by Internet Assigned Numbers Authority (IANA)]
+*[http://www.cs.tut.fi/~jkorpela/chars/index.html Characters and encodings], by Jukka Korpela
+*[https://www.unicode.org/unicode/reports/tr17/ Unicode Technical Report #17: Character Encoding Model]
+*[http://code.cside.com/3rdpage/us/unicode/converter.html Decimal, Hexadecimal Character Codes in HTML Unicode – Encoding converter]
+
+{{Character encoding|state=collapsed}}
+
+{{DEFAULTSORT:Character Encoding}}
+[[Category:Character encoding| ]]
+[[Category:Natural language and computing|Encoding]]</text>
+      <sha1>29wzrm91mwds7b2800tfqnna34pg69r</sha1>
+    </revision>
+  </page>

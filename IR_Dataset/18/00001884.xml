@@ -1,0 +1,613 @@
+  <page>
+    <title>ASCII art</title>
+    <ns>0</ns>
+    <id>1884</id>
+    <revision>
+      <id>938605270</id>
+      <parentid>936739281</parentid>
+      <timestamp>2020-02-01T07:17:27Z</timestamp>
+      <contributor>
+        <username>Julthep</username>
+        <id>867131</id>
+      </contributor>
+      <comment>/* See also */</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{more citations needed|date=May 2017}}
+{{Use dmy dates|date=July 2012|cs1-dates=y}}
+{{Infobox file format
+| name = ASCII art
+| icon = 
+| screenshot = File:Wikipedia-Ascii.png
+| screenshot_size = 300px
+| caption = ASCII art version of the Wikipedia logo
+| extension = 
+| extensions = .ascii, .txt, .nfo
+| mime = text/vnd.ascii-art
+| developer = 
+| type = 
+| url = 
+}}
+[[File:aa example1.png|thumb|300px|&quot;Oldskool&quot; or &quot;Amiga&quot; style]]
+[[File:aa example2.png|thumb|300px|&quot;Newskool&quot; style]]
+[[File:aa example3.png|thumb|300px|&quot;Block&quot; or &quot;High ASCII&quot; style, cf. [[ANSI art]]]]
+[[File:Ascii art alphabet.png|thumb|500px|The alphabet in Newskool (Note: artificially shrunk vertically)]]
+'''ASCII art''' is a [[graphic design]] technique that uses [[computer]]s for presentation and consists of pictures pieced together from the 95 printable (from a total of 128) [[character (computing)|characters]] defined by the [[ASCII]] Standard from 1963 and ASCII compliant character sets with proprietary extended characters (beyond the 128 characters of standard [[7-bit ASCII]]&lt;!-- leave it as 7-bit for accuracy --&gt;). The term is also loosely used to refer to [[#Other text-based visual art|text based visual art in general]]. ASCII art can be created with any [[text editor]], and is often used with [[free-form language]]s. Most examples of ASCII [[art]] require a [[Proportional fonts|fixed-width font]] (non-proportional [[typeface|fonts]], as on a traditional [[typewriter]]) such as [[Courier (typeface)|Courier]] for presentation.
+
+Among the oldest known examples of ASCII art are the
+creations by computer-art pioneer [[Kenneth Knowlton]] from around 1966, who was working for [[Bell Labs]] at the time.&lt;ref name=&quot;cgihist&quot;&gt;
+{{cite web
+ | last         = Carlson
+ | first        = Wayne E.
+ | url          = http://design.osu.edu/carlson/history/timeline.html#1960
+ | date         = 2003
+ | title        = An Historical Timeline of Computer Graphics and Animation
+ | access-date  = 2008-03-05
+ | archive-url  = https://web.archive.org/web/20080310082944/http://design.osu.edu/carlson/history/timeline.html#1960
+ | archive-date = 2008-03-10
+ | url-status     = dead
+}}
+&lt;/ref&gt; &quot;Studies in Perception I&quot; by [[Ken Knowlton]] and Leon Harmon from 1966 shows some examples of their early ASCII art.&lt;ref name=&quot;sip1&quot;&gt;{{Harvnb|Carlson|2003}} &quot;1966 Studies in Perception I by Ken Knowlton and Leon Harmon (Bell Labs)&quot;, [http://design.osu.edu/carlson/history/tree/images/bell.jpg Image of Studies in Perception I] {{Webarchive|url=https://web.archive.org/web/20160304134227/http://design.osu.edu/carlson/history/tree/images/bell.jpg |date=4 March 2016 }}&lt;/ref&gt;
+
+ASCII art was invented, in large part, because early printers often lacked graphics ability and thus characters were used in place of graphic marks. Also, to mark divisions between different print jobs from different users, bulk printers often used ASCII art to print large [[banner page]]s, making the division easier to spot so that the results could be more easily separated by a computer operator or clerk.&lt;ref name=&quot;Moritsugu2000&quot;&gt;{{cite book |last1=Moritsugu |first1=Steve |title=Practical UNIX |date=2000 |publisher=Que Publishing |isbn=9780789722508 |pages=[https://archive.org/details/practicalunix00mori_1/page/220 220]–221 |url=https://archive.org/details/practicalunix00mori_1 |url-access=registration |quote=banner. |language=en}}&lt;/ref&gt; ASCII art was also used in early e-mail when images could not be embedded.
+
+==History==
+[[File:Illustration of the constellation Sirius - Harley Aratus (c.820-840), f.8v - BL Harley MS 647.jpg|thumb|right|200px|Illustration of the [[Asterism (astronomy)|constellation]] &quot;[[Canis Major|Sirius]]&quot; from a 9th-century astronomical manuscript]]
+
+===Typewriter art===
+[[File:Brooklyn-Daily-Eagle-1875-01-06.png|thumb|right|300px|alt=A portion of the [[Brooklyn Daily Eagle]], 6 January 1875, showing advertisements made from typewriter art.|A portion of the [[Brooklyn Daily Eagle]], 6 January 1875, showing advertisements made from typewriter art.]]
+Since 1867, typewriters have been used for creating visual art.{{better source|date=August 2013}}&lt;ref&gt;
+{{cite web
+ | last         = Stark
+ | first        = Joan G.
+ | authorlink   = Joan Stark
+ | title        = The History of ASCII (Text) Art
+ | date         = 2001
+ | access-date  = 2008-03-05
+ | archive-url  = https://web.archive.org/web/20091026141759/http://geocities.com/SoHo/7373/history.htm
+ | archive-date = 2009-10-26
+ | url-status     = dead
+ | url          = http://www.geocities.com/SoHo/7373/history.htm
+}}
+&lt;/ref&gt;&lt;ref&gt;
+{{cite web
+ | url         = http://www.typewritermuseum.org/lib/library_art2.html
+ | title       = Typewriter Art
+ | last        = Robert
+ | first       = Paul
+ | date        = 2005-05-11
+ | publisher   = The Virtual Typewriter Museum
+ | access-date = 2008-03-05
+}}
+&lt;/ref&gt;
+
+===TTY and RTTY===
+TTY stands for &quot;TeleTYpe&quot; or &quot;TeleTYpewriter&quot;, and is also known as [[Teleprinter]] or Teletype.
+RTTY stands for [[Radioteletype]]; [[character set]]s such as [[Baudot code]], which predated ASCII, were used. According to a chapter in the &quot;RTTY Handbook&quot;, text images have been sent via teletypewriter as early as 1923.&lt;ref name=&quot;rttyhb&quot;&gt;
+{{cite book
+ | last      = Green
+ | first     = Wayne
+ | title     = RTTY Handbook
+ | publisher = G/L Tab Books
+ | location  = [[Blue Ridge Summit, Pennsylvania]]
+ | date      = June 1972
+ | isbn      = 0-8306-2597-6
+}}
+&lt;/ref&gt; However, none of the &quot;old&quot; RTTY art has been discovered yet. What is known is that text images appeared frequently on radioteletype in the 1960s and the 1970s.&lt;ref name=&quot;joan&quot;&gt;
+{{cite web
+ | last         = Stark
+ | first        = Joan G.
+ | authorlink   = Joan Stark
+ | title        = DEVELOPMENT OF (ASCII) TEXT ART
+ | date         = 2000
+ | access-date  = 2008-03-05
+ | url          = http://www.geocities.com/joan_stark/textasciihistory.txt
+ | archive-url  = https://web.archive.org/web/20091026214612/http://www.geocities.com/joan_stark/textasciihistory.txt
+ | archive-date = 2009-10-26
+ | url-status     = dead
+}}
+&lt;/ref&gt;&lt;ref&gt;
+{{cite web
+ | url        = http://www.rtty.com/gallery/rttyeasy.htm
+ | title      = New Page
+ | website    = www.rtty.com
+ | accessdate = 19 October 2017
+}}
+&lt;/ref&gt;
+
+===Line-printer art===
+In the 1960s, [[Andries van Dam]] published a representation of an electronic circuit produced on an [[IBM 1403]] [[line printer]].&lt;ref&gt;[http://www.computer.org/csdl/proceedings/afips/1967/5069/00/50690601.pdf &quot;A compact data structure for storing, retrieving and manipulating line drawings&quot;] by Andries Van Dam &amp; David Evans&lt;/ref&gt; At the same time, [[Kenneth Knowlton]] was producing realistic images, also on line printers, by overprinting several characters on top of one another.&lt;ref name=&quot;sip1&quot;/&gt;
+Note that it was not ASCII art in a sense that the 1403 was driven by an EBCDIC-coded platform and the character sets and trains available on the 1403 were derived from EBCDIC rather than ASCII, despite some glyphs commonalities.
+
+===ASCII art===
+[[File:ASCII full.svg|frame|There are 95 printable ASCII characters, numbered 32 to 126.]]
+The widespread usage of ASCII art can be traced to the computer [[bulletin board system]]s of the late 1970s and early 1980s. The limitations of computers of that time period necessitated the use of text characters to represent images. Along with ASCII's use in communication, however, it also began to appear in the underground online art groups of the period. An ASCII comic is a form of webcomic which uses ASCII text to create images. In place of images in a regular comic, ASCII art is used, with the text or dialog usually placed underneath.{{citation needed|date=June 2012}}
+
+During the 1990s, graphical browsing and [[variable-width font|variable-width]] [[Computer font|fonts]] became increasingly popular, leading to a decline in ASCII art. Despite this, ASCII art continued to survive through online [[MUD]]s, an acronym for &quot;Multi-User Dungeon&quot;, (which are textual [[multiplayer]] [[role-playing video game]]s), [[Internet Relay Chat]], [[E-mail]], [[message boards]] and other forms of online communication which commonly employ the needed [[Monospaced font|fixed-width]].{{citation needed|date=June 2012}}
+
+===ANSI===
+ASCII and more importantly, [[ANSI escape code|ANSI]] were staples of the early technological era; terminal systems relied on coherent presentation using color and control signals standard in the terminal protocols.
+
+Over the years, [[warez]] groups began to enter the ASCII art scene.&lt;ref&gt;
+{{cite web
+ | last         = Necromancer
+ | title        = History of the PC Ascii Scene
+ | website      = [[textfiles.com]]
+ | date         = 1998-03-06
+ | url          = http://artscene.textfiles.com/history/essays/pcascii.txt
+ | access-date  = 2008-03-05
+ | archive-url  = https://web.archive.org/web/20080215200828/http://artscene.textfiles.com/history/essays/pcascii.txt
+ | archive-date = 2008-02-15
+ | url-status     = live
+}}
+&lt;/ref&gt; Warez groups usually release [[.nfo]] files with their software, [[Software cracking|cracks]] or other general software reverse-engineering releases.&lt;ref&gt;
+{{cite web
+ | author       = Defacto2
+ | url          = http://www.defacto2.net/documents.cfm
+ | date         = 2008
+ | title        = Defacto2 – Scene Documents, text and NFO files
+ | publisher    = defacto2.net
+ | access-date  = 2008-03-05
+ | archive-url  = https://web.archive.org/web/20080312071317/http://www.defacto2.net/documents.cfm
+ | archive-date = 2008-03-12
+ | url-status     = live
+}}
+&lt;/ref&gt; The ASCII art will usually include the warez group's name and maybe some ASCII borders on the outsides of the release notes, etc.&lt;ref&gt;[http://www.defacto2.net/documents.cfm NFO Files collection at Defacto2.net, with NFO files that date back to 1989]. Retrieved 2008-02-17.&lt;/ref&gt;
+
+[[Bulletin board system|BBS]] systems were based on ASCII and ANSI art, as were most [[DOS]] and similar [[System console|console]] applications, and the precursor to [[AOL]].
+
+==Uses==
+[[File:ASCII Panzer unt Sattelzug.png|right|thumb|A tank and truck made using ASCII art]]
+[[File:Roflcopter.gif|right|thumb|The &quot;Roflcopter&quot; as an example for animated ASCII art]]
+ASCII art is used wherever text can be more readily printed or transmitted than graphics, or in some cases, where the transmission of pictures is not possible. This includes typewriters, [[teleprinter]]s, non-graphic [[computer terminal]]s, [[printer separator]]s, in early [[computer network]]ing (e.g., [[bulletin board system|BBSes]]), [[e-mail]], and [[Usenet]] news messages. ASCII art is also used within the [[source code]] of computer programs for representation of company or product logos, and flow control or other diagrams. In some cases, the entire source code of a program is a piece of ASCII art – for instance, an entry to one of the earlier [[International Obfuscated C Code Contest]] is a program that adds numbers, but visually looks like a binary adder drawn in logic ports.&lt;ref&gt;
+{{cite web
+ | last  = Downs
+ | first = Makarios
+ | title = 16 bit addition the easy/hard way
+ | url   = http://www.ioccc.org/1995/heathbar.c
+}}
+&lt;/ref&gt;
+
+Some [[electronic schematic]] archives represent the circuits using ASCII art.&lt;ref name=&quot;Markup_2004&quot;/&gt;&lt;ref name=&quot;Circuits&quot;/&gt;&lt;ref name=&quot;Schematics&quot;/&gt;&lt;ref name=&quot;Cunningham_2010&quot;/&gt;&lt;ref name=&quot;ASCII-Circuits&quot;/&gt;&lt;ref name=&quot;Paul_2005_SR-T&quot;/&gt;&lt;ref name=&quot;Paul_2009_SR-T&quot;/&gt;&lt;ref name=&quot;Paul_2005_Remote&quot;/&gt;&lt;ref name=&quot;Paul_2007_PT-04&quot;/&gt;&lt;ref name=&quot;Paul_2009_4000AF&quot;/&gt;&lt;ref name=&quot;Paul_2012_PCT-100&quot;/&gt;
+
+Examples of ASCII-style art predating the modern computer era can be found in the June 1939, July 1948 and October 1948 editions of Popular Mechanics.&lt;ref name=&quot;popscience&quot;&gt;
+{{cite web
+ | url        = http://www.roysac.com/blog/2007/02/keyboard-text-art-from-over-twenty-years-before-ascii/
+ | title      = Keyboard Text Art From Over Twenty Years Before ASCII
+ | last       = Cumbrowski
+ | first      = Carsten
+ | date       = 2007-02-14
+ | website    = roysac.com
+ | accessdate = 2008-03-05
+}}
+&lt;/ref&gt;
+
+Early computer games played on terminals frequently used ASCII art to simulate graphics, most notably the [[roguelike]] genre using ASCII art to visually represent dungeons and monsters within them.&lt;ref&gt;{{cite web | url = https://killscreen.com/previously/articles/cogmind-proves-roguelike-isnt-done-ascii-art-yet/ | title = Roguelikes Aren’t Done With ASCII Art Yet | first = Christian | last = Valentin | date = October 17, 2016 | accessdate = January 4, 2020 | work = [[Kill Screen]] }}&lt;/ref&gt; &quot;0verkill&quot; is a 2D platform multiplayer shooter game designed entirely in color ASCII art. [[MPlayer]] and [[VLC media player]] can display videos as ASCII art through the [[AAlib]] library. ASCII art is used in the making of DOS-based [[ZZT]] games.
+
+Many game walkthrough guides come as part of a basic .txt file; this file often contains the name of the game in ASCII art. Such as below, word art is created using backslashes and other ASCII values in order to create the illusion of 3D.
+
+==Types and styles==
+Different techniques could be used in ASCII art to obtain different artistic effects. Electronic circuits and diagrams were implemented by [[typewriter]] or [[Teleprinter|teletype]] and provided the pretense{{clarify|date=June 2012}} for ASCII.
+
+&quot;Typewriter-style&quot; lettering, made from individual letter characters:&lt;ref name=&quot;Paul_1997_NWDOSTIP&quot;/&gt;{{nat|&amp;nbsp;
+
+ H   H EEEEE L     L      OOO       W   W  OOO  RRRR  L     DDDD  !!
+ H   H E     L     L     O   O      W W W O   O R   R L     D   D !! 
+ HHHHH EEEEE L     L     O   O      W W W O   O RRRR  L     D   D !! 
+ H   H E     L     L     O   O  ,,   W W  O   O R   R L     D   D    
+ H   H EEEEE LLLLL LLLLL  OOO  ,,    W W   OOO  R   R LLLLL DDDD  !!
+}}
+Line art, for creating shapes: 
+ .--.     /\                ____
+ '--'    /__\    (^._.^)~ &lt;(o.o )&gt;
+
+Solid art, for creating filled objects:
+ .g@8g.  db
+ 'Y8@P' d88b
+
+Shading, using symbols with various intensities for creating gradients or contrasts:
+ :$#$: &quot;4b. ':.
+ :$#$:   &quot;4b. ':.
+
+Combinations of the above, often used as signatures, for example, at the end of an email:
+   |\_/|        ****************************    (\_/)
+  / @ @ \       *  &quot;Purrrfectly pleasant&quot;  *   (='.'=)
+ ( &gt; º &lt; )      *       Poppy Prinz        *   (&quot;)_(&quot;)
+  `&amp;gt;&amp;gt;x&amp;lt;&amp;lt;´       *   (pprinz@example.com)   *
+  /  O  \       ****************************
+
+As-pixel characters use combinations of ░ , █ , ▄ and ▀ to make pictures:&lt;br&gt;
+ ▄▄▄▄▄▄▄░▄▄▄▄▄▄▄░▄▄▄▄▄▄░▄▄▄▄▄
+ ░░▀███░░░░▀██░░░░██▀░░░░██░░
+ ░░░▀██░░░░░▀██░░▄█░░░░░▄█░░░
+ ░░░░███░░░░░▀██▄█░░░░░░█░░░░
+ ░░░░░███░░░░░▀██░░░░░░█▀░░░░
+ ░░░░░░███░░░░▄███░░░░█▀░░░░░
+ ░░░░░░░██▄░░▄▀░███░░█▀░░░░░░
+ ░░░░░░░▀██▄█▀░░░███▄▀░░░░░░░
+ ░░░░░░░░▀██▀░░░░░███░░░░░░░░
+ ░░░░░░░░░▀▀░░░░░░░▀░░░░░░░░░
+
+===Emoticons and verticons===
+{{Main|Emoticon}}
+The simplest forms of ASCII art are combinations of two or three characters for expressing emotion in text. They are commonly referred to as '[[emoticon]]', 'smilie', or '[[smiley]]'. There is another type of one-line ASCII art that does not require the mental rotation of pictures, which is widely known in Japan as [[kaomoji]] (literally &quot;face characters&quot;.) Traditionally, they are referred to as &quot;ASCII face&quot;.
+
+More complex examples use several lines of text to draw large symbols or more complex figures. [[List of emoticons|Hundreds of different text smileys]] have developed over time,&lt;ref name=&quot;smileys2&quot;&gt;
+{{cite web
+ | last        = textfiles
+ | title       = Collection of ASCII Smileys
+ | date        = 2008
+ | url         = http://artscene.textfiles.com/asciiart/smileys.txt
+ | accessdate  = 2008-03-05
+ | archiveurl  = https://web.archive.org/web/20080310030328/http://artscene.textfiles.com/asciiart/smileys.txt
+ | archivedate = 2008-03-10
+ | url-status     = live
+}}
+&lt;/ref&gt; but only a few are generally accepted, used and understood.
+
+===ASCII comic===
+An '''ASCII comic''' is a form of [[webcomic]].
+
+====The Adventures of Nerd Boy====
+'''The Adventures of Nerd Boy''', or just '''Nerd Boy''', was an ASCII comic, published by Joaquim Gândara between 5 August 2001 and 17 July 2007, and consisting of 600 strips. They were posted to ASCII art [[newsgroup]] alt.ascii-art and on the website.&lt;ref&gt;
+{{cite web
+ | url        = http://www.nerd-boy.net/nerdboypak.php
+ | title      = The Adventures of Nerd Boy—Episodes 1-635
+ | last       = Gândara
+ | first      = Joaquim
+ | year       = 2006
+ | publisher  = Nerd-Boy.net
+ | accessdate = 5 March 2008
+}}
+&lt;/ref&gt; Some strips have been translated to [[Polish language|Polish]]&lt;ref&gt;{{Harvnb|Wilk|2006}} episodes 1 to 172
+&lt;/ref&gt;&lt;ref&gt;{{Harvnb|nb-pl.jogger.pl|2006}} episodes 208 to 470&lt;/ref&gt; and [[French language|French]].
+
+===Styles of the computer underground text art scene===
+===={{anchor|ATASCII art}}Atari 400/800 ATASCII====
+The [[Atari 8-bit family|Atari 400/800]] which were released in 1979 did not follow the ASCII standard and had its own character set, called [[ATASCII]].&lt;ref&gt;
+{{cite web
+ | last        = Štěrba
+ | first       = Radek
+ | title       = ATASCII
+ | date        = 20 December 2005
+ | url         = http://raster.infos.cz/atari/chars/atascii.htm
+ | accessdate  = 20 December 2005
+ | archiveurl  = https://web.archive.org/web/20051220204949/http://raster.infos.cz/atari/chars/atascii.htm
+ | archivedate = 20 December 2005}} (gif image)&lt;/ref&gt;&lt;ref&gt;
+{{cite web
+ | last       = Moeser
+ | first      = David
+ | last2      = Fusik
+ | first2     = Piotr
+ | url        = http://www.faqs.org/faqs/atari-8-bit/faq/section-49.html
+ | date       = 13 May 2007
+ | title      = 7.2: What is the ATASCII character set?
+ | publisher  = faqs.org
+ | accessdate = 5 March 2008
+}}
+&lt;/ref&gt;{{Failed verification|date=March 2012}} The emergence of ATASCII art coincided with the growing popularity of [[Bulletin board system|BBS Systems]] caused by availability of the [[acoustic coupler]]s that were compatible with the 8-bit home computers. ATASCII text animations are also referred to as &quot;break animations&quot; by the Atari sceners.{{Citation needed|date=May 2009}}
+
+===={{anchor|PETSCII art}}C-64 PETSCII====
+The [[Commodore 64]], which was released in 1982, also did not follow the ASCII standard. The C-64 character set is called [[PETSCII]], an extended form of [[ASCII]]-1963. As with the Atari's ATASCII art, C-64 fans developed a similar scene that used PETSCII for their creations.
+
+====&quot;Block ASCII&quot; / &quot;High ASCII&quot; style ASCII art on the IBM PC====
+{{Contradicts other|date=June 2012|1=ANSI art}}
+[[File:ASCII notepad acidview compare.png|right|200px|thumbnail|Block ASCII display via Notepad versus ACiDView for Windows]]
+So-called &quot;block ASCII&quot; or &quot;high ASCII&quot; uses the extended characters of the 8-bit [[code page 437]], which is a proprietary standard introduced by [[IBM]] in 1979 (ANSI Standard x3.16) for the IBM PC DOS and MS-DOS operating systems. &quot;Block ASCIIs&quot; were widely used on the PC during the 1990s until the Internet replaced BBSes as the main communication platform. Until then, &quot;block ASCIIs&quot; dominated the [[Computer art scene|PC Text Art Scene]].&lt;ref name=&quot;asciistyles&quot;&gt;
+{{cite web
+ | url        = http://www.RoySAC.com/roy-sac_styles_of_underground_text_art.html
+ | title      = The Three ASCII Art Styles of the Underground Text Art Scene
+ | first      =
+ | last       = Roy/SAC
+ | website    = www.roysac.com
+ | accessdate = 19 October 2017
+}}
+&lt;/ref&gt;&lt;ref name=&quot;ddarthistory&quot;&gt;[http://cd.textfiles.com/darkdomain/www/html/history-art_scene.html An Abbreviated History of the Underground Computer Art Scene] by Napalm, 11/10/1998, The History of Art and Technology&lt;/ref&gt;
+
+The first art scene group that focused on the extended character set of the PC in their art work was called &quot;[[Aces of ANSI Art]]&quot; (&lt;!-- NOTE: &lt;&gt; is part of the name!!! --&gt;[[A.A.A|&lt;A.A.A&gt;]]). Some members left in 1990, and formed a group called &quot;[[ANSI Creators in Demand]]&quot; ([[ACiD]]). In that same year the second major underground art scene group was founded, [[iCE Advertisements|ICE]], &quot;Insane Creators Enterprise&quot;.&lt;ref name=&quot;100years&quot;&gt;[http://www.cow.net/conned/notacon/artscene/notacon-100artscene-transcript.txt 100 YEARS OF THE COMPUTER ART SCENE], Presented by [[Jason Scott Sadofsky]] and [[RaD Man]] ([[ACiD Productions|ACiD]]), [[Notacon]] Conference – Cleveland, Ohio, USA, 23–25 April 2004.&lt;/ref&gt;
+
+There is some debate between ASCII and block ASCII artist, with &quot;Hardcore&quot; ASCII artists maintaining that block ASCII art is in fact not [[ANSI art]], because it does not use the 128 characters of the original ASCII standard. On the other hand, block ASCII artists argue that if their art uses only characters of the computers character set, then it is to be called ASCII, regardless if the character set is proprietary or not.
+
+Microsoft Windows does not support the [[American National Standards Institute|ANSI Standard]] x3.16. One can view block ASCIIs with a text editor using the font &quot;[[Terminal (font)|Terminal]]&quot;, but it will not look exactly as it was intended by the artist. With a special ASCII/ANSI viewer, such as ACiDView for Windows (see [[List of text editors#ASCII and ANSI art|ASCII and ANSI art viewers]]), one can see block ASCII and ANSI files properly. An example that [[#&quot;Block&quot; ASCII art|illustrates the difference]] in appearance is part of this article. Alternatively, one could look at the file using the [[TYPE (DOS command)|TYPE]] command in the command prompt.
+
+====&quot;Amiga&quot;/&quot;Oldskool&quot; style ASCII art====
+[[File:Paso-IceCream-AmigaVsPC.png|right|200px|thumbnail|Oldschool/Amiga ASCII look on Commodore Amiga Computer versus look on the IBM PC (notice the tight spacing)]]
+In the art scene one popular ASCII style that used the 7-bit standard ASCII character set was the so-called &quot;Oldskool&quot; style. It is also called &quot;Amiga style&quot;, due to its origin and widespread use on the [[Amiga|Commodore Amiga]] computers. The style uses primarily the characters: &lt;code&gt;_/\-+=.()&lt;&gt;:&lt;/code&gt;. The &quot;oldskool&quot; art looks more like the outlined drawings of shapes than real pictures.
+This is an example of &quot;[[Amiga]] style&quot; (also referred to as &quot;old school&quot; or &quot;oldskool&quot; style) [[computer art scene|scene]] ASCII art.&lt;ref name=&quot;asciistyles&quot;/&gt;
+
+The Amiga ASCII scene surfaced in 1992, seven years after the introduction of the Commodore [[Amiga 1000]]. The Commodore 64 PETSCII scene did not make the transition to the Commodore Amiga as the C64 demo and warez scenes did. Among the first Amiga ASCII art groups were ART, Epsilon Design, Upper Class, Unreal (later known as &quot;DeZign&quot;). This means that the text art scene on the Amiga was actually younger than the text art scene on the PC. The Amiga artists also did not call their ASCII art style &quot;Oldskool&quot;. That term was introduced on the PC. When and by whom is unknown and lost in history.
+
+The Amiga style ASCII artwork was most often released in the form of a single text file, which included all the artwork (usually requested), with some design parts in between, as opposed to the PC art scene where the art work was released as a [[ZIP archive]] with separate text files for each piece. Furthermore, the releases were usually called &quot;ASCII collections&quot; and not &quot;art packs&quot; like on the IBM PC.
+
+=====In text editors=====
+&lt;pre style=&quot;float:right;&quot;&gt;
+ _____ ___ ____ _      _   
+|  ___|_ _/ ___| | ___| |_ 
+| |_   | | |  _| |/ _ \ __|
+|  _|  | | |_| | |  __/ |_ 
+|_|   |___\____|_|\___|\__|
+
+&lt;/pre&gt;
+This kind of ASCII art is handmade in a text editor. Popular editors used to make this kind of ASCII art include [[Microsoft Notepad]], [[CygnusEd]]itor aka. CED ([[Amiga]]), and [[EditPlus]]2 ([[Wintel|PC]]).
+
+[[Oldskool font]] example from the PC, which was taken from the ASCII editor [[FIGlet]].
+
+====Newskool style ASCII art====
+[[File:Roy-csnewskool.png|right|200px|thumbnail|Newskool ASCII screenshot]]
+&quot;Newskool&quot; is a popular form of ASCII art which capitalizes on character strings like &quot;$#Xxo&quot;. In spite of its name, the style is not &quot;new&quot;; on the contrary, it was very old but fell out of favor and was replaced by &quot;Oldskool&quot; and &quot;Block&quot; style ASCII art. It was dubbed &quot;Newskool&quot; upon its comeback and renewed popularity at the end of the 1990s.&lt;ref name=&quot;asciistyles&quot;/&gt;
+
+Newskool changed significantly as the result of the introduction of [[character encoding|extended proprietary characters]]. The classic 7-bit standard ASCII characters remain predominant, but the extended characters are often used for &quot;fine tuning&quot; and &quot;tweaking&quot;. The style developed further after the introduction and adaptation of [[Unicode]].
+
+==Methods for generating ASCII art==
+{{Main|List of text editors#ASCII and ANSI art}}
+
+While some prefer to use a simple [[text editor]] to produce ASCII art, specialized programs, such as [[JavE]] have been developed that often simulate the features and tools in bitmap image editors. For Block ASCII art and ANSI art the artist almost always uses a special text editor, because to generate the required characters on a standard keyboard, one needs to know the [[Alt code]] for each character. For example, {{keypress|Alt}}+{{keypress|1}}{{keypress|7}}{{keypress|8}} will produce ▓, {{keypress|Alt}}+{{keypress|1}}{{keypress|7}}{{keypress|7}} will produce ▒, and {{keypress|Alt}}+{{keypress|8}} will produce ◘.
+
+The special text editors have sets of special characters assigned to existing keys on the keyboard. Popular [[DOS]]-based editors, such as [[TheDraw]] and ACiDDraw had multiple sets of different special characters mapped to the [[function key]]s to make the use of those characters easier for the artist who can switch between individual sets of characters via basic keyboard shortcuts. PabloDraw is one of the very few special ASCII/ANSI art editors that were developed for [[Windows NT|Windows]].
+
+===Image to text conversion===
+Other programs allow one to automatically convert an image to text characters, which is a special case of [[vector quantization]]. A method is to sample the image down to [[grayscale]] with less than [[integer (computer science)|8-bit]] precision, and then assign a character for each value. Such ASCII art generators often allow users to choose the intensity and contrast of the generated image.&lt;ref&gt;
+{{cite web
+ | url         = http://asciiartgenerator.net/ascii-art-generator-an-overview/
+ | archiveurl  = https://web.archive.org/web/20130801070421/http://asciiartgenerator.net/ascii-art-generator-an-overview/
+ | archivedate = 2013-08-01|title=ASCII Art Generator: An Overview
+ | date        = 2012-01-12
+ | publisher   = asciiartgenerator.net
+ | access-date = 2012-03-19
+}}
+&lt;/ref&gt;
+
+Three factors limit the ''fidelity'' of the conversion, especially of photographs:
+
+* depth (solutions: reduced line spacing; bold style; block elements; colored background; good [[ASCII art#Types and styles|shading]]);
+* sharpness (solutions: a longer text, with a smaller font; a greater set of characters; [[ASCII art#Non fixed-width ASCII|variable width]] fonts);
+* ratio (solutions with compatibility issues: font with a square grid; stylized without extra [[leading|line spacing]]).
+
+Examples of converted images are given below.
+
+This is one of the earliest forms of ASCII art, dating back to the early days of the 1960s [[minicomputer]]s and [[Teleprinter|teletype]]s. During the 1970s, it was popular in US [[shopping mall|malls]] to get a [[t-shirt]] with a photograph printed in ASCII art on it from an automated kiosk manned by a computer, and London's [[Science Museum, London|Science Museum]] had a similar service to produce printed portraits. With the advent of the web, [[HTML]] and [[Cascading Style Sheets|CSS]], many ASCII conversion programs will now quantize to a full [[RGB color model|RGB]] colorspace, enabling colorized ASCII images.
+
+&lt;center&gt;
+{|
+|-
+|| [[File:Redwingblackbird1.jpg|200px]] || [[File:Red-winged blackbird ASCII art.png|200px]] || [[File:bird converted to ASCII characters.png|200px]]
+|}
+&lt;/center&gt;
+
+Still images or movies can also be converted to ASCII on various [[UNIX]] and [[UNIX-like]] systems using the [http://aa-project.sourceforge.net/aalib aalib (black and white)] or [http://caca.zoy.org/wiki/libcaca libcaca (colour)] graphics device driver, or the [[VLC media player]] or [[mpv (media player)|mpv]] under [[Windows]], Linux or [[macOS]]; all of which render the screen using ASCII symbols instead of pixels.&lt;ref&gt;{{Cite web|url=https://www.oreilly.com/library/view/linux-multimedia-hacks/0596100760/ch03s09.html|title=54. Watch Videos in ASCII Art - Linux Multimedia Hacks [Book]|website=www.oreilly.com}}&lt;/ref&gt;
+
+There are also a number of [[smartphone]] '''applications''', such as ASCII cam for [[Android (operating system)|Android]], that generate ASCII art in real-time using input from the phone's camera. These applications typically allow the ASCII art to be saved as either a text file or as an image made up of ASCII text.
+
+==Non fixed-width ASCII==
+Most ASCII art is created using a [[monospaced font]], where all characters are identical in width ([[Courier (typeface)|Courier]] is a popular monospaced font). Early computers in use when ASCII art came into vogue had monospaced fonts for screen and printer displays. Today, most of the more commonly used fonts in word processors, web browsers and other programs are proportional fonts, such as [[Helvetica]] or [[Times Roman]], where different widths are used for different characters. ASCII art drawn for a fixed width font will usually appear distorted, or even unrecognizable when displayed in a proportional font.
+
+Some ASCII artists have produced art for display in proportional fonts. These ASCIIs, rather than using a purely shade-based correspondence, use characters for slopes and borders and use block shading. These ASCIIs generally offer greater precision and attention to detail than fixed-width ASCIIs for a lower character count, although they are not as universally accessible since they are usually relatively font-specific.
+
+==Animated ASCII art==
+Animated ASCII art started in 1970 from so-called VT100 animations produced on [[VT100]] terminals. These animations were simply text with cursor movement instructions, deleting and erasing the characters necessary to appear animated. Usually, they represented a long hand-crafted process undertaken by a single person to tell a story.
+
+Contemporary [[web browser]] revitalized animated ASCII art again. It became possible to display animated ASCII art via [[JavaScript]] or [[Java (Sun)|Java applets]]. Static ASCII art pictures are loaded and displayed one after another, creating the animation, very similar to how movie projectors unreel film reel and project the individual pictures on the big screen at movie theaters. A new term was born: &quot;''ASCIImation''&quot; – another name of ''animated ASCII art''. A seminal work in this arena is the [[Star Wars]] ASCIImation.&lt;ref&gt;
+{{cite web
+ | first        = Simon
+ | last         = Jansen
+ | date         = 2006-04-18
+ | url          = http://www.asciimation.co.nz/
+ | title        = Star &quot;ASCIImation&quot; Wars
+ | publisher    = Asciimation.co.nz
+ | access-date  = 2008-11-18
+ | archive-url  = https://web.archive.org/web/20081209033917/http://www.asciimation.co.nz/
+ | archive-date = 2008-12-09
+ | url-status     = live
+}}
+&lt;/ref&gt; More complicated routines in JavaScript generate more elaborate ASCIImations showing effects like [[Morphing]] effects, star field emulations, fading effects and calculated images, such as [[Mandelbrot set|mandelbrot fractal]] animations.&lt;ref name=&quot;asciimation1&quot;&gt;[http://www.roysac.com/skylined-Morph-ASCIIanimationFrame.html ASCII Animation &quot;Morph&quot; by SkyLined (using JavaScript)] includes morph effects and mandelbrot fractal animation&lt;/ref&gt;&lt;ref name=&quot;asciimation2&quot;&gt;[http://www.roysac.com/skylined-Starfield-ASCIIanimationFrame.html ASCII Animation Starfield by SkyLined (using JavaScript)] includes fading effect and horizontal scrolling star field emulation&lt;/ref&gt;
+
+There are now many tools and programs that can transform raster images into text symbols; some of these tools can operate on streaming video. For example, the music video for American singer [[Beck]]'s song &quot;[[Black Tambourine]]&quot;&lt;ref name=&quot;beckbt&quot;&gt;
+{{cite web
+ | url         = https://www.youtube.com/watch?v=wEXaEYpifhg
+ | title       = Beck - Black Tambourine
+ | first       =
+ | last        = BeckVEVO
+ | date        = 2009-10-07
+ | publisher   =
+ | access-date = 2017-10-19
+ | via         = YouTube
+}}
+&lt;/ref&gt; is made up entirely of ASCII characters that approximate the original footage. [[VLC media player|VLC]], a media player software, can render any video in colored ASCII through the [[libcaca]] module.
+
+==Other text-based visual art==
+There are a variety of other types of art using text symbols from character sets other than ASCII and/or some form of color coding. Despite not being pure ASCII, these are still often referred to as &quot;ASCII art&quot;. The character set portion designed specifically for drawing is known as the line drawing characters or [[pseudo-graphics]].
+
+===ANSI art===
+{{Main|ANSI art}}
+The IBM PC graphics hardware in text mode uses 16 bits per character. It supports a variety of configurations, but in its default mode under DOS they are used to give 256 glyphs from one of the IBM PC code pages ([[Code page 437]] by default), 16 foreground colors, eight background colors, and a flash option. Such art can be loaded into screen memory directly. [[ANSI.SYS]], if loaded, also allows such art to be placed on screen by outputting escape sequences that indicate movements of the screen cursor and color/flash changes. If this method is used then the art becomes known as [[ANSI art]]. The IBM PC code pages also include characters intended for simple drawing which often made this art appear much cleaner than that made with more traditional character sets. Plain text files are also seen with these characters, though they have become far less common since Windows GUI text editors (using the [[Windows ANSI code page]]) have largely replaced DOS-based ones.
+
+===Shift_JIS and Japan===
+{{anchor|Monā}}[[File:Mona01.svg|thumb|{{nihongo|'''Monā'''|モナー|Monā}} Posted on {{nihongo|'''[[2ch]]'''|２ちゃんねる|Nichanneru}} in 2000]]
+[[File:Gikoneko01.svg|thumb|{{nihongo|'''Gikoneko'''|ギコ猫|Giko cat}} Posted on {{nihongo|'''[[2ch]]'''|２ちゃんねる|Nichanneru}} in 2000]]
+{{Main|Shift_JIS art}}
+In Japan, ASCII art (AA) is mainly known as '''Shift_JIS art'''. [[Shift JIS]] offers a larger selection of characters than plain ASCII (including [[Japanese language and computers|characters from Japanese scripts]] and [[Halfwidth and Fullwidth Forms|fullwidth forms of ASCII characters]]), and may be used for text-based art on Japanese websites.
+
+Often, such artwork is designed to be viewed with the default Japanese font on a platform, such as the proportional MS P Gothic.&lt;ref&gt;
+{{cite web
+ | url         = http://monafont.sourceforge.net/index-e.html
+ | title       = Mona Font
+ | website     = monafont.sourceforge.net
+ | access-date = 2017-10-19
+}}
+&lt;/ref&gt;
+
+====Kaomoji====
+{{Further|Emoticon#Japanese_style|List of common emoticons#Eastern}}
+Users on ASCII-NET, in which the word ''ASCII'' refers to the [[ASCII (company)|ASCII Corporation]] rather than the [[American Standard Code for Information Interchange]], popularised a style of {{Nihongo|emoticon|[[wikt:顔文字|顔文字]]|kaomoji|emoticon}} in which the face appears upright rather than rotated.
+
+{| class=&quot;wikitable&quot;
+|-
+! Icon
+! Meaning
+|-
+| (^_^) (^^ゞ　(^_^;)　(-_-;)　(~_~;)　(・。・;)　(・_・;)　(・・;)　^^;　^_^; (#^.^#) (^ ^;) || Smiley, nervous, embarrassed, troubled, shy, sweat drop
+|}
+
+==={{anchor|Unicode art}}Unicode===
+{{Main|Unicode}}
+[[Unicode]] would seem to offer the ultimate flexibility in producing text based art with its huge variety of characters. However, finding a suitable fixed-width font is likely to be difficult if a significant subset of Unicode is desired. (Modern UNIX-style operating systems do provide complete fixed-width Unicode fonts, e.g. for [[xterm]]. Windows has the [[Courier New]] font, which includes characters like ┌╥─╨┐♥☺Ƹ̵̡Ӝ̵̨̄Ʒ). Also, the common practice of rendering Unicode with a mixture of variable width fonts is likely to make predictable display hard, if more than a tiny subset of Unicode is used. ≽&lt;sup&gt;ʌ&lt;/sup&gt;ⱷ҅&lt;sub&gt;ᴥ&lt;/sub&gt;ⱷ&lt;sup&gt;ʌ&lt;/sup&gt;≼ is an adequate representation of a cat's face in a font with varying character widths.
+
+====Control and combining characters====
+{{or-section|date=May 2015}}
+The [[combining character]]s mechanism of [[Unicode]] provides considerable ways of customizing the style, even [[obfuscation|obfuscating]] the text (e.g. via an online generator like Obfuscator,&lt;ref&gt;{{Cite web|url=https://obfuscator.uo1.net/|title=Online Text Obfuscator|website=obfuscator.uo1.net}}&lt;/ref&gt; which focuses on the filters&lt;ref&gt;{{Cite web|url=https://stackoverflow.com/questions/3470669/should-unicode-be-allowed-in-usernames|title=web services - Should Unicode be allowed in usernames?|website=Stack Overflow}}&lt;/ref&gt;). '''Glitcher''' is one example of '''Unicode art''', initiated in 2012: ''These symbols, intruding up and down, are made by combining lots of diacritical marks. It’s a kind of art. There’s quite a lot of artists who use the Internet or specific social networks as their canvas.''&lt;ref&gt;
+{{cite web
+| last        = Zakas
+| first       = Laimonas
+| title       = Facebook Page Performance Art Glitchr
+| url         = https://techcrunch.com/2012/01/11/facebook-page-performance-art-glitchr-purposefully-tries-to-activate-code-glitches/
+| website     = TechCrunch
+| publisher   = AOL
+| access-date = 2015-06-23
+| ref         = Glitchr
+}}
+&lt;/ref&gt; The corresponding creations are favored in web browsers (thanks to their always better support&lt;ref&gt;{{Cite web|url=http://www.ltg.ed.ac.uk/~richard/unicode-sample-3-2.html|title=Unicode 3.2 test page|website=www.ltg.ed.ac.uk}}&lt;/ref&gt;), as [[geek]]ily stylized usernames for social networks. With a fair compatibility, and among different online tools, '''Facebook symbols]'''&lt;ref&gt;{{Cite web|url=https://fsymbols.com/generators/facebook-name/|title=Facebook profile name style with symbols (fb name font generator)|website=fsymbols.com}}&lt;/ref&gt; showcases various types of Unicode art, mainly for aesthetic purpose (Ɯıḳĭƥḙȡḯả Wîkipêȡıẚ Ẉǐḳîṗȅḍȉā Ẃįḵįṗẻḑìẵ Ẉĭḵɪṕḗdïą Ẇïƙỉpểɗĭà Ẅȉḱïṕȩđĩẵ etc.). Besides, the creations can be hand-crafted (by programming), or pasted from mobile applications (e.g. the category of 'fancy text'&lt;ref&gt;{{Cite web|url=https://play.google.com/store/search?q=fancy+text&amp;c=apps|title=fancy text - Android Apps on Google Play|website=play.google.com}}&lt;/ref&gt; tools on Android). The underlying technique dates back to the old systems that incorporated [[control character]]s, though. E.g. the German composite &lt;code&gt;ö&lt;/code&gt; would be imitated on [[ZX Spectrum]] by overwriting&lt;ref&gt;{{Cite web|url=http://www.worldofspectrum.org/ZXBasicManual/zxmanchap16.html|title=World of Spectrum - Documentation - ZX Spectrum manual - Chapter 16|website=www.worldofspectrum.org}}&lt;/ref&gt; &lt;code&gt;&quot;&lt;/code&gt; after [[backspace]] and &lt;code&gt;o&lt;/code&gt;.
+
+===Overprinting (surprint)===
+In the 1970s and early 1980s it was popular to produce a kind of text art that relied on overprinting. This could be produced either on a screen or on a printer by typing a character, backing up, and then typing another character, just as on a typewriter. This developed into sophisticated graphics in some cases, such as the [[PLATO (computer system)|PLATO]] system (circa 1973), where superscript and subscript allowed a wide variety of graphic effects. A common use was for [[emoticon]]s, with WOBTAX and VICTORY both producing convincing smiley faces.&lt;ref&gt;[http://www.platohistory.org/blog/2012/09/plato-emoticons-revisited.html PLATO Emoticons, revisited], Brian Dear, ''[http://www.platohistory.org/ PLATO History: Remembering the future],'' 2012-09-19&lt;/ref&gt; Overprinting had previously been used on typewriters, but the low-resolution pixelation of characters on video terminals meant that overprinting here produced seamless pixel graphics, rather than visibly overstruck combinations of letters on paper.
+
+Beyond pixel graphics, this was also used for printing photographs, as the overall darkness of a particular character space dependent on how many characters, as well as the choice of character, were printed in a particular place. Thanks to the increased granularity of tone, photographs were often converted to this type of printout. Even manual typewriters or [[daisy wheel printer]]s could be used. The technique has fallen from popularity since all cheap printers can easily print photographs, and a normal text file (or an e-mail message or Usenet posting) cannot represent overprinted text. However, something similar has emerged to replace it: shaded or colored ASCII art, using ANSI video terminal markup or color codes (such as those found in [[HTML]], [[Internet Relay Chat|IRC]], and many internet [[message board]]s) to add a bit more tone variation. In this way, it is possible to create ASCII art where the characters only differ in color.
+
+==Creation==
+{{unreferenced section|date=June 2014}}
+[[List of text editors#ASCII and ANSI art|ASCII art text editors]] are used to create ASCII art from scratch, or to edit existing ASCII art files.
+
+ASCII art may be created from an existing digital image using an '''ASCII art converter''', an online tool or a [[software application]], that automatically converts an image into ASCII art, using [[vector quantization]]. Typically, this is done by sampling the image down to [[grayscale]] with less than [[8-bit]] precision, so that each value corresponds to different [[ASCII|ASCII character]].
+
+==See also==
+* Types and styles: [[Alt code]], [[ASCII stereogram]], [[Box-drawing characters]], [[Emoticon]], [[FILE ID.DIZ]], [[.nfo]] (release info file)
+* Pre-ASCII history: [[Calligram]], [[Concrete poetry]], [[Typewriter]], [[Typewriter mystery game]], [[Teleprinter]], [[Radioteletype]]
+* Related art: [[ANSI art]], [[ASCII porn]], [[ATASCII]], [[Fax art]], [[PETSCII]], [[Shift JIS art]], [[Text semigraphics]]
+* Related context: [[Text Mode Demo Contest]], [[Bulletin board system]] (BBS), [[Computer art scene]], [[:Category:Artscene groups]]
+* Software: [[AAlib]], [[cowsay]]
+* Unicode: [[Homoglyph]], [[Duplicate characters in Unicode]]
+
+==References==
+{{Reflist|refs=
+&lt;ref name=&quot;Markup_2004&quot;&gt;{{cite web |url=http://www.ibiblio.org/kuphaldt/electricCircuits/Devel/markup.html |title=Document Markup Format |archive-url=https://web.archive.org/web/20040626171001/http://www.ibiblio.org/kuphaldt/electricCircuits/Devel/markup.html |archive-date=2004-06-26 |url-status=live}}&lt;/ref&gt;
+&lt;ref name=&quot;Circuits&quot;&gt;[https://web.archive.org/web/20130109212449/http://www.ee.washington.edu/circuit_archive/circuits/ &quot;Circuits Archive&quot;]&lt;/ref&gt;
+&lt;ref name=&quot;Schematics&quot;&gt;{{Cite web|url=http://www.repairfaq.org/ELE/F_ASCII_Schem.html|title=Sci.electronics FAQ: Assorted ASCII Schematics|website=www.repairfaq.org}}&lt;/ref&gt;
+&lt;ref name=&quot;Cunningham_2010&quot;&gt;{{cite web |url=https://makezine.com/2010/02/04/ascii-schematic-editor/ |title=Schematics just look cooler in ASCII |last=Cunningham |first=Collin |date=2010-02-04 |website=[[Make:]] |archive-url=https://web.archive.org/web/20160911182910/http://makezine.com/2010/02/04/ascii-schematic-editor/ |archive-date=2016-09-11 |url-status=live}}&lt;/ref&gt;
+&lt;ref name=&quot;ASCII-Circuits&quot;&gt;[https://web.archive.org/web/20150213012524/http://www.tech-chat.de/ascii-circuits.html &quot;ASCII Circuits&quot;]&lt;/ref&gt;
+&lt;ref name=&quot;Paul_2005_SR-T&quot;&gt;{{cite web |author-first=Matthias R. |author-last=Paul |title=Minolta SR-T Batterieadapter |trans-title=Using a Bandgap voltage reference as Mercury battery replacement |date=2005-12-12 |language=de |work=Minolta-Forum |url=http://www.mi-fo.de/forum/index.php?showtopic=11119&amp;view=findpost&amp;p=130223 |access-date=2011-02-26 |url-status=dead |archive-url=https://web.archive.org/web/20161011185451/http://www.mi-fo.de/forum/index.php?showtopic=11119&amp;st=0&amp;p=130223&amp;#entry130223 |archive-date=2016-10-11}}&lt;/ref&gt;
+&lt;ref name=&quot;Paul_2009_SR-T&quot;&gt;{{cite web |author-first=Matthias R. |author-last=Paul |title=Minolta SR-T Batterieadapter |trans-title=Using a 7×7 mm SMD transistor-based low-side voltage regulator circuit as Mercury battery replacement |language=de |work=Minolta-Forum |date=2009-03-14 |url=http://www.mi-fo.de/forum/index.php?showtopic=11119&amp;view=findpost&amp;p=241848 |access-date=2011-02-26 |url-status=dead |archive-url=https://web.archive.org/web/20160327222617/http://www.mi-fo.de/forum/index.php?showtopic=11119&amp;st=20&amp;p=241848&amp;#entry241848 |archive-date=2016-03-27}}&lt;/ref&gt;
+&lt;ref name=&quot;Paul_2005_Remote&quot;&gt;{{cite web |author-first=Matthias R. |author-last=Paul |title=Eigenbau eines Kabelauslösers - Problem mit der Funktion… |trans-title=Building your own remote camera trigger - problem with function… |date=2005-03-07 |language=de |work=Minolta-Forum |url=http://www.mi-fo.de/forum/index.php?showtopic=6555 |access-date=2016-03-31 |url-status=dead |archive-url=https://web.archive.org/web/20160331184713/http://www.mi-fo.de/forum/index.php?showtopic=6555 |archive-date=2016-03-31}}&lt;/ref&gt;
+&lt;ref name=&quot;Paul_2007_PT-04&quot;&gt;{{cite web |author-first=Matthias R. |author-last=Paul |title=Funkblitzauslöser PT-04 m. Minolta-Blitz 5600HS(D) - Funkauslöser funktioniert, aber Blitz löst trotzdem nicht aus |trans-title=Wireless remote flash control PT-04 with Minolta flash 5600HS(D) - wireless triggering works, but still flash does not fire |date=2009-04-26 |orig-year=2007-11-01 |language=de |work=Minolta-Forum |url=http://www.mi-fo.de/forum/index.php?showtopic=18866&amp;st=0&amp;p=215814&amp;#entry215814 |access-date=2016-06-06 |url-status=dead |archive-url=https://web.archive.org/web/20160606192151/http://www.mi-fo.de/forum/index.php?showtopic=18866&amp;st=0&amp;p=215814&amp;#entry215814 |archive-date=2016-06-06}}&lt;/ref&gt;
+&lt;ref name=&quot;Paul_2009_4000AF&quot;&gt;{{cite web |author-first=Matthias R. |author-last=Paul |title=Auto-Off-Deaktivierung bei Minolta Program 4000 AF - Automatische Abschaltung des 4000 AF für Slave-Betrieb deaktivieren? |trans-title=Deactivating auto-off function of Minolta Program 4000 AF |date=2010-04-09 |orig-year=2009-04-17 |language=de |work=Minolta-Forum |url=http://www.mi-fo.de/forum/index.php?showtopic=23553 |access-date=2016-03-27 |url-status=dead |archive-url=https://web.archive.org/web/20160327044441/http://www.mi-fo.de/forum/index.php?showtopic=23553 |archive-date=2016-03-27}}&lt;/ref&gt;
+&lt;ref name=&quot;Paul_2012_PCT-100&quot;&gt;{{cite web |author-first=Matthias R. |author-last=Paul |title=Innenschaltung Minolta PC Terminal Adapter PCT-100 |trans-title=Internal circuitry of Minolta PC Terminal Adapter PCT-100 |date=2012-05-09 |language=de |work=Minolta-Forum |url=http://www.mi-fo.de/forum/index.php?showtopic=31845 |access-date=2016-08-04 |url-status=dead |archive-url=https://web.archive.org/web/20160804062754/http://www.mi-fo.de/forum/index.php?showtopic=31845 |archive-date=2016-08-04}}&lt;/ref&gt;
+&lt;ref name=&quot;Paul_1997_NWDOSTIP&quot;&gt;{{cite book |title=NWDOS-TIPs &amp;mdash; Tips &amp;amp; Tricks rund um Novell DOS 7, mit Blick auf undokumentierte Details, Bugs und Workarounds |trans-title=NWDOS-TIPs - &amp;mdash; Tips &amp;amp; tricks for [[Novell DOS 7]], with a focus on undocumented details, bugs and workarounds |work=MPDOSTIP |author-first=Matthias R. |author-last=Paul |date=1997-07-30 |orig-year=1994-05-01 |edition=3 |version=Release 157 |language=de |url=http://www.antonis.de/dos/dos-tuts/mpdostip/html/nwdostip.htm |access-date=2014-08-06 |url-status=live |archive-url=https://web.archive.org/web/20170910194752/http://www.antonis.de/dos/dos-tuts/mpdostip/html/nwdostip.htm |archive-date=2017-09-10}} (NB. The top of the NWDOSTIP.TXT file shows a large text logo in typewriter-style art.) [https://web.archive.org/web/20190601152204/https://www.sac.sk/download/text/mpdostip.zip&lt;!-- An older version 155 from 1997-05-13 of the 1997-07-15 distribution archive. --&gt;]&lt;/ref&gt;
+}}
+
+==Further reading==
+&lt;!-- Please replace any deadlinks with archive.org links, instead of removing them --&gt;
+&lt;!-- alphabetical order --&gt;
+{{refbegin}}
+* {{cite web
+ | last         = Beal
+ | first        = Vangie
+ | url          = http://www.webopedia.com/quick_ref/textmessageabbreviations.asp#smiley
+ | date         = 2008
+ | title        = Text Messaging Abbreviations: A Guide to Understanding Online Chat Acronyms &amp; Smiley Faces
+ | website      = Webopedia
+ | access-date  = 2008-03-05
+ | archive-url  = https://web.archive.org/web/20080306032531/http://www.webopedia.com/quick_ref/textmessageabbreviations.asp
+ | archive-date = 2008-03-06
+ | url-status     = live
+}}
+* {{cite web
+ | last1        = Carlsson
+ | first1       = Anders
+ | last2        = Miller
+ | first2       = A. Bill
+ | url          = http://goto80.com/chipflip/06/
+ | date         = 2012
+ | title        = Future Potentials for ASCII art
+ | access-date  = 2014-07-08
+ | archive-url  = https://web.archive.org/web/20140708122352/http://goto80.com/chipflip/06/
+ | archive-date = 2014-07-08
+ | url-status     = live
+}}
+* {{cite web
+ | last         = Cumbrowski
+ | first        = Carsten
+ | url          = http://www.roysac.com/blog/2007/02/history-of-text-art-video-by-rad-man-acid/
+ | date         = 2 November 2007
+ | title        = History of Text Art Video by RaD Man / ACiD
+ | publisher    = roysac.com
+ | access-date  = 2014-03-29
+ | archive-url  = https://web.archive.org/web/20080302081249/http://www.roysac.com/blog/2007/02/history-of-text-art-video-by-rad-man.html
+ | archive-date = 2008-03-02
+ | url-status     = live
+}}
+* {{cite web
+ | last         = Jones
+ | first        = Mike
+ | title        = The First Smiley :-)
+ | publisher    = [[Microsoft Research]]
+ | date         = 2002-09-12
+ | url          = http://research.microsoft.com/~mbj/Smiley/Smiley.html
+ | access-date  = 2008-03-05
+ | archive-url  = https://web.archive.org/web/20080305013423/http://research.microsoft.com/~mbj/smiley/smiley.html
+ | archive-date = 2008-03-05
+ | url-status     = live
+}}
+* {{cite web
+ | last         = nb-pl.jogger.pl
+ | title        = :[ Nerdboy PL ]:
+ | url          = http://nb-pl.jogger.pl/
+ | date         = 2006
+ | access-date  = 2006-05-14
+ | archive-url  = https://web.archive.org/web/20060514214623/http://nb-pl.jogger.pl/
+ | archive-date = 2006-05-14}} ([[Polish language|Polish]] translators: Ania Górecka [ag], Asia Mazur [as], Błażej Kozłowski [bug], Janusz [jp], Łukasz Dąbrowski [luk], Łukasz Tyrała [lt.], Łukasz Wilk [wilu], Marcin Gliński [fsc])
+* {{cite web
+ | last         = Wilk
+ | first        = Łukasz
+ | title        = Strona grupy dyskusyjnej PL.REC.ASCII-ART
+ | url          = http://ascii.art.pl/nerd.htm
+ | archive-url  = https://web.archive.org/web/20060115054807/http://ascii.art.pl/nerd.htm
+ | url-status     = dead
+ | archive-date = 2006-01-15
+ | date         = 2006
+ | access-date  = 2006-11-30
+ | language     = pl}}{{cbignore|bot=medic}}
+* {{cite AV media
+ | last        = Wirth
+ | first       = Christian
+ | url         = https://archive.org/details/hackercons-notacon-2007-Building_Character_ANSI
+ | date        = 2007
+ | title       = Building Character: ANSI From the Ground Up
+ | publisher   = [[Notacon]]
+ | access-date = 2013-07-07}}
+&lt;!--Place new references above this line--&gt;
+{{refend}}
+
+==External links==
+{{Commons category|ASCII art}}
+* {{curlie|Arts/Visual_Arts/ASCII_Art/}}
+* [http://www.media4u.ch/en/the-matrix.html/ media4u.ch - ASCII Art] (ASCII Art Movie. The Matrix in ASCII Art)
+* [http://textart.io/art# TexArt.io ASCII Art collection]
+* [http://artscene.textfiles.com/ Textfiles.com archive]
+* [https://archive.today/20121220052340/http://sixteencolors.net/ Sixteen Colors ANSI Art and ASCII Art Archive]
+* [http://www.defacto2.net/documents.cfm Defacto2.net Scene NFO Files Archive]
+* [http://www.chris.com/ascii Chris.com ASCII art collection]
+* [http://www.pictoriano.com/ &quot;As-Pixel Characters&quot; ASCII art collection]
+* [http://www.asciimation.co.nz/ ASCII Art Animation of Star Wars, &quot;ASCIIMATION&quot;]
+* [http://textimage.my1.ru/news ASCII Keyboard Art Collection]
+* [https://animasci.com Animasci]
+
+&lt;!----- Do not add any more links to this section. -----&gt;
+&lt;!----- If you believe that the site you want to add is of extraordinary importance and must be linked to, ----&gt;
+&lt;!----- please elaborate this at the article's talk page. -----&gt;
+
+{{DEFAULTSORT:Ascii Art}}
+[[Category:ASCII art| ]]
+[[Category:Computer art]]
+[[Category:New media art]]
+[[Category:Wikipedia articles with ASCII art]]</text>
+      <sha1>e749xgk4o9wzv2tvxnc4voud87ihai5</sha1>
+    </revision>
+  </page>

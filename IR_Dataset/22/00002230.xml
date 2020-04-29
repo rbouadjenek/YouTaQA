@@ -1,0 +1,330 @@
+  <page>
+    <title>Analysis of algorithms</title>
+    <ns>0</ns>
+    <id>2230</id>
+    <revision>
+      <id>940455497</id>
+      <parentid>936082228</parentid>
+      <timestamp>2020-02-12T17:08:36Z</timestamp>
+      <contributor>
+        <ip>134.245.248.18</ip>
+      </contributor>
+      <comment>/* Evaluating run-time complexity */ bound variable</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{more footnotes|date=March 2010}}
+[[File:Binary search vs Linear search example svg.svg|thumb|For looking up a given entry in a given ordered list, both the [[binary search algorithm|binary]] and the [[linear search]] algorithm (which ignores ordering) can be used. The analysis of the former and the latter algorithm shows that it takes at most log&lt;sub&gt;2&lt;/sub&gt;(''n'') and ''n'' check steps, respectively, for a list of length ''n''. In the depicted example list of length 33, searching for ''&quot;Morin, Arthur&quot;'' takes 5 and 28 steps with binary (shown in {{color|#008080|cyan}}) and linear ({{color|#800080|magenta}}) search, respectively.]]
+[[File:comparison_computational_complexity.svg|thumb|Graphs of functions commonly used in the analysis of algorithms, showing the number of operations ''N'' versus input size ''n'' for each function]]
+In [[computer science]], the '''analysis of algorithms''' is the process of finding the [[computational complexity]] of algorithms – the amount of time, storage, or other resources needed to [[computation|execute them]]. Usually, this involves determining a [[Function (mathematics)|function]] that relates the length of an algorithm's input to the number of steps it takes (its [[time complexity]]) or the number of storage locations it uses (its [[space complexity]]). An algorithm is said to be efficient when this function's values are small, or grow slowly compared to a growth in the size of the input. Different inputs of the same length may cause the algorithm to have different behavior, so [[best, worst and average case]] descriptions might all be of practical interest.  When not otherwise specified, the function describing the performance of an algorithm is usually an [[upper bound]], determined from the worst case inputs to the algorithm.
+
+The term &quot;analysis of algorithms&quot; was coined by [[Donald Knuth]].&lt;ref&gt;{{cite web|url=https://web.archive.org/web/20160828152021/http://www-cs-faculty.stanford.edu/~uno/news.html|title=Knuth: Recent News|date=28 August 2016|website=web.archive.org}}&lt;/ref&gt; Algorithm analysis is an important part of a broader [[computational complexity theory]], which provides theoretical estimates for the resources needed by any algorithm which solves a given [[computational problem]]. These estimates provide an insight into reasonable directions of search for [[Algorithmic efficiency|efficient algorithms]].
+
+In theoretical analysis of algorithms it is common to estimate their complexity in the asymptotic sense, i.e., to estimate the complexity function for arbitrarily large input. [[Big O notation]], [[Big-omega notation]] and [[Big-theta notation]] are used to this end. For instance, [[binary search]] is said to run in a number of steps proportional to the logarithm of the length of the sorted list being searched, or in O(log(n)), colloquially &quot;in [[logarithmic time]]&quot;. Usually [[Asymptotic analysis|asymptotic]] estimates are used because different [[implementation]]s of the same algorithm may differ in efficiency. However the efficiencies of any two &quot;reasonable&quot; implementations of a given algorithm are related by a constant multiplicative factor  called a ''hidden constant''.
+
+Exact (not asymptotic) measures of efficiency can sometimes be computed but they usually require certain assumptions concerning the particular implementation of the algorithm, called [[model of computation]]. A model of computation may be defined in terms of an [[abstract machine|abstract computer]], e.g., [[Turing machine]], and/or by postulating that certain operations are executed in unit time.
+For example, if the sorted list to which we apply binary search has ''n'' elements, and we can guarantee that each lookup of an element in the list can be done in unit time, then at most log&lt;sub&gt;2&lt;/sub&gt; ''n'' + 1 time units are needed to return an answer.
+&lt;!-- Exact measures of efficiency are useful to the people who actually implement and use algorithms, because they are more precise and thus enable them to know how much time they can expect to spend in execution. To some people (e.g. game programmers), a hidden constant can make all the difference between success and failure.--&gt;
+
+== Cost models ==
+Time efficiency estimates depend on what we define to be a step. For the analysis to correspond usefully to the actual execution time, the time required to perform a step must be guaranteed to be bounded above by a constant. One must be careful here; for instance, some analyses count an addition of two numbers as one step. This assumption may not be warranted in certain contexts. For example, if the numbers involved in a computation may be arbitrarily large, the time required by a single addition can no longer be assumed to be constant.
+
+Two cost models are generally used:&lt;ref name=&quot;AhoHopcroft1974&quot;&gt;{{cite book|author1=Alfred V. Aho|author2=John E. Hopcroft|author3=Jeffrey D. Ullman|title=The design and analysis of computer algorithms|url=https://archive.org/details/designanalysisof00ahoarich|url-access=registration|year=1974|publisher=Addison-Wesley Pub. Co.}}, section 1.3&lt;/ref&gt;&lt;ref name=&quot;Hromkovič2004&quot;&gt;{{cite book|author=Juraj Hromkovič|title=Theoretical computer science: introduction to Automata, computability, complexity, algorithmics, randomization, communication, and cryptography|url=https://books.google.com/books?id=KpNet-n262QC&amp;pg=PA177|year=2004|publisher=Springer|isbn=978-3-540-14015-3|pages=177–178}}&lt;/ref&gt;&lt;ref name=&quot;Ausiello1999&quot;&gt;{{cite book|author=Giorgio Ausiello|title=Complexity and approximation: combinatorial optimization problems and their approximability properties|url=https://books.google.com/books?id=Yxxw90d9AuMC&amp;pg=PA3|year=1999|publisher=Springer|isbn=978-3-540-65431-5|pages=3–8}}&lt;/ref&gt;&lt;ref name=Wegener20&gt;{{Citation|last1=Wegener|first1=Ingo|title=Complexity theory: exploring the limits of efficient algorithms|publisher=[[Springer-Verlag]]|location=Berlin, New York|isbn=978-3-540-21045-0|year=2005|page=20|url=https://books.google.com/books?id=u7DZSDSUYlQC&amp;pg=PA20}}&lt;/ref&gt;&lt;ref name=&quot;Tarjan1983&quot;&gt;{{cite book|author=[[Robert Endre Tarjan]]|title=Data structures and network algorithms|url=https://books.google.com/books?id=JiC7mIqg-X4C&amp;pg=PA3|year=1983|publisher=SIAM|isbn=978-0-89871-187-5|pages=3–7}}&lt;/ref&gt;
+* the '''uniform cost model''', also called '''uniform-cost measurement''' (and similar variations), assigns a constant cost to every machine operation, regardless of the size of the numbers involved
+* the '''logarithmic cost model''', also called '''logarithmic-cost measurement''' (and similar variations), assigns a cost to every machine operation proportional to the number of bits involved
+
+The latter is more cumbersome to use, so it's only employed when necessary, for example in the analysis of [[arbitrary-precision arithmetic]] algorithms, like those used in [[cryptography]].
+
+A key point which is often overlooked is that published lower bounds for problems are often given for a model of computation that is more restricted than the set of operations that you could use in practice and therefore there are algorithms that are faster than what would naively be thought possible.&lt;ref&gt;[https://cstheory.stackexchange.com/q/608 Examples of the price of abstraction?], cstheory.stackexchange.com&lt;/ref&gt;
+
+==Run-time analysis==
+Run-time analysis is a theoretical classification that estimates and anticipates the increase in ''[[DTIME|running time]]'' (or run-time) of an [[algorithm]] as its ''[[Information|input size]]'' (usually denoted as ''n'') increases.  Run-time efficiency is a topic of great interest in [[computer science]]:  A [[Computer program|program]] can take seconds, hours, or even years to finish executing, depending on which algorithm it implements. While [[software profiling]] techniques can be used to measure an algorithm's run-time in practice, they cannot provide timing data for all infinitely many possible inputs; the latter can only be achieved by the theoretical methods of run-time analysis.
+
+===Shortcomings of empirical metrics===
+
+Since algorithms are [[platform-independent]] (i.e. a given algorithm can be implemented in an arbitrary [[programming language]] on an arbitrary [[computer]] running an arbitrary [[operating system]]), there are additional significant drawbacks to using an [[empirical]] approach to gauge the comparative performance of a given set of algorithms.
+
+Take as an example a program that looks up a specific entry in a [[collation|sorted]] [[list (computing)|list]] of size ''n''.  Suppose this program were implemented on Computer A, a state-of-the-art machine, using a [[linear search]] algorithm, and on Computer B, a much slower machine, using a [[binary search algorithm]].  [[benchmark (computing)|Benchmark testing]] on the two computers running their respective programs might look something like the following:
+
+{| class=&quot;wikitable&quot;
+|-
+! ''n'' (list size)
+! Computer A run-time&lt;br /&gt;(in [[nanosecond]]s)
+! Computer B run-time&lt;br /&gt;(in [[nanosecond]]s)
+|-
+| 16
+| 8 
+| 100,000 
+|-
+| 63
+| 32 
+| 150,000 
+|-
+| 250
+| 125 
+| 200,000 
+|-
+| 1,000
+| 500 
+| 250,000 
+|}
+
+Based on these metrics, it would be easy to jump to the conclusion that ''Computer A'' is running an algorithm that is far superior in efficiency to that of ''Computer B''.  However, if the size of the input-list is increased to a sufficient number, that conclusion is dramatically demonstrated to be in error:
+
+{| class=&quot;wikitable&quot;
+|-
+! ''n'' (list size)
+! Computer A run-time&lt;br /&gt;(in [[nanosecond]]s)
+! Computer B run-time&lt;br /&gt;(in [[nanosecond]]s)
+|-
+| 16
+| 8 
+| 100,000 
+|-
+| 63
+| 32 
+| 150,000 
+|-
+| 250
+| 125 
+| 200,000 
+|-
+| 1,000
+| 500 
+| 250,000 
+|-
+| ...
+| ...
+| ...
+|-
+| 1,000,000
+| 500,000
+| 500,000
+|-
+| 4,000,000
+| 2,000,000
+| 550,000
+|-
+| 16,000,000
+| 8,000,000
+| 600,000
+|-
+| ...
+| ...
+| ...
+|-
+| 63,072 &amp;times; 10&lt;sup&gt;12&lt;/sup&gt;
+| 31,536 &amp;times; 10&lt;sup&gt;12&lt;/sup&gt; ns,&lt;br /&gt;or 1 year
+| 1,375,000 ns,&lt;br /&gt;or 1.375 milliseconds
+|}
+
+Computer A, running the linear search program, exhibits a [[linear]] growth rate.  The program's run-time is directly proportional to its input size.  Doubling the input size doubles the run time, quadrupling the input size quadruples the run-time, and so forth.  On the other hand, Computer B, running the binary search program, exhibits a [[logarithm]]ic growth rate.  Quadrupling the input size only increases the run time by a [[wiktionary:Constant|constant]] amount (in this example, 50,000 ns).  Even though Computer A is ostensibly a faster machine, Computer B will inevitably surpass Computer A in run-time because it's running an algorithm with a much slower growth rate.
+
+===Orders of growth===
+{{main|Big O notation}}
+Informally, an algorithm can be said to exhibit a growth rate on the order of a [[Function (mathematics)|mathematical function]] if beyond a certain input size ''n'', the function {{tmath|f(n)}} times a positive constant provides an [[Asymptotic analysis|upper bound or limit]] for the run-time of that algorithm.  In other words, for a given input size ''n'' greater than some ''n''&lt;sub&gt;0&lt;/sub&gt; and a constant ''c'', the running time of that algorithm will never be larger than {{tmath|c \times f(n)}}.  This concept is frequently expressed using Big O notation.  For example, since the run-time of [[insertion sort]] [[quadratic growth|grows quadratically]] as its input size increases, insertion sort can be said to be of order ''O''(''n''&lt;sup&gt;2&lt;/sup&gt;).
+
+Big O notation is a convenient way to express the [[Best, worst and average case|worst-case scenario]] for a given algorithm, although it can also be used to express the average-case &amp;mdash; for example, the worst-case scenario for [[quicksort]] is ''O''(''n''&lt;sup&gt;2&lt;/sup&gt;), but the average-case run-time is {{math|''O''(''n''&amp;nbsp;log&amp;nbsp;''n'')}}.
+
+===Empirical orders of growth===
+
+Assuming the execution time follows power rule, ''{{math|t &amp;asymp; k n&lt;sup&gt;a&lt;/sup&gt;}}'', the coefficient ''a'' can be found &lt;ref&gt;[http://rjlipton.wordpress.com/2009/07/24/how-to-avoid-o-abuse-and-bribes/ How To Avoid O-Abuse and Bribes] {{Webarchive|url=https://web.archive.org/web/20170308175036/https://rjlipton.wordpress.com/2009/07/24/how-to-avoid-o-abuse-and-bribes/ |date=2017-03-08 }}, at the blog &quot;Gödel's Lost Letter and P=NP&quot; by R. J. Lipton, professor of Computer Science at Georgia Tech, recounting idea by Robert Sedgewick&lt;/ref&gt; by taking empirical measurements of run time &lt;math&gt;\{t_1, t_2\}&lt;/math&gt; at some problem-size points &lt;math&gt;\{n_1, n_2\}&lt;/math&gt;, and calculating &lt;math&gt;t_2/t_1 = (n_2/n_1)^a&lt;/math&gt; so that &lt;math&gt;a = \log(t_2/t_1) / \log(n_2/n_1)&lt;/math&gt;. In other words, this measures the slope of the empirical line on the [[log–log plot]] of execution time vs. problem size, at some size point. If the order of growth indeed follows the power rule (and so the line on log–log plot is indeed a straight line), the empirical value of ''a'' will  stay constant at different ranges, and if not, it will change (and the line is a curved line) - but still could serve for comparison of any two given algorithms as to their ''empirical local orders of growth'' behaviour. Applied to the above table:
+
+{| class=&quot;wikitable&quot;
+|-_
+! ''n'' (list size)
+! Computer A run-time&lt;br /&gt;(in [[nanosecond]]s)
+! Local order of growth&lt;br /&gt;(n^_)
+! Computer B run-time&lt;br /&gt;(in [[nanosecond]]s)
+! Local order of growth&lt;br /&gt;(n^_)
+|-
+| 15
+| 7 
+| 
+| 100,000 
+| 
+|-
+| 65
+| 32 
+| 1.04
+| 150,000 
+| 0.28
+|-
+| 250
+| 125 
+| 1.01
+| 200,000 
+| 0.21
+|-
+| 1,000
+| 500 
+| 1.00
+| 250,000 
+| 0.16
+|-
+| ...
+| ...
+| 
+| ...
+| 
+|-
+| 1,000,000
+| 500,000
+| 1.00
+| 500,000
+| 0.10
+|-
+| 4,000,000
+| 2,000,000
+| 1.00
+| 550,000
+| 0.07
+|-
+| 16,000,000
+| 8,000,000
+| 1.00
+| 600,000
+| 0.06
+|-
+| ...
+| ...
+| 
+| ...
+| 
+|}
+
+It is clearly seen that the first algorithm exhibits a linear order of growth indeed following the power rule. The empirical values for the second one are diminishing rapidly, suggesting it follows another rule of growth and in any case has much lower local orders of growth (and improving further still), empirically, than the first one.
+
+=== Evaluating run-time complexity ===
+The run-time complexity for the worst-case scenario of a given algorithm can sometimes be evaluated by examining the structure of the algorithm and making some simplifying assumptions.  Consider the following [[pseudocode]]:
+
+ 1    ''get a positive integer n from input''
+ 2    '''if''' n &gt; 10
+ 3        '''print''' &quot;This might take a while...&quot;
+ 4    '''for''' i = 1 '''to''' n
+ 5        '''for''' j = 1 '''to''' i
+ 6            '''print''' i * j
+ 7    '''print''' &quot;Done!&quot;
+
+A given computer will take a [[DTIME|discrete amount of time]] to execute each of the [[Instruction (computer science)|instructions]] involved with carrying out this algorithm.  The specific amount of time to carry out a given instruction will vary depending on which instruction is being executed and which computer is executing it, but on a conventional computer, this amount will be [[Deterministic system (mathematics)|deterministic]].&lt;ref&gt;However, this is not the case with a [[quantum computer]]&lt;/ref&gt;  Say that the actions carried out in step 1 are considered to consume time ''T''&lt;sub&gt;1&lt;/sub&gt;, step 2 uses time ''T''&lt;sub&gt;2&lt;/sub&gt;, and so forth.
+
+In the algorithm above, steps 1, 2 and 7 will only be run once.  For a worst-case evaluation, it should be assumed that step 3 will be run as well.  Thus the total amount of time to run steps 1-3 and step 7 is:
+
+:&lt;math&gt;T_1 + T_2 + T_3 + T_7. \,&lt;/math&gt;
+
+The [[program loop|loops]] in steps 4, 5 and 6 are trickier to evaluate.  The outer loop test in step 4 will execute ( ''n'' + 1 )
+times (note that an extra step is required to terminate the for loop, hence n + 1 and not n executions), which will consume ''T''&lt;sub&gt;4&lt;/sub&gt;( ''n'' + 1 ) time.  The inner loop, on the other hand, is governed by the value of j, which [[iteration|iterates]] from 1 to ''i''.  On the first pass through the outer loop, j iterates from 1 to 1:  The inner loop makes one pass, so running the inner loop body (step 6) consumes ''T''&lt;sub&gt;6&lt;/sub&gt; time, and the inner loop test (step 5) consumes 2''T''&lt;sub&gt;5&lt;/sub&gt; time.  During the next pass through the outer loop, j iterates from 1 to 2:  the inner loop makes two passes, so running the inner loop body (step 6) consumes 2''T''&lt;sub&gt;6&lt;/sub&gt; time, and the inner loop test (step 5) consumes 3''T''&lt;sub&gt;5&lt;/sub&gt; time.
+
+Altogether, the total time required to run the inner loop body can be expressed as an [[arithmetic progression]]:
+
+:&lt;math&gt;T_6 + 2T_6 + 3T_6 + \cdots + (n-1) T_6 + n T_6&lt;/math&gt;
+
+which can be [[factorization|factored]]&lt;ref&gt;It can be proven by [[Mathematical induction|induction]] that &lt;math&gt;1 + 2 + 3 + \cdots + (n-1) + n = \frac{n(n+1)}{2}&lt;/math&gt;&lt;/ref&gt; as
+
+:&lt;math&gt;T_6 \left[ 1 + 2 + 3 + \cdots + (n-1) + n \right] = T_6 \left[ \frac{1}{2} (n^2 + n) \right] &lt;/math&gt;
+
+The total time required to run the outer loop test can be evaluated similarly:
+
+:&lt;math&gt;\begin{align}
+&amp; 2T_5 + 3T_5 + 4T_5 + \cdots + (n-1) T_5 + n T_5 + (n + 1) T_5\\
+=\ &amp;T_5 + 2T_5 + 3T_5 + 4T_5 + \cdots + (n-1)T_5 + nT_5 + (n+1)T_5 - T_5
+\end{align}&lt;/math&gt;
+
+which can be factored as
+
+:&lt;math&gt;\begin{align}
+&amp; T_5 \left[ 1+2+3+\cdots + (n-1) + n + (n + 1) \right] - T_5 \\
+=&amp; \left[ \frac{1}{2} (n^2 + n) \right]  T_5 +  (n + 1)T_5 - T_5 \\
+=&amp; T_5 \left[ \frac{1}{2} (n^2 + n) \right] + n T_5 \\
+=&amp; \left[ \frac{1}{2} (n^2 + 3n) \right] T_5
+\end{align}&lt;/math&gt;
+
+Therefore, the total running time for this algorithm is:
+
+:&lt;math&gt;f(n) = T_1 + T_2 + T_3 + T_7 + (n + 1)T_4 + \left[ \frac{1}{2} (n^2 + n) \right] T_6 + \left[ \frac{1}{2} (n^2+3n) \right] T_5 &lt;/math&gt;
+
+which [[reduction (mathematics)|reduces]] to
+
+:&lt;math&gt;f(n) = \left[ \frac{1}{2} (n^2 + n) \right] T_6 + \left[ \frac{1}{2} (n^2 + 3n) \right] T_5 + (n + 1)T_4 + T_1 + T_2 + T_3 + T_7
+&lt;/math&gt;
+
+As a [[rule-of-thumb]], one can assume that the highest-order term in any given function dominates its rate of growth and thus defines its run-time order.  In this example, n&lt;sup&gt;2&lt;/sup&gt; is the highest-order term, so one can conclude that f(n) = O(n&lt;sup&gt;2&lt;/sup&gt;).  Formally this can be proven as follows:
+{{quote|Prove that &lt;math&gt;\left[ \frac{1}{2} (n^2 + n) \right] T_6 + \left[ \frac{1}{2} (n^2 + 3n) \right] T_5 + (n + 1)T_4 + T_1 + T_2 + T_3 + T_7 \le cn^2,\ n \ge n_0&lt;/math&gt;
+&lt;br /&gt;&lt;br /&gt;
+&lt;math&gt;\begin{align}
+&amp;\left[ \frac{1}{2} (n^2 + n) \right] T_6 + \left[ \frac{1}{2} (n^2 + 3n) \right] T_5 + (n + 1)T_4 + T_1 + T_2 + T_3 + T_7\\
+\le &amp;( n^2 + n )T_6 + ( n^2 + 3n )T_5 + (n + 1)T_4 + T_1 + T_2 + T_3 + T_7 \ (\text{for } n \ge 0 )
+\end{align}&lt;/math&gt;
+&lt;br /&gt;&lt;br /&gt;
+Let ''k'' be a constant greater than or equal to [''T''&lt;sub&gt;1&lt;/sub&gt;..''T''&lt;sub&gt;7&lt;/sub&gt;]
+&lt;br /&gt;&lt;br /&gt;
+&lt;math&gt;\begin{align}
+&amp;T_6( n^2 + n ) + T_5( n^2 + 3n ) + (n + 1)T_4 + T_1 + T_2 + T_3 + T_7 \le k( n^2 + n ) + k( n^2 + 3n ) + kn + 5k\\
+= &amp;2kn^2 + 5kn + 5k \le 2kn^2 + 5kn^2 + 5kn^2 \ (\text{for } n \ge 1) = 12kn^2
+\end{align}&lt;/math&gt;
+&lt;br /&gt;&lt;br /&gt;
+Therefore &lt;math&gt;\left[ \frac{1}{2} (n^2 + n) \right] T_6 + \left[ \frac{1}{2} (n^2 + 3n) \right] T_5 + (n + 1)T_4 + T_1 + T_2 + T_3 + T_7 \le cn^2, n \ge n_0 \text{ for } c = 12k, n_0 = 1&lt;/math&gt;
+}}
+
+A more [[elegance|elegant]] approach to analyzing this algorithm would be to declare that [''T''&lt;sub&gt;1&lt;/sub&gt;..''T''&lt;sub&gt;7&lt;/sub&gt;] are all equal to one unit of time, in a system of units chosen so that one unit is greater than or equal to the actual times for these steps.  This would mean that the algorithm's running time breaks down as follows:&lt;ref&gt;This approach, unlike the above approach, neglects the constant time consumed by the loop tests which terminate their respective loops, but it is [[Trivial (mathematics)|trivial]] to prove that such omission does not affect the final result&lt;/ref&gt;
+{{quote|&lt;math&gt;4+\sum_{i=1}^n i\leq 4+\sum_{i=1}^n n=4+n^2\leq5n^2 \ (\text{for } n \ge 1) =O(n^2).&lt;/math&gt;}}
+
+===Growth rate analysis of other resources===
+The methodology of run-time analysis can also be utilized for predicting other growth rates, such as consumption of [[DSPACE|memory space]].  As an example, consider the following pseudocode which manages and reallocates memory usage by a program based on the size of a [[computer file|file]] which that program manages:
+
+ '''while''' ''file is still open:''
+     '''let''' n = ''size of file''
+     '''for''' ''every 100,000 [[kilobyte]]s of increase in file size''
+         ''double the amount of memory reserved''
+
+In this instance, as the file size n increases, memory will be consumed at an [[exponential growth]] rate, which is order O(2&lt;sup&gt;n&lt;/sup&gt;). This is an extremely rapid and most likely unmanageable growth rate for consumption of memory [[Resource (computer science)|resources]].
+
+==Relevance==
+Algorithm analysis is important in practice because the accidental or unintentional use of an inefficient algorithm can significantly impact system performance. In time-sensitive applications, an algorithm taking too long to run can render its results outdated or useless. An inefficient algorithm can also end up requiring an uneconomical amount of computing power or storage in order to run, again rendering it practically useless.
+
+==Constant factors==
+Analysis of algorithms typically focuses on the asymptotic performance, particularly at the elementary level, but in practical applications constant factors are important, and real-world data is in practice always limited in size. The limit is typically the size of addressable memory, so on 32-bit machines 2&lt;sup&gt;32&lt;/sup&gt; = 4 GiB (greater if [[segmented memory]] is used) and on 64-bit machines 2&lt;sup&gt;64&lt;/sup&gt; = 16 EiB. Thus given a limited size, an order of growth (time or space) can be replaced by a constant factor, and in this sense all practical algorithms are O(1) for a large enough constant, or for small enough data.
+
+This interpretation is primarily useful for functions that grow extremely slowly: (binary) [[iterated logarithm]] (log&lt;sup&gt;*&lt;/sup&gt;) is less than 5 for all practical data (2&lt;sup&gt;65536&lt;/sup&gt; bits); (binary) log-log (log log ''n'') is less than 6 for virtually all practical data (2&lt;sup&gt;64&lt;/sup&gt; bits); and binary log (log ''n'') is less than 64 for virtually all practical data (2&lt;sup&gt;64&lt;/sup&gt; bits). An algorithm with non-constant complexity may nonetheless be more efficient than an algorithm with constant complexity on practical data if the overhead of the constant time algorithm results in a larger constant factor, e.g., one may have &lt;math&gt;K &gt; k \log \log n&lt;/math&gt; so long as &lt;math&gt;K/k &gt; 6&lt;/math&gt; and &lt;math&gt;n &lt; 2^{2^6} = 2^{64}&lt;/math&gt;.
+
+For large data linear or quadratic factors cannot be ignored, but for small data an asymptotically inefficient algorithm may be more efficient. This is particularly used in [[hybrid algorithm]]s, like [[Timsort]], which use an asymptotically efficient algorithm (here [[merge sort]], with time complexity &lt;math&gt;n \log n&lt;/math&gt;), but switch to an asymptotically inefficient algorithm (here [[insertion sort]], with time complexity &lt;math&gt;n^2&lt;/math&gt;) for small data, as the simpler algorithm is faster on small data.
+
+==See also==
+* [[Amortized analysis]]
+* [[Analysis of parallel algorithms]]
+* [[Asymptotic computational complexity]]
+* [[Best, worst and average case]]
+* [[Big O notation]]
+* [[Computational complexity theory]]
+* [[Master theorem (analysis of algorithms)]]
+* [[NP-Complete]]
+* [[Numerical analysis]]
+* [[Polynomial time]]
+* [[Program optimization]]
+* [[Profiling (computer programming)]]
+* [[Scalability]]
+* [[Smoothed analysis]]
+* [[Termination analysis]] &amp;mdash; the subproblem of checking whether a program will terminate at all
+* [[Time complexity]] — includes table of orders of growth for common algorithms
+* [[Information-based complexity]]
+
+==Notes==
+{{reflist}}
+
+==References==
+*{{Cite book |authorlink=Thomas H. Cormen |first=Thomas H. |last=Cormen |authorlink2=Charles E. Leiserson |first2=Charles E. |last2=Leiserson |authorlink3=Ronald L. Rivest |first3=Ronald L. |last3=Rivest |lastauthoramp=yes |authorlink4=Clifford Stein |first4=Clifford |last4=Stein |title=[[Introduction to Algorithms]] |edition=Second |publisher=MIT Press and McGraw-Hill |location=Cambridge, MA |year=2001 |isbn=0-262-03293-7 |others=Chapter 1: Foundations |pages=3–122 }}
+*{{Cite book |title=Algorithms in C, Parts 1-4: Fundamentals, Data Structures, Sorting, Searching |edition=3rd |authorlink=Robert Sedgewick (computer scientist) |first=Robert |last=Sedgewick |location=Reading, MA |publisher=Addison-Wesley Professional |year=1998 |isbn=978-0-201-31452-6 |url-access=registration |url=https://archive.org/details/algorithmsinc00sedg }}
+*{{Cite book |title=[[The Art of Computer Programming]] |authorlink=Donald Knuth |first=Donald |last=Knuth |location= |publisher=Addison-Wesley |isbn= |year= }}
+*{{Cite book |first=Daniel A. |last=Greene |first2=Donald E. |last2=Knuth |title=Mathematics for the Analysis of Algorithms |edition=Second |location= |publisher=Birkhäuser |year=1982 |isbn=3-7643-3102-X }}
+*{{Cite book |authorlink=Oded Goldreich |first=Oded |last=Goldreich |title=Computational Complexity: A Conceptual Perspective |location= |publisher=[[Cambridge University Press]] |year=2010 |isbn=978-0-521-88473-0 }}
+
+==External links==
+*{{Commonscatinline}}
+
+{{Computer science}}
+
+{{DEFAULTSORT:Analysis Of Algorithms}}
+[[Category:Analysis of algorithms| ]]
+[[Category:Computational complexity theory]]</text>
+      <sha1>oz34m8zkfoa8ey90c08rmqtdhh6wetl</sha1>
+    </revision>
+  </page>

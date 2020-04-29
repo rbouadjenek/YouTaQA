@@ -1,0 +1,224 @@
+  <page>
+    <title>Control character</title>
+    <ns>0</ns>
+    <id>5298</id>
+    <revision>
+      <id>921665459</id>
+      <parentid>904771344</parentid>
+      <timestamp>2019-10-17T02:51:02Z</timestamp>
+      <contributor>
+        <username>Onel5969</username>
+        <id>10951369</id>
+      </contributor>
+      <minor />
+      <comment>Disambiguating links to [[Teletype (disambiguation)]] (link changed to [[Teleprinter]]) using [[User:Qwertyytrewqqwerty/DisamAssist|DisamAssist]].</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{redirect|Non-printable character|characters in text applications|Non-printing character in word processors}}
+{{Refimprove|date=September 2007}}
+In [[computing]] and [[telecommunication]], a '''control [[Character (computing)|character]]''' or '''non-printing character''' ('''NPC''') is a [[code point]] (a [[number]]) in a [[character encoding|character set]], that does not represent a written symbol. They are used as [[in-band signaling]] to cause effects other than the addition of a symbol to the text. All other characters are mainly '''printing''', '''printable''', or '''[[graphic character]]s''', except perhaps for the &quot;space&quot; character (see [[ASCII printable characters]]).
+
+All entries in the [[ASCII]] table below code 32 (technically the [[C0 and C1 control codes|C0]] control code set) are of this kind, including [[newline|CR and LF]] used to separate lines of text. The code 127 ([[Delete character|DEL]]) is also a control character{{citation needed|date=May 2019}}. [[Extended ASCII]] sets defined by [[ISO 8859]] added the codes 128 through 159 as control characters, this was primarily done so that if the high bit was stripped it would not change a printing character to a C0 control code, but there have been some assignments here, in particular [[newline|NEL]]. This second set is called the [[C0 and C1 control codes|C1]] set.
+
+These 65 control codes were carried over to [[Unicode]]. Unicode added more characters that could be considered controls, but it makes a distinction between these &quot;Formatting characters&quot; (such as the [[Zero-width non-joiner]]), and the 65 Control characters.
+
+The [[Extended Binary Coded Decimal Interchange Code]] (EBCDIC) character set contains 65 control codes, including all of the ASCII control codes as well as additional codes which are mostly used to control IBM peripherals.
+{| class=&quot;infobox&quot;  
+|-
+! &lt;ref&gt;MS-DOS QBasic v1.1 Documentation. Microsoft 1987-1991.&lt;/ref&gt;
+! 0x00
+! 0x10
+|-
+| '''0x00''' 
+| [[null character|NUL]]
+| [[Data link escape character|DLE]]
+|-
+| '''0x01''' 
+| [[Start-of-Header|SOH]]
+| [[Device Control 1|DC1]]
+|-
+| '''0x02''' 
+| [[Start-of-Text|STX]]
+| [[Device Control 2|DC2]]
+|-
+| '''0x03''' 
+| [[End-of-text character|ETX]]
+| [[Device Control 3|DC3]]
+|-
+| '''0x04''' 
+| [[End-of-transmission character|EOT]]
+| [[Device Control 4|DC4]]
+|-
+| '''0x05''' 
+| [[Enquiry character|ENQ]] 
+| [[Negative-acknowledge character|NAK]]
+|-
+| '''0x06''' 
+| [[Acknowledge character|ACK]]
+| [[Synchronous idle character|SYN]]
+|-
+| '''0x07''' 
+| [[Bell character|BEL]]
+| [[End Transmission Block character|ETB]]
+|-
+| '''0x08''' 
+| [[backspace|BS]]
+| [[cancel character|CAN]]
+|-
+| '''0x09''' 
+| [[tab character|TAB]]
+| [[End of Medium|EM]]
+|-
+| '''0x0A''' 
+| [[Line Feed|LF]]
+| [[Substitute character|SUB]]
+|-
+| '''0x0B''' 
+| [[Vertical Tab|VT]]
+| [[escape character|ESC]]
+|-
+| '''0x0C''' 
+| [[Form Feed|FF]] 
+| [[File separator|FS]]
+|-
+| '''0x0D''' 
+| [[carriage return|CR]] 
+| [[Group separator|GS]]
+|-
+| '''0x0E''' 
+| [[Shift Out and Shift In characters|SO]]
+| [[Record separator|RS]]
+|-
+| '''0x0F''' 
+| [[Shift Out and Shift In characters|SI]]
+| [[Unit separator|US]]
+|-
+| '''0x7F''' 
+| [[Delete character|DEL]]
+|
+|}
+
+==History==
+{{Expand section|date=January 2009}}
+[[Prosigns for Morse code|Procedural signs]] in [[Morse code]] are a form of control character.
+
+A form of control characters were introduced in the 1870 [[Baudot code]]: NUL and DEL.
+The 1901 [[Murray code]] added the [[carriage return]] (CR) and [[line feed]] (LF), and other versions of the Baudot code included other control characters.
+
+The [[bell character]] (BEL), which rang a bell to alert operators, was also an early [[Teleprinter|teletype]] control character.
+
+Control characters have also been called &quot;format effectors&quot;.
+
+==In ASCII==
+The control characters in ASCII still in common use include:
+* 0 ([[null character|null]], &lt;code&gt;NUL&lt;/code&gt;, &lt;code&gt;[[\0]]&lt;/code&gt;, &lt;code&gt;[[^@]]&lt;/code&gt;), originally intended to be an ignored character, but now used by many [[programming language]]s including [[C programming language|C]] to [[Null-terminated string|mark the end of a string]].
+* 7 ([[bell character|bell]], &lt;code&gt;BEL&lt;/code&gt;, &lt;code&gt;[[\a]]&lt;/code&gt;, &lt;code&gt;[[^G]]&lt;/code&gt;), which may cause the device to emit a warning such as a bell or beep sound or the screen flashing.
+* 8 ([[backspace]], &lt;code&gt;BS&lt;/code&gt;, &lt;code&gt;\b&lt;/code&gt;, &lt;code&gt;[[^H]]&lt;/code&gt;), may overprint the previous character.
+* 9 ([[Tab key|horizontal tab]], &lt;code&gt;HT&lt;/code&gt;, &lt;code&gt;[[\t]]&lt;/code&gt;, &lt;code&gt;[[^I]]&lt;/code&gt;), moves the printing position right to the next tab stop.
+* 10 ([[Newline|line feed]], &lt;code&gt;LF&lt;/code&gt;, &lt;code&gt;[[\n]]&lt;/code&gt;, &lt;code&gt;[[^J]]&lt;/code&gt;), moves the print head down one line, or to the left edge and down. Used as the end of line marker in most [[Unix|UNIX systems]] and variants. 
+* 11 ([[Tab key|vertical tab]], &lt;code&gt;VT&lt;/code&gt;, &lt;code&gt;[[\v]]&lt;/code&gt;, &lt;code&gt;[[^K]]&lt;/code&gt;), vertical tabulation.
+* 12 ([[Page break|form feed]], &lt;code&gt;FF&lt;/code&gt;, &lt;code&gt;[[\f]]&lt;/code&gt;, &lt;code&gt;[[^L]]&lt;/code&gt;), to cause a printer to eject paper to the top of the next page, or a video terminal to clear the screen.
+* 13 ([[carriage return]], &lt;code&gt;CR&lt;/code&gt;, &lt;code&gt;[[\r]]&lt;/code&gt;, &lt;code&gt;[[^M]]&lt;/code&gt;), moves the printing position to the start of the line, allowing overprinting. Used as the end of line marker in [[Classic Mac OS]], [[OS-9]], [[FLEX (operating system)|FLEX]] (and variants). A &lt;code&gt;CR+LF&lt;/code&gt; pair is used by [[CP/M]]-80 and its derivatives including [[DOS]] and [[Microsoft Windows|Windows]], and by [[Application Layer]] [[communications protocol|protocols]] such as [[File Transfer Protocol|FTP]], [[Simple Mail Transfer Protocol|SMTP]], and [[Hypertext Transfer Protocol|HTTP]].
+* 26 ([[Control-Z]], &lt;code&gt;SUB&lt;/code&gt;, &lt;code&gt;EOF&lt;/code&gt;, &lt;code&gt;[[^Z]]&lt;/code&gt;). Acts as an end-of-file for the Windows text-mode file i/o.
+* 27 ([[escape character|escape]], &lt;code&gt;ESC&lt;/code&gt;, &lt;code&gt;[[\e]]&lt;/code&gt; ([[GCC (software)|GCC]] only), &lt;code&gt;^[&lt;/code&gt;). Introduces an [[escape sequence]].
+
+Control characters may be described as doing something when the user inputs them, such as code 3 ([[End-of-Text character]], ETX, &lt;code&gt;[[^C]]&lt;/code&gt;) to interrupt the running process, or code 4 ([[End of transmission]], EOT, &lt;code&gt;[[^D]]&lt;/code&gt;), used to end text input or to exit a [[Unix shell]]. These uses usually have little to do with their use when they are in text being output, and on modern systems usually do not involve the transmission of the code number at all (instead the program gets the fact that the user is holding down the Ctrl key and pushing the key marked with a 'C').
+
+There were quite a few control characters defined (33 in ASCII, and the ECMA-48 standard adds 32 more). This was because early terminals had very primitive mechanical or electrical controls that made any kind of state-remembering [[API]] quite expensive to implement, thus a different code for each and every function looked like a requirement. It quickly became possible and inexpensive to interpret sequences of codes to perform a function, and device makers found a way to send hundreds of device instructions. Specifically, they used ASCII code 27 (escape), followed by a series of characters called a &quot;control sequence&quot; or &quot;escape sequence&quot;. The mechanism was invented by [[Bob Bemer]], the father of ASCII. For example, the sequence of code 27, followed by the printable characters &lt;nowiki&gt;&quot;[2;10H&quot;&lt;/nowiki&gt;, would cause a [[VT100|DEC VT-102]] terminal to move its [[cursor (computers)|cursor]] to the 10th cell of the 2nd line of the screen. Several standards exist for these sequences, notably [[ANSI X3.64]]. But the number of non-standard variations in use is large, especially among printers, where technology has advanced far faster than any standards body can possibly keep up with.
+
+==In Unicode==
+{{main|Unicode control characters}}
+In Unicode, &quot;Control-characters&quot; are U+0000&amp;mdash;U+001F (C0 controls), U+007F (delete), and U+0080&amp;mdash;U+009F (C1 controls). Their [[Unicode Character Properties#General Category|General Category]] is &quot;Cc&quot;. Formatting codes are distinct, in General Category &quot;Cf&quot;. The Cc control characters have no Name in Unicode, but are given labels such as &quot;&lt;control-001A&gt;&quot; instead.&lt;ref&gt;{{citation |url=https://www.unicode.org/versions/Unicode12.0.0/ch04.pdf |title=The Unicode® Standard Version 12.0 – Core Specification |section=4.8 Name |publisher=Unicode, Inc. |mode=cs1}}&lt;/ref&gt;
+
+==Display==
+There are a number of techniques to display non-printing characters, which may be illustrated with the [[bell character]] in [[ASCII]] encoding:
+* [[Code point]]: decimal 7, hexadecimal 0x07
+* An abbreviation, often three capital letters: BEL
+* A special character condensing the abbreviation: Unicode U+2407 (␇), &quot;symbol for bell&quot;
+* An [[ISO 2047]] graphical representation: Unicode U+237E (⍾), &quot;graphic for bell&quot;
+* [[Caret notation]] in ASCII, where code point 00xxxxx is represented as a caret followed by the capital letter at code point 10xxxxx: ^G
+* An [[escape sequence]], as in [[C (programming language)|C]]/[[C++]] character string codes: &lt;tt&gt;\a&lt;/tt&gt;, &lt;tt&gt;\007&lt;/tt&gt;, &lt;tt&gt;\x07&lt;/tt&gt;, etc.
+
+==How control characters map to keyboards==
+ASCII-based [[keyboard (computing)|keyboards]] have a key labelled &quot;[[control key|Control]]&quot;, &quot;Ctrl&quot;, or (rarely) &quot;Cntl&quot; which is used much like a shift key, being pressed in combination with another letter or symbol key. In one implementation, the control key generates the code 64 places below the code for the (generally) uppercase letter it is pressed in combination with (i.e., subtract 64 from ASCII code value in decimal of the (generally) uppercase letter).  The other implementation is to take the ASCII code produced by the key and [[bitwise operation|bitwise AND]] it with 31, forcing bits 6 and 7 to zero.  For example, pressing &quot;control&quot; and the letter &quot;g&quot; or &quot;G&quot; (code 107 in [[octal]] or 71 in [[decimal|base 10]], which is 01000111 in [[Binary numeral system|binary]], produces the code 7 (Bell, 7 in base 10, or 00000111 in binary).  The NULL character (code 0) is represented by Ctrl-@, &quot;@&quot; being the code immediately before &quot;A&quot; in the ASCII character set.  For convenience, a lot of terminals accept Ctrl-Space as an alias for Ctrl-@.  In either case, this produces one of the 32 ASCII control codes between 0 and 31.  This approach is not able to represent the DEL character because of its value (code 127), but Ctrl-? is often used for this character, as subtracting 64 from a '?' gives −1, which if masked to 7 bits is 127.&lt;ref&gt;{{cite web |url=http://geocities.com/dtmcbride/tech/charsets/ascii.html |title=ASCII Characters |accessdate=2010-10-08 |archiveurl=https://web.archive.org/web/20091028135111/http://geocities.com/dtmcbride/tech/charsets/ascii.html |archivedate=October 28, 2009 |df= }}&lt;/ref&gt;
+
+When the control key is held down, letter keys produce the same control characters regardless of the state of the [[shift key|shift]] or [[caps lock]] keys.  In other words, it does not matter whether the key would have produced an upper-case or a lower-case letter.  The interpretation of the control key with the space, graphics character, and digit keys (ASCII codes 32 to 63) vary between systems.  Some will produce the same character code as if the control key were not held down.  Other systems translate these keys into control characters when the control key is held down.  The interpretation of the control key with non-ASCII (&quot;foreign&quot;) keys also varies between systems.
+
+Control characters are often rendered into a printable form known as [[caret notation]] by printing a caret (^) and then the ASCII character that has a value of the control character plus 64.  Control characters generated using letter keys are thus displayed with the upper-case form of the letter.  For example, ^G represents code 7, which is generated by pressing the G key when the control key is held down.
+
+Keyboards also typically have a few single keys which produce control character codes. For example, the key labelled &quot;Backspace&quot; typically produces code 8, &quot;Tab&quot; code 9, &quot;Enter&quot; or &quot;Return&quot; code 13 (though some keyboards might produce code 10 for &quot;Enter&quot;).
+
+Many keyboards include keys that do not correspond to any ASCII printable or control character, for example cursor control arrows and [[word processing]] functions.  The associated keypresses are communicated to computer programs by one of four methods: appropriating otherwise unused control characters; using some encoding other than ASCII; using multi-character control sequences; or using an additional mechanism outside of generating characters. &quot;Dumb&quot; [[computer terminal]]s typically use control sequences.  Keyboards attached to stand-alone [[personal computer]]s made in the 1980s typically use one (or both) of the first two methods.  Modern computer keyboards generate [[scancode]]s that identify the specific physical keys that are pressed; computer software then determines how to handle the keys that are pressed, including any of the four methods described above.
+
+==The design purpose==
+{{Unreferenced section|date=February 2012}}
+
+The control characters were designed to fall into a few groups: printing and display control, data structuring, transmission control, and miscellaneous.
+
+===Printing and display control===
+Printing control characters were first used to control the physical mechanism of printers, the earliest output device.  An early implementation of this idea was the [[Out-of-band data|out-of-band]] [[ASA carriage control characters]].  Later, control characters were integrated into the stream of data to be printed.
+The carriage return character (CR), when sent to such a device, causes it to put the character at the edge of the paper at which writing begins (it may, or may not, also move the printing position to the next line).
+The line feed character (LF/NL) causes the device to put the printing position on the next line. It may (or may not), depending on the device and its configuration, also move the printing position to the start of the next line (which would be the leftmost position for [[left-to-right]] scripts, such as the alphabets used for Western languages, and the rightmost position for [[right-to-left]] scripts such as the Hebrew and Arabic alphabets). 
+The vertical and horizontal tab characters (VT and HT/TAB) cause the output device to move the printing position to the next tab stop in the direction of reading. 
+The form feed character (FF/NP) starts a new sheet of paper, and may or may not move to the start of the first line. 
+The backspace character (BS) moves the printing position one character space  backwards. On printers, this is most often used so the printer can overprint characters to make other, not normally available, characters. On terminals and other electronic output devices, there are often software (or hardware) configuration choices which will allow a destruct backspace (i.e., a BS, SP, BS sequence) which erases, or a non-destructive one which does not. 
+The shift in and shift out characters (SO and SI) selected alternate character sets, fonts, underlining or other printing modes. Escape sequences were often used to do the same thing.
+
+With the advent of [[computer terminal]]s that did not physically print on paper and so offered more flexibility regarding screen placement, erasure, and so forth, printing control codes were adapted. Form feeds, for example, usually cleared the screen, there being no new paper page to move to. More complex escape sequences were developed to take advantage of the flexibility of the new terminals, and indeed of newer printers. The concept of a control character had always been somewhat limiting, and was extremely so when used with new, much more flexible, hardware. Control sequences (sometimes implemented as escape sequences) could match the new flexibility and power and became the standard method. However, there were, and remain, a large variety of standard sequences to choose from.
+
+===Data structuring===
+The separators (File, Group, Record, and Unit: FS, GS, RS and US) were made to structure data, usually on a tape, in order to simulate [[punched card]]s.
+End of medium (EM) warns that the tape (or other recording medium) is ending.
+While many systems use CR/LF and TAB for structuring data, it is possible to encounter the separator control characters in data that needs to be structured.  The separator control characters are not overloaded; there is no general use of them except to separate data into structured groupings.  Their numeric values are contiguous with the space character, which can be considered a member of the group, as a word separator.
+
+===Transmission control===
+The transmission control characters were intended to structure a data stream, and to manage re-transmission or graceful failure, as needed, in the face of transmission errors.
+
+The start of heading (SOH) character was to mark a non-data section of a data stream—the part of a stream containing addresses and other housekeeping data. The start of text character (STX) marked the end of the header, and the start of the textual part of a stream. The end of text character (ETX) marked the end of the data of a message. A widely used convention is to make the two characters preceding ETX a checksum or [[Cyclic redundancy check|CRC]] for error-detection purposes. The end of transmission block character (ETB) was used to indicate the end of a block of data, where data was divided into such blocks for transmission purposes.
+
+The escape character ([[escape character|ESC]]) was intended to &quot;quote&quot; the next character, if it was another control character it would print it instead of performing the control function. It is almost never used for this purpose today.
+
+The substitute character ([[substitute character|SUB]]) was intended to request a translation of the next character from a printable character to another value, usually by setting bit 5 to zero. This is handy because some media (such as sheets of paper produced by typewriters) can transmit only printable characters. However, on MS-DOS systems with files opened in text mode, &quot;end of text&quot; or &quot;end of file&quot; is marked by this [[Control-Z|Ctrl-Z]] character, instead of the [[Control-C|Ctrl-C]] or [[End-of-transmission character|Ctrl-D]], which are common on other operating systems.
+
+The cancel character ([[cancel character|CAN]]) signalled that the previous element should be discarded. The negative acknowledge character ([[negative-acknowledge character|NAK]]) is a definite flag for, usually, noting that reception was a problem, and, often, that the current element should be sent again.  The acknowledge character ([[acknowledge character|ACK]]) is normally used as a flag to indicate no problem detected with current element.
+
+When a transmission medium is half duplex (that is, it can transmit in only one direction at a time), there is usually a master station that can transmit at any time, and one or more slave stations that transmit when they have permission. The enquire character ([[Enquiry character|ENQ]]) is generally used by a master station to ask a slave station to send its next message. A slave station indicates that it has completed its transmission by sending the end of transmission character ([[end-of-transmission character|EOT]]).
+
+The device control codes (DC1 to DC4) were originally generic, to be implemented as necessary by each device. However, a universal need in data transmission is to request the sender to stop transmitting when a receiver is temporarily unable to accept any more data. [[Digital Equipment Corporation]] invented a convention which used 19 (the device control 3 character ([[Software flow control|DC3]]), also known as control-S, or [[Software flow control|XOFF]]) to &quot;S&quot;top transmission, and 17 (the device control 1 character ([[Software flow control|DC1]]), a.k.a. control-Q, or [[Software flow control|XON]]) to start transmission. It has become so widely used that most don't realize it is not part of official ASCII. This technique, however implemented, avoids additional wires in the data cable devoted only to transmission management, which saves money. A sensible protocol for the use of such transmission flow control signals must be used, to avoid potential deadlock conditions, however.
+
+The data link escape character ([[C0 and C1 control codes|DLE]]) was intended to be a signal to the other end of a data link that the following character is a control character such as STX or ETX.  For example a packet may be structured in the following way ([[C0 and C1 control codes|DLE]]) &lt;STX&gt; &lt;PAYLOAD&gt; ([[C0 and C1 control codes|DLE]]) &lt;ETX&gt;.
+
+===Miscellaneous codes===
+Code 7 ([[bell character|BEL]]) is intended to cause an audible signal in the receiving terminal.&lt;ref&gt;{{cite web| url=https://tools.ietf.org/html/rfc20 |title=RFC20 |accessdate=2013-11-03}}An old RFC, which explains the structure and meaning of the control characters in chapters 4.1 and 5.2&lt;/ref&gt;
+
+Many of the ASCII control characters were designed for devices of the time that are not often seen today. For example, code 22, &quot;synchronous idle&quot; ([[C0 and C1 control codes|SYN]]), was originally sent by synchronous modems (which have to send data constantly) when there was no actual data to send. (Modern systems typically use a start bit to announce the beginning of a transmitted word&amp;mdash; this is a feature of ''asynchronous'' communication.  ''Synchronous'' communication links were more often seen with mainframes, where they were typically run over corporate leased lines to connect a mainframe to another mainframe or perhaps a minicomputer.)
+
+Code 0 (ASCII code name [[null character|NUL]]) is a special case. In paper tape, it is the case when there are no holes.  It is convenient to treat this as a ''fill'' character with no meaning otherwise.  Since the position of a NUL character has no holes punched, it can be replaced with any other character at a later time, so it was typically used to reserve space, either for correcting errors or for inserting information that would be available at a later time or in another place. In computing it is often used for padding in fixed length records and more commonly, to mark the end of a string.
+
+Code 127 ([[Delete character|DEL]], a.k.a. &quot;rubout&quot;) is likewise a special case. Its 7-bit code is ''all-bits-on'' in binary, which essentially erased a character cell on a [[punched tape|paper tape]] when overpunched. Paper tape was a common storage medium when ASCII was developed, with a computing history dating back to WWII code breaking equipment at [[Biuro Szyfrów]]. Paper tape became obsolete in the 1970s, so this clever aspect of ASCII rarely saw any use after that. Some systems (such as the original Apples) converted it to a backspace.  But because its code is in the range occupied by other printable characters, and because it had no official assigned glyph, many computer equipment vendors used it as an additional printable character (often an all-black &quot;box&quot; character useful for erasing text by overprinting with ink).
+
+Non-erasable [[Programmable read-only memory|Programmable ROM]]s are typically implemented as arrays of fusible elements, each representing a [[bit]], which can only be switched one way, usually from one to zero. In such PROMs, the DEL and NUL characters can be used in the same way that they were used on punched tape: one to reserve meaningless fill bytes that can be written later, and the other to convert written bytes to meaningless fill bytes. For PROMs that switch one to zero, the roles of NUL and DEL are reversed; also, DEL will only work with 7-bit characters, which are rarely used today; for 8-bit content, the character code 255, commonly defined as a nonbreaking space character, can be used instead of DEL.
+
+Many [[file system]]s do not allow control characters in the [[filename]]s, as they may have reserved functions.
+
+==See also==
+* [[C0 and C1 control codes]]
+* [[Escape sequence]]
+* [[In-band signaling]]
+* [[Whitespace character]]
+
+==Notes and references==
+&lt;references/&gt;
+
+== External links ==
+{{Wiktionary|Appendix:Control characters|}}
+{{Wiktionary|Control character|Control code}}
+* [https://www.itscj.ipsj.or.jp/iso-ir/001.pdf ISO IR 1] C0 Set of ISO 646 (PDF)
+
+{{Character encoding}}
+
+{{DEFAULTSORT:Control Character}}
+[[Category:Control characters| ]]</text>
+      <sha1>sdeil3hflz1d8obxh9wb6s6hy2u71of</sha1>
+    </revision>
+  </page>

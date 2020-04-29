@@ -1,0 +1,467 @@
+  <page>
+    <title>Elementary algebra</title>
+    <ns>0</ns>
+    <id>9710</id>
+    <revision>
+      <id>942058501</id>
+      <parentid>942016835</parentid>
+      <timestamp>2020-02-22T09:24:24Z</timestamp>
+      <contributor>
+        <username>D.Lazard</username>
+        <id>12336988</id>
+      </contributor>
+      <minor />
+      <comment>Reverted 1 edit by [[Special:Contributions/50.25.57.172|50.25.57.172]] ([[User talk:50.25.57.172|talk]]) to last revision by InternetArchiveBot ([[WP:TW|TW]])</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{Image frame|align=right|width=200|caption=The [[quadratic formula]], which is the solution to the [[quadratic equation]] &lt;math&gt;ax^2+bx+c=0&lt;/math&gt; where &lt;math&gt;a\neq0&lt;/math&gt;. Here the symbols {{mvar|a,b,c}} represent arbitrary numbers, and {{mvar|x}} is a variable which represents the solution of the equation.|content=&lt;math&gt;\overset{}{\underset{}{ x=\frac{-b\pm\sqrt{b^2-4ac} }{2a} } }&lt;/math&gt;}}
+[[File:Polynomialdeg2.svg|thumb|right|200px|Two-dimensional plot (red curve) of the algebraic equation &lt;math&gt;y = x^2 - x - 2&lt;/math&gt;]]
+
+'''Elementary algebra''' encompasses some of the basic concepts of [[algebra]], one of the main branches of [[mathematics]]. It is typically taught to [[secondary school]] students and builds on their understanding of [[arithmetic]]. Whereas arithmetic deals with specified numbers,&lt;ref&gt;[[Herbert Ellsworth Slaught|H.E. Slaught]] and N.J. Lennes, ''Elementary algebra'', Publ. Allyn and Bacon, 1915, [https://books.google.com/books?id=gLii_eO4dNsC&amp;lpg=PA1&amp;dq=%22Elementary%20algebra%22%20letters&amp;pg=PA1#v=onepage&amp;q&amp;f=false page 1] (republished by Forgotten Books)&lt;/ref&gt; algebra introduces quantities without fixed values, known as variables.&lt;ref&gt;Lewis Hirsch, Arthur Goodman, ''Understanding Elementary Algebra With Geometry: A Course for College Students'', Publisher: Cengage Learning, 2005, {{ISBN|0534999727}}, 9780534999728, 654 pages, [https://books.google.com/books?id=7hdK4RSub5cC&amp;lpg=PA2&amp;dq=what%20is%20algebra%20for&amp;pg=PA2#v=onepage&amp;q=generalization&amp;f=false page 2]&lt;/ref&gt; This use of variables entails a use of algebraic notation and an understanding of the general rules of the [[Operation (mathematics)|operator]]s introduced in arithmetic.  Unlike [[abstract algebra]], elementary algebra is not concerned with [[algebraic structures]] outside the realm of [[real number|real]] and [[complex number]]s.
+
+The use of variables to denote quantities allows general relationships between quantities to be formally and concisely expressed, and thus enables solving a broader scope of problems. Many quantitative relationships in science and mathematics are expressed as algebraic [[equation]]s.
+
+==Algebraic notation ==
+{{main|Mathematical notation}}
+Algebraic notation describes the rules and conventions for writing [[Expression (mathematics)|mathematical expressions]], as well as the terminology used for talking about parts of expressions. For example, the expression &lt;math style=&quot;margin-bottom:8px&quot;&gt;3x^2 - 2xy + c&lt;/math&gt; has the following components:
+
+[[File:algebraic equation notation.svg|256px|thumb|center|{{ordered list
+| [[Exponent]] (power), 
+| [[Coefficient]], 
+| [[addend|term]], 
+| [[Operation (mathematics)|operator]], 
+| [[Constant (mathematics)|constant]], {{mvar|x, y}} : [[Variable (mathematics)|variable]]s}}]]
+
+A ''coefficient'' is a numerical value, or letter representing a numerical constant, that multiplies a variable (the operator is omitted). A ''term'' is an [[Addend#Notation and terminology|addend or a summand]], a group of coefficients, variables, constants and exponents that may be separated from the other terms by the plus and minus operators.&lt;ref&gt;Richard N. Aufmann, Joanne Lockwood, ''Introductory Algebra: An Applied Approach'', Publisher Cengage Learning, 2010, {{ISBN|1439046042}}, 9781439046043, [https://books.google.com/books?id=MPIWikTHVXQC&amp;lpg=PP1&amp;ots=yG1m9DkIiH&amp;dq=coefficient%20algebra&amp;pg=PA78#v=onepage&amp;q=coefficient%20&amp;f=false page 78]&lt;/ref&gt; Letters represent variables and constants. By convention, letters at the beginning of the alphabet (e.g. &lt;math&gt;a, b, c&lt;/math&gt;) are typically used to represent [[Mathematical constant|constant]]s, and those toward the end of the alphabet (e.g. &lt;math&gt;x, y&lt;/math&gt; and {{mvar|z}}) are used to represent [[Variable (mathematics)|variable]]s.&lt;ref&gt;William L. Hosch (editor), ''The Britannica Guide to Algebra and Trigonometry'', Britannica Educational Publishing, The Rosen Publishing Group, 2010, {{ISBN|1615302190}}, 9781615302192, [https://books.google.com/books?id=ad0P0elU1_0C&amp;lpg=PA71&amp;dq=elementary%20algebra%20letters%20alphabet%20constants%20variables&amp;pg=PA71#v=onepage&amp;q=letters&amp;f=false page 71]&lt;/ref&gt; They are usually written in italics.&lt;ref&gt;James E. Gentle, ''Numerical Linear Algebra for Applications in Statistics'', Publisher: Springer, 1998, {{ISBN|0387985425}}, 9780387985428, 221 pages, [James E. Gentle page 183]&lt;/ref&gt;
+
+[[Algebraic operation]]s work in the same way as [[arithmetic operations]],&lt;ref&gt;Horatio Nelson Robinson, ''New elementary algebra: containing the rudiments of science for schools and academies'', Ivison, Phinney, Blakeman, &amp; Co., 1866, [https://books.google.com/books?id=dKZXAAAAYAAJ&amp;dq=Elementary%20algebra%20notation&amp;pg=PA7#v=onepage&amp;q=Elementary%20algebra%20notation&amp;f=false page 7]&lt;/ref&gt; such as [[addition]], [[subtraction]], [[multiplication]], [[Division (mathematics)|division]] and [[exponentiation]].&lt;ref&gt;Ron Larson, Robert Hostetler, Bruce H. Edwards, ''Algebra And Trigonometry: A Graphing Approach'', Publisher: Cengage Learning, 2007, {{ISBN|061885195X}}, 9780618851959, 1114 pages, [https://books.google.com/books?id=5iXVZHhkjAgC&amp;lpg=PA6&amp;ots=iwrSrCrrOb&amp;dq=operations%20addition%2C%20subtraction%2C%20multiplication%2C%20division%20exponentiation.&amp;pg=PA6#v=onepage&amp;q=operations%20addition,%20subtraction,%20multiplication,%20division%20exponentiation.&amp;f=false page 6]&lt;/ref&gt; and are applied to algebraic variables and terms.  Multiplication symbols are usually omitted, and implied when there is no space between two variables or terms, or when a [[coefficient]] is used. For example, &lt;math style=&quot;margin-bottom:8px&quot;&gt;3 \times x^2&lt;/math&gt; is written as &lt;math style=&quot;margin-bottom:8px&quot;&gt;3x^2&lt;/math&gt;, and &lt;math&gt;2 \times x \times y&lt;/math&gt; may be written &lt;math&gt;2xy&lt;/math&gt;.&lt;ref&gt;Sin Kwai Meng, Chip Wai Lung, Ng Song Beng, &quot;Algebraic notation&quot;, in ''Mathematics Matters Secondary 1 Express Textbook'', Publisher Panpac Education Pte Ltd, {{ISBN|9812738827}}, 9789812738820, [https://books.google.com/books?id=nL5ObMmDvPEC&amp;lpg=PR9-IA8&amp;ots=T_h6l40AE5&amp;dq=%22Algebraic%20notation%22%20multiplication%20omitted&amp;pg=PR9-IA8#v=onepage&amp;q=%22Algebraic%20notation%22%20multiplication%20omitted&amp;f=false page 68]&lt;/ref&gt;
+
+Usually terms with the highest power ([[Exponentiation|exponent]]), are written on the left, for example, &lt;math style=&quot;margin-bottom:8px&quot;&gt;x^2&lt;/math&gt; is written to the left of {{mvar|x}}. When a coefficient is one, it is usually omitted (e.g. &lt;math style=&quot;margin-bottom:8px&quot;&gt;1x^2&lt;/math&gt; is written &lt;math style=&quot;margin-bottom:8px&quot;&gt;x^2&lt;/math&gt;).&lt;ref&gt;David Alan Herzog, ''Teach Yourself Visually Algebra'', Publisher John Wiley &amp; Sons, 2008, {{ISBN|0470185597}}, 9780470185599, 304 pages, [https://books.google.com/books?id=Igs6t_clf0oC&amp;lpg=PA72&amp;ots=Excnhf1AgW&amp;dq=algebra%20coefficient%20one&amp;pg=PA72#v=onepage&amp;q=coefficient%20of%201&amp;f=false page 72]&lt;/ref&gt; Likewise when the exponent (power) is one, (e.g. &lt;math style=&quot;margin-bottom:8px&quot;&gt;3x^1&lt;/math&gt; is written &lt;math style=&quot;margin-bottom:8px&quot;&gt;3x&lt;/math&gt;).&lt;ref&gt;John C. Peterson, ''Technical Mathematics With Calculus'', Publisher Cengage Learning, 2003, {{ISBN|0766861899}}, 9780766861893, 1613 pages, [https://books.google.com/books?id=PGuSDjHvircC&amp;lpg=PA31&amp;ots=NKrtZZ1KDE&amp;dq=%22when%20the%20exponent%20is%201%22&amp;pg=PA32#v=onepage&amp;q=%22when%20the%20exponent%20is%201%22&amp;f=false page 31]&lt;/ref&gt; When the exponent is zero, the result is always 1 (e.g. &lt;math style=&quot;margin-bottom:8px&quot;&gt;x^0&lt;/math&gt; is always rewritten to {{mvar|1}}).&lt;ref&gt;Jerome E. Kaufmann, Karen L. Schwitters, ''Algebra for College Students'', Publisher Cengage Learning, 2010, {{ISBN|0538733543}}, 9780538733540, 803 pages, [https://books.google.com/books?id=-AHtC0IYMhYC&amp;lpg=PP1&amp;ots=kL8erjajyR&amp;dq=algebra%20exponents%20zero%20one&amp;pg=PA222#v=onepage&amp;q=exponents%20&amp;f=false page 222]&lt;/ref&gt; However &lt;math&gt;0^0&lt;/math&gt;, being undefined, should not appear in an expression, and care should be taken in simplifying expressions in which variables may appear in exponents.
+
+===Alternative notation===
+Other types of notation are used in algebraic expressions when the required formatting is not available, or can not be implied, such as where only letters and symbols are available. As an illustration of this, while exponents are usually formatted using superscripts, e.g., &lt;math style=&quot;margin-bottom:8px&quot;&gt;x^2&lt;/math&gt;, in [[plain text]], and in the [[TeX]] mark-up language, the [[caret]] symbol &quot;^&quot; represents exponentiation, so &lt;math style=&quot;margin-bottom:8px&quot;&gt;x^2&lt;/math&gt; is written as &quot;x^2&quot;.&lt;ref&gt;Ramesh Bangia, ''Dictionary of Information Technology'', Publisher Laxmi Publications, Ltd., 2010, {{ISBN|9380298153}}, 9789380298153, [https://books.google.com/books?id=zQa5I2sHPKEC&amp;lpg=PA212&amp;ots=s6pWav1Z_D&amp;dq=%22plain%20text%22%20math%20caret%20exponent&amp;pg=PA212#v=onepage&amp;q=exponentiation%20caret&amp;f=false page 212]&lt;/ref&gt;&lt;ref&gt;George Grätzer, ''First Steps in LaTeX'', Publisher Springer, 1999, {{ISBN|0817641327}}, 9780817641320, [https://books.google.com/books?id=mLdg5ZdDKToC&amp;lpg=PP1&amp;ots=V9DFIaAAh0&amp;dq=tex%20math&amp;pg=PA17#v=onepage&amp;q=subscripts%20and%20superscripts%20caret&amp;f=false page 17]&lt;/ref&gt; In programming languages such as [[Ada (programming language)|Ada]],&lt;ref&gt;S. Tucker Taft, Robert A. Duff, Randall L. Brukardt, Erhard Ploedereder, Pascal Leroy, ''Ada 2005 Reference Manual'', Volume 4348 of Lecture Notes in Computer Science, Publisher Springer, 2007, {{ISBN|3540693351}}, 9783540693352, [https://books.google.com/books?id=694P3YtXh-0C&amp;lpg=PA718&amp;ots=O_EgQ75FeB&amp;dq=ada%20%20asterisk&amp;pg=PA12#v=onepage&amp;q=double%20star%20exponentiate&amp;f=false page 13]&lt;/ref&gt; [[Fortran]],&lt;ref&gt;C. Xavier, ''Fortran 77 And Numerical Methods'', Publisher New Age International, 1994, {{ISBN|812240670X}}, 9788122406702, [https://books.google.com/books?id=WYMgF9WFty0C&amp;lpg=PA20&amp;ots=BTtzs9F-NB&amp;dq=fortran%20asterisk%20exponentiation&amp;pg=PA20#v=onepage&amp;q=fortran%20asterisk%20exponentiation&amp;f=false page 20]&lt;/ref&gt; [[Perl]],&lt;ref&gt;Randal Schwartz, Brian Foy, Tom Phoenix, ''Learning Perl'', Publisher O'Reilly Media, Inc., 2011, {{ISBN|1449313140}}, 9781449313142, [https://books.google.com/books?id=l2IwEuRjeNwC&amp;lpg=PA24&amp;ots=5nsYOLHxlD&amp;dq=perl%20asterisk%20exponentiation&amp;pg=PA24#v=onepage&amp;q=double%20asterisk%20exponentiation&amp;f=false page 24]&lt;/ref&gt; [[Python (programming language)|Python]] &lt;ref&gt;Matthew A. Telles, ''Python Power!: The Comprehensive Guide'', Publisher Course Technology PTR, 2008, {{ISBN|1598631586}}, 9781598631586, [https://books.google.com/books?id=754knV_fyf8C&amp;lpg=PA46&amp;ots=8fEi1F-H8-&amp;dq=python%20asterisk%20exponentiation&amp;pg=PA46#v=onepage&amp;q=double%20asterisk%20exponentiation&amp;f=false page 46]&lt;/ref&gt; and [[Ruby (programming language)|Ruby]],&lt;ref&gt;Kevin C. Baird, ''Ruby by Example: Concepts and Code'', Publisher No Starch Press, 2007, {{ISBN|1593271484}}, 9781593271480, [https://books.google.com/books?id=kq2dBNdAl3IC&amp;lpg=PA72&amp;ots=0UU3k-Pvh8&amp;dq=ruby%20asterisk%20exponentiation&amp;pg=PA72#v=onepage&amp;q=double%20asterisk%20exponentiation&amp;f=false page 72]&lt;/ref&gt; a double asterisk is used, so &lt;math style=&quot;margin-bottom:8px&quot;&gt;x^2&lt;/math&gt; is written as &quot;x**2&quot;. Many programming languages and calculators use a single asterisk to represent the multiplication symbol,&lt;ref&gt;William P. Berlinghoff, Fernando Q. Gouvêa, ''Math through the Ages: A Gentle History for Teachers and Others'', Publisher MAA, 2004, {{ISBN|0883857367}}, 9780883857366, [https://books.google.com/books?id=JAXNVaPt7uQC&amp;lpg=PA75&amp;ots=-P78Lrz792&amp;dq=calculator%20asterisk%20multiplication&amp;pg=PA75#v=onepage&amp;q=calculator%20asterisk%20multiplication&amp;f=false page 75]&lt;/ref&gt; and it must be explicitly used, for example, &lt;math style=&quot;margin-bottom:8px&quot;&gt;3x&lt;/math&gt; is written &quot;3*x&quot;.
+
+==Concepts==
+
+===Variables===
+[[File:Pi-equals-circumference-over-diametre.svg|thumb|right|Example of variables showing the relationship between a circle's diameter and its circumference. For any [[circle]], its [[circumference]] {{mvar|c}}, divided by its [[diameter]] {{mvar|d}}, is equal to the constant [[pi]], &lt;math&gt;\pi&lt;/math&gt; (approximately 3.14).]]
+{{Main|Variable (mathematics)}}
+Elementary algebra builds on and extends arithmetic&lt;ref&gt;Thomas Sonnabend, ''Mathematics for Teachers: An Interactive Approach for Grades K-8'', Publisher: Cengage Learning, 2009, {{ISBN|0495561665}}, 9780495561668, 759 pages, [https://books.google.com/books?id=gBa2GzyXCF8C&amp;lpg=PR17&amp;ots=qee3RsTC6V&amp;dq=algebra%20%22extends%20arithmetic%22&amp;pg=PR17#v=onepage&amp;q=extends%20arithmetic&amp;f=false page xvii]&lt;/ref&gt; by introducing letters called variables to represent general (non-specified) numbers.  This is useful for several reasons.
+
+#'''Variables may represent numbers whose values are not yet known'''. For example, if the temperature of the current day, C, is 20 degrees higher than the temperature of the previous day, P,  then the problem can be described algebraically as &lt;math&gt;C = P + 20&lt;/math&gt;.&lt;ref&gt;Lewis Hirsch, Arthur Goodman, ''Understanding Elementary Algebra With Geometry: A Course for College Students'', Publisher: Cengage Learning, 2005, {{ISBN|0534999727}}, 9780534999728, 654 pages, [https://books.google.com/books?id=jsT7kqZubvIC&amp;lpg=PA48&amp;ots=EI4_yaKasG&amp;dq=%22elementary%20algebra%22%20variables%20unknown&amp;pg=PA48#v=onepage&amp;q=%22elementary%20algebra%22%20variables%20unknown&amp;f=false page 48]&lt;/ref&gt;
+#'''Variables allow one to describe ''general'' problems,&lt;ref&gt;Lawrence S. Leff, ''College Algebra: Barron's Ez-101 Study Keys'', Publisher: Barron's Educational Series, 2005, {{ISBN|0764129147}}, 9780764129148, 230 pages, [https://books.google.com/books?id=XesryURrNKAC&amp;lpg=PA2&amp;ots=Ga44CTvNHI&amp;dq=algebra%20variables%20generalize&amp;pg=PA2#v=onepage&amp;q=algebra%20variables%20generalize&amp;f=false page 2]&lt;/ref&gt; without specifying the values of the quantities that are involved.''' For example, it can be stated specifically that 5 minutes is equivalent to &lt;math&gt;60 \times 5 = 300&lt;/math&gt; seconds. A more general (algebraic) description may state that the number of seconds, &lt;math&gt;s = 60 \times m&lt;/math&gt;, where m is  the number of minutes.
+#'''Variables allow one to describe mathematical relationships between quantities that may vary.'''&lt;ref&gt;Ron Larson, Kimberly Nolting, ''Elementary Algebra'', Publisher: Cengage Learning, 2009, {{ISBN|0547102275}}, 9780547102276, 622 pages, [https://books.google.com/books?id=U6v78M5nYKAC&amp;lpg=PP1&amp;ots=R0dl97lfm0&amp;dq=%22elementary%20algebra%22%20relationships&amp;pg=PA210#v=onepage&amp;q=relationships&amp;f=false page 210]&lt;/ref&gt; For example, the relationship between the circumference, ''c'', and diameter, ''d'', of a circle is described by &lt;math&gt;\pi = c /d&lt;/math&gt;.
+#'''Variables allow one to describe some mathematical properties.''' For example, a basic property of addition is [[commutativity]] which states that the order of numbers being added together does not matter. Commutativity is stated algebraically as &lt;math&gt;(a + b) = (b + a)&lt;/math&gt;.&lt;ref&gt;Charles P. McKeague, ''Elementary Algebra'', Publisher: Cengage Learning, 2011, {{ISBN|0840064217}}, 9780840064219, 571 pages, [https://books.google.com/books?id=etTbP0rItQ4C&amp;lpg=PA49&amp;ots=I16eebO3LV&amp;dq=%22elementary%20algebra%22%20commutative&amp;pg=PA49#v=onepage&amp;q=%22elementary%20algebra%22%20commutative&amp;f=false page 49]&lt;/ref&gt;
+
+=== Simplifying expressions ===
+{{Main|Expression (mathematics)|Computer algebra#Simplification}}
+Algebraic expressions may be evaluated and simplified, based on the basic properties of arithmetic operations ([[addition]], [[subtraction]], [[multiplication]], [[Division (mathematics)|division]] and [[exponentiation]]). For example,
+*Added terms are simplified using coefficients. For example, &lt;math&gt;x + x + x&lt;/math&gt; can be simplified as &lt;math&gt;3x&lt;/math&gt; (where 3 is a numerical coefficient).
+*Multiplied terms are simplified using exponents. For example, &lt;math&gt;x \times x \times x&lt;/math&gt; is represented as &lt;math&gt;x^3&lt;/math&gt;
+*Like terms are added together,&lt;ref&gt;Andrew Marx, ''Shortcut Algebra I: A Quick and Easy Way to Increase Your Algebra I Knowledge and Test Scores'', Publisher Kaplan Publishing, 2007, {{ISBN|1419552880}}, 9781419552885, 288 pages, [https://books.google.com/books?id=o9GYQjZ7ZwUC&amp;lpg=PP1&amp;ots=pT-MpWMJty&amp;dq=algebra%20addition%20%22like%20terms%22&amp;pg=PA51#v=onepage&amp;q=like%20terms&amp;f=false page 51]&lt;/ref&gt; for example, &lt;math&gt;2x^2 + 3ab - x^2 + ab&lt;/math&gt; is written as &lt;math&gt;x^2 + 4ab&lt;/math&gt;, because the terms containing &lt;math&gt;x^2&lt;/math&gt; are added together, and, the terms containing &lt;math&gt;ab&lt;/math&gt; are added together.
+*Brackets can be &quot;multiplied out&quot;, using [[Distributive property|the distributive property]]. For example, &lt;math&gt;x (2x + 3)&lt;/math&gt; can be written as &lt;math&gt;(x \times 2x) + (x \times 3)&lt;/math&gt; which can be written as &lt;math&gt;2x^2 + 3x&lt;/math&gt;
+*Expressions can be factored. For example, &lt;math&gt;6x^5 + 3x^2&lt;/math&gt;, by dividing both terms by &lt;math&gt;3x^2&lt;/math&gt; can be written as &lt;math&gt;3x^2 (2x^3 + 1)&lt;/math&gt;
+
+=== Equations ===
+[[File:Pythagorean theorem - Ani.gif|thumb|Animation illustrating [[Pythagorean theorem|Pythagoras' rule]] for a right-angle triangle, which shows the algebraic relationship between the triangle's hypotenuse, and the other two sides.]]
+{{Main|Equation}}
+An equation states that two expressions are equal using the symbol for equality, {{=}} (the [[equals sign]]).&lt;ref&gt;Mark Clark, Cynthia Anfinson, ''Beginning Algebra: Connecting Concepts Through Applications'', Publisher Cengage Learning, 2011, {{ISBN|0534419380}}, 9780534419387, 793 pages, [https://books.google.com/books?id=wCzuRMC5048C&amp;lpg=PA134&amp;ots=UdyGuk1ihH&amp;dq=algebra%20equation%20%22two%20expressions%22&amp;pg=PA134#v=onepage&amp;q=equation&amp;f=false page 134]&lt;/ref&gt; One of the best-known equations describes Pythagoras' law relating the length of the sides of a [[right angle]] triangle:&lt;ref&gt;Alan S. Tussy, R. David Gustafson, ''Elementary and Intermediate Algebra'', Publisher Cengage Learning, 2012, {{ISBN|1111567689}}, 9781111567682, 1163 pages, [https://books.google.com/books?id=xqio_Xn4t7oC&amp;lpg=PA493&amp;ots=pmzfzBO1KX&amp;dq=algebra%20Pythagoras%20hypotenuse&amp;pg=PA493#v=onepage&amp;q=algebra%20Pythagoras%20hypotenuse&amp;f=false page 493]&lt;/ref&gt;
+
+:&lt;math&gt;c^2 = a^2 + b^2&lt;/math&gt;
+
+This equation states that &lt;math&gt;c^2&lt;/math&gt;, representing the square of the length of the side that is the hypotenuse, the side opposite the right angle. That is equal to the sum (addition) of the squares of the other two sides whose lengths are represented by {{mvar|a}} and {{mvar|b}}.
+
+An equation is the claim that two expressions have the same value and are equal. Some equations are true for all values of the involved variables (such as &lt;math&gt;a + b = b + a&lt;/math&gt;); such equations are called [[identity (mathematics)|identities]]. Conditional equations are true for only some values of the involved variables, e.g. &lt;math&gt;x^2 - 1 = 8&lt;/math&gt; is true only for &lt;math&gt;x = 3&lt;/math&gt; and &lt;math&gt;x = -3&lt;/math&gt;. The values of the variables which make the equation true are the solutions of the equation and can be found through [[equation solving]].
+
+Another type of equation is inequality. Inequalities are used to show that one side of the equation is greater, or less, than the other. The symbols used for this are: &lt;math&gt; a &gt; b &lt;/math&gt; where &lt;math&gt; &gt; &lt;/math&gt; represents 'greater than', and &lt;math&gt; a &lt; b &lt;/math&gt; where &lt;math&gt; &lt; &lt;/math&gt; represents 'less than'. Just like standard equality equations, numbers can be added, subtracted, multiplied or divided. The only exception is that when multiplying or dividing by a negative number, the inequality symbol must be flipped.
+
+==== Properties of equality ====
+
+By definition, equality is an [[equivalence relation]], meaning it has the properties (a) [[reflexive relation|reflexive]] (i.e. &lt;math&gt;b = b&lt;/math&gt;), (b) [[symmetric relation|symmetric]] (i.e. if &lt;math&gt;a = b&lt;/math&gt; then &lt;math&gt;b = a&lt;/math&gt;) (c) [[transitive relation|transitive]] (i.e. if &lt;math&gt;a = b&lt;/math&gt; and &lt;math&gt;b = c&lt;/math&gt; then &lt;math&gt;a = c&lt;/math&gt;).&lt;ref&gt;Douglas Downing, ''Algebra the Easy Way'', Publisher Barron's Educational Series, 2003, {{ISBN|0764119729}}, 9780764119729, 392 pages, [https://books.google.com/books?id=RiX-TJLiQv0C&amp;lpg=PA20&amp;ots=BjArsBq8vc&amp;dq=algebra%20equality%20%20%20reflexive%20%20symmetric%20%20transitive&amp;pg=PA20#v=onepage&amp;q=algebra%20equality%20%20%20reflexive%20%20symmetric%20%20transitive&amp;f=false page 20]&lt;/ref&gt; It also satisfies the important property that if two symbols are used for equal things, then one symbol can be substituted for the other in any true statement about the first and the statement will remain true. This implies the following properties:
+
+* if &lt;math&gt;a = b&lt;/math&gt; and &lt;math&gt;c = d&lt;/math&gt; then &lt;math&gt;a + c = b + d&lt;/math&gt; and &lt;math&gt;ac = bd&lt;/math&gt;;
+* if &lt;math&gt;a = b&lt;/math&gt; then &lt;math&gt;a + c = b + c&lt;/math&gt; and &lt;math&gt;ac = bc&lt;/math&gt;;
+* more generally, for any function {{mvar|f}}, if &lt;math&gt;a=b&lt;/math&gt; then &lt;math&gt;f(a) = f(b)&lt;/math&gt;.
+
+==== Properties of inequality ====
+
+The relations ''less than'' &lt;math&gt; &lt; &lt;/math&gt; and greater than &lt;math&gt; &gt; &lt;/math&gt; have the property of transitivity:&lt;ref&gt;Ron Larson, Robert Hostetler, ''Intermediate Algebra'', Publisher Cengage Learning, 2008, {{ISBN|0618753524}}, 9780618753529, 857 pages, [https://books.google.com/books?id=b3vqad8tbiAC&amp;lpg=PA96&amp;ots=FF2OYYGNCV&amp;dq=algebra%20inequality%20properties&amp;pg=PA96#v=onepage&amp;q=algebra%20inequality%20properties&amp;f=false page 96]&lt;/ref&gt;
+* If &amp;nbsp; &lt;math&gt;a &lt; b&lt;/math&gt; &amp;nbsp; and &amp;nbsp; &lt;math&gt;b &lt; c&lt;/math&gt; &amp;nbsp; then &amp;nbsp; &lt;math&gt;a &lt; c&lt;/math&gt;;
+* If &amp;nbsp; &lt;math&gt;a &lt; b&lt;/math&gt; &amp;nbsp; and &amp;nbsp; &lt;math&gt;c &lt; d&lt;/math&gt; &amp;nbsp; then &amp;nbsp; &lt;math&gt;a + c &lt; b + d&lt;/math&gt;;&lt;ref&gt;{{cite web|url=https://math.stackexchange.com/q/1043755 |title=What is the following property of inequality called? |author= |date=November 29, 2014 |work=[[Stack Exchange]] |accessdate=4 May 2018}}&lt;/ref&gt;
+* If &amp;nbsp; &lt;math&gt;a &lt; b&lt;/math&gt; &amp;nbsp; and &amp;nbsp; &lt;math&gt;c &gt; 0&lt;/math&gt; &amp;nbsp; then &amp;nbsp; &lt;math&gt;ac &lt; bc&lt;/math&gt;;
+* If &amp;nbsp; &lt;math&gt;a &lt; b&lt;/math&gt; &amp;nbsp; and &amp;nbsp; &lt;math&gt;c &lt; 0&lt;/math&gt; &amp;nbsp; then &amp;nbsp; &lt;math&gt;bc &lt; ac&lt;/math&gt;.
+By reversing the inequation, &lt;math&gt; &lt; &lt;/math&gt; and &lt;math&gt; &gt; &lt;/math&gt; can be swapped,&lt;ref&gt;Chris Carter, ''Physics: Facts and Practice for A Level'', Publisher Oxford University Press, 2001, {{ISBN|019914768X}}, 9780199147687, 144 pages, [https://books.google.com/books?id=Ff9gxZPYafcC&amp;lpg=PA50&amp;ots=KQ5ufGdcHk&amp;dq=algebra%20inequality%20less%20greater%20exchange&amp;pg=PA50#v=onepage&amp;q=turned%20around&amp;f=false page 50]&lt;/ref&gt; for example:
+* &lt;math&gt;a &lt; b&lt;/math&gt; is equivalent to &lt;math&gt;b &gt; a&lt;/math&gt;
+
+=== Substitution ===
+{{main|Substitution (algebra)}}
+{{see also|Substitution (logic)}}
+
+Substitution is replacing the terms in an expression to create a new expression. Substituting 3 for {{mvar|a}} in the expression {{math|''a''*5}} makes a new expression {{math|3*5}} with meaning {{math|15}}. Substituting the terms of a statement makes a new statement. When the original statement is true independently of the values of the terms, the statement created by substitutions is also true. Hence definitions can be made in symbolic terms and interpreted through substitution: if &lt;math&gt;a^2:=a\times a&lt;/math&gt; is meant as the definition of &lt;math&gt;a^2,&lt;/math&gt; as the product of {{mvar|a}} with itself, substituting {{math|3}} for {{mvar|a}} informs the reader of this statement that &lt;math&gt;3^2&lt;/math&gt; means {{math|1=3 × 3 = 9}}. Often it's not known whether the statement is true independently of the values of the terms. And, substitution allows one to derive restrictions on the possible values, or show what conditions the statement holds under. For example, taking the statement {{math|1=''x'' + 1 = 0}}, if {{mvar|x}} is substituted with {{math|1}}, this implies {{math|1=1 + 1 = 2 = 0}}, which is false, which implies that if {{math|1=''x'' + 1 = 0}} then {{mvar|x}} canot be {{math|1}}.
+
+If {{math|''x''}} and {{math|''y''}} are [[integers]], [[rationals]], or [[real numbers]], then {{math|1=''xy'' = 0}} implies {{math|1=''x'' = 0}} or {{math|1=''y'' = 0}}. Consider {{math|1=''abc'' = 0}}. Then, substituting {{math|''a''}} for {{math|''x''}} and {{math|''bc''}} for {{math|''y''}}, we learn {{math|1=''a'' = 0}} or {{math|1=''bc'' = 0}}. Then we can substitute again, letting {{math|1=''x'' = ''b''}} and {{math|1=''y'' = ''c''}}, to show that if {{math|1=''bc'' = 0}} then {{math|1=''b'' = 0}} or {{math|1=''c'' = 0}}. Therefore, if {{math|1=''abc'' = 0}}, then {{math|1=''a'' = 0}} or ({{math|1=''b'' = 0}} or {{math|1=''c'' = 0}}), so {{math|1=''abc'' = 0}} implies {{math|1=''a'' = 0}} or {{math|1=''b'' = 0}} or {{math|1=''c'' = 0}}.
+
+If the original fact were stated as &quot;{{math|1=''ab'' = 0}} implies {{math|1=''a'' = 0}} or {{math|1=''b'' = 0}}&quot;, then when saying &quot;consider {{math|1=''abc'' = 0}},&quot; we would have a conflict of terms when substituting. Yet the above logic is still valid to show that if {{math|1=''abc'' = 0}} then {{math|1=''a'' = 0}} or {{math|1=''b'' = 0}} or {{math|1=''c'' = 0}} if, instead of letting {{math|1=''a'' = ''a''}} and {{math|1=''b'' = ''bc''}}, one substitutes {{math|''a''}} for {{math|''a''}} and {{math|''b''}} for {{math|''bc''}} (and with {{math|1=''bc'' = 0}}, substituting {{math|''b''}} for {{math|''a''}} and {{math|''c''}} for {{math|''b''}}). This shows that substituting for the terms in a statement isn't always the same as letting the terms from the statement equal the substituted terms. In this situation it's clear that if we substitute an expression {{math|''a''}} into the {{math|''a''}} term of the original equation, the {{math|''a''}} substituted does not refer to the {{math|''a''}} in the statement &quot;{{math|1=''ab'' = 0}} implies {{math|1=''a'' = 0}} or {{math|1=''b'' = 0}}.&quot;
+
+== Solving algebraic equations ==
+{{see also|Equation solving}}
+[[File:Algebraproblem.jpg|thumb|A typical algebra problem.]]
+
+The following sections lay out examples of some of the types of algebraic equations that may be encountered.
+
+=== Linear equations with one variable ===
+{{Main|Linear equation}}
+
+Linear equations are so-called, because when they are plotted, they describe a straight line. The simplest equations to solve are [[linear equation]]s that have only one variable. They contain only constant numbers and a single variable without an exponent. As an example, consider:
+
+: Problem in words: If you double the age of a child and add 4, the resulting answer is 12. How old is the child?
+
+:Equivalent equation: &lt;math&gt;2x + 4 = 12&lt;/math&gt; where  {{mvar|x}} represent the child's age
+
+To solve this kind of equation, the technique is add, subtract, multiply, or divide both sides of the equation by the same number in order to isolate the variable on one side of the equation.  Once the variable is isolated, the other side of the equation is the value of the variable.&lt;ref&gt;{{Cite book|title=All the Math You'll Ever Need|author=Slavin, Steve|publisher=[[John Wiley &amp; Sons]]|year=1989|isbn=0-471-50636-2|page=[https://archive.org/details/allmathyoullever00slav/page/72 72]|url=https://archive.org/details/allmathyoullever00slav/page/72}}&lt;/ref&gt; This problem and its solution are as follows:
+{|
+|-
+| 1. Equation to solve:
+| &lt;math&gt;2x + 4 = 12&lt;/math&gt;
+|-
+| 2. Subtract 4 from both sides:
+| &lt;math&gt;2x + 4 - 4 = 12 - 4&lt;/math&gt;
+|-
+| 3. This simplifies to:
+| &lt;math&gt;2x = 8&lt;/math&gt;
+|-
+| 4. Divide both sides by 2:
+| &lt;math&gt;\frac{2x}{2} = \frac{8}{2}&lt;/math&gt;
+|-
+| 5. This simplifies to the solution:
+| &lt;math&gt;x = 4&lt;/math&gt;
+|}
+In words: the child is 4 years old.
+
+The general form of a linear equation with one variable, can be written as: &lt;math&gt;ax+b=c&lt;/math&gt;
+
+Following the same procedure (i.e. subtract {{mvar|b}} from both sides, and then divide by {{mvar|a}}), the general solution is given by &lt;math&gt;x=\frac{c-b}{a}&lt;/math&gt;
+
+=== Linear equations with two variables ===
+[[File:Linear-equations-two-unknowns.svg|thumb|right|Two linear equations|Solving two linear equations with a unique solution at the point that they intersect.]]
+A linear equation with two variables has many (i.e. an infinite number of) solutions.&lt;ref&gt;Sinha, ''The Pearson Guide to Quantitative Aptitude for CAT 2/e''Publisher: Pearson Education India, 2010, {{ISBN|8131723666}}, 9788131723661, 599 pages, [https://books.google.com/books?id=eOnaFSKRSR0C&amp;lpg=PA195&amp;ots=K9A5d10dUc&amp;dq=linear%20equation%20%20two%20variables%20%20many%20solutions&amp;pg=PA195#v=onepage&amp;q=many%20solutions&amp;f=false page 195]&lt;/ref&gt; For example:
+
+:Problem in words: A father is 22 years older than his son. How old are they?
+:Equivalent equation: &lt;math&gt;y = x + 22&lt;/math&gt; where {{mvar|y}} is the father's age, {{mvar|x}} is the son's age.
+
+That cannot be worked out by itself. If the son's age was made known, then there would no longer be two unknowns (variables). The problem then becomes a linear equation with just one variable, that can be solved as described above.
+
+To solve a linear equation with two variables (unknowns), requires two related equations. For example, if it was also revealed that:
+; Problem in words
+: In 10 years, the father will be twice as old as his son.
+;Equivalent equation
+: &lt;math&gt;\begin{align}
+y + 10 &amp;= 2 \times (x + 10)\\
+y &amp;= 2 \times (x + 10) - 10 &amp;&amp; \text{Subtract 10 from both sides}\\
+y &amp;= 2x + 20 - 10 &amp;&amp; \text{Multiple out brackets}\\
+y &amp;= 2x + 10 &amp;&amp; \text{Simplify}
+\end{align}&lt;/math&gt;
+
+Now there are two related linear equations, each with two unknowns, which enables the production of a linear equation with just one variable, by subtracting one from the other (called the elimination method):&lt;ref&gt;Cynthia Y. Young, ''Precalculus'', Publisher John Wiley &amp; Sons, 2010, {{ISBN|0471756849}}, 9780471756842, 1175 pages, [https://books.google.com/books?id=9HRLAn326zEC&amp;lpg=PA703&amp;ots=t83cFBL8TU&amp;dq=linear%20equation%20%20two%20variables%20%20many%20solutions&amp;pg=PA699#v=onepage&amp;q=linear%20equation%20%20two%20variables%20%20many%20solutions&amp;f=false page 699]&lt;/ref&gt;
+:&lt;math&gt;\begin{cases}
+y = x + 22 &amp; \text{First equation}\\
+y = 2x + 10 &amp; \text{Second equation}
+\end{cases}&lt;/math&gt;
+:&lt;math&gt;\begin{align}
+&amp;&amp;&amp;\text{Subtract the first equation from}\\
+(y - y) &amp;= (2x - x) +10 - 22 &amp;&amp; \text{the second in order to remove } y\\
+0 &amp;= x - 12 &amp;&amp; \text{Simplify}\\
+12 &amp;= x &amp;&amp; \text{Add 12 to both sides}\\
+x &amp;= 12 &amp;&amp; \text{Rearrange}
+\end{align}&lt;/math&gt;
+
+In other words, the son is aged 12, and since the father 22 years older, he must be 34. In 10 years, the son will be 22, and the father will be twice his age, 44. This problem is illustrated on the associated plot of the equations.
+
+For other ways to solve this kind of equations, see below, '''[[#System of linear equations|System of linear equations]]'''.
+
+=== Quadratic equations ===
+{{Main|Quadratic equation}}
+[[File:Quadratic-equation.svg|thumb|right|Quadratic equation plot of &lt;math&gt;y = x^2 + 3x - 10&lt;/math&gt; showing its roots at &lt;math&gt;x = -5&lt;/math&gt; and &lt;math&gt;x = 2&lt;/math&gt;, and that the quadratic can be rewritten as &lt;math&gt;y = (x + 5)(x - 2)&lt;/math&gt;
+]]
+A quadratic equation is one which includes a term with an exponent of 2, for example, &lt;math&gt;x^2&lt;/math&gt;,&lt;ref&gt;Mary Jane Sterling, ''Algebra II For Dummies'', Publisher: John Wiley &amp; Sons, 2006, {{ISBN|0471775819}}, 9780471775812, 384 pages, [https://books.google.com/books?id=_0rTMuSpTY0C&amp;lpg=PA43&amp;ots=J8_1q1Vkul&amp;dq=quadratic%20equations&amp;pg=PA37#v=onepage&amp;q=quadratic%20equations&amp;f=false page 37]&lt;/ref&gt; and no term with higher exponent. The name derives from the Latin ''quadrus'', meaning square.&lt;ref&gt;John T. Irwin, ''The Mystery to a Solution: Poe, Borges, and the Analytic Detective Story'', Publisher JHU Press, 1996, {{ISBN|0801854660}}, 9780801854668, 512 pages, [https://books.google.com/books?id=jsxTenuOQKgC&amp;lpg=PA372&amp;ots=T7p7Porq55&amp;dq=quadratic%20quadrus&amp;pg=PA372#v=onepage&amp;q=quadratic%20quadrus&amp;f=false page 372]&lt;/ref&gt; In general, a quadratic equation can be expressed in the form &lt;math&gt;ax^2 + bx + c = 0&lt;/math&gt;,&lt;ref&gt;Sharma/khattar, ''The Pearson Guide To Objective Mathematics For Engineering Entrance Examinations, 3/E'', Publisher Pearson Education India, 2010, {{ISBN|8131723631}}, 9788131723630, 1248 pages, [https://books.google.com/books?id=2v-f9x7-FlsC&amp;lpg=RA13-PA33&amp;ots=P-Dz70fXbv&amp;dq=quadratic%20equations%20%20ax2%20%2B%20bx%20%2B%20c%20%3D%200&amp;pg=RA13-PA33#v=onepage&amp;q&amp;f=false page 621]&lt;/ref&gt; where {{mvar|a}} is not zero (if it were zero, then the equation would not be quadratic but linear). Because of this a quadratic equation must contain the term &lt;math&gt;ax^2&lt;/math&gt;, which is known as the quadratic term.  Hence &lt;math&gt;a \neq 0&lt;/math&gt;, and so we may divide by {{mvar|a}} and rearrange the equation into the standard form
+
+: &lt;math&gt;x^2 + px + q = 0 &lt;/math&gt;
+
+where &lt;math&gt;p = \frac{b}{a}&lt;/math&gt; and &lt;math&gt;q = \frac{c}{a}&lt;/math&gt;. Solving this, by a process known as [[completing the square]], leads to the [[quadratic formula]]
+
+:&lt;math&gt;x=\frac{-b \pm \sqrt {b^2-4ac}}{2a},&lt;/math&gt;
+
+where [[plus-minus sign|the symbol &quot;±&quot;]] indicates that both
+
+: &lt;math&gt; x=\frac{-b + \sqrt {b^2-4ac}}{2a}\quad\text{and}\quad x=\frac{-b - \sqrt {b^2-4ac}}{2a}&lt;/math&gt;
+
+are solutions of the quadratic equation.
+
+Quadratic equations can also be solved using [[factorization]] (the reverse process of which is [[polynomial expansion|expansion]], but for two [[linear function|linear terms]] is sometimes denoted [[FOIL rule|foiling]]).  As an example of factoring:
+
+: &lt;math&gt;x^{2} + 3x - 10 = 0, &lt;/math&gt;
+
+which is the same thing as
+
+: &lt;math&gt;(x + 5)(x - 2) = 0. &lt;/math&gt;
+
+It follows from the [[zero-product property]] that either &lt;math&gt;x = 2&lt;/math&gt; or &lt;math&gt;x = -5&lt;/math&gt; are the solutions, since precisely one of the factors must be equal to [[zero]]. All quadratic equations will have two solutions in the [[complex number]] system, but need not have any in the [[real number]] system. For example,
+
+: &lt;math&gt;x^{2} + 1 = 0 &lt;/math&gt;
+
+has no real number solution since no real number squared equals −1.
+Sometimes a quadratic equation has a root of [[multiplicity (mathematics)|multiplicity]] 2, such as:
+
+: &lt;math&gt;(x + 1)^2 = 0. &lt;/math&gt;
+
+For this equation, −1 is a root of multiplicity 2. This means −1 appears twice, since the equation can be rewritten in factored form as
+
+:&lt;math&gt;[x-(-1)][x-(-1)]=0.&lt;/math&gt;
+
+====Complex numbers====
+
+All quadratic equations have exactly two solutions in [[complex numbers]] (but they may be equal to each other), a category that includes [[real number]]s, [[imaginary number]]s, and sums of real and imaginary numbers. Complex numbers first arise in the teaching of quadratic equations and the quadratic formula. For example, the quadratic equation
+
+:&lt;math&gt;x^2+x+1=0&lt;/math&gt;
+
+has solutions
+
+:&lt;math&gt;x=\frac{-1 + \sqrt{-3}}{2}  \quad \quad \text{and} \quad \quad x=\frac{-1-\sqrt{-3}}{2}.&lt;/math&gt;
+
+Since &lt;math&gt;\sqrt{-3}&lt;/math&gt; is not any real number, both of these solutions for ''x'' are complex numbers.
+
+=== Exponential and logarithmic equations ===
+{{Main|Logarithm}}
+[[File:Binary logarithm plot with ticks.svg|right|thumb|upright=1.35|alt=Graph showing a logarithm curves, which crosses the ''x''-axis where ''x'' is 1 and extend towards minus infinity along the ''y''-axis.|The [[graph of a function|graph]] of the logarithm to base 2 crosses the [[x axis|''x'' axis]] (horizontal axis) at 1 and passes through the points with [[coordinate]]s {{nowrap|(2, 1)}}, {{nowrap|(4, 2)}}, and {{nowrap|(8, 3)}}. For example, {{nowrap|log&lt;sub&gt;2&lt;/sub&gt;(8) {{=}} 3}}, because {{nowrap|2&lt;sup&gt;3&lt;/sup&gt; {{=}} 8.}} The graph gets arbitrarily close to the ''y'' axis, but [[asymptotic|does not meet or intersect it]].]]
+
+An exponential equation is one which has the form &lt;math&gt;a^x = b&lt;/math&gt; for &lt;math&gt;a &gt; 0&lt;/math&gt;,&lt;ref&gt;Aven Choo, ''LMAN OL Additional Maths Revision Guide 3'', Publisher Pearson Education South Asia, 2007, {{ISBN|9810600011}}, 9789810600013, [https://books.google.com/books?id=NsBXDMrzcJIC&amp;lpg=RA2-PA29&amp;ots=WmZmHLaTey&amp;dq=%22%20exponential%20equation%20%22%20aX%20%3D%20b&amp;pg=RA2-PA29#v=onepage&amp;q=%22%20exponential%20equation%20%22%20aX%20=%20b&amp;f=false page 105]&lt;/ref&gt; which has solution
+
+: &lt;math&gt;X = \log_a b = \frac{\ln b}{\ln a}&lt;/math&gt;
+
+when &lt;math&gt;b &gt; 0&lt;/math&gt;. Elementary algebraic techniques are used to rewrite a given equation in the above way before arriving at the solution. For example, if
+
+: &lt;math&gt;3 \cdot 2^{x - 1} + 1 = 10&lt;/math&gt;
+
+then, by subtracting 1 from both sides of the equation, and then dividing both sides by 3 we obtain
+
+: &lt;math&gt;2^{x - 1} = 3&lt;/math&gt;
+
+whence
+
+: &lt;math&gt;x - 1 = \log_2 3&lt;/math&gt;
+
+or
+
+: &lt;math&gt;x = \log_2 3 + 1.&lt;/math&gt;
+
+A logarithmic equation is an equation of the form &lt;math&gt;log_a(x) = b&lt;/math&gt; for &lt;math&gt;a &gt; 0&lt;/math&gt;, which has solution
+
+: &lt;math&gt;X = a^b.&lt;/math&gt;
+
+For example, if
+
+: &lt;math&gt;4\log_5(x - 3) - 2 = 6&lt;/math&gt;
+
+then, by adding 2 to both sides of the equation, followed by dividing both sides by 4, we get
+
+: &lt;math&gt;\log_5(x - 3) = 2&lt;/math&gt;
+
+whence
+
+: &lt;math&gt;x - 3 = 5^2 = 25&lt;/math&gt;
+
+from which we obtain
+
+: &lt;math&gt;x = 28.&lt;/math&gt;
+
+=== Radical equations ===
+{{Image frame|align=right|width=150|caption=Radical equation showing two ways to represent the same expression. The triple bar means the equation is true for all values of ''x''|content=&lt;math&gt;\overset{}{\underset{}{\sqrt[2]{x^3} \equiv x^{\frac 3 2} } }&lt;/math&gt;}}
+A radical equation is one that includes a radical sign, which includes [[square root]]s, &lt;math&gt;\sqrt{x},&lt;/math&gt;  [[cube root]]s, &lt;math&gt;\sqrt[3]{x}&lt;/math&gt;, and [[nth root|''n''th roots]], &lt;math&gt;\sqrt[n]{x}&lt;/math&gt;. Recall that an ''n''th root can be rewritten in exponential format, so that &lt;math&gt;\sqrt[n]{x}&lt;/math&gt; is equivalent to &lt;math&gt;x^{\frac{1}{n}}&lt;/math&gt;. Combined with regular exponents (powers), then  &lt;math&gt;\sqrt[2]{x^3}&lt;/math&gt; (the square root of {{mvar|x}} cubed), can be rewritten as &lt;math&gt;x^{\frac{3}{2}}&lt;/math&gt;.&lt;ref&gt;John C. Peterson, ''Technical Mathematics With Calculus'', Publisher Cengage Learning, 2003, {{ISBN|0766861899}}, 9780766861893, 1613 pages, [https://books.google.com/books?id=PGuSDjHvircC&amp;lpg=PA525&amp;ots=NKrt__3KKE&amp;dq=%22%20radical%20equation%22&amp;pg=PA525#v=onepage&amp;q=%22%20radical%20equation%22&amp;f=false page 525]&lt;/ref&gt; So a common form of a radical equation is &lt;math&gt; \sqrt[n]{x^m}=a&lt;/math&gt; (equivalent to &lt;math&gt; x^\frac{m}{n}=a&lt;/math&gt;) where {{mvar|m}} and {{mvar|n}} are [[integer]]s. It has [[real number|real]] solution(s):
+{| class=&quot;wikitable&quot; style=&quot;text-align:center&quot;
+|- style=&quot;vertical-align:top&quot;
+!{{mvar|n}} is odd
+!{{mvar|n}} is even&lt;br&gt;and &lt;math&gt;a \ge 0&lt;/math&gt;
+!{{mvar|n}} '''and''' {{mvar|m}} are '''even'''&lt;br&gt;'''and''' &lt;math&gt;a&lt;0&lt;/math&gt;
+!{{mvar|n}} '''is even,''' {{mvar|m}} '''is odd''', '''and''' &lt;math&gt;a&lt;0&lt;/math&gt;
+|-
+|&lt;math&gt;x = \sqrt[n]{a^m}&lt;/math&gt;
+
+equivalently
+
+:&lt;math&gt;x = \left(\sqrt[n]a\right)^m&lt;/math&gt;
+|&lt;math&gt;x = \pm \sqrt[n]{a^m}&lt;/math&gt;
+
+equivalently
+
+:&lt;math&gt;x = \pm \left(\sqrt[n]a\right)^m&lt;/math&gt;
+
+|&lt;math&gt;x=\pm \sqrt[n]{a^m}&lt;/math&gt;
+|no real solution
+|}
+
+For example, if:
+
+:&lt;math&gt;(x + 5)^{2/3} = 4&lt;/math&gt;
+
+then
+
+: &lt;math&gt;\begin{align}
+x + 5 &amp; = \pm (\sqrt{4})^3,\\
+x + 5 &amp; = \pm 8,\\
+x &amp;  = -5 \pm 8,
+\end{align}&lt;/math&gt;
+and thus 
+:&lt;math&gt;x = 3 \quad \text{or}\quad x = -13&lt;/math&gt;
+
+=== System of linear equations ===
+{{Main|System of linear equations}}
+
+There are different methods to solve a system of linear equations with two variables.
+
+==== Elimination method ====
+[[File:Intersecting Lines.svg|thumb|right|The solution set for the equations &lt;math&gt;x - y = -1&lt;/math&gt; and &lt;math&gt;3x + y = 9&lt;/math&gt; is the single point (2,&amp;nbsp;3).]]
+
+An example of solving a system of linear equations is by using the elimination method:
+
+: &lt;math&gt;\begin{cases}4x + 2y&amp;= 14 \\
+2x - y&amp;= 1.\end{cases} &lt;/math&gt;
+
+Multiplying the terms in the second equation by 2:
+
+: &lt;math&gt;4x + 2y = 14 &lt;/math&gt;
+: &lt;math&gt;4x - 2y = 2. &lt;/math&gt;
+
+Adding the two equations together to get:
+
+: &lt;math&gt;8x = 16 &lt;/math&gt;
+
+which simplifies to
+
+: &lt;math&gt;x = 2. &lt;/math&gt;
+
+Since the fact that &lt;math&gt;x = 2&lt;/math&gt; is known, it is then possible to deduce that &lt;math&gt;y = 3&lt;/math&gt;  by either of the original two equations (by using ''2'' instead of {{mvar|x}} ) The full solution to this problem is then
+
+: &lt;math&gt;\begin{cases} x = 2 \\ y = 3. \end{cases}&lt;/math&gt;
+
+This is not the only way to solve this specific system; {{mvar|y}} could have been resolved before {{mvar|x}}.
+
+==== Substitution method ====
+
+Another way of solving the same system of linear equations is by substitution.
+
+: &lt;math&gt;\begin{cases}4x + 2y &amp;= 14
+\\ 2x - y &amp;= 1.\end{cases} &lt;/math&gt;
+
+An equivalent for {{mvar|y}} can be deduced by using one of the two equations. Using the second equation:
+
+: &lt;math&gt;2x - y = 1 &lt;/math&gt;
+
+Subtracting &lt;math&gt;2x&lt;/math&gt; from each side of the equation:
+
+: &lt;math&gt;\begin{align}2x - 2x - y &amp; = 1 - 2x  \\
+- y &amp; = 1 - 2x
+\end{align}&lt;/math&gt;
+
+and multiplying by −1:
+
+: &lt;math&gt; y = 2x - 1. &lt;/math&gt;
+
+Using this {{mvar|y}} value in the first equation in the original system:
+
+: &lt;math&gt;\begin{align}4x + 2(2x - 1) &amp;= 14\\
+4x + 4x - 2 &amp;= 14 \\
+8x - 2 &amp;= 14 \end{align}&lt;/math&gt;
+
+Adding ''2'' on each side of the equation:
+
+: &lt;math&gt;\begin{align}8x - 2 + 2 &amp;= 14 + 2 \\
+8x &amp;= 16 \end{align}&lt;/math&gt;
+
+which simplifies to
+
+: &lt;math&gt;x = 2 &lt;/math&gt;
+
+Using this value in one of the equations, the same solution as in the previous method is obtained.
+
+: &lt;math&gt;\begin{cases} x = 2 \\ y = 3. \end{cases}&lt;/math&gt;
+
+This is not the only way to solve this specific system; in this case as well, {{mvar|y}} could have been solved before {{mvar|x}}.
+
+=== Other types of systems of linear equations ===
+
+==== Inconsistent systems ====
+[[File:Parallel Lines.svg|thumb|right|The equations &lt;math&gt;3x + 2y = 6&lt;/math&gt; and &lt;math&gt;3x + 2y = 12&lt;/math&gt; are parallel and cannot intersect, and is unsolvable.]]
+[[File:Quadratic-linear-equations.svg|thumb|right|Plot of a quadratic equation (red) and a linear equation (blue) that do not intersect, and consequently for which there is no common solution.]]
+
+In the above example, a solution exists. However, there are also systems of equations which do not have any solution. Such a system is called [[inconsistent system|inconsistent]]. An obvious example is
+
+: &lt;math&gt;\begin{cases}\begin{align} x + y &amp;= 1 \\
+0x + 0y &amp;= 2\,. \end{align} \end{cases}&lt;/math&gt;
+
+As 0≠2, the second equation in the system has no solution. Therefore, the system has no solution.
+However, not all inconsistent systems are recognized at first sight. As an example, consider the system 
+: &lt;math&gt;\begin{cases}\begin{align}4x + 2y &amp;= 12 \\
+-2x - y &amp;= -4\,. \end{align}\end{cases}&lt;/math&gt;
+
+Multiplying by 2 both sides of the second equation, and adding it to the first one results in
+: &lt;math&gt;0x+0y = 4 \,,&lt;/math&gt;
+which clearly has no solution.
+
+==== Undetermined systems ====
+
+There are also systems which have infinitely many solutions, in contrast to a system with a unique solution (meaning, a unique pair of values for {{mvar|x}} and {{mvar|y}}) For example:
+
+: &lt;math&gt;\begin{cases}\begin{align}4x + 2y &amp; = 12 \\
+-2x - y &amp; = -6 \end{align}\end{cases}&lt;/math&gt;
+
+Isolating {{mvar|y}} in the second equation:
+
+: &lt;math&gt;y = -2x + 6 &lt;/math&gt;
+
+And using this value in the first equation in the system:
+
+: &lt;math&gt;\begin{align}4x + 2(-2x + 6) = 12 \\
+4x - 4x + 12 = 12 \\
+12 = 12 \end{align}&lt;/math&gt;
+
+The equality is true, but it does not provide a value for {{mvar|x}}. Indeed, one can easily verify (by just filling in some values of {{mvar|x}}) that for any {{mvar|x}} there is a solution as long as &lt;math&gt;y = -2x + 6&lt;/math&gt;. There is an infinite number of solutions for this system.
+
+==== Over- and underdetermined systems ====
+
+Systems with more variables than the number of linear equations are called [[underdetermined system|underdetermined]]. Such a system, if it has any solutions, does not have a unique one but rather an infinitude of them. An example of such a system is
+
+: &lt;math&gt;\begin{cases}\begin{align}x + 2y &amp; = 10\\
+y - z  &amp; = 2 .\end{align}\end{cases}&lt;/math&gt;
+
+When trying to solve it, one is led to express some variables as functions of the other ones if any solutions exist, but cannot express ''all'' solutions [[Number|numerically]] because there are an infinite number of them if there are any.
+
+A system with a higher number of equations than variables is called [[overdetermined system|overdetermined]]. If an overdetermined system has any solutions, necessarily some equations are [[linear combination]]s of the others.
+
+== See also ==
+* [[History of elementary algebra]]
+* [[Binary operation]]
+* [[Gaussian elimination]]
+* [[Mathematics education]]
+* [[Number line]]
+* [[Polynomial]]
+* [[Cancelling out]]
+* [[Tarski's high school algebra problem]]
+
+== References ==
+*[[Leonhard Euler]],  '' [[Elements of Algebra]]'', 1770.  English translation [[Tarquin Press]], 2007, {{ISBN|978-1-899618-79-8}}, also online digitized editions&lt;ref&gt;[http://web.mat.bham.ac.uk/C.J.Sangwin/euler/ Euler's Elements of Algebra&lt;!-- Bot generated title --&gt;] {{webarchive|url=https://web.archive.org/web/20110413234352/http://web.mat.bham.ac.uk/C.J.Sangwin/euler/ |date=2011-04-13 }}&lt;/ref&gt; 2006,&lt;ref&gt;{{cite web|url=https://books.google.com/books?id=X8yv0sj4_1YC&amp;dq=euler+elements&amp;psp=1|title=Elements of Algebra|first1=Leonhard|last1=Euler|first2=John|last2=Hewlett|first3=Francis|last3=Horner|first4=Jean|last4=Bernoulli|first5=Joseph Louis|last5=Lagrange|date=4 May 2018|publisher=Longman, Orme|accessdate=4 May 2018|via=Google Books}}&lt;/ref&gt; 1822.
+*Charles Smith, ''[http://digital.library.cornell.edu/cgi/t/text/text-idx?c=math;idno=smit025 A Treatise on Algebra]'', in [http://historical.library.cornell.edu/math Cornell University Library Historical Math Monographs].
+*Redden, John. [http://catalog.flatworldknowledge.com/bookhub/reader/128?e=fwk-redden-ch01 ''Elementary Algebra'']. Flat World Knowledge, 2011
+{{reflist}}
+
+==External links==
+*{{Commonscat-inline}}
+
+{{Algebra}}
+{{Areas of mathematics | state=collapsed}}
+
+{{DEFAULTSORT:Elementary Algebra}}
+[[Category:Elementary algebra| ]]
+[[Category:Algebra]]</text>
+      <sha1>4d9cbdobe9ro372ugxr77tmuidk4h7q</sha1>
+    </revision>
+  </page>

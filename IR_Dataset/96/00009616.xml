@@ -1,0 +1,188 @@
+  <page>
+    <title>Evolutionarily stable strategy</title>
+    <ns>0</ns>
+    <id>9616</id>
+    <revision>
+      <id>941663551</id>
+      <parentid>941662730</parentid>
+      <timestamp>2020-02-19T23:40:46Z</timestamp>
+      <contributor>
+        <username>Kusma</username>
+        <id>145855</id>
+      </contributor>
+      <minor />
+      <comment>Reverted edits by [[Special:Contribs/끼세런스증가|끼세런스증가]] ([[User talk:끼세런스증가|talk]]) to last version by 2601:184:4A7F:9D9B:9CC3:D81:C995:C2E7</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{Infobox equilibrium
+|name          = Evolutionarily stable strategy
+|subsetof      = [[Nash equilibrium]]
+|supersetof    = [[Stochastically stable equilibrium]], Stable [[Strong Nash equilibrium]]
+|intersectwith = [[Subgame perfect equilibrium]], [[Trembling hand perfect equilibrium]], [[Perfect Bayesian equilibrium]]|
+|discoverer    = [[John Maynard Smith]] and [[George R. Price]]
+|example       = [[Hawk-dove]]
+|usedfor       = [[Biology|Biological modeling]] and [[Evolutionary game theory]]
+}}
+
+An '''evolutionarily stable strategy''' ('''ESS''') is a [[strategy (game theory)|strategy]] (or set of strategies) which, if adopted by a [[population genetics|population]] in a given environment, is impenetrable, meaning that it cannot be invaded by any alternative strategy (or strategies) that are initially rare. It is relevant in [[game theory]], [[behavioural ecology]], and [[evolutionary psychology]]. An ESS is an [[equilibrium refinement]] of the [[Nash equilibrium]]. It is a Nash equilibrium that is &quot;[[evolution]]arily&quot; [[Ecological stability|stable]]: once it is [[Fixation (population genetics)|fixed]] in a population, [[natural selection]] alone is sufficient to prevent alternative ([[mutant]]) strategies from invading successfully. The theory is not intended to deal with the possibility of gross external changes to the environment that bring new selective forces to bear.
+
+First published as a specific term in the 1972 book by John Maynard Smith,&lt;ref name=&quot;OEJMS&quot;&gt;{{cite book |author=Maynard Smith, J. |authorlink=John Maynard Smith |chapter=Game Theory and The Evolution of Fighting |title=On Evolution |publisher=Edinburgh University Press |year=1972 |isbn=0-85224-223-9 }}&lt;/ref&gt; the ESS is widely used in [[behavioural ecology]] and [[economics]], and has been used in [[anthropology]], [[evolutionary psychology]], [[philosophy]], and [[political science]].
+
+==History==
+Evolutionarily stable strategies were defined and introduced by [[John Maynard Smith]] and [[George R. Price]] in a 1973 ''[[Nature (journal)|Nature]]'' paper.&lt;ref name=&quot;JMSandP73&quot;&gt;{{cite journal |doi=10.1038/246015a0 |author1=Maynard Smith, J. |authorlink1=John Maynard Smith |author2=Price, G.R. |authorlink2=George R. Price |title=The logic of animal conflict |journal=Nature |volume=246 |issue=5427 |pages=15–8 |year=1973 |bibcode=1973Natur.246...15S}}&lt;/ref&gt; Such was the time taken in peer-reviewing the paper for ''Nature'' that this was preceded by a 1972 essay by Maynard Smith in a book of essays titled ''On Evolution''.&lt;ref name=&quot;OEJMS&quot;/&gt;  The 1972 essay is sometimes cited instead of the 1973 paper, but university libraries are much more likely to have copies of ''Nature''. Papers in ''Nature'' are usually short; in 1974, Maynard Smith published a longer paper in the ''[[Journal of Theoretical Biology]]''.&lt;ref&gt;{{cite journal |doi=10.1016/0022-5193(74)90110-6 |author=Maynard Smith, J. |title=The Theory of Games and the Evolution of Animal Conflicts |journal=Journal of Theoretical Biology |volume=47 |issue=1 |pages=209–21 |year=1974 |pmid=4459582 |url=http://www.dklevine.com/archive/refs4448.pdf }}&lt;/ref&gt; Maynard Smith explains further in his 1982 book ''[[Evolution and the Theory of Games]]''.&lt;ref name=&quot;JMS82&quot;&gt;{{cite book |author=Maynard Smith, John |title=Evolution and the Theory of Games |year=1982 |isbn=0-521-28884-3 |title-link=Evolution and the Theory of Games }}&lt;/ref&gt; Sometimes these are cited instead. In fact, the ESS has become so central to game theory that often no citation is given, as the reader is assumed to be familiar with it.
+
+Maynard Smith mathematically formalised a verbal argument made by Price, which he read while peer-reviewing Price's paper. When Maynard Smith realized that the somewhat disorganised Price was not ready to revise his article for publication, he offered to add Price as co-author.
+
+The concept was derived from [[Robert MacArthur|R. H. MacArthur]]&lt;ref&gt;{{cite book |author=MacArthur, R. H. |authorlink=Robert MacArthur |editor=Waterman T. |editor2=Horowitz H. |title=Theoretical and mathematical biology |publisher=Blaisdell |location=New York |year=1965 }}&lt;/ref&gt; and [[W. D. Hamilton]]'s&lt;ref&gt;{{cite journal |doi=10.1126/science.156.3774.477 |author=Hamilton, W.D. |authorlink=W. D. Hamilton |title=Extraordinary sex ratios |journal=Science |volume=156 |issue=3774 |pages=477–88 |year=1967 |pmid=6021675 |jstor=1721222|bibcode = 1967Sci...156..477H }}&lt;/ref&gt; work on [[sex ratio]]s, derived from [[Fisher's principle]], especially Hamilton's (1967) concept of an [[unbeatable strategy]].  Maynard Smith was jointly awarded the 1999 [[Crafoord Prize]] for his development of the concept of evolutionarily stable strategies and the application of game theory to the evolution of behaviour.&lt;ref&gt;[http://www.crafoordprize.se/press/arkivpressreleases/thecrafoordprize1999.5.32d4db7210df50fec2d800018201.html Press release] for the 1999 Crafoord Prize&lt;/ref&gt;
+
+Uses of ESS:
+* The ESS was a major element used to analyze evolution in [[Richard Dawkins]]' bestselling 1976 book ''[[The Selfish Gene]]''.
+* The ESS was first used in the [[social sciences]] by [[Robert Axelrod]] in his 1984 book ''[[The Evolution of Cooperation]]''.  Since then, it has been widely used in the social sciences, including [[anthropology]], [[economics]], [[philosophy]], and [[political science]].
+* In the social sciences, the primary interest is not in an ESS as the end of [[biological]] evolution, but as an end point in [[cultural evolution]] or individual learning.&lt;ref name=&quot;AlexanderSEP&quot;&gt;{{cite web |url=http://plato.stanford.edu/entries/game-evolutionary/ |title=Evolutionary Game Theory |accessdate=31 August 2007 |last1=Alexander|first1=Jason McKenzie |date=23 May 2003 |encyclopedia=Stanford Encyclopedia of Philosophy}}&lt;/ref&gt;
+* In [[evolutionary psychology]], ESS is used primarily as a model for [[human evolution|human biological evolution]].
+
+==Motivation==
+
+The [[Nash equilibrium]] is the traditional [[solution concept]] in [[game theory]]. It depends on the cognitive abilities of the players. It is assumed that players are aware of the [[extensive form|structure of the game]] and consciously try to predict the [[Move (game theory)|moves]] of their opponents and to maximize their own [[Payoff (game theory)|payoffs]]. In addition, it is presumed that all the players know this (see [[common knowledge (logic)|common knowledge]]).  These assumptions are then used to explain why players choose Nash equilibrium strategies.
+
+Evolutionarily stable strategies are motivated entirely differently.  Here, it is presumed that the players' strategies are biologically encoded and [[heritable]].  Individuals have no control over their strategy and need not be aware of the game.  They reproduce and are subject to the forces of [[natural selection]], with the payoffs of the game representing reproductive success (biological [[fitness (biology)|fitness]]). It is imagined that alternative strategies of the game occasionally occur, via a process like [[mutation]]. To be an ESS, a strategy must be resistant to these alternatives.
+
+Given the radically different motivating assumptions, it may come as a surprise that ESSes and Nash equilibria often coincide. In fact, every ESS corresponds to a Nash equilibrium, but some Nash equilibria are not ESSes.
+
+== Nash equilibrium ==
+&lt;!--
+{{Payoff matrix | Name = Harm thy neighbor
+                | 2L = A     | 2R = B    |
+1U = A          | UL = 2, 2  | UR = 1, 2 |
+1D = B          | DL = 2, 1  | DR = 2, 2 }}
+--&gt;
+
+An ESS is a [[solution concept|refined]] or modified form of a [[Nash equilibrium]]. (See the next section for examples which contrast the two.) In a Nash equilibrium, if all players adopt their respective parts, no player can ''benefit'' by switching to any alternative strategy. In a two player game, it is a strategy pair. Let E(''S'',''T'') represent the payoff for playing strategy ''S'' against strategy ''T''.  The strategy pair (''S'', ''S'') is a Nash equilibrium in a two player game if and only if this is true for both players and for all ''T''≠''S'':
+:E(''S'',''S'') ≥ E(''T'',''S'')
+
+In this definition, strategy ''T'' can be a neutral alternative to ''S'' (scoring equally well, but not better). 
+&lt;!--For example, in ''Harm thy neighbour'', (''A'', ''A'') is a Nash equilibrium because one cannot do ''better'' by switching to ''B''. **will move this to &quot;comparison&quot; section, trying to avoid mixing A&amp;B and S&amp;T strategies in same paragraph --&gt;
+A Nash equilibrium is presumed to be stable even if ''T'' scores equally, on the assumption that there is no long-term incentive for players to adopt ''T'' instead of ''S''.  This fact represents the point of departure of the ESS.
+
+[[John Maynard Smith|Maynard Smith]] and [[George R. Price|Price]]&lt;ref name=&quot;JMSandP73&quot;/&gt; specify two conditions for a strategy ''S'' to be an ESS.  For all ''T''≠''S'', either
+# E(''S'',''S'') &gt; E(''T'',''S''), '''or'''
+# E(''S'',''S'') = E(''T'',''S'') and E(''S'',''T'') &gt; E(''T'',''T'')
+
+The first condition is sometimes called a ''strict'' Nash equilibrium.&lt;ref&gt;{{cite journal |doi=10.1007/BF01737572 |author=Harsanyi, J |authorlink=John Harsanyi |title=Oddness of the number of equilibrium points: a new proof |journal=Int. J. Game Theory |volume=2 |issue=1 |pages=235–50 |year=1973 }}&lt;/ref&gt; The second is sometimes called &quot;Maynard Smith's second condition&quot;. The second condition means that although strategy ''T'' is neutral with respect to the payoff against strategy ''S'', the population of players who continue to play strategy ''S'' has an advantage when playing against ''T''.
+
+There is also an alternative, stronger definition of ESS, due to Thomas.&lt;ref name=&quot;Thomas85&quot;&gt;{{cite journal |author=Thomas, B. |title=On evolutionarily stable sets |journal=J. Math. Biology |volume=22 |pages=105–115 |year=1985 |doi=10.1007/bf00276549}}&lt;/ref&gt;  This places a different emphasis on the role of the Nash equilibrium concept in the ESS concept.  Following the terminology given in the first definition above, this definition requires that for all ''T''≠''S''
+
+# E(''S'',''S'') ≥ E(''T'',''S''), '''and'''
+# E(''S'',''T'') &gt; E(''T'',''T'')
+
+In this formulation, the first condition specifies that the strategy is a Nash equilibrium, and the second specifies that Maynard Smith's second condition is met. Note that the two definitions are not precisely equivalent: for example, each pure strategy in the coordination game below is an ESS by the first definition but not the second.
+
+In words, this definition looks like this: The payoff of the first player when both players play strategy S is higher than (or equal to) the payoff of the first player when he changes to another strategy T and the second player keeps his strategy S  ''and'' the payoff of the first player when only his opponent changes his strategy to T is higher than his payoff in case that both of players change their strategies to T.
+
+This formulation more clearly highlights the role of the Nash equilibrium condition in the ESS. It also allows for a natural definition of related concepts such as a [[weak ESS]] or an [[evolutionarily stable set]].&lt;ref name=&quot;Thomas85&quot;/&gt;
+
+===Examples of differences between Nash equilibria and ESSes===
+
+{|align=block
+|-
+|{{Payoff matrix | Name =  Prisoner's Dilemma
+                | 2L =  Cooperate    | 2R = Defect  |
+1U =  Cooperate | UL = 3, 3       | UR = 1, 4       |
+1D =  Defect   | DL = 4, 1       | DR = 2, 2       }}
+|{{Payoff matrix | Name =  Harm thy neighbor
+                | 2L = A     | 2R = B    |
+1U = A          | UL = 2, 2  | UR = 1, 2 |
+1D = B          | DL = 2, 1  | DR = 2, 2 }}
+|}
+
+In most simple games, the ESSes and Nash equilibria coincide perfectly.  For instance, in the [[prisoner's dilemma]] there is only one Nash equilibrium, and its strategy (''Defect'') is also an ESS.
+
+Some games may have Nash equilibria that are not ESSes. For example, in [[harm thy neighbor]] (whose payoff matrix is shown here) both (''A'', ''A'') and (''B'', ''B'') are Nash equilibria, since players cannot do better by switching away from either.  However, only ''B'' is an ESS (and a strong Nash). ''A'' is not an ESS, so ''B'' can neutrally invade a population of ''A'' strategists and predominate, because ''B'' scores higher against ''B'' than ''A'' does against ''B''.  This dynamic is captured by Maynard Smith's second condition, since E(''A'', ''A'') = E(''B'', ''A''), but it is not the case that E(''A'',''B'') &gt; E(''B'',''B'').
+
+{|align=block style=&quot;clear: right&quot;
+|-
+|{{Payoff matrix | Name = Harm everyone
+                | 2L = C     | 2R = D    |
+1U = C          | UL = 2, 2  | UR = 1, 2 |
+1D = D          | DL = 2, 1  | DR = 0, 0 }}
+|{{Payoff matrix | Name = Chicken
+                | 2L = Swerve     | 2R = Stay       |
+1U = Swerve     | UL = 0,0        | UR = −1,+1      |
+1D = Stay       | DL = +1,−1      | DR = −20,−20    }}
+|}
+
+Nash equilibria with equally scoring alternatives can be ESSes.  For example, in the game ''Harm everyone'', ''C'' is an ESS because it satisfies Maynard Smith's second condition. ''D'' strategists may temporarily invade a population of ''C'' strategists by scoring equally well against ''C'', but they pay a price when they begin to play against each other; ''C'' scores better against ''D'' than does ''D''.  So here although E(''C'', ''C'') = E(''D'', ''C''), it is also the case that E(''C'',''D'') &gt; E(''D'',''D'').  As a result, ''C'' is an ESS.
+
+Even if a game has pure strategy Nash equilibria, it might be that none of those pure strategies are ESS. Consider the [[Chicken (game)|Game of chicken]].  There are two pure strategy Nash equilibria in this game (''Swerve'', ''Stay'') and (''Stay'', ''Swerve''). However, in the absence of an [[uncorrelated asymmetry]], neither ''Swerve'' nor ''Stay'' are ESSes. There is a third Nash equilibrium, a [[mixed strategy]] which is an ESS for this game (see [[Chicken (game)|Hawk-dove game]] and [[Best response]] for explanation).
+
+This last example points to an important difference between Nash equilibria and ESS.  Nash equilibria are defined on ''strategy sets'' (a specification of a strategy for each player), while ESS are defined in terms of strategies themselves.  The equilibria defined by ESS must always be [[Symmetric equilibrium|symmetric]], and thus have fewer equilibrium points.
+
+== Vs. evolutionarily stable state ==
+In population biology, the two concepts of an ''evolutionarily stable strategy'' (ESS) and an ''[[evolutionarily stable state]]'' are closely linked but describe different situations.
+
+In an evolutionarily stable ''strategy,'' if all the members of a population adopt it, no mutant strategy can invade.&lt;ref name=&quot;JMS82&quot;/&gt; Once virtually all members of the population use this strategy, there is no 'rational' alternative. ESS is part of classical [[game theory]].
+
+In an evolutionarily stable ''state,'' a population's genetic composition is restored by selection after a disturbance, if the disturbance is not too large. An evolutionarily stable state is a dynamic property of a population that returns to using a strategy, or mix of strategies, if it is perturbed from that initial state. It is part of [[population genetics]], [[dynamical system]], or [[evolutionary game theory]]. This is now called convergent stability.&lt;ref&gt;{{Cite journal|last1=Apaloo|first1=J. |last2=Brown|first2=J. S. |last3=Vincent|first3=T. L. |date=2009 |title=Evolutionary game theory: ESS, convergence stability, and NIS |url=http://www.evolutionary-ecology.com/abstracts/v11/2445.html |journal=Evolutionary Ecology Research |volume=11 |pages=489–515}}&lt;/ref&gt;
+
+B. Thomas (1984) applies the term ESS to an individual strategy which may be mixed, and evolutionarily stable population state to a population mixture of pure strategies which may be formally equivalent to the mixed ESS.&lt;ref&gt;{{cite journal |doi=10.1016/0040-5809(84)90023-6 |author=Thomas, B. |title=Evolutionary stability: states and strategies |journal=Theor. Popul. Biol. |volume=26 |issue=1 |pages=49–67 |year=1984 }}&lt;/ref&gt;
+
+Whether a population is evolutionarily stable does not relate to its genetic diversity: it can be genetically monomorphic or [[Polymorphism (biology)|polymorphic]].&lt;ref name=&quot;JMS82&quot;/&gt;
+
+== Stochastic ESS ==
+In the classic definition of an ESS, no mutant strategy can invade. In finite populations, any mutant could in principle invade, albeit at low probability, implying that no ESS can exist. In an infinite population, an ESS can instead be defined as a strategy which, should it become invaded by a new mutant strategy with probability p, would be able to counterinvade from a single starting individual with probability &gt;p, as illustrated by the evolution of [[Bet-hedging (biology)|bet-hedging]].&lt;ref&gt;{{cite journal |last=King |first=Oliver D. |author2=Masel, Joanna |author2link=Joanna Masel |title=The evolution of bet-hedging adaptations to rare scenarios |journal=Theoretical Population Biology|date=1 December 2007 |volume=72 |issue=4 |pages=560–575 |doi=10.1016/j.tpb.2007.08.006 |pmid=17915273 |pmc=2118055}}&lt;/ref&gt;
+
+== Prisoner's dilemma ==
+{{Payoff matrix | Name = Prisoner's Dilemma
+                | 2L = Cooperate  | 2R = Defect     |
+1U = Cooperate  | UL = 3, 3       | UR = 1, 4       |
+1D = Defect     | DL = 4, 1       | DR = 2, 2       }}
+
+A common model of [[altruism]] and social cooperation is the [[Prisoner's dilemma]].  Here a group of players would collectively be better off if they could play ''Cooperate'', but since ''Defect'' fares better each individual player has an incentive to play ''Defect''.  One solution to this problem is to introduce the possibility of retaliation by having individuals play the game repeatedly against the same player.  In the so-called ''[[repeated game|iterated]]'' Prisoner's dilemma, the same two individuals play the prisoner's dilemma over and over.  While the Prisoner's dilemma has only two strategies (''Cooperate'' and ''Defect''), the iterated Prisoner's dilemma has a huge number of possible strategies.  Since an individual can have different contingency plan for each history and the game may be repeated an indefinite number of times, there may in fact be an infinite number of such contingency plans.
+
+Three simple contingency plans which have received substantial attention are ''Always Defect'', ''Always Cooperate'', and ''[[Tit for Tat]]''.  The first two strategies do the same thing regardless of the other player's actions, while the latter responds on the next round by doing what was done to it on the previous round—it responds to ''Cooperate'' with ''Cooperate'' and ''Defect'' with ''Defect''.
+
+If the entire population plays ''Tit-for-Tat'' and a mutant arises who plays ''Always Defect'', ''Tit-for-Tat'' will outperform ''Always Defect''.  If the population of the mutant becomes too large — the percentage of the mutant will be kept small. ''Tit for Tat'' is therefore an ESS, ''with respect to '''only''' these two strategies''.  On the other hand, an island of ''Always Defect'' players will be stable against the invasion of a few ''Tit-for-Tat'' players, but not against a large number of them.&lt;ref&gt;{{cite book |author=Axelrod, Robert |authorlink=Robert Axelrod |title=The Evolution of Cooperation |year=1984 |isbn=0-465-02121-2 |title-link=The Evolution of Cooperation }}&lt;/ref&gt;  If we introduce ''Always Cooperate'', a population of ''Tit-for-Tat'' is no longer an ESS.  Since a population of ''Tit-for-Tat'' players always cooperates, the strategy ''Always Cooperate'' behaves identically in this population.  As a result, a mutant who plays ''Always Cooperate'' will not be eliminated. However, even though a population of ''Always Cooperate'' and ''Tit-for-Tat'' can coexist, if there is a small percentage of the population that is ''Always Defect'', the selective pressure is against ''Always Cooperate'', and in favour of ''Tit-for-Tat''. This is due to the lower payoffs of cooperating than those of defecting in case the opponent defects.
+
+This demonstrates the difficulties in applying the formal definition of an ESS to games with large strategy spaces, and has motivated some to consider alternatives.
+
+== Human behavior ==
+The fields of [[sociobiology]] and [[evolutionary psychology]] attempt to explain animal and human behavior and social structures, largely in terms of evolutionarily stable strategies. [[Psychopathy#Sociopathy|Sociopathy]] (chronic antisocial or criminal behavior) may be a result of a combination of two such strategies.&lt;ref&gt;{{cite journal |doi=10.1017/S0140525X00039595 |author=Mealey, L. |title=The sociobiology of sociopathy: An integrated evolutionary model |journal=Behavioral and Brain Sciences |volume=18 |issue=3 |pages=523–99 |year=1995 }}&lt;/ref&gt;
+
+Evolutionarily stable strategies were originally considered for biological evolution, but they can apply to other contexts. In fact, there are stable states for a large class of [[adaptive dynamics]]. As a result, they can be used to explain human behaviours that lack any genetic influences.
+
+==See also==
+*[[Antipredator adaptation]]
+*[[Behavioral ecology]]
+*[[Evolutionary psychology]]
+*[[Fitness landscape]]
+*[[Chicken (game)|Hawk–dove game]]
+*[[Koinophilia]]
+*[[Sociobiology]]
+*[[War of attrition (game)]]
+
+== References ==
+{{Reflist}}
+
+==Further reading==
+* {{Cite book | last1=Weibull | first1=Jörgen | title=Evolutionary game theory | publisher=[[MIT Press]] | isbn= 978-0-262-73121-8| year=1997 }} Classic reference textbook. 
+* {{cite journal | doi = 10.1016/0040-5809(87)90029-3 | last1 = Hines | first1 = W. G. S. | year = 1987 | title = Evolutionary stable strategies: a review of basic theory | url = | journal = Theoretical Population Biology | volume = 31 | issue = 2| pages = 195–272 | pmid = 3296292 }}
+* {{Cite book | last2=Shoham | first2=Yoav | last1=Leyton-Brown | first1=Kevin | title=Essentials of Game Theory: A Concise, Multidisciplinary Introduction  | publisher=Morgan &amp; Claypool Publishers | isbn=978-1-59829-593-1 | url=http://www.gtessentials.org | year=2008 | location=San Rafael, CA | postscript=&lt;!-- Bot inserted parameter. Either remove it; or change its value to &quot;.&quot; for the cite to end in a &quot;.&quot;, as necessary. --&gt;}}. An 88-page mathematical introduction; see Section 3.8. [http://www.morganclaypool.com/doi/abs/10.2200/S00108ED1V01Y200802AIM003 Free online] at many universities.
+* [[Geoff Parker|Parker, G. A.]] (1984) Evolutionary stable strategies. In ''Behavioural Ecology: an Evolutionary Approach'' (2nd ed) [[John Krebs|Krebs, J. R.]] &amp; Davies N.B., eds. pp 30–61. Blackwell, Oxford.
+* {{Cite book | last1=Shoham | first1=Yoav | last2=Leyton-Brown | first2=Kevin | title=Multiagent Systems: Algorithmic, Game-Theoretic, and Logical Foundations | publisher=[[Cambridge University Press]] | isbn=978-0-521-89943-7 | url=http://www.masfoundations.org | year=2009 | location=New York | postscript=&lt;!-- Bot inserted parameter. Either remove it; or change its value to &quot;.&quot; for the cite to end in a &quot;.&quot;, as necessary. --&gt;}}. A comprehensive reference from a computational perspective; see Section 7.7. [http://www.masfoundations.org/download.html Downloadable free online].
+* [[John Maynard Smith|Maynard Smith, John]]. (1982) ''[[Evolution and the Theory of Games]]''. {{ISBN|0-521-28884-3}}. Classic reference.
+
+==External links==
+* [http://www.animalbehavioronline.com/ess.html Evolutionarily Stable Strategies] at Animal Behavior: An Online Textbook by Michael D. Breed.
+* [https://web.archive.org/web/20060906092853/http://www.holycross.edu/departments/biology/kprestwi/behavior/ESS/ESS_index_frmset.html Game Theory and Evolutionarily Stable Strategies], Kenneth N. Prestwich's site at College of the Holy Cross.
+*[http://knol.google.com/k/klaus-rohde/evolutionarily-stable-strategies-and/xk923bc3gp4/50# Evolutionarily stable strategies knol]{{Dead link|date=December 2019 |bot=InternetArchiveBot |fix-attempted=yes }}
+
+{{Game theory}}
+{{Evolutionary psychology}}
+
+{{DEFAULTSORT:Evolutionarily Stable Strategy}}
+[[Category:Articles with inconsistent citation formats]]
+[[Category:Game theory equilibrium concepts]]
+[[Category:Evolutionary game theory]]</text>
+      <sha1>f3hi0pmvz8qhnpr3567r80try0fk7lw</sha1>
+    </revision>
+  </page>

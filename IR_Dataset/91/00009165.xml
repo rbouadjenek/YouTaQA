@@ -1,0 +1,70 @@
+  <page>
+    <title>Directed set</title>
+    <ns>0</ns>
+    <id>9165</id>
+    <revision>
+      <id>926346596</id>
+      <parentid>907752433</parentid>
+      <timestamp>2019-11-15T19:20:14Z</timestamp>
+      <contributor>
+        <username>InternetArchiveBot</username>
+        <id>27015025</id>
+      </contributor>
+      <comment>Bluelink 1 book for [[WP:V|verifiability]].) #IABot (v2.0) ([[User:GreenC bot|GreenC bot]]</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">In [[mathematics]], a '''directed set''' (or a '''directed preorder''' or a '''filtered set''') is a nonempty [[Set (mathematics)|set]] ''A'' together with a [[reflexive relation|reflexive]] and [[transitive relation|transitive]] [[binary relation]] ≤ (that is, a [[preorder]]), with the additional property that every pair of elements has an [[upper bound]].&lt;ref&gt;Kelley, p. 65.&lt;/ref&gt; In other words, for any ''a'' and ''b'' in ''A'' there must exist ''c'' in ''A'' with ''a'' ≤ ''c'' and ''b'' ≤ ''c''.
+
+The notion defined above is sometimes called an '''upward directed set'''. A '''downward directed set''' is defined analogously,&lt;ref&gt;{{cite book|author=Robert S. Borden|title=A Course in Advanced Calculus|year=1988|publisher=Courier Corporation|isbn=978-0-486-15038-3|page=20}}&lt;/ref&gt; meaning when every pair of elements is bounded below.&lt;ref name=&quot;Brown-Pearcy&quot;&gt;{{cite book|author1=Arlen Brown|author2=Carl Pearcy|title=An Introduction to Analysis|url=https://archive.org/details/introductiontoan0000brow|url-access=registration|year=1995|publisher=Springer|isbn=978-1-4612-0787-0|page=[https://archive.org/details/introductiontoan0000brow/page/13 13]}}&lt;/ref&gt; Some authors (and this article) assume that a directed set is directed upward, unless otherwise stated. Beware that other authors call a set directed if and only if it is directed both upward and downward.&lt;ref name=&quot;CarlHeikkilä2010&quot;&gt;{{cite book|author1=Siegfried Carl|author2=Seppo Heikkilä|title=Fixed Point Theory in Ordered Sets and Applications: From Differential and Integral Equations to Game Theory|year=2010|publisher=Springer|isbn=978-1-4419-7585-0|pages=77}}&lt;/ref&gt;
+
+Directed sets are a generalization of nonempty [[totally ordered set]]s. That is, all totally ordered sets are directed sets (contrast [[partially ordered sets|''partially'' ordered sets]], which need not be directed). Join [[semilattice]]s (which are partially ordered sets) are directed sets as well, but not conversely. Likewise, [[Lattice (order)|lattice]]s are directed sets both upward and downward.
+
+In [[topology]], directed sets are used to define [[net (topology)|nets]], which generalize [[sequence]]s and unite the various notions of [[limit (mathematics)|limit]] used in [[mathematical analysis|analysis]]. Directed sets also give rise to [[direct limit]]s in [[abstract algebra]] and (more generally) [[category theory]].
+
+== Equivalent definition ==
+In addition to the definition above, there is an equivalent definition. A '''directed set''' is a set ''A'' with a [[preorder]] such that every finite subset of ''A'' has an upper bound. In this definition, the existence of an upper bound of the [[empty set|empty subset]] implies that ''A'' is nonempty.
+
+== Examples ==
+Examples of directed sets include:
+* The set of [[natural number]]s '''N''' with the ordinary order ≤ is a directed set (and so is every [[total order|totally ordered set]]).
+* Let '''D&lt;sub&gt;1&lt;/sub&gt;''' and '''D&lt;sub&gt;2&lt;/sub&gt;''' be directed sets. Then the Cartesian product set '''D&lt;sub&gt;1&lt;/sub&gt; &lt;math&gt;\times&lt;/math&gt; D&lt;sub&gt;2&lt;/sub&gt;''' can be made into a directed set by defining (''n''&lt;sub&gt;1&lt;/sub&gt;, ''n''&lt;sub&gt;2&lt;/sub&gt;) ≤ (''m''&lt;sub&gt;1&lt;/sub&gt;, ''m''&lt;sub&gt;2&lt;/sub&gt;) if and only if ''n''&lt;sub&gt;1&lt;/sub&gt; ≤ ''m''&lt;sub&gt;1&lt;/sub&gt; and ''n''&lt;sub&gt;2&lt;/sub&gt; ≤ ''m''&lt;sub&gt;2&lt;/sub&gt;. In analogy to the [[product order]] this is the product direction on the Cartesian product.
+* It follows from previous example that the set '''N''' &lt;math&gt;\times&lt;/math&gt; '''N''' of pairs of natural numbers can be made into a directed set by defining (''n''&lt;sub&gt;0&lt;/sub&gt;, ''n''&lt;sub&gt;1&lt;/sub&gt;) ≤ (''m''&lt;sub&gt;0&lt;/sub&gt;, ''m''&lt;sub&gt;1&lt;/sub&gt;) if and only if ''n''&lt;sub&gt;0&lt;/sub&gt; ≤ ''m''&lt;sub&gt;0&lt;/sub&gt; and ''n''&lt;sub&gt;1&lt;/sub&gt; ≤ ''m''&lt;sub&gt;1&lt;/sub&gt;.
+* If ''x''&lt;sub&gt;0&lt;/sub&gt; is a [[real number]], we can turn the set '''R''' − {''x''&lt;sub&gt;0&lt;/sub&gt;} into a directed set by writing ''a'' ≤ ''b'' if and only if &lt;br&gt;|''a'' − ''x''&lt;sub&gt;0&lt;/sub&gt;| ≥ |''b'' − ''x''&lt;sub&gt;0&lt;/sub&gt;|. We then say that the reals have been ''directed towards x&lt;sub&gt;0&lt;/sub&gt;''. This is an example of a directed set that is not [[partial order|ordered]] (neither totally nor partially: antisymmetry breaks down for every pair ''a'' and ''b'' equidistant from ''x&lt;sub&gt;0&lt;/sub&gt;'', where ''a'' and ''b'' are on opposite sides of ''x&lt;sub&gt;0&lt;/sub&gt;'').
+* A (trivial) example of a partially ordered set that is '''''not''''' directed is the set {''a'', ''b''}, in which the only order relations are ''a'' ≤ ''a'' and ''b'' ≤ ''b''. A less trivial example is like the previous example of the &quot;reals directed towards x&lt;sub&gt;0&lt;/sub&gt;&quot; but in which the ordering rule only applies to pairs of elements on the same side of x&lt;sub&gt;0&lt;/sub&gt; (ie, if one takes an element ''a'' to the left of ''x&lt;sub&gt;0&lt;/sub&gt;'', and ''b'' to its right, then ''a'' and ''b'' are not comparable, and the subset ''{a, b}'' has no upper bound).
+* If ''T'' is a [[topological space]] and ''x''&lt;sub&gt;0&lt;/sub&gt; is a point in ''T'', we turn the set of all [[topological neighbourhood|neighbourhoods]] of ''x''&lt;sub&gt;0&lt;/sub&gt; into a directed set by writing ''U'' ≤ ''V'' if and only if ''U'' contains ''V''.
+** For every ''U'': ''U'' ≤ ''U''; since ''U'' contains itself.
+** For every ''U'', ''V,'' and ''W'': if ''U'' ≤ ''V'' and ''V'' ≤ ''W'', then we have ''U'' &lt;math&gt;\supseteq&lt;/math&gt; ''V'' and ''V'' &lt;math&gt;\supseteq&lt;/math&gt; ''W'', which implies ''U'' &lt;math&gt;\supseteq&lt;/math&gt; ''W''. Thus ''U ≤ W.''
+** For every ''U'' and ''V'': since ''x&lt;sub&gt;0&lt;/sub&gt;'' &lt;math&gt;\in&lt;/math&gt; ''U'' &lt;math&gt;\cap&lt;/math&gt; ''V'', and since both ''U'' &lt;math&gt;\supseteq&lt;/math&gt; ''U &lt;math&gt;\cap&lt;/math&gt; V'' and ''V'' &lt;math&gt;\supseteq&lt;/math&gt; ''U &lt;math&gt;\cap&lt;/math&gt; V'', we have ''U ≤ U &lt;math&gt;\cap&lt;/math&gt; V'' and V ''≤ U &lt;math&gt;\cap&lt;/math&gt; V.''
+* In a [[poset]] ''P'', every [[Upper_set#Upper_closure_and_lower_closure|lower closure]] of an element, i.e. every subset of the form {''a'' | ''a'' in ''P'', ''a'' ≤ ''x''} where ''x'' is a fixed element from ''P'', is directed.
+
+== Contrast with semilattices ==
+[[File:Directed_set,_but_no_join_semi-lattice.png|thumb|x100px|Witness]]
+
+Directed sets are a more general concept than (join) semilattices: every [[semilattice|join semilattice]] is a directed set, as the join or least upper bound of two elements is the desired ''c''.  The converse does not hold however, witness the directed set {1000,0001,1101,1011,1111} [[coordinatewise order|ordered bitwise]] (e.g. 1000 ≤ 1011 holds, but 0001 ≤ 1000 does not, since in the last bit 1 &gt; 0), where {1000,0001} has three upper bounds but no ''least'' upper bound, cf. picture. (Also note that without 1111, the set is not directed.)
+
+== Directed subsets ==
+The order relation in a directed set is not required to be [[antisymmetric relation|antisymmetric]], and therefore directed sets are not always [[partial order]]s. However, the term ''directed set'' is also used frequently in the context of posets. In this setting, a subset ''A'' of a partially ordered set (''P'',≤) is called a '''directed subset''' if it is a directed set according to the same partial order: in other words, it is not the [[empty set]], and every pair of elements has an upper bound. Here the order relation on the elements of ''A'' is inherited from ''P''; for this reason, reflexivity and transitivity need not be required explicitly.
+
+A directed subset of a poset is not required to be [[lower set|downward closed]]; a subset of a poset is directed if and only if its downward closure is an [[ideal (order theory)|ideal]]. While the definition of a directed set is for an &quot;upward-directed&quot; set (every pair of elements has an upper bound), it is also possible to define a downward-directed set in which every pair of elements has a common lower bound. A subset of a poset is downward-directed if and only if its upper closure is a [[filter (mathematics)|filter]].
+
+Directed subsets are used in [[domain theory]], which studies [[directed complete partial order]]s.&lt;ref&gt;Gierz, p. 2.&lt;/ref&gt; These are posets in which every upward-directed set is required to have a [[least upper bound]]. In this context, directed subsets again provide a generalization of convergent sequences.
+
+== See also ==
+* [[Filtered category]]
+* [[Centered set]]
+* [[Linked set]]
+
+==Notes==
+{{reflist}}
+
+== References ==
+
+* J. L. Kelley (1955), ''General Topology''.
+* Gierz, Hofmann, Keimel, ''et al.'' (2003), ''Continuous Lattices and Domains'', Cambridge University Press. {{ISBN|0-521-80338-1}}.
+
+[[Category:Binary relations]]
+[[Category:Order theory]]
+[[Category:General topology]]</text>
+      <sha1>0o1htbe1hdesbka3s2m8kt0no69ss39</sha1>
+    </revision>
+  </page>

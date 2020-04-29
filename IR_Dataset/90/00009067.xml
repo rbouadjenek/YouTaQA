@@ -1,0 +1,75 @@
+  <page>
+    <title>Division ring</title>
+    <ns>0</ns>
+    <id>9067</id>
+    <revision>
+      <id>931487832</id>
+      <parentid>929473493</parentid>
+      <timestamp>2019-12-19T04:47:15Z</timestamp>
+      <contributor>
+        <username>InternetArchiveBot</username>
+        <id>27015025</id>
+      </contributor>
+      <comment>Bluelinking 1 books for [[WP:V|verifiability]].) #IABot (v2.1alpha3</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">In [[abstract algebra]], a '''division ring''', also called a '''skew field''', is a [[ring (mathematics)|ring]] in which [[division (mathematics)|division]] is possible. Specifically, it is a [[zero ring|nonzero]] ring&lt;ref&gt;In this article, rings have a 1.&lt;/ref&gt; in which every nonzero element {{mvar|a}} has a [[multiplicative inverse]], i.e., an element {{mvar|x}} with {{math|1=''a''·''x'' = ''x''·''a'' = 1.}} Stated differently, a ring is a division ring if and only if the [[group of units]] equals the set of all nonzero elements.  A division ring is a type of [[noncommutative ring]] under the looser definition where ''noncommutative ring'' refers to rings which are not ''necessarily'' commutative.
+
+Division rings differ from [[field (mathematics)|fields]] only in that their multiplication is not required to be [[commutative]]. However, by [[Wedderburn's little theorem]] all finite division rings are commutative and therefore [[finite field]]s. Historically, division rings were sometimes referred to as fields, while fields were called &quot;commutative fields&quot;.{{refn|Within the English language area the terms &quot;skew field&quot; and &quot;sfield&quot; were mentioned 1948 by Neal McCoy &lt;ref&gt;1948, Rings and Ideals. Northampton, Mass., Mathematical Association of America&lt;/ref&gt; as &quot;sometimes used in the literature&quot;, and since 1965 ''skewfield'' has an entry in the [[OED]]. The German term {{ill|Schiefkörper|de|vertical-align=sup}} is documented, as a suggestion by [[Bartel Leendert van der Waerden|v.d.&amp;nbsp;Waerden]], in a 1927 text by [[Emil Artin|E.&amp;nbsp;Artin]],&lt;ref&gt;Artin, Emil, 1965: Collected Papers. Edited by Serge Lang, John T. Tate. New York et al.: Springer&lt;/ref&gt; and was used by [[Emmy Noether|E.&amp;nbsp;Noether]] as lecture title in 1928.&lt;ref&gt;Brauer, Richard, 1932: Über die algebraische Struktur von Schiefkörpern. Journal
+für die reine und angewandte Mathematik 166.4, 103-252&lt;/ref&gt;}}
+
+All division rings are simple, i.e. have no two-sided [[Ideal (ring theory)|ideal]] besides the [[zero ideal]] and itself.
+
+{{Algebraic structures |Ring}}
+
+==Relation to fields and linear algebra==
+All fields are division rings; more interesting examples are the non-commutative division rings. The best known example is the ring of [[quaternion]]s '''H'''. If we allow only [[rational number|rational]] instead of [[real number|real]] coefficients in the constructions of the quaternions, we obtain another division ring. In general, if ''R'' is a ring and ''S'' is a [[simple module]] over ''R'', then, by [[Schur's lemma]], the [[endomorphism ring]] of ''S'' is a division ring;&lt;ref&gt;Lam (2001), {{Google books|id=f15FyZuZ3-4C|page=33|text=Schur's Lemma|title=Schur's Lemma}}.&lt;/ref&gt; every division ring arises in this fashion from some simple module.
+
+Much of [[linear algebra]] may be formulated, and remains correct, for [[module (mathematics)|modules]] over a division ring ''D'' instead of [[vector space]]s over a field. Doing so it must be specified whether one is considering right or left modules, and some care is needed in properly distinguishing left and right in formulas. Working in coordinates, elements of a finite dimensional right module can be represented by column vectors, which can be multiplied on the right by scalars, and on the left by matrices (representing linear maps); for elements of a finite dimensional left module, row vectors must be used, which can be multiplied on the left by scalars, and on the right by matrices. The dual of a right module is a left module, and vice versa. The transpose of a matrix must be viewed as a matrix over the opposite division ring ''D''&lt;sup&gt;op&lt;/sup&gt; in order for the rule {{math|(''AB'')&lt;sup&gt;T&lt;/sup&gt; {{=}} ''B''&lt;sup&gt;T&lt;/sup&gt;''A''&lt;sup&gt;T&lt;/sup&gt;}} to remain valid.
+
+Every module over a division ring is [[free module|free]]; i.e., has a basis, and all bases of a module [[Invariant basis number|have the same number of elements]]. Linear maps between finite-dimensional modules over a division ring can be described by [[matrix (mathematics)|matrices]]; the fact that linear maps by definition commute with scalar multiplication is most conveniently represented in notation by writing them on the ''opposite'' side of vectors as scalars are. The [[Gaussian elimination]] algorithm remains applicable. The column rank of a matrix is the dimension of the right module generated by the columns, and the row rank is dimension of the left module generated by the rows; the same proof as for the vector space case can be used to show that these ranks are the same, and define the rank of a matrix.
+
+In fact the converse is also true and this gives a ''characterization of division rings'' via their module category:  A unital ring ''R'' is a division ring if and only if every R-[[Module (mathematics)|module]] is [[Free module|free]].&lt;ref&gt;Grillet, Pierre Antoine. Abstract algebra. Vol. 242. Springer Science &amp; Business Media, 2007; a proof can be found [http://planetmath.org/ringswhoseeverymoduleisfree here]''&lt;/ref&gt;
+
+The [[center of a ring|center]] of a division ring is commutative and therefore a field.&lt;ref&gt;Simple commutative rings are fields. See Lam (2001), {{Google books|id=f15FyZuZ3-4C|page=39|text=simple commutative rings|title=simple commutative rings}} and {{Google books|id=f15FyZuZ3-4C|page=45|text=center of a simple ring|title=exercise 3.4}}.&lt;/ref&gt; Every division ring is therefore a [[division algebra]] over its center. Division rings can be roughly classified according to whether or not they are finite-dimensional or infinite-dimensional over their centers. The former are called ''centrally finite'' and the latter ''centrally infinite''. Every field is, of course, one-dimensional over its center. The ring of [[Hamiltonian quaternions]] forms a 4-dimensional algebra over its center, which is isomorphic to the real numbers.
+
+==Examples==
+* As noted above, all [[Field (mathematics)|fields]] are division rings.
+* The [[quaternion]]s form a noncommutative division ring.
+* The subset of the quaternions {{math|''a'' + ''bi'' + ''cj'' + ''dk''}}, such that {{mvar|a}}, {{mvar|b}}, {{mvar|c}}, and {{mvar|d}} belong to a fixed subfield of the [[real number]]s, is a noncommutative division ring. When this subfield is the field of [[rational number]]s, this is the division ring of ''rational quaternions''.
+* Let &lt;math&gt;\sigma:\mathbb{C}\rightarrow\mathbb{C}&lt;/math&gt; be an [[automorphism]] of the field &lt;math&gt;\mathbb{C}&lt;/math&gt;.  Let &lt;math&gt;\mathbb{C}((z,\sigma))&lt;/math&gt; denote the ring of [[formal Laurent series]] with complex coefficients, wherein multiplication is defined as follows:  instead of simply allowing coefficients to commute directly with the indeterminate &lt;math&gt;z&lt;/math&gt;, for &lt;math&gt;\alpha\in\mathbb{C}&lt;/math&gt;, define &lt;math&gt;z^i\alpha:=\sigma^i(\alpha)z^i&lt;/math&gt; for each index &lt;math&gt;i\in\mathbb{Z}&lt;/math&gt;.  If &lt;math&gt;\sigma&lt;/math&gt; is a non-trivial automorphism of [[complex number]]s (such as [[complex conjugate|the conjugation]]), then the resulting ring of Laurent series is a strictly noncommutative division ring known as a ''skew Laurent series ring'';&lt;ref&gt;Lam (2001), p. 10&lt;/ref&gt; if {{math|1=''&amp;sigma;'' = [[identity function|id]]}} then it features the [[ring of formal Laurent series|standard multiplication of formal series]]. This concept can be generalized to the ring of Laurent series over any fixed field &lt;math&gt;F&lt;/math&gt;, given a nontrivial &lt;math&gt;F&lt;/math&gt;-automorphism &lt;math&gt;\sigma&lt;/math&gt;.
+
+==Main theorems==
+'''[[Wedderburn's little theorem]]''': All finite division rings are commutative and therefore [[finite field]]s. ([[Ernst Witt]] gave a simple proof.)
+
+'''[[Frobenius theorem (real division algebras)|Frobenius theorem]]''': The only finite-dimensional associative division algebras over the reals are the reals themselves, the [[complex number]]s, and the [[quaternion]]s.
+
+==Related notions==
+Division rings ''used to be'' called &quot;fields&quot; in an older usage. In many languages, a word meaning &quot;body&quot; is used for division rings, in some languages designating either commutative or non-commutative division rings, while in others specifically designating commutative division rings (what we now call fields in English).  A more complete comparison is found in the article [[Field (mathematics)]].
+
+Skew fields have an interesting [[lexical semantics|semantic]] feature: a modifier (here &quot;skew&quot;) ''widens'' the scope of the base term (here &quot;field&quot;). Thus a field is a particular type of skew field, and not all skew fields are fields.
+
+While division rings and algebras as discussed here are assumed to have associative multiplication, [[Division algebra#Not necessarily associative division algebras|nonassociative division algebras]] such as the [[octonion]]s are also of interest.
+
+A [[near-field (mathematics)|near-field]] is an algebraic structure similar to a division ring, except that it has only one of the two [[distributive law]]s.
+
+== Notes ==
+&lt;references /&gt;
+
+==See also==
+*[[Hua's identity]]
+
+== References ==
+* {{cite book |last1=Lam |first1=Tsit-Yuen |authorlink1=Tsit Yuen Lam |title=A first course in noncommutative rings |url=https://books.google.com/books?id=f15FyZuZ3-4C&amp;printsec=frontcover&amp;dq=isbn:0387951830&amp;hl=en&amp;sa=X&amp;ved=0ahUKEwiPhZvPxtDjAhWEWc0KHejfD_YQ6AEIKjAA#v=onepage&amp;q=%22division%20ring%22&amp;f=false |edition=2nd |series=[[Graduate Texts in Mathematics]] |volume=131 |year=2001 |publisher=Springer |location= |isbn=0-387-95183-0 | zbl=0980.16001 }}
+
+==Further reading==
+* {{cite book | last=Cohn | first=P.M. | authorlink=Paul Cohn | title=Skew fields. Theory of general division rings | zbl=0840.16001 | series=Encyclopedia of Mathematics and Its Applications | volume=57 | location=Cambridge | publisher=[[Cambridge University Press]] | year=1995 | isbn=0-521-43217-0 | url-access=registration | url=https://archive.org/details/skewfieldstheory0000cohn }}
+
+==External links==
+*[http://planetmath.org/?op=getobj&amp;from=objects&amp;id=3627 Proof of Wedderburn's Theorem at Planet Math]
+* [https://math.stackexchange.com/q/75866 Grillet's Abstract Algebra, section VIII.5's characterization of division rings via their free modules.  ]
+
+[[Category:Ring theory]]</text>
+      <sha1>hmi6baq8up39gj7vyekysggggcoo3m8</sha1>
+    </revision>
+  </page>

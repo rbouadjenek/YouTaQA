@@ -1,0 +1,401 @@
+  <page>
+    <title>Euclidean space</title>
+    <ns>0</ns>
+    <id>9697</id>
+    <revision>
+      <id>943157124</id>
+      <parentid>943156573</parentid>
+      <timestamp>2020-02-29T05:43:13Z</timestamp>
+      <contributor>
+        <username>Dora1206</username>
+        <id>38504371</id>
+      </contributor>
+      <comment>/* Isometry with prototypical examples */Fixed typo.</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{short description|Fundamental space of geometry}}
+
+[[Image:Coord system CA 0.svg|thumb|right|250px|A point in three-dimensional Euclidean space can be located by three coordinates.]]
+
+'''Euclidean space''' is the fundamental space of [[classical geometry]]. Originally it was the [[three-dimensional space]] of [[Euclidean geometry]], but in modern [[mathematics]] there are Euclidean spaces of any nonnegative integer dimension,{{sfn|Solomentsev|2001}} including the three-dimensional space and the ''Euclidean plane'' ([[dimension (mathematics)|dimension]] two). It was introduced by the [[Greek mathematics|Ancient Greek]] mathematician [[Euclid|Euclid of Alexandria]],{{sfn|Ball|1960|pages =50–62}} and the qualifier ''Euclidean'' is used to distinguish it from other spaces that were later discovered in [[physics]] and modern mathematics. 
+
+Ancient [[History of geometry#Greek geometry|Greek geometers]] introduced Euclidean space for modeling the [[physical universe]]. Their great innovation was to ''[[mathematical proof|prove]]'' all properties of the space as [[theorem]]s by starting from a few fundamental properties, called ''[[postulate]]s'', which either were considered as evident (for example, there is exactly one [[straight line]] passing through two points), or seemed impossible to prove ([[parallel postulate]]).
+
+After the introduction at the end of 19th century of [[non-Euclidean geometries]], the old postulates were re-formalized to define Euclidean spaces through [[axiomatic theory]]. Another definition of Euclidean spaces by means of [[vector space]]s and [[linear algebra]] has been shown to be equivalent to the axiomatic definition. It is this definition that is more commonly used in modern mathematics, and detailed in this article.{{sfn|Berger|1987}}
+
+In all definitions, Euclidean spaces consist of points, which are defined only by the properties that they must have for forming a Euclidean space.
+
+There is essentially only one Euclidean space of each dimension; that is, all Euclidean spaces of a given dimension are [[isomorphism|isomorphic]]. Therefore, in many cases, it is possible to work with a specific Euclidean space, which is generally the [[real n-space|real {{mvar|n}}-space]] &lt;math&gt;\mathbb R^n,&lt;/math&gt; equipped with the [[dot product]]. An isomorphism from a Euclidean space to &lt;math&gt;\mathbb R^n&lt;/math&gt; associates with each point an [[tuple|{{mvar|n}}-tuple]] of [[real number]]s which locate that point in the Euclidean space and are called the ''[[Cartesian coordinates]]'' of that point.
+
+==Definition==
+===History of the definition===
+Euclidean space was introduced by [[Greek mathematics|ancient Greeks]] as an abstraction of our physical space. Their great innovation, appearing in [[Euclid's Elements|Euclid's ''Elements'']] was to build and ''[[proof (mathematics)|prove]]'' all geometry by starting from a few very basic properties, which are abstracted from the physical world, and cannot be mathematically proved because of the lack of more basic tools. These properties are called [[postulate]]s, or [[axiom]]s in modern language. This way of defining Euclidean space is still in use under the name of [[synthetic geometry]].
+
+In 1637, [[René Descartes]] introduced [[Cartesian coordinates]] and showed that this allows reducing geometric problems to algebraic computations with numbers. This reduction of geometry to [[algebra]] was a major change of point of view, as, until then, the [[real number]]s—that is, [[rational number]]s and non-rational numbers together–were defined in terms of geometry, as lengths and distance. 
+
+Euclidean geometry was not applied in spaces of more than three dimensions until the 19th century. [[Ludwig Schläfli]] generalized Euclidean geometry to spaces of ''n'' dimensions using both synthetic and algebraic methods, and discovered all of the regular [[Polytope|polytopes]] (higher-dimensional analogues of the [[Platonic solid|Platonic solids]]) that exist in Euclidean spaces of any number of dimensions.{{sfn|Coxeter|1973|}}
+
+Despite the wide use of Descartes' approach, which was called [[analytic geometry]], the definition of Euclidean space remained unchanged until the end of 19th century. The introduction of abstract [[vector space]]s allowed their use in defining Euclidean spaces with a purely algebraic definition. This new definition has been shown to be equivalent to the classical definition in terms of geometric axioms. It is this algebraic definition that is now most often used for introducing Euclidean spaces.
+
+===Motivation of the modern definition===
+One way to think of the Euclidean plane is as a [[set (mathematics)|set]] of [[point (geometry)|point]]s satisfying certain relationships, expressible in terms of distance and angles. For example, there are two fundamental operations (referred to as [[motion (geometry)|motions]]) on the plane. One is [[translation (geometry)|translation]], which means a shifting of the plane so that every point is shifted in the same direction and by the same distance. The other is [[rotation (mathematics)|rotation]] around a fixed point in the plane, in which all points in the plane turn around that fixed point through the same angle. One of the basic tenets of Euclidean geometry is that two figures (usually&lt;!-- not always --&gt; considered as [[subset]]s) of the plane should be considered equivalent ([[congruence (geometry)|congruent]]) if one can be transformed into the other by some sequence of translations, rotations and [[reflection (mathematics)|reflection]]s (see [[#Euclidean group|below]]).
+
+In order to make all of this mathematically precise, the theory must clearly define what is a Euclidean space, and the related notions of distance, angle, translation, and rotation. Even when used in [[physics|physical]] theories, Euclidean space is an [[abstraction]] detached from actual physical locations, specific [[frame of reference|reference frames]], measurement instruments, and so on. A purely mathematical definition of Euclidean space also ignores questions of [[unit of length|units of length]] and other [[dimensional analysis|physical dimensions]]: the distance in a &quot;mathematical&quot; space is a [[number]], not something expressed in inches or metres. 
+
+The standard way to mathematically define a Euclidean space, as carried out in the remainder of this article, is to define a Euclidean space as a set of points on which [[group action (mathematics)|acts]] a [[real vector space]], the ''space of translations'' which is equipped with an [[inner product space|inner product]].{{sfn|Solomentsev|2001}} The action of translations makes the space an [[affine space]], and this allows defining lines, planes, subspaces, dimension, and [[parallelism (geometry)|parallelism]]. The inner product allows defining distance and angles.
+
+The set &lt;math&gt;\mathbb R^n&lt;/math&gt; of {{mvar|n}}-tuples of real numbers equipped with the [[dot product]] is a Euclidean space of dimension {{mvar|n}}. Conversely, the choice of a point called the ''origin'' and an [[orthonormal basis]] of the space of translations is equivalent with defining an [[isomorphism]] between a Euclidean space of dimension {{mvar|n}} and &lt;math&gt;\mathbb R^n&lt;/math&gt; viewed as a Euclidean space.
+
+It follows that everything that can be said about a Euclidean space can also be said about &lt;math&gt;\mathbb R^n.&lt;/math&gt; Therefore, many authors, specially at elementary level, call &lt;math&gt;\mathbb R^n&lt;/math&gt; the ''standard Euclidean space'' of dimension {{mvar|n}},{{sfn|Berger|1987|loc=Section 9.1}} or simply ''the'' Euclidean space of dimension {{mvar|n}}. 
+
+A reason for introducing such an abstract definition of Euclidean spaces, and for working with it instead of  &lt;math&gt;\mathbb R^n&lt;/math&gt; is that it is often preferable to work in a ''coordinate-free'' and ''origin-free'' manner (that is, without choosing a preferred basis and a preferred origin). Another reason is that there is no origin nor any basis in the physical world.
+
+===Technical definition===
+A '''Euclidean vector space''' is a finite-dimensional [[inner product space]] over the [[real number]]s.
+
+A '''Euclidean space''' is an [[affine space]] over the [[real number|reals]] such that the associated vector space is a Euclidean vector space. Euclidean spaces are sometimes called ''Euclidean affine spaces'' for distinguishing them from Euclidean vector spaces.{{sfn|Berger|1987|loc=Chapter 9}}
+
+The ''dimension'' of a Euclidean space is the [[dimension (vector space)|dimension]] of its associated vector space.
+
+If {{mvar|E}} is a Euclidean space, its associated vector space is also called its space of [[translation (geometry)|translation]]s, and often denoted &lt;math&gt;\overrightarrow E.&lt;/math&gt; 
+
+The elements of {{mvar|E}} are called ''points'' and are commonly denoted by capital letters. The elements of &lt;math&gt;\overrightarrow E&lt;/math&gt; are called ''translations'', ''[[Euclidean vector]]s'' or ''[[free vector]]s''. 
+
+The action of a translation {{mvar|v}} on a point {{mvar|P}} provides a point that is denoted {{math|''P'' + ''v''}}. This action satisfies 
+:&lt;math&gt;P+(v+w)= (P+v)+w.&lt;/math&gt;
+(The second {{math|+}} in the left-hand side is a vector addition; all other {{math|+}} denote an action of a vector on a point. This notation is not ambiguous, as, for distinguishing between the two meanings of {{math|+}}, it suffices to look on the nature of its left argument.)
+
+The fact that the action is free and transitive means that for every pair of points {{math|(''P'', ''Q'')}} there is exactly one vector {{mvar|v}} such that {{math|''P'' + ''v'' {{=}} ''Q''}}. This vector {{mvar|v}} is denoted {{math|''Q'' − ''P''}} or &lt;math&gt;\overrightarrow {PQ}.&lt;/math&gt;
+
+As previously explained, some of the basic properties of Euclidean spaces result of the structure of affine space. They are described in {{slink||Affine structure}} and its subsections. The properties resulting from the inner product are explained in {{slink||Metric structure}} and its subsections.
+
+==Prototypical examples==
+For any vector space, the addition acts freely and transitively on the vector space itself. Thus a Euclidean vector space can be viewed as a Euclidean space that has itself as associated vector space.
+
+A typical case of Euclidean vector space is &lt;math&gt;\mathbb R^n&lt;/math&gt; viewed as a vector space equipped with the [[dot product]] as an [[inner product]]. The importance of this particular example of Euclidean space lies in the fact that every Euclidean space is [[isomorphism|isomorphic]] to it. More precisely, given a Euclidean space {{mvar|E}} of dimension {{mvar|n}}, the choice of a point, called a ''origin'' and an [[orthonormal basis]] of &lt;math&gt;\overrightarrow E&lt;/math&gt; defines an isomorphism of Euclidean spaces from {{mvar|E}} to &lt;math&gt;\mathbb R^n.&lt;/math&gt;
+
+As every Euclidean space of dimension {{mvar|n}} is isomorphic to it, the Euclidean space &lt;math&gt;\mathbb R^n&lt;/math&gt; is sometimes called the ''standard Euclidean space'' of dimension {{mvar|n}}. {{sfn|Berger|1987|loc=Section 9.1}}
+
+==Affine structure==
+{{Main|Affine space}}
+
+Some basic properties of Euclidean spaces depend only of the fact that a Euclidean space is an [[affine space]]. they are called [[affine property|affine properties]] and include the concepts of lines, subspaces, and parallelism. which are detailed in next subsections.
+
+===Subspaces===
+{{main|Flat (geometry)}}
+Let {{mvar|E}} be a Euclidean space and &lt;math&gt;\overrightarrow E&lt;/math&gt; its associated vector space. 
+
+A ''flat'', ''Euclidean subspace'' or ''affine subspace'' of {{mvar|E}} is a subset {{mvar|F}} of {{mvar|E}} such that
+
+:&lt;math&gt;\overrightarrow F = \{\overrightarrow {PQ}\mid P\in F, Q\in F\}&lt;/math&gt;
+
+is a [[linear subspace]] of &lt;math&gt;\overrightarrow E.&lt;/math&gt; A Euclidean subspace {{mvar|F}} is a Euclidean space with &lt;math&gt;\overrightarrow F&lt;/math&gt; as associated vector space. This linear subspace &lt;math&gt;\overrightarrow F&lt;/math&gt; is called the ''direction'' of {{mvar|F}}.
+
+If {{mvar|P}} is a point of {{mvar|F}} then 
+
+:&lt;math&gt;F=\{P+v\mid v\in \overrightarrow F\}.&lt;/math&gt;
+
+Conversely, if {{mvar|P}} is a point of {{mvar|E}} and {{mvar|V}} is a [[linear subspace]] of &lt;math&gt;\overrightarrow E,&lt;/math&gt; then
+
+:&lt;math&gt;P+V=\{P+v\mid v\in V\}&lt;/math&gt;
+
+is a Euclidean subspace of direction {{mvar|V}}.
+
+A Euclidean vector space (that is, a Euclidean space such that &lt;math&gt;E=\overrightarrow E&lt;/math&gt;) has two sorts of subspaces: its Euclidean subspaces and its linear subspaces. Linear subspaces are Euclidean subspaces and a Euclidean subspace is a linear subspace if and only if it contains the zero vector.
+
+===Lines and segments===
+In a Euclidean space, a ''line'' is a Euclidean subspace of dimension one. Since a vector space of dimension one is spanned by any nonzero vector a line is a set of the form
+:&lt;math&gt;\{P+\lambda \overrightarrow{PQ} \mid \lambda \in \mathbb R\},&lt;/math&gt;
+where {{mvar|P}} and {{mvar|Q}} are two distinct points.
+
+It follows that ''there is exactly one line that passes through (contains) two distinct points.'' This implies that two distinct lines intersect in at most one point.
+
+A more symmetric representation of the line passing through {{mvar|P}} and {{mvar|Q}} is 
+:&lt;math&gt;\{O + (1-\lambda)\overrightarrow{OP} + \lambda \overrightarrow{OQ} \mid \lambda \in \mathbb R\},&lt;/math&gt;
+where {{mvar|O}} is an arbitrary point (not necessary on the line).
+
+In a Euclidean vector space, the zero vector is usually chosen for {{mvar|O}}; this allows simplifying the preceding formula into
+:&lt;math&gt;\{(1-\lambda) P + \lambda Q \mid \lambda \in \mathbb R\}.&lt;/math&gt;
+A standard convention allows using this formula in every Euclidean space, see {{slink|Affine space|Affine combinations and barycenter}}.
+
+The ''[[line segment]]'', or simply ''segment'', joining the points {{mvar|P}} and {{mvar|Q}} is the subset of the points such that {{math|0 ≤ ''{{lambda}}'' ≤ 1 }} in the preceding formulas. It is denoted {{mvar|PQ}} or {{mvar|QP}}; that is
+:&lt;math&gt;PQ = QP = \{P+\lambda \overrightarrow{PQ} \mid 0 \le \lambda \le 1\}.&lt;/math&gt;
+
+===Parallelism===
+Two subspaces {{mvar|S}} and {{mvar|T}} of the same dimension in a Euclidean space are ''parallel'' if they have the same direction.{{efn|It may depend on the context or the author whether a subspace is parallel to itself}} Equivalently, they are parallel, if there is a translation {{mvar|v}} vector that maps one to the other:
+:&lt;math&gt;T= S+v.&lt;/math&gt;
+
+Given a point {{mvar|P}} and a subspace {{mvar|S}}, there exists exactly one subspace that contains {{mvar|P}} and is parallel to {{mvar|S}}, which is &lt;math&gt;P + \overrightarrow S.&lt;/math&gt; In the case where {{mvar|S}} is a line (subspace of dimension one), this property is [[Playfair's axiom]].
+
+It follows that in a Euclidean plane, two lines either meet in one point or are parallel.
+
+The concept of parallel subspaces has been extended to subspaces of different dimensions: two subspaces are parallel if the direction of one of them is contained in the direction to the other.
+
+==Metric structure==
+The vector space &lt;math&gt;\overrightarrow E&lt;/math&gt; associated to a Euclidean space {{mvar|E}} is an [[inner product space]]. This implies a [[symmetric bilinear form]] 
+:&lt;math&gt;\begin{align}
+\overrightarrow E \times \overrightarrow E &amp;\to \mathbb R\\
+(x,y)&amp;\mapsto \langle x,y \rangle
+\end{align}&lt;/math&gt;
+that is [[positive definite]] (that is &lt;math&gt;\langle x,x \rangle&lt;/math&gt; is always positive for {{math|''x'' ≠ 0}}). 
+
+The inner product of a Euclidean space is often called ''dot product'' and denoted {{math|''x'' ⋅ ''y''}}. This is specially the case when a [[Cartesian coordinate system]] has been chosen, as, in this case, the inner product of two vectors is the [[dot product]] of their [[coordinate vector]]s. For this reason, and for historical reasons, the dot notation is more commonly used than the bracket notation for the inner product of Euclidean spaces. This article will follow this usage; that is &lt;math&gt;\langle x,y \rangle&lt;/math&gt; will be denoted {{math|''x'' ⋅ ''y''}} in the remainder of this article.
+
+The '''Euclidean norm''' of a vector {{mvar|v}} is 
+:&lt;math&gt;\|x\| = \sqrt {x\cdot x}.&lt;/math&gt;
+
+The inner product and the norm allows expressing and proving all [[metric space|metric]] and [[topology|topological]] properties of [[Euclidean geometry]]. The next subsection describe the most fundamental ones. ''In these subsections,'' {{mvar|E}} ''denotes an arbitrary Euclidean space, and &lt;math&gt;\overrightarrow E&lt;/math&gt; denotes its vector space of translations.''
+
+=== Distance and length===
+{{main article|Euclidean distance}}
+The ''distance'' (more precisely the ''Euclidean distance'') between two points of a Euclidean space is the norm of the translation vector that maps one point to the other; that is
+:&lt;math&gt;d(P,Q)=\|\overrightarrow {PQ}\|.&lt;/math&gt;
+The ''length'' of a segment {{math|''PQ''}} is the distance {{math|''d''(''P'', ''Q'')}} between its endpoints. It is often denoted {{math|{{!}}''PQ''{{!}}}}.
+
+The distance is a [[metric (mathematics)|metric]], as it satisfies the [[triangular inequality]]
+:&lt;math&gt;d(P,Q)\le d(P,R) + d(R, Q).&lt;/math&gt;
+Moreover, the equality is true if and only if {{mvar|R}} belongs to the segment {{math|''PQ''}}. 
+This inequality means that the length of any edge of a [[triangle]] is smaller than the sum of the lengths of the other edges. This is the origin of the term ''triangular inequality''.
+
+With the Euclidean distance, every Euclidean space is a [[complete metric space]].
+
+===Orthogonality===
+{{main|Perpendicular|Orthogonality}}
+Two nonzero vectors {{mvar|u}} and {{mvar|v}} of &lt;math&gt;\overrightarrow E&lt;/math&gt; are ''perpendicular'' or ''orthogonal'' if their inner product is zero:
+:&lt;math&gt; u\cdot v =0&lt;/math&gt;
+
+Two linear subspaces of &lt;math&gt;\overrightarrow E&lt;/math&gt; are orthogonal if every nonzero vector of the first one is perpendicular to every nonzero vector of the second one. This implies that the intersection of the linear subspace is reduced to the zero vector.
+
+Two lines, and more generally two Euclidean subspaces are orthogonal if their direction are orthogonal. Two orthogonal lines that intersect are said ''perpendicular''.
+
+Two segments {{math|''AB''}} and {{math|''AC''}} that share a common endpoint are ''perpendicular'' or ''form a [[right angle]]'' if the vectors &lt;math&gt;\overrightarrow {AB}&lt;/math&gt; and &lt;math&gt;\overrightarrow {AC}&lt;/math&gt; are orthogonal.
+
+If {{math|''AB''}} and {{math|''AC''}} form a right angle, one has
+:&lt;math&gt;|BC|^2 = |AB|^2 + |AC|^2.&lt;/math&gt;
+This is the [[Pythagorean theorem]]. Its proof is easy in this context, as, expressing this in terms of the inner product, one has, using bilinearity and symmetry of the inner product:
+:&lt;math&gt;\begin{align}
+|BC|^2 &amp;= \overrightarrow {BC}\cdot \overrightarrow {BC}\\
+&amp;=\left(\overrightarrow {BA}+\overrightarrow {AC}\right ) \cdot \left(\overrightarrow {BA}+\overrightarrow {AC}\right)\\
+&amp;=\overrightarrow {BA}\cdot \overrightarrow {BA}+ \overrightarrow {AC}\cdot \overrightarrow {AC} -2 \overrightarrow {AB}\cdot \overrightarrow {AC}\\
+&amp;=\overrightarrow {AB}\cdot \overrightarrow {AB} + \overrightarrow {AC}\cdot\overrightarrow {AC}\\
+&amp;=|AB|^2 + |AC|^2.
+\end{align}&lt;/math&gt;
+
+=== Angle ===
+{{main article|Angle}}
+[[Image:45, -315, and 405 co-terminal angles.svg|thumb|right|Positive and negative angles on the oriented plane]]
+The (non-oriented) ''angle'' {{mvar|θ}} between two nonzero vectors {{mvar|x}} and {{mvar|y}} in &lt;math&gt;\overrightarrow E&lt;/math&gt; is 
+:&lt;math&gt;\theta = \arccos\left(\frac{x\cdot y}{\|x\|\|y\|}\right)&lt;/math&gt;
+where {{math|arccos}} is the [[principal value]] of the [[arccosine]] function. By [[Cauchy–Schwarz inequality]], the argument of the arcsine is in the interval {{math|[–1, 1]}}. Therefore {{mvar|{{theta}}}} is real, and {{math|0 ≤ ''θ'' ≤ ''{{pi}}''}} (or {{math|0 ≤ ''θ'' ≤ 180}}} if angles are measured in degrees).
+
+Angles are not useful in a Euclidean line, as they can be only 0 or ''{{pi}}''. 
+
+In an [[orientation (vector space)|oriented]] Euclidean plane, one can define the ''oriented angle'' of two vectors. The oriented angle of two vectors {{mvar|x}} and {{mvar|y}} is then the opposite of the oriented angle of {{mvar|y}} and {{mvar|x}}. In this case, the angle of two vectors can have any value [[modular arithmetic|modulo]] an integer multiple of {{math|2''{{pi}}''}}. In particular, a [[reflex angle]] {{math|''{{pi}}'' &lt; ''{{theta}}'' &lt; 2''{{pi}}''}} equals the negative angle {{math|–''{{pi}}'' &lt; ''{{theta}}'' – 2''{{pi}}'' &lt; 0}}.
+
+The angle of two vectors does not change if they are [[scalar multiplication|multiplied]] by positive numbers. More precisely, if {{mvar|x}} and {{mvar|y}} are two vectors, and {{mvar|{{lambda}}}} and {{mvar|{{mu}}}} are real numbers, then
+:&lt;math&gt;\operatorname{angle}(\lambda x, \mu y)= \begin{cases}
+\operatorname{angle}(x, y) \qquad\qquad \text{if } \lambda \text{ and } \mu \text{ have the same sign}\\
+\pi - \operatorname{angle}(x, y)\qquad \text{otherwise}.
+\end{cases}&lt;/math&gt; 
+
+If {{math|''A'', ''B''}} and {{mvar|C}} are three points in a Euclidean space, the angle of the segments {{math|''AB''}} and {{math|''AC''}} is the angle of the vectors &lt;math&gt;\overrightarrow {AB}&lt;/math&gt; and &lt;math&gt;\overrightarrow {AC}.&lt;/math&gt; As the multiplication of vectors by positive numbers do not change the angle, the angle of two [[half-line]]s with initial point {{mvar|A}} can be defined: it is the angle of the segments {{math|''AB''}} and {{math|''AC''}}, where {{mvar|B}} and {{mvar|C}} are arbitrary points, one on each half-line. Although this is less used, one can define similarly the angle of segments or half-lines that do not share an initial points.
+
+The angle of two lines is defined as follows. If {{mvar|{{theta}}}} is the angle of two segments, one on each line, the angle of any two other segments, one on each line, is either {{mvar|{{theta}}}} or {{math|''{{pi}}'' – ''{{theta}}''}}. One of these angles is in the [[interval (mathematics)|interval]] {{math|[0, ''{{pi}}''/2]}}, and the other being in {{math|[''{{pi}}''/2, ''{{pi}}'']}}. The ''non-oriented angle'' of the two lines is the one in the interval {{math|[0, ''{{pi}}''/2]}}. In an oriented Euclidean plane, the ''oriented angle'' of two lines belongs to the interval {{math|[–''{{pi}}''/2, ''{{pi}}''/2]}}.
+
+===Cartesian coordinates===
+{{See also|Cartesian coordinate system}}
+
+Every Euclidean vector space has an [[orthonormal basis]] (in fact, infinitely many in dimension higher than one, and two in dimension one), that is a [[basis (vector space)|basis]] &lt;math&gt;(e_1, \dots, e_n) &lt;/math&gt; of [[unit vector]]s (&lt;math&gt;\|e_i\| = 1&lt;/math&gt;) that are pairwise orthogonal (&lt;math&gt;e_i\cdot e_j = 0&lt;/math&gt; for {{math|''i'' ≠ ''j''}}). More precisely, given any [[basis (vector space)|basis]] &lt;math&gt;(b_1, \dots, b_n),&lt;/math&gt; the [[Gram–Schmidt process]] computes an orthonormal basis such that, for every {{mvar|i}}, the [[linear span]]s of &lt;math&gt;(e_1, \dots, e_i)&lt;/math&gt; and &lt;math&gt;(b_1, \dots, b_i)&lt;/math&gt; are equal.&lt;ref&gt;{{harvtxt|Anton|1987|pp=209–215}}&lt;/ref&gt;
+
+Given a Euclidean space {{mvar|E}}, a ''Cartesian frame'' is a set of data consisting of an orthonormal basis of &lt;math&gt;\overrightarrow E,&lt;/math&gt; and a point of {{mvar|E}}, called the ''origin'' and often denoted {{mvar|O}}. A Cartesian frame &lt;math&gt;(O, e_1, \dots, e_n)&lt;/math&gt; allows defining Cartesian coordinates for both {{mvar|E}} and  &lt;math&gt;\overrightarrow E&lt;/math&gt; in the following way.
+
+The Cartesian coordinates of a vector {{mvar|v}} are the coefficients of {{mvar|v}} on the basis &lt;math&gt;e_1, \dots, e_n.&lt;/math&gt; As the basis is orthonormal, the {{mvar|i}}th coefficient is the dot product &lt;math&gt;v\cdot e_i.&lt;/math&gt;
+
+The Cartesian coordinates of a point {{mvar|P}} of {{mvar|E}} are the Cartesian coordinates of the vector &lt;math&gt;\overrightarrow {OP}.&lt;/math&gt;
+
+=== Other coordinates ===
+[[Image:Repere espace.png|thumb|right|192px|3-dimensional skew coordinates]]
+{{main article|Coordinate system}}
+
+As a Euclidean space is an [[affine space]], one can consider an [[affine frame]] on it, which is the same as a Euclidean frame, except that the basis is not required to be orthonormal. This define [[affine coordinates]], sometimes called ''skew coordinates'' for emphasizing that the basis vectors are not pairwise orthogonal.
+
+An [[affine basis]] of a Euclidean space of dimension {{mvar|n}} is a set of {{math|''n'' + 1}} points that are not contained in a hyperplan. An affine basis define [[barycentric coordinates]] for every point. 
+
+Many other coordinates systems can be defined on a Euclidean space {{mvar|E}} of dimension {{mvar|n}}, in the following way. Let {{mvar|f}} be a [[homeomorphism]] (or, more often, a [[diffeomorphism]]) from a [[dense subset|dense]] [[open subset]] of {{mvar|E}} to an open subset of &lt;math&gt;\mathbb R^n.&lt;/math&gt; The ''coordinates'' of a point {{mvar|x}} of {{mvar|E}} are the components of {{math|''f''(''x'')}}. The [[polar coordinate system]] (dimension 2) and the [[spherical coordinate system|spherical]] and [[cylindrical coordinate system|cylindrical]] coordinate systems (dimension 3) are defined this way.
+
+For points that are outside the domain of {{mvar|f}}, coordinates may sometimes be defined as the limit of coordinates of neighbour points, but these coordinates may be not uniquely defined, and may be not continuous in the neighborhood of the point. For example, for the spherical coordinate system, the longitude is not defined at the pole, and on the [[antimeridian]], the longitude passes discontinuousely from –180° to +180°.
+
+This way of defining coordinates extends easily to other mathematical structures, and in particular to [[manifold]]s.
+
+== Isometries ==
+An [[isometry]] between two [[metric space]]s is a bijection preserving the distance,{{efn|If the condition of being a bijection is removed, a function preserving the distance is necessarily injective, and is an isometry from its domain to its image.}} that is 
+:&lt;math&gt;d(f(x), f(y))= d(x,y).&lt;/math&gt;
+
+In the case of a Euclidean vector space, an isometry preserves the norm
+:&lt;math&gt;\|f(x)\| = \|x\|,&lt;/math&gt;
+since the norm of a vector is its distance from the zero vector. It preserves also the inner product
+:&lt;math&gt;f(x)\cdot f(y)=x\cdot y,&lt;/math&gt;
+since 
+:&lt;math&gt;x.y=\frac 12 \left((\|x+y\|^2-\|x\|^2-\|y\|^2\right).&lt;/math&gt;
+
+An isometry Euclidean vector spaces is a [[linear isomorphism]].{{efn|Proof: one must prove that &lt;math&gt;f(\lambda x+ \mu y)-\lambda f(x)-\mu f(y)=0&lt;/math&gt;. For that, it suffices to prove that the square of the norm of the left-hand side is zero. Using the bilinearity of the inner product, this squared norm can be expanded into a linear combination of &lt;math&gt;\|f(x)\|^2,&lt;/math&gt; &lt;math&gt;\|f(y)\|^2,&lt;/math&gt; and &lt;math&gt;f(x)\cdot f(y).&lt;/math&gt; As {{mvar|f}} is an isometry, this gives a linear combination of &lt;math&gt;\|x\|^2,\|y\|^2,&lt;/math&gt; and &lt;math&gt;x\cdot y,&lt;/math&gt; which simplifies to zero.}}{{sfn|Berger|1987|loc=Proposition 9.1.3}}
+
+An isometry &lt;math&gt;f\colon E\to F&lt;/math&gt; of Euclidean spaces defines an isometry 
+&lt;math&gt;\overrightarrow f\colon \overrightarrow E\to \overrightarrow F&lt;/math&gt; of the associated Euclidean vector spaces. This implies that two isometric Euclidean spaces have the same dimension. Conversely, if {{math|E}} and {{mvar|F}} are Euclidean spaces, {{math|''O'' ∈ ''E''}}, {{math|''O''{{prime}} ∈ ''F''}}, and &lt;math&gt;\overrightarrow f\colon \overrightarrow E\to \overrightarrow F&lt;/math&gt; is an isometry, then the map &lt;math&gt;f\colon E\to F&lt;/math&gt; defined by 
+:&lt;math&gt;f(P)=O' + \overrightarrow f\left(\overrightarrow{OP}\right)&lt;/math&gt;
+is an isometry of Euclidean spaces.
+
+It follows from the preceding results that an isometry of Euclidean spaces maps lines to lines, and, more generally Euclidean subspaces to Euclidean subspaces of the same dimension, and that the restriction of the isometry on these subspaces are isometries of these subspaces.
+
+===Isometry with prototypical examples===
+If {{mvar|E}} is a Euclidean space, its associated vector space &lt;math&gt;\overrightarrow E&lt;/math&gt; can be considered as a Euclidean space. Every point {{math|''O'' ∈ ''E''}} defines an isometry of Euclidean spaces
+:&lt;math&gt;P\mapsto \overrightarrow {OP},&lt;/math&gt;
+which maps {{mvar|O}} to the zero vector and has the identity as associated linear map. The inverse isometry is the map 
+:&lt;math&gt;v\mapsto O+v.&lt;/math&gt;
+
+A Euclidean frame {{tmath|(O, e_1, \dots, e_n)}} allows defining the map
+:&lt;math&gt;\begin{align}
+E&amp;\to \mathbb R^n\\
+P&amp;\mapsto \left(e_1\cdot \overrightarrow {OP}, \dots, e_n\cdot\overrightarrow {OP}\right),
+\end{align}&lt;/math&gt;
+which is an isometry of Euclidean spaces. The inverse isometry is 
+:&lt;math&gt;\begin{align}
+\mathbb R^n&amp;\to E \\
+(x_1\dots, x_n)&amp;\mapsto \left(O+x_1e_1+ \dots + x_ne_n\right).
+\end{align}&lt;/math&gt;
+
+''This means that, up to an isomorphism, there is exactly one Euclidean space of a given dimension.'' 
+
+This justifies that many authors talk of &lt;math&gt;\mathbb R^n&lt;/math&gt; as ''the'' Euclidean space of dimension {{mvar|n}}.
+
+=== Euclidean group ===
+{{main article|Euclidean group|Rigid transformation}}
+An isometry from a Euclidean space onto itself is called ''Euclidean isometry'', ''Euclidean transformation'' or ''rigid transformation''. The rigid transformations of a Euclidean space form a group (under [[function composition|composition]]), called the ''Euclidean group'' and often denoted {{math|E(''n'')}} of {{math|ISO(''n'')}}.
+
+The simplest Euclidean transformations are [[translation (mathematics)|translations]] 
+:&lt;math&gt;P \to P+v.&lt;/math&gt;
+They are in bijective correspondence with vectors. This is a reason for calling ''space of translations'' the vector space associated to a Euclidean space. The translations form a [[normal subgroup]] of the Euclidean group.
+
+A Euclidean isometry {{mvar|f}} of a Euclidean space {{mvar|E}} defines a linear isometry &lt;math&gt;\overrightarrow f&lt;/math&gt; of the associated vector space (by ''linear isometry'', it is meant an isometry that is also a [[linear map]]) in the following way: denoting by {{math|''Q'' – ''P''}} the vector &lt;math&gt;\overrightarrow {PQ}&lt;/math&gt;, if {{mvar|O}} is an arbitrary point of {{mvar|E}}, one has 
+:&lt;math&gt;\overrightarrow f(\overrightarrow {OP})= f(P)-f(O).&lt;/math&gt;
+It is straightforward to prove that this is a linear map that does not depend from the choice of {{mvar|O.}}
+
+The map &lt;math&gt;f \to \overrightarrow f&lt;/math&gt; is a [[group homomorphism]] from the Euclidean group onto the group of linear isometries, called the [[orthogonal group]]. The kernel of this homomorphism is the translation group, showing that it is a normal subgroup of the Euclidean group.
+
+The isometries that fix a given point {{mvar|P}} form the [[stabilizer subgroup]] of the Euclidean group with respect to {{mvar|P}}. The restriction to this stabilizer of above group homomorphism is an isomorphism. So the isometries that fix a given point form a group isomorphic to the orthogonal group.
+
+Let {{mvar|P}} be a point, {{mvar|f}} an isometry, and {{mvar|t}} the translation that maps {{mvar|P}} to {{math|''f''(''P'')}}. The isometry &lt;math&gt;g=t^{-1}\circ f&lt;/math&gt; fixes {{mvar|P}}. So &lt;math&gt;f= t\circ g,&lt;/math&gt; and ''the Euclidean group is the [[semidirect product]] of the translation group and the orthogonal group.''
+
+The [[special orthogonal group]] is the normal subgroup of the orthogonal group that preserves [[orientation (vector space)|handeness]]. It is a subgroup of [[index (group theory)|index]] two ion the orthogonal group. Its inverse image by the group homomorphism &lt;math&gt;f \to \overrightarrow f&lt;/math&gt; is a normal subgroup of index two of the Euclidean group, which is called the ''special Euclidean group'' or the ''displacement group''. Its elements are called ''rigid motions'' or ''displacements''.
+
+Rigid motions include the [[identity function|identity]], translations, [[rotation]]s (the rigid motions that fix at least a point), and also [[screw axis|screw motions]].
+
+Typical examples of rigid transformations that are not rigid motions are [[reflection (mathematics)|reflection]]s, which are rigid transformations that fix a hyperplane and are not the identity. They are also the transformations consisting in changing the sign of one coordinate over some Euclidean frame.
+
+As the special Euclidean group is a subgroup of index two of the Euclidean group, given a reflection {{mvar|r}}, every rigid transformation that is not a rigid motion is the product of {{mvar|r}} and a rigid motion. A [[glide reflection]] is an example of a rigid transformation that is not a rigid motion or a reflection.
+
+All groups that have been considered in this section are [[Lie group]]s and [[algebraic group]]s.
+
+==Topology==
+{{main article|Real n-space #Topological properties}}
+
+The Euclidean distance makes a Euclidean space a [[metric space]], and thus a [[topological space]]. This topology is called the [[Euclidean topology]]. In the case of &lt;math&gt;\mathbb R^n,&lt;/math&gt; this topology is also the [[product topology]]. 
+
+The [[open set]]s are the subsets that contains an [[open ball]] around each of their points. In other words, open balls form a [[base (topology)|base of the topology]].
+
+The [[topological dimension]] of a Euclidean space equals its dimension. This implies that Euclidean spaces of different dimensions are not [[homeomorphic]]. Moreover, the theorem of [[invariance of domain]] asserts that a subset of a Euclidean space is open (for the [[subspace topology]]) if and only if it is homeomorphic to an open subset of a Euclidean space of the same dimension.
+
+Euclidean spaces are [[complete metric|complete]] and [[locally compact]]. That is, a closed subset of a Euclidean space is compact if it is [[bounded set|bounded]] (that is, contained in a ball). In particular, closed balls are compact.
+
+==Axiomatic definitions==
+The definition of Euclidean spaces that has been described in this article differs fundamentally of [[Euclid]]'s one. In reality, Euclid did not define formally the space, because it was thought as a description of the physical world that exists independently of human mind. The need of a formal definition appeared only at the end of 19th century, with the introduction of [[non-Euclidean geometries]]. 
+
+Two different approaches have been used. [[Felix Klein]] suggested to define geometries through their [[symmetries]]. The presentation of Euclidean spaces given in this article, is essentially issued from his [[Erlangen program]], with the emphasis given on the groups of translations and isometries.
+
+On the other hand, [[David Hilbert]] proposed a set of [[Hilbert's axioms|axioms]], inspired by [[Euclid's postulates]]. They belong to [[synthetic geometry]], as they do not involve any definition of [[real number]]s. Later [[G. D. Birkhoff]] and [[Alfred Tarski]] proposed simpler sets of axioms, which use [[real number]]s (see [[Birkhoff's axioms]] and [[Tarski's axioms]]).
+
+In ''[[Geometric Algebra]]'', [[Emil Artin]] has proved that all these definitions of a Euclidean space are equivalent.{{sfn|Artin|1988}} It is rather easy to prove that all definitions of Euclidean spaces satisfy Hilbert's axioms, and that those involving real numbers (including the above given definition) are equivalent. The difficult part of Artin's proof is the following. In Hilbert's axioms, [[congruence (geometry)|congruence]] is an [[equivalence relation]] on segments. One can thus define the ''length'' of a segment as its equivalence class. One must thus prove that this length satisfies properties that characterize nonnegative real numbers. It is what did Artin, with axioms that are not Hilbert's ones, but are equivalent.
+
+==Usage==
+Since [[Greek mathematics|ancient Greeks]], Euclidean space is used for modeling [[shape]]s in the physical world. It is thus used in many [[science]]s such as [[physics]], [[mechanics]], [[astronomy]], ... It is also widely used in all technical areas that are concerned with shapes, figure, location and position, such as [[architecture]], [[geodesy]], [[topography]], [[navigation]], [[industrial design]], [[technical drawing]], [[robotics]]...
+
+[[Space-time]] of [[general relativity]] is not a Euclidean space, but it is a [[manifold]], and, as such, is locally approximated by Euclidean spaces.
+
+Space of dimensions higher than three occurs in several modern theories of physics; see [[Higher dimension]]. They occur also in [[configuration space (physics)|configuration space]]s of [[physical system]]s.
+
+Beside [[Euclidean geometry]], Euclidean spaces are also widely used in mathematics. [[Tangent space]]s of [[differentiable manifold]]s are Euclidean vector spaces. More generally, a [[manifold]] is a space that is locally an approximated by Euclidean spaces. Most [[non-Euclidean geometries]] can be modeled by a manifold, and [[embedding|embedded]] in a Euclidean space of higher dimension. For example, an [[elliptic space]] can be modeled by an [[ellipsoid]]. It is common to represent in a Euclidean space mathematics objects that are ''a priori'' not of a geometrical nature. An example among many is the usual representation of [[Graph (discrete mathematics)|graphs]].
+
+==Other geometric spaces==
+Since the introduction, at the end of 19th century, of [[Non-Euclidean geometries]], many sorts of spaces have been considered, about which one can do geometric reasoning in the same way as with Euclidean spaces. In general, they share some properties with Euclidean spaces, but may also have properties that could appear as rather strange. Some of these spaces use Euclidean geometry for their definition, or can be modeled as subspaces of a Euclidean space of higher dimension. When such a space is defined by geometrical [[axiom]]s, [[embedding]] the space in a Euclidean space is a standard way for proving [[consistency]] of its definition, or, more precisely for proving that its theory is consistent, if [[Euclidean geometry]] is consistent (which cannot be proved).
+
+===Affine space===
+{{main|Affine space}}
+A Euclidean space is an affine space equipped with a [[metric (mathematics)|metric]]. Affine spaces have many other uses in mathematics. In particular, as they are defined over any [[field (mathematics)|field]], they allow doing geometry in other contexts.
+
+As soon as non-linear questions are considered, it is generally useful to consider affine spaces over the [[complex number]]s as an extension of Euclidean spaces. For example, a [[circle]] and a [[line (geometry)|line]] have always two intersection points (possibly not distinct) in the complex affine space. Therefore, most of [[algebraic geometry]] is built in complex affine spaces and affine spaces over [[algebraically closed field]]s. The shapes that are studied in algebraic geometry in these affine spaces are therefore called [[affine algebraic variety|affine algebraic varieties]].
+
+Affine spaces over the [[rational number]]s and more generally over [[algebraic number field]]s provide a link between  (algebraic) geometry and [[number theory]]. For example, the [[Fermat's Last Theorem]] can be stated &quot;a [[Fermat curve]] of degree higher than two has no point in the affine plane over the rationals.&quot;
+
+Geometry in affine spaces over a [[finite fields]] has also been widely studied. For example, [[elliptic curve]]s over  finite fields are widely used in [[cryptography]].
+
+===Projective space===
+{{main|Projective space}}
+Originally, projective spaces have been introduced by adding &quot;[[points at infinity]]&quot; to Euclidean spaces, and, more generally to affine spaces, in order to make true the assertion &quot;two [[coplanar]] lines meet in exactly in one point&quot;. Projective space share with Euclidean and affine spaces the property of being [[isotropic]], that is, there is no property of the space that allows distinguishing between two points or two lines. Therefore, a more isotropic definition is commonly used, which consists as defining a projective space as the set of the [[vector line]]s in a [[vector space]] of dimension one more.
+
+As for affine spaces, projective spaces are defined over any [[field (mathematics)|field]], and are fundamental spaces of [[algebraic geometry]].
+
+===Non-Euclidean geometries===
+{{main|Non-Euclidean geometry}}
+''Non-Euclidean geometry'' refers usually to geometrical spaces where the [[parallel postulate]] is false. They include [[elliptic geometry]], where the sum of the angles of a triangle is more than 180°, and [[hyperbolic geometry]], where this sum is less than 180°. Their introduction in the second half of 19th century, and the proof that their theory is [[consistency|consistent]] (if Euclidean geometry is not contradictory) is one of the paradoxes that are at the origin of the [[foundational crisis in mathematics]] of the beginning of 20th century, and motivated the systematization of [[axiomatic theory|axiomatic theories]] in mathematics.
+
+=== Curved spaces ===
+{{main article|Manifold|Riemannian manifold}}
+
+A [[manifold]] is a space that in the neighborhood of each point resembles a Euclidean space. In technical terms, a manifold is a [[topological space]], such that each point has a [[neighborhood]] that is [[homeomorphic]] to an [[open subset]] of a Euclidean space. Manifold can be classified by increasing degree of this &quot;resemblance&quot; into [[topological manifold]]s, [[differentiable manifold]]s, [[smooth manifold]]s, and [[analytic manifold]]s. However, none of these types of &quot;resemblance&quot; respect distances and angles, even approximately. 
+
+Distances and angles can be defined on a smooth manifold by providing a [[smooth function|smoothly varying]] Euclidean metric on the [[tangent space]]s at the points of the manifold (these tangent are thus Euclidean vector spaces). This results in a [[Riemannian manifold]]. Generally, [[straight line]]s do not exist in a Riemannian manifold, but their role is played by [[geodesic]]s, which are the &quot;shortest paths&quot; between two points. This allows defining distances, which are measured along geodesics, and angles between geodesics, which are the angle of their tangents in the tangent space at their intersection. So, Riemannian manifolds behave locally like a Euclidean that has been bended.
+
+Euclidean spaces are trivially Riemannian manifolds. An example illustrating this well is the surface of a [[sphere]]. In this case, geodesics are [[great circle|arcs of great circle]], which are called [[orthodrome]]s in the context of [[navigation]]. More generally, the spaces of [[non-Euclidean geometries]] can be realized as Riemannian manifolds.
+
+=== Pseudo-Euclidean space ===
+The [[inner product]] that is defined to define Euclidean spaces is a [[positive definite bilinear form]]. If it is replaced by an [[indefinite quadratic form]] which is [[non-degenerate]], one gets a [[pseudo-Euclidean space]]. 
+
+A fundamental example of such a space is the [[Minkowski space]], which is the [[space-time]] of [[Albert Einstein|Einstein]]'s [[special relativity]]. It is a four-dimensional space, where the metric is defined by the [[quadratic form]]
+:&lt;math&gt;x^2+y^2+z^2-t^2,&lt;/math&gt;
+
+where the last coordinate (''t'') is temporal, and the other three (''x'', ''y'', ''z'') are spatial.
+
+To take the [[gravity]] into account, [[general relativity]] uses a [[pseudo-Riemannian manifold]] that has Minkowski spaces as [[tangent space]]s. The [[Curvature of Riemannian manifolds|curvature]] of this manifold at a point is a function of the value of the [[gravitational field]] at this point.
+
+== See also ==
+{{Portal|Mathematics}}
+* [[Hilbert space]], a generalization to infinite dimension, used in [[functional analysis]]
+
+== Footnotes ==
+{{notelist}}
+
+== References ==
+
+{{reflist|30em}}
+
+* {{ citation | first1 = Howard | last1 = Anton | year = 1987 | isbn = 0-471-84819-0 | title = Elementary Linear Algebra | edition = 5th | publisher = [[John Wiley &amp; Sons|Wiley]] | location = New York }}
+* {{citation  |first=Emil |last=Artin |title=[[Geometric Algebra]]  |series=Wiley Classics Library|publisher=John Wiley &amp; Sons Inc.  |place=New York |year=1988 |pages=x+214 |isbn=0-471-60839-4|mr=1009557|origyear=1957 |doi=10.1002/9781118164518|ref=harv}}
+* {{cite book|last=Ball|first=W.W. Rouse|authorlink=W. W. Rouse Ball|title = A Short Account of the History of Mathematics|origyear=1908|url=|edition=4th|year=1960|publisher= Dover Publications
+|isbn=0-486-20630-0|ref=harv}}
+* {{Citation | last1=Berger | first1=Marcel | author1-link=Marcel Berger | title=Geometry I | publisher=Springer | location=Berlin | isbn= 3-540-11658-3 | year=1987|ref=harv}}
+* {{Cite book|title=Regular Polytopes|title-link=Regular Polytopes (book)|last=Coxeter|first=H.S.M.|publisher=Dover|year=1973|ref=harv|isbn=|edition=3rd|location=|publication-place=New York|quote=&quot;Schläfli ... discovered them before 1853 -- a time when Cayley, Grassman and Möbius were the only other people who had ever conceived of the possibility of geometry in more than three dimensions.&quot;|author-link=Harold Scott MacDonald Coxeter|orig-year=1948}}
+* {{springer|title=Euclidean space|id=p/e036380|ref=harv|first=E.D.|last=Solomentsev}}
+
+==External links==
+
+{{Authority control}}
+
+{{DEFAULTSORT:Euclidean Space}}
+[[Category:Euclidean geometry]]
+[[Category:Linear algebra]]
+[[Category:Topological spaces]]
+[[Category:Norms (mathematics)]]
+&lt;!-- really a good idea? [[Euclidean norm]] does not redirect here --&gt;</text>
+      <sha1>ct9uj17m7x7s53obuyo5lfnkjuflhpl</sha1>
+    </revision>
+  </page>

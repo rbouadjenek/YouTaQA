@@ -1,0 +1,329 @@
+  <page>
+    <title>Euclidean geometry</title>
+    <ns>0</ns>
+    <id>9417</id>
+    <revision>
+      <id>943097521</id>
+      <parentid>943096276</parentid>
+      <timestamp>2020-02-28T20:29:15Z</timestamp>
+      <contributor>
+        <username>Retimuko</username>
+        <id>31516478</id>
+      </contributor>
+      <comment>Undid revision 943096276 by [[Special:Contributions/173.212.101.88|173.212.101.88]] ([[User talk:173.212.101.88|talk]]) rvv</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{short description|Mathematical system attributed to Euclid}}
+{{redirect|Plane geometry}}
+[[File:Sanzio 01 Euclid.jpg|thumb|236px&lt;!--(approx Sidebar/Infobox)--&gt;|Detail from [[Raphael]]'s ''[[The School of Athens]]'' featuring a Greek mathematician –&amp;nbsp;perhaps representing [[Euclid]] or [[Archimedes]]&amp;nbsp;– using a [[Compass (drafting)|compass]] to draw a geometric construction.]]
+{{General geometry |branches}}
+'''Euclidean geometry''' is a mathematical system attributed to [[Alexandria]]n [[Greek mathematics|Greek mathematician]] [[Euclid]], which he described in his textbook on [[geometry]]: the ''[[Euclid's Elements|Elements]]''. Euclid's method consists in assuming a small set of intuitively appealing [[axiom]]s, and deducing many other [[proposition]]s ([[theorem]]s) from these. Although many of Euclid's results had been stated by earlier mathematicians,&lt;ref name = eves1_19&gt;{{harvnb|Eves|1963|loc=p. 19}}&lt;/ref&gt; Euclid was the first to show how these propositions could fit into a comprehensive [[deductive]] and [[logical system]].&lt;ref&gt;{{harvnb|Eves|1963|loc=p. 10}}&lt;/ref&gt; The ''Elements'' begins with plane geometry, still taught in [[secondary school]] (high school) as the first [[axiomatic system]] and the first examples of [[Mathematical proof|formal proof]]. It goes on to the [[solid geometry]] of [[three dimensions]]. Much of the ''Elements'' states results of what are now called [[algebra]] and [[number theory]], explained in geometrical language.&lt;ref name = eves1_19/&gt;
+
+For more than two thousand years, the adjective &quot;Euclidean&quot; was unnecessary because no other sort of geometry had been conceived. Euclid's axioms seemed so intuitively obvious (with the possible exception of the [[parallel postulate]]) that any theorem proved from them was deemed true in an absolute, often metaphysical, sense. Today, however, many other [[self-consistent]] [[non-Euclidean geometry|non-Euclidean geometries]] are known, the first ones having been discovered in the early 19th century. An implication of [[Albert Einstein]]'s theory of [[general relativity]] is that physical space itself is not Euclidean, and [[Three-dimensional space|Euclidean space]] is a good approximation for it only over short distances (relative to the strength of the  [[gravity|gravitational field]]).&lt;ref&gt;Misner, Thorne, and Wheeler (1973), p.&amp;nbsp;47&lt;/ref&gt;
+
+Euclidean geometry is an example of [[synthetic geometry]], in that it proceeds logically from axioms describing basic properties of geometric objects such as points and lines, to propositions about those objects, all without the use of [[coordinate system|coordinates]] to specify those objects. This is in contrast to [[analytic geometry]], which uses coordinates to translate geometric propositions into algebraic formulas.
+
+==The ''Elements''==
+{{main|Euclid's Elements}}
+The ''Elements'' is mainly a systematization of earlier knowledge of geometry. Its improvement over earlier treatments was rapidly recognized, with the result that there was little interest in preserving the earlier ones, and they are now nearly all lost.
+
+There are 13 books in the ''Elements'':
+
+Books I–IV and VI discuss plane geometry. Many results about plane figures are proved, for example &quot;In any triangle two angles taken together in any manner are less than two right angles.&quot; (Book 1 proposition 17) and the [[Pythagorean theorem]] &quot;In right angled triangles the square on the side subtending the right angle is equal to the squares on the sides containing the right angle.&quot; (Book I, proposition 47)
+
+Books V and VII–X deal with [[number theory]], with numbers treated geometrically as lengths of line segments or areas of regions. Notions such as [[prime numbers]] and [[rational number|rational]] and [[irrational number]]s are introduced. It is proved that there are infinitely many prime numbers.
+
+Books XI–XIII concern [[solid geometry]]. A typical result is the 1:3 ratio between the volume of a cone and a cylinder with the same height and base. The [[platonic solid]]s are constructed.
+
+===Axioms===
+[[File:Parallel postulate en.svg|thumb|The parallel postulate (Postulate 5): If two lines intersect a third in such a way that the sum of the inner angles on one side is less than two right angles, then the two lines inevitably must intersect each other on that side if extended far enough.]]
+
+Euclidean geometry is an [[axiomatic system]], in which all [[theorem]]s (&quot;true statements&quot;) are derived from a small number of simple axioms. Until the advent of [[non-Euclidean geometry]], these axioms were considered to be obviously true in the physical world, so that all the theorems would be equally true. However, Euclid's reasoning from assumptions to conclusions remains valid independent of their physical reality.&lt;ref name=Wolfe&gt;The assumptions of Euclid are discussed from a modern perspective in 
+{{cite book |title=Introduction to Non-Euclidean Geometry |author=Harold E. Wolfe |url=https://books.google.com/books?id=VPHn3MutWhQC&amp;pg=PA9 |page=9 |isbn=1-4067-1852-1 |year=2007 |publisher=Mill Press}}
+&lt;/ref&gt;
+
+Near the beginning of the first book of the ''Elements'', Euclid gives five [[postulate]]s (axioms) for plane geometry, stated in terms of constructions (as translated by Thomas Heath):&lt;ref&gt;tr. Heath, pp. 195–202.&lt;/ref&gt;
+
+:Let the following be postulated:
+# To draw a [[straight line]] from any [[Point (geometry)|point]] to any point.
+# To produce (extend) a [[Line segment|finite straight line]] continuously in a straight line.
+# To describe a [[circle]] with any centre and distance (radius).
+# That all [[right angle]]s are equal to one another.
+# [The [[parallel postulate]]]: That, if a straight line falling on two straight lines make the interior angles on the same side less than two right angles, the two straight lines, if produced indefinitely, meet on that side on which the angles are less than two right angles.
+
+Although Euclid only explicitly asserts the existence of the constructed objects, in his reasoning they are implicitly assumed to be unique.
+
+The ''Elements'' also include the following five &quot;common notions&quot;:
+
+# Things that are equal to the same thing are also equal to one another (the [[Transitive property]] of a [[Euclidean relation]]).
+# If equals are added to equals, then the wholes are equal (Addition property of equality).
+# If equals are subtracted from equals, then the differences are equal (Subtraction property of equality).
+# Things that coincide with one another are equal to one another (Reflexive property).
+# The whole is greater than the part.
+
+Modern scholars agree that Euclid's postulates do not provide the complete logical foundation that Euclid required for his presentation.&lt;ref&gt;{{citation|first=Gerard A.|last=Venema|title=Foundations of Geometry|year=2006|publisher=Prentice-Hall|page=8|isbn=978-0-13-143700-5}}&lt;/ref&gt; Modern [[Foundations of geometry|treatments]] use more extensive and complete sets of axioms.
+
+===Parallel postulate===
+{{main|Parallel postulate}}
+To the ancients, the parallel postulate seemed less obvious than the others. They aspired to create a system of absolutely certain propositions, and to them it seemed as if the parallel line postulate required proof from simpler statements. It is now known that such a proof is impossible, since one can construct consistent systems of geometry (obeying the other axioms) in which the parallel postulate is true, and others in which it is false.&lt;ref&gt;{{Citation|title=History of the Parallel Postulate|journal=The American Mathematical Monthly|volume=27|issue=1|pages=16–23|date=Jan 1920|author=Florence P. Lewis|doi=10.2307/2973238|publisher=The American Mathematical Monthly, Vol. 27, No. 1|postscript=.|jstor=2973238}}&lt;/ref&gt; Euclid himself seems to have considered it as being qualitatively different from the others, as evidenced by the organization of the ''Elements'': his first 28 propositions are those that can be proved without it.
+
+Many alternative axioms can be formulated which are [[logical equivalence|logically equivalent]] to the parallel postulate (in the context of the other axioms). For example, [[Playfair's axiom]] states:
+
+:In a [[Plane (geometry)|plane]], through a point not on a given straight line, at most one line can be drawn that never meets the given line.
+
+The &quot;at most&quot; clause is all that is needed since it can be proved from the remaining axioms that at least one parallel line exists.
+
+[[File:euclid-proof.svg|thumb|A proof from Euclid's ''Elements'' that, given a line segment, one may construct an equilateral triangle that includes the segment as one of its sides: an equilateral triangle ΑΒΓ is made by drawing circles Δ and Ε centered on the points Α and Β, and taking one intersection of the circles as the third vertex of the triangle.]]
+
+==Methods of proof==
+Euclidean Geometry is ''[[Constructive proof|constructive]]''. Postulates 1, 2, 3, and 5 assert the existence and uniqueness of certain geometric figures, and these assertions are of a constructive nature: that is, we are not only told that certain things exist, but are also given methods for creating them with no more than a [[compass and straightedge|compass and an unmarked straightedge]].&lt;ref&gt;Ball, p.&amp;nbsp;56&lt;/ref&gt; In this sense, Euclidean geometry is more concrete than many modern axiomatic systems such as [[set theory]], which often assert the existence of objects without saying how to construct them, or even assert the existence of objects that cannot be constructed within the theory.&lt;ref name=set_theory&gt;Within Euclid's assumptions, it is quite easy to give a formula for area of triangles and squares. However, in a more general context like set theory, it is not as easy to prove that the area of a square is the sum of areas of its pieces, for example. See [[Lebesgue measure]] and [[Banach–Tarski paradox]].&lt;/ref&gt; Strictly speaking, the lines on paper are ''[[Scientific modelling|models]]'' of the objects defined within the formal system, rather than instances of those objects. For example, a Euclidean straight line has no width, but any real drawn line will. Though nearly all modern mathematicians consider [[Existence theorem|nonconstructive methods]] just as sound as constructive ones, Euclid's constructive proofs often supplanted fallacious nonconstructive ones—e.g., some of the Pythagoreans' proofs that involved irrational numbers, which usually required a statement such as &quot;Find the greatest common measure of ...&quot;&lt;ref&gt;{{cite book|author=Daniel Shanks|title=Solved and Unsolved Problems in Number Theory|year=2002|publisher=American Mathematical Society}}&lt;/ref&gt;
+
+Euclid often used [[proof by contradiction]]. Euclidean geometry also allows the method of superposition, in which a figure is transferred to another point in space. For example, proposition I.4, side-angle-side congruence of triangles, is proved by moving one of the two triangles so that one of its sides coincides with the other triangle's equal side, and then proving that the other sides coincide as well. Some modern treatments add a sixth postulate, the rigidity of the triangle, which can be used as an alternative to superposition.&lt;ref&gt;Coxeter, p.&amp;nbsp;5&lt;/ref&gt;
+
+==System of measurement and arithmetic==
+Euclidean geometry has two fundamental types of measurements: [[angle]] and [[Euclidean distance|distance]]. The angle scale is absolute, and Euclid uses the [[right angle]] as his basic unit, so that, for example, a 45-[[degree (angle)|degree]] angle would be referred to as half of a right angle. The distance scale is relative; one arbitrarily picks a line segment with a certain nonzero length as the unit, and other distances are expressed in relation to it. Addition of distances is represented by a construction in which one line segment is copied onto the end of another line segment to extend its length, and similarly for subtraction.
+
+Measurements of [[area (geometry)|area]] and [[volume]] are derived from distances. For example, a [[rectangle]] with a width of 3 and a length of 4 has an area that represents the product, 12. Because this geometrical interpretation of multiplication was limited to three dimensions, there was no direct way of interpreting the product of four or more numbers, and Euclid avoided such products, although they are implied, for example in the proof of book IX, proposition 20.
+
+[[File:Congruentie.svg|thumb|An example of congruence. The two figures on the left are congruent, while the third is [[Similarity (geometry)|similar]] to them. The last figure is neither. Congruences alter some properties, such as location and orientation, but leave others unchanged, like [[distance]] and [[angle]]s. The latter sort of properties are called [[invariant (mathematics)|invariant]]s and studying them is the essence of geometry.]]
+Euclid refers to a pair of lines, or a pair of planar or solid figures, as &quot;equal&quot; (ἴσος) if their lengths, areas, or volumes are equal respectively, and similarly for angles. The stronger term &quot;[[congruence (geometry)|congruent]]&quot; refers to the idea that an entire figure is the same size and shape as another figure. Alternatively, two figures are congruent if one can be moved on top of the other so that it matches up with it exactly. (Flipping it over is allowed.) Thus, for example, a 2x6 rectangle and a 3x4 rectangle are equal but not congruent, and the letter R is congruent to its mirror image. Figures that would be congruent except for their differing sizes are referred to as [[similarity (geometry)|similar]]. [[corresponding sides and corresponding angles|Corresponding angles]] in a pair of similar shapes are congruent and [[corresponding sides]] are in proportion to each other.
+
+==Notation and terminology==
+
+===Naming of points and figures===
+Points are customarily named using capital letters of the alphabet. Other figures, such as lines, triangles, or circles, are named by listing a sufficient number of points to pick them out unambiguously from the relevant figure, e.g., triangle ABC would typically be a triangle with vertices at points A, B, and C.
+
+=== Complementary and supplementary angles ===
+Angles whose sum is a right angle are called [[Complementary angles|complementary]]. Complementary angles are formed when a ray shares the same vertex and is pointed in a direction that is in between the two original rays that form the right angle. The number of rays in between the two original rays is infinite.
+
+Angles whose sum is a straight angle are [[Supplementary angles|supplementary]]. Supplementary angles are formed when a ray shares the same vertex and is pointed in a direction that is in between the two original rays that form the straight angle (180 degree angle). The number of rays in between the two original rays is infinite.
+
+=== Modern versions of Euclid's notation ===
+In modern terminology, angles would normally be measured in [[degree (angle)|degree]]s or [[radian]]s.
+
+Modern school textbooks often define separate figures called [[line (geometry)|line]]s (infinite), [[Line (mathematics)#Ray|rays]] (semi-infinite), and [[line segment]]s (of finite length). Euclid, rather than discussing a ray as an object that extends to infinity in one direction, would normally use locutions such as &quot;if the line is extended to a sufficient length,&quot; although he occasionally referred to &quot;infinite lines&quot;. A &quot;line&quot; in Euclid could be either straight or curved, and he used the more specific term &quot;straight line&quot; when necessary.
+
+== Some important or well known results ==
+&lt;gallery perrow=&quot;4&quot;&gt;
+File:pons_asinorum_dzmanto.png|The ''[[pons asinorum]]'' or ''bridge of asses theorem''' states that in an isosceles triangle, α&amp;nbsp;=&amp;nbsp;β and γ&amp;nbsp;=&amp;nbsp;δ.
+File:Sum_of_angles_of_triangle_dzmanto.png|The ''triangle angle sum theorem'' states that the sum of the three angles of any triangle, in this case angles α, β, and γ, will always equal 180 degrees.
+File:Pythagorean.svg|The ''[[Pythagorean theorem]]'' states that the sum of the areas of the two squares on the legs (''a'' and ''b'') of a right triangle equals the area of the square on the hypotenuse (''c'').
+File:Thales' Theorem Simple.svg|''[[Thales' theorem]]'' states that if AC is a diameter, then the angle at B is a right angle.
+&lt;/gallery&gt;
+
+===Pons Asinorum===
+The [[pons asinorum]] (''bridge of asses'') states that ''in isosceles triangles the angles at the base equal one another, and, if the equal straight lines are produced further, then the angles under the base equal one another.''&lt;ref&gt;Euclid, book I, proposition 5, tr. Heath, p.&amp;nbsp;251&lt;/ref&gt; Its name may be attributed to its frequent role as the first real test in the ''Elements'' of the intelligence of the reader and as a bridge to the harder propositions that followed. It might also be so named because of the geometrical figure's resemblance to a steep bridge that only a sure-footed donkey could cross.&lt;ref&gt;Ignoring the alleged difficulty of Book I, Proposition 5, [[T. L. Heath|Sir Thomas L. Heath]] mentions another interpretation. This rests on the resemblance of the figure's lower straight lines to a steeply inclined bridge that could be crossed by an ass but not by a horse: &quot;But there is another view (as I have learnt lately) which is more complimentary to the ass. It is that, the figure of the proposition being like that of a trestle bridge, with a ramp at each end which is more practicable the flatter the figure is drawn, the bridge is such that, while a horse could not surmount the ramp, an ass could; in other words, the term is meant to refer to the sure-footedness of the ass rather than to any want of intelligence on his part.&quot; (in &quot;Excursis II,&quot; volume 1 of Heath's translation of ''The Thirteen Books of the Elements''.)&lt;/ref&gt;
+
+===Congruence of triangles===
+[[File:Congruent triangles.svg|thumb|right|Congruence of triangles is determined by specifying two sides and the angle between them (SAS), two angles and the side between them (ASA) or two angles and a corresponding adjacent side (AAS). Specifying two sides and an adjacent angle (SSA), however, can yield two distinct possible triangles unless the angle specified is a right angle.]]
+
+Triangles are congruent if they have all three sides equal (SSS), two sides and the angle between them equal (SAS), or two angles and a side equal (ASA) (Book I, propositions 4, 8, and 26). Triangles with three equal angles (AAA) are similar, but not necessarily congruent. Also, triangles with two equal sides and an adjacent angle are not necessarily equal or congruent.
+
+===Triangle angle sum===
+The sum of the angles of a triangle is equal to a straight angle (180 degrees).&lt;ref&gt;Euclid, book I, proposition 32&lt;/ref&gt; This causes an equilateral triangle to have three interior angles of 60 degrees. Also, it causes every triangle to have at least two acute angles and up to one [[obtuse angle|obtuse]] or [[right angle]].
+
+===Pythagorean theorem===
+The celebrated [[Pythagorean theorem]] (book I, proposition 47) states that in any right triangle, the area of the square whose side is the hypotenuse (the side opposite the right angle) is equal to the sum of the areas of the squares whose sides are the two legs (the two sides that meet at a right angle).
+
+===Thales' theorem===
+[[Thales' theorem]], named after [[Thales of Miletus]] states that if A, B, and C are points on a circle where the line AC is a diameter of the circle, then the angle ABC is a right angle. Cantor supposed that Thales proved his theorem by means of Euclid Book I, Prop. 32 after the manner of Euclid Book III, Prop. 31.&lt;ref&gt;Heath, p.&amp;nbsp;135. [https://books.google.com/books?id=drnY3Vjix3kC&amp;pg=PA135 Extract of page 135]&lt;/ref&gt;&lt;ref&gt;Heath, p.&amp;nbsp;318&lt;/ref&gt;
+
+===Scaling of area and volume===
+In modern terminology, the area of a plane figure is proportional to the square of any of its linear dimensions, &lt;math&gt;A \propto L^2&lt;/math&gt;, and the volume of a solid to the cube, &lt;math&gt;V \propto L^3&lt;/math&gt;. Euclid proved these results in various special cases such as the area of a circle&lt;ref&gt;Euclid, book XII, proposition 2&lt;/ref&gt; and the volume of a parallelepipedal solid.&lt;ref&gt;Euclid, book XI, proposition 33&lt;/ref&gt; Euclid determined some, but not all, of the relevant constants of proportionality. E.g., it was his successor [[Archimedes]] who proved that a sphere has 2/3 the volume of the circumscribing cylinder.&lt;ref&gt;Ball, p.&amp;nbsp;66&lt;/ref&gt;
+
+==Applications==
+{{Expand section|date=March 2009}}
+Because of Euclidean geometry's fundamental status in mathematics, it is impractical to give more than a representative sampling of applications here.
+
+&lt;gallery perrow=&quot;3&quot;&gt;
+File:us land survey officer.jpg|A surveyor uses a [[Dumpy level|level]]
+File:Ambersweet oranges.jpg|[[Sphere packing]] applies to a stack of [[orange (fruit)|orange]]s.
+File:Parabola with focus and arbitrary line.svg|A parabolic mirror brings parallel rays of light to a focus.
+&lt;/gallery&gt;
+
+As suggested by the etymology of the word, one of the earliest reasons for interest in geometry was [[surveying]],&lt;ref&gt;Ball, p.&amp;nbsp;5&lt;/ref&gt; and certain practical results from Euclidean geometry, such as the right-angle property of the 3-4-5 triangle, were used long before they were proved formally.&lt;ref&gt;Eves, vol. 1, p.&amp;nbsp;5; Mlodinow, p.&amp;nbsp;7&lt;/ref&gt; The fundamental types of measurements in Euclidean geometry are distances and angles, both of which can be measured directly by a surveyor. Historically, distances were often measured by chains, such as [[Gunter's chain]], and angles using graduated circles and, later, the [[theodolite]].
+
+An application of Euclidean solid geometry is the [[packing problem|determination of packing arrangements]], such as the problem of finding the most efficient [[sphere packing|packing of spheres]] in n dimensions. This problem has applications in [[error detection and correction]].
+
+[[Geometric optics]] uses Euclidean geometry to analyze the focusing of light by lenses and mirrors.
+
+&lt;gallery perrow=&quot;3&quot;&gt;
+File:Damascus Khan asad Pacha cropped.jpg|Geometry is used in art and architecture.
+File:Water tower cropped.jpg|The water tower consists of a cone, a cylinder, and a hemisphere. Its volume can be calculated using solid geometry.
+File:Origami crane cropped.jpg|Geometry can be used to design origami.
+&lt;/gallery&gt;
+
+Geometry is used extensively in [[architecture]].
+
+Geometry can be used to design [[origami]]. Some [[Compass and straightedge constructions#Impossible constructions|classical construction problems of geometry]] are impossible using [[compass and straightedge]], but can be [[mathematics of paper folding|solved using origami]].&lt;ref&gt;{{cite web |url=http://mars.wne.edu/~thull/omfiles/geoconst.html |title=Origami and Geometric Constructions |author=Tom Hull}}&lt;/ref&gt;
+
+Quite a lot of [[Computer-aided design|CAD (computer-aided design)]] and [[Computer-aided manufacturing|CAM (computer-aided manufacturing)]] is based on Euclidean geometry. Design geometry typically consists of shapes bounded by planes, cylinders, cones, tori, etc. In the present day, CAD/CAM is essential in the design of almost everything, including cars, airplanes, ships, and smartphones. A few decades ago, sophisticated draftsmen learned some fairly advanced Euclidean geometry, including things like Pascal's theorem and Brianchon's theorem. But now they don't have to, because the geometric constructions are all done by CAD programs.
+
+&lt;gallery&gt;
+File:Motor partsolutions.gif
+&lt;/gallery&gt;
+
+==As a description of the structure of space==
+Euclid believed that his [[axioms]] were self-evident statements about physical reality. Euclid's proofs depend upon assumptions perhaps not obvious in Euclid's fundamental axioms,&lt;ref name=Trudeau&gt;{{cite book |title=The Non-Euclidean Revolution|author=Richard J. Trudeau |pages=39 ''ff'' |url=https://books.google.com/books?id=YRB4VBCLB3IC&amp;pg=PA39 |chapter=Euclid's axioms |publisher= Birkhäuser |year=2008 |isbn=0-8176-4782-1}}&lt;/ref&gt; in particular that certain movements of figures do not change their geometrical properties such as the lengths of sides and interior angles, the so-called ''Euclidean motions'', which include translations, reflections and rotations of figures.&lt;ref name=Euclidean_Motion&gt;
+
+See, for example: {{cite book |title=Shape analysis and classification: theory and practice |author1=Luciano da Fontoura Costa |author2=Roberto Marcondes Cesar |page=314 |url=https://books.google.com/books?id=x_wiWedtc0cC&amp;pg=PA314 |isbn=0-8493-3493-4 |year=2001 |publisher=CRC Press}} and {{cite book |title=Computational Line Geometry |author1=Helmut Pottmann |author2=Johannes Wallner |url=https://books.google.com/books?id=3Mk2JIJKsGwC&amp;pg=PA60 |page=60 |isbn=3-642-04017-9 |year=2010 |publisher=Springer}} The ''group of motions'' underlie the metric notions of geometry. See {{cite book |title=Elementary Mathematics from an Advanced Standpoint: Geometry |author=Felix Klein |url=https://books.google.com/books?id=fj-ryrSBuxAC&amp;pg=PA167 |page=167 |isbn=0-486-43481-8 |publisher=Courier Dover |year=2004 |edition=Reprint of 1939 Macmillan Company}}&lt;/ref&gt; Taken as a physical description of space, postulate 2 (extending a line) asserts that space does not have holes or boundaries (in other words, space is [[homogeneous]] and [[unbounded]]); postulate 4 (equality of right angles) says that space is [[isotropic]] and figures may be moved to any location while maintaining [[congruence (geometry)|congruence]]; and postulate 5 (the [[parallel postulate]]) that space is flat (has no [[intrinsic curvature]]).&lt;ref name=Penrose&gt;{{cite book |author=Roger Penrose |title= The Road to Reality: A Complete Guide to the Laws of the Universe |year=2007 |page= 29 |url=https://books.google.com/books?id=coahAAAACAAJ&amp;dq=editions:cYahAAAACAAJ&amp;hl=en&amp;ei=i7DZTI62K46asAObz-jJBw&amp;sa=X&amp;oi=book_result&amp;ct=book-thumbnail&amp;resnum=1&amp;ved=0CCcQ6wEwAA |isbn=0-679-77631-1 |publisher=Vintage Books}}&lt;/ref&gt;
+
+As discussed in more detail below, [[Einstein]]'s [[theory of relativity]] significantly modifies this view.
+
+The ambiguous character of the axioms as originally formulated by Euclid makes it possible for different commentators to disagree about some of their other implications for the structure of space, such as whether or not it is infinite&lt;ref name=&quot;Heath, p.&amp;nbsp;200&quot;&gt;Heath, p.&amp;nbsp;200&lt;/ref&gt; (see below) and what its [[topology]] is. Modern, more rigorous reformulations of the system&lt;ref&gt;e.g., Tarski (1951)&lt;/ref&gt; typically aim for a cleaner separation of these issues. Interpreting Euclid's axioms in the spirit of this more modern approach, axioms 1-4 are consistent with either infinite or finite space (as in [[elliptic geometry]]), and all five axioms are consistent with a variety of topologies (e.g., a plane, a cylinder, or a [[torus]] for two-dimensional Euclidean geometry).
+
+==Later work==
+
+===Archimedes and Apollonius===
+[[File:Archimedes sphere and cylinder.svg|thumb|right|A sphere has 2/3 the volume and surface area of its circumscribing cylinder. A sphere and cylinder were placed on the tomb of Archimedes at his request.]]
+[[Archimedes]] (c. 287 BCE – c. 212 BCE), a colorful figure about whom many historical anecdotes are recorded, is remembered along with Euclid as one of the greatest of ancient mathematicians. Although the foundations of his work were put in place by Euclid, his work, unlike Euclid's, is believed to have been entirely original.&lt;ref&gt;Eves, p.&amp;nbsp;27&lt;/ref&gt; He proved equations for the volumes and areas of various figures in two and three dimensions, and enunciated the [[Archimedean property]] of finite numbers.
+
+[[Apollonius of Perga]] (c. 262 BCE – c. 190 BCE) is mainly known for his investigation of conic sections.
+
+[[File:Frans Hals - Portret van René Descartes.jpg|thumb|left|René Descartes. Portrait after [[Frans Hals]], 1648.]]
+
+===17th century: Descartes===
+[[René Descartes]] (1596–1650) developed [[analytic geometry]], an alternative method for formalizing geometry which focused on turning geometry into algebra.&lt;ref&gt;Ball, pp. 268ff&lt;/ref&gt;
+
+In this approach, a point on a plane is represented by its [[Cartesian coordinate system|Cartesian]] (''x'', ''y'') coordinates, a line is represented by its equation, and so on.
+
+In Euclid's original approach, the [[Pythagorean theorem]] follows from Euclid's axioms. In the Cartesian approach, the axioms are the axioms of algebra, and the equation expressing the Pythagorean theorem is then a definition of one of the terms in Euclid's axioms, which are now considered theorems.
+
+The equation
+:&lt;math&gt;|PQ|=\sqrt{(p_x-q_x)^2+(p_y-q_y)^2} \, &lt;/math&gt;
+defining the distance between two points ''P'' = (''p&lt;sub&gt;x&lt;/sub&gt;'', ''p&lt;sub&gt;y&lt;/sub&gt;'') and ''Q'' = (''q&lt;sub&gt;x&lt;/sub&gt;'', ''q&lt;sub&gt;y&lt;/sub&gt;'') is then known as the ''Euclidean [[metric space|metric]]'', and other metrics define [[non-Euclidean geometry|non-Euclidean geometries]].
+
+In terms of analytic geometry, the restriction of classical geometry to compass and straightedge constructions means a restriction to first- and second-order equations, e.g., ''y'' = 2''x'' + 1 (a line), or ''x''&lt;sup&gt;2&lt;/sup&gt; + ''y''&lt;sup&gt;2&lt;/sup&gt; = 7 (a circle).
+
+Also in the 17th century, [[Girard Desargues]], motivated by the theory of [[Perspective (graphical)|perspective]], introduced the concept of idealized points, lines, and planes at infinity. The result can be considered as a type of generalized geometry, [[projective geometry]], but it can also be used to produce proofs in ordinary Euclidean geometry in which the number of special cases is reduced.&lt;ref&gt;Eves (1963)&lt;/ref&gt;
+
+[[File:Squaring the circle.svg|right|thumb|Squaring the circle: the areas of this square and this circle are equal. In 1882, it was proven that this figure cannot be constructed in a finite number of steps with an idealized [[compass and straightedge]].]]
+
+===18th century===
+Geometers of the 18th century struggled to define the boundaries of the Euclidean system. Many tried in vain to prove the fifth postulate from the first four. By 1763, at least 28 different proofs had been published, but all were found incorrect.&lt;ref&gt;Hofstadter 1979, p.&amp;nbsp;91.&lt;/ref&gt;
+
+Leading up to this period, geometers also tried to determine what constructions could be accomplished in Euclidean geometry. For example, the problem of [[trisecting an angle]] with a compass and straightedge is one that naturally occurs within the theory, since the axioms refer to constructive operations that can be carried out with those tools. However, centuries of efforts failed to find a solution to this problem, until [[Pierre Wantzel]] published a proof in 1837 that such a construction was impossible. Other constructions that were proved impossible include [[doubling the cube]] and [[squaring the circle]]. In the case of doubling the cube, the impossibility of the construction originates from the fact that the compass and straightedge method involve equations whose order is an integral power of two,&lt;ref&gt;Theorem 120, Elements of Abstract Algebra, Allan Clark, Dover, {{ISBN|0-486-64725-0}}&lt;/ref&gt; while doubling a cube requires the solution of a third-order equation.
+
+[[Leonhard Euler|Euler]] discussed a generalization of Euclidean geometry called [[affine geometry]], which retains the fifth postulate unmodified while weakening postulates three and four in a way that eliminates the notions of angle (whence right triangles become meaningless) and of equality of length of line segments in general (whence circles become meaningless) while retaining the notions of parallelism as an equivalence relation between lines, and equality of length of parallel line segments (so line segments continue to have a midpoint).
+
+===19th century and non-Euclidean geometry===
+In the early 19th century, [[Lazare Carnot|Carnot]] and [[August Ferdinand Möbius|Möbius]] systematically developed the use of signed angles and line segments as a way of simplifying and unifying results.&lt;ref&gt;Eves (1963), p.&amp;nbsp;64&lt;/ref&gt;
+
+The century's most significant development in geometry occurred when, around 1830, [[János Bolyai]] and [[Nikolai Ivanovich Lobachevsky]] separately published work on [[non-Euclidean geometry]], in which the parallel postulate is not valid.&lt;ref&gt;Ball, p.&amp;nbsp;485&lt;/ref&gt; Since non-Euclidean geometry is provably relatively consistent with Euclidean geometry, the parallel postulate cannot be proved from the other postulates.
+
+In the 19th century, it was also realized that Euclid's ten axioms and common notions do not suffice to prove all of the theorems stated in the ''Elements''. For example, Euclid assumed implicitly that any line contains at least two points, but this assumption cannot be proved from the other axioms, and therefore must be an axiom itself. The very first geometric proof in the ''Elements,'' shown in the figure above, is that any line segment is part of a triangle; Euclid constructs this in the usual way, by drawing circles around both endpoints and taking their intersection as the third [[wikt:vertex|vertex]]. His axioms, however, do not guarantee that the circles actually intersect, because they do not assert the geometrical property of continuity, which in Cartesian terms is equivalent to the [[Real number#Completeness|completeness]] property of the real numbers. Starting with [[Moritz Pasch]] in 1882, many improved axiomatic systems for geometry have been proposed, the best known being those of [[Hilbert's axioms|Hilbert]],&lt;ref&gt;* [[Howard Eves]], 1997 (1958). ''Foundations and Fundamental Concepts of Mathematics''. Dover.&lt;/ref&gt; [[Birkhoff's axioms|George Birkhoff]],&lt;ref&gt;Birkhoff, G. D., 1932, &quot;A Set of Postulates for Plane Geometry (Based on Scale and Protractors),&quot; Annals of Mathematics 33.&lt;/ref&gt; and [[Tarski's axioms|Tarski]].&lt;ref name=&quot;Tarski 1951&quot;&gt;Tarski (1951)&lt;/ref&gt;
+
+===20th century and relativity===
+[[File:1919 eclipse negative.jpg|thumb|right|A disproof of Euclidean geometry as a description of physical space. In a 1919 test of the general theory of relativity, stars (marked with short horizontal lines) were photographed during a solar [[eclipse]]. The rays of starlight were bent by the Sun's gravity on their way to the earth. This is interpreted as evidence in favor of Einstein's prediction that gravity would cause deviations from Euclidean geometry.]]
+[[Albert Einstein|Einstein's]] theory of [[special relativity]] involves a four-dimensional [[space-time]], the [[Minkowski space]], which is [[non-Euclidean geometry|non-Euclidean]]. This shows that non-Euclidean geometries, which were introduced a few years earlier for showing that the [[parallel postulate]] cannot be proved, are also useful for describing the physical world.
+
+However, the three-dimensional &quot;space part&quot; of the Minkowski space remains the space of Euclidean geometry. This is not the case with [[general relativity]], for which the geometry of the space part of space-time is not Euclidean geometry.&lt;ref&gt;Misner, Thorne, and Wheeler (1973), p.&amp;nbsp;191&lt;/ref&gt; For example, if a triangle is constructed out of three rays of light, then in general the interior angles do not add up to 180 degrees due to gravity. A relatively weak gravitational field, such as the Earth's or the sun's, is represented by a metric that is approximately, but not exactly, Euclidean. Until the 20th century, there was no technology capable of detecting the deviations from Euclidean geometry, but Einstein predicted that such deviations would exist. They were later verified by observations such as the slight bending of starlight by the Sun during a solar eclipse in 1919, and such considerations are now an integral part of the software that runs the [[Global Positioning System|GPS]] system.&lt;ref&gt;Rizos, Chris. [[University of New South Wales]]. [http://www.gmat.unsw.edu.au/snap/gps/gps_survey/chap3/312.htm GPS Satellite Signals] {{Webarchive|url=https://web.archive.org/web/20100612004027/http://www.gmat.unsw.edu.au/snap/gps/gps_survey/chap3/312.htm |date=2010-06-12 }}. 1999.&lt;/ref&gt;
+
+==Treatment of infinity==
+
+===Infinite objects===
+Euclid sometimes distinguished explicitly between &quot;finite lines&quot; (e.g., Postulate 2) and &quot;[[infinity|infinite]] lines&quot; (book I, proposition 12). However, he typically did not make such distinctions unless they were necessary. The postulates do not explicitly refer to infinite lines, although for example some commentators interpret postulate 3, existence of a circle with any radius, as implying that space is infinite.&lt;ref name=&quot;Heath, p.&amp;nbsp;200&quot;/&gt;
+
+The notion of [[infinitesimals|infinitesimal quantities]] had previously been discussed extensively by the [[Eleatic School]], but nobody had been able to put them on a firm logical basis, with paradoxes such as [[Zeno's paradox]] occurring that had not been resolved to universal satisfaction. Euclid used the [[method of exhaustion]] rather than infinitesimals.&lt;ref&gt;Ball, p.&amp;nbsp;31&lt;/ref&gt;
+
+Later ancient commentators, such as [[Proclus]] (410–485 CE), treated many questions about infinity as issues demanding proof and, e.g., Proclus claimed to prove the infinite divisibility of a line, based on a proof by contradiction in which he considered the cases of even and odd numbers of points constituting it.&lt;ref&gt;Heath, p.&amp;nbsp;268&lt;/ref&gt;
+
+At the turn of the 20th century, [[Otto Stolz]], [[Paul du Bois-Reymond]], [[Giuseppe Veronese]], and others produced controversial work on [[Archimedean property|non-Archimedean]] models of Euclidean geometry, in which the distance between two points may be infinite or infinitesimal, in the [[Isaac Newton|Newton]]–[[Gottfried Leibniz|Leibniz]] sense.&lt;ref&gt;Giuseppe Veronese, On Non-Archimedean Geometry, 1908. English translation in Real Numbers, Generalizations of the Reals, and Theories of Continua, ed. [[Philip Ehrlich]], Kluwer, 1994.&lt;/ref&gt; Fifty years later, [[Abraham Robinson]] provided a rigorous logical foundation for Veronese's work.&lt;ref&gt;Robinson, Abraham (1966). Non-standard analysis.&lt;/ref&gt;
+
+===Infinite processes===
+One reason that the ancients treated the parallel postulate as less certain than the others is that verifying it physically would require us to inspect two lines to check that they never intersected, even at some very distant point, and this inspection could potentially take an infinite amount of time.&lt;ref&gt;For the assertion that this was the historical reason for the ancients considering the parallel postulate less obvious than the others, see Nagel and Newman 1958, p.&amp;nbsp;9.&lt;/ref&gt;
+
+The modern formulation of [[proof by induction]] was not developed until the 17th century, but some later commentators consider it implicit in some of Euclid's proofs, e.g., the proof of the infinitude of primes.&lt;ref&gt;Cajori (1918), p.&amp;nbsp;197&lt;/ref&gt;
+
+Supposed paradoxes involving infinite series, such as [[Zeno's paradox]], predated Euclid. Euclid avoided such discussions, giving, for example, the expression for the partial sums of the [[geometric series]] in IX.35 without commenting on the possibility of letting the number of terms become infinite.
+
+==Logical basis==
+{{expert needed|mathematics|date=December 2010}}
+{{Expand section|date=June 2010}}
+{{See also|Hilbert's axioms|Axiomatic system|Real closed field}}
+
+===Classical logic===
+Euclid frequently used the method of [[proof by contradiction]], and therefore the traditional presentation of Euclidean geometry assumes [[classical logic]], in which every proposition is either true or false, i.e., for any proposition P, the proposition &quot;P or not P&quot; is automatically true.
+
+===Modern standards of rigor===
+Placing Euclidean geometry on a solid axiomatic basis was a preoccupation of mathematicians for centuries.&lt;ref name=Smith&gt;A detailed discussion can be found in {{cite book |title=Methods of geometry |author= James T. Smith |url=https://books.google.com/books?id=mWpWplOVQ6MC&amp;pg=RA1-PA19 |chapter=Chapter 2: Foundations |pages=19 ''ff'' |isbn=0-471-25183-6 |publisher=Wiley |year=2000}}&lt;/ref&gt; The role of [[primitive notion]]s, or undefined concepts, was clearly put forward by [[Alessandro Padoa]] of the [[Giuseppe Peano|Peano]] delegation at the 1900 Paris conference:&lt;ref name = Smith/&gt;&lt;ref name=revue&gt;{{cite book |title=Revue de métaphysique et de morale, Volume 8 |url=https://books.google.com/books?id=4aoLAAAAIAAJ&amp;pg=PA592 |page=592 |author=Société française de philosophie |publisher=Hachette |year=1900}}&lt;/ref&gt; {{blockquote|text=...when we begin to formulate the theory, we can imagine that the undefined symbols are ''completely devoid of meaning'' and that the unproved propositions are simply ''conditions'' imposed upon the undefined symbols.
+
+Then, the ''system of ideas'' that we have initially chosen is simply ''one interpretation'' of the undefined symbols; but..this interpretation can be ignored by the reader, who is free to replace it in his mind by ''another interpretation''.. that satisfies the conditions...
+
+''Logical'' questions thus become completely independent of ''empirical'' or ''psychological'' questions...
+
+The system of undefined symbols can then be regarded as the ''abstraction'' obtained from the ''specialized theories'' that result when...the system of undefined symbols is successively replaced by each of the interpretations...|source=''Essai d'une théorie algébrique des nombre entiers, avec une Introduction logique à une théorie déductive quelconque'' |sign=Padoa}}
+
+That is, mathematics is context-independent knowledge within a hierarchical framework. As said by [[Bertrand Russell]]:&lt;ref name=Newman&gt;{{cite book |title= The world of mathematics |volume=3 |editor=James Roy Newman |author=Bertrand Russell |chapter=Mathematics and the metaphysicians |isbn=0-486-41151-6 |year=2000|url=https://books.google.com/books?id=_b2ShqRj8YMC&amp;pg=PA1577 |page=1577 |edition=Reprint of Simon and Schuster 1956 |publisher=Courier Dover Publications }}&lt;/ref&gt;
+{{blockquote|text=If our hypothesis is about ''anything'', and not about some one or more particular things, then our deductions constitute mathematics. Thus, mathematics may be defined as the subject in which we never know what we are talking about, nor whether what we are saying is true. |source =''Mathematics and the metaphysicians'' |sign=Bertrand Russell}}
+
+Such foundational approaches range between [[foundationalism]] and [[formalism (mathematics)|formalism]].
+
+===Axiomatic formulations===
+{{blockquote|text=Geometry is the science of correct reasoning on incorrect figures.|source=''How to Solve It'', p.&amp;nbsp;208 |sign=[[George Pólya]]}}
+*Euclid's axioms: In his dissertation to Trinity College, Cambridge, Bertrand Russell summarized the changing role of Euclid's geometry in the minds of philosophers up to that time.&lt;ref name= Russell&gt;{{cite book |title=An essay on the foundations of geometry |author=Bertrand Russell |publisher=Cambridge University Press |year=1897 |url=https://books.google.com/books?id=NecGAAAAYAAJ&amp;pg=PA1 |chapter=Introduction}}&lt;/ref&gt; It was a conflict between certain knowledge, independent of experiment, and empiricism, requiring experimental input. This issue became clear as it was discovered that the [[parallel postulate]] was not necessarily valid and its applicability was an empirical matter, deciding whether the applicable geometry was Euclidean or [[Non-Euclidean geometry|non-Euclidean]].
+*[[Hilbert's axioms]]: Hilbert's axioms had the goal of identifying a ''simple'' and ''complete'' set of ''independent'' axioms from which the most important geometric theorems could be deduced. The outstanding objectives were to make Euclidean geometry rigorous (avoiding hidden assumptions) and to make clear the ramifications of the parallel postulate.
+*[[Birkhoff's axioms]]: Birkhoff proposed four postulates for Euclidean geometry that can be confirmed experimentally with scale and protractor. This system relies heavily on the properties of the [[real numbers]].&lt;ref name=Brikhoff&gt;{{cite book |title=Basic Geometry |author1=George David Birkhoff |author2=Ralph Beatley |url=https://books.google.com/books?id=TB6xYdomdjQC&amp;pg=PA38 |chapter=Chapter 2: The five fundamental principles |isbn=0-8218-2101-6 |publisher=AMS Bookstore |year=1999 |pages=38 ''ff'' |edition=3rd}}&lt;/ref&gt;&lt;ref name=Smith2&gt;{{cite book |title=Cited work |author=James T. Smith |pages=84 ''ff'' |url=https://books.google.com/books?id=mWpWplOVQ6MC&amp;pg=RA1-PA84 |chapter=Chapter 3: Elementary Euclidean Geometry }}&lt;/ref&gt;&lt;ref name=Moise&gt;{{cite book |title=Elementary geometry from an advanced standpoint |author=Edwin E. Moise |url=https://books.google.com/books?cd=1&amp;id=3UjvAAAAMAAJ&amp;dq=isbn%3A9780201508673&amp;q=Birkhoff#search_anchor
+|isbn=0-201-50867-2 |year=1990 |publisher=Addison–Wesley |edition=3rd}}&lt;/ref&gt; The notions of ''angle'' and ''distance'' become primitive concepts.&lt;ref name=Silvester&gt;{{cite book |title=Geometry: ancient and modern |author=John R. Silvester |url=https://books.google.com/books?id=VtH_QG6scSUC&amp;pg=PA5 |chapter=§1.4 Hilbert and Birkhoff |isbn=0-19-850825-5 |publisher=Oxford University Press |year=2001}}&lt;/ref&gt;
+*[[Tarski's axioms]]: [[Alfred Tarski]] (1902–1983) and his students defined ''elementary'' Euclidean geometry as the geometry that can be expressed in [[first-order logic]] and does not depend on [[set theory]] for its logical basis,&lt;ref name=Tarski0&gt;{{cite book |chapter=What is elementary geometry |author=Alfred Tarski |quote=We regard as elementary that part of Euclidean geometry which can be formulated and established without the help of any set-theoretical devices|url=https://books.google.com/books?id=eVVKtnKzfnUC&amp;pg=PA16 |page=16 |isbn=1-4067-5355-6 |editor1=Leon Henkin |editor2=Patrick Suppes |editor3=Alfred Tarski |publisher=Brouwer Press |year=2007 |title=Studies in Logic and the Foundations of Mathematics – The Axiomatic Method with Special Reference to Geometry and Physics |edition=Proceedings of International Symposium at Berkeley 1957–8; Reprint}}&lt;/ref&gt; in contrast to Hilbert's axioms, which involve point sets.&lt;ref name=Simmons&gt;{{cite book |title=Logic from Russell to Church |editor=Dov M. Gabbay |editor2=John Woods|chapter=Tarski's logic |author=Keith Simmons |page=574 |url=https://books.google.com/books?id=K5dU9bEKencC&amp;pg=PA574 |isbn=0-444-51620-4 |year=2009 |publisher=Elsevier}}&lt;/ref&gt; Tarski proved that his axiomatic formulation of elementary Euclidean geometry is consistent and complete in a certain [[Decidability (logic)|sense]]: there is an algorithm that, for every proposition, can be shown either true or false.&lt;ref name=&quot;Tarski 1951&quot;/&gt; (This doesn't violate [[Gödel's incompleteness theorems|Gödel's theorem]], because Euclidean geometry cannot describe a sufficient amount of [[Peano arithmetic|arithmetic]] for the theorem to apply.&lt;ref&gt;Franzén, Torkel (2005). Gödel's Theorem: An Incomplete Guide to its Use and Abuse. AK Peters. {{ISBN|1-56881-238-8}}. Pp. 25–26.&lt;/ref&gt;) This is equivalent to the decidability of [[real closed fields]], of which elementary Euclidean geometry is a model.
+
+===Constructive approaches and pedagogy===
+The process of abstract axiomatization as exemplified by [[Hilbert's axioms]] reduces geometry to theorem proving or [[predicate logic]]. In contrast, the Greeks used construction postulates, and emphasized problem solving.&lt;ref name=Panza&gt;{{cite book |title=Analysis and synthesis in mathematics: history and philosophy |editor1=Michael Otte |editor2=Marco Panza |author=Petri Mäenpää |chapter=From backward reduction to configurational analysis|url=https://books.google.com/books?id=WFav-N0tv7AC&amp;pg=PA210 |page=210 |isbn=0-7923-4570-3 |year=1999 |publisher=Springer}}&lt;/ref&gt; For the Greeks, constructions are more primitive than existence propositions, and can be used to prove existence propositions, but not ''vice versa''. To describe problem solving adequately requires a richer system of logical concepts.&lt;ref name=Panza/&gt; The contrast in approach may be summarized:&lt;ref name=Corsi&gt;{{cite book |title=Deduction, Computation, Experiment: Exploring the Effectiveness of Proof |url=https://books.google.com/books?id=jVPW-_qsYDgC&amp;printsec=frontcover |page=1 |author=Carlo Cellucci |chapter=Why proof? What is proof? |editor1=Rossella Lupacchini |editor2=Giovanna Corsi |isbn=88-470-0783-6 |year=2008 |publisher=Springer}}&lt;/ref&gt;
+*Axiomatic proof: Proofs are deductive derivations of propositions from primitive premises that are ‘true’ in some sense. The aim is to justify the proposition.
+*Analytic proof: Proofs are non-deductive derivations of hypotheses from problems. The aim is to find hypotheses capable of giving a solution to the problem. One can argue that Euclid's axioms were arrived upon in this manner. In particular, it is thought that Euclid felt the [[parallel postulate]] was forced upon him, as indicated by his reluctance to make use of it,&lt;ref name=Weisstein0&gt;{{cite book |title=CRC concise encyclopedia of mathematics |author=Eric W. Weisstein |url=https://books.google.com/books?id=Zg1_QZsylysC&amp;pg=PA942 |page=942 |chapter=Euclid's postulates |isbn=1-58488-347-2 |year=2003 |publisher=CRC Press |edition=2nd}}&lt;/ref&gt; and his arrival upon it by the method of contradiction.&lt;ref name=Bennett&gt;{{cite book |title=Logic made easy: how to know when language deceives you |author=Deborah J. Bennett |url=https://books.google.com/books?id=_fo3vTO8qGcC&amp;pg=PA34 |page=34 |isbn=0-393-05748-8 |year=2004 |publisher=W. W. Norton &amp; Company}}&lt;/ref&gt;
+
+[[Kolmogorov|Andrei Nicholaevich Kolmogorov]] proposed a problem solving basis for geometry.&lt;ref name=Kolmogorov&gt;{{cite book |title=Geometry: A textbook for grades 6–8 of secondary school ''[Geometriya. Uchebnoe posobie dlya 6–8 klassov srednie shkoly]'' |edition=3rd |author1=AN Kolmogorov |author2=AF Semenovich |author3=RS Cherkasov |publisher=&quot;Prosveshchenie&quot; Publishers |location = Moscow |year=1982 |pages=372–376 }} A description of the approach, which was based upon [[geometric transformation]]s, can be found in ''Teaching geometry in the USSR'' [http://unesdoc.unesco.org/images/0012/001248/124809eo.pdf Chernysheva, Firsov, and Teljakovskii]&lt;/ref&gt;&lt;ref name=Prasolov&gt;{{cite book |title=Geometry |author1=Viktor Vasilʹevich Prasolov |author2=Vladimir Mikhaĭlovich Tikhomirov |url=https://books.google.com/books?id=t7kbhDDUFSkC&amp;pg=PA198 |page=198 |isbn=0-8218-2038-9 |year=2001 |publisher=AMS Bookstore}}&lt;/ref&gt; This work was a precursor of a modern formulation in terms of [[constructive type theory]].&lt;ref name=Maenpaa&gt;{{cite book |title=Twenty-five years of constructive type theory: proceedings of a congress held in Venice, October 1995 |editor1=Giovanni Sambin |editor2=Jan M. Smith |author=Petri Mäenpää|chapter=Analytic program derivation in type theory |page=113 |url=https://books.google.com/books?hl=en&amp;lr=&amp;id=pLnKggT_In4C&amp;oi=fnd&amp;pg=PA113|isbn=0-19-850127-7 |year=1998 |publisher=Oxford University Press}}&lt;/ref&gt; This development has implications for pedagogy as well.&lt;ref name=&quot;Hoyles&quot;&gt;{{cite journal|author=Celia Hoyles|date=Feb 1997|title=The curricular shaping of students' approach to proof|journal=For the Learning of Mathematics|publisher=FLM Publishing Association|volume=17|pages=7–16|jstor=40248217 &lt;!-- 09:39 --&gt;|number=1}}&lt;!--|accessdate=2010-06-29 --&gt;&lt;/ref&gt;
+{{blockquote|text =If proof simply follows conviction of truth rather than contributing to its construction and is only experienced as a demonstration of something already known to be true, it is likely to remain meaningless and purposeless in the eyes of students. |source=''The curricular shaping of students' approach to proof'' |sign=Celia Hoyles}}
+
+==See also==
+*[[Absolute geometry]]
+*[[Analytic geometry]]
+*[[Birkhoff's axioms]]
+*[[Cartesian coordinate system]]
+*[[Hilbert's axioms]]
+*[[Incidence geometry]]
+*[[List of interactive geometry software]]
+*[[Metric space]]
+*[[Non-Euclidean geometry]]
+*[[Ordered geometry]]
+*[[Parallel postulate]]
+*[[Type theory]]
+
+===Classical theorems===
+*[[Angle bisector theorem]]
+*[[Butterfly theorem]]
+*[[Ceva's theorem]]
+*[[Heron's formula]]
+*[[Menelaus' theorem]]
+*[[Nine-point circle]]
+*[[Pythagorean theorem]]
+
+== Notes ==
+{{Reflist|35em}}
+
+==References==
+*{{cite book | last = Ball | first = W.W. Rouse | authorlink = W. W. Rouse Ball | title = A Short Account of the History of Mathematics | origyear = | url = | edition = 4th ed. [Reprint. Original publication: London: Macmillan &amp; Co., 1908] | year = 1960 | publisher = Dover Publications | location = New York | isbn = 0-486-20630-0 | pages = 50–62 }}
+*{{cite book | last = Coxeter | first = H.S.M. | authorlink = H.S.M. Coxeter| title = Introduction to Geometry | year = 1961 | publisher = Wiley | location = New York}}
+*{{cite book|first=Howard|last= Eves|title=A Survey of Geometry (Volume One)|publisher=Allyn and Bacon|year=1963}}
+*{{cite book | last = Heath | first = Thomas L. | authorlink = T. L. Heath | title = The Thirteen Books of Euclid's Elements | url = https://archive.org/details/thirteenbooksofe00eucl | url-access = registration | edition = 2nd ed. [Facsimile. Original publication: Cambridge University Press, 1925] | year = 1956 | publisher = Dover Publications | location = New York }} In 3 vols.: vol. 1 {{ISBN|0-486-60088-2}}, vol. 2 {{ISBN|0-486-60089-0}}, vol. 3 {{ISBN|0-486-60090-4}}. Heath's authoritative translation of Euclid's Elements, plus his extensive historical research and detailed commentary throughout the text.
+*{{cite book|first1=Charles W. |last1=Misner |author1link=Charles W. Misner |first2=Kip S. |last2=Thorne |author2link= Kip S. Thorne |first3=John Archibald |last3=Wheeler |author3link=John Archibald Wheeler |title=[[Gravitation (book)|Gravitation]] |publisher = W.H. Freeman|year= 1973}}
+*{{cite book|author=Mlodinow|title=Euclid's Window|url=https://archive.org/details/euclidswindowsto00mlod|url-access=registration|publisher = The Free Press|year= 2001}}
+*{{cite book|author1=Nagel, E. |author2=Newman, J.R.|title=Gödel's Proof|url=https://archive.org/details/gdelsproof00nage |publisher = New York University Press|year= 1958}}
+*{{cite book|first1=Alfred |last1=Tarski |authorlink=Alfred Tarski |year=1951 |title=A Decision Method for Elementary Algebra and Geometry |publisher=Univ. of California Press}}
+
+==External links==
+{{Commonscat}}
+*{{springer|title=Euclidean geometry|id=p/e036350}}
+*{{springer|title=Plane trigonometry|id=p/p072810}}
+*[http://www-math.mit.edu/~kedlaya/geometryunbound Kiran Kedlaya, ''Geometry Unbound''] (a treatment using analytic geometry; PDF format, GFDL licensed)
+{{Authority control}}
+{{Areas of mathematics}}
+{{Geometry-footer}}
+
+{{DEFAULTSORT:Euclidean Geometry}}
+[[Category:Euclidean geometry| ]]
+[[Category:Elementary geometry|*]]
+[[Category:Greek inventions]]</text>
+      <sha1>a4uth8gsj8jnrpdzgl9qio8r228uszj</sha1>
+    </revision>
+  </page>

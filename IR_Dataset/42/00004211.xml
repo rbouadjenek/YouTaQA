@@ -1,0 +1,168 @@
+  <page>
+    <title>Bootstrapping</title>
+    <ns>0</ns>
+    <id>4211</id>
+    <revision>
+      <id>939907886</id>
+      <parentid>939654709</parentid>
+      <timestamp>2020-02-09T12:39:38Z</timestamp>
+      <contributor>
+        <ip>24.61.16.83</ip>
+      </contributor>
+      <comment>Removed opinion</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{other uses}}
+{{short description|A self-starting process that is supposed to proceed without external input}}
+In general, '''bootstrapping''' usually refers to a self-starting process that is supposed to proceed without external input.  In [[computer technology]] the term (usually shortened to '''booting''') usually refers to the process of loading the basic software into the memory of a computer after power-on or general reset, especially the [[operating system]] which will then take care of loading other software as needed.
+
+The term appears to have originated in the early 19th-century United States (particularly in the phrase &quot;pull oneself over a fence by one's bootstraps&quot;).
+
+A more practical and common interpretation is that the phrase infers that when a person wants to succeed, the first thing they need to do before hard work, is to put on their boots. In this sense, the phrase makes perfect sense, as most working Americans put their shoes or boots on as the last item of clothing before they start for work.&lt;ref&gt;[http://www.worldwidewords.org/qa/qa-boo2.htm World Wide Words: Boot], Michael Quinion&lt;/ref&gt;&lt;ref name=&quot;linguist-listserv&quot;&gt;{{cite mailing list | url=http://listserv.linguistlist.org/pipermail/ads-l/2005-August/053187.html | title=bootstraps--speculation/questions | date=2005-08-28 | archive-url=https://web.archive.org/web/20090129230419/http://listserv.linguistlist.org/cgi-bin/wa?A2=ind0508D&amp;L=ADS-L&amp;P=14748 | archive-date=2009-01-29}}&lt;/ref&gt;&lt;ref name=&quot;examples&quot;&gt;{{cite mailing list |url=http://listserv.linguistlist.org/pipermail/ads-l/2005-August/052756.html |title=figurative 'bootstraps' |date=2005-08-11}}&lt;/ref&gt;
+
+== Etymology ==
+[[File:Dr Martens, black, old.jpg|thumb|right|A pair of boots with one bootstrap visible]]
+Tall [[boot]]s may have a tab, loop or handle at the top known as a bootstrap, allowing one to use fingers or a [[Boot jack|boot hook]] tool to help pulling the boots on. The [[saying]] &quot;to {{linktext|pull oneself up by one's bootstraps}}&quot;&lt;ref name=&quot;examples&quot;/&gt; was already in use during the 19th century as an example of an impossible task.  The [[idiom]] dates at least to 1834, when it appeared in the ''Workingman's Advocate'': &quot;It is conjectured that Mr. Murphee will now be enabled to hand himself over the Cumberland river or a barn yard fence by the straps of his boots.&quot;&lt;ref name=Freeman1&gt;Jan Freeman, [http://www.boston.com/bostonglobe/ideas/theword/2009/01/bootstraps_and.html Bootstraps and Baron Munchausen], ''[[Boston.com]]'', January 27, 2009&lt;/ref&gt; In 1860 it appeared in a comment on [[philosophy of mind]]: &quot;The attempt of the mind to analyze itself [is] an effort analogous to one who would lift himself by his own bootstraps.&quot;&lt;ref&gt;Jan Freeman, [http://www.boston.com/bostonglobe/ideas/articles/2009/01/25/the_unkindliest_cut/ The unkindliest cut], ''[[Boston.com]]'', January 25, 2009&lt;/ref&gt; Bootstrap as a metaphor, meaning to better oneself by one's own unaided efforts, was in use in 1922.&lt;ref&gt;''[[Ulysses (novel)|Ulysses]]'' cited in the Oxford English Dictionary&lt;/ref&gt; This metaphor spawned additional metaphors for a series of self-sustaining processes that proceed without external help.&lt;ref&gt;{{cite web|url=http://www.phrases.org.uk/meanings/290800.html|title='Pull yourself up by your bootstraps' - the meaning and origin of this phrase|first=Gary|last=Martin|website=Phrasefinder|accessdate=23 June 2018}}&lt;/ref&gt;
+
+[[File:Zentralbibliothek Solothurn - Münchhausen zieht sich am Zopf aus dem Sumpf - a0400.tif|right|thumb|[[Baron Munchausen]] pulls himself and his horse out of a swamp by his pigtail]]
+
+The term is sometimes attributed to a story in [[Rudolf Erich Raspe]]'s ''[[wikisource:The Surprising Adventures of Baron Munchausen|The Surprising Adventures of Baron Munchausen]]'', but in that story [[Baron Munchausen]] pulls himself (and his horse) out of a swamp by his hair (specifically, his pigtail), not by his bootstraps{{snd}} and no explicit reference to bootstraps has been found elsewhere in the various versions of the Munchausen tales.&lt;ref name=&quot;Freeman1&quot; /&gt;
+
+==Applications==
+
+===Computing===
+
+====Software loading and execution====
+{{Main | Booting | Reboot (computing)}}
+'''Booting''' is the process of starting a computer, specifically with regard to starting its software.  The process involves a chain of stages, in which at each stage a smaller, simpler program loads and then executes the larger, more complicated program of the next stage.  It is in this sense that the computer &quot;pulls itself up by its bootstraps&quot;, ''i.e.'' it improves itself by its own efforts. Booting is a chain of events that starts with execution of hardware-based procedures and may then hand-off to [[firmware]] and software which is loaded into [[main memory]]. Booting often involves processes such as performing [[power-on self-test|self-tests]], loading [[computer configuration|configuration]] settings, loading a [[BIOS]], [[resident monitor]]s, a [[hypervisor]], an [[operating system]], or [[utility software]].
+
+The computer term bootstrap began as a metaphor in the 1950s. In computers, pressing a bootstrap button caused a [[hardwired control|hardwired program]] to read a bootstrap program from an input unit. The computer would then execute the bootstrap program, which caused it to read more program instructions. It became a self-sustaining process that proceeded without external help from manually entered instructions. As a computing term, bootstrap has been used since at least 1953.&lt;ref&gt;{{Cite journal | year = 1953 | title = The System Design of the IBM Type 701 Computer | author = Buchholz, Werner | journal = Proceedings of the I.R.E. | volume = 41 | issue = 10 | page = 1273 | doi=10.1109/jrproc.1953.274300}}&lt;/ref&gt;
+
+====Software development====
+Bootstrapping can also refer to the development of successively more complex, faster programming environments. The simplest environment will be, perhaps, a very basic text editor (''e.g.'', [[ed (UNIX)|ed]]) and an [[Assembly language#Assembler|assembler]] program. Using these tools, one can write a more complex text editor, and a simple compiler for a higher-level language and so on, until one can have a [[graphical user interface|graphical]] [[integrated development environment|IDE]] and an extremely [[high-level programming language]].
+
+Historically, bootstrapping also refers to an early technique for computer program development on new hardware. The technique described in this paragraph has been replaced by the use of a [[cross compiler]] executed by a pre-existing computer.  Bootstrapping in program development began during the 1950s when each program was constructed on paper in decimal code or in binary code, bit by bit (1s and 0s), because there was no high-level computer language, no [[compiler]], no assembler, and no [[Linker (computing)|linker]]. A tiny assembler program was hand-coded for a new computer (for example the [[IBM 650]]) which converted a few instructions into binary or decimal code: A1. This simple assembler program was then rewritten in its just-defined [[assembly language]] but with extensions that would enable the use of some additional mnemonics for more complex operation codes. The enhanced assembler's source program was then assembled by its predecessor's executable (A1) into binary or decimal code to give A2, and the cycle repeated (now with those enhancements available), until the entire instruction set was coded, branch addresses were automatically calculated, and other conveniences (such as conditional assembly, macros, optimisations, etc.) established.  This was how the early assembly program SOAP ([[Symbolic Optimal Assembly Program]]) was developed.  Compilers, linkers, loaders, and utilities were then coded in assembly language, further continuing the bootstrapping process of developing complex software systems by using simpler software.
+
+The term was also championed by [[Doug Engelbart]] to refer to his belief that organizations could better evolve by improving the process they use for improvement (thus obtaining a compounding effect over time). His [[SRI International|SRI]] team that developed the [[NLS (computer system)|NLS]] hypertext system applied this strategy by using the tool they had developed to improve the tool.
+
+====Compilers====
+{{Main | Bootstrapping (compilers)}}
+The development of compilers for new programming languages first developed in an existing language but then rewritten in the new language and compiled by itself, is another example of the bootstrapping notion. Using an existing language to bootstrap a new language is one way to solve the &quot;[[chicken or the egg]]&quot; causality dilemma.
+
+====Installers====
+{{Main | Installation (computer programs)}}
+During the installation of computer programs, it is sometimes necessary to update the installer or package manager itself. The common pattern for this is to use a small executable bootstrapper file (''e.g.,'' [[setup.exe]]) which updates the installer and starts the real installation after the update. Sometimes the bootstrapper also installs other prerequisites for the software during the bootstrapping process.
+
+====Overlay networks====
+{{Main|Bootstrapping node}}
+
+A bootstrapping node, also known as a rendezvous host,&lt;ref name=&quot;Francis01&quot;&gt;{{cite journal |title=Yoid: Extending the Internet Multicast Architecture |publisher=www.aciri.org |author=Francis, Paul |date=2000-04-02 |url=http://www.cs.cornell.edu/people/francis/yoidArch.pdf |accessdate=2008-12-24}}&lt;/ref&gt; is a [[Node (networking)|node]] in an [[overlay network]] that provides initial configuration information to newly joining nodes so that they may successfully join the overlay network.&lt;ref name=&quot;sun01&quot;&gt;{{cite web |url=http://www.google.com/patents?id=6cF3AAAAEBAJ |title=US Patent 7,065,579 |accessdate=2008-12-23 |author=Traversat |date=2006-06-20 |display-authors=etal}}&lt;/ref&gt;&lt;ref name=&quot;Saxena01&quot;&gt;{{cite journal |title=Admission Control in Peer-to-Peer: Design and Performance Evaluation |publisher=In ACM Workshop on Security of Ad Hoc and Sensor Networks (SASN) 2003 |author=Saxena |year=2003 |url=http://www.ics.uci.edu/~gts/paps/sty03.pdf |accessdate=2008-12-24 |display-authors=etal}}&lt;/ref&gt;
+
+====Discrete-event simulation====
+{{Main | Discrete-event simulation}}
+A type of [[computer simulation]] called [[discrete-event simulation]] represents the operation of a system as a chronological sequence of events. A technique called ''bootstrapping the simulation model'' is used, which bootstraps initial data points using a [[pseudorandom number generator]] to schedule an initial set of pending events, which schedule additional events, and with time, the distribution of event times approaches its [[steady state]]—the bootstrapping behavior is overwhelmed by steady-state behavior.
+
+====Artificial intelligence and machine learning====
+{{Main | Bootstrap aggregating | Intelligence explosion}}
+Bootstrapping is a technique used to iteratively improve a [[classifier (machine learning)|classifier]]'s performance. Typically, multiple classifiers will be trained on different sets of the input data, and on prediction tasks the output of the different classifiers will be combined together.
+
+Seed AI is a hypothesized type of [[artificial intelligence]] capable of [[Intelligence explosion|recursive self-improvement]]. Having improved itself, it would become better at improving itself, potentially leading to an exponential increase in intelligence. No such AI is known to exist, but it remains an active field of research. Seed AI is a significant part of some theories about the [[technological singularity]]: proponents believe that the development of seed AI will rapidly yield ever-smarter intelligence (via bootstrapping) and thus a new era.&lt;ref&gt;{{Cite journal|last=Cortese|first=Francesco Albert Bosco|date=Spring 2014|title=The Maximally Distributed Intelligence Explosion|url=https://www.aaai.org/ocs/index.php/SSS/SSS14/paper/viewFile/7763/7739|journal=AAAI Spring Symposium|volume=|pages=|via=}}&lt;/ref&gt;&lt;ref&gt;{{Cite journal|last=Waser|first=Mark R.|date=2014|title=Bootstrapping a Structured Self-Improving &amp; Safe Autopoietic Self|journal=Procedia Computer Science|volume=41|pages=134–139|doi=10.1016/j.procs.2014.11.095}}&lt;/ref&gt;
+
+===Statistics===
+{{Main | Bootstrapping (statistics) | Bootstrapping populations}}
+Bootstrapping is a [[resampling (statistics)|resampling]] technique used to obtain estimates of summary statistics.
+
+=== Business ===
+[[Bootstrapping (business)|Bootstrapping in business]] means starting a business without external help or working capital. Entrepreneurs in the startup development phase of their company, survive through internal cash flow and are very cautious with their expenses.&lt;ref&gt;{{cite web|url=https://venturebeat.com/2008/11/20/the-art-of-the-bootstrap/|title=The art of the bootstrap|date=21 November 2008|accessdate=23 June 2018}}&lt;/ref&gt; Generally at the start of a venture, a small amount of money will be set aside for the bootstrap process.&lt;ref name=&quot;Bootstrap&quot;&gt;{{cite web|url=https://sethgodin.typepad.com/files/8.01.bootstrappersbible-1.pdf|title=The Bootstrap Bible|last=Godin|first=Seth|date=|website=|archive-url=|archive-date=|accessdate=23 June 2018}}&lt;/ref&gt; Bootstrapping can also be a supplement for [[econometric]] models.&lt;ref&gt;{{cite journal|author=J. Scott Armstrong|year=2001|title=Judgmental Bootstrapping: Inferring Experts= Rules for Forecasting|url=http://marketing.wharton.upenn.edu/documents/research/Bootstrapping%5b1%5d.pdf|journal=Principles of Forecasting: A Handbook for Researchers and Practitioners|publisher=Kluwer Academic Publishers|access-date=2012-01-10|archive-url=https://web.archive.org/web/20100620222012/http://marketing.wharton.upenn.edu/documents/research/Bootstrapping%5B1%5D.pdf|archive-date=2010-06-20|url-status=dead}}&lt;/ref&gt; Bootstrapping was also expanded upon in the book ''Bootstrap Business'' by [[Richard J. Christiansen|Richard Christiansen]], the Harvard Business Review article ''The Art of Bootstrapping'' and the follow-up book ''The Origin and Evolution of New Businesses'' by [[Amar Bhide]]. There is also an entire [[bible]] written on how to properly bootstrap by [[Seth Godin]].
+
+* [[Startup company|Startups]] can grow by reinvesting profits in its own growth if bootstrapping costs are low and return on investment is high. This financing approach allows owners to maintain control of their business and forces them to spend with discipline.&lt;ref&gt;{{cite web|url=https://vimeo.com/86337488|title=Bootstrapping in Entrepreneurship - Karl T. Ulrich|last=Ulrich|first=Karl|date=10 February 2014|via=Vimeo|accessdate=23 June 2018}}&lt;/ref&gt; In addition, bootstrapping allows startups to focus on customers rather than investors, thereby increasing the likelihood of creating a profitable business. This leaves startups with a better [[exit strategy]] with greater returns. 
+* [[Leveraged buyout]]s, or highly leveraged or &quot;bootstrap&quot; transactions, occur when an investor acquires a controlling interest in a company's equity and where a significant percentage of the purchase price is financed through leverage, i.e.&amp;nbsp;borrowing by the acquired company.
+* [[Bootstrapping (finance)|Bootstrapping]] in finance refers to the method to create the [[Spot contract|spot rate]] curve.
+* [[Operation Bootstrap]] (''Operación Manos a la Obra'') refers to the ambitious projects that industrialized [[Puerto Rico]] in the mid-20th century.
+
+===Biology===
+{{confusing|section|date=December 2018}}
+[[Richard Dawkins]] in his book ''River Out of Eden''&lt;ref&gt;Richard Dawkins, ''River Out of Eden'', pages 23-25, 1995 (paper) {{ISBN|0-465-06990-8}}&lt;/ref&gt; used the computer bootstrapping concept to explain how biological cells differentiate: &quot;Different cells receive different combinations of chemicals, which switch on different combinations of genes, and some genes work to switch other genes on or off. And so the bootstrapping continues, until we have the full repertoire of different kinds of cells.&quot;
+
+====Phylogenetics====
+Bootstrapping analysis gives a way to judge the strength of support for clades on [[phylogenetic tree]]s. A number is written by a node, which reflects the percentage of bootstrap trees which also resolve the [[clade]] at the endpoints of that branch.&lt;ref&gt;{{Cite journal
+ | year = 1996
+ | title = Bootstrap confidence levels for phylogenetic trees
+ |author1=Bradley Efron |author2=Elizabeth Halloran |author3=Susan Holmes  |last-author-amp=yes | journal = PNAS
+ | volume = 93
+ | issue = 23
+ | pages = 13429
+ | doi = 10.1073/pnas.93.23.13429
+| pmc = 38940 | pmid=8692949
+ }}&lt;/ref&gt;
+
+===Law===
+{{Main | Bootstrapping (law)}}
+Bootstrapping is a rule preventing the admission of [[hearsay]] evidence in conspiracy cases.
+
+===Linguistics===
+{{Main | Bootstrapping (linguistics)}}
+Bootstrapping is a theory of [[language acquisition]].
+
+===Physics===
+
+====Quantum theory====
+{{Main | Bootstrap model | Conformal bootstrap}}
+Bootstrapping is using very general consistency criteria to determine the form of a quantum theory from some assumptions on the spectrum of particles or operators.
+
+==== Magnetically confined fusion plasmas ====
+In [[tokamak]] fusion devices, bootstrapping refers to the process in which a [[bootstrap current]] is self-generated by the plasma, which reduces or eliminates the need for an external current driver. Maximising the bootstrap current is a major goal of advanced tokamak designs.
+
+==== Inertially confined fusion plasmas ====
+Bootstrapping in [[inertial confinement fusion]] refers to the alpha particles produced in the fusion reaction providing further heating to the plasma. This heating leads to ignition and an overall energy gain.
+
+===Electronics===
+{{Main | Bootstrapping (electronics)}}
+Bootstrapping is a form of positive feedback in analog circuit design.
+
+=== Electric power grid ===
+{{Main|Black start}}
+
+An electric power grid is almost never brought down intentionally. Generators and power stations are started and shut down as necessary. A typical power station requires power for start up prior to being able to generate power. This power is obtained from the grid, so if the entire grid is down these stations cannot be started.
+
+Therefore, to get a grid started, there must be at least a small number of power stations that can start entirely on their own. A [[black start]] is the process of restoring a power station to operation without relying on external power. In the absence of grid power, one or more black starts are used to bootstrap the grid.
+
+===Cellular networks===
+{{Main | Bootstrapping Server Function | Generic Bootstrapping Architecture }}
+A Bootstrapping Server Function (BSF) is an intermediary element in [[cellular network]]s which provides application independent functions for mutual [[authentication]] of user equipment and servers unknown to each other and for 'bootstrapping' the exchange of secret session keys afterwards. The term 'bootstrapping' is related to building a security relation with a previously unknown device first and to allow installing security elements (keys) in the device and the BSF afterwards.
+
+===Media===
+A media bootstrap is the process whereby a story or meme is deliberately (but artificially) produced by self and peer-referential journalism, originally within a tight circle of media content originators, often commencing with stories written within the same media organization.&lt;ref&gt;[https://gowans.blog/2009/11/23/the-bootstrap-theory-of-propaganda/ Stephen Gowans: The bootstrap theory of propaganda], November 23, 2009, retrieved October 24, 2019&lt;/ref&gt; This story is then expanded into a general media &quot;accepted wisdom&quot; with the aim of having it accepted as self-evident &quot;common knowledge&quot; by the reading, listening and viewing publics. The key feature of a media bootstrap is that as little hard, verifiable, external evidence as possible is used to support the story, preference being given to the citation (often unattributed) of other media stories, ''i.e.'' &quot;journalists interviewing journalists&quot;.
+
+Because the campaign is usually originated and at least initially concocted internally by a media organization with a particular agenda in mind, within a closed loop of reportage and opinionation, the campaign is said to have &quot;pulled itself up by its own bootstraps&quot;.
+
+A bootstrap campaign should be distinguished from a genuine news story of genuine interest, such as a natural disaster that kills thousands, or the death of a respected public figure. It is legitimate for these stories to be given coverage across all media platforms. What distinguishes a bootstrap from a real story is the contrived and organized manner in which the bootstrap appears to come out of nowhere. A bootstrap commonly claims to be tapping a hitherto unrecognized phenomenon within society.
+
+As self-[[levitating]] by pulling on one's bootstraps is physically impossible, this is often used by the bootstrappers themselves to deny the possibility that the bootstrap campaign is indeed concocted and artificial. They assert that it has arisen via a groundswell of public opinion. Media campaigns that are openly admitted as concocted (''e.g.'' a public service campaign titled &quot;Let's Clean Up Our City&quot;) are usually ignored by other media organizations for reasons related to competition. On the other hand, the true bootstrap welcomes the participation of other media organizations, indeed encourages it, as this participation gains the bootstrap notoriety and, most importantly, legitimacy.
+
+==See also==
+* {{annotated link|Causal loop|aka=Bootstrap paradox}}
+* {{annotated link|Conceptual metaphor}}
+* {{annotated link|Horatio Alger myth}}
+* {{annotated link|Intelligence explosion}}
+* {{annotated link|Münchhausen trilemma}}
+* {{annotated link|Positive feedback}}
+* {{annotated link|Robert A. Heinlein}}'s short sci-fi story ''{{annotated link|By His Bootstraps}}''
+* {{annotated link|The Doug Engelbart Institute|aka=The Bootstrap Alliance}}
+* {{annotated link|Booting}}
+
+==References==
+{{Reflist|30em}}
+
+==External links==
+{{Wiktionary|bootstrapping|bootstrap|pull oneself up by one's bootstraps}}
+* [http://dictionary.reference.com/browse/bootstrap Dictionary.com entries for Bootstrap]
+* [http://www.thefreedictionary.com/bootstrap Freedictionary.com entries for Bootstrap]
+* {{YouTube|id=xQx-tuW9A4Q|title=A video talk by Douglas Engelbart on Bootstrapping}}
+* [http://www.dougengelbart.org/about/bootstrapping-strategy.html Engelbart Institute on Bootstrapping Strategies]
+
+[[Category:American English idioms]]
+[[Category:Metaphors]]</text>
+      <sha1>piotco2czu02yh21qkgwp814m1nyi5s</sha1>
+    </revision>
+  </page>

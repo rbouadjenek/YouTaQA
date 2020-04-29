@@ -1,0 +1,98 @@
+  <page>
+    <title>Cosmic censorship hypothesis</title>
+    <ns>0</ns>
+    <id>7609</id>
+    <revision>
+      <id>931145335</id>
+      <parentid>929101363</parentid>
+      <timestamp>2019-12-17T06:21:47Z</timestamp>
+      <contributor>
+        <username>Citation bot</username>
+        <id>7903804</id>
+      </contributor>
+      <minor />
+      <comment>Add: url, pmid. | You can [[WP:UCB|use this bot]] yourself. [[WP:DBUG|Report bugs here]].| Activated by [[User:Nemo bis]] | via #UCB_webform</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">The weak and the strong '''cosmic censorship hypotheses''' are two mathematical [[conjecture|conjectures]] about the structure of [[gravitational singularity|gravitational singularities]] arising in [[general relativity]].
+
+Singularities that arise in the [[Solutions of the Einstein field equations|solutions]] of [[Einstein's field equation|Einstein's equations]] are typically hidden within [[event horizon]]s, and therefore cannot be observed from the rest of [[spacetime]]. Singularities that are not so hidden are called ''[[naked singularity|naked]]''. The '''weak cosmic censorship hypothesis''' was conceived by [[Roger Penrose]] in 1969 and posits that no naked singularities exist in the [[universe]].
+
+==Basics==
+[[File:Roger Penrose-6Nov2005.jpg|thumb|Roger Penrose first formulated the cosmic censorship hypothesis in 1969.]]
+Since the physical behavior of singularities is unknown, if singularities can be observed from the rest of spacetime, [[causality]] may break down, and [[physics]] may lose its predictive power. The issue cannot be avoided, since according to the [[Penrose-Hawking singularity theorems]], singularities are inevitable in physically reasonable situations. Still, in the absence of naked singularities, the universe, as described by the [[general theory of relativity]], is [[determinism|deterministic]]:&lt;ref&gt;J. Earman [http://www2.pitt.edu/~jearman/Earman2007a.pdf ''The philosophy of physics'', (2007), 1369]&lt;/ref&gt; it is possible to predict the entire evolution of the universe (possibly excluding some finite regions of space hidden inside event horizons of singularities), knowing only its condition at a certain moment of time (more precisely, everywhere on a [[spacelike]] three-dimensional hypersurface, called the [[Cauchy surface]]). Failure of the cosmic censorship hypothesis leads to the failure of determinism, because it is yet impossible to predict the behavior of spacetime in the causal future of a singularity. Cosmic censorship is not merely a problem of formal interest; some form of it is assumed whenever [[black hole]] event horizons are mentioned.{{Citation needed|date=October 2015}}
+
+The hypothesis was first formulated by [[Roger Penrose]] in 1969, and it is not stated in a completely formal way. In a sense it is more of a research program proposal: part of the research is to find a proper formal statement that is physically reasonable and that can be proved to be true or false (and that is sufficiently general to be interesting).&lt;ref&gt;[http://www.theory.caltech.edu/people/preskill/nyt_bet_story.html A Bet on a Cosmic Scale, And a Concession, Sort Of (New York Times, February 12, 1997)]&lt;/ref&gt;  Because the statement is not a strictly formal one, there is sufficient latitude for (at least) two independent formulations, a weak form, and a strong form.
+
+== Weak and strong cosmic censorship hypothesis ==
+
+The weak and the strong cosmic censorship hypotheses are two conjectures concerned with the global geometry of spacetimes.
+
+The '''weak cosmic censorship hypothesis''' asserts there can be no singularity visible from [[future null infinity]]. In other words, singularities need to be hidden from an observer at infinity by the event horizon of a [[black hole]]. Mathematically, the conjecture states that, for generic initial data, the maximal Cauchy development possesses a complete future null infinity.
+
+The '''strong cosmic censorship hypothesis''' asserts that, generically, general relativity is a deterministic theory, in the same sense that classical mechanics is a deterministic theory. In other words, the classical fate of all observers should be predictable from the initial data. Mathematically, the conjecture states that the maximal Cauchy development of generic compact or asymptotically flat initial data is locally inextendible as a regular [[Lorentzian manifold]].
+
+The two conjectures are mathematically independent, as there exist spacetimes for which weak cosmic censorship is valid but strong cosmic censorship is violated and, conversely, there exist spacetimes for which weak cosmic censorship is violated but strong cosmic censorship is valid.
+
+==Example==
+The [[Kerr metric]], corresponding to a black hole of mass &lt;math&gt;M&lt;/math&gt; and angular momentum &lt;math&gt;J&lt;/math&gt;, can be used to derive the [[effective potential]] for particle [[orbits]] restricted to the equator (as defined by rotation).  This potential looks like:&lt;ref name=&quot;hartle_gravity&quot;&gt;James B Hartle, ''Gravity'' in chapter 15: Rotating Black Holes. (2003. {{ISBN|0-8053-8662-9}})&lt;/ref&gt;
+:&lt;math&gt; V_{\rm{eff}}(r,e,l)=-\frac{M}{r}+\frac{l^2-a^2(e^2-1)}{2r^2}-\frac{M(l-a e)^2}{r^3},~~~
+a\equiv \frac{J}{M} &lt;/math&gt;
+where &lt;math&gt;r&lt;/math&gt; is the coordinate radius, &lt;math&gt;e&lt;/math&gt; and &lt;math&gt;l&lt;/math&gt; are the test-particle's conserved energy and angular momentum respectively (constructed from the [[Killing vectors]]).
+
+To preserve ''cosmic censorship'', the black hole is restricted to the case of &lt;math&gt;a &lt; 1&lt;/math&gt;.  For there to exist an [[event horizon]] around the singularity, the requirement &lt;math&gt;a &lt; 1&lt;/math&gt; must be satisfied.&lt;ref name=&quot;hartle_gravity&quot; /&gt;  This amounts to the [[angular momentum]] of the black hole being constrained to below a critical value, outside of which the horizon would disappear.  
+
+The following thought experiment is reproduced from Hartle's ''Gravity'':
+
+{{anchor|Violating cosmic censorship}}Imagine specifically trying to violate the censorship conjecture.  This could be done by somehow imparting an angular momentum upon the black hole, making it exceed the critical value (assume it starts infinitesimally below it).  This could be done by sending a particle of angular momentum &lt;math&gt;l = 2Me&lt;/math&gt;.  Because this particle has angular momentum, it can only be captured by the black hole if the maximum potential of the black hole is less than &lt;math&gt;(e^2-1)/2&lt;/math&gt;.
+
+Solving the above effective potential equation for the maximum under the given conditions results in a maximum potential of exactly &lt;math&gt;(e^2-1)/2&lt;/math&gt;.  Testing other values shows that no particle with enough angular momentum to violate the censorship conjecture would be able to enter the black hole, ''because'' they have too much angular momentum to fall in.
+
+==Problems with the concept==
+There are a number of difficulties in formalizing the hypothesis:
+
+* There are technical difficulties with properly formalizing the notion of a singularity.
+* It is not difficult to construct spacetimes which have naked singularities, but which are not &quot;physically reasonable&quot;; the canonical example of such a spacetime is perhaps the &quot;superextremal&quot; &lt;math&gt;M&lt;|Q|&lt;/math&gt; [[Reissner-Nordström]] solution, which contains a singularity at &lt;math&gt;r=0&lt;/math&gt; that is not surrounded by a horizon. A formal statement needs some set of hypotheses which exclude these situations.
+* [[Caustic (mathematics)|Caustic]]s may occur in simple models of [[gravitational collapse]], and can appear to lead to singularities. These have more to do with the simplified models of bulk matter used, and in any case have nothing to do with general relativity, and need to be excluded.
+* Computer models of gravitational collapse have shown that naked singularities can arise, but these models rely on very special circumstances (such as spherical symmetry). These special circumstances need to be excluded by some hypotheses.
+
+In 1991, [[John Preskill]] and [[Kip Thorne]] [[scientific wager|bet against]] [[Stephen Hawking]] that the hypothesis was false.  Hawking conceded the bet in 1997, due to the discovery of the special situations just mentioned, which he characterized as &quot;technicalities&quot;. Hawking later reformulated the bet to exclude those technicalities. The revised bet is still open (although Hawking died in 2018), the prize being &quot;clothing to cover the winner's nakedness&quot;.[http://www.theory.caltech.edu/people/preskill/new_naked_bet.html]
+(see also [[Thorne–Hawking–Preskill bet]].)
+
+== Counter-example ==
+
+An exact solution to the scalar-Einstein equations &lt;math&gt;R_{ab}=2\phi_a\phi_b&lt;/math&gt; which forms a counterexample to many formulations of the 
+cosmic censorship hypothesis was found by Mark D. Roberts in 1985:
+:&lt;math&gt;ds^2=-(1+2\sigma)dv^2+2dv\,dr+r(r-2\sigma v)\left(d\theta^2 + \sin^2 \theta \,d\phi^2\right),\quad
+\phi = \frac{1}{2} \ln\left(1 - \frac{2\sigma v}{r}\right),&lt;/math&gt;
+where &lt;math&gt;\sigma&lt;/math&gt; is a constant.
+
+==See also==
+{{portal|Physics}}
+*[[Black hole information paradox]]
+*[[Chronology protection conjecture]]
+
+==References==
+{{reflist}}
+
+==Bibliography==
+*Earman, John: ''Bangs, Crunches, Whimpers, and Shrieks: Singularities and Acausalities in Relativistic Spacetimes'' (1995), see especially chapter 2 ({{ISBN|0-19-509591-X}})
+*{{cite journal | last=Roberts | first=M. D. | title=Scalar field counterexamples to the cosmic censorship hypothesis | journal=General Relativity and Gravitation | publisher=Springer Science and Business Media LLC | volume=21 | issue=9 | year=1989 | issn=0001-7701 | doi=10.1007/bf00769864 | pages=907–939}}
+*Penrose, Roger: &quot;Gravitational collapse: The role of general relativity&quot;, Riv. Nuovo Cim. 1 (1969) 252-276
+*Penrose, Roger: &quot;The Question of Cosmic Censorship&quot;, Chapter 5 in ''Black Holes and Relativistic Stars'', Robert Wald (editor), (1994) ({{ISBN|0-226-87034-0}})
+*Penrose, Roger: &quot;Singularities and time-asymmetry&quot;, Chapter 12 in ''General Relativity: An Einstein Centenary Survey'' (Hawking and Israel, editors), (1979), see especially section 12.3.2, pp.&amp;nbsp;617–629 ({{ISBN|0-521-22285-0}})
+*{{cite journal | last=Shapiro | first=Stuart L. | last2=Teukolsky | first2=Saul A. | title=Formation of naked singularities: The violation of cosmic censorship | journal=Physical Review Letters | publisher=American Physical Society (APS) | volume=66 | issue=8 | date=1991-02-25 | issn=0031-9007 | doi=10.1103/physrevlett.66.994 | pmid=10043968 | pages=994–997| url=https://authors.library.caltech.edu/87494/1/PhysRevLett.66.994.pdf }}
+*Wald, Robert, ''General Relativity'', 299-308 (1984) ({{ISBN|0-226-87033-2}})
+
+==External links==
+*[http://www.theory.caltech.edu/people/preskill/old_naked_bet.html The old bet] (conceded in 1997)
+*[http://www.theory.caltech.edu/people/preskill/new_naked_bet.html The new bet]
+
+{{black holes}}
+
+{{DEFAULTSORT:Cosmic Censorship Hypothesis}}
+[[Category:Black holes]]
+[[Category:General relativity]]</text>
+      <sha1>eg89wbxz9gvwe9fz4r0krvm95u4zx0h</sha1>
+    </revision>
+  </page>

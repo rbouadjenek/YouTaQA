@@ -1,0 +1,154 @@
+  <page>
+    <title>Boltzmann distribution</title>
+    <ns>0</ns>
+    <id>4107</id>
+    <revision>
+      <id>938978590</id>
+      <parentid>938978253</parentid>
+      <timestamp>2020-02-03T15:49:17Z</timestamp>
+      <contributor>
+        <username>Deacon Vorbis</username>
+        <id>29330520</id>
+      </contributor>
+      <comment>Undid revision 938978253 by [[Special:Contributions/79.26.57.107|79.26.57.107]] ([[User talk:79.26.57.107|talk]]) stop</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{Use American English|date = March 2019}}
+{{Short description|Probability distribution of energy states of a system}}
+{{about|system energy states|particle energy levels and velocities|Maxwell–Boltzmann distribution}}
+[[File:Boltzmann distribution graph.svg|upright=1.75|right|thumb|Boltzmann factor ''p&lt;sub&gt;i&lt;/sub&gt;''&amp;nbsp;/&amp;nbsp;''p&lt;sub&gt;j&lt;/sub&gt;'' (vertical axis) as a function of temperature ''T'' for several energy differences ''ε&lt;sub&gt;i&lt;/sub&gt;''&amp;nbsp;−&amp;nbsp;''ε&lt;sub&gt;j&lt;/sub&gt;''.]]
+
+In [[statistical mechanics]] and [[mathematics]], a '''Boltzmann distribution''' (also called '''Gibbs distribution'''&lt;ref name =&quot;landau&quot;&gt;{{cite book | author=[[Lev Landau|Landau, Lev Davidovich]] |author2=[[Evgeny Lifshitz|Lifshitz, Evgeny Mikhailovich]] |last-author-amp=yes | title=Statistical Physics |volume=5 |series=Course of Theoretical Physics |edition=3 |origyear=1976 |year=1980 |place=Oxford |publisher=Pergamon Press|isbn=0-7506-3372-7}} Translated by J.B. Sykes and M.J. Kearsley. See section 28&lt;/ref&gt;) is a [[probability distribution]] or [[probability measure]] that gives the probability that a system will be in a certain [[microstate (statistical mechanics)|state]] as a function of that state's energy and the temperature of the system. The distribution is expressed in the form:
+
+:&lt;math&gt;p_i \propto e^{-\frac{\varepsilon_i}{kT}}&lt;/math&gt;
+
+where {{mvar|p&lt;sub&gt;i&lt;/sub&gt;}} is the probability of the system being in state {{mvar|i}}, {{mvar|ε&lt;sub&gt;i&lt;/sub&gt;}} is the energy of that state, and a constant {{mvar|kT}} of the distribution is the product of [[Boltzmann's constant]] {{mvar|k}} and [[thermodynamic temperature]] {{mvar|T}}. The symbol &lt;math display=&quot;inline&quot;&gt;\propto&lt;/math&gt; denotes [[proportionality (mathematics)|proportionality]] (see {{section link||The distribution}} for the proportionality constant).
+
+The term system here has a very wide meaning; it can range from a single atom to a macroscopic system such as a [[Natural gas storage|natural gas storage tank]]. Because of this the Boltzmann distribution can be used to solve a very wide variety of problems. The distribution shows that states with lower energy will always have a higher probability of being occupied .
+
+The ''ratio'' of probabilities of two states is known as the '''Boltzmann factor''' and characteristically only depends on the states' energy difference:
+
+:&lt;math&gt;\frac{p_i}{p_j} = e^{\frac{\varepsilon_j - \varepsilon_i}{kT}}&lt;/math&gt;
+
+The Boltzmann distribution is named after [[Ludwig Boltzmann]] who first formulated it in 1868 during his studies of the [[statistical mechanics]] of gases in thermal equilibrium. Boltzmann's statistical work is borne out in his paper “On the Relationship between the Second Fundamental Theorem of the Mechanical Theory of Heat and Probability Calculations Regarding the Conditions for Thermal Equilibrium&quot;&lt;ref&gt;http://crystal.med.upenn.edu/sharp-lab-pdfs/2015SharpMatschinsky_Boltz1877_Entropy17.pdf&lt;/ref&gt;
+&lt;!--
+  It would be nice to have a citation here! The origin of the Boltzmann factor isn't entirely clear. According to some authors, Boltzmann's 1968 paper “On the Relationship between the Second Fundamental Theorem of the Mechanical Theory of Heat and Probability Calculations Regarding the Conditions for Thermal Equilibrium”
+  &quot;Studien über das Gleichgewicht der lebendigen Kraft zwischen bewegten materiellen Punkten&quot; is the origin but I can't find this article at the moment,
+  so I cannot confirm.
+  For example, this book says so, but uses suspiciously modern terminology
+    http://books.google.es/books?id=u13KiGlz2zcC&amp;lpg=PA92&amp;ots=8H1DRURdxn&amp;pg=PA93#v=onepage&amp;f=false
+  On the other hand, Uffink's &quot;Compendium of the foundations of classical statistical physics&quot; does not seem to indicate quite this equation but rather that Boltzmann's 1968 distribution was the simple Maxwell–Boltzmann distribution (for a classical nonrelativistic gas), modified for particles in a potential.
+--&gt; 
+The distribution was later investigated extensively, in its modern generic form, by [[Josiah Willard Gibbs]] in 1902.&lt;ref name=&quot;gibbs&quot;&gt;{{cite book |last=Gibbs |first=Josiah Willard |authorlink=Josiah Willard Gibbs |title=[[Elementary Principles in Statistical Mechanics]] |year=1902 |publisher=[[Charles Scribner's Sons]] 
+|location=New York}}&lt;/ref&gt;{{rp|Ch.IV}}
+
+The generalized Boltzmann distribution is a sufficient and necessary condition for the equivalence between the statistical mechanics definition of [[entropy]] (The [[Entropy_(statistical_thermodynamics)#Gibbs_entropy_formula | Gibbs entropy formula]] &lt;math&gt;S = -k_{\mathrm{B}}\sum_i p_i \log p_i&lt;/math&gt;) and the thermodynamic definition of entropy (&lt;math&gt;d S = \frac{\delta Q_\text{rev}}{T}&lt;/math&gt;, and the [[fundamental thermodynamic relation]])&lt;ref&gt;{{cite journal |last1= Gao |first1= Xiang |last2= Gallicchio |first2= Emilio |first3= Adrian |last3= Roitberg  |date= 2019 |title= The generalized Boltzmann distribution is the only distribution in which the Gibbs-Shannon entropy equals the thermodynamic entropy |url= https://aip.scitation.org/doi/abs/10.1063/1.5111333|journal= The Journal of Chemical Physics|volume= 151|issue= 3|pages= 034113|doi= 10.1063/1.5111333|access-date= }}&lt;/ref&gt;.
+
+The Boltzmann distribution should not be confused with the [[Maxwell–Boltzmann distribution]]. The former gives the probability that a system will be in a certain state as a function of that state's energy;&lt;ref name=&quot;Atkins, P. W. 2010&quot;&gt;Atkins, P. W. (2010) Quanta, W. H. Freeman and Company, New York&lt;/ref&gt; in contrast, the latter is used to describe particle speeds in idealized gases.
+
+==The distribution==
+
+The Boltzmann distribution is a [[probability distribution]] that gives the probability of a certain state as a function of that state's energy and  temperature of the [[system]] to which the distribution is applied.&lt;ref name=&quot;McQuarrie, A. 2000&quot;&gt;McQuarrie, A. (2000) Statistical Mechanics, University Science Books, California&lt;/ref&gt; It is given as
+
+:&lt;math&gt;
+p_i=\frac{1}{Q}} {e^{- {\varepsilon}_i / k T}=\frac{e^{- {\varepsilon}_i / k T}}{\sum_{j=1}^{M}{e^{- {\varepsilon}_j / k T}}}
+&lt;/math&gt;
+
+where ''p&lt;sub&gt;i&lt;/sub&gt;'' is the probability of state ''i'', ''ε&lt;sub&gt;i&lt;/sub&gt;'' the energy of state ''i'', ''k'' the Boltzmann constant, ''T'' the temperature of the system and ''M'' is the number of all states accessible to the system of interest.&lt;ref name=&quot;McQuarrie, A. 2000&quot;/&gt;&lt;ref name=&quot;Atkins, P. W. 2010&quot;/&gt; Implied parentheses around the denominator ''kT'' are omitted for brevity. The normalization denominator ''Q'' (denoted by some authors by ''Z'') is the [[canonical partition function]]
+
+:&lt;math&gt;
+Q={\sum_{i=1}^{M}{e^{- {\varepsilon}_i / k T}}}
+&lt;/math&gt;
+
+It results from the constraint that the probabilities of all accessible states must add up to 1.
+
+The Boltzmann distribution is the distribution that maximizes the [[entropy]]
+
+:&lt;math&gt;H(p_1,p_2,\cdots,p_M) = -\sum_{i=1}^{M} p_i\log_2 p_i&lt;/math&gt;
+
+subject to the constraint that &lt;math display=&quot;inline&quot;&gt;
+{\sum{p_i {\varepsilon}_i}}
+&lt;/math&gt; equals a particular mean energy value (which can be proven using [[Lagrange multipliers]]).
+
+The partition function can be calculated if we know the energies of the states accessible to the system of interest. For atoms the partition function values can be found in the NIST Atomic Spectra Database.&lt;ref&gt;[http://physics.nist.gov/PhysRefData/ASD/levels_form.html NIST Atomic Spectra Database Levels Form] at nist.gov&lt;/ref&gt;
+
+The distribution shows that states with lower energy will always have a higher probability of being occupied than the states with higher energy. It can also give us the quantitative relationship between the probabilities of the two states being occupied. The ratio of probabilities for states ''i'' and ''j'' is given as
+
+:&lt;math&gt;
+{\frac{p_i}{p_j}}=e^{({\varepsilon}_j-{\varepsilon}_i) / k T}
+&lt;/math&gt;
+
+where ''p&lt;sub&gt;i&lt;/sub&gt;'' is the probability of state ''i'',  ''p&lt;sub&gt;j&lt;/sub&gt;'' the probability of state ''j'', and ''ε&lt;sub&gt;i&lt;/sub&gt;'' and ''ε&lt;sub&gt;j&lt;/sub&gt;'' are the energies of states ''i'' and ''j'', respectively.
+
+The Boltzmann distribution is often used to describe the distribution of particles, such as atoms or molecules, over energy states accessible to them. If we have a system consisting of many particles, the probability of a particle being in state ''i'' is practically the probability that, if we pick a random particle from that system and check what state it is in, we will find it is in state ''i''. This probability is equal to the number of particles in state ''i'' divided by the total number of particles in the system, that is the fraction of particles that occupy state ''i''.
+
+:&lt;math&gt;
+p_i={\frac{N_i}{N}}
+&lt;/math&gt;
+
+where ''N&lt;sub&gt;i&lt;/sub&gt;'' is the number of particles in state ''i'' and ''N'' is the total number of particles in the system. We may use the Boltzmann distribution to find this probability that is, as we have seen, equal to the fraction of particles that are in state i. So the equation that gives the fraction of particles in state ''i'' as a function of the energy of that state is  &lt;ref name=&quot;Atkins, P. W. 2010&quot;/&gt;
+
+:&lt;math&gt;
+{\frac{N_i}{N}}={\frac{e^{- {\varepsilon}_i / k T}}{\sum_{j=1}^{M}{e^{- {\varepsilon}_j / k T}}}}
+&lt;/math&gt;
+
+This equation is of great importance to [[spectroscopy]]. In spectroscopy we observe a [[spectral line]] of atoms or molecules that we are interested in going from one state to another.&lt;ref name=&quot;Atkins, P. W. 2010&quot;/&gt;&lt;ref&gt;Atkins, P. W.; de Paula J. (2009) Physical Chemistry, 9th edition, Oxford University Press, Oxford, UK&lt;/ref&gt; In order for this to be possible, there must be some particles in the first state to undergo the transition. We may find that this condition is fulfilled by finding the fraction of particles in the first state. If it is negligible, the transition is very likely not to be observed at the temperature for which the calculation was done. In general, a larger fraction of molecules in the first state means a higher number of transitions to the second state.&lt;ref&gt;Skoog, D. A.; Holler, F. J.; Crouch, S. R. (2006) Principles of Instrumental Analysis, Brooks/Cole, Boston, MA&lt;/ref&gt; This gives a stronger spectral line. However, there are other factors that influence the intensity of a spectral line, such as whether it is caused by an allowed or a [[forbidden transition]].
+
+The Boltzmann distribution is related to the [[softmax function]] commonly used in machine learning.
+
+== In statistical mechanics ==
+{{main|Canonical ensemble|Maxwell–Boltzmann statistics}}
+
+The Boltzmann distribution appears in [[statistical mechanics]] when considering isolated (or nearly-isolated) systems of fixed composition that are in [[thermal equilibrium]] (equilibrium with respect to energy exchange). The most general case is the probability distribution for the canonical ensemble, but also some special cases (derivable from the canonical ensemble) also show the Boltzmann distribution in different aspects:
+
+; [[Canonical ensemble]] (general case)
+: The [[canonical ensemble]] gives the [[probabilities]] of the various possible states of a closed system of fixed volume, in thermal equilibrium with a [[heat bath]]. The canonical ensemble is a probability distribution with the Boltzmann form.
+; Statistical frequencies of subsystems' states (in a non-interacting collection)
+: When the system of interest is a collection of many non-interacting copies of a smaller subsystem, it is sometimes useful to find the [[statistical frequency]] of a given subsystem state, among the collection. The canonical ensemble has the property of separability when applied to such a collection: as long as the non-interacting subsystems have fixed composition, then each subsystem's state is independent of the others and is also characterized by a canonical ensemble. As a result, the [[expectation value|expected]] statistical frequency distribution of subsystem states has the Boltzmann form.
+; [[Maxwell–Boltzmann statistics]] of classical gases (systems of non-interacting particles)
+: In particle systems, many particles share the same space and regularly change places with each other; the single-particle state space they occupy is a shared space. [[Maxwell–Boltzmann statistics]] give the expected number of particles found in a given single-particle state, in a [[classical mechanics|classical]] gas of non-interacting particles at equilibrium. This expected number distribution has the Boltzmann form.
+
+Although these cases have strong similarities, it is helpful to distinguish them as they generalize in different ways when the crucial assumptions are changed:
+* When a system is in thermodynamic equilibrium with respect to both energy exchange ''and particle exchange'', the requirement of fixed composition is relaxed and a [[grand canonical ensemble]] is obtained rather than canonical ensemble. On the other hand, if both composition and energy are fixed, then a [[microcanonical ensemble]] applies instead.
+* If the subsystems within a collection ''do'' interact with each other, then the expected frequencies of subsystem states no longer follow a Boltzmann distribution, and even may not have an [[analytical solution]].&lt;ref&gt;A classic example of this is [[magnetic ordering]]. Systems of non-interacting [[spin (physics)|spins]] show [[paramagnetic]] behaviour that can be understood with a single-particle canonical ensemble (resulting in the [[Brillouin function]]). Systems of ''interacting'' spins can show much more complex behaviour such as [[ferromagnetism]] or [[antiferromagnetism]].&lt;/ref&gt; The canonical ensemble can however still be applied to the ''collective'' states of the entire system considered as a whole, provided the entire system is isolated and in thermal equilibrium.
+* With ''[[quantum mechanics|quantum]]'' gases of non-interacting particles in equilibrium, the number of particles found in a given single-particle state does not follow Maxwell–Boltzmann statistics, and there is no simple closed form expression for quantum gases in the canonical ensemble. In the grand canonical ensemble the state-filling statistics of quantum gases are described by [[Fermi–Dirac statistics]] or [[Bose–Einstein statistics]], depending on whether the particles are [[fermion]]s or [[boson]]s respectively.
+
+== In mathematics ==
+
+{{main|Gibbs measure|Log-linear model|Boltzmann machine}}
+
+In more general mathematical settings, the Boltzmann distribution is also known as the [[Gibbs measure]]. In [[statistics]] and [[machine learning]], it is called a [[log-linear model]]. In [[deep learning]], the Boltzmann distribution is used in the [[sampling distribution]] of [[stochastic neural network]]s such as the [[Boltzmann machine]] , [[Restricted Boltzmann machine]] and [[Deep Boltzmann Machine|deep Boltzmann machine]].
+
+== In economics ==
+
+The Boltzmann distribution can be introduced to allocate permits in emissions trading.&lt;ref name=&quot;Park, J.-W. 2012&quot;&gt;Park, J.-W., Kim, C. U. and Isard, W. (2012) Permit allocation in emissions trading using the Boltzmann distribution. Physica A 391: 4883–4890&lt;/ref&gt;&lt;ref&gt;[http://www.technologyreview.com/view/425051/the-thorny-problem-of-fair-allocation/ The Thorny Problem Of Fair Allocation]. ''Technology Review'' blog. August 17, 2011. Cites and summarizes Park, Kim and Isard (2012).&lt;/ref&gt; The new allocation method using the Boltzmann distribution can describe the most probable, natural, and unbiased distribution of emissions permits among multiple countries. Simple and versatile, this new method holds potential for many economic and environmental applications.
+
+The Boltzmann distribution has the same form as the [[Multinomial logistic regression|multinomial logit]] model. As a [[discrete choice]] model, this is very well known in economics since [[Daniel McFadden]] made the connection to random utility maximization.
+
+==See also==
+*[[Bose–Einstein statistics]]
+*[[Fermi–Dirac statistics]]
+*[[Negative temperature]]
+*[[Softmax function]]
+
+== References ==
+{{reflist|30em}}
+{{refbegin}}
+* {{cite journal |last=Boltzmann |first=Ludwig |authorlink=Ludwig Boltzmann
+|year=1868
+|title=Studien über das Gleichgewicht der lebendigen Kraft zwischen bewegten materiellen Punkten
+|trans-title=Studies on the balance of living force between moving material points
+|journal=Wiener Berichte |volume=58 |pages=517–560
+}}
+* {{cite book
+|first=Josiah Willard |last=Gibbs |authorlink=Josiah Willard Gibbs
+|year=1902
+|title=[[Elementary Principles in Statistical Mechanics]]
+}}
+{{refend}}
+
+[[Category:Statistical mechanics]]
+[[Category:Ludwig Boltzmann|Distribution]]</text>
+      <sha1>r88e9opdprp98eh8jmktoi685pr0pe7</sha1>
+    </revision>
+  </page>

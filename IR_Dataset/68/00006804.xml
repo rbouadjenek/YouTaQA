@@ -1,0 +1,291 @@
+  <page>
+    <title>Charge-coupled device</title>
+    <ns>0</ns>
+    <id>6804</id>
+    <revision>
+      <id>939725745</id>
+      <parentid>932629123</parentid>
+      <timestamp>2020-02-08T09:10:02Z</timestamp>
+      <contributor>
+        <username>Sandstein</username>
+        <id>359256</id>
+      </contributor>
+      <minor />
+      <comment>Removing link(s): [[Wikipedia:Articles for deletion/Stanford Computer Optics]] closed as soft delete ([[WP:XFDC|XFDcloser]])</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Image:Delta-Doped Charged Coupled Devices (CCD) for Ultra-Violet and Visible Detection.jpg|thumb|A specially developed CCD in a wire-bonded package used for [[ultraviolet]] imaging ]]
+
+A '''charge-coupled device''' ('''CCD''') is a device for the movement of [[electric charge|electrical charge]], usually from within the device  to an area where the charge can be manipulated, such as conversion into a digital value. This is achieved by &quot;shifting&quot; the signals between stages within the device one at a time. CCDs move charge between capacitive ''bins'' in the device, with the shift allowing for the transfer of charge between bins.
+
+CCD is a major technology for [[digital imaging]]. In a CCD [[image sensor]], [[pixel]]s are represented by [[Doping (semiconductor)|p-doped]] [[metal–oxide–semiconductor]] (MOS) [[capacitors]]. These [[MOS capacitor]]s, the basic building blocks of a CCD,&lt;ref name=&quot;Sze&quot;/&gt; are biased above the threshold for inversion when image acquisition begins, allowing the conversion of incoming [[photon]]s into electron charges at the semiconductor-oxide interface; the CCD is then used to read out these charges. Although CCDs are not the only technology to allow for light detection, CCD image sensors are widely used in professional, medical, and scientific applications where high-quality image data are required. In applications with less exacting quality demands, such as consumer and professional [[digital camera]]s, [[active pixel sensor]]s, also known as [[CMOS sensor]]s (complementary MOS sensors), are generally used. However, the large quality advantage CCDs enjoyed early on has narrowed over time.
+
+==History==
+[[File:Nobel Prize 2009-Press Conference KVA-19.jpg|thumb|240px|[[George E. Smith]] and [[Willard Boyle]], 2009.]]
+The basis for the CCD is the [[metal–oxide–semiconductor]] (MOS) structure,&lt;ref name=&quot;Fossum2014&quot;&gt;{{cite journal |last1=Fossum |first1=E. R. |last2=Hondongwa |first2=D. B. |title=A Review of the Pinned Photodiode for CCD and CMOS Image Sensors |journal=IEEE Journal of the Electron Devices Society |date=2014 |volume=2 |issue=3 |pages=33–43 |doi=10.1109/JEDS.2014.2306412 |url=https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=6742594}}&lt;/ref&gt; with [[MOS capacitor]]s being the basic building blocks of a CCD,&lt;ref name=&quot;Sze&quot;&gt;{{cite book |last1=Sze |first1=Simon Min |author1-link=Simon Sze |last2=Lee |first2=Ming-Kwei |chapter=MOS Capacitor and MOSFET |title=Semiconductor Devices: Physics and Technology |date=May 2012 |publisher=[[John Wiley &amp; Sons]] |isbn=9780470537947 |url=https://www.oreilly.com/library/view/semiconductor-devices-physics/9780470537947/13_chap05.html |accessdate=6 October 2019}}&lt;/ref&gt;&lt;ref name=&quot;Williams&quot;&gt;{{cite book |last1=Williams |first1=J. B. |title=The Electronics Revolution: Inventing the Future |date=2017 |publisher=Springer |isbn=9783319490885 |page=245 |url=https://books.google.com/books?id=v4QlDwAAQBAJ&amp;pg=PA245}}&lt;/ref&gt; and a [[Depletion and enhancement modes|depleted]] MOS structure used as the [[photodetector]] in early CCD devices.&lt;ref name=&quot;Fossum2014&quot;/&gt; MOS technology was originally invented by [[Mohamed M. Atalla]] and [[Dawon Kahng]] at [[Bell Labs]] in 1959.&lt;ref name=&quot;computerhistory&quot;&gt;{{cite journal|url=https://www.computerhistory.org/siliconengine/metal-oxide-semiconductor-mos-transistor-demonstrated/|title=1960: Metal Oxide Semiconductor (MOS) Transistor Demonstrated|journal=The Silicon Engine|publisher=[[Computer History Museum]] |accessdate=August 31, 2019}}&lt;/ref&gt;
+
+In the late 1960s, [[Willard Boyle]] and [[George E. Smith]] at Bell Labs were researching MOS technology while working on [[semiconductor]] [[bubble memory]]. They realized that an electric charge was the analogy of the magnetic bubble and that it could be stored on a tiny MOS capacitor. As it was fairly straightforward to [[semiconductor device fabrication|fabricate]] a series of MOS capacitors in a row, they connected a suitable voltage to them so that the charge could be stepped along from one to the next.&lt;ref name=&quot;Williams&quot;/&gt; This led to the invention of the charge-coupled device by Boyle and Smith in 1969. They conceived of the design of what they termed, in their notebook, &quot;Charge 'Bubble' Devices&quot;.&lt;ref&gt;{{Cite book | title = Scientific charge-coupled devices | author = James R. Janesick | publisher = SPIE Press | year = 2001 | isbn = 978-0-8194-3698-6 | page = 4 | url = https://books.google.com/?id=3GyE4SWytn4C&amp;pg=PA3 }}&lt;/ref&gt;&lt;ref name=&quot;patent&quot;&gt;See {{US Patent|3792322}} and {{US Patent|3796927}}&lt;/ref&gt;
+
+The initial paper describing the concept in April 1970 listed possible uses as [[computer memory|memory]], a delay line, and an imaging device.&lt;ref&gt;{{Cite journal | journal = Bell Syst. Tech. J. | title = Charge Coupled Semiconductor Devices |author1=W. S. Boyle |author2=G. E. Smith | volume = 49| issue = 4 | pages = 587–593 | date = April 1970 | url = }}&lt;/ref&gt; The device could also be used as a [[shift register]]. The essence of the design was the ability to transfer charge along the surface of a semiconductor from one storage capacitor to the next. The concept was similar in principle to the [[bucket-brigade device]] (BBD), which was developed at [[Philips|Philips Research Labs]] during the late 1960s.
+
+The first experimental device demonstrating the principle was a row of closely spaced metal squares on an [[thermal oxidation|oxidized]] [[silicon]] surface electrically accessed by wire bonds. It was demonstrated by [[Gil Amelio]], [[Michael Francis Tompsett]] and George Smith in April 1970.&lt;ref&gt;{{Cite journal | journal = Bell Syst. Tech. J. | title = Experimental Verification of the Charge Coupled Device Concept |author1=[[Gil Amelio|Gilbert Frank Amelio]] |author2=[[Michael Francis Tompsett]] |author3=[[George E. Smith]] | volume = 49| issue = 4 | pages = 593–600 | date = April 1970 | url = | doi = 10.1002/j.1538-7305.1970.tb01791.x }}&lt;/ref&gt; This was the first experimental application of the CCD in [[image sensor]] technology, and used a depleted MOS structure as the photodetector.&lt;ref name=&quot;Fossum2014&quot;/&gt; The first [[patent]] ({{US Patent|4,085,456}}) on the application of CCDs to imaging was assigned to Tompsett, who filed the application in 1971.&lt;ref&gt;{{US Patent|4,085,456}}&lt;/ref&gt;
+
+The first working CCD made with [[integrated circuit]] technology was a simple 8-bit shift register, reported by Tompsett, Amelio and Smith in August 1970.&lt;ref&gt;
+{{Cite journal
+ | journal = Applied Physics Letters
+ | doi = 10.1063/1.1653327
+ | title = Charge Coupled 8-bit Shift Register
+ |author1=M. F. Tompsett |author2=G. F. Amelio |author3=G. E. Smith | volume = 17
+ | pages = 111–115
+ | date = 1 August 1970
+ | url =
+ |bibcode = 1970ApPhL..17..111T }}&lt;/ref&gt; This device had input and output circuits and was used to demonstrate its use as a shift register and as a crude eight [[pixel]] linear imaging device.
+Development of the device progressed at a rapid rate. By 1971, Bell researchers led by Michael Tompsett were able to capture images with simple linear devices.&lt;ref&gt;
+{{Cite journal
+ | doi = 10.1109/T-ED.1971.17321
+ | journal = IEEE Transactions on Electron Devices
+ | title = Charge-coupled imaging devices: Experimental results
+ |author1=Tompsett, M.F. |author2=Amelio, G.F. |author3=Bertram, W.J., Jr. |author4=Buckley, R.R. |author5=McNamara, W.J. |author6=Mikkelsen, J.C., Jr. |author7=Sealer, D.A. | volume = 18
+ | issue = 11
+ | publisher =
+ | pages = 992–996
+ | issn = 0018-9383
+ | date = November 1971
+ | url =
+ |bibcode = 1971ITED...18..992T }}&lt;/ref&gt;
+Several companies, including [[Fairchild Semiconductor]], [[RCA]] and [[Texas Instruments]], picked up on the invention and began development programs. Fairchild's effort, led by ex-Bell researcher Gil Amelio, was the first with commercial devices, and by 1974 had a linear 500-element device and a 2-D 100 x 100 pixel device. [[Steven Sasson]], an electrical engineer working for [[Kodak]], invented the first [[digital still camera]] using a Fairchild {{nowrap|100 x 100}} CCD in 1975.&lt;ref name=ap&gt;{{cite news |last1=Dobbin |first1=Ben |title=Kodak engineer had revolutionary idea: the first digital camera |url=https://www.seattlepi.com/business/article/Kodak-engineer-had-revolutionary-idea-the-first-1182624.php |accessdate=2011-11-15 |work=[[Seattle Post-Intelligencer]] |date=8 September 2005 |archiveurl=https://web.archive.org/web/20120125133811/http://www.seattlepi.com/business/article/Kodak-engineer-had-revolutionary-idea-the-first-1182624.php |archivedate=25 January 2012 |url-status=live }}&lt;/ref&gt;
+
+The interline transfer (ILT) CCD device was proposed by L. Walsh and R. Dyck at Fairchild in 1973 to reduce smear and eliminate a mechanical [[shutter (photography)|shutter]]. To further reduce smear from bright light sources, the frame-interline-transfer (FIT) CCD architecture was developed by K. Horii, T. Kuroda and T. Kunii at [[Panasonic|Matsushita]] (now Panasonic) in 1981.&lt;ref name=&quot;Fossum2014&quot;/&gt;
+
+The first [[KH-11 Kennen|KH-11 KENNEN]] reconnaissance satellite equipped with charge-coupled device array ({{nowrap|800 x 800}} pixels)&lt;ref&gt;[http://www.globalsecurity.org/space/systems/kh-11.htm globalsecurity.org - KH-11 KENNAN], 2007-04-24&lt;/ref&gt; technology for imaging was launched in December 1976.&lt;ref&gt;{{cite web|title=NRO review and redaction guide (2006 ed.)| url=https://fas.org/irp/nro/declass.pdf |publisher=National Reconnaissance Office}}&lt;/ref&gt; Under the leadership of [[Kazuo Iwama (Sony)|Kazuo Iwama]], [[Sony]] started a large development effort on CCDs involving a significant investment. Eventually, Sony managed to mass-produce CCDs for their [[camcorder]]s. Before this happened, Iwama died in August 1982; subsequently, a CCD chip was placed on his tombstone to acknowledge his contribution.&lt;ref&gt;{{Cite book|last=Johnstone |first=B. |title=We Were Burning: Japanese Entrepreneurs and the Forging of the Electronic Age |year=1999 |publisher=Basic Books |location=New York |isbn=0-465-09117-2 |postscript=&lt;!--None--&gt; }}&lt;/ref&gt; The first mass-produced consumer CCD [[video camera]] was released by Sony in 1983, based on a prototype developed by Yoshiaki Hagiwara in 1981.&lt;ref&gt;{{cite book |last1=Hagiwara |first1=Yoshiaki |chapter=Microelectronics for Home Entertainment |editor-last1=Oklobdzija |editor-first1=Vojin G. |title=The Computer Engineering Handbook |date=2001 |publisher=[[CRC Press]] |isbn=978-0-8493-0885-7 |page=41-6 |chapter-url=https://books.google.com/books?id=38Aj3CjHgc8C&amp;pg=SA41-PA6}}&lt;/ref&gt;
+
+Early CCD sensors suffered from [[shutter lag]]. This was largely resolved with the invention of the [[pinned photodiode]] (PPD).&lt;ref name=&quot;Fossum2014&quot;/&gt; It was invented by [[Nobukazu Teranishi]], Hiromitsu Shiraki and Yasuo Ishihara at [[NEC]] in 1980.&lt;ref name=&quot;Fossum2014&quot;/&gt;&lt;ref&gt;{{US patent|4484210|U.S. Patent 4,484,210: Solid-state imaging device having a reduced image lag}}&lt;/ref&gt; They recognized that lag can be eliminated if the signal carriers could be transferred from the [[photodiode]] to the CCD. This led to their invention of the pinned photodiode, a photodetector structure with low lag, low [[noise (electronics)|noise]], high [[quantum efficiency]] and low [[dark current (physics)|dark current]].&lt;ref name=&quot;Fossum2014&quot;/&gt; It was first publicly reported by Teranishi and Ishihara with A. Kohono, E. Oda and K. Arai in 1982, with the addition of an anti-blooming structure.&lt;ref name=&quot;Fossum2014&quot;/&gt;&lt;ref&gt;{{cite journal |last1=Teranishi |first1=Nobuzaku |author1-link=Nobukazu Teranishi |last2=Kohono |first2=A. |last3=Ishihara |first3=Yasuo |last4=Oda |first4=E. |last5=Arai |first5=K. |title=No image lag photodiode structure in the interline CCD image sensor |journal=1982 International Electron Devices Meeting |date=December 1982 |pages=324–327 |doi=10.1109/IEDM.1982.190285}}&lt;/ref&gt; The new photodetector structure invented at NEC was given the name &quot;pinned photodiode&quot; (PPD) by B.C. Burkey at Kodak in 1984. In 1987, the PPD began to be incorporated into most CCD devices, becoming a fixture in [[consumer electronic]] [[video cameras]] and then [[digital still camera]]s. Since then, the PPD has been used in nearly all CCD sensors and then [[CMOS sensor]]s.&lt;ref name=&quot;Fossum2014&quot;/&gt;
+
+In January 2006, Boyle and Smith were awarded the [[National Academy of Engineering]] [[Charles Stark Draper Prize]],&lt;ref&gt;{{Cite web |url=http://www.nae.edu/NAE/awardscom.nsf/weblinks/CGOZ-6K9L6P?OpenDocument |title=Charles Stark Draper Award |url-status=dead |archiveurl=https://web.archive.org/web/20071228122423/http://www.nae.edu/NAE/awardscom.nsf/weblinks/CGOZ-6K9L6P?OpenDocument |archivedate=2007-12-28 }}&lt;/ref&gt; and in 2009 they were awarded the [[Nobel Prize for Physics]],&lt;ref&gt;{{Cite web|url=http://nobelprize.org/nobel_prizes/physics/laureates/2009/ |title=Nobel Prize website |postscript=&lt;!--None--&gt; }}&lt;/ref&gt; for their invention of the CCD concept. Michael Tompsett was awarded the 2010 [[National Medal of Technology and Innovation]], for pioneering work and electronic technologies including the design and development of the first CCD imagers. He was also awarded the 2012 [[IEEE Edison Medal]] for &quot;pioneering contributions to imaging devices including CCD Imagers, cameras and thermal imagers&quot;.
+
+==Basics of operation==
+[[File:CCD charge transfer animation.gif|thumb|250px|right|The charge packets (electrons, blue) are collected in ''potential wells'' (yellow) created by applying positive voltage at the gate electrodes (G). Applying positive voltage to the gate electrode in the correct sequence transfers the charge packets.]]
+
+In a CCD for capturing images, there is a photoactive region (an [[epitaxy|epitaxial]] layer of silicon), and a transmission region made out of a [[shift register]] (the CCD, properly speaking).
+
+An image is projected through a [[lens (optics)|lens]] onto the capacitor array (the photoactive region), causing each capacitor to accumulate an electric charge proportional to the [[light]] intensity at that location. A one-dimensional array, used in line-scan cameras, captures a single slice of the image, whereas a two-dimensional array, used in video and still cameras, captures a two-dimensional picture corresponding to the scene projected onto the focal plane of the sensor. Once the array has been exposed to the image, a control circuit causes each capacitor to transfer its contents to its neighbor (operating as a shift register). The last capacitor in the array dumps its charge into a [[charge amplifier]], which converts the charge into a [[voltage]]. By repeating this process, the controlling circuit converts the entire contents of the array in the semiconductor to a sequence of voltages. In a digital device, these voltages are then sampled, digitized, and usually stored in memory; in an analog device (such as an analog video camera), they are processed into a continuous analog signal (e.g. by feeding the output of the charge amplifier into a low-pass filter), which is then processed and fed out to other circuits for transmission, recording, or other processing.&lt;ref&gt;{{cite journal |author=[[Gilbert F. Amelio]] |authorlink= |coauthors= |year=|date=February 1974 |month= |title=Charge-Coupled Devices |journal=[[Scientific American]] |volume=230 |issue=2 |pages= |id= |url=http://www.scientificamerican.com/magazine/sa/1974/02-01/ |accessdate= |quote= }}&lt;/ref&gt;
+
+[[Image:CCD line sensor.JPG|thumb|right|&quot;One-dimensional&quot; CCD [[image sensor]] from a [[fax machine]]]]
+
+==Detailed physics of operation==
+
+=== Charge generation ===
+Before the MOS capacitors are exposed to light, they are [[biasing|biased]] into the depletion region; in n-channel CCDs, the silicon under the bias gate is slightly ''p''-doped or intrinsic. The gate is then biased at a positive potential, above the threshold for strong inversion, which will eventually result in the creation of a ''n'' channel below the gate as in a [[MOSFET]]. However, it takes time to reach this thermal equilibrium: up to hours in high-end scientific cameras cooled at low temperature.&lt;ref&gt;For instance, the specsheet of PI/Acton's [http://www.princetoninstruments.com/Uploads/Princeton/Documents/Datasheets/Princeton_Instruments_SPEC-10_2K_eXcelon_rev_N3_9.22.2011.pdf SPEC-10 camera] specifies a dark current of 0.3 electron per pixel per hour at -110 °C.&lt;/ref&gt; Initially after biasing, the holes are pushed far into the substrate, and no mobile electrons are at or near the surface; the CCD thus operates in a non-equilibrium state called deep depletion.&lt;ref name=sze&gt;{{cite book
+ | last1 = Sze
+ | first1 = S. M.
+ | last2 = Ng
+ | first2 = Kwok K.
+ | authorlink = Simon Sze
+ | title = Physics of semiconductor devices
+ | publisher = [[John Wiley and Sons]]
+ | edition = 3
+ | year = 2007
+ | isbn = 978-0-471-14323-9
+}} Chapter 13.6.&lt;/ref&gt;
+Then, when [[electron–hole pair]]s are generated in the depletion region, they are separated by the electric field, the electrons move toward the surface, and the holes move toward the substrate. Four pair-generation processes can be identified:
+* photo-generation (up to 95% of [[quantum efficiency]]),
+* generation in the depletion region,
+* generation at the surface, and
+* generation in the neutral bulk.
+
+The last three processes are known as dark-current generation, and add noise to the image; they can limit the total usable integration time. The accumulation of electrons at or near the surface can proceed either until image integration is over and charge begins to be transferred, or thermal equilibrium is reached. In this case, the well is said to be full. The maximum capacity of each well is known as the well depth,&lt;ref&gt;[http://www.ccd.com/ccd103.html Apogee CCD University - Pixel Binning]&lt;/ref&gt; typically about 10&lt;sup&gt;5&lt;/sup&gt; electrons per pixel.&lt;ref name=sze /&gt;
+
+=== Design and manufacturing ===
+The photoactive region of a CCD is, generally, an [[epitaxial]] layer of [[silicon]]. It is lightly ''p'' doped (usually with [[boron]]) and is grown upon a [[substrate (materials science)|substrate]] material, often p++. In buried-channel devices, the type of design utilized in most modern CCDs, certain areas of the surface of the silicon are [[ion implantation|ion implanted]] with [[phosphorus]], giving them an n-doped designation. This region defines the channel in which the photogenerated charge packets will travel. [[Simon Sze]] details the advantages of a buried-channel device:&lt;ref name=sze /&gt;
+&lt;blockquote&gt;This thin layer (= 0.2–0.3 micron) is fully depleted and the accumulated photogenerated charge is kept away from the surface. This structure has the advantages of higher transfer efficiency and lower dark current, from reduced surface recombination. The penalty is smaller charge capacity, by a factor of 2–3 compared to the surface-channel CCD.&lt;/blockquote&gt; The gate oxide, i.e. the [[capacitor]] [[dielectric]], is grown on top of the epitaxial layer and substrate.
+
+Later in the process, [[polysilicon]] gates are deposited by [[chemical vapor deposition]], patterned with [[photolithography]], and etched in such a way that the separately phased gates lie perpendicular to the channels. The channels are further defined by utilization of the [[LOCOS]] process to produce the [[channel stop]] region.
+
+Channel stops are thermally grown [[oxide]]s that serve to isolate the charge packets in one column from those in another. These channel stops are produced before the polysilicon gates are, as the LOCOS process utilizes a high-temperature step that would destroy the gate material. The channel stops are parallel to, and exclusive of, the channel, or &quot;charge carrying&quot;, regions.
+
+Channel stops often have a p+ doped region underlying them, providing a further barrier to the electrons in the charge packets (this discussion of the physics of CCD devices assumes an [[electron]] transfer device, though hole transfer is possible).
+
+The clocking of the gates, alternately high and low, will forward and reverse bias the diode that is provided by the buried channel (n-doped) and the epitaxial layer (p-doped). This will cause the CCD to deplete, near the [[p–n junction]] and will collect and move the charge packets beneath the gates—and within the channels—of the device.
+
+CCD manufacturing and operation can be optimized for different uses. The above process describes a frame transfer CCD. While CCDs may be manufactured on a heavily doped p++ wafer it is also possible to manufacture a device inside p-wells that have been placed on an n-wafer. This second method, reportedly, reduces smear, [[dark current (physics)|dark current]], and [[infrared]] and red response. This method of manufacture is used in the construction of interline-transfer devices.
+
+Another version of CCD is called a peristaltic CCD. In a peristaltic charge-coupled device, the charge-packet transfer operation is analogous to the peristaltic contraction and dilation of the [[digestive system]]. The peristaltic CCD has an additional implant that keeps the charge away from the silicon/[[silicon dioxide]] interface and generates a large lateral electric field from one gate to the next. This provides an additional driving force to aid in transfer of the charge packets.
+
+==Architecture==
+The CCD image sensors can be implemented in several different architectures. The most common are full-frame, frame-transfer, and interline. The distinguishing characteristic of each of these architectures is their approach to the problem of shuttering.
+
+In a full-frame device, all of the image area is active, and there is no electronic shutter. A mechanical shutter must be added to this type of sensor or the image smears as the device is clocked or read out.
+
+With a frame-transfer CCD, half of the silicon area is covered by an opaque mask (typically aluminum). The image can be quickly transferred from the image area to the opaque area or storage region with acceptable smear of a few percent. That image can then be read out slowly from the storage region while a new image is integrating or exposing in the active area. Frame-transfer devices typically do not require a mechanical shutter and were a common architecture for early solid-state broadcast cameras. The downside to the frame-transfer architecture is that it requires twice the silicon real estate of an equivalent full-frame device; hence, it costs roughly twice as much.
+
+The interline architecture extends this concept one step further and masks every other column of the image sensor for storage. In this device, only one pixel shift has to occur to transfer from image area to storage area; thus, shutter times can be less than a microsecond and smear is essentially eliminated. The advantage is not free, however, as the imaging area is now covered by opaque strips dropping the [[fill factor (image sensor)|fill factor]] to approximately 50 percent and the effective [[quantum efficiency]] by an equivalent amount. Modern designs have addressed this deleterious characteristic by adding microlenses on the surface of the device to direct light away from the opaque regions and on the active area. Microlenses can bring the fill factor back up to 90 percent or more depending on pixel size and the overall system's optical design.
+
+[[Image:ArgusCCD.jpg|thumb|right|CCD from a 2.1 [[megapixel]] [[Argus (camera company)|Argus]] digital camera]]
+
+[[Image:CCD_SONY_ICX493AQA_sensor_side.jpg|thumb|right|CCD [[Sony#Semiconductor_and_components|SONY]] ICX493AQA 10,14 (Gross 10,75) [[megapixels]] APS-C 1.8&quot; 28.328mm (23.4 x 15.6 mm) from module IS-026 from digital camera [[Sony_α|SONY α (Sony Alpha)]] [[DSLR-A200]] or [[DSLR-A300]] sensor side]]
+
+[[Image:CCD_SONY_ICX493AQA_pins_side.jpg|thumb|right|CCD [[Sony#Semiconductor_and_components|SONY]] ICX493AQA 10,14 (Gross 10,75) [[megapixels]] APS-C 1.8&quot; 28.328mm (23.4 x 15.6 mm) from module IS-026 from digital camera [[Sony_α|SONY α (Sony Alpha)]] [[DSLR-A200]] or [[DSLR-A300]] pins side]]
+
+The choice of architecture comes down to one of utility. If the application cannot tolerate an expensive, failure-prone, power-intensive mechanical shutter, an interline device is the right choice. Consumer snap-shot cameras have used interline devices. On the other hand, for those applications that require the best possible light collection and issues of money, power and time are less important, the full-frame device is the right choice. Astronomers tend to prefer full-frame devices. The frame-transfer falls in between and was a common choice before the fill-factor issue of interline devices was addressed. Today, frame-transfer is usually chosen when an interline architecture is not available, such as in a back-illuminated device.
+
+CCDs containing grids of [[pixel]]s are used in [[digital camera]]s, [[image scanner|optical scanners]], and video cameras as light-sensing devices. They commonly respond to 70 percent of the [[Ray_(optics)#incident_ray|incident]] light (meaning a quantum efficiency of about 70 percent) making them far more efficient than [[photographic film]], which captures only about 2 percent of the incident light.
+
+[[Image:2.1 MP CCD Close Up.JPG|thumb|right|CCD from a 2.1 [[megapixel]] [[Hewlett-Packard]] digital camera]]
+
+Most common types of CCDs are sensitive to near-infrared light, which allows [[infrared photography]], [[night-vision]] devices, and zero [[lux]] (or near zero lux) video-recording/photography. For normal silicon-based detectors, the sensitivity is limited to 1.1&amp;nbsp;μm. One other consequence of their sensitivity to infrared is that infrared from [[remote control]]s often appears on CCD-based digital cameras or camcorders if they do not have infrared blockers.
+
+Cooling reduces the array's [[dark current (physics)|dark current]], improving the sensitivity of the CCD to low light intensities, even for ultraviolet and visible wavelengths. Professional observatories often cool their detectors with [[liquid nitrogen]] to reduce the dark current, and therefore the [[thermal noise]], to negligible levels.
+
+===Frame transfer CCD===
+[[File:IECCD55-20.jpg|thumb|top|A frame transfer CCD sensor]]
+
+The frame transfer CCD imager was the first imaging structure proposed for CCD Imaging by Michael Tompsett at Bell Laboratories. A '''frame transfer CCD''' is a specialized CCD, often used in [[astronomy]] and some [[professional video camera]]s, designed for high exposure efficiency and correctness.
+
+The normal functioning of a CCD, astronomical or otherwise, can be divided into two phases: exposure and readout. During the first phase, the CCD passively collects incoming [[photon]]s, storing [[electron]]s in its cells. After the exposure time is passed, the cells are read out one line at a time. During the readout phase, cells are shifted down the entire area of the CCD. While they are shifted, they continue to collect light. Thus, if the shifting is not fast enough, errors can result from light that falls on a cell holding charge during the transfer. These errors are referred to as &quot;vertical smear&quot; and cause a strong light source to create a vertical line above and below its exact location. In addition, the CCD cannot be used to collect light while it is being read out. Unfortunately, a faster shifting requires a faster readout, and a faster readout can introduce errors in the cell charge measurement, leading to a higher noise level.
+
+A frame transfer CCD solves both problems: it has a shielded, not light sensitive, area containing as many cells as the area exposed to light. Typically, this area is covered by a reflective material such as aluminium. When the exposure time is up, the cells are transferred very rapidly to the hidden area. Here, safe from any incoming light, cells can be read out at any speed one deems necessary to correctly measure the cells' charge. At the same time, the exposed part of the CCD is collecting light again, so no delay occurs between successive exposures.
+
+The disadvantage of such a CCD is the higher cost: the cell area is basically doubled, and more complex control electronics are needed.
+
+===Intensified charge-coupled device===
+{{Main article|Image intensifier}}
+An intensified charge-coupled device (ICCD) is a CCD that is optically connected to an image intensifier that is mounted in front of the CCD.
+
+An image intensifier includes three functional elements: a [[photocathode]], a [[micro-channel plate]] (MCP) and a [[phosphor]] screen. These three elements are mounted one close behind the other in the mentioned sequence. The photons which are coming from the light source fall onto the photocathode, thereby generating photoelectrons. The photoelectrons are accelerated towards the MCP by an electrical control voltage, applied between photocathode and MCP. The electrons are multiplied inside of the MCP and thereafter accelerated towards the phosphor screen. The phosphor screen finally converts the multiplied electrons back to photons which are guided to the CCD by a fiber optic or a lens.
+
+An image intensifier inherently includes a [[shutter (photography)|shutter]] functionality: If the control voltage between the photocathode and the MCP is reversed, the emitted photoelectrons are not accelerated towards the MCP but return to the photocathode. Thus, no electrons are multiplied and emitted by the MCP, no electrons are going to the phosphor screen and no light is emitted from the image intensifier. In this case no light falls onto the CCD, which means that the shutter is closed. The process of reversing the control voltage at the photocathode is called ''gating'' and therefore ICCDs are also called gateable CCD cameras.
+
+Besides the extremely high sensitivity of ICCD cameras, which enable single photon detection, the gateability is one of the major advantages of the ICCD over the [[charge-coupled device#Electron-multiplying CCD|EMCCD]] cameras. The highest performing ICCD cameras enable shutter times as short as 200 [[picosecond]]s.
+
+ICCD cameras are in general somewhat higher in price than EMCCD cameras because they need the expensive image intensifier. On the other hand, EMCCD cameras need a cooling system to cool the EMCCD chip down to temperatures around 170 [[Kelvin|K]]. This cooling system adds additional costs to the EMCCD camera and often yields heavy condensation problems in the application.
+
+ICCDs are used in [[night vision devices]] and in various scientific applications.
+
+=== Electron-multiplying CCD ===
+[[Image:EMCCD2 color en.svg|thumb|Electrons are transferred serially through the gain stages making up the multiplication register of an [[#Electron-multiplying CCD|EMCCD]]. The high voltages used in these serial transfers induce the creation of additional charge carriers through impact ionisation.]]
+[[Image:Output vs input electrons.png|thumb|in an [[#Electron-multiplying CCD|EMCCD]] there is a dispersion (variation) in the number of electrons output by the multiplication register for a given (fixed) number of input electrons (shown in the legend on the right). The probability distribution for the number of output electrons is plotted [[logarithm]]ically on the vertical axis for a simulation of a multiplication register. Also shown are results from the [[empiricism|empirical]] fit equation shown on this page.]]
+
+An '''electron-multiplying CCD''' (EMCCD, also known as an L3Vision CCD, a product commercialized by e2v Ltd., GB, L3CCD or Impactron CCD, a now-discontinued product offered in the past by Texas Instruments) is a charge-coupled device in which a gain register is placed between the shift register and the output amplifier. The gain register is split up into a large number of stages. In each stage, the electrons are multiplied by [[impact ionization]] in a similar way to an [[avalanche diode]]. The gain probability at every stage of the register is small (''P'' &lt; 2%), but as the number of elements is large (N &gt; 500), the overall gain can be very high (&lt;math&gt;g = (1 + P)^N&lt;/math&gt;), with single input electrons giving many thousands of output electrons. Reading a signal from a CCD gives a noise background, typically a few electrons. In an EMCCD, this noise is superimposed on many thousands of electrons rather than a single electron; the devices' primary advantage is thus their negligible readout noise. The use of [[avalanche breakdown]] for amplification of photo charges had already been described in the {{US patent|3761744}} in 1973 by George E. Smith/Bell Telephone Laboratories.
+
+EMCCDs show a similar sensitivity to [[charge-coupled device#Intensified charge-coupled device|intensified CCDs]] (ICCDs). However, as with ICCDs, the gain that is applied in the gain register is stochastic and the ''exact'' gain that has been applied to a pixel's charge is impossible to know. At high gains (&gt; 30), this uncertainty has the same effect on the [[signal-to-noise ratio]] (SNR) as halving the [[quantum efficiency]] (QE) with respect to operation with a gain of unity. However, at very low light levels (where the quantum efficiency is most important), it can be assumed that a pixel either contains an electron &amp;mdash; or not. This removes the noise associated with the stochastic multiplication at the risk of counting multiple electrons in the same pixel as a single electron. To avoid multiple counts in one pixel due to coincident photons in this mode of operation, high frame rates are essential. The dispersion in the gain is shown in the graph on the right. For multiplication registers with many elements and large gains it is well modelled by the equation:
+
+&lt;math&gt;P\left (n \right ) = \frac{\left
+ (n-m+1\right )^{m-1}}{\left (m-1 \right )!\left
+ (g-1+\frac{1}{m}\right )^{m}}\exp \left ( -
+ \frac{n-m+1}{g-1+\frac{1}{m}}\right )&lt;/math&gt; if &lt;math&gt;n \ge m &lt;/math&gt;
+
+where ''P'' is the probability of getting ''n'' output electrons given ''m'' input electrons and a total mean multiplication register gain of ''g''.
+
+Because of the lower costs and better resolution, EMCCDs are capable of replacing ICCDs in many applications. ICCDs still have the advantage that they can be gated very fast and thus are useful in applications like [[range gate|range-gated imaging]]. EMCCD cameras indispensably need a cooling system &amp;mdash; using either [[thermoelectric cooling]] or liquid nitrogen &amp;mdash; to cool the chip down to temperatures in the range of {{convert|-65|to|-95|C}}. This cooling system unfortunately adds additional costs to the EMCCD imaging system and may yield condensation problems in the application. However, high-end EMCCD cameras are equipped with a permanent hermetic vacuum system confining the chip to avoid condensation issues.
+
+The low-light capabilities of EMCCDs find use in astronomy and biomedical research, among other fields.  In particular, their low noise at high readout speeds makes them very useful for a variety of astronomical applications involving low light sources and transient events such as [[lucky imaging]] of faint stars, high speed [[photon counting]] photometry, [[Fabry-Pérot|Fabry-Pérot spectroscopy]] and high-resolution spectroscopy. More recently, these types of CCDs have broken into the field of biomedical research in low-light applications including [[small animal imaging]], [[single-molecule|single-molecule imaging]], [[Raman spectroscopy]], [[super resolution microscopy]] as well as a wide variety of modern [[fluorescence microscopy]] techniques thanks to greater SNR in low-light conditions in comparison with traditional CCDs and ICCDs.
+
+In terms of noise, commercial EMCCD cameras typically have clock-induced charge (CIC) and dark current (dependent on the extent of cooling) that together lead to an effective readout noise ranging from 0.01 to 1 electrons per pixel read. However, recent improvements in EMCCD technology have led to a new generation of cameras capable of producing significantly less CIC, higher charge transfer efficiency and an EM gain 5 times higher than what was previously available. These advances in low-light detection lead to an effective total background noise of 0.001 electrons per pixel read, a noise floor unmatched by any other low-light imaging device.&lt;ref&gt;
+{{cite journal
+ | last1 = Daigle | first1 = Olivier
+ | last2 = Djazovski | first2 = Oleg
+ | last3 = Laurin | first3 = Denis
+ | last4 = Doyon | first4 = René
+ | last5 = Artigau | first5 = Étienne
+ | title = Characterization results of EMCCDs for extreme low light imaging
+ | date = July 2012
+ | url = http://www.nuvucameras.com/wp-content/uploads/2012/07/Characterization-results-of-EMCCDs-for-extreme-low-light-imaging.pdf}}&lt;/ref&gt;
+
+== Use in astronomy ==
+Due to the high quantum efficiencies of [[charge-coupled device]] (CCD) (for a [[quantum efficiency]] of 100%, one count equals one photon), linearity of their outputs, ease of use compared to photographic plates, and a variety of other reasons, CCDs were very rapidly adopted by astronomers for nearly all UV-to-infrared applications.
+
+Thermal noise and [[cosmic ray]]s may alter the pixels in the CCD array. To counter such effects, astronomers take several exposures with the CCD shutter closed and opened. The average of images taken with the shutter closed is necessary to lower the random noise. Once developed, the [[dark frame subtraction|dark frame average image is then subtracted]] from the open-shutter image to remove the dark current and other systematic defects ([[dead pixel]]s, hot pixels, etc.) in the CCD.
+
+The [[Hubble Space Telescope]], in particular, has a highly developed series of steps (“data reduction pipeline”) to convert the raw CCD data to useful images.&lt;ref name = &quot;ESO-Hainaut-CCD image processing&quot;&gt;
+{{Cite web| url = http://www.eso.org/~ohainaut/ccd | title = Basic CCD image processing |date = December 2006| last = Hainaut | first = Oliver R. | accessdate = January 15, 2011 }}&lt;br&gt;
+{{Cite web| url = http://www.eso.org/~ohainaut/ccd/sn.html | title = Signal, Noise and Detection | date = June 1, 2005 | last = Hainaut | first = Oliver R. | accessdate = October 7, 2009 }}&lt;br&gt;
+{{Cite web| url = http://www.eso.org/~ohainaut/images/imageProc.html | title = Retouching of astronomical data for the production of outreach images | date = May 20, 2009 | last = Hainaut | first = Oliver R. | accessdate = October 7, 2009 }} &lt;br&gt;(Hainaut is an astronomer at the [http://www.eso.org/~ohainaut/cv.html European Southern Observatory]) &lt;br&gt;
+&lt;/ref&gt;
+
+CCD cameras used in [[astrophotography]] often require sturdy mounts to cope with vibrations from wind and other sources, along with the tremendous weight of most imaging platforms. To take long exposures of galaxies and nebulae, many astronomers use a technique known as [[autoguider|auto-guiding]]. Most autoguiders use a second CCD chip to monitor deviations during imaging. This chip can rapidly detect errors in tracking and command the mount motors to correct for them.
+
+[[Image:SDSSFaceplate.gif|thumb|right|Array of 30 CCDs used on the [[Sloan Digital Sky Survey]] telescope imaging camera, an example of &quot;drift-scanning&quot;.]]
+
+An unusual astronomical application of CCDs, called drift-scanning, uses a CCD to make a fixed telescope behave like a tracking telescope and follow the motion of the sky. The charges in the CCD are transferred and read in a direction parallel to the motion of the sky, and at the same speed. In this way, the telescope can image a larger region of the sky than its normal field of view. The [[Sloan Digital Sky Survey]] is the most famous example of this, using the technique to a survey of over a quarter of the sky.
+
+In addition to imagers, CCDs are also used in an array of analytical instrumentation  including [[spectrometer]]s&lt;ref&gt;V. Deckert and W. Kiefer, Scanning multichannel technique for improved spectrochemical measurements with a CCD camera and its application to Raman spectroscopy, ''Appl. Spectros.'' '''46''', 322-328 (1992)&lt;/ref&gt; and [[List of types of interferometers|interferometers]].&lt;ref&gt;[[F. J. Duarte]], On a generalized interference equation and interferometric measurements, ''Opt. Commun.'' '''103''',
+ 8-14 (1993).&lt;/ref&gt;
+
+==Color cameras==
+[[Image:Bayer pattern on sensor.svg|thumb|A [[Bayer filter]] on a CCD]]
+[[File:Webcam CCD - 640x480px Colour.jpg|thumb|CCD color sensor]]
+[[File:An RGGB Bayer Colour Filter on a 1980's vintage Sony PAL Camcorder CCD.png|right|thumb|x80 microscope view of an RGGB Bayer filter on a 240 line Sony CCD PAL Camcorder CCD sensor]]
+
+Digital color cameras generally use a [[Bayer filter|Bayer mask]] over the CCD. Each square of four pixels has one filtered red, one blue, and two green (the [[human eye]] is more sensitive to green than either red or blue). The result of this is that [[luminance]] information is collected at every pixel, but the color resolution is lower than the luminance resolution.
+
+Better color separation can be reached by three-CCD devices ([[3CCD]]) and a [[dichroic prism|dichroic beam splitter prism]], that splits the [[image]] into [[red]], [[green]] and [[blue]] components. Each of the three CCDs is arranged to respond to a particular color. Many [[professional video camera|professional video]] camcorders, and some semi-professional camcorders, use this technique, although developments in competing CMOS technology have made CMOS sensors, both with beam-splitters and bayer filters, increasingly popular in high-end video and digital cinema cameras. Another advantage of 3CCD over a Bayer mask device is higher [[quantum efficiency]] (and therefore higher light sensitivity for a given aperture size). This is because in a 3CCD device most of the light entering the aperture is captured by a sensor, while a Bayer mask absorbs a high proportion (about 2/3) of the light falling on each CCD pixel.
+
+For still scenes, for instance in microscopy, the resolution of a Bayer mask device can be enhanced by [[microscanning]] technology. During the process of [[co-site sampling|color co-site sampling]], several frames of the scene are produced. Between acquisitions, the sensor is moved in pixel dimensions, so that each point in the visual field is acquired consecutively by elements of the mask that are sensitive to the red, green and blue components of its color. Eventually every pixel in the image has been scanned at least once in each color and the resolution of the three channels become equivalent (the resolutions of red and blue channels are quadrupled while the green channel is doubled).
+
+===Sensor sizes===
+{{Main article|Image sensor format}}
+Sensors (CCD / CMOS) come in various sizes, or image sensor formats. These sizes are often referred to with an inch fraction designation such as 1/1.8″ or 2/3″ called the [[optical format]]. This measurement actually originates back in the 1950s and the time of [[video camera tube|Vidicon tubes]].
+
+== Blooming ==&lt;!--[[Blooming (CCD)]] redirects here--&gt;
+[[Image:Vertical smear.jpg|thumb|right|300px|Vertical smear]]
+When a CCD exposure is long enough, eventually the electrons that collect in the &quot;bins&quot; in the brightest part of the image will overflow the bin, resulting in blooming. The structure of the CCD allows the electrons to flow more easily in one direction than another, resulting in vertical streaking.&lt;ref&gt;
+Phil Plait. [http://www.badastronomy.com/bad/misc/planetx/soho.html &quot;The Planet X Saga: SOHO Images&quot;]
+&lt;/ref&gt;&lt;ref&gt;
+Phil Plait. [http://blogs.discovermagazine.com/badastronomy/2009/03/13/why-king-triton-how-nice-to-see-you/ &quot;Why, King Triton, how nice to see you!&quot;]
+&lt;/ref&gt;&lt;ref&gt;
+Thomas J. Fellers and Michael W. Davidson. [http://learn.hamamatsu.com/articles/ccdsatandblooming.html &quot;CCD Saturation and Blooming&quot;] {{webarchive |url=https://web.archive.org/web/20120727032200/http://learn.hamamatsu.com/articles/ccdsatandblooming.html |date=July 27, 2012 }}
+&lt;/ref&gt;
+
+Some anti-blooming features that can be built into a CCD reduce its sensitivity to light by using some of the pixel area for a drain structure.&lt;ref&gt;
+{{cite book
+ | title = Solid-State Imaging With Charge-Coupled Devices
+ | author = Albert J. P. Theuwissen
+ | publisher = Springer
+ | year = 1995
+ | isbn = 9780792334569
+ | pages = 177–180
+ | url = https://books.google.com/books?id=dchEKTHNCMcC&amp;pg=PA177
+ }}&lt;/ref&gt;
+[[James M. Early]] developed a vertical anti-blooming drain that would not detract from the light collection area, and so did not reduce light sensitivity.
+
+==See also==
+{{colbegin|colwidth=25em}}
+* [[Photodiode]]
+* [[Active pixel sensor|CMOS sensor]]
+* [[Angle-sensitive pixel]]
+* [[Rotating line camera]]
+* [[Superconducting camera]]
+* [[Wide dynamic range]]
+* [[Hole accumulation diode]] (HAD)
+* [[Multi-layer CCD]]
+* [[Andor Technology]] – Manufacturer of EMCCD cameras
+* [[Roper Industries#Photometrics|Photometrics]] - Manufacturer of EMCCD cameras
+* [[Roper Industries#QImaging|QImaging]] - Manufacturer of EMCCD cameras
+* [[Roper Industries#PI/Acton|PI/Acton]] – Manufacturer of EMCCD cameras
+* [[Time delay and integration]] (TDI)
+* [[Glossary of video terms]]
+{{colend}}
+
+==References==
+{{Reflist}}
+
+==External links==
+{{Commons category|Charge-coupled devices}}
+* [http://www.legacy.jyi.org/volumes/volume3/issue1/features/peterson.html Journal Article On Basics of CCDs]
+* [http://www.microscopyu.com/articles/digitalimaging/ccdintro.html Nikon microscopy introduction to CCDs]
+* [http://micro.magnet.fsu.edu/primer/digitalimaging/concepts/concepts.html Concepts in Digital Imaging Technology]
+* [https://arxiv.org/abs/astro-ph/0407315 More statistical properties]
+* [http://www.ast.cam.ac.uk/~optics/Lucky_Web_Site/guide_to_l3ccds.htm L3CCDs used in astronomy]
+{{Photography}}
+{{Sensors}}
+{{DEFAULTSORT:Charge-Coupled Device}}
+[[Category:American inventions]]
+[[Category:Integrated circuits]]
+[[Category:Image processing]]
+[[Category:Image sensors]]
+[[Category:Image scanners]]
+[[Category:Astronomical imaging]]
+[[Category:MOSFETs]]</text>
+      <sha1>7y0ynimvvg0egq1zsovocm7lstw7ik4</sha1>
+    </revision>
+  </page>

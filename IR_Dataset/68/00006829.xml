@@ -1,0 +1,245 @@
+  <page>
+    <title>Cache (computing)</title>
+    <ns>0</ns>
+    <id>6829</id>
+    <revision>
+      <id>942497479</id>
+      <parentid>936646930</parentid>
+      <timestamp>2020-02-25T01:16:17Z</timestamp>
+      <contributor>
+        <username>Citation bot</username>
+        <id>7903804</id>
+      </contributor>
+      <minor />
+      <comment>Add: year, isbn, arxiv, doi, bibcode, pages. Removed URL that duplicated unique identifier. Formatted [[WP:ENDASH|dashes]]. | You can [[WP:UCB|use this bot]] yourself. [[WP:DBUG|Report bugs here]]. | Activated by [[User:AManWithNoPlan]] | via #UCB_toolbar</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{Use dmy dates|date=April 2012}}
+{{More citations needed|date=April 2011}}
+
+[[File:cache,basic.svg|frame|Diagram of a CPU memory cache operation]]
+
+In [[computing]], a '''cache''' ({{IPAc-en|audio=LL-Q1860 (eng)-Back ache-cache.wav|k|æ|ʃ}} {{respell|kash}},&lt;ref&gt;
+{{cite web
+|url=http://www.oxforddictionaries.com/definition/english/cache
+|title=Cache
+|publisher=Oxford Dictionaries
+|work=Oxford Dictionaries 
+|accessdate=2 August 2016}}&lt;/ref&gt; or {{IPAc-en|ˈ|k|eɪ|ʃ}} {{respell|kaysh}} in [[Australian English|AuE]]&lt;ref&gt;{{cite web
+|url=https://www.macquariedictionary.com.au/features/word/search/?word=cache&amp;search_word_type=Dictionary
+|title=Cache
+|publisher=Macmillan Publishers Group Australia 2015
+|work=Macquarie Dictionary
+|accessdate=21 July 2015
+}}{{Dead link|date=October 2019 |bot=InternetArchiveBot |fix-attempted=yes }}&lt;/ref&gt;) is a hardware or software component that stores data so that future requests for that data can be served faster; the data stored in a cache might be the result of an earlier computation or a copy of data stored elsewhere.  A ''cache hit'' occurs when the requested data can be found in a cache, while a ''cache miss'' occurs when it cannot.  Cache hits are served by reading data from the cache, which is faster than recomputing a result or reading from a slower data store; thus, the more requests that can be served from the cache, the faster the system performs.
+
+To be cost-effective and to enable efficient use of data, caches must be relatively small. Nevertheless, caches have proven themselves in many areas of computing, because typical [[Application software|computer applications]] access data with a high degree of [[locality of reference]]. Such access patterns exhibit temporal locality, where data is requested that has been recently requested already, and [[memory address|spatial]] locality, where data is requested that is stored physically close to data that has already been requested.
+
+== Motivation ==
+There is an inherent trade-off between size and speed (given that a larger resource implies greater physical distances) but also a tradeoff between expensive, premium technologies (such as [[Static random-access memory|SRAM]]) vs cheaper, easily mass-produced commodities (such as [[DRAM]] or [[hard disk]]s).
+
+The [[Data buffer|buffering]] provided by a cache benefits both [[latency (engineering)|latency]] and [[throughput]] ([[bandwidth (computing)|bandwidth]]):
+
+=== Latency ===
+A larger resource incurs a significant latency for access{{snd}} e.g. it can take hundreds of clock cycles for a modern 4&amp;nbsp;GHz processor to reach [[DRAM]]. This is mitigated by reading in large chunks, in the hope that subsequent reads will be from nearby locations. Prediction or explicit [[CPU cache#prefetch|prefetching]] might also guess where future reads will come from and make requests ahead of time; if done correctly the latency is bypassed altogether.
+
+=== Throughput  ===
+The use of a cache also allows for higher throughput from the underlying resource, by assembling multiple fine grain transfers into larger, more efficient requests. In the case of [[Dynamic random-access memory|DRAM]] circuits, this might be served by having a wider data bus. For example, consider a program accessing bytes in a 32-bit [[address space]], but being served by a 128-bit off-chip data bus; individual uncached byte accesses would allow only 1/16th of the total bandwidth to be used, and 80% of the data movement would be memory addresses instead of data itself. Reading larger chunks reduces the fraction of bandwidth required for transmitting address information.
+
+== {{Anchor|CACHE-HIT}}Operation ==
+Hardware implements cache as a [[block (data storage)|block]] of memory for temporary storage of data likely to be used again. [[Central processing unit]]s (CPUs) and [[hard disk drive]]s (HDDs) frequently use a cache, as do [[web browser]]s and [[web server]]s.
+
+A cache is made up of a pool of entries. Each entry has associated ''data'', which is a copy of the same data in some ''backing store''. Each entry also has a ''tag'', which specifies the identity of the data in the backing store of which the entry is a copy. Tagging allows simultaneous cache-oriented algorithms to function in multilayered fashion without differential relay interference.
+
+When the cache client (a CPU, web browser, [[operating system]]) needs to access data presumed to exist in the backing store, it first checks the cache. If an entry can be found with a tag matching that of the desired data, the data in the entry is used instead. This situation is known as a cache hit. For example, a web browser program might check its local cache on disk to see if it has a local copy of the contents of a web page at a particular [[URL]]. In this example, the URL is the tag, and the content of the web page is the data. The percentage of accesses that result in cache hits is known as the '''hit rate''' or '''hit ratio''' of the cache.
+
+The alternative situation, when the cache is checked and found not to contain any entry with the desired tag, is known as a cache miss. This requires a more expensive access of data from the backing store. Once the requested data is retrieved, it is typically copied into the cache, ready for the next access.
+
+During a cache miss, some other previously existing cache entry is removed in order to make room for the newly retrieved data. The [[Heuristic (computer science)|heuristic]] used to select the entry to replace is known as the [[Cache algorithm|replacement policy]]. One popular replacement policy, &quot;least recently used&quot; (LRU), replaces the oldest entry, the entry that was accessed less recently than any other entry (see [[cache algorithm]]). More efficient caching algorithms compute the use-hit frequency against the size of the stored contents, as well as the [[Access time|latencies]] and throughputs for both the cache and the backing store. This works well for larger amounts of data, longer latencies, and slower throughputs, such as that experienced with hard drives and networks, but is not efficient for use within a CPU cache.{{Citation needed|date=May 2007}}
+
+=== {{Anchor|Dirty|WRITEPOLICIES|WRITE-BACK|WRITE-BEHIND|WRITE-THROUGH|WRITE-AROUND}}Writing policies ===
+[[File:Write-through with no-write-allocation.svg|thumb|right|A write-through cache with no-write allocation]]
+[[File:Write-back with write-allocation.svg|thumb|right|A write-back cache with write allocation]]
+
+{{Main|Cache coherence}}
+
+When a system writes data to cache, it must at some point write that data to the backing store as well. The timing of this write is controlled by what is known as the ''write policy''. There are two basic writing approaches:&lt;ref&gt;{{Cite web|url=https://www.linuxjournal.com/article/7105|title=Understanding Caching|last=Bottomley|first=James|date=2004-01-01|website=Linux Journal|access-date=2019-10-01}}&lt;/ref&gt;
+
+* ''Write-through'': write is done synchronously both to the cache and to the backing store.
+* ''Write-back'' (also called ''write-behind''): initially, writing is done only to the cache. The write to the backing store is postponed until the modified content is about to be replaced by another cache block.
+
+A write-back cache is more complex to implement, since it needs to track which of its locations have been written over, and mark them as ''dirty'' for later writing to the backing store. The data in these locations are written back to the backing store only when they are evicted from the cache, an effect referred to as a ''lazy write''. For this reason, a read miss in a write-back cache (which requires a block to be replaced by another) will often require two memory accesses to service: one to write the replaced data from the cache back to the store, and then one to retrieve the needed data.
+
+Other policies may also trigger data write-back. The client may make many changes to data in the cache, and then explicitly notify the cache to write back the data.
+
+Since no data is returned to the requester on write operations, a decision needs to be made on write misses, whether or not data would be loaded into the cache.
+This is defined by these two approaches:
+
+* ''Write allocate'' (also called ''fetch on write''): data at the missed-write location is loaded to cache, followed by a write-hit operation. In this approach, write misses are similar to read misses.
+* ''No-write allocate'' (also called ''write-no-allocate'' or ''write around''): data at the missed-write location is not loaded to cache, and is written directly to the backing store. In this approach, data is loaded into the cache on read misses only.
+
+Both write-through and write-back policies can use either of these write-miss policies, but usually they are paired in this way:&lt;ref name=&quot;HennessyPatterson2011&quot;&gt;
+{{cite book
+|author1=John L. Hennessy
+|author2=David A. Patterson
+|title=Computer Architecture: A Quantitative Approach
+|url=https://books.google.com/books?id=v3-1hVwHnHwC&amp;pg=SL2-PA12
+|accessdate=25 March 2012
+|date=16 September 2011
+|publisher=Elsevier
+|isbn=978-0-12-383872-8
+|pages=B–12}}&lt;/ref&gt;
+
+* A write-back cache uses write allocate, hoping for subsequent writes (or even reads) to the same location, which is now cached.
+* A write-through cache uses no-write allocate. Here, subsequent writes have no advantage, since they still need to be written directly to the backing store.
+
+Entities other than the cache may change the data in the backing store, in which case the copy in the cache may become out-of-date or ''stale''. Alternatively, when the client updates the data in the cache, copies of those data in other caches will become stale. Communication protocols between the cache managers which keep the data consistent are known as [[cache coherency|coherency protocols]].
+
+=={{anchor|HARDWARE}}Examples of hardware caches==
+=== CPU cache ===
+{{Main|CPU cache}}
+
+Small memories on or close to the [[CPU]] can operate faster than the much larger [[main memory]]. Most CPUs since the 1980s have used one or more caches, sometimes [[CPU cache#Multi-level caches|in cascaded levels]]; modern high-end [[Embedded computing|embedded]], [[Desktop computer|desktop]] and server [[microprocessor]]s may have as many as six types of cache (between levels and functions),.&lt;ref&gt;{{cite web|title=intel broad well core i7 with 128mb L4 cache|url=http://wccftech.com/intel-broadwell-core-i7-5775c-128mb-l4-cache-and-skylake-core-i7-6700k-flagship-processors-available-retail/}}Mentions L4 cache. Combined with separate I-Cache and TLB, this brings the total 'number of caches (levels+functions) to 6&lt;/ref&gt; Examples of caches with a specific function are the [[D-cache]] and [[I-cache]] and the [[translation lookaside buffer]] for the [[Memory management unit|MMU]].
+
+=== {{Anchor|GPU}}GPU cache ===
+Earlier [[graphics processing unit]]s (GPUs) often had limited read-only [[texture cache]]s, and introduced [[morton order]] [[swizzled texture]]s to improve 2D [[cache coherency]]. [[Cache miss]]es would drastically affect performance, e.g. if [[mipmapping]] was not used. Caching was important to leverage 32-bit (and wider) transfers for texture data that was often as little as 4&amp;nbsp;bits per pixel, indexed in complex patterns by arbitrary [[UV coordinates]] and [[perspective transformation]]s in [[inverse texture mapping]].
+
+As GPUs advanced (especially with [[GPGPU]] [[compute shader]]s) they have developed progressively larger and increasingly general caches, including [[instruction cache]]s for [[shader]]s, exhibiting increasingly common functionality with CPU caches.&lt;ref name=&quot;ReferenceGCS7&quot;&gt;S. Mittal, &quot;[https://www.academia.edu/6940614/A_Survey_of_Techniques_for_Managing_and_Leveraging_Caches_in_GPUs A Survey of Techniques for Managing and Leveraging Caches in GPUs]&quot;, JCSC, 23(8), 2014.&lt;/ref&gt; For example, [[GeForce 200 series|GT200]] architecture GPUs did not feature an L2 cache, while the [[Fermi (microarchitecture)|Fermi]] GPU has 768&amp;nbsp;KB of last-level cache, the [[Kepler (microarchitecture)|Kepler]] GPU has 1536&amp;nbsp;KB of last-level cache,&lt;ref name=&quot;ReferenceGCS7&quot;/&gt; and the [[Maxwell (microarchitecture)|Maxwell]] GPU has 2048&amp;nbsp;KB of last-level cache. These caches have grown to handle [[synchronisation primitive]]s between threads and [[atomic operation]]s, and interface with a CPU-style [[Memory management unit|MMU]].
+
+=== DSPs ===
+[[Digital signal processor]]s have similarly generalised over the years. Earlier designs used [[scratchpad memory]] fed by [[Direct memory access|DMA]], but modern DSPs such as [[Qualcomm Hexagon]] often include a very similar set of caches to a CPU (e.g. [[Modified Harvard architecture]] with shared L2, split L1 I-cache and D-cache).&lt;ref&gt;{{cite web|title=qualcom Hexagon DSP SDK overview|url=https://developer.qualcomm.com/software/hexagon-dsp-sdk/dsp-processor}}&lt;/ref&gt;
+
+=== Translation lookaside buffer ===
+{{Main|Translation lookaside buffer}}
+
+A [[memory management unit]] (MMU) that fetches page table entries from main memory has a specialized cache, used for recording the results of [[virtual address]] to [[physical address]] translations. This specialized cache is called a [[translation lookaside buffer]] (TLB).&lt;ref&gt;{{cite web
+ | url = http://cseweb.ucsd.edu/classes/su09/cse120/lectures/Lecture7.pdf
+ | title = Lecture 7: Memory Management
+ | work = CSE 120: Principles of Operating Systems
+ | year = 2009 | accessdate = 2013-12-04
+ | author = Frank Uyeda | publisher = UC San Diego
+ }}&lt;/ref&gt;
+
+== In-network cache ==
+=== Information-centric networking ===
+[[Information-centric networking]] (ICN) is an approach to evolve the [[Internet]] infrastructure away from a host-centric paradigm, based on perpetual connectivity and the [[end-to-end principle]], to a network architecture in which the focal point is identified information (or content or data). Due to the inherent caching capability of the nodes in an ICN, it can be viewed as a loosely connected network of caches, which has unique requirements of caching policies. However, ubiquitous content caching introduces the challenge to content protection against unauthorized access, which requires extra care and solutions.&lt;ref&gt;{{cite journal|author=Bilal, Muhammad|displayauthors=etal|title=Secure Distribution of Protected Content in Information-Centric Networking|journal=IEEE Systems Journal |pages=1–12|arxiv=1907.11717|year=2019|doi=10.1109/JSYST.2019.2931813|bibcode=2019arXiv190711717B}}&lt;/ref&gt;
+Unlike proxy servers, in ICN the cache is a network-level solution. Therefore, it has rapidly changing cache states and higher request arrival rates; moreover, smaller cache sizes further impose a different kind of requirements on the content eviction policies. In particular, eviction policies for ICN should be fast and lightweight. Various cache replication and eviction schemes for different ICN architectures and applications have been proposed.
+
+====Policies====
+=====Time aware least recently used (TLRU)=====
+The Time aware Least Recently Used (TLRU)&lt;ref&gt;{{cite journal|author=Bilal, Muhammad|displayauthors=etal|title=Time Aware Least Recent Used (TLRU) Cache Management Policy in ICN|journal=IEEE 16th International Conference on Advanced Communication Technology (ICACT) |pages=528–532|doi=10.1109/ICACT.2014.6779016|arxiv=1801.00390|bibcode=2018arXiv180100390B|isbn=978-89-968650-3-2|year=2017}}&lt;/ref&gt; is a variant of LRU designed for the situation where the stored contents in cache have a valid life time. The algorithm is suitable in network cache applications, such as Information-centric networking (ICN), [[Content Delivery Network]]s (CDNs) and distributed networks in general. TLRU introduces a new term: TTU (Time to Use). TTU is a time stamp of a content/page which stipulates the usability time for the content based on the locality of the content and the content publisher announcement. Owing to this locality based time stamp, TTU provides more control to the local administrator to regulate in network storage.
+In the TLRU algorithm, when a piece of content arrives, a cache node calculates the local TTU value based on the TTU value assigned by the content publisher. The local TTU value is calculated by using a locally defined function. Once the local TTU value is calculated the replacement of content is performed on a subset of the total content stored in cache node. The TLRU ensures that less popular and small life content should be replaced with the incoming content.
+=====Least frequent recently used (LFRU)=====
+The Least Frequent Recently Used (LFRU)&lt;ref&gt;{{cite journal|author=Bilal, Muhammad|displayauthors=etal|title=A Cache Management Scheme for Efficient Content Eviction and Replication in Cache Networks|journal=IEEE Access |volume=5|pages=1692–1701|arxiv=1702.04078|bibcode=2017arXiv170204078B|year=2017|doi=10.1109/ACCESS.2017.2669344}}&lt;/ref&gt; cache replacement scheme combines the benefits of LFU and LRU schemes. LFRU  is suitable for ‘in network’ cache applications, such as Information-centric networking (ICN), Content Delivery Networks (CDNs) and distributed networks in general. In LFRU, the cache is divided into two partitions called privileged and unprivileged partitions. The privileged partition can be defined as a protected partition. If content is highly popular, it is pushed into the privileged partition. Replacement of the privileged partition is done as follows:  LFRU evicts content from the unprivileged partition, pushes content from privileged partition to unprivileged partition, and finally inserts new content into the privileged partition.  In the above procedure the LRU is used for the privileged partition and an approximated LFU (ALFU) scheme is used for the unprivileged partition, hence the abbreviation LFRU.
+The basic idea is to filter out the locally popular contents with ALFU scheme and push the popular contents to one of the privileged partition.
+
+== Software caches ==
+
+=== Disk cache ===
+{{Main|Page cache}}
+
+While CPU caches are generally managed entirely by hardware, a variety of software manages other caches. The [[page cache]] in main memory, which is an example of disk cache, is managed by the operating system [[Kernel (computing)|kernel]].
+
+While the [[disk buffer]], which is an integrated part of the hard disk drive, is sometimes misleadingly referred to as &quot;disk cache&quot;, its main functions are write sequencing and read prefetching. Repeated cache hits are relatively rare, due to the small size of the buffer in comparison to the drive's capacity. However, high-end [[disk controller]]s often have their own on-board cache of the hard disk drive's [[Block (data storage)|data blocks]].
+
+Finally, a fast local hard disk drive can also cache information held on even slower data storage devices, such as remote servers ([[web cache]]) or local [[tape drive]]s or [[optical jukebox]]es; such a scheme is the main concept of [[hierarchical storage management]].  Also, fast flash-based [[solid-state drive]]s (SSDs) can be used as caches for slower rotational-media hard disk drives, working together as [[hybrid drive]]s or [[solid-state hybrid drive]]s (SSHDs).
+
+=== Web cache ===
+{{Main|Web cache}}
+
+[[Web browser]]s and [[Proxy server|web proxy servers]] employ web caches to store previous responses from [[web server]]s, such as [[web page]]s and [[image]]s. Web caches reduce the amount of information that needs to be transmitted across the network, as information previously stored in the cache can often be re-used. This reduces bandwidth and processing requirements of the web server, and helps to improve [[responsiveness]] for users of the web.&lt;ref&gt;{{cite web | url=http://docforge.com/wiki/Web_application/Caching | title=Web application caching | author=Multiple (wiki) | work=Docforge | accessdate=2013-07-24 }}&lt;/ref&gt;
+
+Web browsers employ a built-in web cache, but some [[Internet service provider]]s (ISPs) or organizations also use a caching proxy server, which is a web cache that is shared among all users of that network.
+
+Another form of cache is [[P2P caching]], where the files most sought for by [[peer-to-peer]] applications are stored in an [[Internet service provider|ISP]] cache to accelerate P2P transfers. Similarly, decentralised equivalents exist, which allow communities to perform the same task for P2P traffic, for example, Corelli.&lt;ref&gt;{{cite conference|author1=Gareth Tyson|author2=Andreas Mauthe|author3=Sebastian Kaune|author4=Mu Mu|author5=Thomas Plagemann|title=Corelli: A Dynamic Replication Service for Supporting Latency-Dependent Content in Community Networks|conference=MMCN'09|url=http://comp.eprints.lancs.ac.uk/2044/1/MMCN09.pdf|archive-url=https://web.archive.org/web/20150618193018/http://comp.eprints.lancs.ac.uk/2044/1/MMCN09.pdf|archive-date=2015-06-18}}&lt;/ref&gt;
+
+=== Memoization ===
+{{Main|Memoization}}&lt;!-- NOTE: this is *NOT* a typo for &quot;memorization&quot;! --&gt;
+
+A cache can store data that is computed on demand rather than retrieved from a backing store.  [[Memoization]] is an [[Program optimization|optimization]] technique that stores the results of resource-consuming [[function call]]s within a lookup table, allowing subsequent calls to reuse the stored results and avoid repeated computation. It is related to the [[dynamic programming]] algorithm design methodology, which can also be thought of as a means of caching.
+
+=== Other caches ===
+The BIND [[Domain Name System|DNS]] daemon caches a mapping of domain names to [[IP address]]es, as does a resolver library.
+
+Write-through operation is common when operating over unreliable networks (like an Ethernet LAN), because of the enormous complexity of the [[cache coherency|coherency protocol]] required between multiple write-back caches when communication is unreliable. For instance, web page caches and [[client-side]] [[Network File System|network file system]] caches (like those in [[Network File System (protocol)|NFS]] or [[Server Message Block|SMB]]) are typically read-only or write-through specifically to keep the network protocol simple and reliable.
+
+[[Web search engine|Search engine]]s also frequently make [[web page]]s they have indexed available from their cache. For example, [[Google]] provides a &quot;Cached&quot; link next to each search result. This can prove useful when web pages from a [[web server]] are temporarily or permanently inaccessible.
+
+Another type of caching is storing computed results that will likely be needed again, or&lt;!-- yes, this really is memoization; it is not a typo --&gt; [[memoization]]. For example, [[ccache]]&lt;!-- nor is this a typo, &quot;ccache&quot; is C compiler cache --&gt; is a program that caches the output of the compilation, in order to speed up later compilation runs.
+
+[[Database caching]] can substantially improve the throughput of [[database]] applications, for example in the processing of [[Database index|indexes]], [[Data dictionary|data dictionaries]], and frequently used subsets of data.
+
+A [[distributed cache]]&lt;ref&gt;{{cite journal
+| last        = Paul
+| first       = S
+|author2=Z Fei
+| date        = 1 February 2001
+| title       = Distributed caching with centralized control
+| journal     = Computer Communications
+| volume      = 24
+| issue       = 2
+| pages       = 256–268
+| doi         = 10.1016/S0140-3664(00)00322-4
+| citeseerx       = 10.1.1.38.1094
+}}&lt;!--| accessdate  =18 November 2009--&gt;&lt;/ref&gt; uses networked hosts to provide scalability, reliability and performance to the application.&lt;ref&gt;{{cite journal
+| last          = Khan
+| first         = Iqbal
+| title         = Distributed Caching On The Path To Scalability
+| url           = https://msdn.microsoft.com/magazine/dd942840.aspx
+| journal      = MSDN
+| volume        = 24
+| issue         = 7
+| date          = July 2009
+}}&lt;/ref&gt;  The hosts can be co-located or spread over different geographical regions.
+
+=={{anchor|The difference between buffer and cache}}&lt;!--Former section name used in external links--&gt; Buffer vs. cache ==
+The semantics of a &quot;buffer&quot; and a &quot;cache&quot; are not totally different; even so, there are fundamental differences in intent between the process of caching and the process of buffering.
+
+Fundamentally, caching realizes a performance increase for transfers of data that is being repeatedly transferred. While a caching system may realize a performance increase upon the initial (typically write) transfer of a data item, this performance increase is due to buffering occurring within the caching system.
+
+With read caches, a data item must have been fetched from its residing location at least once in order for subsequent reads of the data item to realize a performance increase by virtue of being able to be fetched from the cache's (faster) intermediate storage rather than the data's residing location. With write caches, a performance increase of writing a data item may be realized upon the first write of the data item by virtue of the data item immediately being stored in the cache's intermediate storage, deferring the transfer of the data item to its residing storage at a later stage or else occurring as a background process. Contrary to strict buffering, a caching process must adhere to a (potentially distributed) cache coherency protocol in order to maintain consistency between the cache's intermediate storage and the location where the data resides. Buffering, on the other hand,
+
+* reduces the number of transfers for otherwise novel data amongst communicating processes, which amortizes overhead involved for several small transfers over fewer, larger transfers,
+* provides an intermediary for communicating processes which are incapable of direct transfers amongst each other, or
+* ensures a minimum data size or representation required by at least one of the communicating processes involved in a transfer.
+
+With typical caching implementations, a data item that is read or written for the first time is effectively being buffered; and in the case of a write, mostly realizing a performance increase for the application from where the write originated. Additionally, the portion of a caching protocol where individual writes are deferred to a batch of writes is a form of buffering. The portion of a caching protocol where individual reads are deferred to a batch of reads is also a form of buffering, although this form may negatively impact the performance of at least the initial reads (even though it may positively impact the performance of the sum of the individual reads). In practice, caching almost always involves some form of buffering, while strict buffering does not involve caching.
+
+A [[data buffer|buffer]] is a temporary memory location that is traditionally used because CPU [[instruction (computing)|instruction]]s cannot directly address data stored in peripheral devices. Thus, addressable memory is used as an intermediate stage. Additionally, such a buffer may be feasible when a large block of data is assembled or disassembled (as required by a storage device), or when data may be delivered in a different order than that in which it is produced. Also, a whole buffer of data is usually transferred sequentially (for example to hard disk), so buffering itself sometimes increases transfer performance or reduces the variation or jitter of the transfer's latency as opposed to caching where the intent is to reduce the latency. These benefits are present even if the buffered data are written to the [[Data buffer|buffer]] once and read from the buffer once.
+
+A cache also increases transfer performance. A part of the increase similarly comes from the possibility that multiple small transfers will combine into one large block. But the main performance-gain occurs because there is a good chance that the same data will be read from cache multiple times, or that written data will soon be read. A cache's sole purpose is to reduce accesses to the underlying slower storage. Cache is also usually an [[abstraction layer]] that is designed to be invisible from the perspective of neighboring layers.
+
+== See also ==
+{{Div col|colwidth=25em}}
+* [[Cache prefetching]]
+* [[Cache algorithms]]
+* [[Cache coherence]]
+* [[Cache coloring]]
+* [[Cache hierarchy]]
+* [[Cache-oblivious algorithm]]
+* [[Cache stampede]]
+* [[Cache language model]]
+* [[Database cache]]
+* [[Dirty bit]]
+* [[Disk buffer]]
+* [[Cache manifest in HTML5]]
+* [[Five-minute rule]]
+* [[Materialized view]]
+* [[Pipeline burst cache]]
+* [[Temporary file]]
+{{Div col end}}
+
+== References ==
+{{Reflist|30em}}
+
+== Further reading ==
+* [https://people.freebsd.org/~lstewart/articles/cpumemory.pdf &quot;What Every Programmer Should Know About Memory&quot;] by [[Ulrich Drepper]]
+* [http://msdn.microsoft.com/en-us/library/dd129907.aspx &quot;Caching in the Distributed Environment&quot;]
+
+{{Authority control}}
+
+[[Category:Computer architecture]]
+[[Category:Cache (computing)| ]]</text>
+      <sha1>83b9u7dj6qk2itis6u1fphyp6rxlr27</sha1>
+    </revision>
+  </page>

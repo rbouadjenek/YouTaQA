@@ -1,0 +1,68 @@
+  <page>
+    <title>Digital Private Network Signalling System</title>
+    <ns>0</ns>
+    <id>8965</id>
+    <revision>
+      <id>924328889</id>
+      <parentid>909520827</parentid>
+      <timestamp>2019-11-03T05:01:00Z</timestamp>
+      <contributor>
+        <username>Sun Creator</username>
+        <id>5663757</id>
+      </contributor>
+      <minor />
+      <comment>/* History */[[WP:AWB/GF|General fixes]], [[WP:AWB/T|typo(s) fixed]]: ’s → 's</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{multiple issues|
+{{unreferenced|date=October 2012}}
+{{technical|date=October 2017}}
+}}
+The '''Digital Private Network Signalling System''' ('''DPNSS''') is a [[network protocol]] used on digital [[trunk lines]] for connecting to [[PABX]]. It supports a defined set of inter-networking facilities.
+
+DPNSS was originally defined by [[British Telecom]]. The specification for the protocol is defined in BTNR188. The specification currently comes under the Network Interoperability Consultative Committee.
+
+==History==
+DPNSS was developed in the early 1980s by BT, or its forerunner, [[Post Office Telecommunications]] in recognition that the emerging Digital Private Circuit Primary Rate product 'Megastream' had to address the market for both data and voice, the latter being significantly greater because of the market for [[Private Branch Exchange|PBX]]s. At the time, BT dictated what signalling could be used on its leased lines and, whilst it only had a minority interest in the sales of PBXs, was requested by the PBX manufacturers to produce a standard to prevent the creation of a plethora of conflicting PBX protocols being developed. Under the [[liberalization]] rules of the day (1979), BT was barred from manufacturing, selling or supplying PBXs of more than 200 extensions. Digital ([[PCM]]-based) PBXs were just starting to come into the marketplace with the [[Plessey|Plessey PDX]] (a licensed version of the [[ROLM|ROLM CBX]]) and the GEC SL1 (a licensed version of the [[Northern Telecom]] SL1). It was recognised that corporate customers would wish to network these systems across the country. At the time, '[[Channel-associated signaling|CAS]]' inter node signaling was slow and inter-register signaling MF5, developed from [[PSTN]] signalling protocols, was complex and would not support sufficient features.
+The support for DPNSS as BT's own signalling protocol also differentiated BT's private circuit's services from those of its emerging rival [[Mercury Communications]].
+DPNSS was an active (and successful) collaboration between PBX manufacturers and BT which started relatively slowly (BT &amp; Plessey) but quickly snowballed with [[Mitel|MITEL]], [[General Electric Company plc|GEC]], [[Ericsson]], [[Philips]] and eventually Nortel all joining to create a powerful and feature rich protocol.
+BT and some of the UK manufacturers championed DPNSS into ECMA and [[CCITT]] (ITU) but it was eventually deprecated by the standards bodies in favour of [[Q931]] and QSig. Nevertheless, the elegance of the protocol and its compatibility with PBX features ensured the adoption DPNSS actually grew in Europe, compared to the much slower take-up of Qsig.
+There were also attempts (during 1984) to take DPNSS into North America. Unfortunately the structures for the creation of standards in North America seemed to prevent manufacturer collaboration as a route forward and the [[ANSI]] standards body was not interested in creating PBX interworking standards.
+Version 1 of BTNR188 (DPNSS) was issued in 1983; the last version of DPNSS to be released 6 in 1995 included compatibility with [[ISDN]] features released in V5. A lightweight version of DPNSS 'APNSS' was developed using analogue trunks (Sometimes compressed) and a [[modem]] to support D channel signalling.
+
+==Overview of the Protocol==
+Layer 1(CCITT) ITU-G703 defines the physical and electrical interface. G704 defines the Frame structure of the 2,048 Mbs sent across the link. G732 defines the allocation of that frame structure into the 32 discrete 64Kbit 'channels', of which 0 is used for alignment of the frames and 16 is (by convention only) allocated to common channel signalling. Speech is carried as G711.
+Layer 2 Timeslot 16, 64Kbs operates as [[HDLC]] [[LAPB]], to support up to 60 PVCs or [[Data link connection identifier|DLC]]s (data link connections) (30 directly associated with the bearer channels and 30 for unrelated messages) as the specification describes them. Therefore, at maximum operation, each potential traffic channel can have two simultaneous data channels available for messages. Note that HDLC operates as a statistical [[multiplexing]] system. When traffic deltas are low, a single call establishment message will have access to the full 64Kbs (allowing for overheads).
+DPNSS is a layer 3 protocol functioning as common channel signalling. The functionality is divided into Levels (confusingly nothing to do with OSI layers.) Levels 1-6 deal with simple call establishment (make call/break call) and are the minimum requirements by which a PBX can be said to be DPNSS compatible. The remaining levels are allocated to telephony features, supplementary services or to administrative features. Note that support of 'levels' by a PBX is not necessarily incremental. Some levels are interdependent but a PBX may omit support of some levels (above 6) and support others.
+
+DPNSS is a compelled protocol in that each instruction issued must be met with an appropriate response from the other PBX otherwise the message is re-transmitted (until timer expiry). This means that when interworking two PBXs features invoked on PBX A must be acknowledged by PBX B even if that feature is not supported.
+DPNSS carries its protocol messages as short strings of IA5 text. It is therefore much easier to interpret in its native form than Q931/Qsig or [[H323]]/H450 and a precursor to the plain language format of SIP.
+
+==Practical Considerations==
+As HDLC can operate successfully in quite poor (errored) data environments, DPNSS will work over a 2 Mbit/s link running without proper synchronisation (plesiochronously) and over poor quality connections (including badly terminated connectors). When setting up PBXs to run a DPNSS connection one end must be defined as the primary or 'A' end. This is a protocol requirement and has nothing to do with link synchronisation. However, such badly synchronised links were frowned upon because of the problems associated with sending faxes and/or other modem based communication which were not specifically identified within the protocol.
+
+==DPNSS and VoIP==
+For a protocol that began life in the 1980s, DPNSS is natively a long way from [[VoIP]]. However, many of the hybrid VoIP PBXs available from manufacturers worldwide provide on-board DPNSS trunk cards. Where they do not, a protocol converter is necessary. Commercially available equipment offers the ability to convert from DPNSS to Q.Sig. Note that it is also possible to tunnel DPNSS and its associated PCM (G711) over an IP network. This can be point to point where the IP network carries packetised voice N x 64 Kbs speech and a separate IP signalling channel to carry the notional 64 Kbs of DPNSS signalling. A more sophisticated solution uses intelligence on the edge of the IP network to route voice to the correct node. This is a [[Voice VPN]].
+Note that this should not be confused with the pre-VOIP 'Voice VPN' deployed by routing calls intelligently in a TDM switching platform, often [[Nortel]] DMS100 and customers PBX nodes.
+
+==Criticisms==
+Some critics of DPNSS suggest that it is too loosely defined and allows too much latitude in its interpretation of message formats and timers. It is also sometimes mistakenly believed that DPNSS is semi proprietary and that it is only possible to connect PBXs from the same manufacturer. i.e. [[Siemens]] will connect to Siemens, Mitel to Mitel etc. Experience indicates that this is not the case and BT's FeatureNet platform (Nortel's DMS100) running DPNSS, has interconnected successfully to many PBX types available in the UK. In addition, as part of the first commercial implementation of DPNSS (in the Government Telephone Network or GTN in 1983), BT insisted that the core of the network be made from PBXs of different manufacture to prove the interoperability in real life.
+
+==See also==
+* [[DASS1|Digital Access Signalling System 1 (DASS1)]] (obsolete)
+* [[DASS2|Digital Access Signalling System 2 (DASS2)]] (obsolete)
+* [[QSIG]] (the [[International Standards Organisation|ISO]] equivalent of DPNSS, uses the [[Q.931]] and [[Remote Operations Service Element protocol|ROSE]] protocols. It is widely used in the rest of Europe).
+* [[DSS1|Digital Subscriber System No. 1 (DSS1)]] The ISDN PBX interface is most often used for (new) PRA connected PBX
+* [[Session Initiation Protocol|Session Initiation Protocol (SIP)]] SIP is most often used for IP connected PBX
+
+==External links==
+* [http://www.niccstandards.org.uk/files/current/nd1301_2004_11%5B1%5D.pdf ND1301:2001/03, The DPNSS specification at NICC]
+
+{{BT Group}}
+
+[[Category:BT Group]]
+[[Category:Network protocols]]
+[[Category:Telephony signals]]</text>
+      <sha1>g5hvd4clpzft3oc5z8qywjo5k6v5vv1</sha1>
+    </revision>
+  </page>

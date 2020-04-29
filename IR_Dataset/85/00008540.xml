@@ -1,0 +1,986 @@
+  <page>
+    <title>Diesel engine</title>
+    <ns>0</ns>
+    <id>8540</id>
+    <revision>
+      <id>942716973</id>
+      <parentid>942707544</parentid>
+      <timestamp>2020-02-26T11:26:51Z</timestamp>
+      <contributor>
+        <username>Andy Dingley</username>
+        <id>3606755</id>
+      </contributor>
+      <minor />
+      <comment>Reverted edits by [[Special:Contribs/Glen Gamilton|Glen Gamilton]] ([[User talk:Glen Gamilton|talk]]) to last version by Johannes Maximilian</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{distinguish|Diesel (game engine)}}
+{{Use mdy dates|date=June 2013}}
+
+[[File:Dieselmotor Langen &amp; Wolf, 1898.jpg|thumb|Diesel engine built by Langen &amp; Wolf under licence, 1898.]]
+[[File:The Diesel Story.ogv|thumb|right|1952 Shell Oil film showing the development of the diesel engine from 1877]]
+
+The '''diesel engine''' (also known as a '''compression-ignition''' or '''CI engine'''), named after [[Rudolf Diesel]], is an [[internal combustion engine]] in which [[Combustion|ignition]] of the [[diesel fuel|fuel]] is caused by the elevated temperature of the air in the cylinder due to the mechanical compression ([[adiabatic compression]]). This contrasts with spark-ignition engines such as a [[petrol engine]] ([[gasoline]] engine) or [[gas engine]] (using a gaseous fuel as opposed to [[petrol]]), which use a [[spark plug]] to ignite an air-fuel mixture.
+
+Diesel engines work by compressing only the air. This increases the air temperature inside the [[Cylinder (engine)|cylinder]] to such a high degree that atomised diesel fuel injected into the combustion chamber ignites spontaneously. With the fuel being injected into the air just before combustion, the dispersion of the fuel is uneven; this is called a heterogeneous air-fuel mixture. The torque a diesel engine produces is controlled by manipulating the [[Air–fuel_ratio#Air–fuel_equivalence_ratio_(λ)|air-fuel ratio (λ)]]; instead of throttling the intake air, the diesel engine relies on altering the amount of fuel that is injected, and the air-fuel ratio is usually high.
+
+The diesel engine has the highest [[thermal efficiency]] ([[engine efficiency]]) of any practical [[internal combustion|internal]] or [[external combustion]] engine due to its very high [[expansion ratio]] and inherent [[Air–fuel ratio|lean]] burn which enables heat dissipation by the excess air. A small efficiency loss is also avoided compared with two-stroke non-direct-injection gasoline engines since unburned fuel is not present at valve overlap and therefore no fuel goes directly from the intake/injection to the exhaust. Low-speed diesel engines (as used in ships and other applications where overall engine weight is relatively unimportant) can reach effective efficiencies of up to 55%.&lt;ref name=&quot;Reif_2014_13&quot; /&gt;
+
+Diesel engines may be designed as either [[two-stroke]] or [[four-stroke]] cycles. They were originally used as a more efficient replacement for stationary [[steam engine]]s. Since the 1910s they have been used in [[submarine]]s and ships. Use in locomotives, trucks, [[heavy equipment]] and electricity generation plants followed later. In the 1930s, they slowly began to be used in a few [[automobile]]s. Since the 1970s, the use of diesel engines in larger on-road and [[off-road vehicle]]s in the US has increased. According to Konrad Reif, the [[European Union|EU]] average for diesel cars accounts for half of newly registered cars.&lt;ref name=&quot;Reif_2012_286&quot; /&gt;
+
+The world's largest diesel engines put in service are 14-cylinder, two-stroke watercraft diesel engines; they produce a peak power of almost 100&amp;nbsp;MW each.&lt;ref name=&quot;Grote_2018_P93&quot; /&gt;
+{{TOC limit|3}}
+{{TOCright}}
+
+==History==
+
+=== Diesel's idea ===
+
+[[File:Lumbar patent dieselengine.jpg|thumb|[[Rudolf Diesel]]'s 1893 patent on a rational heat motor]]
+[[File:Diesels first experimental engine 1893.jpg|thumb|Diesel's first experimental engine 1893]]
+[[File:Experimental Diesel Engine.jpg|thumb|Diesel's second prototype. It is a modification of the first experimental engine. On 17 February 1894, this engine ran under its own power for the first time.&lt;ref name=&quot;Diesel_1913_22&quot; /&gt;&lt;br /&gt;&lt;br /&gt;Effective efficiency 16.6% &lt;br /&gt;Fuel consumption 519&amp;nbsp;g·kW&lt;sup&gt;−1&lt;/sup&gt;·h&lt;sup&gt;−1&lt;/sup&gt;]]
+[[File:Historical Diesel engine in Deutsches Museum.jpg|thumb|First fully functional diesel engine, designed by Imanuel Lauster, built from scratch, and finished by October 1896.&lt;ref name=&quot;Diesel_1913_64&quot; /&gt;&lt;ref name=&quot;Diesel_1913_75&quot; /&gt;&lt;ref name=&quot;Diesel_1913_78&quot; /&gt;&lt;br /&gt;&lt;br /&gt;Rated power 13.1&amp;nbsp;kW&lt;br /&gt;Effective efficiency 26.2% &lt;br /&gt;Fuel consumption 324&amp;nbsp;g·kW&lt;sup&gt;−1&lt;/sup&gt;·h&lt;sup&gt;−1&lt;/sup&gt;.]]
+
+In 1878, [[Rudolf Diesel]], who was a student at the [[Technical University of Munich#Foundation of &quot;Polytechnische Schule München&quot;|&quot;Polytechnikum&quot;]] in [[Munich]], attended the lectures of [[Carl von Linde]]. Linde explained that steam engines are capable of converting just 6–10% of the heat energy into work, but that the [[Carnot cycle]] allows conversion of much more of the heat energy into work by means of isothermal change in condition. According to Diesel, this ignited the idea of creating a highly efficient engine that could work on the Carnot cycle.&lt;ref name=&quot;Diesel_1913_1&quot; /&gt; Diesel was also exposed to a [[fire piston]], a traditional [[fire starter]] using rapid [[adiabatic]] compression principles which Linde had acquired from [[Southeast Asia]].&lt;ref name=&quot;ogata&quot;&gt;{{cite web |url=http://inet.museum.kyoto-u.ac.jp/conference02/MasanoriOGATA.html |title=Origin of Diesel Engine is in Fire Piston of Mountainous People Lived in Southeast Asia |accessdate=2007-05-28 |last1=Ogata |first1=Masanori |first2=Yorikazu |last2=Shimotsuma |date=October 20–21, 2002 |work=First International Conference on Business and technology Transfer |publisher=Japan Society of Mechanical Engineers |archiveurl=https://web.archive.org/web/20070523214754/http://inet.museum.kyoto-u.ac.jp/conference02/MasanoriOGATA.html |archivedate=May 23, 2007 |url-status=dead }}&lt;/ref&gt; After several years of working on his ideas, Diesel published them in 1893 in the essay [[Theory and Construction of a Rational Heat Motor]].&lt;ref name=&quot;Diesel_1913_1&quot; /&gt;
+
+Diesel was heavily criticised for his essay, but only few found the mistake that he made;&lt;ref name=&quot;Sittauer_1990_70&quot; /&gt; his ''rational heat motor'' was supposed to utilise a constant temperature cycle (with isothermal compression) that would require a much higher level of compression than that needed for compression ignition. Diesel's idea was to compress the air so tightly that the temperature of the air would exceed that of combustion. However, such an engine could never perform any usable work.&lt;ref name=&quot;Sittauer_1990_71&quot; /&gt;&lt;ref name=&quot;Sass_1962_398&quot; /&gt;&lt;ref name=&quot;Sass_1962_399&quot; /&gt; In his 1892 US patent (granted in 1895) #542846 Diesel describes the compression required for his cycle:
+:&quot;pure atmospheric air is compressed, according to curve 1 2, to such a degree that, before ignition or combustion takes place, the highest pressure of the diagram and the highest temperature are obtained-that is to say, the temperature at which the subsequent combustion has to take place, not the burning or igniting point. To make this more clear, let it be assumed that the subsequent combustion shall take place at a temperature of 700°. Then in that case the initial pressure must be sixty-four atmospheres, or for 800° centigrade the pressure must be ninety atmospheres, and so on. Into the air thus compressed is then gradually introduced from the exterior finely divided fuel, which ignites on introduction, since the air is at a temperature far above the igniting-point of the fuel. The characteristic features of the cycle according to my present invention are therefore, increase of pressure and temperature up to the maximum, not by combustion, but prior to combustion by mechanical compression of air, and there upon the subsequent performance of work without increase of pressure and temperature by gradual combustion during a prescribed part of the stroke determined by the cut-oil&quot;.&lt;ref name=&quot;Diesel_1895&quot; /&gt;
+
+By June 1893, Diesel had realised his original cycle would not work and he adopted the constant pressure cycle.&lt;ref name=&quot;Sass_1962_402&quot; /&gt; Diesel describes the cycle in his 1895 patent application. Notice that there is no longer a mention of compression temperatures exceeding the temperature of combustion. Now it is simply stated that the compression must be sufficient to trigger ignition.
+:&quot;1. In an internal-combustion engine, the combination of a cylinder and piston constructed and arranged to compress air to a degree producing a temperature above the igniting-point of the fuel, a supply for compressed air or gas; a fuel-supply; a distributing-valve for fuel, a passage from the air supply to the cylinder in communication with the fuel-distributing valve, an inlet to the cylinder in communication with the air-supply and with the fuel-valve, and a cut-oil, substantially as described.&quot; See US patent # 608845 filed 1895 / granted 1898&lt;ref name=&quot;Diesel_1898&quot; /&gt;&lt;ref name=&quot;Diesel_1893&quot; /&gt;&lt;ref name=&quot;e-rara.ch&quot; /&gt;
+
+In 1892, Diesel received patents in Germany, Switzerland, the United Kingdom and the United States for &quot;Method of and Apparatus for Converting Heat into Work&quot;.&lt;ref name=&quot;Diesel_1892&quot; /&gt; In 1894 and 1895, he filed patents and addenda in various countries for his engine; the first patents were issued in Spain (No.&amp;nbsp;16,654),&lt;ref&gt;{{patent|ES|16654|&quot;Perfeccionamientos en los motores de combustión interior.&quot;}}&lt;/ref&gt; France (No.&amp;nbsp;243,531) and Belgium (No.&amp;nbsp;113,139) in December 1894, and in Germany (No.&amp;nbsp;86,633) in 1895 and the United States (No.&amp;nbsp;608,845) in 1898.&lt;ref name=&quot;Diesel_1895_2&quot; /&gt;
+
+Diesel was attacked and criticised over a time period of several years. Critics have claimed that Diesel never invented a new motor and that the invention of the diesel engine is fraud. Otto Köhler and Emil Capitaine were two of the most prominent critics of Diesel's time.&lt;ref name=&quot;Sass_1962_486&quot; /&gt; Köhler had published an essay in 1887 in which he describes an engine similar to the engine Diesel describes in his 1893 essay. Köhler figured that such an engine could not perform any work.&lt;ref name=&quot;Sass_1962_399&quot; /&gt;&lt;ref name=&quot;Sass_1962_400&quot; /&gt; Emil Capitaine had built a petroleum engine with glow-tube ignition in the early 1890s;&lt;ref name=&quot;Sass_1962_412&quot; /&gt; he claimed against his own better judgement, that his glow-tube ignition engine worked the same way Diesel's engine did. His claims were unfounded and he lost a patent lawsuit against Diesel.&lt;ref name=&quot;Sass_1962_487&quot; /&gt; Other engines, such as the [[Hot-bulb engine|Akroyd engine]] and the [[Brayton engine]], also use an operating cycle that is different from the diesel engine cycle.&lt;ref name=&quot;Sass_1962_400&quot; /&gt;&lt;ref name=&quot;Sass_1962_414&quot; /&gt; Friedrich Sass says that the diesel engine is Diesel's &quot;very own work&quot; and that any &quot;Diesel myth&quot; is &quot;[[falsification of history]]&quot;.&lt;ref name=&quot;Sass_1962_518&quot; /&gt;
+
+=== The first diesel engine ===
+
+Diesel sought out firms and factories that would build his engine. With the help of [[Moritz Schröter]] and [[Max Friedrich Gutermuth]],&lt;ref name=&quot;Sass_1962_395&quot; /&gt; he succeeded in convincing both [[Krupp]] in Essen and the [[MAN SE|Maschinenfabrik Augsburg]].&lt;ref name=&quot;Sittauer_1990_74&quot; /&gt; Contracts were signed in April 1893,&lt;ref name=&quot;Sass_1962_559&quot; /&gt; and in early summer 1893, Diesel's first prototype engine was built in Augsburg. On 10 August 1893, the first ignition took place, the fuel used was petrol. In winter 1893/1894, Diesel redesigned the existing engine, and by 18 January 1894, his mechanics had converted it into the second prototype.&lt;ref name=&quot;Diesel_1913_17&quot; /&gt; On February 17, 1894, the redesigned engine ran for 88 revolutions – one minute;&lt;ref name=&quot;Diesel_1913_22&quot; /&gt; with this news, Maschinenfabrik Augsburg's stock rose by 30%, indicative of the tremendous anticipated demands for a more efficient engine.&lt;ref name=&quot;Moon_1974&quot; /&gt; On 26 June 1895 the engine achieved an effective efficiency of 16.6% and had a fuel consumption of 519&amp;nbsp;g·kW&lt;sup&gt;−1&lt;/sup&gt;·h&lt;sup&gt;−1&lt;/sup&gt;.
+&lt;ref name=&quot;Tschöke_2018_6&quot; /&gt; However, despite proving the concept, the engine caused problems,&lt;ref name=&quot;Sass_1962_462&quot; /&gt; and Diesel could not achieve any substantial progress.&lt;ref name=&quot;Sass_1962_463&quot; /&gt; Therefore, Krupp considered rescinding the contract they had made with Diesel.&lt;ref name=&quot;Sass_1962_464&quot; /&gt; Diesel was forced to improve the design of his engine and rushed to construct a third prototype engine. Between 8 November and 20 December 1895, the second prototype had successfully covered over 111 hours on the test bench. In the January 1896 report, this was considered a success.&lt;ref name=&quot;Sass_1962_466&quot; /&gt;
+
+In February 1896, Diesel considered supercharging the third prototype.&lt;ref name=&quot;Sass_1962_467&quot; /&gt; Imanuel Lauster, who was ordered to draw the third prototype, had finished the drawings by 30 April 1896. During summer that year the engine was built, it was completed on 6 October 1896.&lt;ref name=&quot;Sass_1962_474&quot; /&gt; Tests were conducted until early 1897.&lt;ref name=&quot;Sass_1962_475&quot; /&gt; First public tests began on 1 February 1897.&lt;ref name=&quot;Sass_1962_479&quot; /&gt; [[Moritz Schröter]]'s test on 17 February 1897 was the main test of Diesel's engine. The engine was rated 13.1&amp;nbsp;kW with a specific fuel consumption of 324&amp;nbsp;g·kW&lt;sup&gt;−1&lt;/sup&gt;·h&lt;sup&gt;−1&lt;/sup&gt;,&lt;ref name=&quot;Sass_1962_480&quot; /&gt; resulting in an effective efficiency of 26.2%.&lt;ref name=&quot;Tschöke_2018_7&quot; /&gt;&lt;ref name=&quot;Mau_1984_7&quot; /&gt; By 1898, Diesel had become a millionaire.&lt;ref name=&quot;Sass_1962_484&quot; /&gt;
+
+===Timeline===
+====1890s====
+* 1893: [[Rudolf Diesel]]'s essay titled ''[[Theory and Construction of a Rational Heat Motor]]'' appears.&lt;ref name=&quot;Diesel_1893_EN&quot; /&gt;&lt;ref name=&quot;Diesel_1893_1&quot; /&gt;
+* 1893: February 21, Diesel and the Maschinenfabrik Augsburg sign a contract that allows Diesel to build a prototype engine.&lt;ref name=&quot;Diesel_1913_6&quot; /&gt;
+* 1893: February 23, Diesel obtains a patent (RP 67207) titled &quot;''Arbeitsverfahren und Ausführungsart für Verbrennungsmaschinen''&quot; (Working Methods and Techniques for Internal Combustion Engines).
+* 1893: April 10, Diesel and Krupp sign a contract that allows Diesel to build a prototype engine.&lt;ref name=&quot;Diesel_1913_6&quot; /&gt;
+* 1893: April 24, both Krupp and the Maschinenfabrik Augsburg decide to collaborate and build just a single prototype in Augsburg.&lt;ref name=&quot;Diesel_1913_6&quot; /&gt;&lt;ref name=&quot;Sass_1962_559&quot; /&gt;
+* 1893: July, the first prototype is completed.&lt;ref name=&quot;Diesel_1913_8&quot; /&gt;
+* 1893: August 10, Diesel injects fuel (petrol) for the first time, resulting in combustion, destroying the indicator.&lt;ref name=&quot;Diesel_1913_13&quot; /&gt;
+* 1893: November, Diesel applies for a patent (RP 82168) for a modified combustion process.&lt;ref name=&quot;Diesel_1913_21&quot; /&gt;&lt;ref&gt;{{patent|DE|82168|&quot;Verbrennungskraftmaschine mit veränderlicher Dauer der unter wechselndem Überdruck stattfindenden Brennstoffeinführung&quot;}}&lt;/ref&gt;
+* 1894: January 18, after the first prototype had been modified to become the second prototype, testing with the second prototype begins.&lt;ref name=&quot;Diesel_1913_17&quot; /&gt;
+* 1894: February 17, The second prototype runs for the first time.&lt;ref name=&quot;Diesel_1913_22&quot; /&gt;
+* 1895: March 30, Diesel applies for a patent (RP 86633) for a starting process with compressed air.&lt;ref name=&quot;Diesel_1913_38&quot; /&gt;
+* 1895: June 26, the second prototype passes brake testing for the first time.&lt;ref name=&quot;Tschöke_2018_6&quot; /&gt;
+* 1895: Diesel applies for a second patent US Patent # 608845&lt;ref name=&quot;Diesel_1895_EN&quot; /&gt;
+* 1895: November 8 – December 20, a series of tests with the second prototype is conducted. In total, 111 operating hours are recorded.&lt;ref name=&quot;Sass_1962_466&quot; /&gt;
+* 1896: October 6, the third and final prototype engine is completed.&lt;ref name=&quot;Diesel_1913_64&quot; /&gt;
+* 1897: February 1, after 4 years Diesel's prototype engine is running and finally ready for efficiency testing and production.&lt;ref name=&quot;Sass_1962_479&quot; /&gt;
+* 1897: October 9, [[Adolphus Busch]] licenses rights to the diesel engine for the US and Canada.&lt;ref name=&quot;Sass_1962_484&quot; /&gt;&lt;ref name=&quot;Busch&quot; /&gt;
+* 1897: 29 October, Rudolf Diesel obtains a patent (DRP 95680) on supercharging the diesel engine.&lt;ref name=&quot;Sass_1962_467&quot; /&gt;
+* 1898: February 1, the Diesel Motoren-Fabrik Actien-Gesellschaft is registered.&lt;ref name=&quot;Sass_1962_485&quot; /&gt;
+* 1898: March, the first commercial diesel engine, rated 2×30&amp;nbsp;PS (2×22&amp;nbsp;kW), is installed in the Kempten plant of the Vereinigte Zündholzfabriken A.G.&lt;ref name=&quot;Sass_1962_505&quot; /&gt;&lt;ref name=&quot;Sass_1962_506&quot; /&gt;
+* 1898: September 17, the Allgemeine Gesellschaft für Dieselmotoren A.-G. is founded.&lt;ref name=&quot;Sass_1962_493&quot; /&gt;
+* 1899: The first two-stroke diesel engine, invented by Hugo Güldner, is built.&lt;ref name=&quot;Mau_1984_7&quot; /&gt;
+
+====1900s====
+[[File:Dieselmotor vs.jpg|thumb|upright|An MAN DM trunk piston diesel engine built in 1906. The MAN DM series is considered to be one of the first commercially successful diesel engines.&lt;ref name=&quot;Sass_1962_524&quot; /&gt;]]
+* 1901: Imanuel Lauster designs the first [[trunk piston]] diesel engine (DM 70).&lt;ref name=&quot;Sass_1962_524&quot; /&gt;
+* 1901: By 1901, [[MAN SE|MAN]] had produced 77 diesel engine cylinders for commercial use.&lt;ref name=&quot;Sass_1962_523&quot; /&gt;
+* 1903: Two first diesel-powered ships are launched, both for river and canal operations: The ''[[Vandal (tanker)|Vandal]]'' [[naphtha]] tanker and the ''[[Samrat (ship)|Sarmat]]''.&lt;ref name=&quot;Sass_1962_532&quot; /&gt;
+* 1904: The French launch the first diesel [[submarine]], the [[Aigrette-class submarine|Aigrette]].&lt;ref name=&quot;Tucker2014&quot; /&gt;
+* 1905: January 14: Diesel applies for a patent on unit injection (L20510I/46a).&lt;ref name=&quot;Sass_1962_501&quot; /&gt;
+* 1905: The first diesel engine [[turbocharger]]s and [[intercooler]]s are manufactured by Büchi.&lt;ref name=&quot;Hartman&quot; /&gt;
+* 1906: The Diesel Motoren-Fabrik Actien-Gesellschaft is dissolved.&lt;ref name=&quot;Sass_1962_486&quot; /&gt;
+* 1908: Diesel's patents expire.&lt;ref name=&quot;Sass_1962_530&quot; /&gt;
+* 1908: The first [[lorry]] (truck) with a diesel engine appears.&lt;ref name=&quot;Reif_O_2014_7&quot; /&gt;
+* 1909: March 14, [[Prosper L'Orange]] applies for a patent on [[indirect injection#Precombustion chamber|precombustion chamber injection]].&lt;ref name=&quot;Sass_1962_610&quot; /&gt;  He later builds the first diesel engine with this system.&lt;ref name=&quot;vFersen_1986_272&quot; /&gt;&lt;ref name=&quot;Merker_2014_382&quot; /&gt;
+
+====1910s====
+* 1910: MAN starts making two-stroke diesel engines.&lt;ref name=&quot;Mau_1984_8&quot; /&gt;
+* 1910: November 26, [[James McKechnie (engineer)|James McKechnie]] applies for a patent on [[unit injector|unit injection]].&lt;ref name=&quot;Tschöke_2018_10&quot; /&gt; Unlike Diesel, he managed to successfully build working unit injectors.&lt;ref name=&quot;Sass_1962_501&quot; /&gt;&lt;ref name=&quot;Sass_1962_502&quot; /&gt;
+* 1911: November 27, the Allgemeine Gesellschaft für Dieselmotoren A.-G. is dissolved.&lt;ref name=&quot;Sass_1962_485&quot; /&gt;
+* 1911: The Germania shipyard in Kiel builds 850&amp;nbsp;PS (625&amp;nbsp;kW) diesel engines for German submarines. These engines are installed in 1914.&lt;ref name=&quot;Sass_1962_569&quot; /&gt;
+* 1912: MAN builds the first double-acting piston two-stroke diesel engine.&lt;ref name=&quot;Sass_1962_545&quot; /&gt;
+* 1912: The first [[locomotive]] with a diesel engine is used on the Swiss [[Winterthur–Romanshorn railway|Winterthur-Romanshorn railroad]].&lt;ref name=&quot;Klooster2009&quot; /&gt;
+* 1912: The ''[[Selandia]]'' is the first ocean-going ship with diesel engines.&lt;ref name=&quot;Tschöke_2018_9&quot; /&gt;
+* 1913: [[New London Ship and Engine Company|NELSECO]] diesels are installed on commercial ships and [[United States Navy|US Navy]] submarines.&lt;ref name=&quot;RiversHarbors&quot; /&gt;
+* 1913: September 29, [[Rudolf Diesel]] dies mysteriously when crossing the [[English Channel]] on the {{SS|Dresden|1897|6}}.&lt;ref name=&quot;Solomon&quot; /&gt;
+* 1914: MAN builds 900&amp;nbsp;PS (662&amp;nbsp;kW) two-stroke engines for Dutch submarines.&lt;ref name=&quot;Sass_1962_541&quot; /&gt;
+* 1919: Prosper L'Orange obtains a patent on a [[Indirect injection#Precombustion chamber|Precombustion chamber]] insert incorporating a needle [[Injector|injection nozzle]].&lt;ref name=&quot;Pease2003&quot; /&gt;&lt;ref name=&quot;AutomobileQuarterly&quot; /&gt;&lt;ref name=&quot;Merker_2014_382&quot; /&gt; First diesel engine from [[Cummins]].&lt;ref name=&quot;Bennett2016&quot; /&gt;&lt;ref name=&quot;DictionaryCH&quot; /&gt;
+
+====1920s====
+[[File:Fairbanks Morse model 32.jpg|thumb|Fairbanks Morse model 32]]
+* 1923: At the Königsberg DLG exhibition, the first agricultural tractor with a diesel engine, the prototype Benz-Sendling S6, is presented.&lt;ref name=&quot;Agritechnica_2017&quot; /&gt;{{Better source|date=February 2019}}
+* 1923: December 15, the first [[lorry]] with a direct-injected diesel engine is tested by MAN. The same year, Benz builds a lorry with a pre-combustion chamber injected diesel engine.&lt;ref name=&quot;MAN_1991_XI&quot; /&gt;
+* 1923: The first two-stroke diesel engine with counterflow scavenging appears.&lt;ref name=&quot;Mau_1984_17&quot; /&gt;
+* 1924: [[Fairbanks-Morse]] introduces the two-stroke Y-VA (later renamed to Model 32).&lt;ref name=&quot;Oldmachinepress_2012&quot; /&gt;
+* 1925: Sendling starts mass-producing a diesel-powered agricultural tractor.&lt;ref name=&quot;Sass_1962_644&quot; /&gt;
+* 1927: [[Robert Bosch GmbH|Bosch]] introduces the first inline injection pump for motor vehicle diesel engines.&lt;ref name=&quot;Reif_2014_31&quot; /&gt;
+* 1929: The first passenger car with a diesel engine appears. Its engine is an Otto engine modified to use the diesel principle and Bosch's injection pump. Several other diesel car prototypes follow.&lt;ref name=&quot;vFersen_1986_274&quot; /&gt;
+
+====1930s====
+* 1933: [[Junkers (Aircraft)|Junkers Motorenwerke]] in Germany start production of the most successful mass-produced aviation diesel engine of all time, the [[Junkers Jumo 205|Jumo 205]]. By the outbreak of [[World War II]], over 900 examples are produced. Its rated take-off power is 645&amp;nbsp;kW.&lt;ref name=&quot;Reif_2012_103&quot; /&gt;
+* 1933: General Motors uses its new roots-blown, unit-injected two-stroke Winton 201A diesel engine to power its automotive assembly exhibit at the Chicago World's Fair (''[[A Century of Progress]]'').&lt;ref name=&quot;EuDaly_2016_160&quot; /&gt; The engine is offered in several versions ranging from 600–900&amp;nbsp;hp (447–671&amp;nbsp;kW).&lt;ref name=&quot;Kremser_1942_24&quot; /&gt;
+* 1934: The [[Budd Company]] builds the first diesel-electric passenger train in the US, the ''[[Pioneer Zephyr]] 9900'', using a Winton engine.&lt;ref name=&quot;EuDaly_2016_160&quot; /&gt;
+* 1935: The [[Citroën Rosalie]] is fitted with an early [[swirl chamber injection|swirl chamber injected]] diesel engine for testing purposes.&lt;ref name=&quot;Cole_2014_64&quot; /&gt; [[Daimler-Benz]] starts manufacturing the [[Mercedes-Benz OM 138]], the first mass-produced diesel engine for passenger cars, and one of the few marketable passenger car diesel engines of its time. It is rated 45&amp;nbsp;PS (33&amp;nbsp;kW).&lt;ref name=&quot;Kremser_1942_125&quot; /&gt;
+* 1936: March 4, the airship [[LZ 129 Hindenburg]], the biggest aircraft ever made, takes off for the first time. She is powered by four V16 Daimler-Benz LOF 6 diesel engines, rated 1200&amp;nbsp;PS (883&amp;nbsp;kW) each.&lt;ref name=&quot;Waibel_2016_159&quot; /&gt;
+* 1936: Manufacture of the first mass-produced passenger car with a diesel engine ([[Mercedes-Benz 260 D]]) begins.&lt;ref name=&quot;vFersen_1986_274&quot; /&gt;
+* 1937: [[Konstantin Chelpan|Konstantin Fyodorovich Chelpan]] develops the [[Kharkiv model V-2|V-2]] diesel engine, later used in the Soviet [[T-34]] tanks, widely regarded as the best tank chassis of World War II.&lt;ref name=&quot;Tucker-Jones_2015_36&quot; /&gt;
+* 1938: [[General Motors]] forms the GM Diesel Division, later to become [[Detroit Diesel]], and introduces the [[Series 71]] [[straight engine|inline]] high-speed medium-horsepower [[two-stroke diesel engine|two stroke]] engine, suitable for road vehicles and marine use.&lt;ref name=&quot;FleetOwner_1964_107&quot; /&gt;
+
+====1940s====
+* 1946: [[Clessie Cummins]] obtains a patent on a ''fuel feeding and injection apparatus for oil-burning engines'' that incorporates separate components for generating injection pressure and injection timing.&lt;ref name=&quot;Cummins_1946&quot; /&gt;
+* 1946: [[Klöckner-Humboldt-Deutz|Klöckner-Humboldt-Deutz (KHD)]] introduces an air-cooled mass-production diesel engine to the market.&lt;ref name=&quot;Flatz_1946&quot; /&gt;
+
+====1950s====
+[[File:ZT 303 Motor.jpg|thumb|Piston of an MAN [[M-System]] centre sphere combustion chamber type diesel engine ([[4 VD 14,5/12-1 SRW]])]]
+* 1950s: [[Klöckner-Humboldt-Deutz|KHD]] becomes the air-cooled diesel engine global market leader.&lt;ref name=&quot;Tschöke_2018_666&quot; /&gt;
+* 1951: J. Siegfried Meurer obtains a patent on the ''[[M-System]]'', a design that incorporates a central sphere combustion chamber in the piston (DBP 865683).&lt;ref name=&quot;MAN_465&quot; /&gt;
+* 1953: First mass-produced [[Indirect injection#Swirl chamber|swirl chamber injected]] passenger car diesel engine (Borgward/Fiat).&lt;ref name=&quot;Tschöke_2018_10&quot; /&gt;
+* 1954: Daimler-Benz introduces the [[Mercedes-Benz OM 312|Mercedes-Benz OM 312 A]], a 4.6 litre straight-6 series-production industrial diesel engine with a turbocharger, rated 115&amp;nbsp;PS (85&amp;nbsp;kW). It proves to be unreliable.&lt;ref name=&quot;Daimler_2009_2&quot; /&gt;
+* 1954: [[Volvo]] produces a small batch series of 200 units of a turbocharged version of the TD 96 engine. This 9.6 litre engine is rated 136&amp;nbsp;kW.&lt;ref name=&quot;vFersen_1987_156&quot; /&gt;
+* 1955: Turbocharging for MAN two-stroke marine diesel engines becomes standard.&lt;ref name=&quot;Mau_1984_17&quot; /&gt;
+* 1959: The [[Peugeot 403]] becomes the first mass-produced passenger sedan/saloon manufactured outside [[West Germany]] to be offered with a diesel engine option.&lt;ref name=Peugeot403gazole&gt;{{cite web|url=https://www.independent.co.uk/life-style/motoring/features/peugeot-403-5529921.html|title= Peugeot 403|work=The 403, launched half a century ago, established Peugeot as a global brand. |author=Andrew Roberts|publisher=[[The Independent]], [[London]]|date=10 July 2007|accessdate=28 February 2019}}&lt;/ref&gt;
+
+====1960s====
+[[File:OM 352.jpg|thumb|[[Mercedes-Benz OM352 engine|Mercedes-Benz OM 352]], one of the first direct injected Mercedes-Benz diesel engines. It was introduced in 1963, but mass production only started in summer 1964.&lt;ref name=&quot;Vogler_2016_34&quot; /&gt;]]
+* 1964: Summer, Daimler-Benz switches from [[indirect injection#Precombustion chamber|precombustion chamber injection]] to helix-controlled direct injection.&lt;ref name=&quot;Daimler_2009&quot; /&gt;&lt;ref name=&quot;MAN_465&quot; /&gt;
+* 1962–65: A [[Compression release engine brake|diesel compression braking system]], eventually to be manufactured by the [[Jacobs Vehicle Systems|Jacobs Manufacturing Company]] and nicknamed the &quot;Jake Brake&quot;, is invented and patented by Clessie Cummins.&lt;ref name=&quot;Cummins_1965&quot; /&gt;
+
+====1970s====
+* 1972: KHD introduces the [[AD-System]], ''Allstoff-Direkteinspritzung'', (anyfuel direct-injection), for its diesel engines. AD-diesels can operate on virtually any kind of liquid fuel, but they are fitted with an auxiliary spark plug that fires if the ignition quality of the fuel is too low.&lt;ref name=&quot;vBasshuysen_2017_24&quot; /&gt;
+* 1976: Development of the [[common rail]] injection begins at the ETH Zürich.&lt;ref name=&quot;vBasshuysen_2017_141&quot; /&gt;
+* 1976: The [[Volkswagen Golf Mk1#Golf Diesel|Volkswagen Golf]] becomes the first compact passenger sedan/saloon to be offered with a diesel engine option.&lt;ref name=GoDilautSpiegel401976&gt;{{cite magazine|date=27 September 1976|title=Blauer Rauch|magazine=Der VW-Konzern präsentiert seine neuesten Golf-Variante – den ersten Wolfsburger Personenwagen mit Dieselmotor. |volume=40/1976| url=http://www.spiegel.de/spiegel/print/d-41136373.html|publisher=[[Der Spiegel]] (online)|accessdate=28 February 2019}}&lt;/ref&gt;&lt;ref name=GoDivolgensGA&gt;{{cite web|url=https://europe.autonews.com/article/20010521/ANE/105210844/how-volkswagen-built-a-diesel-dynasty|date=21 May 2001|work=Automotive News Europe|publisher= Crain Communications, Inc., Detroit MI|title=How Volkswagen built a diesel dynasty|author=Georg Auer|accessdate=28 February 2019}}&lt;/ref&gt;
+* 1978: Daimler-Benz produces the first passenger car diesel engine with a turbocharger ([[Mercedes-Benz OM617 engine|Mercedes-Benz OM 617]]).&lt;ref name=&quot;Merker_2014_179&quot; /&gt;
+* 1979: First prototype of a low-speed two-stroke crosshead engine with common rail injection.&lt;ref name=&quot;Merker_2014_276&quot; /&gt;
+
+====1980s====
+[[File:E28 VL de spec.jpg|thumb|[[BMW E28|BMW E28 524td]], the first mass-produced passenger car with an electronically controlled injection pump]]
+* 1981/82: Uniflow scavenging for two-stroke marine diesel engines becomes standard.&lt;ref name=&quot;Mau_1984_16&quot; /&gt;
+* 1985: December, road testing of a common rail injection system for lorries using a modified 6VD 12,5/12 GRF-E engine in an [[IFA W50]] takes place.&lt;ref name=&quot;Diehl_2013_100&quot; /&gt;
+* 1986: The [[BMW E28|BMW E28 524td]] is the world's first passenger car equipped with an [[Electronic Diesel Control|electronically controlled injection pump]] (developed by [[Robert Bosch GmbH|Bosch]]).&lt;ref name=&quot;Tschöke_2018_10&quot; /&gt;&lt;ref name=&quot;Long_2013&quot; /&gt;
+* 1987: Daimler-Benz introduces the electronically controlled injection pump for lorry diesel engines.&lt;ref name=&quot;Tschöke_2018_10&quot; /&gt;
+* 1988: The [[Fiat Croma]] becomes the first mass-produced passenger car in the world to have a [[Diesel engine#Direct injection|direct injected]] diesel engine.&lt;ref name=&quot;Tschöke_2018_10&quot; /&gt;
+* 1989: The [[Audi 100]] is the first passenger car in the world with a turbocharged, direct injected, and electronically controlled diesel engine.&lt;ref name=&quot;Tschöke_2018_10&quot; /&gt;
+
+====1990s====
+* 1992: 1 July, the [[Euro 1]] emission standard comes into effect.&lt;ref name=&quot;Reif_2014_182&quot; /&gt;
+* 1993: First passenger car diesel engine with four valves per cylinder, the Mercedes-Benz OM 604.&lt;ref name=&quot;Merker_2014_179&quot; /&gt;
+* 1994: Unit injector system by Bosch for lorry diesel engines.&lt;ref name=&quot;Reif_2012_271&quot; /&gt;
+* 1996: First diesel engine with direct injection and four valves per cylinder, used in the [[Opel Vectra]].&lt;ref name=&quot;Zhao_2009_8&quot; /&gt;&lt;ref name=&quot;Tschöke_2018_10&quot; /&gt;
+* 1996: First radial piston distributor injection pump by Bosch.&lt;ref name=&quot;Reif_2012_271&quot; /&gt;
+* 1997: First mass-produced [[common rail]] diesel engine for a passenger car, the Fiat 1.9 JTD.&lt;ref name=&quot;Tschöke_2018_10&quot; /&gt;&lt;ref name=&quot;Merker_2014_179&quot; /&gt;
+* 1998: BMW wins the [[24 Hours Nürburgring]] race with a modified [[BMW E36]]. The car, called 320d, is powered by a 2-litre, straight-four diesel engine with direct injection and a helix-controlled distributor injection pump (Bosch VP 44), producing 180&amp;nbsp;kW. The fuel consumption is 23&amp;nbsp;l/100&amp;nbsp;km, only half the fuel consumption of a similar Otto-powered car.&lt;ref name=&quot;Reif_2012_223&quot; /&gt;
+* 1998: [[Volkswagen]] introduces the [[VW EA188|VW EA188 Pumpe-Düse engine]] (1.9 TDI), with Bosch-developed electronically controlled [[unit injector]]s.&lt;ref name=&quot;Merker_2014_179&quot; /&gt;
+* 1999: Daimler-Chrysler presents the first [[common rail]] three-cylinder diesel engine used in a passenger car (the [[Smart City Coupé]]).&lt;ref name=&quot;Tschöke_2018_10&quot; /&gt;
+
+====2000s====
+[[File:Neckarsulm-AudiForum-Audi-R10-TDI.jpg|thumb|Audi R10 TDI, 2006 24 Hours of Le Mans winner.]]
+* 2000: Peugeot introduces the diesel particulate filter for passenger cars.&lt;ref name=&quot;Tschöke_2018_10&quot; /&gt;&lt;ref name=&quot;Merker_2014_179&quot; /&gt;
+* 2002: [[Piezoelectric]] injector technology by Siemens.&lt;ref name=&quot;Egger_2002&quot; /&gt;
+* 2003: Piezoelectric injector technology by Bosch,&lt;ref name=&quot;Speck_2005&quot; /&gt; and Delphi.&lt;ref name=&quot;TheEngineer_2003&quot; /&gt;
+* 2004: BMW introduces dual-stage turbocharging with the [[BMW M57]] engine.&lt;ref name=&quot;Merker_2014_179&quot; /&gt;
+* 2006: The world's most powerful diesel engine, the [[Wärtsilä RT-flex96C]], is produced. It is rated 80,080&amp;nbsp;kW.&lt;ref name=&quot;Tschöke_2018_1110&quot; /&gt;
+* 2006: [[Audi R10 TDI]], equipped with a 5.5-litre V12-TDI engine, rated 476&amp;nbsp;kW, wins the [[2006 24 Hours of Le Mans]].&lt;ref name=&quot;Tschöke_2018_10&quot; /&gt;
+* 2006: Daimler-Chrysler launches the first series-production passenger car engine with [[selective catalytic reduction]] exhaust gas treatment, the [[Mercedes-Benz OM642 engine|Mercedes-Benz OM 642]]. It is fully complying with the Tier2Bin8 emission standard.&lt;ref name=&quot;Merker_2014_179&quot; /&gt;
+* 2008: Volkswagen introduces the [[NOx adsorber|LNT catalyst]] for passenger car diesel engines with the [[VW EA189|VW 2.0 TDI engine]].&lt;ref name=&quot;Merker_2014_179&quot; /&gt;
+* 2008: Volkswagen starts series production of the biggest passenger car diesel engine, the Audi 6-litre V12 TDI.&lt;ref name=&quot;Merker_2014_179&quot; /&gt;
+* 2008: [[Subaru]] introduces the first [[horizontally opposed]] diesel engine to be fitted to a passenger car. It is a 2-litre common rail engine, rated 110&amp;nbsp;kW.&lt;ref name=&quot;Zhao_2009_45&quot; /&gt;
+
+====2010s====
+* 2010: [[Mitsubishi Motors|Mitsubishi]] developed and started mass production of its [[Mitsubishi 4N1 engine|4N13]] 1.8&amp;nbsp;L DOHC I4, the world's first passenger car diesel engine that features a [[variable valve timing]] system.&lt;ref name=&quot;Long_2013&quot; /&gt;
+* 2012: BMW introduces dual-stage turbocharging with three turbochargers for the [[BMW N57]] engine.&lt;ref name=&quot;Merker_2014_179&quot; /&gt;
+* 2015: [[Common rail]] systems working with pressures of 2,500 bar launched.&lt;ref name=&quot;Tschöke_2018_10&quot; /&gt;
+* 2015: In the [[Volkswagen emissions scandal]], the [[United States Environmental Protection Agency|US EPA]] issued a notice of violation of the [[Clean Air Act (United States)|Clean Air Act]] to [[Volkswagen Group]] after it was found that Volkswagen had intentionally programmed [[turbocharged direct injection]] (TDI) diesel engines to activate certain [[Exhaust gas|emissions]] controls only during laboratory [[emissions testing]].&lt;ref name=&quot;Jordans_2015&quot; /&gt;&lt;ref name=&quot;EPA_2015&quot; /&gt;&lt;ref name=&quot;NPR_2015&quot; /&gt;&lt;ref name=&quot;Spiegel_2015&quot; /&gt;
+
+==Operating principle==
+
+=== Characteristics ===
+
+The characteristics of a diesel engine are&lt;ref name=&quot;Pischinger_2016_348&quot; /&gt;
+* Compression ignition: Due to almost adiabatic compression, the fuel ignites without any ignition-initiating apparatus such as spark plugs.
+* Mixture formation inside the combustion chamber: Air and fuel are mixed in the combustion chamber and not in the inlet manifold.
+* Engine speed adjustment solely by mixture quality: Instead of throttling the air-fuel mixture, the amount of torque produced (resulting in crankshaft rotational speed differences) is set solely by the mass of injected fuel, always mixed with as much air as possible.
+* Heterogeneous air-fuel mixture: The dispersion of air and fuel in the combustion chamber is uneven.
+* High [[Air–fuel ratio#Air–fuel equivalence ratio (λ)|air ratio]]: Due to always running on as much air as possible and not depending on exact mixture of air and fuel, diesel engines have an air-fuel ratio leaner than stochiometric (&lt;math&gt;\lambda_v \geq \lambda_{min} &gt; 1&lt;/math&gt;).
+* [[Diffusion flame]]: At combustion, oxygen first has to diffuse into the flame, rather than having oxygen and fuel already mixed before combustion, which would result in a [[premixed flame]].
+* Fuel with high ignition performance: As diesel engines solely rely on compression ignition, fuel with high ignition performance ([[Cetane number|cetane rating]]) is ideal for proper engine operation, fuel with a good knocking resistance ([[octane rating]]), e.g. petrol, is suboptimal for diesel engines.
+
+=== Cycle of the diesel engine ===
+[[File:DieselCycle PV.svg|thumb|right|p-V Diagram for the ideal diesel cycle. The cycle follows the numbers 1–4 in clockwise direction. The horizontal axis is volume of the cylinder. In the diesel cycle the combustion occurs at almost constant pressure. On this diagram the work that is generated for each cycle corresponds to the area within the loop.]]
+[[File:Model Engine Luc Viatour.jpg|thumb|Diesel engine model, left side]]
+[[File:Model Engine B Luc Viatour.jpg|thumb|Diesel engine model, right side]]
+{{See also|Diesel cycle|Reciprocating internal combustion engine}}
+
+The diesel internal combustion engine differs from the gasoline powered [[Otto cycle]] by using highly compressed hot air to ignite the fuel rather than using a spark plug (''compression ignition'' rather than ''spark ignition'').
+
+In the diesel engine, only air is initially introduced into the combustion chamber. The air is then compressed with a compression ratio typically between 15:1 and 23:1. This high compression causes the temperature of the air to rise. At about the top of the compression stroke, fuel is injected directly into the compressed air in the combustion chamber. This may be into a (typically [[toroid]]al) void in the top of the piston or a ''pre-chamber'' depending upon the design of the engine. The fuel injector ensures that the fuel is broken down into small droplets, and that the fuel is distributed evenly. The heat of the compressed air vaporises fuel from the surface of the droplets. The vapour is then ignited by the heat from the compressed air in the combustion chamber, the droplets continue to vaporise from their surfaces and burn, getting smaller, until all the fuel in the droplets has been burnt. Combustion occurs at a substantially constant pressure during the initial part of the power stroke. The start of vaporisation causes a delay before ignition and the characteristic diesel knocking sound as the vapour reaches ignition temperature and causes an abrupt increase in pressure above the piston (not shown on the P-V indicator diagram). When combustion is complete the combustion gases expand as the piston descends further; the high pressure in the cylinder drives the piston downward, supplying power to the crankshaft.
+
+As well as the high level of compression allowing combustion to take place without a separate ignition system, a high [[compression ratio]] greatly increases the engine's efficiency. Increasing the compression ratio in a spark-ignition engine where fuel and air are mixed before entry to the cylinder is limited by the need to prevent [[pre-ignition#Pre-ignition|pre-ignition]]&lt;!-- detonation from occurring after ignition and is more a fuel quality or combustion chamber design issue --&gt;, which would cause engine damage. Since only air is compressed in a diesel engine, and fuel is not introduced into the cylinder until shortly before top dead centre ([[Top Dead Center|TDC]]), premature detonation is not a problem and compression ratios are much higher.
+
+The p–V diagram is a simplified and idealised representation of the events involved in a diesel engine cycle, arranged to illustrate the similarity with a [[Carnot cycle]]. Starting at 1, the piston is at bottom dead centre and both valves are closed at the start of the compression stroke; the cylinder contains air at atmospheric pressure. Between 1 and 2 the air is compressed adiabatically&amp;nbsp;– that is without heat transfer to or from the environment&amp;nbsp;– by the rising piston. (This is only approximately true since there will be some heat exchange with the [[cylinder walls]].) During this compression, the volume is reduced, the pressure and temperature both rise. At or slightly before 2 (TDC) fuel is injected and burns in the compressed hot air. Chemical energy is released and this constitutes an injection of thermal energy (heat) into the compressed gas. Combustion and heating occur between 2 and 3. In this interval the pressure remains constant since the piston descends, and the volume increases; the temperature rises as a consequence of the energy of combustion. At 3 fuel injection and combustion are complete, and the cylinder contains gas at a higher temperature than at 2. Between 3 and 4 this hot gas expands, again approximately adiabatically. Work is done on the system to which the engine is connected. During this expansion phase the volume of the gas rises, and its temperature and pressure both fall. At 4 the exhaust valve opens, and the pressure falls abruptly to atmospheric (approximately). This is unresisted expansion and no useful work is done by it. Ideally the adiabatic expansion should continue, extending the line 3–4 to the right until the pressure falls to that of the surrounding air, but the loss of efficiency caused by this unresisted expansion is justified by the practical difficulties involved in recovering it (the engine would have to be much larger). After the opening of the exhaust valve, the exhaust stroke follows, but this (and the following induction stroke) are not shown on the diagram. If shown, they would be represented by a low-pressure loop at the bottom of the diagram. At 1 it is assumed that the exhaust and induction strokes have been completed, and the cylinder is again filled with air. The piston-cylinder system absorbs energy between 1 and 2&amp;nbsp;– this is the work needed to compress the air in the cylinder, and is provided by mechanical kinetic energy stored in the flywheel of the engine. Work output is done by the piston-cylinder combination between 2 and 4. The difference between these two increments of work is the indicated work output per cycle, and is represented by the area enclosed by the p–V loop. The adiabatic expansion is in a higher pressure range than that of the compression because the gas in the cylinder is hotter during expansion than during compression. It is for this reason that the loop has a finite area, and the net output of work during a cycle is positive.&lt;ref name=&quot;Reif_2014_18&quot; /&gt;
+
+=== Efficiency ===
+
+Due to its high compression ratio, the diesel engine has a high efficiency, and the lack of a throttle valve means that the charge-exchange losses are fairly low, resulting in a low specific fuel consumption, especially in medium and low load situations. This makes the diesel engine very economical.&lt;ref name=&quot;Reif_2014_10&quot; /&gt; Even though diesel engines have a theoretical efficiency of 75%,&lt;ref name=&quot;Hemmerlein_1991&quot; /&gt; in practice it is much lower. In his 1893 essay ''[[Theory and Construction of a Rational Heat Motor]]'', Rudolf Diesel describes that the effective efficiency of the diesel engine would be in between 43.2% and 50.4% , or maybe even greater.&lt;ref name=&quot;Diesel_1893_51&quot; /&gt; Modern passenger car diesel engines may have an effective efficiency of up to 43%,&lt;ref name=&quot;vB_2017_755&quot; /&gt; whilst engines in large diesel trucks, and buses can achieve peak efficiencies around 45%.&lt;ref name=&quot;EPA_2004&quot; /&gt;  However, average efficiency over a driving cycle is lower than peak efficiency. For example, it might be 37% for an engine with a peak efficiency of 44%.&lt;ref name=&quot;Soimar_2000&quot; /&gt; The highest diesel engine efficiency of up to 55% is achieved by large two-stroke watercraft diesel engines.&lt;ref name=&quot;Reif_2014_13&quot; /&gt;
+
+===Major advantages===
+&lt;!-- Editors take note!!!  This is just a summary section. Expanded discussions of most of these items appear later in the article. These descriptions should not be expanded without a compelling reason, probably discussed on the talk page first. If there's an advantage not listed here that you think is important, consider whether it is really one of the few major ones that should be listed here, or whether it belongs in the full discussion of advantages later in the article. --&gt;
+
+Diesel engines have several advantages over engines operating on other principles:
+* The diesel engine has the highest effective efficiency of all combustion engines.&lt;ref name=&quot;Dubbel_1981_712&quot; /&gt;
+** Diesel engines inject the fuel directly into the combustion chamber, have no intake air restrictions apart from air filters and intake plumbing and have no intake manifold vacuum to add parasitic load and pumping losses resulting from the pistons being pulled downward against intake system vacuum. Cylinder filling with atmospheric air is aided and volumetric efficiency is increased for the same reason.
+** Although the [[fuel efficiency]] (mass burned per energy produced) of a diesel engine drops at lower loads, it doesn't drop quite as fast as that of a typical petrol or turbine engine.&lt;ref name=&quot;Ransome-Wallis_2001&quot; /&gt;
+* [[File:Soybeanbus.jpg|thumb|Bus powered by [[biodiesel]]]] Diesel engines can combust a huge variety of fuels, including several fuel oils, that have advantages over fuels such as petrol. These advantages include:
+** Low fuel costs, as fuel oils are relatively cheap
+** Good lubrication properties
+** High energy density
+** Low risk of catching fire, as they do not form a flammable vapour
+** [[Biodiesel]] is an easily synthesised, non-petroleum-based fuel (through [[transesterification]]) which can run directly in many diesel engines, while gasoline engines either need adaptation to run [[synthetic fuel]]s or else use them as an additive to gasoline (e.g., [[ethanol]] added to [[gasohol]]).
+* Diesel engines have a very good exhaust-emission behaviour. The exhaust contains minimal amounts of [[carbon monoxide]] and [[hydrocarbons]]. Direct injected diesel engines emit approximately as much [[nitrogen oxide]] as Otto cycle engines. Swirl chamber and precombustion chamber injected engines, however, emit approximately 50% less nitrogen oxide than Otto cycle engines when running under full load.&lt;ref name=&quot;Dubbel_2018_1191&quot; /&gt; Compared with Otto cycle engines, diesel engines emit 10 times less pollutants and 3 times less carbon dioxide.&lt;ref name=&quot;Reif_2014_171&quot; /&gt;
+* They have no high voltage electrical ignition system, resulting in high reliability and easy adaptation to damp environments. The absence of coils, spark plug wires, etc., also eliminates a source of [[Electromagnetic interference|radio frequency emissions]] which can interfere with navigation and communication equipment, which is especially important in marine and aircraft applications, and for preventing interference with [[radio telescope]]s. (For this reason, only diesel-powered vehicles are allowed in parts of the American [[National Radio Quiet Zone]].)&lt;ref name=&quot;NRAO&quot; /&gt;
+* Diesel engines can accept super- or turbocharging pressure without any natural limit,&lt;ref name=&quot;Reif_2014_41&quot; /&gt; constrained only by the design and operating limits of engine components, such as pressure, speed and load. This is unlike petrol engines, which inevitably suffer detonation at higher pressure if engine tuning and/or fuel octane adjustments are not made to compensate.
+&lt;!-- Don't add to this list without reading the comment at the top of the list! --&gt;
+
+== Fuel injection ==
+
+Diesel engines rely on internal mixture formation,&lt;ref name=&quot;Pischinger_2016_348&quot; /&gt; which means that they require a fuel injection system. The fuel is injected directly into the combustion chamber, which can be either a segmented combustion chamber or an unsegmented combustion chamber. Fuel injection with the latter is referred to as ''direct injection'' (DI), whilst injection into the former is called ''indirect injection'' (IDI).&lt;ref name=&quot;Reif_2014_28&quot; /&gt; In diesel engine terminology, indirect injection does not mean fuel injection into the inlet manifold or anywhere else outside the cylinder or combustion chamber: in fact, the definition of the diesel engine excludes such injection methods. For creating the fuel pressure, diesel engines usually have an injection pump. There are several different types of injection pumps and methods for creating a fine air-fuel mixture. Over the years many different injection methods have been used. These can be described as the following:
+* Air blast, where the fuel is blown into the cylinder by a blast of air. 
+* Solid fuel / hydraulic injection, where the fuel is pushed through a spring loaded valve / injector to produce a combustible mist.
+* Mechanical unit injector, where the injector is directly operated by a cam and fuel quantity is controlled by a rack or lever.
+* Mechanical electronic unit injector, where the injector is operated by a cam and fuel quantity is controlled electronically.
+* [[Common rail]] mechanical injection, where fuel is at high pressure in a common rail and controlled by mechanical means.
+* Common rail electronic injection, where fuel is at high pressure in a common rail and controlled electronically.
+
+===Torque controlling===
+
+Due to the way diesel engines work, a vital component of all diesel engines is a mechanical or electronic [[governor (device)|governor]] which regulates the torque of the engine and thus idling speed and maximum speed by controlling the rate of fuel delivery. This means a change of &lt;math&gt;\lambda_v&lt;/math&gt;. Unlike Otto-cycle engines, incoming air is not throttled. Mechanically governed fuel injection systems are driven by the engine's [[gear train]].&lt;ref name=&quot;buckman&quot; /&gt;&lt;ref name=&quot;Rochester&quot; /&gt; These systems use a combination of springs and weights to control fuel delivery relative to both load and speed.&lt;ref name=buckman/&gt; Modern electronically controlled diesel engines control fuel delivery by use of an electronic control module (ECM) or electronic control unit ([[electronic control unit|ECU]]). The ECM/ECU receives an engine speed signal, as well as other operating parameters such as intake manifold pressure and fuel temperature, from a sensor and controls the amount of fuel and start of injection timing through [[actuator]]s to maximise power and efficiency and minimise emissions. Controlling the timing of the start of injection of fuel into the cylinder is a key to minimizing emissions, and maximizing [[fuel economy in automobiles|fuel economy]] (efficiency), of the engine. The timing is measured in degrees of crank angle of the [[piston]] before top dead centre. For example, if the ECM/ECU initiates fuel injection when the piston is 10° before [[Top Dead Centre|TDC]], the start of injection, or timing, is said to be 10° before TDC. Optimal timing will depend on the engine design as well as its speed and load.
+
+=== Types of fuel injection ===
+
+====Air-blast injection====
+
+[[File:Stationärdieselmotor 1915.jpg|thumb|right|Typical early 20th century air-blast injected diesel engine, rated at 59&amp;nbsp;kW.]]
+
+{{Main|Air-blast injection}}
+
+Diesel's original engine injected fuel with the assistance of compressed air, which atomised the fuel and forced it into the engine through a nozzle (a similar principle to an aerosol spray). The nozzle opening was closed by a pin valve lifted by the camshaft to initiate the fuel injection before top dead centre ([[Top Dead Center|TDC]]). This is called an '''[[air-blast injection]]'''. Driving the compressor used some power but the efficiency was better than the efficiency of any other combustion engine at that time.&lt;ref name=&quot;Mau_1984_7&quot; /&gt; Also, air-blast injection made engines very clunky and heavy and did not allow for quick load alteration, thus rendering it unusable for road vehicles.&lt;ref name=&quot;Merker_2014_381&quot; /&gt;
+
+====Indirect injection====
+[[File:Ricardo comet combustion.gif|thumb|Ricardo Comet indirect injection chamber]]
+{{Main|Indirect injection}}
+An indirect diesel injection system (IDI) engine delivers fuel into a small chamber called a swirl chamber, precombustion chamber, pre chamber or ante-chamber, which is connected to the cylinder by a narrow air passage. Generally the goal of the pre chamber is to create increased [[turbulence]] for better air / fuel mixing. This system also allows for a smoother, quieter running engine, and because fuel mixing is assisted by turbulence, [[injector]] pressures can be lower. Most IDI systems use a single orifice injector. The pre-chamber has the disadvantage of lowering efficiency due to increased heat loss to the engine's cooling system, restricting the combustion burn, thus reducing the efficiency by 5–10%. IDI engines are also more difficult to start and usually require the use of glow plugs. IDI engines may be cheaper to build but generally require a higher compression ratio than the DI counterpart. IDI also makes it easier to produce smooth, quieter running engines with a simple mechanical injection system since exact injection timing is not as critical. Most modern automotive engines are DI which have the benefits of greater efficiency and easier starting; however, IDI engines can still be found in the many ATV and small diesel applications.&lt;ref name=&quot;Dieselhub&quot; /&gt; Indirect injected diesel engines use pintle-type fuel injectiors.&lt;ref name=&quot;Reif_2014_140&quot; /&gt;
+
+====Helix-controlled direct injection====
+[[File:Têtes de piston.svg|thumb|Different types of piston bowls]]
+[[Direct fuel injection|Direct injection]] Diesel engines inject fuel directly into the cylinder. Usually there is a combustion cup in the top of the piston where the fuel is sprayed. Many different methods of injection can be used. Usually, an engine with helix-controlled mechanic direct injection has either an inline or a distributor injection pump.&lt;ref name=buckman/&gt; For each engine cylinder, the corresponding plunger in the fuel pump measures out the correct amount of fuel and determines the timing of each injection. These engines use [[fuel injection|injectors]] that are very precise spring-loaded valves that open and close at a specific fuel pressure. Separate high-pressure fuel lines connect the fuel pump with each cylinder. Fuel volume for each single combustion is controlled by a slanted [[Groove (engineering)|groove]] in the plunger which rotates only a few degrees releasing the pressure and is controlled by a mechanical governor, consisting of weights rotating at engine speed constrained by springs and a lever. The injectors are held open by the fuel pressure. On high-speed engines the plunger pumps are together in one unit.&lt;ref name=&quot;Firstdiesel_2009&quot; /&gt; The length of fuel lines from the pump to each injector is normally the same for each cylinder in order to obtain the same pressure delay. Direct injected diesel engines usually use orifice-type fuel injectors.&lt;ref name=&quot;Reif_2014_140&quot; /&gt;
+
+Electronic control of the fuel injection transformed the direct injection engine by allowing much greater control over the combustion.&lt;ref name=&quot;Dieselpower_2007&quot; /&gt;
+
+====Unit direct injection====
+{{Main|Unit Injector}}
+Unit direct injection, also known as [[Pumpe-Düse]] (''pump-nozzle''), is a high pressure fuel injection system that injects fuel directly into the cylinder of the engine. In this system the injector and the pump are combined into one unit positioned over each cylinder controlled by the camshaft. Each cylinder has its own unit eliminating the high-pressure fuel lines, achieving a more consistent injection. Under full load, the injection pressure can reach up to 220&amp;nbsp;MPa. Unit injection systems used to dominate the commercial diesel engine market, but due to higher requirements of the flexibility of the injection system, they have been rendered obsolete by the more advanced common-rail-system.&lt;ref name=&quot;Tschöke_2018_295&quot; /&gt;
+
+====Common rail direct injection====
+{{Main|Common rail}}
+
+Common rail (CR) direct injection systems, unlike other injection systems, do not have a combined pressure creation and injection apparatus. A high-pressure injection pump creates a constant pressure, not depending on the engine speed or fuel mass injected. A buffer, the so-called rail, saves this pressure. This allows fuel injection at any given moment, even multiple injections in a very short amount of time. The Electronic Diesel Control unit (EDC) controls both rail pressure and injections depending on several different parameters of the engine. The injectors of older CR systems have [[solenoid]]-driven plungers for lifting the injection needle, whilst newer CR injectors use plungers driven by [[piezoelectricity|piezoelectric]] actuators, that have fewer moving mass and therefore allow even more injections in a very short period of time.&lt;ref name=&quot;Reif_2014_70&quot; /&gt; The injection pressure of modern CR systems ranges from 140&amp;nbsp;MPa to 270&amp;nbsp;MPa.&lt;ref name=&quot;Tschöke_2018_310&quot; /&gt;
+
+==Types==
+There are several different ways of categorising diesel engines, based on different design characteristics:
+
+===By power output===
+* Small &lt;{{convert|188|kW|hp|0|abbr=on}}
+* Medium 188–750&amp;nbsp;kW
+* Large &gt;750&amp;nbsp;kW
+''Source''&lt;ref name=&quot;Brit2and4&quot; /&gt;
+
+===By cylinder bore===
+* Passenger car engines: 75...100&amp;nbsp;mm
+* Lorry and commercial vehicle engines: 90...170&amp;nbsp;mm
+* High-performance high-speed engines: 165...280&amp;nbsp;mm
+* Medium-speed engines: 240...620&amp;nbsp;mm
+* Low-speed two-stroke engines: 260...900&amp;nbsp;mm
+
+''Source'':&lt;ref name=&quot;Dubbel_2018_1187&quot; /&gt;
+
+===By number of strokes===
+* Four-stroke cycle
+* Two-stroke cycle
+''Source''&lt;ref name=&quot;Brit2and4&quot; /&gt;
+
+=== By piston and connecting rod ===
+* [[crosshead bearing|Crosshead piston]]
+* [[Single- and double-acting cylinders#Double-acting|Double-acting piston]]
+* [[Opposed-piston engine|Opposed piston]]
+* [[Trunk piston]]
+
+===By cylinder arrangement===
+Regular cylinder configurations such as straight (inline), V, and boxer (flat) configurations can be used for diesel engines. The inline-six-cylinder design is the most prolific in light- to medium-duty engines, though inline-four engines are also common. Small-capacity engines (generally considered to be those below five litres in capacity) are generally four- or six-cylinder types, with the four-cylinder being the most common type found in automotive uses. The V configuration used to be common for commercial vehicles, but it has been abandoned in favour of the inline configuration.&lt;ref name=&quot;Merker_2014_48&quot; /&gt;
+
+===By engine speeds===
+Günter Mau categorises diesel engines by their rotational speeds into three groups:
+* High-speed engines (&gt; 1,000 rpm),
+* Medium-speed engines (300–1,000 rpm), and
+* Slow-speed engines (&lt; 300 rpm).
+
+''Source''&lt;ref name=&quot;Mau_1984_15&quot; /&gt;
+
+====High-speed engines====
+High-speed engines are used to power [[truck]]s (lorries), [[bus]]es, [[tractor]]s, [[automobile|cars]], [[yacht]]s, [[Gas compressor|compressors]], [[pump]]s and small [[electrical generator]]s.&lt;ref name=&quot;Reif_2014_11&quot; /&gt; As of 2018, most high-speed engines have [[Direct fuel injection|direct injection]]. Many modern engines, particularly in on-highway applications, have [[common rail]] [[Direct fuel injection|direct injection]].&lt;ref name=&quot;Tschöke_2018_295&quot; /&gt; On bigger ships, high-speed diesel engines are often used for powering electric generators.&lt;ref name=&quot;Mau_1984_42&quot; /&gt; The highest power output of high-speed diesel engines is approximately 5&amp;nbsp;MW.&lt;ref name=&quot;Mau_1984_43&quot; /&gt;
+
+====Medium-speed engines====
+Medium-speed engines are used in large electrical generators, ship propulsion and mechanical drive applications such as large compressors or pumps. Medium speed diesel engines operate on either diesel fuel or heavy fuel oil by direct injection in the same manner as low-speed engines. Usually, they are four-stroke engines with trunk pistons.&lt;ref name=&quot;Mau_1984_33&quot; /&gt;
+
+The power output of medium-speed diesel engines can be as high as 21,870&amp;nbsp;kW,&lt;ref name=&quot;Mau_1984_136&quot; /&gt; with the effective efficiency being around 47...48% (1982).&lt;ref name=&quot;Mau_1984_121&quot; /&gt; Most larger medium-speed engines are started with compressed air direct on pistons, using an air distributor, as opposed to a pneumatic starting motor acting on the flywheel, which tends to be used for smaller engines.&lt;ref name=&quot;Merker_2014_280&quot; /&gt;
+
+Medium-speed engines intended for marine applications are usually used to power (ro-ro) ferries, passenger ships or small freight ships. Using medium-speed engines reduces the cost of smaller ships and increases their transport capacity. In addition to that, a single ship can use two smaller engines instead of one big engine, which increases the ship's safety.&lt;ref name=&quot;Mau_1984_33&quot; /&gt;
+
+====Low-speed engines====
+[[File:5S50MC.jpg|thumb|right|The MAN B&amp;W 5S50MC 5-cylinder, 2-stroke, low-speed marine diesel engine. This particular engine is found aboard a 29,000 tonne chemical carrier.]]
+
+Low-speed diesel engines are usually very large in size and mostly used to power [[ship]]s. There are two different types of low-speed engines that are commonly used: Two-stroke engines with a crosshead, and four-stroke engines with a regular trunk-piston. Two-stroke engines have a limited rotational frequency and their charge exchange is more difficult, which means that they are usually bigger than four-stroke engines and used to directly power a ship's propeller. Four-stroke engines on ships are usually used to power an electric generator. An electric motor powers the propeller.&lt;ref name=&quot;Mau_1984_15&quot; /&gt; Both types are usually very undersquare.&lt;ref name=&quot;Mau_1984_129&quot; /&gt; Low-speed diesel engines (as used in ships and other applications where overall engine weight is relatively unimportant) often have an effective efficiency of up to 55%.&lt;ref name=&quot;Reif_2014_13&quot; /&gt; Like medium-speed engines, low-speed engines are started with compressed air, and they use heavy oil as their primary fuel.&lt;ref name=&quot;Merker_2014_280&quot; /&gt;
+
+== Two-stroke engines ==
+[[File:Detroit Diesel timing.jpg|thumb|Detroit Diesel timing]]
+
+[[Two-stroke diesel engine]]s use only two strokes instead of four strokes for a complete engine cycle. Filling the cylinder with air and compressing it takes place in one stroke, and the power and exhaust strokes are combined. The compression in a two-stroke diesel engine is similar to the compression that takes place in a four-stroke diesel engine: As the piston passes through bottom centre and starts upward, compression commences, culminating in fuel injection and ignition. Instead of a full set of valves, two-stroke diesel engines have simple intake ports, and exhaust ports (or exhaust valves). When the piston approaches bottom dead centre, both the intake and the exhaust ports are &quot;open&quot;, which means that there is atmospheric pressure inside the cylinder. Therefore, some sort of pump is required to blow the air into the cylinder and the combustion gasses into the exhaust. This process is called ''scavenging''. The pressure required is approximately 10 - 30&amp;nbsp;kPa.&lt;ref name=&quot;Mau_1984_50&quot; /&gt;
+
+;Scavenging
+
+In general, there are three types of scavenging possible:
+* Uniflow scavenging
+* Crossflow scavenging
+* [[Schnuerle porting|Reverse flow scavenging]]
+
+Crossflow scavenging is incomplete and limits the stroke, yet some manufacturers used it.&lt;ref name=&quot;Mau_1984_148&quot; /&gt; Reverse flow scavenging is a very simple way of scavenging, and it was popular amongst manufacturers until the early 1980s. Uniflow scavenging is more complicated to make but allows the highest fuel efficiency; since the early 1980s, manufacturers such as MAN and Sulzer have switched to this system.&lt;ref name=&quot;Mau_1984_16&quot; /&gt; It is standard for modern marine two-stroke diesel engines.&lt;ref name=&quot;Grote_2018_P93&quot; /&gt;
+
+==Dual-fuel diesel engines==
+
+So-called dual-fuel diesel engines or gas diesel engines burn two different types of fuel ''simultaneously'', for instance, a gaseous fuel and diesel engine fuel. The diesel engine fuel auto-ignites due to compression ignition, and then ignites the gaseous fuel. Such engines do not require any type of spark ignition and operate similar to regular diesel engines.&lt;ref name=&quot;Karim_2015_2&quot; /&gt;
+
+== Diesel engine particularities ==
+
+=== Torque and power ===
+&lt;!--Examples in this section are all derived from examples given in Reif, p. 17--&gt;
+
+[[Torque]] is a force applied to a lever at a right angle multiplied by the lever length. This means that the torque an engine produces depends on the displacement of the engine and the force that the gas pressure inside the cylinder applies to the piston, commonly referred to as ''effective piston pressure'':
+
+:&lt;math&gt;M = p_e \cdot V_h \cdot \pi^{-1} \cdot i^{-1}&lt;/math&gt;
+::&lt;math&gt;M&lt;/math&gt; .. [[Torque]] [N·m]; &lt;math&gt;p_e&lt;/math&gt; .. Effective piston [[pressure]] [kN·m&lt;sup&gt;−2&lt;/sup&gt;]; &lt;math&gt;V_h&lt;/math&gt; .. [[Engine displacement|Displacement]] [dm&lt;sup&gt;3&lt;/sup&gt;]; &lt;math&gt;i&lt;/math&gt; .. [[Stroke (engine)|Strokes]] [either 2 or 4]
+
+;Example
+* Engine A: effective piston pressure=570&amp;nbsp;kN·m&lt;sup&gt;−2&lt;/sup&gt;, displacement= 2.2 dm&lt;sup&gt;3&lt;/sup&gt;, strokes= 4, torque= 100 N·m
+:&lt;math&gt;570 \cdot 2.2 \cdot \pi^{-1} \cdot 4^{-1} \approx 100&lt;/math&gt;
+
+Power is the quotient of work and time:
+
+:&lt;math&gt;P = 2\pi n M&lt;/math&gt;
+::&lt;math&gt;P&lt;/math&gt; .. [[Power (physics)|Power]] [W]; &lt;math&gt;M&lt;/math&gt; .. [[Torque]] [N·m]; &lt;math&gt;n&lt;/math&gt; .. [[Time]] (crankshaft speed) [s&lt;sup&gt;−1&lt;/sup&gt;]
+
+:which means:
+
+:&lt;math&gt;P = 2\pi\cdot n_1 \cdot M \cdot 60^{-1}&lt;/math&gt;
+::&lt;math&gt;P&lt;/math&gt; .. [[Power (physics)|Power]] [W]; &lt;math&gt;M&lt;/math&gt; .. [[Torque]] [N·m]; &lt;math&gt;n_1&lt;/math&gt; .. [[Time]] (crankshaft speed) [min&lt;sup&gt;−1&lt;/sup&gt;]
+
+;Example
+* Engine A: Power≈ 44,000 W, torque= 100 N·m, time= 4200 min&lt;sup&gt;−1&lt;/sup&gt;
+:&lt;math&gt;44,000 \approx 2 \cdot \pi \cdot 4200 \cdot 100 \cdot 60^{-1}&lt;/math&gt;
+* Engine B: Power≈ 44,000 W, torque= 260 N·m, time= 1600 min&lt;sup&gt;−1&lt;/sup&gt;
+:&lt;math&gt;44,000 \approx 2 \cdot \pi \cdot 1600 \cdot 260 \cdot 60^{-1}&lt;/math&gt;
+
+This means, that increasing either torque or time will result in an increase in power. As the maximum rotational frequency of the diesel engine's crankshaft is usually in between 3500...5000&amp;nbsp;min&lt;sup&gt;−1&lt;/sup&gt; due to diesel principle limitations, the torque of the diesel engine must be great to achieve a high power, or, in other words, as the diesel engine cannot use a lot of time for achieving a certain amount of power, it has to perform more work (=produce more torque).&lt;ref name=&quot;Reif_2014_17&quot; /&gt;
+
+===Mass===
+
+The average diesel engine has a poorer power-to-mass ratio than the [[Otto engine]]. This is because the diesel must operate at lower engine speeds.&lt;ref name=&quot;Braess_2012_225&quot; /&gt; Due to the higher operating pressure inside the combustion chamber, which increases the forces on the parts due to inertial forces, the diesel engine needs heavier, stronger parts capable of resisting these forces, which results in an overall greater engine mass.&lt;ref name=&quot;Schreiner_2014_22&quot; /&gt;
+
+===Emissions===
+{{main|Diesel exhaust}}
+
+As diesel engines burn a mixture of fuel and air, the exhaust therefore contains substances that consist of the same [[chemical element]]s, as fuel and air. The main elements of air are [[nitrogen]] (N&lt;sub&gt;2&lt;/sub&gt;) and [[oxygen]] (O&lt;sub&gt;2&lt;/sub&gt;), fuel consists of [[hydrogen]] (H&lt;sub&gt;2&lt;/sub&gt;) and [[carbon]] (C). Burning the fuel will result in the final stage of [[oxidation]]. An ''ideal diesel engine'', (a hypothetical model that we use as an example), running on an ideal air-fuel mixture, produces an exhaust that consists of [[carbon dioxide]] (CO&lt;sub&gt;2&lt;/sub&gt;), [[water]] (H&lt;sub&gt;2&lt;/sub&gt;O), [[nitrogen]] (N&lt;sub&gt;2&lt;/sub&gt;), and the remaining [[oxygen]] (O&lt;sub&gt;2&lt;/sub&gt;). The combustion process in a real engine differs from an ideal engine's combustion process, and due to incomplete combustion, the exhaust contains additional substances,&lt;ref name=&quot;List_1939_1&quot; /&gt; most notably, [[carbon monoxide]] (CO), [[diesel particulate matter]] (PM), and due to [[Dissociation (chemistry)|dissociation]], [[nitrogen oxide]] ({{NOx}}).&lt;ref name=&quot;List_1939_28&quot; /&gt;
+
+When diesel engines burn their fuel with high oxygen levels, this results in high combustion temperatures and higher efficiency, and particulate matter tends to burn, but the amount of {{NOx}} pollution tends to increase.&lt;ref name=&quot;Bosch_1993_27&quot; /&gt; {{NOx}} pollution can be reduced by recirculating a portion of an engine's exhaust gas back to the engine cylinders, which reduces the oxygen quantity, causing a reduction of combustion temperature, and resulting in fewer {{NOx}}.&lt;ref name=&quot;Reif_2014_40&quot; /&gt; To further reduce {{NOx}} emissions, [[NOx adsorber|lean {{NOx}} traps (LNTs)]] and [[Selective catalytic reduction|SCR-catalysts]] can be used. Lean {{NOx}} traps adsorb the nitrogen oxide and &quot;trap&quot; it. Once the LNT is full, it has to be &quot;regenerated&quot; using hydrocarbons. This is achieved by using a very rich air-fuel mixture, resulting in incomplete combustion. An SCR-catalyst converts nitrogen oxide using [[Diesel exhaust fluid|urea]], which is injected into the exhaust stream, and catalytically converts the {{NOx}} into nitrogen (N&lt;sub&gt;2&lt;/sub&gt;) and water (H&lt;sub&gt;2&lt;/sub&gt;O).&lt;ref name=&quot;Böge_2017_1190&quot; /&gt; Compared with an Otto engine, the diesel engine produces approximately the same amount of {{NOx}}, but some older diesel engines may have an exhaust that contains up to 50% less {{NOx}}. However, Otto engines, unlike diesel engines, can use a [[Catalytic converter#Three-way|three-way-catalyst]], that converts most of the {{NOx}}.&lt;ref name=&quot;Dubbel_2018_1191&quot; /&gt;
+
+{| class=&quot;wikitable sortable&quot;
+|-
+|+Diesel engine exhaust composition
+! Species
+! Mass percentage&lt;ref name=&quot;Reif_2014_171&quot; /&gt;
+! Volume percentage&lt;ref name=&quot;Merker_2014_472&quot; /&gt;
+|-
+! Nitrogen (N&lt;sub&gt;2&lt;/sub&gt;)
+| 75.2%
+| 72.1%
+|-
+! Oxygen (O&lt;sub&gt;2&lt;/sub&gt;)
+| 15%
+| 0.7%
+|-
+! [[Carbon dioxide]] (CO&lt;sub&gt;2&lt;/sub&gt;)
+| 7.1%
+| 12.3%
+|-
+! Water (H&lt;sub&gt;2&lt;/sub&gt;O)
+| 2.6%
+| 13.8%
+|-
+![[Carbon monoxide]] (CO)
+| 0.043%
+| 0.09%
+|-
+![[Nitrogen oxide]] ({{NOx}})
+| 0.034%
+| 0.13%
+|-
+![[Hydrocarbons]] (HC)
+| 0.005%
+| 0.09%
+|-
+![[Aldehyde]]
+| 0.001%
+| (n/a)
+|-
+![[Diesel particulate matter|Particulate matter]] ([[Sulfate]] + solid substances)
+| 0.008%
+| 0.0008%
+|-
+|}
+
+===Noise===
+[[File:AKD 112 Z.webm|thumb|Typical diesel engine noise of a 1950s direct injected two-cylinder diesel engine ([[MWM AKD 112 Z]], in idle)]]
+The distinctive noise of a diesel engine is variably called diesel clatter, diesel nailing, or diesel knock.&lt;ref name=&quot;Comb in IC&quot; /&gt; Diesel clatter is caused largely by the way the fuel ignites; the sudden ignition of the diesel fuel when injected into the combustion chamber causes a pressure wave, resulting in an audible ″knock″. Engine designers can reduce diesel clatter through: indirect injection; pilot or pre-injection;&lt;ref name=&quot;Böge_2017_1150&quot; /&gt; injection timing; injection rate; compression ratio; turbo boost; and [[exhaust gas recirculation]] (EGR).&lt;ref name=&quot;EngTips&quot; /&gt; Common rail diesel injection systems permit multiple injection events as an aid to noise reduction. Therefore, newer diesel engines do not knock anymore.&lt;ref name=&quot;Reif_2014_23&quot; /&gt; Diesel fuels with a higher cetane rating are more likely to ignite and hence reduce diesel clatter.&lt;ref name=&quot;Comb in IC&quot; /&gt;
+
+===Cold weather starting===
+
+In general, diesel engines do not require any starting aid. In cold weather however, some diesel engines can be difficult to start and may need preheating depending on the combustion chamber design. The minimum starting temperature that allows starting without pre-heating is 40&amp;nbsp;°C for precombustion chamber engines, 20&amp;nbsp;°C for swirl chamber engines, and 0&amp;nbsp;°C for direct injected engines. Smaller engines with a displacement of less than 1&amp;nbsp;litre per cylinder usually have [[glowplugs]], whilst larger heavy-duty engines have [[flame-start system]]s.&lt;ref name=&quot;Reif_2014_136&quot; /&gt;
+
+In the past, a wider variety of cold-start methods were used. Some engines, such as [[Detroit Diesel]] engines used{{When|date=September 2010}} a system to introduce small amounts of [[Diethyl ether|ether]] into the inlet manifold to start combustion.&lt;ref name=&quot;FreeLib_1995&quot; /&gt; Instead of glowplugs, some diesel engines are equipped with starting aid systems that change valve timing. The simplest way this can be done is with a decompression lever. Activating the decompression lever locks the outlet valves in a slight down position, resulting in the engine not having any compression and thus allowing for turning the crankshaft over without resistance. When the crankshaft reaches a higher speed, flipping the decompression lever back into its normal position will abruptly re-activate the outlet valves, resulting in compression − the flywheel's [[mass moment of inertia]] then starts the engine. Other diesel engines, such as the precombustion chamber engine XII Jv 170/240 made by Ganz &amp; Co., have a valve timing changing system that is operated by adjusting the inlet valve camshaft, moving it into a slight &quot;late&quot; position. This will make the inlet valves open with a delay, forcing the inlet air to heat up when entering the combustion chamber.&lt;ref name=&quot;Kremser_1942_190&quot; /&gt;
+
+===Supercharging and turbocharging===
+[[File:Diesel engine (PSF).png|thumb|Two stroke diesel engine with [[Roots blower]], typical of [[Detroit Diesel]] and some [[Electro-Motive Diesel]] Engines]]
+[[File:BMW_E28_engine_2_16.09_JM.jpg|thumb|Turbocharged 1980s passenger car diesel engine with wastegate turbocharger and without intercooler ([[BMW M21]])]]
+As the diesel engine relies on manipulation of &lt;math&gt;\lambda_v&lt;/math&gt; for torque controlling and speed regulation, the intake air mass does not have to precisely match the injected fuel mass (which would be &lt;math&gt;\lambda=1&lt;/math&gt;).&lt;ref name=&quot;Pischinger_2016_348&quot; /&gt; diesel engines are thus ideally suited for supercharging and turbocharging.&lt;ref name=&quot;Reif_2014_41&quot; /&gt; An additional advantage of the diesel engine is the lack of fuel during the compression stroke. In diesel engines, the fuel is injected near top dead centre (TDC), when the piston is near its highest position. The fuel then ignites due to compression heat. Preignition, caused by the artificial turbocharger compression increase during the compression stroke, cannot occur.&lt;ref name=&quot;Reif_2017_16&quot; /&gt;
+
+Many diesels are therefore [[turbocharging|turbocharged]] and some are both turbocharged and [[supercharged]]. A turbocharged engine can produce more power than a naturally aspirated engine of the same configuration. A supercharger is powered mechanically by the engine's [[crankshaft]], while a turbocharger is powered by the engine exhaust. Turbocharging can improve the fuel economy of diesel engines by recovering waste heat from the exhaust, increasing the excess air factor, and increasing the ratio of engine output to friction losses. Adding an [[intercooler]] to a turbocharged engine further increases engine performance by cooling down the air-mass and thus allowing more air-mass per volume.&lt;ref name=&quot;Merker_2014_439&quot; /&gt;&lt;ref name=&quot;Tschöke_2018_702&quot; /&gt;
+
+{{anchor|Scavenge blower}}A [[two-stroke engine]] does not have a discrete exhaust and intake stroke and thus is incapable of self-aspiration. Therefore, all two-stroke diesel engines must be fitted with a [[scavenge blower|blower]] or some form of compressor to charge the cylinders with air and assist in dispersing exhaust gases, a process referred to as [[scavenging (automotive)|scavenging]].&lt;ref name=&quot;Mau_1984_50&quot; /&gt; Roots-type superchargers were used for ship engines until the mid-1950s, since 1955 they have been widely replaced by turbochargers.&lt;ref name=&quot;Mau_1984_23&quot; /&gt; Usually, a two-stroke ship diesel engine has a single-stage turbocharger with a turbine that has an axial inflow and a radial outflow.&lt;ref name=&quot;Mau_1984_pp53&quot; /&gt;
+
+==Fuel and fluid characteristics==
+{{Main|Diesel fuel}}
+
+In diesel engines, a mechanical injector system vaporises the fuel directly into the combustion chamber (as opposed to a [[Aspirator (pump)|Venturi jet]] in a carburetor, or a [[Fuel injection|fuel injector]] in a manifold injection system vaporising fuel into the intake manifold or intake runners as in a petrol engine). This ''forced vaporisation'' means that less-volatile fuels can be used. More crucially, because only air is inducted into the cylinder in a diesel engine, the compression ratio can be much higher as there is no risk of pre-ignition provided the injection process is accurately timed.&lt;ref name=&quot;Reif_2017_16&quot; /&gt; This means that cylinder temperatures are much higher in a diesel engine than a petrol engine, allowing less volatile fuels to be used.
+
+[[File:MAN 630 L2A 03.jpg|thumb|The MAN 630's [[M-System]] diesel engine is a petrol engine (designed to run on NATO F 46/F 50 petrol), but it also runs on jet fuel, (NATO F 40/F 44), kerosine, (NATO F 58), and diesel engine fuel (NATO F 54/F 75)]]
+
+Therefore, diesel engines can operate on a huge variety of different fuels. In general, fuel for diesel engines should have a proper [[viscosity]], so that the [[injection pump]] can pump the fuel to the injection nozzles without causing damage to itself or corrosion of the fuel line. At injection, the fuel should form a good fuel spray, and it should not have a coking effect upon the injection nozzles. To ensure proper engine starting and smooth operation, the fuel should be willing to ignite and hence not cause a high ignition delay, (this means that the fuel should have a high [[cetane number]]). Diesel fuel should also have a high [[lower heating value]].&lt;ref name=&quot;vPhilippovich_1939_41&quot; /&gt;
+
+Inline mechanical injector pumps generally tolerate poor-quality or bio-fuels better than distributor-type pumps. Also, indirect injection engines generally run more satisfactorily on fuels with a high ignition delay (for instance, petrol) than direct injection engines.&lt;ref name=&quot;vPhilippovich_1939_45&quot; /&gt; This is partly because an indirect injection engine has a much greater 'swirl' effect, improving vaporisation and combustion of fuel, and because (in the case of vegetable oil-type fuels) [[lipid]] depositions can condense on the cylinder walls of a direct-injection engine if combustion temperatures are too low (such as starting the engine from cold). Direct-injected engines with an MAN centre sphere combustion chamber rely on fuel condensing on the combustion chamber walls. The fuel starts vaporising only after ignition sets in, and it burns relatively smoothly. Therefore, such engines also tolerate fuels with poor ignition delay characteristics, and, in general, they can operate on petrol rated 86 [[Octane rating#Research Octane Number (RON)|RON]].&lt;ref name=&quot;MAN_438&quot; /&gt;
+
+=== Fuel types ===
+
+In his 1893 work ''[[Theory and Construction of a Rational Heat Motor]]'', Rudolf Diesel considers using [[coal dust]] as fuel for the diesel engine. However, Diesel just ''considered'' using coal dust (as well as liquid fuels and gas); his actual engine was designed to operate on [[petroleum]], which was soon replaced with regular [[petrol]] and kerosine for further testing purposes, as petroleum proved to be too viscous.&lt;ref name=&quot;Diesel_1913_107&quot; /&gt; In addition to kerosine and petrol, Diesel's engine could also operate on [[ligroin]].&lt;ref name=&quot;Diesel_1913_110&quot; /&gt;
+
+Before diesel engine fuel was standardised, fuels such as [[petrol]], [[kerosine]], [[gas oil]], [[vegetable oil]] and [[Lubricant#Mineral oil|mineral oil]], as well as mixtures of these fuels, were used.&lt;ref name=&quot;MAN_436&quot; /&gt; Typical fuels specifically intended to be used for diesel engines were [[petroleum distillate]]s and [[creosote|coal-tar distillates]] such as the following; these fuels have specific lower heating values of:
+* Diesel oil: 10,200&amp;nbsp;kcal·kg&lt;sup&gt;−1&lt;/sup&gt; (42.7&amp;nbsp;MJ·kg&lt;sup&gt;−1&lt;/sup&gt;) up to 10,250&amp;nbsp;kcal·kg&lt;sup&gt;−1&lt;/sup&gt; (42.9&amp;nbsp;MJ·kg&lt;sup&gt;−1&lt;/sup&gt;)
+* Heating oil: 10,000&amp;nbsp;kcal·kg&lt;sup&gt;−1&lt;/sup&gt; (41.8&amp;nbsp;MJ·kg&lt;sup&gt;−1&lt;/sup&gt;) up to 10,200&amp;nbsp;kcal·kg&lt;sup&gt;−1&lt;/sup&gt; (42.7&amp;nbsp;MJ·kg&lt;sup&gt;−1&lt;/sup&gt;)
+* Coal-tar [[creosote]]: 9,150&amp;nbsp;kcal·kg&lt;sup&gt;−1&lt;/sup&gt; (38.3&amp;nbsp;MJ·kg&lt;sup&gt;−1&lt;/sup&gt;) up to 9,250&amp;nbsp;kcal·kg&lt;sup&gt;−1&lt;/sup&gt; (38.7&amp;nbsp;MJ·kg&lt;sup&gt;−1&lt;/sup&gt;)
+* [[Kerosine]]: up to 10,400&amp;nbsp;kcal·kg&lt;sup&gt;−1&lt;/sup&gt; (43.5&amp;nbsp;MJ·kg&lt;sup&gt;−1&lt;/sup&gt;)
+
+''Source:''&lt;ref name=&quot;vPhilippovich_1939_43&quot; /&gt;
+
+The first diesel fuel standards were the [[DIN 51601]], [[VTL 9140-001]], and [[NATO F 54]], which appeared after World War II.&lt;ref name=&quot;MAN_436&quot; /&gt; The modern European [[EN 590]] [[diesel fuel]] standard was established in May 1993; the modern version of the NATO F 54 standard is mostly identical with it. The DIN 51628 biodiesel standard was rendered obsolete by the 2009 version of the EN 590; FAME biodiesel conforms to the [[EN 14214]] standard. Watercraft diesel engines usually operate on diesel engine fuel that conforms to the [[ISO 8217]] standard ([[Bunker C]]). Also, some diesel engines can operate on [[gas]]ses (such as [[LNG]]).&lt;ref name=&quot;Schwarz_2012_102&quot; /&gt;
+
+=== Modern diesel fuel properties ===
+
+{|class=&quot;wikitable&quot;
+|+Modern diesel fuel properties&lt;ref name=&quot;Reif_2014_53&quot; /&gt;
+|-
+|
+!EN 590 (as of 2009)
+!EN 14214 (as of 2010)
+|-
+!Ignition performance
+| ≥ 51 [[Cetane number|CN]]
+| ≥ 51 CN
+|-
+!Density at 15&amp;nbsp;°C
+| 820...845&amp;nbsp;kg·m&lt;sup&gt;−3&lt;/sup&gt;
+| 860...900&amp;nbsp;kg·m&lt;sup&gt;−3&lt;/sup&gt;
+|-
+!Sulphur content
+| ≤10&amp;nbsp;mg·kg&lt;sup&gt;−1&lt;/sup&gt;
+| ≤10&amp;nbsp;mg·kg&lt;sup&gt;−1&lt;/sup&gt;
+|-
+!Water content
+| ≤200&amp;nbsp;mg·kg&lt;sup&gt;−1&lt;/sup&gt;
+| ≤500&amp;nbsp;mg·kg&lt;sup&gt;−1&lt;/sup&gt;
+|-
+!Lubricity
+| 460&amp;nbsp;µm
+| 460&amp;nbsp;µm
+|-
+!Viscosity at 40&amp;nbsp;°C
+| 2.0...4.5&amp;nbsp;mm&lt;sup&gt;2&lt;/sup&gt;·s&lt;sup&gt;−1&lt;/sup&gt;
+| 3.5...5.0&amp;nbsp;mm&lt;sup&gt;2&lt;/sup&gt;·s&lt;sup&gt;−1&lt;/sup&gt;
+|-
+![[Fatty acid methyl ester|FAME]] content
+| ≤7.0%
+| ≥96.5%
+|-
+!Molar H/C ratio
+| –
+| 1.69
+|-
+!Lower heating value
+| –
+| 37.1&amp;nbsp;MJ·kg&lt;sup&gt;−1&lt;/sup&gt;
+|}
+
+===Gelling===
+DIN 51601 diesel fuel was prone to ''waxing'' or ''gelling'' in cold weather; both are terms for the solidification of diesel oil into a partially crystalline state. The crystals build up in the fuel system (especially in fuel filters), eventually starving the engine of fuel and causing it to stop running.&lt;ref name=&quot;vB_2017_1018&quot; /&gt; Low-output electric heaters in [[fuel tank]]s and around fuel lines were used to solve this problem. Also, most engines have a ''spill return'' system, by which any excess fuel from the injector pump and injectors is returned to the fuel tank. Once the engine has warmed, returning warm fuel prevents waxing in the tank. Some manufacturers, such as BMW, recommended fuelling diesel cars with petrol to prevent the fuel from gelling when the temperatures dropped below −15&amp;nbsp;°C.&lt;ref name=&quot;BMW_1985&quot; /&gt;
+
+==Safety==
+
+===Fuel flammability===
+
+Diesel fuel is less [[flammability|flammable]] than petrol, because its flash point is 55&amp;nbsp;°C,&lt;ref name=&quot;vB_2017_1018&quot; /&gt;&lt;ref name=&quot;vPhilippovich_1939_42&quot; /&gt; leading to a lower risk of fire caused by fuel in a vehicle equipped with a diesel engine.
+
+Diesel fuel can create an explosive air/vapour mix under the right conditions. However, compared with petrol, it is less prone due to its lower [[vapor pressure|vapour pressure]], which is an indication of evaporation rate. The Material Safety Data Sheet&lt;ref name=&quot;Ultra low sulphur diesel&quot; /&gt; for ultra-low sulfur diesel fuel indicates a vapour explosion hazard for diesel fuel indoors, outdoors, or in sewers.
+
+===Cancer===
+[[Diesel exhaust]] has been classified as an [[List of IARC Group 1 carcinogens|IARC Group 1 carcinogen]]. It causes [[lung cancer]] and is associated with an increased risk for [[bladder cancer]].&lt;ref name=PRDEE&gt;{{cite web|title=IARC: Diesel Engine Exhaust Carcinogenic |url=https://www.iarc.fr/wp-content/uploads/2018/07/pr213_E.pdf/ |archiveurl=https://web.archive.org/web/20120912080023/http://press.iarc.fr/pr213_E.pdf |archivedate=September 12, 2012 |publisher=International Agency for Research on Cancer (IARC) |accessdate=June 12, 2012 |format=Press release |quote=June 12, 2012 – After a week-long meeting of international experts, the International Agency for Research on Cancer (IARC), which is part of the World Health Organization (WHO), today classified diesel engine exhaust as carcinogenic to humans (Group 1), based on sufficient evidence that exposure is associated with an increased risk for bladder cancer |url-status=dead |df=mdy }}&lt;/ref&gt;
+
+===Engine runaway (uncontrollable overspeeding)===
+See [[diesel engine runaway]].
+
+==Applications==
+The characteristics of diesel have different advantages for different applications.
+
+===Passenger cars===
+Diesel engines have long been popular in bigger cars and have been used in smaller cars such as [[supermini]]s in Europe since the 1980s. They were popular in larger cars earlier, as the weight and cost penalties were less noticeable.&lt;ref name=AG125&gt;{{cite journal | ref = AG125 | journal = De AutoGids | number = 125 | volume = 5 | page = 6 | title = Gedetailleerde Test: Citroën BX19 TRD | trans-title = Detailed Test | last = Pirotte | first = Marcel | language = nl-be | date = 1984-07-05 | location = Brussels, Belgium }}&lt;/ref&gt; Smooth operation as well as high low end torque are deemed important for passenger cars and small commercial vehicles. The introduction of electronically controlled fuel injection significantly improved the smooth torque generation, and starting in the early 1990s, car manufacturers began offering their high-end luxury vehicles with diesel engines. Passenger car diesel engines usually have between three and ten cylinders, and a displacement ranging from 0.8 to 5.0 litres. Modern powerplants are usually turbocharged and have direct injection.&lt;ref name=&quot;Reif_2014_11&quot; /&gt;
+
+Diesel engines do not suffer from intake-air throttling, resulting in very low fuel consumption especially at low partial load&lt;ref name=&quot;Reif_2014_23&quot; /&gt; (for instance: driving at city speeds). One fifth of all passenger cars worldwide have diesel engines, with many of them being in Europe, where approximately 47% of all passenger cars are diesel-powered.&lt;ref name=&quot;Tschöke_2018_1000&quot; /&gt; [[Daimler-Benz]] in conjunction with [[Robert Bosch GmbH]] produced diesel-powered passenger cars starting in 1936.&lt;ref name=&quot;Tschöke_2018_10&quot; /&gt; The popularity of diesel-powered passenger cars in markets such as India, South Korea and Japan is increasing (as of 2018).&lt;ref name=&quot;Tschöke_2018_981&quot; /&gt;
+
+===Commercial vehicles and lorries===
+{{Image frame|width=220|content=
+{{Graph:Chart|width=150|height=200|xAxisTitle=Engine model|yAxisTitle=Lifespan (km)|yAxisFormat=s|type=rect |yGrid= |xAxisAngle=-40
+|x=OM 355,OM 400, OM 500, OM 470|y=500000,750000,1000000,1200000}}
+|caption=Lifespan of Mercedes-Benz diesel engines&lt;ref name=&quot;Merker_2014_264&quot; /&gt;|link=|align=right}}
+
+In 1893, Rudolf Diesel suggested that the diesel engine could possibly power ‘wagons’ (lorries).&lt;ref name=&quot;Diesel_1893_91&quot; /&gt; The first lorries with diesel engines were brought to market in 1924.&lt;ref name=&quot;Tschöke_2018_10&quot;/&gt;
+
+Modern diesel engines for lorries have to be both extremely reliable and very fuel efficient. Common-rail direct injection, turbocharging and four valves per cylinder are standard. Displacements range from 4.5 to 15.5 litres, with [[Power-to-weight ratio|power-to-mass ratios]] of 2.5–3.5&amp;nbsp;kg·kW&lt;sup&gt;−1&lt;/sup&gt; for heavy duty and 2.0–3.0&amp;nbsp;kg·kW&lt;sup&gt;−1&lt;/sup&gt; for medium duty engines. [[V engine|V6 and V8 engines]] used to be common, due to the relatively low engine mass the V configuration provides. Recently, the V configuration has been abandoned in favour of straight engines. These engines are usually straight-6 for heavy and medium duties and straight-4 for medium duty. Their [[undersquare]] design causes lower overall piston speeds which results in increased lifespan of up to {{convert| 1200000| km|mi}}.&lt;ref name=&quot;Merker_2014_48&quot; /&gt; Compared with 1970s diesel engines, the expected lifespan of modern lorry diesel engines has more than doubled.&lt;ref name=&quot;Merker_2014_264&quot; /&gt;
+
+===Railroad rolling stock===
+Diesel engines for locomotives are built for continuous operation and may require the ability to use poor quality fuel in some circumstances.&lt;ref name=&quot;Reif_2014_12&quot; /&gt; Some locomotives use two-stroke diesel engines.&lt;ref name=&quot;Merker_2014_284&quot; /&gt; Diesel engines have eclipsed [[steam engine]]s as the prime mover on all non-electrified railroads in the industrialised world. The first [[diesel locomotive]]s appeared in 1913,&lt;ref name=&quot;Tschöke_2018_10&quot; /&gt; and [[diesel multiple units]] soon after. Many modern diesel locomotives are actually [[diesel-electric locomotive]]s: the diesel engine is used to power an electric generator that in turn powers electric traction motors with no mechanical connection between diesel engine and traction.&lt;ref name=&quot;vB_2017_1289&quot; /&gt; While [[electric locomotive]]s have replaced the [[diesel locomotive]] for some passenger traffic in Europe and Asia, diesel is still today very popular for cargo-hauling [[freight train]]s and on tracks where electrification is not feasible.
+
+In the 1940s, road vehicle diesel engines with power outputs of 150...200&amp;nbsp;PS (110...147&amp;nbsp;kW) were considered reasonable for DMUs. Commonly, regular truck powerplants were used. The height of these engines had to be less than 1,000&amp;nbsp;mm to allow underfloor installation. Usually, the engine was mated with a pneumatically operated mechanical gearbox, due to the low size, mass, and production costs of this design. Some DMUs used hydraulic torque converters instead. Diesel-electric transmission was not suitable for such small engines.&lt;ref name=&quot;Kremser_1942_22&quot; /&gt; In the 1930s, the [[Deutsche Reichsbahn]] standardised its first DMU engine. It was a 30.3 litre, 12-cylinder boxer unit, producing 275&amp;nbsp;PS (202&amp;nbsp;kW). Several German manufacturers produced engines according to this standard.&lt;ref name=&quot;Kremser_1942_23&quot; /&gt;
+
+===Watercraft===
+[[File:8 cylinder Burmeister &amp; Wain Diesel engine for MS Glenapp 1920.png|thumb|One of the eight-cylinder 3200 I.H.P. Harland and Wolff – Burmeister &amp; Wain diesel engines installed in the motorship ''Glenapp''. This was the highest powered diesel engine yet (1920) installed in a ship. Note man standing lower right for size comparison.]]
+[[File:InleHandCrank.webm|thumb|right|Hand-cranking a boat diesel motor in [[Inle Lake]] ([[Myanmar]]).]]
+The requirements for marine diesel engines vary, depending on the application. For military use and medium-size boats, medium-speed four-stroke diesel engines are most suitable. These engines usually have up to 24 cylinders and come with power outputs in the one-digit Megawatt region.&lt;ref name=&quot;Reif_2014_12&quot; /&gt; Small boats may use lorry diesel engines. Large ships use extremely efficient, low-speed two-stroke diesel engines. They can reach efficiencies of up to 55%. Unlike most regular diesel engines, two-stroke watercraft engines use highly viscous [[fuel oil]].&lt;ref name=&quot;Reif_2014_13&quot; /&gt; Submarines are usually diesel-electric.&lt;ref name=&quot;vB_2017_1289&quot; /&gt;
+
+The first diesel engines for ships were made by A. B. Diesels Motorer Stockholm in 1903. These engines were three-cylinder units of 120&amp;nbsp;PS (88&amp;nbsp;kW) and four-cylinder units of 180&amp;nbsp;PS (132&amp;nbsp;kW) and used for Russian ships. In World War I, especially submarine diesel engine development advanced quickly. By the end of the War, double acting piston two-stroke engines with up to 12,200&amp;nbsp;PS (9&amp;nbsp;MW) had been made for marine use.&lt;ref name=&quot;Mau_1984_9_11&quot; /&gt;
+
+===Aviation===
+{{Main|Aircraft diesel engine}}
+Diesel engines had been used in aircraft before World War II, for instance, in the rigid airship ''[[LZ 129 Hindenburg]]'', which was powered by four [[Daimler-Benz DB 602]] diesel engines,&lt;ref&gt;Kyrill von Gersdorff, Kurt Grasmann: ''Flugmotoren und Strahltriebwerke: Entwicklungsgeschichte der deutschen Luftfahrtantriebe von den Anfängen bis zu den internationalen Gemeinschaftsentwicklungen'', Bernard &amp; Graefe, 1985, {{ISBN|9783763752836}}, p. 14&lt;/ref&gt; or in several Junkers aircraft, which had [[Junkers Jumo 205|Jumo 205]] engines installed.&lt;ref name=&quot;Reif_2012_103&quot; /&gt; Until the late 1970s, there has not been any applications of the diesel engine in aircraft. In 1978, Karl H. Bergey argued that “the likelihood of a general aviation diesel in the near future is remote.”&lt;ref&gt;Karl H. Bergey: ''[https://books.google.at/books?id=av85AQAAMAAJ&amp;printsec=frontcover&amp;source=gbs_ge_summary_r&amp;cad=0#v=onepage&amp;q&amp;f=false Assessment of New Technology for General Aviation Aircraft]'', Report for U.S. Department of Transportation, September 1978, p. 19&lt;/ref&gt; In recent years (2016), diesel engines have found use in unmanned aircraft (UAV), due to their reliability, durability, and low fuel consumption.&lt;ref&gt;Rik D Meininger et al.: ''Knock criteria for aviation diesel engines'', International Journal of Engine Research, Vol 18, Issue 7, 2017, [https://doi.org/10.1177/1468087416669882 doi/10.1177]&lt;/ref&gt; In early 2019, [[AOPA]] reported, that a diesel engine model for general aviation aircraft is “approaching the finish line.”&lt;ref&gt;AOPA: ''[https://www.aopa.org/news-and-media/all-news/2019/january/23/eps-gives-certification-update-on-diesel-engine EPS gives certification update on diesel engine]'', 23 January 2019. Retrieved 1 November 2019.&lt;/ref&gt;
+
+===Non-road diesel engines===
+[[File:Porsche F 218.jpg|thumb|Air-cooled diesel engine of a 1959 Porsche 218]]
+
+[[Non-road engine|Non-road diesel engines]] are commonly used for [[construction equipment]]. Fuel efficiency, reliability and ease of maintenance are very important for such engines, whilst high power output and quiet operation are negligible. Therefore, mechanically controlled fuel injection and air-cooling are still very common. The common power outputs of non-road diesel engines vary a lot, with the smallest units starting at 3&amp;nbsp;kW, and the most powerful engines being heavy duty lorry engines.&lt;ref name=&quot;Reif_2014_12&quot; /&gt;
+
+===Stationary diesel engines===
+[[File:The National Archives UK - CO 1069-182-9.jpg|thumb|Three English Electric 7SRL diesel-alternator sets being installed at the Saateni Power Station, [[Zanzibar]] 1955]]
+
+Stationary diesel engines are commonly used for electricity generation, but also for powering refrigerator compressors, or other types of compressors or pumps. Usually, these engines run permanently, either with mostly partial load, or intermittently, with full load. Stationary diesel engines powering electric generators that put out an alternating current, usually operate with alternating load, but fixed rotational frequency. This is due to the mains' fixed frequency of either 50&amp;nbsp;Hz (Europe), or 60&amp;nbsp;Hz (United States). The engine's crankshaft rotational frequency is chosen so that the mains' frequency is a multiple of it. For practical reasons, this results in crankshaft rotational frequencies of either 25&amp;nbsp;Hz (1500 per minute) or 30&amp;nbsp;Hz (1800 per minute).&lt;ref name=&quot;Tschöke_2018_1066&quot; /&gt;
+
+==Low heat rejection engines==
+A special class of prototype internal combustion piston engines has been developed over several decades with the goal of improving efficiency by reducing heat loss.&lt;ref name=&quot;Papers on adiabatic engines&quot; /&gt; These engines are variously called adiabatic engines; due to better approximation of adiabatic expansion; low heat rejection engines, or high temperature engines.&lt;ref name=&quot;Schwarz_1993&quot; /&gt; They are generally piston engines with combustion chamber parts lined with ceramic thermal barrier coatings.&lt;ref name=&quot;BRYZIK_1993&quot; /&gt; Some make use of pistons and other parts made of titanium which has a low thermal conductivity&lt;ref name=&quot;Danielson_1993&quot; /&gt; and density. Some designs are able to eliminate the use of a cooling system and associated parasitic losses altogether.&lt;ref name=&quot;Nanlin_1993&quot; /&gt; Developing lubricants able to withstand the higher temperatures involved has been a major barrier to commercialization.&lt;ref name=&quot;Kamo_1995&quot; /&gt;
+
+==Future developments==
+
+In mid-2010s literature, main development goals for future diesel engines are described as improvements of exhaust emissions, reduction of fuel consumption, and increase of lifespan (2014).&lt;ref name=&quot;Merker_2014_58&quot; /&gt;&lt;ref name=&quot;Reif_2014_11&quot; /&gt; It is said that the diesel engine, especially the diesel engine for commercial vehicles, will remain the most important vehicle powerplant until the mid-2030s. Editors assume that the complexity of the diesel engine will increase further (2014).&lt;ref name=&quot;Merker_2014_273&quot; /&gt; Some editors expect a future convergency of diesel and Otto engines' operating principles due to Otto engine development steps made towards [[homogeneous charge compression ignition]] (2017).&lt;ref name=&quot;Stan_2017_252&quot; /&gt;
+
+==See also==
+{{Div col}}
+* [[Aircraft diesel engine]]
+* [[Diesel locomotive]]
+* [[Diesel automobile racing]]
+* [[Diesel-electric transmission]]
+* [[Diesel cycle]]
+* [[DieselHouse]]
+* [[Diesel generator]]
+* [[Dieselisation]]
+* [[History of the internal combustion engine]]
+* [[Indirect injection]]
+* [[Partially premixed combustion]]
+* [[Reactivity controlled compression ignition]]
+{{div col end}}
+
+==References==
+{{Reflist|30em
+|refs=
+
+;Van Basshuysen
+&lt;ref name=&quot;vB_2017_755&quot;&gt;Richard van Basshuysen (ed.), Fred Schäfer (ed.): ''Handbuch Verbrennungsmotor: Grundlagen, Komponenten, Systeme, Perspektiven'', 8th edition, Springer, Wiesbaden 2017, {{ISBN|978-3-658-10901-1}}. p. 755&lt;/ref&gt;
+&lt;ref name=&quot;vB_2017_1018&quot;&gt;Richard van Basshuysen (ed.), Fred Schäfer (ed.): ''Handbuch Verbrennungsmotor: Grundlagen, Komponenten, Systeme, Perspektiven'', 8th edition, Springer, Wiesbaden 2017, {{ISBN|978-3-658-10901-1}}. p. 1018&lt;/ref&gt;
+&lt;ref name=&quot;vB_2017_1289&quot;&gt;Richard van Basshuysen (ed.), Fred Schäfer (ed.): ''Handbuch Verbrennungsmotor: Grundlagen, Komponenten, Systeme, Perspektiven'', 8th edition, Springer, Wiesbaden 2017, {{ISBN|978-3-658-10901-1}}. p. 1289&lt;/ref&gt;
+
+&lt;ref name=&quot;vBasshuysen_2017_24&quot;&gt;Richard van Basshuysen (ed.): ''Ottomotor mit Direkteinspritzung und Direkteinblasung: Ottokraftstoffe, Erdgas, Methan, Wasserstoff'', 4th edition, Springer, Wiesbaden, 2017. {{ISBN|978-3658122157}}. pp. 24, 25&lt;/ref&gt;
+&lt;ref name=&quot;vBasshuysen_2017_141&quot;&gt;Richard van Basshuysen (ed.): ''Ottomotor mit Direkteinspritzung und Direkteinblasung: Ottokraftstoffe, Erdgas, Methan, Wasserstoff'', 4th edition, Springer, Wiesbaden, 2017. {{ISBN|978-3658122157}}. p. 141&lt;/ref&gt;
+
+;Bosch 1993
+&lt;ref name=&quot;Bosch_1993_27&quot;&gt;Robert Bosch (ed.): ''Diesel-Einspritztechnik'', Springer, Berlin/Heidelberg 1993, {{ISBN|978-3662009048}}, p. 27&lt;/ref&gt;
+
+;Böge 2017
+&lt;ref name=&quot;Böge_2017_1150&quot;&gt;Alfred Böge, Wolfgang Böge (ed.): ''Handbuch Maschinenbau – Grundlagen und Anwendungen der Maschinenbau-Technik'', 23rd edition, Springer, Wiesbaden 2017, {{ISBN|978-3-658-12528-8}}, p. 1150&lt;/ref&gt;
+&lt;ref name=&quot;Böge_2017_1190&quot;&gt;Alfred Böge, Wolfgang Böge (ed.): ''Handbuch Maschinenbau – Grundlagen und Anwendungen der Maschinenbau-Technik'', 23rd edition, Springer, Wiesbaden 2017, {{ISBN|978-3-658-12528-8}}, p. 1190&lt;/ref&gt;
+
+;Braess 2012
+&lt;ref name=&quot;Braess_2012_225&quot;&gt;Hans-Hermann Braess (ed.), Ulrich Seiffert (ed.): Vieweg Handbuch Kraftfahrzeugtechnik, 6th edition, Springer, Wiesbaden 2012, {{ISBN|978-3-8348-8298-1}}. p. 225&lt;/ref&gt;
+
+;BMW 1985
+&lt;ref name=&quot;BMW_1985&quot;&gt;BMW AG (ed.): [https://bmw-grouparchiv.de/research/media/9bddc3a9-90a1-4269-837c-b1775730d863/web BMW E28 owner's manual], 1985, section 4–20&lt;/ref&gt;
+
+;Bryzik 1993
+&lt;ref name=&quot;BRYZIK_1993&quot;&gt;{{cite book|chapter-url=http://papers.sae.org/931021/|chapter=Low Heat Rejection From High Output Ceramic Coated Diesel Engine and Its Impact on Future Design|first1=Walter|title=SAE Technical Paper Series|volume=1|last1=Bryzik|first2=Ernest|last2=Schwarz|first3=Roy|last3=Kamo|first4=Melvin|last4=Woods|date=March 1, 1993|via=papers.sae.org|doi=10.4271/931021}}&lt;/ref&gt;
+
+;Cole 2014
+&lt;ref name=&quot;Cole_2014_64&quot;&gt;Lance Cole: ''Citroën – The Complete Story'', The Crowood Press, Ramsbury 2014, {{ISBN|978-1-84797-660-4}}. p. 64&lt;/ref&gt;
+
+;Cummins
+&lt;ref name=&quot;Cummins_1946&quot;&gt;US Patent #2,408,298, filed April 1943, awarded Sept 24, 1946&lt;/ref&gt;
+&lt;ref name=&quot;Cummins_1965&quot;&gt;US Patent #3,220,392, filed June 4, 1962, granted Nov 30, 1965.&lt;/ref&gt;
+
+;Daimler 2009
+&lt;ref name=&quot;Daimler_2009&quot;&gt;Daimler Media : [https://media.daimler.com/marsMediaSite/de/instance/ko/Vorkammer-Adieu-Im-Jahr-1964-kommen-erste-Direkteinspritzer-bei-Lkw-und-Bus.xhtml?oid=9913116 Vorkammer Adieu: Im Jahr 1964 kommen erste Direkteinspritzer bei Lkw und Bus], 12 Februar 2009, retrieved 22 February 2019.&lt;/ref&gt;
+&lt;ref name=&quot;Daimler_2009_2&quot;&gt;Daimler AG: ''[https://media.daimler.com/marsMediaSite/de/instance/ko/Geburt-einer-Legende-Die-1949-vorgestellte-Motorenbaureihe-300-ist-ein-grosser-Wurf.xhtml?oid=9914319 Die Geburt einer Legende: Die Baureihe 300 ist ein großer Wurf]'', 22 April 2009, retrieved 23 February 2019&lt;/ref&gt;
+
+;Danielson 1993
+&lt;ref name=&quot;Danielson_1993&quot;&gt;{{cite book|chapter-url=http://papers.sae.org/930985/|chapter=Thermomechanical Stress Analysis of Novel Low Heat Rejection Cylinder Head Designs|first1=Eugene|title=SAE Technical Paper Series|volume=1|last1=Danielson|first2=David|last2=Turner|first3=Joseph|last3=Elwart|first4=Walter|last4=Bryzik|date=March 1, 1993|via=papers.sae.org|doi=10.4271/930985}}&lt;/ref&gt;
+
+;Diehl 2013
+&lt;ref name=&quot;Diehl_2013_100&quot;&gt;Peter Diehl: ''Auto Service Praxis'', magazine 06/2013, pp. 100&lt;/ref&gt;
+
+;Diesel
+&lt;ref name=&quot;Diesel_1892&quot;&gt;[http://www.google.com/patents/about?id=oV5wAAAAEBAJ Method Of and Apparatus For Converting Heat Into Work], United States Patent No. 542,846, Filed Aug 26, 1892, Issued July 16, 1895, Inventor Rudolf Diesel of Berlin Germany&lt;/ref&gt;
+&lt;ref name=&quot;Diesel_1893_EN&quot;&gt;{{cite book|url=https://books.google.com/?id=2fRLAAAAMAAJ&amp;printsec=frontcover&amp;dq=rudolph+diesel+experiments#v=onepage&amp;q=rudolph+diesel+experiments&amp;f=false|title=Theory and Construction of a Rational Heat Motor|first=Rudolf|last=Diesel|date=August 23, 1894|publisher=E. &amp; F. N. Spon}}&lt;/ref&gt;
+&lt;ref name=&quot;Diesel_1893_1&quot;&gt;[[Rudolf Diesel]]: ''[[Theorie und Konstruktion eines rationellen Wärmemotors zum Ersatz der Dampfmaschine und der heute bekannten Verbrennungsmotoren]]'', Springer, Berlin 1893, {{ISBN|978-3-642-64949-3}}.&lt;/ref&gt;
+&lt;ref name=&quot;Diesel_1893_51&quot;&gt;[[Rudolf Diesel]]: ''[[Theorie und Konstruktion eines rationellen Wärmemotors zum Ersatz der Dampfmaschine und der heute bekannten Verbrennungsmotoren]]'', Springer, Berlin 1893, {{ISBN|978-3-642-64949-3}}. p. 51&lt;/ref&gt;
+&lt;ref name=&quot;Diesel_1893_91&quot;&gt;[[Rudolf Diesel]]: ''[[Theorie und Konstruktion eines rationellen Wärmemotors zum Ersatz der Dampfmaschine und der heute bekannten Verbrennungsmotoren]]'', Springer, Berlin 1893, {{ISBN|978-3-642-64949-3}}. p. 91&lt;/ref&gt;
+&lt;ref name=&quot;Diesel_1893&quot;&gt;{{cite book|url=https://archive.org/details/dieselsrational00diesgoog|quote=diesel rational heat motor.|title=Diesel's Rational Heat Motor: A Lecture|first=Rudolf|last=Diesel|date=October 28, 1897|publisher=Progressive Age Publishing Company|accessdate=October 28, 2017}}&lt;/ref&gt;
+&lt;ref name=&quot;Diesel_1895_2&quot;&gt;[http://www.google.com/patents/about?id=vQVgAAAAEBAJ Internal-Combustion Engine], U.S. Patent number 608845, Filed Jul 15 1895, Issued August 9, 1898, Inventor Rudolf Diesel, Assigned to the Diesel Motor Company of America (New York)&lt;/ref&gt;
+&lt;ref name=&quot;Diesel_1895_EN&quot;&gt;{{cite web|url=http://pdfpiw.uspto.gov/.piw?Docid=00608845&amp;homeurl=http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1%2526Sect2=HITOFF%2526d=PALL%2526p=1%2526u=%25252Fnetahtml%25252FPTO%25252Fsrchnum.htm%2526r=1%2526f=G%2526l=50%2526s1=0608845.PN.%2526OS=PN/0608845%2526RS=PN/0608845&amp;PageNum=&amp;Rtype=&amp;SectionNum=&amp;idkey=NONE&amp;Input=View+first+page|title=Patent Images|website=Pdfpiw.uspto.gov}}&lt;/ref&gt;
+
+&lt;ref name=&quot;Diesel_1913_1&quot;&gt;[[Rudolf Diesel]]: ''Die Entstehung des Dieselmotors'', Springer, Berlin 1913, {{ISBN|978-3-642-64940-0}}. p. 1&lt;/ref&gt;
+&lt;ref name=&quot;Diesel_1913_6&quot;&gt;[[Rudolf Diesel]]: ''Die Entstehung des Dieselmotors'', Springer, Berlin 1913, {{ISBN|978-3-642-64940-0}}. p. 6&lt;/ref&gt;
+&lt;ref name=&quot;Diesel_1913_8&quot;&gt;[[Rudolf Diesel]]: ''Die Entstehung des Dieselmotors'', Springer, Berlin 1913, {{ISBN|978-3-642-64940-0}}. p. 8&lt;/ref&gt;
+&lt;ref name=&quot;Diesel_1913_13&quot;&gt;[[Rudolf Diesel]]: ''Die Entstehung des Dieselmotors'', Springer, Berlin 1913, {{ISBN|978-3-642-64940-0}}. p. 13&lt;/ref&gt;
+&lt;ref name=&quot;Diesel_1913_17&quot;&gt;[[Rudolf Diesel]]: ''Die Entstehung des Dieselmotors'', Springer, Berlin 1913, {{ISBN|978-3-642-64940-0}}. p. 17&lt;/ref&gt;
+&lt;ref name=&quot;Diesel_1913_21&quot;&gt;[[Rudolf Diesel]]: ''Die Entstehung des Dieselmotors'', Springer, Berlin 1913, {{ISBN|978-3-642-64940-0}}. p. 21&lt;/ref&gt;
+&lt;ref name=&quot;Diesel_1913_22&quot;&gt;[[Rudolf Diesel]]: ''Die Entstehung des Dieselmotors'', Springer, Berlin 1913, {{ISBN|978-3-642-64940-0}}. p. 22&lt;/ref&gt;
+&lt;ref name=&quot;Diesel_1913_38&quot;&gt;[[Rudolf Diesel]]: ''Die Entstehung des Dieselmotors'', Springer, Berlin 1913, {{ISBN|978-3-642-64940-0}}. p. 38&lt;/ref&gt;
+&lt;ref name=&quot;Diesel_1913_64&quot;&gt;[[Rudolf Diesel]]: ''Die Entstehung des Dieselmotors'', Springer, Berlin 1913, {{ISBN|978-3-642-64940-0}}. p. 64&lt;/ref&gt;
+&lt;ref name=&quot;Diesel_1913_75&quot;&gt;[[Rudolf Diesel]]: ''Die Entstehung des Dieselmotors'', Springer, Berlin 1913, {{ISBN|978-3-642-64940-0}}. p. 75&lt;/ref&gt;
+&lt;ref name=&quot;Diesel_1913_78&quot;&gt;[[Rudolf Diesel]]: ''Die Entstehung des Dieselmotors'', Springer, Berlin 1913, {{ISBN|978-3-642-64940-0}}. p. 78&lt;/ref&gt;
+&lt;ref name=&quot;Diesel_1913_107&quot;&gt;[[Rudolf Diesel]]: ''Die Entstehung des Dieselmotors'', Springer, Berlin 1913, {{ISBN|978-3-642-64940-0}}. p. 107&lt;/ref&gt;
+&lt;ref name=&quot;Diesel_1913_110&quot;&gt;[[Rudolf Diesel]]: ''Die Entstehung des Dieselmotors'', Springer, Berlin 1913, {{ISBN|978-3-642-64940-0}}. p. 110&lt;/ref&gt;
+
+;Dubbel 1981
+&lt;ref name=&quot;Dubbel_1981_712&quot;&gt;Wolfgang Beitz, Karl-Heinz Küttner (ed): ''Dubbel – Taschenbuch für den Maschinenbau'', 14th edition, Springer, Berlin/Heidelberg 1981, {{ISBN|978-3-662-28196-3}}, p. 712&lt;/ref&gt;
+
+;Dubbel 2018
+&lt;ref name=&quot;Dubbel_2018_1187&quot;&gt;Karl-Heinrich Grote, Beate Bender, Dietmar Göhlich (ed.): ''Dubbel – Taschenbuch für den Maschinenbau'', 25th edition, Springer, Heidelberg 2018, {{ISBN|978-3-662-54804-2}}, 1187 pp. (P75)&lt;/ref&gt;
+&lt;ref name=&quot;Dubbel_2018_1191&quot;&gt;Karl-Heinrich Grote, Beate Bender, Dietmar Göhlich (ed.): ''Dubbel – Taschenbuch für den Maschinenbau'', 25th edition, Springer, Heidelberg 2018, {{ISBN|978-3-662-54804-2}}, 1191 pp. (P79)&lt;/ref&gt;
+&lt;ref name=&quot;Grote_2018_P93&quot;&gt;Karl-Heinrich Grote, Beate Bender, Dietmar Göhlich (ed.): ''Dubbel – Taschenbuch für den Maschinenbau'', 25th edition, Springer, Heidelberg 2018, {{ISBN|978-3-662-54804-2}}, 1205 pp. (P93)&lt;/ref&gt;
+
+;Egger 2002
+&lt;ref name=&quot;Egger_2002&quot;&gt;Klaus Egger, Johann Warga, Wendelin Klügl (auth.): ''[https://link.springer.com/article/10.1007%2FBF03226642#citeas Neues Common-Rail-Einspritzsystem mit Piezo-Aktorik für Pkw-Dieselmotoren]'', in MTZ – Motortechnische Zeitschrift, Springer, September 2002, Volume 63, Issue 9, pp. 696–704&lt;/ref&gt;
+
+;EPA 2004
+&lt;ref name=&quot;EPA_2004&quot;&gt;{{cite web
+|url=http://www.epa.gov/otaq/models/ngm/may04/crc0304c.pdf |title=Medium and Heavy Duty Diesel Vehicle Modeling Using a Fuel Consumption Methodology |year=2004 |accessdate=2017-04-25 |publisher=US EPA}}&lt;/ref&gt;
+
+;Von Fersen
+
+&lt;ref name=&quot;vFersen_1986_272&quot;&gt;Olaf von Fersen (ed.): ''Ein Jahrhundert Automobiltechnik: Personenwagen'', Springer, Düsseldorf 1986, {{ISBN|978-3-642-95773-4}}. p. 272&lt;/ref&gt;
+&lt;ref name=&quot;vFersen_1986_274&quot;&gt;Olaf von Fersen (ed.): ''Ein Jahrhundert Automobiltechnik: Personenwagen'', Springer, Düsseldorf 1986, {{ISBN|978-3-642-95773-4}}. p. 274&lt;/ref&gt;
+&lt;ref name=&quot;vFersen_1987_156&quot;&gt;Olaf von Fersen (ed.): ''Ein Jahrhundert Automobiltechnik: Nutzfahrzeuge'', Springer, Heidelberg 1987, {{ISBN|978-3-662-01120-1}}, p. 156&lt;/ref&gt;
+
+;Flatz 1946
+&lt;ref name=&quot;Flatz_1946&quot;&gt;E. Flatz: ''Der neue luftgekühlte Deutz-Fahrzeug-Dieselmotor''. MTZ 8, 33–38 (1946)&lt;/ref&gt;
+
+;Fleet Owner 1964
+&lt;ref name=&quot;FleetOwner_1964_107&quot;&gt;Fleet Owner, Volume 59, Primedia Business Magazines &amp; Media, Incorporated, 1964, p. 107&lt;/ref&gt;
+
+;Hemmerlein 1991
+&lt;ref name=&quot;Hemmerlein_1991&quot;&gt;{{Cite journal|last=Hemmerlein|first=Norbert|last2=Korte|first2=Volker|last3=Richter|first3=Herwig|last4=Schröder|first4=Günter|date=1991-02-01|title=Performance, Exhaust Emissions and Durability of Modern Diesel Engines Running on Rapeseed Oil|journal=SAE Technical Paper Series|volume=1|doi=10.4271/910848}}&lt;/ref&gt;
+
+;Kamo 1996
+&lt;ref name=&quot;Kamo_1995&quot;&gt;{{cite book|chapter-url=http://papers.sae.org/950979/|chapter=Recent Development of Tribological Coatings for High Temperature Engines|first1=Lloyd|title=SAE Technical Paper Series|volume=1|last1=Kamo|first2=Ardy|last2=Kleyman|first3=Walter|last3=Bryzik|first4=Ernest|last4=Schwarz|date=February 1, 1995|via=papers.sae.org|doi=10.4271/950979}}&lt;/ref&gt;
+
+;Karim 2015
+&lt;ref name=&quot;Karim_2015_2&quot;&gt;Ghazi A. Karim: ''Dual-fuel Diesel engines'', CRC Press, Boca Raton London New York 2015, {{ISBN|978-1-4987-0309-3}}, p. 2&lt;/ref&gt;
+
+;Kremser 1942
+&lt;ref name=&quot;Kremser_1942_22&quot;&gt;Hans Kremser (auth.): ''Der Aufbau schnellaufender Verbrennungskraftmaschinen für Kraftfahrzeuge und Triebwagen''. In: Hans List (ed.): Die Verbrennungskraftmaschine. Vol. 11. Springer, Wien 1942, {{ISBN|978-3-7091-5016-0}} p. 22&lt;/ref&gt;
+&lt;ref name=&quot;Kremser_1942_23&quot;&gt;Hans Kremser (auth.): ''Der Aufbau schnellaufender Verbrennungskraftmaschinen für Kraftfahrzeuge und Triebwagen''. In: Hans List (ed.): Die Verbrennungskraftmaschine. Vol. 11. Springer, Wien 1942, {{ISBN|978-3-7091-5016-0}} p. 23&lt;/ref&gt;
+&lt;ref name=&quot;Kremser_1942_24&quot;&gt;Hans Kremser (auth.): ''Der Aufbau schnellaufender Verbrennungskraftmaschinen für Kraftfahrzeuge und Triebwagen''. In: Hans List (ed.): Die Verbrennungskraftmaschine. Vol. 11. Springer, Wien 1942, {{ISBN|978-3-7091-5016-0}} p. 24&lt;/ref&gt;
+&lt;ref name=&quot;Kremser_1942_125&quot;&gt;Hans Kremser (auth.): ''Der Aufbau schnellaufender Verbrennungskraftmaschinen für Kraftfahrzeuge und Triebwagen''. In: Hans List (ed.): Die Verbrennungskraftmaschine. V. 11. Springer, Wien 1942, {{ISBN|978-3-7091-5016-0}} p. 125&lt;/ref&gt;
+&lt;ref name=&quot;Kremser_1942_190&quot;&gt;Hans Kremser (auth.): ''Der Aufbau schnellaufender Verbrennungskraftmaschinen für Kraftfahrzeuge und Triebwagen''. In: Hans List (ed.): Die Verbrennungskraftmaschine. Vol. 11. Springer, Wien 1942, {{ISBN|978-3-7091-5016-0}} p. 190&lt;/ref&gt;
+
+;List 1939
+&lt;ref name=&quot;List_1939_1&quot;&gt;Hans List: ''Thermodynamik der Verbrennungskraftmaschine''. In: Hans List (ed.): ''Die Verbrennungskraftmaschine''. Vol. 2. Springer, Wien 1939, {{ISBN|978-3-7091-5197-6}}, p. 1&lt;/ref&gt;
+&lt;ref name=&quot;List_1939_28&quot;&gt;Hans List: ''Thermodynamik der Verbrennungskraftmaschine''. In: Hans List (ed.): ''Die Verbrennungskraftmaschine''. Vol. 2. Springer, Wien 1939, {{ISBN|978-3-7091-5197-6}}, pp. 28, 29&lt;/ref&gt;
+
+;MAN 1991
+&lt;ref name=&quot;MAN_1991_XI&quot;&gt;Wilfried Lochte (auth): ''Vorwort'', in: Nutzfahrzeuge AG (ed.): ''Leistung und Weg: Zur Geschichte des MAN Nutzfahrzeugbaus'', Springer, Berlin/Heidelberg, 1991. {{ISBN|978-3-642-93490-2}}. p. XI&lt;/ref&gt;
+&lt;ref name=&quot;MAN_436&quot;&gt;Hans Christian Graf von Seherr-Thoß (auth): ''Die Technik des MAN Nutzfahrzeugbaus'', in MAN Nutzfahrzeuge AG (ed.): ''Leistung und Weg: Zur Geschichte des MAN Nutzfahrzeugbaus'', Springer, Berlin/Heidelberg, 1991. {{ISBN|978-3-642-93490-2}}. p. 436.&lt;/ref&gt;
+&lt;ref name=&quot;MAN_438&quot;&gt;Hans Christian Graf von Seherr-Thoß (auth): ''Die Technik des MAN Nutzfahrzeugbaus'', in MAN Nutzfahrzeuge AG (ed.): ''Leistung und Weg: Zur Geschichte des MAN Nutzfahrzeugbaus'', Springer, Berlin/Heidelberg, 1991. {{ISBN|978-3-642-93490-2}}. p. 438.&lt;/ref&gt;
+&lt;ref name=&quot;MAN_465&quot;&gt;Hans Christian Graf von Seherr-Thoß (auth): ''Die Technik des MAN Nutzfahrzeugbaus'', in MAN Nutzfahrzeuge AG (ed.): ''Leistung und Weg: Zur Geschichte des MAN Nutzfahrzeugbaus'', Springer, Berlin/Heidelberg, 1991. {{ISBN|978-3-642-93490-2}}. p. 465.&lt;/ref&gt;
+
+;Mau 1984
+&lt;ref name=&quot;Mau_1984_7&quot;&gt;Günter Mau: ''Handbuch Dieselmotoren im Kraftwerks- und Schiffsbetrieb'', Vieweg (Springer), Braunschweig/Wiesbaden 1984, {{ISBN|978-3-528-14889-8}}. p. 7&lt;/ref&gt;
+&lt;ref name=&quot;Mau_1984_8&quot;&gt;Günter Mau: ''Handbuch Dieselmotoren im Kraftwerks- und Schiffsbetrieb'', Vieweg (Springer), Braunschweig/Wiesbaden 1984, {{ISBN|978-3-528-14889-8}}. p. 8&lt;/ref&gt;
+&lt;ref name=&quot;Mau_1984_9_11&quot;&gt;Günter Mau: ''Handbuch Dieselmotoren im Kraftwerks- und Schiffsbetrieb'', Vieweg (Springer), Braunschweig/Wiesbaden 1984, {{ISBN|978-3-528-14889-8}}. pp. 9–11&lt;/ref&gt;
+&lt;ref name=&quot;Mau_1984_15&quot;&gt;Günter Mau: ''Handbuch Dieselmotoren im Kraftwerks- und Schiffsbetrieb'', Vieweg (Springer), Braunschweig/Wiesbaden 1984, {{ISBN|978-3-528-14889-8}}. p. 15&lt;/ref&gt;
+&lt;ref name=&quot;Mau_1984_16&quot;&gt;Günter Mau: ''Handbuch Dieselmotoren im Kraftwerks- und Schiffsbetrieb'', Vieweg (Springer), Braunschweig/Wiesbaden 1984, {{ISBN|978-3-528-14889-8}}. p. 16&lt;/ref&gt;
+&lt;ref name=&quot;Mau_1984_17&quot;&gt;Günter Mau: ''Handbuch Dieselmotoren im Kraftwerks- und Schiffsbetrieb'', Vieweg (Springer), Braunschweig/Wiesbaden 1984, {{ISBN|978-3-528-14889-8}}. p. 17&lt;/ref&gt;
+&lt;ref name=&quot;Mau_1984_23&quot;&gt;Günter Mau: ''Handbuch Dieselmotoren im Kraftwerks- und Schiffsbetrieb'', Vieweg (Springer), Braunschweig/Wiesbaden 1984, {{ISBN|978-3-528-14889-8}}. p. 23&lt;/ref&gt;
+&lt;ref name=&quot;Mau_1984_33&quot;&gt;Günter Mau: ''Handbuch Dieselmotoren im Kraftwerks- und Schiffsbetrieb'', Vieweg (Springer), Braunschweig/Wiesbaden 1984, {{ISBN|978-3-528-14889-8}}. p. 33&lt;/ref&gt;
+&lt;ref name=&quot;Mau_1984_42&quot;&gt;Günter Mau: ''Handbuch Dieselmotoren im Kraftwerks- und Schiffsbetrieb'', Vieweg (Springer), Braunschweig/Wiesbaden 1984, {{ISBN|978-3-528-14889-8}}. p. 42&lt;/ref&gt;
+&lt;ref name=&quot;Mau_1984_43&quot;&gt;Günter Mau: ''Handbuch Dieselmotoren im Kraftwerks- und Schiffsbetrieb'', Vieweg (Springer), Braunschweig/Wiesbaden 1984, {{ISBN|978-3-528-14889-8}}. p. 43&lt;/ref&gt;
+&lt;ref name=&quot;Mau_1984_50&quot;&gt;Günter Mau: ''Handbuch Dieselmotoren im Kraftwerks- und Schiffsbetrieb'', Vieweg (Springer), Braunschweig/Wiesbaden 1984, {{ISBN|978-3-528-14889-8}}. p. 50&lt;/ref&gt;
+&lt;ref name=&quot;Mau_1984_pp53&quot;&gt;Günter Mau: ''Handbuch Dieselmotoren im Kraftwerks- und Schiffsbetrieb'', Vieweg (Springer), Braunschweig/Wiesbaden 1984, {{ISBN|978-3-528-14889-8}}. pp. 53&lt;/ref&gt;
+&lt;ref name=&quot;Mau_1984_121&quot;&gt;Günter Mau: ''Handbuch Dieselmotoren im Kraftwerks- und Schiffsbetrieb'', Vieweg (Springer), Braunschweig/Wiesbaden 1984, {{ISBN|978-3-528-14889-8}}. p. 121&lt;/ref&gt;
+&lt;ref name=&quot;Mau_1984_129&quot;&gt;Günter Mau: ''Handbuch Dieselmotoren im Kraftwerks- und Schiffsbetrieb'', Vieweg (Springer), Braunschweig/Wiesbaden 1984, {{ISBN|978-3-528-14889-8}}. p. 129&lt;/ref&gt;
+&lt;ref name=&quot;Mau_1984_136&quot;&gt;Günter Mau: ''Handbuch Dieselmotoren im Kraftwerks- und Schiffsbetrieb'', Vieweg (Springer), Braunschweig/Wiesbaden 1984, {{ISBN|978-3-528-14889-8}}. p. 136&lt;/ref&gt;
+&lt;ref name=&quot;Mau_1984_148&quot;&gt;Günter Mau: ''Handbuch Dieselmotoren im Kraftwerks- und Schiffsbetrieb'', Vieweg (Springer), Braunschweig/Wiesbaden 1984, {{ISBN|978-3-528-14889-8}}. p. 148&lt;/ref&gt;
+
+;Merker 2014
+&lt;ref name=&quot;Merker_2014_48&quot;&gt;Günter P. Merker, Rüdiger Teichmann (ed.): ''Grundlagen Verbrennungsmotoren – Funktionsweise · Simulation · Messtechnik'', 7th edition, Springer, Wiesbaden 2014, {{ISBN|978-3-658-03194-7}}, p. 48&lt;/ref&gt;
+&lt;ref name=&quot;Merker_2014_58&quot;&gt;Günter P. Merker, Rüdiger Teichmann (ed.): ''Grundlagen Verbrennungsmotoren – Funktionsweise · Simulation · Messtechnik'', 7th edition, Springer, Wiesbaden 2014, {{ISBN|978-3-658-03194-7}}, p. 58&lt;/ref&gt;
+&lt;ref name=&quot;Merker_2014_179&quot;&gt;Günter P. Merker, Rüdiger Teichmann (ed.): ''Grundlagen Verbrennungsmotoren – Funktionsweise · Simulation · Messtechnik'', 7th edition, Springer, Wiesbaden 2014, {{ISBN|978-3-658-03194-7}}, p. 179&lt;/ref&gt;
+&lt;ref name=&quot;Merker_2014_264&quot;&gt;Günter P. Merker, Rüdiger Teichmann (ed.): ''Grundlagen Verbrennungsmotoren – Funktionsweise · Simulation · Messtechnik'', 7th edition, Springer, Wiesbaden 2014, {{ISBN|978-3-658-03194-7}}, p. 264&lt;/ref&gt;
+&lt;ref name=&quot;Merker_2014_273&quot;&gt;Günter P. Merker, Rüdiger Teichmann (ed.): ''Grundlagen Verbrennungsmotoren – Funktionsweise · Simulation · Messtechnik'', 7th edition, Springer, Wiesbaden 2014, {{ISBN|978-3-658-03194-7}}, p. 273&lt;/ref&gt;
+&lt;ref name=&quot;Merker_2014_276&quot;&gt;Günter P. Merker, Rüdiger Teichmann (ed.): ''Grundlagen Verbrennungsmotoren – Funktionsweise · Simulation · Messtechnik'', 7th edition, Springer, Wiesbaden 2014, {{ISBN|978-3-658-03194-7}}, p. 276&lt;/ref&gt;
+&lt;ref name=&quot;Merker_2014_280&quot;&gt;Günter P. Merker, Rüdiger Teichmann (ed.): ''Grundlagen Verbrennungsmotoren – Funktionsweise · Simulation · Messtechnik'', 7th edition, Springer, Wiesbaden 2014, {{ISBN|978-3-658-03194-7}}, p. 280&lt;/ref&gt;
+&lt;ref name=&quot;Merker_2014_284&quot;&gt;Günter P. Merker, Rüdiger Teichmann (ed.): ''Grundlagen Verbrennungsmotoren – Funktionsweise · Simulation · Messtechnik'', 7th edition, Springer, Wiesbaden 2014, {{ISBN|978-3-658-03194-7}}, p. 284&lt;/ref&gt;
+&lt;ref name=&quot;Merker_2014_381&quot;&gt;Günter P. Merker, Rüdiger Teichmann (ed.): ''Grundlagen Verbrennungsmotoren – Funktionsweise · Simulation · Messtechnik'', 7th edition, Springer, Wiesbaden 2014, {{ISBN|978-3-658-03194-7}}, p. 381&lt;/ref&gt;
+&lt;ref name=&quot;Merker_2014_382&quot;&gt;Günter P. Merker, Rüdiger Teichmann (ed.): ''Grundlagen Verbrennungsmotoren – Funktionsweise · Simulation · Messtechnik'', 7th edition, Springer, Wiesbaden 2014, {{ISBN|978-3-658-03194-7}}, p. 382&lt;/ref&gt;
+&lt;ref name=&quot;Merker_2014_439&quot;&gt;Günter P. Merker, Rüdiger Teichmann (ed.): ''Grundlagen Verbrennungsmotoren – Funktionsweise · Simulation · Messtechnik'', 7th edition, Springer, Wiesbaden 2014, {{ISBN|978-3-658-03194-7}}, p. 439&lt;/ref&gt;
+&lt;ref name=&quot;Merker_2014_472&quot;&gt;Günter P. Merker, Rüdiger Teichmann (ed.): ''Grundlagen Verbrennungsmotoren – Funktionsweise · Simulation · Messtechnik'', 7th edition, Springer, Wiesbaden 2014, {{ISBN|978-3-658-03194-7}}, p. 472&lt;/ref&gt;
+
+;Moon 1974
+&lt;ref name=&quot;Moon_1974&quot;&gt;{{Cite book|last=Moon|first=John F.|year=1974|title=Rudolf Diesel and the Diesel Engine|location=London|publisher=Priory Press|isbn=978-0-85078-130-4|ref=Moon, 1974|url-access=registration|url=https://archive.org/details/rudolfdieseldies00moon}}&lt;/ref&gt;
+
+;Nanlin 1993
+&lt;ref name=&quot;Nanlin_1993&quot;&gt;{{cite book|chapter-url=http://papers.sae.org/930984/|chapter=Development of Model 6105 Adiabatic Engine|first1=Zhang|title=SAE Technical Paper Series|volume=1|last1=Nanlin|first2=Zhong|last2=Shengyuan|first3=Feng|last3=Jingtu|first4=Cai|last4=Jinwen|first5=Pu|last5=Qinan|first6=Fan|last6=Yuan|date=March 1, 1993|via=papers.sae.org|doi=10.4271/930984}}&lt;/ref&gt;
+
+;Von Philippovich 1939
+&lt;ref name=&quot;vPhilippovich_1939_41&quot;&gt;A. v. Philippovich (auth.): ''Die Betriebsstoffe für Verbrennungskraftmaschinen''. In: Hans List (ed.): ''Die Verbrennungskraftmaschine''. Vol. 1. Springer, Wien 1939, {{ISBN|978-3-662-27981-6}}. p. 41&lt;/ref&gt;
+&lt;ref name=&quot;vPhilippovich_1939_42&quot;&gt;A. v. Philippovich (auth.): ''Die Betriebsstoffe für Verbrennungskraftmaschinen''. In: Hans List (ed.): ''Die Verbrennungskraftmaschine''. Vol. 1. Springer, Wien 1939, {{ISBN|978-3-662-27981-6}}. p. 42&lt;/ref&gt;
+&lt;ref name=&quot;vPhilippovich_1939_43&quot;&gt;A. v. Philippovich (auth.): ''Die Betriebsstoffe für Verbrennungskraftmaschinen''. In: Hans List (ed.): ''Die Verbrennungskraftmaschine''. Vol. 1. Springer, Wien 1939, {{ISBN|978-3-662-27981-6}}. p. 43&lt;/ref&gt;
+&lt;ref name=&quot;vPhilippovich_1939_45&quot;&gt;A. v. Philippovich (auth.): ''Die Betriebsstoffe für Verbrennungskraftmaschinen''. In: Hans List (ed.): ''Die Verbrennungskraftmaschine''. Vol. 1. Springer, Wien 1939, {{ISBN|978-3-662-27981-6}}. p. 45&lt;/ref&gt;
+
+;Pischinger 2016
+&lt;ref name=&quot;Pischinger_2016_348&quot;&gt;Stefan Pischinger, Ulrich Seiffert (ed.): ''Vieweg Handbuch Kraftfahrzeugtechnik''. 8th edition, Springer, Wiesbaden 2016. {{ISBN|978-3-658-09528-4}}. p. 348.&lt;/ref&gt;
+
+;Ransome-Wallis 2001
+&lt;ref name=&quot;Ransome-Wallis_2001&quot;&gt;Ransome-Wallis, Patrick (2001). Illustrated Encyclopedia of World Railway Locomotives. Courier Dover Publications. p. 32 fg. 5&lt;/ref&gt;
+
+;Reif
+&lt;ref name=&quot;Reif_2012_103&quot;&gt;Konrad Reif (ed.): ''Dieselmotor-Management – Systeme Komponenten und Regelung'', 5th edition, Springer, Wiesbaden 2012, {{ISBN|978-3-8348-1715-0}}, p. 103&lt;/ref&gt;
+&lt;ref name=&quot;Reif_2012_223&quot;&gt;Konrad Reif (ed.): ''Dieselmotor-Management – Systeme Komponenten und Regelung'', 5th edition, Springer, Wiesbaden 2012, {{ISBN|978-3-8348-1715-0}}, p. 223&lt;/ref&gt;
+&lt;ref name=&quot;Reif_2012_271&quot;&gt;Konrad Reif (ed.): ''Dieselmotor-Management – Systeme Komponenten und Regelung'', 5th edition, Springer, Wiesbaden 2012, {{ISBN|978-3-8348-1715-0}}, p. 271&lt;/ref&gt;
+&lt;ref name=&quot;Reif_2012_286&quot;&gt;Konrad Reif (ed.): ''Dieselmotor-Management – Systeme Komponenten und Regelung'', 5th edition, Springer, Wiesbaden 2012, {{ISBN|978-3-8348-1715-0}}, p. 286&lt;/ref&gt;
+
+&lt;ref name=&quot;Reif_2014_10&quot;&gt;Konrad Reif (ed.): ''Dieselmotor-Management im Überblick''. 2nd edition. Springer, Wiesbaden 2014, {{ISBN|978-3-658-06554-6}}. p. 10&lt;/ref&gt;
+&lt;ref name=&quot;Reif_2014_11&quot;&gt;Konrad Reif (ed.): ''Dieselmotor-Management im Überblick''. 2nd edition. Springer, Wiesbaden 2014, {{ISBN|978-3-658-06554-6}}. p. 11&lt;/ref&gt;
+&lt;ref name=&quot;Reif_2014_12&quot;&gt;Konrad Reif (ed.): ''Dieselmotor-Management im Überblick''. 2nd edition. Springer, Wiesbaden 2014, {{ISBN|978-3-658-06554-6}}. p. 12&lt;/ref&gt;
+&lt;ref name=&quot;Reif_2014_13&quot;&gt;Konrad Reif (ed.): ''Dieselmotor-Management im Überblick''. 2nd edition. Springer, Wiesbaden 2014, {{ISBN|978-3-658-06554-6}}. p. 13&lt;/ref&gt;
+&lt;ref name=&quot;Reif_2014_17&quot;&gt;Konrad Reif (ed.): ''Dieselmotor-Management im Überblick''. 2nd edition. Springer, Wiesbaden 2014, {{ISBN|978-3-658-06554-6}}. p. 17&lt;/ref&gt;
+&lt;ref name=&quot;Reif_2014_18&quot;&gt;Konrad Reif (ed.): ''Dieselmotor-Management im Überblick''. 2nd edition. Springer, Wiesbaden 2014, {{ISBN|978-3-658-06554-6}}. p. 18&lt;/ref&gt;
+&lt;ref name=&quot;Reif_2014_23&quot;&gt;Konrad Reif (ed.): ''Dieselmotor-Management im Überblick''. 2nd edition. Springer, Wiesbaden 2014, {{ISBN|978-3-658-06554-6}}. p. 23&lt;/ref&gt;
+&lt;ref name=&quot;Reif_2014_28&quot;&gt;Konrad Reif (ed.): ''Dieselmotor-Management im Überblick''. 2nd edition. Springer, Wiesbaden 2014, {{ISBN|978-3-658-06554-6}}. p. 28&lt;/ref&gt;
+&lt;ref name=&quot;Reif_2014_31&quot;&gt;Konrad Reif (ed.): ''Dieselmotor-Management im Überblick''. 2nd edition. Springer, Wiesbaden 2014, {{ISBN|978-3-658-06554-6}}. p. 31&lt;/ref&gt;
+&lt;ref name=&quot;Reif_2014_40&quot;&gt;Konrad Reif (ed.): ''Dieselmotor-Management im Überblick''. 2nd edition. Springer, Wiesbaden 2014, {{ISBN|978-3-658-06554-6}}. p. 40&lt;/ref&gt;
+&lt;ref name=&quot;Reif_2014_41&quot;&gt;Konrad Reif (ed.): ''Dieselmotor-Management im Überblick''. 2nd edition. Springer, Wiesbaden 2014, {{ISBN|978-3-658-06554-6}}. p. 41&lt;/ref&gt;
+&lt;ref name=&quot;Reif_2014_53&quot;&gt;Konrad Reif (ed.): ''Dieselmotor-Management im Überblick''. 2nd edition. Springer, Wiesbaden 2014, {{ISBN|978-3-658-06554-6}}. p. 53&lt;/ref&gt;
+&lt;ref name=&quot;Reif_2014_70&quot;&gt;Konrad Reif (ed.): ''Dieselmotor-Management im Überblick''. 2nd edition. Springer, Wiesbaden 2014, {{ISBN|978-3-658-06554-6}}. p. 70&lt;/ref&gt;
+&lt;ref name=&quot;Reif_2014_136&quot;&gt;Konrad Reif (ed.): ''Dieselmotor-Management im Überblick''. 2nd edition. Springer, Wiesbaden 2014, {{ISBN|978-3-658-06554-6}}. p. 136&lt;/ref&gt;
+&lt;ref name=&quot;Reif_2014_140&quot;&gt;Konrad Reif (ed.): ''Dieselmotor-Management im Überblick''. 2nd edition. Springer, Wiesbaden 2014, {{ISBN|978-3-658-06554-6}}. p. 140&lt;/ref&gt;
+&lt;ref name=&quot;Reif_2014_171&quot;&gt;Konrad Reif (ed.): ''Dieselmotor-Management im Überblick''. 2nd edition. Springer, Wiesbaden 2014, {{ISBN|978-3-658-06554-6}}. p. 171&lt;/ref&gt;
+&lt;ref name=&quot;Reif_2014_182&quot;&gt;Konrad Reif (ed.): ''Dieselmotor-Management im Überblick''. 2nd edition. Springer, Wiesbaden 2014, {{ISBN|978-3-658-06554-6}}. p. 182&lt;/ref&gt;
+
+&lt;ref name=&quot;Reif_O_2014_7&quot;&gt;Konrad Reif (ed.): ''Ottomotor-Management: Steuerung, Regelung und Überwachung'', Springer, Wiesbaden 2014, {{ISBN|978-3-8348-1416-6}}, p. 7&lt;/ref&gt;
+
+&lt;ref name=&quot;Reif_2017_16&quot;&gt;Konrad Reif (ed.): ''Grundlagen Fahrzeug- und Motorentechnik''. Springer Fachmedien, Wiesbaden 2017, {{ISBN|978-3-658-12635-3}}. pp. 16&lt;/ref&gt;
+
+;Schreiner 2014
+&lt;ref name=&quot;Schreiner_2014_22&quot;&gt;Klaus Schreiner: ''Basiswissen Verbrennungsmotor: Fragen – rechnen – verstehen – bestehen''. Springer, Wiesbaden 2014, {{ISBN|978-3-658-06187-6}}, p. 22.&lt;/ref&gt;
+
+;Stan 2017
+&lt;ref name=&quot;Stan_2017_252&quot;&gt;Cornel Stan: ''Thermodynamik des Kraftfahrzeugs: Grundlagen und Anwendungen – mit Prozesssimulationen'', Springer, Berlin/Heidelberg 2017, {{ISBN|978-3-662-53722-0}}. p. 252&lt;/ref&gt;
+
+;SAE 2017
+&lt;ref name=&quot;Papers on adiabatic engines&quot;&gt;{{cite web|url=http://topics.sae.org/adiabatic-engines/papers/|title=Browse Papers on Adiabatic engines : Topic Results |publisher=SAE International|website=topics.sae.org|access-date=April 30, 2018|archive-url=https://web.archive.org/web/20170823204928/http://topics.sae.org/adiabatic-engines/papers/|archive-date=August 23, 2017|url-status=dead|df=mdy-all}}&lt;/ref&gt;
+
+;Sass 1962
+&lt;ref name=&quot;Sass_1962_395&quot;&gt;Friedrich Sass: ''Geschichte des deutschen Verbrennungsmotorenbaus von 1860 bis 1918'', Springer, Berlin/Heidelberg 1962, {{ISBN|978-3-662-11843-6}}. p. 395&lt;/ref&gt;
+&lt;ref name=&quot;Sass_1962_398&quot;&gt;Friedrich Sass: ''Geschichte des deutschen Verbrennungsmotorenbaus von 1860 bis 1918'', Springer, Berlin/Heidelberg 1962, {{ISBN|978-3-662-11843-6}}. p. 398&lt;/ref&gt;
+&lt;ref name=&quot;Sass_1962_399&quot;&gt;Friedrich Sass: ''Geschichte des deutschen Verbrennungsmotorenbaus von 1860 bis 1918'', Springer, Berlin/Heidelberg 1962, {{ISBN|978-3-662-11843-6}}. p. 399&lt;/ref&gt;
+&lt;ref name=&quot;Sass_1962_400&quot;&gt;Friedrich Sass: ''Geschichte des deutschen Verbrennungsmotorenbaus von 1860 bis 1918'', Springer, Berlin/Heidelberg 1962, {{ISBN|978-3-662-11843-6}}. p. 400&lt;/ref&gt;
+&lt;ref name=&quot;Sass_1962_402&quot;&gt;Friedrich Sass: ''Geschichte des deutschen Verbrennungsmotorenbaus von 1860 bis 1918'', Springer, Berlin/Heidelberg 1962, {{ISBN|978-3-662-11843-6}}. p. 402&lt;/ref&gt;
+&lt;ref name=&quot;Sass_1962_412&quot;&gt;Friedrich Sass: ''Geschichte des deutschen Verbrennungsmotorenbaus von 1860 bis 1918'', Springer, Berlin/Heidelberg 1962, {{ISBN|978-3-662-11843-6}}. p. 412&lt;/ref&gt;
+&lt;ref name=&quot;Sass_1962_414&quot;&gt;Friedrich Sass: ''Geschichte des deutschen Verbrennungsmotorenbaus von 1860 bis 1918'', Springer, Berlin/Heidelberg 1962, {{ISBN|978-3-662-11843-6}}. p. 414&lt;/ref&gt;
+&lt;ref name=&quot;Sass_1962_462&quot;&gt;Friedrich Sass: ''Geschichte des deutschen Verbrennungsmotorenbaus von 1860 bis 1918'', Springer, Berlin/Heidelberg 1962, {{ISBN|978-3-662-11843-6}}. p. 462&lt;/ref&gt;
+&lt;ref name=&quot;Sass_1962_463&quot;&gt;Friedrich Sass: ''Geschichte des deutschen Verbrennungsmotorenbaus von 1860 bis 1918'', Springer, Berlin/Heidelberg 1962, {{ISBN|978-3-662-11843-6}}. p. 463&lt;/ref&gt;
+&lt;ref name=&quot;Sass_1962_464&quot;&gt;Friedrich Sass: ''Geschichte des deutschen Verbrennungsmotorenbaus von 1860 bis 1918'', Springer, Berlin/Heidelberg 1962, {{ISBN|978-3-662-11843-6}}. p. 464&lt;/ref&gt;
+&lt;ref name=&quot;Sass_1962_466&quot;&gt;Friedrich Sass: ''Geschichte des deutschen Verbrennungsmotorenbaus von 1860 bis 1918'', Springer, Berlin/Heidelberg 1962, {{ISBN|978-3-662-11843-6}}. p. 466&lt;/ref&gt;
+&lt;ref name=&quot;Sass_1962_467&quot;&gt;Friedrich Sass: ''Geschichte des deutschen Verbrennungsmotorenbaus von 1860 bis 1918'', Springer, Berlin/Heidelberg 1962, {{ISBN|978-3-662-11843-6}}. p. 467&lt;/ref&gt;
+&lt;ref name=&quot;Sass_1962_474&quot;&gt;Friedrich Sass: ''Geschichte des deutschen Verbrennungsmotorenbaus von 1860 bis 1918'', Springer, Berlin/Heidelberg 1962, {{ISBN|978-3-662-11843-6}}. p. 474&lt;/ref&gt;
+&lt;ref name=&quot;Sass_1962_475&quot;&gt;Friedrich Sass: ''Geschichte des deutschen Verbrennungsmotorenbaus von 1860 bis 1918'', Springer, Berlin/Heidelberg 1962, {{ISBN|978-3-662-11843-6}}. p. 475&lt;/ref&gt;
+&lt;ref name=&quot;Sass_1962_479&quot;&gt;Friedrich Sass: ''Geschichte des deutschen Verbrennungsmotorenbaus von 1860 bis 1918'', Springer, Berlin/Heidelberg 1962, {{ISBN|978-3-662-11843-6}}. p. 479&lt;/ref&gt;
+&lt;ref name=&quot;Sass_1962_480&quot;&gt;Friedrich Sass: ''Geschichte des deutschen Verbrennungsmotorenbaus von 1860 bis 1918'', Springer, Berlin/Heidelberg 1962, {{ISBN|978-3-662-11843-6}}. p. 480&lt;/ref&gt;
+&lt;ref name=&quot;Sass_1962_484&quot;&gt;Friedrich Sass: ''Geschichte des deutschen Verbrennungsmotorenbaus von 1860 bis 1918'', Springer, Berlin/Heidelberg 1962, {{ISBN|978-3-662-11843-6}}. p. 484&lt;/ref&gt;
+&lt;ref name=&quot;Sass_1962_485&quot;&gt;Friedrich Sass: ''Geschichte des deutschen Verbrennungsmotorenbaus von 1860 bis 1918'', Springer, Berlin/Heidelberg 1962, {{ISBN|978-3-662-11843-6}}. p. 485&lt;/ref&gt;
+&lt;ref name=&quot;Sass_1962_486&quot;&gt;Friedrich Sass: ''Geschichte des deutschen Verbrennungsmotorenbaus von 1860 bis 1918'', Springer, Berlin/Heidelberg 1962, {{ISBN|978-3-662-11843-6}}. p. 486&lt;/ref&gt;
+&lt;ref name=&quot;Sass_1962_487&quot;&gt;Friedrich Sass: ''Geschichte des deutschen Verbrennungsmotorenbaus von 1860 bis 1918'', Springer, Berlin/Heidelberg 1962, {{ISBN|978-3-662-11843-6}}. p. 487&lt;/ref&gt;
+&lt;ref name=&quot;Sass_1962_493&quot;&gt;Friedrich Sass: ''Geschichte des deutschen Verbrennungsmotorenbaus von 1860 bis 1918'', Springer, Berlin/Heidelberg 1962, {{ISBN|978-3-662-11843-6}}. p. 493&lt;/ref&gt;
+&lt;ref name=&quot;Sass_1962_501&quot;&gt;Friedrich Sass: ''Geschichte des deutschen Verbrennungsmotorenbaus von 1860 bis 1918'', Springer, Berlin/Heidelberg 1962, {{ISBN|978-3-662-11843-6}}. p. 501&lt;/ref&gt;
+&lt;ref name=&quot;Sass_1962_502&quot;&gt;Friedrich Sass: ''Geschichte des deutschen Verbrennungsmotorenbaus von 1860 bis 1918'', Springer, Berlin/Heidelberg 1962, {{ISBN|978-3-662-11843-6}}. p. 502&lt;/ref&gt;
+&lt;ref name=&quot;Sass_1962_505&quot;&gt;Friedrich Sass: ''Geschichte des deutschen Verbrennungsmotorenbaus von 1860 bis 1918'', Springer, Berlin/Heidelberg 1962, {{ISBN|978-3-662-11843-6}}. p. 505&lt;/ref&gt;
+&lt;ref name=&quot;Sass_1962_506&quot;&gt;Friedrich Sass: ''Geschichte des deutschen Verbrennungsmotorenbaus von 1860 bis 1918'', Springer, Berlin/Heidelberg 1962, {{ISBN|978-3-662-11843-6}}. p. 506&lt;/ref&gt;
+&lt;ref name=&quot;Sass_1962_518&quot;&gt;Friedrich Sass: ''Geschichte des deutschen Verbrennungsmotorenbaus von 1860 bis 1918'', Springer, Berlin/Heidelberg 1962, {{ISBN|978-3-662-11843-6}}. p. 518&lt;/ref&gt;
+&lt;ref name=&quot;Sass_1962_523&quot;&gt;Friedrich Sass: ''Geschichte des deutschen Verbrennungsmotorenbaus von 1860 bis 1918'', Springer, Berlin/Heidelberg 1962, {{ISBN|978-3-662-11843-6}}. p. 523&lt;/ref&gt;
+&lt;ref name=&quot;Sass_1962_524&quot;&gt;Friedrich Sass: ''Geschichte des deutschen Verbrennungsmotorenbaus von 1860 bis 1918'', Springer, Berlin/Heidelberg 1962, {{ISBN|978-3-662-11843-6}}. p. 524&lt;/ref&gt;
+&lt;ref name=&quot;Sass_1962_530&quot;&gt;Friedrich Sass: ''Geschichte des deutschen Verbrennungsmotorenbaus von 1860 bis 1918'', Springer, Berlin/Heidelberg 1962, {{ISBN|978-3-662-11843-6}}. p. 530&lt;/ref&gt;
+&lt;ref name=&quot;Sass_1962_532&quot;&gt;Friedrich Sass: ''Geschichte des deutschen Verbrennungsmotorenbaus von 1860 bis 1918'', Springer, Berlin/Heidelberg 1962, {{ISBN|978-3-662-11843-6}}. p. 532&lt;/ref&gt;
+&lt;ref name=&quot;Sass_1962_541&quot;&gt;Friedrich Sass: ''Geschichte des deutschen Verbrennungsmotorenbaus von 1860 bis 1918'', Springer, Berlin/Heidelberg 1962, {{ISBN|978-3-662-11843-6}}. p. 541&lt;/ref&gt;
+&lt;ref name=&quot;Sass_1962_545&quot;&gt;Friedrich Sass: ''Geschichte des deutschen Verbrennungsmotorenbaus von 1860 bis 1918'', Springer, Berlin/Heidelberg 1962, {{ISBN|978-3-662-11843-6}}. p. 545&lt;/ref&gt;
+&lt;ref name=&quot;Sass_1962_559&quot;&gt;Friedrich Sass: ''Geschichte des deutschen Verbrennungsmotorenbaus von 1860 bis 1918'', Springer, Berlin/Heidelberg 1962, {{ISBN|978-3-662-11843-6}}. p. 559&lt;/ref&gt;
+&lt;ref name=&quot;Sass_1962_569&quot;&gt;Friedrich Sass: ''Geschichte des deutschen Verbrennungsmotorenbaus von 1860 bis 1918'', Springer, Berlin/Heidelberg 1962, {{ISBN|978-3-662-11843-6}}. p. 569&lt;/ref&gt;
+&lt;ref name=&quot;Sass_1962_610&quot;&gt;Friedrich Sass: ''Geschichte des deutschen Verbrennungsmotorenbaus von 1860 bis 1918'', Springer, Berlin/Heidelberg 1962, {{ISBN|978-3-662-11843-6}}. p. 610&lt;/ref&gt;
+&lt;ref name=&quot;Sass_1962_644&quot;&gt;Friedrich Sass: ''Geschichte des deutschen Verbrennungsmotorenbaus von 1860 bis 1918'', Springer, Berlin/Heidelberg 1962, {{ISBN|978-3-662-11843-6}}. p. 644&lt;/ref&gt;
+
+;Schwarz 1993
+&lt;ref name=&quot;Schwarz_1993&quot;&gt;{{cite book|chapter-url=http://papers.sae.org/930988/|chapter=Combustion and Performance Characteristics of a Low Heat Rejection Engine|first1=Ernest|title=SAE Technical Paper Series|volume=1|last1=Schwarz|first2=Michael|last2=Reid|first3=Walter|last3=Bryzik|first4=Eugene|last4=Danielson|date=March 1, 1993|via=papers.sae.org|doi=10.4271/930988}}&lt;/ref&gt;
+
+;Schwarz 2012
+&lt;ref name=&quot;Schwarz_2012_102&quot;&gt;Christian Schwarz, Rüdiger Teichmann: ''Grundlagen Verbrennungsmotoren: Funktionsweise, Simulation, Messtechnik''. Springer. Wiesbaden 2012, {{ISBN|978-3-8348-1987-1}}, p. 102&lt;/ref&gt;
+
+;Sittauer 1990
+&lt;ref name=&quot;Sittauer_1990_70&quot;&gt;Sittauer, Hans L. (1990), ''Nicolaus August Otto Rudolf Diesel, Biographien hervorragender Naturwissenschaftler, Techniker und Mediziner'' (in German), 32 (4th ed.), Leipzig, DDR: Springer (BSB Teubner), {{ISBN|978-3-322-00762-9}}. p. 70&lt;/ref&gt;
+&lt;ref name=&quot;Sittauer_1990_71&quot;&gt;Sittauer, Hans L. (1990), ''Nicolaus August Otto Rudolf Diesel, Biographien hervorragender Naturwissenschaftler, Techniker und Mediziner'' (in German), 32 (4th ed.), Leipzig, DDR: Springer (BSB Teubner), {{ISBN|978-3-322-00762-9}}. p. 71&lt;/ref&gt;
+&lt;ref name=&quot;Sittauer_1990_74&quot;&gt;Sittauer, Hans L. (1990), ''Nicolaus August Otto Rudolf Diesel, Biographien hervorragender Naturwissenschaftler, Techniker und Mediziner'' (in German), 32 (4th ed.), Leipzig, DDR: Springer (BSB Teubner), {{ISBN|978-3-322-00762-9}}. p. 74&lt;/ref&gt;
+
+;Soimar2000
+&lt;ref name=&quot;Soimar_2000&quot;&gt;{{cite journal |url=http://findarticles.com/p/articles/mi_m0FZX/is_4_66/ai_62371160/print?tag=artBody;col1 |archive-url=https://web.archive.org/web/20081207140743/http://findarticles.com/p/articles/mi_m0FZX/is_4_66/ai_62371160/print?tag=artBody%3Bcol1 |url-status=dead |archive-date=December 7, 2008 |title=The Challenge Of CVTs In Current Heavy-Duty Powertrains |date=April 2000 |journal=Diesel Progress North American Edition |author=Michael Soimar |df=mdy-all }}&lt;/ref&gt;
+
+;Speck 2005
+&lt;ref name=&quot;Speck_2005&quot;&gt;Peter Speck: ''Employability – Herausforderungen für die strategische Personalentwicklung: Konzepte für eine flexible, innovationsorientierte Arbeitswelt von morgen'', 2nd edition, Springer, 2005, {{ISBN|978-3409226837}}, p. 21&lt;/ref&gt;
+
+;Tschöke 2018
+&lt;ref name=&quot;Tschöke_2018_6&quot;&gt;Helmut Tschöke, Klaus Mollenhauer, Rudolf Maier (ed.): ''Handbuch Dieselmotoren'', 8th edition, Springer, Wiesbaden 2018, {{ISBN|978-3-658-07696-2}}, p. 6&lt;/ref&gt;
+&lt;ref name=&quot;Tschöke_2018_7&quot;&gt;Helmut Tschöke, Klaus Mollenhauer, Rudolf Maier (ed.): ''Handbuch Dieselmotoren'', 8th edition, Springer, Wiesbaden 2018, {{ISBN|978-3-658-07696-2}}, p. 7&lt;/ref&gt;
+&lt;ref name=&quot;Tschöke_2018_9&quot;&gt;Helmut Tschöke, Klaus Mollenhauer, Rudolf Maier (ed.): ''Handbuch Dieselmotoren'', 8th edition, Springer, Wiesbaden 2018, {{ISBN|978-3-658-07696-2}}, p. 9&lt;/ref&gt;
+&lt;ref name=&quot;Tschöke_2018_10&quot;&gt;Helmut Tschöke, Klaus Mollenhauer, Rudolf Maier (ed.): ''Handbuch Dieselmotoren'', 8th edition, Springer, Wiesbaden 2018, {{ISBN|978-3-658-07696-2}}, p. 10&lt;/ref&gt;
+&lt;ref name=&quot;Tschöke_2018_295&quot;&gt;Helmut Tschöke, Klaus Mollenhauer, Rudolf Maier (ed.): ''Handbuch Dieselmotoren'', 8th edition, Springer, Wiesbaden 2018, {{ISBN|978-3-658-07696-2}}, p. 295&lt;/ref&gt;
+&lt;ref name=&quot;Tschöke_2018_310&quot;&gt;Helmut Tschöke, Klaus Mollenhauer, Rudolf Maier (ed.): ''Handbuch Dieselmotoren'', 8th edition, Springer, Wiesbaden 2018, {{ISBN|978-3-658-07696-2}}, p. 310&lt;/ref&gt;
+&lt;ref name=&quot;Tschöke_2018_666&quot;&gt;Helmut Tschöke, Klaus Mollenhauer, Rudolf Maier (ed.): ''Handbuch Dieselmotoren'', 8th edition, Springer, Wiesbaden 2018, {{ISBN|978-3-658-07696-2}}, p. 666&lt;/ref&gt;
+&lt;ref name=&quot;Tschöke_2018_702&quot;&gt;Helmut Tschöke, Klaus Mollenhauer, Rudolf Maier (ed.): ''Handbuch Dieselmotoren'', 8th edition, Springer, Wiesbaden 2018, {{ISBN|978-3-658-07696-2}}, p. 702&lt;/ref&gt;
+&lt;ref name=&quot;Tschöke_2018_981&quot;&gt;Helmut Tschöke, Klaus Mollenhauer, Rudolf Maier (ed.): ''Handbuch Dieselmotoren'', 8th edition, Springer, Wiesbaden 2018, {{ISBN|978-3-658-07696-2}}, p. 981&lt;/ref&gt;
+&lt;ref name=&quot;Tschöke_2018_1000&quot;&gt;Helmut Tschöke, Klaus Mollenhauer, Rudolf Maier (ed.): ''Handbuch Dieselmotoren'' 8th edition, Springer, Wiesbaden 2018, {{ISBN|978-3-658-07696-2}}, p. 1000&lt;/ref&gt;
+&lt;ref name=&quot;Tschöke_2018_1066&quot;&gt;Helmut Tschöke, Klaus Mollenhauer, Rudolf Maier (ed.): ''Handbuch Dieselmotoren'', 8th edition, Springer, Wiesbaden 2018, {{ISBN|978-3-658-07696-2}}, p. 1066&lt;/ref&gt;
+&lt;ref name=&quot;Tschöke_2018_1110&quot;&gt;Helmut Tschöke, Klaus Mollenhauer, Rudolf Maier (ed.): ''Handbuch Dieselmotoren'', 8th edition, Springer, Wiesbaden 2018, {{ISBN|978-3-658-07696-2}}, p. 1110&lt;/ref&gt;
+
+;Tucker-Jones 2015
+&lt;ref name=&quot;Tucker-Jones_2015_36&quot;&gt;Anthony Tucker-Jones: ''T-34: The Red Army's Legendary Medium Tank'', Pen and Sword, 2015, {{ISBN|978-1473854703}}, p. 36 and 37&lt;/ref&gt;
+
+;Vogler 2016
+&lt;ref name=&quot;Vogler_2016_34&quot;&gt;Carl-Heinz Vogler: ''Unimog 406 – Typengeschichte und Technik''. Geramond, München 2016, {{ISBN|978-3-86245-576-8}}. p. 34.&lt;/ref&gt;
+
+;Waibel 2016
+&lt;ref name=&quot;Waibel_2016_159&quot;&gt;Barbara Waibel: ''Die Hindenburg: Gigant der Lüfte'', Sutton, 2016, {{ISBN|978-3954007226}}. p. 159&lt;/ref&gt;
+
+;Zhao 2009
+&lt;ref name=&quot;Zhao_2009_8&quot;&gt;Hua Zhao: ''[https://books.google.com/books?id=jcikAgAAQBAJ Advanced Direct Injection Combustion Engine Technologies and Development: Diesel Engines]'', Elsevier, 2009, {{ISBN|978-1845697457}}, p. 8&lt;/ref&gt;
+&lt;ref name=&quot;Zhao_2009_45&quot;&gt;Hua Zhao: ''[https://books.google.com/books?id=jcikAgAAQBAJ Advanced Direct Injection Combustion Engine Technologies and Development: Diesel Engines]'', Elsevier, 2009, {{ISBN|978-1845697457}}, p. 45 and 46&lt;/ref&gt;
+
+;Misc.
+
+&lt;!--unused&lt;ref name=&quot;Ultra low sulphur Diesel&quot;&gt;{{cite web|url=http://www.petrocard.com/Products/MSDS-ULS.pdf |archiveurl=https://web.archive.org/web/20110715071132/http://www.petrocard.com/Products/MSDS-ULS.pdf |archivedate=July 15, 2011 |title=MSDS Low Sulfur Diesel #2.doc |accessdate=December 21, 2010 |url-status=live |df=mdy }}&lt;/ref&gt;--&gt;
+&lt;ref name=&quot;FreeLib_1995&quot;&gt;The Free Library [http://www.thefreelibrary.com/DETROIT+DIESEL+INTRODUCES+DDEC+ETHER+START-a016648399] &quot;Detroit Diesel Introduces DDEC Ether Start&quot;, March 13, 1995, accessed March 14, 2011.&lt;/ref&gt;
+&lt;ref name=&quot;EngTips&quot;&gt;{{cite web| title = Engine &amp; fuel engineering – Diesel Noise| accessdate = November 1, 2008| url = http://www.eng-tips.com/viewthread.cfm?qid=139341&amp;page=7}}&lt;/ref&gt;
+&lt;ref name=&quot;Bennett2016&quot;&gt;{{cite book|author=Sean Bennett|title=Medium/Heavy Duty Truck Engines, Fuel &amp; Computerized Management Systems|url=https://books.google.com/books?id=dn9TCwAAQBAJ&amp;pg=PA97|date=2016|publisher=Cengage Learning|isbn=978-1-305-57855-5|pages=97–}}&lt;/ref&gt;
+&lt;ref name=&quot;DictionaryCH&quot;&gt;{{cite book|title=International Directory of Company Histories|url=https://archive.org/details/internationaldir0013unse|url-access=registration|year=1996|publisher=St. James Press|isbn=978-1-55862-327-9}}&lt;/ref&gt;
+&lt;ref name=&quot;Agritechnica_2017&quot;&gt;{{cite web |url=https://www.agritechnica.com/en/press/#!/news/history-of-the-dlg-agritechnicas-organizer_59fad080 |title=History of the DLG – Agritechnica's organizer |last= |first= |date=November 2, 2017 |website= |access-date=February 19, 2019}}&lt;/ref&gt;
+&lt;ref name=&quot;Oldmachinepress_2012&quot;&gt;{{cite web|url=https://oldmachinepress.com/2012/08/31/fairbanks-morse-model-32-stationary-engine/|title=Fairbanks Morse Model 32 Stationary Engine|first=William|last=Pearce|date=September 1, 2012}}&lt;/ref&gt;
+&lt;ref name=&quot;TheEngineer_2003&quot;&gt;{{cite web|title=Perfect piezo|url=https://www.theengineer.co.uk/issues/24-october-2003/perfect-piezo/|publisher=The Engineer|accessdate=4 May 2016|date=6 November 2003|quote=At the recent Frankfurt motor show, Siemens, Bosch and Delphi all launched piezoelectric fuel injection systems.}}&lt;/ref&gt;
+&lt;ref name=&quot;NPR_2015&quot;&gt;{{cite news|title='It Was Installed For This Purpose,' VW's U.S. CEO Tells Congress About Defeat Device|url=https://www.npr.org/sections/thetwo-way/2015/10/08/446861855/volkswagen-u-s-ceo-faces-questions-on-capitol-hill|accessdate=19 October 2015|publisher=NPR|date=8 October 2015}}&lt;/ref&gt;
+&lt;ref name=&quot;EPA_2015&quot;&gt;{{cite web |url=https://yosemite.epa.gov/opa/admpress.nsf/a883dc3da7094f97852572a00065d7d8/dfc8e33b5ab162b985257ec40057813b |title=EPA, California Notify Volkswagen of Clean Air Act Violations / Carmaker allegedly used software that circumvents emissions testing for certain air pollutants |publisher=EPA |location=US |date=18 September 2015 |access-date=1 July 2016}}&lt;/ref&gt;
+&lt;ref name=&quot;Jordans_2015&quot;&gt;{{cite news|last1=Jordans|first1=Frank |title=EPA: Volkswagon {{sic|nolink=y}} Thwarted Pollution Regulations For 7 Years|url=http://detroit.cbslocal.com/2015/09/21/epa-volkswagon-thwarted-pollution-regulations-for-7-years/|accessdate=24 September 2015|agency=Associated Press|publisher=CBS Detroit |date=21 September 2015}}&lt;/ref&gt;
+&lt;ref name=&quot;Spiegel_2015&quot;&gt;{{cite news|title= Abgasaffäre: VW-Chef Müller spricht von historischer Krise|url=http://www.spiegel.de/wirtschaft/unternehmen/volkswagen-chef-mueller-sieht-konzern-in-historischer-krise-a-1055148.html|accessdate=28 September 2015|agency=Reuters|work=Der Spiegel|date=28 September 2015}}&lt;/ref&gt;
+&lt;ref name=&quot;NRAO&quot;&gt;{{Cite web|url=http://www.gb.nrao.edu/visitors/TheEnemyIsUs.pdf|title=NRAO Green Bank Site RFI Regulations for Visitors|last=|first=|date=|website=|publisher=National Radio Astronomy Observatory|page=2|access-date=October 14, 2016}}&lt;/ref&gt;
+&lt;ref name=&quot;Rochester&quot;&gt;{{cite web |url=http://www.cs.rochester.edu/u/jag/vw/engine/fi/injpump.html |title=Archived copy |accessdate=2009-01-11 |url-status=dead |archiveurl=https://web.archive.org/web/20090107170106/http://www.cs.rochester.edu/u/jag/vw/engine/fi/injpump.html |archivedate=January 7, 2009 |df=mdy-all }}&lt;/ref&gt;
+&lt;ref name=&quot;buckman&quot;&gt;{{cite web |url=http://www.oldengine.org/members/diesel/Ambac/AmbacMenu1.htm |title=Archived copy |accessdate=2009-01-08 |url-status=dead |archiveurl=https://web.archive.org/web/20100123015243/http://www.oldengine.org/members/diesel/Ambac/AmbacMenu1.htm |archivedate=January 23, 2010 |df=mdy-all }}&lt;/ref&gt;
+&lt;ref name=&quot;Dieselpower_2007&quot;&gt;{{cite journal|title=Diesel Fuel Injection – How-It-Works|journal=Diesel Power|date=June 2007|url=http://www.dieselpowermag.com/tech/general/0706dp_diesel_fuel_injection/viewall.html|accessdate=November 24, 2012}}&lt;/ref&gt;
+&lt;ref name=&quot;Firstdiesel_2009&quot;&gt;{{cite web |url=http://www.firstdiesel.com |title=Diesel injection pumps, Diesel injectors, Diesel fuel pumps, turbochargers, Diesel trucks all at First Diesel Injection LTD |publisher=Firstdiesel.com |accessdate=May 11, 2009 |archiveurl=https://web.archive.org/web/20110203070641/http://firstdiesel.com/ |archivedate=February 3, 2011 |url-status=live |df=mdy }}&lt;/ref&gt;
+&lt;ref name=&quot;Dieselhub&quot;&gt;[http://www.dieselhub.com/tech/idi-vs-di.html &quot;IDI vs DI&quot;] Diesel hub&lt;/ref&gt;
+&lt;ref name=&quot;Diesel_1895&quot;&gt;US patent (granted in 1895) [http://pdfpiw.uspto.gov/.piw?docid=00542846&amp;SectionNum=2&amp;IDKey=1BB1E16A8D0F&amp;HomeUrl=http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1%2526Sect2=HITOFF%2526d=PALL%2526p=1%2526u=%25252Fnetahtml%25252FPTO%25252Fsrchnum.htm%2526r=1%2526f=G%2526l=50%2526s1=0542846.PN.%2526OS=PN/0542846%2526RS=PN/0542846 #542846 pdfpiw.uspto.gov]&lt;/ref&gt;
+&lt;ref name=&quot;Diesel_1898&quot;&gt;{{cite web|url=http://pdfpiw.uspto.gov/.piw?Docid=00608845&amp;homeurl=http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1%2526Sect2=HITOFF%2526d=PALL%2526p=1%2526u=%25252Fnetahtml%25252FPTO%25252Fsrchnum.htm%2526r=1%2526f=G%2526l=50%2526s1=0608845.PN.%2526OS=PN/0608845%2526RS=PN/0608845&amp;PageNum=&amp;Rtype=&amp;SectionNum=&amp;idkey=NONE&amp;Input=View+first+page|title=Patent Images|website=Pdfpiw.uspto.gov|accessdate=October 28, 2017}}&lt;/ref&gt;
+&lt;ref name=&quot;e-rara.ch&quot;&gt;{{cite web |url=http://www.e-rara.ch/download/pdf/3496617?name=Die%20Entstehung%20des%20Dieselmotors |title=Archived copy |accessdate=2016-09-04 |url-status=dead |archiveurl=https://web.archive.org/web/20170729195641/http://www.e-rara.ch/download/pdf/3496617?name=Die%20Entstehung%20des%20Dieselmotors |archivedate=July 29, 2017 |df=mdy-all }}&lt;/ref&gt;
+&lt;ref name=&quot;RiversHarbors&quot;&gt;{{cite book|title=Rivers and Harbors|url=https://books.google.com/books?id=Xko1AQAAMAAJ&amp;pg=PA590|year=1921|pages=590–}}&lt;/ref&gt;
+&lt;ref name=&quot;Solomon&quot;&gt;{{cite book|author=Brian Solomon|title=American Diesel Locomotives|url=https://books.google.com/books?id=bVEhihy7tKEC&amp;pg=PA34|publisher=Voyageur Press|isbn=978-1-61060-605-9|pages=34–}}&lt;/ref&gt;
+&lt;ref name=&quot;Hartman&quot;&gt;{{cite book|author=Jeff Hartman|title=Turbocharging Performance Handbook|url=https://books.google.com/books?id=SvG0gq4DxecC&amp;pg=PA2|publisher=MotorBooks International|isbn=978-1-61059-231-4|pages=2–}}&lt;/ref&gt;
+&lt;ref name=&quot;Busch&quot;&gt;{{cite book|url=https://books.google.com/?id=FEV-AAAAIAAJ&amp;printsec=frontcover&amp;dq=diesel+engine#v=onepage&amp;q&amp;f=false|title=The Diesel engine|publisher=Busch–Sulzer Bros. Diesel Engine Company, St. Louis Busch|year=1913}}&lt;/ref&gt;
+&lt;ref name=&quot;Tucker2014&quot;&gt;{{cite book|author=Spencer C. Tucker|title=World War I: The Definitive Encyclopedia and Document Collection &amp;#91;5 volumes&amp;#93;: The Definitive Encyclopedia and Document Collection|url=https://books.google.com/books?id=DBwTBQAAQBAJ&amp;pg=PA1506|date=2014|publisher=ABC-CLIO|isbn=978-1-85109-965-8|pages=1506–}}&lt;/ref&gt;
+&lt;ref name=&quot;Klooster2009&quot;&gt;{{cite book|author=John W. Klooster|title=Icons of Invention: The Makers of the Modern World from Gutenberg to Gates|url=https://books.google.com/books?id=WKuG-VIwID8C&amp;pg=PA245|year=2009|publisher=ABC-CLIO|isbn=978-0-313-34743-6|pages=245–}}&lt;/ref&gt;
+&lt;ref name=&quot;Pease2003&quot;&gt;{{cite book|author=John Pease|title=The History of J &amp; H McLaren of Leeds: Steam &amp; Diesel Engine Makers|url=https://books.google.com/books?id=y2QfAQAAIAAJ|year=2003|publisher=Landmark Pub.|isbn=978-1-84306-105-2}}&lt;/ref&gt;
+&lt;ref name=&quot;AutomobileQuarterly&quot;&gt;{{cite book|title=Automobile Quarterly|url=https://books.google.com/books?id=ez9WAAAAMAAJ|year=1974|publisher=Automobile Quarterly}}&lt;/ref&gt;
+&lt;ref name=&quot;EuDaly_2016_160&quot;&gt;Kevin EuDaly, Mike Schafer, Steve Jessup, Jim Boyd, Andrew McBride, Steve Glischinski: '' The Complete Book of North American Railroading'', Book Sales, 2016, {{ISBN|978-0785833895}}, p. 160&lt;/ref&gt;
+&lt;ref name=&quot;Long_2013&quot;&gt;Brian Long: Zero Carbon Car: Green Technology and the Automotive Industry, Crowood, 2013, {{ISBN|978-1847975140}}.&lt;/ref&gt;
+&lt;ref name=&quot;Brit2and4&quot;&gt;[http://www.britannica.com/EBchecked/topic/162716/diesel-engine/45706/Two-stroke-and-four-stroke-engines &quot;Two and Four Stroke Diesel Engines&quot;]. Encyclopædia Britannica&lt;/ref&gt;
+&lt;ref name=&quot;Comb in IC&quot;&gt;{{Cite journal|title=Combustion in IC (Internal Combustion) Engines|accessdate=November 1, 2008|url=http://me.queensu.ca/courses/MECH435/6.+Combustion+in+IC+Engines.ppt|pages=Slide 37|archive-url  = https://web.archive.org/web/20050816030858/http://me.queensu.ca/courses/MECH435/6.%20Combustion%20in%20IC%20Engines.ppt |archive-date = August 16, 2005|url-status=dead |df=mdy-all}}&lt;/ref&gt;
+
+}}
+
+==External links==
+{{Commons category|Diesel engines}}
+{{Commons|Rudolf Diesel}}
+{{Collier's Poster|Diesel Engine}}
+* {{Cite web
+  |url=https://dieselinformation.aecc.eu
+  |title=Diesel Information Hub
+  |publisher=Association for Emissions Control by Catalyst
+}}
+* {{Internet Archive short film | 0613_Diesel_Story_The_06_30_42_18 | The Diesel Story (1952)}}
+* {{YouTube| DDLJgUaBpmM | &quot;Introduction to Two Stroke Marine Diesel Engine&quot; }}
+* {{YouTube| wCA5pInfPpM | &quot;The Engine That Powers the World&quot; BBC Documentary }}
+
+===Patents===
+* [http://pdfpiw.uspto.gov/.piw?docid=00542846&amp;SectionNum=2&amp;IDKey=1BB1E16A8D0F&amp;HomeUrl=http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1%2526Sect2=HITOFF%2526d=PALL%2526p=1%2526u=%25252Fnetahtml%25252FPTO%25252Fsrchnum.htm%2526r=1%2526f=G%2526l=50%2526s1=0542846.PN.%2526OS=PN/0542846%2526RS=PN/0542846 Method of and Apparatus for Converting Heat into Work. # 542846 filed 1892]
+* [http://pdfpiw.uspto.gov/.piw?Docid=00608845&amp;homeurl=http%3A%2F%2Fpatft.uspto.gov%2Fnetacgi%2Fnph-Parser%3FSect1%3DPTO1%2526Sect2%3DHITOFF%2526d%3DPALL%2526p%3D1%2526u%3D%25252Fnetahtml%25252FPTO%25252Fsrchnum.htm%2526r%3D1%2526f%3DG%2526l%3D50%2526s1%3D0608845.PN.%2526OS%3DPN%2F0608845%2526RS%3DPN%2F0608845&amp;PageNum=&amp;Rtype=&amp;SectionNum=&amp;idkey=NONE&amp;Input=View+first+page Internal Combustion Engine #608845 filed 1895]
+
+{{Heat engines}}
+{{Automotive engine}}
+{{Automobile configuration}}
+
+{{Authority control}}
+
+[[Category:Diesel engines| ]]
+[[Category:Internal combustion piston engines]]
+[[Category:1893 introductions]]
+[[Category:1893 in Germany]]
+[[Category:German inventions]]</text>
+      <sha1>p8cnmfcurwitq84ntft0qhe3xka68vd</sha1>
+    </revision>
+  </page>

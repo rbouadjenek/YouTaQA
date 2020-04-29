@@ -1,0 +1,158 @@
+  <page>
+    <title>Electron counting</title>
+    <ns>0</ns>
+    <id>9890</id>
+    <revision>
+      <id>912613795</id>
+      <parentid>912613670</parentid>
+      <timestamp>2019-08-26T19:39:45Z</timestamp>
+      <contributor>
+        <ip>132.62.88.130</ip>
+      </contributor>
+      <comment>/* Examples */ -sp</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">'''Electron counting''' is a formalism used for classifying compounds and for explaining or predicting electronic structure and [[chemical bond|bonding]].&lt;ref&gt;{{Cite journal
+| issn = 0021-9584
+| volume = 83
+| pages = 791
+| last = Parkin
+| first = Gerard
+| title = Valence, Oxidation Number, and Formal Charge: Three Related but Fundamentally Different Concepts
+| journal = Journal of Chemical Education
+| accessdate = 2009-11-10
+| year = 2006
+| url = http://jchemed.chem.wisc.edu/Journal/Issues/2006/May/abs791.html
+|bibcode = 2006JChEd..83..791P |doi = 10.1021/ed083p791 }}&lt;/ref&gt;  Many rules in chemistry rely on electron-counting:
+
+*[[Octet rule]] is used with [[Lewis structure]]s for [[main group element]]s, especially the lighter ones such as [[carbon]], [[nitrogen]], and [[oxygen]],
+*[[18-electron rule]] in [[inorganic chemistry]] and [[organometallic chemistry]] of [[transition metal]]s,
+*[[Hückel's rule]] for the [[pi electron|π-electron]]s of [[aromaticity|aromatic compounds]],
+*[[Polyhedral skeletal electron pair theory]] for [[cluster compound]]s, including transition metals and main group elements such as [[boron]] including [[Kenneth Wade|Wade's]] rules for [[Polyhedron|polyhedral]] cluster compounds, including transition metals and main group elements and mixtures thereof.
+
+Atoms are called &quot;electron-deficient&quot; when they have too few electrons as compared to their respective rules, or &quot;hypervalent&quot; when they have too many electrons.  Since these compounds tend to be more reactive than compounds that obey their rule, electron counting is an important tool for identifying the reactivity of molecules.
+
+==Counting rules==
+
+Two methods of electron counting are popular and both give the same result. 
+*The neutral counting approach assumes the molecule or fragment being studied consists of purely covalent bonds.  It was popularized by [[Malcolm Green (chemist)|Malcolm Green]] along with the L and X ligand notation.&lt;ref&gt;{{Cite journal
+| doi = 10.1016/0022-328X(95)00508-N
+| issn = 0022-328X
+| volume = 500
+| issue = 1–2
+| pages = 127–148
+| last = Green
+| first = M. L. H.
+| title = A new approach to the formal classification of covalent compounds of the elements
+| journal = [[Journal of Organometallic Chemistry]]
+| date = 1995-09-20
+}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.columbia.edu/cu/chemistry/groups/parkin/mlxz.htm|title=MLXZ|website=www.columbia.edu}}&lt;/ref&gt;  It is usually considered easier especially for low-valent transition metals.{{citation needed|date=November 2013}}
+
+*The &quot;ionic counting&quot; approach assumes purely ionic bonds between atoms. One can check one's calculation by employing both approaches.
+
+It is important, though, to be aware that most chemical species exist between the purely covalent and ionic extremes.
+
+===Neutral counting===
+* This method begins with locating the central atom on the periodic table and determining the number of its valence electrons. One counts valence electrons for main group elements differently from transition metals.
+:E.g. in period 2: B, C, N, O, and F have 3, 4, 5, 6, and 7 valence electrons, respectively.
+:E.g. in period 4: K, Ca, Sc, Ti, V, Cr, Fe, Ni have 1, 2, 3, 4, 5, 6, 8, 10 valence electrons respectively.
+* One is added for every [[halide]] or other anionic ligand which binds to the central atom through a sigma bond.
+* Two is added for every lone pair bonding to the metal (e.g. each Lewis base binds with a lone pair). Unsaturated hydrocarbons such as alkenes and alkynes are considered Lewis bases. Similarly Lewis and Bronsted acids (protons) contribute nothing.
+* One is added for each homoelement bond.
+* One is added for each negative charge, and one is subtracted for each positive charge.
+
+===Ionic counting===
+* This method begins by calculating the number of electrons of the element, assuming an oxidation state
+:E.g. for a Fe&lt;sup&gt;2+&lt;/sup&gt; has 6 electrons
+:S&lt;sup&gt;2−&lt;/sup&gt; has 8 electrons
+* Two is added for every [[halide]] or other anionic ligand which binds to the metal through a sigma bond.
+* Two is added for every lone pair bonding to the metal (e.g. each phosphine ligand can bind with a lone pair). Similarly Lewis and Bronsted acids (protons) contribute nothing.
+* For unsaturated ligands such as alkenes, one electron is added for each carbon atom binding to the metal.
+
+==Electrons donated by common fragments==
+{| border=&quot;1&quot; cellspacing=&quot;0&quot; class=&quot;wikitable&quot;
+|-
+! Ligand !! Electrons contributed&lt;br/&gt;(neutral counting) !! Electrons contributed&lt;br/&gt;(ionic counting) !! Ionic equivalent
+|-
+| [[Halide|X]] || 1 || 2 ||X&lt;sup&gt;−&lt;/sup&gt;; X = F, Cl, Br, I
+|-
+| [[Hydride|H]] || 1 || 2 ||H&lt;sup&gt;−&lt;/sup&gt;
+|-
+| [[Hydrogen|H]] || 1 || 0 ||H&lt;sup&gt;+&lt;/sup&gt;
+|-
+| [[Oxide|O]] || 2 || 4 ||O&lt;sup&gt;2−&lt;/sup&gt;
+|-
+| [[Nitride|N]] || 3 || 6 ||N&lt;sup&gt;3−&lt;/sup&gt;
+|-
+| [[Amine|NR&lt;sub&gt;3&lt;/sub&gt;]] || 2 || 2 ||NR&lt;sub&gt;3&lt;/sub&gt;; R = H, alkyl, aryl
+|-
+| [[Alkylidene|CR&lt;sub&gt;2&lt;/sub&gt;]] || 2 || 4 ||{{chem|CR|2|2−}}
+|-
+| [[Ethylene]] || 2 || 2 ||C&lt;sub&gt;2&lt;/sub&gt;H&lt;sub&gt;4&lt;/sub&gt;
+|-
+| [[Cyclopentadienyl complex|cyclopentadienyl]] || 5 || 6 ||{{chem|C|5|H|5|−}}
+|-
+| [[benzene]] || 6 || 6 ||C&lt;sub&gt;6&lt;/sub&gt;H&lt;sub&gt;6&lt;/sub&gt;
+|}
+
+===&quot;Special cases&quot;===
+The numbers of electrons &quot;donated&quot; by some ligands depends on the geometry of the metal-ligand ensemble.  An example of this complication is the M–[[Nitrosyl|NO]] entity. When this grouping is linear, the NO ligand is considered to be a three-electron ligand.  When the M–NO subunit is strongly bent at N, the NO is treated as a pseudohalide and is thus a one electron (in the neutral counting approach).  The situation is not very different from the ''η''&lt;sup&gt;3&lt;/sup&gt; versus the ''η''&lt;sup&gt;1&lt;/sup&gt; allyl.  Another unusual ligand from the electron counting perspective is sulfur dioxide. 
+&lt;!-- -SCN vs. -NCS? --&gt;
+
+==Examples==
+*[[Methane|CH&lt;sub&gt;4&lt;/sub&gt;]], for the central C
+:neutral counting: C contributes 4 electrons, each H radical contributes one each: 4 + 4 × 1 = 8 valence electrons
+:ionic counting: C&lt;sup&gt;4−&lt;/sup&gt; contributes 8 electrons, each proton contributes 0 each: 8 + 4 × 0 = 8 electrons.
+:Similar for H:
+:neutral counting: H contributes 1 electron, the C contributes 1 electron (the other 3 electrons of C are for the other 3 hydrogens in the molecule): 1 + 1 × 1 = 2 valence electrons.
+:ionic counting: H contributes 0 electrons (H&lt;sup&gt;+&lt;/sup&gt;), C&lt;sup&gt;4−&lt;/sup&gt; contributes 2 electrons (per H), 0 + 1 × 2 = 2 valence electrons
+:conclusion: Methane follows the octet-rule for carbon, and the duet rule for hydrogen, and hence is expected to be a stable molecule (as we see from daily life)
+
+*[[Hydrogen sulfide|H&lt;sub&gt;2&lt;/sub&gt;S]], for the central S
+:neutral counting: S contributes 6 electrons, each hydrogen radical contributes one each: 6 + 2 × 1 = 8 valence electrons
+:ionic counting: S&lt;sup&gt;2−&lt;/sup&gt; contributes 8 electrons, each proton contributes 0: 8 + 2 × 0 = 8 valence electrons
+:conclusion: with an octet electron count (on sulfur), we can anticipate that H&lt;sub&gt;2&lt;/sub&gt;S would be pseudotetrahedral if one considers the two lone pairs.
+
+*[[Sulfur dichloride|SCl&lt;sub&gt;2&lt;/sub&gt;]], for the central S
+:neutral counting: S contributes 6 electrons, each chlorine radical contributes one each: 6 + 2 × 1 = 8 valence electrons
+:ionic counting: S&lt;sup&gt;2+&lt;/sup&gt; contributes 4 electrons, each chloride anion contributes 2: 4 + 2 × 2 = 8 valence electrons
+:conclusion: see discussion for H&lt;sub&gt;2&lt;/sub&gt;S above. Both SCl&lt;sub&gt;2&lt;/sub&gt; and H&lt;sub&gt;2&lt;/sub&gt;S follow the octet rule - the behavior of these molecules is however quite different.
+
+*[[Sulfur hexafluoride|SF&lt;sub&gt;6&lt;/sub&gt;]], for the central S
+:neutral counting: S contributes 6 electrons, each fluorine radical contributes one each: 6 + 6 × 1 = 12 valence electrons
+:ionic counting: S&lt;sup&gt;6+&lt;/sup&gt; contributes 0 electrons, each fluoride anion contributes 2: 0 + 6 × 2 = 12 valence electrons
+:conclusion: ionic counting indicates a molecule lacking lone pairs of electrons, therefore its structure will be octahedral, as predicted by [[VSEPR]].  One might conclude that this molecule would be highly reactive - but the opposite is true: SF&lt;sub&gt;6&lt;/sub&gt; is inert, and it is widely used in industry because of this property.
+
+* [[Titanium tetrachloride|TiCl&lt;sub&gt;4&lt;/sub&gt;]], for the central Ti
+:neutral counting: Ti contributes 4 electrons, each chlorine radical contributes one each: 4 + 4 × 1 = 8 valence electrons
+:ionic counting: Ti&lt;sup&gt;4+&lt;/sup&gt; contributes 0 electrons, each chloride anion contributes two each: 0 + 4 × 2 = 8 valence electrons
+:conclusion: Having only 8e (vs. [[Eighteen electron rule|18]] possible), we can anticipate that TiCl&lt;sub&gt;4&lt;/sub&gt; will be a good Lewis acid.  Indeed, it reacts (in some cases violently) with water, alcohols, ethers, amines.
+
+* [[Iron pentacarbonyl|Fe(CO)&lt;sub&gt;5&lt;/sub&gt;]]
+:neutral counting: Fe contributes 8 electrons, each CO contributes 2 each: 8 + 2 × 5 = 18 valence electrons
+:ionic counting: Fe(0) contributes 8 electrons, each CO contributes 2 each: 8 + 2 × 5 = 18 valence electrons
+:conclusions: this is a special case, where ionic counting is the same as neutral counting, all fragments being neutral.  Since this is an 18-electron complex, it is expected to be isolable compound.
+
+* [[Ferrocene|Ferrocene, (C&lt;sub&gt;5&lt;/sub&gt;H&lt;sub&gt;5&lt;/sub&gt;)&lt;sub&gt;2&lt;/sub&gt;Fe]], for the central Fe:
+:neutral counting: Fe contributes 8 electrons, the 2 [[Cyclopentadienyl complex|cyclopentadienyl-rings]] contribute 5 each: 8 + 2 × 5 = 18 electrons
+:ionic counting: Fe&lt;sup&gt;2+&lt;/sup&gt; contributes 6 electrons, the two aromatic cyclopentadienyl rings contribute 6 each: 6 + 2 × 6 = 18 valence electrons on iron.
+:conclusion: Ferrocene is expected to be an isolable compound.
+
+&lt;!-- A bimetallic species with sharing ligands --&gt;
+&lt;!-- A bimetallic species with a metal-metal bond --&gt;
+These examples show the methods of electron counting, they are a ''formalism'', and don't have anything to do with ''real life'' chemical transformations.  Most of the 'fragments' mentioned above do '''not''' exist as such; they cannot be kept in a bottle: e.g. the neutral C, the tetraanionic C, the neutral Ti, and the tetracationic Ti are not ''free'' species, they are always bound to something, for neutral C, it is commonly found in graphite, charcoal, diamond (sharing electrons with the neighboring carbons), as for Ti which can be found as its metal (where it shares its electrons with neighboring Ti atoms), C&lt;sup&gt;4−&lt;/sup&gt; and Ti&lt;sup&gt;4+&lt;/sup&gt; 'exist' only with appropriate counterions (with which they probably share electrons). So these formalisms are only used to predict stabilities or properties of compounds!
+
+==See also==
+* [[d electron count]]
+
+==References==
+{{Reflist}}
+
+{{Chemical bonds}}
+
+{{DEFAULTSORT:Electron Counting}}
+[[Category:Inorganic chemistry]]
+[[Category:Chemical bonding]]</text>
+      <sha1>6hcg5krwrd1ibjsxgg3lslay0735r9r</sha1>
+    </revision>
+  </page>

@@ -1,0 +1,245 @@
+  <page>
+    <title>Equivalence relation</title>
+    <ns>0</ns>
+    <id>9259</id>
+    <revision>
+      <id>939581128</id>
+      <parentid>939568099</parentid>
+      <timestamp>2020-02-07T10:29:19Z</timestamp>
+      <contributor>
+        <username>Jochen Burghardt</username>
+        <id>17350134</id>
+      </contributor>
+      <comment>/* Counting partitions */ no pipe needed ; equivalent expressions for B_n are not too relevant here</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{about|the mathematical concept|the patent doctrine|Doctrine of equivalents}}
+{{redirect|Equivalency||Equivalence (disambiguation){{!}}Equivalence}}
+[[File:Set partitions 5; matrices.svg|right|thumb|The [[Bell number|52]] equivalence relations on a 5-element set depicted as 5×5 [[logical matrix|logical matrices]] (colored fields, including those in light gray, stand for ones; white fields for zeros.) The row and column indices of nonwhite cells are the related elements, while the different colors, other than light gray, indicate the  equivalence classes (each light gray cell is its own equivalence class).]]
+
+In [[mathematics]], an '''equivalence relation''' is a [[binary relation]] that is [[reflexive relation|reflexive]], [[symmetric relation|symmetric]] and [[transitive relation|transitive]]. The relation &quot;is equal to&quot; is the canonical example of an equivalence relation, where for any objects {{mvar|a}}, {{mvar|b}}, and {{mvar|c}}:
+* {{math|''a'' {{=}} ''a''}} (reflexive property),
+* if {{math|''a'' {{=}} ''b''}} then {{math|''b'' {{=}} ''a''}} (symmetric property), and
+* if {{math|''a'' {{=}} ''b''}} and {{math|''b'' {{=}} ''c''}} then {{math|''a'' {{=}} ''c''}} (transitive property).
+
+As a consequence of the reflexive, symmetric, and transitive properties, any equivalence relation provides a [[partition of a set|partition]] of the underlying set into disjoint [[equivalence classes]]. Two elements of the given set are equivalent to each other if and only if they belong to the same equivalence class.
+
+== Notation ==
+Various notations are used in the literature to denote that two elements {{math|''a''}} and {{math|''b''}} of a set are equivalent with respect to an equivalence relation {{math|''R''}}; the most common are &quot;{{math|''a'' ~ ''b''}}&quot; and &quot;{{math|''a'' ≡ ''b''}}&quot;, which are used when {{math|''R''}} is implicit, and variations of &quot;{{math|''a'' ~&lt;sub&gt;''R''&lt;/sub&gt; ''b''}}&quot;, &quot;{{math|''a'' ≡&lt;sub&gt;''R''&lt;/sub&gt; ''b''}}&quot;, or &quot;{{math|''aRb''}}&quot; to specify {{math|''R''}} explicitly. Non-equivalence may be written &quot;{{math|''a'' ≁ ''b''}}&quot; or &quot;&lt;math&gt;a \not\equiv b&lt;/math&gt;&quot;.
+
+== Definition ==
+A given [[binary relation]] ~ on a set ''X'' is said to be an equivalence relation [[if and only if]] it is reflexive, symmetric and transitive. That is, for all ''a'', ''b'' and ''c'' in ''X'':
+*''a'' ~ ''a''. ([[reflexive relation|Reflexivity]])
+*''a'' ~ ''b'' if and only if ''b'' ~ ''a''. ([[symmetric relation|Symmetry]])
+*if ''a'' ~ ''b'' and ''b'' ~ ''c'' then ''a'' ~ ''c''. ([[transitive relation|Transitivity]])
+
+''X'' together with the relation ~ is called a [[setoid]]. The [[equivalence class]] of &lt;math&gt;a&lt;/math&gt; under ~, denoted &lt;math&gt;[a]&lt;/math&gt;, is defined as &lt;math&gt;[a] = \{b\in X \mid a\sim b\}&lt;/math&gt;.
+
+== Examples ==
+
+=== Simple example ===
+Let the set &lt;math&gt;\{a, b, c\}&lt;/math&gt; have the equivalence relation &lt;math&gt;\{(a, a), (b, b), (c, c), (b, c), (c, b)\}&lt;/math&gt;. The following sets are [[equivalence classes]] of this relation:
+
+: &lt;math&gt;[a] = \{a\}, ~~~~ [b] = [c] = \{b, c\}&lt;/math&gt;.
+
+The set of all equivalence classes for this relation is &lt;math&gt;\{\{a\}, \{b, c\}\}&lt;/math&gt;. This set is a [[partition of a set|partition]] of the set &lt;math&gt;\{a, b, c\}&lt;/math&gt;.
+
+=== Equivalence relations ===
+
+The following are all equivalence relations:
+* &quot;Is equal to&quot; on the set of numbers.  For example, &lt;math&gt;\tfrac{1}{2}&lt;/math&gt; is equal to &lt;math&gt;\tfrac{4}{8}&lt;/math&gt;.
+* &quot;Has the same birthday as&quot; on the set of all people.
+* &quot;Is [[Similarity (geometry)|similar]] to&quot; on the set of all [[triangle (geometry)|triangle]]s.
+* &quot;Is [[Congruence (geometry)|congruent]] to&quot; on the set of all [[triangle (geometry)|triangle]]s.
+* &quot;Is congruent to, [[modular arithmetic|modulo]] ''n''&quot; on the [[integers]].
+* &quot;Has the same [[image (mathematics)|image]] under a [[function (mathematics)|function]]&quot; on the elements of the [[domain (mathematics)|domain of the function]].
+* &quot;Has the same absolute value&quot; on the set of real numbers
+* &quot;Has the same cosine&quot; on the set of all angles.
+
+=== Relations that are not equivalences ===
+* The relation &quot;≥&quot; between real numbers is reflexive and transitive, but not symmetric. For example, 7 ≥ 5 does not imply that 5 ≥ 7.  It is, however, a [[total order]].
+* The relation &quot;has a [[common factor]] greater than 1 with&quot; between [[natural numbers]] greater than 1, is reflexive and symmetric, but not transitive. (Example: The natural numbers 2 and 6 have a common factor greater than 1, and 6 and 3 have a common factor greater than 1, but 2 and 3 do not have a common factor greater than 1).
+* The [[empty relation]] ''R'' on a [[non-empty]] set ''X'' (i.e. ''aRb'' is never true) is [[vacuously true|vacuously]] symmetric and transitive, but not reflexive. (If ''X'' is also empty then ''R'' ''is'' reflexive.)
+* The relation &quot;is approximately equal to&quot; between real numbers, even if more precisely defined, is not an equivalence relation, because although reflexive and symmetric, it is not transitive, since multiple small changes can accumulate to become a big change. However, if the approximation is defined asymptotically, for example by saying that two functions ''f'' and ''g'' are approximately equal near some point if the limit of ''f − g'' is 0 at that point, then this defines an equivalence relation.
+
+==Connections to other relations==
+
+*A [[partial order]] is a relation that is reflexive, ''[[antisymmetric relation|antisymmetric]]'', and transitive.
+*[[Equality (mathematics)|Equality]] is both an equivalence relation and a partial order. Equality is also the only relation on a set that is reflexive, symmetric and antisymmetric. In [[algebraic expression]]s, equal variables may be [[substitution (algebra)|substituted]] for one another, a facility that is not available for equivalence related variables. The [[equivalence class]]es of an equivalence relation can substitute for one another, but not individuals within a class.
+*A [[strict partial order]] is irreflexive, transitive, and [[asymmetric relation|asymmetric]].
+*A [[partial equivalence relation]] is transitive and symmetric. Transitive and symmetric imply reflexive [[if and only if]] for all ''a ''∈ ''X'', there exists a ''b ''∈ ''X'' such that ''a ''~ ''b''.
+*A reflexive and symmetric relation is a [[dependency relation]], if finite, and a [[tolerance relation]] if infinite.
+*A [[preorder]] is reflexive and transitive.
+*A [[congruence relation]] is an equivalence relation whose domain ''X'' is also the underlying set for an [[algebraic structure]], and which respects the additional structure. In general, congruence relations play the role of [[Kernel (algebra)|kernels]] of homomorphisms, and the quotient of a structure by a congruence relation can be formed. In many important cases congruence relations have an alternative representation as substructures of the structure on which they are defined. E.g. the congruence relations on groups correspond to the [[normal subgroup]]s.
+*Any equivalence relation is the negation of an [[apartness relation]], though the converse statement only holds in [[classical mathematics]] (as opposed to [[constructive mathematics]]), since it is equivalent to the [[law of excluded middle]].
+*A [[serial relation]] ~ satisfies &amp;forall; ''a'' &amp;exist; ''b'' &amp;nbsp; ''a'' ~ ''b''. Evidently it is sufficient for a serial relation ~ to be symmetric and transitive for it also to be reflexive. Indeed, since the relation is serial, every element is in the relation. Then, using symmetry, reflexivity can be concluded from transitivity by identifying the first and third variables in the transitive axiom. Therefore, an equivalence relation may be alternatively defined as a symmetric, transitive, serial relation.
+
+== Well-definedness under an equivalence relation ==
+
+If ~ is an equivalence relation on ''X'', and ''P''(''x'') is a property of elements of ''X'', such that whenever ''x'' ~ ''y'', ''P''(''x'') is true if ''P''(''y'') is true, then the property ''P'' is said to be [[well-defined]] or a ''class invariant'' under the relation ~.
+
+A frequent particular case occurs when ''f'' is a function from ''X'' to another set ''Y''; if ''x''&lt;sub&gt;1&lt;/sub&gt; ~ ''x''&lt;sub&gt;2&lt;/sub&gt; implies ''f''(''x''&lt;sub&gt;1&lt;/sub&gt;) = ''f''(''x''&lt;sub&gt;2&lt;/sub&gt;) then ''f'' is said to be a ''morphism'' for ~, a ''class invariant under'' ~, or simply ''invariant under'' ~. This occurs, e.g. in the character theory of finite groups. The latter case with the function ''f'' can be expressed by a commutative triangle. See also [[invariant (mathematics)|invariant]].  Some authors use &quot;compatible with ~&quot; or just &quot;respects ~&quot; instead of &quot;invariant under ~&quot;.
+
+More generally, a function may map equivalent arguments (under an equivalence relation ~&lt;sub&gt;A&lt;/sub&gt;) to equivalent values (under an equivalence relation ~&lt;sub&gt;B&lt;/sub&gt;).  Such a function is known as a morphism from ~&lt;sub&gt;A&lt;/sub&gt; to ~&lt;sub&gt;B&lt;/sub&gt;.
+
+== Equivalence class, quotient set, partition ==
+Let &lt;math&gt;a,b\in X&lt;/math&gt;. Some definitions:
+
+=== Equivalence class ===
+{{main|Equivalence class}}
+A subset ''Y'' of ''X'' such that ''a'' ~ ''b'' holds for all ''a'' and ''b'' in ''Y'', and never for ''a'' in ''Y'' and ''b'' outside ''Y'', is called an '''equivalence class''' of ''X'' by ~. Let &lt;math&gt;[a] := \{x \in X \mid a \sim x\}&lt;/math&gt; denote the equivalence class to which ''a'' belongs. All elements of ''X'' equivalent to each other are also elements of the same equivalence class.
+
+=== Quotient set ===
+{{main|Quotient set}}
+The set of all equivalence classes of ''X'' by ~, denoted &lt;math&gt; X/\mathord{\sim} := \{[x] \mid x \in X\}&lt;/math&gt;, is the '''quotient set''' of ''X'' by ~. If ''X'' is a [[topological space]], there is a natural way of transforming ''X''/~ into a topological space; see [[Quotient space (topology)|quotient space]] for the details.
+
+=== Projection ===
+{{main|Projection (relational algebra)}}
+The '''projection''' of ~ is the function &lt;math&gt;\pi: X \to X/\mathord{\sim} &lt;/math&gt; defined by &lt;math&gt;\pi(x) = [x]&lt;/math&gt; which maps elements of ''X'' into their respective equivalence classes by ~.
+
+:'''Theorem''' on [[Projection (set theory)|projection]]s:&lt;ref&gt;[[Garrett Birkhoff]] and [[Saunders Mac Lane]], 1999 (1967). ''Algebra'', 3rd ed. p.&amp;nbsp;35, Th. 19. Chelsea.&lt;/ref&gt;  Let the function ''f'': ''X'' &amp;rarr; ''B'' be such that ''a'' ~ ''b'' &amp;rarr; ''f''(''a'') = ''f''(''b''). Then there is a unique function ''g'' : ''X/~'' &amp;rarr; ''B'', such that ''f'' = ''g''&amp;pi;. If ''f'' is a [[surjection]] and ''a'' ~ ''b'' &amp;harr; ''f''(''a'') = ''f''(''b''), then ''g'' is a [[bijection]].
+
+=== Equivalence kernel ===
+The '''equivalence kernel''' of a function ''f'' is the equivalence relation ~ defined by &lt;math&gt;x\sim y \iff f(x) = f(y)&lt;/math&gt;. The equivalence kernel of an [[Injective function|injection]] is the [[identity relation]].
+
+=== Partition ===
+{{main|Partition of a set}}
+A '''partition''' of ''X'' is a set ''P'' of nonempty subsets of ''X'', such that every element of ''X'' is an element of a single element of ''P''. Each element of ''P'' is a ''cell'' of the partition. Moreover, the elements of ''P'' are [[pairwise disjoint]] and their [[Union (set theory)|union]] is ''X''.
+
+==== Counting partitions ====
+Let ''X'' be a finite set with ''n'' elements. Since every equivalence relation over ''X'' corresponds to a partition of ''X'', and vice versa, the number of equivalence relations on ''X'' equals the number of distinct partitions of ''X'', which is the ''n''th [[Bell number]] ''B&lt;sub&gt;n&lt;/sub&gt;'':
+: &lt;math&gt;B_n = \frac{1}{e}\sum_{k=0}^\infty \frac{k^n}{k!}&lt;/math&gt; &amp;nbsp; &amp;nbsp; &amp;nbsp; ([[Dobinski's formula]]).
+
+==Fundamental theorem of equivalence relations==
+
+A key result links equivalence relations and partitions:&lt;ref&gt;Wallace, D. A. R., 1998. ''Groups, Rings and Fields''. p.&amp;nbsp;31, Th. 8. Springer-Verlag.&lt;/ref&gt;&lt;ref&gt;Dummit, D. S., and Foote, R. M., 2004. ''Abstract Algebra'', 3rd ed. p.&amp;nbsp;3, Prop. 2. John Wiley &amp; Sons.&lt;/ref&gt;&lt;ref&gt;[[Karel Hrbacek]] &amp; [[Thomas Jech]] (1999) ''Introduction to Set Theory'', 3rd edition, pages 29–32, [[Marcel Dekker]]&lt;/ref&gt;
+*An equivalence relation ~ on a set ''X'' partitions ''X''.
+*Conversely, corresponding to any partition of ''X'', there exists an equivalence relation ~ on ''X''.
+In both cases, the cells of the partition of ''X'' are the equivalence classes of ''X'' by ~. Since each element of ''X'' belongs to a unique cell of any partition of ''X'', and since each cell of the partition is identical to an [[equivalence class]] of ''X'' by ~, each element of ''X'' belongs to a unique equivalence class of ''X'' by ~. Thus there is a natural [[bijection]] between the set of all equivalence relations on ''X'' and the set of all partitions of ''X''.
+
+== Comparing equivalence relations ==
+{{see also|Partition of a set#Refinement of partitions}}
+If ~ and ≈ are two equivalence relations on the same set ''S'', and ''a''~''b'' implies ''a''≈''b'' for all ''a'',''b'' ∈ ''S'', then ≈ is said to be a '''coarser''' relation than ~, and ~ is a '''finer''' relation than ≈.  Equivalently,
+* ~ is finer than ≈ if every equivalence class of ~ is a subset of an equivalence class of ≈, and thus every equivalence class of ≈ is a union of equivalence classes of ~.
+* ~ is finer than ≈ if the partition created by ~ is a refinement of the partition created by ≈.
+
+The equality equivalence relation is the finest equivalence relation on any set, while the trivial relation that makes all pairs of elements related is the coarsest.
+
+The relation &quot;~ is finer than ≈&quot; on the collection of all equivalence relations on a fixed set is itself a partial order relation, which makes the collection a [[geometric lattice]].&lt;ref&gt;{{citation|title=Lattice Theory|volume=25|series=Colloquium Publications|publisher=American Mathematical Society|first=Garrett|last=Birkhoff|authorlink=Garrett Birkhoff|edition=3rd|year=1995|isbn=9780821810255}}. Sect. IV.9, Theorem 12, page 95&lt;/ref&gt;
+
+== Generating equivalence relations ==
+
+Given any binary relation &lt;math&gt;A \subset X \times X&lt;/math&gt; on &lt;math&gt; X &lt;/math&gt;,  the '''equivalence relation generated by &lt;math&gt;A&lt;/math&gt;''' is the intersection of the equivalence relations on &lt;math&gt;X&lt;/math&gt; that contain &lt;math&gt; A&lt;/math&gt;. (Since &lt;math&gt;X \times X&lt;/math&gt; is an equivalence relation, the intersection is nontrivial.)
+
+* Given any set ''X'', there is an equivalence relation over the set [''X'' → ''X''] of all functions ''X''→''X''. Two such functions are deemed equivalent when their respective sets of [[fixpoint]]s have the same [[cardinality]], corresponding to cycles of length one in a [[permutation]]. Functions equivalent in this manner form an equivalence class on [''X'' → ''X''], and these equivalence classes partition [''X'' → ''X''].
+* An equivalence relation ~ on ''X'' is the [[equivalence relation#Equivalence kernel|equivalence kernel]] of its [[surjective]] [[equivalence relation#Projection|projection]] π : ''X'' → ''X''/~.&lt;ref&gt;[[Garrett Birkhoff]] and [[Saunders Mac Lane]], 1999 (1967). ''Algebra'', 3rd ed. p.&amp;nbsp;33, Th. 18. Chelsea.&lt;/ref&gt; Conversely, any [[surjection]] between sets determines a partition on its [[Relation (mathematics)|domain]], the set of [[preimage]]s of [[Singleton (mathematics)|singleton]]s in the [[codomain]]. Thus an equivalence relation over ''X'', a partition of ''X'', and a projection whose domain is ''X'', are three equivalent ways of specifying the same thing.
+* The intersection of any collection of equivalence relations over ''X'' (binary relations viewed as a [[subset]] of ''X'' × ''X'') is also an equivalence relation. This yields a convenient way of generating an equivalence relation: given any binary relation ''R'' on ''X'', the equivalence relation ''generated by R'' is the smallest equivalence relation containing ''R''. Concretely, ''R'' generates the equivalence relation ''a'' ~ ''b'' [[if and only if]] there exist elements ''x''&lt;sub&gt;1&lt;/sub&gt;, ''x''&lt;sub&gt;2&lt;/sub&gt;, ..., ''x''&lt;sub&gt;''n''&lt;/sub&gt; in ''X'' such that ''a'' = ''x''&lt;sub&gt;1&lt;/sub&gt;, ''b'' = ''x''&lt;sub&gt;''n''&lt;/sub&gt;, and (''x''&lt;sub&gt;''i''&lt;/sub&gt;, ''x''&lt;sub&gt;''i''+1&lt;/sub&gt;) ∈ ''R'' or (''x''&lt;sub&gt;''i''+1&lt;/sub&gt;, ''x''&lt;sub&gt;''i''&lt;/sub&gt;) ∈ ''R'', ''i'' = 1, ..., ''n''−1.{{paragraph}} Note that the equivalence relation generated in this manner can be trivial. For instance, the equivalence relation ~ generated by any [[total order]] on ''X'' has exactly one equivalence class, ''X'' itself, because ''x'' ~ ''y'' for all ''x'' and ''y''. As another example, any subset of the [[identity relation]] on ''X'' has equivalence classes that are the singletons of ''X''.
+* Equivalence relations can construct new spaces by &quot;gluing things together.&quot; Let ''X'' be the unit [[Cartesian square]] [0, 1] × [0, 1], and let ~ be the equivalence relation on ''X'' defined by (''a'', 0) ~ (''a'', 1) for all ''a'' ∈ [0, 1] and (0, ''b'') ~ (1, ''b'') for all ''b'' ∈ [0, 1]. Then the [[quotient space (topology)|quotient space]] ''X''/~ can be naturally identified ([[homeomorphism]]) with a [[torus]]: take a square piece of paper, bend and glue together the upper and lower edge to form a cylinder, then bend the resulting cylinder so as to glue together its two open ends, resulting in a torus.
+
+==Algebraic structure==
+Much of mathematics is grounded in the study of equivalences, and [[order relation]]s. [[Lattice (order)|Lattice theory]] captures the mathematical structure of order relations. Even though equivalence relations are as ubiquitous in mathematics as order relations, the algebraic structure of equivalences is not as well known as that of orders. The former structure draws primarily on [[group theory]] and, to a lesser extent, on the theory of lattices, [[category theory|categories]], and [[groupoid]]s.
+
+===Group theory===
+Just as [[order relation]]s are grounded in [[Partially ordered set|ordered sets]], sets closed under pairwise [[supremum]] and [[infimum]], equivalence relations are grounded in [[partition of a set|partitioned sets]], which are sets closed under [[bijection]]s that preserve partition structure. Since all such bijections map an equivalence class onto itself, such bijections are also known as [[permutation]]s. Hence [[permutation group]]s (also known as [[Group action (mathematics)|transformation groups]]) and the related notion of [[orbit (group theory)|orbit]] shed light on the mathematical structure of equivalence relations.
+
+Let '~' denote an equivalence relation over some nonempty set ''A'', called the [[universe (mathematics)|universe]] or underlying set. Let ''G'' denote the set of bijective functions over ''A'' that preserve the partition structure of ''A'': ∀''x'' ∈ ''A'' ∀''g'' ∈ ''G'' (''g''(''x'') ∈ [''x'']). Then the following three connected theorems hold:&lt;ref&gt;Rosen (2008), pp.&amp;nbsp;243–45. Less clear is §10.3 of [[Bas van Fraassen]], 1989. ''Laws and Symmetry''. Oxford Univ. Press.&lt;/ref&gt;
+* ~ partitions ''A'' into equivalence classes. (This is the ''Fundamental Theorem of Equivalence Relations,'' mentioned above);
+* Given a partition of ''A'', ''G'' is a transformation group under composition, whose orbits are the [[partitions of a set|cells]] of the partition;{{#tag:ref|
+''Proof''.&lt;ref&gt;Bas van Fraassen, 1989. ''Laws and Symmetry''. Oxford Univ. Press: 246.&lt;/ref&gt; Let [[function composition]] interpret group multiplication, and function inverse interpret group inverse. Then ''G'' is a group under composition, meaning that  ∀''x'' ∈ ''A'' ∀''g'' ∈ ''G'' ([''g''(''x'')] = [''x'']), because ''G'' satisfies the following four conditions:
+* ''G is closed under composition''. The composition of any two elements of ''G'' exists, because the [[domain (mathematics)|domain]] and [[codomain]] of any element of ''G'' is ''A''. Moreover, the composition of bijections is [[bijective]];&lt;ref&gt;Wallace, D. A. R., 1998. ''Groups, Rings and Fields''. Springer-Verlag: 22, Th. 6.&lt;/ref&gt;
+* ''Existence of [[identity function]]''. The [[identity function]], ''I''(''x'') = ''x'', is an obvious element of ''G'';
+* ''Existence of [[inverse function]]''. Every [[bijective function]] ''g'' has an inverse ''g''&lt;sup&gt;&amp;minus;1&lt;/sup&gt;, such that ''gg''&lt;sup&gt;−1&lt;/sup&gt; = ''I'';
+* ''Composition [[associativity|associates]]''. ''f''(''gh'') = (''fg'')''h''. This holds for all functions over all domains.&lt;ref&gt;Wallace, D. A. R., 1998. ''Groups, Rings and Fields''.  Springer-Verlag: 24, Th. 7.&lt;/ref&gt;
+Let ''f'' and ''g'' be any two elements of ''G''. By virtue of the definition of ''G'', [''g''(''f''(''x''))] = [''f''(''x'')] and [''f''(''x'')] = [''x''], so that [''g''(''f''(''x''))] = [''x'']. Hence ''G'' is also a transformation group (and an [[automorphism group]]) because function composition preserves the partitioning of ''A''.
+
+&lt;math&gt;\square&lt;/math&gt;}}
+
+* Given a transformation group ''G'' over ''A'', there exists an equivalence relation ~ over ''A'', whose equivalence classes are the orbits of ''G''.&lt;ref&gt;Wallace, D. A. R., 1998. ''Groups, Rings and Fields''. Springer-Verlag: 202, Th. 6.&lt;/ref&gt;&lt;ref&gt;Dummit, D. S., and Foote, R. M., 2004. ''Abstract Algebra'', 3rd ed. John Wiley &amp; Sons: 114, Prop. 2.&lt;/ref&gt;
+
+In sum, given an equivalence relation ~ over ''A'', there exists a [[transformation group]] ''G'' over ''A'' whose orbits are the equivalence classes of ''A'' under ~.
+
+This transformation group characterisation of equivalence relations differs fundamentally from the way [[lattice (order)|lattices]] characterize order relations. The arguments of the lattice theory operations [[meet (mathematics)|meet]] and [[Join (mathematics)|join]] are elements of some universe ''A''. Meanwhile, the arguments of the transformation group operations [[function composition|composition]] and [[inverse function|inverse]] are elements of a set of [[bijections]], ''A'' → ''A''.
+
+Moving to groups in general, let ''H'' be a [[subgroup]] of some [[group (mathematics)|group]] ''G''. Let ~ be an equivalence relation on ''G'', such that ''a'' ~ ''b'' ↔ (''ab''&lt;sup&gt;−1&lt;/sup&gt; ∈ ''H''). The equivalence classes of ~&amp;mdash;also called the orbits of the [[Group action (mathematics)|action]] of ''H'' on ''G''&amp;mdash;are the right '''[[coset]]s''' of ''H'' in ''G''. Interchanging ''a'' and ''b'' yields the left cosets.
+
+Related thinking can be found in Rosen (2008: chpt. 10).
+
+===Categories and groupoids===
+Let ''G'' be a set and let &quot;~&quot; denote an equivalence relation over ''G''. Then we can form a [[groupoid]] representing this equivalence relation as follows. The objects are the elements of ''G'', and for any two elements ''x'' and ''y'' of ''G'', there exists a unique morphism from ''x'' to ''y'' [[if and only if]] ''x''~''y''.
+
+The advantages of regarding an equivalence relation as a special case of a groupoid include:
+*Whereas the notion of &quot;free equivalence relation&quot; does not exist, that of a [[free object|free groupoid]] on a [[directed graph]] does. Thus it is meaningful to speak of a &quot;presentation of an equivalence relation,&quot; i.e., a presentation of the corresponding groupoid;
+* Bundles of groups, [[Group action (mathematics)|group action]]s, sets, and equivalence relations can be regarded as special cases of the notion of groupoid, a point of view that suggests a number of analogies;
+*In many contexts &quot;quotienting,&quot; and hence the appropriate equivalence relations often called [[Congruence relation|congruences]], are important. This leads to the notion of an internal groupoid in a category.&lt;ref&gt;Borceux, F. and Janelidze, G., 2001. ''Galois theories'', Cambridge University Press, {{ISBN|0-521-80309-8}}&lt;/ref&gt;
+
+===Lattices===
+The equivalence relations on any set ''X'', when ordered by [[set inclusion]], form a [[complete lattice]], called '''Con''' ''X'' by convention. The canonical [[map (mathematics)|map]] '''ker''': ''X''^''X'' → '''Con''' ''X'', relates the [[monoid]] ''X''^''X'' of all [[function (mathematics)|function]]s on ''X'' and '''Con''' ''X''. '''ker''' is [[surjective]] but not [[injective]]. Less formally, the equivalence relation '''ker''' on ''X'', takes each function ''f'': ''X''→''X'' to its [[kernel (algebra)|kernel]] '''ker''' ''f''. Likewise, '''ker(ker)''' is an equivalence relation on ''X''^''X''.
+
+==Equivalence relations and mathematical logic==
+Equivalence relations are a ready source of examples or counterexamples. For example, an equivalence relation with exactly two infinite equivalence classes is an easy example of a theory which is ω-[[Morley's categoricity theorem|categorical]], but not categorical for any larger [[cardinal number]].
+
+An implication of [[model theory]] is that the properties defining a relation can be proved independent of each other (and hence necessary parts of the definition) if and only if, for each property, examples can be found of relations not satisfying the given property while satisfying all the other properties. Hence the three defining properties of equivalence relations can be proved mutually independent by the following three examples:
+* ''Reflexive and transitive'':  The relation ≤ on '''N'''. Or any [[preorder]];
+* ''Symmetric and transitive'': The relation ''R'' on '''N''', defined as ''aRb'' ↔ ''ab'' ≠ 0. Or any [[partial equivalence relation]];
+* ''Reflexive and symmetric'': The relation ''R'' on '''Z''', defined as ''aRb'' ↔ &quot;''a'' &amp;minus; ''b'' is divisible by at least one of 2 or 3.&quot; Or any [[dependency relation]].
+
+Properties definable in [[first-order logic]] that an equivalence relation may or may not possess include:
+*The number of [[equivalence classes]] is finite or infinite;
+*The number of equivalence classes equals the (finite) natural number ''n'';
+*All equivalence classes have infinite [[cardinality]];
+*The number of elements in each equivalence class is the natural number ''n''.
+
+== Euclidean relations ==
+[[Euclid]]'s ''[[Euclid's Elements|The Elements]]'' includes the following &quot;Common Notion 1&quot;:
+
+:Things which equal the same thing also equal one another.
+
+Nowadays, the property described by Common Notion 1 is called [[Euclidean relation|Euclidean]] (replacing &quot;equal&quot; by &quot;are in relation with&quot;). By &quot;relation&quot; is meant a [[binary relation]], in which ''aRb'' is generally distinct from ''bRa''. A Euclidean relation thus comes in two forms:
+
+:(''aRc'' ∧ ''bRc'') → ''aRb'' (Left-Euclidean relation)
+:(''cRa'' ∧ ''cRb'') → ''aRb'' (Right-Euclidean relation)
+
+The following theorem connects [[Euclidean relation]]s and equivalence relations:
+
+; Theorem
+: If a relation is (left or right) Euclidean and [[reflexive relation|reflexive]], it is also symmetric and transitive.
+; Proof for a left-Euclidean relation:
+: (''aRc'' ∧ ''bRc'') → ''aRb'' [''a/c''] = (''aRa'' ∧ ''bRa'') → ''aRb'' [''reflexive''; erase '''T'''∧] = ''bRa'' → ''aRb''. Hence ''R'' is [[symmetric relation|symmetric]].
+: (''aRc'' ∧ ''bRc'') → ''aRb'' [''symmetry''] = (''aRc'' ∧ ''cRb'') → ''aRb''. Hence ''R'' is [[transitive relation|transitive]]. &lt;math&gt;_{\Box}&lt;/math&gt;
+
+with an analogous proof for a right-Euclidean relation. Hence an equivalence relation is a relation that is ''Euclidean'' and ''reflexive''. ''The Elements'' mentions neither symmetry nor reflexivity, and Euclid probably would have deemed the reflexivity of equality too obvious to warrant explicit mention.
+
+==See also==
+* [[Apartness relation]]
+* [[Conjugacy class]]
+* [[Equipollence (geometry)]]
+* [[Topological conjugacy]]
+* [[Up to]]
+
+==Notes==
+{{reflist|30em}}
+
+==References==
+*Brown, Ronald, 2006. ''[http://arquivo.pt/wayback/20160514115224/http://www.bangor.ac.uk/r.brown/topgpds.html Topology and Groupoids.]'' Booksurge LLC. {{ISBN|1-4196-2722-8}}.
+*Castellani, E., 2003, &quot;Symmetry and equivalence&quot; in Brading, Katherine, and E. Castellani, eds., ''Symmetries in Physics: Philosophical Reflections''. Cambridge Univ. Press: 422-433.
+*[[Robert Dilworth]] and Crawley, Peter, 1973. ''Algebraic Theory of Lattices''. Prentice Hall. Chpt. 12 discusses how equivalence relations arise in [[lattice (order)|lattice]] theory.
+*Higgins, P.J., 1971. ''[http://www.emis.de/journals/TAC/reprints/articles/7/tr7abs.html Categories and groupoids.]'' Van Nostrand. Downloadable since 2005 as a TAC Reprint.
+*[[John Lucas (philosopher)|John Randolph Lucas]], 1973. ''A Treatise on Time and Space''. London: Methuen. Section 31.
+*Rosen, Joseph (2008) ''Symmetry Rules: How Science and Nature are Founded on Symmetry''. Springer-Verlag. Mostly chapters. 9,10.
+*[[Raymond Wilder]] (1965) ''Introduction to the Foundations of Mathematics'' 2nd edition, Chapter 2-8: Axioms defining equivalence, pp 48&amp;ndash;50, [[John Wiley &amp; Sons]].
+
+==External links==
+* {{springer|title=Equivalence relation|id=p/e036030}}
+* [[Alexander Bogomolny|Bogomolny, A.]], &quot;[http://www.cut-the-knot.org/blue/equi.shtml Equivalence Relationship]&quot; [[cut-the-knot]]. Accessed 1 September 2009
+* [https://web.archive.org/web/20130509233055/http://planetmath.org/equivalencerelation Equivalence relation] at PlanetMath
+* {{OEIS el|1=A231428|2=Binary matrices representing equivalence relations}}
+
+{{DEFAULTSORT:Equivalence Relation}}
+
+[[Category:Reflexive relations]]
+[[Category:Symmetric relations]]
+[[Category:Transitive relations]]
+[[Category:Equivalence (mathematics)]]</text>
+      <sha1>hwdrjf2o4kg8kuj1092cnj1iixruuj9</sha1>
+    </revision>
+  </page>

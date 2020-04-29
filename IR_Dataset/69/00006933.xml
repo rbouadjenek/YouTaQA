@@ -1,0 +1,353 @@
+  <page>
+    <title>Chromatin</title>
+    <ns>0</ns>
+    <id>6933</id>
+    <revision>
+      <id>941594625</id>
+      <parentid>937974164</parentid>
+      <timestamp>2020-02-19T14:51:15Z</timestamp>
+      <contributor>
+        <ip>137.248.4.246</ip>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[File:Chromatin Structures.png|thumb|360px|The major structures in DNA compaction: [[DNA]], the [[nucleosome]], the 10 nm &quot;beads-on-a-string&quot; fibre, the 30 nm chromatin fibre and the [[metaphase]] [[chromosome]].]]
+
+'''Chromatin''' is a complex of [[DNA]] and [[protein]] found in [[eukaryote|eukaryotic]] cells.&lt;ref&gt;{{cite journal|last1=Monday|first1=Tanmoy|title=Characterization of the RNA content of chromatin|journal=Genome Res.|date=July 2010|volume=20|issue=7|pages=899–907|pmc=2892091|pmid=20404130|doi=10.1101/gr.103473.109}}&lt;/ref&gt; Its primary function is [[DNA condensation|packaging]] long DNA molecules into more compact, denser structures.  This prevents the strands from becoming tangled and also plays important roles in reinforcing the DNA during [[cell division]], preventing [[DNA repair#DNA damage|DNA damage]], and regulating [[gene expression]] and [[DNA replication]]. During [[mitosis]] and [[meiosis]], chromatin facilitates proper segregation of the [[chromosome]]s in [[anaphase]]; the characteristic shapes of chromosomes visible during this stage are the result of DNA being coiled into highly condensed chromatin.
+
+The primary protein components of chromatin are [[histone]]s, which bind to DNA and function as &quot;anchors&quot; around which the strands are wound. In general, there are three levels of chromatin organization:
+# DNA wraps around histone proteins, forming [[nucleosome]]s and the so-called &quot;beads on a string&quot; structure ([[euchromatin]]).
+# Multiple histones wrap into a 30-[[nanometer]] fibre consisting of nucleosome arrays in their most compact form ([[heterochromatin]]).{{efn|Though it has been definitively established to exist ''in vitro'', the 30-[[nanometer]] fibre was not seen in recent X-ray studies of human mitotic chromosomes.&lt;ref&gt;{{cite journal|last=Hansen|first=Jeffrey|title=Human mitotic chromosome structure: what happened to the 30-nm fibre?|journal=The EMBO Journal|date=March 2012|volume=31|pages=1621–1623|doi=10.1038/emboj.2012.66|pmid=22415369|issue=7|pmc=3321215}}&lt;/ref&gt;}}
+# Higher-level [[DNA supercoiling]] of the 30-nm fiber produces the [[metaphase]] chromosome (during mitosis and meiosis).
+
+Many organisms, however, do not follow this organization scheme. For example, [[spermatozoa]] and [[Bird|avian]] [[red blood cell]]s have more tightly packed chromatin than most eukaryotic cells, and [[trypanosomatid]] [[protozoa]] do not condense their chromatin into visible chromosomes at all. [[Prokaryotic]] cells have entirely different structures for organizing their DNA (the prokaryotic chromosome equivalent is called a [[genophore]] and is localized within the nucleoid region).
+
+The overall structure of the chromatin network further depends on the stage of the [[cell cycle]]. During [[interphase]], the chromatin is structurally loose to allow access to [[RNA polymerase|RNA]] and [[DNA polymerase]]s that [[transcription (biology)|transcribe]] and replicate the DNA. The local structure of chromatin during interphase depends on the specific [[gene]]s present in the DNA. Regions of DNA containing genes which are actively transcribed (&quot;turned on&quot;) are less tightly compacted and closely associated with RNA polymerases in a structure known as [[euchromatin]], while regions containing inactive genes (&quot;turned off&quot;) are generally more condensed and associated with structural proteins in [[heterochromatin]].&lt;ref&gt;{{cite web|url=http://chromatin.net/|title=Chromatin Network Home Page.|accessdate=2008-11-18}}&lt;/ref&gt;&lt;ref&gt;
+{{cite journal
+|author=Dame, R.T.
+|title=The role of nucleoid-associated proteins in the organization and compaction of bacterial chromatin
+|journal=[[Molecular Microbiology (journal)|Molecular Microbiology]]
+|volume=56
+|issue=4
+|pages=858–870
+|date=May 2005
+|pmid=15853876
+|doi=10.1111/j.1365-2958.2005.04598.x|url=https://semanticscholar.org/paper/37b92b5b685a92042c6a70226b71f899613d5d3a
+}}
+&lt;/ref&gt; [[Epigenetic]] modification of the structural proteins in chromatin via [[methylation]] and [[acetylation]] also alters local chromatin structure and therefore gene expression. The structure of chromatin networks is currently poorly understood and remains an active area of research in [[molecular biology]].
+
+==Dynamic chromatin structure and hierarchy==
+
+Chromatin undergoes various structural changes during a [[cell cycle]]. [[Histone]] proteins are the basic packer and arranger of chromatin and can be modified by various post-translational modifications to alter chromatin packing ([[Histone modification]]). Most of the modifications occur on the histone tail. The consequences in terms of chromatin accessibility and compaction depend both on the amino-acid that is modified and the type of modification. For example, Histone acetylation results in loosening and increased accessibility of chromatin for replication and transcription. Lysine tri-methylation can either be correlated with transcriptional activity (tri-methylation of histone H3 Lysine 4) or transcriptional repression and chromatin compaction (tri-methylation of histone H3 Lysine 9 or 27). Several studies suggested that different modifications could occur simultaneously. For example, it was proposed that a [[bivalent chromatin|bivalent]] structure (with tri-methylation of both Lysine 4 and 27 on histone H3) was involved in mammalian early development.&lt;ref&gt;
+{{cite journal
+|title= A bivalent chromatin structure marks key developmental genes in embryonic stem cells
+|vauthors = Bernstein BE, Mikkelsen TS, Xie X, Kamal M, Huebert DJ, Cuff J, Fry B, Meissner A, Wernig M, Plath K, Jaenisch R, Wagschal A, Feil R, Schreiber SL, Lander ES 
+|journal= [[Cell (journal)|Cell]]
+|date= April 2006
+|volume= 125
+|issue= 2
+|pages= 315–26
+|pmid= 16630819
+|issn= 0092-8674
+|doi= 10.1016/j.cell.2006.02.041}}
+&lt;/ref&gt;
+
+[[Polycomb-group proteins]] play a role in regulating genes through modulation of chromatin structure.&lt;ref name= Portoso &gt;{{cite book |chapterurl=http://www.horizonpress.com/rnareg|vauthors=Portoso M, Cavalli G|year=2008|chapter=The Role of RNAi and Noncoding RNAs in Polycomb Mediated Control of Gene Expression and Genomic Programming|title=RNA and the Regulation of Gene Expression: A Hidden Layer of Complexity|publisher=Caister Academic Press|isbn=978-1-904455-25-7}}&lt;/ref&gt;
+
+For additional information, see [[Histone#Histone modifications in chromatin regulation|Histone modifications in chromatin regulation]] and [[RNA polymerase control by chromatin structure#RNA polymerase control by chromatin structure|RNA polymerase control by chromatin structure]].
+
+===DNA structure===
+[[File:A-DNA, B-DNA and Z-DNA.png|thumb|right|300px|The structures of A-, B-, and Z-DNA.]]
+{{main|Mechanical properties of DNA|Z-DNA}}
+In nature, DNA can form three structures, [[A-DNA|A-]], [[B-DNA|B-]], and [[Z-DNA]]. A- and B-DNA are very similar, forming right-handed helices, whereas Z-DNA is a left-handed helix with a zig-zag phosphate backbone. Z-DNA is thought to play a specific role in chromatin structure and transcription because of the properties of the junction between B- and Z-DNA.
+
+At the junction of B- and Z-DNA, one pair of bases is flipped out from normal bonding. These play a dual role of a site of recognition by many proteins and as a sink for torsional stress from [[RNA polymerase]] or nucleosome binding.
+&lt;!---
+ Move to [[mechanical properties of DNA]] or [[Z-DNA]]? &quot;===DNA structure===
+[[File:B&amp;Z&amp;A DNA formula.jpg|thumb|right|200px|'''Fig. 2:''' Alternative structural forms of DNA influencing chromatin structure]]
+
+===Chromatin and Watson/Crick base pairing===
+Crick and Watson's famous structure of [[DNA]] (called B-DNA) is only one of three possible structural forms (Fig. 2).
+
+For the C-N bond between a base and its sugar, there are two different conformations. The anti-conformation occurs in all A- and B-DNAs as well as in Z-DNA where a Cytosine is present.
+In case of a Guanine, Z-DNA takes the syn-conformation. The periodic change between a purine and pyrimidine along the strand of a Z-DNA accomplishes the alternating syn-anti-conformation characteristic of the zigzag structure of the Z-DNA helix. The yellow circles designated A, B, Z indicate the axes of the three possible types of DNA (Fig. 2).
+
+[[File:B&amp;Z junction DNA.jpg|thumb|200px|'''Fig. 3:''' Structure of DNA with two B-Z DNA junctions: It encompasses 1. breakage of a hydrogen-bond, where a Guanine rotates around its glycosyl-bond and the sugar thereby transforms into its syn-conformation. 2. Rotation of the corresponding second base (Cytosine) involving rotation of the sugar around the sugar-phosphate-bond. 3. At the B-Z junction hydrogen-bonds remain broken and bases are extruded.]]
+
+===Junction between B- and Z-DNA===
+Chromatin regions near the transcription start site frequently contain DNA sequence motifs favourable for forming Z-DNA. Likewise, formation of Z-DNA near the promoter region stimulates transcription. Z-DNA is stabilized by binding specific proteins. Formation of Z-DNA from B-DNA is a dynamic process wherein B-DNA is the relaxed state. When a Z-DNA segment is formed two B-Z junctions form (Fig.3). The crystal structure of such junctions is known. At each junction the hydrogen bonds between a Watson/Crick base-pair is broken and the bases are extruded. Extrusion of a base from the helix is a well-known reaction performed by enzymes (i.e., DNA glycosylase) that edit or repair DNA during Base Excision Repair (BER). Crystal structures of extruded bases co-crystallized with Hha1 methyltransferase, human DNA repair protein AGT(O(6)-alkylguanine-DNAalkyltransferase), or bacteriophage T4 endonuclease V are similar to the extruded bases at B-Z junctions. Z-DNA may also provide a sink to absorb torsional strain following an RNA polymerase or a transient nucleosome. Also, Z-DNA may represent a signal for the recruitment of RNA-editing enzymes. It is possible that chromatin encompassing Z-DNA segments also affect replication.&quot; ---&gt;
+
+===Nucleosomes and beads-on-a-string===
+:''Main articles: [[Nucleosome]], [[Chromatosome]] and [[Histone]]''
+[[File:Nucleosome 1KX5 2.png|thumb|left|150px|A cartoon representation of the nucleosome structure. From {{PDB|1KX5}}.]]
+The basic repeat element of chromatin is the nucleosome, interconnected by sections of [[linker DNA]], a far shorter arrangement than pure DNA in solution.
+
+In addition to the core histones, there is the linker histone, H1, which contacts the exit/entry of the DNA strand on the nucleosome. The nucleosome core particle, together with histone H1, is known as a chromatosome.  Nucleosomes, with about 20 to 60 base pairs of linker DNA, can form, under non-physiological conditions, an approximately 10&amp;nbsp;nm &quot;beads-on-a-string&quot; fibre. (Fig. 1-2). .
+
+The nucleosomes bind DNA non-specifically, as required by their function in general DNA packaging.  There are, however, large DNA sequence preferences that govern nucleosome positioning.  This is due primarily to the varying physical properties of different DNA sequences: For instance, [[adenine]] and [[thymine]] are more favorably compressed into the inner minor grooves. This means nucleosomes can bind preferentially at one position approximately every 10 base pairs (the helical repeat of DNA)- where the DNA is rotated to maximise the number of A and T bases that will lie in the inner minor groove. (See [[mechanical properties of DNA]].)
+
+===30-nanometer chromatin fiber===
+[[File:30nm Chromatin Structures.png|thumb|right|200px|Two proposed structures of the 30 nm chromatin filament. &lt;br /&gt;Left: 1 start helix &quot;solenoid&quot; structure. &lt;br /&gt;Right: 2 start loose helix structure. &lt;br /&gt;Note: the histones are omitted in this diagram - only the DNA is shown.]]
+With addition of H1, the beads-on-a-string structure in turn coils into a 30&amp;nbsp;nm diameter helical structure known as the 30&amp;nbsp;nm fibre or filament. The precise structure of the chromatin fiber in the cell is not known in detail, and there is still some debate over this.&lt;ref&gt;{{cite web|last1=Annunziato|first1=Anthony T.|title=DNA Packaging: Nucleosomes and Chromatin|url=http://www.nature.com/scitable/topicpage/dna-packaging-nucleosomes-and-chromatin-310|website=Scitable|publisher=Nature Education|accessdate=2015-10-29}}&lt;/ref&gt;
+
+This level of chromatin structure is thought to be the form of [[heterochromatin]], which contains mostly transcriptionally silent genes. EM (electron microscopy) studies have demonstrated that the 30&amp;nbsp;NM fiber is highly dynamic such that it unfolds into a 10&amp;nbsp;nm fiber (&quot;beads-on-a-string&quot;) structure when transversed by an RNA polymerase engaged in transcription.
+
+[[File:ChromatinFibers.png|thumb|left|250px|Four proposed structures of the 30&amp;nbsp;nm chromatin filament for DNA repeat length per nucleosomes ranging from 177 to 207 bp.
+&lt;br /&gt;
+Linker DNA in yellow and nucleosomal DNA in pink.]]
+The existing models commonly accept that the nucleosomes lie perpendicular to the axis of the fibre, with linker histones arranged internally.
+A stable 30&amp;nbsp;nm fibre relies on the regular positioning of nucleosomes along DNA. Linker DNA is relatively resistant to bending and rotation. This makes the length of linker DNA critical to the stability of the fibre, requiring nucleosomes to be separated by lengths that permit rotation and folding into the required orientation without excessive stress to the DNA.
+In this view, different lengths of the linker DNA should produce different folding topologies of the chromatin fiber. Recent theoretical work, based on electron-microscopy images&lt;ref&gt;
+{{cite journal
+|title=EM measurements define the dimensions of the &quot;30-nm&quot; chromatin fiber: Evidence for a compact, interdigitated structure
+|author1=Robinson DJ |author2=Fairall L |author3=Huynh VA |author4=Rhodes D. |journal=[[PNAS (journal)|PNAS]]
+|date=April 2006
+|volume=103
+|issue=17
+|pages=6506–11
+|pmid=16617109
+|doi=10.1073/pnas.0601212103
+|pmc=1436021|bibcode=2006PNAS..103.6506R}}
+&lt;/ref&gt;
+of reconstituted fibers supports this view.&lt;ref&gt;
+{{cite journal
+|title= An All-Atom Model of the Chromatin Fiber Containing Linker Histones Reveals a Versatile Structure Tuned by the Nucleosomal Repeat Length
+|vauthors = Wong H, Victor JM, Mozziconacci J 
+|journal= [[PLoS ONE]]
+|date= September 2007
+|volume= 2
+|issue= 9
+|pmid= 17849006 | doi = 10.1371/journal.pone.0000877
+|pages= e877
+|pmc= 1963316
+|editor1-last=Chen
+|editor1-first=Pu
+|bibcode= 2007PLoSO...2..877W
+}} {{open access}}
+&lt;/ref&gt;
+
+===Spatial organization of chromatin in the cell nucleus===
+&lt;!--- Too speculative for an article: &quot;[[File:Nucleus &amp; Chromatin Territorial Structure.jpg|thumb|200px|left|'''Fig. 4:''' Hypothetical Model of the Territorial Organization of Chromatin in the Cell Nucleus. The diagram (Fig. 4) represents a model of a cell (gray oval) with a nucleus (dark gray oval). Two chromosomes are shown as chromatin fibers (yellow and red lines). Proteins are represented as small ovals. Note the association of the chromatin components with the nuclear membrane. Chromosomes are territorially interlinked by chromatin protein complexes (scaffold proteins see above).]]&quot; ---&gt;
+
+The spatial arrangement of the chromatin within the nucleus is not random - specific regions of the chromatin can be found in certain territories. Territories are, for example, the [[Nuclear lamina|lamina]]-associated domains (LADs), and the [[topologically associating domain]]s (TADs), which are bound together by protein complexes.&lt;ref name=&quot;pmid24804566&quot;&gt;{{cite journal |vauthors=Nicodemi M, Pombo A |title=Models of chromosome structure |journal=Curr. Opin. Cell Biol. |volume=28 |issue= |pages=90–5 |date=June 2014 |pmid=24804566 |doi=10.1016/j.ceb.2014.04.004 |url=http://edoc.mdc-berlin.de/14021/1/14021oa.pdf}}&lt;/ref&gt; Currently, polymer models such as the Strings &amp; Binders Switch (SBS) model&lt;ref name=&quot;pmid18493085&quot;&gt;{{cite journal |vauthors=Nicodemi M, Panning B, Prisco A |title=A thermodynamic switch for chromosome colocalization |journal=Genetics |volume=179 |issue=1 |pages=717–21 |date=May 2008 |pmid=18493085 |pmc=2390650 |doi=10.1534/genetics.107.083154 |arxiv=0809.4788 }}&lt;/ref&gt; and the Dynamic Loop (DL) model&lt;ref name=&quot;pmid20811620&quot;&gt;{{cite journal |vauthors=Bohn M, Heermann DW |title=Diffusion-driven looping provides a consistent framework for chromatin organization |journal=PLoS ONE |volume=5 |issue=8 |pages=e12218 |year=2010 |pmid=20811620 |pmc=2928267 |doi=10.1371/journal.pone.0012218 |bibcode=2010PLoSO...512218B }} {{open access}}&lt;/ref&gt; are used to describe the folding of chromatin within the nucleus.
+
+===Cell-cycle dependent structural organization===
+
+# '''Interphase''': The structure of chromatin during [[interphase]] of [[mitosis]] is optimized to allow simple access of [[transcription (genetics)|transcription]] and [[DNA repair]] factors to the DNA while compacting the DNA into the [[nucleus (cell)|nucleus]]. The structure varies depending on the access required to the DNA. [[Genes]] that require regular access by [[RNA polymerase]] require the looser structure provided by euchromatin.[[File:NHGRI human male karyotype.png|thumbnail|220px|Karyogram of human male using [[Giemsa]] staining, showing the classic [[metaphase]] chromatin structure.]]
+# '''Metaphase''': The [[metaphase]] structure of chromatin differs vastly to that of [[interphase]]. It is optimised for physical strength{{Citation needed|date=July 2017}} and manageability, forming the classic [[chromosome]] structure seen in [[karyotype]]s. The structure of the condensed chromatin is thought to be loops of 30&amp;nbsp;nm fibre to a central scaffold of proteins. It is, however, not well-characterised.The physical strength of chromatin is vital for this stage of division to prevent shear damage to the DNA as the daughter chromosomes are separated. To maximise strength the composition of the chromatin changes as it approaches the centromere, primarily through alternative histone H1 analogues. During mitosis, although most of the chromatin is tightly compacted, there are small regions that are not as tightly compacted. These regions often correspond to promoter regions of genes that were active in that cell type prior to entry into chromatosis. The lack of compaction of these regions is called [[bookmarking]], which is an [[epigenetic]] mechanism believed to be important for transmitting to daughter cells the &quot;memory&quot; of which genes were active prior to entry into mitosis.&lt;ref&gt;{{cite journal |vauthors=Xing H, Vanderford NL, Sarge KD |title=The TBP-PP2A mitotic complex bookmarks genes by preventing condensin action |journal=Nat. Cell Biol. |volume=10 |issue=11 |pages=1318–23 |date=November 2008 |pmid=18931662 |pmc=2577711 |doi=10.1038/ncb1790 }}&lt;/ref&gt; This [[bookmarking]] mechanism is needed to help transmit this memory because transcription ceases during [[mitosis]].
+
+==Chromatin and bursts of transcription==
+
+Chromatin and its interaction with enzymes has been researched, and a conclusion being made is that it is relevant and an important factor in gene expression. Vincent G. Allfrey, a professor at Rockefeller University, stated that RNA synthesis is related to histone acetylation.&lt;ref name=&quot;pmid14172992&quot;&gt;{{cite journal |vauthors=ALLFREY VG, FAULKNER R, MIRSKY AE |journal=Proc. Natl. Acad. Sci. U.S.A. |volume=51 |issue= 5|pages=786–94 |date=May 1964 |pmid=14172992 |pmc=300163 |doi= 10.1073/pnas.51.5.786|bibcode=1964PNAS...51..786A |title=Acetylation and Methylation of Histones and Their Possible Role in the Regulation of RNA Synthesis }}&lt;/ref&gt; The lysine amino acid attached to the end of the histones is positively charged. The acetylation of these tails would make the chromatin ends neutral, allowing for DNA access.
+
+When the chromatin decondenses, the DNA is open to entry of molecular machinery. Fluctuations between open and closed chromatin may contribute to the discontinuity of transcription, or [[transcriptional bursting]].  Other factors are probably involved, such as the association and dissociation of transcription factor complexes with chromatin.  The phenomenon, as opposed to simple probabilistic models of transcription, can account for the high variability in gene expression occurring between cells in isogenic populations&lt;ref name=&quot;pmid22944281&quot;&gt;{{cite journal |vauthors=Kaochar S, Tu BP |title=Gatekeepers of chromatin: Small metabolites elicit big changes in gene expression |journal=Trends Biochem. Sci. |volume=37 |issue=11 |pages=477–83 |date=November 2012 |pmid=22944281 |pmc=3482309 |doi=10.1016/j.tibs.2012.07.008 |url=}}&lt;/ref&gt;
+
+===Alternative chromatin organizations===
+
+During metazoan [[spermiogenesis]], the [[spermatid]]'s chromatin is remodeled into a more spaced-packaged, widened, almost crystal-like structure. This process is associated with the cessation of [[transcription (genetics)|transcription]] and involves [[cell nucleus|nuclear]] protein exchange. The histones are mostly displaced, and replaced by [[protamine]]s (small, [[arginine]]-rich proteins).&lt;ref name=&quot;pmid23213436&quot;&gt;{{cite journal |vauthors=De Vries M, Ramos L, Housein Z, De Boer P |title=Chromatin remodelling initiation during human spermiogenesis |journal=Biol Open |volume=1 |issue=5 |pages=446–57 |date=May 2012 |pmid=23213436 |pmc=3507207 |doi=10.1242/bio.2012844 |url=}}&lt;/ref&gt; It is proposed that in yeast, regions devoid of histones become very fragile after transcription; HMO1, an [[HMG-box]] protein, helps in stabilizing nucleosomes-free chromatin.&lt;ref name=&quot;pmid25063301&quot;&gt;{{cite journal | vauthors = Murugesapillai D, McCauley MJ, Huo R, Nelson Holte MH, Stepanyants A, Maher LJ, Israeloff NE, Williams MC | title = DNA bridging and looping by HMO1 provides a mechanism for stabilizing nucleosome-free chromatin | journal = Nucleic Acids Research | volume = 42 | issue = 14 | pages = 8996–9004 | date = August 2014 | pmid = 25063301 | pmc = 4132745 | doi = 10.1093/nar/gku635 }}&lt;/ref&gt;&lt;ref name=&quot;pmid28303166&quot;&gt;{{cite journal | vauthors = Murugesapillai D, McCauley MJ, Maher LJ, Williams MC | title = Single-molecule studies of high-mobility group B architectural DNA bending proteins | journal = Biophysical Reviews | volume = 9 | issue = 1 | pages = 17–40 | date = February 2017 | pmid = 28303166 | pmc = 5331113 | doi = 10.1007/s12551-016-0236-4 }}&lt;/ref&gt;
+
+==Chromatin and DNA repair==
+
+The packaging of eukaryotic DNA into chromatin presents a barrier to all DNA-based processes that require recruitment of enzymes to their sites of action. To allow the critical cellular process of DNA repair, the chromatin must be remodeled.  In eukaryotes, ATP dependent [[chromatin remodeling]] complexes and [[histone-modifying enzymes]] are two predominant factors employed to accomplish this remodeling process.&lt;ref name=Liu&gt;{{cite journal |vauthors=Liu B, Yip RK, Zhou Z |title=Chromatin remodeling, DNA damage repair and aging |journal=Curr. Genomics |volume=13 |issue=7 |pages=533–47 |year=2012 |pmid=23633913 |pmc=3468886 |doi=10.2174/138920212803251373 |url=}}&lt;/ref&gt;
+
+Chromatin relaxation occurs rapidly at the site of a DNA damage.&lt;ref name=Sellou&gt;{{cite journal |vauthors=Sellou H, Lebeaupin T, Chapuis C, Smith R, Hegele A, Singh HR, Kozlowski M, Bultmann S, Ladurner AG, Timinszky G, Huet S |title=The poly(ADP-ribose)-dependent chromatin remodeler Alc1 induces local chromatin relaxation upon DNA damage |journal=Mol. Biol. Cell |volume=27 |issue=24 |pages=3791–3799 |year=2016 |pmid=27733626 |pmc=5170603 |doi=10.1091/mbc.E16-05-0269 |url=}}&lt;/ref&gt;  This process is initiated by [[PARP1]] protein that starts to appear at DNA damage in less than a second, with half maximum accumulation within 1.6 seconds after the damage occurs.&lt;ref name=Haince&gt;{{cite journal |vauthors=Haince JF, McDonald D, Rodrigue A, Déry U, Masson JY, Hendzel MJ, Poirier GG |title=PARP1-dependent kinetics of recruitment of MRE11 and NBS1 proteins to multiple DNA damage sites |journal=J. Biol. Chem. |volume=283 |issue=2 |pages=1197–208 |year=2008 |pmid=18025084 |doi=10.1074/jbc.M706734200 |url=}}&lt;/ref&gt;  Next the chromatin remodeler [[CHD1L|Alc1]] quickly attaches to the product of PARP1, and completes arrival at the DNA damage within 10 seconds of the damage.&lt;ref name=Sellou /&gt;  About half of the maximum chromatin relaxation, presumably due to action of Alc1, occurs by 10 seconds.&lt;ref name=Sellou /&gt; This then allows recruitment of the DNA repair enzyme [[MRE11A|MRE11]], to initiate DNA repair, within 13 seconds.&lt;ref name=Haince /&gt;
+
+γH2AX, the phosphorylated form of [[H2AFX|H2AX]] is also involved in the early steps leading to chromatin decondensation after DNA damage occurrence.  The histone variant H2AX constitutes about 10% of the H2A histones in human chromatin.&lt;ref name=&quot;Rogakou 1998&quot;&gt;{{cite journal |vauthors=Rogakou EP, Pilch DR, Orr AH, Ivanova VS, Bonner WM |title=DNA double-stranded breaks induce histone H2AX phosphorylation on serine 139 |journal=J. Biol. Chem. |volume=273 |issue=10 |pages=5858–68 |year=1998 |pmid=9488723 |doi= 10.1074/jbc.273.10.5858|url=}}&lt;/ref&gt;  γH2AX (H2AX phosphorylated on serine 139) can be detected as soon as 20 seconds after irradiation of cells (with DNA double-strand break formation), and half maximum accumulation of γH2AX occurs in one minute.&lt;ref name=&quot;Rogakou 1998&quot; /&gt;  The extent of chromatin with phosphorylated γH2AX is about two million base pairs at the site of a DNA double-strand break.&lt;ref name=&quot;Rogakou 1998&quot; /&gt;  γH2AX does not, itself, cause chromatin decondensation, but within 30 seconds of irradiation, [[RNF8]] protein can be detected in association with γH2AX.&lt;ref name=&quot;pmid18001824&quot;&gt;{{cite journal |vauthors=Mailand N, Bekker-Jensen S, Faustrup H, Melander F, Bartek J, Lukas C, Lukas J |title=RNF8 ubiquitylates histones at DNA double-strand breaks and promotes assembly of repair proteins |journal=Cell |volume=131 |issue=5 |pages=887–900 |year=2007 |pmid=18001824 |doi=10.1016/j.cell.2007.09.040 |url=}}&lt;/ref&gt;  RNF8 mediates extensive chromatin decondensation, through its subsequent interaction with [[CHD4]],&lt;ref name=&quot;pmid22531782&quot;&gt;{{cite journal |vauthors=Luijsterburg MS, Acs K, Ackermann L, Wiegant WW, Bekker-Jensen S, Larsen DH, Khanna KK, van Attikum H, Mailand N, Dantuma NP |title=A new non-catalytic role for ubiquitin ligase RNF8 in unfolding higher-order chromatin structure |journal=EMBO J. |volume=31 |issue=11 |pages=2511–27 |year=2012 |pmid=22531782 |pmc=3365417 |doi=10.1038/emboj.2012.104 |url=}}&lt;/ref&gt; a component of the nucleosome remodeling and deacetylase complex [[Mi-2/NuRD complex|NuRD]].
+
+After undergoing relaxation subsequent to DNA damage, followed by DNA repair, chromatin recovers to a compaction state close to its pre-damage level after about 20 min.&lt;ref name=Sellou /&gt;
+
+==Methods to investigate chromatin==
+
+# '''[[ChIP-sequencing|ChIP-seq]]''' (Chromatin immunoprecipitation sequencing), aimed against different [[histone modification]]s, can be used to identify chromatin states throughout the genome. Different modifications have been linked to various states of chromatin. 
+# '''[[DNase-Seq|DNase-seq]]''' (DNase I hypersensitive sites Sequencing) uses the sensitivity of accessible regions in the genome to the [[DNase I]] enzyme to map open or accessible regions in the genome. 
+# '''[[FAIRE-Seq|FAIRE-seq]]''' (Formaldehyde-Assisted Isolation of Regulatory Elements sequencing) uses the chemical properties of protein-bound DNA in a two-phase separation method to extract  nucleosome depleted regions from the genome.&lt;ref&gt;{{Cite journal
+| last = Giresi
+| first = Paul G.
+| last2 = Kim
+| first2 = Jonghwan
+| last3 = McDaniell
+| first3 = Ryan M.
+| last4 = Iyer
+| first4 = Vishwanath R.
+| last5 = Lieb
+| first5 = Jason D.
+| date = 2007-06-01
+| title = FAIRE (Formaldehyde-Assisted Isolation of Regulatory Elements) isolates active regulatory elements from human chromatin
+| journal = Genome Research
+| volume = 17
+| issue = 6
+| pages = 877–885
+| doi = 10.1101/gr.5533506
+| issn = 1088-9051
+| pmc = 1891346
+| pmid = 17179217
+}}&lt;/ref&gt;
+# '''[[ATAC-seq]]''' (Assay for Transposable Accessible Chromatin sequencing) uses the Tn5 transposase to integrate (synthetic) transposons into accessible regions of the genome consequentially highlighting the localisation of nucleosomes and transcription factors across the genome.
+# '''[[DNA footprinting]]''' is a method aimed at identifying protein-bound DNA. It uses labeling and fragmentation coupled to gel electrophoresis to identify areas of the genome that have been bound by proteins.&lt;ref&gt;{{Cite journal
+| last = Galas
+| first = D. J.
+| last2 = Schmitz
+| first2 = A.
+| date = 1978-09-01
+| title = DNAse footprinting: a simple method for the detection of protein-DNA binding specificity
+| journal = Nucleic Acids Research
+| volume = 5
+| issue = 9
+| pages = 3157–3170
+| issn = 0305-1048
+| pmc = 342238
+| pmid = 212715
+| doi=10.1093/nar/5.9.3157
+}}&lt;/ref&gt;  
+# '''MNase-seq''' (Micrococcal Nuclease sequencing) uses the [[micrococcal nuclease]] enzyme to identify nucleosome positioning throughout the genome.&lt;ref&gt;{{Cite book
+| last = Cui
+| first = Kairong
+| last2 = Zhao
+| first2 = Keji
+| date = 2012-01-01
+| title = Genome-wide approaches to determining nucleosome occupancy in metazoans using MNase-Seq
+| volume = 833
+| pages = 413–419
+| doi = 10.1007/978-1-61779-477-3_24
+| issn = 1940-6029
+| pmc = 3541821
+| pmid = 22183607
+| series = Methods in Molecular Biology
+| isbn = 978-1-61779-476-6
+}}&lt;/ref&gt;&lt;ref&gt;{{Cite journal
+| last = Buenrostro
+| first = Jason D.
+| last2 = Giresi
+| first2 = Paul G.
+| last3 = Zaba
+| first3 = Lisa C.
+| last4 = Chang
+| first4 = Howard Y.
+| last5 = Greenleaf
+| first5 = William J.
+| date = 2013-12-01
+| title = Transposition of native chromatin for fast and sensitive epigenomic profiling of open chromatin, DNA-binding proteins and nucleosome position
+| journal = Nature Methods
+| volume = 10
+| issue = 12
+| pages = 1213–1218
+| doi = 10.1038/nmeth.2688
+| issn = 1548-7105
+| pmc = 3959825
+| pmid = 24097267
+}}&lt;/ref&gt;
+# '''[[Chromosome conformation capture]]''' determines the spatial organization of chromatin in the nucleus, by inferring genomic locations that physically interact.
+# '''MACC profiling''' (Micrococcal nuclease ACCessibility profiling) uses titration series of chromatin digests with [[micrococcal nuclease]] to identify chromatin accessibility as well as to map nucleosomes and non-histone DNA-binding proteins in both open and closed regions of the genome.&lt;ref&gt;{{Cite journal
+| vauthors  = Mieczkowski J, Cook A, Bowman SK, Mueller B, Alver BH, Kundu S, Deaton AM, Urban JA, Larschan E, Park PJ, Kingston RE, Tolstorukov MY
+| date = 2016-05-06
+| title = MNase titration reveals differences between nucleosome occupancy and chromatin accessibility.
+| journal = Nature Communications
+| volume = 7
+| pages = 11485
+| doi = 10.1038/ncomms11485
+| pmc = 4859066
+| pmid = 27151365
+| bibcode = 2016NatCo...711485M
+}}&lt;/ref&gt;
+
+==Chromatin and knots==
+
+It has been a puzzle how decondensed interphase chromosomes remain essentially unknotted. The natural expectation is that in the presence of type II DNA topoisomerases that permit passages of double-stranded DNA regions through each other, all chromosomes should reach the state of topological equilibrium. The topological equilibrium in highly crowded interphase chromosomes forming chromosome territories would result in formation of highly knotted chromatin fibres. However, Chromosome Conformation Capture (3C) methods revealed that the decay of contacts with the genomic distance in interphase chromosomes is practically the same as in the crumpled globule state that is formed when long polymers condense without formation of any knots. To remove knots from highly crowded chromatin, one would need an active process that should not only provide the energy to move the system from the state of topological equilibrium but also guide topoisomerase-mediated passages in such a way that knots would be efficiently unknotted instead of making the knots even more complex. It has been shown that the process of chromatin-loop extrusion is ideally suited to actively unknot chromatin fibres in interphase chromosomes.&lt;ref&gt;
+{{cite biorxiv |last1=Racko |first1=D. |last2=Benedetti |first2=F. |last3=Goundaroulis |first3=D. |last4=Stasiak |first4=A. |date=8 September 2018 |title=Chromatin-loop extrusion and chromatin unknotting. |biorxiv=411629}}
+&lt;/ref&gt;
+&lt;ref name=&quot;Racko 2018&quot;&gt;{{cite journal |vauthors=Racko D, Benedetti F, oundaroulis D, Stasiak A|title=Chromatin Loop Extrusion and Chromatin Unknotting |journal=Polymers |volume=10 |issue=10 |pages=1126–1137 |year=2018 |doi= 10.3390/polym10101126|pmid=30961051 |url=|pmc=6403842 }}&lt;/ref&gt;
+
+==Chromatin: alternative definitions==
+
+The term, introduced by [[Walther Flemming]], has multiple meanings:
+# '''Simple and concise definition:''' Chromatin is a macromolecular complex of a DNA macromolecule and protein macromolecules (and RNA). The proteins package and arrange the DNA and control its functions within the cell nucleus.
+# '''A biochemists’ operational definition:''' Chromatin is the DNA/protein/RNA complex extracted from eukaryotic lysed interphase nuclei. Just which of the multitudinous substances present in a nucleus will constitute a part of the extracted material partly depends on the technique each researcher uses. Furthermore, the composition and properties of chromatin vary from one cell type to the another, during development of a specific cell type, and at different stages in the cell cycle.
+# '''The ''DNA + histone = chromatin'' definition:''' The DNA double helix in the cell nucleus is packaged by special proteins termed histones. The formed protein/DNA complex is called chromatin. The basic structural unit of chromatin is the nucleosome.
+
+==Nobel Prizes==
+
+The following scientists were recognized for their contributions to chromatin research with [[Nobel Prize]]s:
+{| class=&quot;wikitable&quot;
+|-
+!Year
+!Who
+!Award
+|-
+|1910
+|[[Albrecht Kossel]] (University of Heidelberg)
+| [[Nobel Prize in Physiology or Medicine]] for his discovery of the five nuclear bases: [[adenine]], [[cytosine]], [[guanine]], [[thymine]], and [[uracil]].
+|-
+|1933
+|[[Thomas Hunt Morgan]] (California Institute of Technology)
+|[[Nobel Prize in Physiology or Medicine]] for his discoveries of the role played by the gene and chromosome in heredity, based on his studies of the white-eyed mutation in the fruit fly ''Drosophila''.&lt;ref&gt;[https://www.nobelprize.org/nobel_prizes/medicine/laureates/1933/morgan-article.html &quot;Thomas Hunt Morgan and His Legacy&quot;.] Nobelprize.org. 7 Sep 2012&lt;/ref&gt;
+|-
+|1962
+|[[Francis Crick]], [[James D. Watson|James Watson]] and [[Maurice Wilkins]] (MRC Laboratory of Molecular Biology, Harvard University and London University respectively)
+|[[Nobel Prize in Physiology or Medicine]] for their discoveries of the double helix structure of DNA and its significance for information transfer in living material. 
+|-
+|1982
+|[[Aaron Klug]] (MRC Laboratory of Molecular Biology)
+|[[Nobel Prize in Chemistry]] &quot;for his development of crystallographic electron microscopy and his structural elucidation of biologically important nucleic acid-protein complexes&quot;
+|-
+|1993
+|[[Richard J. Roberts]] and [[Phillip A. Sharp]]
+|[[Nobel Prize in Physiology]] &quot;for their independent discoveries of [[split genes]],&quot; in which DNA sections called [[exons]] express proteins, and are interrupted by DNA sections called [[introns]], which do not express proteins. 
+|-
+|2006
+|[[Roger Kornberg]] (Stanford University)
+|[[Nobel Prize in Chemistry]] for his discovery of the mechanism by which DNA is transcribed into messenger RNA. 
+|}
+
+==See also==
+
+{{div col|colwidth=30em}}
+* [[Active chromatin sequence]]
+* [[Chromatid]]
+* [[Epigenetics]]
+* [[Histone-Modifying Enzymes]]
+* [[Position-effect variegation]]
+* [[Salt-and-pepper chromatin]]
+* [[Transcriptional bursting]]
+{{div col end}}
+
+==Notes==
+
+{{notelist}}
+
+==References==
+
+{{reflist|30em}}
+
+===Additional sources===
+
+* Cooper, Geoffrey M. 2000. The Cell, 2nd edition, A Molecular Approach. Chapter 4.2 [https://www.ncbi.nlm.nih.gov/bookshelf/br.fcgi?book=cooper&amp;part=A618#A620 Chromosomes and Chromatin.]
+* {{cite journal | last1 = Corces | first1 = V. G. | year = 1995 | title = Chromatin insulators. Keeping enhancers under control | url = | journal = Nature | volume = 376 | issue = 6540| pages = 462–463 | doi=10.1038/376462a0 | pmid=7637775| bibcode = 1995Natur.376..462C}}
+* Cremer, T. 1985. Von der Zellenlehre zur Chromosomentheorie: Naturwissenschaftliche Erkenntnis und Theorienwechsel in der frühen Zell- und Vererbungsforschung, Veröffentlichungen aus der Forschungsstelle für Theoretische Pathologie der Heidelberger Akademie der Wissenschaften. Springer-Vlg., Berlin, Heidelberg.
+* Elgin, S. C. R. (ed.). 1995. Chromatin Structure and Gene Expression, vol. 9. IRL Press, Oxford, New York, Tokyo.
+* {{cite journal | last1 = Gerasimova | first1 = T. I. | last2 = Corces | first2 = V. G. | year = 1996 | title = Boundary and insulator elements in chromosomes | url = | journal = Curr. Opin. Genet. Dev. | volume = 6 | issue = 2| pages = 185–192 | doi=10.1016/s0959-437x(96)80049-9| pmid = 8722175 }}
+* {{cite journal | last1 = Gerasimova | first1 = T. I. | last2 = Corces | first2 = V. G. | year = 1998 | title = Polycomb and Trithorax group proteins mediate the function of a chromatin insulator | url = | journal = Cell | volume = 92 | issue = 4| pages = 511–521 | doi=10.1016/s0092-8674(00)80944-7| pmid = 9491892 }}
+* {{cite journal | last1 = Gerasimova | first1 = T. I. | last2 = Corces | first2 = V. G. | year = 2001 | title = CHROMATIN INSULATORS AND BOUNDARIES: Effects on Transcription and Nuclear Organization | url = https://semanticscholar.org/paper/fd2a0128e2a9556b3012668e423f693af4093d5e| journal = Annu Rev Genet | volume = 35 | issue = | pages = 193–208 | pmid = 11700282 | doi = 10.1146/annurev.genet.35.102401.090349 }}
+* {{cite journal | last1 = Gerasimova | first1 = T. I. | last2 = Byrd | first2 = K. | last3 = Corces | first3 = V. G. | year = 2000 | title = A chromatin insulator determines the nuclear localization of DNA [In Process Citation] | url = | journal = Mol Cell | volume = 6 | issue = 5| pages = 1025–35 | doi=10.1016/s1097-2765(00)00101-5| pmid = 11106742 }}
+* {{cite journal | last1 = Ha | first1 = S. C. | last2 = Lowenhaupt | first2 = K. | last3 = Rich | first3 = A. | last4 = Kim | first4 = Y. G. | last5 = Kim | first5 = K. K. | year = 2005 | title = Crystal structure of a junction between B-DNA and Z-DNA reveals two extruded bases | url = | journal = Nature | volume = 437 | issue = 7062| pages = 1183–6 | doi=10.1038/nature04088 | pmid=16237447| bibcode = 2005Natur.437.1183H }}
+* Pollard, T., and W. Earnshaw. 2002. Cell Biology. Saunders.
+* Saumweber, H. 1987. Arrangement of Chromosomes in Interphase Cell Nuclei, p.&amp;nbsp;223-234. In W. Hennig (ed.), Structure and Function of Eucaryotic Chromosomes, vol. 14. Springer-Verlag, Berlin, Heidelberg.
+* {{cite journal | last1 = Sinden | first1 = R. R. | year = 2005 | title = Molecular biology: DNA twists and flips | url = | journal = Nature | volume = 437 | issue = 7062| pages = 1097–8 | doi=10.1038/4371097a | pmid=16237426}}
+* Van Holde KE. 1989. Chromatin. New York: [[Springer Science+Business Media|Springer-Verlag]]. {{ISBN|0-387-96694-3}}.
+* Van Holde, K., J. Zlatanova, G. Arents, and E. Moudrianakis. 1995. Elements of chromatin structure: histones, nucleosomes, and fibres, p.&amp;nbsp;1-26. In S. C. R. Elgin (ed.), Chromatin structure and gene expression. IRL Press at Oxford University Press, Oxford.
+
+==External links==
+* [https://www.youtube.com/watch?v=eYrQ0EhVCYA Chromatin, Histones &amp; Cathepsin]; PMAP [[The Proteolysis Map]]-animation
+* [ Recent chromatin publications and news]
+* [http://www.activemotif.com/documents/134.pdf Protocol for ''in vitro'' Chromatin Assembly]
+* [http://www.nature.com/encode/#/threads/chromatin-patterns-at-transcription-factor-binding-sites ENCODE threads Explorer] Chromatin patterns at transcription factor binding sites. [[Nature (journal)]]
+
+{{Chromo}}
+{{Nucleus}}
+
+{{Authority control}}
+
+[[Category:Molecular genetics]]
+[[Category:Nuclear substructures]]</text>
+      <sha1>kc0u7n0mxlbc1ub7l5c84r6e1gd55ks</sha1>
+    </revision>
+  </page>

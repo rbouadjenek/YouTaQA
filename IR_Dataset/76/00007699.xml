@@ -1,0 +1,67 @@
+  <page>
+    <title>Commodore 1570</title>
+    <ns>0</ns>
+    <id>7699</id>
+    <revision>
+      <id>883722285</id>
+      <parentid>883722077</parentid>
+      <timestamp>2019-02-17T05:21:48Z</timestamp>
+      <contributor>
+        <username>1980fast</username>
+        <id>12136076</id>
+      </contributor>
+      <minor />
+      <comment>Grammar</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{refimprove|date=August 2016}}
+
+{{Infobox information appliance
+| name         = Commodore 1570
+| title        = 
+| image        = Commodore 1570 01.JPG
+| caption      = Commodore 1570 floppy drive
+| manufacturer = Commodore Business Machines, Inc.
+| type         = Floppy drive
+| releasedate  = &lt;!--{{Start date|198?||}}--&gt;
+| price &lt;!--intro--&gt; = &lt;!--? USD (198?) USD {{Inflation|US|?|198?|fmt=c|r=-2}} ({{CURRENTYEAR}} equivalent)--&gt;
+| discontinued = 
+| media        = 5¼&quot; [[floppy disk]] [[Floppy disk format#Single Sided, Double Density|SS]] [[Floppy disk format#Single Sided, Double Density|DD]] using [[Group coded recording|GCR]] or [[Modified Frequency Modulation|MFM]]&lt;ref name=z71&gt;{{cite web |url=https://www.zimmers.net/cbmpics/d1571s.html
+|title=Commodore 1571 Disk Drive : Coming up to par:
+|date=2015-03-20
+|website=zimmers.net
+|archive-url=https://web.archive.org/web/20160326051411/http://www.zimmers.net/cbmpics/d1571s.html
+|archive-date=2016-03-26
+|accessdate=2016-04-27}}&lt;/ref&gt;
+| os           = [[Commodore DOS|CBM DOS v3.0]]&lt;ref name=z71/&gt;
+| power        = &lt;!--220 V 50 Hz ? W--&gt;
+| cpu          = [[MOS Technology 6502|MOS 6502]] @ {{nowrap|1-2 MHz}}&lt;!--clock from es.wikipedia --&gt;, [[Western Digital FD1771|WD1770]]
+| memory       = 2 kB RAM 32 kB ROM
+| storage      = 170 kB (GCR) ; 200 kB (MFM)&lt;!--de:Commodore 128 says so--&gt;
+| connectivity = [[Commodore bus|Commodore proprietary serial IEEE-488]]&lt;!--&quot;Two Serial Ports&quot;--&gt; {{nowrap|5200 bytes/s}}
+| dimensions   = 
+| weight       = 
+| compatibility= {{nowrap|[[Commodore 64]],}} {{nowrap|[[Commodore 128]]}}
+| predecessor  = [[Commodore 1541]]
+| successor    = [[Commodore 1571]]
+| related      = 
+}}
+
+The '''Commodore 1570''' is a 5¼&quot; [[floppy disk]] drive for the [[Commodore 128]] [[home computer|home]]/[[personal computer]]. It is a single-sided, 170 kB version of the [[Commodore 1571]], released as a stopgap measure when [[Commodore International]] was unable to provide sufficient quantities of 1571s due to a shortage of double-sided drive mechanisms (which were supplied by an outside manufacturer). Like the 1571, it can read and write both [[Group Coded Recording|GCR]] and [[Modified Frequency Modulation|MFM]] disk formats.
+The 1570 utilizes a 1571 logic board in a cream-colored [[Commodore 1541|original-1541]]-like case with a drive mechanism similar to the 1541's except that it was equipped with track-zero detection. Like the 1571, its built-in DOS provides a data burst mode for transferring data to the C128 computer at a faster speed than a 1541 can. Its [[Read-only memory|ROM]] also contains some DOS bug fixes that didn't appear in the 1571 until much later. The 1570 can read and write all single-sided [[CP/M operating system|CP/M]]-format disks that the 1571 can access.
+
+Although the 1570 is compatible with the [[Commodore 64]], the C64 isn't capable of taking advantage of the drive's higher-speed operation, and when used with the C64 it's little more than a pricier 1541. Also, many early buyers of the C128 chose to temporarily make do with a 1541 drive, perhaps owned as part of a previous C64 setup, until the 1571 became more widely available.
+
+The drive uses the CPU [[MOS Technology 6502|MOS 6502]], floppy controller [[Western Digital FD1771|WD1770]] or WD1772, I/O controllers 2x [[MOS Technology 6522]] and 1x [[MOS Technology 6526]].
+
+==References==
+{{Reflist}}
+
+{{Commodore disk drives}}
+
+[[Category:CBM hardware]]
+[[Category:Commodore 64]]
+[[Category:CBM floppy disk drives]]</text>
+      <sha1>6h5xhr45wzpc2oklc8qp74e457eai0e</sha1>
+    </revision>
+  </page>

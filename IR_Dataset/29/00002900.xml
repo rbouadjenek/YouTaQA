@@ -1,0 +1,62 @@
+  <page>
+    <title>File archiver</title>
+    <ns>0</ns>
+    <id>2900</id>
+    <revision>
+      <id>917784595</id>
+      <parentid>735199650</parentid>
+      <timestamp>2019-09-25T13:39:13Z</timestamp>
+      <contributor>
+        <username>Onel5969</username>
+        <id>10951369</id>
+      </contributor>
+      <minor />
+      <comment>Disambiguating links to [[XZ]] (link changed to [[XZ Utils]]) using [[User:Qwertyytrewqqwerty/DisamAssist|DisamAssist]].</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{refimprove|date=August 2016}}
+A '''file archiver''' is a [[computer program]] that combines a number of [[computer file|files]] together into one [[archive file]], or a series of archive files, for easier transportation or storage. File archivers may employ [[lossless data compression]] in their [[archive format]]s to reduce the size of the archive.
+
+Basic archivers just take a list of files and concatenate their contents sequentially into archives. The archive files need to store [[metadata]], at least the names and lengths of the original files, if proper reconstruction is possible. More advanced archivers store additional metadata, such as the [[Timestamping (computing)|original timestamps]], [[file attribute]]s or [[access control list]]s.
+
+The process of making an archive file is called ''archiving'' or ''packing''. Reconstructing the original files from the archive is termed ''unarchiving'', ''unpacking'' or ''extracting''.
+
+==History==
+An early archiver was the [[Multics]] command ''archive'', descended from the [[Compatible Time-Sharing System|CTSS]] command of the same name, which was a basic archiver and performed no compression. Multics also had a &quot;tape_archiver&quot; command, abbreviated ''ta'', which was perhaps the forerunner of unix' ''tar''.&lt;ref&gt;{{cite web|last1=Van Vleck|first1=Tom|title=Multics Glossary - A|url=http://www.multicians.org/mga.html|website=multicians.org|accessdate=Jan 6, 2016}}&lt;/ref&gt;
+
+==Unix archivers==
+The [[Unix]] tools ''[[ar (Unix)|ar]]'', ''[[tar (file format)|tar]]'', ''[[cpio]]'' act as archivers but not compressors. Users of the Unix tools use additional compression tools, such as [[gzip]], [[bzip2]], or [[XZ Utils|xz]], to compress the archive file after packing or remove compression before unpacking the archive file. The [[filename extension]]s are successively added at each step of this process. For example, archiving a collection of files with ''tar'' and then compressing the resulting archive file with ''gzip'' results a file with &lt;code&gt;.tar.gz&lt;/code&gt; extension.
+
+This approach has two goals:
+#It follows the [[Unix philosophy]] that each program should accomplish a single task to perfection, as opposed to attempting to accomplish everything with one tool. As compression technology progresses, users may use different compression programs without having to modify or abandon their archiver.
+#The archives use [[solid compression]]. When the files are combined, the compressor can exploit redundancy across several archived files and achieve better compression than a compressor that compresses each files individually.
+
+This approach, however, has disadvantages too:
+#Extracting or modifying one file is difficult. Extracting one file requires decompressing an entire archive, which can be time- and space-consuming. Modifying one means the file needs to be put back into archive and the archive recompressed again. This operation requires additional time and disk space.
+#The archive becomes damage-prone. If the area holding shared data for several files is damaged, all those files are lost.
+#It's impossible to take advantage of redundancy between files unless the compression window is larger than the size of an individual file. For example, gzip uses [[DEFLATE]], which typically operates with a 32768 byte window, whereas bzip2 uses a [[Burrows-Wheeler transform]] roughly 27 times bigger. xz defaults to 8 MiB but supports significantly larger windows.
+
+==Windows archivers==
+The built-in archiver of [[Microsoft Windows]] as well as third-party archiving software, such as [[WinRAR]] and [[7-zip]], often use a [[graphical user interface]]. They also offer an optional [[command-line interface]], while Windows itself does not. Windows archivers perform both archiving and compression. [[Solid compression]] may or may not be offered, depending on the product: Windows itself does not support it; WinRAR and 7-zip offer it as an option that can be turned on or off.
+
+== See also ==
+* [[Comparison of file archivers]]
+* [[Archive format]]
+* [[List of archive formats]]
+* [[Comparison of archive formats]]
+
+==References==
+{{Reflist}}
+
+== External links ==
+* {{dmoz|Computers/Data_Formats/Archive/|Archive formats}}
+
+{{DEFAULTSORT:File Archiver}}
+[[Category:Storage systems]]
+[[Category:Computer file systems]]
+[[Category:Computer archives]]
+[[Category:File archivers| ]]
+[[Category:Utility software types]]</text>
+      <sha1>cwchgmm3hnxxltlq1p9bjrn71liw63b</sha1>
+    </revision>
+  </page>

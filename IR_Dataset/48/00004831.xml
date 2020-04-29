@@ -1,0 +1,341 @@
+  <page>
+    <title>Bohr model</title>
+    <ns>0</ns>
+    <id>4831</id>
+    <revision>
+      <id>941197117</id>
+      <parentid>940965300</parentid>
+      <timestamp>2020-02-17T04:17:13Z</timestamp>
+      <contributor>
+        <username>ShelfSkewed</username>
+        <id>1152308</id>
+      </contributor>
+      <comment>Simplified internal links, fixed one</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{distinguish|Bohr equation}}
+[[Image:Bohr atom model.svg|thumb|310px|The  cake 
+model of the [[hydrogen atom]] ({{nowrap|''Z'' {{=}} 1}}) or a hydrogen-like ion ({{nowrap|''Z'' &gt; 1}}), where the negatively charged [[electron]] confined to an [[atomic shell]] encircles a small, positively charged [[atomic nucleus]] and where an electron jumps between orbits it is accompanied by an emitted or absorbed amount of [[electromagnetic wave|electromagnetic energy]] (''h&amp;nu;'').&lt;ref name=&quot;Akhlesh Lakhtakia Ed. 1996&quot;&gt;
+{{cite journal
+ |last1=Lakhtakia |first1=Akhlesh
+ |last2=Salpeter |first2=Edwin E.
+ |year=1996
+ |title=Models and Modelers of Hydrogen
+ |volume=65 |issue=9 |pages=933
+ |journal=American Journal of Physics
+ |bibcode=1997AmJPh..65..933L
+ |doi=10.1119/1.18691
+}}&lt;/ref&gt; The orbits in which the electron may travel are shown as grey circles; their radius increases as ''n''&lt;sup&gt;2&lt;/sup&gt;, where ''n'' is the [[principal quantum number]]. The {{nowrap|3 &amp;rarr; 2}} transition depicted here produces the first line of the [[Balmer series]], and for hydrogen ({{nowrap|''Z'' {{=}} 1}}) it results in a photon of [[wavelength]] 656&amp;nbsp;[[nanometre|nm]] (red light).]]
+
+In [[atomic physics]], the '''Rutherford–Bohr model''' or '''Bohr model''', presented by [[Niels Bohr]] and [[Ernest Rutherford]] in 1913, is a system consisting of a small, dense nucleus surrounded by orbiting electrons—similar to the structure of the [[Solar System]], but with attraction provided by [[electrostatic force]]s in place of [[gravity]]. After the [[Cubic atom|cubic model]] (1902), the [[plum-pudding model]] (1904), the [[Saturnian model]] (1904), and the [[Rutherford model]] (1911) came the ''Rutherford–Bohr model'' or just ''Bohr model'' for short (1913). The improvement to the Rutherford model is mostly a quantum physical interpretation of it. 
+The model's key success lay in explaining the [[Rydberg formula]] for the spectral [[Hydrogen spectral series|emission lines]] of atomic [[hydrogen]]. While the Rydberg formula had been known experimentally, it did not gain a theoretical underpinning until the Bohr model was introduced. Not only did the Bohr model explain the reasons for the structure of the Rydberg formula, it also provided a justification for the fundamental physical constants that make up the formula's empirical results.
+
+The Bohr model is a relatively primitive model of the [[hydrogen atom]], compared to the ''[[Atomic orbital|valence shell atom]]'' model. As a theory, it can be derived as a [[Orders of approximation#First-order|first-order approximation]] of the hydrogen atom using the broader and much more accurate [[quantum mechanics]] and thus may be considered to be an [[obsolete scientific theory]]. However, because of its simplicity, and its correct results for selected systems (see below for application), the Bohr model is still commonly taught to introduce students to [[quantum mechanics]] or [[Energy level#Energy level diagrams|energy level diagrams]] before moving on to the more accurate, but more complex, valence shell atom. A related model was originally proposed by [[Arthur Erich Haas]] in 1910 but was rejected. The quantum theory of the period between [[Planck#Black-body radiation|Planck's discovery of the quantum]] (1900) and the advent of a mature [[quantum mechanics]] (1925) is often referred to as the [[old quantum theory]].
+
+== Origin ==
+[[File:Atome bohr couches electroniques KLM.svg|thumb|Bohr model showing maximum electrons per shell with shells labeled in [[X-ray notation]]]]
+In the early 20th century, [[Geiger–Marsden experiment|experiments by Ernest Rutherford]] established that [[atom]]s consisted of a diffuse cloud of negatively charged [[electron]]s surrounding a small, dense, positively charged [[Atomic nucleus|nucleus]].&lt;ref name=&quot;bohr1&quot;&gt;{{cite journal | author=Niels Bohr | title=On the Constitution of Atoms and Molecules, Part I | journal=Philosophical Magazine | year=1913 | volume=26 | pages=1–24 | doi= 10.1080/14786441308634955| url=http://web.ihep.su/dbserv/compas/src/bohr13/eng.pdf | issue=151}}&lt;/ref&gt; Given this experimental data, Rutherford naturally considered a planetary model of the atom, the [[Rutherford model]] of 1911 – electrons orbiting a solar nucleus – however, the said planetary model of the atom has a technical difficulty: the laws of classical mechanics (i.e. the [[Larmor formula]]) predict that the electron will release [[electromagnetic radiation]] while orbiting a nucleus. Because the electron would lose energy, it would rapidly spiral inwards, collapsing into the nucleus on a timescale of around 16 picoseconds.&lt;ref&gt;[http://www.physics.princeton.edu/~mcdonald/examples/orbitdecay.pdf Olsen and McDonald 2005]&lt;/ref&gt; This atom model is disastrous, because it predicts that all atoms are unstable.&lt;ref&gt;{{cite web|url=http://www.ck12.org/flexbook/chapter/7512|title=CK12 – Chemistry Flexbook Second Edition – The Bohr Model of the Atom|accessdate=30 September 2014}}&lt;/ref&gt;
+
+Also, as the electron spirals inward, the emission would rapidly increase in frequency as the orbit got smaller and faster. This would produce a continuous smear, in frequency, of electromagnetic radiation. However, late 19th century experiments with [[electric discharge]]s have shown that atoms will only emit light (that is, electromagnetic radiation) at certain discrete frequencies.
+
+To overcome this hard difficulty, [[Niels Bohr]] proposed, in 1913, what is now called the ''Bohr model of the atom''. He put forward these three postulates that sum up most of the model:
+
+#The electron is able to revolve in certain stable orbits around the nucleus without radiating any energy, contrary to what [[classical electromagnetism]] suggests. These stable orbits are called stationary orbits and are attained at certain discrete distances from the nucleus. The electron cannot have any other orbit in between the discrete ones.
+#The stationary orbits are attained at distances for which the angular momentum of the revolving electron is an integral multiple of the reduced [[Planck constant|Planck's constant]]: &lt;math&gt; m_\mathrm{e} v r = n \hbar &lt;/math&gt;, where ''n'' = 1, 2, 3, ... is called the [[principal quantum number]], and {{math|''ħ'' {{=}} ''h''/2{{pi}}}}. The lowest value of ''n'' is 1; this gives a smallest possible orbital radius of 0.0529&amp;nbsp;nm known as the [[Bohr radius]]. Once an electron is in this lowest orbit, it can get no closer to the proton. Starting from the angular momentum quantum rule, Bohr&lt;ref name=&quot;bohr1&quot; /&gt; was able to calculate the [[#Electron energy levels|energies of the allowed orbits]] of the hydrogen atom and other [[#Shell model (heavier atoms)|hydrogen-like]] atoms and ions. These orbits are associated with definite energies and are also called energy shells or [[energy level]]s. In these orbits, the electron's acceleration does not result in radiation and energy loss. The Bohr model of an atom was based upon Planck's quantum theory of radiation.
+# Electrons can only gain and lose energy by jumping from one allowed orbit to another, absorbing or emitting electromagnetic radiation with a frequency ''ν'' determined by the energy difference of the levels according to the [[Planck relation]]: &lt;math&gt;\Delta E = E_2-E_1 = h \nu&lt;/math&gt;, where ''h'' is [[Planck's constant]].
+
+Other points are:
+
+# Like Einstein's theory of the [[photoelectric effect]], Bohr's formula assumes that during a quantum jump a ''discrete'' amount of energy is radiated. However, unlike Einstein, Bohr stuck to the ''classical'' [[Maxwell's equations|Maxwell theory]] of the electromagnetic field. Quantization of the electromagnetic field was explained by the discreteness of the atomic [[#Electron energy levels|energy levels]]; Bohr did not believe in the existence of [[photon]]s.&lt;ref&gt;{{cite book |last1=Stachel |first1=John |title=Quantum Reality, Relativistic Causality, and Closing the Epistemic Circle |date=2009 |publisher=Springer |location=Dordrecht |page=79 |chapter=Bohr and the Photon}}&lt;/ref&gt;&lt;ref&gt;Louisa Gilder, &quot;The Age of Entanglement&quot; The Arguments 1922 p. 55, &quot;Well, yes,&quot; says Bohr. &quot;But I can hardly imagine it will involve light quanta.  Look, even if Einstein had found an unassailable proof of their existence and would want to inform me by telegram, this telegram would only reach me because of the existence and reality of radio waves.&quot; 2009&lt;/ref&gt;
+# According to the Maxwell theory the frequency ''ν'' of classical radiation is equal to the rotation frequency ''ν''&lt;sub&gt;rot&lt;/sub&gt; of the electron in its orbit, with [[harmonics]] at integer multiples of this frequency. This result is obtained from the Bohr model for jumps between energy levels ''E''&lt;sub&gt;''n''&lt;/sub&gt; and ''E''&lt;sub&gt;''n''−''k''&lt;/sub&gt; when ''k'' is much smaller than ''n''. These jumps reproduce the frequency of the ''k''-th harmonic of orbit ''n''. For sufficiently large values of ''n'' (so-called [[Rydberg state]]s), the two orbits involved in the emission process have nearly the same rotation frequency, so that the classical orbital frequency is not ambiguous. But for small ''n'' (or large ''k''), the radiation frequency has no unambiguous classical interpretation. This marks the birth of the [[correspondence principle]], requiring quantum theory to agree with the classical theory only in the limit of large quantum numbers.
+# The [[BKS theory|Bohr–Kramers–Slater theory]] (BKS theory) is a failed attempt to extend the Bohr model, which violates the [[conservation of energy]] and [[Conservation of linear momentum|momentum]] in quantum jumps, with the conservation laws only holding on average.
+
+Bohr's condition, that the angular momentum is an integer multiple of ''ħ'' was later reinterpreted in 1924 by [[de Broglie]] as a [[standing wave]] condition: the electron is described by a wave and a whole number of wavelengths must fit along the circumference of the electron's orbit:
+
+: &lt;math&gt;n \lambda = 2 \pi r.&lt;/math&gt;
+
+According to de Broglie hypothesis, matter particles such as the electron behaves as waves. So, de Broglie wavelength of electron is:
+
+: &lt;math&gt;\lambda=\frac{h}{mv}&lt;/math&gt;.
+
+which implies that,
+
+: &lt;math&gt;\frac{nh}{mv}=2 \pi r&lt;/math&gt;
+
+or
+
+: &lt;math&gt;\frac{nh}{2 \pi}=mvr&lt;/math&gt;
+
+where &lt;math&gt;mvr&lt;/math&gt; is the angular momentum &lt;math&gt;\ell&lt;/math&gt; of the orbiting electron.
+
+: &lt;math&gt;\ell=\frac{nh}{2 \pi}&lt;/math&gt;
+
+which is the Bohr's second postulate.
+
+Bohr described angular momentum of the electron orbit as 1/2h while [[de Broglie wavelength|de Broglie's wavelength]] of {{math|''λ'' {{=}} ''h''/''p''}} described h divided by the electron momentum. In 1913, however, Bohr justified his rule by appealing to the correspondence principle, without providing any sort of wave interpretation. In 1913, the wave behavior of matter particles such as the electron (i.e., [[matter wave]]s) was not suspected.
+
+In 1925, a new kind of mechanics was proposed, [[quantum mechanics]], in which Bohr's model of electrons traveling in quantized orbits was extended into a [[matrix mechanics|more accurate model]] of electron motion. The new theory was proposed by [[Werner Heisenberg]]. [[Schrödinger equation|Another form]] of the same theory, wave mechanics, was discovered by the Austrian physicist [[Erwin Schrödinger]] independently, and by different reasoning. Schrödinger employed de Broglie's matter waves, but sought wave solutions of a three-dimensional wave equation describing electrons that were constrained to move about the nucleus of a [[hydrogen-like atom]], by being trapped by the potential of the positive nuclear charge.
+
+== Electron energy levels ==
+[[File:Blausen 0342 ElectronEnergyLevels.png|thumb|Models depicting electron energy levels in hydrogen, helium, lithium, and neon]]
+The Bohr model gives almost exact results only for a system where two charged points orbit each other at speeds much less than that of light. This not only involves one-electron systems such as the [[hydrogen atom]], singly ionized [[helium]], and doubly ionized [[lithium]], but it includes [[positronium]] and [[Rydberg states]] of any atom where one electron is far away from everything else. It can be used for [[K-line (x-ray)|K-line]] X-ray transition calculations if other assumptions are added (see [[#Moseley's law and calculation of K-alpha X-ray emission lines|Moseley's law]] below). In high energy physics, it can be used to calculate the masses of [[Quark|heavy quark]] [[meson]]s.
+
+Calculation of the orbits requires two assumptions.
+
+* '''Classical mechanics'''
+:The electron is held in a circular orbit by electrostatic attraction. The [[centripetal force]] is equal to the [[Coulomb law|Coulomb force]].
+::&lt;math&gt; {m_\mathrm{e} v^2\over r} = {Zk_\mathrm{e} e^2 \over r^2} &lt;/math&gt;
+:where ''m''&lt;sub&gt;e&lt;/sub&gt; is the [[electron]]'s mass, ''e'' is the charge of the electron, ''k''&lt;sub&gt;e&lt;/sub&gt; is the [[Coulomb constant]] and ''Z'' is the atom's [[atomic number]]. It is assumed here that the mass of the nucleus is much larger than the electron mass (which is a good assumption). This equation determines the electron's speed at any radius:
+:: &lt;math&gt; v = \sqrt{ Zk_\mathrm{e} e^2 \over m_\mathrm{e} r}. &lt;/math&gt;
+
+: It also determines the electron's total energy at any radius:
+:: &lt;math&gt; E= -{1\over 2} m_\mathrm{e} v^2
+ &lt;/math&gt;
+
+:The total energy is negative and inversely proportional to ''r''. This means that it takes energy to pull the orbiting electron away from the proton. For infinite values of ''r'', the energy is zero, corresponding to a motionless electron infinitely far from the proton. The total energy is half the [[potential energy]], the difference being the kinetic energy of the electron.  This is also true for noncircular orbits by the [[virial theorem]].
+
+* '''A quantum rule'''
+
+:The [[angular momentum]] {{nowrap|''L'' {{=}} ''m''&lt;sub&gt;e&lt;/sub&gt;''vr''}} is an integer multiple of ''ħ'':
+::&lt;math&gt; m_\mathrm{e} v r = n \hbar &lt;/math&gt;
+
+===Derivation===
+If an electron in an atom is moving on an orbit with period ''T'', classically the electromagnetic radiation will repeat itself every orbital period. If the coupling to the electromagnetic field is weak, so that the orbit doesn't decay very much in one cycle, the radiation will be emitted in a pattern which repeats every period, so that the Fourier transform will have frequencies which are only multiples of 1/''T''. This is the classical radiation law: the frequencies emitted are integer multiples of 1/''T''.
+
+In quantum mechanics, this emission must be in quanta of light, of frequencies consisting of integer multiples of 1/''T'', so that classical mechanics is an approximate description at large quantum numbers. This means that the energy level corresponding to a classical orbit of period 1/''T'' must have nearby energy levels which differ in energy by ''h''/''T'', and they should be equally spaced near that level,
+
+:&lt;math&gt;
+\Delta E_n= { h\over T(E_n) }.
+&lt;/math&gt;
+
+Bohr worried whether the energy spacing 1/''T'' should be best calculated with the period of the energy state &lt;math&gt;E_n&lt;/math&gt;, or &lt;math&gt;E_{n+1}&lt;/math&gt;, or some average—in hindsight, this model is only the leading semiclassical approximation.
+
+Bohr considered circular orbits. Classically, these orbits must decay to smaller circles when photons are emitted. The level spacing between circular orbits can be calculated with the correspondence formula. For a Hydrogen atom, the classical orbits have a period ''T'' determined by [[Keplers laws|Kepler's third law]] to scale as ''r''&lt;sup&gt;3/2&lt;/sup&gt;. The energy scales as 1/''r'', so the level spacing formula amounts to
+
+:&lt;math&gt;
+\Delta E \propto { 1 \over r^{3\over 2} } \propto E^{3 \over 2}.
+&lt;/math&gt;
+It is possible to determine the energy levels by recursively stepping down orbit by orbit, but there is a shortcut.
+
+The angular momentum ''L'' of the circular orbit scales as {{radic|''r''}}. The energy in terms of the angular momentum is then
+:&lt;math&gt;E \propto {1\over r} \propto {1 \over L^2}&lt;/math&gt;.
+Assuming, with Bohr, that quantized values of ''L'' are equally spaced, the spacing between neighboring energies is
+:&lt;math&gt;
+\Delta E \propto {1 \over (L+\hbar)^2 } - {1 \over L^2} \approx - {2\hbar \over L^3} \propto - E^{3 \over 2}.
+&lt;/math&gt;
+This is as desired for equally spaced angular momenta. If one kept track of the constants, the spacing would be ''ħ'', so the angular momentum should be an integer multiple of ''ħ'',
+:&lt;math&gt;
+L = {nh \over 2\pi} = n \hbar ~ .
+&lt;/math&gt;
+
+This is how Bohr arrived at his model.
+
+:Substituting the expression for the velocity gives an equation for ''r'' in terms of ''n'':
+::&lt;math&gt; m_{\text{e}}\sqrt{\dfrac{k_{\text{e}}Ze^2}{m_{\text{e}}r}}r=n\hbar &lt;/math&gt;
+:so that the allowed orbit radius at any ''n'' is:
+::&lt;math&gt; r_n = {n^2\hbar^2\over Zk_\mathrm{e} e^2 m_\mathrm{e}} &lt;/math&gt;
+
+:The smallest possible value of ''r'' in the hydrogen atom ({{nowrap|''Z'' {{=}} 1}}) is called the [[Bohr radius]] and is equal to:
+:: &lt;math&gt;r_1 = {\hbar^2 \over k_\mathrm{e} e^2 m_\mathrm{e}} \approx 5.29 \times 10^{-11} \mathrm{m} &lt;/math&gt;
+
+:The energy of the ''n''-th level for any atom is determined by the radius and quantum number:
+::&lt;math&gt; E = -{Zk_\mathrm{e} e^2 \over 2r_n } = - { Z^2(k_\mathrm{e} e^2)^2 m_\mathrm{e} \over 2\hbar^2 n^2} \approx {-13.6Z^2 \over n^2}\mathrm{eV} &lt;/math&gt;
+
+An electron in the lowest energy level of hydrogen ({{nowrap|''n'' {{=}} 1}}) therefore has about 13.6&amp;nbsp;[[electronvolt|eV]] less energy than a motionless electron infinitely far from the nucleus. The next energy level ({{nowrap|''n'' {{=}} 2}}) is −3.4&amp;nbsp;eV. The third ({{nowrap|''n'' {{=}} }}3) is −1.51&amp;nbsp;eV, and so on. For larger values of ''n'', these are also the binding energies of a highly excited atom with one electron in a large circular orbit around the rest of the atom. The hydrogen formula also coincides with the [[Wallis product]].&lt;ref&gt;[http://physicsworld.com/cws/article/news/2015/nov/17/revealing-the-hidden-connection-between-pi-and-bohrs-hydrogen-model &quot;Revealing the hidden connection between pi and Bohr's hydrogen model.&quot; Physics World (November 17, 2015)]&lt;/ref&gt;
+
+The combination of natural constants in the energy formula is called the Rydberg energy (''R''&lt;sub&gt;E&lt;/sub&gt;):
+:&lt;math&gt; R_\mathrm{E} = { (k_\mathrm{e} e^2)^2 m_\mathrm{e} \over 2 \hbar^2} &lt;/math&gt;
+
+This expression is clarified by interpreting it in combinations that form more [[natural units]]:
+: &lt;math&gt;\, m_\mathrm{e} c^2 &lt;/math&gt; is the [[rest mass energy]] of the electron (511&amp;nbsp;keV)
+: &lt;math&gt;\, {k_\mathrm{e} e^2 \over \hbar c} = \alpha \approx {1\over 137} &lt;/math&gt; is the [[fine structure constant]]
+: &lt;math&gt;\, R_\mathrm{E} = {1\over 2} (m_\mathrm{e} c^2) \alpha^2&lt;/math&gt;
+
+Since this derivation is with the assumption that the nucleus is orbited by one electron, we can generalize this result by letting the nucleus have a charge {{nowrap|1=''q'' = ''Ze''}}, where ''Z'' is the [[atomic number]]. This will now give us energy levels for [[hydrogenic]] (&quot;hydrogen-like&quot;) atoms, which can serve as a rough order-of-magnitude approximation of the actual energy levels. So for nuclei with ''Z'' protons, the energy levels are (to a rough approximation):
+:&lt;math&gt; E_n = -{Z^2 R_\mathrm{E} \over n^2} &lt;/math&gt;
+
+The actual energy levels cannot be solved analytically for more than one electron (see [[n-body problem|''n''-body problem]]) because the electrons are not only affected by the [[atomic nucleus|nucleus]] but also interact with each other via the [[Coulomb Force]].
+
+When ''Z'' = 1/''α'' ({{nowrap|''Z'' ≈ 137}}), the motion becomes highly relativistic, and ''Z''&lt;sup&gt;2&lt;/sup&gt; cancels the ''α''&lt;sup&gt;2&lt;/sup&gt; in ''R''; the orbit energy begins to be comparable to rest energy. Sufficiently large nuclei, if they were stable, would reduce their charge by creating a bound electron from the vacuum, ejecting the positron to infinity. This is the theoretical phenomenon of electromagnetic charge screening which predicts a maximum nuclear charge. Emission of such positrons has been observed in the collisions of heavy ions to create temporary super-heavy nuclei.&lt;ref&gt;{{cite journal|last1=Müller|first1=U.|last2=de Reus|first2=T.|last3=Reinhardt|first3=J.|last4=Müller|first4=B.|last5=Greiner|first5=W.|url=https://pdfs.semanticscholar.org/8b54/73502022a50cf90d42853f16f5bb38a56a09.pdf|title=Positron production in crossed beams of bare uranium nuclei|date=1988-03-01|journal=Physical Review A|doi=10.1103/PhysRevA.37.1449|volume=37|number=5|pages=1449–1455|pmid=9899816|accessdate=2019-07-14}}&lt;/ref&gt;
+
+The Bohr formula properly uses the [[reduced mass]] of electron and proton in all situations, instead of the mass of the electron,
+:&lt;math&gt;m_\text{red} = \frac{m_\mathrm{e} m_\mathrm{p}}{m_\mathrm{e} + m_\mathrm{p}} = m_\mathrm{e} ~\frac{1}{1+m_\mathrm{e}/m_\mathrm{p}}~.&lt;/math&gt;
+However, these numbers are very nearly the same, due to the much larger mass of the proton, about 1836.1 times the mass of the electron, so that the reduced mass in the system is the mass of the electron multiplied by the constant 1836.1/(1+1836.1) = 0.99946. This fact was historically important in convincing Rutherford of the importance of Bohr's model, for it explained the fact that the frequencies of lines in the spectra for singly ionized helium do not differ from those of hydrogen by a factor of exactly 4, but rather by 4 times the ratio of the reduced mass for the hydrogen vs. the helium systems, which was much closer to the experimental ratio than exactly 4.
+
+For positronium, the formula uses the [[reduced mass]] also, but in this case, it is exactly the electron mass divided by 2. For any value of the radius, the electron and the positron are each moving at half the speed around their common center of mass, and each has only one fourth the kinetic energy. The total kinetic energy is half what it would be for a single electron moving around a heavy nucleus.
+:&lt;math&gt; E_n = {R_\mathrm{E} \over 2 n^2 } ~~~~~~ &lt;/math&gt; (positronium)
+
+== Rydberg formula ==
+{{see also|Rydberg formula}}
+The [[Rydberg formula]], which was known empirically before Bohr's formula, is seen in Bohr's theory as describing the energies of transitions or [[Atomic electron transition|quantum jumps]] between orbital energy levels. Bohr's formula gives the numerical value of the already-known and measured the [[Rydberg constant]], but in terms of more fundamental constants of nature, including the electron's charge and the [[Planck constant]].
+
+When the electron gets moved from its original energy level to a higher one, it then jumps back each level until it comes to the original position, which results in a [[photon]] being emitted. Using the derived formula for the different energy levels of hydrogen one may determine the wavelengths of light that a hydrogen atom can emit.
+
+The energy of a photon emitted by a hydrogen atom is given by the difference of two hydrogen energy levels:
+::&lt;math&gt;E=E_i-E_f=R_\mathrm{E} \left( \frac{1}{n_{f}^2} - \frac{1}{n_i^2} \right) \,&lt;/math&gt;
+where {{math|''n''&lt;sub&gt;''f''&lt;/sub&gt;}} is the final energy level, and {{math|''n''&lt;sub&gt;''i''&lt;/sub&gt;}} is the initial energy level.
+
+Since the energy of a [[photon]] is
+::&lt;math&gt;E=\frac{hc}{\lambda}, \,&lt;/math&gt;
+the wavelength of the photon given off is given by
+::&lt;math&gt;\frac{1}{\lambda}=R \left( \frac{1}{n_{f}^2} - \frac{1}{n_{i}^2} \right). \,&lt;/math&gt;
+
+This is known as the [[Rydberg formula]], and the Rydberg constant {{math|''R''}} is {{math|''R''&lt;sub&gt;E&lt;/sub&gt;/''hc''}}, or {{math|''R''&lt;sub&gt;E&lt;/sub&gt;/2{{pi}}}} in [[natural units]]. This formula was known in the nineteenth century to scientists studying [[spectroscopy]], but there was no theoretical explanation for this form or a theoretical prediction for the value of {{math|''R''}}, until Bohr. In fact, Bohr's derivation of the Rydberg constant, as well as the concomitant agreement of Bohr's formula with experimentally observed spectral lines of the [[Lyman series|Lyman]] ({{math|''n&lt;sub&gt;f&lt;/sub&gt;''}} =1), [[Balmer series|Balmer]] ({{math|''n&lt;sub&gt;f&lt;/sub&gt;''}} =2), and [[Paschen series|Paschen]] ({{math|''n&lt;sub&gt;f&lt;/sub&gt;''}} =3) series, and successful theoretical prediction of other lines not yet observed, was one reason that his model was immediately accepted.
+
+To apply to atoms with more than one electron, the Rydberg formula can be modified by replacing {{math|''Z''}} with {{math|''Z''&amp;nbsp;−&amp;nbsp;''b''}} or {{math|''n''}} with {{math|''n''&amp;nbsp;−&amp;nbsp;''b''}} where {{math|''b''}} is constant representing a screening effect due to the inner-shell and other electrons (see [[Electron shell]] and the later discussion of the &quot;Shell Model of the Atom&quot; below). This was established empirically before Bohr presented his model.
+
+== Shell model (heavier atoms) ==
+Bohr extended the model of hydrogen to give an approximate model for heavier atoms. This gave a physical picture that reproduced many known atomic properties for the first time.
+
+Heavier atoms have more protons in the nucleus, and more electrons to cancel the charge. Bohr's idea was that each discrete orbit could only hold a certain number of electrons. After that orbit is full, the next level would have to be used. This gives the atom a [[electron configuration|shell structure]], in which each shell corresponds to a Bohr orbit.
+
+This model is even more approximate than the model of hydrogen, because it treats the electrons in each shell as non-interacting. But the repulsions of electrons are taken into account somewhat by the phenomenon of [[Shielding effect|screening]]. The electrons in outer orbits do not only orbit the nucleus, but they also move around the inner electrons, so the effective charge Z that they feel is reduced by the number of the electrons in the inner orbit.
+
+For example, the lithium atom has two electrons in the lowest 1s orbit, and these orbit at ''Z''&amp;nbsp;=&amp;nbsp;2. Each one sees the nuclear charge of ''Z''&amp;nbsp;=&amp;nbsp;3 minus the screening effect of the other, which crudely reduces the nuclear charge by 1 unit. This means that the innermost electrons orbit at approximately 1/2 the Bohr radius. The outermost electron in lithium orbits at roughly the Bohr radius, since the two inner electrons reduce the nuclear charge by 2. This outer electron should be at nearly one Bohr radius from the nucleus. Because the electrons strongly repel each other, the effective charge description is very approximate; the effective charge ''Z'' doesn't usually come out to be an integer. But [[Moseley's law]] experimentally probes the innermost pair of electrons, and shows that they do see a nuclear charge of approximately ''Z''&amp;nbsp;−&amp;nbsp;1, while the outermost electron in an atom or ion with only one electron in the outermost shell orbits a core with effective charge ''Z''&amp;nbsp;−&amp;nbsp;''k'' where ''k'' is the total number of electrons in the inner shells.
+
+The shell model was able to qualitatively explain many of the mysterious properties of atoms which became codified in the late 19th century in the [[periodic table of the elements]]. One property was the size of atoms, which could be determined approximately by measuring the [[viscosity]] of gases and density of pure crystalline solids. Atoms tend to get smaller toward the right in the periodic table, and become much larger at the next line of the table. Atoms to the right of the table tend to gain electrons, while atoms to the left tend to lose them. Every element on the last column of the table is chemically inert ([[noble gas]]).
+
+In the shell model, this phenomenon is explained by shell-filling. Successive atoms become smaller because they are filling orbits of the same size, until the orbit is full, at which point the next atom in the table has a loosely bound outer electron, causing it to expand. The first Bohr orbit is filled when it has two electrons, which explains why helium is inert. The second orbit allows eight electrons, and when it is full the atom is neon, again inert. The third orbital contains eight again, except that in the more correct Sommerfeld treatment (reproduced in modern quantum mechanics) there are extra &quot;d&quot; electrons. The third orbit may hold an extra 10 d electrons, but these positions are not filled until a few more orbitals from the next level are filled (filling the n=3 d orbitals produces the 10 [[transition elements]]). The irregular filling pattern is an effect of interactions between electrons, which are not taken into account in either the Bohr or Sommerfeld models and which are difficult to calculate even in the modern treatment.
+
+== Moseley's law and calculation (K-alpha X-ray emission lines) ==
+Niels Bohr said in 1962, &quot;You see actually the Rutherford work was not taken seriously. We cannot understand today, but it was not taken seriously at all. There was no mention of it any place. The great change came from Moseley.&quot;&lt;ref&gt;{{cite web|url=http://www.aip.org/history-programs/niels-bohr-library/oral-histories/4517-1|title=Interview of Niels Bohr by Thomas S. Kuhn, Leon Rosenfeld, Erik Rudinger, and Aage Petersen|date=31 Oct 1962|publisher=Niels Bohr Library &amp; Archives, American Institute of Physics|accessdate=27 Mar 2019}}&lt;/ref&gt;
+
+In 1913 [[Henry Moseley]] found an empirical relationship between the strongest X-ray line emitted by atoms under electron bombardment (then known as the [[K-alpha]] line), and their atomic number {{math|''Z''}}. Moseley's empiric formula was found to be derivable from Rydberg and Bohr's formula (Moseley actually mentions only [[Ernest Rutherford]] and [[Antonius Van den Broek]] in terms of models). The two additional assumptions that '''[1]''' this X-ray line came from a transition between energy levels with quantum numbers 1 and 2, and '''[2]''', that the atomic number {{math|''Z''}} when used in the formula for atoms heavier than hydrogen, should be diminished by 1, to {{math|(''Z''&amp;nbsp;−&amp;nbsp;1)&lt;sup&gt;2&lt;/sup&gt;}}.
+
+Moseley wrote to Bohr, puzzled about his results, but Bohr was not able to help. At that time, he thought that the postulated innermost &quot;K&quot; shell of electrons should have at least four electrons, not the two which would have neatly explained the result. So Moseley published his results without a theoretical explanation.
+
+Later, people realized that the effect was caused by charge screening, with an inner shell containing only 2 electrons. In the experiment, one of the innermost electrons in the atom is knocked out, leaving a vacancy in the lowest Bohr orbit, which contains a single remaining electron. This vacancy is then filled by an electron from the next orbit, which has n=2. But the n=2 electrons see an effective charge of ''Z''&amp;nbsp;−&amp;nbsp;1, which is the value appropriate for the charge of the nucleus, when a single electron remains in the lowest Bohr orbit to screen the nuclear charge +''Z'', and lower it by −1 (due to the electron's negative charge screening the nuclear positive charge). The energy gained by an electron dropping from the second shell to the first gives [[Moseley's law]] for K-alpha lines,
+::&lt;math&gt;E= h\nu = E_i-E_f=R_\mathrm{E} (Z-1)^2 \left( \frac{1}{1^2} - \frac{1}{2^2} \right) \,&lt;/math&gt;
+or
+::&lt;math&gt;f = \nu = R_\mathrm{v} \left( \frac{3}{4}\right) (Z-1)^2 = (2.46 \times 10^{15} \operatorname{Hz})(Z-1)^2.&lt;/math&gt;
+
+Here, '''''R''&lt;sub&gt;v&lt;/sub&gt;''' = '''''R''&lt;sub&gt;E&lt;/sub&gt;/''h''''' is the Rydberg constant, in terms of frequency equal to 3.28 x 10&lt;sup&gt;15&lt;/sup&gt; Hz. For values of Z between 11 and 31 this latter relationship had been empirically derived by Moseley, in a simple (linear) plot of the square root of X-ray frequency against atomic number (however, for silver, Z = 47, the experimentally obtained screening term should be replaced by 0.4). Notwithstanding its restricted validity,&lt;ref&gt;
+{{cite journal
+ |author=M.A.B. Whitaker
+ |year=1999
+ |title=The Bohr–Moseley synthesis and a simple model for atomic x-ray energies
+ |journal=[[European Journal of Physics]]
+ |volume=20 |issue= 3|pages=213–220
+ |bibcode= 1999EJPh...20..213W
+ |doi=10.1088/0143-0807/20/3/312
+}}&lt;/ref&gt; Moseley's law not only established the objective meaning of atomic number (see [[Henry Moseley]] for detail) but, as Bohr noted, it also did more than the Rydberg derivation to establish the validity of the Rutherford/Van den Broek/Bohr nuclear model of the atom, with atomic number (place on the periodic table) standing for whole units of nuclear charge.
+
+The [[K-alpha]] line of Moseley's time is now known to be a pair of close lines, written as ('''Kα&lt;sub&gt;1&lt;/sub&gt;''' and '''Kα&lt;sub&gt;2&lt;/sub&gt;''') in [[Siegbahn notation]].
+
+== Shortcomings ==
+
+The Bohr model gives an incorrect value {{math|''L''{{=}}''ħ''}} for the ground state orbital angular momentum: The angular momentum in the true ground state is known to be zero from experiment.&lt;ref&gt;Smith, Brian. [http://www.physics.ox.ac.uk/Users/smithb/website/coursenotes/qi/QILectureNotes2.pdf#page=17 &quot;Quantum Ideas: Week 2&quot; Lecture Notes], p.17. University of Oxford. Retrieved Jan. 23, 2015.&lt;/ref&gt; Although mental pictures fail somewhat at these levels of scale, an electron in the lowest modern &quot;orbital&quot; with no orbital momentum, may be thought of as not to rotate &quot;around&quot; the nucleus at all, but merely to go tightly around it in an ellipse with zero area (this may be pictured as &quot;back and forth&quot;, without striking or interacting with the nucleus). This is only reproduced in a more sophisticated semiclassical treatment like Sommerfeld's. Still, even the most sophisticated semiclassical model fails to explain the fact that the lowest energy state is spherically symmetric – it doesn't point in any particular direction.
+
+Nevertheless, in the modern [[Phase space formulation|''fully quantum treatment in phase space'']], the proper deformation (careful full extension) of the semi-classical result adjusts the angular momentum value to the correct effective one. As a consequence, the physical ground state expression is obtained through a shift of the vanishing quantum angular momentum expression, which corresponds to spherical symmetry.
+
+In modern quantum mechanics, the electron in hydrogen is a [[Electron cloud|spherical cloud of probability]] that grows denser near the nucleus. The rate-constant of probability-decay in hydrogen is equal to the inverse of the Bohr radius, but since Bohr worked with circular orbits, not zero area ellipses, the fact that these two numbers exactly agree is considered a &quot;coincidence&quot;. (However, many such coincidental agreements are found between the semiclassical vs. full quantum mechanical treatment of the atom; these include identical energy levels in the hydrogen atom and the derivation of a [[fine structure constant]], which arises from the relativistic Bohr–Sommerfeld model (see below) and which happens to be equal to an entirely different concept, in full modern quantum mechanics).
+
+The Bohr model also has difficulty with, or else fails to explain:
+
+* Much of the spectra of larger atoms. At best, it can make predictions about the [[K-alpha]] and some L-alpha X-ray emission spectra for larger atoms, if ''two'' additional ad hoc assumptions are made (see [[Moseley's law]] above). Emission spectra for atoms with a single outer-shell electron (atoms in the [[lithium]] group) can also be approximately predicted. Also, if the empiric electron–nuclear screening factors for many atoms are known, many other spectral lines can be deduced from the information, in similar atoms of differing elements, via the Ritz–Rydberg combination principles (see [[Rydberg formula]]). All these techniques essentially make use of Bohr's Newtonian energy-potential picture of the atom.
+* the relative intensities of spectral lines; although in some simple cases, Bohr's formula or modifications of it, was able to provide reasonable estimates (for example, calculations by Kramers for the [[Stark effect]]).
+* The existence of [[fine structure]] and [[hyperfine structure]] in spectral lines, which are known to be due to a variety of relativistic and subtle effects, as well as complications from electron spin.
+* The [[Zeeman effect]] – changes in spectral lines due to external [[magnetic field]]s; these are also due to more complicated quantum principles interacting with electron spin and orbital magnetic fields.
+* The model also violates the [[uncertainty principle]] in that it considers electrons to have known orbits and locations, two things which cannot be measured simultaneously.
+* Doublets and Triplets: Appear in the spectra of some atoms: Very close pairs of lines. Bohr's model cannot say why some energy levels should be very close together.
+* Multi-electron Atoms: don't have energy levels predicted by the model. It doesn't work for (neutral) helium.
+* A rotating charge, such as the electron classically orbiting around the nucleus, would constantly lose energy in form of electromagnetic radiation (via various mechanisms: [[dipole radiation]], [[Bremsstrahlung]],...). But such radiation is not observed.
+
+== Refinements ==
+[[Image:Sommerfeld ellipses.svg|thumb|Elliptical orbits with the same energy and quantized angular momentum]]
+
+Several enhancements to the Bohr model were proposed, most notably the '''[[Old quantum theory|Sommerfeld model]]''' or '''[[Bohr–Sommerfeld theory|Bohr–Sommerfeld model]]''', which suggested that electrons travel in elliptical orbits around a nucleus instead of the Bohr model's circular orbits.&lt;ref name=&quot;Akhlesh Lakhtakia Ed. 1996&quot; /&gt; This model supplemented the quantized angular momentum condition of the Bohr model with an additional radial quantization condition, the '''[[William Wilson (English academic)|Wilson]]–[[Arnold Sommerfeld|Sommerfeld]] quantization condition'''&lt;ref&gt;
+{{cite journal
+ |author=A. Sommerfeld
+ |year=1916
+ |title=Zur Quantentheorie der Spektrallinien
+ |journal=[[Annalen der Physik]]
+ |volume=51 |issue= 17|pages=1–94
+ |bibcode=1916AnP...356....1S
+ |doi=10.1002/andp.19163561702
+|url=https://zenodo.org/record/1424309
+ }}&lt;/ref&gt;&lt;ref&gt;
+{{cite journal
+ |author=W. Wilson
+ |year=1915
+ |title=The quantum theory of radiation and line spectra
+ |journal=[[Philosophical Magazine]]
+ |volume=29 |pages=795–802
+ |bibcode=
+ |doi=10.1080/14786440608635362
+ |issue=174
+}}&lt;/ref&gt;
+
+:&lt;math&gt;
+\int_0^T p_r \,dq_r = n h
+\,&lt;/math&gt;
+
+where ''p&lt;sub&gt;r&lt;/sub&gt;'' is the radial momentum canonically conjugate to the coordinate ''q'' which is the radial position and ''T'' is one full orbital period. The integral is the [[Action (physics)|action]] of [[action-angle coordinates]]. This condition, suggested by the [[correspondence principle]], is the only one possible, since the quantum numbers are [[adiabatic invariant]]s.
+
+The Bohr–Sommerfeld model was fundamentally inconsistent and led to many paradoxes. The [[magnetic quantum number]] measured the tilt of the orbital plane relative to the ''xy''-plane, and it could only take a few discrete values. This contradicted the obvious fact that an atom could be turned this way and that relative to the coordinates without restriction. The Sommerfeld quantization can be performed in different canonical coordinates and sometimes gives different answers. The incorporation of radiation corrections was difficult, because it required finding action-angle coordinates for a combined radiation/atom system, which is difficult when the radiation is allowed to escape. The whole theory did not extend to non-integrable motions, which meant that many systems could not be treated even in principle. In the end, the model was replaced by the modern [[Quantum mechanics|quantum mechanical]] treatment of the [[hydrogen atom]], which was first given by [[Wolfgang Pauli]] in 1925, using [[Werner Heisenberg|Heisenberg]]'s [[matrix mechanics]]. The current picture of the hydrogen atom is based on the [[atomic orbitals]] of [[Schrödinger equation|wave mechanics]] which [[Erwin Schrödinger]] developed in 1926.
+
+However, this is not to say that the Bohr-Sommerfeld model was without its successes. Calculations based on the Bohr–Sommerfeld model were able to accurately explain a number of more complex atomic spectral effects. For example, up to first-order [[Perturbation theory|perturbations]], the Bohr model and quantum mechanics make the same predictions for the spectral line splitting in the [[Stark effect]]. At higher-order perturbations, however, the Bohr model and quantum mechanics differ, and measurements of the Stark effect under high field strengths helped confirm the correctness of quantum mechanics over the Bohr model. The prevailing theory behind this difference lies in the shapes of the orbitals of the electrons, which vary according to the energy state of the electron.
+
+The Bohr–Sommerfeld quantization conditions lead to questions in modern mathematics. Consistent semiclassical quantization condition requires a certain type of structure on the phase space, which places topological limitations on the types of symplectic manifolds which can be quantized. In particular, the symplectic form should be the [[curvature form]] of a [[Connection (mathematics)|connection]] of a [[Charles Hermite|Hermitian]] [[line bundle]], which is called a [[Geometric quantization|prequantization]].
+
+== Model of the chemical bond ==
+{{main|Bohr model of the chemical bond}}
+[[Niels Bohr]] proposed a model of the atom and [[Bohr model of the chemical bond|
+a model of the chemical bond]]. According to his model for a [[diatomic molecule]], the electrons of the atoms of the molecule form a rotating ring whose plane is perpendicular to the axis of the molecule and equidistant from the atomic nuclei. The [[dynamic equilibrium]] of the molecular system is achieved through the balance of forces between the forces of attraction of nuclei to the plane of the ring of electrons and the forces of mutual repulsion of the nuclei. The Bohr model of the chemical bond took into account the [[Coulomb repulsion]] – the electrons in the ring are at the maximum distance from each other.&lt;ref&gt;{{cite book| author = Бор Н.| title = Избранные научные труды (статьи 1909–1925) |location= М. |year= 1970 |publisher= «Наука» |volume= 1 | page = 133 }}&lt;/ref&gt;&lt;ref&gt;{{cite journal|last=Svidzinsky|first=Anatoly A. |author2 = Marlan O. Scully |author3-link=Dudley R. Herschbach |author3=Dudley R. Herschbach|year=2005|title=Bohr's 1913 molecular model revisited|journal=Proceedings of the National Academy of Sciences |volume=102|pages=11985–11988|doi=10.1073/pnas.0505778102|pmid=16103360 |pmc=1186029 |issue=34[http://www.pnas.org/content/102/34/11985.full.pdf]|arxiv=physics/0508161|bibcode=2005PNAS..10211985S}}&lt;/ref&gt;
+
+== See also ==
+{| &lt;!--split as 2 columns on all browsers --&gt;
+| valign=top |
+* [[1913 in science]]
+* [[Balmer's Constant]]
+* [[Basic concepts of quantum mechanics]]
+* The [[Franck–Hertz experiment]] provided early support for the Bohr model.{{nb5}}
+| valign=top |
+* [[Free-fall atomic model]]
+* The [[inert pair effect]] is adequately explained by means of the Bohr model.
+* [[Introduction to quantum mechanics]]
+* [[Theoretical and experimental justification for the Schrödinger equation]]
+|}
+
+== References ==
+
+{{More footnotes|date=December 2008}}
+
+=== Footnotes ===
+
+{{reflist}}
+
+=== Primary sources ===
+
+* {{cite journal | author=Niels Bohr | title=On the Constitution of Atoms and Molecules, Part I | journal=Philosophical Magazine | year=1913 | volume=26 | pages=1–24 | doi= 10.1080/14786441308634955| url=http://web.ihep.su/dbserv/compas/src/bohr13/eng.pdf | issue=151}}
+* {{cite journal | author=Niels Bohr | title=On the Constitution of Atoms and Molecules, Part II Systems Containing Only a Single Nucleus | journal=Philosophical Magazine | year=1913 | volume=26 | pages=476–502 | url=http://web.ihep.su/dbserv/compas/src/bohr13b/eng.pdf | doi=10.1080/14786441308634993 | issue=153}}
+* {{cite journal | author=Niels Bohr | title=On the Constitution of Atoms and Molecules, Part III Systems containing several nuclei| journal=Philosophical Magazine | year=1913 | volume=26 | pages=857–875 | doi=10.1080/14786441308635031| url=https://zenodo.org/record/1430922}}
+* {{cite journal | author=Niels Bohr | title=The spectra of helium and hydrogen | journal=Nature | year=1914 | volume=92 | pages=231–232 | doi=10.1038/092231d0|bibcode = 1913Natur..92..231B | issue=2295| url=https://zenodo.org/record/1429570 }}
+* {{cite journal | author=Niels Bohr | title=Atomic Structure | journal=Nature | year=1921 | volume=107 | pages=104–107 | doi=10.1038/107104a0|bibcode = 1921Natur.107..104B | issue=2682 | url=http://www.chemteam.info/Chem-History/Bohr-Nature-1921.html}}
+* {{cite journal | author=A. Einstein |title=Zum Quantensatz von Sommerfeld und Epstein |journal=Verhandlungen der Deutschen Physikalischen Gesellschaft | year=1917 | volume=19 |pages=82–92}} Reprinted in ''The Collected Papers of Albert Einstein'', A. Engel translator, (1997) Princeton University Press, Princeton. '''6''' p.&amp;nbsp;434. (provides an elegant reformulation of the Bohr–Sommerfeld quantization conditions, as well as an important insight into the quantization of non-integrable (chaotic) dynamical systems.)
+
+== Further reading ==
+
+* {{cite book | author=Linus Carl Pauling | title=General Chemistry |chapter=Chapter 5-1 | edition=3rd | publisher=W.H. Freeman &amp; Co| location = San Francisco | year=1970 }}
+** Reprint: {{cite book | author=Linus Pauling | title=General Chemistry | publisher=Dover Publications | location=New York | year=1988 | isbn=0-486-65622-5 | url-access=registration | url=https://archive.org/details/generalchemistry00paul_0 }}
+* {{cite book | author=George Gamow | title=Thirty Years That Shook Physics |chapter=Chapter 2 | publisher=Dover Publications  | year=1985 }}
+* {{cite book | author=Walter J. Lehmann | title= Atomic and Molecular Structure: the development of our concepts |chapter=Chapter 18 |publisher= John Wiley and Sons| year=1972 | isbn=0-471-52440-9}}
+* {{cite book | author=Paul Tipler and Ralph Llewellyn | title=Modern Physics| edition=4th | publisher=W. H. Freeman | year=2002 | isbn=0-7167-4345-0}}
+* [[Klaus Hentschel]]: Elektronenbahnen, Quantensprünge und Spektren, in: Charlotte Bigg &amp; Jochen Hennig (eds.) Atombilder. Ikonografien des Atoms in Wissenschaft und Öffentlichkeit des 20. Jahrhunderts, Göttingen: Wallstein-Verlag 2009, pp.&amp;nbsp;51–61
+* {{cite book | author= Steven and Susan Zumdahl | title=Chemistry |edition=8th | chapter=Chapter 7.4 | publisher=Brooks/Cole | year=2010 | isbn=978-0-495-82992-8}}
+* {{cite journal |author=Helge Kragh |title=Conceptual objections to the Bohr atomic theory — do electrons have a &quot;free will&quot; ? |journal=[[European Physical Journal H]] |doi=10.1140/epjh/e2011-20031-x|bibcode = 2011EPJH...36..327K |year=2011 |volume=36 |issue=3 |pages=327–352 }}
+
+== External links ==
+* [http://www.lucamoroni.it/cdf-simulations/standing-waves-in-bohrs-atomic-model/ Standing waves in Bohr’s atomic model] An interactive simulation to intuitively explain the quantization condition of standing waves in Bohr's atomic mode
+{{Commons category}}
+{{Atomic models}}
+
+{{DEFAULTSORT:Bohr Model}}
+[[Category:Atomic physics]]
+[[Category:Foundational quantum physics]]
+[[Category:Hydrogen physics]]
+[[Category:Niels Bohr]]
+[[Category:1913 in science]]</text>
+      <sha1>te95dxulehh8f1bvuaurm1hus8keadk</sha1>
+    </revision>
+  </page>

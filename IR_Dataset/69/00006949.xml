@@ -1,0 +1,182 @@
+  <page>
+    <title>Carbamazepine</title>
+    <ns>0</ns>
+    <id>6949</id>
+    <revision>
+      <id>941858797</id>
+      <parentid>939392854</parentid>
+      <timestamp>2020-02-21T02:50:34Z</timestamp>
+      <contributor>
+        <username>Citation bot</username>
+        <id>7903804</id>
+      </contributor>
+      <minor />
+      <comment>Alter: doi. Add: chapter-url, chapter-url-access. Removed or converted URL. Removed parameters. Some additions/deletions were actually parameter name changes. | You can [[WP:UCB|use this bot]] yourself. [[WP:DBUG|Report bugs here]]. | Activated by [[User:Headbomb]] | via #UCB_webform</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{short description|Anticonvulsant medication}}
+{{Distinguish|Carbamazine}}
+{{Use dmy dates|date=December 2019}}
+{{Infobox drug
+| verifiedrevid=451682337
+| IUPAC_name=5''H''-dibenzo[''b'',''f'']azepine-5-carboxamide
+| image=Carbamazepine.svg
+| width = 175
+| image2=Carbamazepine 3D.png
+| width2 = 175
+
+&lt;!--Clinical data--&gt;
+| class    = [[Anticonvulsant]]&lt;ref name=AHFS2015/&gt;
+| tradename = Tegretol, Temporol, Neurotol, others
+| Drugs.com = {{drugs.com|monograph|carbamazepine}}
+| MedlinePlus = a682237
+| DailyMedID = Carbamazepine
+| pregnancy_AU = D
+| pregnancy_US = D
+| legal_AU = S4
+| legal_CA = Rx-only
+| legal_UK = POM
+| legal_US = Rx-only
+| legal_status = &lt;!-- Rx-only where? --&gt;
+| routes_of_administration = By mouth
+
+&lt;!--Pharmacokinetic data--&gt;
+|bioavailability=~100%&lt;ref name=&quot;carbamazepinelabel&quot;/&gt;
+|protein_bound=70-80%&lt;ref name=&quot;carbamazepinelabel&quot;/&gt;
+|metabolism=[[Liver|Hepatic]]—by [[CYP3A4]], to active [[epoxide]] form (carbamazepine-10,11 epoxide)&lt;ref name=&quot;carbamazepinelabel&quot;/&gt;
+|elimination_half-life=36 hours (single dose), 16-24 hours (repeated dosing)&lt;ref name=&quot;carbamazepinelabel&quot;/&gt;
+|excretion=Urine (72%), feces (28%)&lt;ref name=&quot;carbamazepinelabel&quot;/&gt;
+
+&lt;!--Identifiers--&gt;
+| IUPHAR_ligand = 5339
+|CAS_number_Ref = {{cascite|correct|??}}
+|CAS_number=298-46-4
+|CAS_supplemental={{CAS|85756-57-6}}
+|ATC_prefix=N03
+|ATC_suffix=AF01
+|ChEBI_Ref = {{ebicite|correct|EBI}}
+|ChEBI=3387
+|PubChem=2554
+| DrugBank_Ref = {{drugbankcite|correct|drugbank}}
+|DrugBank=DB00564
+| ChemSpiderID_Ref = {{chemspidercite|correct|chemspider}}
+|ChemSpiderID=2457
+| UNII_Ref = {{fdacite|correct|FDA}}
+|UNII=33CM23913M
+| KEGG_Ref = {{keggcite|correct|kegg}}
+|KEGG=D00252
+| ChEMBL_Ref = {{ebicite|correct|EBI}}
+|ChEMBL=108
+
+&lt;!--Chemical data--&gt;
+|C=15  
+|H=12  
+|N=2  
+|O=1
+|molecular_weight=236.269&amp;nbsp;g/mol
+|smiles=c1ccc2c(c1)C=Cc3ccccc3N2C(=O)N
+| StdInChI_Ref = {{stdinchicite|correct|chemspider}}
+|StdInChI=1S/C15H12N2O/c16-15(18)17-13-7-3-1-5-11(13)9-10-12-6-2-4-8-14(12)17/h1-10H,(H2,16,18)
+| StdInChIKey_Ref = {{stdinchicite|correct|chemspider}}
+|StdInChIKey=FFGPTBGBLSHEPO-UHFFFAOYSA-N 
+}}
+&lt;!-- Definition and uses --&gt;
+'''Carbamazepine''' ('''CBZ'''), sold under the trade name '''Tegretol''' among others, is an [[anticonvulsant medication]] used primarily in the treatment of [[epilepsy]] and [[neuropathic pain]].&lt;ref name=AHFS2015&gt;{{cite web|url=https://www.drugs.com/monograph/carbamazepine.html|title=Carbamazepine|work=The American Society of Health-System Pharmacists|access-date=28 Mar 2015|url-status=live|archive-url=https://web.archive.org/web/20150227213125/http://www.drugs.com/monograph/carbamazepine.html|archive-date=2015-02-27}}&lt;/ref&gt; It is not effective for [[absence seizure|absence]] or [[myoclonic seizure]]s.&lt;ref name=AHFS2015/&gt; It is used in [[schizophrenia]] along with other medications and as a second-line agent in [[bipolar disorder]].&lt;ref&gt;{{cite journal | vauthors = Nevitt SJ, Marson AG, Weston J, Tudur Smith C | title = Sodium valproate versus phenytoin monotherapy for epilepsy: an individual participant data review | journal = The Cochrane Database of Systematic Reviews | volume = 8 | pages = CD001769 | date = August 2018 | pmid = 30091458 | pmc = 6513104 | doi = 10.1002/14651858.CD001769.pub4 }}&lt;/ref&gt;&lt;ref name=AHFS2015/&gt; Carbamazepine appears to work as well as [[phenytoin]] and [[valproate]] for focal and generalised seizures.&lt;ref name=&quot;:0&quot;&gt;{{Cite journal|last=Nevitt|first=Sarah J.|last2=Marson|first2=Anthony G.|last3=Tudur Smith|first3=Catrin|date=18 July 2019|title=Carbamazepine versus phenytoin monotherapy for epilepsy: an individual participant data review|journal=The Cochrane Database of Systematic Reviews|volume=7|pages=CD001911|doi=10.1002/14651858.CD001911.pub4|issn=1469-493X|pmc=6637502|pmid=31318037}}&lt;/ref&gt; 
+
+&lt;!-- Side effects --&gt;
+Common side effects include [[nausea]] and [[drowsiness]].&lt;ref name=AHFS2015/&gt; Serious side effects may include skin rashes, decreased [[bone marrow]] function, [[suicidal thoughts]], or confusion.&lt;ref name=AHFS2015/&gt; It should not be used in those with a history of bone marrow problems.&lt;ref name=AHFS2015/&gt; Use during [[pregnancy]] may cause harm to the baby; however, stopping the medication in pregnant women with seizures is not recommended.&lt;ref name=AHFS2015/&gt; Its use during [[breastfeeding]] is not recommended.&lt;ref name=AHFS2015/&gt; Care should be taken in those with either kidney or liver problems.&lt;ref name=AHFS2015/&gt;
+
+&lt;!-- Society, culture and history --&gt;
+Carbamazepine was discovered in 1953 by Swiss chemist Walter Schindler.&lt;ref&gt;{{cite book|last1=Smith|first1=Howard S.|title=Current therapy in pain|date=2009|publisher=Saunders/Elsevier|location=Philadelphia|isbn=9781416048367|page=460|url=https://books.google.ca/books?id=iTgy62MWnK4C&amp;pg=PA460|url-status=live|archive-url=https://web.archive.org/web/20160305032812/https://books.google.ca/books?id=iTgy62MWnK4C&amp;pg=PA460|archive-date=2016-03-05}}&lt;/ref&gt;&lt;ref&gt;{{cite patent |country=US |number=2948718 |status=patent |title=New n-heterocyclic compounds |pubdate=1960-08-09 |gdate=1960-08-09 |fdate=1958-11-20 |pridate=1957-12-20 |invent1=Walter Schindler |assign1=Geigy Chemical Corporation |url=https://worldwide.espacenet.com/patent/search/family/003449474/publication/US2948718A?q=US2948718A}}&lt;/ref&gt; It was first marketed in 1962.&lt;ref&gt;{{cite book|last1=Moshé|first1=Solomon|title=The treatment of epilepsy|date=2009|publisher=Wiley-Blackwell|location=Chichester, UK|isbn=9781444316674|page=xxix|edition=3|url=https://books.google.ca/books?id=rFFzFzZJtasC&amp;pg=PR29|url-status=live|archive-url=https://web.archive.org/web/20160305024852/https://books.google.ca/books?id=rFFzFzZJtasC&amp;pg=PR29|archive-date=2016-03-05}}&lt;/ref&gt; It is available as a [[generic medication]].&lt;ref&gt;{{cite book|title=Principles and practice of stereotactic radiosurgery|date=2008|publisher=Springer|location=New York|isbn=9780387710709|page=536|url=https://books.google.ca/books?id=uEghr21XY6wC&amp;pg=PA536|url-status=live|archive-url=https://web.archive.org/web/20160305021147/https://books.google.ca/books?id=uEghr21XY6wC&amp;pg=PA536|archive-date=2016-03-05}}&lt;/ref&gt; It is on the [[WHO Model List of Essential Medicines|World Health Organization's List of Essential Medicines]], the safest and most effective medicines needed in a [[health system]].&lt;ref name=&quot;WHO21st&quot;&gt;{{cite book | vauthors = ((World Health Organization)) | title = World Health Organization model list of essential medicines: 21st list 2019 | year = 2019 | hdl = 10665/325771 | author-link = World Health Organization | publisher = World Health Organization | location = Geneva | id = WHO/MVP/EMP/IAU/2019.06. License: CC BY-NC-SA 3.0 IGO | hdl-access=free }}&lt;/ref&gt; The wholesale cost in the [[developing world]] is about US$0.07 to US$0.24 [[defined daily dose|per day]] as of 2015.&lt;ref&gt;{{cite web |title=Carbamazepine |url=http://mshpriceguide.org/en/single-drug-information/?DMFId=117&amp;searchYear=2015 |website=International Medical Products Price Guide |accessdate=26 November 2019}}&lt;/ref&gt; In 2016, it was the 197th most prescribed medication in the United States, with more than two million prescriptions.&lt;ref&gt;{{cite web |title=The Top 300 of 2019 |url=https://clincalc.com/DrugStats/Top300Drugs.aspx |website=clincalc.com |access-date=22 December 2018}}&lt;/ref&gt;
+
+==Medical uses==
+[[File:Tegretol.jpg|thumb|Tegretol 200-mg CR (made in [[NZ]])]]
+Carbamazepine is typically used for the treatment of [[seizure disorders]] and [[neuropathic pain]].&lt;ref name=AHFS2015/&gt; It is used [[off-label use|off-label]] as a second-line treatment for bipolar disorder and in combination with an [[antipsychotic]] in some cases of [[schizophrenia]] when treatment with a conventional antipsychotic alone has failed.&lt;ref name=AHFS2015/&gt;&lt;ref name=&quot;Ceron-Litvoc&quot;&gt;{{cite journal | vauthors = Ceron-Litvoc D, Soares BG, Geddes J, Litvoc J, de Lima MS | title = Comparison of carbamazepine and lithium in treatment of bipolar disorder: a systematic review of randomized controlled trials | journal = Human Psychopharmacology | volume = 24 | issue = 1 | pages = 19–28 | date = January 2009 | pmid = 19053079 | doi = 10.1002/hup.990 }}&lt;/ref&gt;  It is not effective for [[absence seizure]]s or [[myoclonic seizure]]s.&lt;ref name=AHFS2015/&gt; Although carbamazepine may have a similar effectiveness (people continue on medication) and efficacy (medicine reduces seizure recurrence and improves remission) when compared to phenytoin and valproate the choice of medications should be considered for each person individually as further research is needed to determine which medication is most helpful for people with newly-onset seizures.&lt;ref name=&quot;:0&quot; /&gt;
+
+In the United States, the [[Food and Drug Administration|FDA]]-approved medical uses are [[epilepsy]] (including [[partial seizure]]s, generalized [[tonic-clonic seizure]]s and [[mixed seizure]]s), [[trigeminal neuralgia]], and [[mania|manic]] and [[mixed state (psychiatry)|mixed episodes]] of [[bipolar I disorder]].&lt;ref name=&quot;Lexi-Comp&quot;/&gt;
+
+The drug is also claimed to be effective for [[ADHD]].&lt;ref&gt;{{cite journal|last1=Millichap|first1=J Gordon|title=Carbamazepine: A Therapy for ADHD|journal=Pediatric Neurology Briefs|date=1 March 1996|volume=10|issue=3|pages=20|doi=10.15844/pedneurbriefs-10-3-5}}&lt;/ref&gt;
+
+As of 2014, a [[controlled release]] formulation was available for which there is tentative evidence showing fewer side effects and unclear evidence with regard to whether there is a difference in efficacy.&lt;ref&gt;{{cite journal | vauthors = Powell G, Saunders M, Rigby A, Marson AG | title = Immediate-release versus controlled-release carbamazepine in the treatment of epilepsy | journal = The Cochrane Database of Systematic Reviews | volume = 12 | pages = CD007124 | date = December 2016 | pmid = 27933615 | pmc = 6463840 | doi = 10.1002/14651858.CD007124.pub5 }}&lt;/ref&gt;
+
+==Adverse effects==
+
+In the US, the label for carbamazepine contains warnings concerning:
+* effects on the [[Hematology|body's production of red blood cells, white blood cells, and platelets]]:  rarely, there are major effects of [[aplastic anemia]] and [[agranulocytosis]] reported and more commonly, there are minor changes such as decreased [[Leukocyte|white blood cell]] or [[platelet]] counts, but these do not progress to more serious problems.&lt;ref name=&quot;carbamazepinelabel&quot;&gt;{{cite web|title=Carbamazepine Drug Label|url=http://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7a1e523a-b377-43dc-b231-7591c4c888ea|url-status=live|archive-url=https://web.archive.org/web/20141208063739/http://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7a1e523a-b377-43dc-b231-7591c4c888ea|archive-date=2014-12-08}}&lt;/ref&gt; 
+* increased risks of suicide&lt;ref name=&quot;carbamazepinelabel&quot;/&gt;
+* increased risks of [[hyponatremia]] and [[SIADH]]&lt;ref name=&quot;carbamazepinelabel&quot;/&gt;&lt;ref&gt;{{cite journal | vauthors = Gandelman MS | title = Review of carbamazepine-induced hyponatremia | journal = Progress in Neuro-Psychopharmacology &amp; Biological Psychiatry | volume = 18 | issue = 2 | pages = 211–33 | date = March 1994 | pmid = 8208974 | doi = 10.1016/0278-5846(94)90055-8 }}&lt;/ref&gt;
+* risk of seizures, if the person stops taking the drug abruptly&lt;ref name=&quot;carbamazepinelabel&quot;/&gt;
+* risks to the fetus in women who are pregnant, specifically congenital malformations like [[spina bifida]], and developmental disorders.&lt;ref name=&quot;carbamazepinelabel&quot;/&gt;&lt;ref&gt;{{cite journal | vauthors = Jentink J, Dolk H, Loane MA, Morris JK, Wellesley D, Garne E, de Jong-van den Berg L | title = Intrauterine exposure to carbamazepine and specific congenital malformations: systematic review and case-control study | journal = BMJ | volume = 341 | pages = c6581 | date = December 2010 | pmid = 21127116 | pmc = 2996546 | doi = 10.1136/bmj.c6581 }}&lt;/ref&gt;
+
+Common [[adverse drug reaction|adverse effects]] may include drowsiness, dizziness, headaches and migraines, [[motor coordination]] impairment, nausea, vomiting, and/or constipation. Alcohol use while taking carbamazepine may lead to enhanced depression of the [[central nervous system]].&lt;ref name=&quot;carbamazepinelabel&quot;/&gt;  Less common side effects may include increased risk of seizures in people with [[Causes of seizures#Diseases|mixed seizure disorders]],&lt;ref&gt;{{cite journal | vauthors = Liu L, Zheng T, Morris MJ, Wallengren C, Clarke AL, Reid CA, Petrou S, O'Brien TJ | title = The mechanism of carbamazepine aggravation of absence seizures | journal = The Journal of Pharmacology and Experimental Therapeutics | volume = 319 | issue = 2 | pages = 790–8 | date = November 2006 | pmid = 16895979 | doi = 10.1124/jpet.106.104968 | df =  }}&lt;/ref&gt; [[Heart arrhythmia|abnormal heart rhythms]], blurry or [[Diplopia|double vision]].&lt;ref name=&quot;carbamazepinelabel&quot;/&gt;  Also, rare case reports of an auditory side effect have been made, whereby patients perceive sounds about a [[semitone]] lower than previously; this unusual side effect is usually not noticed by most people, and disappears after the person stops taking carbamazepine.&lt;ref&gt;{{cite journal | vauthors = Tateno A, Sawada K, Takahashi I, Hujiwara Y | title = Carbamazepine-induced transient auditory pitch-perception deficit | journal = Pediatric Neurology | volume = 35 | issue = 2 | pages = 131–4 | date = August 2006 | pmid = 16876011 | doi = 10.1016/j.pediatrneurol.2006.01.011 }}&lt;/ref&gt;
+
+=== Interactions ===
+Carbamazepine has a potential for [[drug interaction]]s; caution should be used in combining other medicines with it, including other antiepileptics and mood stabilizers.&lt;ref name=&quot;Lexi-Comp&quot;&gt;{{cite web|url=http://www.merck.com/mmpe/lexicomp/carbamazepine.html |title=Carbamazepine |date=February 2009 |author=Lexi-Comp |work=[[Merck Manual of Diagnosis and Therapy|The Merck Manual Professional]] |archive-url=https://web.archive.org/web/20101103035532/http://www.merck.com/mmpe/lexicomp/carbamazepine.html |archive-date=2010-11-03 |url-status=live }} Retrieved on May 3, 2009.&lt;/ref&gt; Lower levels of carbamazepine are seen when administrated with [[phenobarbital]], [[phenytoin]], or [[primidone]], which can result in breakthrough seizure activity. Carbamazepine, as a [[CYP450]] inducer, may increase clearance of many drugs, decreasing their concentration in the blood to subtherapeutic levels and reducing their desired effects.&lt;ref name=&quot;urleMedicine- Toxicity, Carbamazepine&quot;&gt;{{cite journal|url=http://www.emedicine.com/emerg/topic77.htm |title=eMedicine - Toxicity, Carbamazepine |archive-url=https://web.archive.org/web/20080704144842/http://emedicine.com/emerg/topic77.htm |archive-date=2008-07-04 |url-status=live |date=2019-02-02 }}&lt;/ref&gt; Drugs that are more rapidly metabolized with carbamazepine include [[warfarin]], [[lamotrigine]], [[phenytoin]], [[theophylline]], and [[valproic acid]].&lt;ref name=&quot;Lexi-Comp&quot;/&gt; Drugs that decrease the metabolism of carbamazepine or otherwise increase its levels include [[erythromycin]],&lt;ref name=Stafstrom&gt;{{cite journal | vauthors = Stafstrom CE, Nohria V, Loganbill H, Nahouraii R, Boustany RM, DeLong GR | title = Erythromycin-induced carbamazepine toxicity: a continuing problem | journal = Archives of Pediatrics &amp; Adolescent Medicine | volume = 149 | issue = 1 | pages = 99–101 | date = January 1995 | pmid = 7827672 | doi = 10.1001/archpedi.1995.02170130101025 | url = http://archpedi.ama-assn.org/cgi/pmidlookup?view=long&amp;pmid=7827672 | archive-url = https://www.webcitation.org/5uKvQB98w?url=http://archpedi.ama-assn.org/cgi/pmidlookup?view=long&amp;pmid=7827672 | url-status = live | archive-date = 2010-11-18 }}&lt;/ref&gt; [[cimetidine]], [[propoxyphene]], and [[calcium channel blocker]]s.&lt;ref name=&quot;Lexi-Comp&quot;/&gt; Carbamazepine also increases the metabolism of the hormones in [[birth control pill]]s and can reduce their effectiveness, potentially leading to unexpected pregnancies.&lt;ref name=&quot;Lexi-Comp&quot;/&gt; As a drug that induces [[cytochrome P450]] enzymes, it accelerates elimination of many [[benzodiazepine]]&lt;nowiki/&gt;s and decreases their action.&lt;ref name=&quot;isbn1-58829-211-8&quot;&gt;{{cite book | vauthors = Moody D | veditors = Raymon LP, Mozayani A |title=Handbook of Drug Interactions: a Clinical and Forensic Guide |publisher=Humana |year=2004 |pages=[https://archive.org/details/handbookofdrugin0000unse/page/3 3–88] |chapter=Drug interactions with benzodiazepines |isbn=978-1-58829-211-7 |chapter-url-access=registration |chapter-url=https://archive.org/details/handbookofdrugin0000unse/page/3 }}&lt;/ref&gt;
+
+[[Valproate|Valproic acid]] and [[valnoctamide]] both inhibit [[epoxide hydrolase|microsomal epoxide hydrolase]] (MEH), the enzyme responsible for the breakdown of carbamazepine-10,11 epoxide into inactive metabolites.&lt;ref&gt;{{cite book |last=Gonzalez |first=Frank J. | first2 = Robert H. | last2 = Tukey | editor-first1 = Laurence | editor-last1 = Brunton | editor-first2 = John | editor-last2 = Lazo | editor-first3 = Keith | editor-last3 = Parker | name-list-format = vanc |title=Goodman &amp; Gilman's The Pharmacological Basis of Therapeutics |edition=11th |year=2006 |publisher=[[McGraw-Hill]] |location=New York |isbn=978-0-07-142280-2 |page=79 |chapter=Drug Metabolism|title-link=Goodman &amp; Gilman's The Pharmacological Basis of Therapeutics }}&lt;/ref&gt; By inhibiting MEH, valproic acid and valnoctamide cause a build-up of the active metabolite, prolonging the effects of carbamazepine and delaying its excretion.
+
+Grapefruit juice raises the [[bioavailability]] of carbamazepine by inhibiting CYP3A4 enzymes in the gut wall and in the liver.&lt;ref name=&quot;carbamazepinelabel&quot;/&gt; Carbamazepine increases the processing of [[methadone]] resulting in lower blood levels.&lt;ref&gt;{{cite journal | vauthors = Schlatter J, Madras JL, Saulnier JL, Poujade F | title = [Drug interactions with methadone] | language = French | journal = Presse Médicale | volume = 28 | issue = 25 | pages = 1381–4 | date = September 1999 | pmid = 10506872 | trans-title = Drug interactions with methadone }}&lt;/ref&gt;
+
+===Pharmacogenetics===
+Serious skin reactions such as [[Stevens–Johnson syndrome]] or [[toxic epidermal necrolysis]] due to carbamazepine therapy are more common in people with a particular [[human leukocyte antigen]] allele, [[HLA-B75|HLA-B*1502]].&lt;ref name=&quot;carbamazepinelabel&quot;/&gt; [[Odds ratio]]s for the development of Stevens-Johnson syndrome or [[toxic epidermal necrolysis]] in people who carry the allele can be in the double, triple or even quadruple digits, depending on the population studied.&lt;ref&gt;{{cite journal | vauthors = Kaniwa N, Saito Y | title = Pharmacogenomics of severe cutaneous adverse reactions and drug-induced liver injury | journal = Journal of Human Genetics | volume = 58 | issue = 6 | pages = 317–26 | date = June 2013 | pmid = 23635947 | doi = 10.1038/jhg.2013.37 }}&lt;/ref&gt;&lt;ref name=&quot;pmid24597466&quot;&gt;{{cite journal | vauthors = Amstutz U, Shear NH, Rieder MJ, Hwang S, Fung V, Nakamura H, Connolly MB, Ito S, Carleton BC | title = Recommendations for HLA-B*15:02 and HLA-A*31:01 genetic testing to reduce the risk of carbamazepine-induced hypersensitivity reactions | journal = Epilepsia | volume = 55 | issue = 4 | pages = 496–506 | date = April 2014 | pmid = 24597466 | doi = 10.1111/epi.12564 }}&lt;/ref&gt; [[HLA-B75|HLA-B*1502]] occurs almost exclusively in people with ancestry across broad areas of Asia, but has a very low or absent frequency in European, Japanese, Korean and African populations.&lt;ref name=&quot;carbamazepinelabel&quot;/&gt;&lt;ref&gt;{{cite journal | vauthors = Leckband SG, Kelsoe JR, Dunnenberger HM, George AL, Tran E, Berger R, Müller DJ, Whirl-Carrillo M, Caudle KE, Pirmohamed M | title = Clinical Pharmacogenetics Implementation Consortium guidelines for HLA-B genotype and carbamazepine dosing | journal = Clinical Pharmacology and Therapeutics | volume = 94 | issue = 3 | pages = 324–8 | date = September 2013 | pmid = 23695185 | pmc = 3748365 | doi = 10.1038/clpt.2013.103 }}&lt;/ref&gt; However, the HLA-A*31:01 allele has been shown to be a strong predictor of both mild and severe adverse reactions, such as the [[DRESS syndrome]] form of severe cutaneous reactions, to carbamazepine among Japanese, Chinese, Korean, and Europeans.&lt;ref name=&quot;pmid24597466&quot;/&gt;&lt;ref name=&quot;pmid28345177&quot;&gt;{{cite journal | vauthors = Garon SL, Pavlos RK, White KD, Brown NJ, Stone CA, Phillips EJ | title = Pharmacogenomics of off-target adverse drug reactions | journal = British Journal of Clinical Pharmacology | volume = 83 | issue = 9 | pages = 1896–1911 | date = September 2017 | pmid = 28345177 | pmc = 5555876 | doi = 10.1111/bcp.13294 }}&lt;/ref&gt;
+
+==Pharmacokinetics==
+Carbamazepine is relatively slowly but well absorbed after oral administration. Its plasma half-life is about 30 hours when it is given as single dose, but it is a strong inducer of hepatic enzymes and the plasma half-life shortens to about 15 hours when it is given repeatedly. {{mcn|date=December 2014}}
+
+== Mechanism of action ==
+Carbamazepine is a [[sodium channel blocker]].&lt;ref&gt;{{cite journal | vauthors = Rogawski MA, Löscher W, Rho JM | title = Mechanisms of Action of Antiseizure Drugs and the Ketogenic Diet | journal = Cold Spring Harbor Perspectives in Medicine | volume = 6 | issue = 5 | pages = a022780 | date = May 2016 | pmid = 26801895 | pmc = 4852797 | doi = 10.1101/cshperspect.a022780 }}&lt;/ref&gt;  It binds preferentially to voltage-gated sodium channels in their inactive conformation, which prevents repetitive and sustained firing of an action potential.  Carbamazepine has effects on serotonin systems but the relevance to its antiseizure effects is uncertain. There is evidence that it is a [[serotonin releasing agent]] and possibly even a [[serotonin reuptake inhibitor]].&lt;ref&gt;{{cite journal | vauthors = Dailey JW, Reith ME, Steidley KR, Milbrandt JC, Jobe PC | title = Carbamazepine-induced release of serotonin from rat hippocampus in vitro | journal = Epilepsia | volume = 39 | issue = 10 | pages = 1054–63 | date = October 1998 | pmid = 9776325 | doi = 10.1111/j.1528-1157.1998.tb01290.x }}&lt;/ref&gt;&lt;ref&gt;{{cite journal | vauthors = Dailey JW, Reith ME, Yan QS, Li MY, Jobe PC | title = Carbamazepine increases extracellular serotonin concentration: lack of antagonism by tetrodotoxin or zero Ca2+ | journal = European Journal of Pharmacology | volume = 328 | issue = 2–3 | pages = 153–62 | date = June 1997 | pmid = 9218697 | doi = 10.1016/s0014-2999(97)83041-5 }}&lt;/ref&gt;&lt;ref&gt;{{cite journal | vauthors = Kawata Y, Okada M, Murakami T, Kamata A, Zhu G, Kaneko S | title = Pharmacological discrimination between effects of carbamazepine on hippocampal basal, Ca(2+)- and K(+)-evoked serotonin release | journal = British Journal of Pharmacology | volume = 133 | issue = 4 | pages = 557–67 | date = June 2001 | pmid = 11399673 | pmc = 1572811 | doi = 10.1038/sj.bjp.0704104 }}&lt;/ref&gt;
+
+==History==
+Carbamazepine was discovered by chemist Walter Schindler at J.R. Geigy AG (now part of [[Novartis]]) in [[Basel]], [[Switzerland]], in 1953.&lt;ref name=Scott1993&gt;D.F. Scott. &quot;Carbamazepine&quot;. Chapter 8 in The History of Epileptic Therapy: An Account of How Medication was Developed.  History of Medicine Series. CRC Press, 1993 {{ISBN|9781850703914}}&lt;/ref&gt;&lt;ref&gt;{{cite journal |vauthors=Schindler W, Häfliger F |title=Über Derivate des Iminodibenzyls |journal=[[Helvetica Chimica Acta]] |year=1954 |volume=37 |issue=2 |pages=472–83 |doi=10.1002/hlca.19540370211}}&lt;/ref&gt;  It was first marketed as a  drug to treat epilepsy in [[Switzerland]] in 1963 under the brand name &quot;Tegretol&quot;; its use for [[trigeminal neuralgia]] (formerly known as tic douloureux) was introduced at the same time.&lt;ref name=Scott1993/&gt; It has been used as an anticonvulsant and antiepileptic in the [[United Kingdom|UK]] since 1965, and has been approved in the [[United States|US]] since 1968.&lt;ref name=AHFS2015/&gt;
+
+In 1971, Drs. Takezaki and Hanaoka first used carbamazepine to control mania in patients refractory to antipsychotics ([[Lithium pharmacology|lithium]] was not available in Japan at that time). Dr. Okuma, working independently, did the same thing with success. As they were also epileptologists, they had some familiarity with the antiaggression effects of this drug. Carbamazepine was studied for bipolar disorder throughout the 1970s.&lt;ref name=&quot;pmid9682927&quot;&gt;{{cite journal | vauthors = Okuma T, Kishimoto A | title = A history of investigation on the mood stabilizing effect of carbamazepine in Japan | journal = Psychiatry and Clinical Neurosciences | volume = 52 | issue = 1 | pages = 3–12 | date = February 1998 | pmid = 9682927 | doi = 10.1111/j.1440-1819.1998.tb00966.x }}&lt;/ref&gt;
+
+== Environmental impact ==
+{{Main|Environmental impact of pharmaceuticals and personal care products}}
+
+Carbamazepine and its (bio-)transformation products have been detected in wastewater treatment plant [[effluent]]&lt;ref name=&quot;Prosser&quot;&gt;{{cite journal | vauthors = Prosser RS, Sibley PK | title = Human health risk assessment of pharmaceuticals and personal care products in plant tissue due to biosolids and manure amendments, and wastewater irrigation | journal = Environment International | volume = 75 | pages = 223–33 | date = February 2015 | pmid = 25486094 | doi = 10.1016/j.envint.2014.11.020 }}&lt;/ref&gt;{{rp|224}} and in streams receiving treated wastewater.&lt;ref name=&quot;pmid30350841&quot;&gt;{{cite journal | vauthors = Posselt M, Jaeger A, Schaper JL, Radke M, Benskin JP | title = Determination of polar organic micropollutants in surface and pore water by high-resolution sampling-direct injection-ultra high performance liquid chromatography-tandem mass spectrometry | journal = Environ. Sci.: Process. Impacts | volume = 20 | issue = 12 | pages = 1716–1727 | date = December 2018 | pmid = 30350841 | doi = 10.1039/C8EM00390D }}&lt;/ref&gt; Field and laboratory studies have been conducted to understand the accumulation of carbamazepine in food plants grown in soil treated with [[sludge]], which vary with respect to the concentrations of carbamazepine present in sludge and in the concentrations of sludge in the soil; taking into account only studies that used concentrations normally found, a 2014 review found that &quot;the accumulation of carbamazepine into plants grown in soil amended with biosolids poses a ''de minimis'' risk to human health according to the approach.&quot;&lt;ref name=Prosser/&gt;{{rp|227}}
+
+==Brand names==
+Carbamazepine is available worldwide under many brand names including Tegretol.&lt;ref&gt;{{cite web |title=Carbamazepine |url=https://www.drugs.com/international/carbamazepine.html |website=Drugs.com |accessdate=27 October 2019 |language=en}}&lt;/ref&gt;
+
+== See also ==
+*[[Oxcarbazepine]]
+
+== References ==
+{{Reflist}}
+
+== Further reading ==
+{{refbegin}}
+* {{cite journal | vauthors = Iqbal MM, Gundlapalli SP, Ryan WG, Ryals T, Passman TE | title = Effects of antimanic mood-stabilizing drugs on fetuses, neonates, and nursing infants | journal = Southern Medical Journal | volume = 94 | issue = 3 | pages = 304–22 | date = March 2001 | pmid = 11284518 | doi =  10.1097/00007611-200194030-00007| url = https://www.medscape.com/viewarticle/410736_4 }}
+* {{cite book | title=Medical Genetics Summaries | chapter=Carbamazepine Therapy and HLA Genotype | chapter-url=https://www.ncbi.nlm.nih.gov/books/NBK321445/ | veditors=Pratt VM, McLeod HL, Rubinstein WS, Scott SA, Dean LC, Kattman BL, Malheiro AJ | display-editors=3 | publisher=[[National Center for Biotechnology Information]] (NCBI) | year=2015 | pmid=28520367 | id=Bookshelf ID: NBK321445 | vauthors=Dean L | url=https://www.ncbi.nlm.nih.gov/books/NBK61999/ }}
+{{refend}}
+
+== External links ==
+{{Commons category}}
+* {{cite web| url = https://druginfo.nlm.nih.gov/drugportal/name/carbamazepine | publisher = U.S. National Library of Medicine| work = Drug Information Portal| title = Carbamazepine }}
+
+{{Anticonvulsants}}
+{{Mood stabilizers}}
+{{Neuropathic pain and fibromyalgia pharmacotherapies}}
+{{Ion channel modulators}}
+{{GABAA receptor positive allosteric modulators}}
+{{Xenobiotic-sensing receptor modulators}}
+{{Tricyclics}}
+
+{{portal bar|Pharmacy and pharmacology|Medicine}}
+{{Authority control}}
+
+[[Category:Anticonvulsants]]
+[[Category:Antidiuretics]]
+[[Category:Dibenzazepines]]
+[[Category:Novartis brands]]
+[[Category:GABAA receptor positive allosteric modulators]]
+[[Category:Hepatotoxins]]
+[[Category:Mood stabilizers]]
+[[Category:Prodrugs]]
+[[Category:Ureas]]
+[[Category:World Health Organization essential medicines]]
+[[Category:RTT]]</text>
+      <sha1>jgt27c2ahzvp594rau268x29nd3gc8p</sha1>
+    </revision>
+  </page>

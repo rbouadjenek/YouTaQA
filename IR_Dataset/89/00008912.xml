@@ -1,0 +1,668 @@
+  <page>
+    <title>Drake equation</title>
+    <ns>0</ns>
+    <id>8912</id>
+    <revision>
+      <id>943268182</id>
+      <parentid>940095145</parentid>
+      <timestamp>2020-02-29T22:05:10Z</timestamp>
+      <contributor>
+        <ip>98.221.136.220</ip>
+      </contributor>
+      <comment>/* Has intelligent life ever existed? */ daily mail isn't a good source</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{About|Frank Drake's equation|other uses|Drake equation (disambiguation)}}
+{{short description|Probabilistic argument to estimate the number of alien civilizations in the galaxy}}
+{{Use dmy dates|date=July 2019}}
+[[File:Dr. Frank Drake.jpg|thumb|Dr. [[Frank Drake]]]]
+
+The '''Drake equation''' is a [[probability theory|probabilistic argument]] used to estimate the number of active, communicative [[extraterrestrial life|extraterrestrial civilizations]] in the [[Milky Way]] [[galaxy]].&lt;ref name=&quot;Burchell&quot;/&gt;&lt;ref&gt;{{cite journal |last1=Glade |first1=N. |last2=Ballet |first2=P. |last3=Bastien |first3=O. |date=2012 |title=A stochastic process approach of the drake equation parameters |journal=[[International Journal of Astrobiology]] |volume=11 |issue=2 |pages=103–108 |arxiv=1112.1506 |bibcode=2012IJAsB..11..103G |doi=10.1017/S1473550411000413}}&lt;/ref&gt;
+
+The equation was written in 1961 by [[Frank Drake]], not for purposes of quantifying the number of civilizations, but as a way to stimulate scientific dialogue at the first scientific meeting on the [[search for extraterrestrial intelligence]] (SETI).&lt;ref name='December 2002'&gt;{{cite web |date=December 2002 |title=Chapter 3 – Philosophy: &quot;Solving the Drake Equation |url=http://www.setileague.org/askdr/drake.htm |work=Ask Dr. SETI |publisher=SETI League  |accessdate=2013-04-10}}&lt;/ref&gt;&lt;ref&gt;{{cite web |last=Drake |first=N. |date=30 June 2014 |title=How my Dad's Equation Sparked the Search for Extraterrestrial Intelligence |url=http://news.nationalgeographic.com/news/2014/06/140630-drake-equation-50-years-later-aliens-science/ |work=[[National Geographic (magazine)|National Geographic]] |accessdate=2 October 2016}}&lt;/ref&gt; The equation summarizes the main concepts which scientists must contemplate when considering the question of other radio-communicative life.&lt;ref name='December 2002'/&gt;  It is more properly thought of as an approximation rather than as a serious attempt to determine a precise number.
+
+Criticism related to the Drake equation focuses not on the equation itself, but on the fact that the estimated values for several of its factors are highly conjectural, the combined effect being that the uncertainty associated with any derived value is so large that the equation cannot be used to draw firm conclusions.
+
+==Equation==
+The Drake equation is:
+
+:&lt;math&gt;N = R_* \cdot f_\mathrm{p} \cdot n_\mathrm{e} \cdot f_\mathrm{l} \cdot f_\mathrm{i} \cdot f_\mathrm{c} \cdot L&lt;/math&gt;
+
+where:
+
+:{{math|''N''}} = the number of [[civilization]]s in our galaxy with which communication might be possible (i.e. which are on our current past [[light cone]]);
+
+and
+
+:{{math|''R''&lt;sub&gt;∗&lt;/sub&gt;}} = the average rate of [[star formation]] in [[Milky Way|our galaxy]]
+:{{math|''f''&lt;sub&gt;p&lt;/sub&gt;}} = the fraction of those stars that have [[planet]]s
+:{{math|''n''&lt;sub&gt;e&lt;/sub&gt;}} = the average number of planets that can potentially support [[life]] per star that has planets
+:{{math|''f''&lt;sub&gt;l&lt;/sub&gt;}} = the fraction of planets that could support life that actually develop life at some point
+:{{math|''f''&lt;sub&gt;i&lt;/sub&gt;}} = the fraction of planets with life that actually go on to develop [[intelligence|intelligent]] life (civilizations)
+:{{math|''f''&lt;sub&gt;c&lt;/sub&gt;}} = the fraction of civilizations that develop a technology that releases detectable signs of their existence into space
+:{{math|''L''}} = the length of time for which such civilizations release detectable signals into space&lt;ref name=&quot;NOVA&quot;&gt;
+{{cite web
+ |last=Aguirre |first=L.
+ |date=1 July 2008
+ |title=The Drake Equation
+ |url=https://www.pbs.org/wgbh/nova/origins/drake.html
+ |work=[[Nova ScienceNow]]
+ |publisher=[[PBS]]
+ |accessdate=2010-03-07
+}}&lt;/ref&gt;&lt;ref name=&quot;SETI-Drake-Equation&quot; /&gt;
+
+==History==
+In September 1959, physicists [[Giuseppe Cocconi]] and [[Philip Morrison]] published an article in the journal ''[[Nature (journal)|Nature]]'' with the provocative title &quot;Searching for Interstellar Communications&quot;.&lt;ref name='Cocconi 1959'&gt;
+{{cite journal
+ |last1=Cocconi |first1=G.
+ |last2=Morisson |first2=P.
+ |year=1959
+ |title=Searching for Interstellar Communications
+ |url=http://www.iaragroup.org/_OLD/seti/pdf_IARA/cocconi.pdf
+ |journal=[[Nature (journal)|Nature]]
+ |volume=184 |issue=4690 |pages=844–846
+ |accessdate=2013-04-10
+ |bibcode=1959Natur.184..844C
+ |doi=10.1038/184844a0
+}}&lt;/ref&gt;&lt;ref name=&quot;history&quot;&gt;
+{{cite web
+ |last1=Schilling |first1=G.
+ |last2=MacRobert |first2=A. M.
+ |year=2013
+ |title=The Chance of Finding Aliens
+ |url=http://www.skyandtelescope.com/resources/seti/3304541.html
+ |work=[[Sky &amp; Telescope]]
+ |accessdate=2013-04-10
+}}&lt;/ref&gt;  Cocconi and Morrison argued that [[radio telescope]]s had become sensitive enough to pick up transmissions that might be broadcast into space by civilizations orbiting other stars. Such messages, they suggested, might be transmitted at a [[wavelength]] of 21&amp;nbsp;cm (1,420.4&amp;nbsp;[[megahertz|MHz]]). This is the wavelength of radio emission by neutral [[hydrogen]], the most common element in the universe, and they reasoned that other intelligences might see this as a logical landmark in the [[radio spectrum]].
+
+Two months later, Harvard University astronomy professor [[Harlow Shapley]] speculated on the number of inhabited planets in the universe, saying &quot;The universe has 10 million, million, million suns (10 followed by 18 zeros) similar to our own. One in a million has planets around it. Only one in a million million has the right combination of chemicals, temperature, water, days and nights to support planetary life as we know it. This calculation arrives at the estimated figure of 100 million worlds where life has been forged by evolution.&quot;&lt;ref name=&quot;SydneyMorningHerald&quot;&gt;
+{{cite news
+ |last=newspaper |first=staff
+ |date=8 November 1959
+ |title=Life On Other Planets?
+ |url=https://news.google.com/newspapers?nid=1301&amp;dat=19591108&amp;id=s39WAAAAIBAJ&amp;sjid=5eQDAAAAIBAJ&amp;pg=2212,2112869&amp;hl=en
+ |work=[[Sydney Morning Herald]]
+ |accessdate=2015-10-02
+}}&lt;/ref&gt;
+
+Seven months after Cocconi and Morrison published their article, Drake made the first systematic search for signals from communicative extraterrestrial civilizations. Using the 25&amp;nbsp;m dish of the [[Green Bank Observatory|National Radio Astronomy Observatory, Green Bank]] in [[Green Bank, West Virginia]], Drake monitored two nearby Sun-like stars: [[Epsilon Eridani]] and [[Tau Ceti]]. In this project, which he called [[Project Ozma]], he slowly scanned frequencies close to the 21&amp;nbsp;cm wavelength for six hours per day from April to July 1960.&lt;ref name=&quot;history&quot;/&gt; The project was well designed, inexpensive, and simple by today's standards. It detected no signals.
+
+Soon thereafter, Drake hosted a &quot;[[search for extraterrestrial intelligence]]&quot; meeting on detecting their radio signals. The meeting was held at the Green Bank facility in 1961. The equation that bears Drake's name arose out of his preparations for the meeting.&lt;ref name=&quot;Astrobiology Magazine&quot;&gt;{{cite web | url=http://www.astrobio.net/alien-life/the-drake-equation-revisited-part-i/ | title=The Drake Equation Revisited: Part I | work=[[Astrobiology Magazine]] | date=29 September 2003 | accessdate=20 May 2017}}&lt;/ref&gt;
+
+&lt;blockquote&gt; As I planned the meeting, I realized a few day[s] ahead of time we needed an agenda. And so I wrote down all the things you needed to know to predict how hard it's going to be to detect extraterrestrial life. And looking at them it became pretty evident that if you multiplied all these together, you got a number, N, which is the number of detectable civilizations in our galaxy. This was aimed at the radio search, and not to search for primordial or primitive life forms.
+:—Frank Drake&lt;/blockquote&gt;
+
+The ten attendees were conference organizer J. Peter Pearman, Frank Drake, [[Philip Morrison]], businessman and radio amateur Dana Atchley, chemist [[Melvin Calvin]], astronomer [[Su-Shu Huang]], neuroscientist [[John C. Lilly]], inventor [[Barney Oliver]], astronomer [[Carl Sagan]] and radio-astronomer [[Otto Struve]].&lt;ref name=&quot;Wende&quot;&gt;
+{{cite news
+ |last=Zaun |first=H.
+ |date=1 November 2011
+ |title=Es war wie eine 180-Grad-Wende von diesem peinlichen Geheimnis!
+ |trans-title=It was like a 180 degree turn from this embarrassing secret
+ |url=http://www.heise.de/tp/artikel/35/35756/1.html
+ |work=[[Telepolis]]
+ |language=German
+ |accessdate=2013-08-13
+}}&lt;/ref&gt; These participants dubbed themselves &quot;'''The Order of the Dolphin'''&quot; (because of Lilly's work on [[dolphin communication]]), and commemorated their first meeting with a plaque at the observatory hall.&lt;ref&gt;
+{{cite web
+ |title=Drake Equation Plaque
+ |url=http://www.setileague.org/photos/miscpix/drakeqn.jpg
+ |accessdate=2013-08-13
+}}&lt;/ref&gt;&lt;ref&gt;{{cite web
+ |last         = Darling
+ |first        = D. J.
+ |title        = Green Bank conference (1961)
+ |url          = http://www.daviddarling.info/encyclopedia/G/GreenBankconf.html
+ |work         = [[The Encyclopedia of Science]]
+ |accessdate   = 13 August 2013
+ |archive-url  = https://web.archive.org/web/20130518091722/http://www.daviddarling.info/encyclopedia/G/GreenBankconf.html
+ |archive-date = 18 May 2013
+ |url-status     = dead
+ |df           = dmy-all
+}}&lt;/ref&gt;
+
+==Usefulness==
+[[File:C G-K - DSC 0421.jpg|thumb|The [[Allen Telescope Array]] for SETI]]
+The Drake equation amounts to a summary of the factors affecting the likelihood that we might detect radio-communication from intelligent extraterrestrial life.&lt;ref name=&quot;Burchell&quot;&gt;{{cite journal |title=W(h)ither the Drake equation?  |author=Burchell, M.J. |journal=International Journal of Astrobiology |volume=5 |issue=3 |pages=243–250 |date=2006  |doi = 10.1017/S1473550406003107
+|bibcode = 2006IJAsB...5..243B }}&lt;/ref&gt;&lt;ref name=&quot;NOVA&quot;/&gt;&lt;ref&gt;
+{{cite web
+ |last=Jones |first=D. S.
+ |date=26 September 2001
+ |title=Beyond the Drake Equation
+ |url=http://frombob.to/drake.html
+ |accessdate=2013-04-17
+}}&lt;/ref&gt; The last four parameters, {{math|''f''&lt;sub&gt;l&lt;/sub&gt;}}, {{math|''f''&lt;sub&gt;i&lt;/sub&gt;}}, {{math|''f''&lt;sub&gt;c&lt;/sub&gt;}}, and {{mvar|L}}, are not known and are very difficult to estimate, with values ranging over many orders of magnitude (see [[#Criticism|criticism]]).  Therefore, the usefulness of the Drake equation is not in the solving, but rather in the contemplation of all the various concepts which scientists must incorporate when considering the question of life elsewhere,&lt;ref name=&quot;Burchell&quot;/&gt;&lt;ref name='December 2002'/&gt; and gives the question of life elsewhere a basis for [[Scientific method|scientific analysis]]. The Drake equation is a statement that stimulates intellectual curiosity about the [[universe]] around us, for helping us to understand that [[life]] as we know it is the end product of a natural, cosmic evolution, and for helping us realize how much we are a part of that universe.&lt;ref name=&quot;SETI-Drake-Equation&quot;&gt;{{cite web | url=http://www.seti.org/drakeequation | title=What do we need to know about to discover life in space? | publisher=[[SETI Institute]] | accessdate=2013-04-16}}&lt;/ref&gt;  What the equation and the search for life has done is focus science on some of the other questions about life in the universe, specifically [[abiogenesis]], the development of multi-cellular life and the development of [[intelligence]] itself.&lt;ref&gt;
+{{cite web
+ |year=2010
+ |title=The Search For Life : The Drake Equation 2010 – Part 1
+ |url=https://www.youtube.com/watch?list=PL56DCB81E2F59166A&amp;v=U3UyAoYkhTo&amp;feature=player_embedded
+ |publisher=[[BBC Four]]
+ |accessdate=2013-04-17
+}}&lt;/ref&gt;
+
+Within the limits of our existing technology, any practical search for distant intelligent life must necessarily be a search for some manifestation of a distant technology. After about 50 years, the Drake equation is still of seminal importance because it is a 'road map' of what we need to learn in order to solve this fundamental existential question.&lt;ref name=&quot;Burchell&quot;/&gt; It also formed the backbone of [[astrobiology]] as a science; although speculation is entertained to give context, astrobiology concerns itself primarily with [[hypotheses]] that fit firmly into existing [[Theory#Science|scientific theories]]. Some 50 years of SETI have failed to find anything, even though radio telescopes, receiver techniques, and computational abilities have improved enormously since the early 1960s, but it has been discovered, at least, that our galaxy is not teeming with very powerful alien transmitters continuously broadcasting near the 21&amp;nbsp;cm [[Hydrogen frequencies|hydrogen frequency]]. No one could say this in 1961.&lt;ref&gt;[http://www.astronomynow.com/news/n1004/SETI/ SETI: A celebration of the first 50 years]. Keith Cooper. ''Astronomy Now''. 2000&lt;/ref&gt;
+
+==Estimates==
+
+===Original estimates===
+There is considerable disagreement on the values of these parameters, but the 'educated guesses' used by Drake and his colleagues in 1961 were:&lt;ref&gt;
+{{cite book
+ | last1 = Drake | first1 = F.
+ | last2 = Sobel |first2 = D.
+ | year = 1992
+ | title = Is Anyone Out There? The Scientific Search for Extraterrestrial Intelligence
+ | pages = 55–62
+ | publisher = [[Delta (publisher)|Delta]]
+ | isbn = 0-385-31122-2
+}}&lt;/ref&gt;&lt;ref&gt;
+{{cite journal
+ |last1=Glade |first1=N.
+ |last2=Ballet |first2=P.
+ |last3=Bastien |first3=O.
+ |year=2012
+ |title=A stochastic process approach of the drake equation parameters
+ |journal=[[International Journal of Astrobiology]]
+ |volume=11 |issue=2 |pages=103–108
+ |arxiv=1112.1506
+ |bibcode=2012IJAsB..11..103G
+ |doi=10.1017/S1473550411000413
+}} Note: This reference has a table of 1961 values, claimed to be taken from Drake &amp; Sobel, but these differ from the book.&lt;/ref&gt; 
+* {{math|''R''&lt;sub&gt;∗&lt;/sub&gt;}} = 1 yr&lt;sup&gt;−1&lt;/sup&gt; (1 star formed per year, on the average over the life of the galaxy; this was regarded as conservative)
+* {{math|''f''&lt;sub&gt;p&lt;/sub&gt;}} = 0.2 to 0.5 (one fifth to one half of all stars formed will have planets)
+* {{math|''n''&lt;sub&gt;e&lt;/sub&gt;}} = 1 to 5 (stars with planets will have between 1 and 5 planets capable of developing life)
+* {{math|''f''&lt;sub&gt;l&lt;/sub&gt;}} = 1 (100% of these planets will develop life)
+* {{math|''f''&lt;sub&gt;i&lt;/sub&gt;}} = 1 (100% of which will develop intelligent life)
+* {{math|''f''&lt;sub&gt;c&lt;/sub&gt;}} = 0.1 to 0.2 (10–20% of which will be able to communicate)
+* {{math|''L''}} = 1000 to 100,000,000 years (which will last somewhere between 1000 and 100,000,000 years)
+
+Inserting the above minimum numbers into the equation gives a minimum N of 20 (see: [[Drake equation#Range of results|Range of results]]). Inserting the maximum numbers gives a maximum of 50,000,000. Drake states that given the uncertainties, the original meeting concluded that {{math|''N'' ≈ ''L''}}, and there were probably between 1000 and 100,000,000 civilizations in the [[Milky Way]] galaxy.
+
+===Current estimates===
+This section discusses and attempts to list the best current estimates for the parameters of the Drake equation.
+&lt;!-- Please state the rationale behind the estimate and a citation to their source. --&gt;
+
+====Rate of star creation in our galaxy, {{math|''R''&lt;sub&gt;∗&lt;/sub&gt;}}====
+Latest calculations from [[NASA]] and the [[European Space Agency]] indicate that the current rate of star formation in our galaxy is about {{solar mass|0.68–1.45|link=yes}} of material per year.&lt;ref name=Robitaille&gt;{{cite journal |author1=Robitaille, Thomas P. |author2=Barbara A. Whitney |title=The present-day star formation rate of the Milky Way determined from Spitzer-detected young stellar objects |journal=The Astrophysical Journal Letters |volume=710 |issue=1 |year=2010 |pages=L11 |arxiv=1001.3672 |bibcode=2010ApJ...710L..11R |doi=10.1088/2041-8205/710/1/L1}}&lt;/ref&gt;&lt;ref name=&quot;The Drake Equation&quot;&gt;
+{{cite book
+ |last=Wanjek |first=C.
+ |date=2 July 2015
+ |title=The Drake Equation
+ |url=https://books.google.com/?id=jcnSCQAAQBAJ&amp;pg=PA45&amp;lpg=PA45&amp;dq=Robitaille+and+Whitney+came+up+with+a+figure+for+R*+between+0.68+and+1.45#v=onepage&amp;q&amp;f=false
+ |publisher=[[Cambridge University Press]]
+ |accessdate=2016-09-09
+|isbn=9781107073654
+ }}&lt;/ref&gt; To get the number of stars per year, this must account for the [[initial mass function]] (IMF) for stars, where the average new star mass is about {{solar mass|0.5}}.&lt;ref&gt;{{cite journal |last1=Kennicutt |first1=Robert C. |last2=Evans |first2=Neal J. |title=Star Formation in the Milky Way and Nearby Galaxies |journal=Annual Review of Astronomy and Astrophysics |date=22 September 2012 |volume=50 |issue=1 |pages=531–608 |arxiv=1204.3552 |bibcode=2012ARA&amp;A..50..531K |doi=10.1146/annurev-astro-081811-125610}}&lt;/ref&gt; This gives a star formation rate of about 1.5–3 stars per year.
+
+{{anchor|eta-earth|}}
+
+====Fraction of those stars that have planets, {{math|''f''&lt;sub&gt;p&lt;/sub&gt;}}====
+Recent analysis of [[Gravitational microlensing|microlensing]] surveys has found that {{math|''f''&lt;sub&gt;p&lt;/sub&gt;}} may approach 1—that is, stars are orbited by planets as a rule, rather than the exception; and that there are one or more bound planets per Milky Way star.&lt;ref name=&quot;bbc.co.uk&quot;&gt;
+{{cite news
+ |last=Palmer |first=J.
+ |date=11 January 2012
+ |title=Exoplanets are around every star, study suggests
+ |url=https://www.bbc.co.uk/news/science-environment-16515944
+ |publisher=[[BBC]]
+ |accessdate=2012-01-12
+}}&lt;/ref&gt;&lt;ref name=&quot;Nature-20120111&quot;&gt;
+{{cite journal
+ |last=Cassan |first=A.
+ |display-authors=etal
+ |date=11 January 2012
+ |title=One or more bound planets per Milky Way star from microlensing observations
+ |journal=[[Nature (journal)|Nature]]
+ |volume=481 |issue=7380 |pages=167–169
+ |arxiv=1202.0903
+ |bibcode=2012Natur.481..167C
+ |doi=10.1038/nature10684
+ |pmid=22237108
+}}&lt;/ref&gt;
+
+====Average number of planets that might support life per star that has planets, {{math|''n''&lt;sub&gt;e&lt;/sub&gt;}}====
+In November 2013, astronomers reported, based on [[Kepler (spacecraft)|''Kepler'' space mission]] data, that there could be as many as 40&amp;nbsp;billion [[Terrestrial planet|Earth-sized]] [[extrasolar planets|planets]] orbiting in the [[habitable zone]]s of [[sun-like|sun-like stars]] and [[red dwarf stars]] within the [[Milky Way Galaxy]].&lt;ref name=&quot;NYT-20131104&quot;&gt;{{cite news |last=Overbye |first=Dennis |title=Far-Off Planets Like the Earth Dot the Galaxy |url=https://www.nytimes.com/2013/11/05/science/cosmic-census-finds-billions-of-planets-that-could-be-like-earth.html |date=4 November 2013 |work=[[The New York Times]] |accessdate=5 November 2013 }}&lt;/ref&gt;&lt;ref name=&quot;PNAS-20131031&quot;&gt;{{cite journal |last1=Petigura |first1=Eric A. |last2=Howard |first2=Andrew W. |last3=Marcy |first3=Geoffrey W. |title=Prevalence of Earth-size planets orbiting Sun-like stars |date=31 October 2013 |journal=[[Proceedings of the National Academy of Sciences of the United States of America]] |doi=10.1073/pnas.1319909110 |arxiv = 1311.6806 |bibcode = 2013PNAS..11019273P |volume=110 |issue=48 |pages=19273–19278 |pmid=24191033 |pmc=3845182}}&lt;/ref&gt; 11 billion of these estimated planets may be orbiting sun-like stars.&lt;ref name=&quot;LATimes-20131104&quot;&gt;{{cite news |last=Khan |first=Amina |title=Milky Way may host billions of Earth-size planets |url=http://www.latimes.com/science/la-sci-earth-like-planets-20131105,0,2673237.story |date=4 November 2013 |work=[[Los Angeles Times]] |accessdate=5 November 2013 }}&lt;/ref&gt; Since there are about 100 billion stars in the galaxy, this implies {{math|''f''&lt;sub&gt;p&lt;/sub&gt; · ''n''&lt;sub&gt;e&lt;/sub&gt;}} is roughly 0.4. The nearest planet in the habitable zone is [[Proxima Centauri b]], which is as close as about 4.2 light-years away.
+
+The consensus at the Green Bank meeting was that {{math|''n''&lt;sub&gt;e&lt;/sub&gt;}} had a minimum value between 3 and 5. Dutch science journalist [[Govert Schilling]] has opined that this is optimistic.&lt;ref name=schilling2011 /&gt; Even if planets are in the [[habitable zone]], the number of planets with the right proportion of elements is difficult to estimate.&lt;ref name=&quot;Trimble&quot;&gt;{{cite journal
+ |last=Trimble |first=V.
+ |year=1997
+ |title=Origin of the biologically important elements
+ |journal=[[Origins of Life and Evolution of the Biosphere]]
+ |volume=27 |issue=1–3 |pages=3–21
+ |doi=10.1023/A:1006561811750
+ |pmid=9150565
+}}&lt;/ref&gt; Brad Gibson, Yeshe Fenner, and Charley Lineweaver determined that about 10% of [[star system]]s in the Milky Way galaxy are hospitable to life, by having heavy elements, being far from [[supernova]]e and being stable for a sufficient time.&lt;ref&gt;
+{{cite journal
+ |last=Lineweaver |first=C. H.
+ |last2=Fenner |first2=Y.
+ |last3=Gibson |first3=B. K.
+ |year=2004
+ |title=The Galactic Habitable Zone and the Age Distribution of Complex Life in the Milky Way
+ |journal=[[Science (journal)|Science]]
+ |volume=303 |issue=5654 |pages= 59–62
+ |arxiv=astro-ph/0401024
+ |bibcode=2004Sci...303...59L
+ |doi=10.1126/science.1092322
+ |pmid=14704421
+}}&lt;/ref&gt;
+
+The discovery of numerous [[gas giant]]s in close orbit with their stars has introduced doubt that life-supporting planets commonly survive the formation of their stellar systems. So-called [[hot Jupiter]]s may migrate from distant orbits to near orbits, in the process disrupting the orbits of habitable planets.
+
+On the other hand, the variety of [[star system]]s that might have habitable zones is not just limited to solar-type stars and Earth-sized planets. It is now estimated that even tidally locked planets close to [[red dwarf]] stars [[habitability of red dwarf systems|might have habitable zones]],&lt;ref&gt;
+{{cite journal
+ |last1=Dressing |first1=C. D.
+ |last2=Charbonneau |first2=D.
+ |year=2013
+ |title=The Occurrence Rate of Small Planets around Small Stars
+ |journal=[[The Astrophysical Journal]]
+ |volume=767 |issue= 1|pages=95
+ |arxiv=1302.1647
+ |bibcode=2013ApJ...767...95D
+ |doi=10.1088/0004-637X/767/1/95
+}}&lt;/ref&gt; although the flaring behavior of these stars might argue against this.&lt;ref&gt;{{cite web|title=Red Dwarf Stars Could Leave Habitable Earth-Like Planets Vulnerable to Radiation|url=http://scitechdaily.com/red-dwarf-stars-could-leave-habitable-earth-like-planets-vulnerable-to-radiation/|website=SciTech Daily|accessdate=22 September 2015|date=2 July 2013}}&lt;/ref&gt; The possibility of life on [[natural satellite|moons]] of gas giants (such as [[Jupiter]]'s moon [[Europa (moon)|Europa]], or [[Saturn]]'s moon [[Titan (moon)|Titan]]) adds further uncertainty to this figure.&lt;ref&gt;{{cite journal |last1=Heller |first1=René |last2=Barnes |first2=Rory |title=Constraints on the Habitability of Extrasolar Moons |journal=Proceedings of the International Astronomical Union |date=29 April 2014 |volume=8 |issue=S293 |pages=159–164 |arxiv=1210.5172 |bibcode=2014IAUS..293..159H |doi=10.1017/S1743921313012738}}&lt;/ref&gt;
+
+The authors of the [[rare Earth hypothesis]] propose a number of additional constraints on habitability for planets, including being in galactic zones with suitably low radiation, high star metallicity, and low enough density to avoid excessive asteroid bombardment. They also propose that it is necessary to have a planetary system with large gas giants which provide bombardment protection without a [[hot Jupiter]]; and a planet with [[plate tectonic]]s, a large moon that creates tidal pools, and moderate [[axial tilt]] to generate seasonal variation.&lt;ref name=&quot;RareEarth&quot;&gt;{{cite book |last1=Ward |first1=Peter D. |last2=Brownlee |first2=Donald |title=Rare Earth: Why Complex Life is Uncommon in the Universe |publisher=Copernicus Books (Springer Verlag) |date=2000 |isbn=0-387-98701-0 |ref=harv}}&lt;/ref&gt;
+
+====Fraction of the above that actually go on to develop life, {{math|''f''&lt;sub&gt;l&lt;/sub&gt;}}====
+Geological evidence from the Earth suggests that {{math|''f''&lt;sub&gt;l&lt;/sub&gt;}} may be high; life on Earth appears to have begun around the same time as favorable conditions arose, suggesting that [[abiogenesis]] may be relatively common once conditions are right. However, this evidence only looks at the Earth (a single model planet), and contains [[anthropic bias]], as the planet of study was not chosen randomly, but by the living organisms that already inhabit it (ourselves). From a classical [[hypothesis testing]] standpoint, there are zero [[degrees of freedom (statistics)|degrees of freedom]], permitting no valid estimates to be made. If life (or evidence of past life) were to be found on [[life on Mars|Mars]], [[Europa (moon)|Europa]], [[Enceladus]] or [[Titan (moon)|Titan]] that developed independently from life on Earth it would imply a value for {{math|''f''&lt;sub&gt;l&lt;/sub&gt;}} close to 1. While this would raise the degrees of freedom from zero to one, there would remain a great deal of uncertainty on any estimate due to the small sample size, and the chance they are not really independent.
+
+Countering this argument is that there is no evidence for abiogenesis occurring more than once on the Earth—that is, all terrestrial life stems from a common origin. If abiogenesis were more common it would be speculated to have occurred more than once on the Earth. Scientists have searched for this by looking for [[bacteria]] that are unrelated to other life on Earth, but none have been found yet.&lt;ref&gt;
+{{cite journal
+ |last=Davies |first=P.
+ |year=2007
+ |title=Are Aliens Among Us?
+ |journal=[[Scientific American]]
+ |volume=297 |issue=6 |pages=62–69
+ |doi=10.1038/scientificamerican1207-62
+|bibcode = 2007SciAm.297f..62D }}&lt;/ref&gt; It is also possible that life arose more than once, but that other branches were out-competed, or died in mass extinctions, or were lost in other ways. Biochemists [[Francis Crick]] and [[Leslie Orgel]] laid special emphasis on this uncertainty: &quot;At the moment we have no means at all of knowing&quot; whether we are &quot;likely to be alone in the galaxy (Universe)&quot; or whether &quot;the galaxy may be pullulating with life of many different forms.&quot;&lt;ref&gt;
+{{cite journal
+ |last=Crick |first=F. H. C.
+ |last2=Orgel |first2=L. E.
+ |year=1973
+ |title=Directed Panspermia
+ |url=http://profiles.nlm.nih.gov/ps/access/SCBCCP.pdf
+ |journal=[[Icarus (journal)|Icarus]]
+ |volume=19 |issue=3 |pages=341–346
+ |bibcode=1973Icar...19..341C
+ |doi=10.1016/0019-1035(73)90110-3
+}}&lt;/ref&gt; As an alternative to abiogenesis on Earth, they proposed the hypothesis of [[directed panspermia]], which states that Earth life began with &quot;microorganisms sent here deliberately by a technological society on another planet, by means of a special long-range unmanned spaceship&quot;.
+
+====Fraction of the above that develops intelligent life, {{math|''f''&lt;sub&gt;i&lt;/sub&gt;}}====
+This value remains particularly controversial. Those who favor a low value, such as the biologist [[Ernst Mayr]], point out that of the billions of species that have existed on Earth, only one has become intelligent and from this, infer a tiny value for {{math|''f''&lt;sub&gt;i&lt;/sub&gt;}}.&lt;ref name=&quot;Ernst Mayr on SETI&quot;&gt;
+{{cite web
+ |title       = Ernst Mayr on SETI
+ |url         = http://www.planetary.org/explore/topics/search_for_life/seti/mayr.html
+ |publisher   = [[The Planetary Society]]
+ |url-status     = dead
+ |archiveurl  = https://web.archive.org/web/20101206171624/http://www.planetary.org/explore/topics/search_for_life/seti/mayr.html
+ |archivedate = 6 December 2010
+ |df          = dmy-all
+}}&lt;/ref&gt; Likewise, the Rare Earth hypothesis, notwithstanding their low value for {{math|''n''&lt;sub&gt;e&lt;/sub&gt;}} above, also think a low value for {{math|''f''&lt;sub&gt;i&lt;/sub&gt;}} dominates the analysis.&lt;ref&gt;Rare Earth, p. xviii.: &quot;We believe that life in the form of microbes or their equivalents is very common in the universe, perhaps more common than even Drake or Sagan envisioned. However, ''complex'' life—animals and higher plants—is likely to be far more rare than commonly assumed.&quot;&lt;/ref&gt; Those who favor higher values note the generally increasing complexity of life over time, concluding that the appearance of intelligence is almost inevitable,&lt;ref name=&quot;acampbell.ukfsn.org&quot;&gt;
+{{cite web
+ |last        = Campbell
+ |first       = A.
+ |date        = 13 March 2005
+ |title       = Review of ''Life's Solution'' by Simon Conway Morris
+ |url         = http://www.acampbell.ukfsn.org/bookreviews/r/morris.html
+ |url-status     = dead
+ |archiveurl  = https://web.archive.org/web/20110716063324/http://www.acampbell.ukfsn.org/bookreviews/r/morris.html
+ |archivedate = 16 July 2011
+ |df          = dmy-all
+}}&lt;/ref&gt;&lt;ref&gt;
+{{cite book
+ |last=Bonner |first=J. T.
+ |year=1988
+ |title=The evolution of complexity by means of natural selection
+ |url=https://archive.org/details/evolutionofcompl0000bonn |url-access=registration |publisher=[[Princeton University Press]]
+ |isbn=0-691-08494-7
+}}&lt;/ref&gt; implying an {{math|''f''&lt;sub&gt;i&lt;/sub&gt;}} approaching 1. Skeptics point out that the large spread of values in this factor and others make all estimates unreliable. (See [[#Criticism|Criticism]]).
+
+In addition, while it appears that life developed soon after the formation of Earth, the [[Cambrian explosion]], in which a large variety of multicellular life forms came into being, occurred a considerable amount of time after the formation of Earth, which suggests the possibility that special conditions were necessary. Some scenarios such as the [[snowball Earth]] or research into the [[extinction events]] have raised the possibility that life on Earth is relatively fragile. Research on any past [[life on Mars]] is relevant since a discovery that life did form on Mars but ceased to exist might raise our estimate of {{math|''f''&lt;sub&gt;l&lt;/sub&gt;}} but would indicate that in half the known cases, intelligent life did not develop.
+
+Estimates of {{math|''f''&lt;sub&gt;i&lt;/sub&gt;}} have been affected by discoveries that the Solar System's orbit is circular in the galaxy, at such a distance that it remains out of the spiral arms for tens of millions of years (evading radiation from [[nova]]e). Also, Earth's large moon may aid the evolution of life by [[Rare Earth hypothesis#A large moon|stabilizing the planet's axis of rotation]].
+
+====Fraction of the above revealing their existence via signal release into space, {{math|''f''&lt;sub&gt;c&lt;/sub&gt;}}====
+For deliberate communication, the one example we have (the Earth) does not do much explicit communication, though there are [[Active SETI|some efforts]] covering only a tiny fraction of the stars that might look for our presence. (See [[Arecibo message]], for example). There is [[Fermi paradox#They choose not to interact with us|considerable speculation]] why an extraterrestrial civilization might exist but choose not to communicate. However, deliberate communication is not required, and calculations indicate that current or near-future Earth-level technology might well be detectable to civilizations not too much more advanced than our own.&lt;ref&gt;
+{{cite journal
+ |last1=Forgan |first1=D.
+ |last2=Elvis |first2=M.
+ |year=2011
+ |title=Extrasolar Asteroid Mining as Forensic Evidence for Extraterrestrial Intelligence
+ |journal=[[International Journal of Astrobiology]]
+ |volume=10 |issue=4 |pages=307–313
+ |arxiv=1103.5369
+ |bibcode=2011IJAsB..10..307F
+ |doi=10.1017/S1473550411000127
+}}&lt;/ref&gt; By this standard, the Earth is a communicating civilization.
+
+Another question is what percentage of civilizations in the galaxy are close enough for us to detect, assuming that they send out signals. For example, existing Earth radio telescopes could only detect Earth radio transmissions from roughly a light year away.&lt;ref&gt;{{cite journal |title=The Search for Extraterrestrial Intelligence (SETI) |journal=Annual Review of Astronomy and Astrophysics |author=J. Tarter |volume=39 |pages=511–548 |date=September 2001 |doi=10.1146/annurev.astro.39.1.511 |bibcode=2001ARA&amp;A..39..511T}}&lt;/ref&gt;
+
+====Lifetime of such a civilization wherein it communicates its signals into space, {{math|''L''}}====
+[[Michael Shermer]] estimated {{math|''L''}} as 420 years, based on the duration of sixty historical Earthly civilizations.&lt;ref name=&quot;Why ET Hasn’t Called&quot;&gt;
+{{cite journal
+ |last=Shermer |first=M.
+ |date=August 2002
+ |title=Why ET Hasn't Called
+ |url=http://www.michaelshermer.com/2002/08/why-et-hasnt-called/
+ |journal=[[Scientific American]]
+ |volume=287
+ |issue=2
+ |page=21
+|bibcode=2002SciAm.287b..33S
+ |doi=10.1038/scientificamerican0802-33
+ }}&lt;/ref&gt; Using 28 civilizations more recent than the Roman Empire, he calculates a figure of 304 years for &quot;modern&quot; civilizations. It could also be argued from Michael Shermer's results that the fall of most of these civilizations was followed by later civilizations that carried on the technologies, so it is doubtful that they are separate civilizations in the context of the Drake equation. In the expanded version, including ''reappearance number'', this lack of specificity in defining single civilizations does not matter for the end result, since such a civilization turnover could be described as an increase in the ''reappearance number'' rather than increase in {{math|''L''}}, stating that a civilization reappears in the form of the succeeding cultures. Furthermore, since none could communicate over interstellar space, the method of comparing with historical civilizations could be regarded as invalid.
+
+[[David Grinspoon]] has argued that once a civilization has developed enough, it might overcome all threats to its survival. It will then last for an indefinite period of time, making the value for {{math|''L''}} potentially billions of years. If this is the case, then he proposes that the Milky Way galaxy may have been steadily accumulating advanced civilizations since it formed.&lt;ref name=&quot;David Grinspoon 2004&quot;&gt;
+{{cite book
+ |last=Grinspoon |first=D.
+ |year=2004
+ |title=Lonely Planets
+}}&lt;/ref&gt; He proposes that the last factor {{math|''L''}} be replaced with {{math|''f''&lt;sub&gt;IC&lt;/sub&gt; · ''T''}}, where {{math|''f''&lt;sub&gt;IC&lt;/sub&gt;}} is the fraction of communicating civilizations become &quot;immortal&quot; (in the sense that they simply do not die out), and {{math|''T''}} representing the length of time during which this process has been going on. This has the advantage that {{math|''T''}} would be a relatively easy to discover number, as it would simply be some fraction of the age of the universe.
+
+It has also been hypothesized that once a civilization has learned of a more advanced one, its longevity could increase because it can learn from the experiences of the other.&lt;ref name=&quot;GoldsmithOwen&quot;&gt;
+{{Cite book
+ |last1=Goldsmith |first1=D.
+ |last2=Owen |first2=T.
+ |year=1992
+ |title=The Search for Life in the Universe
+ |edition=2nd |page=415
+ |publisher=[[Addison-Wesley]]
+ |isbn=1-891389-16-5
+}}&lt;/ref&gt;
+
+The astronomer [[Carl Sagan]] speculated that all of the terms, except for the lifetime of a civilization, are relatively high and the determining factor in whether there are large or small numbers of civilizations in the universe is the civilization lifetime, or in other words, the ability of technological civilizations to avoid self-destruction. In Sagan's case, the Drake equation was a strong motivating factor for his interest in environmental issues and his efforts to warn against the dangers of [[nuclear warfare]].
+
+An intelligent civilization might not be organic, as some have suggested that computers may replace humanity.&lt;ref&gt;{{cite news |title=Stephen Hawking warns artificial intelligence 'may replace humans altogether'|date=2 November 2017|author=Aatif Sulleyman|work=independent.co.uk
+| url=https://www.independent.co.uk/life-style/gadgets-and-tech/news/stephen-hawking-artificial-intelligence-fears-ai-will-replace-humans-virus-life-a8034341.html}}&lt;/ref&gt;
+
+===Range of results===
+As many skeptics have pointed out, the Drake equation can give a very wide range of values, depending on the assumptions,&lt;ref&gt;&quot;The value of {{mvar|N}} remains highly uncertain. Even if we had a perfect knowledge of the first two terms in the equation, there are still five remaining terms, each of which could be uncertain by factors of 1,000.&quot; from {{cite journal |title=The search for extraterrestrial intelligence
+ |author=Wilson, TL
+ |journal=Nature
+ |volume=409
+ |issue=6823
+ |pages=1110–1114
+ |year=2001
+ |publisher=Nature Publishing Group |bibcode = 2001Natur.409.1110W |doi = 10.1038/35059235 |pmid=11234025
+ }}, or more informally, &quot;The Drake Equation can have any value from &quot;billions and billions&quot; to zero&quot;, Michael Crichton, as quoted in {{cite book |author=Douglas A. Vakoch |title=The Drake Equation: Estimating the prevalence of extraterrestrial life through the ages |publisher=Cambridge University Press |date=2015 |isbn=978-1-10-707365-4|display-authors=etal}}, p. 13&lt;/ref&gt; as the values used in portions of the Drake equation are not well established.&lt;ref name=schilling2011&gt;{{cite web|url=http://www.astro-tom.com/technical_data/alien_life.htm|title=The Chance of Finding Aliens: Reevaluating the Drake Equation |author=Govert Schilling|date=November 2011|work=astro-tom.com}}&lt;/ref&gt;&lt;ref name=renamed_from_2011_on_20160211035411&gt;{{cite web|url=https://www.e-education.psu.edu/astro801/content/l12_p5.html|title=The Drake Equation|date=|work=psu.edu}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.space.com/22648-drake-equation-alien-life-seager.html|title=The Drake Equation Revisited: Interview with Planet Hunter Sara Seager|author=Devin Powell, Astrobiology Magazine|date=|work=Space.com}}&lt;/ref&gt;&lt;ref name=schilling2009&gt;{{cite web|url=http://www.skyandtelescope.com/astronomy-news/the-chance-of-finding-aliens/|title=The Chance of Finding Aliens|author1=Govert Schilling|author2=Alan M. MacRobert|date=3 June 2009|work=Sky &amp; Telescope}}&lt;/ref&gt; In particular, the result can be {{math|''N'' ≪ 1}}, meaning we are likely alone in the galaxy, or {{math|''N'' ≫ 1}}, implying there are many civilizations we might contact. One of the few points of wide agreement is that the presence of humanity implies a probability of intelligence arising of greater than zero.&lt;ref name=&quot;Dean&quot;&gt;{{better source|date=August 2015}}
+{{cite web
+ |last        = Dean
+ |first       = T.
+ |date        = 10 August 2009
+ |title       = A review of the Drake Equation
+ |url         = http://www.cosmosmagazine.com/features/are-we-alone-a-review-drake-equation/
+ |work        = [[Cosmos Magazine]]
+ |accessdate  = 16 April 2013
+ |url-status     = dead
+ |archiveurl  = https://web.archive.org/web/20130603043832/http://www.cosmosmagazine.com/features/are-we-alone-a-review-drake-equation/
+ |archivedate = 3 June 2013
+ |df          = dmy-all
+}}&lt;/ref&gt;
+
+As an example of a low estimate, combining NASA's star formation rates, the [[rare Earth hypothesis]] value of {{math|''f''&lt;sub&gt;p&lt;/sub&gt; · ''n''&lt;sub&gt;e&lt;/sub&gt; · ''f''&lt;sub&gt;l&lt;/sub&gt; {{=}} 10&lt;sup&gt;−5&lt;/sup&gt;}},&lt;ref&gt;Rare Earth, page 270: &quot;When we take into account factors such as the abundance of planets and the location and lifetime of the habitable zone, the Drake Equation suggests that only between 1% and 0.001% of all stars might have planets with habitats similar to Earth. [...] If microbial life forms readily, then millions to hundreds of millions of planets in the galaxy have the ''potential'' for developing advanced life. (We expect that a much higher number will have microbial life.)&quot;&lt;/ref&gt; Mayr's view on intelligence arising, Drake's view of communication, and Shermer's estimate of lifetime:
+:{{math|''R''&lt;sub&gt;∗&lt;/sub&gt; {{=}} 1.5–3 yr&lt;sup&gt;−1&lt;/sup&gt;}},&lt;ref name=Robitaille/&gt; {{math|''f''&lt;sub&gt;p&lt;/sub&gt; · ''n''&lt;sub&gt;e&lt;/sub&gt; · ''f''&lt;sub&gt;l&lt;/sub&gt; {{=}} 10&lt;sup&gt;−5&lt;/sup&gt;}},&lt;ref name=&quot;RareEarth&quot;/&gt; {{math|''f''&lt;sub&gt;i&lt;/sub&gt; {{=}} 10&lt;sup&gt;−9&lt;/sup&gt;}},&lt;ref name=&quot;Ernst Mayr on SETI&quot;/&gt; {{math|''f''&lt;sub&gt;c&lt;/sub&gt; {{=}} 0.2}}&lt;sup&gt;[Drake, above]&lt;/sup&gt;, and {{math|''L'' {{=}} 304}} years&lt;ref name=&quot;Why ET Hasn’t Called&quot;/&gt;
+gives:
+:{{math|''N'' {{=}} 1.5 × 10&lt;sup&gt;−5&lt;/sup&gt; × 10&lt;sup&gt;−9&lt;/sup&gt; × 0.2 × 304 {{=}} 9.1 × 10&lt;sup&gt;−13&lt;/sup&gt;}}
+i.e., suggesting that we are probably alone in this galaxy, and possibly in the observable universe.
+
+On the other hand, with larger values for each of the parameters above, values of {{math|''N''}} can be derived that are greater than 1. The following higher values that have been proposed for each of the parameters:
+:{{math|''R''&lt;sub&gt;∗&lt;/sub&gt; {{=}} 1.5–3 yr&lt;sup&gt;−1&lt;/sup&gt;}},&lt;ref name=Robitaille/&gt; {{math|''f''&lt;sub&gt;p&lt;/sub&gt; {{=}} 1}},&lt;ref name=&quot;bbc.co.uk&quot;/&gt; {{math|''n''&lt;sub&gt;e&lt;/sub&gt; {{=}} 0.2}},&lt;ref name=&quot;W. von Bloh, C.Bounama, M. Cuntz, and S. Franck. 2007 1365&quot;&gt;
+{{cite journal
+ |last1=von Bloh |first1=W.
+ |last2=Bounama |first2=C.
+ |last3=Cuntz |first3=M.
+ |last4=Franck |first4=S.
+ |year=2007
+ |title=The habitability of super-Earths in Gliese 581
+ |journal=[[Astronomy &amp; Astrophysics]]
+ |volume=476 |issue=3 |pages=1365–1371
+ |arxiv=0705.3758
+ |bibcode=2007A&amp;A...476.1365V
+ |doi=10.1051/0004-6361:20077939
+}}&lt;/ref&gt;&lt;ref name=&quot;F. Selsis, J.F. Kasting, B. Levrard, J. Paillet, I. Ribas, and X. Delfosse. 2007 1373&quot;&gt;
+{{cite journal
+ |last1=Selsis |first1=F.
+ |last2=Kasting |first2=J. F.
+ |last3=Levrard |first3=B.
+ |last4=Paillet |first4=J.
+ |last5=Ribas |first5=I.
+ |last6=Delfosse |first6=X.
+ |year=2007
+ |title=Habitable planets around the star Gliese 581?
+ |journal=[[Astronomy &amp; Astrophysics]]
+ |volume=476 |issue=3 |pages=1373–1387
+ |arxiv=0710.5294
+ |bibcode=2007A&amp;A...476.1373S
+ |doi=10.1051/0004-6361:20078091
+|url=https://hal.archives-ouvertes.fr/hal-00182743}}&lt;/ref&gt; {{math|''f''&lt;sub&gt;l&lt;/sub&gt; {{=}} 0.13}},&lt;ref name=&quot;Lineweaver, C. H. &amp; Davis, T. M. 2002 293–304&quot;&gt;
+{{cite journal
+ |last1=Lineweaver |first1=C. H.
+ |last2=Davis |first2=T. M.
+ |year=2002
+ |title=Does the rapid appearance of life on Earth suggest that life is common in the universe?
+ |journal=[[Astrobiology (journal)|Astrobiology]]
+ |volume=2 |issue=3 |pages=293–304
+ |arxiv=astro-ph/0205014
+ |bibcode=2002AsBio...2..293L
+ |doi=10.1089/153110702762027871
+ |pmid=12530239
+}}&lt;/ref&gt; {{math|''f''&lt;sub&gt;i&lt;/sub&gt; {{=}} 1}},&lt;ref name=&quot;acampbell.ukfsn.org&quot;/&gt; {{math|''f''&lt;sub&gt;c&lt;/sub&gt; {{=}} 0.2}}&lt;sup&gt;[Drake, above]&lt;/sup&gt;, and {{math|''L'' {{=}} 10&lt;sup&gt;9&lt;/sup&gt;}} years&lt;ref name=&quot;David Grinspoon 2004&quot;/&gt;
+Use of these parameters gives:
+:{{math|''N'' {{=}} 3 × 1 × 0.2 × 0.13 × 1 × 0.2 × 10&lt;sup&gt;9&lt;/sup&gt; {{=}} 15,600,000}}
+
+[[Monte Carlo method|Monte Carlo]] simulations of estimates of the Drake equation factors based on a stellar and planetary model of the Milky Way have resulted in the number of civilizations varying by a factor of 100.&lt;ref&gt;
+{{cite journal
+ |last1=Forgan |first1=D.
+ |year=2009
+ |title=A numerical testbed for hypotheses of extraterrestrial life and intelligence
+ |journal=[[International Journal of Astrobiology]]
+ |volume=8 |issue=2 |pages=121–131
+ |arxiv=0810.2222
+ |bibcode=2009IJAsB...8..121F
+ |doi=10.1017/S1473550408004321
+}}&lt;/ref&gt;
+
+===Has intelligent life ''ever'' existed?===
+The Drake equation can be modified to determine just how unlikely intelligent life must be, to give the result that Earth has the only intelligent life that has ever arisen, either in our galaxy or the universe as a whole. This simplifies the calculation by removing the lifetime and communication constraints. Since star and planets counts are known, this leaves the only unknown as the odds that a habitable planet ''ever'' develops intelligent life. For Earth to have the only civilization that has ever occurred in the universe, then the odds of any habitable planet ever developing such a civilization must be less than {{val|2.5|e=-24}}. Similarly, for Earth to host the only civilization in our galaxy for all time, the odds of a habitable zone planet ever hosting intelligent life must be less than {{val|1.7|e=-11}} (about 1 in 60 billion). The figure for the universe implies that it is highly unlikely that Earth hosts the only intelligent life that has ever occurred. The figure for our galaxy suggests that other civilizations may have occurred or will likely occur in our galaxy.&lt;ref&gt;{{cite news |url= http://phys.org/news/2016-04-limits-uniqueness.html |title= Are we alone? Setting some limits to our uniqueness |date= 28 April 2016 |publisher= phys.org }}&lt;/ref&gt;&lt;ref&gt;{{cite episode |title= Are We Alone? Galactic Civilization Challenge |series= PBS Space Time |date= 5 October 2016 |network= PBS Digital Studios }}&lt;/ref&gt;&lt;ref&gt;{{cite news |url= https://www.nytimes.com/2016/06/12/opinion/sunday/yes-there-have-been-aliens.html |title= Yes, There Have Been Aliens |author= Adam Frank |date= 10 June 2016 |work=The New York Times}}&lt;/ref&gt;&lt;ref&gt;{{cite journal |title= A New Empirical Constraint on the Prevalence of Technological Species in the Universe |author= A. Frank |author2=W.T. Sullivan III |journal= Astrobiology |volume= 16 |issue= 5 |publicationdate= 13 May 2016 |pages= 359–362 |doi= 10.1089/ast.2015.1418 |date= 22 April 2016 |arxiv= 1510.08837 |bibcode= 2016AsBio..16..359F |pmid=27105054}}&lt;/ref&gt;
+
+==Modifications==
+As many observers have pointed out, the Drake equation is a very simple model that does not include potentially relevant parameters,&lt;ref&gt;
+{{cite journal
+ |last1   = Hetesi
+ |first1  = Z.
+ |last2   = Regaly
+ |first2  = Z.
+ |year    = 2006
+ |title   = A new interpretation of Drake-equation
+ |url     = http://astro.elte.hu/~hetesizs/Hetesi%20Zsolt%20cikkei/new%20interpretation%20fo%20drake%20eq.pdf
+ |journal = [[Journal of the British Interplanetary Society]]
+ |volume  = 59
+ |issue   = 
+ |pages   = 11–14
+ |bibcode = 2006JBIS...59...11H
+ |doi     = 
+}}{{dead link|date=September 2017 |bot=InternetArchiveBot |fix-attempted=yes }}&lt;/ref&gt; and many changes and modifications to the equation have been proposed.  One line of modification, for example, attempts to account for the uncertainty inherent in many of the terms.&lt;ref&gt;
+{{cite journal
+ |last=Maccone |first=C.
+ |year=2010
+ |title=The Statistical Drake Equation
+ |journal=[[Acta Astronautica]]
+ |volume=67 |issue=11–12 |pages=1366–1383
+ |bibcode= 2010AcAau..67.1366M
+ |doi=10.1016/j.actaastro.2010.05.003
+}}&lt;/ref&gt;
+
+Others note that the Drake equation ignores many concepts that might be relevant to the odds of contacting other civilizations.  For example, [[David Brin]] states: &quot;The Drake equation merely speaks of the number of sites at which ETIs spontaneously arise. The equation says nothing directly about the contact cross-section between an ETIS and contemporary human society&quot;.&lt;ref name=&quot;GS&quot;&gt;
+{{cite journal
+ |last=Brin |first=G. D.
+ |year=1983
+ |title=The Great Silence – The Controversy Concerning Extraterrestrial Intelligent Life
+ |journal=[[Quarterly Journal of the Royal Astronomical Society]]
+ |volume=24 |issue=3 |pages=283–309
+ |bibcode=1983QJRAS..24..283B
+}}&lt;/ref&gt;  Because it is the contact cross-section that is of interest to the SETI community, many additional factors and modifications of the Drake equation have been proposed.
+
+;Colonization : It has been proposed to generalize the Drake equation to include additional effects of alien civilizations colonizing other [[star system]]s. Each original site expands with an expansion velocity {{mvar|v}}, and establishes additional sites that survive for a lifetime {{mvar|L}}.  The result is a more complex set of 3 equations.&lt;ref name=&quot;GS&quot;/&gt;
+
+;Reappearance factor : The Drake equation may furthermore be multiplied by ''how many times'' an intelligent civilization may occur on planets where it has happened once. Even if an intelligent civilization reaches the end of its lifetime after, for example, 10,000 years, life may still prevail on the planet for billions of years, permitting the next [[Sociocultural evolution|civilization to evolve]]. Thus, several civilizations may come and go during the lifespan of one and the same planet. Thus, if {{math|''n''&lt;sub&gt;r&lt;/sub&gt;}} is the average number of times a new civilization reappears on the same planet where a previous civilization once has appeared and ended, then the total number of civilizations on such a planet would be {{math|1 + ''n''&lt;sub&gt;r&lt;/sub&gt;}}, which is the actual ''reappearance factor'' added to the equation.
+
+:The factor depends on what generally is the cause of [[civilization extinction]]. If it is generally by temporary uninhabitability, for example a [[nuclear winter]], then {{math|''n''&lt;sub&gt;r&lt;/sub&gt;}} may be relatively high. On the other hand, if it is generally by permanent uninhabitability, such as [[stellar evolution]], then {{math|''n''&lt;sub&gt;r&lt;/sub&gt;}} may be almost zero. In the case of total life extinction, a similar factor may be applicable for {{math|''f''&lt;sub&gt;l&lt;/sub&gt;}}, that is, ''how many times'' life may appear on a planet where it has appeared once.
+
+;METI factor : [[Aleksandr Leonidovich Zaitsev|Alexander Zaitsev]] said that to be in a communicative phase and emit dedicated messages are not the same. For example, humans, although being in a communicative phase, are not a communicative civilization; we do not practise such activities as the purposeful and regular transmission of interstellar messages. For this reason, he suggested introducing the METI factor (messaging to extraterrestrial intelligence) to the classical Drake equation.&lt;ref&gt;
+{{cite web
+ |last=Zaitsev |first=A.
+ |date=May 2005
+ |title=The Drake Equation: Adding a METI Factor
+ |url=http://www.cplire.ru/html/ra&amp;sr/irm/Drake_equation.html
+ |publisher=[[SETI League]]
+ |accessdate=2013-04-20
+}}&lt;/ref&gt; He defined the factor as &quot;the fraction of communicative civilizations with clear and non-paranoid planetary consciousness&quot;, or alternatively expressed, the fraction of communicative civilizations that actually engage in deliberate interstellar transmission.
+
+:The METI factor is somewhat misleading since active, purposeful transmission of messages by a civilization is not required for them to receive a broadcast sent by another that is seeking first contact. It is merely required they have capable and compatible receiver systems operational; however, this is a variable humans cannot accurately estimate.
+
+;Biogenic gases : Astronomer [[Sara Seager]] proposed a revised equation that focuses on the search for planets with biosignature gases.&lt;ref name=&quot;NYT-20161207&quot;&gt;{{cite news |last=Jones |first=Chris |title='The World Sees Me as the One Who Will Find Another Earth' – The star-crossed life of Sara Seager, an astrophysicist obsessed with discovering distant planets. |url=https://www.nytimes.com/2016/12/07/magazine/the-world-sees-me-as-the-one-who-will-find-another-earth.html |date=7 December 2016 |work=[[The New York Times]] |accessdate=8 December 2016 }}&lt;/ref&gt; These gases are produced by living organisms that can accumulate in a planet atmosphere to levels that can be detected with remote space telescopes.&lt;ref name=equation&gt;[http://www.space.com/22648-drake-equation-alien-life-seager.html?cid=51463011558824 The Drake Equation Revisited: Interview with Planet Hunter Sara Seager] Devin Powell, ''Astrobiology Magazine''  4 September 2013.&lt;/ref&gt;
+
+:The Seager equation looks like this:&lt;ref name=equation /&gt;{{refn|group=lower-alpha|The rendering of the equation here is slightly modified for clarity of presentation from the rendering in the cited source.&lt;ref name=equation /&gt;}}
+::&lt;math display=block&gt;N = N_* \cdot F_\mathrm{Q} \cdot F_\mathrm{HZ} \cdot F_\mathrm{O} \cdot F_\mathrm{L} \cdot F_\mathrm{S}&lt;/math&gt;
+:where:
+
+::{{math|''N''}} = the number of planets with detectable signs of life
+::{{math|''N''&lt;sub&gt;∗&lt;/sub&gt;}} = the number of stars observed
+::{{math|''F''&lt;sub&gt;Q&lt;/sub&gt;}} = the fraction of stars that are quiet
+::{{math|''F''&lt;sub&gt;HZ&lt;/sub&gt;}} = the fraction of stars with rocky planets in the habitable zone
+::{{math|''F''&lt;sub&gt;O&lt;/sub&gt;}} = the fraction of those planets that can be observed
+::{{math|''F''&lt;sub&gt;L&lt;/sub&gt;}} = the fraction that have life
+::{{math|''F''&lt;sub&gt;S&lt;/sub&gt;}} = the fraction on which life produces a detectable signature gas
+
+Seager stresses, “We’re not throwing out the Drake Equation, which is really a different topic,” explaining, “Since Drake came up with the equation, we have discovered thousands of exoplanets. We as a community have had our views revolutionized as to what could possibly be out there. And now we have a real question on our hands, one that’s not related to intelligent life: Can we detect any signs of life in any way in the very near future?”&lt;ref&gt;{{cite web|url=http://io9.com/what-a-brand-new-equation-reveals-about-our-odds-of-fin-531575395|title=A New Equation Reveals Our Exact Odds of Finding Alien Life|publisher=[[io9]]}}&lt;/ref&gt;
+
+==Criticism==
+Criticism of the Drake equation follows mostly from the observation that several terms in the equation are largely or entirely based on conjecture.  Star formation rates are well-known, and the incidence of planets has a sound theoretical and observational basis, but the other terms in the equation become very speculative. The uncertainties revolve around our understanding of the evolution of life, intelligence, and civilization, not physics.  No statistical estimates are possible for some of the parameters, where only one example is known.  The net result is that the equation cannot be used to draw firm conclusions of any kind, and the resulting margin of error is huge, far beyond what some consider acceptable or meaningful.&lt;ref&gt;
+{{cite web
+ |last=Dvorsky |first=G.
+ |date=31 May 2007
+ |title=The Drake Equation is obsolete
+ |url=http://www.sentientdevelopments.com/2007/05/drake-equation-is-obsolete.html
+ |work=Sentient Developments
+ |accessdate=2013-08-21
+}}&lt;/ref&gt;&lt;ref&gt;{{Cite web|url=https://www.space.com/42739-stop-using-the-drake-equation.html|title=Alien Hunters, Stop Using the Drake Equation|last=Sutter|first=Paul|date=2018-12-27|website=Space.com|language=en|access-date=2019-02-18}}&lt;/ref&gt;
+
+One reply to such criticisms&lt;ref&gt;
+{{Cite journal
+ |last=Tarter |first=J.
+ |date=May–June 2006
+ |title=The Cosmic Haystack Is Large
+ |url=http://www.csicop.org/si/show/cosmic_haystack_is_large/
+ |journal=[[Skeptical Inquirer]]
+ |volume=30 |issue=3
+ |accessdate=2013-08-21
+}}&lt;/ref&gt; is that even though the Drake equation currently involves speculation about unmeasured parameters, it was intended as a way to stimulate dialogue on these topics. Then the focus becomes how to proceed experimentally. Indeed, Drake originally formulated the equation merely as an agenda for discussion at the Green Bank conference.&lt;ref&gt;
+ {{cite web
+ |last=Alexander |first=A.
+ |title=The Search for Extraterrestrial Intelligence: A Short History – Part 7: The Birth of the Drake Equation
+ |url=http://www.planetary.org/html/UPDATES/seti/history/History07.htm
+ |publisher=[[The Planetary Society]]
+ |archiveurl=https://web.archive.org/web/20050306072552/http://www.planetary.org/html/UPDATES/seti/history/History07.htm
+ |archivedate=2005-03-06
+}}&lt;/ref&gt;
+
+===Fermi paradox===
+{{main|Fermi paradox}}
+The pessimists' most telling argument in the SETI debate stems not from theory or conjecture but from an actual observation: the presumed lack of extraterrestrial contact.&lt;ref name=&quot;history&quot;/&gt; A civilization lasting for tens of millions of years might be able to travel anywhere in the galaxy, even at the slow speeds foreseeable with our own kind of technology.  Furthermore, no confirmed signs of intelligence elsewhere have been recognized as such, either in our galaxy or in the [[observable universe]] of 2&amp;nbsp;[[trillion (short scale)|trillion]] galaxies.&lt;ref name=&quot;Conselice&quot;&gt;{{cite journal|title=The Evolution of Galaxy Number Density at {{math|''z'' &lt; 8}} and its Implications|author=Christopher J. Conselice|journal=The Astrophysical Journal|volume=830|issue=2|year=2016|arxiv=1607.03909|bibcode= 2016ApJ...830...83C|doi=10.3847/0004-637X/830/2/83|display-authors=etal|pages=83}}&lt;/ref&gt;&lt;ref name=&quot;NYT-20161017&quot;&gt;{{cite news |last=Fountain |first=Henry |title=Two Trillion Galaxies, at the Very Least |url=https://www.nytimes.com/2016/10/18/science/two-trillion-galaxies-at-the-very-least.html |date=17 October 2016 |work=[[The New York Times]] |accessdate=17 October 2016 }}&lt;/ref&gt; According to this line of thinking, the tendency to fill up all available territory seems to be a universal trait of living things, so the Earth should have already been colonized, or at least visited, but no evidence of this exists.  Hence Fermi's question &quot;Where is everybody?&quot;.&lt;ref name=&quot;OSTI-19850301&quot;&gt;
+{{cite report
+ |last=Jones |first=E. M.
+ |date=1 March 1985
+ |title=&quot;Where is everybody?&quot; An account of Fermi's question
+ |url=http://www.osti.gov/accomplishments/documents/fullText/ACC0055.pdf
+ |publisher=[[Los Alamos National Laboratory]]
+ |accessdate=2013-08-21
+ |bibcode=1985STIN...8530988J
+ |osti=5746675
+ |osti-access=free
+ |doi=10.2172/5746675
+ |doi-access=free
+}}&lt;/ref&gt;&lt;ref&gt;
+{{Cite news
+ |last=Krauthammer |first=C.
+ |date=29 December 2011
+ |title=Are we alone in the Universe?
+ |url=https://www.washingtonpost.com/opinions/are-we-alone-in-the-universe/2011/12/29/gIQA2wSOPP_story.html
+ |work=[[The Washington Post]]
+ |accessdate=2013-08-21
+}}&lt;/ref&gt;
+
+A large number of explanations have been proposed to explain this lack of contact; a book published in 2015 elaborated on 75 different explanations.&lt;ref&gt;
+{{cite book
+ |last=Webb |first=S.
+ |year=2015
+ |title=If the Universe Is Teeming with Aliens ... WHERE IS EVERYBODY?: Seventy-Five Solutions to the Fermi Paradox and the Problem of Extraterrestrial Life
+ |url=https://books.google.com/books?id=QWKyrQEACAAJ&amp;dq=Universe-Teeming-Aliens-WHERE-EVERYBODY
+ |publisher=Springer International Publishing
+ |isbn=978-3319132358
+}}&lt;/ref&gt; In terms of the Drake Equation, the explanations can be divided into three classes:
+
+*Few intelligent civilizations ever arise.  This is an argument that at least one of the first few terms, {{math|''R''&lt;sub&gt;∗&lt;/sub&gt; · ''f''&lt;sub&gt;p&lt;/sub&gt; · ''n''&lt;sub&gt;e&lt;/sub&gt; · ''f''&lt;sub&gt;l&lt;/sub&gt; · ''f''&lt;sub&gt;i&lt;/sub&gt;}}, has a low value.  The most common suspect is {{math|''f''&lt;sub&gt;i&lt;/sub&gt;}}, but explanations such as the rare Earth hypothesis argue that {{math|''n''&lt;sub&gt;e&lt;/sub&gt;}} is the small term.
+*Intelligent civilizations exist, but we see no evidence, meaning {{math|''f''&lt;sub&gt;c&lt;/sub&gt;}} is small.  Typical arguments include [[Fermi paradox#Intelligent civilizations are too far apart in space or time|that civilizations are too far apart]], [[Fermi paradox#It is too expensive to spread physically throughout the galaxy|it is too expensive to spread throughout the galaxy]], [[Fermi paradox#Civilizations broadcast detectable radio signals only for a brief period of time|civilizations broadcast signals for only a brief period of time]], [[Fermi paradox#It is dangerous to communicate|it is dangerous to communicate]], and many others.
+*The lifetime of intelligent, communicative civilizations is short, meaning the value of {{mvar|L}} is small. Drake suggested that a large number of extraterrestrial civilizations would form, and he further speculated that the lack of evidence of such civilizations may be because technological civilizations tend to disappear rather quickly. Typical explanations include [[Fermi paradox#It is the nature of intelligent life to destroy itself|it is the nature of intelligent life to destroy itself]], [[Fermi paradox#It is the nature of intelligent life to destroy others|it is the nature of intelligent life to destroy others]], [[Fermi paradox#Periodic extinction by natural events|they tend to be destroyed by natural events]], and others.
+
+These lines of reasoning lead to the [[Great Filter]] hypothesis,&lt;ref&gt;
+{{cite web
+ |last=Hanson |first=R.
+ |date=15 September 1998
+ |title=The Great Filter — Are We Almost Past It?
+ |url=http://hanson.gmu.edu/greatfilter.html
+ |accessdate=2013-08-21
+}}&lt;/ref&gt; which states that since there are no observed extraterrestrial civilizations, despite the vast number of stars, then some step in the process must be acting as a filter to reduce the final value. According to this view, either it is very difficult for intelligent life to arise, or the lifetime of such civilizations, or the period of time they reveal their existence, must be relatively short.
+
+==In fiction and popular culture==
+The equation was cited by [[Gene Roddenberry]] as supporting the multiplicity of inhabited planets shown on ''[[Star Trek]]'', the television series he created. However, Roddenberry did not have the equation with him, and he was forced to &quot;invent&quot; it for his original proposal.&lt;ref&gt;''The Making of Star Trek'' by Stephen E. Whitfield and Gene Roddenberry, New York: Ballantine Books, 1968&lt;/ref&gt; The invented equation created by Roddenberry is:
+::&lt;math&gt;Ff^2 (MgE)-C^1 Ri^1 \cdot M=L/So &lt;/math&gt;
+However, a number raised to the first power is merely the number itself.
+
+==See also==
+* {{annotated link|Astrobiology}}
+* {{annotated link|Fermi paradox}}
+* {{annotated link|Goldilocks principle}}
+* {{annotated link|Kardashev scale}}
+* {{annotated link|Planetary habitability}}
+* {{annotated link|Ufology}}
+* {{annotated link|Lincoln index}}
+* ''[[The Search for Life: The Drake Equation]]'', BBC documentary
+
+==Notes==
+{{notelist}}
+
+==References==
+{{reflist|38em}}
+
+== Further reading ==
+* {{cite book | first = Oliver | last = Morton | editor=Graham Formelo |chapter=A Mirror in the Sky | title = It Must Be Beautiful | publisher = Granta Books | year = 2002 | isbn = 1-86207-555-7}}
+* {{cite book | first = Robert T. | last = Rood |author2=James S. Trefil | title = Are We Alone? The Possibility of Extraterrestrial Civilizations | publisher = Scribner | location = New York | year = 1981 | isbn = 0684178427}} 
+* {{Cite book |editor1-link=Douglas Vakoch |editor1-first=Douglas A. |editor1-last=Vakoch |editor2-first=Matthew F. |editor2-last=Dowd |year=2015 |title=The Drake Equation: Estimating the Prevalence of Extraterrestrial Life Through the Ages |url=https://books.google.com/books?id=jcnSCQAAQBAJ&amp;printsec=frontcover#v=twopage&amp;q&amp;f=false |location=Cambridge, UK |publisher=Cambridge University Press |isbn=978-1-10-707365-4}}
+
+==External links==
+{{wiktionary|Drake equation}}
+*[http://spacegeek.org/calc/ Interactive Drake Equation Calculator]
+*[https://web.archive.org/web/20100411202244/http://www.cosmosmagazine.com/features/online/3384/qa-with-frank-drake &quot;Only a matter of time, says Frank Drake&quot;]. A Q&amp;A with Frank Drake in February 2010.
+* {{cite news | url = https://www.wired.com/wired/archive/12.12/life.html | title = The E.T. Equation, Recalculated | author = Frank Drake |date=December 2004 | work = [[Wired (magazine)|Wired]]| author-link = Frank Drake }}
+* [https://www.pbs.org/wgbh/nova/origins/drake.html Macromedia Flash page allowing the user to modify Drake's values] from [[Public Broadcasting Service|PBS]] [[Nova (American TV series)|Nova]]
+*[http://www.astronomycast.com/solar-system/episode-23-the-drake-equation/ The Drake Equation] ''[[Astronomy Cast]]'' episode #23, includes full transcript.
+*[http://www.area52online.com/sections/simulations/drake/guessinggame.htm Animated simulation of the Drake equation.] 
+*[http://www.bbc.co.uk/programmes/p009rtr0 The Alien Equation] 22 September 2010, BBC Radio program ''Discovery''.
+*[https://www.cambridge.org/core/services/aop-cambridge-core/content/view/S1473550413000207 &quot;Reflections on the Equation&quot;] (PDF), by Frank Drake, 2013
+
+{{Astrobiology}}
+{{Extraterrestrial life}}
+{{Interstellar messages}}
+{{Molecules detected in outer space}}
+
+[[Category:1961 introductions]]
+[[Category:Astrobiology]]
+[[Category:Astronomical controversies]]
+[[Category:Astronomical hypotheses]]
+[[Category:Equations]]
+[[Category:Extraterrestrial life]]
+[[Category:Fermi paradox]]
+[[Category:Interstellar messages]]
+[[Category:Scientific controversies]]
+[[Category:Search for extraterrestrial intelligence]]</text>
+      <sha1>4j96prksm9dsjw3ixd7joxrzlup0gv4</sha1>
+    </revision>
+  </page>

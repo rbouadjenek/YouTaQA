@@ -1,0 +1,89 @@
+  <page>
+    <title>Cotangent space</title>
+    <ns>0</ns>
+    <id>6620</id>
+    <revision>
+      <id>914675477</id>
+      <parentid>911572856</parentid>
+      <timestamp>2019-09-08T19:45:58Z</timestamp>
+      <contributor>
+        <ip>86.121.1.168</ip>
+      </contributor>
+      <comment>space indentation fix</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{Use American English|date=March 2019}}{{Short description|Dual space to the tangent space in differential geometry}}
+In [[differential geometry]], one can attach to every point &lt;math&gt;x&lt;/math&gt; of a [[smooth manifold|smooth (or differentiable) manifold]], &lt;math&gt;\mathcal M&lt;/math&gt;, a [[vector space]] called the '''cotangent space''' at ''&lt;math&gt;x&lt;/math&gt;''. Typically, the cotangent space, &lt;math&gt;T^*_x\!\mathcal M&lt;/math&gt; is defined as the [[dual space]] of the [[tangent space]] at ''&lt;math&gt;x&lt;/math&gt;'', &lt;math&gt;T_x\mathcal M&lt;/math&gt;, although there are more direct definitions (see below). The elements of the cotangent space are called '''cotangent vectors''' or '''tangent covectors'''.
+
+==Properties==
+All cotangent spaces at points on a connected manifold have the same [[dimension of a vector space|dimension]], equal to the dimension of the manifold. All the cotangent spaces of a manifold can be &quot;glued together&quot; (i.e. unioned and endowed with a topology) to form a new differentiable manifold of twice the dimension, the [[cotangent bundle]] of the manifold.
+
+The tangent space and the cotangent space at a point are both real vector spaces of the same dimension and therefore [[isomorphic]] to each other via many possible isomorphisms. The introduction of a [[Riemannian metric]] or a [[symplectic form]] gives rise to a [[natural isomorphism]] between the tangent space and the cotangent space at a point, associating to any tangent covector a canonical tangent vector.
+
+==Formal definitions==
+
+===Definition as linear functionals===
+
+Let ''&lt;math&gt;\mathcal M&lt;/math&gt;'' be a smooth manifold and let ''&lt;math&gt;x&lt;/math&gt;'' be a point in ''&lt;math&gt;\mathcal M&lt;/math&gt;''. Let ''&lt;math&gt;T_x\mathcal M&lt;/math&gt;'' be the [[tangent space]] at ''&lt;math&gt;x&lt;/math&gt;''. Then the cotangent space at ''x'' is defined as the [[dual space]] of ''&lt;math&gt;T_x\mathcal M&lt;/math&gt;'':
+
+:&lt;math&gt;T^*_x\!\mathcal M = (T_x \mathcal M)^*&lt;/math&gt;
+
+Concretely, elements of the cotangent space are [[linear functional]]s on ''&lt;math&gt;T_x\mathcal M&lt;/math&gt;''. That is, every element &lt;math&gt;\alpha\in T^*_x\mathcal M&lt;/math&gt; is a [[linear map]]
+:&lt;math&gt;\alpha:T_x\mathcal M \rightarrow F&lt;/math&gt;
+
+where &lt;math&gt;F&lt;/math&gt; is the underlying [[field (mathematics)|field]] of the vector space being considered, for example, the field of [[real number]]s. The elements of &lt;math&gt;T^*_x\!\mathcal M&lt;/math&gt; are called cotangent vectors.
+
+===Alternative definition===
+
+In some cases, one might like to have a direct definition of the cotangent space without reference to the tangent space. Such a definition can be formulated in terms of [[equivalence class]]es of smooth functions on ''&lt;math&gt;\mathcal M&lt;/math&gt;''. Informally, we will say that two smooth functions ''f'' and ''g'' are equivalent at a point ''&lt;math&gt;x&lt;/math&gt;'' if they have the same first-order behavior near ''&lt;math&gt;x&lt;/math&gt;'', analogous to their linear Taylor polynomials; two functions ''f'' and ''g'' have the same first order behavior near ''&lt;math&gt;x&lt;/math&gt;'' if and only if the derivative of the function ''f''-''g'' vanishes at ''&lt;math&gt;x&lt;/math&gt;''. The cotangent space will then consist of all the possible first-order behaviors of a function near ''&lt;math&gt;x&lt;/math&gt;''.
+
+Let ''M'' be a smooth manifold and let ''x'' be a point in ''&lt;math&gt;\mathcal M&lt;/math&gt;''. Let &lt;math&gt;I_x&lt;/math&gt;be the [[ideal (ring theory)|ideal]] of all functions in &lt;math&gt;C^\infty\! (\mathcal M)&lt;/math&gt; vanishing at ''&lt;math&gt;x&lt;/math&gt;'', and let &lt;math&gt;I_x^2&lt;/math&gt; be the set of functions of the form &lt;math&gt;\sum_i f_i g_i\,&lt;/math&gt;, where &lt;math&gt;f_i,g_i\in I_x&lt;/math&gt;. Then ''&lt;math&gt;I_x&lt;/math&gt;'' and &lt;math&gt;I_x^2&lt;/math&gt; are real vector spaces and the cotangent space is defined as the [[Quotient space (linear algebra)|quotient space]] &lt;math&gt;T^*_x\!\mathcal M = I_x/I^2_x&lt;/math&gt;.
+
+This formulation is analogous to the construction of the cotangent space to define the [[Zariski tangent space]] in algebraic geometry. The construction also generalizes to [[locally ringed space]]s.
+
+==The differential of a function==
+
+Let ''M'' be a smooth manifold and let ''f'' ∈ C&lt;sup&gt;∞&lt;/sup&gt;(''M'') be a [[smooth function]]. The differential of ''f'' at a point ''x'' is the map
+:d''f''&lt;sub&gt;''x''&lt;/sub&gt;(''X''&lt;sub&gt;''x''&lt;/sub&gt;) = ''X''&lt;sub&gt;''x''&lt;/sub&gt;(''f'')
+where ''X''&lt;sub&gt;''x''&lt;/sub&gt; is a [[Differential geometry of curves|tangent vector]] at ''x'', thought of as a derivation. That is &lt;math&gt;X(f)=\mathcal{L}_Xf&lt;/math&gt; is the [[Lie derivative]] of ''f'' in the direction ''X'', and one has d''f''(''X'')=''X''(''f'').  Equivalently, we can think of tangent vectors as tangents to curves, and write
+:d''f''&lt;sub&gt;''x''&lt;/sub&gt;(&amp;gamma;&amp;prime;(0)) = (''f'' o &amp;gamma;)&amp;prime;(0)
+In either case, d''f''&lt;sub&gt;''x''&lt;/sub&gt; is a linear map on ''T''&lt;sub&gt;''x''&lt;/sub&gt;''M'' and hence it is a tangent covector at ''x''.
+
+We can then define the differential map d : C&lt;sup&gt;∞&lt;/sup&gt;(''M'') → ''T''&lt;sub&gt;''x''&lt;/sub&gt;&lt;sup&gt;*&lt;/sup&gt;''M'' at a point ''x'' as the map which sends ''f'' to d''f''&lt;sub&gt;''x''&lt;/sub&gt;. Properties of the differential map include:
+
+# d is a linear map: d(''af'' + ''bg'') = ''a'' d''f'' + ''b'' d''g'' for constants ''a'' and ''b'',
+# d(''fg'')&lt;sub&gt;''x''&lt;/sub&gt; = ''f''(''x'')d''g''&lt;sub&gt;''x''&lt;/sub&gt; + ''g''(''x'')d''f''&lt;sub&gt;''x''&lt;/sub&gt;,
+
+The differential map provides the link between the two alternate definitions of the cotangent space given above. Given a function ''f'' ∈ ''I''&lt;sub&gt;''x''&lt;/sub&gt; (a smooth function vanishing at ''x'') we can form the linear functional d''f''&lt;sub&gt;''x''&lt;/sub&gt; as above. Since the map d restricts to 0 on ''I''&lt;sub&gt;''x''&lt;/sub&gt;&lt;sup&gt;2&lt;/sup&gt; (the reader should verify this), d descends to a map from ''I''&lt;sub&gt;''x''&lt;/sub&gt; / ''I''&lt;sub&gt;''x''&lt;/sub&gt;&lt;sup&gt;2&lt;/sup&gt; to the dual of the tangent space, (''T''&lt;sub&gt;''x''&lt;/sub&gt;''M'')&lt;sup&gt;*&lt;/sup&gt;. One can show that this map is an isomorphism, establishing the equivalence of the two definitions.
+
+==The pullback of a smooth map==
+
+Just as every differentiable map ''f'' : ''M'' → ''N'' between manifolds induces a linear map (called the ''pushforward'' or ''derivative'') between the tangent spaces
+:&lt;math&gt;f_{*}^{}\colon T_x M \to T_{f(x)} N&lt;/math&gt;
+every such map induces a linear map (called the ''[[pullback (differential geometry)|pullback]]'') between the cotangent spaces, only this time in the reverse direction:
+:&lt;math&gt;f^{*}\colon T_{f(x)}^{*} N \to T_{x}^{*} M&lt;/math&gt;
+The pullback is naturally defined as the dual (or transpose) of the [[pushforward (differential)|pushforward]]. Unraveling the definition, this means the following:
+:&lt;math&gt;(f^{*}\theta)(X_x) = \theta(f_{*}^{}X_x)&lt;/math&gt;
+where θ ∈ ''T''&lt;sub&gt;''f''(''x'')&lt;/sub&gt;&lt;sup&gt;*&lt;/sup&gt;''N'' and ''X''&lt;sub&gt;''x''&lt;/sub&gt; ∈ ''T''&lt;sub&gt;''x''&lt;/sub&gt;''M''. Note carefully where everything lives.
+
+If we define tangent covectors in terms of equivalence classes of smooth maps vanishing at a point then the definition of the pullback is even more straightforward. Let ''g'' be a smooth function on ''N'' vanishing at ''f''(''x''). Then the pullback of the covector determined by ''g'' (denoted d''g'') is given by
+:&lt;math&gt;f^{*}\mathrm dg = \mathrm d(g \circ f).&lt;/math&gt;
+That is, it is the equivalence class of functions on ''M'' vanishing at ''x'' determined by ''g'' o ''f''.
+
+==Exterior powers==
+
+The ''k''-th [[exterior power]] of the cotangent space, denoted Λ&lt;sup&gt;''k''&lt;/sup&gt;(''T''&lt;sub&gt;''x''&lt;/sub&gt;&lt;sup&gt;*&lt;/sup&gt;''M''), is another important object in differential geometry. Vectors in the ''k''th exterior power, or more precisely sections of the ''k''-th exterior power of the [[cotangent bundle]], are called [[differential form|differential ''k''-forms]]. They can be thought of as alternating, [[multilinear map]]s on ''k'' tangent vectors. 
+For this reason, tangent covectors are frequently called ''[[one-form]]s''.
+
+==References==
+* {{Citation | last1=Abraham | first1=Ralph H. | author1-link=Ralph Abraham (mathematician) | last2=Marsden | first2=Jerrold E. | author2-link=Jerrold E. Marsden | title=Foundations of mechanics | publisher=Benjamin-Cummings | location=London | isbn=978-0-8053-0102-1 | year=1978}}
+* {{Citation | last1=Jost | first1=Jürgen | title=Riemannian Geometry and Geometric Analysis | publisher=[[Springer-Verlag]] | location=Berlin, New York | edition=4th | isbn=978-3-540-25907-7 | year=2005}}
+* {{Citation | last1=Lee | first1=John M. | title=Introduction to smooth manifolds | publisher=[[Springer-Verlag]] | location=Berlin, New York | series=Springer Graduate Texts in Mathematics | isbn=978-0-387-95448-6 | year=2003 | volume=218}}
+* {{Citation | last1=Misner | first1=Charles W. | author1-link=Charles W. Misner | last2=Thorne | first2=Kip | author2-link=Kip Thorne | last3=Wheeler | first3=John Archibald | author3-link=John Archibald Wheeler | title=[[Gravitation (book)|Gravitation]] | publisher=W. H. Freeman | isbn=978-0-7167-0344-0 | year=1973}}
+
+{{DEFAULTSORT:Cotangent Space}}
+[[Category:Differential topology]]
+[[Category:Tensors]]</text>
+      <sha1>cy5vnljvjc3se6omapqtpwvq8vkes9b</sha1>
+    </revision>
+  </page>

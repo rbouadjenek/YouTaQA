@@ -1,0 +1,280 @@
+  <page>
+    <title>Carmichael number</title>
+    <ns>0</ns>
+    <id>7723</id>
+    <revision>
+      <id>943036663</id>
+      <parentid>942944465</parentid>
+      <timestamp>2020-02-28T12:44:04Z</timestamp>
+      <contributor>
+        <username>Jobu0101</username>
+        <id>3243618</id>
+      </contributor>
+      <minor />
+      <comment>/* Korselt's criterion */</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">In [[number theory]], a '''Carmichael number''' is a [[composite number]] &lt;math&gt;n&lt;/math&gt; which satisfies the [[modular arithmetic]] congruence relation:
+:&lt;math&gt;b^{n-1}\equiv 1\pmod{n}&lt;/math&gt;
+for all integers &lt;math&gt;b&lt;/math&gt; which are [[relatively prime]] to &lt;math&gt;n&lt;/math&gt;.&lt;ref&gt;
+{{cite book | last=Riesel | first=Hans | title=Prime Numbers and Computer Methods for Factorization 
+| publisher=Birkhäuser | location=Boston, MA | edition=second | year=1994 | isbn=978-0-8176-3743-9 
+| zbl=0821.11001 | series=Progress in Mathematics | volume=126 |author-link=Hans Riesel }}&lt;/ref&gt;
+They are named for [[Robert Daniel Carmichael|Robert Carmichael]].
+The Carmichael numbers are the subset ''K''&lt;sub&gt;1&lt;/sub&gt; of the [[Knödel number]]s.
+
+Equivalently, a Carmichael number is a composite number &lt;math&gt;n&lt;/math&gt; for which
+:&lt;math&gt;b^n\equiv b\pmod{n}&lt;/math&gt;
+for all integers &lt;math&gt;b&lt;/math&gt;.&lt;ref&gt;
+{{cite book |last1=Crandall|first1=Richard |last2=Pomerance |first2=Carl |date=2005 |title=Prime Numbers: A Computational Perspective |edition=second |location=New York |publisher=Springer |page=133 |isbn=978-0387-25282-7 |author-link1=Richard Crandall |author-link2=Carl Pomerance }}&lt;/ref&gt;
+
+==Overview==
+[[Fermat's little theorem]] states that if ''p'' is a [[prime number]], then for any [[integer]] ''b'', the number ''b''{{i sup|''p''}}&amp;nbsp;&amp;minus;&amp;nbsp;''b'' is an integer multiple of ''p''.  Carmichael numbers are composite numbers which have this property.  Carmichael numbers are also called [[Fermat pseudoprime]]s or '''absolute Fermat pseudoprimes'''. A Carmichael number will pass a [[Fermat primality test]] to every base ''b'' relatively prime to the number, even though it is not actually prime.
+This makes tests based on Fermat's Little Theorem less effective than [[strong pseudoprime|strong probable prime]] tests such as the [[Baillie–PSW primality test]] and the [[Miller–Rabin primality test]].
+
+However, no Carmichael number is either an [[Euler–Jacobi pseudoprime]] or a [[strong pseudoprime]] to every base relatively prime to it&lt;ref&gt;
+{{cite journal |author=D. H. Lehmer |author-link=Derrick Henry Lehmer |title=Strong Carmichael numbers |journal=J. Austral. Math. Soc. |date=1976 |volume=21 |issue=4 |pages=508–510 |url=http://journals.cambridge.org/article_S1446788700019364 |doi=10.1017/s1446788700019364}} Lehmer proved that no Carmichael number is an Euler-Jacobi pseudoprime to every base relatively prime to it. He used the term ''strong pseudoprime'', but the terminology has changed since then. Strong pseudoprimes are a subset of Euler-Jacobi pseudoprimes. Therefore, no Carmichael number is a strong pseudoprime to every base relatively prime to it.&lt;/ref&gt;
+so, in theory, either an Euler or a strong probable prime test could prove that a Carmichael number is, in fact, composite.
+
+Arnault&lt;ref name=&quot;Arnault397Digit&quot;&gt;
+{{cite journal|title=Constructing Carmichael Numbers Which Are Strong Pseudoprimes to Several Bases|journal=Journal of Symbolic Computation|date=August 1995|volume=20|issue=2|pages=151–161
+|author=F. Arnault|doi=10.1006/jsco.1995.1042}}&lt;/ref&gt;
+gives a 397-digit Carmichael number &lt;math&gt;N&lt;/math&gt; that is a ''strong'' pseudoprime to all ''prime'' bases less than 307:
+:&lt;math&gt;N =  p \cdot (313(p - 1) + 1) \cdot (353(p - 1) + 1 )&lt;/math&gt;
+where
+:&lt;math&gt;p = &lt;/math&gt;29674495668685510550154174642905332730771991799853043350995075531276838753171770199594238596428121188033664754218345562493168782883&lt;br /&gt;
+is a 131-digit prime. &lt;math&gt;p&lt;/math&gt; is the smallest prime factor of &lt;math&gt;N&lt;/math&gt;, so this Carmichael number is also a (not necessarily strong) pseudoprime to all bases less than &lt;math&gt;p&lt;/math&gt;.
+
+As numbers become larger, Carmichael numbers become increasingly rare. For example, there are 20,138,200 Carmichael numbers between 1 and 10&lt;sup&gt;21&lt;/sup&gt; (approximately one in 50 trillion (5·10&lt;sup&gt;13&lt;/sup&gt;) numbers).&lt;ref name=&quot;Pinch2007&quot;&gt;
+{{cite conference |url=http://tucs.fi/publications/attachment.php?fname=G46.pdf
+ |title=The Carmichael numbers up to 10&lt;sup&gt;21&lt;/sup&gt; |last=Pinch |first=Richard |date=December 2007
+ |editor=Anne-Maria Ernvall-Hytönen |volume=46
+ |publisher=Turku Centre for Computer Science |pages=129–131 |location=Turku, Finland
+ |conference=Proceedings of Conference on Algorithmic Number Theory
+ |access-date=2017-06-26}}&lt;/ref&gt;
+
+===Korselt's criterion===
+An alternative and equivalent definition of Carmichael numbers is given by '''Korselt's criterion'''.
+
+:'''Theorem''' ([[Alwin Korselt|A. Korselt]] 1899): A positive composite integer &lt;math&gt;n&lt;/math&gt; is a Carmichael number if and only if &lt;math&gt;n&lt;/math&gt; is [[square-free integer|square-free]], and for all [[prime divisor]]s &lt;math&gt;p&lt;/math&gt; of &lt;math&gt;n&lt;/math&gt;, it is true that &lt;math&gt;p - 1 \mid n - 1&lt;/math&gt;.
+
+It follows from this theorem that all Carmichael numbers are [[odd number|odd]], since any even composite number that is square-free (and hence has only one prime factor of two) will have at least one odd prime factor, and thus &lt;math&gt;p - 1  \mid n - 1&lt;/math&gt; results in an even dividing an odd, a contradiction. (The oddness of Carmichael numbers also follows from the fact that &lt;math&gt;-1&lt;/math&gt; is a [[Fermat primality test|Fermat witness]] for any even composite number.)
+From the criterion it also follows that Carmichael numbers are [[Cyclic number (group theory)|cyclic]].&lt;ref&gt;[http://www.numericana.com/data/crump.htm Carmichael Multiples of Odd Cyclic Numbers] &quot;Any divisor of a Carmichael number must be an odd cyclic number&quot;&lt;/ref&gt;&lt;ref&gt;Proof sketch: If &lt;math&gt;n&lt;/math&gt; is square-free but not cyclic, &lt;math&gt;p_i \mid p_j - 1&lt;/math&gt; for two prime factors &lt;math&gt;p_i&lt;/math&gt; and &lt;math&gt;p_j&lt;/math&gt; of &lt;math&gt;n&lt;/math&gt;. But if &lt;math&gt;n&lt;/math&gt; satisfies Korselt then &lt;math&gt;p_j - 1  \mid n - 1&lt;/math&gt;, so by transitivity of the &quot;divides&quot; relation &lt;math&gt;p_i  \mid n - 1&lt;/math&gt;. But &lt;math&gt;p_i&lt;/math&gt; is also a factor of &lt;math&gt;n&lt;/math&gt;, a contradiction.&lt;/ref&gt; Additionally, it follows that there are no Carmichael numbers with exactly two prime divisors.
+
+==Discovery==
+Korselt was the first who observed the basic properties of Carmichael numbers, but he did not give any examples. In 1910, Carmichael&lt;ref name=&quot;Carmichael1910&quot;&gt;{{cite journal |author=R. D. Carmichael|title=Note on a new number theory function |journal=Bulletin of the American Mathematical Society |volume=16 |issue=5|year=1910 |pages=232–238 |url=http://www.ams.org/journals/bull/1910-16-05/home.html |doi=10.1090/s0002-9904-1910-01892-9}}&lt;/ref&gt; found the first and smallest such number, 561, which explains the name &quot;Carmichael number&quot;.
+
+[[File:Vaclav Simerka.jpg|thumb|[[Václav Šimerka]] listed the first seven Carmichael numbers]]
+That 561 is a Carmichael number can be seen with Korselt's criterion. Indeed, &lt;math&gt;561 = 3 \cdot 11 \cdot 17&lt;/math&gt; is square-free and &lt;math&gt;2 \mid 560&lt;/math&gt;, &lt;math&gt;10 \mid 560&lt;/math&gt; and &lt;math&gt;16 \mid 560&lt;/math&gt;.
+
+The next six Carmichael numbers are {{OEIS|id=A002997}}:
+:&lt;math&gt;1105 = 5 \cdot 13 \cdot 17 \qquad (4 \mid 1104;\quad 12 \mid 1104;\quad 16 \mid 1104)&lt;/math&gt;
+:&lt;math&gt;1729 = 7 \cdot 13 \cdot 19 \qquad (6 \mid 1728;\quad 12 \mid 1728;\quad 18 \mid 1728)&lt;/math&gt;
+:&lt;math&gt;2465 = 5 \cdot 17 \cdot 29 \qquad (4 \mid 2464;\quad 16 \mid 2464;\quad 28 \mid 2464)&lt;/math&gt;
+:&lt;math&gt;2821 = 7 \cdot 13 \cdot 31 \qquad (6 \mid 2820;\quad 12 \mid 2820;\quad 30 \mid 2820)&lt;/math&gt;
+:&lt;math&gt;6601 = 7 \cdot 23 \cdot 41 \qquad (6 \mid 6600;\quad 22 \mid 6600;\quad 40 \mid 6600)&lt;/math&gt;
+:&lt;math&gt;8911 = 7 \cdot 19 \cdot 67 \qquad (6 \mid 8910;\quad 18 \mid 8910;\quad 66 \mid 8910).&lt;/math&gt;
+
+These first seven Carmichael numbers, from 561 to 8911, were all found by the Czech mathematician [[Václav Šimerka]] in 1885&lt;ref name=&quot;Simerka1885&quot;&gt;{{cite journal |author=V. Šimerka|title=Zbytky z arithmetické posloupnosti (On the remainders of an arithmetic progression) |journal=Časopis Pro Pěstování Matematiky a Fysiky |volume=14 |issue=5|year=1885 |pages=221–225 |url=http://dml.cz/handle/10338.dmlcz/122245}}&lt;/ref&gt; (thus preceding not just Carmichael but also Korselt, although Šimerka did not find anything like Korselt's criterion).&lt;ref&gt;{{cite journal |last1=Lemmermeyer |first1=F. |title=Václav Šimerka: quadratic forms and factorization |journal=LMS Journal of Computation and Mathematics |date=2013 |volume=16 |pages=118–129 |doi=10.1112/S1461157013000065 |doi-access=free}}&lt;/ref&gt; His work, however, remained unnoticed.
+
+J. Chernick&lt;ref name=&quot;Chernick1939&quot;&gt;{{cite journal |author=Chernick, J. |title=On Fermat's simple theorem |journal=Bull. Amer. Math. Soc. |volume=45 |issue=4 |year=1939 |pages=269–274 |doi=10.1090/S0002-9904-1939-06953-X  |url=http://www.ams.org/journals/bull/1939-45-04/S0002-9904-1939-06953-X/S0002-9904-1939-06953-X.pdf}}&lt;/ref&gt; proved a theorem in 1939 which can be used to construct a [[subset]] of Carmichael numbers. The number &lt;math&gt;(6k + 1)(12k + 1)(18k + 1)&lt;/math&gt; is a Carmichael number if its three factors are all prime. Whether this formula produces an infinite quantity of Carmichael numbers is an open question (though it is implied by [[Dickson's conjecture]]).
+
+[[Paul Erdős]] heuristically argued there should be infinitely many Carmichael numbers. In 1994 [[W. R. (Red) Alford]], [[Andrew Granville]] and [[Carl Pomerance]]  used a bound on [[Olson's constant]] to show that there really do exist infinitely many Carmichael numbers. Specifically, they showed that for sufficiently large &lt;math&gt;n&lt;/math&gt;, there are at least &lt;math&gt;n^{2/7}&lt;/math&gt; Carmichael numbers between 1 and &lt;math&gt;n&lt;/math&gt;.&lt;ref name=&quot;Alford1994&quot;&gt;{{cite journal |author=W. R. Alford |author2=Andrew Granville |author3-link=Carl Pomerance |author3=Carl Pomerance |title=There are Infinitely Many Carmichael Numbers |journal=[[Annals of Mathematics]] |volume=139 |issue=3 |year=1994 |pages=703–722 |doi=10.2307/2118576 |url=http://www.math.dartmouth.edu/~carlp/PDF/paper95.pdf|jstor=2118576 |author2-link=Andrew Granville |author-link=W. R. (Red) Alford }}&lt;/ref&gt;
+
+Löh and Niebuhr in 1992 found some very large Carmichael numbers, including one with 1,101,518 factors and over 16 million digits.
+This has been improved to 10,333,229,505 prime factors and 295,486,761,787 digits,&lt;ref&gt;Shallue et al., {{arXiv|1203.6664}}.&lt;/ref&gt; so the largest known Carmichael number is much greater than the [[largest known prime]].
+
+==Properties==
+
+=== Factorizations ===
+Carmichael numbers have at least three positive prime factors. For some fixed ''R'', there are infinitely many Carmichael numbers with exactly ''R'' factors; in fact, there are infinitely many such R.&lt;ref&gt;{{cite journal |last=Wright |first=Thomas|date=2016-06-01 |title=Factors of Carmichael numbers and a weak k-tuples conjecture |journal=[[Journal of the Australian Mathematical Society]] |volume=100 |issue=3 |pages=421–429 |doi=10.1017/S1446788715000427}}&lt;/ref&gt;
+
+The first Carmichael numbers with &lt;math&gt;k = 3, 4, 5, \ldots&lt;/math&gt; prime factors are {{OEIS|id=A006931}}:
+
+{| class=&quot;wikitable&quot;
+|-
+!''k'' !!&amp;nbsp;
+|-
+| 3 || &lt;math&gt;561 = 3 \cdot 11 \cdot 17\,&lt;/math&gt;
+|-
+| 4 || &lt;math&gt;41041 = 7 \cdot 11 \cdot 13 \cdot 41\,&lt;/math&gt;
+|-
+| 5 || &lt;math&gt;825265 = 5 \cdot 7 \cdot 17 \cdot 19 \cdot 73\,&lt;/math&gt;
+|-
+| 6 || &lt;math&gt;321197185 = 5 \cdot 19 \cdot 23 \cdot 29 \cdot 37 \cdot 137\,&lt;/math&gt;
+|-
+| 7 || &lt;math&gt;5394826801 = 7 \cdot 13 \cdot 17 \cdot 23 \cdot 31 \cdot 67 \cdot 73\,&lt;/math&gt;
+|-
+| 8 || &lt;math&gt;232250619601 = 7 \cdot 11 \cdot 13 \cdot 17 \cdot 31 \cdot 37 \cdot 73 \cdot 163\,&lt;/math&gt;
+|-
+| 9 || &lt;math&gt;9746347772161 = 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 31 \cdot 37 \cdot 41 \cdot 641\,&lt;/math&gt;
+|}
+
+The first Carmichael numbers with 4 prime factors are {{OEIS|id=A074379}}:
+
+{| class=&quot;wikitable&quot;
+|-
+!''i'' !!&amp;nbsp;
+|-
+| 1 || &lt;math&gt;41041 = 7 \cdot 11 \cdot 13 \cdot 41\,&lt;/math&gt;
+|-
+| 2 || &lt;math&gt;62745 = 3 \cdot 5 \cdot 47 \cdot 89\,&lt;/math&gt;
+|-
+| 3 || &lt;math&gt;63973 = 7 \cdot 13 \cdot 19 \cdot 37\,&lt;/math&gt;
+|-
+| 4 || &lt;math&gt;75361 = 11 \cdot 13 \cdot 17 \cdot 31\,&lt;/math&gt;
+|-
+| 5 || &lt;math&gt;101101 = 7 \cdot 11 \cdot 13 \cdot 101\,&lt;/math&gt;
+|-
+| 6 || &lt;math&gt;126217 = 7 \cdot 13 \cdot 19 \cdot 73\,&lt;/math&gt;
+|-
+| 7 || &lt;math&gt;172081 = 7 \cdot 13 \cdot 31 \cdot 61\,&lt;/math&gt;
+|-
+| 8 || &lt;math&gt;188461 = 7 \cdot 13 \cdot 19 \cdot 109\,&lt;/math&gt;
+|-
+| 9 || &lt;math&gt;278545 = 5 \cdot 17 \cdot 29 \cdot 113\,&lt;/math&gt;
+|-
+| 10 || &lt;math&gt;340561 = 13 \cdot 17 \cdot 23 \cdot 67\,&lt;/math&gt;
+|}
+
+The second Carmichael number (1105) can be expressed as the sum of two squares in more ways than any smaller number. The third Carmichael number (1729) is the [[1729 (number)|Hardy-Ramanujan Number]]: the smallest number that can be expressed as the sum of two cubes (of positive numbers) in two different ways.
+
+===Distribution===
+
+Let &lt;math&gt;C(X)&lt;/math&gt; denote the number of Carmichael numbers less than or equal to &lt;math&gt;X&lt;/math&gt;. The distribution of Carmichael numbers by powers of 10 {{OEIS|id=A055553}}:&lt;ref name=&quot;Pinch2007&quot;/&gt;
+
+&lt;center&gt;
+{| class=&quot;wikitable&quot;
+|-
+! &lt;math&gt;n&lt;/math&gt;
+| 1
+| 2
+| 3
+| 4
+| 5
+| 6
+| 7
+| 8
+| 9
+| 10
+| 11
+| 12
+| 13
+| 14
+| 15
+| 16
+|17
+|18
+|19
+|20
+|21
+|-
+! &lt;math&gt;C(10^n)&lt;/math&gt;
+| 0
+| 0
+| 1
+| 7
+| 16
+| 43
+| 105
+| 255
+| 646
+| 1547
+| 3605
+| 8241
+| 19279
+| 44706
+| 105212
+| 246683
+|585355
+|1401644
+|3381806
+|8220777
+|20138200
+|}
+&lt;/center&gt;
+In 1953, [[Walter Knödel|Knödel]] proved the [[Upper and lower bounds|upper bound]]:
+:&lt;math&gt;C(X) &lt; X \exp\left({-k_1 \left( \log X \log \log X\right)^\frac{1}{2}}\right)&lt;/math&gt;
+
+for some constant &lt;math&gt;k_1&lt;/math&gt;.
+
+In 1956, Erdős improved the bound to
+
+:&lt;math&gt;C(X) &lt; X \exp\left(\frac{-k_2 \log X \log \log \log X}{\log \log X}\right)&lt;/math&gt;
+
+for some constant &lt;math&gt;k_2&lt;/math&gt;.&lt;ref name=&quot;Erdős1956&quot;&gt;{{cite journal |author=Erdős, P. |year=1956 |title=On pseudoprimes and Carmichael numbers |journal=Publ. Math. Debrecen |volume=4 |pages=201–206 |url=http://www.renyi.hu/~p_erdos/1956-10.pdf |mr=79031 |author-link=Paul Erdős }}&lt;/ref&gt; He further gave a [[heuristic argument]] suggesting that this upper bound should be close to the true growth rate of &lt;math&gt;C(X)&lt;/math&gt;.
+
+In the other direction, [[W. R. (Red) Alford|Alford]], [[Andrew Granville|Granville]] and [[Carl Pomerance|Pomerance]] proved in 1994&lt;ref name=&quot;Alford1994&quot;/&gt; that for sufficiently large ''X'',
+:&lt;math&gt;C(X) &gt; X^\frac{2}{7}.&lt;/math&gt;
+
+In 2005, this bound was further improved by [[Glyn Harman|Harman]]&lt;ref&gt;{{cite journal |author=Glyn Harman |title=On the number of Carmichael numbers up to ''x'' |journal=Bulletin of the London Mathematical Society |volume=37 |issue=5 |year=2005 |pages=641–650 |doi=10.1112/S0024609305004686}}&lt;/ref&gt; to
+:&lt;math&gt;C(X) &gt; X^{0.332}&lt;/math&gt;
+
+who subsequently improved the exponent to &lt;math&gt;0.7039 \cdot 0.4736 = 0.33336704 &gt; 1/3 &lt;/math&gt;.
+&lt;ref&gt;{{cite journal |last=Harman |first=Glyn
+ |date=2008 |title=Watt's mean value theorem and Carmichael numbers
+ |doi=10.1142/S1793042108001316 |mr=2404800
+ |journal=International Journal of Number Theory |volume=4 |issue=2 |pages=241–248 }}&lt;/ref&gt;
+
+Regarding the asymptotic distribution of Carmichael numbers, there have been several conjectures. In 1956, Erdős&lt;ref name=&quot;Erdős1956&quot;/&gt; conjectured that there were &lt;math&gt;X^{1-o(1)}&lt;/math&gt; Carmichael numbers for ''X'' sufficiently large. In 1981, Pomerance&lt;ref name=&quot;Pomerance1981&quot;&gt;{{cite journal |author=Pomerance, C. |year=1981 |title=On the distribution of pseudoprimes |journal=Math. Comp. |volume=37 |issue=156 |pages=587–593|jstor=2007448 |doi=10.1090/s0025-5718-1981-0628717-0|author-link=Carl Pomerance }}&lt;/ref&gt; sharpened Erdős' heuristic arguments to conjecture that there are at least
+:&lt;math&gt; X \cdot L(X)^{-1 + o(1)} &lt;/math&gt;
+Carmichael numbers up to &lt;math&gt;X&lt;/math&gt;, where &lt;math&gt;L(x) = \exp{ \left( \frac{\log x \log\log\log x} {\log\log x} \right) }&lt;/math&gt;.
+
+However, inside current computational ranges (such as the counts of Carmichael numbers performed by Pinch&lt;ref name=&quot;Pinch2007&quot;/&gt; up to 10&lt;sup&gt;21&lt;/sup&gt;), these conjectures are not yet borne out by the data.
+
+==Generalizations==
+The notion of Carmichael number generalizes to a Carmichael ideal in any number field ''K''. For any nonzero prime ideal &lt;math&gt;\mathfrak p&lt;/math&gt; in &lt;math&gt;{\mathcal O}_K&lt;/math&gt;, we have &lt;math&gt;\alpha^{{\rm N}(\mathfrak p)} \equiv \alpha \bmod {\mathfrak p}&lt;/math&gt; for all &lt;math&gt;\alpha&lt;/math&gt; in &lt;math&gt;{\mathcal O}_K&lt;/math&gt;, where &lt;math&gt;{\rm N}(\mathfrak p)&lt;/math&gt; is the norm of the ideal &lt;math&gt;\mathfrak p&lt;/math&gt;. (This generalizes Fermat's little theorem, that &lt;math&gt;m^p \equiv m \bmod p&lt;/math&gt; for all integers ''m'' when ''p'' is prime.) Call a nonzero ideal &lt;math&gt;\mathfrak a&lt;/math&gt; in &lt;math&gt;{\mathcal O}_K&lt;/math&gt; Carmichael if it is not a prime ideal and &lt;math&gt;\alpha^{{\rm N}(\mathfrak a)} \equiv \alpha \bmod {\mathfrak a}&lt;/math&gt; for all &lt;math&gt;\alpha \in {\mathcal O}_K&lt;/math&gt;, where &lt;math&gt;{\rm N}(\mathfrak a)&lt;/math&gt; is the norm of the ideal &lt;math&gt;\mathfrak a&lt;/math&gt;.  When ''K'' is &lt;math&gt;\mathbf Q&lt;/math&gt;, the ideal &lt;math&gt;\mathfrak a&lt;/math&gt; is principal, and if we let ''a'' be its positive generator then the ideal &lt;math&gt;\mathfrak a = (a)&lt;/math&gt; is Carmichael exactly when ''a'' is a Carmichael number in the usual sense.
+
+When ''K'' is larger than the rationals it is easy to write down Carmichael ideals in &lt;math&gt;{\mathcal O}_K&lt;/math&gt;: for any prime number ''p'' that splits completely in ''K'', the principal ideal &lt;math&gt;p{\mathcal O}_K&lt;/math&gt; is a Carmichael ideal. Since infinitely many prime numbers split completely in any number field, there are infinitely many Carmichael ideals in &lt;math&gt;{\mathcal O}_K&lt;/math&gt;. For example, if ''p'' is any prime number that is 1 mod 4, the ideal (''p'') in the Gaussian integers '''Z'''[''i''] is a Carmichael ideal.
+
+Both prime and Carmichael numbers satisfy the following equality:
+:&lt;math&gt;\gcd \left(\sum_{x=1}^{n-1} x^{n-1}, n\right)=1&lt;/math&gt;
+
+==Higher-order Carmichael numbers==
+Carmichael numbers can be generalized using concepts of [[abstract algebra]].
+
+The above definition states that a composite integer ''n'' is Carmichael
+precisely when the ''n''th-power-raising function ''p''&lt;sub&gt;''n''&lt;/sub&gt; from the [[ring (mathematics)|ring]] '''Z'''&lt;sub&gt;''n''&lt;/sub&gt; of integers modulo ''n'' to itself is the identity function. The identity is the only '''Z'''&lt;sub&gt;''n''&lt;/sub&gt;-[[algebra over a field|algebra]] [[endomorphism]] on '''Z'''&lt;sub&gt;''n''&lt;/sub&gt; so we can restate the definition as asking that ''p''&lt;sub&gt;''n''&lt;/sub&gt; be an algebra endomorphism of '''Z'''&lt;sub&gt;''n''&lt;/sub&gt;.
+As above, ''p''&lt;sub&gt;''n''&lt;/sub&gt; satisfies the same property whenever ''n'' is prime.
+
+The ''n''th-power-raising function ''p''&lt;sub&gt;''n''&lt;/sub&gt; is also defined on any '''Z'''&lt;sub&gt;''n''&lt;/sub&gt;-algebra '''A'''. A theorem states that ''n'' is prime if and only if all such functions ''p''&lt;sub&gt;''n''&lt;/sub&gt; are algebra endomorphisms.
+
+In-between these two conditions lies the definition of '''Carmichael number of order m''' for any positive integer ''m'' as any composite number ''n'' such that ''p''&lt;sub&gt;''n''&lt;/sub&gt; is an endomorphism on every '''Z'''&lt;sub&gt;''n''&lt;/sub&gt;-algebra that can be generated as '''Z'''&lt;sub&gt;''n''&lt;/sub&gt;-[[module (mathematics)|module]] by ''m'' elements. Carmichael numbers of order 1 are just the ordinary Carmichael numbers.
+
+===An order 2 Carmichael number===
+According to Howe, 17 · 31 · 41 · 43 · 89 · 97 · 167 · 331 is an order 2 Carmichael number. This product is equal to 443,372,888,629,441.&lt;ref&gt;{{cite journal |author = Everett W. Howe |title=Higher-order Carmichael numbers |journal=Mathematics of Computation |date=October 2000 |volume=69 |issue=232 |pages=1711–1719 |arxiv=math.NT/9812089 |jstor=2585091 |doi=10.1090/s0025-5718-00-01225-4|bibcode=2000MaCom..69.1711H }}&lt;/ref&gt;
+
+===Properties===
+Korselt's criterion can be generalized to higher-order Carmichael numbers, as shown by Howe.
+
+A heuristic argument, given in the same paper, appears to suggest that there are infinitely many Carmichael numbers of order ''m'', for any ''m''. However, not a single Carmichael number of order 3 or above is known.
+
+==Notes==
+{{reflist|40em}}
+
+==References==
+*{{cite journal |author=Carmichael, R. D.|year=1910|title=Note on a new number theory function |journal=[[Bulletin of the American Mathematical Society]] |volume=16 |issue=5|pages=232–238 |url=http://www.ams.org/journals/bull/1910-16-05/home.html |doi=10.1090/s0002-9904-1910-01892-9}}
+*{{cite journal |author=Carmichael, R. D. |year=1912 |title=On composite numbers ''P'' which satisfy the Fermat congruence &lt;math&gt;a^{P-1}\equiv 1\bmod P&lt;/math&gt; |journal=[[American Mathematical Monthly]] |volume=19 |issue=2 |pages=22–27 |doi=10.2307/2972687|jstor=2972687 }}
+*{{cite journal |author=Chernick, J. |year=1939 |title=On Fermat's simple theorem |journal=Bull. Amer. Math. Soc. |volume=45 |issue=4 |pages=269–274 |doi=10.1090/S0002-9904-1939-06953-X  |url=http://www.ams.org/journals/bull/1939-45-04/S0002-9904-1939-06953-X/S0002-9904-1939-06953-X.pdf}}
+*{{cite journal |author=Korselt, A. R. |year=1899 |title=Problème chinois |journal=[[L'Intermédiaire des Mathématiciens]] |volume=6 |pages=142–143}}
+*{{cite journal |author1=Löh, G. |author2=Niebuhr, W. |year=1996 |url=http://www.ams.org/mcom/1996-65-214/S0025-5718-96-00692-8/S0025-5718-96-00692-8.pdf |title=A new algorithm for constructing large Carmichael numbers |journal=Math. Comp. |volume=65 |issue=214 |pages=823–836 |doi=10.1090/S0025-5718-96-00692-8|bibcode=1996MaCom..65..823L }}
+*{{cite book | title = The Book of Prime Number Records | publisher = Springer | year = 1989 | isbn = 978-0-387-97042-4 | author = Ribenboim, P. | author-link = Paulo Ribenboim }}
+*{{cite journal |author=Šimerka, V.|year=1885 |title=Zbytky z arithmetické posloupnosti (On the remainders of an arithmetic progression) |journal=Časopis Pro Pěstování Matematiky a Fysiky |volume=14 |issue=5 |pages=221–225 |url=http://dml.cz/handle/10338.dmlcz/122245}}
+
+==External links==
+*{{springer|title=Carmichael number|id=p/c110100}}
+*[http://de.wikibooks.org/wiki/Pseudoprimzahlen:_Tabelle_Carmichael-Zahlen Table of Carmichael numbers]
+*[https://github.com/drazioti/Carmichael/tree/master/Tables Tables of Carmichael numbers with many prime factors]
+*[http://www.s369624816.websitehome.co.uk/rgep/cartable.html Tables of Carmichael numbers below &lt;math&gt;10^{18}&lt;/math&gt;]
+*{{MathPages|id=home/kmath028/kmath028|title=The Dullness of 1729}}
+*{{MathWorld | urlname=CarmichaelNumber | title=Carmichael Number}}
+*[http://www.numericana.com/answer/modular.htm Final Answers Modular Arithmetic]
+
+{{Classes of natural numbers}}
+
+[[Category:Integer sequences]]
+[[Category:Modular arithmetic]]
+[[Category:Pseudoprimes]]</text>
+      <sha1>agkqu81nn0bdzydoi3j1rum7w9p8plq</sha1>
+    </revision>
+  </page>

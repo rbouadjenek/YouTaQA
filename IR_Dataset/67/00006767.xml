@@ -1,0 +1,184 @@
+  <page>
+    <title>Commodore 1541</title>
+    <ns>0</ns>
+    <id>6767</id>
+    <revision>
+      <id>940472164</id>
+      <parentid>938277747</parentid>
+      <timestamp>2020-02-12T19:07:48Z</timestamp>
+      <contributor>
+        <ip>68.67.245.125</ip>
+      </contributor>
+      <comment>/* Hardware */ fixed grammer</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{Infobox information appliance  &lt;!-- https://en.wikipedia.org/wiki/Template:Infobox_information_appliance --&gt;
+| name         = Commodore 1541
+| title        = 
+| image        = File:Commodore-64-1541-Floppy-Drive-01.jpg
+| caption      = Front view of the second-most common version of the Commodore 1541 disk drive, with open disk slot. This version uses a Newtronics drive mechanism, and the rotating lever is used to engage the drive mechanism with the disk (i.e. to engage the hub clamp and load the disk heads) and to prevent removal of the disk while the mechanism is mechanically engaged.
+| manufacturer = Commodore Business Machines, Inc.
+| type         = Floppy drive
+| releasedate  = {{Start date|1982||}}&lt;ref name=&quot;w64&quot;/&gt;
+|price        = {{US$|400|1982}}
+| discontinued = 1993&lt;ref name=&quot;w64&quot;/&gt;
+| media        = 5¼&quot; [[floppy disk]] [[Floppy disk format#Single Sided, Double Density|SS SD]]&lt;ref name=&quot;z41&quot;&gt;{{Cite web |access-date=2016-04-02 |date=2015-03-20 |title=Commodore 1541 Disk Drives: Lassie has nothing on these boys... |url=https://www.zimmers.net/cbmpics/d1541s.html |quote=Media: Single Sided, Single Density |archive-url=https://web.archive.org/web/20160326050106/http://www.zimmers.net/cbmpics/d1541s.html |archive-date=2016-03-26 |url-status=dead }}&lt;/ref&gt;
+| os           = [[Commodore DOS|CBM DOS 2.6]]&lt;ref name=&quot;coca&quot;&gt;{{Cite web |access-date=2016-04-02 |date=2011-03-30 |title=Manuals &amp;#124; Technical Comparison of Commodore 1541 2040 4040 8050 8250 Drives |url=http://www.commodore.ca/manuals/commodore_1541_4040_8050_8250_comparison.htm |quote=DOS version(s) 2.6 2.6 2.1/2.7 2.5/2.7 2.7 |archive-url=https://web.archive.org/web/20081011191542/http://www.commodore.ca/manuals/commodore_1541_4040_8050_8250_comparison.htm |archive-date=2008-10-11 |url-status=dead }}&lt;/ref&gt;
+| power        = 100, 120, 220, or 240 V 50/60 Hz 25 W (30 W max)&lt;ref name=&quot;w64&quot;/&gt;
+| cpu          = [[MOS Technology 6502|MOS 6502]] @ {{nowrap|1 MHz}}&lt;ref name=&quot;w64&quot;&gt;{{Cite web |access-date=2016-04-02 |date=2016-03-11 |title=VIC-1541 - C64-Wiki |url=https://www.c64-wiki.com/index.php/VIC-1541}}&lt;/ref&gt;
+| memory       = 
+| storage      = 170 kB&lt;ref name=&quot;coca&quot;/&gt;
+| connectivity = [[Commodore bus|Commodore proprietary serial IEEE-488]] 0.4 kB/s&lt;ref name=&quot;coca&quot;/&gt;
+| dimensions   = 
+| weight       = 
+| compatibility= [[Commodore 64]], [[Commodore VIC-20|VIC-20]]&lt;ref name=&quot;coca&quot;/&gt;
+| predecessor  = [[Commodore 1540]]
+| successor    = [[Commodore 1570]] &amp; [[Commodore 1571]]
+| related      = [[Commodore 1551]]
+}}
+[[File:Commodore-64-1541-Floppy-Drive-04.jpg|thumb|A rear view of the Commodore 1541 disk drive, with the top cover and shielding removed]]
+
+The '''Commodore 1541''' (also known as the '''CBM 1541''' and '''VIC-1541''') is a [[floppy disk drive]]  which was made by [[Commodore International]] for the [[Commodore 64]] (C64), Commodore's most popular [[home computer]]. The best-known floppy disk drive for the C64, the 1541 is a single-sided 170-[[kilobyte]] drive for 5¼&quot; disks. The 1541 directly followed the [[Commodore 1540]] (meant for the [[Commodore VIC-20|VIC-20]]).
+
+The disk drive uses [[group coded recording]] (GCR) and contains a [[MOS Technology 6502]] microprocessor, doubling as a [[disk controller]] and on-board [[disk operating system]] processor. The number of sectors per track varies from 17 to 21 (an early implementation of [[zone bit recording]]). The drive's built-in disk operating system is [[Commodore DOS|CBM DOS 2.6]].
+
+== History ==
+
+=== Introduction ===
+The 1541 was priced at under {{US$|400}} at its introduction. A C64 plus a 1541 cost about $900, while an [[Apple II series|Apple II]] with no disk drive cost $1295. The first 1541 drives produced in 1982 have a label on the front reading VIC-1541 and have an off-white case to match the VIC-20. In 1983, the 1541 was switched to having the familiar beige case and a front label reading simply &quot;1541&quot; along with rainbow stripes to match the Commodore 64.
+
+By 1983 a 1541 sold for $300 or less. After a [[video game crash of 1983|brutal home-computer price war]] that Commodore began, the C64 and 1541 together cost under $500.{{cn|date=October 2017}} The drive became very popular, and became difficult to find. The company claimed that the shortage occurred because 90% of C64 owners bought the 1541 compared to its 30% expectation, but the press discussed what ''[[Creative Computing]]'' described as &quot;an absolutely alarming return rate&quot; because of defects. The magazine reported in March 1984 that it received three defective drives in two weeks,&lt;ref name=&quot;anderson198403&quot;&gt;{{cite news |url=https://archive.org/stream/creativecomputing-1984-03/Creative_Computing_v10_n03_1984_Mar#page/n57/mode/2up |title=Commodore |work=Creative Computing |date=March 1984 |access-date=2015-02-06 |author-last=Anderson |author-first=John J. |pages=56 |author-link=John J. Anderson}}&lt;/ref&gt; and ''[[Compute!'s Gazette]]'' reported in December 1983 that four of the magazine's seven drives had failed; &quot;COMPUTE! Publications sorely needs additional 1541s for in-house use, yet we can't find any to buy. After numerous phone calls over several days, we were able to locate only two units in the entire continental United States&quot;, reportedly because of Commodore's attempt to resolve [[#Hardware|a manufacturing issue]] that caused the high failures.&lt;ref name=&quot;halfhill198312&quot;&gt;{{cite news |url=https://archive.org/stream/1983-12-computegazette/Compute_Gazette_Issue_06_1983_Dec#page/n7/mode/2up |title=The Editor's Notes |work=Compute!'s Gazette |date=December 1983 |access-date=2016-02-06 |author-last=Halfhill |author-first=Tom |pages=6 |type=editorial}}&lt;/ref&gt;
+
+The early (1982 to 1983) 1541s have a spring-eject mechanism ([[Alps Electric|Alps]] drive), and the disks often fail to release. This style of drive has the popular nickname &quot;Toaster Drive&quot;, because it requires the use of a knife or other hard thin object to pry out the stuck media just like a piece of [[toast]] stuck in an actual [[toaster]] (though this is inadvisable with actual toasters). This was fixed later when Commodore changed the vendor of the drive mechanism ([[Mitsumi]]) and adopted the flip-lever Newtronics mechanism, greatly improving reliability. In addition, Commodore made the drive's controller board smaller and reduced its chip count compared to the early 1541s (which had a large PCB running the length of the case, with dozens of TTL chips). The beige-case Newtronics 1541 was produced from 1984 to 1986.
+
+=== Versions and third-party clones ===
+[[File:Commodore 1541 white.jpg|thumb|1541C, the first upgrade version]]
+
+All but the very earliest non-II model 1541s can use either the Alps or Newtronics mechanism. Visually, the first models, of the ''VIC-1541'' denomination, have an off-white color like the VIC-20 and VIC-1540. Then, to match the look of the C64, [[Commodore International|CBM]] changed the drive's color to brown-beige and the name to ''Commodore 1541''.
+
+[[Image:C64-IMG 5372.jpg|thumb|Commodore 1541-II, the second of two upgraded versions of the CBM 1541. The 1541-II has the more modern &quot;radial handle&quot; locking mechanism.]]
+
+The 1541's numerous shortcomings opened a market for a number of third-party clones of the disk drive, a situation that continued for the lifetime of the C64. Well-known clones are the ''Oceanic OC-118'' a.k.a. ''Excelerator+'', the [[MSD Super Disk]] single and dual drives, the ''Enhancer 2000'', the ''[[Indus GT]]'', and ''[[Creative Micro Designs|CMD]]'' 's ''FD-2000'' and ''FD-4000''. Nevertheless, the 1541 became the first disk drive to see widespread use in the home and Commodore sold millions of the units.
+
+In 1986, Commodore released the 1541C, a revised version that offered quieter and slightly more reliable operation and a light beige case matching the color scheme of the Commodore 64C. It was replaced in 1988 by the 1541-II, which uses an external power supply to provide cooler operation and allows the drive to have a smaller desktop footprint (the power supply &quot;brick&quot; being placed elsewhere, typically on the floor). Later ROM revisions fixed assorted problems, including a software bug that caused the save-and-replace command to corrupt data.
+
+=== Successors ===
+The [[Commodore 1570]] is an upgrade from the 1541 for use with the [[Commodore 128]], available in Europe. It offers [[Modified Frequency Modulation|MFM]] capability for accessing CP/M disks, improved speed, and somewhat quieter operation, but was only manufactured until Commodore got its production lines going with the [[Commodore 1571|1571]], the double-sided drive. Finally, the small, external-power-supply-based, MFM-based [[Commodore 1581]] 3½&quot; drive was made, giving 800 KB access to the C128 and C64.
+
+== Design ==
+
+=== Hardware ===
+The 1541 does not have [[DIP switch]]es to change the device number. If a user added more than one drive to a system the user had to open the case and cut a trace in the circuit board to permanently change the drive's device number, or hand-wire an external switch to allow it to be changed externally.&lt;ref&gt;{{cite web |url=https://archive.org/stream/run-magazine-28/Run_Issue_28_1986_Apr#page/n83/mode/2up |title=RUN Magazine issue 28}}&lt;/ref&gt; It was also possible to change the drive number via a software command, which was temporary and would be erased as soon as the drive was powered off.
+
+1541 drives at power up always default to device #8. If multiple drives in a chain are used, then the startup procedure is to power on the first drive in the chain, alter its device number via a software command to the highest number in the chain (if three drives were used, then the first drive in the chain would be set to device #10), then power on the next drive, alter its device number to the next lowest, and repeat the procedure until the final drive at the end of the chain was powered on and left as device #8.
+
+Unlike the Apple II, where support for two drives was normal, it was relatively uncommon for Commodore software to support this setup, and the CBM DOS copy file command was not even able to copy files between drives--a third party copy utility must be used instead.
+
+The pre-II 1541s also have an internal power source, which generated a lot of heat. The heat generation was a frequent source of humour. For example, ''[[Compute!]]'' stated in 1988 that &quot;Commodore 64s used to be a favorite with amateur and professional chefs since they could compute and cook on top of their 1500-series disk drives at the same time&quot;.&lt;ref name=&quot;levitan198812&quot;&gt;{{cite news |url=https://archive.org/stream/1988-12-compute-magazine/Compute_Issue_103_1988_Dec#page/n105/mode/2up |title=Levitations |work=Compute! | date=December 1988 |access-date=2013-11-10 |author-last=Levitan |author-first=Arlan |pages=104}}&lt;/ref&gt; A series of humorous tips in ''[[MikroBitti]]'' in 1989 said &quot;When programming late, coffee and kebab keep nicely warm on top of the 1541.&quot; The ''MikroBitti'' review of the 1541-II said that its external power source &quot;should end the jokes about toasters&quot;.
+
+The drive-head mechanism installed in the early production years is notoriously easy to misalign. The most common cause of the 1541's drive head knocking and subsequent misalignment is copy-protection schemes on commercial software.{{r|info19860506}} The main cause of the problem is that the disk drive itself does not feature any means of detecting when the read/write head reaches track zero. Accordingly, when a disk is not formatted or a disk error occurs, the unit tries to move the head 40 times in the direction of track zero (although the 1541 DOS only uses 35 tracks, the drive mechanism itself is a 40-track unit, so this ensured track zero would be reached no matter where the head was before). Once track zero is reached, every further attempt to move the head in that direction would cause it to be rammed against a solid stop: for example, if the head happened to be on track 18 (where the directory is located) before this procedure, the head would be actually moved 18 times, and then rammed against the stop 22 times. This ramming gives the characteristic &quot;machine gun&quot; noise and sooner or later throws the head out of alignment.
+
+A defective head-alignment part likely caused many of the reliability issues in early 1541 drives; one dealer told ''Compute!{{'}}s Gazette'' in 1983 that the part had caused all but three of several hundred drive failures that he had repaired.{{r|halfhill198312}} The drives were so unreliable that ''[[Info (magazine)|Info]]'' magazine joked, &quot;Sometimes it seems as if one of the original design specs ... must have said 'Mean time between failure: 10 accesses.'&quot;. Users can realign the drive themselves with a software program and a calibration disk. What the user would do is remove the drive from its case and then loosen the screws holding the stepper motor that moved the head, then with the calibration disk in the drive gently turn the stepper motor back and forth until the program shows a good alignment. The screws are then tightened and the drive is put back into its case.&lt;ref name=&quot;info19860506&quot;&gt;{{cite news |url=https://archive.org/stream/info-magazine-10/Info_Issue_10_1986_May-Jun#page/n57/mode/2up |title=Physical Exam |work=Info |date=May–June 1986 |access-date=2013-10-06 |pages=57}}&lt;/ref&gt;
+
+A third-party fix for the 1541 appeared in which the solid head stop was replaced by a sprung stop, giving the head a much easier life.{{r|info19860506}} The later [[Commodore 1571|1571]] drive (which is 1541-compatible) incorporates track-zero detection by photo-interrupter and is thus immune to the problem. Also, a software solution, which resides in the drive controller's ROM, prevents the rereads from occurring, though this could cause problems when genuine errors did occur.
+
+Due to the alignment issues on the Alps drive mechanisms, Commodore switched suppliers to Newtronics in 1984. The Newtronics mechanism drives have a lever rather than a pull-down tab to close the drive door. Although the alignment issues were resolved after the switch, the Newtronics drives added a new reliability problem in that many of the read/write heads were improperly sealed, causing moisture to penetrate the head and short it out.
+
+The 1541's PCB consists mainly of a 6502 CPU, two 6522 chips, and 2k of work RAM. Up to 48k of RAM can be added; this was mainly useful for defeating copy protection schemes since an entire disk track could be loaded into drive RAM, while the standard 2k only accommodated a few sectors (theoretically eight, but some of the RAM was used by CBM DOS as work space). Some Commodore users used 1541s with expanded RAM as an impromptu math coprocessor by uploading math-intensive code to the drive for background processing.
+
+=== Interface ===
+The 1541 uses a [[Commodore bus|proprietary serialized derivative]] of the [[IEEE-488]] parallel interface, which Commodore used on their previous disk drives for the [[Commodore PET|PET/CBM]] range of personal and business computers&lt;ref&gt;{{cite web|url=https://www.thegeekpub.com/9473/sd2iec-manual-use-sd2iec-c64/|title=SD2IEC MANUAL (HOW TO USE THE SD2IEC ON THE C64)|publisher=The Geek Pub|accessdate= December 8, 2017}}&lt;/ref&gt;, but when the VIC-20 was in development, a cheaper alternative to the expensive IEEE-488 cables was sought. To ensure a ready supply of inexpensive cabling for its home computer peripherals, Commodore chose standard [[DIN connector]]s for the serial interface. Disk drives and other peripherals such as printers connected to the computer via a [[daisy chain (electrical engineering)|daisy chain]] setup, necessitating only a single connector on the computer itself.
+
+== Throughput and software ==
+''[[IEEE Spectrum]]'' in 1985 stated that:&lt;ref name=&quot;ieee85&quot;&gt;{{cite journal |author-last2=Wallich |author-first2=Paul |date=March 1985 |title=Design case history: the Commodore 64 |url=https://spectrum.ieee.org/ns/pdfs/commodore64_mar1985.pdf |journal=[[IEEE Spectrum]] |pages=48–58 |issn=0018-9235 |author-last1=Perry |author-first1=Tekla S. |access-date=2011-11-12}}&lt;/ref&gt;
+
+{{quote|The one major flaw of the C-64 is not in the machine itself, but in its disk drive. With a reasonably fast disk drive and an adequate disk-operating system (DOS), the C-64 could compete in the business market with the Apple and perhaps with other business computers. With the present disk drive, though, it is hard-pressed to lose its image as a toy.}}
+
+The C-64's designers blamed the 1541's slow speed on the marketing department's insistence that the computer be compatible with the 1540, which was slow because of a flaw in the [[MOS Technology 6522|6522 VIA]] interface controller.{{r|ieee85}} Initially, Commodore intended to use a hardware shift register (one component of the 6522) to maintain fast drive speeds with the new serial interface. However, a hardware bug with this chip prevented the initial design from working as anticipated, and the ROM code was hastily rewritten to handle the entire operation in software. According to [[Jim Butterfield]], this causes a speed reduction by a factor of five;&lt;ref&gt;http://www.binarydinosaurs.co.uk/Museum/Commodore/c64/c64notes.php&lt;/ref&gt; had 1540 compatibility not been a requirement, the disk interface would have been much faster. In any case, the C64 normally could not work with a 1540 unless the VIC-II video output was disabled via a register write, which would increase the CPU speed enough to be able to access it.
+
+As implemented on the VIC-20 and C64, [[Commodore DOS]] transfers 300 bytes per second, compared to the [[Atari 810]]'s 2,400 bytes per second, the Apple [[Disk II]]'s 15,000 bytes per second,{{r|ieee85}} and the 300-baud data rate of the Commodore [[Datasette]] storage system. About 20 minutes are needed to copy one disk&amp;mdash;10 minutes of reading time, and 10 minutes of writing time. However, since both the computer and the drive can easily be reprogrammed, third parties quickly wrote more efficient firmware that would speed up drive operations drastically. Without hardware modifications, some &quot;[[fast loader]]&quot; utilities (which replaced 1541's onboard ROM) managed to achieve speeds of up to 4 kB/s. The most common of these products are the [[Epyx FastLoad]], the [[The Final Cartridge III|Final Cartridge]], and the [[Action Replay (cartridge)|Action Replay]] plug-in [[ROM cartridge]]s, which all have [[machine code monitor]] and [[disk editor]] software on board as well. The popular Commodore computer magazines of the era also entered the arena with type-in fast-load utilities, with ''[[Compute!'s Gazette]]'' publishing ''TurboDisk'' in 1985 and ''[[RUN (magazine)|RUN]]'' publishing ''Sizzle'' in 1987.
+
+Even though each 1541 has its own on-board disk controller and disk [[operating system]], it is not normally possible for a user to command two 1541 drives to copy a disk (one drive reading and the other writing) as with older dual drives like the [[Commodore 4040|4040]] and [[Commodore 8050|8050]] that were often found with the PET computer, and which the 1541 is backward-compatible with (it can read 4040 disks but not write to them since its internal operating system is similar enough for reading but not for writing). Unfortunately, however, the routines in the previous disk operating system to enable disk copying were removed for the 1541 as it was intended to be a stand-alone unit. Originally, to copy from drive to drive, software running on the C64 was needed and it would first read from one drive into computer memory, then write out to the other. Only later when first, [[Fast Hack'em]], then other disk backup programs, were released, was true drive-to-drive copying possible for a pair of 1541s. The user could then unplug the C64 from the drives (i.e. from the first drive in the daisy chain) and do something else with the computer as the drives proceeded to copy the entire disk. This is not a recommended practice as disconnecting the serial lead from a powered drive and/or computer can result in destruction of one or both of the port chips in the disk drive.
+
+== Media ==
+The 1541 drive uses standard 5.25&quot; double-density floppy media; high-density media will not work due to its different magnetic coating requiring a higher magnetic coercivity. As the GCR encoding scheme does not use the index hole, the drive was also compatible with hard-sectored disks. The standard CBM DOS format is 170k with 35 tracks and 256-byte sectors. It is similar to the format used on the PET 4040 drives, but a minor difference in a header byte makes the 4040 and 1541 only read-compatible; disks formatted with one drive cannot be written to by the other.
+
+The 4040 drives used Shugart SA-400s, which were 35-track units, thus the format there was due to physical limitations of the drive mechanism. The 1541 used 40 track mechanisms, but Commodore intentionally limited the CBM DOS format to 35 tracks because of reliability issues with the early units. It was possible via low-level programming to move the drive head to tracks 36-40 and write on them, this was sometimes done by commercial software for copy protection purposes or to get additional data on the disk.
+
+However, one track is reserved by DOS for directory and file allocation information (the BAM, [[block availability map]]). And since for normal files, two bytes of each physical sector are used by DOS as a pointer to the next physical track and sector of the file, only 254 out of the 256 bytes of a block are used for file contents.
+
+If the disk side was not otherwise prepared with a custom format, (e.g. for data disks), 664 blocks would be free after formatting, giving 664 × 254 = 168,656 bytes (or almost 165 kB) for user data.
+
+By using custom formatting and load/save routines (sometimes included in third-party DOSes, see below), all of the mechanically possible 40 tracks can be used.
+
+Owing to the drive's non-use of the index hole, it was also possible to make &quot;flippy&quot; disks by inserting the diskette upside-down and formatting the other side, and it was commonplace and normal for commercial software to be distributed on such disks.
+
+{| class=&quot;wikitable&quot;
+|- 
+! Track !! Sectors&lt;br/&gt;(256 bytes) !! bits/s
+|-
+|  &amp;nbsp;1 - 17 
+|align=center| 21 || 16M/4/(13+0) = 307,692
+|-
+| 18 - 24 
+|align=center| 19 || 16M/4/(13+1) = 285,714
+|-
+| 25 - 30 
+|align=center| 18 || 16M/4/(13+2) = 266,667
+|-
+| 31 - 35 
+|align=center| 17 || 16M/4/(13+3) = 250,000
+|-
+| 36 - 42 
+|align=center| 17 || 16M/4/(13+3) = 250,000&lt;!--Unsure, but considering the number of sectors/track it should be ok--&gt;
+|}
+
+Tracks 36-42 are non-standard. The bitrate is the raw one between the read/write head and signal circuitry so actual useful data rate is a factor 5/4 less due to [[Group coded recording|GCR encoding]].&lt;ref&gt;{{cite web |title=Power20 Documentation - File Formats, Appendix E: Emulator File Formats |url=http://www.infinite-loop.at/Power20/Documentation/Power20-ReadMe/AE-File_Formats.html |publisher=infinite-loop.at}}&lt;/ref&gt;
+
+The 1541 disk typically has 35 tracks. Track 18 is reserved; the remaining tracks are available for data storage. The header is on 18/0 (track 18, sector 0) along with the BAM (block availability map), and the directory starts on 18/1 (track 18, sector 1). The file interleave is 10 blocks, while the directory interleave is 3 blocks.
+
+Header contents: The header is similar to other Commodore disk headers, the structural differences being the BAM offset ($04) and size, and the label+ID+type offset ($90).
+
+ $00–01 T/S reference to first directory sector (18/1)
+     02 DOS version ('A')
+  04-8F BAM entries (4 bytes per track: Free Sector Count + 24 bits for sectors)
+  90-9F Disk Label, $A0 padded
+  A2-A3 Disk ID
+  A5-A6 DOS type ('2A')
+
+== Uses ==
+Early [[copy protection]] schemes deliberately introduced read errors on the disk, the software refusing to load unless the correct error message is returned. The general idea was that simple disk-copy programs are incapable of copying the errors. When one of these errors is encountered, the disk drive (as do many floppy disk drives) will attempt one or more reread attempts after first resetting the head to track zero. Few of these schemes had much deterrent effect, as various software companies soon released &quot;[[Bit_nibbler|nibbler]]&quot; utilities that enabled protected disks to be copied and, in some cases, the protection removed.
+
+Commodore copy protection sometimes depends on specific hardware configurations. ''[[Gunship (video game)|Gunship]]'', for example, does not load if a second disk drive or printer is connected to the computer.&lt;ref name=&quot;bobo198802&quot;&gt;{{cite news |url=https://archive.org/stream/1988-02-compute-magazine/Compute_Issue_093_1988_Feb#page/n51/mode/2up |title=Project: Stealth Fighter |work=Compute! |date=February 1988 |access-date=2013-11-10 |author-last=Bobo |author-first=Ervin |pages=51}}&lt;/ref&gt;
+
+== See also ==
+* [[Commodore 64]]
+* [[Commodore 64 peripherals]]
+* [[1541 Ultimate]]
+
+== References ==
+{{reflist}}
+
+== Further reading ==
+{{refbegin}}
+* CBM (1982). ''VIC-1541 Single Drive Floppy Disk User's Manual''. 2nd ed. Commodore Business Machines, Inc. P/N 1540031-02.
+* Neufeld, Gerald G. (1985). ''1541 User's Guide. The Complete Guide to Commodore's 1541 Disk Drive''. Second Printing, June 1985. 413 pp.&amp;nbsp;Copyright © 1984 by DATAMOST, Inc. (Brady). {{ISBN|0-89303-738-9}}.
+* Immers, Richard; Neufeld, Gerald G. (1984). ''Inside Commodore DOS. The Complete Guide to the 1541 Disk Operating System.'' DATAMOST, Inc &amp; Reston Publishing Company, Inc. (Prentice-Hall). {{ISBN|0-8359-3091-2}}.
+* Englisch, Lothar; Szczepanowski, Norbert (1984). ''The Anatomy of the 1541 Disk Drive''. Grand Rapids, MI: Abacus Software (translated from the original 1983 German edition, Düsseldorf: Data Becker GmbH). {{ISBN|0-916439-01-1}}.
+{{refend}}
+
+==External links==
+* [http://diskpreservation.com Disk Preservation Project]: internal drive mechanics and copy protection
+* [https://web.archive.org/web/20050709013437/http://project64.c64.org/hw/1541_tricks.txt Undocumented 1541 drive functions] from the Project 64 website
+* [https://archive.org/stream/run-magazine-64/Run_Issue_64_1989_Apr#page/n53/mode/2up RUN Magazine Issue 64]
+* [http://www.devili.iki.fi/Computers/Commodore/articles/Beyond_the_1541/ devili.iki.fi: Beyond the 1541, Mass Storage For The 64 And 128], COMPUTE!'s Gazette, issue 32, February 1986 (market overview)
+* {{FOLDOC|1541}}
+* [http://bitsavers.trailing-edge.com/pdf/commodore/1541_Maintenance_Guide_1984.pdf: 1541 Maintenance Guide from Bitsavers]
+
+{{Commodore disk drives}}
+[[Category:CBM floppy disk drives]]
+[[Category:Commodore 64]]
+[[Category:CBM hardware]]</text>
+      <sha1>oiu3ljsd2casb5pwi78tpxje0vup0v8</sha1>
+    </revision>
+  </page>

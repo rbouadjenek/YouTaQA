@@ -1,0 +1,45 @@
+  <page>
+    <title>Antisymmetric relation</title>
+    <ns>0</ns>
+    <id>1176</id>
+    <revision>
+      <id>928670006</id>
+      <parentid>925649568</parentid>
+      <timestamp>2019-11-30T21:59:51Z</timestamp>
+      <contributor>
+        <username>Mherzl</username>
+        <id>31411654</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{Refimprove|date=January 2010}}
+{{stack|{{Binary relations}}}}
+
+In [[mathematics]], a [[homogeneous relation]] ''R'' on [[Set (mathematics)|set]] ''X'' is '''antisymmetric''' if there is no pair of ''distinct'' elements of ''X'' each of which is related by ''R'' to the other. More formally, ''R'' is antisymmetric precisely if for all ''a'' and ''b'' in ''X''
+:if ''R''(''a'', ''b'') with ''a''&amp;nbsp;≠&amp;nbsp;''b'', then ''R''(''b'', ''a'') must not hold,
+or, equivalently,
+:if ''R''(''a'', ''b'') and ''R''(''b'', ''a''), then ''a''&amp;nbsp;=&amp;nbsp;''b''.
+(The definition of antisymmetry says nothing about whether ''R''(''a'', ''a'') actually holds or not for any ''a''.)
+
+The [[divisibility]] relation on the [[natural number]]s is an important example of an antisymmetric relation. In this context, antisymmetry means that the only way each of two numbers can be divisible by the other is if the two are, in fact, the same number; equivalently, if ''n'' and ''m'' are distinct and ''n'' is a factor of ''m'', then ''m'' cannot be a factor of ''n''.  For example,  12 is divisible by 4, but 4 is not divisible by 12.
+
+The usual [[order relation]] ≤ on the [[real number]]s is antisymmetric: if for two real numbers ''x'' and ''y'' both [[inequality (mathematics)|inequalities]] ''x''&amp;nbsp;≤&amp;nbsp;''y'' and ''y''&amp;nbsp;≤&amp;nbsp;''x'' hold then ''x'' and ''y'' must be equal. Similarly,  the [[subset order]] ⊆ on the subsets of any given set is antisymmetric: given two sets ''A'' and ''B'', if every [[Element (mathematics)|element]] in ''A'' also is in ''B'' and every element in ''B'' is also in ''A'', then ''A'' and ''B'' must contain all the same elements and therefore be equal:
+:&lt;math&gt;A \subseteq B \land B \subseteq A \Rightarrow A = B&lt;/math&gt;
+
+[[partial order|Partial]] and [[total order]]s are antisymmetric by definition. A relation can be both [[symmetric relation|symmetric]] and antisymmetric (e.g., [[equality (mathematics)|the equality relation]]), and there are relations which are neither symmetric nor antisymmetric (e.g., the &quot;preys on&quot; relation on biological [[species]]).
+
+Antisymmetry is different from [[Asymmetric relation|asymmetry]], which requires both antisymmetry and [[reflexive relation|irreflexivity]].  Thus, every asymmetric relation is antisymmetric, but the reverse is false.
+
+==See also==
+* [[Symmetry in mathematics]]
+
+==References==
+*{{MathWorld | urlname=AntisymmetricRelation | title=Antisymmetric Relation}}
+*{{cite book |title=Theory and Problems of Discrete Mathematics |first=Seymour |last=Lipschutz |authorlink=Seymour Lipschutz |author2=Marc Lars Lipson |year=1997 |publisher=McGraw-Hill |isbn=0-07-038045-7 |page=33}}
+*[https://ncatlab.org/nlab/show/antisymmetric+relation nLab antisymmetric relation]
+
+{{DEFAULTSORT:Antisymmetric Relation}}
+[[Category:Binary relations]]</text>
+      <sha1>s7mcbb9qhppna6j2e6631r09kk2zhyi</sha1>
+    </revision>
+  </page>

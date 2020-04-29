@@ -1,0 +1,186 @@
+  <page>
+    <title>Assembly line</title>
+    <ns>0</ns>
+    <id>1146</id>
+    <revision>
+      <id>943189115</id>
+      <parentid>943184469</parentid>
+      <timestamp>2020-02-29T11:49:03Z</timestamp>
+      <contributor>
+        <username>TPape</username>
+        <id>38632951</id>
+      </contributor>
+      <comment>Added two citations marked as &quot;missing&quot;. Thanks Kleuske for pointing this out. Still learning.</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{for|the video game company|The Assembly Line}}
+[[File:A321 final assembly (9351765668).jpg|thumb|An [[Airbus A321]] on final assembly line 3 in the Airbus plant at [[Hamburg Finkenwerder Airport]]]]
+[[File:Hyundai car assembly line.jpg|thumb|[[Hyundai Motor Company|Hyundai]]'s car assembly line]]
+
+An '''assembly line''' is a [[manufacturing]] process (often called a ''progressive assembly'') in which parts (usually [[interchangeable parts]]) are added as the semi-finished assembly moves from workstation to workstation where the parts are added in sequence until the final assembly is produced. By mechanically moving the parts to the assembly work and moving the semi-finished assembly from work station to work station, a finished product can be assembled faster and with less labor than by having workers carry parts to a stationary piece for assembly.
+
+Assembly lines are common methods of assembling complex items such as [[automobile]]s and other [[transportation]] equipment, [[household]] appliances and [[Consumer electronics|electronic goods]].
+
+==Concepts==
+[[File:Final assembly 3.jpg|thumb|[[Lotus Cars]] assembly line as of 2008]]
+Assembly lines are designed for the sequential organization of [[worker]]s, [[tool]]s or machines, and parts. The motion of workers is minimized to the extent possible. All parts or assemblies are handled either by [[conveyor]]s or motorized vehicles such as [[fork lifts]], or [[gravity]], with no manual trucking. Heavy lifting is done by machines such as [[overhead crane]]s or forklifts. Each worker typically performs one simple operation.
+
+According to [[Henry Ford]]:
+
+{{quote|The principles of assembly are these:
+
+(1) Place the tools and the men in the sequence of the operation so that each component part shall travel the least possible distance while in the process of finishing.
+
+(2) Use work slides or some other form of carrier so that when a workman completes his operation, he drops the part always in the same place—which place must always be the most convenient place to his hand—and if possible have gravity carry the part to the next workman for his own.
+
+(3) Use sliding assembling lines by which the parts to be assembled are delivered at convenient distances.&lt;ref name=&quot;Ford1922&quot;&gt;{{Harvnb|Ford|Crowther|1922}}, p. 45 (on line version), p. 80 (print version)&lt;/ref&gt;}}
+
+Designing assembly lines is a well-established mathematical challenge, referred to as assembly line balancing problem.&lt;ref&gt;{{cite journal | last1 = Scholl| first1 = A. | last2 = Christian| first2 = B. | year = 2006 | title = State-of-the-art exact and heuristic solution procedures for simple assembly line balancing | journal = European Journal of Operational Research | volume = 168| issue = 3| pages = 666–639 | doi=10.1016/j.ejor.2004.07.022
+}}&lt;/ref&gt; The aim is to assign a set of tasks which need to be performed on the workpiece to a sequence of workstations. Each task requires a given task duration for completion. The assignment of tasks to stations is typically limited by two constraints: (1) a precedence graph which indicates what other tasks need to be completed before a particular tasks can be initiated (e.g. not putting in a screw before drilling the hole) and (2) a cycle time which restricts the sum of task durations which can be completed at each workstation before the workpiece is moved to the next station by they conveyor belt. Major planning problems for operating assembly lines include [[supply chain | supply chain integration]], [[inventory control]] and [[production scheduling]]. &lt;ref&gt;{{cite book | last1 = Slack| first1 = N. | last2 = Brandon-Jones| first2 = A. | last3 = Johnston | first3 = R. |date= 2013 |title= Operations Management  |publisher= Pearson |isbn=9780273776291}}&lt;/ref&gt;
+
+
+
+==Simple example==
+
+Consider the assembly of a [[car]]: assume that certain steps in the assembly line are to install the engine, install the hood, and install the wheels (in that order, with arbitrary interstitial steps); only one of these steps can be done at a time. In traditional production, only one car would be assembled at a time. If [[engine]] installation takes 20 minutes, [[Hood (vehicle)|hood]] installation takes five minutes, and [[wheel]]s installation takes 10 minutes, then a car can be produced every 35 minutes.
+
+In an assembly line, car assembly is split between several stations, all working simultaneously. When a station is finished with a car, it passes it on to the next. By having three stations, three cars can be operated on at the same time, each at a different stage of assembly.
+
+After finishing its work on the first car, the engine installation crew can begin working on the second car. While the engine installation crew works on the second car, the first car can be moved to the hood station and fitted with a hood, then to the wheels station and be fitted with wheels. After the engine has been installed on the second car, the second car moves to the hood assembly. At the same time, the third car moves to the engine assembly. When the third car's engine has been mounted, it then can be moved to the hood station; meanwhile, subsequent cars (if any) can be moved to the engine installation station.
+
+Assuming no loss of time when moving a car from one station to another, the longest stage on the assembly line determines the [[throughput (business)|throughput]] (20 minutes for the engine installation) so a car can be produced every 20 minutes, once the first car taking 35 minutes has been produced.
+
+==History==
+Before the [[Industrial Revolution]], most manufactured products were made individually by hand. A single [[Artisan|craftsman]] or team of craftsmen would create each part of a product. They would use their skills and tools such as [[File (tool)|files]] and [[knives]] to create the individual parts. They would then assemble them into the final product, making cut-and-try changes in the parts until they fit and could work together ([[craft production]]).
+
+[[Division of labor]] was practiced in China where state run monopolies [[mass-produced]] metal agricultural implements, china, armor, and weapons centuries before it appeared in Europe on the eve of the Industrial Revolution.&lt;ref&gt;{{harvnb|Merson|1990||p=}}{{page needed|date=December 2014}}&lt;/ref&gt; [[Adam Smith]] discussed the [[division of labour]] in the manufacture of [[pins]] at length in his book ''[[The Wealth of Nations]]'' (published in 1776).
+
+The [[Venetian Arsenal]], dating to about 1104, operated similar to a [[production line]]. Ships moved down a canal and were fitted by the various shops they passed. At the peak of its [[efficiency]] in the early 16th century, the Arsenal employed some 16,000 people who could apparently produce nearly one ship each day, and could fit out, arm, and provision a newly built [[galley]] with standardized parts on an assembly-line basis. Although the Arsenal lasted until the early Industrial Revolution, production line methods did not become common even then.&lt;ref&gt;Dolinsky, Anton. &quot;Inventory Management History Part Three: Venetian Arsenal - Ahead of Their Time&quot;. Almyta Systems. http://www.almyta.com/Inventory_Management_History_3.asp&lt;/ref&gt;
+
+===Industrial Revolution===
+
+The [[Industrial Revolution]] led to a proliferation of manufacturing and invention. Many industries, notably [[textile]]s, [[firearm]]s, [[clockmaking|clocks and watches]],&lt;ref name = &quot;xovodv&quot;&gt;[[G.N. Georgano]] 1985.{{full citation needed|date=December 2014}}&lt;/ref&gt; [[horse-drawn vehicle]]s, [[Locomotive|railway locomotives]], [[sewing machine]]s, and [[bicycle]]s, saw expeditious improvement in materials handling, machining, and assembly during the 19th century, although modern concepts such as [[industrial engineering]] and [[logistics]] had not yet been named.
+
+[[File:PulleyShip.JPG|thumb|right|The [[Pulley#Block and tackle|pulley block]] was the first manufacture to become fully automated at the [[Portsmouth Block Mills]] in the early 19th century.]]
+
+The automatic [[flour]] [[Mill (grinding)|mill]] built by [[Oliver Evans]] in 1785 was called the beginning of modern [[bulk material handling]] by Roe (1916). Evans's mill used a leather belt bucket elevator, [[screw conveyor]]s, canvas belt conveyors, and other mechanical devices to completely automate the process of making flour. The innovation spread to other mills and breweries.&lt;ref&gt;{{harvnb|Roe|1916|p=}}{{page needed|date=December 2014}}&lt;/ref&gt;&lt;ref&gt;{{harvnb|Hounshell|1984|p=}}{{page needed|date=December 2014}}&lt;/ref&gt;
+
+Probably the earliest industrial example of a linear and continuous assembly process is the [[Portsmouth Block Mills]], built between 1801 and 1803. [[Marc Isambard Brunel]] (father of [[Isambard Kingdom Brunel]]), with the help of [[Henry Maudslay]] and others, designed 22 types of machine tools to make the parts for the rigging [[Block (sailing)|blocks]] used by the [[Royal Navy]]. This factory was so successful that it remained in use until the 1960s, with the workshop still visible at [[HMNB Portsmouth|HM Dockyard]] in [[Portsmouth]], and still containing some of the original machinery.&lt;ref&gt;Coad, Jonathan, ''The Portsmouth Block Mills : Bentham, Brunel and the start of the Royal Navy's Industrial Revolution'', 2005, {{ISBN|1-873592-87-6}}.{{pn|date=November 2019}}&lt;/ref&gt;
+
+One of the earliest examples of an almost modern factory layout, designed for easy material handling, was the [[Nasmyth, Gaskell and Company|Bridgewater Foundry]]. The factory grounds were bordered by the [[Bridgewater Canal]] and the [[Liverpool and Manchester Railway]]. The buildings were arranged in a line with a railway for carrying the work going through the buildings. [[Crane (machine)|Cranes]] were used for lifting the heavy work, which sometimes weighed in the tens of tons. The work passed sequentially through to erection of framework and final assembly.&lt;ref&gt;{{harvnb|Musson|Robinson|1969|pp=491–5}}&lt;/ref&gt;
+
+[[File:Bridgewater foundary.gif|thumb|left|The [[Nasmyth, Gaskell and Company|Bridgewater Foundry]], pictured in 1839, one of the earliest factories to use an almost modern [[Process layout|layout]], workflow, and material-handling system]]
+
+The first flow assembly line was initiated at the factory of [[Richard Garrett &amp; Sons]], Leiston Works in [[Leiston]] in the [[English county]] of [[Suffolk]] for the manufacture of [[portable steam engine]]s. The assembly line area was called '[[Long Shop Museum|The Long Shop]]' on account of its length and was fully operational by early 1853. The [[boiler]] was brought up from the foundry and put at the start of the line, and as it progressed through the building it would stop at various stages where new parts would be added. From the upper level, where other parts were made, the lighter parts would be lowered over a balcony and then fixed onto the machine on the ground level. When the machine reached the end of the shop, it would be completed.
+&lt;ref&gt;{{cite web |url= http://www.industriouseast.org.uk/index.php?pageId=147&amp;anchor=164&amp;filter=gb |title= Long Shop Museum |accessdate= 2012-12-17 |archive-url= https://web.archive.org/web/20150601151902/http://www.industriouseast.org.uk/index.php?pageId=147&amp;anchor=164&amp;filter=gb |archive-date= 2015-06-01 |url-status= dead }}{{full citation needed|date= December 2014}}&lt;/ref&gt;
+
+===Interchangeable parts===
+
+During the early 19th century, the development of [[machine tool]]s such as the [[screw-cutting lathe]], [[Planer (metalworking)|metal planer]], and [[milling machine]], and of toolpath control via [[Jig (tool)|jigs]] and [[Fixture (tool)|fixtures]], provided the prerequisites for the modern assembly line by making [[interchangeable parts]] a practical reality.{{cn|date=November 2019}}
+
+===Late 19th-century steam and electric conveyors===
+
+Steam powered [[conveyor lift]]s began being used for loading and unloading ships some time in the last quarter of the 19th century.&lt;ref name=&quot;Wells1890&quot;&gt;{{harvnb|Wells|1890|p=}}{{page needed|date=December 2014}}&lt;/ref&gt; Hounshell (1984) shows a {{circa|1885}} sketch of an electric powered conveyor moving cans through a filling line in a canning factory.
+
+The [[meatpacking]] industry of [[Chicago]] is believed to be one of the first industrial assembly lines (or dis-assembly lines) to be utilized in the United States starting in 1867. Workers would stand at fixed stations and a pulley system would bring the meat to each worker and they would complete one task. Henry Ford and others have written about the influence of this [[slaughterhouse]] practice on the later developments at Ford Motor Company.{{sfn|Patterson, 2002|pp=71–79}}
+
+===20th century===
+
+[[File:Ford assembly line - 1913.jpg|right|thumb|Ford assembly line, 1913. The [[Ignition magneto|magneto]] assembly line was the first.&lt;ref name=swan&gt;{{cite web|url= http://www.caranddriver.com/features/fords-assembly-line-turns-100-how-it-really-put-the-world-on-wheels-feature |title=Ford's Assembly Line Turns 100: How It Really Put the World on Wheels |first=Tony |last=Swan|publisher=[[Car and driver]] |date=April 2013|accessdate=26 March 2017}}&lt;/ref&gt;&lt;ref name=Weber2013/&gt;]]
+[[File:A-line1913.jpg|thumb|1913 Experimenting with mounting body on Model T [[chassis]]. Ford tested various assembly methods to optimize the procedures before permanently installing the equipment. The actual assembly line used an [[overhead crane]] to mount the body.]]
+[[File:Ford Model T Assembly Line(1919).webm|thumb|thumbtime=2|Ford Model T assembly line circa 1919]]
+[[File:Model T assembling circa 1924.webm|thumb|thumbtime=6|start=6|end=47|Ford Model T assembly line circa 1924]]
+[[File:Ford assembly line(1930).webm|thumb|thumbtime=6|Ford assembly line circa 1930]]
+[[File:Ford assembly line (1947).webm|thumb|thumbtime=6|Ford assembly line circa 1947]]
+According to Domm, the implementation of mass production of an automobile via an assembly line may be credited to [[Ransom Olds]], who used it to build the first mass-produced automobile, the [[Oldsmobile Curved Dash]].&lt;ref name=&quot;michigan yesterday&quot;&gt;{{harvnb|Domm|2009|p=29}}&lt;/ref&gt; Olds [[patented]] the assembly line concept, which he put to work in his [[Olds Motor Vehicle Company]] factory in 1901.&lt;ref&gt;{{cite web |first= Phil |last= Ament |url= http://www.ideafinder.com/history/inventions/assbline.htm |title= Assembly Line History: Invention of the Assembly Line |publisher= Ideafinder.com |accessdate= 2011-10-15}}&lt;/ref&gt;
+
+At [[Ford Motor Company]], the assembly line was introduced by William &quot;Pa&quot; Klann upon his return from visiting [[Gustavus Franklin Swift|Swift &amp; Company's slaughterhouse]] in Chicago and viewing what was referred to as the &quot;disassembly line&quot;, where carcasses were butchered as they moved along a conveyor. The efficiency of one person removing the same piece over and over without himself moving caught his attention. He reported the idea to [[Peter E. Martin]], soon to be head of Ford production, who was doubtful at the time but encouraged him to proceed. Others at Ford have claimed to have put the idea forth to [[Henry Ford]], but Pa Klann's slaughterhouse revelation is well documented in the archives at the Henry Ford Museum&lt;ref&gt;{{cite journal |last= Klann |first= W. C. |date= n.d. |title= Reminiscences |id= Accession 65 |publisher= Henry Ford Museum &amp; Greenfield Village Archives}}&lt;/ref&gt; and elsewhere, making him an important contributor to the modern automated assembly line concept. Ford was appreciative, having visited the highly automated 40-acre [[Sears]] [[mail order]] handling facility around 1906. At Ford, the process was an evolution by trial and error&lt;ref name=Weber2013&gt;{{cite web|url=http://www.assemblymag.com/articles/91581-the-moving-assembly-line-turns-100 |title=The Moving Assembly Line Turns 100 |last=Weber |first=Austin |publisher=Assembly Magazine |date=2013-10-01 |accessdate=2017-03-26 |archive-url=https://web.archive.org/web/20160826161557/http://www.assemblymag.com/articles/91581-the-moving-assembly-line-turns-100 |archive-date=2016-08-26 |url-status=live |quote=The assembly line ... was the result of a long period of trial and error. The assembly line wasn't a planned development; rather, it emerged in 1913 from a dynamic situation. People such as Carl Emde, William Klann and William Knudsen all played key roles in early automation efforts at Ford's Highland Park factory. Two individuals were essential to the success of the moving assembly line: Clarence Avery and Charles Sorensen. constant redesign of the Model T. Many components were tweaked regularly to make the vehicle easier to assemble. In 1913 alone, Ford made more than 100 design changes every month. Continuous experimentation was the rule rather than the exception at Ford's Highland Park plant. Ford engineers were constantly redesigning and tweaking jigs and fixtures, and planning new machine tools or fixing old ones, to achieve higher production. }}&lt;/ref&gt; of a team consisting primarily of [[Peter E. Martin]], the factory superintendent; [[Charles E. Sorensen]], Martin's assistant; [[Clarence W. Avery]]; [[C. Harold Wills]], draftsman and toolmaker; [[Charles Ebender]]; and [[József Galamb]]. Some of the groundwork for such development had recently been laid by the intelligent layout of [[machine tool]] placement that [[Walter Flanders]] had been doing at Ford up to 1908.
+
+The moving assembly line was developed for the [[Ford Model T]] and began operation on October 7, 1913, at the [[Highland Park Ford Plant]],&lt;ref&gt;{{cite news|date=October 7, 2013|title=Ford's Assembly Line Turns 100: How It Changed Manufacturing and Society|url=http://www.nydailynews.com/autos/ford-assembly-line-turns-100-changed-society-article-1.1478331|newspaper=[[New York Daily News]]|accessdate=August 27, 2017|archiveurl=https://web.archive.org/web/20131130021237/http://www.nydailynews.com/autos/ford-assembly-line-turns-100-changed-society-article-1.1478331|archivedate=November 30, 2013}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url= http://www.history.com/this-day-in-history/moving-assembly-line-at-ford |title=Moving Assembly Line at Ford|publisher=[[History (U.S. TV channel)|The History Channel]]|work=This Day in History|accessdate=September 2, 2016}}&lt;/ref&gt; and continued to evolve after that, using [[time and motion study]].&lt;ref name=Weber2013/&gt; The assembly line, driven by [[conveyor belts]], reduced production time for a [[Model T]] to just 93 minutes&lt;ref name=&quot;michigan yesterday&quot;/&gt; by dividing the process into 45 steps.&lt;ref name=Weber2008&gt;{{cite web|url=http://www.assemblymag.com/articles/85803-how-the-model-t-was-assembled |title=How the Model T Was Assembled |last=Weber |first=Austin |publisher=Assembly Magazine |date=2008-09-02 |accessdate=2017-03-26 |archive-url=https://web.archive.org/web/20160306031306/http://www.assemblymag.com/articles/85803-how-the-model-t-was-assembled |archive-date=2016-03-06 |url-status=live }}&lt;/ref&gt; Producing cars quicker than paint of the day could dry, it had an immense influence on the world.
+
+In 1922, Ford (through his ghostwriter Crowther) said of his 1913 assembly line:
+
+{{quote|I believe that this was the first moving line ever installed. The idea came in a general way from the overhead trolley that the Chicago packers use in dressing beef.&lt;ref&gt;{{harvnb|Ford|Crowther|1922|p= 81}}&lt;/ref&gt;}}
+
+[[Charles E. Sorensen]], in his 1956 memoir ''My Forty Years with Ford'', presented a different version of development that was not so much about individual &quot;inventors&quot; as a gradual, logical development of [[industrial engineering]]:
+
+{{quote|What was worked out at Ford was the practice of moving the work from one worker to another until it became a complete unit, then arranging the flow of these units at the right time and the right place to a moving final assembly line from which came a finished product. Regardless of earlier uses of some of these principles, the direct line of succession of mass production and its intensification into automation stems directly from what we worked out at Ford Motor Company between 1908 and 1913. Henry Ford is generally regarded as the father of mass production. He was not. He was the sponsor of it.&lt;ref&gt;{{harvnb|Sorensen|1956|p=116}}.&lt;/ref&gt;}}
+
+As a result of these developments in method, Ford's cars came off the line in three-minute intervals, or six feet per minute.&lt;ref&gt;{{harvnb|Ford|Crowther|1922|Chapter IV}}{{page needed|date=March 2017}}&lt;/ref&gt; This was much faster than previous methods, increasing production by eight to one (requiring 12.5 man-hours before, 1 hour 33 minutes after), while using less manpower.&lt;ref name = &quot;xovodv&quot;/&gt; It was so successful, [[paint]] became a bottleneck. Only [[japan black]] would dry fast enough, forcing the company to drop the variety of colors available before 1914, until fast-drying [[Duco]] [[lacquer]] was developed in 1926.&lt;ref name = &quot;xovodv&quot;/&gt;
+
+The assembly line technique was an integral part of the diffusion of the automobile into American society. Decreased costs of production allowed the cost of the Model T to fall within the budget of the American middle class. In 1908, the price of a Model T was around $825, and by 1912 it had decreased to around $575. This price reduction is comparable to a reduction from $15,000 to $10,000 in dollar terms from the year 2000. In 1914, an assembly line worker could buy a Model T with four months' pay.&lt;ref name = &quot;xovodv&quot;/&gt;
+
+Ford's complex safety procedures—especially assigning each worker to a specific location instead of allowing them to roam about—dramatically reduced the rate of [[injury]]. The combination of high wages and high efficiency is called &quot;[[Fordism]]&quot;, and was copied by most major industries. The efficiency gains from the assembly line also coincided with the take-off of the United States. The assembly line forced workers to work at a certain pace with very repetitive motions which led to more output per worker while other countries were using less productive methods.
+
+In the [[automotive industry]], its success was dominating, and quickly spread worldwide. Ford France and Ford Britain in 1911, Ford Denmark 1923, Ford Germany and Ford Japan 1925; in 1919, Vulcan (Southport, Lancashire) was the first native European manufacturer to adopt it. Soon, companies had to have assembly lines, or risk going broke by not being able to compete; by 1930, 250 companies which did not had disappeared.&lt;ref name = &quot;xovodv&quot;/&gt;
+
+The massive demand for military hardware in World War II prompted assembly-line techniques in shipbuilding and aircraft production. Thousands of [[Liberty Ship]]s were built making extensive use of prefabrication, enabling ship assembly to be completed in weeks or even days. After having produced fewer than 3,000 planes for the United States Military in 1939, American aircraft manufacturers built over 300,000 planes in World War II. [[Vultee]] pioneered the use of the powered assembly line for aircraft manufacturing. Other companies quickly followed. As [[William S. Knudsen]] (having worked at Ford,&lt;ref name=Weber2013/&gt; GM and the National Defense Advisory Commission) observed, &quot;We won because we smothered the enemy in an avalanche of production, the like of which he had never seen, nor dreamed possible.&quot;&lt;ref&gt;{{harvnb|Herman|2012|pp=176–91}}&lt;/ref&gt;&lt;ref&gt;{{harvnb|Parker|2012|pp=5–12}}&lt;/ref&gt;
+
+==Improved working conditions==
+In his 1922 autobiography,&lt;ref name=&quot;Ford1922&quot;/&gt; Henry Ford mentions several benefits of the assembly line including:
+* Workers do not do any heavy lifting.
+* No stooping or bending over.
+* No special training was required.
+* There are jobs that almost anyone can do.
+* Provided employment to immigrants.
+
+The gains in [[productivity]] allowed Ford to increase worker pay from $1.50 per day to $5.00 per day once employees reached three years of service on the assembly line. Ford continued on to reduce the hourly work week while continuously lowering the Model T price. These goals appear altruistic; however, it has been argued that they were implemented by Ford in order to reduce high employee turnover: when the assembly line was introduced in 1913, it was discovered that &quot;every time the company wanted to add 100 men to its factory personnel, it was necessary to hire 963&quot; in order to counteract the natural distaste the assembly line seems to have inspired.&lt;ref&gt;{{cite web|last=Crawford |first=Matthew |title=Shop Class as Soulcraft |url=http://www.thenewatlantis.com/publications/shop-class-as-soulcraft |work=[[The New Atlantis (journal)|The New Atlantis]] |url-status=dead |archiveurl=https://web.archive.org/web/20130601015022/http://www.thenewatlantis.com/publications/shop-class-as-soulcraft |archivedate=2013-06-01 }}&lt;/ref&gt;
+
+==Sociological problems==
+[[Sociology|Sociological]] work has explored the [[social alienation]] and [[boredom]] that many workers feel because of the repetition of doing the same specialized task all day long.&lt;ref&gt;{{cite journal |jstor= 4105309 |title= Alienation and Freedom: The Factory Worker and His Industry |authorlink= Bob Blauner |first= Robert |last= Blauner |journal= [[Technology and Culture]] |volume= 6 |issue= 3 |date= Summer 1965 |pages= 518–519}}&lt;/ref&gt;
+
+One of capitalism's most famous critics, [[Karl Marx]], expressed in his ''[[Marx's theory of alienation|Entfremdung]]'' theory the belief that in order to achieve job satisfaction workers need to see themselves in the objects they have created, that products should be &quot;mirrors in which workers see their reflected essential nature.&quot; Marx viewed labour as a chance for us to externalize facets of our personality. Marxists argue that specialization makes it very difficult for any worker to feel they may be contributing to the real needs of humanity. The repetitive nature of specialized tasks causes, they say, a feeling of disconnection between what a worker does all day, who they really are, and what they would ideally be able to contribute to society. Marx also argued that specialised jobs are insecure, since the worker is expendable as soon as costs rise and technology can replace more expensive human labour.&lt;ref&gt;Marx, Karl. &quot;Comment on James Mill,&quot; ''Economic and Philosophical Manuscripts of 1844'': 1844.&lt;/ref&gt;
+
+Since workers have to stand in the same place for hours and repeat the same motion hundreds of times per day [[Repetitive strain injury|repetitive stress injuries]] are a possible pathology of [[occupational safety]]. [[Industrial noise]] also proved dangerous. When it was not too high, workers were often prohibited from talking. [[Charles Piaget]], a [[skilled worker]] at the [[LIP factory]], recalled that beside being prohibited from speaking, the semi-skilled workers had only 25 centimeters in which to move.&lt;ref&gt;{{cite interview|url = http://www.mouvements.asso.fr/spip.php?article52|title = Leçons d'autogestion|trans-title = Autogestion Lessons|language = fr|url-status = dead|archiveurl = https://web.archive.org/web/20070707192357/http://www.mouvements.asso.fr/spip.php?article52|archivedate = 7 July 2007}}&lt;/ref&gt; Industrial [[ergonomics]] later tried to minimize physical trauma.
+
+==See also==
+{{portal|Companies|Business and economics}}
+* [[Modern Times (film)]]
+
+==References==
+
+===Footnotes===
+{{Reflist|30em}}
+
+===Works cited===
+{{refbegin|30em}}
+* {{cite book |ref= harv |last= Borth |first= Christy |year= 1945 |title= Masters of Mass Production |publisher= Bobbs-Merrill Company |location= Indianapolis }}
+* {{cite book |ref= harv |first= Robert W. |last= Domm |year= 2009 |title= Michigan Yesterday &amp; Today |location= |publisher= Voyageur Press |url= https://books.google.com/?id=HQdTa9ZXlVAC&amp;pg=PA29 |isbn= 9780760333853}}
+* {{cite book |ref= harv |last1= Ford |first1= Henry |last2= Crowther |first2= Samuel |authorlink= Henry Ford |lastauthoramp= yes |year= 1922 |title= My Life and Work |publisher= Garden City Publishing |location= Garden City, NY |url = http://www.gutenberg.net/etext/7213 |isbn= 0-405-05088-7 }}
+* {{cite book |ref= harv |last= Herman |first= Arthur |year= 2012 |title= Freedom's Forge: How American Business Produced Victory in World War II |publisher= Random House |location= New York |isbn= 978-1-4000-6964-4 |url-access= registration |url= https://archive.org/details/freedomsforgehow00herm }}
+* {{cite book |ref= harv |last1= Merson |first1= John |year= 1990 |title= The Genius That Was China: East and West in the Making of the Modern World |publisher= The Overlook Press |location= Woodstock, NY |isbn= 0-87951-397-7 |postscript= . A companion to the PBS Series ''The Genius That Was China''. |url-access= registration |url= https://archive.org/details/geniusthatwaschi0000mers }}
+* {{cite book|author=Charles Patterson|title=Eternal Treblinka: Our Treatment of Animals and the Holocaust |url= |accessdate= |year=2002|publisher= Lantern Books|location=|isbn=978-19-300-5199-7 |pages=|ref={{sfnRef|Patterson, 2002}}}}
+* {{cite book |ref= harv |last1=Musson |first1= |last2= Robinson |first2= |lastauthoramp= yes |year=1969 |title= Science and Technology in the Industrial Revolution|publisher=University of Toronto Press |location= Toronto |isbn= }}{{full citation needed|date=December 2014}}
+* {{cite book |ref= harv |last= Nye |first= David E. |title= America's Assembly Line |location= |publisher= MIT Press |year= 2013}}
+* {{cite book |ref= harv |last= Hounshell |first= David A. |year= 1984 |authorlink= David A. Hounshell |title= From the American System to Mass Production, 1800–1932: The Development of Manufacturing Technology in the United States |publisher= Johns Hopkins University Press |location= Baltimore |isbn= 978-0-8018-2975-8 |lccn= 83016269 |url-access= registration |url= https://archive.org/details/fromamericansyst0000houn }}
+* {{cite book |ref= harv |last= Parker |first= Dana T. |title= Building Victory: Aircraft Manufacturing in the Los Angeles Area in World War II |location= Cypress, CA |publisher= |year= 2013 |isbn= 978-0-9897906-0-4}}{{full citation needed|date= December 2014}}
+* {{Roe1916}}
+* {{cite book |ref=harv |last= Wells |first= David A. |year= 1890 |title= Recent Economic Changes and Their Effect on Production and Distribution of Wealth and Well-Being of Society |publisher= D. Appleton and Co. |location= New York |isbn= 0-543-72474-3|pages=|url= https://archive.org/details/recenteconomicc01wellgoog }}
+* {{cite book |ref={{harvid|We-Min|1990}} |author= We-Min Chow |year= 1990 |title= Assembly Line Design |location= |publisher= |isbn=}}{{full citation needed|date= December 2014}}
+* {{cite book |ref= harv |last= Sorensen |first= Charles E. |last2= Williamson |first2= Samuel T. |authorlink= Charles E. Sorensen |lastauthoramp= yes |year= 1956 |title= My Forty Years with Ford |publisher= Norton |location= New York |lccn= 56010854}}
+{{refend}}
+
+==External links==
+{{Commons category|Assembly lines}}
+* [http://www.assembly-line-balancing.de Homepage for assembly line optimization research]
+* [http://www.advanced-planning.eu/advancedplanninge-373a.htm Assembly line optimization problems]
+* [https://archive.is/20130217020345/http://18378092.nhd.weebly.com/ History of the assembly line and its widespread effects]
+* [https://www.youtube.com/playlist?list=PLMu8S6YCS2kIMO-t0Qmx_-XbOKYZ2bNnY Cars Assembly Line]
+
+{{Industrial Revolution}}
+{{History of technology}}
+{{Interwiki conflict}}
+
+{{DEFAULTSORT:Assembly Line}}
+[[Category:Industrial processes]]
+[[Category:Mass production]]
+[[Category:Manufacturing buildings and structures]]
+[[Category:American inventions]]
+[[Category:Culture of Detroit]]
+[[Category:History of science and technology in the United States]]
+[[Category:Articles containing video clips]]
+
+[[ca:Producció en cadena]]</text>
+      <sha1>a95nfckpwmcd28484kf0asgils0lija</sha1>
+    </revision>
+  </page>

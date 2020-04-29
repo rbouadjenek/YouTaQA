@@ -1,0 +1,351 @@
+  <page>
+    <title>Binomial theorem</title>
+    <ns>0</ns>
+    <id>4677</id>
+    <revision>
+      <id>943199574</id>
+      <parentid>943199290</parentid>
+      <timestamp>2020-02-29T13:37:52Z</timestamp>
+      <contributor>
+        <username>Deacon Vorbis</username>
+        <id>29330520</id>
+      </contributor>
+      <comment>/* The binomial theorem in abstract algebra */ trim heading</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{Refimprove|date=June 2019}}
+{{Image frame|width=215
+|content=
+&lt;math&gt;
+\begin{array}{c}
+ 1 \\
+ 1 \quad 1 \\
+ 1 \quad 2 \quad 1 \\
+ 1 \quad 3 \quad 3 \quad 1 \\
+ 1 \quad 4 \quad 6 \quad 4 \quad 1 \\
+ 1 \quad 5 \quad 10 \quad 10 \quad 5 \quad 1 \\
+ 1 \quad 6 \quad 15 \quad 20 \quad 15 \quad 6 \quad 1 \\
+ 1 \quad 7 \quad 21 \quad 35 \quad 35 \quad 21 \quad 7 \quad 1
+\end{array}
+&lt;/math&gt;
+|caption=The [[binomial coefficient]] &lt;math&gt;\tbinom{n}{b}&lt;/math&gt; appears as the {{mvar|b}}th entry in the {{mvar|n}}th row of [[Pascal's triangle]] (counting starts at {{math|0}}). Each entry is the sum of the two above it.}}
+In [[elementary algebra]], the '''binomial theorem''' (or '''binomial expansion''') describes the algebraic expansion of [[exponentiation|powers]] of a [[binomial (polynomial)|binomial]]. According to the theorem, it is possible to expand the polynomial {{math|(''x'' + ''y'')&lt;sup&gt;''n''&lt;/sup&gt;}} into a [[summation|sum]] involving terms of the form {{math|''ax''&lt;sup&gt;''b''&lt;/sup&gt;''y''&lt;sup&gt;''c''&lt;/sup&gt;}}, where the exponents {{mvar|b}} and {{mvar|c}} are [[nonnegative integer]]s with {{math|1=''b'' + ''c'' = ''n''}}, and the [[coefficient]] {{mvar|a}} of each term is a specific [[positive integer]] depending on {{mvar|n}} and {{mvar|b}}.  For example (for {{math|1=''n'' = 4}}),
+
+:&lt;math&gt;(x+y)^4 = x^4 + 4 x^3y + 6 x^2 y^2 + 4 x y^3 + y^4. &lt;/math&gt;
+
+The coefficient {{mvar|a}} in the term of {{math|''ax''&lt;sup&gt;''b''&lt;/sup&gt;''y''&lt;sup&gt;''c''&lt;/sup&gt;}} is known as the [[binomial coefficient]] &lt;math&gt;\tbinom{n}{b}&lt;/math&gt; or &lt;math&gt;\tbinom{n}{c}&lt;/math&gt; (the two have the same value). These coefficients for varying {{mvar|n}} and {{mvar|b}} can be arranged to form [[Pascal's triangle]]. These numbers also arise in [[combinatorics]], where &lt;math&gt;\tbinom{n}{b}&lt;/math&gt; gives the number of different [[combinations]] of {{mvar|b}} [[element (mathematics)|elements]] that can be chosen from an {{mvar|n}}-element [[set (mathematics)|set]].  Therefore &lt;math&gt;\tbinom{n}{b}&lt;/math&gt; is often pronounced as &quot;{{mvar|n}} choose {{mvar|b}}&quot;.
+
+==History==
+Special cases of the binomial theorem were known since at least the 4th century BC when [[Greek mathematics|Greek mathematician]] [[Euclid]] mentioned the special case of the binomial theorem for exponent&amp;nbsp;{{math|2}}.&lt;ref name=wolfram&gt;{{cite web|url=http://mathworld.wolfram.com/BinomialTheorem.html|title=Binomial Theorem|website=Wolfram MathWorld|last=Weisstein|first=Eric W.}}&lt;/ref&gt;&lt;ref name=&quot;Coolidge&quot;&gt;{{cite journal|title=The Story of the Binomial Theorem|first=J. L.|last=Coolidge|journal=The American Mathematical Monthly|volume=56|issue=3|date=1949|pp=147–157|doi=10.2307/2305028|jstor = 2305028}}&lt;/ref&gt;  There is evidence that the binomial theorem for cubes was known by the 6th century AD in India.&lt;ref name=wolfram /&gt;&lt;ref name=&quot;Coolidge&quot; /&gt;
+
+Binomial coefficients, as combinatorial quantities expressing the number of ways of selecting {{mvar|k}} objects out of {{mvar|n}} without replacement, were of interest to ancient Indian mathematicians.  The earliest known reference to this combinatorial problem is the ''Chandaḥśāstra'' by the Indian lyricist [[Pingala]] (c. 200 BC), which contains a method for its solution.&lt;ref name=Chinese&gt;{{cite book|title=A history of Chinese mathematics|author1=Jean-Claude Martzloff|author2=S.S. Wilson|author3=J. Gernet|author4=J. Dhombres|publisher=Springer|year=1987}}&lt;/ref&gt;{{rp|230}}  The commentator [[Halayudha]] from the 10th century AD explains this method using what is now known as [[Pascal's triangle]].&lt;ref name=Chinese /&gt;  By the 6th century AD, the Indian mathematicians probably knew how to express this as a quotient &lt;math&gt;\frac{n!}{(n-k)!k!}&lt;/math&gt;,&lt;ref name=&quot;Biggs&quot;&gt;{{cite journal|last=Biggs|first=N. L.|title=The roots of combinatorics|journal=Historia Math.|volume=6|date=1979|issue=2|pages=109–136|doi=10.1016/0315-0860(79)90074-0}}&lt;/ref&gt; and a clear statement of this rule can be found in the 12th century text ''Lilavati'' by [[Bhāskara II|Bhaskara]].&lt;ref name=&quot;Biggs&quot; /&gt;
+
+The first formulation of the binomial theorem and the table of binomial coefficients, to our knowledge, can be found in a work by [[Al-Karaji]], quoted by [[Al-Samaw'al]] in his &quot;al-Bahir&quot;.&lt;ref&gt;{{Cite web|url=https://core.ac.uk/download/pdf/82000184.pdf|website=core.ac.uk|access-date=2019-01-08|title=THE BINOMIAL THEOREM : A WIDESPREAD CONCEPT IN MEDIEVAL ISLAMIC MATHEMATICS|page=401}}&lt;/ref&gt;&lt;ref&gt;{{Cite journal|last=|first=|date=|title=Taming the unknown. A history of algebra from antiquity to the early twentieth century|url=http://www.ams.org/journals/bull/2015-52-04/S0273-0979-2015-01491-6/S0273-0979-2015-01491-6.pdf|journal=Bulletin of the American Mathematical Society|volume=|pages=|via=|page=727|quote=However, algebra advanced in other respects. Around 1000, al-Karaji stated the binomial theorem}}&lt;/ref&gt;&lt;ref&gt;{{Cite book|url=https://books.google.com/?id=vSkClSvU_9AC&amp;pg=PA62#v=onepage&amp;q&amp;f=true|title=The Development of Arabic Mathematics: Between Arithmetic and Algebra|last=Rashed|first=R.|date=1994-06-30|publisher=Springer Science &amp; Business Media|isbn=9780792325659|language=en|page=63}}&lt;/ref&gt; [[Al-Karaji]] described the triangular pattern of the binomial coefficients&lt;ref name=Karaji&gt;{{MacTutor|id=Al-Karaji|title=Abu Bekr ibn Muhammad ibn al-Husayn Al-Karaji}}&lt;/ref&gt; and also provided a [[mathematical proof]] of both the binomial theorem and Pascal's triangle, using an early form of [[mathematical induction]].&lt;ref name=Karaji /&gt;   The Persian poet and mathematician [[Omar Khayyam]] was probably familiar with the formula to higher orders, although many of his mathematical works are lost.&lt;ref name=&quot;Coolidge&quot; /&gt;  The binomial expansions of small degrees were known in the 13th century mathematical works of [[Yang Hui]]&lt;ref&gt;{{cite web
+| last = Landau
+| first = James A.
+| title =Historia Matematica Mailing List Archive: Re: [HM] Pascal's Triangle
+| work = Archives of Historia Matematica
+| format = mailing list email
+| accessdate = 2007-04-13
+| date = 1999-05-08
+| url = http://archives.math.utk.edu/hypermail/historia/may99/0073.html
+}}&lt;/ref&gt; and also [[Chu Shih-Chieh]].&lt;ref name=&quot;Coolidge&quot; /&gt;  Yang Hui attributes the method to a much earlier 11th century text of [[Jia Xian]], although those writings are now also lost.&lt;ref name=Chinese /&gt;{{rp|142}}
+
+In 1544, [[Michael Stifel]] introduced the term &quot;binomial coefficient&quot; and showed how to use them to express &lt;math&gt;(1+a)^n&lt;/math&gt; in terms of &lt;math&gt;(1+a)^{n-1}&lt;/math&gt;, via &quot;Pascal's triangle&quot;.&lt;ref name=Kline&gt;{{cite book|title=History of mathematical thought|first=Morris|last=Kline|authorlink=Morris Kline|page=273|publisher=Oxford University Press|year=1972}}&lt;/ref&gt;  [[Blaise Pascal]] studied the eponymous triangle comprehensively in the [[treatise]] ''Traité du triangle arithmétique'' (1665). However, the pattern of numbers was already known to the European mathematicians of the late Renaissance,  including Stifel, [[Niccolò Fontana Tartaglia]], and [[Simon Stevin]].&lt;ref name=Kline /&gt;
+
+[[Isaac Newton]] is generally credited with the generalized binomial theorem, valid for any rational exponent.&lt;ref name=Kline /&gt;&lt;ref&gt;{{cite book|title=Elements of the History of Mathematics Paperback|date=18 November 1998|first=N.|last=Bourbaki|others=J. Meldrum (Translator)|isbn=978-3-540-64767-6|url-access=registration|url=https://archive.org/details/elementsofhistor0000bour}}&lt;/ref&gt;
+
+== Theorem statement ==
+According to the theorem, it is possible to expand any nonnegative power of {{math|''x'' + ''y''}} into a sum of the form
+:&lt;math&gt;(x+y)^n = {n \choose 0}x^n y^0 + {n \choose 1}x^{n-1}y^1 + {n \choose 2}x^{n-2}y^2 + \cdots + {n \choose n-1}x^1 y^{n-1} + {n \choose n}x^0 y^n,
+&lt;/math&gt;
+where &lt;math&gt;n \geq 0&lt;/math&gt; is an integer and each &lt;math&gt; \tbinom nk &lt;/math&gt; is a positive integer known as a [[binomial coefficient]]. (When an exponent is zero, the corresponding power expression is taken to be 1 and this multiplicative factor is often omitted from the term.  Hence one often sees the right side written as &lt;math&gt;\binom{n}{0} x^n + \ldots&lt;/math&gt;.) This formula is also referred to as the '''binomial formula''' or the '''binomial identity'''. Using [[Capital-sigma notation|summation notation]], it can be written as
+:&lt;math&gt;(x+y)^n = \sum_{k=0}^n {n \choose k}x^{n-k}y^k = \sum_{k=0}^n {n \choose k}x^{k}y^{n-k}.
+&lt;/math&gt;
+The final expression follows from the previous one by the symmetry of {{mvar|x}} and {{mvar|y}} in the first expression, and by comparison it follows that the sequence of binomial coefficients in the formula is symmetrical.  A simple variant of the binomial formula is obtained by [[substitution (algebra)|substituting]] {{math|1}} for {{mvar|y}}, so that it involves only a single [[Variable (mathematics)|variable]]. In this form, the formula reads
+:&lt;math&gt;(1+x)^n = {n \choose 0}x^0 + {n \choose 1}x^1 + {n \choose 2}x^2 + \cdots + {n \choose {n-1}}x^{n-1} + {n \choose n}x^n,&lt;/math&gt;
+or equivalently
+:&lt;math&gt;(1+x)^n = \sum_{k=0}^n {n \choose k}x^k.&lt;/math&gt;
+
+== Examples ==
+
+The most basic example of the binomial theorem is the formula for the [[Square (algebra)|square]] of {{math|''x'' + ''y''}}:
+
+:&lt;math&gt;(x + y)^2 = x^2 + 2xy + y^2.&lt;/math&gt;
+
+The binomial coefficients 1, 2, 1 appearing in this expansion correspond to the second row of Pascal's triangle. (The top &quot;1&quot; of the triangle is considered to be row 0, by convention.) The coefficients of higher powers of {{math|''x'' + ''y''}} correspond to lower rows of the triangle:
+
+:&lt;math&gt;
+\begin{align}
+(x+y)^3 &amp; = x^3 + 3x^2y + 3xy^2 + y^3, \\[8pt]
+(x+y)^4 &amp; = x^4 + 4x^3y + 6x^2y^2 + 4xy^3 + y^4, \\[8pt]
+(x+y)^5 &amp; = x^5 + 5x^4y + 10x^3y^2 + 10x^2y^3 + 5xy^4 + y^5, \\[8pt]
+(x+y)^6 &amp; = x^6 + 6x^5y + 15x^4y^2 + 20x^3y^3 + 15x^2y^4 + 6xy^5 + y^6, \\[8pt]
+(x+y)^7 &amp; = x^7 + 7x^6y + 21x^5y^2 + 35x^4y^3 + 35x^3y^4 + 21x^2y^5 + 7xy^6 + y^7.
+\end{align}
+&lt;/math&gt;
+Several patterns can be observed from these examples. In general, for the expansion {{math|(''x'' + ''y'')&lt;sup&gt;''n''&lt;/sup&gt;}}:
+# the powers of {{mvar|x}} start at {{mvar|n}} and decrease by 1 in each term until they reach 0 (with {{math|1=''x''&lt;sup&gt;0&lt;/sup&gt; = 1}}, often unwritten);
+# the powers of {{mvar|y}} start at 0 and increase by 1 until they reach {{mvar|n}}; 
+# the {{mvar|n}}th row of Pascal's Triangle will be the coefficients of the expanded binomial when the terms are arranged in this way;
+# the number of terms in the expansion before like terms are combined is the sum of the coefficients and is equal to {{math|2&lt;sup&gt;''n''&lt;/sup&gt;}}; and
+# there will be {{math|''n'' + 1}} terms in the expression after combining like terms in the expansion.
+
+The binomial theorem can be applied to the powers of any binomial. For example,
+
+:&lt;math&gt;\begin{align}
+(x+2)^3 &amp;= x^3 + 3x^2(2) + 3x(2)^2 + 2^3 \\
+&amp;= x^3 + 6x^2 + 12x + 8.\end{align}&lt;/math&gt;
+
+For a binomial involving subtraction, the theorem can be applied by using the form {{math|1=(''x'' − ''y'')&lt;sup&gt;''n''&lt;/sup&gt; = (''x'' + (−''y''))&lt;sup&gt;''n''&lt;/sup&gt;}}. This has the effect of changing the sign of every other term in the expansion:
+:&lt;math&gt;(x-y)^3 = (x+(-y))^3 = x^3 + 3x^2(-y) + 3x(-y)^2 + (-y)^3 = x^3 - 3x^2y + 3xy^2 -y^3.&lt;/math&gt;
+
+=== Geometric explanation ===
+[[File:binomial_theorem_visualisation.svg|thumb|300px|Visualisation of binomial expansion up to the 4th power]]
+For positive values of {{mvar|a}} and {{mvar|b}}, the binomial theorem with {{math|1=''n'' = 2}} is the geometrically evident fact that a square of side {{math|''a'' + ''b''}} can be cut into a square of side {{mvar|a}}, a square of side {{mvar|b}}, and two rectangles with sides {{mvar|a}} and {{mvar|b}}. With {{math|1=''n'' = 3}}, the theorem states that a cube of side {{math|''a'' + ''b''}} can be cut into a cube of side {{mvar|a}}, a cube of side {{mvar|b}}, three {{math|''a'' × ''a'' × ''b''}} rectangular boxes, and three {{math|''a'' × ''b'' × ''b''}} rectangular boxes.
+
+In [[calculus]], this picture also gives a geometric proof of the [[derivative]] &lt;math&gt;(x^n)'=nx^{n-1}:&lt;/math&gt;&lt;ref name=&quot;barth2004&quot;&gt;{{cite journal | last = Barth | first = Nils R.| title = Computing Cavalieri's Quadrature Formula by a Symmetry of the ''n''-Cube | doi = 10.2307/4145193 | jstor = 4145193 | journal = The American Mathematical Monthly| issn = 0002-9890| volume = 111| issue = 9| pages = 811–813 | date=2004 | pmid =  | pmc =| postscript = , [http://nbarth.net/math/papers/barth-01-cavalieri.pdf author's copy], [http://nbarth.net/math/papers/ further remarks and resources]}}&lt;/ref&gt; if one sets &lt;math&gt;a=x&lt;/math&gt; and &lt;math&gt;b=\Delta x,&lt;/math&gt; interpreting {{mvar|b}} as an [[infinitesimal]] change in {{mvar|a}}, then this picture shows the infinitesimal change in the volume of an {{mvar|n}}-dimensional [[hypercube]], &lt;math&gt;(x+\Delta x)^n,&lt;/math&gt; where the coefficient of the linear term (in &lt;math&gt;\Delta x&lt;/math&gt;) is &lt;math&gt;nx^{n-1},&lt;/math&gt; the area of the {{mvar|n}} faces, each of dimension {{math|''n'' &amp;minus; 1}}:
+:&lt;math&gt;(x+\Delta x)^n = x^n + nx^{n-1}\Delta x + \binom{n}{2}x^{n-2}(\Delta x)^2 + \cdots.&lt;/math&gt;
+Substituting this into the [[definition of the derivative]] via a [[difference quotient]] and taking limits means that the higher order terms, &lt;math&gt;(\Delta x)^2&lt;/math&gt; and higher, become negligible, and yields the formula &lt;math&gt;(x^n)'=nx^{n-1},&lt;/math&gt; interpreted as
+:&quot;the infinitesimal rate of change in volume of an {{mvar|n}}-cube as side length varies is the area of {{mvar|n}} of its {{math|(''n'' &amp;minus; 1)}}-dimensional faces&quot;.
+If one integrates this picture, which corresponds to applying the [[fundamental theorem of calculus]], one obtains [[Cavalieri's quadrature formula]], the integral &lt;math&gt;\textstyle{\int x^{n-1}\,dx = \tfrac{1}{n} x^n}&lt;/math&gt; – see [[Cavalieri's quadrature formula#Proof|proof of Cavalieri's quadrature formula]] for details.&lt;ref name=&quot;barth2004&quot; /&gt;
+
+{{clear}}
+
+== Binomial coefficients ==
+{{Main|Binomial coefficient}}
+The coefficients that appear in the binomial expansion are called '''binomial coefficients'''. These are usually written &lt;math&gt;\tbinom{n}{k},&lt;/math&gt; and pronounced &quot;{{mvar|n}} choose {{mvar|k}}&quot;.
+
+=== Formulae ===
+The coefficient of {{math|''x''&lt;sup&gt;''n''−''k''&lt;/sup&gt;''y''&lt;sup&gt;''k''&lt;/sup&gt;}} is given by the formula
+
+:&lt;math&gt;\binom{n}{k} = \frac{n!}{k! (n-k)!},&lt;/math&gt;
+
+which is defined in terms of the [[factorial]] function {{math|''n''!}}. Equivalently, this formula can be written
+
+:&lt;math&gt;\binom{n}{k} = \frac{n (n-1) \cdots (n-k+1)}{k (k-1) \cdots 1} = \prod_{\ell=1}^k \frac{n-\ell+1}{\ell} = \prod_{\ell=0}^{k-1} \frac{n-\ell}{k - \ell}&lt;/math&gt;
+
+with {{mvar|k}} factors in both the numerator and denominator of the [[Fraction (mathematics)|fraction]]. Although this formula involves a fraction, the binomial coefficient &lt;math&gt;\tbinom{n}{k}&lt;/math&gt; is actually an [[integer]].
+
+=== Combinatorial interpretation ===
+The binomial coefficient &lt;math&gt; \tbinom nk &lt;/math&gt; can be interpreted as the number of ways to choose {{mvar|k}} elements from an {{mvar|n}}-element set. This is related to binomials for the following reason: if we write {{math|1=(''x'' + ''y'')&lt;sup&gt;''n''&lt;/sup&gt;}} as a [[Product (mathematics)|product]]
+:&lt;math&gt;(x+y)(x+y)(x+y)\cdots(x+y),&lt;/math&gt;
+then, according to the [[distributive law]], there will be one term in the expansion for each choice of either {{mvar|x}} or {{mvar|y}} from each of the binomials of the product. For example, there will only be one term {{math|''x''&lt;sup&gt;''n''&lt;/sup&gt;}}, corresponding to choosing {{mvar|x}} from each binomial. However, there will be several terms of the form {{math|''x''&lt;sup&gt;''n''−2&lt;/sup&gt;''y''&lt;sup&gt;2&lt;/sup&gt;}}, one for each way of choosing exactly two binomials to contribute a {{mvar|y}}. Therefore, after [[combining like terms]], the coefficient of {{math|''x''&lt;sup&gt;''n''−2&lt;/sup&gt;''y''&lt;sup&gt;2&lt;/sup&gt;}} will be equal to the number of ways to choose exactly {{math|2}} elements from an {{mvar|n}}-element set.
+
+== Proofs ==
+
+=== Combinatorial proof ===
+
+==== Example ====
+The coefficient of {{math|''xy''&lt;sup&gt;2&lt;/sup&gt;}} in
+
+:&lt;math&gt;\begin{align}
+   (x+y)^3 &amp;= (x+y)(x+y)(x+y) \\
+   &amp;= xxx + xxy + xyx + \underline{xyy} + yxx + \underline{yxy} + \underline{yyx} + yyy \\
+   &amp;= x^3 + 3x^2y + \underline{3xy^2} + y^3
+ \end{align}&lt;/math&gt;
+
+equals &lt;math&gt;\tbinom{3}{2}=3&lt;/math&gt; because there are three {{math|''x'',''y''}} strings of length 3 with exactly two {{mvar|y}}s, namely,
+
+:&lt;math&gt;xyy, \; yxy, \; yyx,&lt;/math&gt;
+
+corresponding to the three 2-element subsets of {{math|{{mset|1, 2, 3}}}}, namely,
+
+:&lt;math&gt;\{2,3\},\;\{1,3\},\;\{1,2\}, &lt;/math&gt;
+
+where each subset specifies the positions of the {{mvar|y}} in a corresponding string.
+
+==== General case ====
+Expanding {{math|1=(''x'' + ''y'')&lt;sup&gt;''n''&lt;/sup&gt;}} yields the sum of the {{math|2&lt;sup&gt;''n''&lt;/sup&gt;}} products of the form {{math|1=''e''&lt;sub&gt;1&lt;/sub&gt;''e''&lt;sub&gt;2&lt;/sub&gt; ... ''e''&lt;sub&gt;''n''&lt;/sub&gt;}} where each {{math|''e''&lt;sub&gt;''i''&lt;/sub&gt;}} is {{mvar|''x''}} or&amp;nbsp;{{mvar|y}}. Rearranging factors shows that each product equals {{math|''x''&lt;sup&gt;''n''&amp;minus;''k''&lt;/sup&gt;''y''&lt;sup&gt;''k''&lt;/sup&gt;}} for some {{mvar|k}} between {{math|0}} and&amp;nbsp;{{mvar|n}}. For a given {{mvar|k}}, the following are proved equal in succession:
+* the number of copies of {{math|1=''x''&lt;sup&gt;''n'' &amp;minus; ''k''&lt;/sup&gt;''y''&lt;sup&gt;''k''&lt;/sup&gt;}} in the expansion
+* the number of {{mvar|n}}-character {{math|''x'',''y''}} strings having {{mvar|y}} in exactly {{mvar|k}} positions
+* the number of {{mvar|k}}-element subsets of {{math|1={{mset|1, 2, ..., ''n''}}}}
+* &lt;math&gt;\tbinom{n}{k},&lt;/math&gt; either by definition, or by a short combinatorial argument if one is defining &lt;math&gt;\tbinom{n}{k}&lt;/math&gt; as &lt;math&gt;\tfrac{n!}{k! (n-k)!}.&lt;/math&gt;
+This proves the binomial theorem.
+
+=== Inductive proof ===
+[[mathematical induction|Induction]] yields another proof of the binomial theorem. When {{math|1=''n'' = 0}}, both sides equal {{math|1}}, since {{math|1=''x''&lt;sup&gt;0&lt;/sup&gt; = 1}} and &lt;math&gt;\tbinom{0}{0}=1.&lt;/math&gt;  Now suppose that the equality holds for a given {{mvar|n}}; we will prove it for {{math|1=''n'' + 1}}.  For {{math|1=''j'', ''k'' ≥ 0}}, let {{math|1=[''f''(''x'', ''y'')]&lt;sub&gt;''j'',''k''&lt;/sub&gt;}} denote the coefficient of {{math|1=''x''&lt;sup&gt;''j''&lt;/sup&gt;''y''&lt;sup&gt;''k''&lt;/sup&gt;}} in the polynomial {{math|1=''f''(''x'', ''y'')}}.  By the inductive hypothesis, {{math|1=(''x'' + ''y'')&lt;sup&gt;''n''&lt;/sup&gt;}} is a polynomial in {{mvar|x}} and {{mvar|y}} such that {{math|1=[(''x'' + ''y'')&lt;sup&gt;''n''&lt;/sup&gt;]&lt;sub&gt;''j'',''k''&lt;/sub&gt;}} is &lt;math&gt;\tbinom{n}{k}&lt;/math&gt; if {{math|1=''j'' + ''k'' = ''n''}}, and {{mvar|0}} otherwise.  The identity
+
+:&lt;math&gt; (x+y)^{n+1} = x(x+y)^n + y(x+y)^n&lt;/math&gt;
+
+shows that {{math|1=(''x'' + ''y'')&lt;sup&gt;''n''+1&lt;/sup&gt;}} is also a polynomial in {{mvar|x}} and {{mvar|y}}, and
+
+:&lt;math&gt; [(x+y)^{n+1}]_{j,k} = [(x+y)^n]_{j-1,k} + [(x+y)^n]_{j,k-1},&lt;/math&gt;
+
+since if {{math|1=''j'' + ''k'' = ''n'' + 1}}, then {{math|1=(''j'' − 1) + ''k'' = ''n''}} and {{math|1=''j'' + (''k'' − 1) = ''n''}}. Now, the right hand side is
+
+:&lt;math&gt; \binom{n}{k} + \binom{n}{k-1} = \binom{n+1}{k},&lt;/math&gt;
+
+by [[Pascal's identity]].&lt;ref&gt;[http://proofs.wiki/Binomial_theorem Binomial theorem] – inductive proofs {{webarchive |url=https://web.archive.org/web/20150224130932/http://proofs.wiki/Binomial_theorem |date=February 24, 2015 }}&lt;/ref&gt; On the other hand, if {{math|1=''j'' + ''k'' ≠ ''n'' + 1}}, then {{math|1=(''j'' – 1) + ''k'' ≠ ''n''}} and {{math|1=''j'' + (''k'' – 1) ≠ ''n''}}, so we get {{math|1=0 + 0 = 0}}. Thus
+
+:&lt;math&gt;(x+y)^{n+1} = \sum_{k=0}^{n+1} \binom{n+1}{k} x^{n+1-k} y^k,&lt;/math&gt;
+
+which is the inductive hypothesis with {{math|1=''n'' + 1}} substituted for {{mvar|n}} and so completes the inductive step.
+
+== Generalizations ==
+
+=== Newton's generalized binomial theorem ===
+{{Main|Binomial series}}
+Around 1665, [[Isaac Newton]] generalized the binomial theorem to allow real exponents other than nonnegative integers. (The same generalization also applies to [[complex number|complex]] exponents.) In this generalization, the finite sum is replaced by an [[infinite series]]. In order to do this, one needs to give meaning to binomial coefficients with an arbitrary upper index, which cannot be done using the usual formula with factorials.  However, for an arbitrary number {{mvar|r}}, one can define
+
+:&lt;math&gt;{r \choose k}=\frac{r(r-1) \cdots (r-k+1)}{k!} =\frac{(r)_k}{k!},&lt;/math&gt;&lt;!--This is not the same as \frac{r!}{k!(r−k)!}. Please do not change it.--&gt;
+where &lt;math&gt;(\cdot)_k&lt;/math&gt; is the [[Pochhammer symbol]], here standing for a [[falling factorial]].  This agrees with the usual definitions when {{mvar|r}} is a nonnegative integer.  Then, if {{mvar|x}} and {{mvar|y}} are real numbers with {{math|{{abs|''x''}} &gt; {{abs|''y''}}}},&lt;ref name=convergence group=Note&gt;This is to guarantee convergence. Depending on {{mvar|r}}, the series may also converge sometimes when {{math|1={{abs|''x''}} = {{abs|''y''}}}}.&lt;/ref&gt; and {{mvar|r}} is any complex number, one has
+
+:&lt;math&gt;\begin{align}
+   (x+y)^r &amp; =\sum_{k=0}^\infty {r \choose k} x^{r-k} y^k \\
+   &amp;= x^r + r x^{r-1} y + \frac{r(r-1)}{2!} x^{r-2} y^2 + \frac{r(r-1)(r-2)}{3!} x^{r-3} y^3 + \cdots.
+ \end{align}&lt;/math&gt;
+
+When {{mvar|r}} is a nonnegative integer, the binomial coefficients for {{math|1=''k'' &gt; ''r''}} are zero, so this equation reduces to the usual binomial theorem, and there are at most {{math|1=''r'' + 1}} nonzero terms. For other values of {{mvar|r}}, the series typically has infinitely many nonzero terms.
+
+For example, {{math|1=''r'' = 1/2}} gives the following series for the square root:
+:&lt;math&gt;\sqrt{1+x} = 1 + \frac{1}{2}x - \frac{1}{8}x^2 + \frac{1}{16}x^3 - \frac{5}{128}x^4 + \frac{7}{256}x^5 - \cdots&lt;/math&gt;
+
+Taking {{math|1=''r'' = &amp;minus;1}}, the generalized binomial series gives the [[Geometric series#Formula|geometric series formula]], valid for {{math|{{abs|''x''}} &lt; 1}}:
+
+:&lt;math&gt;(1+x)^{-1} = \frac{1}{1+x} = 1 - x + x^2 - x^3 + x^4 - x^5 + \cdots&lt;/math&gt;
+
+More generally, with {{math|1=''r'' = −''s''}}:
+
+:&lt;math&gt;\frac{1}{(1-x)^s} = \sum_{k=0}^\infty {s+k-1 \choose k} x^k.&lt;/math&gt;
+
+So, for instance, when {{math|1=''s'' = 1/2}},
+:&lt;math&gt;\frac{1}{\sqrt{1+x}} = 1 -\frac{1}{2}x + \frac{3}{8}x^2 - \frac{5}{16}x^3 + \frac{35}{128}x^4 - \frac{63}{256}x^5 + \cdots&lt;/math&gt;
+
+=== Further generalizations ===
+The generalized binomial theorem can be extended to the case where {{mvar|x}} and {{mvar|y}} are complex numbers. For this version, one should again assume {{math|{{abs|''x''}} &gt; {{abs|''y''}}}}&lt;ref name=convergence group=Note /&gt; and define the powers of {{math|1=''x'' + ''y''}} and {{mvar|x}} using a [[Holomorphic function|holomorphic]] [[complex logarithm|branch of log]] defined on an open disk of radius {{math|{{abs|''x''}}}} centered at {{mvar|x}}.  The generalized binomial theorem is valid also for elements {{mvar|x}} and {{mvar|y}} of a [[Banach algebra]] as long as {{math|1=''xy'' = ''yx''}}, and {{mvar|x}} is invertible, and {{math|{{norm|''y''/''x''}} &lt; 1}}.
+
+A version of the binomial theorem is valid for the following [[Pochhammer symbol]]-like family of polynomials: for a given real constant {{mvar|c}}, define &lt;math&gt; x^{(0)} = 1 &lt;/math&gt; and
+:&lt;math&gt; x^{(n)} = \prod_{k=1}^{n}[x+(k-1)c]&lt;/math&gt;
+for &lt;math&gt; n &gt; 0.&lt;/math&gt;  Then&lt;ref name=&quot;Sokolowsky&quot;&gt;{{cite journal|url=https://cms.math.ca/crux/backfile/Crux_v5n02_Feb.pdf#page=26|title=Problem 352|first1=Dan|last1=Sokolowsky|first2=Basil C.|last2=Rennie|journal=Crux Mathematicorum|volume=5|issue=2|date=February 1979|pp=55-56}}&lt;/ref&gt;
+:&lt;math&gt; (a + b)^{(n)} = \sum_{k=0}^{n}\binom{n}{k}a^{(n-k)}b^{(k)}.&lt;/math&gt;
+The case {{math|1=''c'' = 0}} recovers the usual binomial theorem.
+
+More generally, a sequence &lt;math&gt;\{p_n\}_{n=0}^\infty&lt;/math&gt; of polynomials is said to be '''binomial''' if
+* &lt;math&gt; \deg p_n = n &lt;/math&gt; for all &lt;math&gt;n&lt;/math&gt;,
+* &lt;math&gt; p_0(0) = 1 &lt;/math&gt;, and
+* &lt;math&gt; p_n(x+y) = \sum_{k=0}^n \binom{n}{k} p_k(x) p_{n-k}(y) &lt;/math&gt; for all &lt;math&gt;x&lt;/math&gt;, &lt;math&gt;y&lt;/math&gt;, and &lt;math&gt;n&lt;/math&gt;.
+An operator &lt;math&gt;Q&lt;/math&gt; on the space of polynomials is said to be the ''basis operator'' of the sequence &lt;math&gt;\{p_n\}_{n=0}^\infty&lt;/math&gt; if &lt;math&gt;Qp_0 = 0&lt;/math&gt; and &lt;math&gt; Q p_n = n p_{n-1} &lt;/math&gt; for all &lt;math&gt; n \geqslant 1 &lt;/math&gt;. A sequence &lt;math&gt;\{p_n\}_{n=0}^\infty&lt;/math&gt; is binomial if and only if its basis operator is a [[Delta operator]].&lt;ref&gt;{{cite book |last1=Aigner |first1=Martin |title=Combinatorial Theory |orig-year=Reprint of the 1979 Edition |date=1997 |publisher=Springer |isbn=3-540-61787-6 |page=105}}&lt;/ref&gt; Writing &lt;math&gt; E^a &lt;/math&gt; for the shift by &lt;math&gt; a &lt;/math&gt; operator, the Delta operators corresponding to the above &quot;Pochhammer&quot; families of polynomials are the backward difference &lt;math&gt; I - E^{-c} &lt;/math&gt; for &lt;math&gt; c&gt;0 &lt;/math&gt;, the ordinary derivative for &lt;math&gt; c=0 &lt;/math&gt;, and the forward difference &lt;math&gt; E^{-c} - I &lt;/math&gt; for &lt;math&gt; c&lt;0 &lt;/math&gt;.
+
+=== Multinomial theorem ===
+{{Main|Multinomial theorem}}
+The binomial theorem can be generalized to include powers of sums with more than two terms. The general version is
+
+:&lt;math&gt;(x_1 + x_2 + \cdots + x_m)^n = \sum_{k_1+k_2+\cdots +k_m = n} \binom{n}{k_1, k_2, \ldots, k_m}
+ x_1^{k_1} x_2^{k_2} \cdots x_m^{k_m}, &lt;/math&gt;
+
+where the summation is taken over all sequences of nonnegative integer indices {{math|''k''&lt;sub&gt;1&lt;/sub&gt;}} through {{math|''k''&lt;sub&gt;''m''&lt;/sub&gt;}} such that the sum of all {{math|''k''&lt;sub&gt;''i''&lt;/sub&gt;}} is&amp;nbsp;{{mvar|n}}. (For each term in the expansion, the exponents must add up to&amp;nbsp;{{mvar|n}}). The coefficients &lt;math&gt; \tbinom{n}{k_1,\cdots,k_m} &lt;/math&gt; are known as multinomial coefficients, and can be computed by the formula
+
+:&lt;math&gt; \binom{n}{k_1, k_2, \ldots, k_m} = \frac{n!}{k_1! \cdot k_2! \cdots k_m!}.&lt;/math&gt;
+
+Combinatorially, the multinomial coefficient &lt;math&gt;\tbinom{n}{k_1,\cdots,k_m}&lt;/math&gt; counts the number of different ways to [[Partition of a set|partition]] an {{mvar|n}}-element set into [[Disjoint sets|disjoint]] [[subset]]s of sizes {{math|1=''k''&lt;sub&gt;1&lt;/sub&gt;, ..., ''k''&lt;sub&gt;''m''&lt;/sub&gt;}}.
+
+=== {{anchor|multi-binomial}} Multi-binomial theorem ===
+When working in more dimensions, it is often useful to deal with products of binomial expressions. By the binomial theorem this is equal to
+
+:&lt;math&gt; (x_1+y_1)^{n_1}\dotsm(x_d+y_d)^{n_d} = \sum_{k_1=0}^{n_1}\dotsm\sum_{k_d=0}^{n_d} \binom{n_1}{k_1} x_1^{k_1}y_1^{n_1-k_1} \dotsc \binom{n_d}{k_d} x_d^{k_d}y_d^{n_d-k_d}. &lt;/math&gt;
+
+This may be written more concisely, by [[multi-index notation]], as
+
+:&lt;math&gt; (x+y)^\alpha = \sum_{\nu \le \alpha} \binom{\alpha}{\nu} x^\nu y^{\alpha - \nu}.&lt;/math&gt;
+
+=== General Leibniz rule ===
+{{Main|General Leibniz rule}}
+
+The general Leibniz rule gives the {{mvar|n}}th derivative of a product of two functions in a form similar to that of the binomial theorem:&lt;ref&gt;{{cite book |last=Seely |first=Robert T. |title=Calculus of One and Several Variables |location=Glenview |publisher=Scott, Foresman |year=1973 |isbn=978-0-673-07779-0 }}&lt;/ref&gt;
+
+:&lt;math&gt;(fg)^{(n)}(x) = \sum_{k=0}^n \binom{n}{k} f^{(n-k)}(x) g^{(k)}(x).&lt;/math&gt;
+
+Here, the superscript {{math|(''n'')}} indicates the {{mvar|n}}th derivative of a function.  If one sets {{math|1=''f''(''x'') = ''e''{{sup|''ax''}}}} and {{math|1=''g''(''x'') = ''e''{{sup|''bx''}}}}, and then cancels the common factor of {{math|''e''{{sup|(''a'' + ''b'')''x''}}}} from both sides of the result, the ordinary binomial theorem is recovered.
+
+== Applications ==
+
+=== Multiple-angle identities ===
+For the [[complex numbers]] the binomial theorem can be combined with [[de Moivre's formula]] to yield [[List of trigonometric identities#Multiple-angle formulae|multiple-angle formulas]] for the [[sine]] and [[cosine]]. According to De Moivre's formula,
+:&lt;math&gt;\cos\left(nx\right)+i\sin\left(nx\right) = \left(\cos x+i\sin x\right)^n.&lt;/math&gt;
+
+Using the binomial theorem, the expression on the right can be expanded, and then the real and imaginary parts can be taken to yield formulas for {{math|cos(''nx'')}} and {{math|sin(''nx'')}}. For example, since
+:&lt;math&gt;\left(\cos x+i\sin x\right)^2 = \cos^2 x + 2i \cos x \sin x - \sin^2 x,&lt;/math&gt;
+De Moivre's formula tells us that
+:&lt;math&gt;\cos(2x) = \cos^2 x - \sin^2 x \quad\text{and}\quad\sin(2x) = 2 \cos x \sin x,&lt;/math&gt;
+which are the usual double-angle identities. Similarly, since
+:&lt;math&gt;\left(\cos x+i\sin x\right)^3 = \cos^3 x + 3i \cos^2 x \sin x - 3 \cos x \sin^2 x - i \sin^3 x,&lt;/math&gt;
+De Moivre's formula yields
+:&lt;math&gt;\cos(3x) = \cos^3 x - 3 \cos x \sin^2 x \quad\text{and}\quad \sin(3x) = 3\cos^2 x \sin x - \sin^3 x.&lt;/math&gt;
+In general,
+:&lt;math&gt;\cos(nx) = \sum_{k\text{ even}} (-1)^{k/2} {n \choose k}\cos^{n-k} x \sin^k x&lt;/math&gt;
+and
+:&lt;math&gt;\sin(nx) = \sum_{k\text{ odd}} (-1)^{(k-1)/2} {n \choose k}\cos^{n-k} x \sin^k x.&lt;/math&gt;
+
+=== Series for ''e'' ===
+The [[e (mathematical constant)|number {{mvar|e}}]] is often defined by the formula
+
+:&lt;math&gt;e = \lim_{n\to\infty} \left(1 + \frac{1}{n}\right)^n.&lt;/math&gt;
+
+Applying the binomial theorem to this expression yields the usual [[infinite series]] for {{mvar|e}}. In particular:
+
+:&lt;math&gt;\left(1 + \frac{1}{n}\right)^n = 1 + {n \choose 1}\frac{1}{n} + {n \choose 2}\frac{1}{n^2} + {n \choose 3}\frac{1}{n^3} + \cdots + {n \choose n}\frac{1}{n^n}.&lt;/math&gt;
+
+The {{mvar|k}}th term of this sum is
+
+:&lt;math&gt;{n \choose k}\frac{1}{n^k} = \frac{1}{k!}\cdot\frac{n(n-1)(n-2)\cdots (n-k+1)}{n^k}&lt;/math&gt;
+
+As {{math|''n'' → ∞}}, the rational expression on the right approaches {{math|1}}, and therefore
+
+:&lt;math&gt;\lim_{n\to\infty} {n \choose k}\frac{1}{n^k} = \frac{1}{k!}.&lt;/math&gt;
+
+This indicates that {{mvar|e}} can be written as a series:
+
+:&lt;math&gt;e=\sum_{k=0}^\infty\frac{1}{k!}=\frac{1}{0!} + \frac{1}{1!} + \frac{1}{2!} + \frac{1}{3!} + \cdots.&lt;/math&gt;
+
+Indeed, since each term of the binomial expansion is an [[Monotonic function|increasing function]] of {{mvar|n}}, it follows from the [[monotone convergence theorem]] for series that the sum of this infinite series is equal to&amp;nbsp;{{mvar|e}}.
+
+=== Probability ===
+The binomial theorem is closely related to the probability mass function of the [[negative binomial distribution]]. The probability of a (countable) collection of independent Bernoulli trials &lt;math&gt;\{X_t\}_{t\in S}&lt;/math&gt; with probability of success &lt;math&gt;p\in [0,1]&lt;/math&gt; all not happening is
+:&lt;math&gt; P\left(\bigcap_{t\in S} X_t^C\right) = (1-p)^{|S|} = \sum_{n=0}^{|S|} {|S| \choose n} (-p)^n.&lt;/math&gt;
+A useful upper bound for this quantity is &lt;math&gt; e^{-pn}.&lt;/math&gt;&lt;ref&gt;{{Cite book|title=Data Compression|last=Cover|first=Thomas M.|last2=Thomas|first2=Joy A.|date=2001-01-01|publisher=John Wiley &amp; Sons, Inc.|isbn=9780471200611|pages=320|language=en|doi=10.1002/0471200611.ch5}}&lt;/ref&gt;
+
+== In abstract algebra ==
+
+The binomial theorem is valid more generally for any elements {{mvar|x}} and {{mvar|y}} of a [[semiring]] satisfying {{math|1=''xy'' = ''yx''}}. The [[theorem]] is true even more generally: [[alternativity]] suffices in place of [[associativity]].
+
+The binomial theorem can be stated by saying that the [[polynomial sequence]]  {{math|1={{mset|1, ''x'', ''x''&lt;sup&gt;2&lt;/sup&gt;, ''x''&lt;sup&gt;3&lt;/sup&gt;, ...}}}} is of [[binomial type]].
+
+== In popular culture ==
+* The binomial theorem is mentioned in the [[Major-General's Song]] in the comic opera [[The Pirates of Penzance]].
+* [[Professor Moriarty]] is described by Sherlock Holmes as having written [[A Treatise on the Binomial Theorem|a treatise on the binomial theorem]].
+* The Portuguese poet [[Fernando Pessoa]], using the heteronym [[Álvaro de Campos]], wrote that &quot;Newton's Binomial is as beautiful as the [[Venus de Milo]]. The truth is that few people notice it.&quot;&lt;ref&gt;{{cite web|url=http://arquivopessoa.net/textos/224|title=Arquivo Pessoa: Obra Édita - O binómio de Newton é tão belo como a Vénus de Milo.|publisher=arquivopessoa.net}}&lt;/ref&gt;
+* In the 2014 film [[The Imitation Game]], Alan Turing makes reference to Isaac Newton's work on the Binomial Theorem during his first meeting with Commander Denniston at Bletchley Park.
+
+== See also ==
+{{portal|Mathematics}}
+* [[Binomial approximation]]
+* [[Binomial distribution]]
+* [[Binomial inverse theorem]]
+* [[Stirling's approximation]]
+
+== Notes ==
+{{reflist|group=Note}}
+
+== References ==
+{{reflist|30em}}
+
+== Further reading ==
+* {{cite journal|last=Bag|first=Amulya Kumar|year=1966|title=Binomial theorem in ancient India|journal=Indian J. History Sci|volume=1|issue=1|pages=68–74}}
+* {{cite book|last1=Graham|first1=Ronald|first2=Donald |last2=Knuth|first3= Oren|last3= Patashnik|title=Concrete Mathematics|publisher=Addison Wesley|year=1994|edition=2nd|pages=153–256|chapter=(5) Binomial Coefficients|isbn=978-0-201-55802-9|oclc=17649857}}
+
+== External links ==
+{{Wikibooks|Combinatorics|Binomial Theorem|The Binomial Theorem}}
+* {{SpringerEOM|id=Newton_binomial|first=E.D.|last= Solomentsev|title=Newton binomial}}
+* [http://demonstrations.wolfram.com/BinomialTheorem/ Binomial Theorem] by [[Stephen Wolfram]], and [http://demonstrations.wolfram.com/BinomialTheoremStepByStep/ &quot;Binomial Theorem (Step-by-Step)&quot;] by Bruce Colletti and Jeff Bryant, [[Wolfram Demonstrations Project]], 2007.
+
+{{PlanetMath attribution|id=338|title=inductive proof of binomial theorem}}
+
+{{Authority control}}
+
+[[Category:Factorial and binomial topics]]
+[[Category:Theorems in algebra]]
+[[Category:Articles containing proofs]]</text>
+      <sha1>0vg4kzl29ri01ociwamrpbnb5vjkytu</sha1>
+    </revision>
+  </page>

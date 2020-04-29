@@ -1,0 +1,395 @@
+  <page>
+    <title>Bézier curve</title>
+    <ns>0</ns>
+    <id>4664</id>
+    <revision>
+      <id>936849773</id>
+      <parentid>936630955</parentid>
+      <timestamp>2020-01-21T11:27:52Z</timestamp>
+      <contributor>
+        <ip>82.69.227.118</ip>
+      </contributor>
+      <comment>/* Quadratic Bézier curves */ Added link to [[string art]]</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{short description|Curve used in computer graphics and related fields}}
+
+[[File:Bezier curve.svg|thumb|right|Cubic Bézier curve with four control points]]
+[[File:Bezier basis.svg|thumb|right|The [[basis function]]s on the range {{nowrap|''t'' in [0,1]}} for cubic Bézier curves:
+{{nowrap|blue: ''y'' {{=}} (1 − ''t'')&lt;sup&gt;3&lt;/sup&gt;}},
+{{nowrap|green: ''y''{{=}} 3(1 − ''t'')&lt;sup&gt;2&lt;/sup&gt; ''t''}},
+{{nowrap|red: ''y''{{=}} 3(1 − ''t'') ''t''&lt;sup&gt;2&lt;/sup&gt;}}, and
+{{nowrap|cyan: ''y'' {{=}} ''t''&lt;sup&gt;3&lt;/sup&gt;}}.]]
+A '''Bézier curve''' ({{IPAc-en|'|b|E|z|.|i|.|ei}} {{Respell|BEH|zee|ay}})&lt;ref&gt;{{cite book |last=Wells |first=John |author-link = John C. Wells |title = Longman Pronunciation Dictionary |publisher=Pearson Longman |edition=3rd |date=3 April 2008 |ISBN = 978-1-4058-8118-0 }}&lt;/ref&gt; is a [[parametric equation|parametric curve]] used in [[computer graphics]] and related fields.&lt;ref name=&quot;Mortenson&quot;&gt;{{cite book |url = https://books.google.co.uk/books?id=YmQy799flPkC&amp;pg=PA264 |page = 264 |title = Mathematics for Computer Graphics Applications |first = Michael E. |last = Mortenson |publisher=Industrial Press Inc. |year=1999 |ISBN = 9780831131111 }}&lt;/ref&gt; The curve, which is related to the [[Bernstein polynomial]], is named after [[Pierre Bézier]], who used it in the 1960s for designing curves for the bodywork of [[Renault]] cars.&lt;ref name=&quot;Hazewinkel&quot;&gt;{{cite book |url = https://books.google.co.uk/books?id=3ndQH4mTzWQC&amp;pg=PA119 |page = 119 |title = Encyclopaedia of Mathematics: Supplement |volume=1 |first = Michiel |last = Hazewinkel |publisher = Springer Science &amp; Business Media |year=1997 |ISBN = 9780792347095 }}&lt;/ref&gt; Other uses include the design of computer [[font]]s and animation.&lt;ref name=&quot;Hazewinkel&quot; /&gt; Bézier curves can be combined to form a [[Composite Bézier curve|Bézier spline]], or generalized to higher dimensions to form [[Bézier surface]]s.&lt;ref name=&quot;Hazewinkel&quot; /&gt; The [[Bézier triangle]] is a special case of the latter.
+
+In [[vector graphics]], Bézier curves are used to model smooth curves that can be scaled indefinitely. &quot;Paths&quot;, as they are commonly referred to in image manipulation programs,{{NoteTag|Image manipulation programs such as [[Inkscape]], [[Adobe Photoshop]], and [[GIMP]].}} are combinations of linked Bézier curves. Paths are not bound by the limits of [[raster graphics|rasterized]] images and are intuitive to modify.
+
+Bézier curves are also used in the time domain, particularly in [[animation]], [[user interface]]{{NoteTag|In animation applications such as [[Adobe Flash]], [[Adobe After Effects]], [[Microsoft Expression Blend]], [[Blender (software)|Blender]], [[Autodesk Maya]] and [[Autodesk 3ds max]].}} design and smoothing cursor trajectory in eye gaze controlled interfaces.&lt;ref&gt;{{cite journal |title = Multimodal Intelligent Eye-Gaze Tracking System |journal = International Journal of Human-Computer Interaction |date=2015-04-03 |ISSN = 1044-7318 |pages=277–294 |volume=31 |issue=4 |doi=10.1080/10447318.2014.1001301 |first1=Pradipta |last1=Biswas |first2=Pat |last2=Langdon }}&lt;/ref&gt; For example, a Bézier curve can be used to specify the velocity over time of an object such as an icon moving from A to B, rather than simply moving at a fixed number of pixels per step. When animators or [[Graphical user interface|interface]] designers talk about the &quot;physics&quot; or &quot;feel&quot; of an operation, they may be referring to the particular Bézier curve used to control the velocity over time of the move in question.
+
+This also applies to robotics where the motion of a welding arm, for example, should be smooth to avoid unnecessary wear.
+
+==Invention==
+The mathematical basis for Bézier curves—the [[Bernstein polynomial]]s—had been known since 1912, but the polynomials were not applied to graphics until some 50 years later, when they were widely publicised by the [[France|French]] engineer [[Pierre Bézier]], who used them to design [[automobile]] bodies at [[Renault]]. However, the study of these curves was first developed in 1959 by mathematician [[Paul de Casteljau]] using [[de Casteljau's algorithm]], a [[numerical stability|numerically stable]] method to evaluate Bézier curves at [[Citroën]], another French automaker.&lt;ref name=&quot;FarinHoschek2002&quot;&gt;{{cite book |author1=Gerald E. Farin |author2=Josef Hoschek |author3=Myung-Soo Kim |title=Handbook of Computer Aided Geometric Design |url=https://books.google.com/books?id=0SV5G8fgxLoC&amp;pg=PA4 |year=2002 |publisher=Elsevier |isbn=978-0-444-51104-1 |pages=4–6}}&lt;/ref&gt;
+
+==Specific cases==
+A Bézier curve is defined by a set of ''[[Control point (mathematics)|control points]]'' '''P'''&lt;sub&gt;0&lt;/sub&gt; through '''P'''&lt;sub&gt;''n''&lt;/sub&gt;, where ''n'' is called its order (''n'' = 1 for linear, 2 for quadratic, etc.). The first and last control points are always the end points of the curve; however, the intermediate control points (if any) generally do not lie on the curve. The sums in the following sections are to be understood as [[Affine space#Affine combinations and barycenter|affine combinations]], the coefficients sum to 1.
+
+===Linear Bézier curves===
+Given distinct points '''P'''&lt;sub&gt;0&lt;/sub&gt; and '''P'''&lt;sub&gt;1&lt;/sub&gt;, a linear Bézier curve is simply a [[straight line]] between those two points. The curve is given by
+
+:&lt;math&gt;\mathbf{B}(t)=\mathbf{P}_0 + t(\mathbf{P}_1-\mathbf{P}_0)=(1-t)\mathbf{P}_0 + t\mathbf{P}_1 \mbox{ , } 0 \le t \le 1&lt;/math&gt;
+and is equivalent to [[linear interpolation]].
+
+===Quadratic Bézier curves===
+[[File:Quadratic Beziers in string art.svg|thumb|upright|Quadratic Béziers in [[string art]]: The end points ('''&amp;bull;''') and control point ('''&amp;times;''') define the quadratic Bézier curve ('''⋯''').]]
+A quadratic Bézier curve is the path traced by the function '''B'''(''t''), given points '''P'''&lt;sub&gt;0&lt;/sub&gt;, '''P'''&lt;sub&gt;1&lt;/sub&gt;, and '''P'''&lt;sub&gt;2&lt;/sub&gt;,
+
+: &lt;math&gt;\mathbf{B}(t) = (1 - t)[(1 - t) \mathbf P_0 + t \mathbf P_1] + t [(1 - t) \mathbf P_1 + t \mathbf P_2] \mbox{ , } 0 \le t \le 1&lt;/math&gt;,
+
+which can be interpreted as the linear interpolant of corresponding points on the linear Bézier curves from '''P'''&lt;sub&gt;0&lt;/sub&gt; to '''P'''&lt;sub&gt;1&lt;/sub&gt; and from '''P'''&lt;sub&gt;1&lt;/sub&gt; to '''P'''&lt;sub&gt;2&lt;/sub&gt; respectively. Rearranging the preceding equation yields:
+
+: &lt;math&gt;\mathbf{B}(t) = (1 - t)^{2}\mathbf{P}_0 + 2(1 - t)t\mathbf{P}_1 + t^{2}\mathbf{P}_2 \mbox{ , } 0 \le t \le 1.&lt;/math&gt;
+
+This can be written in a way that highlights the symmetry with respect to '''P'''&lt;sub&gt;1&lt;/sub&gt;:
+
+: &lt;math&gt;\mathbf{B}(t) = \mathbf{P}_1+(1 - t)^{2}(\mathbf{P}_0 - \mathbf{P}_1) + t^{2}(\mathbf{P}_2-\mathbf{P}_1) \mbox{ , } 0 \le t \le 1.&lt;/math&gt;
+
+Which immediately gives the derivative of the Bézier curve with respect to ''t'':
+
+: &lt;math&gt;\mathbf{B}'(t) = 2 (1 - t) (\mathbf{P}_1 - \mathbf{P}_0) + 2 t (\mathbf{P}_2 - \mathbf{P}_1) \,.&lt;/math&gt;
+
+from which it can be concluded that the tangents to the curve at '''P'''&lt;sub&gt;0&lt;/sub&gt; and '''P'''&lt;sub&gt;2&lt;/sub&gt; intersect at '''P'''&lt;sub&gt;1&lt;/sub&gt;. As ''t'' increases from 0 to 1, the curve departs from '''P'''&lt;sub&gt;0&lt;/sub&gt; in the direction of '''P'''&lt;sub&gt;1&lt;/sub&gt;, then bends to arrive at '''P'''&lt;sub&gt;2&lt;/sub&gt; from the direction of '''P'''&lt;sub&gt;1&lt;/sub&gt;.
+
+The second derivative of the Bézier curve with respect to ''t'' is
+
+: &lt;math&gt;\mathbf{B}''(t) = 2(\mathbf{P}_2 - 2 \mathbf{P}_1 + \mathbf{P}_0) \,.&lt;/math&gt;
+
+===Cubic Bézier curves===
+Four points '''P'''&lt;sub&gt;0&lt;/sub&gt;, '''P'''&lt;sub&gt;1&lt;/sub&gt;, '''P'''&lt;sub&gt;2&lt;/sub&gt; and '''P'''&lt;sub&gt;3&lt;/sub&gt; in the plane or in higher-dimensional space define a cubic Bézier curve.
+The curve starts at '''P'''&lt;sub&gt;0&lt;/sub&gt; going toward '''P'''&lt;sub&gt;1&lt;/sub&gt; and arrives at '''P'''&lt;sub&gt;3&lt;/sub&gt; coming from the direction of '''P'''&lt;sub&gt;2&lt;/sub&gt;. Usually, it will not pass through '''P'''&lt;sub&gt;1&lt;/sub&gt; or '''P'''&lt;sub&gt;2&lt;/sub&gt;; these points are only there to provide directional information. The distance between '''P'''&lt;sub&gt;1&lt;/sub&gt; and '''P'''&lt;sub&gt;2&lt;/sub&gt; determines &quot;how far&quot; and &quot;how fast&quot; the curve moves towards '''P'''&lt;sub&gt;1&lt;/sub&gt; before turning towards '''P'''&lt;sub&gt;2&lt;/sub&gt;.
+
+Writing '''B'''&lt;sub&gt;'''P'''&lt;sub&gt;i&lt;/sub&gt;,'''P'''&lt;sub&gt;j&lt;/sub&gt;,'''P'''&lt;sub&gt;k&lt;/sub&gt;&lt;/sub&gt;(''t'') for the quadratic Bézier curve defined by points '''P'''&lt;sub&gt;i&lt;/sub&gt;, '''P'''&lt;sub&gt;j&lt;/sub&gt;, and '''P'''&lt;sub&gt;k&lt;/sub&gt;, the cubic Bézier curve can be defined as an affine combination of two quadratic Bézier curves:
+
+:&lt;math&gt;\mathbf{B}(t)=(1-t)\mathbf{B}_{\mathbf P_0,\mathbf P_1,\mathbf P_2}(t) + t \mathbf{B}_{\mathbf P_1,\mathbf P_2,\mathbf P_3}(t) \mbox{ , } 0 \le t \le 1.&lt;/math&gt;
+
+The explicit form of the curve is:
+
+:&lt;math&gt;\mathbf{B}(t)=(1-t)^3\mathbf{P}_0+3(1-t)^2t\mathbf{P}_1+3(1-t)t^2\mathbf{P}_2+t^3\mathbf{P}_3 \mbox{ , } 0 \le t \le 1.&lt;/math&gt;
+
+For some choices of '''P'''&lt;sub&gt;1&lt;/sub&gt; and '''P'''&lt;sub&gt;2&lt;/sub&gt; the curve may intersect itself, or contain a [[Cusp (singularity)|cusp]].
+
+Any series of any 4 distinct points can be converted to a cubic Bézier curve that goes through all 4 points in order.
+Given the starting and ending point of some cubic Bézier curve, and the points along the curve corresponding to ''t'' = 1/3 and ''t'' = 2/3, the control points for the original Bézier curve can be recovered.&lt;ref&gt;{{cite web |author=John Burkardt |url-status=dead |archive-url=https://web.archive.org/web/20131225210855/http://people.sc.fsu.edu/~jburkardt/html/bezier_interpolation.html |url=http://people.sc.fsu.edu/~jburkardt/html/bezier_interpolation.html |title=Forcing Bezier Interpolation |archive-date=2013-12-25}}&lt;/ref&gt;
+
+The derivative of the cubic Bézier curve with respect to ''t'' is
+: &lt;math&gt;\mathbf{B}'(t) = 3(1-t)^2(\mathbf{P}_1 - \mathbf{P}_0) + 6(1-t)t(\mathbf{P}_2 - \mathbf{P}_1) + 3t^2(\mathbf{P}_3 - \mathbf{P}_2) \,.&lt;/math&gt;
+
+The second derivative of the Bézier curve with respect to ''t'' is
+: &lt;math&gt;\mathbf{B}''(t) = 6(1-t)(\mathbf{P}_2 - 2 \mathbf{P}_1 + \mathbf{P}_0) + 6t(\mathbf{P}_3 - 2 \mathbf{P}_2 + \mathbf{P}_1) \,.&lt;/math&gt;
+
+==General definition==
+Bézier curves can be defined for any degree ''n''.
+
+===Recursive definition===
+A recursive definition for the Bézier curve of degree ''n'' expresses it as a point-to-point [[linear combination]] ([[linear interpolation]]) of a pair of corresponding points in two Bézier curves of degree ''n''&amp;nbsp;&amp;minus;&amp;nbsp;1.
+
+Let &lt;math&gt;\mathbf{B}_{\mathbf{P}_0\mathbf{P}_1\ldots\mathbf{P}_n}&lt;/math&gt; denote the Bézier curve determined by any selection of points '''P'''&lt;sub&gt;0&lt;/sub&gt;, '''P'''&lt;sub&gt;1&lt;/sub&gt;,&amp;nbsp;...,&amp;nbsp;'''P'''&lt;sub&gt;''n''&lt;/sub&gt;. Then to start,
+
+:&lt;math&gt;\mathbf{B}_{\mathbf{P}_0}(t) = \mathbf{P}_0 \text{, and}&lt;/math&gt;
+
+:&lt;math&gt;\mathbf{B}(t) = \mathbf{B}_{\mathbf{P}_0\mathbf{P}_1\ldots\mathbf{P}_n}(t) = (1-t)\mathbf{B}_{\mathbf{P}_0\mathbf{P}_1\ldots\mathbf{P}_{n-1}}(t) + t\mathbf{B}_{\mathbf{P}_1\mathbf{P}_2\ldots\mathbf{P}_n}(t)&lt;/math&gt;
+
+This recursion is elucidated in the animations below.
+
+===Explicit definition===
+The formula can be expressed explicitly as follows:
+
+:&lt;math&gt;\begin{align}
+  \mathbf{B}(t) &amp;= \sum_{i=0}^n {n\choose i}(1 - t)^{n - i}t^i\mathbf{P}_i \\
+                &amp;=(1 - t)^n\mathbf{P}_0 + {n\choose 1}(1 - t)^{n - 1}t\mathbf{P}_1 + \cdots + {n\choose n - 1}(1 - t)t^{n - 1}\mathbf{P}_{n - 1} + t^n\mathbf{P}_n &amp;&amp; 0 \leqslant t \leqslant 1
+\end{align}&lt;/math&gt;
+
+where &lt;math&gt;\scriptstyle {n \choose i}&lt;/math&gt; are the [[binomial coefficient]]s.
+
+For example, for ''n''&amp;nbsp;=&amp;nbsp;5:
+
+:&lt;math&gt;\begin{align}
+\mathbf{B}(t) &amp;= (1 - t)^5\mathbf{P}_0 + 5t(1 - t)^4\mathbf{P}_1 + 10t^2(1 - t)^3 \mathbf{P}_2 + 10t^3 (1-t)^2 \mathbf{P}_3 + 5t^4(1-t) \mathbf{P}_4 + t^5 \mathbf{P}_5 &amp;&amp; 0 \leqslant t \leqslant 1
+\end{align}&lt;/math&gt;
+
+===Terminology===
+Some terminology is associated with these parametric curves. We have
+
+:&lt;math&gt;\mathbf{B}(t) = \sum_{i=0}^n b_{i, n}(t)\mathbf{P}_i,\quad 0 \le t \le 1&lt;/math&gt;
+
+where the polynomials
+
+:&lt;math&gt;b_{i,n}(t) = {n\choose i} t^i (1 - t)^{n - i},\quad i = 0, \ldots, n&lt;/math&gt;
+
+are known as [[Bernstein polynomial|Bernstein basis polynomials]] of degree ''n''.
+
+Note that ''t''&lt;sup&gt;0&lt;/sup&gt;&amp;nbsp;=&amp;nbsp;1, (1&amp;nbsp;−&amp;nbsp;''t'')&lt;sup&gt;0&lt;/sup&gt;&amp;nbsp;=&amp;nbsp;1, and that the [[binomial coefficient]], &lt;math&gt;\scriptstyle {n \choose i}&lt;/math&gt;, is:
+
+:&lt;math&gt;{n \choose i} = \frac{n!}{i!(n - i)!}&lt;/math&gt;
+
+The points '''P'''&lt;sub&gt;''i''&lt;/sub&gt; are called ''control points'' for the Bézier curve. The [[polygon]] formed by connecting the Bézier points with [[line (mathematics)|lines]], starting with '''P'''&lt;sub&gt;0&lt;/sub&gt; and finishing with '''P'''&lt;sub&gt;''n''&lt;/sub&gt;, is called the ''Bézier polygon'' (or ''control polygon''). The [[convex hull]] of the Bézier polygon contains the Bézier curve.
+
+===Polynomial form===
+Sometimes it is desirable to express the Bézier curve as a [[polynomial]] instead of a sum of less straightforward [[Bernstein polynomial]]s. Application of the [[binomial theorem]] to the definition of the curve followed by some rearrangement will yield:
+
+:&lt;math&gt;
+\mathbf{B}(t) = \sum_{j = 0}^n {t^j \mathbf{C}_j}
+&lt;/math&gt;
+
+where
+
+:&lt;math&gt;
+\mathbf{C}_j = \frac{n!}{(n - j)!} \sum_{i = 0}^j \frac{(-1)^{i + j} \mathbf{P}_i}{i! (j - i)!} =
+\prod_{m = 0}^{j - 1} (n - m) \sum_{i = 0}^j \frac{(-1)^{i + j} \mathbf{P}_i}{i! (j - i)!}
+.&lt;/math&gt;
+
+This could be practical if &lt;math&gt;\mathbf{C}_j&lt;/math&gt; can be computed prior to many evaluations of &lt;math&gt;\mathbf{B}(t)&lt;/math&gt;; however one should use caution as high order curves may lack [[numeric stability]] ([[de Casteljau's algorithm]] should be used if this occurs). Note that the [[empty product]] is 1.
+
+===Properties===
+[[File:quadratic_to_cubic_Bezier_curve.svg|thumb|upright|A cubic Bézier curve (yellow) can be made identical to a quadratic one (black) by
+&lt;div style=&quot;margin-left:1em;text-indent:-1em&quot;&gt;1. Copying the end points, and&lt;/div&gt;
+&lt;div style=&quot;margin-left:1em;text-indent:-1em&quot;&gt;2. Placing its 2 middle control points (yellow circles) 2/3 along line segments from the end points to the quadratic curve's middle control point (black rectangle)&lt;/div&gt;]]
+* The curve begins at '''P'''&lt;sub&gt;0&lt;/sub&gt; and ends at '''P'''&lt;sub&gt;''n''&lt;/sub&gt;; this is the so-called ''endpoint interpolation'' property.
+* The curve is a straight line if and only if all the control points are [[collinear]].
+* The start and end of the curve is [[tangent]] to the first and last section of the Bézier polygon, respectively.
+* A curve can be split at any point into two subcurves, or into arbitrarily many subcurves, each of which is also a Bézier curve.
+* Some curves that seem simple, such as the [[circle]], cannot be described exactly by a Bézier or [[piecewise]] Bézier curve; though a four-piece cubic Bézier curve can approximate a circle (see [[composite Bézier curve]]), with a maximum radial error of less than one part in a thousand, when each inner control point (or offline point) is the distance &lt;math&gt;\textstyle\frac{4\left(\sqrt {2}-1\right)}{3}&lt;/math&gt; horizontally or vertically from an outer control point on a unit circle. More generally, an ''n''-piece cubic Bézier curve can approximate a circle, when each inner control point is the distance &lt;math&gt;\textstyle\frac{4}{3}\tan(t/4)&lt;/math&gt; from an outer control point on a unit circle, where ''t'' is 360/''n'' degrees, and ''n'' &gt; 2.
+* Every quadratic Bézier curve is also a cubic Bézier curve, and more generally, every degree ''n'' Bézier curve is also a degree ''m'' curve for any ''m'' &gt; ''n''. In detail, a degree ''n'' curve with control points '''P'''&lt;sub&gt;0&lt;/sub&gt;, …, '''P'''&lt;sub&gt;''n''&lt;/sub&gt; is equivalent (including the parametrization) to the degree ''n'' + 1 curve with control points '''P''''&lt;sub&gt;0&lt;/sub&gt;, …, '''P''''&lt;sub&gt;''n'' + 1&lt;/sub&gt;, where &lt;math&gt;\mathbf P'_k=\tfrac{k}{n+1}\mathbf P_{k-1}+\left(1-\tfrac{k}{n+1}\right)\mathbf P_k&lt;/math&gt;.
+* Bézier curves have the [[variation diminishing property]]. What this means in intuitive terms is that a Bézier curve does not &quot;undulate&quot; more than the polygon of its control points, and may actually &quot;undulate&quot; less than that.&lt;ref name=&quot;GonzalezDiaz-Herrera2014&quot;&gt;{{cite book |author1=Teofilo Gonzalez |author1-link=Teofilo F. Gonzalez |author2=Jorge Diaz-Herrera |author3=Allen Tucker |title=Computing Handbook, Third Edition: Computer Science and Software Engineering |url=https://books.google.com/books?id=vMqSAwAAQBAJ&amp;pg=SA32-PA14 |year=2014 |publisher=CRC Press |isbn=978-1-4398-9852-9 |at=page 32-14&lt;!--this is a single page number--&gt;}}&lt;/ref&gt;
+* There is no [[local control]] in degree ''n'' Bézier curves—meaning that any change to a control point requires recalculation of and thus affects the aspect of the entire curve, &quot;although the further that one is from the control point that was changed, the smaller is the change in the curve.&quot;&lt;ref name=&quot;Agoston2005&quot;&gt;{{cite book |author=Max K. Agoston |title=Computer Graphics and Geometric Modelling: Implementation &amp; Algorithms |url=https://books.google.com/books?id=TAYw3LEs5rgC&amp;pg=PA404 |year=2005 |publisher=Springer Science &amp; Business Media |isbn=978-1-84628-108-2 |page=404}}&lt;/ref&gt;
+* A Bézier curve of order higher than two may intersect itself or have a cusp for certain choices of the control points.
+
+===Second-order curve is a parabolic segment===
+[[File:Quadratic_Bezier_parabola_equivalence.svg|thumb|upright|Equivalence of a quadratic Bézier curve and a parabolic segment]]
+
+A quadratic Bézier curve is also a segment of a [[parabola]]. As a parabola is a [[conic section]], some sources refer to quadratic Béziers as &quot;conic arcs&quot;.&lt;ref name=freetype/&gt; With reference to the figure on the right, the important features of the parabola can be derived as follows:&lt;ref&gt;{{cite book |author=Duncan Marsh |title=Applied Geometry for Computer Graphics and CAD |series=Springer Undergraduate Mathematics Series |edition=2nd |date=2005 |isbn=978-1-85233-801-5 |id={{ASIN|1852338016|country=uk}}}}&lt;/ref&gt;
+
+# Tangents to the parabola at the end-points of the curve (A and B) intersect at its control point (C).
+# If D is the midpoint of AB, the tangent to the curve which is perpendicular to CD (dashed cyan line) defines its vertex (V). Its axis of symmetry (dash-dot cyan) passes through V and is perpendicular to the tangent.
+# E is either point on the curve with a tangent at 45&amp;#176; to CD (dashed green). If G is the intersection of this tangent and the axis, the line passing through G and perpendicular to CD is the directrix (solid green).
+# The focus (F) is at the intersection of the axis and a line passing through E and perpendicular to CD (dotted yellow). The latus rectum is the line segment within the curve (solid yellow).
+
+===Derivative===
+The derivative for a curve of order ''n'' is
+
+:&lt;math&gt;\mathbf{B}'(t) = n \sum_{i=0}^{n-1} b_{i,n-1}(t) (\mathbf{P}_{i+1} - \mathbf{P}_i)&lt;/math&gt;
+
+==Constructing Bézier curves==
+
+===Linear curves===
+The ''t'' in the function for a linear Bézier curve can be thought of as describing how far '''B'''(''t'') is from '''P'''&lt;sub&gt;0&lt;/sub&gt; to '''P'''&lt;sub&gt;1&lt;/sub&gt;. For example, when ''t=0.25'', '''B'''(''t'') is one quarter of the way from point '''P'''&lt;sub&gt;0&lt;/sub&gt; to '''P'''&lt;sub&gt;1&lt;/sub&gt;. As ''t'' varies from 0 to 1, '''B'''(''t'') describes a straight line from '''P'''&lt;sub&gt;0&lt;/sub&gt; to '''P'''&lt;sub&gt;1&lt;/sub&gt;.
+&lt;center&gt;
+{| style=&quot;text-align:center; float:none; clear:both; font-size:95%; vertical-align:top;&quot;
+|-
+| style=&quot;border-bottom:1px solid #222;&quot;|[[File:Bézier 1 big.gif|240px|Animation of a linear Bézier curve, ''t'' in [0,1]]]
+|-
+|Animation of a linear Bézier curve, ''t'' in [0,1]
+|}&lt;/center&gt;
+
+===Quadratic curves===
+For quadratic Bézier curves one can construct intermediate points '''Q'''&lt;sub&gt;0&lt;/sub&gt; and '''Q'''&lt;sub&gt;1&lt;/sub&gt; such that as ''t'' varies from 0 to 1:
+* Point '''Q'''&lt;sub&gt;0&lt;/sub&gt;(''t'') varies from '''P'''&lt;sub&gt;0&lt;/sub&gt; to '''P'''&lt;sub&gt;1&lt;/sub&gt; and describes a linear Bézier curve.
+* Point '''Q'''&lt;sub&gt;1&lt;/sub&gt;(''t'') varies from '''P'''&lt;sub&gt;1&lt;/sub&gt; to '''P'''&lt;sub&gt;2&lt;/sub&gt; and describes a linear Bézier curve.
+* Point '''B'''(''t'') is interpolated linearly between '''Q'''&lt;sub&gt;0&lt;/sub&gt;(''t'') to '''Q'''&lt;sub&gt;1&lt;/sub&gt;(''t'') and describes a quadratic Bézier curve.
+
+&lt;center&gt;
+{| style=&quot;text-align:center; float:none; clear:both; font-size:95%; vertical-align:top;&quot;
+|-
+| style=&quot;border-bottom:1px solid #2f2;&quot;|[[File:Bézier 2 big.svg|240px|Construction of a quadratic Bézier curve]]||
+| style=&quot;border-bottom:1px solid #2f2;&quot;|[[File:Bézier 2 big.gif|240px|Animation of a quadratic Bézier curve, ''t'' in [0,1]]]
+|-
+|Construction of a quadratic Bézier curve||
+|Animation of a quadratic Bézier curve, ''t'' in [0,1]
+|}&lt;/center&gt;
+
+===Higher-order curves===
+For higher-order curves one needs correspondingly more intermediate points. For cubic curves one can construct intermediate points '''Q'''&lt;sub&gt;0&lt;/sub&gt;, '''Q'''&lt;sub&gt;1&lt;/sub&gt;, and '''Q'''&lt;sub&gt;2&lt;/sub&gt; that describe linear Bézier curves, and points '''R'''&lt;sub&gt;0&lt;/sub&gt; &amp; '''R'''&lt;sub&gt;1&lt;/sub&gt; that describe quadratic Bézier curves:
+
+&lt;center&gt;
+{| style=&quot;text-align:center; float:none; clear:both; font-size:95%; vertical-align:top;&quot;
+|-
+| style=&quot;border-bottom:1px solid #22f;&quot;|[[File:Bézier 3 big.svg|240px|Construction of a cubic Bézier curve]]||
+| style=&quot;border-bottom:1px solid #22f;&quot;|[[File:Bézier 3 big.gif|240px|Animation of a cubic Bézier curve, ''t'' in [0,1]]]
+|-
+|Construction of a cubic Bézier curve||
+|Animation of a cubic Bézier curve, ''t'' in [0,1]
+|}&lt;/center&gt;
+
+For fourth-order curves one can construct intermediate points '''Q'''&lt;sub&gt;0&lt;/sub&gt;, '''Q'''&lt;sub&gt;1&lt;/sub&gt;, '''Q'''&lt;sub&gt;2&lt;/sub&gt; &amp; '''Q'''&lt;sub&gt;3&lt;/sub&gt; that describe linear Bézier curves, points '''R'''&lt;sub&gt;0&lt;/sub&gt;, '''R'''&lt;sub&gt;1&lt;/sub&gt; &amp; '''R'''&lt;sub&gt;2&lt;/sub&gt; that describe quadratic Bézier curves, and points '''S'''&lt;sub&gt;0&lt;/sub&gt; &amp; '''S'''&lt;sub&gt;1&lt;/sub&gt; that describe cubic Bézier curves:
+
+&lt;center&gt;
+{| style=&quot;text-align:center; float:none; clear:both; font-size:95%; vertical-align:top;&quot;
+|-
+| style=&quot;border-bottom:1px solid #f2f;&quot;|[[File:Bézier 4 big.svg|240px|Construction of a quartic Bézier curve]]||
+| style=&quot;border-bottom:1px solid #f2f;&quot;|[[File:Bézier 4 big.gif|240px|Animation of a quartic Bézier curve, ''t'' in [0,1]]]
+|-
+|Construction of a quartic Bézier curve||
+|Animation of a quartic Bézier curve, ''t'' in [0,1]
+|}&lt;/center&gt;
+
+For fifth-order curves, one can construct similar intermediate points.
+&lt;center&gt;
+{| style=&quot;text-align:center; float:none; clear:both; font-size:95%; vertical-align:top;&quot;
+|-
+|style=&quot;border-bottom: 1px solid silver&quot;|[[File:BezierCurve.gif|240px|Animation of the construction of a fifth-order Bézier curve]]
+|-
+|Animation of a fifth-order Bézier curve, ''t'' in [0,1] in red. The Bézier curves for each of the lower orders are also shown.
+|}&lt;/center&gt;
+
+These representations rest on the process used in [[De Casteljau's algorithm]] to calculate Bézier curves.&lt;ref&gt;{{cite web |last=Shene |first=C. K. |title=Finding a Point on a Bézier Curve: De Casteljau's Algorithm |url=http://www.cs.mtu.edu/~shene/COURSES/cs3621/NOTES/spline/Bezier/de-casteljau.html |accessdate=6 September 2012}}&lt;/ref&gt;
+
+=== Offsets (a.k.a. stroking) of Bézier curves ===
+The curve at a fixed offset from a given Bézier curve, called an [[parallel curve|offset or parallel curve]] in mathematics (lying &quot;parallel&quot; to the original curve, like the offset between rails in a [[railroad track]]), cannot be exactly formed by a Bézier curve (except in some trivial cases). In general, the two-sided offset curve of a cubic Bézier is a 10th-order [[algebraic curve]]&lt;ref name=&quot;Kilgard&quot;&gt;{{cite web |author=Mark Kilgard |date=April 10, 2012 |title=CS 354 Vector Graphics &amp; Path Rendering |url=http://www.slideshare.net/Mark_Kilgard/22pathrender |page=28}}&lt;/ref&gt; and more generally for a Bézier of degree ''n'' the two-sided offset curve is an algebraic curve of degree 4''n''-2.&lt;ref&gt;{{cite web |title=Introduction to Pythagorean-hodograph curves |author=Rida T. Farouki |url=http://faculty.engineering.ucdavis.edu/farouki/wp-content/uploads/sites/41/2013/02/Introduction-to-PH-curves.pdf}}, particularly p.&amp;nbsp;16 &quot;taxonomy of offset curves&quot;.&lt;/ref&gt; However, there are [[heuristic]] methods that usually give an adequate approximation for practical purposes.&lt;ref&gt;For example: [http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.43.1724] or [http://www.google.com/patents/US20110285719]. For a survey see [http://www.computer.org/csdl/mags/cg/1997/03/mcg1997030062.pdf].&lt;/ref&gt;
+
+In the field of [[vector graphics]], painting two symmetrically distanced offset curves is called ''stroking'' (the Bézier curve or in general a path of several Bézier segments).&lt;ref name=&quot;Kilgard&quot;/&gt; The conversion from offset curves to filled Bézier contours is of practical importance in converting [[font]]s defined in [[Metafont]], which allows stroking of Bézier curves, to the more widely used [[PostScript fonts|PostScript type 1 font]]s, which only allow (for efficiency purposes) the mathematically simpler operation of filling a contour defined by (non-self-intersecting) Bézier curves.&lt;ref&gt;{{cite journal |url=https://www.tug.org/TUGboat/tb16-3/tb48kinc.pdf |title=MetaFog: Converting Metafont shapes to contours |author=Richard J. Kinch |date=1995 |journal=TUGboat |volume=16 |issue=3–Proceedings of the 1995 Annual Meeting}}&lt;/ref&gt;
+
+==Degree elevation==
+A Bézier curve of degree ''n'' can be converted into a Bézier curve of degree ''n''&amp;nbsp;+&amp;nbsp;1 ''with the same shape''. This is useful if software supports Bézier curves only of specific degree. For example, systems that can only work with cubic Bézier curves can implicitly work with quadratic curves by using their equivalent cubic representation.
+
+To do degree elevation, we use the equality &lt;math&gt;\mathbf{B}(t) = (1-t)\mathbf{B}(t) + t\mathbf{B}(t).&lt;/math&gt; Each component &lt;math&gt;\mathbf{b}_{i,n}(t)\mathbf{P}_i&lt;/math&gt; is multiplied by (1&amp;nbsp;&amp;minus;&amp;nbsp;''t'') and&amp;nbsp;''t'', thus increasing a degree by one, without changing the value. Here is the example of increasing degree from 2 to&amp;nbsp;3.
+
+:&lt;math&gt;\begin{align}
+(1 - t)^2 \mathbf{P}_0 + 2(1 - t)t\mathbf{P}_1 + t^2 \mathbf{P}_2 &amp;= (1 - t)^3 \mathbf{P}_0 + 2(1 - t)^2 t\mathbf{P}_1 + (1 - t)t^2 \mathbf{P}_2 + (1 - t)^{2}t\mathbf{P}_0 + 2(1 - t)t^2 \mathbf{P}_1 + t^3 \mathbf{P}_2 \\
+  &amp;= (1 - t)^3 \mathbf{P}_0 + (1 - t)^2 t \left( \mathbf{P}_0 + 2\mathbf{P}_1\right) + (1 - t) t^2 \left(2\mathbf{P}_1 + \mathbf{P}_2\right) + t^{3}\mathbf{P}_2 \\
+  &amp;= (1 - t)^3 \mathbf{P}_0 + 3(1 - t)^2 t \tfrac{1}{3} \left( \mathbf{P}_0 + 2\mathbf{P}_1 \right) + 3(1 - t) t^2 \tfrac{1}{3} \left( 2\mathbf{P}_1 + \mathbf{P}_2 \right) + t^{3}\mathbf{P}_2
+\end{align}&lt;/math&gt;
+
+For arbitrary ''n'' we use equalities
+
+:&lt;math&gt;\begin{cases} {n + 1 \choose i}(1 - t)\mathbf{b}_{i, n} = {n \choose i} \mathbf{b}_{i, n + 1} \\ {n + 1 \choose i + 1} t\mathbf{b}_{i, n} = {n \choose i} \mathbf{b}_{i + 1, n + 1} \end{cases} \quad \Rightarrow \quad \begin{cases} (1 - t)\mathbf{b}_{i, n} = \frac{n + 1 - i}{n + 1} \mathbf{b}_{i, n + 1} \\ t\mathbf{b}_{i, n} = \frac{i + 1}{n + 1} \mathbf{b}_{i + 1, n + 1} \end{cases} &lt;/math&gt;
+
+Therefore:
+
+:&lt;math&gt;\begin{align}
+\mathbf{B}(t) &amp;= (1 - t)\sum_{i=0}^n \mathbf{b}_{i, n}(t)\mathbf{P}_i + t\sum_{i=0}^n \mathbf{b}_{i, n}(t)\mathbf{P}_i \\
+                &amp;= \sum_{i=0}^n \frac{n + 1 - i}{n + 1}\mathbf{b}_{i, n + 1}(t)\mathbf{P}_i + \sum_{i=0}^n \frac{i + 1}{n + 1}\mathbf{b}_{i + 1, n + 1}(t)\mathbf{P}_i \\
+                &amp;= \sum_{i=0}^{n + 1} \left(\frac{i}{n + 1}\mathbf{P}_{i - 1} + \frac{n + 1 - i}{n + 1}\mathbf{P}_i\right) \mathbf{b}_{i, n + 1}(t) \\
+                &amp;= \sum_{i=0}^{n + 1} \mathbf{b}_{i, n + 1}(t)\mathbf{P'}_i
+\end{align}&lt;/math&gt;
+
+introducing arbitrary &lt;math&gt;\mathbf{P}_{-1}&lt;/math&gt; and &lt;math&gt;\mathbf{P}_{n + 1}&lt;/math&gt;.
+
+Therefore, new control points are &lt;ref name=&quot;farin1997&quot;&gt;{{cite book |title=Curves and surfaces for computer-aided geometric design |first=Gerald |last=Farin |publisher=[[Elsevier]] Science &amp; Technology Books |year=1997 |isbn=978-0-12-249054-5 |edition=4}}&lt;/ref&gt;
+
+: &lt;math&gt;\mathbf{P'}_i = \frac{i}{n + 1}\mathbf{P}_{i - 1} + \frac{n + 1 - i}{n + 1}\mathbf{P}_i,\quad i=0, \ldots, n + 1&lt;/math&gt;
+
+===Repeated degree elevation===
+The concept of degree elevation can be repeated on a control polygon '''R''' to get a sequence of control polygons '''R''','''R'''&lt;sub&gt;1&lt;/sub&gt;,'''R'''&lt;sub&gt;2&lt;/sub&gt;, and so on. After ''r'' degree elevations, the polygon '''R'''&lt;sub&gt;r&lt;/sub&gt; has the vertices '''P'''&lt;sub&gt;0,r&lt;/sub&gt;,'''P'''&lt;sub&gt;1,r&lt;/sub&gt;,'''P'''&lt;sub&gt;2,r&lt;/sub&gt;,...,'''P'''&lt;sub&gt;n+r,r&lt;/sub&gt; given by &lt;ref name=&quot;farin1997&quot;/&gt;
+
+:&lt;math&gt;\mathbf{P}_{i,r} = \sum_{j=0}^n \mathbf{P}_j \tbinom nj \frac{\tbinom{r}{i-j}}{\tbinom{n+r}{i}}&lt;/math&gt;
+
+It can also be shown that for the underlying Bézier curve ''B'',
+
+:&lt;math&gt;\mathbf{\lim_{r \to \infty}R_r} = \mathbf{B}&lt;/math&gt;
+
+==Rational Bézier curves==
+[[Image:Rational Bezier curve-conic sections.svg|thumb|Segments of conic sections represented exactly by rational Bézier curves]]
+The rational Bézier curve adds adjustable weights to provide closer approximations to arbitrary shapes. The numerator is a weighted Bernstein-form Bézier curve and the denominator is a weighted sum of [[Bernstein polynomial]]s. Rational Bézier curves can, among other uses, be used to represent segments of [[conic section]]s exactly, including circular arcs.&lt;ref&gt;{{cite web |url=http://www.cl.cam.ac.uk/teaching/2000/AGraphHCI/SMEG/node5.html |title=Some Mathematical Elements of Graphics: Rational B-splines |author=Neil Dodgson |date=2000-09-25 |accessdate=2009-02-23}}&lt;/ref&gt;
+
+Given ''n'' + 1 control points '''P'''&lt;sub&gt;''i''&lt;/sub&gt;, the rational Bézier curve can be described by:
+:&lt;math&gt;
+\mathbf{B}(t) =
+\frac{
+\sum_{i=0}^n b_{i,n}(t) \mathbf{P}_{i}w_i
+}
+{
+\sum_{i=0}^n b_{i,n}(t) w_i
+}
+&lt;/math&gt;
+or simply
+:&lt;math&gt;
+\mathbf{B}(t) =
+\frac{
+\sum_{i=0}^n {n \choose i} t^i (1-t)^{n-i}\mathbf{P}_{i}w_i
+}
+{
+\sum_{i=0}^n {n \choose i} t^i (1-t)^{n-i}w_i
+}.
+&lt;/math&gt;
+The expression can be extended by using number systems besides reals for the weights. For example, in the complex plane the points {-i}, {i}, and {-i} with respective weights {1}, {i}, and {-1} generate a full circle with radius one.
+
+==Applications==
+
+===Computer graphics===
+[[Image:Bézier curve in Adobe Illustrator CS2.png|left|thumb|Bézier path in [[Adobe Illustrator]]]]
+Bézier curves are widely used in computer graphics to model smooth curves. As the curve is completely contained in the [[convex hull]] of its [[Control point (mathematics)|control points]], the points can be graphically displayed and used to manipulate the curve intuitively. [[Affine transformation]]s such as [[translation (geometry)|translation]] and [[rotation]] can be applied on the curve by applying the respective transform on the control points of the curve.
+
+[[Quadratic function|Quadratic]] and [[Cubic function|cubic]] Bézier curves are most common. Higher degree curves are more [[computationally expensive]] to evaluate. When more complex shapes are needed, low order Bézier curves are patched together, producing a [[composite Bézier curve]]. A composite Bézier curve is commonly referred to as a &quot;path&quot; in [[vector graphics]] languages (like [[PostScript]]), vector graphics standards (like [[SVG]]) and vector graphics programs (like [[Artline (program)|Artline]]&lt;!-- 1990 --&gt;, [[Timeworks Publisher]]&lt;!-- early 1990s --&gt;, [[Adobe Illustrator]], [[CorelDraw]], [[Inkscape]], and [[Allegro (software library)|Allegro]]). To guarantee [[smoothness]] (''C''&lt;sup&gt;1&lt;/sup&gt; continuity{{clarify|date=September 2017}}), the control point at which two curves meet must be on the line between the two control points on either side.
+
+The simplest method for scan converting ([[Rasterisation|rasterizing]]) a Bézier curve is to evaluate it at many closely spaced points and scan convert the approximating sequence of line segments. However, this does not guarantee that the rasterized output looks sufficiently smooth, because the points may be spaced too far apart. Conversely it may generate too many points in areas where the curve is close to linear. A common adaptive method is recursive subdivision, in which a curve's control points are checked to see if the curve approximates a straight line to within a small tolerance. If not, the curve is subdivided parametrically into two segments, 0 ≤ ''t'' ≤ 0.5 and 0.5 ≤ ''t'' ≤ 1, and the same procedure is applied recursively to each half. There are also forward differencing methods, but great care must be taken to analyse error propagation.&lt;ref name=&quot;Xuexiang&quot;/&gt;
+
+Analytical methods where a Bézier is intersected with each scan line involve finding roots of cubic polynomials (for cubic Béziers) and dealing with multiple roots, so they are not often used in practice.&lt;ref name=&quot;Xuexiang&quot;&gt;{{cite web |title=Complex Quadratic Bézier Curve on Unit Circle |author1=Xuexiang Li |last-author-amp=yes |author2=Junxiao Xue |publisher=School of Software, Zhengzhou University |location=Zhengzhou, China |url=https://www.atlantis-press.com/php/download_paper.php?id=12403}}&lt;/ref&gt;
+
+The rasterisation algorithm used in [[Metafont]] is based on discretising the curve, so that it is approximated by a sequence of &quot;[[rook (chess)|rook]] moves&quot; that are purely vertical or purely horizontal, along the pixel boundaries. To that end, the plane is first split into eight 45° sectors (by the coordinate axes and the two lines &lt;math&gt; y = \pm x &lt;/math&gt;), then the curve is decomposed into smaller segments such that the ''direction'' of a curve segment stays within one sector; since the curve velocity is a second degree polynomial, finding the &lt;math&gt;t&lt;/math&gt; values where it is parallel to one of these lines can be done by solving quadratic equations. Within each segment, either horizontal or vertical movement dominates, and the total number of steps in either direction can be read off from the endpoint coordinates; in for example the 0–45° sector horizontal movement to the right dominates, so it only remains to decide between which steps to the right the curve should make a step up.&lt;ref&gt;Parts 19–22 of {{cite book |last1=Knuth |first1=Donald E. |author-link=Donald Knuth |title=Metafont: The Program |date=1986 |publisher=Addison-Wesley |isbn=0-201-13438-1}}&lt;/ref&gt;
+
+===Animation===
+In animation applications, such as [[Adobe Flash]] and [[Synfig]], Bézier curves are used to outline, for example, movement. Users outline the wanted path in Bézier curves, and the application creates the needed frames for the object to move along the path.&lt;ref&gt;{{cite web |url=https://www.adobe.com/devnet/flash/learning_guide/animation/part07.html |title=Using motion paths in animations |website=Adobe |accessdate=2019-04-11}}&lt;/ref&gt;&lt;ref&gt;{{cite web |url=https://wiki.synfig.org/Doc:Following_a_Spline |title=Following a Spline |website=Synfig Wiki |accessdate=2019-04-11}}&lt;/ref&gt;
+
+In 3D animation, Bézier curves are often used to define 3D paths as well as 2D curves for keyframe interpolation.&lt;ref&gt;{{cite web |title=Advanced Graphics Lecture Notes|publisher=University of Cambridge Computer Laboratory|first=Neil A.|last=Dodgson |url=https://www.cl.cam.ac.uk/teaching/1213/AdvGraph/smeg13.pdf|website=cl.cam.ac.uk|date=1999}}&lt;/ref&gt;. Bézier curves are now very frequently used to control the animation easing in [[CSS]], [[JavaScript]] and [[JavaFx]].
+
+===Fonts===
+[[TrueType]] fonts use composite Bézier curves composed of '''quadratic''' Bézier curves. Other languages and imaging tools (such as [[PostScript]], [[Asymptote (vector graphics language)|Asymptote]], [[Metafont]], and [[SVG]]) use composite Béziers composed of '''cubic''' Bézier curves for drawing curved shapes. [[OpenType]] fonts can use either kind, depending on the flavor of the font.&lt;ref&gt;{{cite web |title=The difference between CFF and TTF |url=https://www.linotype.com/8120/the-difference-between-cff-and-ttf.html |archiveurl=https://web.archive.org/web/20170703232935/https://www.linotype.com/8120/the-difference-between-cff-and-ttf.html |archivedate=2017-07-03 |website=Know How |publisher=Linotype |accessdate=3 July 2018 |ref=CFF_TTF |quote=The OpenType format was formulated in 1996. By 2003, it began to replace two competing formats: the Type1 fonts, developed by Adobe and based on [P]ost[S]cript, and the TrueType fonts, specified by Microsoft and Apple. (...) TTF stands for TrueTypeFont and indicates that the font data is the same as in the TrueType fonts. CFF stands for the Type1 font format. Strictly speaking, it refers to the Compact Font Format, which is used in the compression processes for the Type2 fonts. (...) the cubic Bézier format of the Type1 fonts is more space-saving compared to the quadratic format of the TrueType fonts. Some kilobytes can be saved in large, elaborate fonts, which may represent an advantage on the Web. On the other hand, the more detailed hinting information of the TrueType fonts allows very extensive optimization for screen use.}}&lt;/ref&gt;
+
+The internal rendering of all Bézier curves in font or vector graphics renderers will split them recursively up to the point where the curve is flat enough to be drawn as a series of linear or circular segments. The exact splitting algorithm is implementation dependent, only the flatness criteria must be respected to reach the necessary precision and to avoid non-monotonic local changes of curvature. The &quot;smooth curve&quot; feature of charts in [[Microsoft Excel]] also uses this algorithm.&lt;ref&gt;{{cite web |url=http://www.xlrotor.com/resources/files.shtml |title=smooth_curve_bezier_example_file.xls |website=Rotating Machinery Analysis, Inc. |accessdate=2011-02-05 |url-status=dead |archiveurl=https://web.archive.org/web/20110718131613/http://www.xlrotor.com/resources/files.shtml |archivedate=2011-07-18 }}&lt;/ref&gt;
+
+Because arcs of circles and ellipses cannot be exactly represented by Bézier curves, they are first approximated by Bézier curves, which are in turn approximated by arcs of circles. This is inefficient as there exists also approximations of all Bézier curves using arcs of circles or ellipses, which can be rendered incrementally with arbitrary precision. Another approach, used by modern hardware graphics adapters with accelerated geometry, can convert exactly all Bézier and conic curves (or surfaces) into [[non-uniform rational B-spline|NURBS]], that can be rendered incrementally without first splitting the curve recursively to reach the necessary flatness condition. This approach also allows preserving the curve definition under all linear or perspective 2D and 3D transforms and projections.{{citation needed|date=October 2015}}
+
+Font engines, like [[FreeType]], draw the font's curves (and lines) on a pixellated surface using a process known as [[font rasterization]].&lt;ref name=freetype&gt;{{cite web |title=FreeType Glyph Conventions / VI. FreeType outlines |website=The Free Type Project |date=13 February 2018 |url=http://www.freetype.org/freetype2/docs/glyphs/glyphs-6.html}}&lt;br&gt;{{cite web |title=FreeType Glyph Conventions – Version 2.1 / VI. FreeType outlines |date=6 March 2011 |url=http://www.freetype.org/freetype2/docs/glyphs/glyphs-6.html |archive-url=https://web.archive.org/web/20110929201958/http://www.freetype.org/freetype2/docs/glyphs/glyphs-6.html |url-status=dead |archive-date=2011-09-29}}&lt;/ref&gt;
+
+==See also==
+* [[Bézier surface]]
+* [[B-spline]]
+* [[GEM/4]] &amp; [[GEM/5]]
+* [[Hermite curve]]
+* [[NURBS]]
+* [[String art]] – Bézier curves are also formed by many common forms of string art, where strings are looped across a frame of nails.&lt;ref&gt;{{cite book |last=Gross |first=R. |date=2014 |chapter=Bridges, String Art, and Bézier Curves |others=Penrose, R. (Author) &amp; Pitici, M. (Ed.) |title=The Best Writing on Mathematics 2013 |journal=The Best Writing on Mathematics 2013 |pages=77–89 |publisher=Princeton University Press |jstor=j.ctt4cgb74.13 |isbn=9780691160412 }}&lt;/ref&gt;
+* [[Variation diminishing property of Bézier curves]]
+
+== Notes ==
+{{NoteFoot}}
+
+== References ==
+=== Citations ===
+{{Reflist}}
+
+=== Sources ===
+{{refbegin}}
+* {{cite journal |author = Rida T. Farouki |url = http://mae.engr.ucdavis.edu/~farouki/bernstein.pdf |title = The Bernstein polynomial basis: A centennial retrospective |journal=Computer Aided Geometric Design |volume=29 |issue=6 |date=August 2012 |pages=379–419 |doi=10.1016/j.cagd.2012.03.001 }}
+* {{cite book |author=Paul Bourke |title = Bézier Surfaces (in 3D) |url = http://local.wasp.uwa.edu.au/~pbourke/geometry/bezier/index.html |archive-url = https://web.archive.org/web/20090719011857/http://local.wasp.uwa.edu.au/~pbourke/geometry/bezier/index.html |url-status=dead |archive-date=2009-07-19 |date=2009-07-19 }}
+* {{cite book |author=Donald Knuth |title=Metafont: the Program |publisher=Addison-Wesley |year = 1986 |pages=123–131 |author-link = Donald Knuth }} Excellent discussion of implementation details; available for free as part of the TeX distribution.
+* {{cite book |author=Thomas Sederberg |title = Bézier curves |url = http://www.tsplines.com/resources/class_notes/Bezier_curves.pdf |access-date=2005-09-14 |archive-url = https://web.archive.org/web/20060221000535/http://www.tsplines.com/resources/class_notes/Bezier_curves.pdf |archive-date=2006-02-21 |url-status=dead }}
+* {{cite book |author=J. D. Foley |display-authors=etal |title=Computer Graphics: Principles and Practice in C |edition=2nd |publisher=Addison Wesley |year = 1992 |title-link=Computer Graphics: Principles and Practice#Second Edition in C }}
+* {{cite web |author=Rajiv Chandel |url = http://codingg.blogspot.in/2014/03/implementing-bezier-curves-in-games.html |title = Implementing Bezier Curves in games |date=2014-03-20 }}
+{{refend}}
+
+== Further reading ==
+* [https://pomax.github.io/bezierinfo A Primer on Bézier Curves] &amp;mdash; An open source online book explaining Bézier curves and associated graphics algorithms, with interactive graphics.
+* [http://vimeo.com/106757336 Cubic Bezier Curves – Under the Hood (video)] Video shows how computers render a cubic Bézier curve, by Peter Nowell
+* [http://www.ams.org/featurecolumn/archive/bezier.html#2 From Bézier to Bernstein] Feature Column from [[American Mathematical Society]]
+* {{springer |title = Bézier curve |id = p/b110460 }}
+* {{cite book |first1 = Hartmut |last1 = Prautzsch |first2 = Wolfgang |last2 = Boehm |first3 = Marco |last3 = Paluszny |title = Bézier and B-Spline Techniques |year = 2002 |publisher = Springer Science &amp; Business Media |ISBN = 978-3-540-43761-1 }}
+* {{cite book |url= http://www.cis.upenn.edu/~jean/gbooks/geom1.html |title = Curves and Surfaces in Geometric Modeling: Theory and Algorithms |first = Jean |last = Gallier |author-link = Jean Gallier |publisher = Morgan Kaufmann |year=1999 |chapter = Chapter 5. Polynomial Curves as Bézier Curves }} This book is out of print and freely available from the author.
+* {{cite book |first = Gerald E. |last = Farin |title = Curves and Surfaces for CAGD: A Practical Guide |year = 2002 |publisher = Morgan Kaufmann |ISBN = 978-1-55860-737-8 |edition = 5th |url = http://www.farinhansford.com/books/cagd/ }}
+* {{Mathworld |urlname = BezierCurve |title = Bézier Curve }}
+* {{cite web |first = Gernot |last = Hoffmann |title = Bézier Curves |url = http://www.fho-emden.de/~hoffmann/bezier18122002.pdf |format = PDF |archive-url = https://web.archive.org/web/20061202151511/http://www.fho-emden.de/~hoffmann/bezier18122002.pdf |archive-date = 2006-12-02 }} (60 pages)
+* {{cite journal |doi = 10.1016/j.cam.2003.10.008 |title = Approximation of circular arcs and offset curves by Bézier curves of high degree |journal = [[Journal of Computational and Applied Mathematics]] |year=2004 |volume=167 |issue=2 |pages = 405–416 |first = Young Joon |last = Ahn |bibcode = 2004JCoAM.167..405A }}
+* {{cite web |first = Jason |last = Davies |url = https://www.jasondavies.com/animated-bezier/ |title = Animated Bézier curves }}
+
+== External links ==
+; Computer code
+*[https://github.com/msteinbeck/tinyspline TinySpline: Open source C-library for NURBS, B-splines and Bézier curves with bindings for various languages]
+* [https://github.com/staticbezier/ffd C++ library to generate Bézier functions at compile time]
+
+{{DEFAULTSORT:Bezier curve}}
+[[Category:Graphic design]]
+[[Category:Interpolation]]
+[[Category:Curves]]
+[[Category:Design]]</text>
+      <sha1>iasawr41rnix5nfw1ppkbhtl4txc065</sha1>
+    </revision>
+  </page>

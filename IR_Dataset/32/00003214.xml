@@ -1,0 +1,110 @@
+  <page>
+    <title>Amplifier figures of merit</title>
+    <ns>0</ns>
+    <id>3214</id>
+    <revision>
+      <id>911021588</id>
+      <parentid>892128076</parentid>
+      <timestamp>2019-08-16T02:02:37Z</timestamp>
+      <contributor>
+        <username>Bender the Bot</username>
+        <id>28903366</id>
+      </contributor>
+      <minor />
+      <comment>/* Bandwidth */switch to [[.com]] for [[Google Books]]; same content, but more trustworthy [[top-level domain]], replaced: https://books.google.co.in/ → https://books.google.com/</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">In [[electronics]], the '''figures of merit''' of an [[amplifier]] are numerical measures that characterize its properties and performance. [[Figures of merit]] can be given as a list of [[Specification (technical standard)|specifications]] that include properties such as [[Gain (electronics)|gain]], [[Bandwidth (signal processing)|bandwidth]], [[Noise (electronics)|noise]] and [[Nonlinear system|linearity]], among others listed in this article. Figures of merit are important for determining the suitability of a particular amplifier for an intended use.
+
+== Gain ==
+The [[Gain (electronics)|gain]] of an amplifier is the ratio of output to input power or amplitude, and is usually measured in [[decibel]]s. When measured in decibels it is [[logarithm]]ically related to the power ratio: ''G''(dB)=10 log(''P&lt;sub&gt;out&lt;/sub&gt;'' /''P&lt;sub&gt;in&lt;/sub&gt;''). [[Radio frequency|RF]] amplifiers are often specified in terms of the maximum ''power gain'' obtainable, while the [[voltage]] gain of audio amplifiers and [[instrumentation amplifier]]s will be more often specified. For example, an audio amplifier with a gain given as 20&amp;nbsp;dB will have a ''voltage gain'' of ten.
+
+The use of voltage gain figure is appropriate when the amplifier's [[input impedance]] is much higher than the source impedance, and the load impedance higher than the amplifier's output impedance.
+
+If two equivalent amplifiers are being compared, the amplifier with higher gain settings would be more sensitive as it would take less input signal to produce a given amount of power.&lt;ref&gt;{{Cite web |url=http://www.bcae1.com/gaincon2.htm |title=Amplifier Gain Controls |access-date=2017-11-11}}{{unreliable source?|date=November 2017}}&lt;/ref&gt;
+
+== Bandwidth ==
+The [[bandwidth (signal processing)|bandwidth]] of an amplifier is the range of frequencies for which the amplifier gives &quot;satisfactory performance&quot;. The definition of &quot;satisfactory performance&quot; may be different for different applications. However, a common and well-accepted metric is the [[half-power point]]s (i.e. frequency where the power goes down by half its peak value) on the output vs. frequency curve. Therefore, bandwidth can be defined as the difference between the lower and upper half power points. This is therefore also known as the {{nowrap|−3 dB}} bandwidth. Bandwidths (otherwise called &quot;frequency responses&quot;) for other response tolerances are sometimes quoted ({{nowrap|−1 dB}}, {{nowrap|−6 dB}} etc.) or &quot;plus or minus 1dB&quot; (roughly the sound level difference people usually can detect).
+
+The gain of a good quality full-range audio amplifier will be essentially flat between 20&amp;nbsp;Hz to about 20&amp;nbsp;kHz (the range of normal human [[Hearing (sense)|hearing]]). In ultra-high-fidelity amplifier design, the amplifier's frequency response should extend considerably beyond this (one or more [[Octave (electronics)|octaves]] either side) and might have {{nowrap|−3 dB}} points &lt; 10&amp;nbsp;Hz and &gt; {{nowrap|65&amp;nbsp;kHz}}. Professional touring amplifiers often have input and/or output filtering to sharply limit frequency response beyond {{nowrap|20&amp;nbsp;Hz-20&amp;nbsp;kHz}}; too much of the amplifier's potential output power would otherwise be wasted on [[infrasonic]] and [[Ultrasound|ultrasonic]] frequencies, and the danger of AM [[radio interference]] would increase. Modern [[switching amplifier]]s need steep [[Low-pass filter|low pass filtering]] at the output to get rid of high-frequency switching noise and [[harmonic]]s.
+
+The range of frequency over which the gain is equal to or greater than 70.7% of its maximum gain is termed as bandwidth.&lt;ref&gt;{{Cite book|url=https://books.google.com/books?id=8fmUCgAAQBAJ&amp;pg=PA176&amp;lpg=PA176&amp;dq=The+range+of+frequency+over+which+the+gain+is+equal+to+or+greater+than+70.7%25+of+its+maximum+gain+is+termed+as+bandwidth.&amp;source=bl&amp;ots=UiyAJfkHux&amp;sig=axRzYlWGT-a1KtC4wwq3nuga7rI&amp;hl=en&amp;sa=X&amp;ved=0ahUKEwjBnJ3YirnYAhVLPI8KHW4sBhAQ6AEIMzAB#v=onepage&amp;q=The%20range%20of%20frequency%20over%20which%20the%20gain%20is%20equal%20to%20or%20greater%20than%2070.7%25%20of%20its%20maximum%20gain%20is%20termed%20as%20bandwidth.&amp;f=false|title=PRINCIPLES OF ELECTRONICS|last=KUMAR|first=GANGULY, PARTHA|date=2015-09-16|publisher=PHI Learning Pvt. Ltd.|isbn=9788120351240|language=en}}&lt;/ref&gt;
+
+== Efficiency ==
+Efficiency is a measure of how much of the power source is usefully applied to the amplifier's output. [[Electronic amplifier#Power amplifier classes|Class A]] amplifiers are very inefficient, in the range of 10–20% with a max efficiency of 25% for [[direct coupling]] of the output. [[Inductive coupling]] of the output can raise their efficiency to a maximum of 50%.
+
+Drain efficiency is the ratio of output RF power to input DC power when primary input DC power has been fed to the drain of a [[field-effect transistor]]. Based on this definition, the drain efficiency cannot exceed 25% for a class A amplifier that is supplied drain bias current through resistors (because RF signal has its zero level at about 50% of the input DC). Manufacturers specify much higher drain efficiencies, and designers are able to obtain higher efficiencies by providing current to the drain of the transistor through an inductor or a transformer winding.  In this case the RF zero level is near the DC rail and will swing both above and below the rail during operation.  While the voltage level is above the DC rail current is supplied by the inductor.
+
+Class B amplifiers have a very high efficiency but are impractical for audio work because of high levels of distortion (See: [[Crossover distortion]]). In practical design, the result of a tradeoff is the class AB design. Modern Class AB amplifiers commonly have peak efficiencies between 30–55% in audio systems and 50-70% in radio frequency systems with a theoretical maximum of 78.5%.
+
+Commercially available Class D [[switching amplifier]]s have reported efficiencies as high as 90%. Amplifiers of Class C-F are usually known to be very high-efficiency amplifiers. RCA manufactured an AM broadcast transmitter employing a single class-C low-mu triode with an RF efficiency in the 90% range.
+
+More efficient amplifiers run cooler, and often do not need any cooling fans even in multi-kilowatt designs. The reason for this is that the loss of efficiency produces heat as a by-product of the energy lost during the conversion of power. In more efficient amplifiers there is less loss of energy so in turn less heat.
+
+In RF linear Power Amplifiers, such as cellular base stations and broadcast transmitters, special design techniques can be used to improve efficiency.  Doherty designs, which use a second output stage as a &quot;peak&quot; amplifier, can lift efficiency from the typical 15% up to 30-35% in a narrow bandwidth.  Envelope Tracking designs are able to achieve efficiencies of up to 60%, by modulating the supply voltage to the amplifier in line with the envelope of the signal.
+
+== Linearity{{anchor|linearity}} ==
+An ideal amplifier would be a totally linear device, but real amplifiers are only linear within limits.
+
+When the signal drive to the amplifier is increased, the output also increases until a point is reached where some part of the amplifier becomes saturated and cannot produce any more output; this is called clipping, and results in [[distortion]].
+
+In most amplifiers a reduction in gain takes place before hard clipping occurs; the result is a ''compression'' effect, which (if the amplifier is an audio amplifier) sounds much less unpleasant to the ear. For these amplifiers, the 1&amp;nbsp;dB compression point is defined as the input power (or output power) where the gain is 1&amp;nbsp;dB less than the small signal gain. Sometimes this non linearity is deliberately designed in to reduce the audible unpleasantness of hard clipping under overload.
+
+Ill effects of non-linearity can be reduced with negative feedback.
+
+[[Linearization]] is an emergent field, and there are many techniques, such as [[Feed forward (control)|feed forward]], [[predistortion]], postdistortion, in order to avoid the undesired effects of the non-linearities.
+
+== Noise ==
+This is a measure of how much [[noise]] is introduced in the amplification process. Noise is an undesirable but inevitable product of the electronic devices and components; also, much noise results from intentional economies of manufacture and design time. The metric for noise performance of a circuit is [[noise figure]] or noise factor. Noise figure is a comparison between the output signal to noise ratio and the thermal noise of the input signal.
+
+== Output dynamic range ==
+Output [[dynamic range]] is the range, usually given in dB, between the smallest and largest useful output levels. The lowest useful level is limited by output [[noise]], while the largest is limited most often by distortion. The ratio of these two is quoted as the amplifier dynamic range. More precisely, if ''S'' = maximal allowed signal power and ''N'' = noise power, the dynamic range ''DR'' is ''DR = (S + N ) /N''.&lt;ref name=Verhoeven&gt;
+{{cite book
+|vauthors =((Verhoeven CJM)), van Staveren A, ((Monna GLE)), ((Kouwenhoven MHL)), Yildiz E
+|last-author-amp =yes
+|title=Structured electronic design: negative feedback amplifiers
+|year= 2003
+|pages=10
+|publisher=Kluwer Academic
+|location=Boston/Dordrecht
+|isbn= 1-4020-7590-1
+|url=http://worldcat.org/isbn/1-4020-7590-1}}
+&lt;/ref&gt;
+
+In many switched mode amplifiers, dynamic range is limited by the minimum output step size.
+
+== Slew rate ==
+[[Slew rate]] is the maximum rate of change of the output, usually quoted in volts per second (or microsecond). Many amplifiers are ultimately [[slew rate]] limited (typically by the impedance of a drive current having to overcome capacitive effects at some point in the circuit), which sometimes limits the full [[power bandwidth]] to frequencies well below the amplifier's small-signal frequency response.
+
+== Rise time ==
+The [[rise time]], t&lt;sub&gt;r&lt;/sub&gt;, of an amplifier is the time taken for the output to change from 10% to 90% of its final level when driven by a [[step response|step input]].
+For a [[Gaussian]] response system (or a simple RC [[roll-off|roll off]]), the rise time is approximated by:
+
+'''t&lt;sub&gt;r&lt;/sub&gt; * BW = 0.35''', where t&lt;sub&gt;r&lt;/sub&gt; is rise time in [[second]]s and BW is bandwidth in [[hertz|Hz]].
+
+== Settling time and ringing ==
+The time taken for the output to settle to within a certain percentage of the final value (for instance 0.1%) is called the [[settling time]], and is usually specified for oscilloscope vertical amplifiers and high-accuracy measurement systems. [[Ringing (signal)|Ringing]] refers to an output variation that cycles above and below an amplifier's final value and leads to a delay in reaching a stable output.  Ringing is the result of overshoot caused by an [[Damping#Under-damping (0 ≤ ζ &lt; 1)|underdamped]] circuit.
+
+== Overshoot ==
+In response to a step input, the [[overshoot (signal)|overshoot]] is the amount the output exceeds its final, steady-state value.
+
+== Stability ==
+Stability is an issue in all amplifiers with feedback, whether that feedback is added intentionally or results unintentionally. It is especially an issue when applied over multiple amplifying stages.
+
+[[BIBO stability|Stability]] is a major concern in [[Radio frequency|RF]] and [[microwave]] amplifiers. The degree of an amplifier's stability can be quantified by a so-called stability factor. There are several different stability factors, such as the Stern stability factor and the Linvil stability factor, which specify a condition that must be met for the absolute stability of an amplifier in terms of its [[two-port parameters]].
+
+== See also ==
+*[[Audio system measurements]]
+*[[Low-noise amplifier]]
+
+== References ==
+{{Reflist}}
+
+== External links ==
+*[http://www.microwaves101.com/encyclopedia/efficiency.cfm Efficiency of Microwave Devices]
+*[http://www.ztecinstruments.com/zconnect/wp-content/uploads/2012/11/PA_802.11ac_APP_NOTE.pdf RF Power Amplifier Testing]
+
+[[Category:Amplifiers]]</text>
+      <sha1>ocd313e3b8a78ju6vq9zbiqxizfcik1</sha1>
+    </revision>
+  </page>

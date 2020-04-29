@@ -1,0 +1,134 @@
+  <page>
+    <title>Bill Joy</title>
+    <ns>0</ns>
+    <id>3965</id>
+    <revision>
+      <id>933037603</id>
+      <parentid>919297083</parentid>
+      <timestamp>2019-12-29T16:57:30Z</timestamp>
+      <contributor>
+        <username>Jevansen</username>
+        <id>2842084</id>
+      </contributor>
+      <minor />
+      <comment>Moving from [[Category:University of California, Berkeley College of Engineering alumni]] to [[Category:UC Berkeley College of Engineering alumni]] using [[c:Help:Cat-a-lot|Cat-a-lot]]</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{For |William Joy (fl. 1329–1348), the English architect of the Decorated Gothic style |William Joy}}
+{{Infobox scientist
+|image             = File:Bill Joy at World Economic Forum (Davos), 2003-01 (cropped).jpg
+|caption           = Bill Joy at [[World Economic Forum]] (Davos), 2003-01
+|birth_name=William Nelson Joy
+|birth_date        = {{birth date and age|1954|11|8}}
+|birth_place       = [[Farmington Hills, Michigan]], U.S.
+|death_date        =
+|death_place       =
+|residence         =
+|nationality       = USA
+|fields            = Computer science
+|workplaces        =
+|alma_mater        = [[University of Michigan]] (B.S.)&lt;br/&gt; [[University of California, Berkeley]] (M.S., 1979)
+|doctoral_advisor  =
+|academic_advisors = [[Bob Fabry]]
+|doctoral_students =
+|notable_students  =
+|known_for         = [[BSD]]{{•}}[[vi]]{{•}}[[C shell|csh]]{{•}}[[chroot]]{{•}}[[TCP/IP]] driver{{•}}co-founder of [[Sun Microsystems]]{{•}}[[Java (programming language)|Java]]{{•}}[[SPARC]]{{•}}[[Solaris (operating system)|Solaris]]{{•}}[[Network File System|NFS]]{{•}}''[[Why The Future Doesn't Need Us]]''
+|author_abbrev_bot =
+|author_abbrev_zoo =
+|influences        =
+|influenced        =
+|awards            = 
+*[[Grace Murray Hopper Award|ACM Grace Murray Hopper Award]] (1986)
+*Elected to [[National Academy of Engineering]] (1999)
+*Elected to [[American Academy of Arts and Sciences]] (1999)
+*Fellow of the [[Computer History Museum]] (2011)
+}}
+
+'''William Nelson Joy''' (born November 8, 1954) is an American [[computer engineer]]. He co-founded [[Sun Microsystems]] in 1982 along with [[Scott McNealy]], [[Vinod Khosla]], and [[Andy Bechtolsheim]], and served as chief scientist at the company until 2003. He played an integral role in the early development of [[BSD UNIX]] while a graduate student at [[University of California, Berkeley|Berkeley]],&lt;ref&gt;[https://dl.acm.org/author_page.cfm?id=81100148022 ACM author profile page: William Nelson Joy]&lt;/ref&gt; and he is the original author of the [[vi]] text editor.  He also wrote the 2000 essay ''[[Why The Future Doesn't Need Us]]'', in which he expressed deep concerns over the development of modern technologies.
+
+==Early career==
+Joy was born in the Detroit suburb of [[Farmington Hills, Michigan]], to William Joy, a school vice-principal and counselor, and Ruth Joy. He earned a [[Bachelor of Science]] in [[electrical engineering]] from the [[University of Michigan]] and a [[Master of Science]] in [[electrical engineering]] and [[computer science]] from the [[University of California, Berkeley]] in 1979.&lt;ref&gt;{{cite web|url=http://berkeley.edu/tour/students/famous_alumni2.html|title=UC Berkeley Online Tour: Famous Alumni|publisher=University of California, Berkeley|accessdate=July 1, 2010|archiveurl=https://web.archive.org/web/20100527100153/http://www.berkeley.edu/tour/students/famous_alumni2.html|archivedate=May 27, 2010|url-status=dead}}&lt;/ref&gt;
+
+As a UC Berkeley graduate student, he worked for Fabry's Computer Systems Research Group [[CSRG]] on the [[Berkeley Software Distribution]] (BSD) version of the [[Unix]] operating system. He initially worked on a [[Pascal (programming language)|Pascal]] compiler left at Berkeley by [[Ken Thompson]], who had been visiting the University when Joy had just started his graduate work.&lt;ref name=&quot;opensources&quot;/&gt;
+
+He later moved on to improving the Unix [[Kernel (operating system)|kernel]], and also handled BSD distributions.&lt;ref name=&quot;opensources&quot;&gt;{{cite encyclopedia |title=Twenty Years of Berkeley Unix: From AT&amp;T-Owned to Freely Redistributable|first=Marshall Kirk|last=McKusick|authorlink=Marshall Kirk McKusick|encyclopedia=Open Sources: Voices from the Open Source Revolution|year=1999|publisher=O'Reilly}}&lt;/ref&gt; Some of his most notable contributions were the ex and [[vi]] editors and the [[C shell]]. Joy's prowess as a computer programmer is legendary, with an oft-told anecdote that he wrote the [[vi]] editor in a weekend. Joy denies this assertion.&lt;ref&gt;Ashlee Vance,[https://www.theregister.co.uk/2003/09/11/bill_joys_greatest_gift &quot;Bill Joy's greatest gift to man – the vi editor&quot;] {{webarchive|url=https://web.archive.org/web/20140603174753/https://www.theregister.co.uk/2003/09/11/bill_joys_greatest_gift|date=2014-06-03}}, ''The Register'', September 11, 2003.&lt;/ref&gt; A few of his other accomplishments have also been sometimes exaggerated; [[Eric Schmidt]], CEO of [[Novell]] at the time, inaccurately reported during an interview in [[PBS]]'s documentary ''[[Nerds 2.0.1]]'' that Joy had personally rewritten the BSD kernel in a weekend.&lt;ref&gt;[https://www.youtube.com/watch?v=08PmIv1l5LY Eric Schmidt: At Berkeley, Bill Joy written and rewritten the kernel over a weekend. No human on the planet could do this except for Bill]&lt;/ref&gt;
+
+According to a ''[[Salon (website)|Salon]]'' article, during the early 1980s, [[DARPA]] had contracted the company [[BBN Technologies|Bolt, Beranek and Newman]] (BBN) to add [[TCP/IP]] to Berkeley UNIX. Joy had been instructed to plug BBN's stack into Berkeley Unix, but he refused to do so, as he had a low opinion of BBN's TCP/IP. So, Joy wrote his own high-performance TCP/IP stack. According to [[John Gage]]:
+
+{{quote|''BBN had a big contract to implement TCP/IP, but their stuff didn't work, and grad student Joy's stuff worked. So they had this big meeting and this grad student in a T-shirt shows up, and they said, &quot;How did you do this?&quot; And Bill said, &quot;It's very simple&amp;nbsp;&amp;mdash; you read the protocol and write the code.''&lt;ref name=salon/&gt;|[[John Gage]]}}
+
+Rob Gurwitz, who was working at BBN at the time, disputes this version of events.&lt;ref name=salon&gt;[http://www.salon.com/2000/05/16/chapter_2_part_one/ &quot;BSD Unix: Power to the people, from the code&quot;], Andrew Leonard, ''Salon'', May 16, 2000.&lt;/ref&gt;
+
+==Sun Microsystems==
+In 1982, after the firm had been going for six months, Joy was brought in with full co-founder status at [[Sun Microsystems]]. At Sun, Joy was an inspiration for the development of [[Network File System|NFS]], the [[SPARC]] microprocessors,&lt;ref&gt;[https://www.youtube.com/watch?v=7NPoFtCGuTs SPARC: The Power of Ideas]&lt;/ref&gt; the [[Java (programming language)|Java programming language]], [[Jini]]/[[JavaSpaces]],&lt;ref&gt;{{Cite web|url=https://www.britannica.com/biography/Bill-Joy|title=Bill Joy {{!}} American software developer and entrepreneur|website=Encyclopedia Britannica|language=en|access-date=2018-12-20}}&lt;/ref&gt; and [[JXTA]].&lt;ref&gt;{{Cite book|title=Peer to peer : collaboration and sharing over the Internet|first=Bo|last=Leuf|date=2002|publisher=Addison-Wesley|isbn=0201767325|oclc=1058000048}}&lt;/ref&gt;
+
+In 1986, Joy was awarded a [[Grace Murray Hopper Award]] by the [[Association for Computing Machinery|ACM]] for his work on the Berkeley UNIX Operating System.&lt;ref&gt;[https://awards.acm.org/award_winners/joy_6968593 1986 ACM Grace Murray Hopper Award: William Nelson Joy]&lt;/ref&gt;
+
+On September 9, 2003, Sun announced Joy was leaving the company and that he &quot;is taking time to consider his next move and has no definite plans&quot;.&lt;ref&gt;[https://www.theregister.co.uk/2003/09/09/bill_joy_leaves_sun/ Bill Joy leaves Sun Microsystems]&lt;/ref&gt;&lt;ref&gt;[https://www.cnet.com/news/co-founder-joy-to-leave-sun/ Co-founder Bill Joy to leave Sun]&lt;/ref&gt;&lt;ref&gt;[https://www.marketwatch.com/story/sun-microsystems-co-founder-bill-joy-to-leave-company Sun Microsystems co-founder Bill Joy to leave company]&lt;/ref&gt;&lt;ref&gt;[https://www.sfgate.com/business/article/Sun-sets-on-pioneer-Bill-Joy-Co-founder-2557959.php Sun sets on pioneer Bill Joy / Co-founder, leading technologist resigns]&lt;/ref&gt;&lt;ref&gt;[http://archive.fortune.com/magazines/fortune/fortune_archive/2003/10/13/350901/index.htm Bill Joy After Sun With his corporate ties cut, the &quot;Edison of the Net&quot; speaks freely on the challenges facing Sun, the Net, and, of course, Microsoft]&lt;/ref&gt;
+
+==Post-Sun activities==
+In 1999, Joy co-founded a venture capital firm, HighBAR Ventures, with two Sun colleagues, [[Andy Bechtolsheim]] and Roy Thiele-Sardiña. In January 2005 he was named a partner in venture capital firm [[Kleiner Perkins]]. There, Joy has made several investments in green energy industries, even though he does not have any credentials in the field.&lt;ref&gt;[http://news.cnet.com/8301-13860_3-20005814-56.html &quot;Bill Joy on Sun's downfall, Microsoft's prospects, green tech (Q&amp;A)&quot;, Ina Fried, ''CNET News'', May 25, 2010]&lt;/ref&gt; He once said, &quot;My method is to look at something that seems like a good idea and assume it's true&quot;.&lt;ref&gt;[http://www.shirky.com/writings/group_enemy.html &quot;A Group Is Its Own Worst Enemy&quot;], Clay Shirky, Networks, Economics, and Culture mailing list, July 1, 2003, from a speech at ETech, April 2003&lt;/ref&gt;
+
+In 2011, he was inducted as a Fellow of the [[Computer History Museum]] for his work on the Berkeley Software Distribution (BSD) Unix system and the co-founding of Sun Microsystems.&lt;ref&gt;[http://www.computerhistory.org/fellowawards/hall/bios/Bill,Joy/ &quot;2011 Fellow: Bill Joy&quot;] {{webarchive|url=https://web.archive.org/web/20150103005111/http://www.computerhistory.org/fellowawards/hall/bios/Bill,Joy/ |date=2015-01-03 }}, Computer History Museum, retrieved 17 June 2013&lt;/ref&gt;
+
+==Technology concerns==
+In 2000, Joy gained notoriety with the publication of his article in ''[[Wired Magazine]]'', ''[[Why The Future Doesn't Need Us]]'', in which he declared, in what some have described as a &quot;[[neo-Luddite]]&quot; position,{{citation needed|date=May 2014}} that he was convinced that growing advances in [[genetic engineering]] and [[nanotechnology]] would bring [[existential risk|risks]] to humanity. He argued that intelligent [[robot]]s would replace humanity, at the very least in intellectual and social dominance, in the relatively near future. He supports and promotes the idea of abandonment of GNR ([[genetics]], nanotechnology, and [[robotics]]) technologies, instead of going into an [[arms race]] between negative uses of the technology and defense against those negative uses (good nano-machines patrolling and defending against [[Grey goo]] &quot;bad&quot; nano-machines). This stance of broad relinquishment was criticized by technologists such as [[technological singularity|technological-singularity]] thinker [[Ray Kurzweil]], who instead advocates fine-grained relinquishment and ethical guidelines.&lt;ref&gt;[http://www.kurzweilai.net/are-we-becoming-an-endangered-species-technology-and-ethics-in-the-twenty-first-century &quot;Are We Becoming an Endangered Species? Technology and Ethics in the Twenty First Century&quot;], Ray Kurzweil, ''Essays'', November 20, 2001, originally presented on November 19, 2001 at Washington National Cathedral.&lt;/ref&gt;&lt;ref name=&quot;globeandmail&quot;&gt;{{cite news|last1=Valpy|first1=Michael|title=Will we invent our own worst enemies?|date=23 June 2001|url=https://www.theglobeandmail.com/incoming/will-we-invent-our-own-worst-enemies/article762002/|accessdate=12 June 2014|newspaper=[[The Globe and Mail]]}}&lt;/ref&gt; Joy was also criticized by ''[[The American Spectator]]'', which characterized Joy's essay as a (possibly unwitting) rationale for [[statism]].&lt;ref name=&quot;globeandmail&quot;/&gt;
+
+A bar-room discussion of these technologies with [[Ray Kurzweil]] started to set Joy's thinking along this path. He states in his essay that during the conversation, he became surprised that other serious scientists were considering such possibilities likely, and even more astounded at what he felt was a lack of consideration of the contingencies. After bringing the subject up with a few more acquaintances, he states that he was further alarmed by what he felt was the fact that although many people considered these futures possible or probable, that very few of them shared as serious a concern for the dangers as he seemed to. This concern led to his in-depth examination of the issue and the positions of others in the scientific community on it, and eventually, to his current activities regarding it.
+
+Despite this, he is a [[venture capital]]ist, investing in GNR technology companies.&lt;ref&gt;[https://www.wired.com/magazine/2013/04/bill-joy/ &quot;Bill Joy on Venture Capital, Clean Tech, and Big Boats&quot;], Steven Levy, ''Wired Magazine'', April 16, 2013&lt;/ref&gt; He has also raised a specialty venture fund to address the dangers of pandemic diseases, such as the H5N1 [[avian influenza]] and biological weapons.
+
+==Joy's law==
+{{main|Joy's law (management)}}
+In his 2013 book ''Makers'', author [[Chris Anderson (writer)|Chris Anderson]] credited Joy with establishing &quot;Joy's law&quot; based on a quip: &quot;No matter who you are, most of the smartest people work for someone else [other than you].&quot;&lt;ref&gt;Chris Anderson, ''[[Makers: The New Industrial Revolution]]'', 143.&lt;/ref&gt; His argument was that companies use an inefficient process by not hiring the best employees, only those they are able to hire. His &quot;law&quot; was a continuation of [[Friedrich Hayek]]'s &quot;[[The Use of Knowledge in Society]]&quot; and warned that the competition outside of a company would always have the potential to be greater than the company itself.&lt;ref&gt;Chris Anderson, ''[[Makers: The New Industrial Revolution]]'', 144.&lt;/ref&gt;
+
+==See also==
+* [[Joy's law (computing)]]
+
+==References==
+{{Reflist}}
+
+==External links==
+{{Commons category|Bill Joy}}
+* {{TED speaker}}
+* {{C-SPAN|billjoy}}
+&lt;!-- * {{Charlie Rose view|1268}} --&gt;
+* {{IMDb name|2699317}}
+* {{WorldCat id|lccn-n96-76037}}
+* [http://ex-vi.sourceforge.net/viin/paper.html An Introduction to Display Editing with Vi]
+* [https://web.archive.org/web/20120507165453/http://www.bigpicture.tv/speakers/bill_joy Bill Joy], video clips at Big Picture TV
+* [https://web.archive.org/web/20140603174753/https://www.theregister.co.uk/2003/09/11/bill_joys_greatest_gift/ Excerpts from a 1999 Linux Magazine interview regarding the development of vi]
+* [https://www.pbs.org/cringely/nerdtv/shows/#3 NerdTV interview] (video, audio, and transcript available) - 30 June 2005
+* [http://video.mit.edu/watch/the-six-webs-10-years-on-9110/ The Six Webs, 10 Years On - speech at MIT Emerging Technologies conference], September 29, 2005
+* [http://www.droppingknowledge.org/bin/user/listitems/answer_view/6439.page Bill Joy at Dropping Knowledge], his answers to the 100 questions at Dropping Knowledge's Table of Free Voices event in Berlin, 2006.
+* [https://web.archive.org/web/20110420215435/http://www.computerhistory.org/events/index.php?id=1120598654 Computer History Museum, Sun Founders Panel], January 11, 2006
+
+{{Berkeley Software Distribution}}
+{{Hopper winners}}
+
+{{Authority control}}
+
+{{DEFAULTSORT:Joy, Bill}}
+[[Category:1954 births]]
+[[Category:Living people]]
+[[Category:People from Farmington Hills, Michigan]]
+[[Category:UC Berkeley College of Engineering alumni]]
+[[Category:University of Michigan College of Engineering alumni]]
+[[Category:American computer programmers]]
+[[Category:American computer scientists]]
+[[Category:American electrical engineers]]
+[[Category:BSD people]]
+[[Category:Computer systems researchers]]
+[[Category:Futurologists]]
+[[Category:Grace Murray Hopper Award laureates]]
+[[Category:Internet pioneers]]
+[[Category:Wired (magazine) people]]
+[[Category:Members of the United States National Academy of Engineering]]
+[[Category:American venture capitalists]]
+[[Category:Unix people]]
+[[Category:Sun Microsystems people]]
+[[Category:Kleiner Perkins Caufield &amp; Byers people]]
+[[Category:Open source advocates]]</text>
+      <sha1>mn0ayhz4corct0vsu3o8z3cdvzpud1y</sha1>
+    </revision>
+  </page>

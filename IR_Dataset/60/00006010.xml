@@ -1,0 +1,100 @@
+  <page>
+    <title>Computer worm</title>
+    <ns>0</ns>
+    <id>6010</id>
+    <revision>
+      <id>941501076</id>
+      <parentid>941488990</parentid>
+      <timestamp>2020-02-18T23:20:20Z</timestamp>
+      <contributor>
+        <username>Keith D</username>
+        <id>2278355</id>
+      </contributor>
+      <comment>Fix cite date error</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{about|coding of a worm|the data storage device|Write Once Read Many|other uses|worm (disambiguation)}}
+{{pp-move-indef}}
+{{merge|anti-worm|discuss=Talk:Computer_worm#Merge_anti-worm_article_here|date=May 2019}}
+[[File:Virus Blaster.jpg|thumb|right|325px|[[Hex dump]] of the [[Blaster (computer worm)|Blaster worm]], showing a message left for [[Microsoft]] [[CEO]] [[Bill Gates]] by the worm programmer]]
+[[File:Conficker.svg|thumb|Spread of [[Conficker worm]]]]
+{{Information security}}
+A '''computer worm''' is a standalone [[malware]] [[computer program]] that replicates itself in order to spread to other computers.&lt;ref&gt;{{cite web|last=Barwise|first=Mike|title=What is an internet worm?|url=http://www.bbc.co.uk/webwise/guides/internet-worms|publisher=BBC|accessdate=9 September 2010}}&lt;/ref&gt; Often, it uses a [[computer network]] to spread itself, relying on security failures on the target computer to access it. Worms almost always cause at least some harm to the network, even if only by consuming [[Bandwidth (computing)|bandwidth]], whereas [[Computer virus|viruses]] almost always corrupt or modify files on a targeted computer.
+
+Many worms are designed only to spread, and do not attempt to change the systems they pass through. However, as the [[Morris worm]] and [[Mydoom]] showed, even these &quot;payload-free&quot; worms can cause major disruption by increasing network traffic and other unintended effects.
+
+==History==
+[[File:Morris Worm.jpg|thumb|[[Morris worm]] source code floppy diskette at the [[Computer History Museum]]]]
+The actual term &quot;worm&quot; was first used in [[John Brunner (novelist)|John Brunner]]'s 1975 novel, ''[[The Shockwave Rider]]''. In that novel, Nichlas Haflinger designs and sets off a data-gathering worm in an act of revenge against the powerful men who run a national electronic information web that induces mass conformity. &quot;You have the biggest-ever worm loose in the net, and it automatically sabotages any attempt to monitor it... There's never been a worm with that tough a head or that long a tail!&quot;&lt;ref&gt;{{Cite book |first=John |last=Brunner |title=The Shockwave Rider |location=New York |publisher=Ballantine Books |year=1975 |isbn=978-0-06-010559-4 |url-access=registration |url=https://archive.org/details/shockwaverider0000brun }}&lt;/ref&gt;
+
+On November 2, 1988, [[Robert Tappan Morris]], a [[Cornell University]] computer science graduate student, unleashed what became known as the [[Morris worm]], disrupting many computers then on the Internet, guessed at the time to be one tenth of all those connected.&lt;ref&gt;{{cite web |url=http://www.paulgraham.com/submarine.html#f4n |title=The Submarine}}&lt;/ref&gt; During the Morris appeal process, the U.S. Court of Appeals estimated the cost of removing the worm from each installation at between $200 and $53,000; this work prompted the formation of the [[CERT Coordination Center]]&lt;ref&gt;{{cite web |url=http://www.cert.org/encyc_article/tocencyc.html |title=Security of the Internet |work=CERT/CC |date= }}&lt;/ref&gt; and Phage mailing list.&lt;ref&gt;{{cite web |url=http://securitydigest.org/phage/ |title=Phage mailing list |publisher=securitydigest.org}}&lt;/ref&gt; Morris himself became the first person tried and convicted under the 1986 [[Computer Fraud and Abuse Act]].&lt;ref&gt;{{cite book |last=Dressler |first=J. |title=Cases and Materials on Criminal Law |chapter=United States v. Morris |location=St. Paul, MN |publisher=Thomson/West |year=2007 |isbn=978-0-314-17719-3 }}&lt;/ref&gt;
+
+==Harm==
+Any code designed to do more than spread the worm is typically referred to as the &quot;[[Payload (software)|payload]]&quot;. Typical malicious payloads might delete files on a host system (e.g., the [[ExploreZip]] worm), encrypt files in a [[ransomware]] attack, or [[Data theft|exfiltrate data]] such as confidential documents or passwords.
+
+Probably the most common payload for worms is to install a [[Backdoor (computing)|backdoor]]. This allows the computer to be remotely controlled by the worm author as a &quot;[[zombie computers|zombie]]&quot;. Networks of such machines are often referred to as [[botnets]] and are very commonly used for a range of malicious purposes, including sending [[e-mail spam|spam]] or performing [[Denial-of-service attack|DoS]] attacks.&lt;ref&gt;{{Cite news |url=http://seattletimes.nwsource.com/html/businesstechnology/2001859752_spamdoubles18.html |newspaper=The Seattle Times |title=Business &amp; Technology: E-mail viruses blamed as spam rises sharply |date=February 18, 2004 |first=Tiernan |last=Ray }}&lt;/ref&gt;&lt;ref&gt;{{Cite news |url=https://www.wired.com/news/business/0,1367,60747,00.html |title=Cloaking Device Made for Spammers |newspaper=Wired |date=October 9, 2003 |first=Brian |last=McWilliams }}&lt;/ref&gt;&lt;ref&gt;{{cite web |url=http://www.channelnewsasia.com/stories/afp_world/view/68810/1/.html |title=Mydoom Internet worm likely from Russia, linked to spam mail: security firm |website=www.channelnewsasia.com |date=31 January 2004 |archive-url=https://web.archive.org/web/20060219193824/http://www.channelnewsasia.com/stories/afp_world/view/68810/1/.html |archive-date=2006-02-19 |url-status=dead }}&lt;/ref&gt;&lt;ref&gt;{{cite web |url= http://www.heise.de/english/newsticker/news/44879 |archiveurl= https://web.archive.org/web/20090528002116/http://www.heise.de/english/newsticker/news/44879 |archivedate= 2009-05-28 |work=Hiese online |title= Uncovered: Trojans as Spam Robots |date= 2004-02-21 |accessdate= 2012-11-02 }}&lt;/ref&gt;&lt;ref&gt;{{Cite news |url= http://news.bbc.co.uk/1/hi/technology/3513849.stm |work=BBC News |title= Hacker threats to bookies probed |date= February 23, 2004 }}&lt;/ref&gt;
+
+Some worms, such as Stuxnet (first detected in June 2010), is the first &quot;worms&quot; that specifically target real-world infrastructure (energy) facilities, such as nuclear power plants, dams, and national power grids.&lt;ref&gt;{{Cite journal|last=Bronk|first=Christopher|last2=Tikk-Ringas|first2=Eneken|date=May 2013|title=The Cyber Attack on Saudi Aramco|url=https://www.tandfonline.com/doi/full/10.1080/00396338.2013.784468|journal=Survival|language=en|volume=55|issue=2|pages=81–96|doi=10.1080/00396338.2013.784468|issn=0039-6338}}&lt;/ref&gt;
+
+== Countermeasures ==
+Worms spread by exploiting vulnerabilities in operating systems.&lt;!-- NOTE: this statement is erroneous. a Trojan horse is a category similar to a [[master status]]. Any program can be a Trojan horse~&gt; If user interaction is required for the malware to spread, it is called a [[Trojan horse (computing)|Trojan horse]].
+--&gt;
+Vendors with security problems supply regular security updates&lt;ref&gt;{{cite web|url=http://www.ubuntu.com/usn |title=USN list |publisher=Ubuntu |date= |accessdate=2012-06-10}}&lt;/ref&gt; (see &quot;[[Patch Tuesday]]&quot;), and if these are installed to a machine, then the majority of worms are unable to spread to it. If a vulnerability is disclosed before the security patch released by the vendor, a [[zero-day attack]] is possible.
+
+Users need to be wary of opening unexpected email,&lt;ref&gt;{{Cite web |url=https://www.f-secure.com/v-descs/iworm.shtml |title=Threat Description Email-Worm |access-date=2018-12-25 |archive-url=https://web.archive.org/web/20180116193554/https://www.f-secure.com/v-descs/iworm.shtml |archive-date=2018-01-16 |url-status=dead }}&lt;/ref&gt;&lt;ref&gt;[https://www.f-secure.com/v-descs/love.shtml Threat Description Email-Worm: VBS/LoveLetter]&lt;/ref&gt; and should not run attached files or programs, or visit web sites that are linked to such emails. However, as with the [[ILOVEYOU]] worm, and with the increased growth and efficiency of [[phishing]] attacks, it remains possible to trick the end-user into running malicious code.
+
+[[Antivirus software|Anti-virus]] and [[Antispyware|anti-spyware]] software are helpful, but must be kept up-to-date with new pattern files at least every few days. The use of a [[Firewall (computing)|firewall]] is also recommended.
+
+Users can minimize the threat posed by worms by keeping their computers' operating system and other software up to date, avoiding opening unrecognized or unexpected emails and running [[Firewall (computing)|firewall]] and antivirus software.&lt;ref&gt;{{cite web |url=http://www.veracode.com/security/computer-worm |title=Computer Worm Information and Removal Steps |publisher=Veracode |accessdate=2015-04-04 |date=2014-02-02 }}&lt;/ref&gt;
+
+Mitigation techniques include:
+
+* [[Access Control List#Networking ACLs|ACL]]s in [[Router (computing)|routers]] and [[Network switch|switches]]
+* [[Firewall (networking)|Packet-filters]]
+* [[TCP Wrapper]]/[[ACL (software)|ACL]] enabled network service [[daemon (computer software)|daemon]]s
+* [[Nullroute]]
+
+Infections can sometimes be detected by their behavior - typically scanning the Internet randomly, looking for vulnerable hosts to infect.&lt;ref&gt;{{Cite journal|last=Sellke |first=S. H. |last2=Shroff |first2=N. B. |last3=Bagchi |first3=S. |year=2008 |title=Modeling and Automated Containment of Worms |journal=IEEE Transactions on Dependable and Secure Computing |volume=5 |issue=2 |pages=71–86 |doi=10.1109/tdsc.2007.70230 }}&lt;/ref&gt;&lt;ref&gt;{{Cite news |url=http://newswise.com/articles/view/541456/ |work=Newswise |title=A New Way to Protect Computer Networks from Internet Worms |accessdate=July 5, 2011}}&lt;/ref&gt; In addition, machine learning techniques can be used to detect new worms, by analyzing the behavior of the suspected computer.&lt;ref&gt;{{cite journal|doi=10.1016/j.csda.2008.01.028|title=Detection of unknown computer worms based on behavioral classification of the host|journal=Computational Statistics &amp; Data Analysis|volume=52|issue=9|pages=4544–4566|year=2008|last1=Moskovitch|first1=Robert|last2=Elovici|first2=Yuval|last3=Rokach|first3=Lior}}&lt;/ref&gt;
+
+==Worms with good intent==
+{{Main|Helpful worm}}
+Beginning with the very first research into worms at [[Xerox PARC]], there have been attempts to create useful worms. Those worms allowed testing by [[John Shoch]] and Jon Hupp of the [[Ethernet]] principles on their network of [[Xerox Alto]] computers. The [[Nachi worm|Nachi]] family of worms tried to download and install patches from Microsoft's website to fix vulnerabilities in the host system—by exploiting those same vulnerabilities.&lt;ref&gt;{{cite web|title=Virus alert about the Nachi worm|url=http://support.microsoft.com/kb/826234|publisher=Microsoft}}&lt;/ref&gt; In practice, although this may have made these systems more secure, it generated considerable network traffic, rebooted the machine in the course of patching it, and did its work without the consent of the computer's owner or user. Regardless of their payload or their writers' intentions, most security experts regard all worms as [[malware]].
+
+Several worms, like [[XSS Worm|XSS worms]], have been written to research how worms spread. For example, the effects of changes in social activity or user behavior. One study proposed what seems to be the first computer worm that operates on the second layer of the [[OSI model]] (Data link Layer), it utilizes topology information such as [[Content-addressable memory]] (CAM) tables and Spanning Tree information stored in switches to propagate and probe for vulnerable nodes until the enterprise network is covered.&lt;ref name=&quot;semiauto_worm&quot;&gt;{{Cite book | doi = 10.1109/ISCC.2010.5546723| chapter = A link-layer-based self-replicating vulnerability discovery agent| title = The IEEE symposium on Computers and Communications| pages = 704| year = 2010| last1 = Al-Salloum | first1 = Z. S. | last2 = Wolthusen | first2 = S. D. | isbn = 978-1-4244-7754-8}}&lt;/ref&gt;
+
+==See also==
+* [[BlueKeep (security vulnerability)|BlueKeep]]
+* [[Botnet]]
+* [[Code Shikara (Worm)]]
+* [[Computer and network surveillance]]
+* [[Computer virus]]
+* [[Email spam]]
+* [[Father Christmas (computer worm)]]
+* [[Self-replicating machine]]
+* [[Technical support scam]] – unsolicited phone calls from a fake &quot;tech support&quot; person, claiming that the computer has a virus or other problems
+* [[Timeline of computer viruses and worms]]
+* [[Trojan horse (computing)]]
+* [[XSS worm]]
+* [[Zombie (computer science)]]
+
+==References==
+{{reflist|40em}}
+&lt;references /&gt;
+
+==External links==
+* [http://www.vernalex.com/guides/malware/ Malware Guide]&amp;nbsp;– Guide for understanding, removing and preventing worm infections on Vernalex.com.
+* [http://dl.acm.org/citation.cfm?id=358455 &quot;The 'Worm' Programs&amp;nbsp;– Early Experience with a Distributed Computation&quot;], John Shoch and Jon Hupp, ''Communications of the ACM'', Volume 25 Issue 3 (March 1982), pages 172–180. 
+* [https://web.archive.org/web/20160322104740/https://www.nsa.gov/ia/_files/support/WORMPAPER.pdf &quot;The Case for Using Layered Defenses to Stop Worms&quot;], Unclassified report from the U.S. National Security Agency (NSA), 18 June 2004.
+* [http://www.digitalthreat.net/?p=17 Worm Evolution]{{dead link|date=August 2017 |bot=InternetArchiveBot |fix-attempted=yes }}, paper by Jago Maniscalchi on Digital Threat, 31 May 2009.
+
+{{Malware}}
+
+{{Authority control}}
+
+{{DEFAULTSORT:Computer Worm}}
+[[Category:Computer worms| ]]
+[[Category:Types of malware]]
+[[Category:Security breaches]]</text>
+      <sha1>6sfkhd9czpfm0xv7whwgyz53exzeyoa</sha1>
+    </revision>
+  </page>

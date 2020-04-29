@@ -1,0 +1,183 @@
+  <page>
+    <title>Affix</title>
+    <ns>0</ns>
+    <id>1835</id>
+    <revision>
+      <id>926239336</id>
+      <parentid>926238520</parentid>
+      <timestamp>2019-11-15T02:34:16Z</timestamp>
+      <contributor>
+        <username>KH-1</username>
+        <id>21857263</id>
+      </contributor>
+      <minor />
+      <comment>Reverted edits by [[Special:Contribs/98.23.20.101|98.23.20.101]] ([[User talk:98.23.20.101|talk]]) to last version by KH-1</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{Affixes}}
+
+In [[linguistics]], an '''affix''' is a [[morpheme]] that is attached to a word [[stem (linguistics)|stem]] to form a new word or word form. Affixes may be [[Morphological derivation|derivational]], like English ''-ness'' and ''pre-'', or [[inflection]]al, like English plural ''-s'' and past tense ''-ed''. They are [[bound morpheme]]s by definition; [[prefix]]es and [[suffix]]es may be [[separable affix]]es. Affixation is the linguistic process that speakers use to form different words by adding morphemes at the beginning (prefixation), the middle (infixation) or the end (suffixation) of words.
+
+==Positional categories of affixes==
+Affixes are divided into many categories, depending on their position with reference to the stem. ''Prefix'' and ''suffix'' are extremely common terms. ''Infix'' and ''circumfix'' are less so, as they are not important in European languages. The other terms are uncommon.
+
+{| class=&quot;wikitable&quot;
+|+ Categories of affixes
+! Affix !! Example !! Schema !! Description
+|-
+| '''[[Prefix]]''' || &lt;span style=&quot;color:#009900;&quot;&gt;un&lt;/span&gt;-do || &lt;span style=&quot;color:#009900;&quot;&gt;prefix&lt;/span&gt;-stem || Appears before the stem
+|-
+| '''Prefixoid'''/semi-prefix/pseudo-prefix&lt;ref&gt;{{Cite book | url=https://books.google.com/?id=H93nAVbwZwwC&amp;pg=PA55&amp;dq=%22semi-prefix”+“english”#v=onepage&amp;q&amp;f=true | title=Lexical Change in Present-day English: A Corpus-based Study of the Motivation, Institutionalization, and Productivity of Creative Neologisms| isbn=9783823349402| last1=Fischer| first1=Roswitha| year=1998}}&lt;/ref&gt; || &lt;span style=&quot;color:#009900;&quot;&gt;flexi&lt;/span&gt;-cover || &lt;span style=&quot;color:#009900;&quot;&gt;prefixoid&lt;/span&gt;-stem || Appears before the stem, but is only partially bound to it
+|-
+| '''[[Suffix]]/postfix''' || look-&lt;span style=&quot;color:#009900;&quot;&gt;ing&lt;/span&gt; || stem-&lt;span style=&quot;color:#009900;&quot;&gt;suffix&lt;/span&gt; || Appears after the stem
+|-
+| '''Suffixoid'''&lt;ref&gt;Kremer, Marion. 1997. ''Person reference and gender in translation: a contrastive investigation of English and German''. Tübingen: Gunter Narr, p. 69, note 11.&lt;/ref&gt;'''/semi-suffix'''&lt;ref&gt;Marchand, Hans. 1969. ''The categories and types of present-day English word-formation: A synchronic-diachronic approach''. Munich: Beck, pp. 356 ff.&lt;/ref&gt;/pseudo-suffix || cat-&lt;span style=&quot;color:#009900;&quot;&gt;like&lt;/span&gt; || stem-&lt;span style=&quot;color:#009900;&quot;&gt;suffixoid&lt;/span&gt; || Appears after the stem, but is only partially bound to it
+|-
+| '''[[Infix]]''' || Abso&lt;span style=&quot;color:#009900;&quot;&gt;{{infix|bloody}}&lt;/span&gt;lutely || st&lt;span style=&quot;color:#009900;&quot;&gt;{{angle bracket|infix}}&lt;/span&gt;em || Appears within a stem — common e.g. in [[Austronesian languages]]
+|-
+| '''[[Circumfix]]''' || &lt;span style=&quot;color:#009900;&quot;&gt;en&lt;/span&gt;{{circumfix|light}}&lt;span style=&quot;color:#009900;&quot;&gt;en&lt;/span&gt; || &lt;span style=&quot;color:#009900;&quot;&gt;circumfix&lt;/span&gt;{{circumfix|stem}}&lt;span style=&quot;color:#009900;&quot;&gt;circumfix&lt;/span&gt; || One portion appears before the stem, the other after
+|-
+| '''[[Interfix]]''' || speed-&lt;span style=&quot;color:#009900;&quot;&gt;o&lt;/span&gt;-meter || stem&lt;sub&gt;a&lt;/sub&gt;-&lt;span style=&quot;color:#009900;&quot;&gt;interfix&lt;/span&gt;-stem&lt;sub&gt;b&lt;/sub&gt; || Links two stems together in a [[compound word|compound]]
+|-
+| '''[[Duplifix]]''' || money~&lt;span style=&quot;color:#009900;&quot;&gt;shmoney&lt;/span&gt; || stem~&lt;span style=&quot;color:#009900;&quot;&gt;duplifix&lt;/span&gt; || Incorporates a [[reduplication|reduplicated]] portion of a stem&lt;br /&gt;(may occur before, after, or within the stem)
+|-
+| '''[[Transfix]]''' || [[Maltese language|Maltese]]: k&lt;span style=&quot;color:#009900;&quot;&gt;{{angle bracket|i}}&lt;/span&gt;t&lt;span style=&quot;color:#009900;&quot;&gt;{{angle bracket|e}}&lt;/span&gt;b &quot;he wrote&quot;&lt;br /&gt;(compare root ''ktb'' &quot;write&quot;) || s&lt;span style=&quot;color:#009900;&quot;&gt;{{angle bracket|transfix}}&lt;/span&gt;te&lt;span style=&quot;color:#009900;&quot;&gt;{{angle bracket|transfix}}&lt;/span&gt;m || A discontinuous affix that interleaves within a discontinuous stem
+|-
+| '''[[Simulfix]]''' || m&lt;span style=&quot;color:#009900;&quot;&gt;ou&lt;/span&gt;se → m&lt;span style=&quot;color:#009900;&quot;&gt;i&lt;/span&gt;ce ||stem\&lt;span style=&quot;color:#009900;&quot;&gt;simulfix&lt;/span&gt; || Changes a segment of a stem
+|-
+| '''[[Suprafix]]''' || '''pro'''duce (noun)&lt;br/&gt;pro'''duce''' (verb) ||stem\&lt;span style=&quot;color:#009900;&quot;&gt;suprafix&lt;/span&gt; || Changes a [[suprasegmental]] feature of a stem
+|-
+| '''[[Disfix]]''' || [[Alabama language|Alabama]]: tipli &quot;break up&quot;&lt;br /&gt;(compare root ''tip&lt;span style=&quot;color:#009900;&quot;&gt;as&lt;/span&gt;li'' &quot;break&quot;) || st&lt;span style=&quot;color:#009900;&quot;&gt;{{circumfix|disfix}}&lt;/span&gt;em || The [[elision]] of a portion of a stem
+|}
+
+''Prefix'' and ''suffix'' may be subsumed under the term ''adfix'', in contrast to ''infix.''&lt;ref&gt;{{cite book |last=Powell |first=Barry |date=2012 |title=Writing: Theory and History of the Technology of Civilization |publisher=Wiley-Blackwell |page=255 |isbn=9781118293515|doi=10.1002/9781118293515.gloss |chapter=Glossary }}&lt;/ref&gt;
+
+When marking text for [[interlinear gloss]]ing, as in the third column in the chart above, simple affixes such as prefixes and suffixes are separated from the stem with hyphens. Affixes which disrupt the stem, or which themselves are discontinuous, are often marked off with angle brackets. Reduplication is often shown with a tilde. Affixes which cannot be segmented are marked with a back slash.
+
+==Lexical affixes==
+''Lexical affixes'' (or ''semantic affixes'') are bound elements that appear as affixes, but function as [[incorporated noun]]s within verbs and as elements of [[noun]]s. In other words, they are similar to word roots/stems in function but similar to affixes in form. Although similar to incorporated nouns, lexical affixes differ in that they never occur as freestanding nouns, i.e. they always appear as affixes.
+
+Lexical affixes are relatively rare. The [[Wakashan languages|Wakashan]], [[Salishan languages|Salishan]], and [[Chimakuan languages]] all have lexical suffixes — the presence of these is an [[areal feature]] of the Pacific Northwest of the [[North America]].
+
+The lexical suffixes of these languages often show little to no resemblance to free nouns with similar meanings. Compare the lexical suffixes and free nouns of [[Saanich language|Northern Straits Saanich]] written in the Saanich orthography and in [[Americanist phonetic notation|Americanist notation]]:
+
+{| class=&quot;IPA wikitable&quot;
+|- style=&quot;font-size: 85%; background: #efefef;&quot;
+! colspan=&quot;3&quot; | Lexical Suffix
+! colspan=&quot;3&quot; | Noun
+|-
+| -o,
+| -aʔ
+| &quot;person&quot;
+|, ełtálṉew̱
+| ʔəɬtelŋəxʷ
+| &quot;person&quot;
+|-
+| -nát
+| -net
+| &quot;day&quot;
+| sȼićel
+| skʷičəl
+| &quot;day&quot;
+|-
+| -sen
+| -sən
+| &quot;foot, lower leg&quot;
+| sxene,
+| sx̣ənəʔ
+| &quot;foot, lower leg&quot;
+|-
+| -áwtw̱
+| -ew̕txʷ
+| &quot;building, house, campsite&quot;
+|, á,leṉ
+| ʔeʔləŋ
+| &quot;house&quot;
+|}
+
+Lexical suffixes, when compared with free nouns, often have a more generic or general meaning. For instance, one of these languages may have a lexical suffix that means water in a general sense, but it may not have any noun equivalent referring to water in general and instead have several nouns with a more specific meaning (such &quot;saltwater&quot;, &quot;whitewater&quot;, etc.). In other cases, the lexical suffixes have become [[grammaticalization|grammaticalized]] to various degrees.
+
+Some linguists have claimed that these lexical suffixes provide only adverbial or adjectival notions to verbs. Other linguists disagree arguing that they may additionally be syntactic [[Verb argument|arguments]] just as free nouns are and, thus, equating lexical suffixes with incorporated nouns. Gerdts (2003) gives examples of lexical suffixes in the [[Halkomelem language]] (the [[word order]] here is [[verb–subject–object]]):
+
+:{| class=&quot;IPA wikitable&quot;
+|- style=&quot;line-height: 1.0em; font-size: 75%&quot;
+|
+|
+| style=&quot;background: #bbbbff&quot; | VERB
+| style=&quot;background: #ffebad&quot; | SUBJ
+| style=&quot;background: #ffbbbb&quot; | OBJ
+|-
+| (1)
+| niʔ
+| šak’ʷ-ət-əs
+| łə słeniʔ
+| &lt;span style=&quot;color:#008000&quot;&gt;&lt;u&gt;łə qeq&lt;/u&gt;&lt;/span&gt;
+|-
+|
+| colspan=&quot;4&quot; | &quot;the woman washed &lt;span style=&quot;color:#008000&quot;&gt;&lt;u&gt;the baby&lt;/u&gt;&lt;/span&gt;&quot;
+|- style=&quot;line-height: 1.0em; font-size: 75%&quot;
+| bgcolor=white colspan=5|&amp;nbsp;
+|- style=&quot;line-height: 1.0em; font-size: 75%&quot;
+|
+|
+| style=&quot;background: #bbbbff&quot; | VERB&lt;span style=&quot;color:#009900&quot;&gt;+LEX.SUFF&lt;/span&gt;
+| style=&quot;background: #ffebad&quot; | SUBJ
+|
+|-
+| (2)
+| niʔ
+| šk’ʷ&lt;span style=&quot;color:#009900&quot;&gt;&lt;u&gt;-əyəł&lt;/u&gt;&lt;/span&gt;
+| łə słeniʔ
+|
+|-
+|
+| colspan=&quot;4&quot; | &quot;the woman &lt;span style=&quot;color:#009900&quot;&gt;&lt;u&gt;baby&lt;/u&gt;&lt;/span&gt;-washed&quot;
+|}
+
+In sentence (1), the verb &quot;wash&quot; is '''šak’ʷətəs''' where '''šak’ʷ-''' is the root and '''-ət''' and '''-əs''' are inflectional suffixes. The subject &quot;the woman&quot; is '''łə słeniʔ''' and the object &lt;span style=&quot;color:#008000&quot;&gt;&quot;the baby&quot;&lt;/span&gt; is &lt;span style=&quot;color:#008000&quot;&gt;'''łə qeq'''&lt;/span&gt;. In this sentence, &quot;the baby&quot; is a free noun. (The '''niʔ''' here is an [[auxiliary verb|auxiliary]], which can be ignored for explanatory purposes.)
+
+In sentence (2), &lt;span style=&quot;color:#009900&quot;&gt;&quot;baby&quot;&lt;/span&gt; does not appear as a free noun. Instead it appears as the lexical suffix &lt;span style=&quot;color:#009900&quot;&gt;'''-əyəł'''&lt;/span&gt; which is affixed to the verb root '''šk’ʷ-''' (which has changed slightly in pronunciation, but this can also be ignored here). Note how the lexical suffix is neither &quot;the baby&quot; ([[definiteness|definite]]) nor &quot;a baby&quot; (indefinite); such referential changes are routine with incorporated nouns.
+
+==Orthographic affixes==
+In [[orthography]], the terms for affixes may be used for the smaller elements of conjunct characters. For example, [[Maya script|Maya glyphs]] are generally compounds of a ''main sign'' and smaller ''affixes'' joined at its margins. These are called ''prefixes, superfixes, postfixes,'' and ''subfixes'' according to their position to the left, on top, to the right, or at the bottom of the main glyph. A small glyph placed inside another is called an ''infix.''&lt;ref&gt;Robert Sharer &amp; Loa Traxler, 2006, ''The Ancient Maya,'' Stanford University Press. {{ISBN|0-8047-4817-9}}&lt;/ref&gt; Similar terminology is found with the conjunct consonants of the [[Indic alphabets]]. For example, the [[Tibetan alphabet]] utilizes prefix, suffix, superfix, and subfix consonant letters.&lt;ref&gt;[[Andrew West (linguist)|Andrew West]], [http://babelstone.blogspot.com/2006/09/precomposed-tibetan-part-1-brdarten.html &quot;Precomposed Tibetan Part 1 : BrdaRten&quot;] ''BabelStone,'' September 14, 2006&lt;/ref&gt;
+
+==See also==
+{{Div col|colwidth=22em}}
+* [[Agglutination]]
+* [[Augmentative]]
+* [[Binary prefix]]
+* [[Clitic]]
+* [[Combining form]]
+* [[Concatenation]]
+* [[Diminutive]]
+* [[English prefixes]]
+* [[Family name affixes]]
+* [[Internet-related prefixes]]
+* [[Marker (linguistics)]]
+* [[Morphological derivation]]
+* [[Separable affix]]
+* [[SI prefix]]
+* [[Stemming]] - affix removal using computer software
+* [[Unpaired word]]
+* [[Word formation]]
+{{div col end}}
+
+==References==
+{{Reflist}}
+
+==Bibliography==
+* {{cite journal|last=Gerdts|first=Donna B.|year=2003|title=The morphosyntax of Halkomelem lexical suffixes|journal=International Journal of American Linguistics|volume=69|issue=4|pages=345–356|doi=10.1086/382736}}
+* [[Timothy Montler|Montler, Timothy]]. (1986). [http://www.cas.unt.edu/~montler/Saanich/Outline/index.htm ''An outline of the morphology and phonology of Saanich, North Straits Salish''.] Occasional Papers in Linguistics (No. 4). Missoula, MT: University of Montana Linguistics Laboratory.
+* Montler, Timothy. (1991). ''Saanich, North Straits Salish classified word list''. Canadian Ethnology service paper (No. 119); Mercury series. Hull, Quebec: Canadian Museum of Civilization. {{ISBN|0-660-12908-6}}
+
+==External links==
+{{Wiktionary|Appendix:English_prefixes|Appendix:English_suffixes}}
+{{Wiktionary|affix}}
+*{{Commonscatinline|Affixes}}
+*[http://www.prefixsuffix.com/ Comprehensive and searchable affix dictionary reference]
+
+[[Category:Affixes| ]]
+[[Category:Lexical units]]</text>
+      <sha1>mwta5f1dppjoovtsfweemqc4b88651o</sha1>
+    </revision>
+  </page>

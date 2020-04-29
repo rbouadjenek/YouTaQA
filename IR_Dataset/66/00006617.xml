@@ -1,0 +1,87 @@
+  <page>
+    <title>Compactification (mathematics)</title>
+    <ns>0</ns>
+    <id>6617</id>
+    <revision>
+      <id>930625584</id>
+      <parentid>922868366</parentid>
+      <timestamp>2019-12-13T19:42:35Z</timestamp>
+      <contributor>
+        <username>Citation bot</username>
+        <id>7903804</id>
+      </contributor>
+      <minor />
+      <comment>Alter: issue, template type. Add: hdl. Formatted [[WP:ENDASH|dashes]]. | You can [[WP:UCB|use this bot]] yourself. [[WP:DBUG|Report bugs here]].| Activated by [[User:Nemo bis]] | via #UCB_webform</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">In [[mathematics]], in [[general topology]], '''compactification''' is the process or result of making a [[topological space]] into a [[compact space]].&lt;ref&gt;{{cite book | last=Munkres | first=James R. | authorlink=James Munkres | title=Topology | edition=2nd | publisher=[[Prentice Hall]] | year=2000 | isbn=0-13-181629-2}}&lt;/ref&gt; A compact space is a space in which every [[open cover]] of the space contains a finite subcover. The methods of compactification are various, but each is a way of controlling points from &quot;going off to infinity&quot; by in some way adding &quot;points at infinity&quot; or preventing such an &quot;escape&quot;.
+
+==An example==
+
+Consider the [[real line]] with its ordinary topology. This space is not compact; in a sense, points can go off to infinity to the left or to the right. It is possible to turn the real line into a compact space by adding a single &quot;point at infinity&quot; which we will denote by ∞. The resulting compactification can be thought of as a circle (which is compact as a closed and bounded subset of the Euclidean plane). Every sequence that ran off to infinity in the real line will then converge to ∞ in this compactification.
+
+Intuitively, the process can be pictured as follows: first shrink the real line to the [[open interval]] (-[[pi|π]],π) on the ''x''-axis; then bend the ends of this interval upwards (in positive ''y''-direction) and move them towards each other, until you get a circle with one point (the topmost one) missing. This point is our new point ∞ &quot;at infinity&quot;; adding it in completes the compact circle.
+
+A bit more formally: we represent a point on the [[unit circle]] by its [[angle]], in [[radian]]s, going from -π to π for simplicity.  Identify each such point θ on the circle with the corresponding point on the real line [[tangent|tan]](θ/2).  This function is undefined at the point π, since tan(π/2) is undefined; we will identify this point with our point ∞.
+
+Since tangents and inverse tangents are both continuous, our identification function is a [[homeomorphism]] between the real line and the unit circle without ∞. What we have constructed is called the ''Alexandroff one-point compactification'' of the real line, discussed in more generality below. It is also possible to compactify the real line by adding ''two'' points, +∞ and -∞; this results in the [[extended real line]].
+
+==Definition==
+
+An [[embedding]] of a topological space ''X'' as a [[dense set|dense]] subset of a compact space is called a '''compactification''' of ''X''. It is often useful to embed [[topological space]]s in [[compact space]]s, because of the special properties compact spaces have.
+
+Embeddings into compact [[Hausdorff space]]s may be of particular interest. Since every compact Hausdorff space is a [[Tychonoff space]], and every subspace of a Tychonoff space is Tychonoff, we conclude that any space possessing a Hausdorff compactification must be a Tychonoff space.  In fact, the converse is also true; being a Tychonoff space is both necessary and sufficient for possessing a Hausdorff compactification.
+
+The fact that large and interesting classes of non-compact spaces do in fact have compactifications of particular sorts makes compactification a common technique in topology.
+
+===Alexandroff one-point compactification===
+{{main|One-point compactification}}
+For any topological space ''X'' the ('''Alexandroff''') '''one-point compactification''' α''X'' of ''X'' is obtained by adding one extra point ∞ (often called a ''point at infinity'') and defining the [[open set]]s of the new space to be the open sets of ''X'' together with the sets of the form ''G''&amp;nbsp;∪&amp;nbsp;{∞}, where ''G'' is an open subset of ''X'' such that ''X'' \ ''G'' is compact. The one-point compactification of ''X'' is Hausdorff if and only if ''X'' is Hausdorff and [[locally compact]].&lt;ref&gt;{{citation|first=Pavel S.|last= Alexandroff|authorlink=Pavel Alexandroff| journal=  [[Mathematische Annalen]] |volume= 92|issue=3–4  |year=1924|pages= 294–301|title= Über die Metrisation der im Kleinen kompakten topologischen Räume | url=https://eudml.org/doc/159072 | doi=10.1007/BF01448011 | jfm=50.0128.04 }}&lt;/ref&gt;
+
+===Stone–Čech compactification===
+{{main|Stone–Čech compactification}}
+Of particular interest are Hausdorff compactifications, i.e., compactifications in which the compact space is [[Hausdorff space|Hausdorff]]. A topological space has a Hausdorff compactification if and only if it is [[Tychonoff space|Tychonoff]]. In this case, there is a unique ([[up to]] [[homeomorphism]]) &quot;most general&quot; Hausdorff compactification, the [[Stone–Čech compactification]] of ''X'', denoted by β''X''; formally, this exhibits the [[category (mathematics)|category]] of Compact Hausdorff spaces and continuous maps as a [[reflective subcategory]] of the category of Tychonoff spaces and continuous maps.
+
+&quot;Most general&quot; or formally &quot;reflective&quot; means that the space β''X'' is characterized by the [[universal property]] that any [[continuous function (topology)|continuous function]] from ''X'' to a compact Hausdorff space ''K'' can be extended to a continuous function from β''X'' to ''K'' in a unique way. More explicitly, β''X'' is a compact Hausdorff space containing ''X'' such that the [[subspace topology|induced topology]] on ''X'' by β''X'' is the same as the given topology on ''X'', and for any continuous map ''f'':''X'' → ''K'', where ''K'' is a compact Hausdorff space, there is a unique continuous map ''g'':β''X'' → ''K'' for which ''g'' restricted to ''X'' is identically ''f''.
+
+The Stone–Čech compactification can be constructed explicitly as follows: let ''C'' be the set of continuous functions from ''X'' to the closed interval [0,1].  Then each point in ''X'' can be identified with an evaluation function on ''C''.  Thus ''X'' can be identified with a subset of [0,1]&lt;sup&gt;''C''&lt;/sup&gt;, the space of ''all'' functions from ''C'' to [0,1].  Since the latter is compact by [[Tychonoff's theorem]], the closure of ''X'' as a subset of that space will also be compact.  This is the Stone–Čech compactification.&lt;ref&gt;{{cite journal|first=Eduard|last= Čech|authorlink=Eduard Čech| title=On bicompact spaces|journal=  [[Annals of Mathematics]] |volume= 38  |year=1937  |pages= 823–844|doi=10.2307/1968839|issue=4|jstor=1968839|hdl= 10338.dmlcz/100420}}&lt;/ref&gt;
+&lt;ref&gt;{{citation|first=Marshall H.|last= Stone|authorlink=Marshall Harvey Stone|title=Applications of the theory of Boolean rings to general topology  |journal=[[Transactions of the American Mathematical Society]] |volume= 41  |year=1937|pages= 375–481
+|issue=3|doi=10.2307/1989788 |jstor=1989788}}&lt;/ref&gt;
+
+===Spacetime compactification===
+[[Walter Benz]] and [[Isaak Yaglom]] have shown how [[stereographic projection]] onto a single-sheet [[hyperboloid]] can be used to provide a [[Motor variable#Compactification|compactification for split complex numbers]]. In fact, the hyperboloid is part of a [[quadric]] in real projective four-space. The method is similar to that used to provide a base manifold for [[group action (mathematics)|group action]] of the [[conformal group of spacetime]].&lt;ref&gt;15 parameter conformal group of spacetime described in {{Wikibooks-inline|Associative Composition Algebra/Homographies}}&lt;/ref&gt;
+
+==Projective space==
+[[Real projective space]] '''RP'''&lt;sup&gt;''n''&lt;/sup&gt; is a compactification of Euclidean space '''R'''&lt;sup&gt;''n''&lt;/sup&gt;. For each possible &quot;direction&quot; in which points in '''R'''&lt;sup&gt;''n''&lt;/sup&gt; can &quot;escape&quot;, one new point at infinity is added (but each direction is identified with its opposite). The Alexandroff one-point compactification of '''R''' we constructed in the example above is in fact homeomorphic to '''RP'''&lt;sup&gt;1&lt;/sup&gt;. Note however that the [[projective plane]] '''RP'''&lt;sup&gt;2&lt;/sup&gt; is ''not'' the one-point compactification of the plane '''R'''&lt;sup&gt;2&lt;/sup&gt; since more than one point is added.
+
+[[Complex projective space]] '''CP'''&lt;sup&gt;''n''&lt;/sup&gt; is also a compactification of  '''C'''&lt;sup&gt;''n''&lt;/sup&gt;; the Alexandroff one-point compactification of the plane '''C''' is (homeomorphic to) the complex projective line '''CP'''&lt;sup&gt;1&lt;/sup&gt;, which in turn can be identified with a sphere, the [[Riemann sphere]].
+
+Passing to projective space is a common tool in [[algebraic geometry]] because the added points at infinity lead to simpler formulations of many theorems. For example, any two different lines in '''RP'''&lt;sup&gt;2&lt;/sup&gt; intersect in precisely one point, a statement that is not true in '''R'''&lt;sup&gt;2&lt;/sup&gt;. More generally, [[Bézout's theorem]], which is fundamental in [[intersection theory]], holds in projective space but not affine space. This distinct behavior of intersections in affine space and projective space is reflected in [[algebraic topology]] in the [[cohomology ring]]s – the cohomology of affine space is trivial, while the cohomology of projective space is non-trivial and reflects the key features of intersection theory (dimension and degree of a subvariety, with intersection being [[Poincaré dual]] to the [[cup product]]).
+
+Compactification of [[moduli space]]s generally require allowing certain degeneracies – for example, allowing certain singularities or reducible varieties. This is notably used in the Deligne–Mumford compactification of the [[Moduli of algebraic curves|moduli space of algebraic curves]].
+
+==Compactification and discrete subgroups of Lie groups==
+
+In the study of [[discrete space|discrete]] subgroups of [[Lie group]]s, the [[Quotient space (topology)|quotient space]] of [[coset]]s is often a candidate for more subtle '''compactification''' to preserve structure at a richer level than just topological.
+
+For example, [[modular curve]]s are compactified by the addition of single points for each [[cusp (singularity)|cusp]], making them [[Riemann surface]]s (and so, since they are compact, [[algebraic curve]]s). Here the cusps are there for a good reason: the curves parametrize a space of [[lattice (group)|lattices]], and those lattices can degenerate ('go off to infinity'), often in a number of ways (taking into account some auxiliary structure of ''level''). The cusps stand in for those different 'directions to infinity'.
+
+That is all for lattices in the plane. In ''n''-dimensional [[Euclidean space]] the same questions can be posed, for example about SO(n)\SL&lt;sub&gt;''n''&lt;/sub&gt;('''R''')/SL&lt;sub&gt;''n''&lt;/sub&gt;('''Z'''). This is harder to compactify. There are a variety of compactifications, such as the [[Borel–Serre compactification]], the [[reductive Borel-Serre compactification]], and the [[Satake compactification]]s, that can be formed.
+
+==Other compactification theories==
+
+*The theories of [[end (topology)|ends of a space]] and [[prime end]]s.
+*Some 'boundary' theories such as the [[collaring of an open manifold]], [[Martin boundary]], [[Shilov boundary]] and [[Furstenberg boundary]].
+*The [[Bohr compactification]] of a [[topological group]] arises from the consideration of [[almost periodic function]]s.
+*The [[projective line over a ring]] for a [[topological ring]] may compactify it.
+*The [[Baily–Borel compactification]] of a quotient of a [[Hermitian symmetric space]].
+*The [[wonderful compactification]] of a quotient of algebraic groups.
+*The compactifications that are simultaneously convex subsets in a locally convex space are called [[convex compactification]]s, their additional linear structure allowing e.g. for developing a differential calculus and more advanced considerations e.g. in relaxation in variational calculus or optimization theory.&lt;ref&gt;{{cite book | last=Roubíček | first=T. | authorlink=Tomas Roubicek | title=Relaxation in Optimization Theory and Variational Calculus | publisher=[[W. de Gruyter]] |place = Berlin | year=1997 | isbn=3-11-014542-1}}&lt;/ref&gt;
+
+==References==
+{{reflist}}
+
+[[Category:Compactification| ]]</text>
+      <sha1>8bh08xvsw2sw0t0xv9c6u9f5e7294ap</sha1>
+    </revision>
+  </page>

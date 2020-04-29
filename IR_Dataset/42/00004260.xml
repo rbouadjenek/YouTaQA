@@ -1,0 +1,88 @@
+  <page>
+    <title>Dots and Boxes</title>
+    <ns>0</ns>
+    <id>4260</id>
+    <revision>
+      <id>942319234</id>
+      <parentid>942317517</parentid>
+      <timestamp>2020-02-23T23:50:23Z</timestamp>
+      <contributor>
+        <username>David Eppstein</username>
+        <id>2051880</id>
+      </contributor>
+      <comment>Undo repeated spam</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[File:Dots-and-boxes.svg|upright=1.35|thumb|Example game of Dots and Boxes on a 2 × 2 square board]]
+
+'''Dots and Boxes''' is a [[pencil and paper game|pencil-and-paper game]] for two players (sometimes more). It was first published in the 19th century by French mathematician [[Édouard Lucas]], who called it '''{{Lang|fr|la pipopipette}}'''.&lt;ref&gt;{{citation|title=L'arithmétique amusante|first=Édouard|last=Lucas|authorlink=Édouard Lucas|publisher=Gauthier-Villars et fils|year=1895|location=Paris|contribution=La Pipopipette: nouveau jeu de combinaisons|url=https://books.google.com/books?id=ck5eAAAAcAAJ&amp;pg=PA204|pages=204–209}}.&lt;/ref&gt; It has gone by many other names,&lt;ref name=&quot;ww&quot;/&gt;&lt;!-- however WW doesn't say what those names are! --&gt; including the '''game of dots''',&lt;ref&gt;{{citation
+ | last = Holladay | first = J. C.
+ | journal = [[American Mathematical Monthly]]
+ | doi = 10.2307/2313978
+ | mr = 0200068
+ | pages = 717–720
+ | title = A note on the game of dots
+ | volume = 73
+ | year = 1966}}.&lt;/ref&gt; '''dot to dot grid''',&lt;ref&gt;{{citation|title=Play These Games: 101 Delightful Diversions Using Everyday Items|first=Heather|last=Swain|publisher=Penguin|year=2012|isbn=9781101585030|pages=160–162|url=https://books.google.com/books?id=9J3d20GMr2MC&amp;pg=PT225}}.&lt;/ref&gt; '''boxes''',&lt;ref&gt;{{citation|contribution=Boxes: an enclosing game|pages=37–39|url=https://books.google.com/books?id=y8_WLAjk0TMC&amp;pg=PA37|title=Games with Pencil and Paper|first=Eric|last=Solomon|isbn=9780486278728|publisher=Dover Publications, Inc.|year=1993}}. Reprint of 1973 publication by Thomas Nelson and Sons.&lt;/ref&gt; and '''pigs in a pen'''.&lt;ref&gt;{{citation|title=Civil War Days: Discover the Past with Exciting Projects, Games, Activities, and Recipes|volume=4|series=American Kids in History|first=David C.|last=King|publisher=Wiley|year=1999|isbn=9780471246121|pages=29–30}}.&lt;/ref&gt;
+&lt;!-- Do not re-add these alternative names without sources: '''Squares''', '''Paddocks''', '''Square-it''', '''Dots and Dashes''', '''Dit Dot Dash''', '''Line Game''', '''Smart Dots''', '''Dot Boxing''', or the '''Dot Game'''. And do not use sources that merely copied these names from earlier versions of this article. --&gt;
+
+The game starts with an empty grid of dots. Usually two players take turns adding a single horizontal or vertical line between two ''unjoined'' adjacent dots. A player who completes the fourth side of a 1×1 box earns one point and takes another turn.  (A point is typically recorded by placing a mark that identifies the player in the box, such as an initial.) The game ends when no more lines can be placed. The winner is the player with the most points.&lt;ref name=&quot;ww&quot;&gt;{{citation
+ | last1 = Berlekamp | first1 = Elwyn R. | author1-link = Elwyn Berlekamp
+ | last2 = Conway | first2 = John H. | author2-link = John Horton Conway
+ | last3 = Guy | first3 = Richard K. | author3-link = Richard K. Guy
+ | contribution = Chapter 16: Dots-and-Boxes
+ | pages = 507–550
+ | publisher = Academic Press
+ | title = Winning Ways for your Mathematical Plays, Volume 2: Games in Particular
+ | year = 1982}}.&lt;/ref&gt;&lt;ref&gt;{{citation
+ | last = Berlekamp | first = Elwyn | author-link = Elwyn Berlekamp
+ | isbn = 1-56881-129-2
+ | publisher = AK Peters, Ltd
+ | title = The Dots-and-Boxes Game: Sophisticated Child's Play
+ | year = 2000}}.&lt;/ref&gt; The board may be of any size grid. When short on time, or to learn the game, a 2×2 board (3×3 dots) is suitable.&lt;ref&gt;{{harvtxt|Berlekamp|Conway|Guy|1982}}, &quot;the 4-box game&quot;, pp. 513–514.&lt;/ref&gt; A 5×5 board, on the other hand, is good for experts.&lt;ref&gt;{{harvtxt|Berlekamp|2000}}, p. xi: [the 5&amp;times;5 board] &quot;is big enough to be quite challenging, and yet small enough to keep the game reasonably short&quot;.&lt;/ref&gt;
+
+The diagram on the right shows a game being played on a 2×2 board (3×3 dots). The second player (&quot;B&quot;) plays a rotated mirror image of the first player's moves, hoping to divide the board into two pieces and tie the game. But the first player (&quot;A&quot;) makes a ''sacrifice'' at move 7 and B accepts the sacrifice, getting one box. However, B ''must'' now add another line, and so B connects the center dot to the center-right dot, causing the remaining unscored boxes to be joined together in a ''chain'' (shown at the end of move 8). With A's next move, A gets all three of them and ends the game, winning 3–1.
+
+== Strategy ==
+[[File:dots-and-boxes-chains.png|thumb|upright=1.35|'''The double-cross strategy''': faced with position 1, a novice player would create position 2 and lose. An experienced player would create position 3 and win.]]
+For most novice players, the game begins with a phase of more-or-less randomly connecting dots, where the only strategy is to avoid adding the third side to any box. This continues until all the remaining (potential) boxes are joined together into ''chains'' – groups of one or more adjacent boxes in which any move gives all the boxes in the chain to the opponent. At this point, players typically take all available boxes, then ''open'' the smallest available chain to their opponent. For example, a novice player faced with a situation like position 1 in the diagram on the right, in which some boxes can be captured, may take all the boxes in the chain, resulting in position 2. But, with their last move, they have to open the next, larger chain, and the novice loses the game.&lt;ref name=&quot;ww&quot;/&gt;&lt;ref name=&quot;west&quot;&gt;{{Citation
+ | last = West
+ | first = Julian
+ | contribution = Championship-level play of dots-and-boxes
+ | editor-last = Nowakowski
+ | editor-first = Richard
+ | title = Games of No Chance
+ | pages = 79–84
+ | publisher = MSRI Publications
+ | place = Berkeley
+ | year = 1996
+ | contribution-url = http://library.msri.org/books/Book29/files/westboxes.pdf }}.&lt;/ref&gt;
+
+A more ''experienced'' player faced with position 1 will instead play the ''double-cross strategy'', taking all but 2 of the boxes in the chain and leaving position 3. The opponent will take these two boxes and then be forced to open the next chain. By achieving position 3, player A wins. The same double-cross strategy applies no matter how many long chains there are: a player using this strategy will take all but two boxes in each chain and take all the boxes in the last chain. If the chains are long enough, then this player will win.
+
+The next level of strategic complexity, between ''experts'' who would both use the double-cross strategy (if they were allowed to), is a battle for ''control'':  An expert player tries to force their opponent ''to open the first long chain'', because the player who first opens a long chain usually loses.&lt;ref name=&quot;ww&quot;/&gt;&lt;ref name=&quot;west&quot; /&gt;  Against a player who does not understand the concept of a sacrifice, the expert simply has to make the correct number of sacrifices to encourage the opponent to hand him the first chain long enough to ensure a win.  ''If'' the other player also sacrifices, the expert has to additionally manipulate the number of available sacrifices through earlier play.
+
+In [[combinatorial game theory]], dots and boxes is an [[impartial game]] and many positions can be analyzed using [[Sprague–Grundy theorem|Sprague–Grundy theory]]. However, Dots and Boxes lacks the [[normal play convention]] of most impartial games (where the last player to move wins), which complicates the analysis considerably.&lt;ref name=&quot;ww&quot;/&gt;&lt;ref name=&quot;west&quot; /&gt;
+
+== Unusual grids and variants ==
+Dots and Boxes need not be played on a rectangular grid –  it can be played on a triangular grid or a hexagonal grid.&lt;ref name=&quot;ww&quot;/&gt; There is also a variant in [[Bolivia]] where it is played in a [[chakana]] or Inca cross grid, which adds more complications to the game.{{Citation needed|date=April 2016}}
+
+Dots and Boxes has a [[dual graph]] form called &quot;Strings-and-Coins&quot;.  This game is played on a network of coins (vertices) joined by strings (edges).  Players take turns cutting a string.  When a cut leaves a coin with no strings, the player &quot;pockets&quot; the coin and takes another turn.  The winner is the player who pockets the most coins.  Strings-and-Coins can be played on an arbitrary [[graph (discrete mathematics)|graph]].&lt;ref name=&quot;ww&quot;/&gt;
+
+A variant [[Kropki]] played in Poland allows a player to claim a region of several squares as soon as its boundary is completed.&lt;ref&gt;{{Cite web|url=http://zagram.org/kropki-zasady.html|title=Dots - rules of the game|last=Grzegorzka|first=Jakub|last2=Dyda|date=|website=zagram.org|archive-url=|archive-date=|access-date=2017-11-27}}&lt;/ref&gt; In analyses of Dots and Boxes, starting with outer lines is called a ''Swedish board'' while the standard version is called an ''American board''. An intermediate version with the outer left and bottom sides starting with lines is called an ''Icelandic board''.&lt;ref&gt;{{citation|url=http://wilson.engr.wisc.edu/boxes/results.shtml|title=Dots-and-Boxes Analysis Results|first=David|last=Wilson|publisher=University of Wisconsin|accessdate=2016-04-07}}.&lt;/ref&gt;
+
+== References ==
+{{reflist}}
+
+==External links==
+* {{MathWorld|urlname=DotsandBoxes|title=Dots and Boxes|author=Barile, Margherita}}
+* Ilan Vardi, [https://web.archive.org/web/20070825035216/http://cf.geocities.com/ilanpi/dots.html Dots Strategies].
+
+{{DEFAULTSORT:Dots And Boxes}}
+[[Category:Abstract strategy games]]
+[[Category:Mathematical games]]
+[[Category:Paper-and-pencil games]]
+[[Category:1889 introductions]]</text>
+      <sha1>0yzew9ehzdxkdoanpsh2tv1aewpbggd</sha1>
+    </revision>
+  </page>

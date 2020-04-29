@@ -1,0 +1,79 @@
+  <page>
+    <title>Endomorphism</title>
+    <ns>0</ns>
+    <id>9569</id>
+    <revision>
+      <id>937183337</id>
+      <parentid>932770186</parentid>
+      <timestamp>2020-01-23T13:02:16Z</timestamp>
+      <contributor>
+        <username>Joel Brennan</username>
+        <id>33522736</id>
+      </contributor>
+      <minor />
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{About|the mathematical concept||Endomorphic (disambiguation){{!}}Endomorphic}}
+
+[[File:Orthogonal projection.svg|frame|right|[[Orthogonal projection]] onto a line, {{math|''m''}}, is a [[linear operator]] on the plane. This is an example of an endomorphism that is not an [[automorphism]].]]
+
+In [[mathematics]], an '''endomorphism''' is a [[morphism]] from a [[mathematical object]] to itself.  An endomorphism that is also an [[isomorphism]] is an [[automorphism]]. For example, an endomorphism of a [[vector space]] {{math|''V''}} is a [[linear map]] {{math|''f'': ''V'' → ''V''}}, and an endomorphism of a [[group (mathematics)|group]] {{math|''G''}} is a [[group homomorphism]] {{math|''f'': ''G'' → ''G''}}. In general, we can talk about endomorphisms in any [[Category (mathematics)|category]]. In the [[category of sets]], endomorphisms are [[Function (mathematics)|functions]] from a [[Set (mathematics)|set]] ''S'' to itself.
+
+In any category, the [[function composition|composition]] of any two endomorphisms of {{math|''X''}} is again an endomorphism of {{math|''X''}}.  It follows that the set of all endomorphisms of {{math|''X''}} forms a [[monoid]], the [[full transformation monoid]], and denoted {{math|End(''X'')}} (or {{math|End{{sub|''C''}}(''X'')}} to emphasize the category {{math|''C''}}).
+
+==Automorphisms==
+{{main|Automorphism}}
+An [[Inverse function|invertible]] endomorphism of {{math|''X''}} is called an [[automorphism]].  The set of all automorphisms is a [[subset]] of {{math|End(''X'')}} with a [[group (mathematics)|group]] structure, called the [[automorphism group]] of {{math|''X''}} and denoted {{math|Aut(''X'')}}.  In the following diagram, the arrows denote implication:
+{| style=&quot;border:none;&quot;
+|-
+| align=&quot;center&quot; width=&quot;42%&quot; | [[Automorphism]]
+| align=&quot;center&quot; width=&quot;16%&quot; | ⇒
+| align=&quot;center&quot; width=&quot;42%&quot; | [[Isomorphism]]
+|-
+| align=&quot;center&quot; | ⇓
+|
+| align=&quot;center&quot; | ⇓
+|-
+| align=&quot;center&quot; | Endomorphism
+| align=&quot;center&quot; | ⇒
+| align=&quot;center&quot; | [[Homomorphism|(Homo)morphism]]
+|}
+
+==Endomorphism ring==
+{{main|Endomorphism ring}}
+Any two endomorphisms of an [[abelian group]], {{math|''A''}}, can be added together by the rule {{math|(''f'' + ''g'')(''a'') {{=}} ''f''(''a'') + ''g''(''a'')}}.  Under this addition, and with multiplication being defined as function composition, the endomorphisms of an abelian group form a [[ring (mathematics)|ring]] (the [[endomorphism ring]]).  For example, the set of endomorphisms of {{math|ℤ{{sup|''n''}}}} is the ring of all {{math|''n'' × ''n''}} [[Matrix (mathematics)|matrices]] with [[integer]] entries.  The endomorphisms of a vector space or [[module (mathematics)|module]] also form a ring, as do the endomorphisms of any object in a [[preadditive category]].  The endomorphisms of a nonabelian group generate an algebraic structure known as a [[near-ring]]. Every ring with one is the endomorphism ring of its [[regular module]], and so is a subring of an endomorphism ring of an abelian group;&lt;ref&gt;Jacobson (2009), p. 162, Theorem 3.2.&lt;/ref&gt; however there are rings that are not the endomorphism ring of any abelian group.
+
+==Operator theory==
+In any [[concrete category]], especially for [[vector space]]s, endomorphisms are maps from a set into itself, and may be interpreted as [[unary operator]]s on that set, [[action (group theory)|acting]] on the elements, and allowing to define the notion of [[orbit (group theory)|orbit]]s of elements, etc.
+
+Depending on the additional structure defined for the category at hand ([[topology]], [[metric (mathematics)|metric]], ...), such operators can have properties like [[continuous function (topology)|continuity]], [[Bounded function|boundedness]], and so on.  More details should be found in the article about [[operator theory]].
+
+==Endofunctions==
+An '''endofunction''' is a function whose [[domain of a function|domain]] is equal to its [[codomain]]. A [[homomorphism|homomorphic]] endofunction is an endomorphism.
+
+Let {{math|''S''}} be an arbitrary set. Among endofunctions on {{math|''S''}} one finds [[permutation]]s of {{math|''S''}} and constant functions associating to every {{math|''x''}} in {{math|''S''}} the same element {{math|''c''}} in {{math|''S''}}.  Every permutation of {{math|''S''}} has the codomain equal to its domain and is [[bijection|bijective]] and invertible. If {{math|''S''}} has more than one element, a constant function on {{math|''S''}} has an [[Image (mathematics)|image]] that is a proper subset of its codomain, and thus is not bijective (and hence not invertible). The function associating to each [[natural number]] {{math|''n''}} the floor of {{math|''n''/2}} has its image equal to its codomain and is not invertible.
+
+Finite endofunctions are equivalent to [[directed pseudoforest]]s. For sets of size {{math|''n''}} there are {{math|''n''{{sup|''n''}}}} endofunctions on the set.
+
+Particular examples of bijective endofunctions are the [[involution (mathematics)|involution]]s; i.e., the functions coinciding with their inverses.
+
+==See also==
+*[[Adjoint endomorphism]]
+*[[Epimorphism]] (Surjective morphism)
+*[[Frobenius endomorphism]]
+*[[Monomorphism]] (Injective morphism)
+
+==Notes==
+&lt;references /&gt;
+
+==References==
+* {{Citation| last=Jacobson| first=Nathan| author-link=Nathan Jacobson| year=2009| title=Basic algebra| edition=2nd| volume = 1 | series= | publisher=Dover| isbn = 978-0-486-47189-1}}
+
+==External links==
+* {{springer|title=Endomorphism|id=p/e035600}}
+* {{planetmath reference|id=7462|title=Endomorphism}}
+
+[[Category:Morphisms]]</text>
+      <sha1>5qbtoqwsaxdr4w6la3zb3j2cbohpt61</sha1>
+    </revision>
+  </page>

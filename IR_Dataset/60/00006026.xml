@@ -1,0 +1,285 @@
+  <page>
+    <title>Countable set</title>
+    <ns>0</ns>
+    <id>6026</id>
+    <revision>
+      <id>931273089</id>
+      <parentid>919503363</parentid>
+      <timestamp>2019-12-18T00:39:34Z</timestamp>
+      <contributor>
+        <username>InternetArchiveBot</username>
+        <id>27015025</id>
+      </contributor>
+      <comment>Bluelinking 1 books for [[WP:V|verifiability]].) #IABot (v2.1alpha3</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{Redirect|Countable|the linguistic concept|Count noun|the political media company|Countable (app)}}
+{{distinguish|text= [[recursively enumerable set|(recursively) enumerable sets]]}}
+In [[mathematics]], a '''countable set''' is a [[Set (mathematics)|set]] with the same [[cardinality]] ([[cardinal number|number]] of elements) as some [[subset]] of the set of [[natural number]]s. A countable set is either a [[finite set]] or a '''countably infinite''' set. Whether finite or infinite, the elements of a countable set can always be counted one at a time and, although the counting may never finish, every element of the set is associated with a unique natural number.
+
+Some authors use countable set to mean ''countably infinite'' alone.&lt;ref name=&quot;Rudin&quot;&gt;{{Harvard citation no brackets|Rudin|1976|loc=Chapter 2}}&lt;/ref&gt; To avoid this ambiguity, the term ''at most countable'' may be used when finite sets are included and ''countably infinite'', ''enumerable'',&lt;ref&gt;{{Harvard citation no brackets|Kamke|1950|page=2}}&lt;/ref&gt; or ''denumerable''&lt;ref name=&quot;Lang&quot;&gt;{{Harvard citation no brackets|Lang|1993|loc=&amp;sect;2 of Chapter I}}&lt;/ref&gt; otherwise.
+
+[[Georg Cantor]] introduced the term ''countable set'', contrasting sets that are countable with those that are ''[[uncountable set|uncountable]]'' (i.e., ''nonenumerable'' or ''nondenumerable''&lt;ref name=&quot;Apostol&quot;&gt;{{Harvard citation no brackets|Apostol|1969|loc=Chapter 13.19}}&lt;/ref&gt;). Today, countable sets form the foundation of a branch of mathematics called ''[[discrete mathematics]]''.
+
+==Definition==
+A set {{mvar|S}} is ''countable'' if there exists an [[injective function]] {{mvar|f}} from {{mvar|S}} to the [[natural numbers]] {{math|1='''N''' = {0, 1, 2, 3, ...}}}.&lt;ref&gt;Since there is an obvious [[bijection]] between {{math|'''N'''}} and {{math|1='''N'''* = {1, 2, 3, ...}}}, it makes no difference whether one considers 0  a natural number or not. In any case, this article follows [[ISO 31-11]] and the standard convention in [[mathematical logic]], which takes 0 as a natural number.&lt;/ref&gt;
+
+If such an  {{mvar|f}} can be found that is also [[surjective function|surjective]] (and therefore [[bijection|bijective]]), then {{mvar|S}} is called ''countably [[infinite set|infinite]].''
+
+In other words, a set is ''countably infinite'' if it has [[One-one correspondence|one-to-one correspondence]] with the natural number set, {{math|'''N'''}}.
+
+This terminology is not universal. Some authors use countable to mean what is here called ''countably infinite,'' and do not include finite sets.
+
+Alternative (equivalent) formulations of the definition in terms of a [[bijective]] function or a [[surjective]] function can also be given. See below.
+
+==History==
+In 1874, in [[Georg Cantor's first set theory article|his first set theory article]], Cantor proved that the set of [[real number]]s is uncountable, thus showing that not all infinite sets are countable.&lt;ref&gt;{{citation|title=Roads to Infinity: The Mathematics of Truth and Proof|first=John C.|last=Stillwell|authorlink=John Stillwell|publisher=CRC Press|year=2010|isbn=9781439865507|page=10|url=https://books.google.com/books?id=XvPRBQAAQBAJ&amp;pg=PA10|quote=Cantor's discovery of uncountable sets in 1874 was one of the most unexpected events in the history of mathematics. Before 1874, infinity was not even considered a legitimate mathematical subject by most people, so the need to distinguish between countable and uncountable infinities could not have been imagined.}}&lt;/ref&gt; In 1878, he used one-to-one correspondences to define and compare cardinalities.&lt;ref&gt;Cantor 1878, p.&amp;nbsp;242.&lt;/ref&gt; In 1883, he extended the natural numbers with his infinite [[ordinal number|ordinals]], and used sets of ordinals to produce an infinity of sets having different infinite cardinalities.&lt;ref&gt;Ferreirós 2007, pp. 268, 272&amp;ndash;273.&lt;/ref&gt;
+
+==Introduction==
+A ''[[Set (mathematics)|set]]'' is a collection of ''elements'', and may be described in many ways. One way is simply to list all of its elements; for example, the set consisting of the integers 3, 4, and 5 may be denoted {3, 4, 5}. This is only effective for small sets, however; for larger sets, this would be time-consuming and error-prone. Instead of listing every single element, sometimes an ellipsis (&quot;...&quot;) is used, if the writer believes that the reader can easily guess what is missing; for example, {1, 2, 3, ..., 100} presumably denotes the set of [[integer]]s from 1 to 100. Even in this case, however, it is still ''possible'' to list all the elements, because the set is ''finite''.
+
+Some sets are ''infinite''; these sets have more than ''n'' elements for any integer ''n''. For example, the set of natural numbers, denotable by {0, 1, 2, 3, 4, 5, ...}, has infinitely many elements, and we cannot use any normal number to give its size. Nonetheless, it turns out that infinite sets do have a well-defined notion of size (or more properly, of ''cardinality'', which is the technical term for the number of elements in a set), and not all infinite sets have the same cardinality.
+
+[[File:Aplicación 2 inyectiva sobreyectiva02.svg|thumb|x100px|Bijective mapping from integer to even numbers]]
+To understand what this means, we first examine what it ''does not'' mean. For example, there are infinitely many odd integers, infinitely many even integers, and (hence) infinitely many integers overall. However, it turns out that the number of even integers, which is the same as the number of odd integers, is also the same as the number of integers overall. This is because we arrange things such that for every integer, there is a distinct even integer: ... −2→−4, −1→−2, 0→0, 1→2, 2→4, ...; or, more generally, ''n''→2''n'', see picture. What we have done here is arranged the integers and the even integers into a ''one-to-one correspondence'' (or ''[[bijection]]''), which is a [[function (mathematics)|function]] that maps between two sets such that each element of each set corresponds to a single element in the other set.
+
+However, not all infinite sets have the same cardinality. For example, [[Georg Cantor]] (who introduced this concept) demonstrated that the real numbers cannot be put into one-to-one correspondence with the natural numbers (non-negative integers), and therefore that the set of real numbers has a greater cardinality than the set of natural numbers.
+
+A set is ''countable'' if: (1) it is finite, or (2) it has the same cardinality (size) as the set of natural numbers. Equivalently, a set is ''countable'' if it has the same cardinality as some [[subset]] of the set of natural numbers. Otherwise, it is ''uncountable''.
+
+==Formal overview without details==
+By definition a set ''S'' is ''countable'' if there exists an [[injective function]] ''f'' : ''S'' → '''N''' from ''S'' to the [[natural numbers]] '''N''' = {0, 1, 2, 3, ...}.
+
+It might seem natural to divide the sets into different classes: put all the sets containing one element together; all the sets containing two elements together; ...; finally, put together all infinite sets and consider them as having the same size.
+This view is not tenable, however, under the natural definition of size.
+
+To elaborate this we need the concept of a [[bijection]]. Although a &quot;bijection&quot; seems a more advanced concept than a number, the usual development of mathematics in terms of set theory defines functions before numbers, as they are based on much simpler sets. This is where the concept of a bijection comes in: define the correspondence
+
+:''a'' ↔ 1, ''b'' ↔ 2, ''c'' ↔ 3
+
+Since every element of {''a'', ''b'', ''c''} is paired with ''precisely one'' element of {1, 2, 3}, ''and'' vice versa, this defines a bijection.
+
+We now generalize this situation and ''define'' two sets as of the same size if (and only if) there is a bijection between them. For all finite sets this gives us the usual definition of &quot;the same size&quot;. What does it tell us about the size of infinite sets?
+
+Consider the sets ''A'' = {1, 2, 3, ... }, the set of positive [[integer]]s and ''B'' = {2, 4, 6, ... }, the set of even positive integers. We claim that, under our definition, these sets have the same size, and that therefore ''B'' is countably infinite. Recall that to prove this we need to exhibit a bijection between them. But this is easy, using ''n'' ↔ 2''n'', so that
+:1 ↔ 2, 2 ↔ 4, 3 ↔ 6, 4 ↔ 8, ....
+
+As in the earlier example, every element of A has been paired off with precisely one element of B, and vice versa. Hence they have the same size. This is an example of a set of the same size as one of its proper subsets, which is impossible for finite sets.
+
+Likewise, the set of all [[ordered pair]]s of natural numbers is countably infinite, as can be seen by following a path like the one in the picture: [[File:Pairing natural.svg|thumb|300px|The [[Cantor pairing function]] assigns one natural number to each pair of natural numbers]] The resulting mapping is like this:
+:0 ↔ (0,0), 1 ↔ (1,0), 2 ↔ (0,1), 3 ↔ (2,0), 4 ↔ (1,1), 5 ↔ (0,2), 6 ↔ (3,0) ....
+This mapping covers all such ordered pairs.
+
+If each pair is treated as the [[numerator]] and [[denominator]] of a [[vulgar fraction]], then for every positive fraction, we can come up with a distinct number corresponding to it. This representation includes also the natural numbers, since every natural number is also a fraction ''N''/1. So we can conclude that there are exactly as many positive rational numbers as there are positive integers. This is true also for all rational numbers, as can be seen below.
+
+'''Theorem:''' The [[Cartesian product]] of finitely many countable sets is countable.
+
+This form of triangular [[Map (mathematics)|mapping]] [[recursion|recursively]] generalizes to [[vector space|vectors]] of finitely many natural numbers by repeatedly mapping the first two elements to a natural number. For example, (0,2,3) maps to (5,3), which maps to 39.
+
+Sometimes more than one mapping is useful: the set to be shown to be countably infinite is mapped onto another set, then this other set is mapped onto to the natural numbers. For example, the positive [[rational number]]s can easily be mapped to (a subset of) the pairs of natural numbers because ''p''/''q ''maps to (''p'', ''q'').
+
+What about infinite subsets of countably infinite sets? Do these have fewer elements than '''N'''?
+
+'''Theorem:''' Every subset of a countable set is countable. In particular, every infinite subset of a countably infinite set is countably infinite.
+
+For example, the set of [[prime number]]s is countable, by mapping the ''n''-th prime number to ''n'':
+*2 maps to 1
+*3 maps to 2
+*5 maps to 3
+*7 maps to 4
+*11 maps to 5
+*13 maps to 6
+*17 maps to 7
+*19 maps to 8
+*23 maps to 9
+*...
+
+What about sets being naturally &quot;larger than&quot; '''N'''? For instance, '''Z''' the set of all [[integer]]s or '''Q''', the set of all [[rational number]]s, which intuitively may seem much bigger than '''N'''. But looks can be deceiving, for we assert:
+
+'''Theorem:''' '''Z''' (the set of all integers) and '''Q''' (the set of all rational numbers) are countable.
+
+In a similar manner, the set of [[algebraic number]]s is countable.&lt;ref&gt;{{Harvard citation no brackets|Kamke|1950|pages=3–4}}&lt;/ref&gt;
+
+These facts follow easily from a result that many individuals find non-intuitive.
+
+'''Theorem:''' Any finite [[union (set theory)|union]] of countable sets is countable. 
+&lt;!--
+'''Q''' can be defined as the set of all fractions ''a''/''b'' where ''a'' and ''b'' are integers and ''b'' &gt; 0. This can be mapped onto the subset of ordered triples of natural numbers (''a'', ''b'', ''c'') such that ''a'' ≥ 0, ''b'' &gt; 0, ''a'' and ''b'' are [[coprime]], and ''c'' ∈ {0, 1} such that ''c'' = 0 if ''a''/''b'' ≥ 0 and ''c'' = 1 otherwise.
+
+*0 maps to (0,1,0)
+*1 maps to (1,1,0)
+*−1 maps to (1,1,1)
+*1/2 maps to (1,2,0)
+*−1/2 maps to (1,2,1)
+*2 maps to (2,1,0)
+*−2 maps to (2,1,1)
+*1/3 maps to (1,3,0)
+*−1/3 maps to (1,3,1)
+*3 maps to (3,1,0)
+*−3 maps to (3,1,1)
+*1/4 maps to (1,4,0)
+*−1/4 maps to (1,4,1)
+*2/3 maps to (2,3,0)
+*−2/3 maps to (2,3,1)
+*3/2 maps to (3,2,0)
+*−3/2 maps to (3,2,1)
+*4 maps to (4,1,0)
+*−4 maps to (4,1,1)
+*...
+--&gt;
+
+With the foresight of knowing that there are uncountable sets, we can wonder whether or not this last result can be pushed any further. The answer is &quot;yes&quot; and &quot;no&quot;, we can extend it, but we need to assume a new axiom to do so.
+
+'''Theorem:''' (Assuming the [[axiom of countable choice]]) The union of countably many countable sets is countable.
+
+For example, given countable sets '''a''', '''b''', '''c''', ...
+
+[[File:Countablepath.svg|thumb|300px|Enumeration for countable number of countable sets]]
+Using a variant of the triangular enumeration we saw above:
+
+*''a''&lt;sub&gt;0&lt;/sub&gt; maps to 0
+*''a''&lt;sub&gt;1&lt;/sub&gt; maps to 1
+*''b''&lt;sub&gt;0&lt;/sub&gt; maps to 2
+*''a''&lt;sub&gt;2&lt;/sub&gt; maps to 3
+*''b''&lt;sub&gt;1&lt;/sub&gt; maps to 4
+*''c''&lt;sub&gt;0&lt;/sub&gt; maps to 5
+*''a''&lt;sub&gt;3&lt;/sub&gt; maps to 6
+*''b''&lt;sub&gt;2&lt;/sub&gt; maps to 7
+*''c''&lt;sub&gt;1&lt;/sub&gt; maps to 8
+*''d''&lt;sub&gt;0&lt;/sub&gt; maps to 9
+*''a''&lt;sub&gt;4&lt;/sub&gt; maps to 10
+*...
+
+This only works if the sets '''a''', '''b''', '''c''', ... are [[disjoint sets|disjoint]]. If not, then the union is even smaller and is therefore also countable by a previous theorem.
+
+We need the [[axiom of countable choice]] to index ''all'' the sets '''a''', '''b''', '''c''', ... simultaneously.
+
+'''Theorem:''' The set of all finite-length [[sequence]]s of natural numbers is countable.
+
+This set is the union of the length-1 sequences, the length-2 sequences, the length-3 sequences, each of which is a countable set (finite Cartesian product). So we are talking about a countable union of countable sets, which is countable by the previous theorem.
+
+'''Theorem:''' The set of all finite [[subset]]s of the natural numbers is countable.
+
+The elements of any finite subset can be ordered into a finite sequence. There are only countably many finite sequences, so also there are only countably many finite subsets.
+
+The following theorem gives equivalent formulations in terms of a bijective function or a [[surjective function]].  A proof of this result can be found in Lang's text.&lt;ref name=&quot;Lang&quot;/&gt;
+
+'''(Basic) Theorem:''' Let ''S'' be a set. The following statements are equivalent:
+# ''S'' is countable, i.e. there exists an injective function ''f'' : ''S'' → '''N'''.
+# Either ''S'' is empty or there exists a surjective function ''g'' : '''N''' → ''S''.  
+# Either ''S'' is finite or there exists a [[bijection]] ''h'' : '''N''' → ''S''.
+
+'''Corollary:''' Let ''S'' and ''T'' be sets.
+# If the function ''f'' : ''S'' → ''T'' is injective and ''T'' is countable then ''S'' is countable.
+# If the function ''g'' : ''S'' → ''T'' is surjective and ''S'' is countable then ''T'' is countable.
+
+'''[[Cantor's theorem]]''' asserts that if ''A'' is a set and ''P''(''A'') is its [[power set]], i.e. the set of all subsets of ''A'', then there is no surjective function from ''A'' to ''P''(''A'').  A proof is given in the article [[Cantor's theorem]].   As an immediate consequence of this and the Basic Theorem above we have:
+
+'''Proposition:''' The set ''P''('''N''') is not countable; i.e. it is [[uncountable]].
+
+For an elaboration of this result see [[Cantor's diagonal argument]].
+
+The set of [[real number]]s is uncountable (see [[Cantor's first uncountability proof]]), and so is the set of all infinite [[sequence]]s of natural numbers.
+&lt;!-- WILL RE-INSERT AFTER REORGANIZATION OFSECTION
+'''Proof:''' For (1) observe that if ''T'' is countable there is an injective function  ''h'' : ''T'' → '''N'''.  Then if ''f'' : ''S'' → ''T'' is injective the composition ''h'' &lt;small&gt; o &lt;/small&gt; ''f'' : ''S'' → '''N''' is injective, so ''S'' is countable.
+
+For (2) observe that if ''S'' is countable there is a surjective function ''h'' : '''N''' → ''S''.  Then if ''g'' : ''S'' → ''T'' is surjective the composition ''g'' &lt;small&gt; o &lt;/small&gt; ''h'' : '''N''' → ''T'' is surjective, so ''T'' is countable.
+--&gt;
+
+==Some technical details==
+The proofs of the statements in the above section rely upon the existence of functions with certain properties. This section presents functions commonly used in this role, but not the verifications that these functions have the required properties. The Basic Theorem and its Corollary are often used to simplify proofs. Observe that {{math|'''N'''}} in that theorem can be replaced with any countably infinite set.
+
+'''Proposition:''' Any [[finite set]] is countable.
+
+'''Proof:''' Let {{mvar|S}} be such a set. Two cases are to be considered: Either {{mvar|S}} is empty or it isn't. 1.) The empty set is even itself a subset of the natural numbers, so it is countable. 2.) If {{mvar|S}} is nonempty and finite, then by definition of finiteness there is a bijection between {{mvar|S}} and the set {1, 2, ..., {{mvar|n}}} for some positive natural number {{mvar|n}}. This function is an injection from {{mvar|S}} into {{math|'''N'''}}.
+
+'''Proposition:''' Any subset of a countable set is countable.&lt;ref&gt;{{Harvard citation no brackets|Halmos|1960|page=91}}&lt;/ref&gt;
+
+'''Proof:''' The restriction of an injective function to a subset of its [[domain of a function|domain]] is still injective.
+
+'''Proposition:''' If {{mvar|S}} is a countable set then {{math|''S'' ∪ {''x''}}} is countable.&lt;ref&gt;{{Harvard citation no brackets|Avelsgaard|1990|page=179}}&lt;/ref&gt;
+
+'''Proof:''' If {{math|x ∈ S}} there is nothing to be shown. Otherwise let {{math|''f'': ''S'' → '''N'''}} be an injection. Define {{math|''g'': ''S'' ∪ {''x''} → '''N'''}} by {{math|1=''g''(''x'') = 0}} and 
+{{math|1=''g''(''y'') = ''f''(''y'') + 1}} for all {{mvar|y}} in {{mvar|S}}. This function {{mvar|g}} is an injection.
+
+'''Proposition:''' If {{mvar|A}} and {{mvar|B}} are countable sets then {{math|''A'' ∪ ''B''}} is countable.&lt;ref&gt;{{Harvard citation no brackets|Avelsgaard|1990|page=180}}&lt;/ref&gt;
+
+'''Proof:''' Let {{math|''f'': ''A'' → '''N'''}} and {{math|''g'': ''B'' → '''N'''}} be injections. Define a new injection {{math|''h'': ''A'' ∪ ''B'' → '''N'''}} by {{math|1=''h''(''x'') = 2''f''(''x'')}} if {{mvar|x}} is in {{mvar|A}} and {{math|1=''h''(''x'') = 2''g''(''x'') + 1}} if {{mvar|x}} is in {{mvar|B}} but not in {{mvar|A}}.
+
+'''Proposition:'''  The [[Cartesian product]] of two countable sets {{mvar|A}} and {{mvar|B}} is countable.&lt;ref&gt;{{Harvard citation no brackets|Halmos|1960|page=92}}&lt;/ref&gt;
+
+'''Proof:''' Observe that {{math|'''N''' × '''N'''}} is countable as a consequence of the definition because the function {{math|''f'' : '''N''' × '''N''' → '''N'''}} given by  {{math|1=''f''(''m'', ''n'') = 2&lt;sup&gt;''m''&lt;/sup&gt;3&lt;sup&gt;''n''&lt;/sup&gt;}} is injective.&lt;ref&gt;{{Harvard citation no brackets|Avelsgaard|1990|page=182}}&lt;/ref&gt;  It then follows from the Basic Theorem and the Corollary that the Cartesian product of any two countable sets is countable. This follows because if {{mvar|A}} and {{mvar|B}} are countable there are surjections {{math|''f'' : '''N''' → ''A''}} and {{math|''g'' : '''N''' → ''B''}}. So
+:{{math|''f'' × ''g'' : '''N''' × '''N''' → ''A'' × ''B''}}
+is a surjection from the countable set {{math|'''N''' × '''N'''}} to the set {{math|''A'' × ''B''}} and the Corollary implies {{math|''A'' × ''B''}} is countable. This result generalizes to the Cartesian product of any finite collection of countable sets and the proof follows by [[mathematical induction|induction]] on the number of sets in the collection.
+
+'''Proposition:''' The [[integers]] {{math|'''Z'''}} are countable and the [[rational numbers]] {{math|'''Q'''}} are countable.
+
+'''Proof:''' The integers {{math|'''Z'''}} are countable because the function {{math|''f'' : '''Z''' → '''N'''}} given by {{math|1=''f''(''n'') = 2&lt;sup&gt;''n''&lt;/sup&gt;}} if {{mvar|n}} is non-negative and {{math|1=''f''(''n'') = 3&lt;sup&gt;− ''n''&lt;/sup&gt;}} if {{mvar|n}} is negative, is an injective function. The rational numbers {{math|'''Q'''}} are countable because the function {{math|''g'' : '''Z''' × '''N''' → '''Q'''}} given by {{math|1=''g''(''m'', ''n'') = ''m''/(''n'' + 1)}} is a surjection from the countable set {{math|'''Z''' × '''N'''}} to the rationals {{math|'''Q'''}}.
+
+'''Proposition:''' The [[algebraic number]]s {{math|'''A'''}} are countable.
+
+'''Proof:''' Per definition, every algebraic number (including complex numbers) is a root of a polynomial with integer coefficients. Given an algebraic number &lt;math&gt;\alpha&lt;/math&gt;, let &lt;math&gt;a_0x^0+a_1x^1+a_2x^2+ \cdots + a_nx^n&lt;/math&gt; be a polynomial with integer coefficients such that &lt;math&gt;\alpha&lt;/math&gt; is the ''k''th root of the polynomial, where the roots are sorted by absolute value from small to big, then sorted by argument from small to big. We can define an injection (i. e. one-to-one) function {{math|''f'' : '''A''' → '''Q'''}} given by &lt;math&gt;f(\alpha) = 2^{k-1} \cdot 3^{a_0} \cdot 5^{a_1} \cdot 7^{a_2} \cdots {p_{n+2}}^{a_n}&lt;/math&gt;, while &lt;math&gt;p_n&lt;/math&gt; is the ''n''-th [[prime number|prime]].
+
+'''Proposition:''' If {{math|''A&lt;sub&gt;n&lt;/sub&gt;''}} is a countable set for each {{mvar|n}} in {{math|'''N'''}} then the union of all {{math|''A&lt;sub&gt;n&lt;/sub&gt;''}} is also countable.&lt;ref&gt;{{Harvard citation no brackets|Fletcher|Patty|1988|page=187}}&lt;/ref&gt;
+
+'''Proof:''' This is a consequence of the fact that for each {{mvar|n}} there is a surjective function {{math|''g&lt;sub&gt;n&lt;/sub&gt;'' : '''N''' → ''A&lt;sub&gt;n&lt;/sub&gt;''}} and hence the function
+:&lt;math&gt;G : \mathbf{N} \times \mathbf{N} \to \bigcup_{n \in \mathbf{N}} A_n,&lt;/math&gt;
+
+given by {{math|1=''G''(''n'', ''m'') = ''g&lt;sub&gt;n&lt;/sub&gt;''(''m'')}} is a surjection.  Since {{math|'''N''' × '''N'''}} is countable, the Corollary implies that the union is countable. We use the [[axiom of countable choice]] in this proof to pick for each {{mvar|n}} in {{math|'''N'''}} a surjection {{math|''g&lt;sub&gt;n&lt;/sub&gt;''}} from the non-empty collection of surjections from {{math|'''N'''}} to {{math|''A&lt;sub&gt;n&lt;/sub&gt;''}}.
+
+A topological proof for the uncountability of the real numbers is described at [[finite intersection property]].
+
+==Minimal model of set theory is countable==
+If there is a set that is a standard model (see [[inner model]]) of ZFC set theory, then there is a minimal standard model (''see'' [[Constructible universe]]). The [[Löwenheim–Skolem theorem]] can be used to show that this minimal model is countable. The fact that the notion of &quot;uncountability&quot; makes sense even in this model, and in particular that this model ''M'' contains elements that are:
+* subsets of ''M'', hence countable,
+* but uncountable from the point of view of ''M'',
+was seen as paradoxical in the early days of set theory, see [[Skolem's paradox]].
+
+The minimal standard model includes all the [[algebraic number]]s and all effectively computable [[transcendental number]]s, as well as many other kinds of numbers.
+
+==Total orders==
+Countable sets can be [[total order|totally ordered]] in various ways, e.g.:
+*[[Well-order]]s (see also [[ordinal number]]):
+**The usual order of natural numbers (0, 1, 2, 3, 4, 5, ...)
+**The integers in the order (0, 1, 2, 3, ...; −1, −2, −3, ...)
+*Other (''not'' well orders):
+**The usual order of integers (..., −3, −2, −1, 0, 1, 2, 3, ...)
+**The usual order of rational numbers (Cannot be explicitly written as an ordered list!)
+
+In both examples of well orders here, any subset has a ''least element''; and in both examples of non-well orders, ''some'' subsets do not have a ''least element''.
+This is the key definition that determines whether a total order is also a well order.
+
+==See also==
+* [[Aleph number]]
+* [[Counting]]
+* [[Hilbert's paradox of the Grand Hotel]]
+* [[Uncountable set]]
+
+==Notes==
+&lt;references/&gt;
+
+==References==
+* {{Citation | first1=Tom M. | last1=Apostol | author-link=Tom M. Apostol | title=Multi-Variable Calculus and Linear Algebra with Applications | location=New York | publisher=John Wiley + Sons | edition=2nd | series=Calculus | volume=2 | isbn=978-0-471-00007-5 | date=June 1969 | url-access=registration | url=https://archive.org/details/calculus01apos }}
+* {{citation | first=Carol|last=Avelsgaard|title=Foundations for Advanced Mathematics|year=1990|publisher=Scott, Foresman and Company|isbn=0-673-38152-8}}
+* {{Citation | first = Georg | last = Cantor | title = Ein Beitrag zur Mannigfaltigkeitslehre | url = http://www.digizeitschriften.de/dms/img/?PID=GDZPPN002156806 | volume = 1878 | issue = 84 | pages = 242&amp;ndash;248 | journal = Journal für die Reine und Angewandte Mathematik | year = 1878 | doi = 10.1515/crelle-1878-18788413}}
+* {{Citation | last = Ferreirós | first = José | title = Labyrinth of Thought: A History of Set Theory and Its Role in Mathematical Thought | publisher = Birkhäuser | year = 2007 | edition = 2nd revised | isbn = 978-3-7643-8349-7}}
+* {{citation|first1=Peter|last1=Fletcher|first2=C. Wayne|last2=Patty|title=Foundations of Higher Mathematics|year=1988|publisher=PWS-KENT Publishing Company|location=Boston|isbn=0-87150-164-3}}
+* {{citation|first=Paul R.|last=Halmos|author-link=Paul Halmos|title=Naive Set Theory|year=1960|publisher=D. Van Nostrand Company, Inc|title-link=Naive Set Theory}} Reprinted by Springer-Verlag, New York, 1974. {{ISBN|0-387-90092-6}} (Springer-Verlag edition). Reprinted by Martino Fine Books, 2011. {{ISBN|978-1-61427-131-4}} (Paperback edition).
+* {{citation|first=E.|last=Kamke|title=Theory of Sets|year=1960|publisher=Dover|location=New York}}
+* {{Citation | last1=Lang | first1=Serge | author1-link=Serge Lang | title=Real and Functional Analysis | publisher=Springer-Verlag | location=Berlin, New York | isbn=0-387-94001-4 | year=1993}}
+* {{Citation | last1=Rudin | first1=Walter | author1-link=Walter Rudin | title=Principles of Mathematical Analysis | publisher=McGraw-Hill| location=New York | isbn=0-07-054235-X | year=1976}}
+
+== External links ==
+{{Wiktionary|countable}}
+*{{MathWorld |title=Countable Set |id=CountableSet }}
+{{Portal bar|Arithmetic|Mathematics}}
+{{Number systems}}
+{{Mathematical logic}}
+{{Set theory}}
+
+[[Category:Basic concepts in infinite set theory]]
+[[Category:Cardinal numbers]]
+[[Category:Infinity]]</text>
+      <sha1>sldi5grspdyaquwjzuoi4eah50yl9ra</sha1>
+    </revision>
+  </page>

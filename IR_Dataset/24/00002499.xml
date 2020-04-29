@@ -1,0 +1,277 @@
+  <page>
+    <title>Asynchronous transfer mode</title>
+    <ns>0</ns>
+    <id>2499</id>
+    <revision>
+      <id>941609303</id>
+      <parentid>938270563</parentid>
+      <timestamp>2020-02-19T16:39:57Z</timestamp>
+      <contributor>
+        <username>FedericoCeratto</username>
+        <id>5776946</id>
+      </contributor>
+      <comment>Remove opinion</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{multiple issues|
+{{More footnotes|date=April 2009}}
+{{Tone|article|date=October 2012}}
+{{cleanup reorganize|date=March 2017}}
+}}
+{{Use dmy dates|date=July 2012}}
+
+'''Asynchronous Transfer Mode''' ('''ATM''') is a [[telecommunications]] standard defined by [[ANSI]] and [[ITU]] (formerly CCITT) standards for carriage of user traffic, including [[telephony]] (voice), [[data transmission|data]], and [[video]] signals.&lt;ref name=&quot;ATMF-INTRO&quot; &gt;ATM Forum, The User Network Interface (UNI), v. 3.1, {{ISBN|0-13-393828-X}}, Prentice Hall PTR, 1995, page 2.&lt;/ref&gt; ATM was developed to meet the needs of the [[Broadband Integrated Services Digital Network]], as defined in the late 1980s,&lt;ref name=&quot;bisdn&quot;/&gt; and designed to integrate telecommunication networks. Additionally, it was designed for networks that must handle both traditional high-throughput data traffic (e.g., file transfers), and [[Real-time computing|real-time]], [[Latency (engineering)|low-latency]] content such as voice and video. The reference model for ATM approximately maps to the three lowest layers of the [[International Organization for Standardization|ISO]]-[[OSI model|OSI reference model]]: [[network layer]], [[data link layer]], and [[physical layer]].&lt;ref name=&quot;McDysan-Spohn&quot; &gt;McDysan, David E. and Spohn, Darrel L., ''ATM : Theory and Application'', {{ISBN|0-07-060362-6}}, McGraw-Hill series on computer communications, 1995, page 563.&lt;/ref&gt;  ATM is a core protocol used over the [[SONET/SDH]] backbone of the [[public switched telephone network]] (PSTN) and [[Integrated Services Digital Network]] (ISDN), but its use is declining in favour of [[all IP]].
+
+ATM provides functionality that uses features of [[circuit switching]] and [[packet switching]] networks: ATM uses [[asynchronous communication|asynchronous]] [[time-division multiplexing]],&lt;ref&gt;{{cite web|url= http://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-I.150-199902-I!!PDF-E&amp;type=items|title=Recommendation I.150, B-ISDN Asynchronous Transfer Mode functional characteristics |publisher=ITU}}&lt;/ref&gt;&lt;ref name=&quot;McDysan 1999 287&quot;&gt;McDysan (1999), p. 287.&lt;/ref&gt; and encodes data into small, fixed-sized [[Network packet|packets]]. In the ISO-OSI reference model data link layer (layer 2), the basic transfer units are generically called [[Frame (networking)|frames]]. In ATM these frames are of a fixed (53 [[Octet (computing)|octets]] or [[byte]]s) length and specifically called ''cells''. This differs from approaches such as the [[Internet Protocol]] or [[Ethernet]] that use variable sized packets and frames. ATM uses a [[connection-oriented]] model in which a [[virtual circuit]] must be established between two endpoints before the actual data exchange begins.&lt;ref name=&quot;McDysan 1999 287&quot;/&gt; These virtual circuits may be “permanent”, i.e. dedicated connections that are usually preconfigured by the service provider, or “switched”, i.e. set up on a per-call basis using [[Signaling (telecommunications)|signaling]] and disconnected when the call is terminated.
+
+Use of ATM technology was eventually largely superseded by [[Internet Protocol]] (IP)-only technology. Wireless and mobile ATM never established a significant foothold.
+
+[[File:IBM Turboways ATM 155.jpg|340px|thumb|right|[[IBM]] Turboways ATM 155 [[Peripheral Component Interconnect|PCI]] network interface card]]
+[[File:ForeRunnerLE 25 ATM Network Interface (1).jpg|340px|thumb|right|[[Marconi Company|Marconi]] ForeRunnerLE 25 ATM [[Peripheral Component Interconnect|PCI]] network interface card]]
+
+== Cell size==
+If a speech signal is reduced to packets, and it is forced to share a link with bursty data traffic (traffic with some large data packets) then no matter how small the speech packets could be made, they would always encounter full-size data packets. Under normal queuing conditions the cells might experience maximum queuing delays. To avoid this issue, all ATM packets, or &quot;cells,&quot; are the same small size. In addition, the fixed cell structure means that ATM can be readily switched by hardware without the inherent delays introduced by software switched and routed frames.
+
+Thus, the designers of ATM utilized small data cells to reduce [[jitter]] (delay variance, in this case) in the multiplexing of data streams. Reduction of jitter (and also end-to-end round-trip delays) is particularly important when carrying voice traffic, because the conversion of digitized voice into an analogue audio signal is an inherently [[real time computing|real-time]] process, and to do a good job, the [[codec|decoder]] (codec) that does this needs an evenly spaced (in time) stream of data items. If the next data item is not available when it is needed, the codec has no choice but to produce silence or guess — and if the data is late, it is useless, because the time period when it should have been converted to a signal has already passed.
+
+At the time of the design of ATM, 155 Mbit/s [[synchronous digital hierarchy]] (SDH) with 135 Mbit/s payload was considered a fast optical network link, and many [[plesiochronous digital hierarchy]] (PDH) links in the digital network were considerably slower, ranging from 1.544 to 45 Mbit/s in the US, and 2 to 34 Mbit/s in Europe.
+
+At 155 Mbit/s, a typical full-length 1,500 byte (12,000-bit) data packet, sufficient to contain a [[maximum transfer unit|maximum]]-sized [[Internet Protocol|IP packet]] for [[Ethernet]], would take 77.42 [[microsecond|µs]] to transmit. In a lower-speed link, such as a 1.544 Mbit/s [[T1 line]], the same packet would take up to 7.8 milliseconds.
+
+A [[queuing delay]] induced by several such data packets might exceed the figure of 7.8 ms several times over, in addition to any packet generation delay in the shorter speech packet. This was considered unacceptable for speech traffic, which needs to have low jitter in the data stream being fed into the codec if it is to produce good-quality sound. A packet voice system can produce this low jitter in a number of ways:
+
+* Using a playback buffer between the network and the codec, one large enough to tide the codec over almost all the jitter in the data. This allows smoothing out the jitter, but the delay introduced by passage through the buffer require [[echo cancellation|echo canceller]]s even in local networks; this was considered too expensive at the time. Also, it increased the delay across the channel, and made conversation difficult over high-delay channels.
+* Using a system that inherently provides low jitter (and minimal overall delay) to traffic that needs it.
+* Operate on a 1:1 user basis (i.e., a dedicated pipe).
+
+The design of ATM aimed for a low-jitter network interface. However, &quot;cells&quot; were introduced into the design to provide short queuing delays while continuing to support [[datagram]] traffic. ATM broke up all packets, data, and voice streams into 48-byte chunks, adding a 5-byte routing header to each one so that they could be reassembled later. The choice of 48 bytes was political rather than technical.&lt;ref&gt;D. Stevenson, &quot;Electropolitical Correctness and High-Speed Networking, or, Why ATM is like a Nose&quot;, [https://www.amazon.co.uk/dp/0306444860 Proceedings of TriCom '93], April 1993.&lt;/ref&gt; When the [[ITU-T|CCITT]] (now ITU-T) was standardizing ATM, parties from the United States wanted a 64-byte payload because this was felt to be a good compromise in larger payloads optimized for data transmission and shorter payloads optimized for real-time applications like voice; parties from Europe wanted 32-byte payloads because the small size (and therefore short transmission times) simplify voice applications with respect to echo cancellation. Most of the European parties eventually came around to the arguments made by the Americans, but France and a few others held out for a shorter cell length. With 32 bytes, France would have been able to implement an ATM-based voice network with calls from one end of France to the other requiring no echo cancellation. 48 bytes (plus 5 header bytes = 53) was chosen as a compromise between the two sides. 5-byte headers were chosen because it was thought that 10% of the payload was the maximum price to pay for routing information.&lt;ref name=&quot;bisdn&quot;&gt;{{cite web |last=Ayanoglu |first=Ender |title=B-ISDN (Broadband Integrated Services Digital Network) |url=http://repositories.cdlib.org/cpcc/2/ |publisher=Center for Pervasive Communications and Computing, UC Irvine|accessdate=3 June 2011|author2=Akar, Nail}}&lt;/ref&gt; ATM multiplexed these 53-byte cells instead of packets which reduced worst-case cell contention jitter by a factor of almost 30, reducing the need for echo cancellers.
+
+== Structure of an ATM cell ==
+An ATM cell consists of a 5-byte header and a 48-byte payload. The payload size of 48 bytes was chosen as described above.
+
+ATM defines two different cell formats: [[user–network interface]] (UNI) and [[network-to-network interface|network–network interface]] (NNI). Most ATM links use UNI cell format.
+
+{| width=&quot;100%&quot;
+|-----
+|
+'''Diagram of a UNI ATM cell'''
+
+{| style=&quot;width: 20em; text-align: left;&quot; border=&quot;1&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;
+|-----
+| style=&quot;vertical-align: top; text-align: center; white-space: nowrap; width: 2.5em;&quot; | 7
+| style=&quot;vertical-align: top; text-align: center; white-space: nowrap; width: 2.5em;&quot; | &amp;nbsp;
+| style=&quot;vertical-align: top; text-align: center; white-space: nowrap; width: 2.5em;&quot; | &amp;nbsp;
+| style=&quot;vertical-align: top; text-align: center; white-space: nowrap; width: 2.5em;&quot; | 4
+| style=&quot;vertical-align: top; text-align: center; white-space: nowrap; width: 2.5em;&quot; | 3
+| style=&quot;vertical-align: top; text-align: center; white-space: nowrap; width: 2.5em;&quot; | &amp;nbsp;
+| style=&quot;vertical-align: top; text-align: center; white-space: nowrap; width: 2.5em;&quot; | &amp;nbsp;
+| style=&quot;vertical-align: top; text-align: center; white-space: nowrap; width: 2.5em;&quot; | 0
+|-----
+| colspan=&quot;4&quot; rowspan=&quot;1&quot; style=&quot;background-color: rgb(102, 255, 255); vertical-align: top; text-align: center; white-space: nowrap; width: 10em;&quot; | GFC
+| colspan=&quot;4&quot; rowspan=&quot;1&quot; style=&quot;vertical-align: top; text-align: center; white-space: nowrap; width: 10em; background-color: rgb(255, 204, 255);&quot; | VPI&lt;br /&gt;
+|-----
+| colspan=&quot;4&quot; rowspan=&quot;1&quot; style=&quot;vertical-align: top; text-align: center; white-space: nowrap; width: 10em; background-color: rgb(255, 204, 255);&quot; | VPI&lt;br /&gt;
+| colspan=&quot;4&quot; rowspan=&quot;1&quot; style=&quot;vertical-align: top; text-align: center; white-space: nowrap; width: 10em; background-color: rgb(255, 255, 153);&quot; | VCI&lt;br /&gt;
+|-----
+| colspan=&quot;8&quot; rowspan=&quot;1&quot; style=&quot;vertical-align: top; text-align: center; white-space: nowrap; width: 20em; background-color: rgb(255, 255, 153);&quot; | VCI&lt;br /&gt;
+|-----
+| colspan=&quot;4&quot; rowspan=&quot;1&quot; style=&quot;vertical-align: top; text-align: center; white-space: nowrap; width: 10em; background-color: rgb(255, 255, 153);&quot; | VCI
+| colspan=&quot;3&quot; rowspan=&quot;1&quot; style=&quot;vertical-align: top; text-align: center; white-space: nowrap; width: 7.5em; background-color: rgb(255, 255, 204);&quot; | PT
+| style=&quot;vertical-align: top; text-align: center; white-space: nowrap; width: 2.5em; background-color: rgb(255, 204, 204);&quot; | CLP
+|-----
+| colspan=&quot;8&quot; rowspan=&quot;1&quot; style=&quot;vertical-align: top; text-align: center; white-space: nowrap; width: 20em; background-color: rgb(153, 255, 153);&quot; | HEC
+|-----
+| colspan=&quot;8&quot; rowspan=&quot;1&quot; style=&quot;background-color: rgb(204, 204, 204); vertical-align: top; text-align: center; white-space: nowrap; width: 20em;&quot; | &lt;br /&gt;
+&lt;br /&gt;
+Payload and padding if necessary (48 bytes)&lt;br /&gt;
+&lt;br /&gt;
+|}
+|
+'''Diagram of an NNI ATM cell'''
+
+{| style=&quot;width: 20em; text-align: left;&quot; border=&quot;1&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;
+|-----
+| style=&quot;vertical-align: top; text-align: center; white-space: nowrap; width: 2.5em;&quot; | 7
+| style=&quot;vertical-align: top; text-align: center; white-space: nowrap; width: 2.5em;&quot; | &amp;nbsp;
+| style=&quot;vertical-align: top; text-align: center; white-space: nowrap; width: 2.5em;&quot; | &amp;nbsp;
+| style=&quot;vertical-align: top; text-align: center; white-space: nowrap; width: 2.5em;&quot; | 4
+| style=&quot;vertical-align: top; text-align: center; white-space: nowrap; width: 2.5em;&quot; | 3
+| style=&quot;vertical-align: top; text-align: center; white-space: nowrap; width: 2.5em;&quot; | &amp;nbsp;
+| style=&quot;vertical-align: top; text-align: center; white-space: nowrap; width: 2.5em;&quot; | &amp;nbsp;
+| style=&quot;vertical-align: top; text-align: center; white-space: nowrap; width: 2.5em;&quot; | 0
+|-----
+| colspan=&quot;8&quot; rowspan=&quot;1&quot; style=&quot;vertical-align: top; text-align: center; white-space: nowrap; width: 20em; background-color: rgb(255, 204, 255);&quot; | VPI&lt;br /&gt;
+|-----
+| colspan=&quot;4&quot; rowspan=&quot;1&quot; style=&quot;vertical-align: top; text-align: center; white-space: nowrap; width: 10em; background-color: rgb(255, 204, 255);&quot; | VPI&lt;br /&gt;
+| colspan=&quot;4&quot; rowspan=&quot;1&quot; style=&quot;vertical-align: top; text-align: center; white-space: nowrap; width: 10em; background-color: rgb(255, 255, 153);&quot; | VCI&lt;br /&gt;
+|-----
+| colspan=&quot;8&quot; rowspan=&quot;1&quot; style=&quot;vertical-align: top; text-align: center; white-space: nowrap; width: 20em; background-color: rgb(255, 255, 153);&quot; | VCI&lt;br /&gt;
+|-----
+| colspan=&quot;4&quot; rowspan=&quot;1&quot; style=&quot;vertical-align: top; text-align: center; white-space: nowrap; width: 10em; background-color: rgb(255, 255, 153);&quot; | VCI
+| colspan=&quot;3&quot; rowspan=&quot;1&quot; style=&quot;vertical-align: top; text-align: center; white-space: nowrap; width: 7.5em; background-color: rgb(255, 255, 204);&quot; | PT
+| style=&quot;vertical-align: top; text-align: center; white-space: nowrap; width: 2.5em; background-color: rgb(255, 204, 204);&quot; | CLP
+|-----
+| colspan=&quot;8&quot; rowspan=&quot;1&quot; style=&quot;vertical-align: top; text-align: center; white-space: nowrap; width: 20em; background-color: rgb(153, 255, 153);&quot; | HEC
+|-----
+| colspan=&quot;8&quot; rowspan=&quot;1&quot; style=&quot;background-color: rgb(204, 204, 204); vertical-align: top; text-align: center; white-space: nowrap; width: 20em;&quot; | &lt;br /&gt;
+&lt;br /&gt;
+Payload and padding if necessary (48 bytes)&lt;br /&gt;
+&lt;br /&gt;
+|}
+|}
+
+: GFC = The generic flow control (GFC) field is a 4-bit field that was originally added to support the connection of ATM networks to shared access networks such as a distributed queue dual bus (DQDB) ring. The GFC field was designed to give the User-Network Interface (UNI) 4 bits in which to negotiate multiplexing and flow control among the cells of various ATM connections. However, the use and exact values of the GFC field have not been standardized, and the field is always set to 0000.&lt;ref&gt;{{cite web|title=ATM Cell Structure|url=https://technet.microsoft.com/en-us/library/cc976978.aspx|accessdate=13 June 2017}}&lt;/ref&gt;
+: VPI = [[Virtual path identifier]] (8 bits UNI, or 12 bits NNI)
+: VCI = [[Virtual channel identifier]] (16 bits)
+: PT = Payload type (3 bits)
+:: PT bit 3 (msbit): Network management cell.  If 0, user data cell and the following apply:
+:: PT bit 2: Explicit forward congestion indication (EFCI); 1 = [[network congestion]] experienced
+:: PT bit 1 (lsbit): ATM user-to-user (AAU) bit.  Used by AAL5 to indicate packet boundaries.
+: CLP = Cell loss priority (1-bit)
+: HEC = [[CRC-based framing|Header error control]] (8-bit CRC, polynomial = X&lt;sup&gt;8&lt;/sup&gt; + X&lt;sup&gt;2&lt;/sup&gt; + X + 1)
+
+ATM uses the PT field to designate various special kinds of cells for [[operations, administration and management]] (OAM) purposes, and to delineate packet boundaries in some [[ATM adaptation layer]]s (AAL).  If the [[most significant bit]] (MSB) of the PT field is 0, this is a user data cell, and the other two bits are used to indicate network congestion and as a general purpose header bit available for ATM adaptation layers. If the MSB is 1, this is a management cell, and the other two bits indicate the type.  (Network management segment, network management end-to-end, resource management, and reserved for future use.)
+
+Several ATM link protocols use the HEC field to drive a [[CRC-based framing]] algorithm, which allows locating the ATM cells with no overhead beyond what is otherwise needed for header protection. The 8-bit CRC is used to correct single-bit header errors and detect multi-bit header errors. When multi-bit header errors are detected, the current and subsequent cells are dropped until a cell with no header errors is found.
+
+A UNI cell reserves the GFC field for a local [[flow control (data)|flow control]]/submultiplexing system between users. This was intended to allow several terminals to share a single network connection, in the same way that two [[Integrated Services Digital Network]] (ISDN) phones can share a single basic rate ISDN connection. All four GFC bits must be zero by default.
+
+The NNI cell format replicates the UNI format almost exactly, except that the 4-bit GFC field is re-allocated to the VPI field, extending the VPI to 12 bits. Thus, a single NNI ATM interconnection is capable of addressing almost 2&lt;sup&gt;12&lt;/sup&gt; VPs of up to almost 2&lt;sup&gt;16&lt;/sup&gt; VCs each (in practice some of the VP and VC numbers are reserved).
+
+== Cells in practice ==
+ATM supports different types of services via AALs. Standardized AALs include AAL1, AAL2, and AAL5, and the rarely used{{Citation needed|date=June 2011}} AAL3 and AAL4. AAL1 is used for constant bit rate (CBR) services and circuit emulation. Synchronization is also maintained at AAL1. AAL2 through AAL4 are used for [[variable bitrate]] (VBR) services, and AAL5 for data. Which AAL is in use for a given cell is not encoded in the cell. Instead, it is negotiated by or configured at the endpoints on a per-virtual-connection basis.
+
+Following the initial design of ATM, networks have become much faster. A 1500 byte (12000-bit) full-size [[Ethernet frame]] takes only 1.2 µs to transmit on a 10 Gbit/s network, reducing the need for small cells to reduce jitter due to contention. Some consider that this makes a case for replacing ATM with Ethernet in the network backbone. The increased link speeds by themselves do not alleviate jitter due to queuing. Additionally, the hardware for implementing the service adaptation for IP packets is expensive at very high speeds. Specifically, at speeds of [[OC-3]] and above, the cost of segmentation and reassembly (SAR) hardware makes ATM less competitive for IP than [[Packet over SONET/SDH|Packet Over SONET]] (POS)&lt;ref&gt;{{Cite web|url=http://www.123seminarsonly.com/Seminar-Reports/2013-01/49988992-Asynchronous-Transfer-Mode.pdf|title=Asynchronous Transfer Mode (ATM)}}&lt;/ref&gt;; because of its fixed 48-byte cell payload, ATM is not suitable as a data link layer ''directly'' underlying IP (without the need for SAR at the data link level) since the OSI layer on which IP operates must provide a [[maximum transmission unit]] (MTU) of at least 576 bytes. SAR performance limits mean that the fastest IP router ATM interfaces are STM16 - STM64 which actually compares, while {{As of|2004|lc=on}} POS can operate at OC-192 (STM64) with higher speeds expected in the future, limits based on segmentation and reassembly (SAR).
+
+On slower or congested links (622 Mbit/s and below), ATM does make sense, and for this reason most [[asymmetric digital subscriber line]] (ADSL) systems use ATM as an intermediate layer between the physical link layer and a Layer 2 protocol like [[Point-to-Point Protocol|PPP]] or Ethernet.&lt;ref&gt;{{Cite web|url=https://pdfs.semanticscholar.org/6892/ff0b5ef75bf3c82811800253fed8fac50471.pdf|title=Prospects for Internet Technology}}&lt;/ref&gt;
+
+At these lower speeds, ATM provides a useful ability to carry multiple logical circuits on a single physical or virtual medium, although other techniques exist, such as [[Point-to-Point Protocol#Multiclass PPP|Multi-link PPP]] and [[Ethernet]] [[VLAN]]s, which are optional in [[VDSL]] implementations. [[DSL]] can be used as an access method for an ATM network, allowing a DSL termination point in a telephone central office to connect to many internet service providers across a wide-area ATM network. In the United States, at least, this has allowed DSL providers to provide DSL access to the customers of many internet service providers. Since one DSL termination point can support multiple ISPs, the economic feasibility of DSL is substantially improved.
+
+== Reasons for virtual circuits == &lt;!--[[Virtual channel identifier]] and [[Virtual path identifier]] redirect here--&gt;
+ATM operates as a channel-based transport layer, using [[virtual circuit]]s (VCs). This is encompassed in the concept of the virtual paths (VP) and virtual channels. Every ATM cell has an 8- or 12-bit virtual path identifier (VPI) and 16-bit virtual channel identifier (VCI) pair defined in its header.&lt;ref name=&quot;cisco-atm&quot;&gt;Cisco Systems [https://indigothemes.com/wikipedia-contribution/techgd.pdf ''Guide to ATM Technology''] (2000). Section &quot;Operation of an ATM Switch&quot;. Retrieved 2 June 2011.&lt;/ref&gt; The VCI, together with the VPI, is used to identify the next destination of a cell as it passes through a series of ATM switches on its way to its destination. The length of the VPI varies according to whether the cell is sent on the user-network interface (on the edge of the network), or if it is sent on the network-network interface (inside the network).
+
+As these cells traverse an ATM network, switching takes place by changing the VPI/VCI values (label swapping). Although the VPI/VCI values are not necessarily consistent from one end of the connection to the other, the concept of a circuit ''is'' consistent (unlike IP, where any given packet could get to its destination by a different route than the others).&lt;ref name=&quot;cisco-atm-cell&quot;&gt;Cisco Systems [https://indigothemes.com/wikipedia-contribution/techgd.pdf ''Guide to ATM Technology''] (2000). Section &quot;ATM Cell Header Formats&quot;. Retrieved 2 June 2011.&lt;/ref&gt; ATM switches use the VPI/VCI fields to identify the [[Virtual Channel Link|virtual channel link]] (VCL) of the next network that a cell needs to transit on its way to its final destination. The function of the VCI is similar to that of the [[data link connection identifier]] (DLCI) in [[frame relay]] and the logical channel number and logical channel group number in [[X.25]].
+
+Another advantage of the use of virtual circuits comes with the ability to use them as a multiplexing layer, allowing different services (such as voice, [[frame relay]], n* 64 channels, IP). The VPI is useful for reducing the switching table of some virtual circuits which have common paths.{{Citation needed|date=June 2011}}
+
+== Using cells and virtual circuits for traffic engineering ==
+Another key ATM concept involves the [[traffic contract]]. When an ATM circuit is set up each switch on the circuit is informed of the traffic class of the connection.
+
+ATM traffic contracts form part of the mechanism by which &quot;[[quality of service]]&quot; (QoS) is ensured. There are four basic types (and several variants) which each have a set of parameters describing the connection.
+
+# CBR - Constant bit rate: a Peak Cell Rate (PCR) is specified, which is constant.
+# VBR - Variable bit rate: an average or Sustainable Cell Rate (SCR) is specified, which can peak at a certain level, a PCR, for a maximum interval before being problematic.
+# ABR - Available bit rate: a minimum guaranteed rate is specified.
+# UBR - Unspecified bit rate: traffic is allocated to all remaining transmission capacity.
+
+VBR has real-time and non-real-time variants, and serves for &quot;bursty&quot; traffic. Non-real-time is sometimes abbreviated to vbr-nrt.
+
+Most traffic classes also introduce the concept of Cell-delay variation tolerance (CDVT), which defines the &quot;clumping&quot; of cells in time.
+
+=== Traffic policing ===
+To maintain network performance, networks may apply [[Traffic policing (communications)|traffic policing]] to virtual circuits to limit them to their traffic contracts at the entry points to the network, i.e. the [[user–network interface]]s (UNIs) and [[network-to-network interface]]s (NNIs): [[UPC and NPC|usage/network parameter control]] (UPC and NPC).&lt;ref name=&quot;UPC_NPC&quot; &gt;ITU-T, ''Traffic control and congestion control in B ISDN'', Recommendation I.371, International Telecommunication Union, 2004, page 17&lt;/ref&gt; The reference model given by the ITU-T and ATM Forum for UPC and NPC is the [[generic cell rate algorithm]] (GCRA),&lt;ref name=&quot;ITU-T-GCRA&quot; &gt;ITU-T, ''Traffic control and congestion control in B ISDN'', Recommendation I.371, International Telecommunication Union, 2004, Annex A, page 87.&lt;/ref&gt;&lt;ref name=&quot;ATMF-GCRA&quot; &gt;ATM Forum, The User Network Interface (UNI), v. 3.1, {{ISBN|0-13-393828-X}}, Prentice Hall PTR, 1995.&lt;/ref&gt; which is a version of the [[Leaky bucket#The Leaky Bucket Algorithm as a Meter|leaky bucket]] algorithm. CBR traffic will normally be policed to a PCR and CDVt alone, whereas VBR traffic will normally be policed using a dual leaky bucket controller to a PCR and CDVt and an SCR and Maximum Burst Size (MBS). The MBS will normally be the [[Network packet|packet]] ([[Segmentation and Reassembly|SAR]]-[[Service data unit|SDU]]) size for the VBR VC in cells.
+
+If the traffic on a virtual circuit is exceeding its traffic contract, as determined by the GCRA, the network can either drop the cells or mark the [[Cell Loss Priority]] (CLP) bit (to identify a cell as potentially redundant). Basic policing works on a cell by cell basis, but this is sub-optimal for encapsulated packet traffic (as discarding a single cell will invalidate the whole packet). As a result, schemes such as partial packet discard (PPD) and early packet discard (EPD) have been created that will discard a whole series of cells until the next packet starts. This reduces the number of useless cells in the network, saving bandwidth for full packets. EPD and PPD work with AAL5 connections as they use the end of packet marker: the ATM user-to-ATM user (AUU) indication bit in the payload-type field of the header, which is set in the last cell of a SAR-SDU.
+
+=== Traffic shaping ===
+[[Traffic shaping]] usually takes place in the [[network interface controller|network interface card]] (NIC) in user equipment, and attempts to ensure that the cell flow on a VC will meet its traffic contract, i.e. cells will not be dropped or reduced in priority at the UNI. Since the reference model given for traffic policing in the network is the GCRA, this algorithm is normally used for shaping as well, and single and dual leaky bucket implementations may be used as appropriate.
+
+== Types of virtual circuits and paths ==
+ATM can build virtual circuits and virtual paths either statically or dynamically. Static circuits (permanent virtual circuits or PVCs) or paths (permanent virtual paths or PVPs) require that the circuit is composed of a series of segments, one for each pair of interfaces through which it passes.
+
+PVPs and PVCs, though conceptually simple, require significant effort in large networks. They also do not support the re-routing of service in the event of a failure. Dynamically built PVPs (soft PVPs or SPVPs) and PVCs (soft PVCs or SPVCs), in contrast, are built by specifying the characteristics of the circuit (the service &quot;contract&quot;) and the two end points.
+
+ATM networks create and remove switched virtual circuits (SVCs) on demand when requested by an end piece of equipment. One application for SVCs is to carry individual telephone calls when a network of telephone switches are inter-connected using ATM. SVCs were also used in attempts to replace local area networks with ATM.
+
+== Virtual circuit routing ==
+Most ATM networks supporting SPVPs, SPVCs, and SVCs use the Private Network Node Interface or the [[Private Network-to-Network Interface]] (PNNI) protocol. PNNI uses the same shortest-path-first algorithm used by [[Open Shortest Path First|OSPF]] and [[IS-IS]] to route IP packets to share topology information between switches and select a route through a network. PNNI also includes a very powerful summarization mechanism to allow construction of very large networks, as well as a [[Call Admission Control|call admission control]] (CAC) algorithm which determines the availability of sufficient bandwidth on a proposed route through a network in order to satisfy the service requirements of a VC or VP.
+
+== Call admission and connection establishment ==
+A network must establish a connection before two parties can send cells to each other. In ATM this is called a [[virtual circuit]] (VC). It can be a permanent virtual circuit (PVC), which is created administratively on the end points, or a switched virtual circuit (SVC), which is created as needed by the communicating parties. SVC creation is managed by [[signalling (telecommunications)|signaling]], in which the requesting party indicates the address of the receiving party, the type of service requested, and whatever traffic parameters may be applicable to the selected service. &quot;Call admission&quot; is then performed by the network to confirm that the requested resources are available and that a route exists for the connection.
+
+== Reference model ==
+ATM specifies the following three layers:&lt;ref&gt;{{cite web|publisher=Cisco Systems |title=Guide to ATM Technology for the Catalyst 8540 MSR, Catalyst 8510 MSR, and LightStream 1010 ATM Switch Routers |year=2000 |work=Customer Order Number: DOC-786275 |url=https://www.cisco.com/application/pdf/en/us/guest/products/ps1891/c2001/ccmigration_09186a00800f4b5d.pdf |accessdate=19 July 2011 }}&lt;/ref&gt;
+* [[ATM adaptation layer]] (AAL)
+* ATM layer 2, roughly corresponding to the [[OSI model|OSI]] [[data link layer]]
+* physical layer, equivalent to the OSI [[physical layer]]
+
+== Deployment ==
+ATM became popular with telephone companies and many computer makers in the 1990s. However, even by the end of the decade, the better price/performance of [[Internet Protocol]]-based products was competing with ATM technology for integrating real-time and bursty network traffic.&lt;ref name=&quot;bellheads&quot;&gt;{{Cite news |title= Netheads vs Bellheads |author= Steve Steinberg |work= Wired |date= October 1996 |volume= 4 |number= 10 |url= https://www.wired.com/wired/archive/4.10/atm.html |accessdate=24 September 2011 }}&lt;/ref&gt; Companies such as [[FORE Systems]] focused on ATM products, while other large vendors such as [[Cisco Systems]] provided ATM as an option.&lt;ref&gt;{{Cite news |title= What's in store for FORE? |page= 12 |work= Network World |date= 16 September 1996 |url= https://books.google.com/books?id=IxgEAAAAMBAJ&amp;lpg=PA12 |accessdate=24 September 2011 }}&lt;/ref&gt; After the burst of the [[dot-com bubble]], some still predicted that &quot;ATM is going to dominate&quot;.&lt;ref&gt;{{Cite news |title= Optical Ethernet firms brave stormy industry seas |page= 14 |work= Network World |date= 7 May 2001 |url= https://books.google.com/books?id=GBwEAAAAMBAJ&amp;pg=PA14 |accessdate=24 September 2011 }}&lt;/ref&gt; However, in 2005 the [[ATM Forum]], which had been the trade organization promoting the technology, merged with groups promoting other technologies, and eventually became the [[Broadband Forum]].&lt;ref&gt;{{Cite web |title= About the Broadband Forum: Forum History |url= http://www.broadband-forum.org/about/forumhistory.php |accessdate= 24 September 2011 |url-status= dead |archiveurl= https://web.archive.org/web/20111009003434/http://www.broadband-forum.org/about/forumhistory.php |archivedate= 9 October 2011 |df= dmy-all }}&lt;/ref&gt;
+
+== Wireless ATM or mobile ATM ==
+Wireless ATM,&lt;ref name=&quot;watm1&quot;&gt;[https://archive.is/20130615202256/http://connectedplanetonline.com/wireless/mag/wireless_wireless_atm_debate/ Wireless ATM]&lt;/ref&gt; or mobile ATM, consists of an ATM core network with a wireless access network. ATM cells are transmitted from base stations to mobile terminals. Mobility functions are performed at an ATM switch in the core network, known as &quot;crossover switch&quot;,&lt;ref name=&quot;watm5&quot;&gt;[http://www.barnesandnoble.com/w/wireless-atm-and-ad-hoc-networks-c-k-toh/1112737100?ean=9780792398226 Book on Wireless ATM Networks - [[Chai Keong Toh]], Kluwer Academic Press 1997]&lt;/ref&gt; which is similar to the MSC (mobile switching center) of GSM networks. The advantage of wireless ATM is its high bandwidth and high speed handoffs done at layer 2. In the early 1990s, [[Bell Labs]] and [[NEC]]&lt;ref name=&quot;watm10&quot;&gt;[https://www.researchgate.net/publication/3233809_WATMnet_a_prototype_wireless_ATM_system_for_multimedia_personalcommunication WATMnet: a prototype wireless ATM system for multimedia personal communication,  D. Raychaudhuri,at.al]&lt;/ref&gt; research labs worked actively in this field. [[Andy Hopper]] from [[Cambridge University]] Computer Laboratory also worked in this area.&lt;ref name=&quot;watm2&quot;&gt;{{Cite web |url=http://www.cl.cam.ac.uk/research/dtg/attarchive/radio/ |title=Cambridge Mobile ATM work |access-date=10 June 2013 |archive-url=https://web.archive.org/web/20150625230533/http://www.cl.cam.ac.uk/research/dtg/attarchive/radio/ |archive-date=25 June 2015 |url-status=dead }}&lt;/ref&gt; There was a wireless ATM forum formed to standardize the technology behind wireless ATM networks. The forum was supported by several telecommunication companies, including NEC, [[Fujitsu]] and [[AT&amp;T]]. Mobile ATM aimed to provide high speed multimedia communications technology, capable of delivering broadband mobile communications beyond that of GSM and WLANs.
+
+== See also ==
+* [[VoATM]]
+
+== Notes ==
+{{reflist|35em}}
+
+== References ==
+* {{cite book
+|last=Black
+|first=Uyless D.
+|title=ATM—Volume III: Internetworking with ATM
+|year=1998
+|publisher=Prentice Hall
+|location=Toronto
+|isbn=0-13-784182-5
+|url-access=registration
+|url=https://archive.org/details/atm00blac
+}}
+* {{cite book
+|first=Martin
+|last=De Prycker
+|title=Asynchronous Transfer Mode. Solutions for Broadband ISDN
+|publisher=Prentice Hall
+|year=1993}}
+* {{cite book
+|last=Joel
+|first=Amos E., Jr.
+|title=Asynchronous Transfer Mode
+|publisher=IEEE Press
+|year=1993}}
+* {{cite book
+|last=Golway
+|first=Tom
+|title=Planning and Managing ATM Network
+|url=https://archive.org/details/planningmanaging0000mino
+|url-access=registration
+|location=New York
+|publisher=Manning
+|year=1997
+|isbn=978-0-13-262189-2}}
+* {{cite book
+|last=McDysan
+|first=David E.
+|author2=Darren L. Spohn
+|title=ATM Theory and Applications
+|year=1999
+|publisher=McGraw-Hill
+|location=Montreal
+|isbn=0-07-045346-2}}
+* {{cite book
+|last=Neelakanta
+|first=P. S.
+|title=A Textbook on ATM Telecommunications, Principles and implementation
+|year=2000
+|publisher=CRC Press
+|isbn=0-8493-1805-X}}
+* [https://archive.is/20121206000842/http://www.cisco.com/univercd/cc/td/doc/product/atm/c8540/12_0/13_19/trouble/cells.htm ATM Cell formats- Cisco Systems]
+* [http://www.cisco.com/web/psa/technologies/index.html?c=268435599 Asynchronous Transfer Mode (ATM) - Cisco Systems]
+
+== External links ==
+* {{cite web |url=http://www.atmforum.com/ |title=ATM forum |archiveurl=https://web.archive.org/web/20050701081559/http://www.atmforum.com/ |archivedate=1 July 2005}}
+* [http://www.telecomspace.com/vop-atm.html ATM Info and resources]
+* [http://www.chipweb.de/atm/ ATM ChipWeb - Chip and NIC database]
+* [http://www.juniper.net/techpubs/software/erx/junose61/swconfig-link/html/atm-config2.html ''A tutorial from Juniper web site]
+* [https://web.archive.org/web/20070114172002/http://www2.rad.com/networks/2004/atm/main.htm ATM Tutorial]
+* Vuskovic Marko, [http://medusa.sdsu.edu/network/CS678/Lectures Broadband Communication Networks]{{dead link|date=October 2016 |bot=InternetArchiveBot |fix-attempted=yes }} Lectures, [[San Diego State University]].
+* [http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching ATM at Cisco DocWiki]
+
+[[Category:ITU-T recommendations]]
+[[Category:Link protocols]]
+[[Category:Networking standards]]</text>
+      <sha1>r9uas0q5bah28dkn3eh818gg9op45m5</sha1>
+    </revision>
+  </page>

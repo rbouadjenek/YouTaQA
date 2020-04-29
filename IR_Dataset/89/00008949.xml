@@ -1,0 +1,213 @@
+  <page>
+    <title>Decca Navigator System</title>
+    <ns>0</ns>
+    <id>8949</id>
+    <revision>
+      <id>938300080</id>
+      <parentid>937974755</parentid>
+      <timestamp>2020-01-30T09:47:34Z</timestamp>
+      <contributor>
+        <username>Busstop</username>
+        <id>401887</id>
+      </contributor>
+      <minor />
+      <comment>/* Dectra */ fixing spelling error</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{refimprove|date=November 2011}}
+[[Image:Accuracy of Navigation Systems.svg|300px|thumb]]
+[[Image:Decca Navigator Mk 12.jpg|thumb|300px|The display head, or &quot;decometer bowl&quot;, of a Decca Navigator Mk 12 (ca. 1962).  Not shown is the much larger receiver unit.]]
+The '''Decca Navigator System''' was a [[hyperbolic navigation|hyperbolic]] [[radio navigation]] system which allowed ships and aircraft to determine their position by receiving radio signals from fixed navigational beacons. The system used phase comparison of two [[low frequency]] signals between 70 and 129 [[kilohertz|kHz]], as opposed to pulse timing systems like [[Gee (navigation)|Gee]] and [[LORAN]]. This made it much easier to implement the receivers using 1940s electronics, eliminating the need for a [[cathode ray tube]].
+
+The system was invented in the US, but development was carried out by [[Decca Records|Decca]] in the UK. It was first deployed by the [[Royal Navy]] during [[World War II]] when the Allied forces needed a system which could be used to achieve accurate landings and was not known to the Germans and thus free of jamming. After the war, it was extensively developed around the UK and later used in many areas around the world. Decca's primary use was for ship navigation in coastal waters, offering much better accuracy than the competing LORAN system. Fishing vessels were major post-war users, but it was also used on aircraft, including a very early (1949) application of [[moving map display]]s. The system was deployed extensively in the [[North Sea]] and was used by helicopters operating to [[oil platform]]s.
+
+The opening of the more accurate [[Loran-C]] system to civilian use in 1974 offered stiff competition, but Decca was well established by this time and continued operations into the 1990s. Decca was eventually replaced, along with Loran and similar systems, by the [[Global Positioning System|GPS]] during the 1990s. The Decca system in Europe was shut down in the spring of 2000, and the last worldwide chain, in Japan, in 2001.
+
+== Principles of Operation ==
+=== Overview ===
+[[Image:Crude loran diagram.PNG|thumb|right|''The Decca Navigator principle.'' &lt;br&gt; The phase difference between the signals received from stations A (Master) and B (Slave) is constant along each hyperbolic curve. The foci of the hyperbola are at the transmitting stations, A and B.]]
+
+The Decca Navigator System consisted of a number of land-based radio beacons organised into ''chains''. Each chain consisted of a [[master station]] and three (occasionally two) secondary stations, termed Red, Green and Purple. Ideally, the secondaries would be positioned at the vertices of an equilateral triangle with the master at the centre. The baseline length, that is, the master-secondary distance, was typically {{convert|60-120|nmi|km}}.
+
+Each station transmitted a continuous wave signal that, by comparing the [[phase (waves)|phase]] difference of the signals from the master and one of the secondaries, resulted in a set of hyperbolic ''[[lines of position]]'' called a ''pattern''. As there were three secondaries there were three patterns, termed Red, Green and Purple. The patterns were drawn on nautical charts as a set of hyperbolic lines in the appropriate colour. Receivers identified which [[hyperbola]] they were on and a position could be plotted at the intersection of the [[hyperbola]] from different patterns, usually by using the pair with the angle of cut closest to orthogonal as possible.
+
+=== Detailed Principles of Operation ===
+When two stations transmit at the  [[phase-locked loop|phase-locked frequency]], the difference in phase between the two signals is constant along a hyperbolic path. Of course, if two stations transmit on the same frequency, it is practically impossible for the receiver to separate them; so instead of all stations transmitting at the same frequency, each chain was allocated a nominal frequency, 1f, and each station in the chain transmitted at a harmonic of this base frequency, as follows:
+
+{| class=&quot;wikitable&quot;
+|-
+! Station!! Harmonic !! Frequency (kHz)
+|-
+| Master || 6f || 85.000
+|-
+| Purple || 5f || 70.833
+|-
+| Red || 8f || 113.333
+|-
+| Green || 9f || 127.500
+|}
+
+The frequencies given are those for Chain 5B, known as the English Chain, but all chains used similar frequencies between 70&amp;nbsp;kHz and 129&amp;nbsp;kHz.
+
+Decca receivers multiplied the signals received from the Master and each Slave by different values to arrive at a common frequency ([[least common multiple]], LCM) for each Master/Slave pair, as follows:
+
+{| class=&quot;wikitable&quot;
+|-
+! Pattern !! Slave Harmonic !! Slave Multiplier !! Master Harmonic !! Master Multiplier !! Common Frequency
+|-
+| Purple || 5f || ×6 || 6f || ×5 || 30f
+|-
+| Red || 8f || ×3 || 6f || ×4 || 24f
+|-
+| Green || 9f || ×2 || 6f || ×3 || 18f
+|}
+
+It was phase comparison at this common frequency that resulted in the hyperbolic lines of position. The interval between two adjacent hyperbolas on which the signals are in phase was called a ''lane''. Since the wavelength of the common frequency was small compared with the distance between the Master and Slave stations there were many possible lines of position for a given phase difference, and so a unique position could not be arrived at by this method.
+
+Other receivers, typically for aeronautical applications, divided the transmitted frequencies down to the basic frequency (1f) for phase comparison, rather than multiplying them up to the LCM frequency.
+
+=== Lanes and Zones ===
+[[File:Admiralty Chart No 1607 Thames Estuary Southern Part, Published 1967.jpg|300px|thumb|right|A 1967 [[Admiralty chart|Admiralty]] Decca Chart of the Thames Estuary, marked with red and green lanes and zones.]]
+Early Decca receivers were fitted with three rotating ''Decometers'' that indicated the phase difference for each pattern. Each Decometer drove a second indicator that counted the number of lanes traversed &amp;ndash; each 360 degrees of phase difference was one lane traversed. In this way, assuming the point of departure was known, a more or less distinct location could be identified.
+
+The lanes were grouped into ''zones'', with 18 green, 24 red, or 30 purple lanes in each zone. This meant that on the baseline (the straight line between the Master and its Slave) the zone width was the same for all three patterns of a given chain. Typical lane and zone widths on the baseline are shown in the table below (for chain 5B):
+
+{| class=&quot;wikitable&quot;
+|-
+! Lane or Zone!! Width on Baseline
+|-
+| Purple lane || 352.1 m
+|-
+| Red lane || 440.1 m
+|-
+| Green lane || 586.8 m
+|-
+| Zones (all patterns)|| 10563 m
+|}
+
+The lanes were numbered 0 to 23 for red, 30 to 47 for green and 50 to 79 for purple. The zones were labelled A to J, repeating after J. A Decca position coordinate could thus be written: Red I 16.30; Green D 35.80. Later receivers incorporated a microprocessor and displayed a position in latitude and longitude.
+
+=== Multipulse ===
+''Multipulse'' provided an automatic method of lane and zone identification by using the same phase comparison techniques described above on lower frequency signals.
+
+The nominally continuous wave transmissions were in fact divided into a 20-second cycle, with each station in turn simultaneously transmitting all four Decca frequencies (5f, 6f, 8f and 9f) in a phase-coherent relationship for a brief period of 0.45 seconds each cycle. This transmission, known as Multipulse, allowed the receiver to extract the 1f frequency and so to identify which lane the receiver was in (to a resolution of a zone).
+
+As well as transmitting the Decca frequencies of 5f, 6f, 8f and 9f, an 8.2f signal, known as Orange, was also transmitted. The beat frequency between the 8.0f (Red) and 8.2f (Orange) signals allowed a 0.2f signal to be derived and so resulted in a hyperbolic pattern in which one cycle (360°) of phase difference equates to 5 zones.
+
+Assuming that one’s position was known to this accuracy, this gave an effectively unique position.
+
+=== Range and Accuracy ===
+During daylight, ranges of around {{convert|400|nmi|km|-1}} could be obtained, reducing at night to 200 to {{convert|250|nmi|km|-1}}, depending on propagation conditions.
+
+The accuracy depended on:
+* Width of the lanes
+* Angle of cut of the hyperbolic lines of position
+* Instrumental errors
+* Propagation errors (for example, [[Skywave]])
+
+By day these errors could range from a few meters on the baseline up to a nautical mile at the edge of coverage. At night, skywave errors were greater and, on receivers without multipulse capabilities, it was not unusual for the position to jump a lane, sometimes without the navigator knowing.
+
+Although in the days of differential [[Global Positioning System|GPS]] this range and accuracy may appear poor, in its day the Decca system was one of the few, if not the only, position fixing system available to many mariners. Since the need for an accurate position is less when the vessel is further from land, the reduced accuracy at long ranges was not a great problem.
+
+== History==
+=== Origins===
+In 1936 William J. O'Brien, an engineer, contracted [[tuberculosis]] which put his career on hold for a period of two years. During this period he had the idea of position fixing by means of phase comparison of continuous wave transmissions. This was not the first such system, but O'Brien apparently developed his version without knowledge of the others, and made several advancements in the art that would prove useful. He initially imagined the system being used for aircraft testing, specifically the accurate calculation of ground speed. Some experiments were carried out in California in 1938, selecting frequencies with harmonic &quot;beats&quot; that would allow for station identification in a network of transmitters. Both the [[US Army]] and [[US Navy|Navy]] considered the idea too complicated and work ended in 1939.{{sfn|Blanchard|1991|p=301}}
+
+O’Brien's friend, Harvey F. Schwarz, was chief engineer of the [[Decca Records|Decca Record company]] in England. In 1939 O’Brien sent him details of the system so it could be put forward to the British military. Initially [[Robert Watson-Watt]] reviewed the system but he did not follow it up, deeming it too easily jammed (and likely due to the existing work on the [[Gee (navigation)|Gee]] system, being carried out by Watt's group).{{sfn|Blanchard|1991|p=302}} However, in October 1941 the British Admiralty Signal Establishment (ASE) became interested in the system, which was then classified as ''Admiralty Outfit QM''. O’Brien brought the Californian equipment to the UK and conducted the first marine trials between [[Anglesey]] and the [[Isle of Man]], at frequencies of 305/610&amp;nbsp;kHz, on 16 September 1942.{{sfn|Blanchard|1991|p=301}}
+
+Further trials were conducted in the northern [[Irish Sea]] in April 1943 at 70/130&amp;nbsp;kHz. It was decided that the original frequencies were not ideal, and a new system using a 14&amp;nbsp;kHz inter-signal spacing was selected. This led to the common 5, 6, 8 and 9''f'' frequencies, used throughout the life of the Decca system. 7''f'' was reserved for a [[Loran-C]]-like extension, but never developed.{{sfn|Blanchard|1991|p=302}}  A follow-up test was carried out in the [[Irish Sea]] in January 1944 to test a wide variety of upgrades and production equipment. By this time the competing Gee system was known to the Admiralty and the two systems were tested head-to-head under the code names QM and QH. QM was found to have better sea-level range and accuracy, which led to its adoption.{{sfn|Blanchard|1991|p=302}}
+
+A three-station trial was held in conjunction with a large-scale assault and landing exercise in the [[Moray Firth]] in February/March 1944. The success of the trials and the relative ease of use and accuracy of the system resulted in Decca receiving an order for 27 ''Admiralty Outfit QM'' receivers. The receiver consisted of an electronics unit with two dials and was known to its operators as the &quot;Blue Gasmeter Job&quot;. A Decca chain was set up, consisting of a master station at [[Chichester]] and slaves at [[Swanage]] and [[Beachy Head]]. A fourth decoy transmitter was located in the [[Thames Estuary]] as part of the deception that the invasion would be focussed on the [[Calais]] area.
+
+21 minesweepers and other vessels were fitted with ''Admiralty Outfit QM'' and, on 5 June 1944, 17 of these ships used it to accurately navigate across the [[English Channel]] and to sweep the minefields in the planned areas. The swept areas were marked with buoys in preparation for the [[Normandy Landings]].
+
+After the initial ship tests, Decca conducted tests in cars, driving in the [[A3 road|Kingston By-Pass]] area to verify receiver accuracy. In the car installation, it was found possible to navigate within an individual traffic lane. The company entertained high hopes that the system could be used in aircraft, to permit much more precise navigation in the critical airspace around airports and urban centres where traffic density was highest.
+
+=== Deployment ===
+After the end of [[World War II]] the Decca Navigator Co. Ltd. was formed (1945) and the system expanded rapidly, particularly in areas of [[British Empire|British influence]]; at its peak it was deployed in many of the world's major shipping areas. More than 15,000 receiving sets were in use aboard ships in 1970. There were 4 chains around England, 1 in Ireland and 2 in Scotland, 12 in Scandinavia (5 each in Norway and Sweden and 1 each in Denmark and Finland), a further 4 elsewhere in northern Europe and 2 in Spain.
+
+In the late 1950s an experimental Decca chain was set up in the United States, in the New York area, to be used for navigating the [[Boeing Vertol CH-46 Sea Knight|Vertol 107]] helicopters of [[New York Airways]]. These helicopters were operating from the principal local airports—[[John F. Kennedy International Airport|Idlewild Airport]] on Long Island, [[Newark Liberty International Airport|Newark Airport]] in New Jersey, [[LaGuardia Airport]] in the Borough of Queens, nearer to Manhattan, and a site on the top of the (then) [[MetLife Building|PanAm Building]] on Park Avenue. Use of Decca was essential because its signals could be received down to sea level, were not subject to the line-of-sight limitations of [[VHF omnidirectional range|VOR]]/[[Distance measuring equipment|DME]] and did not suffer the slant-range errors that create problems with VOR/DME close to the transmitters. The Decca installations in the New York Airways helicopters included the unique Decca 'roller map' displays that enabled the pilot to see his or her position at a glance, a concept infeasible with VOR/DME.
+
+This chain installation was considered highly controversial at the time, for political reasons. This led to the U.S. Coast Guard, under instructions from the Treasury Department to which it reported, banning the use of Decca receivers in ships entering New York harbour for fear that the system might create a de facto standard (as it had become in other areas of the world). It also served to protect the marketing interests of the Hoffman Electronics division of ITT, a principal supplier of VOR/DME systems, that Decca might have been poised to usurp.
+
+This situation was exacerbated by the workload problems of the Air Traffic Controllers Association (ATCA), under its executive director Francis McDermott, whose members were forced to use radar data on aircraft positions, relaying those positions by radio to the aircraft from their control locations. An example of the problem, cited by experts, was the [[1960 New York mid-air collision|collision of a Douglas DC8 and a Lockheed Constellation over Staten Island, New York]],&lt;ref&gt;{{Cite web |url=http://specialcollection.dotlibrary.dot.gov/Document?db=DOT-AIRPLANEACCIDENTS&amp;query=(select+719) |title=Archived copy |access-date=27 December 2014 |archive-url=https://web.archive.org/web/20141227062743/http://specialcollection.dotlibrary.dot.gov/Document?db=DOT-AIRPLANEACCIDENTS&amp;query=(select+719) |archive-date=27 December 2014 |url-status=dead }}&lt;/ref&gt; that—according to some experts—could have been avoided if the aircraft had been Decca-equipped and could not only have determined their positions more precisely but would not have suffered from the rho-theta position errors inherent in VOR/DME.
+
+Other chains were established in Japan (6 chains); Namibia and South Africa (5 chains); India and Bangladesh (4 chains); Canada (4 chains around [[Newfoundland and Labrador|Newfoundland]] and [[Nova Scotia]]); North-West Australia (2 chains); the [[Persian Gulf]] (1 chain with stations in Qatar and the United Arab Emirates and a second chain in the north of the Gulf with stations in Iran) and the Bahamas (1 chain). Four chains were planned for Nigeria but only two were built and these did not enter into public service. Two chains in Vietnam were used during the [[Vietnam War]] for helicopter navigation, with limited success.
+During the Cold War period, following WWII, the R.A.F. established a confidential chain in Germany. The Master station was in [[Bad Iburg]] near Osnabrück and there were two Slaves. The purpose of this chain was to provide accurate air navigation for the corridor between Western Germany and Berlin in the event that a mass evacuation of allied personnel may be required. In order to maintain secrecy, frequencies were changed at irregular intervals.
+
+=== Decca, Racal, and the closedown ===
+[[Image:Decca Navigator Mk 21.jpg|thumb|Decca Navigator Mk. 21, with the Decometer dials prominent.]]
+[[File:Decca Receiver Philips.jpg|thumb|An ''ap'' Decca receiver Mk II from the 1980s which could be purchased instead of leased. It could store 25 waypoints.]]
+
+The headquarters of Decca Navigator were at New Malden, Surrey, just off the Kingston by-pass. There was a Decca School, at [[Brixham]], [[Devon]], where employees were sent on courses from time to time. [[Racal]], the UK weapons and communications company, acquired Decca in 1980. Merging Decca's radar assets with their own, Racal began selling off the other portions of the company, including avionics and Decca Navigator.
+
+A significant amount of income from the Decca system was due to the receivers being leased to users, not sold outright. This guaranteed predictable annual income. When the patents on the original technology lapsed in the early 1980s, new receivers were quickly built by a number of companies. In particular, Aktieselskabet Dansk Philips ('Danish Philips', ''ap'') introduced receivers that could be purchased outright, and were much smaller and easier to use than the current Decca counterparts. The &quot;ap&quot; versions directly output the longitude and latitude to two decimals  (originally in datum [[ED50]] only) instead of using the &quot;deco meter&quot; displays, offering accuracy better than ±9.3 m, much better than the Decca units. This also eliminated the need for the special charts printed with Decca lanes and zones.
+
+Decca sued ap for infringement and, in the ensuing court battle, Decca lost the monopoly. That signalled the beginning of the end for the company. Income dwindled and eventually, the UK [[Department for Transport|Ministry of Transport]] stepped in, having the [[Trinity House|lighthouse authorities]] take responsibility for operating the system in the early 1990s.
+
+A ruling from the European Union forced the UK government to withdraw funding. The [[general lighthouse authority]] ceased Decca transmissions at midnight on 31 March 2000. The Irish chain provided by [[Bord Iascaigh Mhara|Bórd Iascaigh Mhara]] continued transmitting until 19 May 2000. Japan continued operating their [[Hokkaidō]] chain until March 2001, the last Decca chain in operation.
+
+== Other applications ==
+
+=== Delrac ===
+In the immediate post-war era, Decca began studying a long-range system like Decca, but using much lower frequencies to enable reception of [[skywave]]s at long distances. In February 1946 the company proposed a system with two main stations located at [[Shannon Airport]] in Ireland and [[Gander International Airport]] in [[Newfoundland]] (today part of Canada). Together, these stations would provide navigation over the main [[great circle route]] between London and New York. A third station in [[Bermuda]] would provide general ranging information to measure progress along the main track.{{sfn|Blanchard|1991|p=303}}
+
+Work on this concept continued, and in 1951 a modified version was presented that offered navigation over very wide areas. This was known as '''Delrac''', short for &quot;Decca Long Range Area Cover&quot;. A further development, including features of the [[General Post Office]]'s [[POPI]] system, was introduced in 1954, proposing 28 stations that provided worldwide coverage.{{sfn|Blanchard|1991|p=303}} The system was predicted to offer {{convert|10|mile|m}} accuracy at {{convert|2000|mile|km}} range 95% of the time. Further development was ended in favour of the Dectra system.{{sfn|Blanchard|1991|p=304}}
+
+=== Dectra ===
+In the early 1960s the [[Radio Technical Commission for Aeronautics]] (RTCA), as part of a wider [[ICAO]] effort, began the process of introducing a standard long-range radio navigation system for aviation use. Decca proposed a system that could offer both high-accuracy at short ranges and trans-Atlantic navigation with less accuracy, using a single receiver. The system was known as '''Dectra''', short for &quot;Decca Track&quot;.{{sfn|Blanchard|1991|p=304}}
+
+Unlike the Delrac system, Dectra was essentially the normal Decca Navigator system with the modification of several existing transmitter sites.{{sfn|Blanchard|1991|p=304}} These were located at the East Newfoundland and Scottish chains, which were equipped with larger antennas and high-power transmitters, broadcasting 20 times as much energy as normal chain stations. Given that the length of the chain baselines did not change, and were relatively short, at long distance the signal offered almost no accuracy. Instead, Dectra operated as a track system;  aircraft would navigate by keeping themselves within the signal defined by a particular Decca lane.{{sfn|Blanchard|1991|p=305}}
+
+The main advantage of Dectra compared to other systems being proposed for the RTCA solution was that it could be used for both medium-range navigation over land, as well as long-range navigation over the Atlantic. In comparison, the [[VOR/DME]] system that ultimately won the competition offered navigation over perhaps a 200&amp;nbsp;mile radius, and could not offer a solution to the long-distance problem.{{sfn|Blanchard|1991|p=305}} Additionally, as the Decca system provided an X and Y location, as opposed to the angle-and-range VOR/DME, Decca proposed offering it with their Decca Flight Log moving map display to further improve ease of navigation. In spite of these advantages, the RTCA ultimately chose VOR/DME for two primary reasons; VOR offered coverage over about the same range as Decca, about 200&amp;nbsp;miles, but did so with a single transmitter instead of Decca's four, and Decca's frequencies proved susceptible to interference from static due to lightning, while VOR's higher frequencies were not quite as sensitive.{{sfn|Blanchard|1991|p=303}}
+
+Decca continued to propose that Dectra be used for the long-range role. In 1967 they installed another transmitter in Iceland to provide ranging along the Scotland-Newfoundland track, with a second proposed to be installed on the [[Azores]]. They also installed Dectra receivers with Omnitrac computers and a lightweight version of the Flight Log on a number of commercial airliners, notably a [[BOAC]] [[Vickers VC10]]. The Omnitrac could take inputs from Decca (and Dectra), Loran-C, VOR/DME, an air data computer and doppler radars and combine them all to produce a lat/long output along with bearing, distance-to-go, bearing and an autopilot coupling.&lt;ref&gt;&quot;Dectra in Iceland&quot;, Decca Navigator News, October 1967&lt;/ref&gt; Their efforts to standardize this were eventually abandoned as [[inertial navigation system]]s began to be installed for these needs.{{sfn|Blanchard|1991|p=305}}
+
+===Hi-Fix===
+A more accurate system named Hi-Fix was developed using signalling in the 1.6&amp;nbsp;MHz range. It was used for specialised applications such as precision measurements involved with oil-drilling and by the [[Royal Navy]] for detailed mapping and surveying of coasts and harbours. The Hi-Fix equipment was leased for a period with temporary chains established to provide coverage of the area required, Hi-Fix was commercialised by Racal Survey in the early 1980s. An experimental chain was installed with coverage of central London and receivers placed in London buses and other vehicles to demonstrate an early vehicle location and tracking system. Each vehicle would report its location automatically via a conventional VHF two-way radio link, the data added to a voice channel.
+
+Another application was developed by the Bendix Pacific division of Bendix Corporation, with offices in North Hollywood, California, but not deployed: PFNS—Personal Field Navigation System—that would enable individual soldiers to ascertain their geographic position, long before this capability was made possible by the satellite-based GPS (Global Positioning System).
+
+A further application of the Decca system was implemented by the U.S. Navy in the late 1950s and early 1960s for use in the Tongue of the Ocean/Eleuthera Sound area near The Bahamas, separating the islands of Andros and New Providence. The application was for sonar studies made possible by the unique characteristics of the ocean floor.
+
+An interesting characteristic of the Decca VLF signal discovered on BOAC, later British Airways, test flights to Moscow, was that the carrier switching could not be detected even though the carrier could be received with sufficient strength to provide navigation.{{clarify|date=March 2014}} Such testing, involving civilian aircraft, is quite common and may well not be in the knowledge of a pilot.
+
+The 'low frequency' signalling of the Decca system also permitted its use on submarines. One 'enhancement' of the Decca system was to offer the potential of keying the signal, using Morse code, to signal the onset of nuclear war. This option was never taken up by the UK government. Messages were clandestinely sent, however, between Decca stations thereby bypassing international telephone calls, especially in non-UK chains.
+
+== Special DECCA towers ==
+* [[Puckeridge DECCA tower]]
+* [[Zeven DECCA-transmitter]]
+
+==See also==
+*[[GEE (navigation)]]
+*[[LORAN|LORAN C]]
+*[[Omega (navigation system)]]
+*[[Local positioning system]]
+*[[Datatrak]]
+
+== References ==
+===Citations===
+{{reflist}}
+
+===Bibliography===
+* {{cite journal |first=Walter |last=Blanchard |title=Hyperbolic Airborne Radio Navigation Aids — A Navigator's View of their History and Development |journal=The Journal of Navigation |volume=44 |number=3 |date=September 1991 |ref=harv}}
+**A modified version is =  Jerry Proc, [http://jproc.ca/hyperbolic/gee.html &quot;The GEE System&quot;], 14 January 2001
+* The Decca Navigator - Principles and Performance of the System, The Decca Navigator Company Limited, July 1976
+* Night Passage to Normandy, Lieutenant-Commander Oliver Dawkins, R.N.V.R, Decca, 1969
+* The Decca Navigator System on D-Day, 6 June 1944, An Acid Test, Commander Hugh St. A. Malleson, R.N. (Ret.)
+* Hyperbolic Radionavigation Systems, Compiled by Jerry Proc VE3FAB, 2007 [http://www.jproc.ca/hyperbolic/]
+* Navigation Systems: A Survey of Modern Electronic Aids, ed. G.E. Beck, van Nostrand Reinhold, 1971
+
+==External links==
+*[http://www.jproc.ca/hyperbolic/decca.html Decca Navigator System by Jerry Proc]
+*[http://www.qsl.net/g4ftc/decca/home.htm A virtual tour of a Decca Main Chain]
+*[http://www.deccanavigator.com Decca Navigator Spain by Santiago Insua (in spanish)]
+*[https://web.archive.org/web/20070608110135/http://www.longwave.de/sitephotos/zeven.html Decca Navigator Station Zeven (Germany)]
+* {{Internet Archive short film|id=gov.dod.dimoc.26968|name=STAFF FILM REPORT 66-19A (1966)}}
+{{Use dmy dates|date=August 2011}}
+
+[[Category:Radio navigation]]
+[[Category:Navigational equipment]]</text>
+      <sha1>d2j38jg0xjud8grjmu3wqjmgtghqnar</sha1>
+    </revision>
+  </page>

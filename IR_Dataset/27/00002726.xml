@@ -1,0 +1,67 @@
+  <page>
+    <title>Atlas Autocode</title>
+    <ns>0</ns>
+    <id>2726</id>
+    <revision>
+      <id>877871267</id>
+      <parentid>877871175</parentid>
+      <timestamp>2019-01-11T12:30:22Z</timestamp>
+      <contributor>
+        <username>Onel5969</username>
+        <id>10951369</id>
+      </contributor>
+      <comment>Adding [[Wikipedia:Short description|short description]]: &quot;1960s computer programming language&quot; ([[User:Galobtter/Shortdesc helper|Shortdesc helper]])</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{short description|1960s computer programming language}}
+'''Atlas Autocode''' (AA)&lt;ref name=&quot;AA&quot;&gt;R.A. Brooker and J.S. Rohl,  [http://compsoc.nuigalway.ie/~bfoley/edhist/CU-Rep-1-AA/CU-Rep-1-AA.html ''Atlas Autocode Reference Manual''],  University of Manchester Computer Science Department, 1965. ([http://history.dcs.ed.ac.uk/archive/scans/atlas_autocode_manual/ Original Scans])&lt;/ref&gt;&lt;ref name=&quot;AA_ED&quot;&gt;P.D. Schofoeld and M.R. Osbourne, [http://history.dcs.ed.ac.uk/archive/docs/CU-Rep-1-AA.pdf ''Programming in Atlas Autocode''],  Computer Unit Report No.1, University of Edinburgh, 1965.  ([http://history.dcs.ed.ac.uk/archive/docs/CU-Rep-1-AA.pdf Original scan])&lt;/ref&gt; was a [[programming language]] developed around 1965 at [[Manchester University]]. A variant of the [[ALGOL]] [[programming language]], it was developed by [[Tony Brooker]] and Derrick Morris for the [[Atlas Computer]]. 
+
+(&quot;Autocode&quot; was basically an early term for &quot;programming language&quot;; different autocodes could be totally different).
+
+==Features==
+
+It removed some Algol features such as &quot;[[Call by name#Call by name|passing parameters by name]]&quot; (which in Algol 60 means passing the address of a short subroutine to recalculate the parameter each time it was mentioned). 
+
+It featured explicitly typed variables, subroutines, and functions. 
+
+The AA compiler generated range-checking for array accesses, and allowed an array to have dimensions that were determined at run-time (i.e. you could declare an array as &lt;code&gt;&lt;u&gt;integer&lt;/u&gt; &lt;u&gt;array&lt;/u&gt; Thing (i:j)&lt;/code&gt;, where &lt;code&gt;i&lt;/code&gt; and &lt;code&gt;j&lt;/code&gt; were calculated values).
+
+[[Machine code]] could be included within the high-level AA routines either to make an inner loop more efficient or to effect some operation which could not easily be done otherwise.&lt;ref name=&quot;AA&quot; /&gt;
+
+Atlas Autocode included a &lt;code&gt;&lt;u&gt;complex&lt;/u&gt;&lt;/code&gt; data type&lt;ref name=&quot;AA&quot; /&gt; to represent [[complex number]]s, partly because of pressure from the [[electrical engineering]] department, as complex numbers are used to represent the behavior of [[alternating current]]. The square root of -1 was represented by &lt;code&gt;&lt;u&gt;i&lt;/u&gt;&lt;/code&gt;, which was treated as a fixed complex constant = ''i''.
+
+The &lt;code&gt;&lt;u&gt;complex&lt;/u&gt;&lt;/code&gt; data type was dropped when Atlas Autocode later evolved into the [[Edinburgh IMP]] programming language.  (Imp was an extension of AA and was used to write the [[Edinburgh Multiple Access System|EMAS]] [[operating system]].)
+
+Atlas Autocode's second-greatest claim to fame (after being the progenitor of Imp and EMAS) was that it had many of the features of the original &quot;[[Compiler-compiler|Compiler Compiler]]&quot;.  A variant of the AA compiler included run-time support for a top-down [[recursive descent parser]].  The style of parser used in the Compiler Compiler was in use continuously at Edinburgh from the 60's until almost the turn of the millennium.
+
+Other [[Autocode]]s were developed for the [[Titan (1963 computer)|Titan computer]], a prototype Atlas 2 at Cambridge, and the [[Ferranti]] Mercury.
+
+==Syntax==
+Atlas Autocode's syntax was largely similar to Algol, though it was influenced by the output device which the author had available, a [[Friden, Inc.|Friden Flexowriter]].  Consequently, it allowed symbols like &quot;½&quot; for &quot;.5&quot; and the superscript &lt;sup&gt;2&lt;/sup&gt; for &quot;to the power of 2&quot;.  The Flexowriter supported overstriking and therefore AA did as well — up to three characters could be overstruck as a single symbol.  For example, the character set had no &quot;↑&quot; symbol, so exponentiation was an overstrike of &quot;|&quot; and &quot;*&quot;.  The aforementioned underlining of keywords could also be done using overstriking.  The language is described in detail in the [http://history.dcs.ed.ac.uk/archive/docs/atlasautocode.html Atlas Autocode Reference Manual].
+
+Other Flexowriter characters that were found a use in Atlas Autocode were: &lt;code&gt;α&lt;/code&gt; in floating-point numbers, ''e.g.'', &lt;code&gt;3.56α-7&lt;/code&gt; for modern &lt;code&gt;3.56e-7&lt;/code&gt; ; &lt;code&gt;β&lt;/code&gt; to mean &quot;the second half of a 48-bit Atlas memory [[Word (data type)|word]]&quot;; &lt;code&gt;π&lt;/code&gt; for the mathematical constant [[pi]].
+
+When AA was ported to the [[English Electric KDF9]] computer, the character set was changed to [[International Organization for Standardization|ISO]] and that compiler has been recovered from an old paper tape by the [http://history.dcs.ed.ac.uk/ Edinburgh Computer History Project] and is available online, as is a high-quality scan of the original Edinburgh version of the Atlas Autocode manual.&lt;ref name=&quot;AA_ED&quot; /&gt;
+
+Keywords in AA were distinguishable from other text by being underlined, which was implemented via overstrike in the Flexowriter (compare to bold in Algol). There were also two [[Stropping (syntax)|stropping]] regimes. First, there was an &quot;uppercasedelimiters&quot; mode where all uppercase letters (outside strings) were treated as underlined lowercase. Second, in some versions (but not in the original Atlas version), it was possible to strop keywords by placing a &quot;&lt;code&gt;%&lt;/code&gt;&quot; sign in front of them, for example the keyword &lt;code&gt;&lt;u&gt;endofprogramme&lt;/u&gt;&lt;/code&gt; could be typed as &lt;code&gt;%end %of %programme&lt;/code&gt; or &lt;code&gt;%endofprogramme&lt;/code&gt;. This significantly reduced typing, due to only needing one character, rather than overstriking the whole keyword. As in Algol, there were no [[reserved word]]s in the language as keywords were identified by underlining (or stropping), not by recognising reserved character sequences. In the statement &lt;code&gt;&lt;u&gt;if&lt;/u&gt; token=if &lt;u&gt;then&lt;/u&gt; &lt;u&gt;result&lt;/u&gt; = token&lt;/code&gt;, there is both a keyword &lt;code&gt;&lt;u&gt;if&lt;/u&gt;&lt;/code&gt; and a variable named &lt;code&gt;if&lt;/code&gt;.
+
+As in Algol, AA allowed spaces in variable names, such as &lt;code&gt;&lt;u&gt;integer&lt;/u&gt; previous value&lt;/code&gt;. Spaces were not significant and were removed before parsing in a trivial pre-lexing stage called &quot;[[line reconstruction]]&quot;. What the compiler would see in the above example would be &quot;&lt;code&gt;&lt;u&gt;if&lt;/u&gt;token=if&lt;u&gt;thenresult&lt;/u&gt;=token&lt;/code&gt;&quot;. Spaces were possible due partly to keywords being distinguished in other ways, and partly because the source was processed by a [[scannerless parser]], without a separate lexing phase, which allowed the lexical syntax to be context-sensitive.
+
+The syntax for expressions let the multiplication operator be omitted, e.g. &lt;code&gt;3a&lt;/code&gt; was treated as &lt;code&gt;3*a&lt;/code&gt;, and &lt;code&gt;a(i+j)&lt;/code&gt; was treated as &lt;code&gt;a*(i+j)&lt;/code&gt; if &lt;code&gt;a&lt;/code&gt; was not an array. In ambiguous usages, the longest possible name was taken ([[maximal munch]]), for example &lt;code&gt;ab&lt;/code&gt; was not treated as &lt;code&gt;a*b&lt;/code&gt;, whether or not &lt;code&gt;a&lt;/code&gt; and &lt;code&gt;b&lt;/code&gt; had been declared.
+
+In the original Atlas Autocode for the Atlas computer, Atlas machine code instructions could be interpolated between the Atlas Autocode statements.
+
+==References==
+{{Reflist}}
+
+== External links ==
+{{More footnotes|date=September 2009}}
+* [http://history.dcs.ed.ac.uk/archive/docs/atlasautocode.html Atlas Autocode Reference Manual]
+* [http://compsoc.nuigalway.ie/~bfoley/edhist/CU-Rep-1-AA/CU-Rep-1-AA.html Programming In Atlas Autocode] - Edinburgh University Computer Unit Report #1 (1965).  ([http://history.dcs.ed.ac.uk/archive/docs/CU-Rep-1-AA.pdf Original scan])
+
+[[Category:Ferranti]]
+[[Category:History of computing in the United Kingdom]]
+[[Category:Structured programming languages]]</text>
+      <sha1>2ppwlrquywgyumkvzrterja2b3h4gud</sha1>
+    </revision>
+  </page>

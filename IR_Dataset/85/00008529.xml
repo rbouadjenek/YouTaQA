@@ -1,0 +1,59 @@
+  <page>
+    <title>Disjunction elimination</title>
+    <ns>0</ns>
+    <id>8529</id>
+    <revision>
+      <id>916358064</id>
+      <parentid>878444428</parentid>
+      <timestamp>2019-09-18T14:07:40Z</timestamp>
+      <contributor>
+        <username>Monkbot</username>
+        <id>20483999</id>
+      </contributor>
+      <minor />
+      <comment>/* top */[[User:Monkbot/task 16: remove replace deprecated dead-url params|Task 16]]: replaced (1×) / removed (0×) deprecated |dead-url= and |deadurl= with |url-status=;</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{Transformation rules}}
+
+In [[propositional logic]], '''disjunction elimination'''&lt;ref&gt;{{cite web|url=https://proofwiki.org/wiki/Rule_of_Or-Elimination |title=Archived copy |accessdate=2015-04-09 |url-status=dead |archiveurl=https://web.archive.org/web/20150418093657/https://proofwiki.org/wiki/Rule_of_Or-Elimination |archivedate=2015-04-18 }}&lt;/ref&gt;&lt;ref&gt;http://www.cs.gsu.edu/~cscskp/Automata/proofs/node6.html&lt;/ref&gt; (sometimes named '''proof by cases''', '''case analysis''', or '''or elimination'''), is the [[Validity (logic)|valid]] [[argument form]] and [[rule of inference]] that allows one to eliminate a [[logical disjunction|disjunctive statement]] from a [[formal proof|logical proof]]. It is the [[inference]] that  if a statement &lt;math&gt;P&lt;/math&gt; implies a statement &lt;math&gt;Q&lt;/math&gt; and a statement &lt;math&gt;R&lt;/math&gt; also implies &lt;math&gt;Q&lt;/math&gt;, then if either &lt;math&gt;P&lt;/math&gt; or &lt;math&gt;R&lt;/math&gt; is true, then &lt;math&gt;Q&lt;/math&gt; has to be true. The reasoning is simple: since at least one of the statements P and R is true, and since either of them would be sufficient to entail Q, Q is certainly true.
+
+An example in [[English language|English]]:
+:If I'm inside, I have my wallet on me.
+:If I'm outside, I have my wallet on me.
+:It is true that either I'm inside or I'm outside.
+:Therefore, I have my wallet on me.
+
+It is the rule can be stated as:
+
+:&lt;math&gt;\frac{P \to Q, R \to Q, P \lor R}{\therefore Q}&lt;/math&gt;
+
+where the rule is that whenever instances of &quot;&lt;math&gt;P \to Q&lt;/math&gt;&quot;, and &quot;&lt;math&gt;R \to Q&lt;/math&gt;&quot; and &quot;&lt;math&gt;P \lor R&lt;/math&gt;&quot; appear on lines of a proof, &quot;&lt;math&gt;Q&lt;/math&gt;&quot; can be placed on a subsequent line.
+
+== Formal notation ==
+The ''disjunction elimination'' rule may be written in [[sequent]] notation:
+
+: &lt;math&gt;(P \to Q), (R \to Q), (P \lor R) \vdash Q&lt;/math&gt;
+
+where &lt;math&gt;\vdash&lt;/math&gt; is a [[metalogic]]al symbol meaning that &lt;math&gt;Q&lt;/math&gt; is a [[logical consequence|syntactic consequence]] of &lt;math&gt;P \to Q&lt;/math&gt;, and &lt;math&gt;R \to Q&lt;/math&gt; and &lt;math&gt;P \lor R&lt;/math&gt; in some logical system;
+
+and expressed as a truth-functional [[tautology (logic)|tautology]] or theorem of propositional logic:
+
+:&lt;math&gt;(((P \to Q) \land (R \to Q)) \land (P \lor R)) \to Q&lt;/math&gt;
+
+where &lt;math&gt;P&lt;/math&gt;, &lt;math&gt;Q&lt;/math&gt;, and &lt;math&gt;R&lt;/math&gt; are propositions expressed in some [[formal system]].
+
+==See also==
+* [[Disjunction]]
+* [[Argument in the alternative]]
+* [[Disjunct normal form]]
+
+==References==
+{{Reflist}}
+
+{{DEFAULTSORT:Disjunction Elimination}}
+[[Category:Rules of inference]]
+[[Category:Theorems in propositional logic]]</text>
+      <sha1>cocivhka48maxf9ld017yott766z3yb</sha1>
+    </revision>
+  </page>

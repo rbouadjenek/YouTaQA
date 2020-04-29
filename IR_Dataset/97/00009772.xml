@@ -1,0 +1,125 @@
+  <page>
+    <title>Edlin</title>
+    <ns>0</ns>
+    <id>9772</id>
+    <revision>
+      <id>914504823</id>
+      <parentid>910999569</parentid>
+      <timestamp>2019-09-07T20:51:32Z</timestamp>
+      <contributor>
+        <username>Ghettoblaster</username>
+        <id>6603820</id>
+      </contributor>
+      <minor />
+      <comment>/* External links */</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{other uses}}
+{{Infobox Software
+| name                   = Edlin
+| author                 = [[Tim Paterson]]
+| developer              = [[Microsoft]], [[IBM]], Gregory Pietsch
+| released               = {{Start date and age|1980}}
+| operating system       = [[86-DOS]], [[IBM PC DOS]], [[MS-DOS]], [[FreeDOS]], [[OS/2]], [[Microsoft Windows|Windows]]
+| genre                  = [[Line editor]]
+| license                = MS-DOS: [[MIT License|MIT]]&lt;br /&gt;FreeDOS, ReactOS: [[GNU General Public License|GPL]]&lt;br /&gt;86-DOS, PC DOS, OS/2, Windows: [[Proprietary software|Proprietary]] [[commercial software]]
+| website                = [https://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/edlin_line.mspx?mfr=true Edlin]
+}}
+'''Edlin''' is a [[line editor]], and the only [[text editor]] provided with early versions of [[IBM PC DOS]]&lt;ref&gt;http://www.bitsavers.org/pdf/ibm/pc/dos/6172220_DOS_1.0_Jan82.pdf&lt;/ref&gt; and [[MS-DOS]]. Although superseded in MS-DOS 5.0 and later by the full-screen [[MS-DOS Editor]], and by [[Microsoft Notepad|Notepad]] in [[Microsoft Windows]], it continues to be included in the 32-bit versions of current Microsoft operating systems.
+
+==History==
+Edlin was created by [[Tim Paterson]] in two weeks in 1980, for [[Seattle Computer Products]]'s [[86-DOS]] (QDOS)&lt;ref&gt;[http://www.patersontech.com/dos/byte%E2%80%93history.aspx A Short History of MS-DOS]&lt;/ref&gt; based on the [[CP/M]] line editor ''ED''&lt;ref&gt;[http://www.shaels.net/index.php/cpm80-22-documents/using-cpm/8-ed-utility ED Utility] {{webarchive|url=https://web.archive.org/web/20130620002545/http://www.shaels.net/index.php/cpm80-22-documents/using-cpm/8-ed-utility |date=2013-06-20 }}&lt;/ref&gt; — a distant relative of the UNIX [[ed (text editor)|''ed'' text editor]].
+
+Microsoft acquired 86-DOS and sold it as MS-DOS, so Edlin was included in v1.0–v5.0 of MS-DOS. From MS-DOS 6 onwards, the only editor included was the new full-screen [[MS-DOS Editor]]. 
+
+[[Windows 95]], [[Windows 98|98]] and [[Windows ME|ME]] ran on top of an embedded version of DOS, which reports itself as [[MS-DOS 7]]. As a successor to MS-DOS 6, this did not include Edlin. 
+
+However, Edlin is included in the 32-bit versions of [[Windows NT]]&lt;ref&gt;[http://support.microsoft.com/kb/101929 16-Bit Applications Included with Windows NT], microsoft.com&lt;/ref&gt; and its derivatives—up to and including [[Windows 10]]—because the [[Virtual DOS machine|NTVDM]]'s DOS support in those operating systems is based on MS-DOS version 5.0. However, unlike most other external DOS commands, it has not been transformed into a native [[Windows API|Win32]] program. It also does not support [[long filename]]s, which were not added to MS-DOS and MS-Windows until long after Edlin was written.
+
+The [[FreeDOS]] version was developed by Gregory Pietsch.&lt;ref&gt;http://www.ibiblio.org/pub/micro/pc-stuff/freedos/files/distributions/1.2/repos/pkg-html/edlin.html&lt;/ref&gt;
+
+==Usage==
+There are only a few commands. The short list can be found by entering a ? at the edlin prompt.
+
+When a file is open, typing L lists the contents (e.g., &lt;code&gt;1,6L&lt;/code&gt; lists lines 1 through 6). Each line is displayed with a line number in front of it.
+
+ *1,6L
+        1: Edlin: The only text editor in early versions of DOS.
+        2:
+        3: Back in the day, I remember seeing web pages
+        4: branded with a logo at the bottom:
+        5: &quot;This page created in edlin.&quot;
+        6: The things that some people put themselves through. ;-)
+ *
+
+The currently selected line has a *.  To replace the contents of any line, the line number is entered and any text entered replaces the original.  While editing a line pressing Ctrl-C cancels any changes. The * marker remains on that line.
+
+Entering I (optionally preceded with a line number) inserts one or more lines before the * line or the line given.  When finished entering lines, Ctrl-C returns to the edlin command prompt.
+
+ *6I
+        6:*(...or similar)
+        7:*^C 
+ &amp;nbsp;
+ *7D
+ *L
+        1: Edlin: The only text editor in early versions of DOS.
+        2:
+        3: Back in the day, I remember seeing web pages
+        4: branded with a logo at the bottom:
+        5: &quot;This page created in edlin.&quot;
+        6: (...or similar)
+ *
+
+:'''D''' - deletes the specified line, again optionally starting with the number of a line, or a range of lines.  E.g.: &lt;code&gt;2,4d&lt;/code&gt; deletes lines 2 through 4.  In the above example, line 7 was deleted.  
+
+:'''R''' - is used to replace all occurrences of a piece of text in a given range of lines, for example, to replace a spelling error.  Including the ? prompts for each change.  E.g.: To replace 'prit' with 'print' and to prompt for each change: &lt;code&gt;?rprit^Zprint&lt;/code&gt; (the ^Z represents pressing CTRL-Z).  It is case-sensitive.
+
+:'''S''' - searches for given text.  It is used in the same way as replace, but without the replacement text.  A search for 'apple' in the first 20 lines of a file is typed &lt;code&gt;1,20?sapple&lt;/code&gt; (no space, unless that is part of the search) followed by a press of enter.  For each match, it asks if it is the correct one, and accepts n or y (or Enter).
+
+:'''P''' - displays a listing of a range of lines. If no range is specified, P displays the complete file from the * to the end. This is different from L in that P changes the current line to be the last line in the range.
+
+:'''T''' - transfers another file into the one being edited, with this syntax: [line to insert at]t[full path to file].
+
+:'''W''' - (write) saves the file.
+
+:'''E''' - saves the file and quits edlin.
+
+:'''Q''' - quits edlin without saving.
+
+===Scripts===
+Edlin may be used as a non-interactive file editor in scripts by [[Redirection (computing)|redirecting]] a series of edlin commands.
+
+&lt;source lang=&quot;dos&quot;&gt;
+edlin &lt; script
+&lt;/source&gt;
+
+===FreeDOS Edlin===
+A [[GNU General Public License|GPL]]-licensed [[clone (computer science)|clone]] of Edlin that includes long filename support is available for download as part of the [[FreeDOS]] project. This runs on operating systems such as [[Linux]] or [[Unix]] as well as MS-DOS.&lt;ref&gt;[http://sourceforge.net/projects/freedos-edlin FreeDOS Edlin]&lt;/ref&gt;
+
+==See also==
+*[[List of DOS commands]]
+*[[ed (text editor)|ed]] and [[ex (text editor)|ex]], similar [[Unix]] line editors. 
+*[[86-DOS]]
+
+==References==
+{{Reflist}}
+
+==External links==
+{{Wikibooks|Guide to Windows Commands}}
+*[https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-xp/bb490632(v=technet.10) Edlin | Microsoft Docs]
+*[http://www.computerhope.com/edlin.htm MS-DOS edlin command help]
+*[https://github.com/microsoft/MS-DOS/blob/master/v2.0/source/EDLIN.ASM Open source EDLIN implementation that comes with MS-DOS v2.0]
+
+{{Windows commands}}
+
+[[Category:1980 software]]
+[[Category:Console applications]]
+[[Category:DOS text editors]]
+[[Category:Line editor]]
+[[Category:OS/2 commands]]
+[[Category:Microsoft free software]]
+[[Category:Windows components]]
+[[Category:Windows text editors]]</text>
+      <sha1>9eixu2ppbpyj4iausfc59z4hy745tgs</sha1>
+    </revision>
+  </page>

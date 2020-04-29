@@ -1,0 +1,315 @@
+  <page>
+    <title>Rendering (computer graphics)</title>
+    <ns>0</ns>
+    <id>6604</id>
+    <revision>
+      <id>941067324</id>
+      <parentid>941067298</parentid>
+      <timestamp>2020-02-16T11:43:11Z</timestamp>
+      <contributor>
+        <username>MrOllie</username>
+        <id>6908984</id>
+      </contributor>
+      <comment>/* Visual perception */ rm namedropping</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{About||3-dimensional rendering|3D rendering|rendering of HTML|browser engine}}
+{{short description|Process of generating an image from a model}}
+[[File:Render Types.png|thumb|A variety of rendering techniques applied to a single 3D scene]]
+[[Image:Glasses 800 edit.png|thumb|An image created by using [[POV-Ray]] 3.6]]
+&lt;!-- Deleted image removed: [[Image:CNC Rotary Table edit.png|thumb|UCAM CNC Rotary Table rendered image created by using [[Solidworks]] 2012]] --&gt;
+'''Rendering''' or '''image synthesis''' is the automatic process of generating a [[physically-based rendering|photorealistic]] or [[Non-photorealistic rendering|non-photorealistic]] image from a [[2D model|2D]] or [[3D model]] (or models in what collectively could be called a ''scene'' file) by means of [[computer program]]s. Also, the results of displaying such a model can be called a '''render'''. A scene file contains objects in a strictly defined language or [[data structure]]; it would contain geometry, viewpoint, [[texture mapping|texture]], [[computer graphics lighting|lighting]], and [[shading]] information as a description of the virtual scene. The data contained in the scene file is then passed to a rendering program to be processed and output to a [[digital image]] or [[raster graphics]] image file. The term &quot;rendering&quot; may be by analogy with an &quot;artist's rendering&quot; of a scene.
+
+Though the technical details of rendering methods vary, the general challenges to overcome in producing a 2D image from a 3D representation stored in a scene file are outlined as the [[graphics pipeline]] along a rendering device, such as a [[Graphics processing unit|GPU]]. A GPU is a purpose-built device able to assist a [[Central processing unit|CPU]] in performing complex rendering calculations. If a scene is to look relatively realistic and predictable under virtual lighting, the rendering software should solve the [[rendering equation]]. The rendering equation doesn't account for all lighting phenomena, but is a general lighting model for computer-generated imagery. 'Rendering' is also used to describe the process of calculating effects in a video editing program to produce final video output.
+
+Rendering is one of the major sub-topics of [[3D computer graphics]], and in practice is always connected to the others. In the [[graphics pipeline]], it is the last major step, giving the final appearance to the models and animation. With the increasing sophistication of computer graphics since the 1970s, it has become a more distinct subject.
+
+Rendering has uses in [[Architectural rendering|architecture]], [[video game]]s, [[simulation|simulators]], [[film|movie]] or TV [[visual effects]], and design visualization, each employing a different balance of features and techniques. As a product, a wide variety of renderers are available. Some are integrated into larger modeling and animation packages, some are stand-alone, some are free open-source projects. On the inside, a renderer is a carefully engineered program, based on a selective mixture of disciplines related to: [[optics|light physics]], [[visual system|visual perception]], [[mathematics]], and [[software engineering|software development]].
+
+In the case of 3D graphics, rendering may be done slowly, as in [[pre-rendered|pre-rendering]], or in realtime.  Pre-rendering is a computationally intensive process that is typically used for movie creation, while [[Real-time computer graphics|real-time]] rendering is often done for 3D video games which rely on the use of graphics cards with 3D [[hardware accelerators]].
+
+== Usage ==
+When the pre-image (a [[wireframe model|wireframe]] sketch usually) is complete, rendering is used, which adds in [[bitmap textures]] or [[procedural textures]], lights, [[bump mapping]] and relative position to other objects. The result is a completed image the consumer or intended viewer sees.
+
+For movie animations, several images (frames) must be rendered, and stitched together in a program capable of making an animation of this sort. Most 3D image editing programs can do this.
+
+== Features ==
+A rendered image can be understood in terms of a number of visible features. Rendering [[research and development]] has been largely motivated by finding ways to simulate these efficiently. Some relate directly to particular algorithms and techniques, while others are produced together.
+
+* [[Shading]]{{snd}} how the color and brightness of a surface varies with lighting
+* [[Texture mapping|Texture-mapping]]{{snd}} a method of applying detail to surfaces
+* [[Bump mapping|Bump-mapping]]{{snd}} a method of simulating small-scale bumpiness on surfaces
+* [[Distance fog|Fogging/participating medium]]{{snd}} how light dims when passing through non-clear atmosphere or air
+* [[Shadow]]s{{snd}} the effect of obstructing light
+* [[Soft shadows]]{{snd}} varying darkness caused by partially obscured light sources
+* [[Reflection (computer graphics)|Reflection]]{{snd}} mirror-like or highly glossy reflection
+* [[Transparency (optics)]], [[transparency (graphic)]] or [[Opacity (optics)|opacity]]{{snd}} sharp transmission of light through solid objects
+* [[Translucency]]{{snd}} highly scattered transmission of light through solid objects
+* [[Refraction]]{{snd}} bending of light associated with transparency
+* [[Diffraction]]{{snd}} bending, spreading, and interference of light passing by an object or aperture that disrupts the ray
+* [[Global illumination|Indirect illumination]]{{snd}} surfaces illuminated by light reflected off other surfaces, rather than directly from a light source (also known as global illumination)
+* [[Caustic (optics)|Caustics]] (a form of indirect illumination){{snd}} reflection of light off a shiny object, or focusing of light through a transparent object, to produce bright highlights on another object
+* [[Depth of field]]{{snd}} objects appear blurry or out of focus when too far in front of or behind the object in focus
+* [[Motion blur]]{{snd}} objects appear blurry due to high-speed motion, or the motion of the camera
+* [[Non-photorealistic rendering]]{{snd}} rendering of scenes in an artistic style, intended to look like a painting or drawing
+
+== Techniques ==
+Many rendering '''{{visible anchor|algorithms}}''' have been researched, and software used for rendering may employ a number of different techniques to obtain a final image.
+
+[[Vectorization (image tracing)|Tracing]] every [[photon|particle of light]] in a scene is nearly always completely impractical and would take a stupendous amount of time. Even tracing a portion large enough to produce an image takes an inordinate amount of time if the sampling is not intelligently restricted.
+
+Therefore, a few loose families of more-efficient light transport modelling techniques have emerged:
+* [[rasterization]], including [[scanline rendering]], geometrically projects objects in the scene to an image plane, without advanced optical effects;
+* [[ray casting]] considers the scene as observed from a specific point of view, calculating the observed image based only on geometry and very basic optical laws of reflection intensity, and perhaps using [[Monte Carlo method|Monte Carlo]] techniques to reduce artifacts;
+* [[Ray tracing (graphics)|ray tracing]] is similar to ray casting, but employs more advanced optical simulation, and usually uses Monte Carlo techniques to obtain more realistic results at a speed that is often orders of magnitude faster.
+The fourth type of light transport technique, [[Radiosity (computer graphics)|radiosity]] is not usually implemented as a rendering technique, but instead calculates the passage of light as it leaves the light source and illuminates surfaces. These surfaces are usually rendered to the display using one of the other three techniques.
+
+Most advanced software combines two or more of the techniques to obtain good-enough results at reasonable cost.
+
+Another distinction is between [[Image and object order rendering|image order]] algorithms, which iterate over pixels of the image plane, and [[Image and object order rendering|object order]] algorithms, which iterate over objects in the scene. Generally object order is more efficient, as there are usually fewer objects in a scene than pixels.
+
+=== {{Anchor|Rasterisation}}Scanline rendering and rasterisation ===
+{{main|Rasterisation}}
+[[File:Latest Rendering of the E-ELT.jpg|thumb|Rendering of the [[European Extremely Large Telescope]].]]
+
+A high-level representation of an image necessarily contains elements in a different domain from pixels.  These elements are referred to as [[Primitives (computer graphics)|{{visible anchor|primitive}}s]].  In a schematic drawing, for instance, line segments and curves might be primitives.  In a graphical user interface, windows and buttons might be the primitives.  In rendering of 3D models, triangles and polygons in space might be primitives.
+
+If a pixel-by-pixel (image order) approach to rendering is impractical or too slow for some task, then a primitive-by-primitive (object order) approach to rendering may prove useful.  Here, one loops through each of the primitives, determines which pixels in the image it affects, and modifies those pixels accordingly.  This is called '''rasterization''', and is the rendering method used by all current [[graphics card]]s.
+
+Rasterization is frequently faster than pixel-by-pixel rendering.  First, large areas of the image may be empty of primitives; rasterization will ignore these areas, but pixel-by-pixel rendering must pass through them.  Second, rasterization can improve [[cache coherency]] and reduce redundant work by taking advantage of the fact that the pixels occupied by a single primitive tend to be contiguous in the image.  For these reasons, rasterization is usually the approach of choice when [[interactivity|interactive]] rendering is required; however, the pixel-by-pixel approach can often produce higher-quality images and is more versatile because it does not depend on as many assumptions about the image as rasterization.
+
+The older form of rasterization is characterized by rendering an entire face (primitive) as a single color.  Alternatively, rasterization can be done in a more complicated manner by first rendering the vertices of a face and then rendering the pixels of that face as a blending of the vertex colors.  This version of rasterization has overtaken the old method as it allows the graphics to flow without complicated textures (a rasterized image when used face by face tends to have a very block-like effect if not covered in complex textures; the faces are not smooth because there is no gradual color change from one primitive to the next).  This newer method of rasterization utilizes the graphics card's more taxing shading functions and still achieves better performance because the simpler textures stored in memory use less space. Sometimes designers will use one rasterization method on some faces and the other method on others based on the angle at which that face meets other joined faces, thus increasing speed and not hurting the overall effect.
+
+=== Ray casting ===
+{{Main|Ray casting}}
+{{Unreferenced section|date=May 2010}}
+In '''ray casting''' the geometry which has been modeled is parsed pixel by pixel, line by line, from the point of view outward, as if casting rays out from the point of view. Where an object is intersected, the color value at the point may be evaluated using several methods. In the simplest, the color value of the object at the point of intersection becomes the value of that pixel. The color may be determined from a [[texture mapping|texture-map]]. A more sophisticated method is to modify the colour value by an illumination factor, but without calculating the relationship to a simulated light source. To reduce artifacts, a number of rays in slightly different directions may be averaged.
+
+Ray casting involves calculating the &quot;view direction&quot; (from camera position), and incrementally following along that &quot;ray cast&quot; through &quot;solid 3d objects&quot; in the scene, while accumulating the resulting value from each point in 3D space.  This is related and similar to &quot;ray tracing&quot; except that the raycast is usually not &quot;bounced&quot; off surfaces (where the &quot;ray tracing&quot; indicates that it is tracing out the lights path including bounces). &quot;Ray casting&quot; implies that the light ray is following a straight path (which may include travelling through semi-transparent objects).  The ray cast is a vector that can originate from the camera or from the scene endpoint (&quot;back to front&quot;, or &quot;front to back&quot;).  Sometimes the final light value is a derived from a &quot;transfer function&quot; and sometimes it's used directly.
+
+Rough simulations of optical properties may be additionally employed: a simple calculation of the ray from the object to the point of view is made. Another calculation is made of the angle of incidence of light rays from the light source(s), and from these as well as the specified intensities of the light sources, the value of the pixel is calculated. Another simulation uses illumination plotted from a radiosity algorithm, or a combination of these two.
+
+=== Ray tracing ===
+[[Image:SpiralSphereAndJuliaDetail1.jpg|thumb|250px|''Spiral Sphere and Julia, Detail'', a computer-generated image created by visual artist Robert W. McGregor using only [[POV-Ray]] 3.6 and its built-in scene description language.]]
+{{Main|Ray tracing (graphics)}}
+'''Ray tracing''' aims to simulate the natural flow of light, interpreted as particles. Often, ray tracing methods are utilized to approximate the solution to the [[rendering equation]] by applying [[Monte Carlo methods]] to it. Some of the most used methods are [[path tracing]], [[path tracing#Bidirectional path tracing|bidirectional path tracing]], or [[Metropolis light transport]], but also semi realistic methods are in use, like [[Whitted Style Ray Tracing]], or hybrids. While most implementations let light propagate on straight lines, applications exist to simulate relativistic spacetime effects.&lt;ref&gt;{{cite journal | citeseerx = 10.1.1.56.830 | title = Relativistic Ray-Tracing: Simulating the Visual Appearance of Rapidly Moving Objects | year = 1995 }}&lt;/ref&gt;
+
+In a final, production quality rendering of a ray traced work, multiple rays are generally shot for each pixel, and traced not just to the first object of intersection, but rather, through a number of sequential 'bounces', using the known laws of optics such as &quot;angle of incidence equals angle of reflection&quot; and more advanced laws that deal with refraction and surface roughness.
+
+Once the ray either encounters a light source, or more probably once a set limiting number of bounces has been evaluated, then the surface illumination at that final point is evaluated using techniques described above, and the changes along the way through the various bounces evaluated to estimate a value observed at the point of view. This is all repeated for each sample, for each pixel.
+
+In [[distribution ray tracing]], at each point of intersection, multiple rays may be spawned. In [[path tracing]], however, only a single ray or none is fired at each intersection, utilizing the statistical nature of [[Monte Carlo methods|Monte Carlo]] experiments.
+
+As a brute-force method, ray tracing has been too slow to consider for real-time, and until recently too slow even to consider for short films of any degree of quality, although it has been used for special effects sequences, and in advertising, where a short portion of high quality (perhaps even [[photorealism|photorealistic]]) footage is required.
+
+However, efforts at optimizing to reduce the number of calculations needed in portions of a work where detail is not high or does not depend on ray tracing features have led to a realistic possibility of wider use of ray tracing. There is now some hardware accelerated ray tracing equipment, at least in prototype phase, and some game demos which show use of real-time software or hardware ray tracing.
+
+== Radiosity ==
+{{Main|Radiosity (computer graphics)}}
+'''Radiosity''' is a method which attempts to simulate the way in which directly illuminated surfaces act as indirect light sources that illuminate other surfaces.  This produces more realistic shading and seems to better capture the '[[Shading#Ambient lighting|ambience]]' of an indoor scene. A classic example is the way that shadows 'hug' the corners of rooms.
+
+The optical basis of the simulation is that some diffused light from a given point on a given surface is reflected in a large spectrum of directions and illuminates the area around it.
+
+The simulation technique may vary in complexity. Many renderings have a very rough estimate of radiosity, simply illuminating an entire scene very slightly with a factor known as ambiance. However, when advanced radiosity estimation is coupled with a high quality ray tracing algorithm, images may exhibit convincing realism, particularly for indoor scenes.
+
+In advanced radiosity simulation, recursive, finite-element algorithms 'bounce' light back and forth between surfaces in the model, until some recursion limit is reached. The colouring of one surface in this way influences the colouring of a neighbouring surface, and vice versa. The resulting values of illumination throughout the model (sometimes including for empty spaces) are stored and used as additional inputs when performing calculations in a ray-casting or ray-tracing model.
+
+Due to the iterative/recursive nature of the technique, complex objects are particularly slow to emulate. Prior to the standardization of rapid radiosity calculation, some [[digital artists]] used a technique referred to loosely as [[false radiosity]] by darkening areas of texture maps corresponding to corners, joints and recesses, and applying them via self-illumination or diffuse mapping for scanline rendering. Even now, advanced radiosity calculations may be reserved for calculating the ambiance of the room, from the light reflecting off walls, floor and ceiling, without examining the contribution that complex objects make to the radiosity—or complex objects may be replaced in the radiosity calculation with simpler objects of similar size and texture.
+
+Radiosity calculations are viewpoint independent which increases the computations involved, but makes them useful for all viewpoints. If there is little rearrangement of radiosity objects in the scene, the same radiosity data may be reused for a number of frames, making radiosity an effective way to improve on the flatness of ray casting, without seriously impacting the overall rendering time-per-frame.
+
+Because of this, radiosity is a prime component of leading real-time rendering methods, and has been used from beginning-to-end to create a large number of well-known recent feature-length animated 3D-cartoon films.
+
+== Sampling and filtering ==
+One problem that any rendering system must deal with, no matter which approach it takes, is the '''sampling problem'''.  Essentially, the rendering process tries to depict a [[continuous function]] from image space to colors by using a finite number of pixels.  As a consequence of the [[Nyquist–Shannon sampling theorem]] (or Kotelnikov theorem), any spatial waveform that can be displayed must consist of at least two pixels, which is proportional to [[image resolution]].  In simpler terms, this expresses the idea that an image cannot display details, peaks or troughs in color or intensity, that are smaller than one pixel.
+
+If a naive rendering algorithm is used without any filtering, high frequencies in the image function will cause ugly [[aliasing]] to be present in the final image.  Aliasing typically manifests itself as [[jaggies]], or jagged edges on objects where the pixel grid is visible.  In order to remove aliasing, all rendering algorithms (if they are to produce good-looking images) must use some kind of [[low-pass filter]] on the image function to remove high frequencies, a process called [[Spatial anti-aliasing|antialiasing]].
+
+== Optimization ==
+
+Due to the large number of calculations, a work in progress is usually only rendered in detail appropriate to the portion of the work being developed at a given time, so in the initial stages of modeling, wireframe and ray casting may be used, even where the target output is ray tracing with radiosity. It is also common to render only parts of the scene at high detail, and to remove objects that are not important to what is currently being developed.
+
+For real-time, it is appropriate to simplify one or more common approximations, and tune to the exact parameters of the scenery in question, which is also tuned to the agreed parameters to get the most 'bang for the buck'.
+
+== Academic core ==
+{{Main|Unbiased rendering}}
+
+The implementation of a realistic renderer always has some basic element of physical simulation or emulation &amp;mdash; some computation which resembles or abstracts a real physical process.
+
+The term &quot;''[[physically based rendering|physically based]]''&quot; indicates the use of physical models and approximations that are more general and widely accepted outside rendering. A particular set of related techniques have gradually become established in the rendering community.
+
+The basic concepts are moderately straightforward, but intractable to calculate; and a single elegant algorithm or approach has been elusive for more general purpose renderers. In order to meet demands of robustness, accuracy and practicality, an implementation will be a complex combination of different techniques.
+
+Rendering research is concerned with both the adaptation of scientific models and their efficient application.
+
+=== The rendering equation ===
+{{Main|Rendering equation}}
+
+This is the key academic/theoretical concept in rendering. It serves as the most abstract formal expression of the non-perceptual aspect of rendering. All more complete algorithms can be seen as solutions to particular formulations of this equation.
+
+: &lt;math&gt;L_o(x, \vec w) = L_e(x, \vec w) + \int_\Omega f_r(x, \vec w', \vec w) L_i(x, \vec w') (\vec w' \cdot \vec n) \mathrm{d}\vec w'&lt;/math&gt;
+Meaning: at a particular position and direction, the outgoing light (L&lt;sub&gt;o&lt;/sub&gt;) is the sum of the emitted light (L&lt;sub&gt;e&lt;/sub&gt;) and the reflected light. The reflected light being the sum of the incoming light (L&lt;sub&gt;i&lt;/sub&gt;) from all directions, multiplied by the surface reflection and incoming angle. By connecting outward light to inward light, via an interaction point, this equation stands for the whole 'light transport' &amp;mdash; all the movement of light — in a scene.
+
+=== The bidirectional reflectance distribution function ===
+The '''[[bidirectional reflectance distribution function]]''' (BRDF) expresses a simple model of light interaction with a surface as follows:
+
+: &lt;math&gt;f_r(x, \vec w', \vec w) = \frac{\mathrm{d}L_r(x, \vec w)}{L_i(x, \vec w')(\vec w' \cdot \vec n) \mathrm{d}\vec w'}&lt;/math&gt;
+
+Light interaction is often approximated by the even simpler models: diffuse reflection and specular reflection, although both can ALSO be BRDFs.
+
+=== Geometric optics ===
+Rendering is practically exclusively concerned with the particle aspect of light physics &amp;mdash; known as [[geometrical optics]]. Treating light, at its basic level, as particles bouncing around is a simplification, but appropriate: the wave aspects of light are negligible in most scenes, and are significantly more difficult to simulate. Notable wave aspect phenomena include diffraction (as seen in the colours of [[Compact disc|CDs]] and [[DVD]]s) and polarisation (as seen in [[Liquid-crystal display|LCDs]]). Both types of effect, if needed, are made by appearance-oriented adjustment of the reflection model.
+
+=== Visual perception ===
+Though it receives less attention, an understanding of [[human visual perception]] is valuable to rendering. This is mainly because image displays and human perception have restricted ranges. A renderer can simulate an almost infinite range of light brightness and color, but current displays &amp;mdash; movie screen, computer monitor, etc. &amp;mdash; cannot handle so much, and something must be discarded or compressed. Human perception also has limits, and so does not need to be given large-range images to create realism. This can help solve the problem of fitting images into displays, and, furthermore, suggest what short-cuts could be used in the rendering simulation, since certain subtleties won't be noticeable. This related subject is [[tone mapping]].
+
+Mathematics used in rendering includes: [[linear algebra]], [[calculus]], [[numerical analysis|numerical mathematics]], [[digital signal processing|signal processing]], and [[Monte Carlo methods]].
+
+Rendering for movies often takes place on a network of tightly connected computers known as a [[render farm]].
+
+The current{{when|date=February 2014}} state of the art in 3-D image description for movie creation is the [[Mental Ray|mental ray]] [[scene description language]] designed at [[Mental Images|mental images]] and [[RenderMan Shading Language]] designed at [[Pixar]].&lt;ref&gt;{{cite book|chapter-url=http://dl.acm.org/citation.cfm?id=1185657.1185817|chapter=A brief introduction to RenderMan|first=Saty|last=Raghavachary|date=30 July 2006|publisher=ACM|pages=2|accessdate=7 May 2018|via=dl.acm.org|doi=10.1145/1185657.1185817|title=ACM SIGGRAPH 2006 Courses on - SIGGRAPH '06|isbn=978-1595933645}}&lt;/ref&gt; (compare with simpler 3D fileformats such as [[VRML]] or [[application programming interface|APIs]] such as [[OpenGL]] and [[DirectX]] tailored for 3D hardware accelerators).
+
+Other renderers (including proprietary ones) can and are sometimes used, but most other renderers tend to miss one or more of the often needed features like good texture filtering, texture caching, programmable shaders, highend geometry types like hair, subdivision or nurbs surfaces with tesselation on demand, geometry caching, raytracing with geometry caching, high quality [[shadow mapping]], speed or patent-free implementations.  Other highly sought features these days may include interactive [[photorealistic rendering]]&amp;nbsp;(IPR) and hardware rendering/shading.
+
+== Chronology of important published ideas ==
+[[File:ESTCube orbiidil 2.jpg|thumb|Rendering of an [[ESTCube-1]] satellite]]
+
+{{Div col|colwidth=25em}}
+* 1968 ''[[Ray casting]]''&lt;ref&gt;{{cite conference | authorlink = Arthur Appel | last = Appel | first = A. | year = 1968 | url = http://graphics.stanford.edu/courses/Appel.pdf | title = Some techniques for shading machine renderings of solids | booktitle = Proceedings of the Spring Joint Computer Conference | volume = 32 | pages = 37–49 | url-status = live | archiveurl = https://web.archive.org/web/20120313214110/http://graphics.stanford.edu/courses/Appel.pdf | archivedate = 2012-03-13 }}&lt;/ref&gt;
+* 1970 ''[[Scanline rendering]]''&lt;ref&gt;{{cite journal | authorlink = W. Jack Bouknight | last = Bouknight | first = W. J. | year = 1970 | title = A procedure for generation of three-dimensional half-tone computer graphics presentations | journal = Communications of the ACM | volume = 13 | issue = 9 | pages = 527–536 | doi = 10.1145/362736.362739 }}&lt;/ref&gt;
+* 1971 ''[[Gouraud shading]]''&lt;ref&gt;{{cite journal | authorlink = Henri Gouraud (computer scientist) | last = Gouraud | first = H. | year = 1971 | url = http://www.cs.uiowa.edu/~cwyman/classes/spring05-22C251/papers/ContinuousShadingOfCurvedSurfaces.pdf | title = Continuous shading of curved surfaces | journal = IEEE Transactions on Computers | volume = 20 | issue = 6 | pages = 623–629 | doi = 10.1109/t-c.1971.223313 | url-status = dead | archiveurl = https://web.archive.org/web/20100702012343/http://www.cs.uiowa.edu/~cwyman/classes/spring05-22C251/papers/ContinuousShadingOfCurvedSurfaces.pdf | archivedate = 2010-07-02 }}&lt;/ref&gt;
+* 1973 ''[[Phong shading]]''&lt;ref name=phong&gt;University of Utah School of Computing, http://www.cs.utah.edu/school/history/#phong-ref {{webarchive|url=https://web.archive.org/web/20130903012748/http://www.cs.utah.edu/school/history/ |date=2013-09-03 }}&lt;/ref&gt;&lt;ref&gt;{{cite journal | authorlink = Bui Tuong Phong | last = Phong | first = B-T | year = 1975 | url = http://jesper.kalliope.org/blog/library/p311-phong.pdf | title = Illumination for computer generated pictures | journal = Communications of the ACM | volume = 18 | issue = 6 | pages = 311–316 | doi = 10.1145/360825.360839 | url-status = dead | archiveurl = https://web.archive.org/web/20120327165141/http://jesper.kalliope.org/blog/library/p311-phong.pdf | archivedate = 2012-03-27 | citeseerx = 10.1.1.330.4718 }}&lt;/ref&gt;
+* 1973 ''[[Phong reflection model|Phong reflection]]''&lt;ref name=phong/&gt;
+* 1973 ''[[Diffuse reflection]]''&lt;ref&gt;Bui Tuong Phong, [http://www.cs.northwestern.edu/~ago820/cs395/Papers/Phong_1975.pdf Illumination for computer generated pictures] {{webarchive|url=https://web.archive.org/web/20160320142825/http://www.cs.northwestern.edu/~ago820/cs395/Papers/Phong_1975.pdf |date=2016-03-20 }}, Communications of ACM 18 (1975), no. 6, 311–317.&lt;/ref&gt;
+* 1973 ''[[Specular highlight]]''&lt;ref name=phong/&gt;
+* 1973 ''[[Specular reflection]]''&lt;ref name=phong/&gt;
+* 1974 ''[[Sprite (computer graphics)|Sprites]]''&lt;ref name=vintage3d&gt;{{cite web|url=http://vintage3d.org/history.php|title=The way to home 3d|last=Putas|website=vintage3d.org|accessdate=7 May 2018|url-status=live|archiveurl=https://web.archive.org/web/20171215001253/http://vintage3d.org/history.php|archivedate=15 December 2017}}&lt;/ref&gt;
+* 1974 ''[[Scrolling]]''&lt;ref name=vintage3d/&gt;
+* 1974 ''[[Texture mapping]]''&lt;ref name=&quot;Catmull thesis&quot;&gt;{{cite thesis | authorlink = Edwin Catmull | last = Catmull | first = E. | year = 1974 | url = http://www.pixartouchbook.com/storage/catmull_thesis.pdf | title = A subdivision algorithm for computer display of curved surfaces | degree = PhD | publisher = University of Utah | url-status = live | archiveurl = https://web.archive.org/web/20141114173944/http://www.pixartouchbook.com/storage/catmull_thesis.pdf | archivedate = 2014-11-14 }}&lt;/ref&gt;
+* 1974 ''[[Z-buffering]]''&lt;ref name=&quot;Catmull thesis&quot;/&gt;
+* 1976 ''[[Environment mapping]]''&lt;ref&gt;{{cite journal | authorlink1 = James F. Blinn | last1 = Blinn | first1 = J.F. | authorlink2 = M. E. Newell | last2 = Newell | first2 = M.E. | year = 1976 | citeseerx = 10.1.1.87.8903 | title = Texture and reflection in computer generated images | journal = Communications of the ACM | volume = 19 | issue = 10 | pages = 542–546 | doi=10.1145/360349.360353}}&lt;/ref&gt;
+* 1977 ''[[Blinn-Phong shading model|Blinn shading]]''&lt;ref&gt;{{cite journal|title=Models of light reflection for computer synthesized pictures|first=James F.|last=Blinn|date=20 July 1977|journal=ACM SIGGRAPH Computer Graphics|volume=11|issue=2|pages=192–198|via=dl.acm.org|doi=10.1145/965141.563893}}&lt;/ref&gt;
+* 1977 ''[[Side-scrolling video game|Side-scrolling]]''&lt;ref&gt;{{cite web|url=http://www.arcade-museum.com/game_detail.php?game_id=12797|title=Bomber - Videogame by Sega|author=|date=|website=www.arcade-museum.com|accessdate=7 May 2018}}&lt;/ref&gt;
+* 1977 ''[[Shadow volume]]s''&lt;ref&gt;{{cite conference | authorlink = Franklin C. Crow | last = Crow | first = F.C. | year = 1977 | url = http://design.osu.edu/carlson/history/PDFs/crow-shadows.pdf | title = Shadow algorithms for computer graphics | booktitle = Computer Graphics (Proceedings of SIGGRAPH 1977) | volume = 11 | issue = 2 | pages = 242–248 | url-status = dead | archiveurl = https://web.archive.org/web/20120113074712/https://design.osu.edu/carlson/history/PDFs/crow-shadows.pdf | archivedate = 2012-01-13 | access-date = 2011-07-15 }}&lt;/ref&gt;
+* 1978 ''[[Shadow mapping]]''&lt;ref&gt;{{cite conference | authorlink = Lance Williams (graphics researcher) | last = Williams | first = L. | year = 1978 | citeseerx = 10.1.1.134.8225 | title =  Casting curved shadows on curved surfaces | booktitle = Computer Graphics (Proceedings of SIGGRAPH 1978) | volume = 12 | issue = 3 | pages = 270–274 }}&lt;/ref&gt;
+* 1978 ''[[Bump mapping]]''&lt;ref&gt;{{cite conference | authorlink = James F. Blinn | last = Blinn | first = J.F. | year = 1978 | url = http://research.microsoft.com/pubs/73939/p286-blinn.pdf | title = Simulation of wrinkled surfaces | conference = Computer Graphics (Proceedings of SIGGRAPH 1978) | volume = 12 | issue = 3 | pages = 286–292 | url-status = live | archiveurl = https://web.archive.org/web/20120121143525/http://research.microsoft.com/pubs/73939/p286-blinn.pdf | archivedate = 2012-01-21 }}&lt;/ref&gt;
+* 1979 ''[[Tile engine|Tile map]]''&lt;ref&gt;{{cite book|url=https://books.google.com/books?id=oK3D4i5ldKgC&amp;pg=PA173|title=Before the Crash: Early Video Game History|first=Mark J. P.|last=Wolf|date=15 June 2012|publisher=Wayne State University Press|accessdate=7 May 2018|via=Google Books|isbn=978-0814337226}}&lt;/ref&gt;
+* 1980 ''[[BSP trees]]''&lt;ref&gt;{{cite conference | authorlink1 = Henry Fuchs | last1 = Fuchs | first1 = H. | authorlink2 = Zvi M. Kedem | last2 = Kedem | first2 = Z.M. | authorlink3 = Bruce F. Naylor | last3 = Naylor | first3 = B.F. | year = 1980 | citeseerx = 10.1.1.112.4406 | title = On visible surface generation by a priori tree structures  | conference = Computer Graphics (Proceedings of SIGGRAPH 1980) | volume = 14 | issue = 3 | pages = 124–133 }}&lt;/ref&gt;
+* 1980 ''[[Ray tracing (graphics)|Ray tracing]]''&lt;ref&gt;{{cite journal | authorlink = Turner Whitted | last = Whitted | first = T. | year = 1980 | citeseerx = 10.1.1.114.7629 | title = An improved illumination model for shaded display | journal = Communications of the ACM | volume = 23 | issue = 6 | pages = 343–349 | doi=10.1145/358876.358882}}&lt;/ref&gt;
+* 1981 ''[[Parallax scrolling]]''&lt;ref&gt;{{cite web|url=https://books.google.com/books?id=lB4PAwAAQBAJ&amp;pg=PA181|title=Games vs. Hardware. The History of PC video games: The 80's|first=Bogdan Ion|last=Purcaru|date=13 March 2014|publisher=Purcaru Ion Bogdan|accessdate=7 May 2018|via=Google Books}}&lt;/ref&gt;
+* 1981 ''[[2.5D#Scaling along the Z axis|Sprite zooming]]''&lt;ref&gt;{{cite web|url=http://www.system16.com/hardware.php?id=690|title=System 16 - Sega VCO Object Hardware (Sega)|website=www.system16.com|accessdate=7 May 2018|url-status=live|archiveurl=https://web.archive.org/web/20160405061411/http://www.system16.com/hardware.php?id=690|archivedate=5 April 2016}}&lt;/ref&gt;
+* 1981 ''Cook shader''&lt;ref&gt;{{cite conference | authorlink1 = Robert L. Cook | last1 = Cook | first1 = R.L. | authorlink2 = Kenneth E. Torrance | last2 = Torrance | first2 = K.E. | year = 1981 | citeseerx = 10.1.1.88.7796 | title = A reflectance model for computer graphics | conference = Computer Graphics (Proceedings of SIGGRAPH 1981) | volume = 15 | issue = 3 | pages = 307–316 }}&lt;/ref&gt;
+* 1983 ''[[Mipmap|MIP maps]]''&lt;ref&gt;{{cite conference | authorlink = Lance Williams (graphics researcher) | last = Williams | first = L. | year = 1983 | citeseerx = 10.1.1.163.6298 | title = Pyramidal parametrics | conference = Computer Graphics (Proceedings of SIGGRAPH 1983) | volume = 17 | issue = 3 | pages = 1–11 }}&lt;/ref&gt;
+* 1984 ''[[Octree]] ray tracing''&lt;ref&gt;{{cite journal | authorlink = Andrew Glassner | last = Glassner | first = A.S. | year = 1984 | title = Space subdivision for fast ray tracing | journal = IEEE Computer Graphics &amp; Applications | volume = 4 | issue = 10 | pages = 15–22 | doi=10.1109/mcg.1984.6429331}}&lt;/ref&gt;
+* 1984 ''[[Alpha compositing]]''&lt;ref&gt;{{cite conference | last1 = Porter | first1 = T. | authorlink2 = Tom Duff | last2 = Duff | first2 = T. | year = 1984 | url = http://keithp.com/~keithp/porterduff/p253-porter.pdf | title = Compositing digital images | conference = Computer Graphics (Proceedings of SIGGRAPH 1984) | volume = 18 | issue = 3 | pages = 253–259 | url-status = live | archiveurl = https://web.archive.org/web/20150216062332/http://keithp.com/~keithp/porterduff/p253-porter.pdf | archivedate = 2015-02-16 }}&lt;/ref&gt;
+* 1984 ''[[Distributed ray tracing]]''&lt;ref&gt;{{cite conference | authorlink1 = Robert L. Cook | last1 = Cook | first1 = R.L. | authorlink2 =  | last2 = Porter | first2 = T. | authorlink3 = Loren Carpenter | last3 = Carpenter | first3 = L. | year = 1984 | url = http://www.cs.rutgers.edu/~nealen/teaching/cs428_fall09/readings/cook84.pdf | title = Distributed ray tracing | conference = Computer Graphics (Proceedings of SIGGRAPH 1984) | volume = 18 | issue = 3 | pages = 137–145 }}{{dead link|date=April 2018 |bot=InternetArchiveBot |fix-attempted=yes }}&lt;/ref&gt;
+* 1984 ''[[Radiosity (computer graphics)|Radiosity]]''&lt;ref&gt;{{cite conference | authorlink = Cindy M. Goral | last1 = Goral | first1 = C. | authorlink2 = Kenneth E. Torrance | last2 = Torrance | first2 = K.E. | authorlink3 = Donald P. Greenberg | last3 = Greenberg | first3 = D.P. | authorlink4 = Bennett Battaile | last4 = Battaile | first4 = B. | year = 1984 | citeseerx = 10.1.1.112.356 | title = Modeling the interaction of light between diffuse surfaces | conference = Computer Graphics (Proceedings of SIGGRAPH 1984) | volume = 18 | issue = 3 | pages = 213–222 }}&lt;/ref&gt;
+* 1985 ''[[Parallax scrolling#Raster method|Row/column scrolling]]''&lt;ref&gt;{{cite web |url=http://cgfm2.emuviews.com/txt/s16tech.txt |title=Archived copy |accessdate=2016-08-08 |url-status=dead |archiveurl=https://web.archive.org/web/20160304034742/http://cgfm2.emuviews.com/txt/s16tech.txt |archivedate=2016-03-04 }}&lt;/ref&gt;
+* 1985 ''[[Hemicube (computer graphics)|Hemicube]] radiosity''&lt;ref&gt;{{cite conference | authorlink = Michael F. Cohen | last1 = Cohen | first1 = M.F. | authorlink2 = Donald P. Greenberg | last2 = Greenberg | first2 = D.P. | year = 1985 | url = http://www.arnetminer.org/dev.do?m=downloadpdf&amp;url=http://arnetminer.org/pdf/PDFFiles2/--g---g-Index1255026826706/The%20hemi-cube%20%20a%20radiosity%20solution%20for%20complex%20environments1255058011060.pdf | title = The hemi-cube: a radiosity solution for complex environments | conference = Computer Graphics (Proceedings of SIGGRAPH 1985) | volume = 19 | issue = 3 | pages = 31–40 | doi = 10.1145/325165.325171 | url-status = live | archiveurl = https://web.archive.org/web/20140424063155/http://arnetminer.org/dev.do?m=downloadpdf&amp;url=http%3A%2F%2Farnetminer.org%2Fpdf%2FPDFFiles2%2F--g---g-Index1255026826706%2FThe%2520hemi-cube%2520%2520a%2520radiosity%2520solution%2520for%2520complex%2520environments1255058011060.pdf | archivedate = 2014-04-24 }}&lt;/ref&gt;
+* 1986 ''Light source tracing''&lt;ref&gt;{{cite conference | authorlink = James Arvo | last = Arvo | first = J. | year = 1986 | citeseerx = 10.1.1.31.581 | title = Backward ray tracing | conference = SIGGRAPH 1986 Developments in Ray Tracing course notes }}&lt;/ref&gt;
+* 1986 ''[[Rendering equation]]''&lt;ref&gt;{{cite conference | authorlink = Jim Kajiya | last = Kajiya | first = J. | year = 1986 | citeseerx = 10.1.1.63.1402 | title = The rendering equation | conference = Computer Graphics (Proceedings of SIGGRAPH 1986) | volume = 20 | issue = 4 | pages = 143–150 }}&lt;/ref&gt;
+* 1987 ''[[Reyes rendering]]''&lt;ref&gt;{{cite conference | authorlink1 = Robert L. Cook | last1 = Cook | first1 = R.L. | authorlink2 = Loren Carpenter | last2 = Carpenter | first2 = L. | authorlink3 = Edwin Catmull | last3 = Catmull | first3 = E. | year = 1987 | url = http://graphics.pixar.com/library/Reyes/paper.pdf | title = The Reyes image rendering architecture | conference = Computer Graphics (Proceedings of SIGGRAPH 1987) | volume = 21 | issue = 4 | pages = 95–102 | url-status = live | archiveurl = https://web.archive.org/web/20110715090353/http://graphics.pixar.com/library/Reyes/paper.pdf | archivedate = 2011-07-15 }}&lt;/ref&gt;
+* 1988 ''[[Depth perception|Depth cue]]''&lt;ref name=s21&gt;{{cite web |url=http://mamedev.org/source/src/mame/drivers/namcos21.c.html |title=Archived copy |accessdate=2014-10-02 |url-status=dead |archiveurl=https://web.archive.org/web/20141003022000/http://mamedev.org/source/src/mame/drivers/namcos21.c.html |archivedate=2014-10-03 }}&lt;/ref&gt;
+* 1988 ''[[Distance fog]]''&lt;ref name=s21/&gt;
+* 1988 ''[[Tiled rendering]]''&lt;ref name=s21/&gt;
+* 1991 ''[[Xiaolin Wu's line algorithm|Xiaolin Wu line anti-aliasing]]''&lt;ref&gt;{{cite book | author=Wu, Xiaolin | url = http://portal.acm.org/citation.cfm?id=122734 | title = An efficient antialiasing technique | journal=[[Computer Graphics]] | date=July 1991 | volume=25 | issue=4 | pages=143–152 | doi = 10.1145/127719.122734 | isbn=978-0-89791-436-9 }}&lt;/ref&gt;&lt;ref&gt;{{cite book | author = Wu, Xiaolin | year = 1991 | chapter = Fast Anti-Aliased Circle Generation | editor = James Arvo| title = Graphics Gems II | pages = 446–450 | location = San Francisco | publisher = Morgan Kaufmann | isbn = 978-0-12-064480-3 }}&lt;/ref&gt;
+* 1991 ''Hierarchical radiosity''&lt;ref&gt;{{cite conference | authorlink1 = Pat Hanrahan | last1 = Hanrahan | first1 = P. | authorlink2 = David Salzman | last2 = Salzman | first2 = D. | authorlink3 = Larry Aupperle | last3 = Aupperle | first3 = L. | year = 1991 | citeseerx = 10.1.1.93.5694 | title = A rapid hierarchical radiosity algorithm | conference = Computer Graphics (Proceedings of SIGGRAPH 1991) | volume = 25 | issue = 4 | pages = 197–206 }}&lt;/ref&gt;
+* 1993 ''[[Texture filtering]]''&lt;ref&gt;{{cite web|url=http://ign.com/articles/2009/04/21/ign-presents-the-history-of-sega?page=8|title=IGN Presents the History of SEGA|date=21 April 2009|website=ign.com|accessdate=7 May 2018|url-status=live|archiveurl=https://web.archive.org/web/20180316075945/http://www.ign.com/articles/2009/04/21/ign-presents-the-history-of-sega?page=8|archivedate=16 March 2018}}&lt;/ref&gt;
+* 1993 ''[[Texture mapping#Perspective correctness|Perspective correction]]''&lt;ref&gt;{{cite web|url=http://www.system16.com/hardware.php?id=713|title=System 16 - Sega Model 2 Hardware (Sega)|website=www.system16.com|accessdate=7 May 2018|url-status=live|archiveurl=https://web.archive.org/web/20101221001009/http://system16.com/hardware.php?id=713|archivedate=21 December 2010}}&lt;/ref&gt;
+* 1993 ''[[Transform, clipping, and lighting]]''&lt;ref name=magic&gt;{{cite web|url=http://www.system16.com/hardware.php?id=832|title=System 16 - Namco Magic Edge Hornet Simulator Hardware (Namco)|website=www.system16.com|accessdate=7 May 2018|url-status=live|archiveurl=https://web.archive.org/web/20140912000953/http://www.system16.com/hardware.php?id=832|archivedate=12 September 2014}}&lt;/ref&gt;
+* 1993 ''[[Shading#Directional lighting|Directional lighting]]''&lt;ref name=magic/&gt;
+* 1993 ''[[Trilinear interpolation]]''&lt;ref name=magic/&gt;
+* 1993 ''[[Z-culling]]''&lt;ref name=magic/&gt;
+* 1993 ''[[Oren–Nayar reflectance model|Oren–Nayar reflectance]]''&lt;ref name=&quot;oren-nayar&quot;&gt;M. Oren and S.K. Nayar, &quot;[http://www1.cs.columbia.edu/CAVE/publications/pdfs/Oren_SIGGRAPH94.pdf Generalization of Lambert's Reflectance Model] {{webarchive|url=https://web.archive.org/web/20100215153120/http://www1.cs.columbia.edu/CAVE/publications/pdfs/Oren_SIGGRAPH94.pdf |date=2010-02-15 }}&quot;. SIGGRAPH. pp.239-246, Jul, 1994&lt;/ref&gt;
+* 1993 ''[[Tone mapping]]''&lt;ref&gt;{{cite journal | authorlink1 = Jack Tumblin | last1 = Tumblin | first1 = J. | authorlink2 = Holly Rushmeier | last2 = Rushmeier | first2 = H.E. | year = 1993 | url = http://smartech.gatech.edu/bitstream/handle/1853/3686/92-31.pdf?sequence=1 | title = Tone reproduction for realistic computer generated images | journal = IEEE Computer Graphics &amp; Applications | volume = 13 | issue = 6 | pages = 42–48 | doi = 10.1109/38.252554 | url-status = live | archiveurl = https://web.archive.org/web/20111208231341/http://smartech.gatech.edu/bitstream/handle/1853/3686/92-31.pdf?sequence=1 | archivedate = 2011-12-08 }}&lt;/ref&gt;
+* 1993 ''[[Subsurface scattering]]''&lt;ref&gt;{{cite conference | authorlink1 = Pat Hanrahan | last1 = Hanrahan | first1 = P. | authorlink2 = Wolfgang Krueger | last2 = Krueger | first2 = W. | year = 1993 | citeseerx = 10.1.1.57.9761 | title = Reflection from layered surfaces due to subsurface scattering | conference = Computer Graphics (Proceedings of SIGGRAPH 1993) | volume = 27 | pages = 165–174 }}&lt;/ref&gt;
+* 1994 ''[[Ambient occlusion]]''&lt;ref&gt;{{cite book|chapter-url=http://dl.acm.org/citation.cfm?id=192161.192244|chapter=Efficient algorithms for local and global accessibility shading|first=Gavin|last=Miller|date=24 July 1994|publisher=ACM|pages=319–326|accessdate=7 May 2018|via=dl.acm.org|doi=10.1145/192161.192244|title=Proceedings of the 21st annual conference on Computer graphics and interactive techniques - SIGGRAPH '94|isbn=978-0897916677}}&lt;/ref&gt;
+* 1995 ''[[Hidden surface determination]]''&lt;ref&gt;{{cite web |url=http://www.hotchips.org/wp-content/uploads/hc_archives/hc07/3_Tue/HC7.S5/HC7.5.1.pdf |title=Archived copy |accessdate=2016-08-08 |url-status=live |archiveurl=https://web.archive.org/web/20161011194640/http://www.hotchips.org/wp-content/uploads/hc_archives/hc07/3_Tue/HC7.S5/HC7.5.1.pdf |archivedate=2016-10-11 }}&lt;/ref&gt;
+* 1995 ''[[Photon mapping]]''&lt;ref&gt;{{cite journal | authorlink1 = Henrik Wann Jensen | last1 = Jensen | first1 = H.W. | authorlink2 = Niels Jørgen Christensen | last2 = Christensen | first2 = N.J. | year = 1995 | citeseerx = 10.1.1.97.2724 | title = Photon maps in bidirectional monte carlo ray tracing of complex objects | journal = Computers &amp; Graphics | volume = 19 | issue = 2 | pages = 215–224 | doi=10.1016/0097-8493(94)00145-o}}&lt;/ref&gt;
+* 1996 ''[[Multisample anti-aliasing]]''&lt;ref&gt;{{cite web|url=http://www.system16.com/hardware.php?id=717|title=System 16 - Sega Model 3 Step 1.0 Hardware (Sega)|website=www.system16.com|accessdate=7 May 2018|url-status=live|archiveurl=https://web.archive.org/web/20141006125510/http://www.system16.com/hardware.php?id=717|archivedate=6 October 2014}}&lt;/ref&gt;
+* 1997 ''[[Metropolis light transport]]''&lt;ref&gt;{{cite conference | authorlink1 = Eric Veach | last1 = Veach | first1 = E. | authorlink2 = Leonidas J. Guibas | last2 = Guibas | first2 = L. | year = 1997 | citeseerx = 10.1.1.88.944 | title = Metropolis light transport | conference = Computer Graphics (Proceedings of SIGGRAPH 1997) | volume = 16 | pages = 65–76 }}&lt;/ref&gt;
+* 1997 ''Instant Radiosity''&lt;ref&gt;{{cite conference | authorlink = Alex Keller | last = Keller | first = A. | year = 1997 | citeseerx = 10.1.1.15.240 | title = Instant Radiosity | conference = Computer Graphics (Proceedings of SIGGRAPH 1997) | volume = 24 | pages = 49–56 }}&lt;/ref&gt;
+* 1998 ''[[Hidden surface removal]]''&lt;ref&gt;https://web.archive.org/web/20070811102018/http://www3.sharkyextreme.com/hardware/reviews/video/neon250/2.shtml&lt;/ref&gt;
+* 2000 ''[[Pose space deformation]]''&lt;ref&gt;{{cite book|title=Pose space deformation: a unified approach to shape interpolation and skeleton-driven deformation|first1=J. P.|last1=Lewis|first2=Matt|last2=Cordner|first3=Nickson|last3=Fong|date=1 July 2000|publisher=ACM Press/Addison-Wesley Publishing Co.|pages=165–172|accessdate=7 May 2018|via=dl.acm.org|doi=10.1145/344779.344862|chapter=Pose space deformation|isbn=978-1581132083}}&lt;/ref&gt;
+* 2002 ''[[Precomputed Radiance Transfer]]''&lt;ref&gt;{{cite conference | authorlink1 = Peter Pike Sloan | last1 = Sloan | first1 = P. | authorlink2 = Jan Kautz | last2 = Kautz | first2 = J. | authorlink3 = John Snyder (computer scientist) | last3 = Snyder | first3 = J. | year = 2002 | url = http://www.mpi-inf.mpg.de/~jnkautz/projects/prt/prtSIG02.pdf | title = Precomputed Radiance Transfer for Real-Time Rendering in Dynamic, Low Frequency Lighting Environments | conference = Computer Graphics (Proceedings of SIGGRAPH 2002) | volume = 29 | pages = 527–536 | url-status = dead | archiveurl = https://web.archive.org/web/20110724151631/http://www.mpi-inf.mpg.de/~jnkautz/projects/prt/prtSIG02.pdf | archivedate = 2011-07-24 }}&lt;/ref&gt;
+{{Div col end}}
+
+== See also ==
+
+{{Div col}}
+* {{annotated link|2D computer graphics}}
+* {{annotated link|3D computer graphics}}
+* {{annotated link|3D rendering}}
+* {{annotated link|Artistic rendering}}
+* {{annotated link|Architectural rendering}}
+* {{annotated link|Chromatic aberration}}
+* {{annotated link|Displacement mapping}}
+* {{annotated link|Global illumination}}
+* {{annotated link|Graphics pipeline}}
+* {{annotated link|Heightmap}}
+* {{annotated link|High-dynamic-range rendering}}
+* {{annotated link|Image-based modeling and rendering}}
+* {{annotated link|Motion blur}}
+* {{annotated link|Non-photorealistic rendering}}
+* {{annotated link|Normal mapping}}
+* {{annotated link|Painter's algorithm}}
+* {{annotated link|Physically based rendering}}
+* {{annotated link|Pre-rendering}}
+* {{annotated link|Raster image processor}}
+* {{annotated link|Radiosity (computer graphics)|Radiosity}}
+* {{annotated link|Ray tracing (graphics)|Ray tracing}}
+* {{annotated link|Real-time computer graphics}}
+* {{annotated link|Reyes rendering|Reyes}}
+* {{annotated link|Scanline rendering|Scanline rendering/Scanline algorithm}}
+* {{annotated link|Software rendering}}
+* {{annotated link|Sprite (computer graphics)}}
+* {{annotated link|Unbiased rendering}}
+* {{annotated link|Vector graphics}}
+* {{annotated link|VirtualGL}}
+* {{annotated link|Virtual model}}
+* {{annotated link|Virtual studio}}
+* {{annotated link|Volume rendering}}
+* {{annotated link|Z-buffering|Z-buffer algorithms}}
+{{Div col end}}
+
+== References ==
+{{Reflist|30em}}
+
+== Further reading ==
+{{div col|colwidth=30em}}
+* {{cite book|last=Akenine-Möller|first=Tomas|title=Real-time rendering|year=2004|publisher=AK Peters|location=Natick, Mass.|isbn=978-1-56881-182-6|edition=2|first2=Eric|last2=Haines|url=https://archive.org/details/isbn_9781568811826}}
+* {{cite book|last=Blinn|first=Jim|authorlink=Jim Blinn|title=Jim Blinn's corner : a trip down the graphics pipeline|year=1996|publisher=Morgan Kaufmann Publishers|location=San Francisco, Calif.|isbn=978-1-55860-387-5}}
+* {{cite book|last=Cohen|first=Michael F.|title=Radiosity and realistic image synthesis|year=1998|publisher=Academic Press Professional|location=Boston, Mass. [u.a.]|isbn=978-0-12-178270-2|edition=3|first2=John R.|last2=Wallace}}
+* {{cite book|author1=Philip Dutré|title=Advanced global illumination|year=2003|publisher=A K Peters|location=Natick, Mass.|isbn=978-1-56881-177-2|edition=[Online-Ausg.]|first2=Philippe|last2=Bekaert|first3=Kavita|last3=Bala}}
+* {{cite book|last=Foley|first=James D.|title=Computer graphics : principles and practice|year=1990|publisher=Addison-Wesley|location=Reading, Mass.|isbn=978-0-201-12110-0|edition=2|author2=Van Dam|author3=Feiner|author4=Hughes|authorlink=James D. Foley|url=https://archive.org/details/computergraphics00fole}}
+* {{cite book|first=|title=An introduction to ray tracing|year=1989|publisher=Acad. Press|location=London [u.a.]|isbn=978-0-12-286160-4|edition=3|editor=Andrew S. Glassner}}
+* {{cite book|last=Glassner|first=Andrew S.|title=Principles of digital image synthesis|year=2004|publisher=Kaufmann|location=San Francisco, Calif.|isbn=978-1-55860-276-2|edition=2|authorlink=Andrew Glassner}}
+* {{cite book|last=Gooch|first=Bruce|title=Non-photorealistic rendering|year=2001|publisher=A K Peters|location=Natick, Mass.|isbn=978-1-56881-133-8|first2=Amy|last2=Gooch|author2link=Amy Ashurst Gooch}}
+* {{cite book|last=Jensen|first=Henrik Wann|title=Realistic image synthesis using photon mapping|year=2001|publisher=AK Peters|location=Natick, Mass.|isbn=978-1-56881-147-5|edition=[Nachdr.]}}
+* {{cite book|last=Pharr|first=Matt|title=Physically based rendering from theory to implementation|year=2004|publisher=Elsevier/Morgan Kaufmann|location=Amsterdam|isbn=978-0-12-553180-1|edition=|first2=Greg|last2=Humphreys}}
+* {{cite book|last1=Shirley|first1=Peter|title=Realistic ray tracing|year=2003|publisher=AK Peters|location=Natick, Mass.|isbn=978-1-56881-198-7|edition=2|first2=R. Keith|last2=Morley|author1link=Peter Shirley}}
+* {{cite book|last=Strothotte|first=Thomas|title=Non-photorealistic computer graphics modeling, rendering, and animation|year=2002|publisher=Morgan Kaufmann|location=San Francisco, CA|isbn=978-1-55860-787-3|edition=2|first2=Stefan|last2=Schlechtweg}}
+* {{cite journal |url=http://radsite.lbl.gov/radiance/papers/sg94.1/ |title=The RADIANCE Lighting Simulation and Rendering System |last=Ward |first=Gregory J. |journal=Siggraph 94 |date=July 1994 |pages=459–72}}
+{{div col end}}
+
+== External links ==
+{{Wiktionary|renderer}}
+* ''[http://www.gpurendering.com GPU Rendering Magazine]'', online CGI magazine about advantages of GPU rendering
+* [https://web.archive.org/web/19961221040900/http://siggraph.org/ SIGGRAPH] The ACMs special interest group in graphics &amp;mdash; the largest academic and professional association and conference.
+* https://web.archive.org/web/20040923075327/http://www.cs.brown.edu/~tor/ List of links to (recent, as of 2004) siggraph papers (and some others) on the web.
+&lt;!--
+     Do not place advertisements here.
+     COMMERCIAL LINKS WILL BE REMOVED.
+     See this article's Talk page, WP:EL, and WP:SPAM for more information.
+     Wikipedia is not a link directory.  Consider submitting your link to DMOZ instead.
+--&gt;
+
+{{Film crew}}
+{{Visualization}}
+{{Computer science}}
+
+{{DEFAULTSORT:Rendering (Computer Graphics)}}
+[[Category:3D rendering]]</text>
+      <sha1>mwxykm0sm34dimkglmbqd5xob97exml</sha1>
+    </revision>
+  </page>

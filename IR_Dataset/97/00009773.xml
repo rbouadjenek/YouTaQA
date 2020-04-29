@@ -1,0 +1,480 @@
+  <page>
+    <title>EBCDIC</title>
+    <ns>0</ns>
+    <id>9773</id>
+    <revision>
+      <id>942050414</id>
+      <parentid>942050289</parentid>
+      <timestamp>2020-02-22T07:58:36Z</timestamp>
+      <contributor>
+        <username>Plandu</username>
+        <id>34084</id>
+      </contributor>
+      <minor />
+      <comment>Reverted edits by [[Special:Contributions/94.141.68.80|94.141.68.80]] ([[User talk:94.141.68.80|talk]]) ([[WP:HG|HG]]) (3.4.9)</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{refimprove|date=January 2019}}
+{{Use dmy dates|date=May 2019|cs1-dates=y}}
+{{infobox character encoding
+| name = EBCDIC encoding family
+| classification = 8-bit [[ISO Basic Latin alphabet|basic Latin]] encodings (non‑ASCII)
+| prev = [[BCD (character encoding)|BCD]]
+}}
+'''Extended Binary Coded Decimal Interchange Code'''&lt;ref name=&quot;Mackenzie_1980&quot;/&gt; ('''EBCDIC''';&lt;ref name=&quot;Mackenzie_1980&quot;/&gt; {{IPAc-en|ˈ|ɛ|b|s|ᵻ|d|ɪ|k}}) is an eight-[[bit]] [[character encoding]] used mainly on [[IBM mainframe]] and [[IBM]] [[midrange computer]] operating systems. It descended from the code used with [[punched card]]s and the corresponding [[six-bit binary-coded decimal]] code used with most of IBM's [[computer peripheral]]s of the late 1950s and early 1960s.&lt;ref name=&quot;Bemer_P-Bit&quot;/&gt; It is supported by various non-IBM platforms, such as [[Fujitsu-Siemens]]' [[BS2000|BS2000/OSD]], OS-IV, MSP, and MSP-EX, the [[SDS Sigma series]], [[Unisys]] [[VS/9]], [[Burroughs Corporation|Burroughs]] [[MCP (Burroughs Large Systems)|MCP]] and [[International Computers Limited|ICL]] [[ICL VME|VME]].
+
+== History ==
+[[File:Blue-punch-card-front-horiz top-char-contrast-stretched.png|thumb|[[Punched card]] with the Hollerith encoding of the 1964 EBCDIC character set. Contrast at top enhanced to show the printed characters.]]
+EBCDIC was devised in 1963 and 1964 by [[IBM]] and was announced with the release of the [[IBM System/360]] line of mainframe [[computer]]s. It is an eight-bit character encoding, developed separately from the seven-bit [[ASCII]] encoding scheme. It was created to extend the existing [[Binary-coded decimal#IBM and BCD|Binary-Coded Decimal]] (BCD) Interchange Code, or [[BCDIC]], which itself was devised as an efficient means of encoding the two ''zone'' and ''number'' punches on [[punched cards]] into six bits. The distinct encoding of 's' and 'S' (using position 2 instead of 1) was maintained from [[punched cards]] where it was desirable not to have hole punches too close to each other to ensure the integrity of the physical card.
+
+While IBM was a chief proponent of the ASCII standardization committee,&lt;ref name=&quot;WPS&quot;/&gt; the company did not have time to prepare ASCII peripherals (such as card punch machines) to ship with its System/360 computers, so the company settled on EBCDIC.&lt;ref name=&quot;Bemer_P-Bit&quot;/&gt; The System/360 became wildly successful, together with clones such as [[RCA Spectra 70]], [[ICL System 4]], and Fujitsu FACOM, thus so did EBCDIC.
+
+All IBM mainframe and [[Midrange computer|midrange]] [[peripheral]]s and [[operating system]]s use EBCDIC as their inherent encoding&lt;ref name=&quot;ibmebcdic&quot;/&gt; (with toleration for ASCII, for example, [[ISPF]] in [[z/OS]] can browse and edit both EBCDIC and ASCII encoded files). Software and many hardware peripherals can translate to and from encodings, and modern mainframes (such as [[IBM Z]]) include processor instructions, at the hardware level, to accelerate translation between character sets.
+
+There is an EBCDIC-oriented [[Unicode Transformation Format]] called [[UTF-EBCDIC]] proposed by the Unicode consortium, designed to allow easy updating of EBCDIC software to handle Unicode, but not intended to be used in open interchange environments. Even on systems with extensive EBCDIC support, it has not been popular. For example, z/OS supports Unicode (preferring [[UTF-16]] specifically), but z/OS only has limited support for UTF-EBCDIC.
+
+[[IBM AIX]] running on the [[RS/6000]] and its descendants including the [[IBM Power Systems]], [[Linux on IBM Z|Linux running on IBM Z]], and operating systems running on the [[IBM PC]] and its descendants use ASCII, as did [[AIX/370]] and [[AIX/390]] running on [[System/370]] and [[System/390]] mainframes.
+
+== Compatibility with ASCII ==
+{{unref|section|date=January 2019}}
+The fact that all the code points were different was less of a problem for inter-operating with [[ASCII]] than the fact that sorting EBCDIC put lowercase letters before uppercase letters and letters before numbers, exactly the opposite of ASCII.
+
+Programming languages and file formats and network protocols designed for ASCII quickly made use of available punctuation marks (such as the curly braces '{&amp;thinsp;' and &amp;thinsp;'&amp;thinsp;}'&amp;thinsp;) that did not exist in EBCDIC, making translation to EBCDIC ambiguous (this also prevented various attempts to make [[ISO/IEC 646|internationalized versions of ASCII]] which also replaced these punctuation marks with letters).
+
+The gaps between letters made simple code that worked in ASCII fail on EBCDIC. For example, &quot;&lt;code&gt;for&amp;nbsp;(c='A';c&lt;='Z';++c)&lt;/code&gt;&quot; would set &lt;code&gt;c&lt;/code&gt; to the 26 letters in the ASCII alphabet, but 41 characters including a number of unassigned ones in EBCDIC. Fixing this required complicating the code with function calls which was greatly resisted by programmers.
+
+By using all eight bits EBCDIC may have encouraged the use of the eight-bit byte by IBM, while ASCII was more likely to be adopted by [[36-bit|systems with 36 bits]] (as five seven-bit ASCII characters fit into one word).
+
+As eight-bit bytes became widespread, ASCII systems sometimes used the &quot;unused&quot; bit for other purposes, such as [[metacharacter]]s to mark the borders of records or words. This made it difficult to change the code to work with EBCDIC. On the [[PDP-11]] bytes with the high bit set were treated as negative numbers, behavior that was copied to [[C (programming language)|C]], causing unexpected problems with EBCDIC. Both of these problems also hindered the adoption of [[extended ASCII]] character sets.
+
+== Code page layout ==
+{{See|EBCDIC code pages}}
+The table below shows the &quot;invariant subset&quot;&lt;ref&gt;[https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_71/nls/rbagsinvariantcharset.htm IBM Knowledge Center Invariant character set]&lt;/ref&gt; of EBCDIC, which are characters that ''should'' have the same assignments on all EBCDIC code pages. It also shows (in gray) missing ASCII and EBCDIC punctuation, located where they are in [[CCSID 037]] (one of the code page variants of EBCDIC). Unassigned codes are typically filled with international or region-specific characters in the various EBCDIC [[code page]] variants, but the characters in gray are often moved around or swapped as well.
+
+In each table cell below, the first row is an abbreviation for a control code or (for printable characters) the character itself; and the second row is the [[Unicode]] code (blank for controls that don't exist in Unicode).
+
+{|{{chset-tableformat}}
+{{chset-table-header|EBCDIC}}
+|-
+!{{chset-left|0}}
+|{{chset-color-ctrl}}|{{chset-ctrl|0000|{{Control code link|NUL}}|0}}
+|{{chset-color-ctrl}}|{{chset-ctrl|0001|{{Control code link|SOH}}|1}}
+|{{chset-color-ctrl}}|{{chset-ctrl|0002|{{Control code link|STX}}|2}}
+|{{chset-color-ctrl}}|{{chset-ctrl|0003|{{Control code link|ETX}}|3}}
+|{{chset-color-ctrl}}|{{chset-ctrl|    |{{Control code link|SEL}}|4}}
+|{{chset-color-ctrl}}|{{chset-ctrl|0009|{{Control code link|HT}}|5}}
+|{{chset-color-ctrl}}|{{chset-ctrl|    |{{Control code link|RNL}}|6}}
+|{{chset-color-ctrl}}|{{chset-ctrl|007F|{{Control code link|DEL}}|7}}
+|{{chset-color-ctrl}}|{{chset-ctrl|    |{{Control code link|GE }}|8}}
+|{{chset-color-ctrl}}|{{chset-ctrl|    |{{Control code link|SPS}}|9}}
+|{{chset-color-ctrl}}|{{chset-ctrl|    |{{Control code link|EBCDIC:RPT}}|10}}
+|{{chset-color-ctrl}}|{{chset-ctrl|000B|{{Control code link|VT }}|11}}
+|{{chset-color-ctrl}}|{{chset-ctrl|000C|{{Control code link|FF }}|12}}
+|{{chset-color-ctrl}}|{{chset-ctrl|000D|{{Control code link|CR }}|13}}
+|{{chset-color-ctrl}}|{{chset-ctrl|000E|{{Control code link|SO }}|14}}
+|{{chset-color-ctrl}}|{{chset-ctrl|000F|{{Control code link|SI }}|15}}
+|-
+!{{chset-left|1}}
+|{{chset-color-ctrl}}|{{chset-ctrl|0010|{{Control code link|DLE}}|16}}
+|{{chset-color-ctrl}}|{{chset-ctrl|0011|{{Control code link|DC1}}|17}}
+|{{chset-color-ctrl}}|{{chset-ctrl|0012|{{Control code link|DC2}}|18}}
+|{{chset-color-ctrl}}|{{chset-ctrl|0013|{{Control code link|DC3}}|19}}
+|{{chset-color-ctrl}}|{{chset-ctrl|    |{{Control code link|RES/ENP|res/enp}}|20}}
+|{{chset-color-ctrl}}|{{chset-ctrl|0085|{{Control code link|NL }}|21}}
+|{{chset-color-ctrl}}|{{chset-ctrl|0008|{{Control code link|BS }}|22}}
+|{{chset-color-ctrl}}|{{chset-ctrl|    |{{Control code link|POC}}|23}}
+|{{chset-color-ctrl}}|{{chset-ctrl|0018|{{Control code link|CAN}}|24}}
+|{{chset-color-ctrl}}|{{chset-ctrl|0019|{{Control code link|EM }}|25}}
+|{{chset-color-ctrl}}|{{chset-ctrl|    |{{Control code link|UBS}}|26}}
+|{{chset-color-ctrl}}|{{chset-ctrl|    |{{Control code link|CU1}}|27}}
+|{{chset-color-ctrl}}|{{chset-ctrl|001C|{{Control code link|IFS}}|28}}
+|{{chset-color-ctrl}}|{{chset-ctrl|001D|{{Control code link|IGS}}|29}}
+|{{chset-color-ctrl}}|{{chset-ctrl|001E|{{Control code link|IRS}}|30}}
+|{{chset-color-ctrl}}|{{chset-ctrl|001F|{{Control code link|US|ius}}/{{Control code link|IUS/ITB|itb}}|31}}
+|-
+!{{chset-left|2}}
+|{{chset-color-ctrl}}|{{chset-ctrl|    |{{Control code link|DS }}|32}}
+|{{chset-color-ctrl}}|{{chset-ctrl|    |{{Control code link|EBCDIC:SOS}}|33}}
+|{{chset-color-ctrl}}|{{chset-ctrl|    |{{Control code link|EBCDIC:FS}}|34}}
+|{{chset-color-ctrl}}|{{chset-ctrl|    |{{Control code link|WUS}}|35}}
+|{{chset-color-ctrl}}|{{chset-ctrl|    |{{Control code link|BYP/INP|byp/inp}}|36}}
+|{{chset-color-ctrl}}|{{chset-ctrl|000A|{{Control code link|LF }}|37}}
+|{{chset-color-ctrl}}|{{chset-ctrl|0017|{{Control code link|ETB}}|38}}
+|{{chset-color-ctrl}}|{{chset-ctrl|001B|{{Control code link|ESC}}|39}}
+|{{chset-color-ctrl}}|{{chset-ctrl|    |{{Control code link|SA }}|40}}
+|{{chset-color-ctrl}}|{{chset-ctrl|    |{{Control code link|SFE}}|41}}
+|{{chset-color-ctrl}}|{{chset-ctrl|    |{{Control code link|SM/SW|sm/sw}}|42}}
+|{{chset-color-ctrl}}|{{chset-ctrl|    |{{Control code link|CSP}}|43}}
+|{{chset-color-ctrl}}|{{chset-ctrl|    |{{Control code link|MFA}}|44}}
+|{{chset-color-ctrl}}|{{chset-ctrl|0005|{{Control code link|ENQ}}|45}}
+|{{chset-color-ctrl}}|{{chset-ctrl|0006|{{Control code link|ACK}}|46}}
+|{{chset-color-ctrl}}|{{chset-ctrl|0007|{{Control code link|BEL}}|47}}
+|-
+!{{chset-left|3}}
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-ctrl}}|{{chset-ctrl|0016|{{Control code link|SYN}}|50}}
+|{{chset-color-ctrl}}|{{chset-ctrl|    |{{Control code link|IR }}|51}}
+|{{chset-color-ctrl}}|{{chset-ctrl|    |{{Control code link|PP }}|52}}
+|{{chset-color-ctrl}}|{{chset-ctrl|    |{{Control code link|TRN}}|53}}
+|{{chset-color-ctrl}}|{{chset-ctrl|    |{{Control code link|NBS}}|54}}
+|{{chset-color-ctrl}}|{{chset-ctrl|0004|{{Control code link|EOT}}|55}}
+|{{chset-color-ctrl}}|{{chset-ctrl|    |{{Control code link|SBS}}|56}}
+|{{chset-color-ctrl}}|{{chset-ctrl|    |{{Control code link|IT }}|57}}
+|{{chset-color-ctrl}}|{{chset-ctrl|    |{{Control code link|RFF}}|58}}
+|{{chset-color-ctrl}}|{{chset-ctrl|    |{{Control code link|CU3}}|59}}
+|{{chset-color-ctrl}}|{{chset-ctrl|0014|{{Control code link|DC4}}|60}}
+|{{chset-color-ctrl}}|{{chset-ctrl|0015|{{Control code link|NAK}}|61}}
+|{{chset-color-undef}}|
+|{{chset-color-ctrl}}|{{chset-ctrl|001A|{{Control code link|SUB}}|63}}
+|-
+!{{chset-left|4}}
+|{{chset-color-misc}}|{{chset-ctrl|0020|[[Space character|SP]]|64}}
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|{{chset-cell|00A2|[[¢]]|74}}
+|{{chset-color-punct}}|{{chset-cell|002E|[[full stop|.]]|75}}
+|{{chset-color-graph}}|{{chset-cell|003C|[[less-than sign|&amp;lt;]]|76}}
+|{{chset-color-punct}}|{{chset-cell|0028|[[parenthesis|(]]|77}}
+|{{chset-color-graph}}|{{chset-cell|002B|[[+]]|78}}
+|{{chset-color-undef}}|{{chset-cell|007C|[[vertical bar|&amp;#124;]]|79}}
+|-
+!{{chset-left|5}}
+|{{chset-color-punct}}|{{chset-cell|0026|[[ampersand|&amp;]]|80}}
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|{{chset-cell|0021|[[!]]|90}}
+|{{chset-color-undef}}|{{chset-cell|0024|[[$]]|91}}
+|{{chset-color-punct}}|{{chset-cell|002A|[[Asterisk|*]]|92}}
+|{{chset-color-punct}}|{{chset-cell|0029|[[parenthesis|)]]|93}}
+|{{chset-color-punct}}|{{chset-cell|003B|[[;]]|94}}
+|{{chset-color-undef}}|{{chset-cell|00AC|[[¬]]|95}}
+|-
+!{{chset-left|6}}
+|{{chset-color-punct}}|{{chset-cell|002D|[[Hyphen-minus|-]]|96}}
+|{{chset-color-punct}}|{{chset-cell|002F|[[/]]|97}}
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|{{chset-cell|00A6|[[¦]]|106}}
+|{{chset-color-punct}}|{{chset-cell|002C|[[,]]|107}}
+|{{chset-color-punct}}|{{chset-cell|0025|[[%]]|108}}
+|{{chset-color-punct}}|{{chset-cell|005F|[[underscore|_]]|109}}
+|{{chset-color-graph}}|{{chset-cell|003E|[[greater-than sign|&amp;gt;]]|110}}
+|{{chset-color-punct}}|{{chset-cell|003F|[[?]]|111}}
+|-
+!{{chset-left|7}}
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|{{chset-cell|0060|[[`]]|121}}
+|{{chset-color-punct}}|{{chset-cell|003A|[[colon (punctuation)|:]]|122}}
+|{{chset-color-undef}}|{{chset-cell|0023|[[number sign|#]]|123}}
+|{{chset-color-undef}}|{{chset-cell|0040|[[@]]|124}}
+|{{chset-color-punct}}|{{chset-cell|0027|[[apostrophe|']]|125}}
+|{{chset-color-graph}}|{{chset-cell|003D|[[equals sign|=]]|126}}
+|{{chset-color-punct}}|{{chset-cell|0022|[[&quot;]]|127}}
+|-
+!{{chset-left|8}}
+|{{chset-color-undef}}|
+|{{chset-color-alpha}}|{{chset-cell|0061|[[a]]|129}}
+|{{chset-color-alpha}}|{{chset-cell|0062|[[b]]|130}}
+|{{chset-color-alpha}}|{{chset-cell|0063|[[c]]|131}}
+|{{chset-color-alpha}}|{{chset-cell|0064|[[d]]|132}}
+|{{chset-color-alpha}}|{{chset-cell|0065|[[e]]|133}}
+|{{chset-color-alpha}}|{{chset-cell|0066|[[f]]|134}}
+|{{chset-color-alpha}}|{{chset-cell|0067|[[g]]|135}}
+|{{chset-color-alpha}}|{{chset-cell|0068|[[h]]|136}}
+|{{chset-color-alpha}}|{{chset-cell|0069|[[i]]|137}}
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|{{chset-cell|00B1|[[±]]|143}}
+|-
+!{{chset-left|9}}
+|{{chset-color-undef}}|
+|{{chset-color-alpha}}|{{chset-cell|006A|[[j]]|145}}
+|{{chset-color-alpha}}|{{chset-cell|006B|[[k]]|146}}
+|{{chset-color-alpha}}|{{chset-cell|006C|[[l]]|147}}
+|{{chset-color-alpha}}|{{chset-cell|006D|[[m]]|148}}
+|{{chset-color-alpha}}|{{chset-cell|006E|[[n]]|149}}
+|{{chset-color-alpha}}|{{chset-cell|006F|[[o]]|150}}
+|{{chset-color-alpha}}|{{chset-cell|0070|[[p]]|151}}
+|{{chset-color-alpha}}|{{chset-cell|0071|[[q]]|152}}
+|{{chset-color-alpha}}|{{chset-cell|0072|[[r]]|153}}
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|-
+!{{chset-left|A}}
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|{{chset-cell|007E|[[~]]|161}}
+|{{chset-color-alpha}}|{{chset-cell|0073|[[s]]|162}}
+|{{chset-color-alpha}}|{{chset-cell|0074|[[t]]|163}}
+|{{chset-color-alpha}}|{{chset-cell|0075|[[u]]|164}}
+|{{chset-color-alpha}}|{{chset-cell|0076|[[v]]|165}}
+|{{chset-color-alpha}}|{{chset-cell|0077|[[w]]|166}}
+|{{chset-color-alpha}}|{{chset-cell|0078|[[x]]|167}}
+|{{chset-color-alpha}}|{{chset-cell|0079|[[y]]|168}}
+|{{chset-color-alpha}}|{{chset-cell|007A|[[z]]|169}}
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|-
+!{{chset-left|B}}
+|{{chset-color-undef}}|{{chset-cell|005E|[[^]]|176}}
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|{{chset-cell|005B|[[square brackets|&amp;#91;]]|186}}
+|{{chset-color-undef}}|{{chset-cell|005D|[[square brackets|&amp;#93;]]|187}}
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|-
+!{{chset-left|C}}
+|{{chset-color-undef}}|{{chset-cell|007B|[[brace (punctuation)|{]]|192}}
+|{{chset-color-alpha}}|{{chset-cell|0041|[[A]]|193}}
+|{{chset-color-alpha}}|{{chset-cell|0042|[[B]]|194}}
+|{{chset-color-alpha}}|{{chset-cell|0043|[[C]]|195}}
+|{{chset-color-alpha}}|{{chset-cell|0044|[[D]]|196}}
+|{{chset-color-alpha}}|{{chset-cell|0045|[[E]]|197}}
+|{{chset-color-alpha}}|{{chset-cell|0046|[[F]]|198}}
+|{{chset-color-alpha}}|{{chset-cell|0047|[[G]]|199}}
+|{{chset-color-alpha}}|{{chset-cell|0048|[[H]]|200}}
+|{{chset-color-alpha}}|{{chset-cell|0049|[[I]]|201}}
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|-
+!{{chset-left|D}}
+|{{chset-color-undef}}|{{chset-cell|007D|[[brace (punctuation)|}]]|208}}
+|{{chset-color-alpha}}|{{chset-cell|004A|[[J]]|209}}
+|{{chset-color-alpha}}|{{chset-cell|004B|[[K]]|210}}
+|{{chset-color-alpha}}|{{chset-cell|004C|[[L]]|211}}
+|{{chset-color-alpha}}|{{chset-cell|004D|[[M]]|212}}
+|{{chset-color-alpha}}|{{chset-cell|004E|[[N]]|213}}
+|{{chset-color-alpha}}|{{chset-cell|004F|[[O]]|214}}
+|{{chset-color-alpha}}|{{chset-cell|0050|[[P]]|215}}
+|{{chset-color-alpha}}|{{chset-cell|0051|[[Q]]|216}}
+|{{chset-color-alpha}}|{{chset-cell|0052|[[R]]|217}}
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|-
+!{{chset-left|E}}
+|{{chset-color-undef}}|{{chset-cell|005C|[[\]]|224}}
+|{{chset-color-undef}}|
+|{{chset-color-alpha}}|{{chset-cell|0053|[[S]]|226}}
+|{{chset-color-alpha}}|{{chset-cell|0054|[[T]]|227}}
+|{{chset-color-alpha}}|{{chset-cell|0055|[[U]]|228}}
+|{{chset-color-alpha}}|{{chset-cell|0056|[[V]]|229}}
+|{{chset-color-alpha}}|{{chset-cell|0057|[[W]]|230}}
+|{{chset-color-alpha}}|{{chset-cell|0058|[[X]]|231}}
+|{{chset-color-alpha}}|{{chset-cell|0059|[[Y]]|232}}
+|{{chset-color-alpha}}|{{chset-cell|005A|[[Z]]|233}}
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|-
+!{{chset-left|F}}
+|{{chset-color-digit}}|{{chset-cell|0030|[[0]]|240}}
+|{{chset-color-digit}}|{{chset-cell|0031|[[1]]|241}}
+|{{chset-color-digit}}|{{chset-cell|0032|[[2]]|242}}
+|{{chset-color-digit}}|{{chset-cell|0033|[[3]]|243}}
+|{{chset-color-digit}}|{{chset-cell|0034|[[4]]|244}}
+|{{chset-color-digit}}|{{chset-cell|0035|[[5]]|245}}
+|{{chset-color-digit}}|{{chset-cell|0036|[[6]]|246}}
+|{{chset-color-digit}}|{{chset-cell|0037|[[7]]|247}}
+|{{chset-color-digit}}|{{chset-cell|0038|[[8]]|248}}
+|{{chset-color-digit}}|{{chset-cell|0039|[[9]]|249}}
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-undef}}|
+|{{chset-color-ctrl}}|{{chset-ctrl||{{Control code link|EO}}|255}}
+|}
+
+== Definitions of non-ASCII EBCDIC controls ==
+Following are the definitions of EBCDIC control characters which either don't map onto the [[C0 and C1 control codes#C0 controls|ASCII control characters]], or have additional uses. When mapped to Unicode, these are mostly mapped to C1 control character codepoints in a manner specified by IBM's Character Data Representation Architecture (CDRA).&lt;ref name=&quot;utr16cdra&quot;&gt;{{cite web |url=https://www.unicode.org/reports/tr16/tr16-6.html#Step%202 |title=3.3 Step 2: Byte Conversion |work=UTF-EBCDIC |id=Unicode Technical Report #16 |last1=Umamaheswaran |first1=V.S. |publisher=[[Unicode Consortium]] |date=1999-11-08 |quotation=The 64 control characters […], the ASCII DELETE character (U+007F)[…] are mapped respecting EBCDIC conventions, as defined in IBM Character Data Representation Architecture, CDRA, with one exception -- the pairing of EBCDIC Line Feed and New Line control characters are swapped from their CDRA default pairings to ISO/IEC 6429 Line Feed (U+000A) and Next Line (U+0085) control characters}}&lt;/ref&gt;&lt;ref name=&quot;ms037&quot;&gt;{{citation|mode=cs1 |url=https://www.unicode.org/Public/MAPPINGS/VENDORS/MICSFT/EBCDIC/CP037.TXT |title=cp037_IBMUSCanada to Unicode table |last1=Steele |first1=Shawn |publisher=[[Microsoft]]/[[Unicode Consortium]] |date=1996-04-24}}&lt;/ref&gt;
+
+Although the default mapping of New Line (NL) corresponds to the ISO/IEC 6429 Next Line (NEL) character (the behaviour of which is also specified, but not required, in Unicode Annex 14),&lt;ref&gt;{{cite web |url=http://www.unicode.org/reports/tr14/tr14-43.html#NL |version=Revision 43 |title=NL: Next Line (A) (Non-tailorable) |work=Unicode Line Breaking Algorithm |id=Unicode Standard Annex #14 |date=2019-02-15 |first1=Andy |last1=Heninger |publisher=[[Unicode Consortium]]}}&lt;/ref&gt; most of these C1-mapped controls match neither those in the [[C0 and C1 control codes#C1 control codes for general use|ISO/IEC 6429 C1 set]], nor those in other registered C1 control sets such as [[ISO 6630]].&lt;ref&gt;{{citation|mode=cs1 |url=https://www.itscj.ipsj.or.jp/iso-ir/124.pdf |title=Additional Control Functions for Bibliographic Use according to International Standard ISO 6630 |id=ISO-IR-124 |author=ISO/TC 46 |publisher=ITSCJ/[[Information Processing Society of Japan|IPSJ]] |date=1986-02-01}}&lt;/ref&gt; Although this effectively makes the non-ASCII EBCDIC controls a unique C1 control set, they are not among the C1 control sets registered in the [[ISO-IR]] registry,&lt;ref&gt;{{citation|mode=cs2 |title=ISO/IEC International Register of Coded Character Sets To Be Used With Escape Sequences |id=ISO-IR |publisher=ITSCJ/[[Information Processing Society of Japan|IPSJ]] |url=https://www.itscj.ipsj.or.jp/itscj_english/iso-ir/ISO-IR.pdf}}&lt;/ref&gt; meaning that they do not have an assigned control set designation sequence (as specified by [[ISO/IEC 2022]], and optionally permitted in [[ISO/IEC 10646]] (Unicode)).&lt;ref&gt;{{citation|mode=cs1 |id=ISO/IEC 10646 |title=Information technology — Universal Coded Character Set (UCS) |author=ISO/IEC JTC 1/SC 2 |author-link=ISO/IEC JTC 1/SC 2 |publisher=[[ISO]] |edition=5th |year=2017 |url=https://standards.iso.org/ittf/PubliclyAvailableStandards/c069119_ISO_IEC_10646_2017.zip |section=12.4: Identification of control function set |pages=19-20 |quotation=For other C0 or C1 sets, the final octet F shall be obtained from the International Register of Coded Character Sets. […] If such an escape sequence appears within a code unit sequence conforming to this International Standard, it shall be padded in accordance with Clause 11.}}&lt;/ref&gt;
+
+Besides U+0085 (Next Line), the Unicode Standard does not prescribe an interpretation of C1 control characters, leaving their interpretation to higher level protocols (it suggests, but does not require, their ISO/IEC 6429 interpretations in the absence of use for other purposes),&lt;ref&gt;{{cite web |url=https://www.unicode.org/versions/Unicode12.0.0/ch23.pdf#page=3 |title=23.1: Control Codes |work=The Unicode Standard |edition=12.0.0 |date=2019 |author=Unicode Consortium |author-link=Unicode Consortium |isbn=978-1-936213-22-1 |pages=868-870}}&lt;/ref&gt; so this mapping is permissible in, but not specified by, Unicode.
+{|class=&quot;wikitable sortable&quot;
+|-
+! Mnemonic !! EBCDIC !! CDRA pairing&lt;ref name=&quot;utr16cdra&quot; /&gt;&lt;ref name=&quot;ms037&quot;/&gt; !!class=&quot;unsortable&quot;| Name !!class=&quot;unsortable&quot;| Description&lt;ref name=&quot;IBM_G-1&quot;/&gt;
+|- id = &quot;SEL&quot;
+| SEL ||data-sort-value=&quot;4&quot;| 04 ||data-sort-value=&quot;156&quot;| 009C || Select || Device control character taking a single-byte parameter.
+|- id = &quot;RNL&quot;
+| RNL ||data-sort-value=&quot;6&quot;| 06 ||data-sort-value=&quot;134&quot;| 0086 || Required New Line || Line-break resetting {{Control code link|internal=1|IT|Indent Tab}} mode
+|- id = &quot;GE&quot;
+| GE ||data-sort-value=&quot;8&quot;| 08 ||data-sort-value=&quot;151&quot;| 0097 || Graphic Escape || Non-locking shift that changes the interpretation of the following character (see e.g. [[Code page 310]]). Compare ISO/IEC 6429's {{Control code link|SS2}} (008E).
+|- id = &quot;SPS&quot;
+| SPS ||data-sort-value=&quot;9&quot;| 09 ||data-sort-value=&quot;141&quot;| 008D || Superscript || Begin superscript or undo subscript. Compare ISO/IEC 6429's {{Control code link|PLU}} (008C).
+|- id = &quot;RPT&quot;
+| RPT ||data-sort-value=&quot;10&quot;| 0A ||data-sort-value=&quot;142&quot;| 008E || Repeat || Switch to an operation mode repeating a print buffer
+|- id = &quot;RES/ENP&quot;
+| RES/ENP ||data-sort-value=&quot;20&quot;| 14 ||data-sort-value=&quot;157&quot;| 009D || Restore, Enable Presentation || Resume output (after {{Control code link|internal=1|BYP/INP}})
+|- id = &quot;NL&quot;
+| NL ||data-sort-value=&quot;21&quot;| 15 ||data-sort-value=&quot;133&quot;| 0085 (000A) || [[Newline|New Line]] || Line break. Default mapping (0085) matches ISO/IEC 6429's {{Control code link|NEL}}. Mappings sometimes swapped with Line Feed (EBCDIC 0x25) in accordance with UNIX line breaking convention.&lt;ref name=&quot;utr16cdra&quot; /&gt;
+|- id = &quot;POC&quot;
+| POC ||data-sort-value=&quot;23&quot;| 17 ||data-sort-value=&quot;135&quot;| 0087 || Program Operator Communication || Followed by two one-byte operators that identify the specific function, for example a light or function key. Contrast with ISO/IEC 6429's {{Control code link|CSI}} (009B), {{Control code link|ANSI:OSC}} (009D) and {{Control code link|APC}} (009F).
+|- id = &quot;UBS&quot;
+| UBS ||data-sort-value=&quot;26&quot;| 1A ||data-sort-value=&quot;146&quot;| 0092 || Unit Backspace || A fractional backspace.
+|- id = &quot;CU1&quot;
+| CU1 ||data-sort-value=&quot;27&quot;| 1B ||data-sort-value=&quot;143&quot;| 008F || Customer Use One || Not used by IBM; for customer use.
+|- id = &quot;IUS/ITB&quot;
+| IUS/ITB ||data-sort-value=&quot;31&quot;| 1F ||data-sort-value=&quot;31&quot;| 001F || Interchange Unit Separator, Intermediate Transmission Block || Either used as an information separator to terminate a block called a &quot;unit&quot; (as [[Unit Separator|in ASCII]]; see also {{Control code link|internal=1|IR}}), or used as a transmission control code to delimit the end of an intermediate block.
+|- id = &quot;DS&quot;
+| DS ||data-sort-value=&quot;32&quot;| 20 ||data-sort-value=&quot;128&quot;| 0080 || Digit Select || Used by S/360 CPU edit (ED) instruction
+|- id = &quot;SOS&quot;
+| SOS ||data-sort-value=&quot;33&quot;| 21 ||data-sort-value=&quot;129&quot;| 0081 || Start of Significance || Used by S/360 CPU edit (ED) instruction. (Note: different from ISO/IEC 6429's {{Control code link|ANSI:SOS}}.)
+|- id = &quot;FS&quot;
+| FS ||data-sort-value=&quot;34&quot;| 22 ||data-sort-value=&quot;130&quot;| 0082 || Field Separator || Used by S/360 CPU edit (ED) instruction. (Note: {{Control code link|IFS|(Interchange) File Separator}}, as abbreviated FS in ASCII, is at 0x1C and abbreviated IFS.)&lt;ref name=&quot;IBM_G-1&quot;/&gt;
+|- id = &quot;WUS&quot;
+| WUS ||data-sort-value=&quot;35&quot;| 23 ||data-sort-value=&quot;131&quot;| 0083 || Word Underscore || Underscores the immediately preceding word. Contrast with ISO/IEC 6429's [[ANSI escape code#SGR parameters|SGR]].
+|- id = &quot;BYP/INP&quot;
+| BYP/INP ||data-sort-value=&quot;36&quot;| 24 ||data-sort-value=&quot;132&quot;| 0084 || Bypass, Inhibit Presentation || De-activates output, i.e. ignores all graphical characters and control characters besides transmission control codes and RES/ENP, until the next {{Control code link|internal=1|RES/ENP}}.
+|- id = &quot;SA&quot;
+| SA ||data-sort-value=&quot;40&quot;| 28 ||data-sort-value=&quot;136&quot;| 0088 || Set Attribute || Marks the beginning of a fixed-length device specific control sequence. Deprecated in favour of {{Control code link|internal=1|CSP}}.
+|- id = &quot;SFE&quot;
+| SFE ||data-sort-value=&quot;41&quot;| 29 ||data-sort-value=&quot;137&quot;| 0089 || Start Field Extended || Marks the beginning of a variable-length device specific control sequence. Deprecated in favour of {{Control code link|internal=1|CSP}}.
+|- id = &quot;SM/SW&quot;
+| SM/SW ||data-sort-value=&quot;42&quot;| 2A ||data-sort-value=&quot;138&quot;| 008A || Set Mode, Switch || Device specific control that sets a mode of operation, such as a buffer switch.
+|- id = &quot;CSP&quot;
+| CSP ||data-sort-value=&quot;43&quot;| 2B ||data-sort-value=&quot;139&quot;| 008B || Control Sequence Prefix || Marks the beginning of a variable-length device specific control sequence. Followed by a class byte specifying a category of control function, a count byte giving the sequence length (including count and type bytes, but not the class byte or initial CSP), a type byte identifying a control function within that category, and zero or more parameter bytes. Contrast with ISO/IEC 6429's {{Control code link|DCS}} (0090) and {{Control code link|CSI}} (009B).
+|- id = &quot;MFA&quot;
+| MFA ||data-sort-value=&quot;44&quot;| 2C ||data-sort-value=&quot;140&quot;| 008C || Modify Field Attribute || Marks the beginning of a variable-length device specific control sequence. Deprecated in favour of {{Control code link|internal=1|CSP}}.
+|-
+|  ||data-sort-value=&quot;48&quot;| 30 ||data-sort-value=&quot;144&quot;| 0090 || ''(reserved)'' || Reserved for future use by IBM
+|-
+|  ||data-sort-value=&quot;49&quot;| 31 ||data-sort-value=&quot;145&quot;| 0091 || ''(reserved)'' || Reserved for future use by IBM
+|- id = &quot;IR&quot;
+| IR ||data-sort-value=&quot;51&quot;| 33 ||data-sort-value=&quot;147&quot;| 0093 || Index Return || Either move to start of next line (see also {{Control code link|internal=1|NL}}), or terminate an information unit (see also {{Control code link|internal=1|IUS/ITB}}).
+|- id = &quot;PP&quot;
+| PP ||data-sort-value=&quot;52&quot;| 34 ||data-sort-value=&quot;148&quot;| 0094 || Presentation Position || Followed by two one-byte parameters (firstly function, secondly number of either column or line) to set the current position.&lt;!-- Is there any publicly available documentation, or at least source code, giving more detail on this parameter format? --&gt; Contrast with ISO/IEC 6429's [[ANSI escape code#Terminal output sequences|CUP and HVP]].
+|- id = &quot;TRN&quot;
+| TRN ||data-sort-value=&quot;53&quot;| 35 ||data-sort-value=&quot;149&quot;| 0095 || Transparent || Followed by one byte parameter that indicates the number of bytes of transparent data that follow.
+|- id = &quot;NBS&quot;
+| NBS ||data-sort-value=&quot;54&quot;| 36 ||data-sort-value=&quot;150&quot;| 0096 || Numeric Backspace || Move backwards the width of one digit.
+|- id = &quot;SBS&quot;
+| SBS ||data-sort-value=&quot;56&quot;| 38 ||data-sort-value=&quot;152&quot;| 0098 || Subscript || Begin subscript or undo superscript. Compare ISO/IEC 6429's {{Control code link|PLD}} (008B).
+|- id = &quot;IT&quot;
+| IT ||data-sort-value=&quot;57&quot;| 39 ||data-sort-value=&quot;153&quot;| 0099 || Indent Tab || Indents the current and all following lines, until {{Control code link|internal=1|RNL}} or {{Control code link|internal=1|RFF}} is encountered.
+|- id = &quot;RFF&quot;
+| RFF ||data-sort-value=&quot;58&quot;| 3A ||data-sort-value=&quot;154&quot;| 009A || Required Form Feed || Page-break resetting {{Control code link|internal=1|IT|Indent Tab}} mode.
+|- id = &quot;CU3&quot;
+| CU3 ||data-sort-value=&quot;59&quot;| 3B ||data-sort-value=&quot;155&quot;| 009B || Customer Use Two || Not used by IBM; for customer use.
+|-
+|  ||data-sort-value=&quot;62&quot;| 3E ||data-sort-value=&quot;158&quot;| 009E || ''(reserved)'' || Reserved for future use by IBM
+|- id = &quot;EO&quot;
+| EO ||data-sort-value=&quot;255&quot;| FF ||data-sort-value=&quot;159&quot;| 009F || Eight Ones || All ones character used as filler
+|}
+
+== Criticism and humor ==
+[[Open source software|Open-source software]] advocate and software developer [[Eric S. Raymond]] writes in his ''[[Jargon File]]'' that EBCDIC was loathed by hackers, by which he meant&lt;ref&gt;{{cite web|url=http://manybooks.net/titles/anonetext02jarg422.html|title=The New Hacker's Dictionary|last=Raymond|first=Eric S.|year=1997|author-link=Eric S. Raymond|page=310}}&lt;/ref&gt; members of a subculture of enthusiastic programmers. The Jargon File 4.4.7 gives the following definition:&lt;ref name=&quot;CATB&quot;/&gt;
+{{quote|text = EBCDIC: /eb´s@·dik/, /eb´see`dik/, /eb´k@·dik/, n.
+[abbreviation, Extended Binary Coded Decimal Interchange Code] An alleged character set used on IBM dinosaurs. It exists in at least six mutually incompatible versions, all featuring such delights as non-contiguous letter sequences and the absence of several ASCII punctuation characters fairly important for modern computer languages (exactly which characters are absent varies according to which version of EBCDIC you're looking at). IBM adapted EBCDIC from punched card code in the early 1960s and promulgated it as a customer-control tactic (see ''[[connector conspiracy]]''), spurning the already established ASCII standard. Today, IBM claims to be an [[open system (computing)|open-system]]s company, but IBM's own description of the EBCDIC variants and how to convert between them is still internally classified top-secret, burn-before-reading. Hackers blanch at the very ''name'' of EBCDIC and consider it a manifestation of purest evil. 
+|source=The Jargon file 4.4.7}}&lt;!-- Public domain: [http://catb.org/jargon/quoting.html] --&gt;
+
+EBCDIC design was also the source of many jokes. One such joke{{cn|date=May 2018}} went: 
+{{quote|text = ''Professor: &quot;So the American government went to IBM to come up with an [[Data Encryption Standard|encryption standard]], and they came up with&amp;mdash;&quot;&lt;br/&gt;Student: &quot;EBCDIC!&quot;''}}
+
+References to the EBCDIC character set are made in the classic Infocom adventure game series ''[[Zork]]''. In the &quot;Machine Room&quot; in ''[[Zork II]]'', EBCDIC is used to imply an incomprehensible language:
+{{quote|text = This is a large room full of assorted heavy machinery, whirring noisily. The room smells of burned resistors. Along one wall are three buttons which are, respectively, round, triangular, and square. Naturally, above these buttons are instructions written in EBCDIC...}}
+
+== See also ==
+* [[List of EBCDIC code pages with Latin-1 character set]]
+* [[EBCDIC 037|Code page 037 (English, Portuguese)]]
+* [[EBCDIC 285|Code page 285 (Ireland, United Kingdom)]]
+* [[UTF-EBCDIC]]
+
+== References ==
+{{Reflist|refs=
+&lt;ref name=&quot;Mackenzie_1980&quot;&gt;{{cite book |title=Coded Character Sets, History and Development |work=The Systems Programming Series |author-last=Mackenzie |author-first=Charles E. |year=1980 |edition=1 |publisher=[[Addison-Wesley Publishing Company, Inc.]] |isbn=0-201-14460-3 |lccn=77-90165 |id={{ISBN|978-0-201-14460-4}} |url=https://books.google.com/books?id=6-tQAAAAMAAJ |access-date=2016-05-22}} [https://web.archive.org/web/20160526172151/https://textfiles.meulie.net/bitsaved/Books/Mackenzie_CodedCharSets.pdf]&lt;/ref&gt;
+
+&lt;ref name=&quot;Bemer_P-Bit&quot;&gt;{{cite web |author-last=Bemer |author-first=Bob |author-link=Bob Bemer |title=EBCDIC and the P-Bit (The Biggest Computer Goof Ever) - Computer History Vignettes |url=http://www.bobbemer.com/P-BIT.HTM |access-date=2013-07-02 |url-status=dead |archive-url=https://web.archive.org/web/20180513204153/http://www.bobbemer.com/P-BIT.HTM |archive-date=13 May 2018 |quote=[…] but their printers and punches were not ready to handle ASCII, and IBM just HAD to announce. }}&lt;/ref&gt;
+
+&lt;ref name=&quot;WPS&quot;&gt;{{cite web |url=http://worldpowersystems.com/archives/codes/X3.4-1963/page4.JPG |title=X3.4-1963 |page=4 |date=1963 |url-status=live |archive-url=https://web.archive.org/web/20160812085410/http://worldpowersystems.com/projects/codes/X3.4-1963/page4.JPG |archive-date=2016-08-12}} (NB. IBM had four staff members on the final 21-member ASA X3.2 sub-committee.)&lt;/ref&gt;
+
+&lt;ref name=&quot;ibmebcdic&quot;&gt;{{cite web 
+|url=http://publib.boulder.ibm.com/infocenter/zos/v1r9/index.jsp?topic=/com.ibm.zos.r9.adms700/adms7a05158.htm |archive-url=https://archive.is/20130103091717/http://publib.boulder.ibm.com/infocenter/zos/v1r9/index.jsp?topic=/com.ibm.zos.r9.adms700/adms7a05158.htm |url-status=dead |archive-date=2013-01-03 |title=IBM confirms the use of EBCDIC in their mainframes as a default practice |date=2008 |access-date=2008-06-16 |author=IBMnt}}&lt;/ref&gt;
+
+&lt;ref name=&quot;CATB&quot;&gt;{{cite web |url=http://catb.org/jargon/html/E/EBCDIC.html |access-date=2018-05-13 |url-status=live |title=EBCDIC |work=[[Jargon File]] |archive-url=https://web.archive.org/web/20180513205203/http://catb.org/jargon/html/E/EBCDIC.html |archive-date=2018-05-13}}&lt;/ref&gt;
+
+&lt;!--REFERENCE NOT BEING USED IN ARTICLE DUE TO CONTENT REMOVAL - SEE WP:LDR 
+&lt;ref name=&quot;Kornai_1993_FAQ&quot;&gt;{{cite web | access-date=2017-02-18 | author-first1=Andras | author-first10=Dimitri | author-first11=Johan W. | author-first2=David J. | author-first3=Frank | author-first4=Bur | author-first5=George | author-first6=Richard B. | author-first7=Slava | author-first8=Keld J. | author-first9=Glenn E. | author-last1=Kornai | author-last10=Vulis | author-last2=Birnbaum | author-last3=da Cruz | author-last4=Davis | author-last5=Fowler | author-last6=Paine | author-last7=Paperno | author-last8=Simonsen | author-last9=Thobe | title=CYRILLIC ENCODING FAQ Version 1.3 | date=1993-03-13 | author-last11=van Wingen | url=ftp://kermit.columbia.edu/kermit/charsets/cyrillic-summary.txt | version=1.3}}&lt;/ref&gt;
+&lt;ref name=&quot;Petrlik_1996_CZ-Encodings&quot;&gt;{{cite web |title=The Czech and Slovak Character Encoding Mess Explained |author-first=Lukas |author-last=Petrlik |work=cs-encodings-faq |version=1.10 |date=1996-06-19 |url=http://ftp.fi.muni.cz/pub/localization/charsets/cs-encodings-faq |access-date=2016-06-21 |url-status=live |archive-url=https://web.archive.org/web/20160621092901/http://ftp.fi.muni.cz/pub/localization/charsets/cs-encodings-faq |archive-date=2016-06-21}}&lt;/ref&gt;--&gt;
+
+&lt;ref name=&quot;IBM_G-1&quot;&gt;{{cite web |publisher=[[IBM Corporation]] |title=Appendix G-1. EBCDIC control character definitions |url=https://www-01.ibm.com/software/globalization/cdra/appendix_g1.html |work=Character Data Representation Architecture | archive-url=https://web.archive.org/web/20180911044845/https://www-01.ibm.com/software/globalization/cdra/appendix_g1.html |archive-date=2018-09-11}}&lt;/ref&gt;
+}}
+
+== External links ==
+* {{webarchive |url=https://web.archive.org/web/20180513205355/https://www-01.ibm.com/software/globalization/g11n-res.html |date=2018-05-13 |title=Character Data Representation Architecture (CDRA) from IBM}}. Contains IBM's official information on code pages and character sets.
+** [ftp://ftp.software.ibm.com/software/globalization/gcoc/attachments/CP00037.pdf Code page 37]
+** [ftp://ftp.software.ibm.com/software/globalization/gcoc/attachments/CP01047.pdf Code page 1047]
+* [http://publib.boulder.ibm.com/cgi-bin/bookmgr/BOOKS/QB3AQ501/F.0 F.0 Appendix F. Code Pages] from [http://publib.boulder.ibm.com/cgi-bin/bookmgr/BOOKS/QB3AQ501/CCONTENTS AS/400 International Application Development V4R2]
+* [http://demo.icu-project.org/icu-bin/convexp&lt;!-- --&gt; ICU Converter Explorer] Contains more information about EBCDIC derived from IBM's CDRA, including DBCS EBCDIC (Double Byte Character Set EBCDIC)
+* [http://www.icu-project.org/charts/charset/&lt;!-- https://web.archive.org/web/20180513205710/http://site.icu-project.org/charts/charset --&gt; ICU Charset Mapping Tables] Contains computer readable Unicode mapping tables for EBCDIC and many other character sets
+* [https://web.archive.org/web/20160303222819/http://www.hansenb.pdx.edu/DMKB/dict/tutorials/ebcdic.php&lt;!-- https://web.archive.org/web/20160303222819/http://www.hansenb.pdx.edu/DMKB/dict/tutorials/ebcdic.php --&gt; EBCDIC] character list, including decimal and hex values, symbolic name, and character/function
+* [http://wzwz.de/prog/ebcdic/cc_en.htm EBCDIC-code pages with Latin-1-charset (JavaScript)]
+* {{webarchive|url=https://web.archive.org/web/20160827044130/http://mainframe.wiki/ebcdicTbl.php|title=All EBCDIC code pages and 3270 graphics escape codes|date=August 27, 2016}} 
+
+{{Character encoding}}
+
+[[Category:IBM mainframe operating systems]]
+[[Category:EBCDIC code pages| ]]</text>
+      <sha1>cf0lca398wtttotaxh2fp6ytktia2nr</sha1>
+    </revision>
+  </page>

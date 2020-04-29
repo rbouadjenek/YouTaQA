@@ -1,0 +1,238 @@
+  <page>
+    <title>Aerodynamics</title>
+    <ns>0</ns>
+    <id>2819</id>
+    <revision>
+      <id>941000903</id>
+      <parentid>940178201</parentid>
+      <timestamp>2020-02-16T00:41:01Z</timestamp>
+      <contributor>
+        <username>Pieter1963</username>
+        <id>16826361</id>
+      </contributor>
+      <minor />
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{redirect|Aerodynamic}}
+[[Image:Airplane vortex edit.jpg|300px|thumb|upright=1.6|A NASA [[wake turbulence]] study at [[Wallops Flight Facility|Wallops Island]] in 1990. A [[vortex]] is created by passage of an aircraft wing, revealed by smoke. Vortices are one of the many phenomena associated with the study of aerodynamics.]]
+
+'''Aerodynamics''', from [[Greek language|Greek]] ἀήρ ''aero'' (air) + δυναμική (dynamics), is the study of motion of [[air]], particularly as interaction with a solid object, such as an [[airplane]] wing. It is a sub-field of [[fluid dynamics]] and [[gas dynamics]], and many aspects of aerodynamics theory are common to these fields.  The term ''aerodynamics'' is often used synonymously with gas dynamics, the difference being that &quot;gas dynamics&quot; applies to the study of the motion of all gases, and is not limited to air. 
+The formal study of aerodynamics began in the modern sense in the eighteenth century, although observations of fundamental concepts such as [[aerodynamic drag]] were recorded much earlier.  Most of the early efforts in aerodynamics were directed toward achieving [[Aircraft#Heavier than air – aerodynes|heavier-than-air flight]], which was first demonstrated by [[Otto Lilienthal]] in 1891.&lt;ref&gt;{{cite web |title=How the Stork Inspired Human Flight |url=http://www.flyingmag.com/how-stork-inspired-human-flight.html|publisher= flyingmag.com}}&lt;/ref&gt;  Since then, the use of aerodynamics through [[mathematical]] analysis, empirical approximations, [[wind tunnel]] experimentation, and [[computer simulation]]s has formed a rational basis for the development of heavier-than-air flight and a number of other technologies.  Recent work in aerodynamics has focused on issues related to [[compressible flow]], [[turbulence]], and [[boundary layer]]s and has become increasingly [[Computational fluid dynamics|computational]] in nature.
+
+==History==
+{{main article|History of aerodynamics}}
+Modern aerodynamics only dates back to the seventeenth century, but aerodynamic forces have been harnessed by humans for thousands of years in sailboats and windmills,&lt;ref&gt;{{cite web |title=Wind Power's Beginnings (1000 BC – 1300 AD) Illustrated History of Wind Power Development |url=http://telosnet.com/wind/early.html|publisher= Telosnet.com}}&lt;/ref&gt; and images and stories of flight appear throughout recorded history,&lt;ref&gt;{{cite book |first=Don |last=Berliner |year=1997 |url=https://books.google.com/books?id=Efr2Ll1OdqMC&amp;pg=PA128 |title=Aviation: Reaching for the Sky |publisher= The Oliver Press, Inc. |page=128 |isbn= 1-881508-33-1}}&lt;/ref&gt; such as the [[Ancient Greek]] legend of [[Icarus]] and [[Daedalus]].&lt;ref&gt;{{cite book |author1=Ovid |author2=Gregory, H. | title=The Metamorphoses | publisher=Signet Classics | year=2001 | isbn=0-451-52793-3 | oclc=45393471}}&lt;/ref&gt;  Fundamental concepts of [[Continuum mechanics|continuum]], [[Aerodynamic drag|drag]], and [[pressure gradient]]s appear in the work of [[Aristotle]] and [[Archimedes]].&lt;ref name = &quot;andersonhist&quot;/&gt;
+
+In 1726, [[Isaac Newton|Sir Isaac Newton]] became the first person to develop a theory of air resistance,&lt;ref&gt;{{cite book | author=Newton, I. | title=Philosophiae Naturalis Principia Mathematica, Book II | year=1726}}&lt;/ref&gt; making him one of the first aerodynamicists. [[Netherlands|Dutch]]-[[Switzerland|Swiss]] [[mathematician]] [[Daniel Bernoulli]] followed in 1738 with ''Hydrodynamica'' in which he described a fundamental relationship between pressure, density, and flow velocity for incompressible flow known today as [[Bernoulli's principle]], which provides one method for calculating aerodynamic lift.&lt;ref&gt;{{cite web | url =http://www.britannica.com/EBchecked/topic/658890/Hydrodynamica#tab=active~checked%2Citems~checked&amp;title=Hydrodynamica%20--%20Britannica%20Online%20Encyclopedia | title= Hydrodynamica | accessdate=2008-10-30 |publisher= Britannica Online Encyclopedia }}&lt;/ref&gt; In 1757, [[Leonhard Euler]] published the more general [[Euler equations (fluid dynamics)|Euler equations]] which could be applied to both compressible and incompressible flows. The Euler equations were extended to incorporate the effects of viscosity in the first half of the 1800s, resulting in the [[Navier–Stokes equations]].&lt;ref&gt;{{cite journal | author=Navier, C. L. M. H. | title=Memoire sur les lois du mouvement des fluides | journal=Mémoires de l'Académie des Sciences |volume=6|pages=389–440 | year=1827}}&lt;/ref&gt;&lt;ref&gt;{{cite journal | author=Stokes, G. | title=On the Theories of the Internal Friction of Fluids in Motion|url=https://archive.org/details/cbarchive_39179_onthetheoriesoftheinternalfric1849 | journal=Transactions of the Cambridge Philosophical Society |volume=8|pages=287–305 | year=1845}}&lt;/ref&gt;  The Navier-Stokes equations are the most general governing equations of fluid flow and but are difficult to solve for the flow around all but the simplest of shapes.
+
+[[Image:WB Wind Tunnel.jpg|thumb|A replica of the [[Wright brothers]]' [[wind tunnel]] is on display at the Virginia Air and Space Center. Wind tunnels were key in the development and validation of the laws of aerodynamics.]]
+
+In 1799, [[George Cayley|Sir George Cayley]] became the first person to identify the four aerodynamic forces of flight ([[weight]], [[Lift (force)|lift]], [[Aerodynamic drag|drag]], and [[thrust]]), as well as the relationships between them,&lt;ref&gt;{{cite web|title=U.S Centennial of Flight Commission – Sir George Cayley. |url=http://www.centennialofflight.gov/essay/Prehistory/Cayley/PH2.htm |accessdate=2008-09-10 |quote=Sir George Cayley, born in 1773, is sometimes called the Father of Aviation. A pioneer in his field, he was the first to identify the four aerodynamic forces of flight – weight, lift, drag, and thrust and their relationship. He was also the first to build a successful human-carrying glider. Cayley described many of the concepts and elements of the modern airplane and was the first to understand and explain in engineering terms the concepts of lift and thrust. |archiveurl=https://web.archive.org/web/20080920052758/http://centennialofflight.gov/essay/Prehistory/Cayley/PH2.htm |archivedate=20 September 2008 |url-status=dead }}&lt;/ref&gt;&lt;ref name=&quot;AerNav123&quot;&gt;''Cayley, George''. &quot;On Aerial Navigation&quot; [http://www.aeronautics.nasa.gov/fap/OnAerialNavigationPt1.pdf Part 1] {{webarchive|url=https://web.archive.org/web/20130511071413/http://www.aeronautics.nasa.gov/fap/OnAerialNavigationPt1.pdf |date=2013-05-11 }}, [http://www.aeronautics.nasa.gov/fap/OnAerialNavigationPt2.pdf Part 2] {{webarchive|url=https://web.archive.org/web/20130511041814/http://www.aeronautics.nasa.gov/fap/OnAerialNavigationPt2.pdf |date=2013-05-11 }}, [http://www.aeronautics.nasa.gov/fap/OnAerialNavigationPt3.pdf Part 3] {{webarchive|url=https://web.archive.org/web/20130511052409/http://www.aeronautics.nasa.gov/fap/OnAerialNavigationPt3.pdf |date=2013-05-11 }} ''Nicholson's Journal of Natural Philosophy'', 1809–1810. (Via [[NASA]]). [http://invention.psychology.msstate.edu/i/Cayley/Cayley.html Raw text]. Retrieved: 30 May 2010.&lt;/ref&gt; and in doing so outlined the path toward achieving heavier-than-air flight for the next century.  In 1871, [[Francis Herbert Wenham]] constructed the first [[wind tunnel]], allowing precise measurements of aerodynamic forces.  Drag theories were developed by [[Jean le Rond d'Alembert]],&lt;ref&gt;{{cite book | author=d'Alembert, J. | title=Essai d'une nouvelle theorie de la resistance des fluides | year=1752}}&lt;/ref&gt; [[Gustav Kirchhoff]],&lt;ref&gt;{{cite journal | author=Kirchhoff, G. | title=Zur Theorie freier Flussigkeitsstrahlen | journal=Journal für die reine und angewandte Mathematik |volume=1869| issue=70 |pages=289–298 | year=1869| doi=10.1515/crll.1869.70.289 }}&lt;/ref&gt; and [[John Strutt, 3rd Baron Rayleigh|Lord Rayleigh]].&lt;ref&gt;{{cite journal | author=Rayleigh, Lord | title=On the Resistance of Fluids | journal=Philosophical Magazine |volume=2| issue=13 |pages=430–441 |doi=10.1080/14786447608639132| year=1876| url=https://zenodo.org/record/1431123 }}&lt;/ref&gt; In 1889, [[Charles Renard]], a French aeronautical engineer, became the first person to reasonably predict the power needed for sustained flight.&lt;ref&gt;{{cite journal | author=Renard, C. | title=Nouvelles experiences sur la resistance de l'air | journal=L'Aéronaute |volume=22|pages= 73–81 | year=1889}}&lt;/ref&gt; [[Otto Lilienthal]], the first person to become highly successful with glider flights, was also the first to propose thin, curved airfoils that would produce high lift and low drag.  Building on these developments as well as research carried out in their own wind tunnel, the [[Wright brothers]] flew the first powered airplane on December 17, 1903.
+
+During the time of the first flights, [[Frederick W. Lanchester]],&lt;ref&gt;{{cite book | author=Lanchester, F. W. | title=Aerodynamics | url=https://archive.org/details/aerodynamicscons00lanc | year=1907}}&lt;/ref&gt; [[Martin Kutta]], and [[Nikolay Yegorovich Zhukovsky|Nikolai Zhukovsky]] independently created theories that connected [[Circulation (fluid dynamics)|circulation]] of a fluid flow to lift. Kutta and Zhukovsky went on to develop a two-dimensional wing theory. Expanding upon the work of Lanchester, [[Ludwig Prandtl]] is credited with developing the mathematics&lt;ref&gt;{{cite book | author=Prandtl, L. | title=Tragflügeltheorie | publisher=Göttinger Nachrichten, mathematischphysikalische Klasse, 451–477 | year=1919}}&lt;/ref&gt; behind thin-airfoil and lifting-line theories as well as work with [[boundary layer]]s.
+
+As aircraft speed increased, designers began to encounter challenges associated with air [[compressibility]] at speeds near or greater than the speed of sound.  The differences in air flows under such conditions leads to problems in aircraft control, increased drag due to [[shock wave]]s, and the threat of structural failure due to [[Aeroelasticity|aeroelastic flutter]].  The ratio of the flow speed to the speed of sound was named the [[Mach number]] after [[Ernst Mach]] who was one of the first to investigate the properties of [[supersonic]] flow. [[William John Macquorn Rankine]] and [[Pierre Henri Hugoniot]] independently developed the theory for flow properties before and after a [[shock wave]], while [[Jakob Ackeret]] led the initial work of calculating the lift and drag of supersonic airfoils.&lt;ref&gt;{{cite journal | author=Ackeret, J. | title=Luftkrafte auf Flugel, die mit der grosserer als Schallgeschwindigkeit bewegt werden | journal=Zeitschrift für Flugtechnik und Motorluftschiffahrt |volume=16|pages=72–74 | year=1925}}&lt;/ref&gt; [[Theodore von Kármán]] and [[Hugh Latimer Dryden]] introduced the term [[transonic]] to describe flow speeds around Mach 1 where drag increases rapidly. This rapid increase in drag led aerodynamicists and aviators to disagree on whether supersonic flight was achievable until the [[sound barrier]] was broken for the first time in 1947 using the [[Bell X-1]] aircraft.
+
+By the time the sound barrier was broken, aerodynamicists' understanding of the subsonic and low supersonic flow had matured. The [[Cold War]] prompted the design of an ever-evolving line of high performance aircraft. [[Computational fluid dynamics]] began as an effort to solve for flow properties around complex objects and has rapidly grown to the point where entire aircraft can be designed using computer software, with wind-tunnel tests followed by flight tests to confirm the computer predictions.  Understanding of [[supersonic]] and [[hypersonic]] aerodynamics has matured since the 1960s, and the goals of aerodynamicists have shifted from the behavior of fluid flow to the engineering of a vehicle such that it interacts predictably with the fluid flow. Designing aircraft for supersonic and hypersonic conditions, as well as the desire to improve the aerodynamic efficiency of current aircraft and propulsion systems, continues to motivate new research in aerodynamics, while work continues to be done on important problems in basic aerodynamic theory related to flow turbulence and the existence and uniqueness of analytical solutions to the Navier-Stokes equations.
+
+==Fundamental concepts==
+[[File:aeroforces.svg|thumb|Forces of flight on an [[airfoil]]]]
+Understanding the motion of air around an object (often called a flow field)  enables the calculation of forces and [[Moment (physics)|moments]] acting on the object.  In many aerodynamics problems, the forces of interest are the fundamental forces of flight: [[Lift (force)|lift]], [[Aerodynamic drag|drag]], [[thrust]], and [[weight]].  Of these, lift and drag are aerodynamic forces, i.e. forces due to air flow over a solid body.  Calculation of these quantities is often founded upon the assumption that the flow field behaves as a continuum. Continuum flow fields are characterized by properties such as [[flow velocity]], [[pressure]], [[density]], and [[temperature]], which may be functions of position and time. These properties may be directly or indirectly measured in aerodynamics experiments or calculated starting with the equations for conservation of mass, [[momentum]], and energy in air flows.  Density, flow velocity, and an additional property, [[viscosity]], are used to classify flow fields. 
+
+===Flow classification===
+Flow velocity is used to classify flows according to speed regime. Subsonic flows are flow fields in which the air speed field is always below the local speed of sound. Transonic flows include both regions of subsonic flow and regions in which the local flow speed is greater than the local speed of sound. Supersonic flows are defined to be flows in which the flow speed is greater than the speed of sound everywhere. A fourth classification, hypersonic flow, refers to flows where the flow speed is much greater than the speed of sound.  Aerodynamicists disagree on the precise definition of hypersonic flow.
+
+[[Compressibility|Compressible flow]] accounts for varying density within the flow. Subsonic flows are often idealized as incompressible, i.e. the density is assumed to be constant. Transonic and supersonic flows are compressible, and calculations that neglect the changes of density in these flow fields will yield inaccurate results.
+
+Viscosity is associated with the frictional forces in a flow. In some flow fields, viscous effects are very small, and approximate solutions may safely neglect viscous effects. These approximations are called inviscid flows. Flows for which viscosity is not neglected are called viscous flows. Finally, aerodynamic problems may also be classified by the flow environment. External aerodynamics is the study of flow around solid objects of various shapes (e.g. around an airplane wing), while internal aerodynamics is the study of flow through passages inside solid objects (e.g. through a jet engine).
+
+====Continuum assumption====
+Unlike liquids and solids, gases are composed of discrete [[molecule]]s which occupy only a small fraction of the volume filled by the gas. On a molecular level, flow fields are made up of the collisions of many individual of gas molecules between themselves and with solid surfaces. However, in most aerodynamics applications, the discrete molecular nature of gases is ignored, and the flow field is assumed to behave as a [[Continuum mechanics|continuum]]. This assumption allows fluid properties such as density and flow velocity to be defined everywhere within the flow.
+
+The validity of the [[continuum assumption]] is dependent on the density of the gas and the application in question. For the continuum assumption to be valid, the [[mean free path]] length must be much smaller than the length scale of the application in question. For example, many aerodynamics applications deal with aircraft flying in atmospheric conditions, where the mean free path length is on the order of micrometers and where the body is orders of magnitude larger. In these cases, the length scale of the aircraft ranges from a few meters to a few tens of meters, which is much larger than the mean free path length. For such applications, the continuum assumption is reasonable. The continuum assumption is less valid for extremely low-density flows, such as those encountered by vehicles at very high altitudes (e.g. 300,000&amp;nbsp;ft/90&amp;nbsp;km)&lt;ref name = &quot;andersonhist&quot;&gt;{{cite book|last = Anderson|first = John David | title = A History of Aerodynamics and its Impact on Flying Machines| publisher = Cambridge University Press |year = 1997| location=New York, NY | isbn=0-521-45435-2}}&lt;/ref&gt; or satellites in [[Low Earth orbit]]. In those cases, [[statistical mechanics]] is a more accurate method of solving the problem than is continuum aerodynamics. The [[Knudsen number]] can be used to guide the choice between statistical mechanics and the continuous formulation of aerodynamics.
+
+===Conservation laws===
+The assumption of  a [[Continuum mechanics|fluid continuum]] allows problems in aerodynamics to be solved using [[Fluid dynamics#Conservation laws|fluid dynamics conservation laws]]. Three conservation principles are used: 
+; [[Conservation of mass]]: In fluid dynamics, the mathematical formulation of this principle is known as the [[Continuity equation#Fluid dynamics|mass continuity equation]], which requires that mass is neither created nor destroyed within a flow of interest.
+; [[Conservation of momentum]]: In fluid dynamics, the mathematical formulation of this principle can be considered an application of [[Newton's Second Law]]. Momentum within a flow is only changed by the work performed on the system by external forces, which may include both [[surface force]]s, such as viscous ([[friction]]al) forces, and [[body force]]s, such as [[gravity|weight]].  The momentum conservation principle may be expressed as either a [[Vector space|vector]] equation or separated into a set of three [[Scalar (mathematics)|scalar]] equations (x,y,z components). In its most complete form, the momentum conservation equations are known as the [[Navier-Stokes equations]].  The Navier-Stokes equations have no known analytical solution and are solved in modern aerodynamics using [[computational fluid dynamics|computational techniques]]. Because of the computational cost of solving these complex equations, simplified expressions of momentum conservation may be appropriate for specific applications. The [[Euler equations (fluid dynamics)|Euler equations]] are a set of momentum conservation equations which neglect viscous forces and may be used in cases where the effect of viscous forces is expected to be small. Additionally, [[Bernoulli's principle|Bernoulli's equation]] is a solution to the momentum conservation equation of an inviscid flow that neglects gravity.
+; [[Conservation of energy]]: The energy conservation equation states that energy is neither created nor destroyed within a flow, and that any addition or subtraction of energy to a volume in the flow is caused by the fluid flow, by [[heat transfer]], or by [[Work (physics)|work]] into and out of the region of interest.
+
+The [[ideal gas law]] or another such [[equation of state]] is often used in conjunction with these equations to form a determined system that allows the solution for the unknown variables.
+
+==Branches of aerodynamics==
+Aerodynamic problems are classified by the flow environment or properties of the flow, including [[flow speed]], [[compressibility]], and [[viscosity]]. ''External'' aerodynamics is the study of flow around solid objects of various shapes. Evaluating the [[Lift (force)|lift]] and [[Drag (physics)|drag]] on an [[airplane]] or the [[shock wave]]s that form in front of the nose of a [[rocket]] are examples of external aerodynamics. ''Internal'' aerodynamics is the study of flow through passages in solid objects. For instance, internal aerodynamics encompasses the study of the airflow through a [[jet engine]] or through an [[air conditioning]] pipe.
+
+Aerodynamic problems can also be classified according to whether the [[flow speed]] is below, near or above the [[speed of sound]]. A problem is called subsonic if all the speeds in the problem are less than the speed of sound, [[transonic]] if speeds both below and above the speed of sound are present (normally when the characteristic speed is approximately the speed of sound), [[supersonic]] when the characteristic flow speed is greater than the speed of sound, and [[hypersonic]] when the flow speed is much greater than the speed of sound. Aerodynamicists disagree over the precise definition of hypersonic flow; a rough definition considers flows with [[Mach number]]s above 5 to be hypersonic.&lt;ref name = &quot;andersonhist&quot;/&gt;
+
+The influence of [[viscosity]] on the flow dictates a third classification. Some problems may encounter only very small viscous effects, in which case viscosity can be considered to be negligible. The approximations to these problems are called [[inviscid flow]]s. Flows for which viscosity cannot be neglected are called viscous flows.
+
+===Incompressible aerodynamics===
+{{further information|incompressible flow}}
+An incompressible flow is a flow in which density is constant in both time and space.  Although all real fluids are compressible, a flow is often approximated as incompressible if the effect of the density changes cause only small changes to the calculated results. This is more likely to be true when the flow speeds are significantly lower than the speed of sound. Effects of compressibility are more significant at speeds close to or above the speed of sound.  The [[Mach number]] is used to evaluate whether the incompressibility can be assumed, otherwise the effects of compressibility must be included.
+
+====Subsonic flow====
+Subsonic (or low-speed) aerodynamics describes fluid motion in flows which are much lower than the speed of sound everywhere in the flow. There are several branches of subsonic flow but one special case arises when the flow is [[inviscid]], [[Compressibility|incompressible]] and [[irrotational]]. This case is called [[potential flow]] and allows the [[differential equations]] that describe the flow to be a simplified version of the equations of [[fluid dynamics]], thus making available to the aerodynamicist a range of quick and easy solutions.&lt;ref&gt;{{cite book|last=Katz|first=Joseph|title=Low-speed aerodynamics: From wing theory to panel methods|series=McGraw-Hill series in aeronautical and aerospace engineering|year=1991|publisher=McGraw-Hill
+|location=New York|isbn=0-07-050446-6|oclc=21593499}}&lt;/ref&gt;
+
+In solving a subsonic problem, one decision to be made by the aerodynamicist is whether to incorporate the effects of compressibility. Compressibility is a description of the amount of change of [[density]] in the flow. When the effects of compressibility on the solution are small, the assumption that density is constant may be made. The problem is then an incompressible low-speed aerodynamics problem. When the density is allowed to vary, the flow is called compressible. In air, compressibility effects are usually ignored when the [[Mach number]] in the flow does not exceed 0.3 (about 335 feet (102&amp;nbsp;m) per second or 228 miles (366&amp;nbsp;km) per hour at 60&amp;nbsp;°F (16&amp;nbsp;°C)). Above Mach 0.3, the problem flow should be described using compressible aerodynamics.
+
+===Compressible aerodynamics===
+{{main article|Compressible flow}}
+According to the theory of aerodynamics, a flow is considered to be compressible if the [[density]] changes along a [[Streamlines, streaklines and pathlines|streamline]]. This means that – unlike incompressible flow – changes in density are considered. In general, this is the case where the [[Mach number]] in part or all of the flow exceeds 0.3. The Mach 0.3 value is rather arbitrary, but it is used because gas flows with a Mach number below that value demonstrate changes in density of less than 5%. Furthermore, that maximum 5% density change occurs at the [[stagnation point]] (the point on the object where flow speed is zero), while the density changes around the rest of the object will be significantly lower. Transonic, supersonic, and hypersonic flows are all compressible flows.
+
+====Transonic flow====
+{{main article|Transonic}}
+The term Transonic refers to a range of flow velocities just below and above the local [[speed of sound]] (generally taken as [[Mach Number|Mach]] 0.8–1.2). It is defined as the range of speeds between the [[critical mach|critical Mach number]], when some parts of the airflow over an aircraft become [[supersonic]], and a higher speed, typically near [[Mach number|Mach 1.2]], when all of the airflow is supersonic. Between these speeds, some of the airflow is supersonic, while some of the airflow is not supersonic.
+
+{{anchor|Supersonic aerodynamics}}&lt;!-- anchor for the link that leads directly to the section --&gt;
+
+====Supersonic flow====
+{{main article|Supersonic}}
+Supersonic aerodynamic problems are those involving flow speeds greater than the speed of sound. Calculating the lift on the [[Concorde]] during cruise can be an example of a supersonic aerodynamic problem.
+
+Supersonic flow behaves very differently from subsonic flow. Fluids react to differences in pressure; pressure changes are how a fluid is &quot;told&quot; to respond to its environment. Therefore, since [[sound]] is, in fact, an infinitesimal pressure difference propagating through a fluid, the [[speed of sound]] in that fluid can be considered the fastest speed that &quot;information&quot; can travel in the flow. This difference most obviously manifests itself in the case of a fluid striking an object. In front of that object, the fluid builds up a [[stagnation pressure]] as impact with the object brings the moving fluid to rest. In fluid traveling at subsonic speed, this pressure disturbance can propagate upstream, changing the flow pattern ahead of the object and giving the impression that the fluid &quot;knows&quot; the object is there by seemingly adjusting its movement and is flowing around it. In a supersonic flow, however, the pressure disturbance cannot propagate upstream. Thus, when the fluid finally reaches the object it strikes it and the fluid is forced to change its properties – [[temperature]], [[density]], [[pressure]], and [[Mach number]]—in an extremely violent and [[reversible process (thermodynamics)|irreversible]] fashion called a [[shock wave]]. The presence of shock waves, along with the compressibility effects of high-flow velocity (see [[Reynolds number]]) fluids, is the central difference between the supersonic and subsonic aerodynamics regimes.
+
+====Hypersonic flow====
+{{main article|Hypersonic}}
+In aerodynamics, hypersonic speeds are speeds that are highly supersonic. In the 1970s, the term generally came to refer to speeds of Mach 5 (5 times the speed of sound) and above. The hypersonic regime is a subset of the supersonic regime. Hypersonic flow is characterized by high temperature flow behind a shock wave, viscous interaction, and chemical dissociation of gas.
+
+==Associated terminology==
+[[File:Types of flow analysis in fluid mechanics.svg|thumb|Different types flow analysis around an airfoil: 
+  {{legend|#f3f3fd|[[Potential flow]] theory}}
+  {{legend|#ff9665|[[Boundary layer|Boundary layer flow]] theory}}
+  {{legend|#3b3bde|[[Turbulence|Turbulent wake]] analysis}}]]
+
+The incompressible and compressible flow regimes produce many associated phenomena, such as boundary layers and turbulence.
+
+===Boundary layers===
+{{main article|Boundary layer}}
+The concept of a [[boundary layer]] is important in many problems in aerodynamics. The viscosity and fluid friction in the air is approximated as being significant only in this thin layer. This assumption makes the description of such aerodynamics much more tractable mathematically.
+
+===Turbulence===
+{{main article|Turbulence}}
+In aerodynamics, turbulence is characterized by chaotic property changes in the flow. These include low momentum diffusion, high momentum convection, and rapid variation of pressure and flow velocity in space and time. Flow that is not turbulent is called [[laminar flow]].
+
+==Aerodynamics in other fields==
+{{refimprove section|date=March 2018}}
+===Engineering design===
+{{Further information|Automotive aerodynamics}}
+Aerodynamics is a significant factor in [[Automotive engineering|vehicle design]], including [[automobile]]s, and in the prediction of forces and moments acting on [[sailing|sailing vessels]]. It is used in the design of mechanical components such as [[hard drive]] heads. [[Structural engineering|Structural engineers]] resort to aerodynamics, and particularly [[aeroelasticity]], when calculating [[wind]] loads in the design of large buildings, [[bridge]]s, and [[Wind turbine design|wind turbines]] 
+
+The aerodynamics of internal passages is important in [[HVAC|heating/ventilation]], [[Duct (HVAC)|gas piping]], and in [[Internal combustion engine|automotive engines]] where detailed flow patterns strongly affect the performance of the engine.
+
+===Environmental design===
+Urban aerodynamics are studied by [[Urban planning|town planners]] and designers seeking to improve [[amenity]] in outdoor spaces, or in creating urban microclimates to reduce the effects of urban pollution. The field of environmental aerodynamics describes ways in which [[atmospheric circulation]] and flight mechanics affect ecosystems. 
+
+Aerodynamic equations are used in [[numerical weather prediction]].
+
+===Ball-control in sports===
+Sports in which aerodynamics are of crucial importance include [[Association football|soccer]], [[cricket]] and golf, in which control over the trajectory of ball movement is sought by expert players who can, for instance, exploit the &quot;[[Magnus effect#In sport|Magnus effect]]&quot; and other environmental conditions to advantage.
+
+==See also==
+* [[Aeronautics]]
+* [[Aerostatics]]
+* [[Aviation]]
+* [[Insect flight]] – how bugs fly
+* [[List of aerospace engineering topics]]
+* [[List of engineering topics]]
+* [[Nose cone design]]
+
+==References==
+{{reflist|30em}}
+
+==Further reading==
+{{Refbegin|2}}
+'''General aerodynamics'''
+* {{cite book | author=Anderson, John D.| authorlink=John D. Anderson | title=Fundamentals of Aerodynamics | publisher=McGraw-Hill | edition=4th |year=2007 | isbn=978-0-07-125408-3 | oclc=60589123}}
+* {{cite book |author1=Bertin, J. J. |author2=Smith, M. L. | title=Aerodynamics for Engineers | publisher=Prentice Hall | edition=4th | year=2001 | isbn=0-13-064633-4 | oclc=47297603}}
+* {{cite book | author=Smith, Hubert C. | title=Illustrated Guide to Aerodynamics | publisher=McGraw-Hill | edition=2nd | year=1991 | isbn=0-8306-3901-2 | oclc=24319048 | url-access=registration | url=https://archive.org/details/illustratedguide0000smit }}
+* {{cite book | author=Craig, Gale | title=Introduction to Aerodynamics | publisher=Regenerative Press | year=2003 | isbn=0-9646806-3-7 | oclc=53083897 | url-access=registration | url=https://archive.org/details/introductiontoae0000crai }}
+
+'''Subsonic aerodynamics'''
+* {{cite book |author1=Katz, Joseph |author2=Plotkin, Allen | title=Low-Speed Aerodynamics | publisher=Cambridge University Press | edition=2nd | year=2001 | isbn=0-521-66552-3 | oclc=43970751 }}
+* Obert, Ed (2009). {{Google books|V1DuJfPov48C|Aerodynamic Design of Transport Aircraft}}. Delft; About practical aerodynamics in industry and the effects on design of aircraft. {{ISBN|978-1-58603-970-7}}.
+
+'''Transonic aerodynamics'''
+* {{cite book | author=Moulden, Trevor H. | title=Fundamentals of Transonic Flow | publisher=Krieger Publishing Company | year=1990 | isbn=0-89464-441-6 | oclc=20594163}}
+* {{cite book |author1=Cole, Julian D |author2=Cook, L. Pamela|author2-link=Pamela Cook | title=Transonic Aerodynamics | publisher=North-Holland | year=1986 | isbn=0-444-87958-7 | oclc=13094084}}
+
+'''Supersonic aerodynamics'''
+* {{cite book | author=Ferri, Antonio | authorlink=Antonio Ferri | title=Elements of Aerodynamics of Supersonic Flows | publisher=Dover Publications | edition=Phoenix | year=2005 | isbn=0-486-44280-2 | oclc=58043501}}
+* {{cite book | last = Shapiro | first = Ascher H. | authorlink=Ascher H. Shapiro| title = The Dynamics and Thermodynamics of Compressible Fluid Flow, Volume 1 | year = 1953 | publisher = Ronald Press | isbn = 978-0-471-06691-0 | oclc = 11404735    }}
+* {{cite book | author=Anderson, John D. | authorlink=John D. Anderson | title = Modern Compressible Flow | year = 2004 | publisher = McGraw-Hill | isbn = 0-07-124136-1 | oclc = 71626491 }}
+* {{cite book | last1 = Liepmann | first1 = H. W. | authorlink1=H. W. Liepmann | last2 = Roshko | first2 = A. | authorlink2=A. Roshko | title = Elements of Gasdynamics | year = 2002 | publisher = Dover Publications | isbn = 0-486-41963-0 | oclc = 47838319 }}
+* {{cite book | last = von Mises | first = Richard | authorlink=Richard von Mises | title = Mathematical Theory of Compressible Fluid Flow | year = 2004 | publisher = Dover Publications | isbn = 0-486-43941-0 | oclc = 56033096 }}
+* {{cite book | last = Hodge | first = B. K. |author2= Koenig K. | title = Compressible Fluid Dynamics with Personal Computer Applications | year = 1995 | publisher = Prentice Hall | isbn = 0-13-308552-X | oclc = 31662199 }}
+
+'''Hypersonic aerodynamics'''
+* {{cite book | author=Anderson, John D. | authorlink=John D. Anderson | title=Hypersonic and High Temperature Gas Dynamics | publisher=AIAA | edition=2nd | year=2006 | isbn=1-56347-780-7 | oclc=68262944}}
+* {{cite book | last1 = Hayes | first1 = Wallace D. | authorlink1=Wallace D. Hayes | last2 = Probstein | first2 = Ronald F. | authorlink2=Ronald F. Probstein | title=Hypersonic Inviscid Flow | publisher=Dover Publications | year=2004 | isbn=0-486-43281-5 | oclc=53021584}}
+
+'''History of aerodynamics'''
+* {{cite book | author=Chanute, Octave| authorlink=Octave Chanute | title=Progress in Flying Machines | publisher=Dover Publications | year=1997 | isbn=0-486-29981-3 | oclc=37782926}}
+* {{cite book | author=von Karman, Theodore | authorlink=Theodore von Karman |title=Aerodynamics: Selected Topics in the Light of Their Historical Development | publisher=Dover Publications | year=2004 | isbn=0-486-43485-0 | oclc=53900531}}
+* {{cite book | author=Anderson, John D.| authorlink=John D. Anderson | title=A History of Aerodynamics: And Its Impact on Flying Machines | publisher=Cambridge University Press | year=1997 | isbn=0-521-45435-2 | oclc=228667184  }}
+
+'''Aerodynamics related to engineering'''
+
+''Ground vehicles''
+* {{cite book | author=Katz, Joseph | title=Race Car Aerodynamics: Designing for Speed | publisher=Bentley Publishers | year=1995 | isbn=0-8376-0142-8 | oclc=181644146 }}
+* {{cite book | author=Barnard, R. H. | title=Road Vehicle Aerodynamic Design | publisher=Mechaero Publishing | edition=2nd | year=2001 | isbn=0-9540734-0-1 | oclc=47868546}}
+
+''Fixed-wing aircraft''
+* {{cite book |author1=Ashley, Holt |author2=Landahl, Marten | title=Aerodynamics of Wings and Bodies | publisher=Dover Publications | edition=2nd | year=1985 | isbn=0-486-64899-0 | oclc=12021729}}
+* {{cite book |author1=Abbott, Ira H. |author2=von Doenhoff, A. E. | title=Theory of Wing Sections: Including a Summary of Airfoil Data | publisher=Dover Publications | year=1959 | isbn=0-486-60586-8 | oclc=171142119}}
+* {{cite book | author=Clancy, L.J. |authorlink=L. J. Clancy| title=Aerodynamics | publisher=Pitman Publishing Limited | year=1975 | isbn=0-273-01120-0 | oclc=16420565}}
+
+''Helicopters''
+* {{cite book | author=Leishman, J. Gordon | title=Principles of Helicopter Aerodynamics | publisher=Cambridge University Press | edition=2nd | year=2006 | isbn=0-521-85860-7 | oclc=224565656 }}
+* {{cite book | author=Prouty, Raymond W. | title=Helicopter Performance, Stability, and Control | publisher=Krieger Publishing Company Press | year=2001 | isbn=1-57524-209-5 | oclc=212379050 }}
+* {{cite book |author1=Seddon, J. |author2=Newman, Simon | title=Basic Helicopter Aerodynamics: An Account of First Principles in the Fluid Mechanics and Flight Dynamics of the Single Rotor Helicopter | publisher=AIAA | year=2001 | isbn=1-56347-510-3 | oclc=47623950 }}
+
+''Missiles''
+* {{cite book | author=Nielson, Jack N. | title=Missile Aerodynamics | publisher=AIAA | year=1988 | isbn=0-9620629-0-1 | oclc=17981448}}
+
+''Model aircraft''
+* {{cite book | author=Simons, Martin | title=Model Aircraft Aerodynamics | publisher=Trans-Atlantic Publications, Inc. | edition=4th | year=1999 | isbn=1-85486-190-5 | oclc=43634314 }}
+
+'''Related branches of aerodynamics'''
+
+''Aerothermodynamics''
+* {{cite book | author=Hirschel, Ernst H. | title=Basics of Aerothermodynamics | publisher=Springer | year=2004 | isbn=3-540-22132-8 | oclc=228383296 }}
+* {{cite book | author=Bertin, John J. | title=Hypersonic Aerothermodynamics | publisher=AIAA | year=1993 | isbn=1-56347-036-5 | oclc=28422796}}
+
+''Aeroelasticity''
+* {{cite book |author1=Bisplinghoff, Raymond L. |author2=Ashley, Holt |author3=Halfman, Robert L. | title=Aeroelasticity | publisher=Dover Publications | year=1996 | isbn=0-486-69189-6 | oclc=34284560}}
+* {{cite book | author=Fung, Y. C. | title=An Introduction to the Theory of Aeroelasticity | publisher=Dover Publications | edition=Phoenix | year=2002 | isbn=0-486-49505-1 | oclc=55087733}}
+
+''Boundary layers''
+* {{cite book | author=Young, A. D. | title=Boundary Layers | publisher=AIAA | year=1989 | isbn=0-930403-57-6 | oclc=19981526}}
+* {{cite book | author=Rosenhead, L. | title=Laminar Boundary Layers | publisher=Dover Publications | year=1988 | isbn=0-486-65646-2 | oclc=17619090 }}
+
+''Turbulence''
+* {{cite book | author1=Tennekes, H. | authorlink1=Hendrik Tennekes | author2=Lumley, J. L. | authorlink2=John L. Lumley |title=A First Course in Turbulence | publisher=The MIT Press | year=1972 | isbn=0-262-20019-8 | oclc=281992}}
+* {{cite book | author=Pope, Stephen B. | title=Turbulent Flows | publisher=Cambridge University Press | year=2000 | isbn=0-521-59886-9 | oclc=174790280 }}
+{{Refend}}
+
+==External links==
+{{commons category|Aerodynamics}}
+* [http://www.grc.nasa.gov/WWW/K-12/airplane/bga.html NASA Beginner's Guide to Aerodynamics]
+* [http://howthingsfly.si.edu Smithsonian National Air and Space Museum's How Things Fly website]
+* [http://www.aerodynamics4students.com Aerodynamics for Students]
+* [https://web.archive.org/web/20090617225411/http://selair.selkirk.bc.ca/Training/Aerodynamics/index.html Aerodynamics for Pilots]
+* [http://www.240edge.com/performance/tuning-aero.html Aerodynamics and Race Car Tuning]
+* [http://www.aerodyndesign.com Aerodynamic Related Projects]
+* [http://www.efluids.com/efluids/pages/bicycle.htm eFluids Bicycle Aerodynamics]
+* [http://www.forumula1.net/2006/f1/features/car-design-technology/aerodynamics/ Application of Aerodynamics in Formula One (F1)]
+* [http://www.nas.nasa.gov/About/Education/Racecar/ Aerodynamics in Car Racing]
+* [http://wings.avkids.com/Book/Animals/intermediate/birds-01.html Aerodynamics of Birds]
+* [http://www.public.iastate.edu/~huhui/paper/2007/AIAA-2007-0483.pdf Aerodynamics and dragonfly wings]
+
+{{Authority control}}
+
+[[Category:Aerodynamics| ]]
+[[Category:Aerospace engineering|Dynamics]]
+[[Category:Energy in transport]]</text>
+      <sha1>1zixlt5t5oedmpdvxfyde3konggoouf</sha1>
+    </revision>
+  </page>

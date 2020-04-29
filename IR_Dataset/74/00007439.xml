@@ -1,0 +1,160 @@
+  <page>
+    <title>Constructible number</title>
+    <ns>0</ns>
+    <id>7439</id>
+    <revision>
+      <id>931223027</id>
+      <parentid>929442765</parentid>
+      <timestamp>2019-12-17T18:44:12Z</timestamp>
+      <contributor>
+        <username>InternetArchiveBot</username>
+        <id>27015025</id>
+      </contributor>
+      <comment>Bluelinking 1 books for [[WP:V|verifiability]].) #IABot (v2.1alpha3</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{for|numbers &quot;constructible&quot; in the sense of [[set theory]]|Constructible universe}}
+
+[[File:Square root of 2 triangle.svg|thumb|250px|The square root of {{math|2}} is equal to the length of the [[hypotenuse]] of a [[right triangle]] with legs of length {{math|1}} and is therefore a '''constructible number''']]
+
+In [[geometry]] and [[algebra]], a [[real number]] {{mvar|r}} is '''constructible''' [[if and only if]], given a line segment of unit length, a line segment of length |{{mvar|r}}| can be constructed with [[compass and straightedge constructions|compass and straightedge]] in a finite number of steps.&lt;ref&gt;{{harvtxt|Fraleigh|1994|page=426}}; {{harvtxt|Beachy|Blair|1996|loc=[https://web.archive.org/web/20120206212710/http://www.math.niu.edu/~beachy/abstract_algebra/study_guide/63.html Definition 6.3.1]}}&lt;/ref&gt; Equivalently, {{mvar|r}} is constructible if and only if there is a [[closed-form expression]] for {{mvar|r}} using only the integers 0 and 1 and the operations for addition, subtraction, multiplication, division, and square roots.
+
+The geometric definition of constructible numbers motivates a corresponding definition of '''constructible points''', which can again be described either geometrically or algebraically. A point is constructible if it can be produced (as an endpoint of a line segment or crossing point of two lines or circles) as one of the points of a compass and straight edge construction, starting from a given unit length segment. Alternatively and equivalently, taking the two endpoints of the segments to be the points (0,0) and (1,0) of a [[Cartesian coordinate system]], a point is constructible if and only if its Cartesian coordinates are both constructible numbers.{{sfnp|Kazarinoff|2003|pages=10 &amp; 15}}
+
+The set of constructible numbers forms a [[field (algebra)|field]]: applying any of the four basic arithmetic operations to members of this set produces another constructible number.
+This field is a [[field extension]] of the [[rational number]]s and in turn is contained in the field of [[algebraic number]]s. It is the real [[quadratic closure]] of the [[rational number]]s, the smallest field extension of the rationals that includes the [[square root]]s of all of its positive numbers.{{sfnp|Kazarinoff|2003|page=46}}
+
+The proof of the equivalence between the algebraic and geometric definitions of constructible numbers has the effect of transforming geometric questions about compass and straightedge constructions into [[abstract algebra|algebra]]. This transformation leads to the solutions of many famous mathematical problems, which defied centuries of attack.
+
+== Geometric definitions ==
+===Geometrically constructible points===
+Let {{mvar|O}} and {{mvar|A}} be two given distinct points in the [[plane (geometry)|Euclidean plane]], and define ''S'' to be the set of points that can be constructed with compass and straightedge starting with {{mvar|O}} and {{mvar|A}}. Then the points of ''S'' are called '''constructible points'''. {{mvar|O}} and {{mvar|A}} are, by definition, elements of {{mvar|S}}. To more precisely describe the remaining elements of {{mvar|S}}, make the following two definitions:{{sfnp|Kazarinoff|2003|page=10}}
+* a line segment whose endpoints are in {{mvar|S}} is called a '''constructed segment''', and
+* a circle whose center is in {{mvar|S}} and which passes through a point of {{mvar|S}} (alternatively, whose radius is the distance between some pair of distinct points of {{mvar|S}}) is called a '''constructed circle'''.
+Then, the points of {{mvar|S}}, besides {{mvar|O}} and {{mvar|A}} are:{{sfnp|Kazarinoff|2003|page=10}}
+* the [[Line-line intersection|intersection]] of two non-parallel constructed segments, or lines through constructed segments,
+* the intersection points of a constructed circle and a constructed segment, or line through a constructed segment, or
+* the intersection points of two distinct constructed circles.
+
+As an example, the midpoint of constructed segment {{mvar|OA}} is a constructible point. One construction for it is to construct two circles with {{mvar|OA}} as radius, and the line through the two crossing points of these two circles. Then the midpoint of segment {{mvar|OA}} is the point where this segment is crossed by the constructed line.
+
+===Geometrically constructible numbers===
+This geometric formulation can be used to define a [[Cartesian coordinate system]] in which the point {{mvar|O}} is associated to the origin having coordinates {{math|(0, 0)}} and in which the point {{mvar|A}} is associated with the coordinates {{math|(1, 0)}}. The points of {{mvar|S}} may now be used to link the geometry and algebra by defining a '''constructible number''' to be a coordinate of a constructible point.{{sfnp|Kazarinoff|2003||page=18}}
+
+An equivalent definition is that a constructible number is the length of a constructible line segment.{{sfnp|Herstein|1986|page=237}} If a constructible number is represented as the {{mvar|x}}-coordinate of a constructible point {{mvar|P}}, then the segment from {{mvar|O}} to the perpendicular projection of {{mvar|P}} onto line {{mvar|OA}} is a constructible line segment with length {{mvar|x}}. And conversely, if {{mvar|x}} is the length of a constructible line segment, then the intersection of line {{mvar|OA}} and a circle centered at {{mvar|O}} with radius equal to the length of this segment gives a point whose first Cartesian coordinate is {{mvar|x}}.
+
+Given any two constructible numbers {{mvar|x}} and {{mvar|y}}, one can construct the points {{math|1=''P'' = (''x'',0)}} and {{math|1=''Q'' = (0,y)}} as above, as the points at distances {{mvar|x}} and {{mvar|y}} from {{mvar|O}} along line {{mvar|OA}} and its perpendicular axis through {{mvar|O}}. Then, the point {{math|(''x'',''y'')}} can be constructed as the intersection of two lines perpendicular to the axes through {{mvar|P}} and {{mvar|Q}}. Therefore, the constructible points are exactly the points whose Cartesian coordinates are constructible numbers.{{sfnp|Moise|1974|page=227}}
+
+===Geometric representation of algebraic numbers===
+If {{mvar|a}} and {{mvar|b}} are the non-zero lengths of constructed segments then elementary compass and straightedge constructions can be used to obtain constructed segments of lengths {{math|''a'' + ''b''}}, {{math|''a'' − ''b''}} (if {{math|''a'' ≥ ''b''}}), {{math|''ab''}} and {{math|{{sfrac|''a''|''b''}}}}. The latter two can be done with a construction based on the [[intercept theorem]]. A slightly less elementary construction using these tools is based on the [[geometric mean theorem]] and will construct a segment of length {{math|{{sqrt|''a''}}}} from a constructed segment of length {{mvar|a}}.&lt;ref&gt;{{harvtxt|Herstein|1986|pages=236–237}}; {{harvtxt|Moise|1974|page=224}}; {{harvtxt|Fraleigh|1994|pages=426–427}}&lt;/ref&gt; It follows from these considerations that the numbers defined as constructible in this geometric way include all of the numbers in the quadratic closure of the rationals.
+
+&lt;gallery class=center caption=&quot;Compass and straightedge constructions for constructible numbers&quot; widths=200 heights=200&gt;
+File:Number construction multiplication.svg|&lt;math&gt;a \cdot b&lt;/math&gt; based on the intercept theorem
+File:Number construction division.svg|&lt;math&gt;\frac{a}{b} &lt;/math&gt; based on the intercept theorem
+File:Square root construction.svg|&lt;math&gt;\sqrt{a}&lt;/math&gt; based on the geometric mean theorem
+&lt;/gallery&gt;
+
+== Transformation into algebra ==
+
+If {{mvar|a}} and {{mvar|b}} are constructible numbers with {{math|''b'' ≠ 0}}, then {{math|''a'' ± ''b''}} , {{math|''a''×''b''}}, {{math|{{sfrac|''a''|''b''}}}}, and {{math|{{sqrt|''a''}}}}, for non-negative {{mvar|a}}, are constructible. Thus, the set of constructible real numbers form a [[field (algebra)|field]]. Furthermore, since 1 is a constructible number, all [[rational number]]s are constructible and {{math|ℚ}} is a (proper) subfield of the field of constructible numbers. Also, any constructible number is an [[algebraic number]]. More precisely,{{sfnp|Fraleigh|1994|page=429}} if {{mvar|γ}} is a constructible real number and {{math|''γ'' ∉ ℚ}}, then there is a finite sequence of real numbers {{math|1=''α''&lt;sub&gt;1&lt;/sub&gt;, ... , ''α''&lt;sub&gt;''n''&lt;/sub&gt; = γ}} such that {{math|ℚ(''α''&lt;sub&gt;1&lt;/sub&gt;, ... , ''α''&lt;sub&gt;''i''&lt;/sub&gt;)}} is an [[Algebraic extension|extension]] of {{math|ℚ(''α''&lt;sub&gt;1&lt;/sub&gt;, ... , ''α''&lt;sub&gt;''i''−1&lt;/sub&gt;)}} of degree 2. In particular, {{math|1=[ℚ(''γ'') : ℚ] = 2&lt;sup&gt;''r''&lt;/sup&gt;}} for some integer {{math|''r'' ≥ 0}}.  Using slightly different terminology,{{sfnp|Roman|1995|page=59}} a real number is constructible [[if and only if]] it lies in a field at the top of a finite [[tower of fields|tower]] of [[quadratic extension]]s, starting with the rational field {{math|ℚ}}. More precisely, {{mvar|γ}} is constructible if and only if there exists a tower of fields
+
+:&lt;math&gt;\mathbb{Q} = K_0 \subseteq K_1 \subseteq \dots \subseteq K_n,&lt;/math&gt;
+
+where {{mvar|γ}} is in {{math|''K''&lt;sub&gt;''n''&lt;/sub&gt;}} and for all {{math|0 ≤ ''j'' &lt; ''n''}}, {{math|1=[''K''&lt;sub&gt;''j''+1&lt;/sub&gt; : ''K''&lt;sub&gt;''j''&lt;/sub&gt;] = 2}}.
+
+For yet another formulation of this result, this time using the geometric definition of a constructible point,{{sfnp|Stewart|1989|pages=54–55}} let {{mvar|P}} be a non-empty set of points in {{math|ℝ&lt;sup&gt;2&lt;/sup&gt;}} and {{mvar|K}} the subfield of {{math|ℝ}} generated by all the coordinates of points in {{mvar|P}}. If a point {{math|1=''r'' = (''x'', ''y'')}} is constructible from the points of {{mvar|P}}, then the degrees {{math|[''K''(''x'') : ''K'']}} and {{math|[''K''(''y'') : ''K'']}} are powers of 2.
+
+Using the natural correspondence between points of {{math|ℝ&lt;sup&gt;2&lt;/sup&gt;}} and [[complex number]]s (namely, {{math|(''a'', ''b'') ⇔ ''a'' + ''bi''}}), some authors prefer to phrase results in the complex setting by defining:{{sfnp|Roman|1995|page=207}}a complex number to be constructible if and only if its real and imaginary parts are constructible real numbers.  It can then be shown,{{sfnp|Rotman|2006|page=361}} in a manner analogous to the real case, that a complex number is constructible if and only if it lies in a field at the top of a finite tower of complex quadratic extensions, starting with the field {{math|ℚ(''i'')}}. More precisely, {{mvar|z}} is constructible if and only if there exists a tower of complex fields
+
+:&lt;math&gt;\mathbb{Q}(i) = F_0 \subseteq F_1 \subseteq \dots \subseteq F_n,&lt;/math&gt;
+
+where {{mvar|z}} is in {{math|''F''&lt;sub&gt;''n''&lt;/sub&gt;}}, and for all {{math|0 ≤ ''j'' &lt; ''n''}}, {{math|[''F''&lt;sub&gt;''j''+1&lt;/sub&gt; : ''F''&lt;sub&gt;''j''&lt;/sub&gt;] ≤ 2}}.  Consequently, if a complex number is constructible, then {{math|[ℚ(''z'') : ℚ]}} is a power of two. 
+
+This algebraic characterization of constructible numbers provides an important {{em|necessary}} condition for constructibility: if {{mvar|z}} is constructible, then it is algebraic, and its minimal irreducible polynomial has degree a power of 2, which is equivalent to the statement that the field extension {{math|ℚ(''z'')/ℚ}} has dimension a power of 2. However, the converse is false &amp;ndash; this is not a {{em|sufficient}} condition for constructibility as there are non-constructible numbers {{mvar|z}} with {{math|1=[ℚ(''z'') : ℚ] = 4}}.{{sfnp|Rotman|2006|page=362}}
+
+==Trigonometric numbers==
+{{main|Trigonometric number}}
+
+[[Trigonometric number]]s are irrational cosines or sines of angles that are rational multiples of {{pi}}. Such a number is constructible if and only if the denominator of the fully reduced multiple is a power of {{math|2}} or the product of a power of {{math|2}} with the product of one or more distinct [[Fermat prime]]s. Thus, for example, {{math|cos({{pi}}/15)}} Is constructible because {{math|15}} is the product of two Fermat primes, {{math|3}} and {{math|5}}.
+
+See [[Trigonometric constants expressed in real radicals|here]] a list of trigonometric numbers expressed in terms of square roots.
+
+== Impossible constructions ==
+[[File:Academ existence of square root of 2.svg|thumb|200px|Although duplication of the cube is impossible, duplication of the square is not.]]
+
+The [[ancient Greece|ancient Greeks]] thought that certain problems of [[straightedge and compass construction]] they could not solve were simply obstinate, not unsolvable.{{sfnp|Stewart|1989||page=51}}  However, the non-constructibility of certain numbers proves them to be logically impossible to perform. (The problems themselves, however, are solvable using methods that go beyond the constraint of working only with straightedge and compass, and the Greeks knew how to solve them in this way.)
+
+In the following chart, each table represents a specific ancient construction problem. The left column gives the name of the problem. The second column gives an equivalent algebraic formulation of the problem. In other words, the solution to the problem is affirmative [[if and only if]] each number in the given set of numbers is constructible. Finally, the last column provides a simple [[counterexample]]. In other words, the number in the last column is an element of the set in the same row, but is not constructible.
+
+{| class=&quot;wikitable&quot;
+! Construction problem
+! Associated set of numbers
+! Counterexample
+|-
+|[[Doubling the cube]]
+|&lt;math&gt;\left \{ \sqrt[3]{x} : x \text{ is constructible} \right \}&lt;/math&gt;
+|&lt;math&gt;\sqrt[3]{2}&lt;/math&gt; (the edge length of a doubled [[unit cube]]) is not constructible, because its [[minimal polynomial (field theory)|minimal polynomial]] has degree 3 over '''Q'''{{sfnp|Fraleigh|1994|pages=429–430}}
+|-
+|[[Trisecting the angle]]
+|&lt;math&gt;\left \{ \cos \left( \frac{\arccos x}{3} \right) : x \text{ is constructible} \right \}&lt;/math&gt;
+|&lt;math&gt;\cos \left( \frac{\arccos (1/2)}{3} \right) = \cos 20^o&lt;/math&gt; (one of the coordinates of a unit-length segment trisecting an axis-aligned [[equilateral triangle]]) is not constructible, because &lt;math&gt;\cos 20^o&lt;/math&gt; has minimal polynomial of degree 3 over '''Q'''{{sfnp|Fraleigh|1994|pages=429–430}}
+|-
+|[[Squaring the circle]]
+|&lt;math&gt;\left \{r \sqrt{\pi} : r \text{ is constructible} \right \}&lt;/math&gt;
+|&lt;math&gt;\sqrt{\pi}&lt;/math&gt; (the side length of a square with the same area as a [[unit circle]]) is not constructible, because it is not algebraic over '''Q'''{{sfnp|Fraleigh|1994|pages=429–430}}
+|-
+|[[Constructible polygon|Constructing regular polygons]]
+|&lt;math&gt;\left \{ \cos 2\pi/n : n \in \mathbb{N}, n \geq 3 \right \}&lt;/math&gt;
+|&lt;math&gt;\cos 2\pi/7&lt;/math&gt; (the {{mvar|x}}-coordinate of a vertex of an axis-aligned regular [[heptagon]]) is not constructible, because 7 is not a [[Fermat prime]], nor is 7 the product of &lt;math&gt;2^k&lt;/math&gt; and one or more distinct Fermat primes{{sfnp|Fraleigh|1994|page=504}}
+|}
+
+==History==
+
+The birth of the concept of constructible numbers is inextricably linked with the history of the three impossible compass and straightedge constructions: duplicating the cube, trisecting an angle, and squaring the circle. The restriction of using only compass and straightedge in geometric constructions is often credited to [[Plato]] due to a passage in [[Plutarch]]. According to Plutarch, Plato gave the duplication of the cube (Delian) problem to [[Eudoxus of Cnidus|Eudoxus]] and [[Archytas]] and [[Menaechmus]], who solved the problem using mechanical means, earning a rebuke from Plato for not solving the problem using [[pure geometry]] (Plut., ''Quaestiones convivales'' [http://ebooks.adelaide.edu.au/p/plutarch/symposiacs/chapter8.html#section80 VIII.ii], 718ef). However, this attribution is challenged,{{sfnp|Kazarinoff|2003|page=28}} due, in part, to the existence of another version of the story (attributed to [[Eratosthenes]] by [[Eutocius of Ascalon]]) that says that all three found solutions but they were too abstract to be of practical value.{{sfnp|Knorr|1986|page=4}} Since [[Oenopides]] (circa 450 BCE) is credited with two ruler and compass constructions, by [[Proclus]]&amp;ndash; citing [[Eudemus of Rhodes|Eudemus]] (circa 370 - 300 BCE)&amp;ndash;when other methods were available to him, has led some authors to hypothesize that Oenopides originated the restriction. 
+
+The restriction to compass and straightedge is essential in making these constructions impossible. Angle trisection, for instance, can be done in many ways, several known to the ancient Greeks. The [[Quadratrix of Hippias|Quadratrix]] of [[Hippias of Elis]], the [[conic section|conics]] of Menaechmus, or the marked straightedge ([[Neusis construction|neusis]]) construction of [[Archimedes]] have all been used and we can add a more modern approach via [[mathematics of paper folding|paper folding]] to the list.
+ 
+Although not one of the classic three construction problems, the problem of constructing regular polygons with straightedge and compass is usually treated alongside them. The Greeks knew how to construct regular {{mvar|n}}-gons with {{math|1=''n'' = 2&lt;sup&gt;''h''&lt;/sup&gt;, 3, 5}} (for any integer {{math|''h'' ≥ 2}}) or the product of any two or three of these numbers, but other regular {{mvar|n}}-gons eluded them. Then, in 1796, an eighteen-year-old student named [[Carl Friedrich Gauss]] announced in a newspaper that he had constructed a regular 17-gon with straightedge and compass.{{sfnp|Kazarinoff|2003|page=29}} Gauss's treatment was algebraic rather than geometric; in fact, he did not actually construct the polygon, but rather showed that the cosine of a central angle was a constructible number. The argument was generalized in his 1801 book ''[[Disquisitiones Arithmeticae]]'' giving the ''sufficient'' condition for the construction of a regular {{mvar|n}}-gon. Gauss claimed, but did not prove, that the condition was also necessary and several authors, notably [[Felix Klein]],{{sfnp|Klein|1956|page=16}} attributed this part of the proof to him as well.{{sfnp|Kazarinoff|2003|page=30}}
+
+{{harvs|first=Pierre|last=Wantzel|authorlink=Pierre Wantzel|year=1837|txt}} proved algebraically that the problems of doubling the cube and trisecting the angle
+are impossible to solve if one uses only compass and straightedge. In the same paper he also solved the problem of determining which regular polygons are constructible:
+a regular polygon is constructible [[if and only if]] the number of its sides is the product of a [[power of two]] and any number of distinct [[Fermat prime]]s (i.e., the sufficient conditions given by Gauss are also necessary)
+
+An attempted proof of the impossibility of squaring the circle was given by [[James Gregory (astronomer and mathematician)|James Gregory]] in ''Vera Circuli et Hyperbolae Quadratura'' (The True Squaring of the Circle and of the Hyperbola) in 1667. Although his proof was faulty, it was the first paper to attempt to solve the problem using algebraic properties of {{pi}}. It was not until 1882 that [[Ferdinand von Lindemann]] rigorously proved its impossibility, by extending the work of [[Charles Hermite]] and proving that {{pi}} is a [[transcendental number]].
+
+The study of constructible numbers, per se, was initiated by [[René Descartes]] in [[La Géométrie]], an appendix to his book ''[[Discourse on the Method]]'' published in 1637. Descartes associated numbers to geometrical line segments in order to display the power of his philosophical method by solving an ancient straightedge and compass construction problem put forth by [[Pappus of Alexandria|Pappus]].{{sfnp|Boyer|2004|pages=83–88}}
+
+==See also==
+*[[Computable number]]
+*[[Definable real number]]
+
+==Notes==
+{{reflist|30em}}
+
+==References==
+* {{citation|first1=John A.|last1=Beachy|first2=William D.|last2=Blair|title=Abstract Algebra|edition=2nd|publisher=Waveland Press|year=1996}}
+* {{citation|first=Carl B.|last=Boyer|authorlink=Carl Benjamin Boyer|title=History of Analytic Geometry|year=2004|origyear=1956|publisher=Dover|isbn=978-0-486-43832-0}}
+* {{citation|first=John B.|last=Fraleigh|title=A First Course in Abstract Algebra|edition=5th|year=1994|publisher=Addison Wesley|isbn=978-0-201-53467-2}}
+* {{citation|first=I. N.|last=Herstein|authorlink=Israel Nathan Herstein|title=Abstract Algebra|year=1986|publisher=Macmillan|isbn=0-02-353820-1}}
+* {{citation|first=Nicholas D.|last=Kazarinoff|title=Ruler and the Round /Classic Problems in Geometric Constructions|year=2003|origyear=1970|publisher=Dover|isbn=0-486-42515-0}}
+* {{citation|first=Felix|last=Klein|authorlink=Felix Klein|title=Famous Problems of Elementary Geometry|year=1956|origyear=1930|publisher=Dover}}
+* {{citation|title=The Ancient Tradition of Geometric Problems|series=Dover Books on Mathematics|first=Wilbur Richard|last=Knorr|authorlink=Wilbur Knorr|publisher=Courier Dover Publications|year=1986|isbn=9780486675329|url-access=registration|url=https://archive.org/details/ancienttradition0000knor}}
+* {{citation|first=Edwin E.|last=Moise|authorlink=Edwin E. Moise|title=Elementary Geometry from an Advanced Standpoint|year=1974|edition=2nd|publisher=Addison Wesley|isbn=0-201-04793-4}}
+* {{citation|first=Steven|last=Roman|authorlink=Steven Roman|title=Field Theory|year=1995|publisher=Springer-Verlag|isbn=978-0-387-94408-1}}
+* {{citation|first=Joseph J.|last=Rotman|authorlink=Joseph J. Rotman|title=A First Course in Abstract Algebra with Applications|edition=3rd|year=2006|publisher=Prentice Hall|isbn=978-0-13-186267-8}}
+* {{citation|first=Ian|last=Stewart|authorlink=Ian Stewart (mathematician)|title=Galois Theory|edition=2nd|year=1989|publisher=Chapman and Hall|isbn=978-0-412-34550-0}}
+* {{citation|first = P. L.|last = Wantzel|authorlink=Pierre Wantzel|title = Recherches sur les moyens de reconnaître si un Problème de Géométrie peut se résoudre avec la règle et le compas |journal = Journal de Mathématiques Pures et Appliquées|year = 1837|volume = 1|issue = 2|pages = 366–372|url = http://visualiseur.bnf.fr/ConsulterElementNum?O=NUMM-16381&amp;Deb=374&amp;Fin=380&amp;E=PDF}}
+
+==External links==
+{{commonscat|Constructible numbers}}
+* Chris Cooper: [http://web.science.mq.edu.au/~chris/galois/ ''Galois Theory'']. Lectures notes, Macquarie University, §6 Ruler and Compass Constructability, pp. [http://web.science.mq.edu.au/~chris/galois/CHAP06%20Ruler%20and%20Compass%20Constructions.pdf 55-63]
+* {{MathWorld |title=Constructible Number |urlname=ConstructibleNumber}}
+* [http://www.cut-the-knot.org/arithmetic/rational.shtml Constructible Numbers] at [[Cut-the-knot]]
+
+{{Algebraic numbers}}
+{{Number systems}}
+[[Category:Euclidean plane geometry]]
+[[Category:Algebraic numbers]]</text>
+      <sha1>6pytwk84jb21ffxr6n4ivwa0rr5sg2z</sha1>
+    </revision>
+  </page>

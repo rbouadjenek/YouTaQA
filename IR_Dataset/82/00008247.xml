@@ -1,0 +1,85 @@
+  <page>
+    <title>Digital synthesizer</title>
+    <ns>0</ns>
+    <id>8247</id>
+    <revision>
+      <id>935994530</id>
+      <parentid>935994380</parentid>
+      <timestamp>2020-01-16T01:39:17Z</timestamp>
+      <contributor>
+        <username>WorldQuestioneer</username>
+        <id>38221496</id>
+      </contributor>
+      <minor />
+      <comment>Remove an unnecessary part.</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{short description|Synthesizer that uses digital signal processing to make sounds}}
+[[Image:Jordan Rudess2 (H.I).jpg|thumb|[[Jordan Rudess]] performing with a digital synth]]
+A '''digital synthesizer''' is a [[synthesizer]] that uses [[digital signal processing]] (DSP) techniques to make musical sounds. This in contrast to older [[analog synthesizer]]s, which produce music using [[analog electronics]], and [[Sampler (musical instrument)|samplers]], which play back digital recordings of acoustic, electric, or [[electronic instruments]]. Some digital synthesizers emulate analog synthesizers; others include sampling capability in addition to digital synthesis.
+
+==History==
+The very earliest digital synthesis experiments were made with [[computer]]s, as part of academic research into sound generation. In 1973,&lt;ref name=yamaha2014&gt;{{cite web |ref={{sfnref|Yamaha|2014}} |title= [Chapter 2] FM Tone Generators and the Dawn of Home Music Production |url= http://usa.yamaha.com/products/music-production/synthesizers/synth_40th/history/chapter02/ |work= Yamaha Synth 40th Anniversary - History |year= 2014 |publisher= Yamaha Corporation}}&lt;/ref&gt; the Japanese company [[Yamaha Corporation|Yamaha]] licensed the algorithms for [[frequency modulation synthesis]] (FM synthesis) from [[John Chowning]], who had experimented with it at [[Stanford University]] since 1971.&lt;ref name=&quot;holmes_257&quot;&gt;{{cite book |title=Electronic and experimental music: technology, music, and culture |first=Thom |last=Holmes |edition=3rd |publisher=[[Taylor &amp; Francis]] |year=2008 |isbn=978-0-415-95781-6 |chapter=Early Computer Music |page=257 |chapter-url=https://books.google.com/books?id=hCthQ-bec-QC&amp;pg=PA257 |accessdate=2011-06-04}}&lt;/ref&gt; Yamaha's engineers began adapting Chowning's algorithm for use in a commercial digital synthesizer, adding improvements such as the &quot;key scaling&quot; method to avoid the introduction of distortion that normally occurred in analog systems during [[frequency modulation]], though it would take several years before Yamaha were to release their FM digital synthesizers.&lt;ref name=&quot;holmes_257-8&quot;&gt;{{cite book |title=Electronic and experimental music: technology, music, and culture |first=Thom |last=Holmes |edition=3rd |publisher=[[Taylor &amp; Francis]]|year=2008 |isbn=978-0-415-95781-6 |chapter=Early Computer Music |pages=257–258 |chapter-url=https://books.google.com/books?id=hCthQ-bec-QC&amp;pg=PA257 |accessdate=2011-06-04}}&lt;/ref&gt; In the 1970s, Yamaha were granted a number of patents, under the company's former name &quot;Nippon Gakki Seizo Kabushiki Kaisha&quot;, evolving Chowning's early work on FM synthesis technology.&lt;ref name=&quot;patent&quot;&gt;[http://www.google.com/patents/about?id=GNEzAAAAEBAJ&amp;dq= U.S. Patent 4,018,121]&lt;/ref&gt; Yamaha built the first prototype digital synthesizer in 1974.&lt;ref name=yamaha2014/&gt;
+
+[[Image:Fairlight green screen.jpg|thumb|Fairlight CMI series II (1982), exhibited at [[NAMM Show]]]]
+
+Released in 1979,&lt;ref name=&quot;vail&quot;&gt;{{cite book |author=Mark Vail |title=The Synthesizer: A Comprehensive Guide to Understanding, Programming, Playing, and Recording the Ultimate Electronic Music Instrument |page=277 |publisher= [[Oxford University Press]]}}&lt;/ref&gt; the [[Casio VL-1]] was the first commercial digital synthesizer,&lt;ref&gt;{{cite book |url=https://books.google.co.uk/books?id=Zo0XAQAAIAAJ |title=Impact of MIDI on electroacoustic art music, Issue 102 |page=26 |publisher=[[Stanford University]] |author=Alex Igoudin|year=1997 }}&lt;/ref&gt; selling for $69.95.&lt;ref name=&quot;vail&quot;/&gt; Yamaha eventually commercialized their FM synthesis technology and released the first FM digital synthesizer in 1980, the Yamaha GS-1, but at an expensive retail price of $16,000.&lt;ref&gt;{{cite book |title=The computer music tutorial |author=Curtis Roads |publisher=[[MIT Press]] |year=1996 |isbn=0-262-68082-3 |page=226 |url=https://books.google.com/books?id=nZ-TetwzVcIC&amp;pg=PA226 |accessdate=2011-06-05}}&lt;/ref&gt;
+
+Early commercial digital synthesizers used simple hard-wired digital circuitry to implement techniques such as [[additive synthesis]] and [[FM synthesis]]. Other techniques, such as [[wavetable synthesis]] and [[physical modeling]], only became possible with the advent of high-speed microprocessor and digital signal processing technology. Two other early commercial digital synthesizers were the [[Fairlight CMI]], introduced in 1979, and the New England Digital [[Synclavier]] II, introduced in 1980. The Fairlight CMI was a sampling synthesizer, while the Synclavier originally used FM synthesis technology licensed from Yamaha,&lt;ref name=mixmag2006&gt;{{cite journal |title= 1978 New England Digital Synclavier |url= http://www.mixonline.com/news/news-products/1978-new-england-digital-synclavier/383609 |date= September 1, 2006 |journal= Mix |publisher= Penton Media}}&lt;/ref&gt; before adding sampling synthesis later in the 1980s. The Fairlight CMI and the Synclavier were both expensive systems, retailing for more than $20,000 in the early 1980s. The cost of digital synthesizers began falling rapidly in the early 1980s. [[E-mu Systems]] introduced the [[E-mu Emulator|Emulator]] sampling synthesizer in 1982 at a retail price of $7,900. Although not as flexible or powerful as either the Fairlight CMI or the Synclavier, its lower cost and portability made it popular.
+
+[[Image:Yamaha DX7 Table 4.JPG|thumb|The Yamaha DX7 (1983) signalled the rise of digital synthesizers]]
+
+Introduced in 1983, the [[Yamaha DX7]] was the breakthrough digital synthesizer to have a major impact, both innovative and affordable,   and thus spelling the decline of [[analog synthesizers]].&lt;ref&gt;{{cite web |title=Yamaha DX7 |url=http://www.synthlearn.com/yamaha-dx7.html |website=synthlearn.com}}&lt;/ref&gt; It used FM synthesis and, although it was incapable of the sampling synthesis of the Fairlight CMI, its price was around $2,000, putting it within range of a much larger number of musicians.&lt;ref&gt;{{Cite book |last= Le Heron |first= Richard B. |last2= Harrington |first2= James W. |title= New Economic Spaces: New Economic Geographies |publisher= Ashgate Publishing |year= 2005 |page=41 |isbn= 0-7546-4450-2}}&lt;/ref&gt; The DX-7 was also known for its &quot;key scaling&quot; method to avoid distortion and for its recognizabley bright tonality that was partly due to its high [[sampling rate]] of 57&amp;nbsp;kHz.&lt;ref&gt;{{cite book |title=Electronic and experimental music: technology, music, and culture|first=Thom|last=Holmes|edition=3rd|publisher=[[Taylor &amp; Francis]]|year=2008|isbn=978-0-415-95781-6|chapter=Early Computer Music|pages=257–259 |chapter-url=https://books.google.com/books?id=hCthQ-bec-QC&amp;pg=PA257 |accessdate=2011-06-04}}&lt;/ref&gt; It became indispensable to many music artists of the 1980s,&lt;ref&gt;{{Cite magazine |title= Three Yamaha products that reshaped the industry mark 20th anniversary |magazine= Music Trades |pages= 70–74 |date= February 2004 |url= http://findarticles.com/p/articles/mi_hb5264/is_200402/ai_n20430721 |url-status=dead |archive-url=https://web.archive.org/web/20081019204706/http://findarticles.com/p/articles/mi_hb5264/is_200402/ai_n20430721 |archive-date=2008-10-19}}&lt;/ref&gt; and would become one of the best-selling synthesizers of all time.&lt;ref name=&quot;holmes_257&quot;/&gt;
+
+In 1987, [[Roland Corporation|Roland]] released its own influential synthesizer of the time, the [[Roland D-50|D-50]]. This popular synth broke new ground in affordably combining short samples and digital oscillators, as well as the innovation&lt;ref&gt;{{cite web |url=http://www.soundonsound.com/sos/mar99/articles/synthfx.htm|title=Synth FX|website=Sound On Sound|accessdate=2014-01-09}}&lt;/ref&gt; of built-in digital effects (reverb., chorus, equalizer&lt;ref&gt;{{cite book
+ |ref              = {{sfnref|Roland|1987}}
+ |title            = Roland D-50 Owner's Manual (Basic)
+ |url              = http://media.rolandus.com/manuals/D-50_QS.pdf
+ |format           = PDF manual
+ |publisher        = Roland Corporation
+ |date = c. 1987
+ |pages            = 6
+ |quote            = ... D-50 has four distinct sections: / 1. A Digital Synthesizer / 2. A Digital Equalizer / 3. A Digital Chorus section / and 4. A Digital Reverberation section.
+ |access-date      = 2014-09-01
+ |archive-url      = https://web.archive.org/web/20130531060054/http://media.rolandus.com/manuals/D-50_QS.pdf
+ |archive-date     = 2013-05-31
+ |url-status         = dead
+}}&lt;/ref&gt;).  Roland called this Linear Arithmetic (LA) synthesis.  This instrument is responsible for some of the very recognisable preset synthesizer sounds of the late 1980s, such as the Pizzagogo sound used on [[Enya]]'s &quot;[[Orinoco Flow]].&quot;
+
+It gradually became feasible to include high quality samples of existing instruments as opposed to synthesizing them.  In 1988, [[Korg]] introduced the last of the hugely popular trio of digital synthesizers of the 1980s after the DX7 and D50, the [[Korg M1|M1]]. This heralded both the increasing popularisation of digital sample-based synthesis, and the rise of '[[music workstation|workstation]]' synthesizers.&lt;ref&gt;{{cite web |url=http://www.soundonsound.com/sos/feb02/articles/korgm1retro.asp |title=The Korg M1 |website=Sound On Sound |accessdate=2014-01-09 |url-status=dead |archiveurl=https://web.archive.org/web/20131020122243/http://www.soundonsound.com/sos/Feb02/articles/korgm1retro.asp |archivedate=2013-10-20 }}&lt;/ref&gt;  After this time, many popular modern digital synthesizers have been described as not being full synthesizers in the most precise sense, as they play back samples stored in their memory.  However, they still include options to shape the sounds through use of [[Envelope_(music)|envelopes]], [[Low-frequency oscillation|LFOs]], filters and effects such as reverb. The Yamaha Motif and Roland Fantom series of keyboards are typical examples of this type, described as 'ROMplers' ;  at the same time, they are also examples of &quot;workstation&quot; synthesizers.
+
+[[Image:Clavia Nord Lead 2x.jpg|thumb|The Clavia Nord Lead is a popular virtual analog synth]]
+With the addition of sophisticated sequencers on board, now added to built-in effects and other features,  the '[[music workstation|workstation]]' synthesizer had been born.  These always include a multi-track [[Music sequencer|sequencer]], and can often record and playback samples, and in later years full audio tracks, to be used to record an entire song. These are usually also ROMplers, playing back samples, to give a wide variety of realistic instrument and other sounds such as drums, string instruments and wind instruments to sequence and compose songs, along with popular keyboard instrument sounds such as electric pianos and organs.
+
+As there was still interest in [[analog synthesizer]]s, and with the increase of computing power, over the 1990s another type of synthesizer arose : the [[analog modeling synthesizer|analog modeling]], or &quot;virtual analog&quot; synthesizer. These use computing power to simulate traditional analog waveforms and circuitry such as envelopes and filters, with the most popular examples of this type of instrument including the [[Nord Lead]] and [[Access Virus]].
+
+As the cost of processing power and memory fell, new types of synthesizers emerged, offering a variety of novel sound synthesis options.  The [[Korg Oasys]] was one such example, packaging multiple digital synthesizers into a single unit.
+
+Digital synthesizers can now be completely emulated in software (&quot;[[Software synthesizer|softsynth]]&quot;), and run on conventional PC hardware. Such soft implementations require careful programming and a fast CPU to get the same [[Latency (engineering)|latency]] response as their dedicated equivalents. To reduce latency, some professional [[sound card]] manufacturers have developed specialized Digital Signal Processing ([DSP]) hardware. Dedicated digital synthesizers have the advantage of a performance-friendly user interface (physical controls like buttons for selecting features and enabling functionality, and knobs for setting variable parameters). On the other hand, software synthesizers have the advantages afforded by a rich graphical display.
+
+With focus on performance-oriented keyboards and digital computer technology, manufacturers of commercial electronic [[musical instrument|instrument]]s created some of the earliest digital [[synthesizer]]s for studio and experimental use with computers being able to handle built-in sound synthesis algorithms.&lt;ref&gt;{{cite web |url=http://www.britannica.com/EBchecked/topic/183802/electronic-instrument/53839/Digital-synthesizers-the-music-workstation-and-MIDI#ref=ref111959 |title=Electronic Instruments |website=Encyclopædia Britannica}}&lt;/ref&gt;
+
+==Analog vs. digital==
+
+The main difference is that a digital synthesizer uses digital processors and usually uses the [[direct digital synthesis]] architecture, while an analog synthesizer uses analog circuitry and a [[phase-locked loop]]. A digital synthesizer uses a [[numerically-controlled oscillator]] while an analog synthesizer may use a [[voltage-controlled oscillator]]. A digital synthesizer is in essence a computer with (often) a piano-keyboard and an [[LCD]] as an interface. An [[analog synthesizer]] is made up of sound-generating circuitry and modulators.  Because computer technology is rapidly advancing, it is often possible to offer more features in a digital synthesizer than in an analog synthesizer at a given price. However, both technologies have their own merit. Some forms of synthesis, such as, for instance, [[sampling (music)|sampling]] and [[additive synthesis]] are not feasible in analog synthesizers, while on the other hand, many musicians prefer the character of analog synthesizers over their digital equivalent.
+
+==Bands using digital synths==
+The [[New wave music|new wave]] era of the 1980s first brought the digital synthesizer to the public ear.  Bands like [[Talking Heads]] and [[Duran Duran]] used the digitally made sounds on some of their most popular albums.  Other more [[pop music|pop]]-inspired bands like [[Hall &amp; Oates]] began incorporating the digital synthesizer into their sound in the 1980s.  Through breakthroughs in technology in the 1990s many modern synthesizers use [[Digital signal processing|DSP]].
+
+==Digital synthesis==
+
+Working in more or less the same way, every digital synthesizer appears similar to a [[computer]].  At a steady sample rate, digital synthesis produces a stream of numbers.  Sound from speakers is then produced by a conversion to analog form. [[Direct digital synthesis]] is the typical architecture for digital synthesizers. Through signal generation, voice and instrument-level processing, a signal flow is created and controlled either by MIDI capabilities or voice and instrument-level controls.&lt;ref&gt;{{cite web |title=Digital Synthesis |url=http://arts.ucsc.edu/ems/Music/equipment/synthesizers/digital/Digisynths.html |website=UCSC Electronic Music Studios}}&lt;/ref&gt;
+
+==References==
+{{reflist}}
+
+== External links ==
+* [http://www.vintagesynth.com Vintage Synth Explorer], a great resource on vintage analog and digital hardware synthesizers.
+* [http://psycle.pastnotecut.org Psycle], a freely downloadable modular software synthesizer and sequencer/tracker (open source and totally free)
+* [https://web.archive.org/web/20160214031056/http://www.buzzmachines.com/ Buzz], a freely downloadable modular software synthesizer (free but proprietary)
+
+[[Category:Synthesizers]]
+[[Category:Japanese inventions]]</text>
+      <sha1>s3xn2nzj5jkkqkvh746mgda9nt4e37v</sha1>
+    </revision>
+  </page>

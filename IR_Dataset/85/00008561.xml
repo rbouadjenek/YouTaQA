@@ -1,0 +1,46 @@
+  <page>
+    <title>Denormalization</title>
+    <ns>0</ns>
+    <id>8561</id>
+    <revision>
+      <id>942602616</id>
+      <parentid>907340010</parentid>
+      <timestamp>2020-02-25T18:02:15Z</timestamp>
+      <contributor>
+        <username>Sillyfolkboy</username>
+        <id>6935794</id>
+      </contributor>
+      <comment>clarify unnormalized comparison</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{Refimprove|date=May 2008}}
+'''Denormalization''' is a strategy used on a previously-[[Database normalization|normalized]] database to increase performance. In [[computing]], denormalization is the process of trying to improve the read performance of a [[database]], at the expense of losing some write performance, by adding redundant copies of data or by grouping data.&lt;ref&gt;G. L. Sanders and S. K. Shin. [https://pdfs.semanticscholar.org/2c79/069c01ba8d598f32e61fe367ef6d261a0cb4.pdf Denormalization effects on performance of RDBMS]. In Proceedings of the HICSS Conference, January 2001.&lt;/ref&gt;&lt;ref&gt;S. K. Shin and G. L. Sanders. [http://portal.acm.org/citation.cfm?id=1217757 Denormalization strategies for data retrieval from data warehouses]. Decision Support Systems, 42(1):267-282, October 2006.&lt;/ref&gt;  It is often motivated by [[Computer performance|performance]] or [[scalability]] in [[relational model|relational]] [[DBMS|database software]] needing to carry out very large numbers of read operations. Denormalization differs from the [[unnormalized form]] in that denormalization benefits can only be fully realized on a data model that is otherwise normalized.
+
+A [[Database normalization|normalized]] design will often &quot;store&quot; different but related pieces of information in separate logical tables (called relations).  If these relations are stored physically as separate disk files, completing a database [[Information retrieval|query]] that draws information from several relations (a ''[[Join (SQL)|join operation]]'') can be slow.  If many relations are joined, it may be prohibitively slow. There are two strategies for dealing with this. 
+
+One method is to keep the logical design normalized, but allow the [[database management system]] (DBMS) to store additional redundant information on disk to optimize query response. In this case it is the DBMS software's responsibility to ensure that any redundant copies are kept consistent.  This method is often implemented in [[SQL]] as indexed views ([[Microsoft SQL Server]]) or [[materialized view]]s ([[Oracle Database|Oracle]], [[PostgreSQL]]).  A view may, among other factors, represent information in a format convenient for querying, and the index ensures that queries against the view are optimized physically.
+
+Another approach is to denormalize the logical data design.  With care this can achieve a similar improvement in query response, but at a cost—it is now the database designer's responsibility to ensure that the denormalized database does not become inconsistent.  This is done by creating rules in the database called ''[[Constraint satisfaction|constraints]]'', that specify how the redundant copies of information must be kept synchronized, which may easily make the de-normalization procedure pointless.  It is the increase in logical [[Complexity of constraint satisfaction|complexity]] of the database design and the added complexity of the additional constraints that make this approach hazardous. Moreover, constraints introduce a [[trade-off]], speeding up reads (&lt;code&gt;SELECT&lt;/code&gt; in SQL) while slowing down writes (&lt;code&gt;INSERT&lt;/code&gt;, &lt;code&gt;UPDATE&lt;/code&gt;, and &lt;code&gt;DELETE&lt;/code&gt;). This means a denormalized database under heavy write load may offer ''worse'' performance than its functionally equivalent normalized counterpart.
+
+A denormalized data model is not the same as a data model that has not been normalized, and denormalization should only take place after a satisfactory level of normalization has taken place and that any required constraints and/or rules have been created to deal with the inherent anomalies in the design. For example, all the relations are in [[third normal form]] and any relations with join and multi-valued dependencies are handled appropriately.
+
+Examples of denormalization techniques include:
+* &quot;Storing&quot; the count of the &quot;many&quot; elements in a one-to-many relationship as an attribute of the &quot;one&quot; relation
+* Adding attributes to a relation from another relation with which it will be joined
+* [[Star schema]]s, which are also known as fact-dimension models and have been extended to [[snowflake schema]]s
+* Prebuilt summarization or [[OLAP cube]]s
+
+With the continued dramatic increase in all three of storage, processing power and bandwidth, on all levels, denormalization in databases has moved from being an unusual or extension technique, to the commonplace, or even the norm. For example, one specific downside of denormalization was, simply, that it &quot;uses more storage&quot; (that is to say, literally more columns in a database).  In all but the most enormous imaginable systems, this particular aspect has been made irrelevant; the danger of using more storage is a non-issue.
+
+==See also==
+* [[Cache (computing)]]
+* [[Database normalization|Normalization]]
+* [[Scalability]]
+
+==References==
+{{Reflist}}
+
+{{Database normalization}}</text>
+      <sha1>7vhhcox1pizg80ckinmjjmisk1yjlq6</sha1>
+    </revision>
+  </page>

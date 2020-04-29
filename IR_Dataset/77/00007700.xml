@@ -1,0 +1,131 @@
+  <page>
+    <title>Commodore 1571</title>
+    <ns>0</ns>
+    <id>7700</id>
+    <revision>
+      <id>935937096</id>
+      <parentid>916090203</parentid>
+      <timestamp>2020-01-15T18:02:11Z</timestamp>
+      <contributor>
+        <username>Daft Creftsman</username>
+        <id>12841283</id>
+      </contributor>
+      <minor />
+      <comment>/* Technical design */</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{more footnotes|date=January 2013}}
+
+{{Infobox information appliance  &lt;!-- https://en.wikipedia.org/wiki/Template:Infobox_information_appliance --&gt;
+| name         = Commodore 1571
+| title        = 
+| image        = VC1571.JPG
+| caption      = Commodore 1571 floppy drive
+| manufacturer = Commodore Business Machines, Inc.
+| type         = Floppy drive
+| releasedate  = {{Start date|1985||}}
+| price &lt;!--intro--&gt; = 300 USD (1985) USD {{Inflation|US|300|1985|fmt=c|r=-2}} ({{CURRENTYEAR}} equivalent)
+| discontinued = 
+| media        = 5¼&quot; [[floppy disk]] [[Floppy disk format#Single Sided, Double Density|DS]] [[Floppy disk format#Single Sided, Double Density|DD]] using [[Group coded recording|GCR]] or [[Modified Frequency Modulation|MFM]]&lt;ref name=z71&gt;{{cite web
+|title=Commodore 1571 Disk Drive : Coming up to par:
+|date=2015-03-20
+|accessdate=2016-04-27
+|url=https://www.zimmers.net/cbmpics/d1571s.html
+|url-status=dead
+|archiveurl=https://web.archive.org/web/20160326051411/http://www.zimmers.net/cbmpics/d1571s.html
+|archivedate=2016-03-26
+}}&lt;/ref&gt;
+| os           = [[Commodore DOS|CBM DOS 3.0]]&lt;ref name=z71/&gt; {{nowrap|([[Commodore 128#Commodore 128D|128D]] uses v3.1)}}
+| power        = &lt;!--220 V 50 Hz ? W--&gt;
+| cpu          = [[MOS Technology 6502|MOS 6502]]&lt;ref name=zm71p01&gt;{{Cite web|title=Commodore 1571 disk drive specifications |date= |accessdate=2016-04-27 |publication-date=October 1986 |publisher=Commodore Business Machines, Inc. |url=ftp://www.zimmers.net/pub/cbm/schematics/drives/new/1571/manual/01.html}}&lt;/ref&gt; @ {{nowrap|2 MHz}}&lt;!--clock from de.wikipedia --&gt;, [[Western Digital FD1771|WD1770]]&lt;ref name=zm71p03&gt;{{Cite web|title=Memory map |date= |accessdate=2016-04-27 |publication-date=October 1986 |publisher=Commodore Business Machines, Inc. |url=ftp://www.zimmers.net/pub/cbm/schematics/drives/new/1571/manual/03.html}}&lt;/ref&gt;
+| memory       = 2 kB RAM 32 kB ROM&lt;ref name=zm71p01/&gt;
+| storage      = 350-410 kB (GCR and MFM)&lt;ref name=zm71p01/&gt;
+| connectivity = [[Commodore bus|Commodore proprietary serial IEEE-488]]&lt;!--&quot;Two Serial Ports&quot;--&gt; {{nowrap|5200 bytes/s&lt;ref name=zm71p01/&gt;}}
+| dimensions   = 
+| weight       = 
+| compatibility= {{nowrap|[[Commodore 64]],}} {{nowrap|[[Commodore 128]]}}
+| predecessor  = [[Commodore 1570]]
+| successor    = [[Commodore 1581]]
+| related      = 
+}}
+
+[[Image:Commodore 1571.png|thumb|right|250px|The '''Commodore 1571''' disk drive]]
+The '''Commodore 1571''' is [[Commodore International|Commodore's]] high-end 5¼&quot; [[floppy disk]] drive. With its [[Double-sided disk|double-sided]] drive mechanism, it has the ability to use double-sided, double-density (DS/DD) floppy disks natively. This is in contrast to its predecessors, the [[Commodore 1541|1541]] and [[Commodore 1570|1570]], which can fully read and write such disks only if the user manually [[Flippy disk|flipped them over]] to access the second side. Because flipping the disk also reverses the direction of rotation, the two methods are not interchangeable; disks which had their back side created in a 1541 by flipping them over would have to be flipped in the 1571 too, and the back side of disks written in a 1571 using the native support for two-sided operation could not be read in a 1541.
+
+== Release &amp; features ==
+
+The 1571 was released to match the [[Commodore 128]], both design-wise and feature-wise. It was announced in the summer of 1985, at the same time as the C128, and became available in quantity later that year. The later C128''D'' had a 1571-compatible drive integrated in the system unit. A double-sided disk on the 1571 would have a capacity of 340 [[kilobyte|kB]] (70 tracks, 1,360 disk blocks of 256 [[byte]]s each); as 8 kB are reserved for system use (directory and block availability information) and, under {{nowrap|[[Commodore DOS|CBM DOS]],}} {{nowrap|2 bytes}} of each block serve as pointers to the next logical block, {{nowrap|254 x 1,328}} = 337,312 [[byte|B]] or about {{nowrap|329.4 kB}} were available for user data. (However, with a program organizing disk storage on its own, all space could be used, e.g. for data disks.)
+
+The 1571 was designed to accommodate the C128's &quot;burst&quot; mode for 2x faster disk access, however the drive cannot use it if connected to older Commodore machines. This mode replaced the slow [[bit-banging]] serial routines of the 1541 with a true serial [[shift register]] implemented in hardware, thus dramatically increasing the drive speed. Although this originally had been planned when Commodore first switched from the parallel [[IEEE-488]] interface to a custom serial interface ([[Commodore bus|CBM-488]]), hardware bugs in the VIC-20's [[MOS Technology 6522|6522 VIA]] shift register prevented it from working properly.&lt;ref name=&quot;b64notes&quot;&gt;{{cite web|title=Binary Dinosaurs - C64 Notes |url=http://www.binarydinosaurs.co.uk/Museum/Commodore/c64/c64notes.php |date=1994-04-07 |accessdate=2013-06-27}}&lt;/ref&gt;
+
+When connected to a C128, the 1571 would default to double-sided mode, which allowed the drive to read its own 340k disks as well as single-sided 170 kB 1541 disks. If the C128 was switched into C64 mode by typing GO 64 from BASIC, the 1571 will stay in double-sided mode. If C64 mode was activated by holding down the C= key on power-up, the drive would automatically switch to single-sided mode, in which case it is unable to read 340 kB disks (also the default if a 1571 is used with a C64, Plus/4, VIC-20, or PET). A manual command can also be issued from BASIC to switch the 1571 between single and double sided mode. There is also an undocumented command which allows the user to independently control either of the read/write heads of the 1571, making it possible to format both sides of a diskette separate from each other, however the resultant disk cannot be read in a 1541 as it would be spinning in reverse direction when flipped upside down. In the same vein, &quot;flippy&quot; disks created with a 1541 cannot be read on a 1571 with this feature; they must be inserted upside down.
+
+The 1571 is not 100% low-level compatible with the 1541, however this isn't a problem except in some software that uses advanced copy protections such as the RapidLok system found on [[Microprose]] and [[Accolade (company)|Accolade]] games.
+
+The 1571 was noticeably quieter than its predecessor and tended to run cooler as well, even though, like the 1541, it had an internal power supply (later Commodore drives, like the 1541-II and the 3½&quot; [[Commodore 1581|1581]], came with external power supplies). The 1541-II/1581 power supply makes mention of a 1571-II, hinting that Commodore may have intended to release a version of the 1571 with an external power supply. However, no 1571-IIs are known to exist. The embedded OS in the 1571 was {{nowrap|[[Commodore DOS|CBM DOS]]}} {{nowrap|V3.0 1571,}} an improvement over the {{nowrap|1541's V2.6.}}{{citation needed|date=June 2014}}
+
+Early 1571s had a bug in the ROM-based disk operating system that caused relative files to corrupt if they occupied both sides of the disk.  A version 2 ROM was released, but though it cured the initial bug, it introduced some minor quirks of its own - particularly with the 1541 emulation.  Curiously, it was also identified as V3.0.
+
+As with the 1541, Commodore initially could not meet demand for the 1571, and that lack of availability and the drive's relatively high price (about US$300) presented an opportunity for cloners. Two 1571 clones appeared, one from Oceanic and one from Blue Chip, but legal action from Commodore quickly drove them from the market.
+
+Commodore announced at the 1985 [[Consumer Electronics Show]] a dual-drive version of the 1571, to be called the '''Commodore 1572''', but quickly canceled it,&lt;ref&gt;{{cite web|title=A nostalgic look back at the Commodore 128
+|date=December 1985 – January 1986
+|accessdate=2013-01-12
+|url=https://archive.org/stream/info-magazine-09/Info_Issue_09_1985_Dec-Jan_1986#page/n25/mode/2up}}&lt;/ref&gt; reportedly due to technical difficulties with the 1572 DOS.  It would have had four times as much RAM as the 1571 (8 kB), and twice as much ROM (64 kB). The 1572 would have allowed for fast disk backups of [[copy protected|non-copy-protected]] media, much like the old [[Commodore 4040|4040]], [[Commodore 8050|8050]], and 8250 dual drives.
+
+The 1571 built into the European plastic-case C128 D computer is electronically identical to the stand-alone version, but 1571 version integrated into the later metal-case C128 D (often called C128 DCR, for D Cost-Reduced) differs a lot from the stand-alone 1571. It includes a newer DOS, version 3.1, replaces the [[MOS Technology CIA]] interface chip, of which only a few features were used by the 1571 DOS, with a very much simplified chip called 5710, and has some compatibility issues with the stand-alone drive. Because this internal 1571 does not have an unused 8-bit input/output port on any chip, unlike most other Commodore drives, it is not possible to install a parallel cable in this drive, such as that used by [[SpeedDOS]], [[DolphinDOS]] and some other fast third-party Commodore DOS replacements.
+
+== Technical design ==
+The drive detects the motor speed and generates an internal data sampling clock signal that matches with the motor speed.&lt;ref&gt;{{cite web|title=20 Pin Gate array (continued)
+|publication-date=October 1986
+|accessdate=2016-04-27
+|url=ftp://www.zimmers.net/pub/cbm/schematics/drives/new/1571/manual/05.html}}&lt;/ref&gt;
+
+The 1571 uses a saddle canceler when reading the data stream. A correction signal is generated when the raw data pattern on the disk consists of two consecutive zeros. With the [[Group coded recording|GCR]] recording format a problem occurs in the read signal waveform. The worst case pattern 1001 may cause a saddle condition where a false data bit may occur. The original 1541 drives uses a one-shot to correct the condition. The 1571 uses a gate array to correct this digitally.&lt;ref&gt;{{cite web|title=20 Pin Gate array 1541B and 1571
+|publication-date=October 1986
+|accessdate=2016-04-27
+|url=ftp://www.zimmers.net/pub/cbm/schematics/drives/new/1571/manual/04.html}}&lt;/ref&gt;
+
+The drive uses the [[MOS Technology 6502|MOS 6502]] CPU, [[Western Digital FD1771|WD1770]] or WD1772 floppy controller, 2x [[MOS Technology 6522]] I/O controllers and 1x [[MOS Technology 6526]].&lt;!--de:Commodore 128 article says so--&gt;
+
+== Disk format ==
+Unlike the 1541, which was limited to [[Group Coded Recording|GCR]] formatting, the 1571 could read both GCR and [[Modified Frequency Modulation|MFM]] disk formats. The version of CP/M included with the C128 supported the following formats:
+
+* [[IBM PC]] [[CP/M-86]]
+* [[Osborne 1]] (double density upgrade)
+* [[Epson]] QX10
+* [[Kaypro]] II, IV
+* CBM CP/M FORMAT SS 
+* CBM CP/M FORMAT DS
+
+The 1571 can read any of the many CP/M {{frac|5|1|4}}-disk formats.&lt;ref name=&quot;128book&quot;&gt;{{cite book | chapterurl=https://archive.org/details/The_Official_Book_for_the_Commodore_128/page/n109 | title=The Official Book for the Commodore 128 Personal Computer | publisher=Howard W. Sams &amp; Co. | author1=Waite, Mitchell | author2=Lafore, Robert | author3=Volpe, Jerry | year=1985 | page=98 | isbn=0-672-22456-9 | chapter=The CP/M Mode}}&lt;/ref&gt; If the CP/M BIOS is modified, it is possible to read any soft sector 40-track MFM format. Single density (FM) formats are not supported because the density selector pin on the MFM controller chip in the drive is disabled (wired to ground).
+
+A 1571 cannot boot from MFM disks; the user must boot CP/M from a GCR disk and then switch to MFM disks.
+
+With additional software, it was possible to read and write to [[MS-DOS]]-formatted floppies as well. Numerous commercial and public-domain programs for this purpose became available, the best-known being [[SOGWAP]]'s &quot;Big Blue Reader&quot;. Although the C128 could not run any DOS-based software, this capability allowed data files to be exchanged with PC users. Reading {{nowrap|[[Atari 8-bit family|Atari 8-bit]]}} {{nowrap|130 kB}} or {{nowrap|180 kB}} disks was possible as well with special software, but the standard {{nowrap|Atari 8-bit}} {{nowrap|90 kB}} format, which used [[Frequency modulation|FM]] rather than [[Modified Frequency Modulation|MFM]] encoding, could not be handled by the 1571 hardware without modifying the drive circuitry as the control line that determines if FM or MFM encoding is used by the disc controller chip was permanently wired to ground (MFM mode) rather than being under software control.
+
+In the 1541 format, while 40 tracks are possible for a {{nowrap|5.25&quot; DD}} drive like the 154x/157x, only {{nowrap|35 tracks}} are used. Commodore chose not to use the upper five tracks by default (or at least to use more than 35) due to the bad quality of some of the drive mechanisms, which did not always work reliably on those tracks.
+
+For compatibility and ease of implementation, the 1571's double-sided format of one logical disk side with {{nowrap|70 tracks}} was created by putting together the lower 35 physical tracks on each of the physical sides of the disk rather than using two times {{nowrap|40 tracks,}} even though there were no more quality problems with the mechanisms of the 1571 drives.
+
+== References ==
+* Ellinger, Rainer (1986). ''1571 Internals.'' Grand Rapids, MI: Abacus Software (translated from the original German edition, Düsseldorf: Data Becker GmbH). {{ISBN|0-916439-44-5}}.
+&lt;references/&gt;
+
+== External links ==
+*[http://diskpreservation.com Disk Preservation Project] Discusses internal drive mechanics and copy protection
+*[https://archive.org/stream/run-magazine-64/Run_Issue_64_1989_Apr#page/n53/mode/2up RUN Magazine Issue 64]
+*[http://www.floodgap.com/retrobits/ckb/secret/cbm1572.jpg A photo of the 1572 dual drive, with a 1571 single drive shown for comparison]
+*[http://www.classiccomputer.de/com/kurios/1572.jpg The 1572 drive as shown on the Commodore Kuriositäten page (German)]
+*[http://1572.li Information page about the Commodore 1572 (German)]
+*[http://www.floodgap.com/retrobits/ckb/secret/periph.html Secret Weapons of Commodore: The Disk Drives]
+*[http://www.devili.iki.fi/Computers/Commodore/articles/Beyond_the_1541/ Beyond The 1541: Mass Storage for the 64 and 128]
+
+{{Commodore disk drives}}
+
+[[Category:Commodore 64]]
+[[Category:CBM floppy disk drives]]
+[[Category:CBM hardware]]</text>
+      <sha1>i7meo188jtwhkkg58o6wui8q490cgp2</sha1>
+    </revision>
+  </page>

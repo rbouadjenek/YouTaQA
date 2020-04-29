@@ -1,0 +1,361 @@
+  <page>
+    <title>Apollo 12</title>
+    <ns>0</ns>
+    <id>1967</id>
+    <revision>
+      <id>941188958</id>
+      <parentid>941188895</parentid>
+      <timestamp>2020-02-17T03:14:58Z</timestamp>
+      <contributor>
+        <username>GorillaWarfare</username>
+        <id>4968133</id>
+      </contributor>
+      <minor />
+      <comment>Reverted edits by [[Special:Contributions/190.193.237.197|190.193.237.197]] ([[User talk:190.193.237.197|talk]]) ([[WP:HG|HG]]) (3.4.9)</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{pp-move-indef|small=yes}}
+{{short description|Second crewed mission to land on the Moon.}}
+{{Use mdy dates|date=June 2013}}
+{{Infobox spaceflight
+| name                  = Apollo 12
+| image                 = Surveyor 3-Apollo 12.jpg
+| image_caption         = Commander Pete Conrad studies the ''[[Surveyor 3]]'' spacecraft; the [[Apollo Lunar Module]], ''Intrepid'', can be seen in the top right of the picture.
+| insignia              = Apollo 12 insignia.png
+| mission_type          = Crewed lunar landing ([[List of Apollo missions#Alphabetical mission types|H]])
+| operator              = [[NASA]]&lt;ref name=&quot;Orloff&quot;&gt;{{cite book |last=Orloff |first=Richard W. |title=Apollo by the Numbers: A Statistical Reference |url=https://history.nasa.gov/SP-4029/SP-4029.htm |accessdate=June 12, 2013 |series=NASA History Series |origyear=First published 2000 |date=September 2004 |work=NASA History Division, Office of Policy and Plans |publisher=[[NASA]] |location=Washington, D.C. |isbn=978-0-16-050631-4 |lccn=00061677 |id=NASA SP-2000-4029 |chapter=Table of Contents |chapterurl=https://history.nasa.gov/SP-4029/Apollo_00g_Table_of_Contents.htm}}&lt;/ref&gt;
+| COSPAR_ID             = {{Unbulleted list
+  |CSM: 1969-099A
+  |LM: 1969-099C
+}}
+| SATCAT                = {{Unbulleted list
+  |CSM: 4225&lt;ref&gt;{{cite web|url=https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1969-099A|title=Apollo 12 Command and Service Module (CSM)|website=NASA Space Science Data Coordinated Archive|access-date=November 21, 2019}}&lt;/ref&gt;
+  |LM: 4226&lt;ref&gt;{{cite web|url=https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1969-099C|title=Apollo 12 Lunar Module / ALSEP|website=NASA Space Science Data Coordinated Archive|access-date=November 21, 2019}}&lt;/ref&gt;
+}}
+| mission_duration      = 10&amp;nbsp;days, 4&amp;nbsp;hours, 36&amp;nbsp;minutes, 24&amp;nbsp;seconds
+
+| spacecraft            = {{Unbulleted list
+  |[[Apollo command and service module|Command and service module]] CSM-108
+  |[[Apollo Lunar Module|Lunar Module]] LM-6
+}}
+| manufacturer          = {{Unbulleted list
+  |CSM: [[Rockwell International|North American Rockwell]]
+  |LM: [[Grumman]]
+}}
+| launch_mass           = {{convert|101127|lb|kg}}
+| landing_mass          = {{convert|11050|lb|kg}}
+
+| launch_date           = {{start-date|November 14, 1969, 16:22:00|timezone=yes}}&amp;nbsp;UTC
+| launch_rocket         = [[Saturn V]] SA-507
+| launch_site           = [[Kennedy Space Center|Kennedy]] [[Kennedy Space Center Launch Complex 39|LC-39A]]
+
+| landing_date          = {{end-date|November 24, 1969, 20:58:24|timezone=yes}}&amp;nbsp;UTC 
+| landing_site          = South Pacific Ocean {{Coord|15|47|S|165|9|W|type:event|name=Apollo 12 splashdown}}
+| recovery_by           = {{USS|Hornet|CV-12|6}}
+
+| orbit_epoch           = 
+| orbit_reference       = [[selenocentric orbit|Selenocentric]]
+| orbit_periapsis       = {{convert|54.59|nmi|km|order=flip|sp=us}}
+| orbit_apoapsis        = {{convert|66.10|nmi|km|order=flip|sp=us}}
+| orbit_inclination     = 
+| orbit_period          = 
+| apsis                 = selene
+
+|interplanetary         = 
+ {{Infobox spaceflight/IP
+   |type                = orbiter
+   |object              = [[Moon|Lunar]]
+   |orbits              = 45
+   |arrival_date        = November 18, 1969, 03:47:23&amp;nbsp;UTC
+   |departure_date      = November 21, 1969, 20:49:16&amp;nbsp;UTC
+ }}
+ {{Infobox spaceflight/IP
+   |type                = lander
+   |object              = [[Moon|Lunar]]
+   |component           = Lunar Module (LM)
+   |arrival_date        = November 19, 1969, 06:54:35&amp;nbsp;UTC
+   |departure_date      = November 20, 1969, 14:25:47&amp;nbsp;UTC
+   |location            = [[Ocean of Storms]] {{Lunar coords and quad cat|3.01239|S|23.42157|W}}
+   |sample_mass         = {{convert|34.35|kg|lb}}
+   |surface_EVAs        = 2
+   |surface_EVA_time    = {{Unbulleted list
+     |{{nowrap|Total: 7&amp;nbsp;hours, 45&amp;nbsp;minutes, 18&amp;nbsp;seconds}}
+     |&lt;small&gt;{{nowrap|First: 3&amp;nbsp;hours, 56&amp;nbsp;minutes, 03&amp;nbsp;seconds}}
+     |Second: 3&amp;nbsp;hours, 49&amp;nbsp;minutes, 15&amp;nbsp;seconds&lt;/small&gt;
+    }}
+  }}
+
+| docking               = 
+ {{Infobox spaceflight/Dock
+   | docking_target     = LM
+   | docking_type       = dock
+   | docking_date       = November 14, 1969, 19:48:53&amp;nbsp;UTC
+   | undocking_date     = November 19, 1969, 04:16:02&amp;nbsp;UTC
+   | time_docked        = 
+ }}
+ {{Infobox spaceflight/Dock
+   | docking_target     = LM ascent stage
+   | docking_type       = dock
+   | docking_date       = November 20, 1969, 17:58:20&amp;nbsp;UTC
+   | undocking_date     = November 20, 1969, 20:21:31&amp;nbsp;UTC
+   | time_docked        = 
+ }}
+
+| crew_size             = 3
+| crew_members          = {{Unbulleted list
+  |[[Pete Conrad|Charles Conrad, Jr.]]
+  |[[Richard F. Gordon, Jr.]]
+  |[[Alan Bean|Alan L. Bean]]
+}}
+| crew_callsign         = {{Unbulleted list
+  |CSM: ''Yankee Clipper''
+  |LM: ''Intrepid''
+}}
+| crew_photo            = Apollo 12 crew.jpg
+| crew_photo_caption    = Left to right: Conrad, Gordon, Bean
+
+| previous_mission      = [[Apollo 11]]
+| next_mission          = [[Apollo 13]]
+| programme             = [[Apollo program]]
+}}
+
+'''Apollo 12''' was the sixth crewed flight in the United States [[Apollo program]] and the second to land on the [[Moon]]. It was launched on November 14, 1969, from the [[Kennedy Space Center]], [[Florida]], four months after [[Apollo 11]]. Commander [[Pete Conrad|Charles &quot;Pete&quot; Conrad]] and [[Apollo Lunar Module]] Pilot [[Alan Bean|Alan L. Bean]] performed just over one day and seven hours of lunar surface activity while Command Module Pilot [[Richard F. Gordon Jr.|Richard F. Gordon]] remained in lunar orbit. The landing site for the mission was located in the southeastern portion of the [[Ocean of Storms]].
+
+On November 19 Conrad and Bean achieved a precise landing at their expected location within walking distance of the site of the [[Surveyor 3]] robotic probe, which had landed on April 20, 1967. They carried the first color television camera to the lunar surface on an Apollo flight, but transmission was lost after Bean accidentally pointed the camera at the Sun and the camera's sensor was destroyed. On one of two moonwalks they visited Surveyor 3 and removed some parts for return to Earth.
+
+Lunar Module ''Intrepid'' lifted off from the Moon on November 20 and docked with the command module, which then, after completing its 45th lunar orbit,&lt;ref&gt;{{cite web |url=https://history.nasa.gov/SP-4029/Apollo_12a_Summary.htm |title=Apollo 12 – The Sixth Mission: The Second Lunar Landing |publisher=NASA |location=US |access-date=June 26, 2019}}&lt;/ref&gt; traveled back to Earth. The Apollo 12 mission ended on November 24 with a successful [[Splashdown (spacecraft landing)|splashdown]].
+
+==Crew==
+{{Spaceflight crew
+|terminology = Astronaut
+|position1 = Commander
+|crew1_up = [[Pete Conrad|Charles &quot;Pete&quot; Conrad Jr.]]&lt;ref name=&quot;smith&quot; /&gt;
+|flights1_up = Third
+|position2 = Command Module Pilot
+|crew2_up = [[Richard F. Gordon Jr.]]&lt;ref name=&quot;smith&quot; /&gt;
+|flights2_up = Second and last
+|position3 = Lunar Module Pilot
+|crew3_up = [[Alan Bean|Alan L. Bean]]&lt;ref name=&quot;smith&quot; /&gt;
+|flights3_up = First
+}}
+Commander [[Pete Conrad]] flew on [[Gemini 5]] in 1965, and as command pilot on [[Gemini 11]] in 1966. Command Module Pilot [[Richard F. Gordon Jr.]] flew with Conrad on Gemini 11. Originally, Conrad's Lunar Module pilot was [[Clifton Williams|Clifton C. Williams Jr.]], who was killed in October 1967 when the [[Northrop T-38 Talon|T-38]] he was flying crashed near [[Tallahassee]].&lt;ref name=&quot;chariots_training&quot;&gt;[[#Brooks, et al.|Brooks, et al. 1979]], Chapter 11.3: [https://www.hq.nasa.gov/office/pao/History/SP-4205/ch11-3.html &quot;Selecting and training crews&quot;]&lt;/ref&gt; When forming his crew, Conrad had wanted [[Alan Bean|Alan L. Bean]], a former student of his at the [[United States Naval Test Pilot School]] at [[Patuxent River NAS]], Maryland, but had been told by Director of Flight Crew Operations [[Deke Slayton]] that Bean was unavailable due to an assignment to the [[Apollo Applications Program]]. After Williams's death, Conrad asked for Bean again, and this time Slayton yielded.&lt;ref&gt;{{cite book |last=Chaikin |first=Andrew |authorlink=Andrew Chaikin |title=A Man on the Moon: The Voyages of the Apollo Astronauts |year=1994 |pages=[https://archive.org/details/manonmoonvoyages00chai/page/245 245–248] |publisher=Viking |location=New York, NY |isbn=978-0-670-81446-6|lccn=93048680 |ref={{sfnRef|Chaikin}}|title-link=A Man on the Moon }}&lt;/ref&gt;
+
+===Backup crew===
+{{Spaceflight crew
+|terminology = Astronaut
+|position1 = Commander
+|crew1_up = [[David Scott|David R. Scott]]&lt;ref name=&quot;smith&quot;&gt;{{cite web|url=https://airandspace.si.edu/explore-and-learn/topics/apollo/apollo-program/landing-missions/apollo12-crew.cfm|title=Apollo 12 Crew|publisher=Smithsonian National Air and Space Museum|access-date=December 29, 2017}}&lt;/ref&gt;
+|position2 = Command Module Pilot
+|crew2_up = [[Alfred Worden|Alfred M. Worden]]&lt;ref name=&quot;smith&quot; /&gt;
+|position3 = Lunar Module Pilot
+|crew3_up = [[James Irwin|James B. Irwin]]&lt;ref name=&quot;smith&quot; /&gt;
+|notes = The backup crew would later fly on [[Apollo 15]].
+}}
+
+===Support crew===
+* [[Gerald P. Carr]]&lt;ref name=apollo12a&gt;{{cite web|url=https://history.nasa.gov/SP-4029/Apollo_12a_Summary.htm|title=Apollo by the Numbers: A Statistical Guide|id=SP-4029|publisher=NASA|last1=Orloff|first1=Richard W.|date=June 2004|origyear=2001}}&lt;/ref&gt;
+* [[Edward Gibson|Edward G. Gibson]]&lt;ref name=apollo12a /&gt;
+* [[Paul J. Weitz]]&lt;ref name=apollo12a /&gt;
+
+===Flight directors===
+* [[Gerry Griffin]], Gold team
+* Pete Frank, Orange team
+* Cliff Charlesworth, Green team
+* [[Milton Windler]], Maroon team
+
+==Mission parameters==
+* '''Landing Site:''' W&lt;ref&gt;{{cite web |url=http://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_sites.html |title=Apollo Landing Site Coordinates |last=Williams |first=David R. |work=[[National Space Science Data Center]] |publisher=[[NASA]] |accessdate=November 7, 2011}}&lt;/ref&gt;{{Coord|3.01239|S|23.42157|W|globe:moon_type:event|name=Apollo 12 landing site}}
+
+===LM–CSM docking===
+* '''Undocked''': November 19, 1969 – 04:16:02 UTC
+* '''Redocked''': November 20, 1969 – 17:58:20 UTC
+
+===Extravehicular Activities (EVAs)===
+
+====EVA 1 start: November 19, 1969, 11:32:35 UTC====
+* ''Conrad'' – EVA 1
+* '''Stepped onto Moon''': 11:44:22 UTC
+* '''LM ingress''': 15:27:17 UTC
+* ''Bean'' – EVA 1
+* '''Stepped onto Moon''': 12:13:50 UTC
+* '''LM ingress''': 15:14:18 UTC
+
+====EVA 1 end: November 19, 15:28:38 UTC====
+*'''Duration''': 3 hours, 56 minutes, 03 seconds
+
+====EVA 2 start: November 20, 1969, 03:54:45 UTC====
+* ''Conrad'' – EVA 2
+* '''Stepped onto Moon''': 03:59:00 UTC
+* '''LM ingress''': 07:42:00 UTC
+* ''Bean'' – EVA 2
+* '''Stepped onto Moon''': 04:06:00 UTC
+* '''LM ingress''': 07:30:00 UTC
+
+====EVA 2 end: November 20, 07:44:00 UTC====
+* '''Duration''': 3 hours, 49 minutes, 15 seconds
+{{clear right}}
+
+==Mission highlights==
+{| style=&quot;float: right&quot;
+|-
+|[[Image:Pete Conrad on LM ladder, Apollo 12.jpg|thumb|235px|[[Pete Conrad]] descends from the [[lunar module]].]]
+|-
+|[[Image:Apollo12Visor.jpg|thumb|235px|[[Alan Bean]] photographed by Pete Conrad (reflected in Bean's helmet)]]
+|}
+
+===Launch and transfer===
+[[File:Apollo 12 launches from Kennedy Space Center.jpg|thumb|left|Apollo 12 launches from Kennedy Space Center, November 14, 1969]]
+
+Apollo 12 launched on schedule from Kennedy Space Center, under completely overcast rainy skies, encountering wind speeds of {{Convert|151.7|kn||abbr=}} during ascent, the highest of any Apollo mission.&lt;ref&gt;{{Cite web|url=https://history.nasa.gov/SP-4029/Apollo_18-15_Launch_Weather.htm|title=Launch Weather|website=history.nasa.gov|access-date=2019-06-22}}&lt;/ref&gt;
+
+Lightning struck the Saturn V 36.5 seconds after lift-off, triggered by the vehicle itself, discharging down to the Earth through the ionized exhaust plume. Protective circuits on the [[fuel cell]]s in the [[Apollo command and service module#Service module (SM)|service module (SM)]] detected overloads and took all three fuel cells offline, along with much of the [[Apollo command and service module|command and service module (CSM)]] instrumentation. A second strike at 52 seconds knocked out the &quot;8-ball&quot; [[attitude indicator]]. The [[telemetry]] stream at [[Christopher C. Kraft Jr. Mission Control Center#Houston (1965–present)|Mission Control]] was garbled. However, the Saturn V continued to fly normally; the strikes had not affected the [[Saturn V instrument unit]] guidance system, which functions independently from the CSM.
+
+The loss of all three fuel cells put the CSM entirely on batteries, which were unable to maintain normal 75-ampere launch loads on the 28-volt DC bus. One of the [[Inverter (electrical)|AC inverter]]s dropped offline. These power supply problems lit nearly every warning light on the control panel and caused much of the instrumentation to malfunction.
+
+[[Flight controller#EECOM|Electrical, Environmental and Consumables Manager (EECOM)]] [[John Aaron]] remembered the telemetry failure pattern from an earlier test when a power supply malfunctioned in the CSM signal conditioning electronics (SCE), which converted raw signals from instrumentation to standard voltages for the spacecraft instrument displays and telemetry encoders.&lt;ref&gt;{{cite book |last1=Kranz |first1=Eugene F. |authorlink1=Gene Kranz |last2=Covington |first2=James Otis |title=What Made Apollo a Success? |url=https://history.nasa.gov/SP-287/sp287.htm |accessdate=November 7, 2011 |origyear=&quot;A series of eight articles reprinted by permission from the March 1970 issue of ''Astronautics &amp; Aeronautics'', a publication of the [[American Institute of Aeronautics and Astronautics]].&quot; |year=1971 |work=NASA History Program Office |publisher=NASA |location=Washington, D.C. |oclc=69849598 |id=NASA SP-287 |chapter=Flight Control in the Apollo Program |chapterurl=https://history.nasa.gov/SP-287/ch5.htm}} Chapter 5.&lt;/ref&gt;
+
+Aaron made a call, &quot;Flight, EECOM. Try SCE to Aux&quot;, which switched the SCE to a backup power supply. The switch was fairly obscure, and neither [[Flight Director]] [[Gerald D. Griffin|Gerald Griffin]], [[Capsule communicator|CAPCOM]] [[Gerald P. Carr|Gerald Carr]], nor Mission Commander Pete Conrad immediately recognized it. Lunar Module Pilot Alan Bean, flying in the right seat as the spacecraft systems engineer, remembered the SCE switch from a training incident a year earlier when the same failure had been [[simulated]]. Aaron's quick thinking and Bean's memory saved what could have been an [[Apollo abort modes|aborted mission]], and earned Aaron the reputation of a &quot;steely-eyed missile man&quot;.&lt;ref name=&quot;Lost Moon 1994&quot;&gt;{{cite book |last1=Kluger |first1=Jeffrey |last2=Lovell |first2=James |title=Lost Moon |date=October 1994 |publisher=Houghton Mifflin |location=Boston, Massachusetts |isbn=978-0-395-67029-3 |url=https://archive.org/details/lostmoonperilous00love }}&lt;/ref&gt; Bean put the fuel cells back on line, and with telemetry restored, the launch continued successfully. Once in Earth [[parking orbit]], the crew carefully checked out their spacecraft before re-igniting the [[S-IVB]] third stage for [[trans-lunar injection]]. The lightning strikes had caused no serious permanent damage.
+
+Initially, it was feared that the lightning strike could have caused the explosive bolts that open the Command Module's parachute compartment to fire prematurely, rendering the parachutes useless which would have made safe return impossible. The decision was made not to share this with the astronauts since there was little that could be done to verify or resolve the problem if it existed. The parachutes deployed and functioned normally at the end of the mission.&lt;ref&gt;{{Cite book|title=Apollo : the mission to land a man on the Moon|last=Cimino |first=Al|publisher=|isbn=978-0-7858-3703-9|location=New York, NY|pages=150|oclc=1056779871|date = May 14, 2019}}&lt;/ref&gt;
+
+After LM separation, the S-IVB was intended to fly into solar orbit. The S-IVB auxiliary propulsion system was fired, and the remaining propellants vented to slow it down to fly past the Moon's trailing edge (the Apollo spacecraft always approached the Moon's leading edge). The Moon's gravity would then slingshot the stage into solar orbit. However, a small error in the state vector in the Saturn's guidance system caused the S-IVB to fly past the Moon at too high an altitude to achieve Earth escape velocity. It remained in a semi-stable Earth orbit after passing the Moon on November 18, 1969. It finally escaped Earth orbit in 1971 but was briefly recaptured in Earth orbit 31 years later. It was discovered by amateur astronomer [[William Kwong Yu Yeung|Bill Yeung]] who gave it the temporary designation [[J002E3]] before it was determined to be an artificial object.&lt;ref name=NASA&gt;{{cite news|url=http://neo.jpl.nasa.gov/news/news136.html |title=J002E3: An Update |publisher=nasa.gov |first1=Paul |last1=Chodas |first2=Steve |last2=Chesley|date=October 9, 2002 |accessdate=September 18, 2013 |archive-url=https://web.archive.org/web/20030503111617/http://neo.jpl.nasa.gov/news/news136.html |archive-date=May 3, 2003}}&lt;/ref&gt;&lt;ref name=Jorgensen&gt;{{cite journal |last1=Jorgensen |first1=K. |last2=Rivkin |first2=A. |last3=Binzel |first3=R. |last4=Whitely |first4=R. |last5=Hergenrother |first5=C. |last6=Chodas |first6=P. |last7=Chesley |first7=S. |last8=Vilas |first8=F |title=Observations of J002E3: Possible Discovery of an Apollo Rocket Body |journal=Bulletin of the American Astronomical Society |date =May 2003 |volume=35 |page=981 |bibcode = 2003DPS....35.3602J}}&lt;/ref&gt;
+
+===Moon landing===
+[[File:Lunar module AS12-51-7507.jpg|right|thumb|[[Lunar Module]] ''Intrepid'' above the Moon. The small crater in the foreground is [[Ammonius (crater)|Ammonius]]; the large crater at right is [[Herschel (lunar crater)|Herschel]]. Photograph by [[Richard F. Gordon Jr.]] on board the [[Command Module]] ''Yankee Clipper''.]]
+[[Image:Apollo 12 landing site 3154 h2.jpg|thumb|left|High-resolution [[Lunar Orbiter 3]] image of the Apollo 12 landing site at center, used in mission planning. The area shown is approximately 1.75 x 1.75 km.]]
+[[File:Apollo 12 landing site imaged by LRO, 2011.jpg|left|thumb|Landing site photographed by [[Lunar Reconnaissance Orbiter]] in 2011]]
+
+The Apollo 12 mission landed on November 19, 1969, on an area of the Ocean of Storms (Latin ''Oceanus Procellarum'') that had been visited earlier by several robotic missions (''[[Luna 5]]'', [[Surveyor 3]], and [[Ranger 7]]). The [[International Astronomical Union]], recognizing this, christened this region ''[[Mare Cognitum]] (Known Sea)''. The [[Selenographic coordinates|Lunar coordinates]] of the landing site were 3.01239° S latitude, 23.42157° W longitude.&lt;ref&gt;{{cite web |url=http://www.nasm.si.edu/collections/imagery/apollo/landsites.htm |title=Landing Sites |work=The Apollo Program |publisher=[[National Air and Space Museum]] |accessdate=November 7, 2011}}&lt;/ref&gt; The landing site would thereafter be listed as ''Statio Cognitum'' on lunar maps. Conrad and Bean did not formally name their landing site, though Conrad nicknamed the intended touchdown area &quot;Pete's Parking Lot&quot;.
+
+The second lunar landing was an exercise in precision targeting, which would be needed for future Apollo missions. Most of the descent was automatic, with manual control assumed by Conrad during the final few hundred feet of descent. Unlike [[Apollo 11]], where [[Neil Armstrong]] had to use the manual control to direct his lander downrange of the computer's target, which was strewn with boulders, Apollo 12 succeeded in landing at its intended target – within walking distance of the ''Surveyor 3'' probe, which had landed on the Moon in April 1967.&lt;ref name=&quot;Chaikin 1995&quot;&gt;[[#Chaikin|Chaikin 1995]]&lt;/ref&gt; This was the first – and, to date, only – occasion in which humans have &quot;caught up&quot; to a probe sent to land on another world.
+
+Conrad actually landed ''Intrepid'' {{convert|580|ft|m|round=5|0}} short of &quot;Pete's Parking Lot&quot;, because it looked rougher during final approach than anticipated, and was a little under {{convert|1180|ft|m|round=5|0}} from Surveyor{{nbsp}}3, a distance that was chosen to eliminate the possibility of lunar dust (being kicked up by ''Intrepid's'' descent engine during landing) from covering Surveyor{{nbsp}}3.&lt;ref name=&quot;autogenerated1969&quot;&gt;{{cite news |title=1969 Year in Review: Apollo 11 |url=http://www.upi.com/Audio/Year_in_Review/Events-of-1969/Apollo-11/12303189849225-2/ |work=UPI.com |publisher=[[United Press International]] |year=1969 |accessdate=November 7, 2011}}&lt;/ref&gt; But the actual touchdown point – approximately {{convert|600|ft|m|round=5|0}} from Surveyor{{nbsp}}3 – did cause high velocity sandblasting of the probe. It was later determined that the sandblasting removed more dust than it delivered onto the Surveyor, because the probe was covered by a thin layer that gave it a tan hue as observed by the astronauts, and every portion of the surface exposed to the direct sandblasting was lightened back toward the original white color through the removal of lunar dust.&lt;ref&gt;{{cite journal |last1=Immer |first1=Christopher A. |last2=Metzger |first2=Philip |last3=Hintze |first3=Paul E. |last4=Nick|first4=Andrew |last5=Horan |first5=Ryan |date=February 2011 |title=Apollo 12 Lunar Module Exhaust Plume Impingement on Lunar ''Surveyor III'' |journal=[[Icarus (journal)|Icarus]] |volume=211 |issue=2 |pages=1089–1102 |location=Amsterdam |publisher=[[Elsevier]] |bibcode=2011Icar..211.1089I |doi=10.1016/j.icarus.2010.11.013 |display-authors=3}}&lt;/ref&gt;
+
+===EVAs===
+[[File:Pete Conrad First Steps on Moon Quote.ogg|thumb|Pete Conrad's quote while descending the LEM ladder]]
+When Conrad, who was somewhat shorter than Neil Armstrong, stepped onto the lunar surface, his first words were &quot;Whoopie! Man, that may have been a small one for Neil, but that's a long one for me.&quot;&lt;ref name=&quot;Chaikin 1995&quot;/&gt;&lt;ref&gt;{{YouTube|id=YEEIJYrXn9s|title=&quot;Apollo 12 First Steps&quot;|link=no}}&lt;/ref&gt; This was not an off-the-cuff remark: Conrad had made a {{USD|500}} bet with reporter [[Oriana Fallaci]] he would say these words, after she had queried whether NASA had instructed Neil Armstrong what to say as he stepped onto the Moon. Conrad later said he was never able to collect the money.&lt;ref&gt;[[#Chaikin|Chaikin 1995]], p. 261&lt;/ref&gt;&lt;ref&gt;{{cite news |title=Conrad: Pioneer of the Final Frontier |first=Kathy |last=Sawyer |url=https://www.washingtonpost.com/wp-srv/national/daily/july99/conrad10.htm |newspaper=[[The Washington Post]] |page=C1 |date=July 10, 1999 |accessdate=November 7, 2011}}&lt;/ref&gt;
+
+To improve the quality of television pictures from the Moon, a color camera was carried on Apollo 12 (unlike the monochrome camera on Apollo 11). Unfortunately, when Bean carried the camera to the place near the LM where it was to be set up, he inadvertently pointed it directly into the Sun, destroying the [[Apollo TV camera#Westinghouse Lunar Color Camera|Secondary Electron Conduction (SEC) tube]]. Television coverage of this mission was thus terminated almost immediately.&lt;ref&gt;{{cite web |url=http://www.hq.nasa.gov/alsj/a11/a11.step.html |title=One Small Step |year=1995 |editor-last=Jones |editor-first=Eric M. |work=Apollo 11 Lunar Surface Journal |publisher=NASA |accessdate=November 7, 2011}} Note at 109:57:55.&lt;/ref&gt;
+
+Apollo 12 successfully landed within walking distance of the [[Surveyor 3]] probe. Conrad and Bean removed pieces of the probe to be taken back to Earth for analysis. It is claimed that the common [[bacterium]] ''[[Streptococcus mitis]]'' was found to have accidentally contaminated the spacecraft's camera prior to launch and survived dormant in this harsh environment for two and a half years.&lt;ref&gt;{{cite web |url=https://science.nasa.gov/science-news/science-at-nasa/1998/ast01sep98_1/ |title=Earth Microbes on the Moon |last=Noever |first=David |date=September 1, 1998 |work=Science@NASA |publisher=NASA |accessdate=November 7, 2011}}&lt;/ref&gt; However, this finding has since been disputed: see [[Reports of Streptococcus mitis on the Moon|Reports of ''Streptococcus mitis'' on the Moon]].
+
+Astronauts Conrad and Bean also collected rocks and set up equipment that took measurements of the Moon's [[Lunar seismology|seismicity]], [[solar wind]] flux and [[magnetic field]], and relayed the measurements to Earth.&lt;ref&gt;{{cite web |url=https://www.lpi.usra.edu/lunar/missions/apollo/apollo_12/experiments/ |title=Apollo 12 Science Experiments |publisher=Lunar and Planetary Institute |access-date=April 2, 2019}}&lt;/ref&gt; The instruments were part of the first complete nuclear-powered [[Apollo Lunar Surface Experiments Package|ALSEP]] station set up by astronauts on the Moon to relay long-term data from the lunar surface. The instruments on Apollo 11 were not as extensive or designed to operate long term. The astronauts also took photographs, although by accident Bean left several rolls of exposed film on the lunar surface. Meanwhile, Gordon, on board the ''Yankee Clipper'' in lunar orbit, took multi-spectral photographs of the surface.
+
+[[Image:a12-plaque.jpg|right|thumb|Replica of the plaque attached to the Apollo 12 LM]]
+
+The [[lunar plaque]] attached to the descent stage of ''Intrepid'' is unique in that unlike the other plaques, it (a) did not have a depiction of the Earth, and (b) it was textured differently: The other plaques had black lettering on polished stainless steel while the Apollo 12 plaque had the lettering in polished stainless steel while the background was brushed flat.
+
+===Return===
+[[File:Apollo 12 view of Solar Eclipse (5052129615).jpg|thumb|A solar eclipse seen from Apollo 12]]
+[[File:SH-3D of HS-4 flies over Apollo 12 command module near USS Hornet (CVS-12) on 24 November 1969.jpg|thumb|Apollo 12 recovery by {{USS|Hornet|CV-12|6}}]]
+
+''Intrepid's'' ascent stage was dropped (per normal procedures) after Conrad and Bean rejoined Gordon in orbit. It impacted the Moon on November 20, 1969, at {{Coord|3.94|S|21.20|W|type:event_globe:moon|name=Apollo 12 Intrepid lunar module impact}}. The seismometers the astronauts had left on the lunar surface registered the vibrations for more than an hour.
+
+The crew stayed an extra day in lunar orbit taking photographs, for a total lunar surface stay of 31 and a half hours and a total time in lunar orbit of eighty-nine hours.
+
+On the return flight to Earth after leaving lunar orbit, the crew of Apollo 12 witnessed (and photographed) a [[solar eclipse]], though this one was of the Earth eclipsing the Sun.
+
+===Splashdown===
+''Yankee Clipper'' returned to Earth on November 24, 1969 at 20:58 [[UTC]] (3:58pm [[Eastern Time Zone (North America)|EST]], 10:58am [[Hawaii-Aleutian time zone|HST]]), in the Pacific Ocean, approximately 500 nautical miles (800&amp;nbsp;km) east of [[American Samoa]]. During [[splashdown]], a [[16 mm film]] camera dislodged from storage and struck Bean in the forehead, rendering him briefly unconscious. He suffered a mild concussion and needed six stitches.&lt;ref&gt;{{cite web |url=http://www.hq.nasa.gov/alsj/a12/A12_MissionReport.pdf |title=Apollo 12 Mission Report |date=March 1970 |work=Apollo 12 Lunar Surface Journal |publisher=NASA |id=MSC-01855 |accessdate=June 23, 2013}}&lt;/ref&gt; After recovery by {{USS|Hornet|CV-12|6}}, they were flown to [[Pago Pago International Airport]] in [[Tafuna, American Samoa|Tafuna]] for a reception, before being flown on a [[C-141]] cargo plane to [[Honolulu, Hawaii|Honolulu]].
+
+==Stunts and mementos==
+* Alan Bean smuggled a camera-shutter [[self-timer]] device on to the mission with the intent of taking a [[Selfie|photograph with himself]], Pete Conrad and the Surveyor{{nbsp}}3 probe in the frame. As the timer was not part of their standard equipment, such an image would have thrown post-mission photo analysts into confusion over how the photo was taken. However, the self-timer was misplaced during the [[extra-vehicular activity]] (EVA) and the plan was never executed.&lt;ref&gt;{{Cite book|title=Moonshots and snapshots of Project Apollo : a rare photographic history|last=Bisney, John|date=2015|publisher=University of New Mexico Press|others=Pickering, J. L., 1957-|isbn=978-0-8263-5260-6|location=Albuquerque|pages=|oclc=966913635}}&lt;/ref&gt;
+* As one of the many pranks pulled during the friendly rivalry between the all-Navy prime crew and the all-Air Force backup crew, the Apollo 12 backup crew managed to insert into the astronauts' lunar checklist (attached to the wrists of Conrad's and Bean's [[space suit]]s) reduced-sized pictures of ''[[Playboy]]'' Playmates, surprising Conrad and Bean when they looked through the checklist flip-book during their first EVA. The [http://www.hq.nasa.gov/alsj/ Apollo Lunar Surface Journal website] contains a PDF file with the photocopies of their cuff checklists showing these photos.&lt;ref&gt;{{cite web |url=http://www.hq.nasa.gov/alsj/a12/a12_cdrcuff.pdf |title=Cuff Checklists |work=Apollo 12 Lunar Surface Journal |publisher=NASA |accessdate=November 7, 2011}}&lt;/ref&gt; Appearing in Conrad's checklist were [[Victoria Vetri|Angela Dorian]], Miss September 1967 (with the caption &quot;SEEN ANY INTERESTING HILLS &amp; VALLEYS ?&quot;) and [[Reagan Wilson]], Miss October 1967 (&quot;PREFERRED TETHER PARTNER,&quot; referring to a special procedure that would require the sharing of life support resources). The photos in Bean's cuff checklist were of [[Cynthia Myers]], Miss December 1968, who was 17 years old at the time of her photoshoot&lt;ref&gt;{{cite web |url=http://www.cynthiamyers.com/Graphics/bio2001.gif |title=Cynthia Myers Bio Playboy's Miss December 1968 |archive-url=https://web.archive.org/web/20010618020531/http://www.cynthiamyers.com/Graphics/bio2001.gif |archive-date=June 18, 2001}}&lt;/ref&gt;&lt;ref&gt;{{cite web |url=http://www.retrocrush.com/archive2006/cynthiamyers/ |title=Cynthia Myers interview |first=Randy |last=Waage |work=retroCRUSH |year=2006 |access-date=May 4, 2018 |archive-url=https://web.archive.org/web/20080808133832/http://www.retrocrush.com/archive2006/cynthiamyers/ |archive-date=August 8, 2008 |url-status=dead }}&lt;/ref&gt; (&quot;DON'T FORGET – DESCRIBE THE PROTUBERANCES&quot;) and [[Leslie Bianchini]], Miss January 1969 (&quot;SURVEY – HER ACTIVITY,&quot; in [[pun]] of ''Surveyor'').&lt;ref&gt;{{cite web|url=http://www.boingboing.net/2007/01/13/playboy_playmates_pr.html |title=''Playboy'' Playmates pranked into Apollo 12 mission checklists |last=Jardin |first=Xeni |authorlink=Xeni Jardin |date=January 13, 2007 |work=[[Boing Boing]] |accessdate=November 7, 2011 |url-status=dead |archiveurl=https://web.archive.org/web/20110517151518/http://www.boingboing.net/2007/01/13/playboy_playmates_pr.html |archivedate=May 17, 2011 }}&lt;/ref&gt;&lt;ref&gt;{{cite web |url=http://www.playboy.com/go/blog/magazine/Letters/2007/01/10/On-Buckeyes-Nanotechnology-and-Playmates-in-Space.html |title=On Buckeyes, Nanotechnology and Playmates in Space |last=Rowe |first=Chip |date=January 10, 2007 |work=The Playboy Blog |publisher=[[Playboy Enterprises]] |archiveurl=https://web.archive.org/web/20070317190829/http://www.playboy.com/go/blog/magazine/Letters/2007/01/10/On-Buckeyes-Nanotechnology-and-Playmates-in-Space.html |archivedate=March 17, 2007 |accessdate=November 7, 2011}}&lt;/ref&gt; The backup crew who did this later flew to the Moon themselves on Apollo 15. At the back of Conrad's checklist they had also prepared two pages of complex geological terminology, added as a joke to give him the option to sound to Mission Control like he was as skilled as a professional career geologist. The third crewmember orbiting the Moon was not left out of the ''Playboy'' prank, as a November 1969 calendar featuring [[DeDe Lind]], Miss August 1967, had been stowed in a locker that Dick Gordon found while his crewmates were on the lunar surface. In 2011, he put this calendar up for auction. Its value was estimated by [[RR Auction]] at {{USD|12,000–15,000}}.&lt;ref&gt;{{cite news |title=NASA Memorabilia Auction |url=https://www.cnbc.com/id/40640800/NASA_Memorabilia_Auction?slide=3 |work=Alternative Investing |publisher=[[CNBC]] |accessdate=November 7, 2011 |url-status=dead |archiveurl=https://web.archive.org/web/20121015103824/http://www.cnbc.com/id/40640800/NASA_Memorabilia_Auction?slide=3 |archivedate=October 15, 2012 |df=mdy-all }}&lt;/ref&gt;&lt;ref&gt;{{cite web |url=http://pmoy.playboy.com/playmate-flashback-dede-lind-circles-the-moon |title=Playmate Flashback: DeDe Lind Circles the Moon |date=January 4, 2011 |work=Playmate of the Year |publisher=Playboy Enterprises |accessdate=November 7, 2011 |archive-url=https://web.archive.org/web/20110824182634/http://pmoy.playboy.com/playmate-flashback-dede-lind-circles-the-moon# |archive-date=August 24, 2011 |url-status=dead |df=mdy-all }}&lt;/ref&gt; While the Command Module Pilot calendar was in full color, the lunar checklists carried black &amp; white photocopies (although these were dramatized in ''[[From the Earth to the Moon (miniseries)#Episodes|From the Earth to the Moon]]'' as full color photos in the checklists).
+* Artist [[Forrest Myers|Forrest &quot;Frosty&quot; Myers]] claims to have installed the art piece ''[[Moon Museum]]'' on &quot;a leg of the Intrepid landing module with the help of an unnamed engineer at the [[Grumman|Grumman Corporation]] after attempts to move the project forward through NASA's official channels were unsuccessful.&quot;&lt;ref&gt;{{cite web |url=http://greg.org/archive/2008/02/28/the_moon_museum.html |title=The Moon Museum |last=Allen |first=Greg |date=February 28, 2008 |work=greg.org: the making of |publisher=greg.org |accessdate=November 7, 2011}}&lt;/ref&gt;
+* Alan Bean left a memento on the Moon: his silver [[astronaut pin]].&lt;ref name=&quot;Chaikin 1995&quot;/&gt; This pin signified an astronaut who completed training but had not yet flown in space; he had worn it for six years. He was to get a gold astronaut pin for successfully completing the mission after the flight and felt he wouldn't need the silver pin thereafter.&lt;ref name=&quot;Chaikin 1995&quot;/&gt; Tossing his pin into a lunar crater extended the common tradition among military pilots to ceremonially dispose of their originally awarded flight wings.
+
+==Mission insignia==
+[[File:Apollo 12 Flown Silver Robbins Medallion (SN-1).jpg|thumb|Apollo 12 space-flown silver [[NASA space-flown Robbins medallions of the Apollo missions|Robbins medallion]]]]
+
+The Apollo 12 mission patch shows the crew's navy background; all three astronauts at the time of the mission were [[United States Navy|U.S. Navy]] [[Commander (United States)|commanders]]. It features a [[clipper ship]] arriving at the Moon, representing the CM ''Yankee Clipper''. The ship trails fire, and flies the flag of the United States. The mission name APOLLO XII and the crew names are on a wide gold border, with a small blue trim. Blue and gold are traditional U.S. Navy colors. The patch has four stars on it – one each for the three astronauts who flew the mission and one for [[Clifton Williams]], a U.S. Marine Corps aviator and astronaut who was killed on October 5, 1967, after a mechanical failure caused the controls of his [[Northrop T-38 Talon|T-38]] trainer to stop responding, resulting in a crash. He trained with Conrad and Gordon as part of the backup crew for what would be the [[Apollo 9]] mission, and would have been assigned as lunar module pilot for Apollo 12.&lt;ref name=&quot;Chaikin 1995&quot;/&gt;
+
+==Spacecraft location==
+[[File:Apollo12 CommandModule Hampton.JPG|thumb|right|Apollo 12 CM ''Yankee Clipper'' on display at the [[Virginia Air and Space Center]] in [[Hampton, Virginia]]]]
+
+The Apollo 12 command module ''Yankee Clipper'' is on display at the [[Virginia Air and Space Center]] in [[Hampton, Virginia]].&lt;ref&gt;{{cite web|url=https://airandspace.si.edu/explore-and-learn/topics/apollo/apollo-program/spacecraft/location/cm.cfm|title=Location of Apollo Command Modules|publisher=Smithsonian National Air and Space Museum|access-date=August 27, 2019}}&lt;/ref&gt;
+
+In 2002, astronomers thought they might have discovered another moon orbiting Earth, which they designated [[J002E3]], that turned out to be the [[S-IVB]] third stage of the Apollo 12 Saturn{{nbsp}}V rocket.&lt;ref&gt;{{cite web |url=http://www.universetoday.com/15019/how-many-moons-does-earth-have/ |title=How Many Moons Does Earth Have? |last=Cain |first=Fraser |date=June 12, 2008 |work=[[Universe Today]] |accessdate=November 7, 2011}}&lt;/ref&gt;
+[[File:Apollo Moon Flags Still Standing NASA Lunar Science Institute.theora.ogv|thumbnail|left|Series of time-lapse [[Lunar Reconnaissance Orbiter|LRO]] images showing a day at the Apollo 12 landing site, with the flag still standing]]
+The Lunar Module ''Intrepid'' impacted the Moon November 20, 1969 at 22:17:17.7 UT (5:17 PM EST) {{Coord|3.94|S|21.20|W|type:event_globe:moon|name=Apollo 12 Intrepid lunar module impact}}.&lt;ref&gt;{{cite web|url=https://nssdc.gsfc.nasa.gov/planetary/lunar/apollo_impact.html|title=Impact Sites of Apollo LM Ascent and SIVB Stages|publisher=NASA Space Science Data Coordinated Archive|access-date=August 27, 2019}}&lt;/ref&gt; In 2009, the [[Lunar Reconnaissance Orbiter]] (LRO) photographed the Apollo 12 landing site. The ''Intrepid'' lunar module descent stage, experiment package (ALSEP), Surveyor{{nbsp}}3 spacecraft, and astronaut footpaths are all visible.&lt;ref&gt;{{cite web |url=http://www.nasa.gov/mission_pages/LRO/multimedia/lroimages/lroc_20090903_apollo12.html |title=Apollo 12 and ''Surveyor 3'' |date=September 3, 2009 |editor-last=Garner |editor-first=Robert |publisher=NASA |accessdate=November 7, 2011}}&lt;/ref&gt; In 2011, the LRO returned to the landing site at a lower altitude to take higher resolution photographs.&lt;ref name=&quot;NASA LRO&quot;&gt;{{cite web |url=http://www.nasa.gov/mission_pages/LRO/news/apollo-sites.html |title=NASA Spacecraft Images Offer Sharper Views of Apollo Landing Sites |last1=Neal-Jones |first1=Nancy |last2=Zubritsky |first2=Elizabeth |last3=Cole |first3=Steve |editor-last=Garner |editor-first=Robert |date=September 6, 2011 |publisher=NASA |id=Goddard Release No. 11-058 (co-issued as NASA HQ Release No. 11-289) |accessdate=November 7, 2011}}&lt;/ref&gt;
+
+==Orbital leftovers==
+The Apollo 12 [[third stage]], an [[S-IVB]]&lt;!-- S-IVB-507, according to the S-IVB article --&gt;, after passing the Moon on 18 November 1969 and not entering a Lunar orbit like the Command Module and Lunar Lander, entered an [[elliptical orbit|elliptical]] [[Earth orbit]] with a period of approximately 43 days,&lt;ref name=jpl20020911/&gt; and thus became a [[derelict satellite]] orbiting Earth. Some time later, the spent third stage entered a [[heliocentric orbit]], but was not observed doing so. The likely mechanism was via one of the Sun-Earth Lagrangian points, which serve &quot;as a 'portal' between the regions of space gravitationally controlled by the Earth and Sun.&quot;&lt;ref name=jpl20020911/&gt;
+
+Notably, in April 2002, it reentered a [[Temporary satellite|temporary orbit]] around the Earth-Moon system near the [[Sun-Earth L1|Sun-Earth L1 Lagrangian point]]—&quot;a location where the gravity of the Earth and Sun approximately cancel&quot;&lt;ref name=jpl20020911/&gt;—and remained in orbital synchrony with both the Moon and the Earth for a little over a year, reentering a heliocentric orbit in May 2003. The object was &quot;discovered&quot; by [[near-Earth object]] watcher Bill Yeung on 3{{nbsp}}September 2002, labeled object &quot;J002E3&quot; by the [[Minor Planet Center]], and was subsequently identified as the former Apollo 12 stage only several days later. The rocket stage is &quot;the first known case of an object being captured by the Earth, although [[Jupiter]] has been known to capture comets via the same mechanism.&quot;&lt;ref name=jpl20020911&gt;{{cite news |title=Newly Discovered Object Could be a Leftover Apollo Rocket Stage |work=Center for Near-Earth Object Studies |publisher=[[California Institute of Technology]], [[Jet Propulsion Laboratory]] |date=11 September 2002 }}&lt;/ref&gt;{{update after|2019|9|4|df=US}}&lt;!-- what happened with this derelict satellite after 2003? --&gt;
+
+==Depiction in media==
+Portions of the Apollo 12 mission are dramatized in the 1998 miniseries ''[[From the Earth to the Moon (miniseries)|From the Earth to the Moon]]'' episode entitled &quot;[[From the Earth to the Moon (miniseries)#Episodes|That's All There Is]].&quot; Conrad, Gordon, and Bean were portrayed by [[Paul McCrane]], [[Tom Verica]], and [[Dave Foley]], respectively. Conrad had been portrayed by a different actor, [[Peter Scolari]], in the first episode.
+
+{{clear}}
+
+==See also==
+* [[Extra-vehicular activity]]
+* [[Bench Crater meteorite]]
+* [[Google Moon]]
+* [[List of artificial objects on the Moon]]
+* [[List of spacewalks and moonwalks 1965–1999]]
+* [[Splashdown (spacecraft landing)|Splashdown]]
+
+==References==
+{{Include-NASA}}
+
+{{Reflist|30em}}
+
+===Bibliography===
+{{Refbegin}}
+* {{Cite book |last=Chaikin |first=Andrew |authorlink=Andrew Chaikin |others=Foreword by [[Tom Hanks]] |title=A Man on the Moon: The Voyages of the Apollo Astronauts |year=1995 |publisher=[[Penguin Books]] |location=New York |isbn=978-0-14-024146-4 |ref=Chaikin|title-link=A Man on the Moon }}
+* {{cite book |last=Lattimer |first=Dick |others=Foreword by [[James A. Michener]] |title=All We Did Was Fly to the Moon |edition=1st |series=History-alive series |volume=1 |year=1985 |publisher=Whispering Eagle Press |location=Alachua, FL |isbn=978-0-9611228-0-5 |ref=Lattimer}}&lt;!-- title quotes are part of the real title on the book cover --&gt;
+* {{Cite book |last1=Lovell |first1=Jim |authorlink1=Jim Lovell |last2=Kluger |first2=Jeffrey |authorlink2=Jeffrey Kluger |title=Lost Moon: The Perilous Voyage of Apollo 13 |year=1994 |publisher=[[Houghton Mifflin]] |location=Boston |isbn=978-0-395-67029-3 |ref=Lovell &amp; Kluger|title-link=Lost Moon }}
+{{Refend}}
+
+==External links==
+{{Commons}}
+* [https://web.archive.org/web/20040104202456/http://www.astronautix.com/flights/apollo12.htm &quot;Apollo 12&quot;] at Encyclopedia Astronautica
+* [http://nssdc.gsfc.nasa.gov/planetary/lunar/apollo12info.html &quot;Apollo 12&quot;] at NASA's [[National Space Science Data Center]]
+* [https://astrogeology.usgs.gov/search/details?id=/Moon/Apollo/Traverse/AP12Trav.jpg &quot;Apollo 12 Traverse Map&quot;] at the [[Astrogeology Research Program|USGS Astrogeology Science Center]]
+* [http://www.lpi.usra.edu/resources/lunarorbiter/images/print/3154_h2.jpg Lunar Orbiter 3 Image 154 H2], used for planning the mission (landing site is left of center).
+
+'''NASA reports'''
+* [http://www.hq.nasa.gov/alsj/a12/A12_MissionReport.pdf &quot;Apollo 12 Mission Report&quot;] (PDF), NASA, MSC-01855, March 1970
+* [http://www.history.nasa.gov/alsj/a12/as12psr.pdf &quot;Apollo 12 Preliminary Science Report&quot;] (PDF), NASA, NASA SP-235, 1970
+* [https://www.hq.nasa.gov/alsj/a12/A12_PressKit.pdf NASA Apollo 12 Press Kit] (PDF), NASA, Release No. 69-148, November 5, 1969
+* [https://web.archive.org/web/20130519143258/http://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/19720066106_1972066106.pdf &quot;Analysis of Apollo 12 Lightning Incident&quot;], (PDF) February 1970
+* [https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/19720019081_1972019081.pdf &quot;Analysis of ''Surveyor 3'' material and photographs returned by Apollo 12&quot;] (PDF) 1972
+* [https://web.archive.org/web/20140207230047/http://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/19730064630_1973064630.pdf &quot;Examination of ''Surveyor 3'' surface sampler scoop returned by Apollo 12 mission&quot;](PDF) 1971
+* [https://history.nasa.gov/SP-4012/vol3/table2.40.htm &quot;Table 2-40. Apollo 12 Characteristics&quot;] from ''NASA Historical Data Book: Volume III: Programs and Projects 1969–1978'' by Linda Neuman Ezell, NASA History Series (1988) 
+* [http://www.hq.nasa.gov/office/pao/History/SP-4009/cover.htm ''The Apollo Spacecraft: A Chronology''] NASA, NASA SP-4009
+* [https://history.nasa.gov/apsr/apsr.htm &quot;Apollo Program Summary Report&quot;] (PDF), NASA, JSC-09423, April 1975
+
+'''Multimedia'''
+* {{Internet Archive short film | Jsc-536_apollo12PinpointForScience.wmv | Apollo 12: Pinpoint For Science }}
+* [https://www.youtube.com/watch?v=8K41rbTmUcU &quot;Apollo 12: Pinpoint For Science&quot;] on YouTube
+* [https://history.nasa.gov/afj/ap12fj/audio/audioindex.html &quot;Apollo 12: The Bernie Scrivener Audio Tapes&quot;] – Apollo 12 audio recordings at the Apollo 12 Flight Journal
+* [https://web.archive.org/web/20091222095116/http://www.life.com/image/first/in-gallery/37132/apollo-12-there-and-back-again &quot;Apollo 12: There and Back Again&quot;] – Image slideshow by ''[[Life (magazine)|Life]]'' magazine
+* [https://www.nasa.gov/sites/default/files/atoms/files/apollo_12_comic_book_web_res.pdf &quot;Apollo12: Comic Book&quot; (50th Anniversary - November 20, 1969-2019)]
+* [http://science.ksc.nasa.gov/history/apollo/apollo-12/apollo-12-patch.jpg &quot;Apollo 12: Patch&quot;] – Image of Apollo 12 mission patch
+
+{{Apollo program| before=''[[Apollo 11]]''| after=[[Apollo 13]]}}
+{{Orbital launches in 1969}}
+{{Moon spacecraft}}
+{{NASA space program}}
+{{Use American English|date=January 2014}}
+{{Portal bar|Solar System|Space|Spaceflight}}
+
+[[Category:1969 in the United States]]
+[[Category:Apollo program missions|Apollo 12]]
+[[Category:Apollo 12| ]]
+[[Category:Articles containing video clips]]
+[[Category:Extravehicular activity]]
+[[Category:Crewed missions to the Moon]]
+[[Category:Sample return missions]]
+[[Category:Soft landings on the Moon]]
+[[Category:Spacecraft launched in 1969]]
+[[Category:Spacecraft which reentered in 1969]]
+[[Category:November 1969 events]]
+[[Category:Spacecraft launched by Saturn rockets]]
+[[Category:1969 on the Moon]]
+[[Category:Pete Conrad]]
+[[Category:Alan Bean]]</text>
+      <sha1>e9xk1ezq97fi9mywg8esn3p12ymfz0v</sha1>
+    </revision>
+  </page>

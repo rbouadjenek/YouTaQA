@@ -1,0 +1,305 @@
+  <page>
+    <title>Category theory</title>
+    <ns>0</ns>
+    <id>5869</id>
+    <revision>
+      <id>941931297</id>
+      <parentid>941928945</parentid>
+      <timestamp>2020-02-21T14:50:42Z</timestamp>
+      <contributor>
+        <username>AnomieBOT</username>
+        <id>7611264</id>
+      </contributor>
+      <minor />
+      <comment>Dating maintenance tags: {{Cn}}</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{More footnotes|date=November 2009}}
+
+[[File:Commutative diagram for morphism.svg|right|thumb|200px|Schematic representation of a category with objects ''X'', ''Y'', ''Z'' and morphisms ''f'', ''g'', ''g'' ∘ ''f''. (The category's three identity morphisms 1&lt;sub&gt;''X''&lt;/sub&gt;, 1&lt;sub&gt;''Y''&lt;/sub&gt; and 1&lt;sub&gt;''Z''&lt;/sub&gt;, if explicitly represented, would appear as three arrows, from the letters X, Y, and Z to themselves, respectively.)]]
+
+'''Category theory'''&lt;ref&gt;{{cite book
+ |first=Steve |last=Awodey |authorlink=Steve Awodey
+ |title=Category Theory
+ |edition = 2nd
+ |url=https://books.google.com/books?id=zLs8BAAAQBAJ
+ |orig-year=2006
+ |year=2010 |publisher=Oxford University Press |isbn=978-0-19-923718-0
+ |series=Oxford Logic Guides |volume=49
+}}&lt;/ref&gt; formalizes [[mathematical structure]] and its concepts in terms of a [[Graph labeling|labeled]] [[directed graph]] called a ''[[Category (mathematics)|category]]'', whose nodes are called  ''objects'', and whose labelled directed edges are called  ''arrows'' (or [[morphism]]s). A [[Category (mathematics)|category]] has two basic properties: the ability to [[Function composition|compose]] the arrows [[Associativity|associatively]], and the existence of an [[Identity function|identity]] arrow for each object. The language of category theory has been used to formalize concepts of other high-level [[abstractions]] such as [[set theory|sets]], [[ring theory|rings]], and [[group theory|groups]]. Informally, category theory is a general theory of [[function (mathematics)|functions]].
+
+Several terms used in category theory, including the term &quot;morphism&quot;, are used differently from their uses in the rest of mathematics. In category theory, morphisms obey conditions specific to category theory itself.
+
+[[Samuel Eilenberg]] and [[Saunders Mac Lane]] introduced the concepts of categories, [[functor]]s, and [[natural transformation]]s in 1942–45 in their study of [[algebraic topology]], with the goal of understanding the processes that preserve mathematical structure.
+
+Category theory has practical applications in [[programming language theory]], for example the usage of [[Monad (functional programming)|monads in functional programming]].   It may also be used as an axiomatic foundation for mathematics, as an alternative to [[set theory]] and other proposed foundations.
+
+==Basic concepts  ==
+Categories represent abstractions of other mathematical concepts.
+Many areas of mathematics can be formalised by category theory as [[category (mathematics)|categories]]. Hence category theory uses abstraction to make it possible to state and prove many intricate and subtle mathematical results in these fields in a much simpler way.&lt;ref&gt;{{cite book|last=Geroch|first=Robert|title=Mathematical physics|url=https://archive.org/details/mathematicalphys0000gero|url-access=registration|year=1985|publisher=University of Chicago Press|location=Chicago|isbn=978-0-226-28862-8|pages=[https://archive.org/details/mathematicalphys0000gero/page/7 7]|edition=[Repr.]|quote=Note that theorem 3 is actually easier for categories in general than it is for the special case of sets. This phenomenon is by no means rare.}}&lt;!--|accessdate=20 August 2012--&gt;&lt;/ref&gt;
+
+A basic example of a category is the [[category of sets]], where the objects are sets and the arrows are functions from one set to another.  However, the objects of a category need not be sets, and the arrows need not be functions. Any way of formalising a mathematical concept such that it meets the basic conditions on the behaviour of objects and arrows is a valid category—and all the results of category theory apply to it.
+
+The &quot;arrows&quot; of category theory are often said to represent a process connecting two objects, or in many cases a &quot;structure-preserving&quot; transformation connecting two objects. There are, however, many applications where much more abstract concepts are represented by objects and morphisms. The most important property of the arrows is that they can be &quot;composed&quot;, in other words, arranged in a sequence to form a new arrow.
+
+== Applications of categories==
+Categories now appear in many branches of mathematics, some areas of [[theoretical computer science]] where they can correspond to [[Data type|types]] or to [[database schema]]s, and [[mathematical physics]] where they can be used to describe [[vector space]]s.&lt;ref&gt;B. Coecke, editor [https://www.springer.com/jp/book/9783642128202#aboutBook New Structures for Physics] Number 831 in Lecture Notes in Physics. Springer-Verlag, 2011&lt;/ref&gt; Probably the first application of category theory outside pure mathematics was the &quot;metabolism-repair&quot; model of  autonomous living organisms by [[Robert Rosen (theoretical biologist)|Robert Rosen]].&lt;ref&gt;{{cite journal|last1=Rosen|first1=Robert|title=The representation of biological systems from the standpoint of the theory of categories|journal=Bulletin of Mathematical Biophysics|date=1958|volume=20|pages=317–341|url=http://www.few.vu.nl/~rplanque/Onderwijs/MathBio/PapersForProject/Rosen.pdf}}&lt;/ref&gt;
+
+== Utility ==
+
+=== Categories, objects, and morphisms ===
+{{more citations needed section|date=November 2015}}
+The study of [[category (mathematics)|categories]] is an attempt to ''axiomatically'' capture what is commonly found in various classes of related [[mathematical structures]] by relating them to the ''structure-preserving functions'' between them. A systematic study of category theory then allows us to prove general results about any of these types of mathematical structures from the axioms of a category.
+
+Consider the following example. The [[class (set theory)|class]] '''Grp''' of [[group (mathematics)|groups]] consists of all objects having a &quot;group structure&quot;. One can proceed to [[mathematical proof|prove]] [[theorem]]s about groups by making logical deductions from the set of axioms defining groups. For example, it is immediately proven from the axioms that the [[identity element]] of a group is unique.
+
+Instead of focusing merely on the individual objects (e.g., groups) possessing a given structure, category theory emphasizes the [[morphism]]s – the structure-preserving mappings – ''between'' these objects; by studying these morphisms, one is able to learn more about the structure of the objects. In the case of groups, the morphisms are the [[group homomorphism]]s. A group homomorphism between two groups &quot;preserves the group structure&quot; in a precise sense; informally it is a &quot;process&quot; taking one group to another, in a way that carries along information about the structure of the first group into the second group. The study of group homomorphisms then provides a tool for studying general properties of groups and consequences of the group axioms.
+
+A similar type of investigation occurs in many mathematical theories, such as the study of [[continuous function (topology)|continuous]] maps (morphisms) between [[topological space]]s in [[topology]] (the associated category is called '''Top'''), and the study of [[smooth function]]s (morphisms) in [[manifold theory]].
+
+Not all categories arise as &quot;structure preserving (set) functions&quot;, however; the standard example is the category of homotopies between [[pointed topological space]]s.
+
+If one axiomatizes [[Finitary relation|relations]] instead of [[Function (mathematics)|functions]], one obtains the theory of [[Allegory (category theory)|allegories]].
+
+=== Functors ===
+{{Main|Functor}}
+{{See also|Adjoint functors#Motivation}}
+
+A category is ''itself'' a type of mathematical structure, so we can look for &quot;processes&quot; which preserve this structure in some sense; such a process is called a [[functor]].
+
+[[Diagram chasing]] is a visual method of arguing with abstract &quot;arrows&quot; joined in diagrams. Functors are represented by arrows between categories, subject to specific defining commutativity conditions. Functors can define (construct) categorical diagrams and sequences (viz. Mitchell, 1965){{citation needed|date=September 2018}}. A functor associates to every object of one category an object of another category, and to every morphism in the first category a morphism in the second.
+
+As a result, this defines a category ''of categories and functors'' – the objects are categories, and the morphisms (between categories) are functors.
+
+Studying categories and functors is not just studying a class of mathematical structures and the morphisms between them but rather the ''relationships between various classes of mathematical structures''. This fundamental idea first surfaced in [[algebraic topology]]. Difficult ''topological'' questions can be translated into ''algebraic'' questions which are often easier to solve.  Basic constructions, such as the [[fundamental group]] or the [[fundamental groupoid]] of a [[topological space]], can be expressed as functors to the category of [[groupoid]]s in this way, and the concept is pervasive in algebra and its applications.
+
+=== Natural transformations ===
+{{Main|Natural transformation}}
+
+Abstracting yet again, some diagrammatic and/or sequential constructions are often &quot;naturally related&quot; – a vague notion, at first sight. This leads to the clarifying concept of [[natural transformation]], a way to &quot;map&quot; one functor to another. Many important constructions in mathematics can be studied in this context. &quot;Naturality&quot; is a principle, like [[general covariance]] in physics, that cuts deeper than is initially apparent. An arrow between two functors is a natural transformation when it is subject to certain naturality or commutativity conditions.
+
+Functors and natural transformations ('naturality') are the key concepts in category theory.&lt;ref&gt;{{harvnb|Mac Lane|1998|loc=p. 18: &quot;As Eilenberg-Mac Lane first observed, 'category' has been defined in order to be able to define 'functor' and 'functor' has been defined in order to be able to define 'natural transformation'.&quot;}}&lt;/ref&gt;
+
+== Categories, objects, and morphisms ==
+{{Main|Category (mathematics)|Morphism}}
+
+=== Categories ===
+A ''category'' ''C'' consists of the following three mathematical entities:
+* A [[Class (set theory)|class]] ob(''C''), whose elements are called ''objects'';
+* A class hom(''C''), whose elements are called [[morphism]]s or [[Map (mathematics)|maps]] or ''arrows''. Each morphism '''''f''''' has a ''source object '''a''''' and ''target object '''b'''''. &lt;br /&gt;The expression {{nowrap|1=''f'' : ''a'' → ''b''}}, would be verbally stated as &quot;''f'' is a morphism from ''a'' to ''b''&quot;.&lt;br /&gt;The expression {{nowrap|1='''hom(''a'', ''b'')'''}} – alternatively expressed as {{nowrap|1='''hom&lt;sub&gt;''C''&lt;/sub&gt;(''a'', ''b'')'''}}, {{nowrap|1='''mor(''a'', ''b'')'''}}, or {{nowrap|1='''''C''(''a'', ''b'')'''}} – denotes the ''hom-class'' of all morphisms from ''a'' to ''b''.
+* A [[binary operation]] ∘, called ''composition of morphisms'', such that for any three objects ''a'', ''b'', and ''c'', we have {{nowrap|1=∘ : hom(''b'', ''c'') × hom(''a'', ''b'') → hom(''a'', ''c'')}}. The composition of {{nowrap|1=''f'' : ''a'' → ''b''}} and {{nowrap|1=''g'' : ''b'' → ''c''}} is written as {{nowrap|1=''g'' ∘ ''f''}} or ''gf'',{{efn|Some authors compose in the opposite order, writing ''fg'' or {{nowrap|1=''f'' ∘ ''g''}} for {{nowrap|1=''g'' ∘ ''f''}}.  Computer scientists using category theory very commonly write {{nowrap|1=''f'' ; ''g''}} for {{nowrap|1=''g'' ∘ ''f''}}}} governed by two axioms:
+** [[Associativity]]: If {{nowrap|1=''f'' : ''a'' → ''b''}}, {{nowrap|1=''g'' : ''b'' → ''c''}} and {{nowrap|1=''h'' : ''c'' → ''d''}} then {{nowrap|1=''h'' ∘  (''g'' ∘ ''f'') = (''h'' ∘ ''g'') ∘ ''f''}}, and
+** [[Identity (mathematics)|Identity]]: For every object ''x'', there exists a morphism {{nowrap|1=1&lt;sub&gt;''x''&lt;/sub&gt; : ''x'' → ''x''}} called the ''[[identity morphism]] for x'', such that for every morphism {{nowrap|1=''f'' : ''a'' → ''b''}}, we have {{nowrap|1=1&lt;sub&gt;''b''&lt;/sub&gt; ∘ ''f'' = ''f'' = ''f'' ∘ 1&lt;sub&gt;''a''&lt;/sub&gt;}}.
+:: From the axioms, it can be proved that there is exactly one [[identity morphism]] for every object. Some authors deviate from the definition just given by identifying each object with its identity morphism.
+
+=== Morphisms ===
+Relations among morphisms (such as {{nowrap|1=''fg'' = ''h''}}) are often depicted using [[commutative diagram]]s, with &quot;points&quot; (corners) representing objects and &quot;arrows&quot; representing morphisms.
+
+[[Morphism]]s can have any of the following properties. A morphism {{nowrap|1=''f'' : ''a'' → ''b''}} is a:
+* [[monomorphism]] (or ''monic'') if {{nowrap|1=''f'' ∘ ''g''&lt;sub&gt;1&lt;/sub&gt; = ''f'' ∘ ''g''&lt;sub&gt;2&lt;/sub&gt;}} implies {{nowrap|1=''g''&lt;sub&gt;1&lt;/sub&gt; = ''g''&lt;sub&gt;2&lt;/sub&gt;}} for all morphisms {{nowrap|1=''g''&lt;sub&gt;1&lt;/sub&gt;, ''g&lt;sub&gt;2&lt;/sub&gt;'' : ''x'' → ''a''}}.
+* [[epimorphism]] (or ''epic'') if {{nowrap|1=''g''&lt;sub&gt;1&lt;/sub&gt; ∘ ''f'' = ''g''&lt;sub&gt;2&lt;/sub&gt; ∘ ''f''}} implies {{nowrap|1=''g&lt;sub&gt;1&lt;/sub&gt;'' = ''g&lt;sub&gt;2&lt;/sub&gt;''}} for all morphisms {{nowrap|1=''g&lt;sub&gt;1&lt;/sub&gt;'', ''g&lt;sub&gt;2&lt;/sub&gt;'' : ''b'' → ''x''}}.
+* ''bimorphism'' if ''f'' is both epic and monic.
+* [[isomorphism]] if there exists a morphism {{nowrap|1=''g'' : ''b'' → ''a''}} such that {{nowrap|1=''f'' ∘ ''g'' = 1&lt;sub&gt;''b''&lt;/sub&gt; and ''g'' ∘ ''f'' = 1&lt;sub&gt;''a''&lt;/sub&gt;}}.{{efn|Note that a morphism that is both epic and monic is not necessarily an isomorphism! An elementary counterexample: in the category consisting of two objects ''A'' and ''B'', the identity morphisms, and a single morphism ''f'' from ''A'' to ''B'', ''f'' is both epic and monic but is not an isomorphism.}}
+* [[endomorphism]] if {{nowrap|1=''a'' = ''b''}}. end(''a'') denotes the class of endomorphisms of ''a''.
+* [[automorphism]] if ''f'' is both an endomorphism and an isomorphism. aut(''a'') denotes the class of automorphisms of ''a''.
+* [[retract (category theory)|retraction]] if a right inverse of ''f'' exists, i.e. if there exists a morphism {{nowrap|1=''g'' : ''b'' → ''a''}} with {{nowrap|1=''f'' ∘ ''g'' = 1&lt;sub&gt;''b''&lt;/sub&gt;}}.
+* [[section (category theory)|section]] if a left inverse of ''f'' exists, i.e. if there exists a morphism {{nowrap|1=''g'' : ''b'' → ''a''}} with {{nowrap|1=''g'' ∘ ''f'' = 1&lt;sub&gt;''a''&lt;/sub&gt;}}.
+
+Every retraction is an epimorphism, and every section is a monomorphism. Furthermore, the following three statements are equivalent:
+* ''f'' is a monomorphism and a retraction;
+* ''f'' is an epimorphism and a section;
+* ''f'' is an isomorphism.
+
+==Functors==
+{{Main|Functor}}
+
+[[Functor]]s are structure-preserving maps between categories. They can be thought of as morphisms in the category of all (small) categories.
+
+A ('''covariant''') functor ''F'' from a category ''C'' to a category ''D'', written {{nowrap|1=''F'' : ''C'' → ''D''}}, consists of:
+* for each object ''x'' in ''C'', an object ''F''(''x'') in ''D''; and
+* for each morphism {{nowrap|1=''f'' : ''x'' → ''y''}} in ''C'', a morphism {{nowrap|1=''F''(''f'') : ''F''(''x'') → ''F''(''y'')}},
+
+such that the following two properties hold:
+* For every object ''x'' in ''C'', {{nowrap|1=''F''(1&lt;sub&gt;''x''&lt;/sub&gt;) = 1&lt;sub&gt;''F''(''x'')&lt;/sub&gt;}};
+* For all morphisms {{nowrap|1=''f'' : ''x'' → ''y''}} and {{nowrap|1=''g'' : ''y'' → ''z''}}, {{nowrap|1=''F''(''g'' ∘ ''f'') = ''F''(''g'') ∘ ''F''(''f'')}}.
+
+A '''contravariant''' functor {{nowrap|1=''F'': ''C'' → ''D''}} is like a covariant functor, except that it &quot;turns morphisms around&quot; (&quot;reverses all the arrows&quot;). More specifically, every morphism {{nowrap|1=''f'' : ''x'' → ''y''}} in ''C'' must be assigned to a morphism  {{nowrap|1=''F''(''f'') : ''F''(''y'') → ''F''(''x'')}} in ''D''. In other words, a contravariant functor acts as a covariant functor from the [[opposite category]] ''C''&lt;sup&gt;op&lt;/sup&gt; to ''D''.
+
+==Natural transformations==
+{{Main|Natural transformation}}
+
+A ''natural transformation'' is a relation between two functors. Functors often describe &quot;natural constructions&quot; and natural transformations then describe &quot;natural homomorphisms&quot; between two such constructions. Sometimes two quite different constructions yield &quot;the same&quot; result; this is expressed by a natural isomorphism between the two functors.
+
+If ''F'' and ''G'' are (covariant) functors between the categories ''C'' and ''D'', then a natural transformation η from ''F'' to ''G'' associates to every object ''X'' in ''C'' a morphism {{nowrap|1=η&lt;sub&gt;''X''&lt;/sub&gt; : ''F''(''X'') → ''G''(''X'')}} in ''D'' such that for every morphism {{nowrap|1=''f'' : ''X'' → ''Y''}} in ''C'', we have {{nowrap|1=η&lt;sub&gt;''Y''&lt;/sub&gt; ∘ ''F''(''f'') = ''G''(''f'') ∘ η&lt;sub&gt;''X''&lt;/sub&gt;}}; this means that the following diagram is [[commutative diagram|commutative]]:
+
+[[Image:Natural transformation.svg|175px|center|Commutative diagram defining natural transformations]]
+
+The two functors ''F'' and ''G'' are called ''naturally isomorphic'' if there exists a natural transformation from ''F'' to ''G'' such that η&lt;sub&gt;''X''&lt;/sub&gt; is an isomorphism for every object ''X'' in ''C''.
+
+==Other concepts==
+
+===Universal constructions, limits, and colimits===
+{{Main|Universal property|Limit (category theory)}}
+
+Using the language of category theory, many areas of mathematical study can be categorized. Categories include sets, groups and topologies.
+
+Each category is distinguished by properties that all its objects have in common, such as the [[empty set]] or the [[product topology|product of two topologies]], yet in the definition of a category, objects are considered atomic, i.e., we ''do not know'' whether an object ''A'' is a set, a topology, or any other abstract concept. Hence, the challenge is to define special objects without referring to the internal structure of those objects. To define the empty set without referring to elements, or the product topology without referring to open sets, one can characterize these objects in terms of their relations to other objects, as given by the morphisms of the respective categories. Thus, the task is to find ''[[universal property|universal properties]]'' that uniquely determine the objects of interest.
+
+Numerous important constructions can be described in a purely categorical way if the ''category limit'' can be developed and dualized to yield the notion of a ''colimit''.
+
+===Equivalent categories===
+{{Main|Equivalence of categories|Isomorphism of categories}}
+
+It is a natural question to ask: under which conditions can two categories be considered ''essentially the same'', in the sense that theorems about one category can readily be transformed into theorems about the other category? The major tool one employs to describe such a situation is called ''equivalence of categories'', which is given by appropriate functors between two categories. Categorical equivalence has found [[Equivalence of categories#Examples|numerous applications]] in mathematics.
+
+===Further concepts and results===
+The definitions of categories and functors provide only the very basics of categorical algebra; additional important topics are listed below. Although there are strong interrelations between all of these topics, the given order can be considered as a guideline for further reading.
+* The [[functor category]] ''D''&lt;sup&gt;''C''&lt;/sup&gt; has as objects the functors from ''C'' to ''D'' and as morphisms the natural transformations of such functors. The [[Yoneda lemma]] is one of the most famous basic results of category theory; it describes representable functors in functor categories.
+* [[Dual (category theory)|Duality]]: Every statement, theorem, or definition in category theory has a ''dual'' which is essentially obtained by &quot;reversing all the arrows&quot;. If one statement is true in a category ''C'' then its dual is true in the dual category ''C''&lt;sup&gt;op&lt;/sup&gt;. This duality, which is transparent at the level of category theory, is often obscured in applications and can lead to surprising relationships.
+* [[Adjoint functors]]: A functor can be left (or right) adjoint to another functor that maps in the opposite direction. Such a pair of adjoint functors typically arises from a construction defined by a universal property; this can be seen as a more abstract and powerful view on universal properties.
+
+===Higher-dimensional categories===
+{{Main|Higher category theory}}
+Many of the above concepts, especially equivalence of categories, adjoint functor pairs, and functor categories, can be situated into the context of ''higher-dimensional categories''. Briefly, if we consider a morphism between two objects as a &quot;process taking us from one object to another&quot;, then higher-dimensional categories allow us to profitably generalize this by considering &quot;higher-dimensional processes&quot;.
+
+For example, a (strict) [[2-category]] is a category together with &quot;morphisms between morphisms&quot;, i.e., processes which allow us to transform one morphism into another. We can then &quot;compose&quot; these &quot;bimorphisms&quot; both horizontally and vertically, and we require a 2-dimensional &quot;exchange law&quot; to hold, relating the two composition laws. In this context, the standard example is '''Cat''', the 2-category of all (small) categories, and in this example, bimorphisms of morphisms are simply [[natural transformation]]s of morphisms in the usual sense. Another basic example is to consider a 2-category with a single object; these are essentially [[monoidal category|monoidal categories]]. [[bicategory|Bicategories]] are a weaker notion of 2-dimensional categories in which the composition of morphisms is not strictly associative, but only associative &quot;up to&quot; an isomorphism.
+
+This process can be extended for all [[natural number]]s ''n'', and these are called [[n-category|''n''-categories]]. There is even a notion of ''[[quasi-category|ω-category]]'' corresponding to the [[ordinal number]] [[ω (ordinal number)|ω]].
+
+Higher-dimensional categories are part of the broader mathematical field of [[higher-dimensional algebra]], a concept introduced by [[Ronald Brown (mathematician)|Ronald Brown]].  For a conversational introduction to these ideas, see [http://math.ucr.edu/home/baez/week73.html John Baez, 'A Tale of ''n''-categories' (1996).]
+
+==Historical notes==
+{{more citations needed section|date=November 2015}}
+{{main|Timeline of category theory and related mathematics}}
+{{rquote|right|It should be observed first that the whole concept of a  category is essentially an auxiliary one; our basic concepts are essentially those of a functor and of a natural transformation [...]|[[Samuel Eilenberg]] and [[Saunders Mac Lane]]|General theory of natural equivalences&lt;ref&gt;{{Cite journal|last=Eilenberg|first=Samuel|last2=MacLane|first2=Saunders|date=1945|title=General theory of natural equivalences|url=https://www.ams.org/tran/1945-058-00/S0002-9947-1945-0013131-6/|journal=Transactions of the American Mathematical Society|volume=58|pages=247|doi=10.1090/S0002-9947-1945-0013131-6|issn=0002-9947}}&lt;/ref&gt;}}
+In 1942–45, [[Samuel Eilenberg]] and [[Saunders Mac Lane]] introduced categories, functors, and natural transformations as part of their work in topology, especially [[algebraic topology]]. Their work was an important part of the transition from intuitive and geometric [[Homology (mathematics)|homology]] to [[homological algebra]]. Eilenberg and Mac Lane later wrote that their goal was to understand natural transformations. That required defining functors, which required categories.
+
+[[Stanislaw Ulam]], and some writing on his behalf, have claimed that related ideas were current in the late 1930s in Poland. Eilenberg was Polish, and studied mathematics in Poland in the 1930s. Category theory is also, in some sense, a continuation of the work of [[Emmy Noether]] (one of Mac Lane's teachers) in formalizing abstract processes;{{cn|date=February 2020}} Noether realized that understanding a type of mathematical structure requires understanding the processes that preserve that structure ([[homomorphism]]s).{{cn|date=February 2020}} Eilenberg and Mac Lane introduced categories for understanding and formalizing the processes ([[functor]]s) that relate [[topology|topological structures]] to  algebraic structures ([[topological invariant]]s) that characterize them.
+
+Category theory was originally intoduced for the need of [[homological algebra]], and widely extended for the need of modern [[algebraic geometry]] ([[scheme theory]]). Category theory may be viewed as an extension of [[universal algebra]], as the latter studies [[algebraic structure]]s, and the former applies to any kind of [[mathematical structure]] and studies also the relationships between structures of different nature. For this reason, it is used throughout mathematics. Applications to [[mathematical logic]] and [[semantics (computer science)|semantics]] ([[categorical abstract machine]] came later.
+
+Certain categories called [[topos|topoi]] (singular ''topos'') can even serve as an alternative to [[axiomatic set theory]] as a foundation of mathematics. A topos can also be considered as a specific type of category with two additional topos axioms. These foundational applications of category theory have been worked out in fair detail as a basis for, and justification of, [[Constructivism (mathematics)|constructive mathematics]]. [[Topos|Topos theory]] is a form of abstract [[Sheaf (mathematics)|sheaf theory]], with geometric origins, and leads to ideas such as [[pointless topology]].
+
+[[Categorical logic]] is now a well-defined field based on [[type theory]] for [[intuitionistic logic]]s, with applications in [[functional programming]] and [[domain theory]], where a [[cartesian closed category]] is taken as a non-syntactic description of a [[lambda calculus]]. At the very least, category theoretic language clarifies what exactly these related areas have in common (in some [[wikt:abstract|abstract]] sense).
+
+Category theory has been applied in other fields as well. For example, [[John Baez]] has shown a link between [[Feynman diagrams]] in [[physics]] and monoidal categories.&lt;ref name=&quot;Baez09&quot;&gt;{{cite arxiv |first1=J.C. |last1=Baez |first2=M. |last2=Stay |title=Physics, topology, logic and computation: A Rosetta stone |year=2009 |eprint=0903.0340 |class=quant-ph }}&lt;/ref&gt; Another application of category theory, more specifically: topos theory, has been made in mathematical music theory, see for example the book ''The Topos of Music, Geometric Logic of Concepts, Theory, and Performance'' by [[Guerino Mazzola]].
+
+More recent efforts to introduce undergraduates to categories as a foundation for mathematics include those of [[William Lawvere]] and Rosebrugh (2003) and Lawvere and [[Stephen Schanuel]] (1997) and Mirroslav Yotov (2012).
+
+== See also ==
+{{Portal|Mathematics}}
+* [[Domain theory]]
+* [[Enriched category|Enriched category theory]]
+* [[Glossary of category theory]]
+* [[Group theory]]
+* [[Higher category theory]]
+* [[Higher-dimensional algebra]]
+* [[List of publications in mathematics#Category theory|Important publications in category theory]]
+* [[Lambda calculus]]
+* [[Outline of category theory]]
+* [[Timeline of category theory and related mathematics]]
+
+== Notes ==
+{{Notelist}}
+
+== References ==
+=== Citations ===
+{{Reflist}}
+
+=== Sources ===
+* {{cite book |title = Abstract and Concrete Categories |last1 = Adámek |first1 = Jiří |last2 = Herrlich |first2 = Horst |last3 = Strecker |first3 = George E. |publisher = Heldermann Verlag Berlin |year = 2004 |url = http://katmat.math.uni-bremen.de/acc/acc.htm }}
+* {{citation
+ | last1 = Barr
+ | first1 = Michael
+ | author1-link = Michael Barr (mathematician)
+ | last2 = Wells
+ | first2 = Charles
+ | author2-link = Charles Wells (mathematician)
+ | edition = 3rd
+ | series = Reprints in Theory and Applications of Categories
+ | title = Category Theory for Computing Science
+ | url = http://www.tac.mta.ca/tac/reprints/articles/22/tr22abs.html
+ | volume = 22
+ | year = 2012
+ | access-date = 2012-10-12
+ | archive-url = https://web.archive.org/web/20150115164028/http://tac.mta.ca/tac/reprints/articles/22/tr22abs.html
+ | archive-date = 2015-01-15
+ | url-status = dead
+ }}.
+* {{citation
+ | last1 = Barr | first1 = Michael | author1-link = Michael Barr (mathematician)
+ | last2 = Wells | first2 = Charles | author2-link = Charles Wells (mathematician)
+ | edition = revised
+ | series = Reprints in Theory and Applications of Categories
+ | mr = 2178101
+ | title = Toposes, Triples and Theories
+ | url = http://www.tac.mta.ca/tac/reprints/articles/12/tr12abs.html
+ | volume = 12
+ | year = 2005
+}}.
+* {{cite book
+ | title = Handbook of categorical algebra
+ | publisher = Cambridge University Press
+ | year = 1994
+ | series = Encyclopedia of Mathematics and its Applications 50–52
+ | last1 = Borceux
+ | first1 = Francis 
+ | url = https://books.google.com/books?hl=en&amp;lr=&amp;id=YfzImoopB-IC&amp;oi=fnd&amp;pg=PP1&amp;dq=%22Handbook+of+categorical+algebra%22&amp;ots=P-47iEmAaL&amp;sig=KAmaJEN7CQgdviHrNAUskZS_iRs#v=onepage&amp;q=%22Handbook%20of%20categorical%20algebra%22&amp;f=false
+}}
+* {{cite book |last=Freyd |first=Peter J. |title = Abelian Categories |publisher=Harper and Row |location=New York |year=1964 |url = http://www.tac.mta.ca/tac/reprints/articles/3/tr3abs.html |authorlink=Peter J. Freyd}}
+* {{cite book |title = Categories, allegories |publisher=North Holland |year=1990 |series=North Holland Mathematical Library |volume=39 |last1=Freyd  |first1=Peter J.  |last2=Scedrov  |first2=Andre |url = https://books.google.com/books?id=fCSJRegkKdoC |isbn = 978-0-08-088701-2 }}
+* {{cite book |first=Robert |last=Goldblatt |title = Topoi: The Categorial Analysis of Logic |url = https://books.google.com/books?id=AwLc-12-7LMC |year=2006 |publisher=Dover Publications |isbn = 978-0-486-45026-1 |volume=94 |series=Studies in logic and the foundations of mathematics |edition=Reprint, revised |origyear = 1979 }}
+* {{cite book |last1= Herrlich |first1= Horst |last2=Strecker |first2=George E. |year=2007 |edition=3rd |title = Category Theory |publisher = Heldermann Verlag Berlin |isbn = 978-3-88538-001-6}}.
+* {{cite book |first1=Masaki |last1=Kashiwara |first2=Pierre |last2=Schapira |title = Categories and Sheaves |url = https://books.google.com/books?id=K-SjOw_2gXwC |year=2006 |publisher=Springer |isbn = 978-3-540-27949-5 |volume=332 |series=Grundlehren der Mathematischen Wissenschaften }}
+* {{cite book |first1=F. William |last1=Lawvere |first2=Robert |last2=Rosebrugh |title = Sets for Mathematics |url = https://books.google.com/books?id=h3_7aZz9ZMoC |year=2003 |publisher=Cambridge University Press |isbn = 978-0-521-01060-3 }}
+* {{cite book |first1=F. W. |last1=Lawvere |first2=Stephen Hoel |last2=Schanuel |title = Conceptual Mathematics: A First Introduction to Categories |url = https://books.google.com/books?id=h0zOGPlFmcQC |year=2009 |publisher=Cambridge University Press |isbn = 978-0-521-89485-2 |edition=2nd |origyear=1997 }}
+* {{cite book |last=Leinster |first=Tom |title=Higher Operads, Higher Categories |journal=Higher Operads |publisher=Cambridge University Press |year=2004 |isbn=978-0-521-53215-0 |series=London Math. Society Lecture Note Series |volume=298 |pages=448 |url=http://www.maths.gla.ac.uk/~tl/book.html |bibcode=2004hohc.book.....L |access-date=2006-04-03 |archive-url=https://web.archive.org/web/20031025120434/http://www.maths.gla.ac.uk/~tl/book.html |archive-date=2003-10-25 |url-status=dead }}
+* {{cite book |last=Leinster |first=Tom |title = Basic Category Theory |publisher=Cambridge University Press |year=2014 |bibcode=2016arXiv161209375L }}
+* {{cite book |last=Lurie |first=Jacob |title = Higher Topos Theory| publisher=Princeton University Press |year=2009 |series=Annals of Mathematics Studies |volume=170 |arxiv=math.CT/0608040|mr=2522659 |isbn = 978-0-691-14049-0 |location=Princeton, NJ}}
+* {{cite book |last=Mac Lane |first=Saunders |title=Categories for the Working Mathematician |publisher=Springer-Verlag |year=1998 |edition=2nd |series=Graduate Texts in Mathematics | volume=5 |authorlink=Saunders Mac Lane |isbn=978-0-387-98403-2 |ref=harv | mr=1712872|title-link=Categories for the Working Mathematician }}
+* {{cite book |title=Algebra |last1=Mac Lane |first1=Saunders |first2=Garrett |last2=Birkhoff |publisher=Chelsea |year=1999| edition=2nd |isbn = 978-0-8218-1646-2 |origyear=1967 }}
+* {{cite journal |year=1996|title=Elements of basic category theory |journal=Technical Report|volume=96 |issue=5 |url = http://citeseer.ist.psu.edu/martini96element.html |first1=A. |last1=Martini |first2=H. |last2=Ehrig |first3=D. |last3=Nunes}}
+* {{cite book |last=May |first=Peter|title=A Concise Course in Algebraic Topology|publisher=University of Chicago Press|year=1999 |isbn=978-0-226-51183-2}}
+* {{cite book |first=Mazzola |last=Guerino |title=The Topos of Music, Geometric Logic of Concepts, Theory, and Performance |publisher=Birkhäuser |location= |year=2002 |isbn = 978-3-7643-5731-3 }}
+* {{cite book |zbl=1034.18001 |editor1-last=Pedicchio |editor1-first = Maria Cristina |editor2-last = Tholen |editor2-first=Walter |title = Categorical foundations. Special topics in order, topology, algebra, and sheaf theory |series=Encyclopedia of Mathematics and Its Applications |volume=97 |location=Cambridge |publisher=[[Cambridge University Press]] |year=2004 |isbn = 978-0-521-83414-8 }}
+* {{cite book |first=Benjamin C. |last=Pierce |title = Basic Category Theory for Computer Scientists |url = https://books.google.com/books?id=ezdeaHfpYPwC |year=1991 |publisher=MIT Press |isbn = 978-0-262-66071-6 }}
+* {{cite book |title=An introduction to Category Theory in four easy movements |year=2005 |url = http://www.cs.man.ac.uk/~hsimmons/BOOKS/CatTheory.pdf |last1=Schalk  |first1=A.  |last2=Simmons |first2=H. |format=PDF }} Notes for a course offered as part of the MSc. in [[Mathematical Logic]], [[Manchester University]].
+* {{cite book |title = Homotopy theory of higher categories |url = https://archive.org/details/arxiv-1001.4071 |last=Simpson |first=Carlos |arxiv=1001.4071 |bibcode=2010arXiv1001.4071S |year=2010 }}, draft of a book.
+* {{cite book |first=Paul |last=Taylor |title=Practical Foundations of Mathematics |url= https://books.google.com/books?id=iSCqyNgzamcC |year=1999 |publisher= Cambridge University Press |isbn = 978-0-521-63107-5 |series = Cambridge Studies in Advanced Mathematics |volume = 59 }}
+* {{cite web |url = http://www.dcs.ed.ac.uk/home/dt/CT/categories.pdf |title = Category Theory Lecture Notes |last=Turi |first=Daniele |date = 1996–2001 |accessdate = 11 December 2009 }} Based on {{harvnb|Mac Lane|1998}}.
+
+==Further reading==
+* {{cite book|author=Jean-Pierre Marquis|title=From a Geometrical Point of View: A Study of the History and Philosophy of Category Theory|year=2008|publisher=Springer Science &amp; Business Media|isbn=978-1-4020-9384-5}}
+
+== External links ==
+{{Commons category}}
+* [http://www.tac.mta.ca/tac/ Theory and Application of Categories], an electronic journal of category theory, full text, free, since 1995.
+* [http://ncatlab.org/nlab nLab], a wiki project on mathematics, physics and philosophy with emphasis on the ''n''-categorical point of view.
+* [https://golem.ph.utexas.edu/category/ The n-Category Café], essentially a colloquium on topics in category theory. 
+* [http://www.logicmatters.net/categories/ Category Theory], a web page of links to lecture notes and freely available books on category theory.
+* {{citation |first=Chris |last=Hillman |title=A Categorical Primer |citeseerx=10.1.1.24.3264}}, a formal introduction to category theory.
+* {{cite web |first1=J. |last1=Adamek |first2=H. |last2=Herrlich |first3=G. |last3=Stecker  |title=Abstract and Concrete Categories-The Joy of Cats |format=PDF |url=http://katmat.math.uni-bremen.de/acc/acc.pdf}}
+* {{SEP|category-theory|Category Theory|Jean-Pierre Marquis}}, with an extensive bibliography.
+* [http://www.mta.ca/~cat-dist/ List of academic conferences on category theory]
+* {{cite web |last=Baez |first=John |title=The Tale of ''n''-categories |year=1996 |website= |publisher= |url=http://math.ucr.edu/home/baez/week73.html}} — An informal introduction to higher order categories.
+* [http://wildcatsformma.wordpress.com WildCats] is a category theory package for [[Mathematica]]. Manipulation and visualization of objects, [[morphism]]s, categories, [[functor]]s, [[natural transformation]]s, [[universal properties]].
+* {{YouTube|user=TheCatsters|title=The catsters}}, a channel about category theory.
+* {{PlanetMath|urlname=9categorytheory|title=Category theory}}.
+* [http://categorieslogicphysics.wikidot.com/events Video archive] of recorded talks relevant to categories, logic and the foundations of physics.
+* [https://web.archive.org/web/20080916162345/http://www.j-paine.org/cgi-bin/webcats/webcats.php Interactive Web page] which generates examples of categorical constructions in the category of finite sets.
+* [http://category-theory.mitpress.mit.edu/index.html Category Theory for the Sciences], an instruction on category theory as a tool throughout the sciences.
+* [https://bartoszmilewski.com/2014/10/28/category-theory-for-programmers-the-preface/ Category Theory for Programmers] A book in blog form explaining category theory for computer programmers.
+* [http://math.mit.edu/~dspivak/teaching/sp18/7Sketches.pdf Introduction to category theory.]
+
+{{Areas of mathematics}}
+{{Category theory}}
+{{Computer science}}
+
+{{Authority control}}
+
+{{DEFAULTSORT:Category Theory}}
+[[Category:Category theory| ]]
+[[Category:Higher category theory]]</text>
+      <sha1>t8ln06wwig99occgtnpzk3wttveg9sx</sha1>
+    </revision>
+  </page>

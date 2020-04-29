@@ -1,0 +1,198 @@
+  <page>
+    <title>Diffeomorphism</title>
+    <ns>0</ns>
+    <id>8564</id>
+    <revision>
+      <id>936145004</id>
+      <parentid>931016374</parentid>
+      <timestamp>2020-01-16T23:31:46Z</timestamp>
+      <contributor>
+        <username>Forbes72</username>
+        <id>6174461</id>
+      </contributor>
+      <minor />
+      <comment>/* References */ improve an existing ref</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{Group theory sidebar |top/lie}}
+{{Lie groups |other}}
+
+In [[mathematics]], a '''diffeomorphism''' is an [[isomorphism]] of [[smooth manifold]]s. It is an [[invertible function]] that [[Map (mathematics)|map]]s one [[differentiable manifold]] to another such that both the function and its inverse are [[Smooth function|smooth]].
+
+[[File:Diffeomorphism of a square.svg|right|thumb|The image of a rectangular grid on a square under a diffeomorphism from the square onto itself.]]
+
+== Definition ==
+
+Given two [[manifolds]] ''M'' and ''N'', a [[Differentiable manifold#Differentiable functions|differentiable]] map ''f''&amp;nbsp;: ''M''&amp;nbsp;→ ''N'' is called a '''diffeomorphism''' if it is a [[bijection]] and its inverse ''f''&lt;sup&gt;−1&lt;/sup&gt;&amp;nbsp;: ''N''&amp;nbsp;→ ''M'' is differentiable as well. If these functions are ''r'' times continuously differentiable, ''f'' is called a '''''C&lt;sup&gt;r&lt;/sup&gt;''-diffeomorphism'''.
+
+Two manifolds ''M'' and ''N'' are '''diffeomorphic''' (symbol usually being ≃) if there is a diffeomorphism ''f'' from ''M'' to ''N''. They are '''''C&lt;sup&gt;r&lt;/sup&gt;'' diffeomorphic''' if there is an ''r'' times continuously differentiable bijective map between them whose inverse is also ''r'' times continuously differentiable.
+
+== Diffeomorphisms of subsets of manifolds ==
+
+Given a subset ''X'' of a manifold ''M'' and a subset ''Y'' of a manifold ''N'', a function ''f''&amp;nbsp;: ''X''&amp;nbsp;→ ''Y'' is said to be smooth if for all ''p'' in ''X'' there is a neighborhood ''U''&amp;nbsp;⊆ ''M'' of ''p'' and a smooth function ''g''&amp;nbsp;: ''U''&amp;nbsp;→ ''N'' such that the restrictions agree &lt;math&gt;g_{|U \cap X} = f_{|U \cap X}&lt;/math&gt; (note that ''g'' is an extension of ''f''). The function ''f'' is said to be a diffeomorphism if it is bijective, smooth and its inverse is smooth.
+
+== Local description ==
+{{unreferenced section|date=November 2011}}
+
+; Model example
+If ''U'', ''V'' are connected open subsets of '''R'''&lt;sup&gt;''n''&lt;/sup&gt; such that ''V'' is [[simply connected]], a [[Derivative|differentiable]] map ''f''&amp;nbsp;: ''U''&amp;nbsp;→ ''V'' is a '''diffeomorphism''' if it is [[Proper map|proper]] and if the [[Pushforward (differential)|differential]] ''Df&lt;sub&gt;x&lt;/sub&gt;''&amp;nbsp;: '''R'''&lt;sup&gt;''n''&lt;/sup&gt;&amp;nbsp;→ '''R'''&lt;sup&gt;''n''&lt;/sup&gt; is [[Bijection|bijective]] at each point ''x'' in ''U''.
+
+&lt;blockquote&gt;
+; First remark
+It is essential for ''V'' to be [[simply connected]] for the function ''f'' to be globally invertible (under the sole condition that its derivative be a bijective map at each point). For example, consider the &quot;realification&quot; of the complex square function 
+: &lt;math&gt;\begin{cases}
+f : \mathbf{R}^2 \setminus \{(0,0)\} \to \mathbf{R}^2 \setminus \{(0,0)\} \\
+(x,y)\mapsto(x^2-y^2,2xy)
+\end{cases}&lt;/math&gt; 
+Then ''f'' is surjective and it satisfies 
+: &lt;math&gt;\det Df_x=4(x^2+y^2)\neq0&lt;/math&gt; 
+Thus, though ''Df&lt;sub&gt;x&lt;/sub&gt;'' is bijective at each point, ''f'' is not invertible because it fails to be injective (e.g. ''f''(1,0)&amp;nbsp;= (1,0)&amp;nbsp;= ''f''(−1,0).
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+; Second remark
+Since the differential at a point (for a differentiable function) 
+: &lt;math&gt;Df_x : T_xU \to T_{f(x)}V&lt;/math&gt; 
+is a [[linear map]], it has a well-defined inverse if and only if ''Df&lt;sub&gt;x&lt;/sub&gt;'' is a bijection. The matrix representation of ''Df&lt;sub&gt;x&lt;/sub&gt;'' is the ''n''&amp;nbsp;× ''n'' matrix of first-order partial derivatives whose entry in the ''i''-th row and ''j''-th column is &lt;math&gt;\partial f_i / \partial x_j&lt;/math&gt;. This so-called [[Jacobian matrix]] is often used for explicit computations.
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+; Third remark
+Diffeomorphisms are necessarily between manifolds of the same [[dimension]]. Imagine ''f'' going from dimension ''n'' to dimension ''k''. If ''n''&amp;nbsp;&lt; ''k'' then ''Df&lt;sub&gt;x&lt;/sub&gt;'' could never be surjective; and if ''n''&amp;nbsp;&gt; ''k'' then ''Df&lt;sub&gt;x&lt;/sub&gt;'' could never be injective. In both cases, therefore, ''Df&lt;sub&gt;x&lt;/sub&gt;'' fails to be a bijection.
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+; Fourth remark
+If ''Df&lt;sub&gt;x&lt;/sub&gt;'' is a bijection at ''x'' then ''f'' is said to be a [[local diffeomorphism]] (since, by continuity, ''Df&lt;sub&gt;y&lt;/sub&gt;'' will also be bijective for all ''y'' sufficiently close to ''x'').
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+; Fifth remark
+Given a smooth map from dimension ''n'' to dimension ''k'', if ''Df'' (or, locally, ''Df&lt;sub&gt;x&lt;/sub&gt;'') is surjective, ''f'' is said to be a [[Submersion (mathematics)|submersion]] (or, locally, a &quot;local submersion&quot;); and if ''Df'' (or, locally, ''Df&lt;sub&gt;x&lt;/sub&gt;'') is injective, ''f'' is said to be an [[Immersion (mathematics)|immersion]] (or, locally, a &quot;local immersion&quot;).
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+; Sixth remark
+A differentiable bijection is ''not'' necessarily a diffeomorphism. ''f''(''x'')&amp;nbsp;= ''x''&lt;sup&gt;3&lt;/sup&gt;, for example, is not a diffeomorphism from '''R''' to itself because its derivative vanishes at 0 (and hence its inverse is not differentiable at 0). This is an example of a [[homeomorphism]] that is not a diffeomorphism.
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+; Seventh remark
+When ''f'' is a map between ''differentiable'' manifolds, a diffeomorphic ''f'' is a stronger condition than a homeomorphic ''f''. For a diffeomorphism, ''f'' and its inverse need to be [[Differentiable manifold#Differentiable functions|differentiable]]; for a homeomorphism, ''f'' and its inverse need only be [[Continuous function|continuous]]. Every diffeomorphism is a homeomorphism, but not every homeomorphism is a diffeomorphism.
+&lt;/blockquote&gt;
+
+''f''&amp;nbsp;: ''M''&amp;nbsp;→ ''N'' is called a '''diffeomorphism''' if, in [[Manifold#Differentiable manifolds|coordinate charts]], it satisfies the definition above. More precisely: Pick any cover of ''M'' by compatible [[Manifold#Differentiable manifolds|coordinate charts]] and do the same for ''N''. Let φ and ψ be charts on, respectively, ''M'' and ''N'', with ''U'' and ''V'' as, respectively, the images of φ and ψ. The map ψ''f''φ&lt;sup&gt;−1&lt;/sup&gt;&amp;nbsp;: ''U''&amp;nbsp;→ ''V'' is then a diffeomorphism as in the definition above, whenever ''f''(φ&lt;sup&gt;−1&lt;/sup&gt;(U)) ⊆  ψ&lt;sup&gt;−1&lt;/sup&gt;(V).
+&lt;!--Huh?: One has to check that for every pair of charts φ, ψ of two given [[Manifold#Differentiable manifolds|atlases]], but once checked, it will be true for any other compatible chart. Again we see that dimensions have to agree.--&gt;
+
+== Examples ==
+
+Since any manifold can be locally parametrised, we can consider some explicit maps from '''R'''&lt;sup&gt;2&lt;/sup&gt; into '''R'''&lt;sup&gt;2&lt;/sup&gt;.
+
+* Let 
+:: &lt;math&gt;f(x,y) = \left (x^2 + y^3, x^2 - y^3 \right ).&lt;/math&gt; 
+: We can calculate the Jacobian matrix:
+:: &lt;math&gt; J_f = \begin{pmatrix} 2x &amp; 3y^2 \\ 2x &amp; -3y^2 \end{pmatrix} . &lt;/math&gt;
+: The Jacobian matrix has zero determinant if and only if ''xy'' = 0. We see that ''f'' could only be a diffeomorphism away from the ''x''-axis and the ''y''-axis. However, ''f'' is not bijective since ''f(x,y)=f(-x,y)'', and thus it cannot be a diffeomorphism.
+
+* Let 
+:: &lt;math&gt;g(x,y) = \left (a_0 + a_{1,0}x + a_{0,1}y + \cdots, \ b_0 + b_{1,0}x + b_{0,1}y + \cdots \right )&lt;/math&gt; 
+: where the &lt;math&gt;a_{i,j}&lt;/math&gt; and &lt;math&gt;b_{i,j}&lt;/math&gt; are arbitrary real numbers, and the omitted terms are of degree at least two in ''x'' and ''y''. We can calculate the Jacobian matrix at '''0''':
+:: &lt;math&gt; J_g(0,0) = \begin{pmatrix} a_{1,0} &amp; a_{0,1} \\ b_{1,0} &amp; b_{0,1} \end{pmatrix}. &lt;/math&gt;
+: We see that ''g'' is a local diffeomorphism at '''0''' if, and only if, 
+:: &lt;math&gt;a_{1,0}b_{0,1} - a_{0,1}b_{1,0} \neq 0,&lt;/math&gt;
+: i.e. the linear terms in the components of ''g'' are linearly independent as polynomials.
+
+* Let 
+:: &lt;math&gt;h(x,y) = \left (\sin(x^2 + y^2), \cos(x^2 + y^2) \right ).&lt;/math&gt;
+: We can calculate the Jacobian matrix:
+:: &lt;math&gt; J_h = \begin{pmatrix} 2x\cos(x^2 + y^2) &amp; 2y\cos(x^2 + y^2) \\ -2x\sin(x^2+y^2) &amp; -2y\sin(x^2 + y^2) \end{pmatrix} . &lt;/math&gt;
+: The Jacobian matrix has zero determinant everywhere! In fact we see that the image of ''h'' is the unit circle.
+
+===Surface deformations===
+In [[mechanics]], a stress-induced transformation is called a [[deformation (mechanics)|deformation]] and may be described by a diffeomorphism.
+A diffeomorphism ''f'' : ''U'' → ''V'' between two [[Surface (topology)|surface]]s ''U'' and ''V'' has a Jacobian matrix ''Df'' that is an [[invertible matrix]]. In fact, it is required that for ''p'' in ''U'', there is a [[neighborhood (topology)|neighborhood]] of ''p'' in which the Jacobian ''Df'' stays [[Invertible matrix|non-singular]]. Since the Jacobian is a 2 × 2 real matrix, Df can be read as [[2 × 2 real matrices#2 × 2 real matrices as complex numbers|one of three types of complex number]]: [[complex number|ordinary complex]], [[split complex number]], or [[dual number]]. Suppose that in a chart of the surface, &lt;math&gt;f(x,y) = (u,v).&lt;/math&gt;
+
+The [[total differential]] of ''u'' is
+:&lt;math&gt;du = \frac{\partial u}{\partial x} dx +  \frac{\partial u}{\partial y} dy , &lt;/math&gt;, and similarly for ''v''.
+Then the image &lt;math&gt; (du, dv) = (dx, dy) Df &lt;/math&gt; is a [[linear transformation]], fixing the origin, and expressible as the action of a complex number of a particular type. When (''dx, dy'' ) is also interpreted as that type of complex number, the action is of complex multiplication in the appropriate complex number plane. As such, there is a type of angle ([[angle|Euclidean]], [[hyperbolic angle|hyperbolic]], or [[slope]]) that is preserved in such a multiplication. Due to ''Df'' being invertible, the type of complex number is uniform over the surface. Consequently, a surface deformation or diffeomorphism of surfaces has the '''conformal property''' of preserving (the appropriate type of) angles.
+
+== Diffeomorphism group ==
+
+Let ''M'' be a differentiable manifold that is [[second-countable]] and [[Hausdorff space|Hausdorff]]. The '''diffeomorphism group''' of ''M'' is the [[group (mathematics)|group]] of all ''C&lt;sup&gt;r&lt;/sup&gt;'' diffeomorphisms of ''M'' to itself, denoted by Diff&lt;sup&gt;''r''&lt;/sup&gt;(''M'') or, when ''r'' is understood, Diff(''M''). This is a &quot;large&quot; group, in the sense that—provided ''M'' is not zero-dimensional—it is not [[locally compact]].
+
+===Topology===
+The diffeomorphism group has two natural topologies: ''weak'' and ''strong'' {{harv|Hirsch|1997}}. When the manifold is compact, these two topologies agree.  The weak topology is always metrizable.  When the manifold is not compact, the strong topology captures the behavior of functions &quot;at infinity&quot; and is not metrizable.  It is, however, still [[Baire space|Baire]].
+
+Fixing a [[Riemannian metric]] on ''M'', the weak topology is the topology induced by the family of metrics
+: &lt;math&gt;d_K(f,g) = \sup\nolimits_{x\in K} d(f(x),g(x)) + \sum\nolimits_{1\le p\le r} \sup\nolimits_{x\in K} \left \|D^pf(x) - D^pg(x) \right \|&lt;/math&gt;
+as ''K'' varies over compact subsets of ''M''.  Indeed, since ''M'' is σ-compact, there is a sequence of compact subsets ''K''&lt;sub&gt;''n''&lt;/sub&gt; whose union is ''M''.  Then:
+: &lt;math&gt;d(f,g) = \sum\nolimits_n 2^{-n}\frac{d_{K_n}(f,g)}{1+d_{K_n}(f,g)}.&lt;/math&gt;
+
+The diffeomorphism group equipped with its weak topology is locally homeomorphic to the space of ''C&lt;sup&gt;r&lt;/sup&gt;'' vector fields {{harv|Leslie|1967}}. Over a compact subset of ''M'', this follows by fixing a Riemannian metric on ''M'' and using the [[Exponential map (Riemannian geometry)|exponential map]] for that metric. If ''r'' is finite and the manifold is compact, the space of vector fields is a [[Banach space]]. Moreover, the transition maps from one chart of this atlas to another are smooth, making the diffeomorphism group into a [[Banach manifold]] with smooth right translations; left translations and inversion are only continuous. If ''r''&amp;nbsp;= ∞,  the space of vector fields is a [[Fréchet space]]. Moreover, the transition maps are smooth, making the diffeomorphism group into a [[Fréchet manifold]] and even into a [[Convenient vector space#Regular Lie groups|regular Fréchet Lie group]]. If the manifold is σ-compact and not compact the full diffeomorphism group is not locally contractible for any of the two topologies. One has to restrict the group by controlling the deviation from the identity near infinity to obtain a diffeomorphism group which is a manifold; see {{harv|Michor|Mumford|2013}}.
+
+===Lie algebra===
+The [[Lie algebra]] of the diffeomorphism group of ''M'' consists of all [[vector field]]s on ''M'' equipped with the [[Lie bracket of vector fields]].  Somewhat formally, this is seen by making a small change to the coordinate &lt;math&gt;x&lt;/math&gt; at each point in space:
+: &lt;math&gt;x^{\mu} \mapsto x^{\mu} + \varepsilon h^{\mu}(x)&lt;/math&gt;
+so the infinitesimal generators are the vector fields
+: &lt;math&gt; L_{h} = h^{\mu}(x)\frac{\partial}{\partial x^\mu}.&lt;/math&gt;
+
+===Examples===
+* When ''M''&amp;nbsp;= ''G'' is a [[Lie group]], there is a natural inclusion of ''G'' in its own diffeomorphism group via left-translation. Let Diff(''G'') denote the diffeomorphism group of ''G'', then there is a splitting Diff(''G'')&amp;nbsp;≃ ''G''&amp;nbsp;× Diff(''G'',&amp;nbsp;''e''), where Diff(''G'',&amp;nbsp;''e'') is the subgroup of Diff(''G'') that fixes the identity element of the group.
+* The diffeomorphism group of Euclidean space '''R'''&lt;sup&gt;''n''&lt;/sup&gt; consists of two components, consisting of the orientation preserving and orientation reversing diffeomorphisms. In fact, the [[general linear group]] is a [[deformation retract]] of subgroup Diff('''R'''&lt;sup&gt;''n''&lt;/sup&gt;,&amp;nbsp;0) of diffeomorphisms fixing the origin under the map ''f''(''x'')&amp;nbsp;{{mapsto}} ''f''(''tx'')/''t'', ''t''&amp;nbsp;∈&amp; (0,1].  In particular, the general linear group is also a deformation retract of the full diffeomorphism group.
+* For a finite set of points, the diffeomorphism group is simply the symmetric group. Similarly, if ''M'' is any manifold there is a group extension 0&amp;nbsp;→ Diff&lt;sub&gt;0&lt;/sub&gt;(''M'')&amp;nbsp;→ Diff(''M'')&amp;nbsp;→ Σ(π&lt;sub&gt;0&lt;/sub&gt;(''M'')). Here Diff&lt;sub&gt;0&lt;/sub&gt;(''M'')is the subgroup of Diff(''M'') that preserves all the components of ''M'', and Σ(π&lt;sub&gt;0&lt;/sub&gt;(''M'')) is the permutation group of the set π&lt;sub&gt;0&lt;/sub&gt;(''M'') (the components of ''M''). Moreover, the image of the map Diff(''M'')&amp;nbsp;→ Σ(π&lt;sub&gt;0&lt;/sub&gt;(''M'')) is the bijections of π&lt;sub&gt;0&lt;/sub&gt;(''M'') that preserve diffeomorphism classes.
+
+===Transitivity===
+For a connected manifold ''M'', the diffeomorphism group acts transitively on ''M''. More generally, the diffeomorphism group acts transitively on the [[Configuration space (physics)|configuration space]] ''C&lt;sub&gt;k&lt;/sub&gt;M''.  If ''M'' is at least two-dimensional, the diffeomorphism group acts transitively on the [[Configuration space (physics)|configuration space]] ''F&lt;sub&gt;k&lt;/sub&gt;M'' and the action on ''M'' is [[Group action (mathematics)#Types of actions|multiply transitive]] {{harv|Banyaga|1997|p=29}}.
+
+===Extensions of diffeomorphisms===
+In 1926, [[Tibor Radó]] asked whether the [[Poisson integral|harmonic extension]] of any homeomorphism or diffeomorphism of the [[unit circle]] to the [[unit disc]] yields a diffeomorphism on the open disc. An elegant proof was provided shortly afterwards by [[Hellmuth Kneser]]. In 1945, [[Gustave Choquet]], apparently unaware of this result, produced a completely different proof.
+
+The (orientation-preserving) diffeomorphism group of the circle is pathwise connected. This can be seen by noting that any such diffeomorphism can be lifted to a diffeomorphism ''f'' of the reals satisfying [''f''(''x''+1)&amp;nbsp;= ''f''(''x'')&amp;nbsp;+ 1]; this space is convex and hence path-connected. A smooth, eventually constant path to the identity gives a second more elementary way of extending a diffeomorphism from the circle to the open unit disc (a special case of the [[Alexander trick]]). Moreover, the diffeomorphism group of the circle has the homotopy-type of the [[orthogonal group]] O(2).
+
+The corresponding extension problem for diffeomorphisms of higher-dimensional spheres '''S'''&lt;sup&gt;''n''−1&lt;/sup&gt; was much studied in the 1950s and 1960s, with notable contributions from [[René Thom]], [[John Milnor]] and [[Stephen Smale]]. An obstruction to such extensions is given by the finite [[abelian group]] Γ&lt;sub&gt;''n''&lt;/sub&gt;, the &quot;[[Exotic sphere#Twisted spheres|group of twisted spheres]]&quot;, defined as the [[Quotient group|quotient]] of the abelian [[component group]] of the diffeomorphism group by the subgroup of classes extending to diffeomorphisms of the ball ''B''&lt;sup&gt;''n''&lt;/sup&gt;.
+
+===Connectedness===
+For manifolds, the diffeomorphism group is usually not connected. Its component group is called the [[mapping class group]]. In dimension 2 (i.e. [[Surface (topology)|surface]]s), the mapping class group is a [[finitely presented group]] generated by [[Dehn twist]]s ([[Max Dehn|Dehn]], [[W. B. R. Lickorish|Lickorish]], [[Allen Hatcher|Hatcher]]).{{Citation needed|date=December 2009}} [[Max Dehn]] and [[Jakob Nielsen (mathematician)|Jakob Nielsen]] showed that it can be identified with the [[outer automorphism group]] of the [[fundamental group]] of the surface.
+
+[[William Thurston]] refined this analysis by [[Nielsen-Thurston classification|classifying elements of the mapping class group]] into three types: those equivalent to a [[Periodic function#Periodic mapping|periodic]] diffeomorphism; those equivalent to a diffeomorphism leaving a simple closed curve invariant; and those equivalent to [[Pseudo-Anosov map|pseudo-Anosov diffeomorphisms]]. In the case of the [[torus]] '''S'''&lt;sup&gt;1&lt;/sup&gt;&amp;nbsp;× '''S'''&lt;sup&gt;1&lt;/sup&gt;&amp;nbsp;= '''R'''&lt;sup&gt;2&lt;/sup&gt;/'''Z'''&lt;sup&gt;2&lt;/sup&gt;, the mapping class group is simply the [[modular group]] SL(2,&amp;nbsp;'''Z''') and the classification becomes classical in terms of [[Möbius transformation#Elliptic transforms|elliptic]], [[Möbius transformation#Parabolic transforms|parabolic]] and [[Möbius transformation#Hyperbolic transforms|hyperbolic]] matrices. Thurston accomplished his classification by observing that the mapping class group acted naturally on a [[Compactification (mathematics)|compactification]] of [[Teichmüller space]]; as this enlarged space was homeomorphic to a closed ball, the [[Brouwer fixed-point theorem]] became applicable. Smale conjectured that if ''M'' is an oriented smooth closed manifold, the [[identity component]] of the group of orientation-preserving diffeomorphisms is simple. This had first been proved for a product of circles by [[Michel Herman]]; it was proved in full generality by Thurston.
+
+===Homotopy types===
+* The diffeomorphism group of '''S'''&lt;sup&gt;2&lt;/sup&gt; has the homotopy-type of the subgroup O(3). This was proven by Steve Smale.&lt;ref&gt;{{cite journal | last1 = Smale | first1 =  | year = 1959 | title = Diffeomorphisms of the 2-sphere | url = | journal = Proc. Amer. Math. Soc. | volume = 10 | issue = | pages = 621–626 | doi=10.1090/s0002-9939-1959-0112149-8}}&lt;/ref&gt; 
+* The diffeomorphism group of the torus has the homotopy-type of its linear automorphisms: '''S'''&lt;sup&gt;1&lt;/sup&gt;&amp;nbsp;× '''S'''&lt;sup&gt;1&lt;/sup&gt;&amp;nbsp;× GL(2, '''Z''').
+* The diffeomorphism groups of orientable surfaces of genus ''g''&amp;nbsp;&gt; 1 have the homotopy-type of their mapping class groups (i.e. the components are contractible).
+* The homotopy-type of the diffeomorphism groups of 3-manifolds are fairly well understood via the work of Ivanov, Hatcher, Gabai and Rubinstein, although there are a few outstanding open cases (primarily 3-manifolds with finite fundamental groups).
+* The homotopy-type of diffeomorphism groups of ''n''-manifolds for ''n''&amp;nbsp;&gt; 3 are poorly understood. For example, it is an open problem whether or not Diff('''S'''&lt;sup&gt;4&lt;/sup&gt;) has more than two components. Via Milnor, Kahn and Antonelli, however, it is known that provided ''n''&amp;nbsp;&gt; 6, Diff('''S'''&lt;sup&gt;''n''&lt;/sup&gt;) does not have the homotopy-type of a finite CW-complex.
+
+== Homeomorphism and diffeomorphism ==
+
+Unlike non-diffeomorphic homeomorphisms, it is relatively difficult to find a pair of [[homeomorphic]] manifolds that are not diffeomorphic. In dimensions 1, 2, 3, any pair of homeomorphic smooth manifolds are diffeomorphic. In dimension 4 or greater, examples of homeomorphic but not diffeomorphic pairs have been found. The first such example was constructed by [[John Milnor]] in dimension 7. He constructed a smooth 7-dimensional manifold (called now [[Milnor's sphere]]) that is homeomorphic to the standard 7-sphere but not diffeomorphic to it. There are, in fact, 28 oriented diffeomorphism classes of manifolds homeomorphic to the 7-sphere (each of them is the total space of a [[fiber bundle]] over the 4-sphere with the [[3-sphere]] as the fiber).
+
+More unusual phenomena occur for [[4-manifold]]s. In the early 1980s, a combination of results due to [[Simon Donaldson]] and [[Michael Freedman]] led to the discovery of [[exotic R4|exotic '''R'''&lt;sup&gt;4&lt;/sup&gt;s]]: there are uncountably many pairwise non-diffeomorphic open subsets of '''R'''&lt;sup&gt;4&lt;/sup&gt; each of which is homeomorphic to '''R'''&lt;sup&gt;4&lt;/sup&gt;, and also  there are  uncountably many pairwise non-diffeomorphic differentiable manifolds homeomorphic to '''R'''&lt;sup&gt;4&lt;/sup&gt; that do not embed smoothly in '''R'''&lt;sup&gt;4&lt;/sup&gt;.
+
+== See also ==
+* [[Étale morphism]]
+* [[Large diffeomorphism]]
+* [[Local diffeomorphism]]
+* [[supermanifold|Superdiffeomorphism]]
+
+== Notes ==
+{{reflist}}
+
+== References ==
+* {{cite journal | last=Chaudhuri | first=Shyamoli | last2=Kawai | first2=Hikaru | last3=Tye | first3=S.-H. Henry | title=Path-integral formulation of closed strings | journal=Physical Review D | publisher=American Physical Society (APS) | volume=36 | issue=4 | date=1987-08-15 | issn=0556-2821 | doi=10.1103/physrevd.36.1148 | pages=1148–1168}}
+* {{citation |authorlink=Augustin Banyaga |last=Banyaga |first=Augustin |title=The structure of classical diffeomorphism groups |series=Mathematics and its Applications, 400 |publisher=Kluwer Academic |year=1997 |isbn=0-7923-4475-8}}
+* {{citation |last=Duren |first=Peter L. |title=Harmonic Mappings in the Plane |series=Cambridge Mathematical Tracts, 156 |publisher=Cambridge University Press |year=2004 |isbn=0-521-64121-7}}
+* {{Springer |title=Diffeomorphism |id=p/d031650}}
+* {{citation |last1=Hirsch |first1=Morris |title=Differential Topology |publisher=[[Springer-Verlag]] |location=Berlin, New York |isbn=978-0-387-90148-0 |year=1997}}
+* {{citation |last=Kriegl |first=Andreas  |last2=Michor |first2=Peter |title=The convenient setting of global analysis |series=Mathematical Surveys and Monographs, 53 |publisher=American Mathematical Society |year=1997 |isbn=0-8218-0780-3}}
+* {{citation |last1=Leslie |first1=J. A. |title=On a differential structure for the group of diffeomorphisms |mr=0210147 |year=1967 |journal=[[Topology (journal)|Topology]]  |issn=0040-9383 |volume=6 |issue=2 |pages=263–271 |doi=10.1016/0040-9383(67)90038-9}}
+* {{citation |last1=Michor |first1= Peter W. |last2=Mumford |first2=David |title=A zoo of diffeomorphism groups on '''R'''&lt;sup&gt;n&lt;/sup&gt;. |journal=Annals of Global Analysis and Geometry |volume=44 |issue= 4 |year=2013 |pages = 529–540 |doi=10.1007/s10455-013-9380-2|url=https://arxiv.org/pdf/1211.5704 |arxiv=1211.5704 }} [https://arxiv.org/abs/1211.5704 (arXiv:1211.5704)]
+* {{citation |authorlink=John Milnor |last=Milnor |first=John W. |title=Collected Works Vol. III, Differential Topology |publisher=American Mathematical Society |year=2007 |isbn=0-8218-4230-7}}
+* {{citation |last=Omori |first=Hideki |title=Infinite-dimensional Lie groups |series =Translations of Mathematical Monographs, 158 |publisher=American Mathematical Society |year=1997 |isbn=0-8218-4575-6}}
+* {{citation |authorlink=Hellmuth Kneser |last=Kneser |first=Hellmuth |title=Lösung der Aufgabe 41. |journal=Jahresbericht der Deutschen Mathematiker-Vereinigung |volume=35 |issue=2 |pages=123 |year=1926 |language=German}}
+
+[[Category:Diffeomorphisms| ]]
+[[Category:Mathematical physics]]</text>
+      <sha1>634ml3uqgutk1pmxput5ktiqkdgvvsw</sha1>
+    </revision>
+  </page>

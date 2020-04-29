@@ -1,0 +1,320 @@
+  <page>
+    <title>Earned value management</title>
+    <ns>0</ns>
+    <id>9728</id>
+    <revision>
+      <id>942136536</id>
+      <parentid>938640943</parentid>
+      <timestamp>2020-02-22T20:48:07Z</timestamp>
+      <contributor>
+        <username>Nuggetkiwi</username>
+        <id>5158306</id>
+      </contributor>
+      <comment>/* Limitations */ Describes using EVM schedule and cost metrics to derive inputs to a projects investment value through the DIPP formula and links this page to both the &quot;project management triangle&quot; and the &quot;DIPP&quot; pages.</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{More citations needed|date=February 2018}}
+{{Business administration}}
+
+'''Earned value management''' ('''EVM'''), '''earned value project management''', or '''earned value performance management''' ('''EVPM''') is a [[project management]] technique for measuring project performance and progress in an objective manner.
+
+== Overview ==
+Earned value management is a project management technique for measuring project performance and progress. It has the ability to combine measurements of the [[project management triangle]]: scope, time, and costs.
+
+In a single integrated system, earned value management is able to provide accurate forecasts of project performance problems, which is an important contribution for project management.
+
+Early EVM research showed that the areas of planning and control are significantly impacted by its use; and similarly, using the methodology improves both scope definition as well as the analysis of overall project performance. More recent research studies have shown that the principles of EVM are positive  predictors of project success.&lt;ref&gt;Marshall, Robert. ''The Contribution of Earned Value Management to Project Success of Contracted Efforts''. Journal of Contract Management, 2007, pp. 21-331.&lt;/ref&gt; Popularity of EVM has grown in recent years beyond government contracting, a sector in which its importance continues to rise&lt;ref&gt;
+{{cite web
+| title = KM Systems Group Announces First Annual wInsight Industry Group Conference – &quot;WIGCON&quot;:  Earned Value Management (EVM) is an important tool for improving Department of Defense, Federal Agency, and Government Contractor Project Performance
+| publisher = [[Dow Jones &amp; Company]]
+| website = [[MarketWatch]]
+| date = 21 September 2011
+| url = http://www.marketwatch.com/story/km-systems-group-announces-first-annual-winsight-industry-group-conference-wigcon-2011-09-21
+| accessdate = 15 November 2011}}&lt;/ref&gt; (e.g. recent new [[DFARS]] rules&lt;ref&gt;
+{{cite news
+| title = New federal contracting rules can help or hurt, says former contracting officer
+| newspaper = Huntsville Times
+| date = 23 September 2011
+| url = http://www.al.com/42/index.ssf/2011/09/new_federal_contracting_rules.html
+| accessdate = 15 November 2011}}&lt;/ref&gt;), in part because EVM can also surface in and help substantiate contract disputes.&lt;ref&gt;{{cite news
+| title = U.S. Penalizes Huntington Ingalls
+| work = Reuters
+| date = 11 November 2011
+| url = http://www.aviationweek.com/aw/generic/story_channel.jsp?channel=defense&amp;id=news/awx/2011/11/11/awx_11_11_2011_p0-393081.xml&amp;headline=U.S.%20Penalizes%20Huntington%20Ingalls
+| accessdate = 15 November 2011
+}}{{Dead link|date=December 2019 |bot=InternetArchiveBot |fix-attempted=yes }}&lt;/ref&gt;
+
+Essential features of any EVM implementation include:
+* A [[project plan]] that identifies work to be accomplished
+* A valuation of planned work, called planned value (PV) or [[budgeted cost of work scheduled]]  (BCWS)
+* Pre-defined &quot;earning rules&quot; (also called metrics) to quantify the accomplishment of work, called earned value (EV) or [[budgeted cost of work performed]]  (BCWP)
+EVM implementations for large or complex projects include many more features, such as indicators and forecasts of cost performance (over budget or under budget) and schedule performance (behind schedule or ahead of schedule).  However, the most basic requirement of an EVM system is that it quantifies progress using PV and EV.
+
+===Application example===
+Project A has been approved for a duration of one year and with the budget of X. It was also planned that the project spends 50% of the approved budget and expects 50% of the work to be complete in the first six months. If now, six months after the start of the project, a project manager would report that he has spent 50% of the budget, one can initially think, that the project is perfectly on plan. However, in reality the provided information is not sufficient to come to such a conclusion. The project can spend 50% of the budget, whilst finishing only 25% of the work, which would mean the project is not doing well; or the project can spend 50% of the budget, whilst completing 75% of the work, which would mean that project is doing better than planned. EVM is meant to address such and similar issues.
+
+==History==
+EVM emerged as a [[financial analysis]] specialty in [[United States Government]] programs in the 1960s, but it has since become a significant branch of [[project management]] and [[cost engineering]].  Project management [[research]] investigating the contribution of EVM to project success suggests a moderately strong positive relationship.&lt;ref&gt;{{cite web|last=Marshall |first=Robert A. |title=The contribution of earned value management to project success on contracted efforts: A quantitative statistics approach within the population of experienced practitioners |publisher=PMI (www.pmi.org) |date=2006-11-09 |url=http://www.ncmahq.org/files/articles/jcm07_pp21-33.pdf |accessdate=2006-11-09 |url-status=dead |archiveurl=https://web.archive.org/web/20110722223448/http://www.ncmahq.org/files/articles/jcm07_pp21-33.pdf |archivedate=July 22, 2011 }}&lt;/ref&gt;
+Implementations of EVM can be scaled to fit projects of all sizes and complexities.
+
+The genesis of EVM occurred in industrial manufacturing at the turn of the 20th century, based largely on the principle of &quot;earned time&quot; popularized by [[Frank Bunker Gilbreth|Frank and Lillian Gilbreth]], but the concept took root in the [[United States Department of Defense]] in the 1960s.  The original concept was called [[Program Evaluation and Review Technique|PERT/COST]], but it was considered overly burdensome (not very adaptable) by contractors whom were mandated to use it, and many variations of it began to proliferate among various procurement programs.  In 1967, the [[United States Department of Defense|DoD]] established a criterion-based approach, using a set of 35 criteria, called the Cost/Schedule Control Systems Criteria (C/SCSC).  In the 1970s and early 1980s, a [[subculture]] of C/SCSC analysis grew, but the technique was often ignored or even actively resisted by [[project manager]]s in both government and industry.  C/SCSC was often considered a financial control tool that could be delegated to analytical specialists.
+
+In 1979, EVM was introduced to the architecture and engineering industry in a &quot;Public Works Magazine&quot; article by David Burstein, a project manager with a national engineering firm.  This technique has been taught ever since as part of the project management training program presented by PSMJ Resources, an international training and consulting firm that specializes in the engineering and architecture industry.
+
+In the late 1980s and early 1990s, EVM emerged as a project management methodology to be understood and used by managers and executives, not just EVM specialists.  In 1989, EVM leadership was elevated  to the Undersecretary of Defense for Acquisition, thus making EVM an element of program management and procurement.  In 1991, [[Secretary of Defense]] [[Dick Cheney]] canceled the Navy [[A-12 Avenger II]] Program because of performance problems detected by EVM.  This demonstrated conclusively that EVM mattered to secretary-level leadership.  In the 1990s, many [[Federal Acquisition Regulations|U.S. Government regulations]] were eliminated or streamlined. However, EVM not only survived the acquisition reform movement, but became strongly associated with the acquisition reform movement itself.  Most notably, from 1995 to 1998, ownership of EVM criteria (reduced to 32) was transferred to industry by adoption of ANSI EIA 748-A standard.&lt;ref&gt;{{cite web
+ | year = 1998
+ | title = ANSI EIA-748 Standard - Earned Value Management Systems
+ | edition = June1998
+ | publisher = Electronic Industries Alliance
+ | url = https://docs.google.com/viewer?a=v&amp;q=cache:KBVRrCRuFvAJ:www.srs.gov/general/EFCOG/02GovtReferences/03NDIAANSI/ANSIEIA748.pdf+%22Earned+Value+Management+Systems%22+eia+748+1998&amp;hl=en&amp;gl=us&amp;pid=bl&amp;srcid=ADGEESi2T9LwmXNQkXKLmBWoTmcVB0UypvcMKZQFmW4FvZ2BO3weJ0T1RkClzfptwc3CkVSn52aBNDWYMmUq9nOvPuNyvCbyLL41oLDWjFu9sf0eVS2x_SJgOtIMAxId5Fik67rH_SK1&amp;sig=AHIEtbQyDmwj4n-qQMgamroJOtn3rnJyHQ}}&lt;/ref&gt;
+
+The use of EVM expanded beyond the U.S. Department of Defense.  It was adopted by the [[National Aeronautics and Space Administration]], [[United States Department of Energy]] and other technology-related agencies.  Many industrialized nations also began to utilize EVM in their own procurement programs.
+
+An overview of EVM was included in the [[Project Management Institute]]'s first [[Project Management Body of Knowledge|PMBOK]] Guide in 1987 and was expanded in subsequent editions. In the most recent edition of the PMBOK guide, EVM is listed among the general tools and techniques for processes to control project costs.&lt;ref&gt;{{cite book|title=A Guide to the Project Management Body of Knowledge|date=2013|publisher=Project Management Institute|location=Newtown Square, PA|pages=217–219}}&lt;/ref&gt;
+
+The construction industry was an early commercial adopter of EVM. Closer integration of EVM with the practice of project management accelerated in the 1990s.  In 1999, the Performance Management Association merged with the [[Project Management Institute]] ('''PMI''') to become PMI's first college, the College of Performance Management. The [[United States Office of Management and Budget]] began to mandate the use of EVM across all government agencies, and, for the first time, for certain internally managed projects (not just for contractors).  EVM also received greater attention by publicly traded companies in response to the [[Sarbanes-Oxley Act of 2002]].
+
+In Australia EVM has been codified as standards AS 4817-2003 and AS 4817-2006.
+
+== Project tracking ==
+[[File:EVM Fig1.png|right|Figure 1: Tracking AC against a &quot;spend plan&quot; is inconclusive (without EV).]]
+[[File:EVM Fig2.png|right|Figure 2: Measuring schedule performance without knowledge of actual cost]]
+[[File:EVM Fig3.png|right|Figure 3: Measuring cost performance without a PV baseline]]
+[[File:EVM Fig4.png|right|Figure 4: The most common form of EVM graphic]]
+
+It is helpful to see an example of project tracking that does not include earned value performance management.  Consider a project that has been planned in detail, including a time-phased spend plan for all elements of work.  '''Figure 1''' shows the cumulative budget (cost) for this project as a function of time (the blue line, labeled PV).  It also shows the cumulative actual cost of the project (red line, labeled AC) through week 8.  To those unfamiliar with EVM, it might appear that this project was over budget through week 4 and then under budget from week 6 through week 8.  However, what is missing from this chart is any understanding of how much work has been accomplished during the project.  If the project was actually completed at week 8, then the project would actually be well under budget and well ahead of schedule.  If, on the other hand, the project is only 10% complete at week 8, the project is significantly over budget and behind schedule.  A method is needed to measure technical performance objectively and quantitatively, and that is what EVM accomplishes.
+
+=== With EVM ===
+Consider the same project, except this time the project plan includes pre-defined methods of quantifying the accomplishment of work. At the end of each week, the [[project manager]] identifies every detailed element of work that has been completed, and sums the EV for each of these completed elements.  Earned value may be accumulated monthly, weekly, or as progress is made.
+
+== Earned value (EV) ==
+
+&lt;math display=&quot;inline&quot;&gt;
+\begin{align}
+\mathrm{EV} &amp; = \sum_\mathrm{Start}^\mathrm{Current} \mathrm{PV(Completed)} \quad \mathrm{or} \quad \mathrm{EV} = \mathrm{budget\, at\, Completion\,(BAC)} \times \mathrm{Actual\%\, Complete}
+\end{align}
+&lt;/math&gt;
+
+EV is calculated by multiplying %complete of each task (completed or in progress) by its planned value
+
+'''Figure 2''' shows the EV curve (in green) along with the PV curve from Figure 1.  The chart indicates that technical performance (i.e. progress) started more rapidly than planned, but slowed significantly and fell behind schedule at week 7 and 8.  This chart illustrates the schedule performance aspect of EVM.  It is complementary to [[critical path method|critical path]] or [[critical chain]] schedule management.
+
+'''Figure 3''' shows the same EV curve (green) with the actual cost data from Figure 1 (in red).  It can be seen that the project was actually under budget, relative to the amount of work accomplished, since the start of the project.  This is a much better conclusion than might be derived from Figure 1.
+
+'''Figure 4''' shows all three curves together – which is a typical EVM line chart.  The best way to read these three-line charts is to identify the EV curve first, then compare it to PV (for schedule performance) and AC (for cost performance).  It can be seen from this illustration that a true understanding of cost performance and schedule performance ''relies first on measuring technical performance objectively.''  This is the ''foundational principle'' of EVM.
+
+== Scaling EVM from simple to advanced implementations ==
+
+[[File:EarnedValueChartNormalized.jpg|thumb|Earned Value chart shows Planned Value, Earned Value, Actual Cost, and their variances in percent. The approach is used in project management simulation [[SimulTrain]].]]
+
+'''The ''foundational principle''''' of EVM, mentioned above, does not depend on the size or complexity of the project.  However, the ''implementations'' of EVM can vary significantly depending on the circumstances. In many cases, organizations establish an all-or-nothing threshold; projects above the threshold require a full-featured (complex) EVM system and projects below the threshold are exempted.  Another approach that is gaining favor is to scale EVM implementation according to the project at hand and skill level of the project team.&lt;ref&gt;{{cite web
+  | first1 = Jim
+  | last1 = Sumara
+  | first2 = John
+  | last2 = Goodpasture
+  | title = Earned Value – The Next Generation – A Practical Application for Commercial Projects
+  | date = 1997-09-29
+  | url = http://www.sqpegconsulting.com/EV_Chi_97NP03.PDF
+  | accessdate = 2006-10-26
+  | archive-url = https://web.archive.org/web/20071008073411/http://www.sqpegconsulting.com/EV_Chi_97NP03.PDF
+  | archive-date = 2007-10-08
+  | url-status = dead
+  }}&lt;/ref&gt;&lt;ref&gt;{{cite book
+  | last = Goodpasture
+  | first = John C.
+  | title = Quantitative Methods in Project Management
+  | publisher = J. Ross Publishing
+  | year = 2004
+  | pages = 173–178
+  | isbn = 1-932159-15-0 }}
+&lt;/ref&gt;
+
+== Simple implementations (emphasizing only technical performance) ==
+There are many more small and simple projects than there are large and complex ones, yet historically only the largest and most complex have enjoyed the benefits of EVM.  Still, lightweight implementations of EVM are achievable by any person who has basic spreadsheet skills.  In fact, [[spreadsheet]] implementations are an excellent way to learn basic EVM skills.
+
+The ''first step'' is to define the work. This is typically done in a hierarchical arrangement called a [[work breakdown structure]] (WBS) although the simplest projects may use a simple list of tasks.  In either case, it is important that the WBS or list be comprehensive. It is also important that the elements be [[mutually exclusive]], so that work is easily categorized in one and only one element of work.  The most detailed elements of a WBS hierarchy (or the items in a list) are called activities (or tasks).
+
+The ''second step'' is to assign a value, called planned value (PV), to each activity.  For large projects, PV is almost always an allocation of the total project budget, and may be in units of currency (e.g. dollar, euro or naira) or in labor hours, or both.  However, in very simple projects, each activity may be assigned a weighted “point value&quot; which might not be a budget number.  Assigning weighted values and achieving consensus on all PV quantities yields an important benefit of EVM, because it exposes misunderstandings and miscommunications about the scope of the project, and resolving these differences should always occur as early as possible.  Some terminal elements can not be known (planned) in great detail in advance, and that is expected, because they can be further refined at a later time.
+
+The ''third step'' is to define &quot;earning rules&quot; for each activity.  The simplest method is to apply just one earning rule, such as the 0/100 rule, to all activities.  Using the 0/100 rule, no credit is earned for an element of work until it is finished.  A related rule is called the 50/50 rule, which means 50% credit is earned when an element of work is started, and the remaining 50% is earned upon completion.  Other fixed earning rules such as a 25/75 rule or 20/80 rule are gaining favor, because they assign more weight to finishing work than for starting it, but they also motivate the project team to identify when an element of work is started, which can improve awareness of work-in-progress.  These simple earning rules work well for small or simple projects because generally each activity tends to be fairly short in duration.
+
+These initial three steps define the minimal amount of planning for simplified EVM.  The ''final step'' is to execute the project according to the plan and measure progress.  When activities are started or finished, EV is accumulated according to the earning rule.  This is typically done at regular intervals (e.g. weekly or monthly), but there is no reason why EV cannot be accumulated in near real-time, when work elements are started/completed.  In fact, waiting to update EV only once per month (simply because that is when cost data are available) only detracts from a primary benefit of using EVM, which is to create a technical performance [[scoreboard]] for the project team.
+
+[[File:EVM Fig5.png|right|Figure 5: A comparison of three EV curves without PV and AC]]
+
+In a lightweight implementation such as described here, the project manager has not accumulated cost nor defined a detailed project schedule network (i.e. using a critical path or critical chain methodology).  While such omissions are inappropriate for managing large projects, they are a common and reasonable occurrence in many very small or simple projects.  Any project can benefit from using EV alone as a real-time score of progress.  One useful result of this very simple approach (without schedule models and actual cost accumulation) is to compare EV curves of similar projects, as illustrated in '''Figure 5'''.  In this example, the progress of three residential construction projects are compared by aligning the starting dates.  If these three home construction projects were measured with the same PV valuations, the ''relative'' schedule performance of the projects can be easily compared.
+
+== Making earned value schedule metrics concordant with the CPM schedule ==
+The actual critical path is ultimately the determining factor of every project's duration. Because earned value schedule metrics take no account of critical path data, big budget activities that are not on the critical path have the potential to dwarf the impact of performing small budget critical path activities. This can lead to &quot;gaming&quot; the SV and [[Schedule performance index|Schedule Performance Index or SPI]] metrics by ignoring critical path activities in favor of big budget activities that may have lots of float. This can sometimes even lead to performing activities out-of-sequence just to improve the schedule tracking metrics, which can cause major problems with quality.
+
+A simple two-step process has been suggested to fix this:
+# Create a second earned value baseline strictly for schedule, with the weighted activities and milestones on the as-late-as-possible dates of the backward pass of the critical path algorithm, where there is no float.
+# Allow earned value credit for schedule metrics to be taken no earlier than the reporting period during which the activity is scheduled unless it is on the project's current critical path.
+
+In this way, the distorting aspect of float would be eliminated. There would be no benefit to performing a non-critical activity with lots of float until it is due in proper sequence. Also, an activity would not generate a negative schedule variance until it had used up its float. Under this method, one way of gaming the schedule metrics would be eliminated. The only way of generating a positive schedule variance (or SPI over 1.0) would be by completing work on the current critical path ahead of schedule, which is in fact the only way for a project to get ahead of schedule.&lt;ref&gt;{{cite book
+  | last = Devaux
+  | first = Stephen A.
+  | title = Managing Projects as Investments: Earned Value to Business Value
+  | publisher = CRC Press
+  | year = 2014
+  | pages = 160–171
+  | isbn = 978-1-4822-1270-9 }}
+&lt;/ref&gt;
+ 
+{{See also|Earned schedule}}
+
+== Advanced implementations (integrating cost, schedule and technical performance) ==
+In addition to managing technical and schedule performance, large and complex projects require that cost performance be monitored and reviewed at regular intervals.  To measure cost performance, planned value (or BCWS - [[Budgeted cost of work scheduled|Budgeted Cost of Work Scheduled]]) and earned value (or BCWP - Budgeted Cost of Work Performed) must be in units of currency (the same units that actual costs are measured.).
+
+In large implementations, the planned value curve is commonly called a Performance Measurement Baseline (PMB) and may be arranged in control accounts, summary-level planning packages, planning packages and work packages.
+
+In large projects, establishing control accounts is the primary method of delegating responsibility and authority to various parts of the performing organization.  Control accounts are cells of a [[Responsibility assignment matrix|responsibility assignment (RACI) matrix]], which is the intersection of the project WBS and the [[organization chart|organizational breakdown structure]] (OBS).  Control accounts are assigned to Control Account Managers (CAMs).
+
+Large projects require more elaborate processes for controlling baseline revisions, more thorough integration with subcontractor EVM systems, and more elaborate management of procured materials.
+
+In the United States, the primary standard for full-featured EVM systems is the ANSI/EIA-748A standard, published in May 1998 and reaffirmed in August 2002.  The standard defines 32 criteria for full-featured EVM system compliance.  As of the year 2007, a draft of ANSI/EIA-748B, a revision to the original is available from ANSI.  Other countries have established similar standards.
+
+In addition to using BCWS and BCWP, prior to 1998 implementations often use the term actual cost of work performed (ACWP) instead of AC.  Additional acronyms and formulas include:
+
+; Budget at completion (BAC)
+: The total planned value (PV or BCWS) at the end of the project.  If a project has a management reserve (MR), it is typically ''not'' included in the BAC, and respectively, in the performance measurement baseline.
+; Cost variance (CV)
+: &lt;math&gt;
+\begin{align}
+CV = EV - AC
+\end{align}
+&lt;/math&gt;
+: CV greater than 0 is good (under budget).
+; Cost performance index (CPI)
+: &lt;math&gt;
+\begin{align}
+CPI = {EV\over AC}
+\end{align}
+&lt;/math&gt;
+: CPI greater than 1 is favourable (under budget):
+: &lt; 1 means that the cost of completing the work is higher than planned (bad);
+: = 1 means that the cost of completing the work is right on plan (good);
+: &gt; 1 means that the cost of completing the work is less than planned (good or sometimes bad).
+: Having a CPI that is very high (in some cases, very high is only 1.2) may mean that the plan was too conservative, and thus a very high number may in fact not be good, as the CPI is being measured against a poor baseline.  Management or the customer may be upset with the planners as an overly conservative baseline ties up available funds for other purposes, and the baseline is also used for manpower planning.
+; Estimate at completion (EAC)
+: EAC is the manager's projection of total cost of the project at completion.
+:: &lt;math&gt;
+\begin{align}
+EAC = AC + {(BAC-EV)\over CPI} = {BAC \over CPI}
+\end{align}
+&lt;/math&gt;
+: This formula is based on the assumption, that the performance of the project (or rather a deviation of the actual performance from a baseline) to date gives a good indication of what a performance (or rather deviation of a performance from a baseline) will be in the future. In other words this formula is using statistics of the project to date to predict future results. Therefore it has to be used carefully, when the nature of the project in the future is likely to be different from the one to date (e.g. performance of the project compare to baseline at the design phase may not be a good indication of what it will be during a construction phase).
+; Estimate to complete (ETC)
+: ETC is the estimate to complete the remaining work of the project.  ETC must be based on objective measures of the outstanding work remaining, typically based on the measures or estimates used to create the original planned value (PV) profile, including any adjustments to predict performance based on historical performance, actions being taken to improve performance, or acknowledgement of degraded performance.
+: While algebraically, ETC = EAC-AC is correct, ETC should ''never'' be computed using either EAC or AC.  In the following equation,
+:: &lt;math&gt;
+\begin{align}
+EAC = AC + ETC
+\end{align}
+&lt;/math&gt;
+: ETC is the independent variable, EAC is the dependent variable, and AC is fixed based on expenditures to date.  ETC should always be reported truthfully to reflect the project team estimate to complete the outstanding work.  If ETC pushes EAC to exceed BAC, then project management skills are employed to either recommend performance improvements or scope change, but never force ETC to give the &quot;correct&quot; answer so that EAC=BAC.  Managing project activities to keep the project within budget is a human factors activity, not a mathematical function.
+; To-complete performance index (TCPI)
+: The TCPI provides a projection of the anticipated performance required to achieve either the BAC or the EAC.  TCPI indicates the future required cost efficiency needed to achieve a target BAC (Budget At Complete) or EAC (Estimate At Complete).  Any significant difference between CPI, the cost performance to date, and the TCPI, the cost performance needed to meet the BAC or the EAC, should be accounted for by management in their forecast of the final cost.
+: For the TCPI based on BAC (describing the performance required to meet the original BAC budgeted total):
+:: &lt;math&gt;TCPI_{BAC} = { BAC - EV \over BAC - AC }&lt;/math&gt;
+: or for the TCPI based on EAC (describing the performance required to meet a new, revised budget total EAC):
+:: &lt;math&gt;TCPI_{EAC} = { BAC - EV \over EAC - AC }&lt;/math&gt;
+: This implies, that if revised budget (EAC) is calculated using Earned Value methodology formula (BAC/CPI), then at the moment, when TCPI based on EAC is first time calculated, it will always be equal to CPI of a project at that moment.  This happens because when EAC is calculated using formula BAC/CPI it is assumed, that cost performance of the remaining part of the project will be the same as the cost performance of the project to date.
+; Independent estimate at completion (IEAC)
+: The IEAC is a metric to project total cost using the performance to date to project overall performance.  This can be compared to the EAC, which is the manager's projection.
+:: &lt;math&gt;IEAC = \sum AC + { \left( BAC - \sum EV \right) \over CPI }&lt;/math&gt;
+
+== Limitations ==
+Proponents of EVM note a number of issues with implementing it,&lt;ref&gt;{{cite web
+ | last = Alleman
+ | first = Glen
+ | title = Herding Cats : Issues with Deploying Earned Value Management
+ | url = http://herdingcats.typepad.com/my_weblog/2012/06/issues-with-deploying-earned-value-management.html
+ | date = 2012-06-02
+ | accessdate = 2013-04-04}}&lt;/ref&gt;&lt;ref&gt;{{cite web
+  | last = Schulze
+  | first = E.
+  | title = How Earned Value Management is Limited
+  | url = http://www.brighthubpm.com/monitoring-projects/10056-how-earned-value-management-is-limited/
+  | date = 2010-06-21
+  | accessdate = 2013-04-04}}
+&lt;/ref&gt; and further limitations may be inherent to the concept itself.
+
+Because EVM requires quantification of a project plan, it is often perceived to be inapplicable to discovery-driven or [[Agile software development]] projects.  For example, it may be impossible to plan certain [[research]] projects far in advance, because research itself uncovers some opportunities (research paths) and actively eliminates others.  However, another school of thought holds that all work can be planned, even if in weekly [[timeboxing|timeboxes]] or other short [[iterative development|increments]].{{citation needed|date=February 2018}}
+
+Traditional EVM is not intended for non-discrete (continuous) effort.  In traditional EVM standards, non-discrete effort is called &quot;level of effort&quot; (LOE).  If a project plan contains a significant portion of LOE, and the LOE is intermixed with discrete effort, EVM results will be contaminated.&lt;ref&gt;{{cite web
+  | authorlink = http://guidebook.dcma.mil/
+  | title = The Guide
+  | publisher = Defense Contracting Management Agency
+  | url = http://guidebook.dcma.mil/79/evhelp/perform.htm#Level%20of%20Effort%20(LOE)
+  | accessdate = 2011-09-22
+  | archive-url = https://web.archive.org/web/20130308083007/http://guidebook.dcma.mil/79/evhelp/perform.htm#Level%20of%20Effort%20(LOE)
+  | archive-date = 2013-03-08
+  | url-status = dead
+  }}&lt;/ref&gt;  This is another area of EVM research.
+
+Traditional definitions of EVM typically assume that [[project accounting]] and [[project network|project network schedule management]] are prerequisites to achieving any benefit from EVM.  Many small projects don't satisfy either of these prerequisites, but they too can benefit from EVM, as described for [[Earned Value Management#Simple implementations (emphasizing only technical performance)|simple implementations]], above.  Other projects can be planned with a project network, but do not have access to true and timely actual cost data. In practice, the collection of true and timely actual cost data can be the most difficult aspect of EVM. Such projects can benefit from EVM, as described for [[Earned Value Management#Intermediate implementations (integrating technical and schedule performance)|intermediate implementations]], above, and [[Earned Schedule]].
+
+As a means of overcoming objections to EVM's lack of connection to qualitative performance issues, the [[Naval Air Systems Command]] (NAVAIR) PEO(A) organization initiated a project in the late 1990s to integrate true technical achievement into EVM projections by utilizing risk profiles.  These risk profiles anticipate opportunities that may be revealed and possibly be exploited as development and testing proceeds.  The published research resulted in a Technical Performance Management (TPM) methodology and software application that is still used by many DoD agencies in informing EVM estimates with technical achievement.&lt;ref&gt;{{cite web
+  | last = Pisano
+  | first = Nicholas D.
+  | title = Technical Performance Measurement, Earned Value, and Risk Management: An Integrated Diagnostic Tool for Program Management
+  | publisher = Defense Acquisition University Acquisition Research Symposium
+  | year = 1999
+  | url = http://www.dtic.mil/cgi-bin/GetTRDoc?AD=ADA404646  | accessdate = 2018-02-06 | format = PDF }}&lt;/ref&gt;
+The research was peer-reviewed and was the recipient of the Defense Acquisition University Acquisition Research Symposium 1997 Acker Award for excellence in the exchange of information in the field of acquisition research.
+
+There is the difficulty inherent for any periodic monitoring of synchronizing data timing: actual deliveries, actual invoicing, and the date the EVM analysis is done are all independent, so that some items have arrived but their invoicing has not and by the time analysis is delivered the data will likely be weeks behind events.  This may limit EVM to a less tactical or less definitive role where use is combined with other forms to explain why or add recent news and manage future expectations.
+
+There is a measurement limitation for how precisely EVM can be used, stemming from classic conflict between [[accuracy and precision]], as the mathematics can calculate deceptively far beyond the precision of the measurements of data and the approximation that is the plan [[estimation]].  The limitation on estimation is commonly understood (such as the [[ninety-ninety rule]] in software) but is not visible in any [[margin of error]].  The limitations on measurement are largely a form of [[Discretization error|digitization error]] as EVM measurements ultimately can be no finer than by item, which may be the [[Work Breakdown Structure]] terminal element size, to the scale of reporting period, typically end summary of a month, and by the means of delivery measure.  (The delivery measure may be actual deliveries, may include estimates of partial work done at the end of month subject to estimation limits, and typically does not include QC check or risk offsets.)
+
+As traditionally implemented, earned value management deals with, and is based in, budget and cost. It has no relationship to the investment value or benefit for which the project has been funded and undertaken. Yet due to the use of the word “value” in the name, this fact is often misunderstood. However, earned value metrics can be used to compute the cost and schedule inputs to [[Devaux's Index of Project Performance]] (the DIPP), which integrates schedule and cost performance with the planned investment value of the project's scope across the [[project management triangle]]. &lt;ref&gt;{{cite book
+  | last = Devaux
+  | first = Stephen A.
+  | title = Managing Projects as Investments: Earned Value to Business Value
+  | publisher = CRC Press
+  | year = 2014
+  | pages = 153–156
+  | isbn = 978-1-4822-1270-9 }}
+&lt;/ref&gt;
+
+==See also==
+* [[Critical chain project management]]
+* [[Earned schedule]]
+* [[List of project management topics]]
+
+== References==
+{{Reflist}}
+
+== Further reading ==
+* Humphreys, Gary (2001).  ''Project Management Using Earned Value''.  [http://Humphreys-assoc.com Humphreys and Associates].  {{ISBN|0-9708614-0-0}}
+* Philipson, Erik and Sven Antvik (2009). ''Earned Value Management - an introduction''.  Philipson Biz.  {{ISBN|978-91-977394-5-0}}
+* Project Management Institute (2005).  ''Practice Standard for Earned Value Management''.  Project Management Institute.  {{ISBN|1-930699-42-5}}
+* Solomon, Paul and Ralph Young (2006). ''Performance-Based Earned Value''.  Wiley-IEEE Computer Society.  {{ISBN|978-0-471-72188-8}}
+* Stratton, Ray (2006).  ''The Earned Value Maturity Model''.  Management Concepts.  {{ISBN|1-56726-180-9}}
+* U.S. Air Force Materiel Command (1994).  &quot;Guide to Analysis of Contractor Cost Data&quot;.  AFMCPAM 65-501
+* Defense Contract Management Agency (2006) &quot;Earned Value Implementation Guide&quot; [https://web.archive.org/web/20130313064946/https://acc.dau.mil/CommunityBrowser.aspx?id=19557 DAU link ] {{ISBN|978-1468178289}}
+* GAO (2009) &quot;GAO Cost Estimating and Assessment Guide&quot; [http://www.gao.gov/products/GAO-09-3SP GAO-09-SSP]
+* {{cite book  | author = Defense Systems Management College | year = 1997 | title = Earned Value Management Textbook, Chapter 2 | publisher = Defense Systems Management College, EVM Dept., 9820 Belvoir Road, Fort Belvoir, VA 22060-5565 }}
+* {{cite web | last = Abba | first = Wayne | title = How Earned Value Got to Prime Time: A Short Look Back and a Glance Ahead | publisher = PMI College of Performance Management (www.pmi-cpm.org) | date = 2000-04-01 | url = http://www.pmi-cpm.org/members/library/EVLook%20Back-Glance%20Ahead.abba.pdf | accessdate = 2006-10-31 | archive-url = https://web.archive.org/web/20071021213834/http://www.pmi-cpm.org/members/library/EVLook%20Back-Glance%20Ahead.abba.pdf | archive-date = 2007-10-21 | url-status = dead }}
+* {{cite book | first1 = Quentin | last1 = Fleming | first2 = Joel | last2 = Koppelman | year = 2005 | title = Earned Value Project Management | edition = Third | publisher = Project Management Institute | isbn = 1-930699-89-1}}
+* Bembers, Ivan, Ed Knox, Michelle Jones and Jeff Traczyk (Jan 2017). &quot;EVM System's High Cost, Fact or Fiction?&quot; Defense AT&amp;L Magazine. https://www.dau.mil/library/defense-atl/_layouts/15/WopiFrame.aspx?sourcedoc=/library/defense-atl/DATLFiles/Jan-Feb2017/Bembers_Knox_Jones_Traczyk.pdf
+
+==External links==
+&lt;!-- This article has too many external links. If you want to add one, please propose it on the talk page first. --&gt;
+* [http://evm.nasa.gov/ EVM at NASA]
+* {{cite web | title=DOE G 413.3-10, Earned Value Management System (EVMS) | url=http://www.everyspec.com/DOE/DOE-General/DOE_G413x3-10_15922/ | format=PDF | publisher=[[United States Department of Energy]] | date=6 May 2008 }}
+* [http://www.acq.osd.mil/evm/ U.S. Office of the Undersecretary of Defense for Acquisition, Technology and Logistics Earned Value Management website]
+* [http://www.methodsandtools.com/archive/archive.php?id=61 Measuring Integrated Progress on Agile Software Development Projects]
+* [http://www.collab.net/resources/whitepaper_MonitoringScrumProjectsAgileEVM Monitoring Scrum Projects with AgileEVM and Earned Business Value (EBV) Metrics]
+* [https://web.archive.org/web/20120213220533/http://www.aof.mod.uk/aofcontent/tactical/ppm/downloads/evm/flash/Engine.swf  UK MoD on-line training using Flash player]
+* [https://web.archive.org/web/20170219195627/https://acc.dau.mil/CommunityBrowser.aspx?id=17609 U.S. DoD DAU Acquisition Community Earned Value Management website]
+* [https://web.archive.org/web/20160303211203/http://guidebook.dcma.mil/ U.S. Defense Contract Management Agency Guidebook]
+* [http://www.planningengineer.net/evm-earned-value-management/ EVM earned value management general definitions]
+* [https://web.archive.org/web/20110218061950/http://guidebook.dcma.mil/79/ EVMS Surveillance Instruction,  U.S. Defense Contract Management Agency]
+* [http://www.businessmapping.com/blog/value-analysis/,  What is Value Analysis?]
+
+[[Category:Project management techniques]]</text>
+      <sha1>tvf3qxxd69id022vb08q818ns7sptsn</sha1>
+    </revision>
+  </page>

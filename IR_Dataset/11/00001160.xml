@@ -1,0 +1,101 @@
+  <page>
+    <title>Automorphism</title>
+    <ns>0</ns>
+    <id>1160</id>
+    <revision>
+      <id>940310851</id>
+      <parentid>932876535</parentid>
+      <timestamp>2020-02-11T19:51:43Z</timestamp>
+      <contributor>
+        <username>Gonzo fan2007</username>
+        <id>1347436</id>
+      </contributor>
+      <comment>bolding not needed</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">In [[mathematics]], an '''automorphism''' is an [[isomorphism]] from a [[mathematical object]] to itself. It is, in some sense, a [[symmetry]] of the object, and a way of [[map (mathematics)|mapping]] the object to itself while preserving all of its structure. The [[Set (mathematics)|set]] of all automorphisms of an object forms a [[group (mathematics)|group]], called the [[automorphism group]]. It is, loosely speaking, the [[symmetry group]] of the object. (read: [[Symmetric group]])
+
+==Definition==
+In the context of [[abstract algebra]], a mathematical object is an [[algebraic structure]] such as a [[group (mathematics)|group]], [[ring (mathematics)|ring]], or [[vector space]]. An '''automorphism''' is simply a [[bijective]] [[homomorphism]] of an object with itself. (The definition of a homomorphism depends on the type of algebraic structure; see, for example, [[group homomorphism]], [[ring homomorphism]], and [[linear operator]]).
+
+The [[identity morphism]] ([[identity mapping]]) is called the '''trivial automorphism''' in some contexts. Respectively, other (non-identity) automorphisms are called '''nontrivial automorphisms'''.
+
+The exact definition of an automorphism depends on the type of &quot;mathematical object&quot; in question and what, precisely, constitutes an &quot;isomorphism&quot; of that object. The most general setting in which these words have meaning is an abstract branch of mathematics called [[category theory]]. Category theory deals with abstract objects and [[morphism]]s between those objects.
+
+In category theory, an '''automorphism''' is an [[endomorphism]] (i.e., a [[morphism]] from an object to itself) which is also an [[isomorphism]] (in the categorical sense of the word).
+
+This is a very abstract definition since, in category theory, morphisms aren't necessarily [[Function (mathematics)|functions]] and objects aren't necessarily sets. In most concrete settings, however, the objects will be sets with some additional structure and the morphisms will be functions preserving that structure.
+
+==Automorphism group==
+{{main|Automorphism group}}
+If the automorphisms of an object {{var|X}} form a set (instead of a proper [[class (set theory)|class]]), then they form a [[group (mathematics)|group]] under [[Function composition|composition]] of [[morphism]]s. This group is called the '''[[automorphism group]]''' of {{var|X}}.
+;[[Closure (binary operation)|Closure]]: Composition of two automorphisms is another automorphism.
+;[[Associativity]]: It is part of the definition of a [[Category (mathematics)|category]] that composition of morphisms is associative.
+;[[Identity element|Identity]]: The identity is the identity morphism from an object to itself, which is an automorphism.
+;[[Inverse element|Inverses]]: By definition every isomorphism has an inverse which is also an isomorphism, and since the inverse is also an endomorphism of the same object it is an automorphism.
+
+The automorphism group of an object ''X'' in a category ''C'' is denoted Aut&lt;sub&gt;''C''&lt;/sub&gt;(''X''), or simply Aut(''X'') if the category is clear from context.
+
+==Examples==
+* In [[set theory]], an arbitrary [[permutation]] of the elements of a set ''X'' is an automorphism. The automorphism group of ''X'' is also called the symmetric group on ''X''.
+* In [[elementary arithmetic]], the set of [[integer]]s, '''Z''', considered as a group under addition, has a unique nontrivial automorphism: negation. Considered as a ring, however, it has only the trivial automorphism. Generally speaking, negation is an automorphism of any [[abelian group]], but not of a ring or field.
+* A group automorphism is a [[group isomorphism]] from a group to itself. Informally, it is a permutation of the group elements such that the structure remains unchanged. For every group ''G'' there is a natural group homomorphism ''G'' → Aut(''G'') whose [[image (mathematics)|image]] is the group Inn(''G'') of [[inner automorphism]]s and whose [[kernel (algebra)|kernel]] is the [[center (group theory)|center]] of ''G''. Thus, if ''G'' has [[Trivial group|trivial]] center it can be embedded into its own automorphism group.&lt;ref name=Pahl&gt;{{cite book |url=https://books.google.com/books?id=kvoaoWOfqd8C&amp;pg=PA376 |page=376 |chapter=§7.5.5 Automorphisms |title=Mathematical foundations of computational engineering |edition=Felix Pahl translation |author=PJ Pahl, R Damrath |isbn=3-540-67995-2 |year=2001 |publisher=Springer}}&lt;/ref&gt;
+* In [[linear algebra]], an endomorphism of a [[vector space]] ''V'' is a [[linear transformation|linear operator]] ''V'' → ''V''. An automorphism is an invertible linear operator on ''V''. When the vector space is finite-dimensional, the automorphism group of ''V'' is the same as the [[general linear group]], GL(''V'').  (The algebraic structure of [[Endomorphism algebra|all endomorphisms of ''V'']] is itself an algebra over the same base field as ''V'', whose [[Group of units|invertible elements]] precisely consist of GL(''V'').)
+* A field automorphism is a [[bijection|bijective]] [[ring homomorphism]] from a [[field (mathematics)|field]] to itself. In the cases of the [[rational number]]s ('''Q''') and the [[real number]]s ('''R''') there are no nontrivial field automorphisms. Some subfields of '''R''' have nontrivial field automorphisms, which however do not extend to all of '''R''' (because they cannot preserve the property of a number having a square root in '''R'''). In the case of the [[complex number]]s, '''C''', there is a unique nontrivial automorphism that sends '''R''' into '''R''': [[complex conjugate|complex conjugation]], but there are infinitely ([[uncountable|uncountably]]) many &quot;wild&quot; automorphisms (assuming the [[axiom of choice]]).&lt;ref&gt;{{cite journal | last = Yale | first = Paul B. | journal = Mathematics Magazine | title = Automorphisms of the Complex Numbers | volume = 39 | issue = 3 |date=May 1966 | pages = 135–141 | url = http://www.maa.org/sites/default/files/pdf/upload_library/22/Ford/PaulBYale.pdf | doi = 10.2307/2689301 | jstor = 2689301}}&lt;/ref&gt;&lt;ref&gt;{{cite |last=Lounesto |first=Pertti |year=2001 |publisher= Cambridge University Press |title=Clifford Algebras and Spinors | edition = 2nd |pages= 22–23|isbn=0-521-00551-5 }}&lt;/ref&gt; Field automorphisms are important to the theory of [[field extension]]s, in particular [[Galois extension]]s. In the case of a Galois extension ''L''/''K'' the [[subgroup]] of all automorphisms of ''L'' fixing ''K'' pointwise is called the [[Galois group]] of the extension.
+* The automorphism group of the [[quaternion]]s ('''H''') as a ring are the inner automorphisms, by the [[Skolem–Noether theorem]]: maps of the form {{nowrap|''a'' ↦ ''bab''&lt;sup&gt;−1&lt;/sup&gt;}}.{{refn|{{citation|year=2003|title=Handbook of algebra|volume=3|publisher=[[Elsevier]]|page=453}}}} This group is [[Quaternions_and_spatial_rotation|isomorphic]] to [[SO(3)]], the group of rotations in 3-dimensional space.
+* The automorphism group of the [[octonions]] ('''O''') is the [[Exceptional Lie algebra|exceptional]] Lie group [[G2_(mathematics)|G&lt;sub&gt;2&lt;/sub&gt;]].
+* In [[graph theory]] an [[graph automorphism|automorphism of a graph]] is a permutation of the nodes that preserves edges and non-edges. In particular, if two nodes are joined by an edge, so are their images under the permutation.
+* In [[geometry]], an automorphism may be called a [[motion (geometry)|motion]] of the space. Specialized terminology is also used:
+** In [[metric geometry]] an automorphism is a self-[[isometry]]. The automorphism group is also called the [[isometry group]].
+** In the category of [[Riemann surface]]s, an automorphism is a [[biholomorphy|biholomorphic]] map (also called a [[conformal map]]), from a surface to itself. For example, the automorphisms of the [[Riemann sphere]] are [[Möbius transformation]]s.
+** An automorphism of a differentiable [[manifold]] ''M'' is a [[diffeomorphism]] from ''M'' to itself. The automorphism group is sometimes denoted Diff(''M'').
+** In [[topology]], morphisms between topological spaces are called [[Continuous function (topology)|continuous maps]], and an automorphism of a topological space is a [[homeomorphism]] of the space to itself, or self-homeomorphism (see [[homeomorphism group]]). In this example it is ''not sufficient'' for a morphism to be bijective to be an isomorphism.
+
+==History==
+One of the earliest group automorphisms (automorphism of a group, not simply a group of automorphisms of points) was given by the Irish mathematician [[William Rowan Hamilton]] in 1856, in his [[icosian calculus]], where he discovered an order two automorphism,&lt;ref&gt;{{Cite journal
+|title=Memorandum respecting a new System of Roots of Unity
+|author=Sir William Rowan Hamilton
+|author-link=William Rowan Hamilton
+|url=http://www.maths.tcd.ie/pub/HistMath/People/Hamilton/Icosian/NewSys.pdf
+|journal=[[Philosophical Magazine]]
+|volume=12
+|year=1856
+|pages=446
+}}&lt;/ref&gt; writing:
+&lt;blockquote&gt;so that &lt;math&gt;\mu&lt;/math&gt; is a new fifth root of unity, connected with the former fifth root &lt;math&gt;\lambda&lt;/math&gt; by relations of perfect reciprocity.&lt;/blockquote&gt;
+
+==Inner and outer automorphisms==
+{{main article|Inner automorphism|Outer automorphism group}}
+In some categories—notably [[group (mathematics)|groups]], [[ring (mathematics)|rings]], and [[Lie algebra]]s—it is possible to separate automorphisms into two types, called &quot;inner&quot; and &quot;outer&quot; automorphisms.
+
+In the case of groups, the [[inner automorphism]]s are the conjugations by the elements of the group itself. For each element ''a'' of a group ''G'', conjugation by ''a'' is the operation {{nowrap|''φ''&lt;sub&gt;''a''&lt;/sub&gt; : ''G'' → ''G''}} given by {{nowrap|1=''φ''&lt;sub&gt;''a''&lt;/sub&gt;(''g'') = ''aga''&lt;sup&gt;−1&lt;/sup&gt;}} (or ''a''&lt;sup&gt;−1&lt;/sup&gt;''ga''; usage varies). One can easily check that conjugation by ''a'' is a group automorphism. The inner automorphisms form a [[normal subgroup]] of Aut(''G''), denoted by Inn(''G''); this is called [[Goursat's lemma]].
+
+The other automorphisms are called [[outer automorphism]]s. The [[quotient group]] {{nowrap|Aut(''G'') / Inn(''G'')}} is usually denoted by Out(''G''); the non-trivial elements are the [[cosets]] that contain the outer automorphisms.
+
+The same definition holds in any [[unital algebra|unital]] [[ring (mathematics)|ring]] or [[algebra over a field|algebra]] where ''a'' is any [[Unit (ring theory)|invertible element]]. For [[Lie algebra]]s the definition is slightly different.
+
+==See also==
+* [[Antiautomorphism]]
+* [[Mathematics of Sudoku#Automorphic Sudokus|Automorphism]] (in Sudoku puzzles)
+* [[Characteristic subgroup]]
+* [[Endomorphism ring]]
+* [[Frobenius automorphism]]
+* [[Morphism]]
+* [[Order automorphism]] (in [[order theory]]).
+* [[Isomorphism#A relation-preserving isomorphism|Relation-preserving automorphism]]
+* [[Fractional Fourier transform]]
+
+==References==
+&lt;!-- See [[Wikipedia:Footnotes]] for instructions. --&gt;
+&lt;references /&gt;
+
+==External links==
+* [http://www.encyclopediaofmath.org/index.php/Automorphism ''Automorphism'' at Encyclopaedia of Mathematics]
+* {{MathWorld | urlname=Automorphism | title = Automorphism}}
+
+[[Category:Morphisms]]
+[[Category:Abstract algebra]]
+[[Category:Symmetry]]</text>
+      <sha1>ftqcfz27o0ngompz25sirhyjxhpem63</sha1>
+    </revision>
+  </page>

@@ -1,0 +1,203 @@
+  <page>
+    <title>Dylan (programming language)</title>
+    <ns>0</ns>
+    <id>8741</id>
+    <revision>
+      <id>939469458</id>
+      <parentid>891820836</parentid>
+      <timestamp>2020-02-06T17:27:12Z</timestamp>
+      <contributor>
+        <ip>173.94.24.162</ip>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{more citations needed|date=June 2013}}
+{{Infobox programming language
+| name = Dylan
+| logo = Dylan logo.png
+| paradigm = [[Multi-paradigm programming language|multi-paradigm]]: [[Functional programming|functional]], [[Object-oriented programming|object-oriented]]
+| released = {{Start date and age|1992}}
+| designer = 
+| developer = [[Open Source Community]] [[Apple Computer]], [[Harlequin (software company)|Harlequin]], [[Carnegie Mellon University]]
+| latest release version = 2019.1
+| latest release date = {{Start date and age|2019|03|31}}
+| typing = Strong, dynamic
+| scope = 
+| programming language = 
+| platform = [[IA-32]], [[x86-64]]
+| operating system = [[Cross-platform]]
+| license = 
+| file ext = dylan
+| file format = &lt;!-- or: | file formats = --&gt;
+| website = {{URL|opendylan.org}}
+| implementations        = [https://opendylan.org Open Dylan], Gwydion Dylan
+| dialects = infix-dylan (AKA Dylan), prefix-dylan (AKA Lisp)
+| influenced by = [[Common Lisp Object System|CLOS]], [[ALGOL]], [[Scheme (programming language)|Scheme]], [[EuLisp]]
+| influenced = [[Lasso (programming language)|Lasso]], [[Python (programming language)|Python]], [[Ruby (programming language)|Ruby]]
+}}
+
+'''Dylan''' is a multi-paradigm [[programming language]] that includes support for [[Functional programming|functional]] and [[object-oriented programming]] (OOP), and is [[Dynamic programming language|dynamic]] and [[Reflection (computer programming)|reflective]] while providing a programming model designed to support generating efficient machine code, including fine-grained control over dynamic and static behaviors. It was created in the early 1990s by a group led by [[Apple Computer]].
+
+A concise and thorough overview of the language may be found in the Dylan Reference Manual.&lt;ref name=&quot;refman&quot;/&gt;
+
+Dylan derives from [[Scheme (programming language)|Scheme]] and [[Common Lisp]] and adds an integrated object system derived from the [[Common Lisp Object System]] (CLOS). In Dylan, all values (including numbers, characters, functions, and [[Class (computer programming)|classes]]) are [[first-class object]]s. Dylan supports [[multiple inheritance]], [[Polymorphism (computer science)|polymorphism]], [[multiple dispatch]], [[keyword argument]]s, object introspection, [[Pattern matching|pattern]]-based [[Syntactic macro|syntax extension macro]]s, and many other advanced features. Programs can express fine-grained control over dynamism, admitting programs that occupy a continuum between dynamic and static programming and supporting evolutionary development (allowing for rapid prototyping followed by incremental refinement and optimization).
+
+Dylan's main design goal is to be a dynamic language well-suited for developing [[commercial software]]. Dylan attempts to address potential performance issues by introducing &quot;natural&quot; limits to the full flexibility of [[Lisp (programming language)|Lisp]] systems, allowing the [[compiler]] to clearly understand compilable units, such as [[Library (computing)|libraries]].
+
+Dylan derives much of its semantics from Scheme and other Lisps; some Dylan implementations were initially built within extant Lisp systems. However, Dylan has an [[ALGOL]]-like syntax instead of a Lisp-like prefix syntax.
+
+==History==
+{{further|History of the Dylan programming language}}
+
+Dylan was created in the early 1990s by a group led by [[Apple Computer]]. At one time in its development, it was intended for use with the [[Apple Newton]] computer, but the Dylan implementation did not reach sufficient maturity in time, and Newton instead used a mix of C and the [[NewtonScript]] developed by Walter Smith. Apple ended their Dylan development effort in 1995, though they made a &quot;technology release&quot; version available (Apple Dylan TR1) that included an advanced [[integrated development environment]] (IDE).
+
+Two other groups contributed to the design of the language and developed implementations: [[Harlequin (software company)|Harlequin]] released a commercial IDE for [[Microsoft Windows]] and [[Carnegie Mellon University]] released an [[Open-source software|open source]] compiler for [[Unix]] systems called Gwydion Dylan. Both of these implementations are now open source. The Harlequin implementation is now named Open Dylan and is maintained by a group of volunteers, the Dylan Hackers.
+
+The Dylan language was code-named Ralph. James Joaquin chose the name Dylan for &quot;DYnamic LANguage.&quot;
+
+==Syntax==
+Many of Dylan's syntax features come from its Lisp heritage. Originally, Dylan used a Lisp-like prefix syntax, which was based on [[s-expression]]s. By the time the language design was completed, the syntax was changed to an ALGOL-like syntax, with the expectation that it would be more familiar to a wider audience of programmers. The syntax was designed by Michael Kahl. It is described in great detail in the Dylan Reference Manual.&lt;ref name=&quot;refman&quot;/&gt;
+
+===Lexical syntax===
+Dylan is not [[Case sensitivity|case sensitive]]. Dylan's [[lexical syntax]] allows the use of a naming convention where [[hyphen-minus]] signs are used to connect the parts of multiple-word identifiers (sometimes called &quot;[[lisp-case]]&quot; or &quot;[[kebab case]]&quot;). This convention is common in Lisp languages but cannot be used in programming languages that treat any hyphen-minus that is not part of a numeric [[literal (computer programming)|literal]] as a single [[lexical token]], even when not surrounded by [[whitespace character]]s.
+
+Identifiers in Dylan may contain more &quot;special&quot; characters than most languages. Besides [[alphanumeric]] characters and hyphen-minus signs, Dylan allows the following non-alphanumerical characters as part of identifiers: [[underscore]]&amp;nbsp;(&lt;code&gt;_&lt;/code&gt;), [[asterisk]]&amp;nbsp;(&lt;code&gt;*&lt;/code&gt;), [[ampersand]]&amp;nbsp;(&lt;code&gt;&amp;&lt;/code&gt;), [[less-than sign]]&amp;nbsp;(&lt;code&gt;&amp;lt;&lt;/code&gt;), [[equals sign]]&amp;nbsp;(&lt;code&gt;=&lt;/code&gt;), [[greater-than sign]]&amp;nbsp;(&lt;code&gt;&amp;gt;&lt;/code&gt;), [[vertical bar]]&amp;nbsp;(&lt;code&gt;|&lt;/code&gt;), [[caret]]&amp;nbsp;(&lt;code&gt;^&lt;/code&gt;), [[dollar sign]]&amp;nbsp;(&lt;code&gt;$&lt;/code&gt;), [[percent sign]]&amp;nbsp;(&lt;code&gt;%&lt;/code&gt;), and [[at sign]]&amp;nbsp;(&lt;code&gt;@&lt;/code&gt;). Identifiers may not consist of these non-alphanumeric characters or numeric characters alone.&lt;ref name=&quot;refman&quot;/&gt; If there is any ambiguity, whitespace is used.
+
+===Example code===
+A simple class with several slots:
+
+&lt;source lang=&quot;dylan&quot;&gt;
+define class &lt;point&gt; (&lt;object&gt;)
+  slot point-x :: &lt;integer&gt;,
+    required-init-keyword: x:;
+  slot point-y :: &lt;integer&gt;,
+    required-init-keyword: y:;
+end class &lt;point&gt;;
+&lt;/source&gt;
+
+By convention, classes are named with less-than and greater-than signs used as [[angle bracket]]s, e.g. the class named &lt;code&gt;&amp;lt;point&amp;gt;&lt;/code&gt; in the code example.
+
+In &lt;code&gt;end class &amp;lt;point&amp;gt;&lt;/code&gt; both &lt;code&gt;class&lt;/code&gt; and &lt;code&gt;&amp;lt;point&amp;gt;&lt;/code&gt; are optional.  This is true for all &lt;code&gt;end&lt;/code&gt; clauses.  For example, you may write &lt;code&gt;end if&lt;/code&gt; or just &lt;code&gt;end&lt;/code&gt; to terminate an &lt;code&gt;if&lt;/code&gt; statement.
+
+The same class, rewritten in the most minimal way possible:
+
+&lt;source lang=&quot;dylan&quot;&gt;
+define class &lt;point&gt; (&lt;object&gt;)
+  slot point-x;
+  slot point-y;
+end;
+&lt;/source&gt;
+
+The slots are now both typed as &lt;code&gt;&amp;lt;object&amp;gt;&lt;/code&gt;. The slots must be initialized manually.
+
+By convention, constant names begin with &quot;$&quot;:
+
+&lt;source lang=&quot;dylan&quot;&gt;
+define constant $pi :: &lt;double-float&gt; = 3.1415927d0;
+&lt;/source&gt;
+
+A factorial function:
+&lt;source lang=&quot;dylan&quot;&gt;
+define function factorial (n :: &lt;integer&gt;) =&gt; (n! :: &lt;integer&gt;)
+  case
+    n &lt; 0     =&gt; error(&quot;Can't take factorial of negative integer: %d\n&quot;, n);
+    n = 0     =&gt; 1;
+    otherwise =&gt; n * factorial(n - 1);
+  end
+end;
+&lt;/source&gt;
+
+Here, &lt;code&gt;n!&lt;/code&gt; and &lt;code&gt;&amp;lt;integer&amp;gt;&lt;/code&gt; are just normal identifiers.
+
+There is no explicit [[return statement]].  The result of a method or function is the last expression evaluated.  It is a common style to leave off the semicolon after an expression in return position.
+
+==Modules vs. namespace==
+In many object-oriented languages, classes are the main means of encapsulation and modularity; each class defines a namespace and controls which definitions are externally visible. Further, classes in many languages define an indivisible unit that must be used as a whole. For example, using a &lt;code&gt;String&lt;/code&gt; concatenation function requires importing and compiling against all of &lt;code&gt;String&lt;/code&gt;.
+
+Some languages, including Dylan, also include a separate, explicit namespace or module system that performs encapsulation in a more general way.
+
+In Dylan, the concepts of compile-unit and import-unit are separated, and classes have nothing specifically to do with either. A ''library'' defines items that should be compiled and handled together, while a ''module'' defines a namespace. Classes can be placed together in modules, or cut across them, as the programmer wishes. Often the complete definition for a class does not exist in a single module, but is spread across several that are optionally collected together. Different programs can have different definitions of the same class, including only what they need.
+
+For example, consider an add-on library for [[regex]] support on &lt;code&gt;String&lt;/code&gt;. In some languages, for the functionality to be included in strings, the functionality must be added to the &lt;code&gt;String&lt;/code&gt; namespace. As soon as this occurs, the &lt;code&gt;String&lt;/code&gt; class becomes larger, and functions that don't need to use regex still must &quot;pay&quot; for it in increased library size. For this reason, these sorts of add-ons are typically placed in their own namespaces and objects. The downside to this approach is that the new functions are no longer a ''part of'' &lt;code&gt;String&lt;/code&gt;; instead, it is isolated in its own set of functions that must be called separately. Instead of &lt;code&gt;myString.parseWith(myPattern)&lt;/code&gt;, which would be the natural organization from an OO viewpoint,  something like &lt;code&gt;myPattern.parseString(myString)&lt;/code&gt; is used, which effectively reverses the ordering.
+
+Under Dylan, many interfaces can be defined for the same code, for instance the String concatenation method could be placed in both the String interface, and the &quot;concat&quot; interface which collects together all of the different concatenation functions from various classes. This is more commonly used in math libraries, where functions tend to be applicable to widely differing object types.
+
+A more practical use of the interface construct is to build public and private versions of a module, something that other languages include as a ''bolt on'' feature that invariably causes problems and adds syntax. Under Dylan, every function call can be simply places in the &quot;Private&quot; or &quot;Development&quot; interface, and collect up publicly accessible functions in &lt;code&gt;Public&lt;/code&gt;. Under [[Java (programming language)|Java]] or [[C++]] the visibility of an object is defined in the code, meaning that to support a similar change, a programmer would be forced to rewrite the definitions fully, and could not have two versions at the same time.
+
+==Classes==
+Classes in Dylan describe &lt;code&gt;slots&lt;/code&gt; (data members, fields, ivars, etc.) of objects in a fashion similar to most OO languages. All access to slots are via methods, as in [[Smalltalk]]. Default getter and setter methods are automatically generated based on the slot names.  In contrast with most other OO languages, other methods applicable to the class are often defined outside of the class, and thus class definitions in Dylan typically include the definition of the storage only. For instance:
+
+&lt;syntaxhighlight lang=dylan&gt;
+define class &lt;window&gt; (&lt;view&gt;)
+  slot title :: &lt;string&gt; = &quot;untitled&quot;, init-keyword: title:;
+  slot position :: &lt;point&gt;, required-init-keyword: position:;
+end class;
+&lt;/syntaxhighlight&gt;
+
+In this example, the class &quot;&lt;code&gt;&amp;lt;window&amp;gt;&lt;/code&gt;&quot; is defined. The &amp;lt;class name&amp;gt; syntax is convention only, to make the class names stand out—the angle brackets are merely part of the class name. In contrast, in some languages the convention is to capitalize the first letter of the class name or to prefix the name with a ''C'' or ''T'' (for example). &lt;code&gt;&amp;lt;window&amp;gt;&lt;/code&gt; inherits from a single class, &lt;code&gt;&amp;lt;view&amp;gt;&lt;/code&gt;, and contains two slots, &lt;code&gt;title&lt;/code&gt; holding a string for the window title, and &lt;code&gt;position&lt;/code&gt; holding an X-Y point for a corner of the window. In this example, the title has been given a default value, while the position has not. The optional ''init-keyword'' syntax allows the programmer to specify the initial value of the slot when instantiating an object of the class.
+
+In languages such as C++ or Java, the class would also define its interface. In this case the definition above has no explicit instructions, so in both languages access to the slots and methods is considered &lt;code&gt;protected&lt;/code&gt;, meaning they can be used only by subclasses. To allow unrelated code to use the window instances, they must be declared &lt;code&gt;public&lt;/code&gt;.
+
+In Dylan, these sorts of visibility rules are not considered part of the code, but of the module/interface system. This adds considerable flexibility. For instance, one interface used during early development could declare everything public, whereas one used in testing and deployment could limit this. With C++ or Java these changes would require changes to the source code, so people won't do it, whereas in Dylan this is a fully unrelated concept.
+
+Although this example does not use it, Dylan also supports [[multiple inheritance]].
+
+==Methods and generic functions==
+In Dylan, methods are not intrinsically associated with any specific class; methods can be thought of as existing outside of classes. Like CLOS, Dylan is based on [[multiple dispatch]] (multimethods), where the specific method to be called is chosen based on the types of all its arguments. The method need not be known at compile time, the understanding being that the required function may be available, or not, based on a user's preferences.
+
+Under Java the same methods would be isolated in a specific class. To use that functionality the programmer is forced to ''import'' that class and refer to it explicitly to call the method. If that class is unavailable, or unknown at compile time, the application simply won't compile.
+
+In Dylan, code is isolated from storage in ''functions''. Many classes have methods that call their own functions, thereby looking and feeling like most other OO languages. However code may also be located in ''generic functions'', meaning they are not attached to a specific class, and can be called natively by anyone. Linking a specific generic function to a method in a class is accomplished thusly:
+
+&lt;syntaxhighlight lang=dylan&gt;
+define method turn-blue (w :: &lt;window&gt;)
+  w.color := $blue;
+end method;
+&lt;/syntaxhighlight&gt;
+
+This definition is similar to those in other languages, and would likely be encapsulated within the &lt;code&gt;&amp;lt;window&amp;gt;&lt;/code&gt; class. Note the := setter call, which is [[syntactic sugar]] for &lt;code&gt;color-setter($blue, w)&lt;/code&gt;.
+
+The utility of generic methods comes into its own when you consider more &quot;generic&quot; examples. For instance, one common function in most languages is the &lt;code&gt;to-string&lt;/code&gt;, which returns some [[human-readable]] form for the object. For instance, a window might return its title and its position in parens, while a string would return itself. In Dylan these methods could all be collected into a single module called &quot;&lt;code&gt;to-string&lt;/code&gt;&quot;, thereby removing this code from the definition of the class itself. If a specific object did not support a &lt;code&gt;to-string&lt;/code&gt;, it could be easily added in the &lt;code&gt;to-string&lt;/code&gt; module.
+
+==Extensibility==
+This whole concept might strike some readers as very odd. The code to handle &lt;code&gt;to-string&lt;/code&gt; for a window isn't defined in &lt;code&gt;&amp;lt;window&amp;gt;&lt;/code&gt;? This might not make any sense until you consider how Dylan handles the call of the &lt;code&gt;to-string&lt;/code&gt;. In most languages{{which|date=June 2013}} when the program is compiled the &lt;code&gt;to-string&lt;/code&gt; for &lt;code&gt;&amp;lt;window&amp;gt;&lt;/code&gt; is looked up and replaced with a pointer (more or less) to the method. In Dylan this occurs when the program is first run; the [[Run time system|runtime]] builds a table of method-name/parameters details and looks up methods dynamically via this table. That means that a function for a specific method can be located anywhere, not just in the compile-time unit. In the end the programmer is given considerable flexibility in terms of where to place their code, collecting it along class lines where appropriate, and functional lines where it's not.
+
+The implication here is that a programmer can add functionality to existing classes by defining functions in a separate file. For instance, you might wish to add spell checking to all &lt;code&gt;&amp;lt;string&amp;gt;&lt;/code&gt;s, which in most languages would require access to the source code of the string class&amp;mdash;and such basic classes are rarely given out in source form. In Dylan (and other &quot;extensible languages&quot;) the spell checking method could be added in the &lt;code&gt;spell-check&lt;/code&gt; module, defining all of the classes on which it can be applied via the &lt;code&gt;define method&lt;/code&gt; construct. In this case the actual functionality might be defined in a single generic function, which takes a string and returns the errors. When the &lt;code&gt;spell-check&lt;/code&gt; module is compiled into your program, all strings (and other objects) will get the added functionality.
+
+==Apple Dylan==
+{{main|Apple Dylan}}
+Apple Dylan is the implementation of Dylan produced by [[Apple Computer]]. It was originally developed for the [[Apple Newton]] product.
+
+==References==
+{{reflist|refs=
+&lt;ref name=&quot;refman&quot;&gt;{{cite book
+ | title     = The Dylan Reference Manual
+ | author1   = Andrew Shalit
+ | author2   = David Moon
+ | author3   = Orca Starbuck
+ | publisher = [[Addison-Wesley]]
+ | series    = Apple Press
+ | date      = 11 September 1996
+ | isbn      = 9780201442113
+ | url       = http://opendylan.org/books/drm/
+ }}&lt;/ref&gt;
+}}
+
+==External links==
+*{{Official website|opendylan.org}}, Open Dylan – hosts open source, optimizing Dylan compiler targeting Unix/Linux, macOS, Microsoft Windows
+*[http://opendylan.org/books/drm/Language_Overview Overview of the language]
+*[http://opendylan.org/documentation/intro-dylan/ An Introduction to Dylan]
+*[https://web.archive.org/web/20140516043246/http://opendylan.org/about/apple-dylan/ Apple Dylan TR1]
+*[http://www.cise.ufl.edu/~jnw/Marlais/ The Marlais Dylan Interpreter] – An implementation of a subset of Dylan, suitable for bootstrapping a compiler
+*{{Curlie|Computers/Programming/Languages/Lisp/Dylan/|Dylan}}
+
+{{Lisp programming language}}
+
+[[Category:Cross-platform software]]
+[[Category:Dylan (programming language)| ]]
+[[Category:Extensible syntax programming languages]]
+[[Category:Lisp programming language family]]
+[[Category:Programming languages created in 1992]]</text>
+      <sha1>nx33boiv71k6s7xlenvo6n5kgejxz1d</sha1>
+    </revision>
+  </page>

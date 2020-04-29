@@ -1,0 +1,189 @@
+  <page>
+    <title>ClearType</title>
+    <ns>0</ns>
+    <id>7681</id>
+    <revision>
+      <id>942961829</id>
+      <parentid>942935184</parentid>
+      <timestamp>2020-02-27T23:35:13Z</timestamp>
+      <contributor>
+        <ip>103.255.6.85</ip>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">'''ClearType''' is  Microsoft's implementation of [[subpixel rendering]] technology in rendering text in a [[font]] system. ClearType attempts to improve the appearance of text on certain types of [[computer display]] screens by sacrificing color fidelity for additional intensity variation. This trade-off is asserted to work well on [[LCD]] [[flat panel]] monitors.
+
+ClearType was first announced at the November 1998 [[COMDEX]] exhibition. The technology was first introduced in software in January 2000&lt;ref&gt;{{cite web|url=http://www.microsoft.com/typography/links/news.aspx?NID=1135|title=First ClearType screens posted|publisher=Microsoft Typography|date=2000-01-26|accessdate=2008-03-20}}&lt;/ref&gt; as an always-on feature of [[Microsoft Reader]], which was released to  the public in August 2000.
+
+ClearType was significantly changed with the introduction of [[DirectWrite]] in [[Windows 7]].&lt;ref name=ails&gt;{{cite web|last1=Giannattasio|first1=Tom|title=The Ails Of Typographic Anti-Aliasing|url=http://www.smashingmagazine.com/2009/11/the-ails-of-typographic-anti-aliasing/|website=Smashing Magazine|accessdate=11 August 2015}}&lt;/ref&gt;
+
+[[Word 2013]] stopped using ClearType, because it &quot;depends critically on the color of the background pixels&quot;, which made it difficult to give good animation performance on arbitrary backgrounds.&lt;ref name=Word/&gt;
+
+==Background==
+Computer displays where the positions of individual pixels are permanently fixed{{snd}} such as most modern flat panel displays{{snd}} can show saw-tooth edges when displaying small, high-contrast graphic elements, such as text. ClearType uses spatial [[anti-aliasing]] at the subpixel level to reduce visible artifacts on such displays when text is rendered, making the text appear &quot;smoother&quot; and less jagged. ClearType also uses very heavy font hinting to force the font to fit into the pixel grid. This increases edge contrast and readability of small fonts at the expense of font rendering fidelity and has been criticized by graphic designers for making different fonts look similar.
+
+Like most other types of subpixel rendering, ClearType involves a compromise, sacrificing one aspect of image quality (color or ''[[chrominance]]'' detail) for another (light and dark or ''[[luminance]]'' detail). The compromise can improve text appearance when luminance detail is more important than chrominance.
+
+Only user and system applications render the application of ClearType. ClearType does not alter other graphic display elements (including text already in [[bitmap]]s). For example, ClearType enhancement renders text on the screen in [[Microsoft Office Word|Microsoft Word]], but text placed in a bitmapped image in a program such as [[Photoshop|Adobe Photoshop]] is not. In theory, the method (called &quot;RGB Decimation&quot; internally) can enhance the [[anti-aliasing]] of any digital image.&lt;ref&gt;Betrisey et al., &quot;Displaced Filtering for Patterned Displays&quot;, Proc. Society for Information Display Symposium, 2000&lt;/ref&gt;
+
+ClearType is not used when printing text. Most printers already use such small pixels that aliasing is rarely a problem, and they don't have the addressable fixed subpixels ClearType requires. Nor does ClearType affect text stored in files. ClearType only applies any processing to the text while it is being rendered onto the screen.
+
+ClearType was invented in the Microsoft e-Books team by Bert Keely and Greg Hitchcock.  It was then analyzed by researchers in the company, and signal processing expert [[John Platt (Principal Researcher)|John Platt]] designed an improved version of the algorithm.&lt;ref&gt;Platt, J.C., &quot;[http://research.microsoft.com/pubs/68972/optfilt.pdf Optimal Filtering for Patterned Displays]&quot;, IEEE Signal Processing Letters, 7(7), 2000, pp. 179-180&lt;/ref&gt;  [[Dick Brass]], a Vice President at Microsoft from 1997 to 2004, complained that the company was slow in moving ClearType to market in the portable computing field.&lt;ref&gt;[https://www.nytimes.com/2010/02/04/opinion/04brass.html?pagewanted=1&amp;ref=opinion Microsoft’s Creative Destruction]&lt;/ref&gt;
+
+==How ClearType works==
+{{Unreferenced section|date=August 2014}}
+{{Duplication|section=yes|dupe=subpixel rendering|date=August 2014}}
+
+Normally, the software in a computer treats the computer’s display screen as a rectangular array of square, indivisible [[pixel]]s, each of which has an intensity and color that are determined by the blending of three [[primary color]]s: red, green, and blue. However, actual display hardware usually implements each pixel as a group of three adjacent, independent ''[[subpixel]]s,'' each of which displays a different primary color. Thus, on a real computer display, each pixel is actually composed of separate red, green, and blue subpixels. For example, if a flat-panel display is examined under a magnifying glass, the pixels may appear as follows:
+
+[[Image:27 subpixels.svg|center|Subpixels|thumb]]
+
+In the illustration above, there are nine pixels but 27 subpixels.
+
+If the computer controlling the display knows the exact position and color of all the subpixels on the screen, it can take advantage of this to improve the apparent resolution in certain situations. If each pixel on the display actually contains three rectangular subpixels of red, green, and blue, in that fixed order, then things on the screen that are smaller than one full pixel in size can be rendered by lighting only one or two of the subpixels. For example, if a diagonal line with a width smaller than a full pixel must be rendered, then this can be done by lighting only the subpixels that the line actually touches. If the line passes through the leftmost portion of the pixel, only the red subpixel is lit; if it passes through the rightmost portion of the pixel, only the blue subpixel is lit. This effectively triples the horizontal resolution of the image at normal viewing distances; the drawback is that the line thus drawn will show color fringes (at some points it might look green, at other points it might look red or blue).
+
+[[Image:Antialias-vrs-Cromapixel.svg|center|frame|1) A diagonal line on a 1-bit display. 2) Grayscale [[anti-aliasing]]. 3) Identical to 1, but on a color monitor. 4) Rendered with direct control of each color subpixel. 5) Smaller version of 1-4. 6) 1 pixel lines without and with [[anti-aliasing]].]]
+
+ClearType uses this method to improve the smoothness of text. When the elements of a type character are smaller than a full pixel, ClearType lights only the appropriate subpixels of each full pixel in order to more closely follow the outlines of that character. Text rendered with ClearType looks “smoother” than text rendered without it, provided that the pixel layout of the display screen exactly matches what ClearType expects.
+
+The following picture shows a 4× enlargement of the word ''Wikipedia'' rendered using ClearType. The word was originally rendered using a [[Times New Roman]] 12 [[Point (typography)|pt]] font.
+
+[[Image:Wikipedia ClearType.png|center|frame|The word &quot;Wikipedia&quot; rendered using ClearType]]
+
+In this magnified view, it becomes clear that, while the overall smoothness of the text seems to improve, there is also color fringing of the text.
+
+[[Image:ClearTypePixels.svg|thumb|center|283px| (a) text rendered without ClearType and (b) text rendered with ClearType]]
+
+An extreme close-up of a color display shows (a) text rendered without ClearType and (b) text rendered with ClearType. Note the changes in subpixel intensity that are used to increase effective resolution when ClearType is enabled{{snd}} without ClearType, all sub-pixels of a given pixel have the same intensity.
+
+[[Image:Cleartype-vs-Standard-Antialiasing.gif|center|(a) text rendered without ClearType and (b) text rendered with ClearType]]
+
+In the above lines of text, when the orange circle is shown, all the text in the frame is rendered using ClearType (RGB subpixel rendering); when the orange circle is absent all the text is rendered using normal (full pixel greyscale) [[anti-aliasing]].
+
+==Human vision and cognition ==
+ClearType and similar technologies work on the theory that variations in intensity are more noticeable than variations in color.
+
+===Expert opinion===
+In a [[MSDN]] article, Microsoft acknowledges that &quot;[te]xt that is rendered with ClearType can also appear significantly different when viewed by individuals with varying levels of color sensitivity. Some individuals can detect slight differences in color better than others.&quot;&lt;ref&gt;[http://msdn.microsoft.com/en-us/library/aa970267.aspx Windows Presentation Foundation ClearType Registry Settings]&lt;/ref&gt; This opinion is shared by font designer Thomas Phinney (former CEO of [[FontLab]], also formerly with [[Adobe Systems]]&lt;ref&gt;http://www.adobe.com/products/type/font-designers/thomas-phinney.html&lt;/ref&gt;): &quot;There is also considerable variation between individuals in their sensitivity to color fringing. Some people just notice it and are bothered by it a lot more than others.&quot;&lt;ref&gt;{{cite web|url=http://www.typophile.com/node/33005#comment-197028 |title=ClearType, in XP and Vista |publisher=Typophile |date= |accessdate=2010-01-22}}&lt;/ref&gt; Software developer Melissa Elliot has written about finding ClearType rendering uncomfortable to read, saying that &quot;instead of seeing black text, I see blue text, and rendered over it but offset by a pixel or two, I see orange text, and someone reached into a bag of purple pixel glitter and just tossed it on...I’m not the only person in the world with this problem, and yet, every time it comes up, people are quick to assure me it works for them as if that’s supposed to make me feel better.&quot;&lt;ref name=&quot;ClearType Elliott&quot;&gt;{{cite web|last1=Elliott|first1=Melissa|title=ClearType|url=http://abad1dea.tumblr.com/post/98281499300/to-not-be-taken-seriously|accessdate=15 August 2015}}&lt;/ref&gt;
+
+Hinting expert Beat Stamm, who worked on ClearType at Microsoft,&lt;ref&gt;{{cite web|url=http://www.myfonts.com/person/stamm/beat/ |title=Beat Stamm |publisher=MyFonts |date=1999-02-22 |accessdate=2010-01-22}}&lt;/ref&gt; agrees that ClearType may look blurry at [[Dots per inch#Computer monitor DPI standards|96 dpi]], which was a typical&lt;ref&gt;{{cite web|url=http://dictionary.zdnet.com/definition/Dpi.html |title=Dpi: Definition and additional resources from ZDNet |publisher=Dictionary.zdnet.com |date= |accessdate=2010-01-22}}&lt;/ref&gt; resolution for [[LCD]]s in 2008, but adds that higher resolution displays improve on this aspect: &quot;[[Windows Presentation Foundation|WPF]] [Windows Presentation Foundation] uses method C [ClearType with fractional pixel positioning&lt;ref&gt;{{cite web|url=http://rastertragedy.com/RTRCh3.htm#Sec32 |title=Fractional Advance Widths |publisher=The Raster Tragedy at Low-Resolution Revisited |date=2011-03-14 |accessdate=2011-03-17}}&lt;/ref&gt;], but few display devices have a sufficiently high resolution to make the potential blur a moot point for everybody.&amp;nbsp;.&amp;nbsp;.&amp;nbsp;. Some people are ok with the blur in Method C, some aren’t. Anecdotal evidence suggests that some people are fine with Method C when reading continuous text at 96 dpi (e.g. Times Reader, etc.) but not in UI scenarios. Many people are fine with the colors of ClearType, even at 96 dpi, but a few aren’t… To my eyes and at 96 dpi, Method C doesn’t read as well as Method A. It reads “blurrily” to me. Conversely, at 144 dpi, I don’t see a problem with Method C. It looks and reads just fine to me.&quot;&lt;ref&gt;{{cite web|url=http://www.typophile.com/node/33005#comment-197660 |title=ClearType, in XP and Vista |publisher=Typophile |date= |accessdate=2010-01-22}}&lt;/ref&gt; One illustration of the potential problem is the following image:
+
+[[Image:FontSmoothingExample.gif|center|Text without rendering (upper portion) and text with ClearType rendering (lower portion)]]
+
+In the above block of text, the same portion of text is shown in the upper half without and in the lower half with ClearType rendering (as opposed to Standard and ClearType in the previous image). This and the previous example with the orange circle demonstrate the blurring introduced.
+
+===Empirical studies===
+A 2001 study, conducted by researchers from [[Clemson University]] and [[The University of Pennsylvania]] on &quot;18 users who spent 60 minutes reading fiction from each of three different displays&quot; found that &quot;When reading from an LCD display, users preferred text rendered with ClearType™. ClearType also yielded higher readability judgments and lower ratings of mental fatigue.&quot;&lt;ref&gt;{{cite journal | doi = 10.1889/1.1831776 | title=47.4: Empirical Evaluation of User Responses to Reading Text Rendered Using ClearType™ Technologies | journal=SID Symposium Digest of Technical Papers | date=2001 | volume=32 | issue=1 | pages=1205 | first=Richard A. | last=Tyrrell}}&lt;/ref&gt; A 2002 study on 24 users conducted by the same researchers from Clemson University also found that &quot;Participants were significantly more accurate at identifying words with ClearType™ than without ClearType™.&quot;
+
+According to a 2006 study, at the University of Texas at Austin by Dillon et al., ClearType &quot;may not be universally beneficial&quot;.  The study notes that maximum benefit may be seen when the information worker is spending large proportions of their time reading text (which is not necessarily the case for the majority of computer users today).  Additionally, over one third of the study participants experienced some disadvantage when using ClearType.  Whether ClearType, or other rendering, should be used is very subjective and it must be the choice of the individual, with the report recommending &quot;to allow users to disable [ClearType] if they find it produces effects other than improved performance&quot;.&lt;ref&gt;Dillon, A., Kleinman, L., Choi, G. O., &amp; Bias, R. (2006). [http://www.ischool.utexas.edu/~ct/chi_p618.pdf Visual search and reading tasks using ClearType and regular displays: two experiments]. CHI ’06: Proceedings of the SIGCHI conference on Human Factors in computing systems, 503-511.&lt;/ref&gt;
+
+Another 2007 empirical study, found that &quot;while ClearType rendering does not improve text legibility, reading speed or comfort compared to perceptually-tuned grayscale rendering, subjects prefer text with moderate ClearType rendering to text with grayscale or higher-level ClearType contrast.&quot;&lt;ref&gt;{{cite journal | doi = 10.1016/j.displa.2007.09.016 | title=ClearType sub-pixel text rendering: Preference, legibility and reading performance | journal=Displays | date=2008 | volume=29 | issue=2 | pages=138–151 | first=Jim | last=Sheedy}} http://www.pacificu.edu/vpi/publications/documents/ClearTypesub-pixeltextrenderingPreferencelegibilityandreadingperformance.pdf&lt;/ref&gt;
+
+A 2007 survey, of the literature by Microsoft researcher Kevin Larson presented a different picture: &quot;Peer-reviewed studies have consistently found that using ClearType boosts reading performance compared with other text-rendering systems. In a 2004 study, for instance, Lee Gugerty, a psychology professor at Clemson University, in South Carolina, measured a 17 percent improvement in word recognition accuracy with ClearType. Gugerty’s group also showed, in a sentence comprehension study, that ClearType boosted reading speed by 5 percent and comprehension by 2 percent. Similarly, in a study published in 2007, psychologist Andrew Dillon at the University of Texas at Austin found that when subjects were asked to scan a spreadsheet and pick out certain information, they did those tasks 7 percent faster with ClearType.&quot;&lt;ref&gt;Kevin Larson (May 2007) &quot;[https://spectrum.ieee.org/computing/software/the-technology-of-text The Technology of Text]&quot;, ''[[IEEE Spectrum]]''&lt;/ref&gt;
+
+==Display requirements==
+ClearType and allied technologies require display hardware with fixed pixels and subpixels. More precisely, the positions of the pixels and subpixels on the screen must be exactly known to the computer to which it is connected. This is the case for flat-panel displays, on which the positions of the pixels are permanently fixed by the design of the screen itself. Almost all flat panels have a perfectly rectangular array of square pixels, each of which contains three rectangular subpixels in the three primary colors, with the normal ordering being red, green, and blue, arranged in vertical bands. ClearType assumes this arrangement of pixels when rendering text.
+
+ClearType does not work properly with flat-panel displays that are operated at resolutions other than their “native” resolutions, since only the native resolution corresponds exactly to the actual positions of pixels on the screen of the display.
+
+If a display does not have the type of fixed pixels that ClearType expects, text rendered with ClearType enabled actually looks worse than type rendered without it. Some flat panels have unusual pixel arrangements, with the colors in a different order, or with the subpixels positioned differently (in three horizontal bands, or in other ways). ClearType needs to be manually tuned for use with such displays (see below).
+
+ClearType will not work as intended on displays that have no fixed pixel positions, such as [[cathode ray tube|CRT]] displays, however it will still have some antialiasing effect and may be preferable to some users as compared to non-anti-aliased type.&lt;ref name=faq&gt;{{cite web|title=ClearType FAQ|url=http://www.microsoft.com/typography/ClearTypeFAQ.mspx|website=Microsoft|accessdate=19 July 2009|archiveurl=https://web.archive.org/web/20150624222557/http://www.microsoft.com/typography/ClearTypeFAQ.mspx |archivedate=24 June 2015|date=19 July 2009}}&lt;/ref&gt;
+
+==Sensitivity to display orientation==
+Because ClearType utilizes the physical layout of the red, green and blue [[pigments]] of the LCD screen, it is sensitive to the orientation of the display.
+
+ClearType in [[Windows XP Media Center Edition|Windows XP]] currently supports the [[RGB]] and [[BGR (subpixels)|BGR]] sub pixel structures. Rotated displays, in which the subpixels are stacked vertically rather than arranged horizontally, are ''not'' currently supported. Using ClearType on these display configurations will actually reduce the display quality. The best option for users of Windows XP having rotated LCD displays ([[Microsoft Tablet PC|Tablet PCs]] or swivel-stand LCD displays) is using regular [[anti-aliasing]], or switching off font-smoothing altogether.
+
+The software developer documentation for [[Windows CE]] states that ClearType for rotated screens is supported on that platform.&lt;ref&gt;[http://msdn2.microsoft.com/en-us/library/ms901093.aspx Working with ClearType Fonts&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;
+
+Vertical sub pixel structures are not supported in Windows XP.&lt;ref&gt;[http://www.brandonfurtwangler.com/?p=54 Tablets and cleartype, and a requested feature of Avalon at Brandon Furtwangler blog]&lt;/ref&gt;
+
+==Implementations==
+* [[Windows XP]] (off by default)
+* [[Windows Vista]] (on by default)
+* [[Windows 7]] (on by default)
+* [[Windows 8]]: Only used in Windows 8 Desktop and all desktop apps&lt;ref name=&quot;something&quot;&gt;[http://www.istartedsomething.com/20120303/cleartype-takes-a-back-seat-for-windows-8-metro/ ClearType takes a back seat for Windows 8 Metro]&lt;/ref&gt;
+* [[Windows 10]]: Only used in Win32 apps and Win32 system features, not Universal Windows Platform.
+* [[Internet Explorer 7]] and later (on by default)
+* [[Microsoft Office 2007]] and 2010 (on by default)
+* [[Windows Live Messenger]] (on by default)
+* [[Microsoft Reader]]
+
+ClearType is also an integrated component of the [[Windows Presentation Foundation]] text-rendering engine.
+
+===ClearType in GDI===
+ClearType can be globally enabled or disabled for [[Graphics Device Interface|GDI]] applications. A control panel applet is available to let the users tune the GDI ClearType settings. The GDI implementation of ClearType does not support sub-pixel positioning.&lt;ref&gt;[http://msdn.microsoft.com/en-us/library/ms749295.aspx Windows Presentation Foundation ClearType Overview]&lt;/ref&gt;
+
+===ClearType tuning===
+Some versions of [[Microsoft Windows]], as supplied, allow ClearType to be turned on or off, with no adjustment; other versions allow tuning of the ClearType parameters. A Microsoft ClearType tuner utility is available for free download for Windows versions lacking this facility.&lt;ref&gt;{{cite web | url = http://www.microsoft.com/typography/ClearTypePowerToy.mspx | title = Microsoft's ClearType Tuner PowerToy | accessdate = 2007-09-27}}&lt;/ref&gt; If ClearType is disabled in the operating system, applications with their own ClearType controls can still support it. [[Microsoft Reader]] (for [[e-book]]s) has its own ClearType tuner.
+
+===ClearType in WPF===
+All text in [[Windows Presentation Foundation]] is anti-aliased and rendered using ClearType. There are separate ClearType registry settings for GDI and WPF applications, but by default the WPF entries are absent, and the GDI values are used in their absence. WPF registry entries can be tuned using the instructions&lt;ref&gt;[http://blogs.msdn.com/text/archive/2006/10/18/tips-for-improving-your-wpf-text-rendering-experience.aspx Tips for improving your WPF text rendering experience]&lt;/ref&gt; from the MSDN WPF Text Blog.
+
+ClearType in WPF supports sub-pixel positioning, natural advance widths, Y-direction [[anti-aliasing]] and [[hardware acceleration]]. WPF supports aggressive caching of pre-rendered ClearType text in video memory.&lt;ref&gt;[http://msdn2.microsoft.com/en-us/library/ms749295.aspx MSDN Library : .NET Development : WPF : ClearType Overview]&lt;/ref&gt; The extent to which this is supported is dependent on the [[video card]]. [[DirectX]] 10 cards will be able to cache the font glyphs in video memory, then perform the composition (assembling of character glyphs in the correct order, with the correct spacing), [[alpha blending]] (application of [[anti-aliasing]]), and RGB blending (ClearType's sub-pixel color calculations), entirely in hardware. This means that only the original glyphs need to be stored in video memory once per font (Microsoft estimates that this would require 2&amp;nbsp;MB of video memory per font), and other operations such as the display of anti-aliased text on top of other graphics{{snd}} including video{{snd}} can also be done with no computation effort on the part of the CPU. DirectX 9 cards will only be able to cache the alpha-blended glyphs in memory, thus requiring the CPU to handle glyph composition and alpha-blending before passing this to the video card.  Caching these partially rendered glyphs requires significantly more memory (Microsoft estimates 5&amp;nbsp;MB per process). Cards that don't support DirectX 9 have no hardware-accelerated text rendering capabilities.
+
+===ClearType in DirectWrite===
+
+As pixel densities of displays improved and more high DPI screens became available, colored subpixel rendering became less of a necessity according to Microsoft. Also Windows tablet user interfaces evolved to support vertical screen orientations where the LCD color stripes would run horizontally. The original colored ClearType subpixel rendering was tuned to work optimally with horizontal orientation LCD displays where RGB or BGR stripes run vertically. For these reasons, DirectWrite which is the next-generation text rendering API from Microsoft moved away from color-aware ClearType. The font rendering engine in [[DirectWrite]] supports a different version of ClearType with only greyscale [[anti-aliasing]] &lt;ref&gt; [Office 2013: Further Evidence of the Demise of ClearType? Office 2013: Further Evidence of the Demise of ClearType?] &lt;/ref&gt;, not color subpixel rendering, as demonstrated at [[Professional Developers Conference|PDC]] 2008.&lt;ref name=DirectWrite&gt;{{cite web|url=http://channel9.msdn.com/pdc2008/PC18|title=PC18: Introducing Direct2D and DirectWrite|author=Kam VedBrat, Leonardo Blanco|publisher=Microsoft|date=2008-10-28}}&lt;/ref&gt; This version is sometimes called ''Natural ClearType'' but is often referred to simply as DirectWrite rendering (with the term &quot;ClearType&quot; being designated to only the RGB/BGR color subpixel rendering version).&lt;ref&gt;http://blogs.msdn.com/b/e7/archive/2009/02/13/advances-in-typography-and-text-rendering-in-windows-7.aspx&lt;/ref&gt; The improvements have been confirmed by independent sources, such as [[Firefox]] developers;&lt;ref&gt;http://www.basschouten.com/blog1.php/font-rendering-gdi-versus-directwrite&lt;/ref&gt; they were particularly noticeable for OpenType fonts in [[Compact Font Format]] (CFF).&lt;ref&gt;https://blog.mozilla.org/nattokirai/2009/10/22/better-postscript-cff-font-rendering-with-directwrite/&lt;/ref&gt;&lt;ref&gt;http://blog.typekit.com/2010/11/12/microsoft-directwrite-is-coming/&lt;/ref&gt;
+
+Many Office 2013 apps including [[Word 2013]], Excel 2013, parts of Outlook 2013 stopped using ClearType and switched to this DirectWrite greyscale antialiasing. The reasons invoked are, in the words of Murray Sargent: &quot;There is a problem with ClearType: it depends critically on the color of the background pixels. This isn’t a problem if you know a priori that those pixels are white, which is usually the case for text. But the general case involves calculating what the colors should be for an arbitrary background and that takes time. Meanwhile, Word 2013 enjoys cool animations and smooth zooming. Nothing jumps any more. Even the caret (the blinking vertical line at the text insertion point) glides from one position to the next as you type. Jerking movement just isn’t considered cool any more. Well animations and zooms have to be faster than human response times in order to appear smooth. And that rules out ClearType in animated scenarios at least with present generation hardware. And in future scenarios, screens will have sufficiently high resolution that gray-scale [[anti-aliasing]] should suffice.&quot;&lt;ref name=&quot;Word&quot;&gt;{{Cite web|url=http://blogs.msdn.com/b/murrays/archive/2014/05/31/crisp-text-display.aspx|title=Crisp Text Display|last=Sargent|first=Murray|date=|website=|url-status=dead|archive-url=https://web.archive.org/web/20150530145657/http://blogs.msdn.com/b/murrays/archive/2014/05/31/crisp-text-display.aspx|archive-date=2015-05-30|access-date=}}&lt;/ref&gt;
+
+For the same reasons related to animation performance and vertical screen orientations where the colored RGB/BGR ClearType antialiasing would be a problem, the color-aware version of ClearType was abandoned in Metro-style apps platform of Windows 8 (and Universal Windows Platform of Windows 10).&lt;ref&gt;[https://blogs.msdn.microsoft.com/oldnewthing/20150129-00/?p=44803 Color-aware ClearType requires access to fixed background pixels, which is a problem if you don’t know what the background pixels are, or if they aren’t fixed]&lt;/ref&gt;&lt;ref name=&quot;something&quot;/&gt;, including the Start menu and everything not using classic Win32 APIs (GDI/GDI+).
+
+==Patents==
+ClearType is a [[registered trademark]] and Microsoft claims protection under the following U.S. [[patent]]s:&lt;ref name=&quot;msip&quot;&gt;
+{{cite web|url=http://www.microsoft.com/iplicensing/productDetail.aspx?productTitle=ClearType |title=Microsoft Intellectual Property and Licensing: ClearType |accessdate=2008-12-02 |url-status=dead |archiveurl=https://web.archive.org/web/20090113030909/http://www.microsoft.com/iplicensing/productDetail.aspx?productTitle=ClearType |archivedate=January 13, 2009 }}
+&lt;/ref&gt;&lt;ref name=&quot;cleartype_expl&quot;&gt;{{cite web|url=http://david.freetype.org/cleartype-patents.html|date=2007-06-01|accessdate=2009-04-09|title=ClearType Patents, FreeType and the Unix Desktop: an explanation|author=David Turner}}&lt;/ref&gt;
+
+* Subpixel rendering:
+** {{US patent|6188385}} – ''Method and apparatus for displaying images such as text''
+** {{US patent|6219025}} – ''Mapping image data samples to pixel sub-components on a striped display device''
+** {{US patent|6239783}} – ''Weighted mapping of image data samples to pixel sub-components on a display device''
+** {{US patent|6307566}} – ''Methods and apparatus for performing image rendering and rasterization operations''
+* Complex color filtering:
+** {{US patent|6225973}} – ''Mapping samples of foreground/background color image data to pixel sub-components''
+** {{US patent|6243070}} – ''Method and apparatus for detecting and reducing color artifacts in images''
+** {{US patent|6393145}} – ''Methods apparatus and data structures for enhancing the resolution of images to be rendered on patterned display devices''
+** {{US patent|6973210}} – ''Filtering image data to obtain samples mapped to pixel sub-components of a display device''
+** {{US patent|7085412}} – ''Filtering image data to obtain samples mapped to pixel sub-components of a display device''
+* Subpixel font hinting and layout:
+** {{US patent|6421054}} – ''Methods and apparatus for performing grid fitting and hinting operations''
+** {{US patent|6282327}} – ''Maintaining advance widths of existing characters that have been resolution enhanced''
+* ClearType tuning:
+** {{US patent|6624828}} – ''Method and apparatus for improving the quality of displayed images through the use of user reference information''
+
+==Other uses of the ClearType brand ==
+The ClearType name was also used to refer to the screens of [[Microsoft Surface]] tablets. ClearType HD Display indicates a 1366×768 screen, while ClearType Full HD Display indicates a 1920×1080 screen.&lt;ref&gt;[http://www.anandtech.com/show/6377/inside-microsofts-surface-rt-tablet Inside Microsoft's Surface RT Tablet]&lt;/ref&gt;&lt;ref&gt;[http://www.anandtech.com/show/6015/microsofts-major-announcement-in-la-were-there Microsoft's Major Announcement in LA - We're There!]&lt;/ref&gt;
+
+==See also==
+* [[Font rasterization]]
+* [[FreeType]]
+* [[CoolType]] – a similar technology by Adobe
+* [[Quartz (graphics layer)]]
+* [[Retina Display]]
+
+==References==
+{{Reflist|30em}}
+
+==External links==
+{{Commons category}}
+* [http://www.microsoft.com/typography/WhatIsClearType.mspx Explanation of ClearType] at Microsoft Typography
+* [http://research.microsoft.com/en-us/projects/cleartype/ Technical Overview of ClearType Filtering] from Microsoft Research
+* [http://www.rastertragedy.com/ The Raster Tragedy at Low-Resolution Revisited] – Beat Stamm's online book about rasterization, with an emphasis on ClearType
+* [https://web.archive.org/web/20091026135732/http://www.geocities.com/cuncie/ClearType.html Ron Feigenblatt's remarks on Microsoft ClearType]
+* John Markoff, &quot;[https://www.nytimes.com/library/tech/98/12/biztech/articles/07microsoft-flat.html Microsoft's Cleartype Sets Off Debate on Originality]&quot;, ''New York Times'', December 7, 1998
+* Betrisey, C., Blinn, J. F., Dresevic, B., Hill, B., Hitchcock, G., Keely, B., Mitchell, D. P., Platt, J. C., Whitted, T., &quot;[http://research.microsoft.com/pubs/68631/sid2000.pdf Displaced Filtering for Patterned Displays]&quot;, Proc. Society for Information Display Symposium, pp.&amp;nbsp;296–299, (2000). {{doi|10.1889/1.1832941}}
+* {{cite journal | doi = 10.1889/1.3256881 | title=47.2: Visual Preference for ClearType Technology | journal=SID Symposium Digest of Technical Papers | date=2009 | volume=40 | issue=1 | pages=702 | first=Joyce | last=Farrell}} http://scien.stanford.edu/jfsite/Papers/ImageRendering/Displays/Farrell_et_al_SID2009.pdf
+* Xu, J., Farrell, J.,  Matskewich, T., and Wandell, B. “[http://scien.stanford.edu/jfsite/Papers/ImageRendering/Displays/Xu_Farrell_Matskewich_Wandell_final.pdf Prediction of preferred Cleartype filters using the S-CIELAB metric]”, IEEE International Conference on Image Processing, October 2008.ClearType{{doi|10.1109/ICIP.2008.4711766}}
+* [[Steven Sinofsky]] (23 June 2009) [http://blogs.msdn.com/b/e7/archive/2009/06/23/engineering-changes-to-cleartype-in-windows-7.aspx Engineering Changes to ClearType in Windows 7]
+
+{{Windows Components}}
+
+{{DEFAULTSORT:Cleartype}}
+[[Category:Windows components]]
+[[Category:Digital typography]]
+[[Category:Computer graphics algorithms]]</text>
+      <sha1>70ehvov6k9guqgh4rehjf4nf8942p30</sha1>
+    </revision>
+  </page>

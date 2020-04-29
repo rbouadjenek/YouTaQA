@@ -1,0 +1,239 @@
+  <page>
+    <title>Euphoria (programming language)</title>
+    <ns>0</ns>
+    <id>9647</id>
+    <revision>
+      <id>916688774</id>
+      <parentid>910599257</parentid>
+      <timestamp>2019-09-20T03:37:28Z</timestamp>
+      <contributor>
+        <username>Monkbot</username>
+        <id>20483999</id>
+      </contributor>
+      <minor />
+      <comment>/* References */[[User:Monkbot/task 16: remove replace deprecated dead-url params|Task 16]]: replaced (8×) / removed (0×) deprecated |dead-url= and |deadurl= with |url-status=;</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{Infobox programming language
+|name = Euphoria
+|logo = [[File:OpenEuphoria logo.png|openEuphoria logo]]
+|caption = openEuphoria logo
+|paradigm = [[Imperative programming|Imperative, procedural]]
+|released = {{Start date and age|1993}}
+|designer = Jeremy Cowgar, Robert Craig (original), Matt Lewis, Derek Parnell
+|developer = [http://openeuphoria.org/ openEuphoria Group]
+|latest release version = 4.0.5
+|latest release date = {{Start date and age|2012|10|19}}
+|typing = static, dynamic
+|operating system = [[Cross-platform]]: [[Microsoft Windows|Win32]], [[Linux]], [[macOS]], [[FreeBSD]], [[NetBSD]], [[OpenBSD]]
+|genre = [[Interpreted language]] or [[compiled language]]
+|license = [[BSD licenses|BSD]]
+|file_ext = .e, .ex, .exw, .edb
+|influenced = [http://phix.x10.mx Phix]
+|website = {{URL|openeuphoria.org}}
+}}
+
+'''Euphoria''' is a [[programming language]] originally created by Robert Craig of Rapid Deployment Software&lt;ref name=rehomepage/&gt; in [[Toronto]], [[Ontario]], Canada. Initially developed (though not publicly released) on the [[Atari ST]],&lt;ref name=atari1/&gt; the first commercial release&lt;ref name=firstversion/&gt; was for the 16-bit [[DOS]] platform and was [[Proprietary software|proprietary]]. In 2006, with the release of version 3,&lt;ref name=opensource/&gt; Euphoria became [[open-source software]]. The openEuphoria Group continues to administer and develop the project.&lt;ref name=oehomepage/&gt;  In December 2010, the openEuphoria Group released version 4&lt;ref name=oedownload/&gt; of openEuphoria along with a new identity and mascot for the project. OpenEuphoria is currently available for [[Microsoft Windows|Windows]], [[Linux]], [[macOS]] and three flavors of [[Berkeley Software Distribution#Significant BSD descendants|*BSD]].
+
+Euphoria is a general-purpose [[High-level programming language|high-level]] [[Imperative programming|imperative-procedural]] [[interpreter (computing)|interpreted]] language. A [[translator (computers)|translator]] generates [[C (programming language)|C]] [[source code]] and the [[GNU compiler collection]] (GCC) and [[Open Watcom]] compilers are supported. Alternatively, Euphoria programs may be bound&lt;ref name=binding/&gt; with the interpreter to create stand-alone [[executable]]s. A number of [[graphical user interface]] (GUI) libraries are supported including Win32lib&lt;ref name=win32lib/&gt; and [[wrapper function|wrappers]] for [[wxWidgets]],&lt;ref name=wxeuphoria/&gt; [[GTK+]]&lt;ref name=GTK/&gt; and [[IUP (software)|IUP]].&lt;ref name=IUP/&gt; Euphoria has a simple built-in [[database]]&lt;ref name=database/&gt; and wrappers for a variety of other databases.&lt;ref name=oedatabases/&gt;
+
+==Overview==
+The Euphoria language is a general purpose [[procedural programming|procedural language]] that focuses on simplicity, legibility, rapid development and performance via several means.
+*''Simplicity'' – It uses just four built-in data types (see below) and implements automatic [[Garbage collection (computer science)|garbage collection]].
+*''Legibility'' – The syntax favors simple English keywords over the use of punctuation to delineate constructs.
+*''Rapid development'' – An [[Interpreter (computing)|interpreter]] encourages prototyping and incremental development.
+*''Performance'' – An efficient reference-counting garbage collector correctly handles cyclic references.
+
+==History==
+Developed as a personal project to invent a programming language from scratch, Euphoria was created by Robert Craig&lt;ref name=rehomepage/&gt; on an [[Atari ST|Atari Mega-ST]].&lt;ref name=atari1/&gt; Many design ideas for the language came from Craig's [[Masters degree|Master's]] [[thesis]] in [[computer science]] at the [[University of Toronto]].&lt;ref name=renotes/&gt; Craig's thesis was heavily influenced by the work of [[John Backus]] on [[functional programming]] (FP) languages.&lt;ref name=renotes/&gt;
+
+Craig ported his original Atari implementation to the 16-bit [[DOS]] platform and Euphoria was first released, version 1.0, in July 1993&lt;ref name=firstversion/&gt; under a [[proprietary software|proprietary]] licence. The original Atari implementation is described by Craig as &quot;primitive&quot;&lt;ref name=atari2/&gt; and has not been publicly released. Euphoria continued to be developed and released by Craig via his company Rapid Deployment Software (RDS) and website rapideuphoria.com.&lt;ref name=rehomepage/&gt; In October 2006 RDS released version 3&lt;ref name=opensource/&gt; of Euphoria and announced that henceforth Euphoria would be freely distributed under an [[open-source software]] licence.
+
+RDS continued to develop Euphoria, culminating with the release of version 3.1.1 in August, 2007.&lt;ref name=renotes/&gt;&lt;ref name=renews/&gt; Subsequently, RDS ceased unilateral development of Euphoria and the openEuphoria Group&lt;ref name=oehomepage/&gt; took over ongoing development. The openEuphoria Group released version 4 in December, 2010&lt;ref name=oenotes/&gt; along with a new logo and mascot for the openEuphoria project.
+
+Version 3.1.1 remains an important milestone release, being the last version of Euphoria which supports the [[DOS]] platform.&lt;ref name=oeplatform/&gt;
+
+Euphoria is an [[acronym]] for ''End-User Programming with Hierarchical Objects for Robust Interpreted Applications'' although there is some suspicion that this is a [[backronym]].{{according to whom|date=August 2013}}
+
+The Euphoria interpreter was originally written in [[C (programming language)|C]]. With the release of version 2.5&lt;ref name=renotes/&gt; in November 2004 the Euphoria interpreter was split into two parts: a front-end parser, and a back-end interpreter. The front-end is now written in Euphoria (and used with the Euphoria-to-C translator and the Binder). The main back-end and run time library are written in C.
+
+==Features==
+Euphoria was conceived and developed with the following design goals and features:
+
+* Ease of learning and with consistent high-level constructs (more so than, for example, the [[BASIC]] language)
+* Implementation of flat-form 32-bit memory to avoid complex memory management and size-addressing limits
+* Debugging support and run-time error-handling
+* Subscript and [[Type system|type checking]]
+* Loose and strict variable typing
+* Programming via objects as types (user-defined or otherwise)
+* Interpreted, with automatic memory management and [[Garbage collection (computer science)|garbage collection]]
+* Heterogeneous collection types (sequences)
+* [[DOS]] graphics library (Euphoria language versions up to and including 3.1.1)
+* Debugger
+* Integrated database system
+* Low-level memory handling
+* Straightforward [[wrapper function|wrapping]] of (or access to) [[C (programming language)|C]] libraries
+
+==Execution modes==
+* [[Interpreter (computing)|Interpreter]]
+* [[C (programming language)|C]] translator (E2C) for standalone executables or [[Dynamic linker|dynamic linking]]
+* [[Bytecode]] compiler and interpreter (shrouder&lt;ref name=binding/&gt;)
+* The Binder&lt;ref name=binding/&gt; binds the Euphoria source code to the interpreter to create an executable.
+* A [[read–eval–print loop]] (REPL) version is on the openEuphoria [[technology roadmap|roadmap]].&lt;ref name=repl/&gt;
+
+==Use==
+Euphoria is designed to readily facilitate handling of dynamic sets of data of varying types and is particularly useful for string and image processing. Euphoria has been used in [[artificial intelligence]] experiments, the study of [[mathematics]], for teaching programming, and to implement fonts involving thousands of characters.{{citation needed|date=June 2015}} A large part of the Euphoria interpreter is written in Euphoria.
+
+==Data types==
+Euphoria has two basic data types:
+:Atom – A number, implemented as a 31-bit signed [[integer]] or a 64-bit [[IEEE floating-point standard|IEEE floating-point]]. Euphoria dynamically changes between integer and floating point representation according to the current value.
+:Sequence – A [[Array data type|vector]] (array) with zero or more elements. Each element may be an ''atom'' or another ''sequence''. The number of elements in a sequence is not fixed (i.e., the size of the vector/array does not have to be declared). The program may add or remove elements as needed during run-time. Memory allocation-deallocation is automatically handled by reference counting. Individual elements are referenced using an index value enclosed in square brackets. The first element in a sequence has an index of one [1]. Elements inside embedded sequences are referenced by additional bracked index values, thus X[3][2] refers to the second element contained in the sequence that is the third element of X. Each element of a sequence is an ''object'' type (see below).
+
+Euphoria has two additional data types predefined:
+:Integer – An ''atom'', restricted to 31-bit signed [[integer]] values in the range -1073741824 to 1073741823 (-2^30 to 2^30-1). ''Integer'' data types are more efficient than the ''atom'' data types, but cannot contain the same range of values. Characters are stored as integers, e.g., coding [[ASCII]]-'A' is exactly the same as coding 65.
+:Object – A generic datatype which may contain any of the above (i.e., ''atom'', ''sequence'' or ''integer'') and which may be changed to another type during run-time.
+
+There is no character [[String (computer science)|string]] data type. Strings are represented by a ''sequence'' of ''integer'' values. However, because literal strings are so commonly used in programming, Euphoria interprets double-quote enclosed characters as a sequence of integers. Thus
+ &quot;ABC&quot;
+is seen as if the coder had written:
+ {'A', 'B', 'C'}
+which is the same as:
+ {65, 66, 67}
+
+==Hello, World!==
+ puts(1, &quot;Hello, World!\n&quot;)
+
+==Examples==
+Program comments start with a double hyphen &lt;code&gt;--&lt;/code&gt; and go through the end of line.
+
+The following code looks for an old item in a group of items. If found, it removes it by concatenating all the elements before it with all the elements after it. Note that the first element in a sequence has the index one [1] and that $ refers to the length (i.e., total number of elements) of the sequence.
+
+ &lt;span style=&quot;color:blue;&quot;&gt;global function&lt;/span&gt; delete_item( &lt;span style=&quot;color:magenta;&quot;&gt;object&lt;/span&gt; old, &lt;span style=&quot;color:magenta;&quot;&gt;sequence&lt;/span&gt; group )
+     &lt;span style=&quot;color:magenta;&quot;&gt;integer&lt;/span&gt; pos
+             &lt;span style=&quot;color:red;&quot;&gt;-- Code begins --&lt;/span&gt;
+     pos = &lt;span style=&quot;color:magenta;&quot;&gt;find&lt;/span&gt;( old, group )
+     &lt;span style=&quot;color:blue;&quot;&gt;if&lt;/span&gt; pos &gt; 0 &lt;span style=&quot;color:blue;&quot;&gt;then&lt;/span&gt;
+         group = group[1 .. pos-1] &amp; group[pos+1 .. $]
+     &lt;span style=&quot;color:blue;&quot;&gt;end if
+     return&lt;/span&gt; group
+ &lt;span style=&quot;color:blue;&quot;&gt;end function&lt;/span&gt;
+
+The following modification to the above example replaces an old item with a new item. As the variables ''old'' and ''new'' have been defined as objects, they could be ''atoms'' or ''sequences''. Type checking is not needed as the function will work with any sequence of data of any type and needs no external libraries.
+
+ &lt;span style=&quot;color:blue;&quot;&gt;global function&lt;/span&gt; replace_item( &lt;span style=&quot;color:magenta;&quot;&gt;object&lt;/span&gt; old, &lt;span style=&quot;color:magenta;&quot;&gt;object&lt;/span&gt; new, &lt;span style=&quot;color:magenta;&quot;&gt;sequence&lt;/span&gt; group )
+     &lt;span style=&quot;color:magenta;&quot;&gt;integer&lt;/span&gt; pos
+             &lt;span style=&quot;color:red;&quot;&gt;-- Code begins --&lt;/span&gt;
+     pos = &lt;span style=&quot;color:magenta;&quot;&gt;find&lt;/span&gt;( old, group )
+     &lt;span style=&quot;color:blue;&quot;&gt;if&lt;/span&gt; pos &gt; 0 &lt;span style=&quot;color:blue;&quot;&gt;then&lt;/span&gt;
+         group[pos] = new
+     &lt;span style=&quot;color:blue;&quot;&gt;end if
+     return&lt;/span&gt; group
+ &lt;span style=&quot;color:blue;&quot;&gt;end function&lt;/span&gt;
+
+Furthermore, no pointers are involved and subscripts are automatically checked. Thus the function cannot access memory out-of-bounds. There is no need to allocate or deallocate memory explicitly and no chance of a memory leak.
+
+The line
+
+ group = group[1 .. pos-1] &amp; group[pos+1 .. $]
+
+shows some of the ''sequence'' handling facilities. A ''sequence'' may contain a set of any types, and this can be sliced (to take a subset of the data in a ''sequence'') and concatenated in expressions with no need for special functions.
+
+==Parameter passing==
+Arguments to routines are always passed by value; there is no pass-by-reference facility. However, parameters are allowed to be modified ''locally'' (i.e., within the callee) which is implemented very efficiently as sequences have automatic [[copy-on-write]] semantics. In other words, when you pass a sequence to a routine, initially only a reference to it is passed, but at the point the routine modifies this sequence parameter the sequence is copied and the routine updates only a copy of the original.
+
+==Comparable languages==
+* [[Lua (programming language)|Lua]]
+* [http://phix.x10.mx Phix]
+* [[Python (programming language)|Python]]
+* [[REBOL]]
+* [[Ruby (programming language)|Ruby]]
+
+==References==
+{{Reflist|refs=
+&lt;ref name=rehomepage&gt;{{cite web|url=http://www.rapideuphoria.com/|title=RapidEuphoria homepage|accessdate=2010-12-30|archive-url=https://web.archive.org/web/20120711213426/http://www.rapideuphoria.com/|archive-date=2012-07-11|url-status=dead}}&lt;/ref&gt;
+
+&lt;ref name=atari1&gt;
+{{cite web|url=http://www.rapideuphoria.com/cgi-bin/esearch.exu?fromMonth=9&amp;fromYear=7&amp;toMonth=9&amp;toYear=7&amp;keywords=atari|title=RapidEuphoria forum, 2002-09-10 by Robert Craig|accessdate=2010-12-30|url-status=dead|archiveurl=https://web.archive.org/web/20110716180721/http://www.rapideuphoria.com/cgi-bin/esearch.exu?fromMonth=9&amp;fromYear=7&amp;toMonth=9&amp;toYear=7&amp;keywords=atari|archivedate=2011-07-16}}
+&lt;/ref&gt;
+
+&lt;ref name=firstversion&gt;
+{{cite web|url=http://www.rapideuphoria.com/cgi-bin/esearch.exu?toMonth=A&amp;toYear=B&amp;keywords=BBS*|title=RapidEuphoria forum, 2006-10-18 16:44 by Robert Craig|accessdate=2010-12-30|url-status=dead|archiveurl=https://web.archive.org/web/20110716180543/http://www.rapideuphoria.com/cgi-bin/esearch.exu?toMonth=A&amp;toYear=B&amp;keywords=BBS%2A|archivedate=2011-07-16}}
+&lt;/ref&gt;
+
+&lt;ref name=opensource&gt;
+{{cite web|url=http://www.rapideuphoria.com/cgi-bin/esearch.exu?fromMonth=A&amp;fromYear=B&amp;toMonth=A&amp;toYear=B&amp;keywords=oct+18+1%3A19|title=RapidEuphoria forum, 2006-10-18 1:19 by Robert Craig|accessdate=2010-12-30|url-status=dead|archiveurl=https://web.archive.org/web/20110716180705/http://www.rapideuphoria.com/cgi-bin/esearch.exu?fromMonth=A&amp;fromYear=B&amp;toMonth=A&amp;toYear=B&amp;keywords=oct+18+1%3A19|archivedate=2011-07-16}}
+&lt;/ref&gt;
+
+&lt;ref name=oehomepage&gt;
+{{cite web|url=http://openeuphoria.org|title=openEuphoria group homepage|accessdate=2010-12-30}}
+&lt;/ref&gt;
+
+&lt;ref name=oedownload&gt;
+{{cite web|url= http://openeuphoria.org/wiki/view/DownloadEuphoria.wc|title=openEuphoria download page|accessdate=2010-12-30}}&lt;/ref&gt;
+
+&lt;ref name=binding&gt;
+{{cite web|url=http://openeuphoria.org/docs/bind.html|title=openEuhporia manual, Binding and Shrouding|accessdate=2011-01-07}}
+&lt;/ref&gt;
+
+&lt;ref name=win32lib&gt;
+{{cite web|url=http://sourceforge.net/projects/win32libex|title=Euphoria Win32Lib project at Sourceforge|accessdate=2010-12-30}}&lt;/ref&gt;
+
+&lt;ref name=wxeuphoria&gt;
+{{cite web|url= http://wxeuphoria.sourceforge.net|title=Euphoria wxEuphoria project at Sourceforge|accessdate=2010-12-30}}
+&lt;/ref&gt;
+
+&lt;ref name=GTK&gt;
+{{cite web|url=http://sourceforge.net/projects/eugtk|title=Euphoria GTK+ project at Sourceforge|accessdate=2010-12-30}}
+&lt;/ref&gt;
+
+&lt;ref name=IUP&gt;
+{{cite web|url=http://jeremy.cowgar.com/euiup|title=Euphoria IUP Project by Jeremy Cowgar|accessdate=2010-12-30}}
+&lt;/ref&gt;
+
+&lt;ref name=database&gt;
+{{cite web|url=http://openeuphoria.org/docs/database.html|title=openEuphoria manual, Database|accessdate=2010-12-30}}
+&lt;/ref&gt;
+
+&lt;ref name=oedatabases&gt;
+{{cite web|url=http://openeuphoria.org/wiki/view/EuphoriaDatabaseInterfaces.wc|title=openEuphoria wiki, Database Interfaces|accessdate=2011-01-02}}
+&lt;/ref&gt;
+
+&lt;ref name=renotes&gt;{{cite web|url=http://www.rapideuphoria.com/relnotes.htm|title=RapidEuphoria website, release notes|accessdate=2010-12-30|archive-url=https://www.webcitation.org/699sG6hPP?url=http://www.rapideuphoria.com/relnotes.htm|archive-date=2012-07-14|url-status=dead}}&lt;/ref&gt;
+
+&lt;ref name=atari2&gt;
+{{cite web|url=http://www.rapideuphoria.com/cgi-bin/esearch.exu?fromMonth=3&amp;fromYear=3&amp;toMonth=3&amp;toYear=3&amp;keywords=13%3A04|title=RapidEuphoria forum, 2 Mar 1998 13:04 by Robert Craig|accessdate=2010-12-30|url-status=dead|archiveurl=https://web.archive.org/web/20110716180757/http://www.rapideuphoria.com/cgi-bin/esearch.exu?fromMonth=3&amp;fromYear=3&amp;toMonth=3&amp;toYear=3&amp;keywords=13%3A04|archivedate=2011-07-16}}
+&lt;/ref&gt;
+
+&lt;ref name=renews&gt;{{cite web|url=http://www.rapideuphoria.com/news.htm|title=RapidEuphoria news|accessdate=2010-12-30|archive-url=https://web.archive.org/web/20101216054849/http://www.rapideuphoria.com/news.htm|archive-date=2010-12-16|url-status=dead}}&lt;/ref&gt;
+
+&lt;ref name=oenotes&gt;{{cite web|url=http://openeuphoria.org/docs/relnotes|title=openEuphoria release notes|accessdate=2010-12-30|archive-url=https://web.archive.org/web/20110727150731/http://openeuphoria.org/docs/relnotes|archive-date=2011-07-27|url-status=dead}}&lt;/ref&gt;
+
+&lt;ref name=oeplatform&gt;
+{{cite web|url=http://openeuphoria.org/docs/platform.html|title=openEuhporia manual, Platform Specific Issues|accessdate=2010-12-30}}
+&lt;/ref&gt;
+
+&lt;ref name=repl&gt;
+{{cite web|url=http://openeuphoria.org/wiki/view/EuphoriaRoadmap.wc|title=openEuphoria roadmap|accessdate=2010-12-30}}
+&lt;/ref&gt;
+
+}}
+
+==External links==
+{{commons category|Euphoria}}
+Free downloads of Euphoria for the various platforms, packages, Windows IDE, Windows API libraries, a cross-platform GTK3 wrapper for Linux and Windows, graphics libraries (DOS, OpenGL, etc.).
+* {{Official website|openeuphoria.org}} OpenEuphoria
+* {{Official website|www.rapideuphoria.com}} RapidEuphoria
+* [http://openeuphoria.org/wiki/view/home.wc openEuphoria Wiki]
+* [http://openeuphoria.org/forum/index.wc openEuphoria Forum]
+* [https://github.com/OpenEuphoria OpenEuphoria · GitHub] Development repositories.
+* [https://web.archive.org/web/20080509094445/http://www.usingeuphoria.com/ Using Euphoria]
+
+{{DEFAULTSORT:Euphoria (programming language)}}
+[[Category:Procedural programming languages]]
+[[Category:Cross-platform software]]
+[[Category:Programming languages created in 1993]]
+[[Category:Free educational software]]
+[[Category:Software using the BSD license]]</text>
+      <sha1>dxky3gtx61cdjejlaltcr8mis36nrl2</sha1>
+    </revision>
+  </page>

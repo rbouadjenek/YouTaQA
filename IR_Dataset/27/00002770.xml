@@ -1,0 +1,144 @@
+  <page>
+    <title>Anatomical Therapeutic Chemical Classification System</title>
+    <ns>0</ns>
+    <id>2770</id>
+    <revision>
+      <id>932780569</id>
+      <parentid>932607050</parentid>
+      <timestamp>2019-12-28T04:36:09Z</timestamp>
+      <contributor>
+        <username>Whywhenwhohow</username>
+        <id>11291818</id>
+      </contributor>
+      <comment>sort cats; update portal</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">The '''Anatomical Therapeutic Chemical (ATC) Classification System''' is a [[drug classification]] system that classifies the [[Medication|active ingredient]]s of [[drug]]s according to the [[organ (anatomy)|organ]] or [[system]] on which they act and their [[therapeutic]], [[pharmacological]] and chemical properties. It is controlled by the [[World Health Organization]] Collaborating Centre for Drug Statistics Methodology (WHOCC), and was first published in 1976.&lt;ref name=&quot;history&quot;&gt;{{cite web|url=http://www.whocc.no/atc_ddd_methodology/history/|publisher=WHO Collaborating Centre for Drug Statistics Methodology|title=ATC/DDD Methodology: History}}&lt;/ref&gt;&lt;ref&gt;{{cite web | author=WHOCC | title=ATC alterations from 2005-2019 | website=WHO Collaborating Centre for Drug Statistics Methodology (WHOCC) | date=28 November 2019 | url=https://www.whocc.no/atc_ddd_alterations__cumulative/atc_alterations/ | access-date=27 December 2019}}&lt;/ref&gt;&lt;ref&gt;{{cite web | author=WHOCC | title=DDD alterations from 2005-2019 | website=WHO Collaborating Centre for Drug Statistics Methodology (WHOCC) | date=28 November 2018 | url=https://www.whocc.no/atc_ddd_alterations__cumulative/ddd_alterations/ | access-date=27 December 2019}}&lt;/ref&gt;
+
+This [[Pharmaceutical code|pharmaceutical coding system]] divides drugs into different groups according to the organ or system on which they act, their [[medicine|therapeutic]] intent or nature, and the drug's [[chemical classification|chemical characteristics]]. Different brands share the same code if they have the same active substance and indications. Each bottom-level ATC code stands for a pharmaceutically used substance, or a combination of substances, in a single indication (or use). This means that one drug can have more than one code, for example [[acetylsalicylic acid]] (aspirin) has {{ATC|A01|AD05}} as a drug for local [[mouth|oral]] treatment, {{ATC|B01|AC06}} as a [[platelet inhibitor]], and {{ATC|N02|BA01}} as an [[analgesic]] and [[antipyretic]]; as well as one code can represent more than one active ingredient, for example {{ATC|C09|BB04}} is the combination of perindopril with amlodipine, two active ingredients that have their own codes ({{ATC|C09|AA04}} and {{ATC|C08|CA01}} respectively) when prescribed alone.
+
+The ATC classification system is a strict hierarchy, meaning that each code necessarily has one and only one parent code, except for the 14 codes at the topmost level which have no parents. The codes are semantic identifiers, meaning they depict in themselves the complete lineage of parenthood.
+
+== History ==
+The ATC system is based on the earlier Anatomical Classification System, which is intended as a tool for the pharmaceutical industry to classify pharmaceutical products (as opposed to their active ingredients).&lt;ref&gt;{{cite web|url=http://www.ephmra.org/user_uploads/who-atc%202013%20final.pdf|title=Comparison of the WHO ATC Classification &amp; EphMRA/Intellus Anatomical Classification|publisher=EphMRA|accessdate=7 January 2017|archive-url=https://web.archive.org/web/20150806235351/http://www.ephmra.org/user_uploads/who-atc%202013%20final.pdf|archive-date=6 August 2015|url-status=dead}}&lt;/ref&gt; This system, confusingly also called ATC, was initiated in 1971 by the [[European Pharmaceutical Market Research Association]] (EphMRA) and is being maintained by the EphMRA and Intellus. Its codes are organised into four levels.&lt;ref&gt;{{cite web|url=http://www.ephmra.org/user_uploads/atcguidelines2016final.pdf|title=EphMRA Anatomical Classification Guidelines 2018|access-date=2017-01-07|archive-url=https://web.archive.org/web/20160423224519/http://www.ephmra.org/user_uploads/atcguidelines2016final.pdf|archive-date=2016-04-23|url-status=dead}}&lt;/ref&gt; The WHO's system, having five levels, is an extension and modification of the EphMRA's. It was first published in 1976.&lt;ref name=&quot;history&quot;/&gt;
+
+== Classification ==
+In this system, drugs are classified into groups at five different levels:&lt;ref&gt;{{cite web|url=http://www.whocc.no/atc/structure_and_principles/|publisher=WHO Collaborating Centre for Drug Statistics Methodology|title=ATC: Structure and principles}}&lt;/ref&gt;
+
+=== First level ===
+The first level of the code indicates the anatomical main group and consists of one letter. There are 14 main groups:&lt;ref&gt;{{cite web|url=http://www.whocc.no/atc_ddd_index/|publisher=WHO Collaborating Centre for Drug Statistics Methodology|title=ATC/DDD Index}}&lt;/ref&gt;
+
+{| class=&quot;wikitable&quot;
+|-
+!Code
+!Contents
+|-
+| '''[[ATC code A|A]]'''
+| [[Alimentary tract]] and [[metabolism]]
+|-
+| '''[[ATC code B|B]]'''
+| [[Blood]] and [[haematopoiesis|blood forming organs]]
+|-
+| '''[[ATC code C|C]]'''
+| [[Cardiovascular system]]
+|-
+| '''[[ATC code D|D]]'''
+| [[Dermatological]]s
+|-
+| '''[[ATC code G|G]]'''
+| [[Genito-urinary system]] and [[sex hormone]]s
+|-
+| '''[[ATC code H|H]]'''
+| Systemic [[Hormone|hormonal]] preparations, excluding sex hormones and insulins
+|-
+| '''[[ATC code J|J]]'''
+| [[Antiinfective]]s for systemic use
+|-
+| '''[[ATC code L|L]]'''
+| [[Antineoplastic]] and [[immunomodulator|immunomodulating]] agents
+|-
+| '''[[ATC code M|M]]'''
+| [[Musculo-skeletal system]]
+|-
+| '''[[ATC code N|N]]'''
+| [[Nervous system]]
+|-
+| '''[[ATC code P|P]]'''
+| [[Antiparasitic]] products, [[insecticide]]s and [[insect repellent|repellent]]s
+|-
+| '''[[ATC code R|R]]'''
+| [[Respiratory system]]
+|-
+| '''[[ATC code S|S]]'''
+| [[Sensory organ]]s
+|-
+| '''[[ATC code V|V]]'''
+| Various
+|}
+
+''Example'': [[ATC code C|'''C''']] [[Cardiovascular system]]
+
+=== Second level ===
+The second level of the code indicates the therapeutic subgroup and consists of two digits.&lt;ref&gt;[https://www.sdrugs.com/?c=atc&amp;n=0 the Anatomical Therapeutic Chemical (ATC) classification system Structure]&lt;/ref&gt;
+
+
+''Example'': [[ATC code C03|C'''03''']] [[Diuretic]]s
+
+=== Third level ===
+The third level of the code indicates the therapeutic/pharmacological subgroup and consists of one letter.
+
+''Example'': C03'''C''' High-ceiling diuretics
+
+=== Fourth level ===
+The fourth level of the code indicates the chemical/therapeutic/pharmacological subgroup and consists of one letter.
+
+''Example'': C03C'''A''' [[Sulfonamide (medicine)|Sulfonamide]]s
+
+=== Fifth level ===
+The fifth level of the code indicates the chemical substance and consists of two digits.
+
+''Example'': C03CA'''01''' [[furosemide]]
+
+=== ATCvet ===
+The ''Anatomical Therapeutic Chemical Classification System for veterinary medicinal products'' (ATCvet) is used to classify [[veterinary]] drugs. ATCvet codes can be created by placing the letter Q in front of the ATC code of most human medications. For example, furosemide for veterinary use has the code '''Q'''C03CA01.
+
+Some codes are used exclusively for veterinary drugs, such as ''[[ATCvet code QI|QI]] Immunologicals'', ''[[ATCvet code QJ51|QJ51]] Antibacterials for intramammary use'' or ''QN05AX90 [[amperozide]]''.&lt;ref&gt;{{cite web|url=http://www.whocc.no/atcvet/atcvet/|publisher=WHO Collaborating Centre for Drug Statistics Methodology|title=ATCvet|accessdate=2015-02-15}}&lt;/ref&gt;
+
+== Defined daily dose ==
+{{main|Defined daily dose}}
+The ATC system also includes defined daily doses (DDDs) for many drugs. This is a measurement of drug consumption based on the usual daily dose for a given drug. According to the definition, &quot;[t]he DDD is the assumed average maintenance dose per day for a drug used for its main indication in adults.&quot;&lt;ref&gt;{{cite web|url=http://www.whocc.no/ddd/definition_and_general_considera/|publisher=WHO Collaborating Centre for Drug Statistics Methodology|title=DDD: Definition and general considerations}}&lt;/ref&gt;
+
+==Adaptations and updates==
+National issues of the ATC classification, such as the [[Germany|German]] ''Anatomisch-therapeutisch-chemische Klassifikation mit Tagesdosen'', may include additional codes and DDDs not present in the WHO version.&lt;ref&gt;{{cite web|url=http://www.dimdi.de/static/de/klassi/atcddd/atc-gesetze.htm|publisher=Deutsches Institut für Medizinische Dokumentation und Information|title=ATC-Klassifikation mit DDD: Gesetzlicher Hintergrund|language=German|access-date=2010-02-14|archive-url=https://web.archive.org/web/20160303174835/http://www.dimdi.de/static/de/klassi/atcddd/atc-gesetze.htm|archive-date=2016-03-03|url-status=dead}}&lt;/ref&gt;
+
+ATC follows guidelines&lt;ref&gt;{{cite web|title=Guidelines for ATC classification and DDD assignment|date=2014-12-16|publisher=WHO Collaborating Centre for Drug Statistics Methodology|url=http://www.whocc.no/atc_ddd_publications/guidelines/|url-status=dead|archiveurl=https://web.archive.org/web/20150806013259/http://www.whocc.no/atc_ddd_publications/guidelines/|archivedate=2015-08-06}}&lt;/ref&gt; in creating new codes for newly approved drugs. In order to create a new ATC code, an application has to be sent to the WHO. New ATC codes are published twice annually.&lt;ref&gt;{{cite web|title=New ATC|date=2015-04-29|publisher=WHO Collaborating Centre for Drug Statistics Methodology|url=http://www.whocc.no/atc/lists_of_new_atc_ddds_and_altera/new_atc/}}&lt;/ref&gt; Revisions of the ATC are formally released every year.{{citeneeded|date=November 2019}}
+
+== See also ==
+* [[Classification of Pharmaco-Therapeutic Referrals]] (CPR)
+* [[ICD-10]] International Classification of Diseases
+* [[International Classification of Primary Care]] (ICPC-2) / [[ICPC-2 PLUS]]
+* [[Medical classification]]
+* [[Pharmaceutical care]]
+* [[Pharmacotherapy]]
+* [[RxNorm]]
+
+== References ==
+{{reflist}}
+
+== External links ==
+* {{cite web|url=http://www.whocc.no/|title= WHOCC Homepage|publisher=WHO Collaborating Centre for Drug Statistics Methodology}}
+* {{cite web|url=http://sydney.edu.au/medicine/fmrc/atc/|title=ATC: Introduction|publisher=Family Medicine Research Centre, [[University of Sydney]]}}
+* [http://www.ephmra.org/Classification EphMRA Anatomical Classification (ATC and NFC)]
+
+{{Major Drug Groups}}
+{{Medical classification}}
+{{portal bar | Pharmacy and pharmacology | Medicine}}
+
+[[Category:ATC codes| ]]
+[[Category:Drugs by target organ system| ]]
+[[Category:Drugs]]
+[[Category:Pharmacological classification systems]]
+[[Category:World Health Organization]]</text>
+      <sha1>7dt2mbzuer5fdxlr1aj9kw8adm85rqr</sha1>
+    </revision>
+  </page>

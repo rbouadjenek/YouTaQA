@@ -1,0 +1,246 @@
+  <page>
+    <title>Naive set theory</title>
+    <ns>0</ns>
+    <id>4944</id>
+    <revision>
+      <id>929289096</id>
+      <parentid>912929013</parentid>
+      <timestamp>2019-12-04T21:12:59Z</timestamp>
+      <contributor>
+        <username>Joel Brennan</username>
+        <id>33522736</id>
+      </contributor>
+      <minor />
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{otheruses4|the mathematical topic|the book of the same name|Naive Set Theory (book)}}
+
+'''Naïve set theory''' is any of several theories of sets used in the discussion of the [[foundations of mathematics]].
+&lt;ref&gt;Jeff Miller writes that ''naïve set theory'' (as opposed to axiomatic set theory) was used occasionally in the 1940s and became an established term in the 1950s. It appears in Hermann Weyl's review of P. A. Schilpp (Ed). (1946). “The Philosophy of Bertrand Russell” ''American Mathematical Monthly'', 53(4), p.&amp;nbsp;210 and in a review by Laszlo Kalmar. (1946). “The Paradox of Kleene and Rosser”. ''Journal of Symbolic Logic'', 11(4), p.&amp;nbsp;136. (JSTOR). [http://jeff560.tripod.com/s.html] The term was later popularized in a book by [[Paul Halmos]] (1960). ''Naïve Set Theory''.&lt;/ref&gt;
+Unlike [[Set theory#Axiomatic set theory|axiomatic set theories]], which are defined using [[Mathematical_logic#Formal_logical_systems|formal logic]], naïve set theory is defined informally, in [[natural language]]. It describes the aspects of [[Set (mathematics)|mathematical sets]] familiar in [[discrete mathematics]] (for example [[Venn diagram]]s and symbolic reasoning about their [[Boolean algebra (logic)|Boolean algebra]]), and suffices for the everyday use of set theory concepts in contemporary mathematics.&lt;ref&gt;{{citation
+ | last = Mac Lane | first = Saunders
+ | contribution = Categorical algebra and set-theoretic foundations
+ | mr = 0282791
+ | pages = 231–240
+ | publisher = Amer. Math. Soc., Providence, R.I.
+ | title = Axiomatic Set Theory (Proc. Sympos. Pure Math., Vol. XIII, Part I, Univ. California, Los Angeles, Calif., 1967)
+ | year = 1971}}. &quot;The working mathematicians usually thought in terms of a naïve set theory (probably one more or less equivalent to ZF) ... a practical requirement [of any new foundational system] could be that this system could be used &quot;naïvely&quot; by mathematicians not sophisticated in foundational research&quot; ([https://books.google.com/books?id=TVi2AwAAQBAJ&amp;pg=PA236 p.&amp;nbsp;236]).&lt;/ref&gt;
+
+Sets are of great importance in mathematics; in modern formal treatments, most mathematical objects ([[number]]s, [[relation (mathematics)|relations]], [[function (mathematics)|functions]], etc.) are defined in terms of sets. Naïve set theory suffices for many purposes, while also serving as a stepping-stone towards more formal treatments. 
+
+==Method==
+A ''naïve theory'' in the sense of &quot;naïve set theory&quot; is a non-formalized theory, that is, a theory that uses a [[natural language]] to describe sets and operations on sets. The words ''and'', ''or'', ''if ... then'', ''not'', ''for some'', ''for every'' are treated as in ordinary mathematics. As a matter of convenience, use of naïve set theory and its formalism prevails even in higher mathematics &amp;ndash; including in more formal settings of set theory itself.
+
+The first development of [[set theory]] was a naïve set theory. It was created at the end of the 19th&amp;nbsp;century by [[Georg Cantor]] as part of his study of [[infinite set]]s&lt;ref&gt;{{harvnb|Cantor|1874}}&lt;/ref&gt; and developed by [[Gottlob Frege]] in his ''[[Begriffsschrift]]''.
+
+Naïve set theory may refer to several very distinct notions. It may refer to
+* Informal presentation of an axiomatic set theory, e.g. as in ''[[Naive Set Theory (book)|Naïve Set Theory]]'' by [[Paul Halmos]].
+* Early or later versions of [[Georg Cantor]]'s theory and other informal systems.
+* Decidedly inconsistent theories (whether axiomatic or not), such as a theory of [[Gottlob Frege]]&lt;ref&gt;{{harvnb|Frege|1893}} In Volume 2, Jena 1903. pp. 253-261 Frege discusses the antionomy in the afterword.&lt;/ref&gt; that yielded [[Russell's paradox]], and theories of [[Giuseppe Peano]]&lt;ref&gt;{{harvnb|Peano|1889}} Axiom 52. chap. IV produces antinomies.&lt;/ref&gt; and [[Richard Dedekind]].
+
+===Paradoxes===
+The assumption that any property may be used to form a set, without restriction, leads to [[paradox]]es.  One common example is [[Russell's paradox]]: there is no set consisting of &quot;all sets that do not contain themselves&quot;. Thus consistent systems of naïve set theory must include some limitations on the principles which can be used to form sets.
+
+===Cantor's theory===
+Some believe that [[Georg Cantor]]'s set theory was not actually implicated in the set-theoretic paradoxes (see Frápolli 1991). One difficulty in determining this with certainty is that Cantor did not provide an axiomatization of his system. By 1899, Cantor was aware of some of the paradoxes following from unrestricted interpretation of his theory, for instance [[Cantor's paradox]]&lt;ref name=Letter_to_Hilbert&gt;Letter from Cantor to [[David Hilbert]] on September 26, 1897, {{harvnb|Meschkowski|Nilson|1991}} p. 388.&lt;/ref&gt; and the [[Burali-Forti paradox]],&lt;ref&gt;Letter from Cantor to [[Richard Dedekind]] on August 3, 1899, {{harvnb|Meschkowski|Nilson|1991}} p. 408.&lt;/ref&gt; and did not believe that they discredited his theory.&lt;ref name=Letters_to_Dedekind&gt;Letters from Cantor to [[Richard Dedekind]] on August 3, 1899 and on August 30, 1899, {{harvnb|Zermelo|1932}} p. 448 (System aller denkbaren Klassen) and {{harvnb|Meschkowski|Nilson|1991}} p. 407. (There is no set of all sets.)&lt;/ref&gt; Cantor's paradox can actually be derived from the above (false) assumption—that any property {{math|''P''(''x'')}} may be used to form a set—using for {{math|''P''(''x'') &quot;''x''}} is a [[cardinal number]]&quot;. Frege explicitly axiomatized a theory in which a formalized version of naïve set theory can be interpreted, and it is ''this'' formal theory which [[Bertrand Russell]] actually addressed when he presented his paradox, not necessarily a theory Cantor, who, as mentioned, was aware of several paradoxes, presumably had in mind.
+
+===Axiomatic theories===
+Axiomatic set theory was developed in response to these early attempts to understand sets, with the goal of determining precisely what operations were allowed and when.
+
+===Consistency===
+A naïve set theory is not ''necessarily'' inconsistent, if it correctly specifies the sets allowed to be considered. This can be done by the means of definitions, which are implicit axioms. It is possible to state all the axioms explicitly, as in the case of Halmos' ''Naïve Set Theory'', which is actually an informal presentation of the usual axiomatic [[Zermelo–Fraenkel set theory]]. It is &quot;naïve&quot; in that the language and notations are those of ordinary informal mathematics, and in that it doesn't deal with consistency or completeness of the axiom system.
+
+Likewise, an axiomatic set theory is not necessarily consistent: not necessarily free of paradoxes. It follows from [[Gödel's incompleteness theorems]] that a sufficiently complicated [[first order logic]] system (which includes most common axiomatic set theories) cannot be proved consistent from within the theory itself &amp;ndash; even if it actually is consistent. However, the common axiomatic systems are generally believed to be consistent; by their axioms they do exclude ''some'' paradoxes, like [[Russell's paradox]]. Based on [[Gödel's incompleteness theorems|Gödel's theorem]], it is just not known &amp;ndash; and never can be &amp;ndash; if there are ''no'' paradoxes at all in these theories or in any first-order set theory.
+
+The term ''naïve set theory'' is still today also used in some literature{{citation needed|date=December 2012}} to refer to the set theories studied by Frege and Cantor, rather than to the informal counterparts of modern axiomatic set theory.
+
+===Utility===
+The choice between an axiomatic approach and other approaches is largely a matter of convenience. In everyday mathematics the best choice may be informal use of axiomatic set theory.  References to particular axioms typically then occur only when demanded by tradition, e.g. the [[axiom of choice]] is often mentioned when used. Likewise, formal proofs occur only when warranted by exceptional circumstances. This informal usage of axiomatic set theory can have (depending on notation) precisely the ''appearance'' of naïve set theory as outlined below. It is considerably easier to read and write (in the formulation of most statements, proofs, and lines of discussion) and is less error-prone than a strictly formal approach.
+
+== Sets, membership and equality ==
+In naïve set theory, a '''set''' is described as a well-defined collection of objects. These objects are called the '''elements''' or '''members''' of the set. Objects can be anything: numbers, people, other sets, etc. For instance, 4 is a member of the set of all even [[integer]]s. Clearly, the set of even numbers is infinitely large; there is no requirement that a set be finite.
+
+[[File:Passage with the set definition of Georg Cantor.png|thumb|Passage with the original set definition of Georg Cantor]]
+The definition of sets goes back to [[Georg Cantor]]. He wrote 1915 in his article ''[http://gdz.sub.uni-goettingen.de/index.php?id=pdf&amp;no_cache=1&amp;IDDOC=36218 Beiträge zur Begründung der transfiniten Mengenlehre]'':
+
+&lt;blockquote&gt;“Unter einer 'Menge' verstehen wir jede Zusammenfassung M von bestimmten wohlunterschiedenen Objekten unserer Anschauung oder unseres Denkens (welche die 'Elemente' von M genannt werden) zu einem Ganzen.” – Georg Cantor&lt;/blockquote&gt;
+&lt;blockquote&gt;“A set is a gathering together into a whole of definite, distinct objects of our perception or of our thought—which are called elements of the set.” – Georg Cantor&lt;/blockquote&gt;
+
+[[File:First usage of the symbol ∈.png|thumb|right|First usage of the symbol ϵ in the work ''[https://archive.org/details/arithmeticespri00peangoog Arithmetices principia nova methodo exposita]'' by [[Giuseppe Peano]].]]
+
+=== Note on consistency ===
+It does ''not'' follow from this definition ''how'' sets can be formed, and what operations on sets again will produce a set. The term &quot;well-defined&quot; in &quot;well-defined collection of objects&quot; cannot, by itself, guarantee the consistency and unambiguity of what exactly constitutes and what does not constitute a set. Attempting to achieve this would be the realm of axiomatic set theory or of axiomatic '''class theory'''.
+
+The problem, in this context, with informally formulated set theories, not derived from (and implying) any particular axiomatic theory, is that there may be several widely differing formalized versions, that have both different sets and different rules for how new sets may be formed, that all conform to the original informal definition. For example, Cantor's verbatim definition allows for considerable freedom in what constitutes a set. On the other hand, it is unlikely that Cantor was particularly interested in sets containing cats and dogs, but rather only in sets containing purely mathematical objects. An example of such a class of sets could be the [[von Neumann universe]]. But even when fixing the class of sets under consideration, it is not always clear which rules for set formation are allowed without introducing paradoxes.
+
+For the purpose of fixing the discussion below, the term &quot;well-defined&quot; should instead be interpreted as an ''intention'', with either implicit or explicit rules (axioms or definitions), to rule out inconsistencies. The purpose is to keep the often deep and difficult issues of consistency away from the, usually simpler, context at hand. An explicit ruling out of ''all'' conceivable inconsistencies (paradoxes) cannot be achieved for an axiomatic set theory anyway, due to Gödel's second incompleteness theorem, so this does not at all hamper the utility of naïve set theory as compared to axiomatic set theory in the simple contexts considered below. It merely simplifies the discussion. Consistency is henceforth taken for granted unless explicitly mentioned.
+
+=== Membership ===
+If ''x'' is a member of a set ''A'', then it is also said that ''x'' '''belongs to''' ''A'', or that ''x'' is in ''A''. This is denoted by ''x''&amp;nbsp;∈&amp;nbsp;''A''. The symbol ∈ is a derivation from the lowercase Greek letter [[epsilon]], &quot;ε&quot;, introduced by [[Giuseppe Peano]] in 1889 and shall be the first letter of the word [https://en.wiktionary.org/wiki/%E1%BC%90%CF%83%CF%84%CE%AF ἐστί] (means &quot;is&quot;). The symbol ∉ is often used to write ''x''&amp;nbsp;∉&amp;nbsp;''A'', meaning &quot;x is not in A&quot;.
+
+=== Equality ===
+Two sets ''A'' and ''B'' are defined to be '''[[Equality (mathematics)|equal]]''' when they have precisely the same elements, that is, if every element of ''A'' is an element of ''B'' and every element of ''B'' is an element of ''A''. (See [[axiom of extensionality]].) Thus a set is completely determined by its elements; the description is immaterial. For example, the set with elements 2, 3, and 5 is equal to the set of all [[prime number]]s less than 6.
+If the sets ''A'' and ''B'' are equal, this is denoted symbolically as ''A''&amp;nbsp;=&amp;nbsp;''B'' (as usual).
+
+=== Empty set ===
+The [[empty set]], often denoted Ø and sometimes &lt;math&gt;\{\}&lt;/math&gt;, is a set with no members at all. Because a set is determined completely by its elements, there can be only one empty set. (See [[axiom of empty set]].) Although the empty set has no members, it can be a member of other sets. Thus Ø ≠ {Ø}, because the former has no members and the latter has one member. In mathematics, the only sets with which one needs to be concerned can be built up from the empty set alone.({{harvtxt|Halmos|1974}})
+
+== Specifying sets ==
+The simplest way to describe a set is to list its elements between curly braces (known as defining a set ''extensionally''). Thus {{math|{1, 2}&lt;nowiki/&gt;}} denotes the set whose only elements are {{math|1}} and {{math|2}}.
+(See [[axiom of pairing]].)
+Note the following points:
+*The order of elements is immaterial; for example, {{math|{1, 2} {{=}} {2, 1}&lt;nowiki/&gt;}}.
+*Repetition ([[multiplicity (mathematics)|multiplicity]]) of elements is irrelevant; for example, {{math|{1, 2, 2} {{=}} {1, 1, 1, 2} {{=}} {1, 2}&lt;nowiki/&gt;}}.
+(These are consequences of the definition of equality in the previous section.)
+
+This notation can be informally abused by saying something like {{math|{dogs}&lt;nowiki/&gt;}} to indicate the set of all dogs, but this example would usually be read by mathematicians as &quot;the set containing the single element ''dogs''&quot;.
+
+An extreme (but correct) example of this notation is {{math|{}&lt;nowiki/&gt;}}, which denotes the empty set.
+
+The notation {{math|{''x''&amp;nbsp;:&amp;nbsp;''P''(''x'')}&lt;nowiki/&gt;}}, or sometimes {{math|{''x''&amp;nbsp;&amp;#124;&amp;nbsp;''P''(''x'')}&lt;nowiki/&gt;}}, is used to denote the set containing all objects for which the condition {{math|''P''}} holds (known as defining a set ''intensionally'').
+For example, {{math|{''x''&amp;nbsp;: ''x''&amp;nbsp;}} ∈ '''R'''} denotes the set of [[real number]]s, {{math|{''x''&amp;nbsp;: ''x''&amp;nbsp;has blonde hair}&lt;nowiki/&gt;}} denotes the set of everything with blonde hair.
+
+This notation is called [[set-builder notation]] (or &quot;'''set comprehension'''&quot;, particularly in the context of [[Functional programming]]).
+Some variants of set builder notation are:
+*{{math|{''x''&amp;nbsp;∈&amp;nbsp;''A''&amp;nbsp;: ''P''(''x'')}&lt;nowiki/&gt;}} denotes the set of all {{math|''x''}} that are already members of {{math|''A''}} such that the condition {{math|''P''}} holds for {{math|''x''}}. For example, if {{math|'''Z'''}} is the set of [[integer]]s, then {{math|{''x''&amp;nbsp;∈&amp;nbsp;'''Z'''&amp;nbsp;: ''x''&amp;nbsp;is&amp;nbsp;even}&lt;nowiki/&gt;}} is the set of all [[even and odd numbers|even]] integers. (See [[axiom of specification]].)
+*{{math|{''F''(''x'')&amp;nbsp;: ''x''&amp;nbsp;∈&amp;nbsp;''A''}&lt;nowiki/&gt;}} denotes the set of all objects obtained by putting members of the set {{math|''A''}} into the formula {{math|''F''}}. For example, {{math|{2''x''&amp;nbsp;: ''x''&amp;nbsp;∈&amp;nbsp;'''Z'''}&lt;nowiki/&gt;}} is again the set of all even integers. (See [[axiom of replacement]].)
+*{{math|{''F''(''x'')&amp;nbsp;: ''P''(''x'')}&lt;nowiki/&gt;}} is the most general form of set builder notation. For example, {{math|{''x'''s&amp;nbsp;owner&amp;nbsp;: ''x''&amp;nbsp;is a dog}&lt;nowiki/&gt;}} is the set of all dog owners.
+
+== Subsets ==
+Given two sets ''A'' and ''B'', ''A'' is a '''[[subset]]''' of ''B'' if every element of ''A'' is also an element of ''B''.
+In particular, each set ''B'' is a subset of itself; a subset of ''B'' that is not equal to ''B'' is called a '''proper subset'''.
+
+If ''A'' is a subset of ''B'', then one can also say that ''B'' is a '''superset''' of ''A'', that ''A'' is '''contained in''' ''B'', or that ''B'' '''contains''' ''A''. In symbols, ''A''&amp;nbsp;⊆&amp;nbsp;''B'' means that ''A'' is a subset of ''B'', and ''B''&amp;nbsp;⊇&amp;nbsp;''A'' means that ''B'' is a superset of ''A''.
+Some authors use the symbols ⊂ and ⊃ for subsets, and others use these symbols only for ''proper'' subsets. For clarity, one can explicitly use the symbols ⊊ and ⊋ to indicate non-equality.
+
+As an illustration, let '''R''' be the set of real numbers, let '''Z''' be the set of integers, let ''O'' be the set of odd integers, and let ''P'' be the set of current or former [[President of the United States|U.S. Presidents]].
+Then ''O'' is a subset of '''Z''', '''Z''' is a subset of '''R''', and (hence) ''O'' is a subset of '''R''', where in all cases ''subset'' may even be read as ''proper subset''.
+Not all sets are comparable in this way. For example, it is not the case either that '''R''' is a subset of ''P'' nor that ''P'' is a subset of '''R'''.
+
+It follows immediately from the definition of equality of sets above that, given two sets ''A'' and ''B'', ''A''&amp;nbsp;=&amp;nbsp;''B'' if and only if ''A''&amp;nbsp;⊆&amp;nbsp;''B'' and ''B''&amp;nbsp;⊆&amp;nbsp;''A''. In fact this is often given as the definition of equality. Usually when trying to [[mathematical proof|prove]] that two sets are equal, one aims to show these two inclusions. The [[empty set]] is a subset of every set (the statement that all elements of the empty set are also members of any set ''A'' is [[vacuously true]]).
+
+The set of all subsets of a given set ''A'' is called the '''[[power set]]''' of ''A'' and is denoted by &lt;math&gt;2^A&lt;/math&gt; or &lt;math&gt;P(A)&lt;/math&gt;; the &quot;''P''&quot; is sometimes in a [[Script (typefaces)|script]] font. If the set ''A'' has ''n'' elements, then &lt;math&gt;P(A)&lt;/math&gt; will have &lt;math&gt;2^n&lt;/math&gt; elements.
+
+== Universal sets and absolute complements ==
+In certain contexts, one may consider all sets under consideration as being subsets of some given [[universe (mathematics)|universal set]].
+For instance, when investigating properties of the [[real number]]s '''R''' (and subsets of '''R'''), '''R''' may be taken as the universal set. A true universal set is not included in standard set theory (see '''[[#Paradoxes|Paradoxes]]''' below), but is included in some non-standard set theories.
+
+Given a universal set '''U''' and a subset ''A'' of '''U''', the '''[[complement (set theory)|complement]]''' of ''A'' (in '''U''') is defined as
+:''A''&lt;sup&gt;C&lt;/sup&gt;&amp;nbsp;:= {''x''&amp;nbsp;∈&amp;nbsp;'''U'''&amp;nbsp;: ''x''&amp;nbsp;∉&amp;nbsp;''A''}.
+In other words, ''A''&lt;sup&gt;C&lt;/sup&gt; (&quot;''A-complement''&quot;; sometimes simply ''A''', &quot;''A-prime''&quot; ) is the set of all members of '''U''' which are not members of ''A''.
+Thus with '''R''', '''Z''' and ''O'' defined as in the section on subsets, if '''Z''' is the universal set, then ''O&lt;sup&gt;C&lt;/sup&gt;'' is the set of even integers, while if '''R''' is the universal set, then ''O&lt;sup&gt;C&lt;/sup&gt;'' is the set of all real numbers that are either even integers or not integers at all.
+
+== Unions, intersections, and relative complements ==
+Given two sets ''A'' and ''B'', their '''[[union (set theory)|union]]''' is the set consisting of all objects which are elements of ''A'' or of ''B'' or of both (see [[axiom of union]]). It is denoted by ''A''&amp;nbsp;∪&amp;nbsp;''B''.
+
+The '''[[intersection (set theory)|intersection]]''' of ''A'' and ''B'' is the set of all objects which are both in ''A'' and in ''B''. It is denoted by ''A''&amp;nbsp;∩&amp;nbsp;''B''.
+
+Finally, the '''[[complement (set theory)|relative complement]]''' of ''B'' relative to ''A'', also known as the '''set theoretic difference''' of ''A'' and ''B'', is the set of all objects that belong to ''A'' but ''not'' to ''B''. It is written as ''A''&amp;nbsp;\&amp;nbsp;''B'' or ''A''&amp;nbsp;−&amp;nbsp;''B''.
+
+Symbolically, these are respectively
+:''A''&amp;nbsp;∪&amp;nbsp;B&amp;nbsp;:= {''x''&amp;nbsp;: (''x''&amp;nbsp;∈&amp;nbsp;''A'')&amp;nbsp;[[logical disjunction|or]] (''x''&amp;nbsp;∈&amp;nbsp;''B'')};
+:''A''&amp;nbsp;∩&amp;nbsp;''B''&amp;nbsp;:= {''x''&amp;nbsp;: (''x''&amp;nbsp;∈&amp;nbsp;''A'')&amp;nbsp;[[logical conjunction|and]] (''x''&amp;nbsp;∈&amp;nbsp;''B'')}&amp;nbsp;= {''x''&amp;nbsp;∈&amp;nbsp;''A''&amp;nbsp;: ''x''&amp;nbsp;∈&amp;nbsp;''B''}&amp;nbsp;= {''x''&amp;nbsp;∈&amp;nbsp;''B''&amp;nbsp;: ''x''&amp;nbsp;∈&amp;nbsp;''A''};
+:''A''&amp;nbsp;\&amp;nbsp;''B''&amp;nbsp;:= {''x''&amp;nbsp;: (''x''&amp;nbsp;∈&amp;nbsp;''A'')&amp;nbsp;and&amp;nbsp;[[negation|not]] (''x''&amp;nbsp;∈&amp;nbsp;''B'') }&amp;nbsp;= {''x''&amp;nbsp;∈&amp;nbsp;''A''&amp;nbsp;: not (''x''&amp;nbsp;∈&amp;nbsp;''B'')}.
+
+The set ''A'' doesn't have to be a subset of ''B'' for ''B''&amp;nbsp;\&amp;nbsp;''A'' to make sense; this is the difference between the relative complement and the absolute complement (''A''&lt;sup&gt;C&lt;/sup&gt; = ''U''&amp;nbsp;\&amp;nbsp;''A'') from the previous section.
+
+To illustrate these ideas, let ''A'' be the set of left-handed people, and let ''B'' be the set of people with blond hair. Then ''A''&amp;nbsp;∩&amp;nbsp;''B'' is the set of all left-handed blond-haired people, while ''A''&amp;nbsp;∪&amp;nbsp;''B'' is the set of all people who are left-handed or blond-haired or both. ''A''&amp;nbsp;\&amp;nbsp;''B'', on the other hand, is the set of all people that are left-handed but not blond-haired, while ''B''&amp;nbsp;\&amp;nbsp;''A'' is the set of all people who have blond hair but aren't left-handed.
+
+Now let ''E'' be the set of all human beings, and let ''F'' be the set of all living things over 1000 years old. What is ''E''&amp;nbsp;∩&amp;nbsp;''F'' in this case? No living human being is [[Oldest people|over 1000 years old]], so ''E''&amp;nbsp;∩&amp;nbsp;''F'' must be the [[empty set]] {}.
+
+For any set ''A'', the power set &lt;math&gt;P(A)&lt;/math&gt; is a [[Boolean algebra (structure)|Boolean algebra]] under the operations of union and intersection.
+
+== Ordered pairs and Cartesian products ==
+Intuitively, an '''[[ordered pair]]''' is simply a collection of two objects such that one can be distinguished as the ''first element'' and the other as the ''second element'', and having the fundamental property that, two ordered pairs are equal if and only if their ''first elements'' are equal and their ''second elements'' are equal.
+
+Formally, an ordered pair with '''first coordinate''' ''a'', and '''second coordinate''' ''b'', usually denoted by (''a'', ''b''), can be defined as the set &lt;nowiki&gt;{{&lt;/nowiki&gt;''a''&lt;nowiki&gt;}&lt;/nowiki&gt;,&amp;nbsp;&lt;nowiki&gt;{&lt;/nowiki&gt;''a'', ''b''&lt;nowiki&gt;}}&lt;/nowiki&gt;.
+
+It follows that, two ordered pairs (''a'',''b'') and (''c'',''d'') are equal if and only if ''a''&amp;nbsp;=&amp;nbsp;''c'' and ''b''&amp;nbsp;=&amp;nbsp;''d''.
+
+Alternatively, an ordered pair can be formally thought of as a set {a,b} with a [[total order]].
+
+(The notation (''a'', ''b'') is also used to denote an [[open interval]] on the [[real number line]], but the context should make it clear which meaning is intended. Otherwise, the notation ]''a'', ''b''[ may be used to denote the open interval whereas (''a'', ''b'') is used for the ordered pair).
+
+If ''A'' and ''B'' are sets, then the '''[[Cartesian product]]''' (or simply '''product''') is defined to be:
+:''A''&amp;nbsp;× ''B''&amp;nbsp;= {(''a'',''b'')&amp;nbsp;: ''a'' is in ''A'' and ''b'' is in ''B''}.
+That is, ''A''&amp;nbsp;×&amp;nbsp;''B'' is the set of all ordered pairs whose first coordinate is an element of ''A'' and whose second coordinate is an element of ''B''.
+
+This definition may be extended to a set ''A''&amp;nbsp;×&amp;nbsp;''B''&amp;nbsp;×&amp;nbsp;''C'' of ordered triples, and more generally to sets of ordered [[n-tuple]]s for any positive integer ''n''.
+It is even possible to define infinite [[Cartesian product]]s, but this requires a more recondite definition of the product.
+
+Cartesian products were first developed by [[René Descartes]] in the context of [[analytic geometry]]. If '''R''' denotes the set of all [[real number]]s, then '''R'''&lt;sup&gt;2&lt;/sup&gt;&amp;nbsp;:=&amp;nbsp;'''R'''&amp;nbsp;×&amp;nbsp;'''R''' represents the [[Euclidean plane]] and '''R'''&lt;sup&gt;3&lt;/sup&gt;&amp;nbsp;:=&amp;nbsp;'''R'''&amp;nbsp;×&amp;nbsp;'''R'''&amp;nbsp;×&amp;nbsp;'''R''' represents three-dimensional [[Euclidean space]].
+
+== Some important sets ==
+There are some ubiquitous sets for which the notation is almost universal. Some of these are listed below. In the list, ''a'', ''b'', and ''c'' refer to [[natural number]]s, and ''r'' and ''s'' are [[real number]]s.
+# [[Natural number]]s are used for counting. A [[blackboard bold]] capital '''N''' (&lt;math&gt;\mathbb{N}&lt;/math&gt;) often represents this set.
+# [[Integer]]s appear as solutions for ''x'' in equations like ''x'' + ''a'' = ''b''. A blackboard bold capital '''Z''' (&lt;math&gt;\mathbb{Z}&lt;/math&gt;) often represents this set (from the German ''Zahlen'', meaning ''numbers'').
+# [[Rational number]]s appear as solutions to equations like ''a'' + ''bx'' = ''c''. A blackboard bold capital '''Q''' (&lt;math&gt;\mathbb{Q}&lt;/math&gt;) often represents this set (for ''[[quotient]]'', because R is used for the set of real numbers).
+# [[Algebraic number]]s appear as solutions to [[polynomial]] equations (with integer coefficients) and may involve [[Nth root|radicals]] (including &lt;math&gt;i=\sqrt{-1\,}&lt;/math&gt;) and certain other [[irrational number]]s. A '''Q''' with an overline (&lt;math&gt;\overline{\mathbb{Q}}&lt;/math&gt;) often represents this set. The overline denotes the operation of [[algebraic closure]].
+# [[Real number]]s represent the &quot;real line&quot; and include all numbers that can be approximated by rationals. These numbers may be rational or algebraic but may also be [[transcendental number]]s, which cannot appear as solutions to polynomial equations with rational coefficients. A blackboard bold capital '''R''' (&lt;math&gt;\mathbb{R}&lt;/math&gt;) often represents this set.
+# [[Complex number]]s are sums of a real and an imaginary number: &lt;math&gt;r+s\,i&lt;/math&gt;. Here either &lt;math&gt;r&lt;/math&gt; or &lt;math&gt;s&lt;/math&gt; (or both) can be zero; thus, the set of real numbers and the set of strictly imaginary numbers are subsets of the set of complex numbers, which form an [[algebraic closure]] for the set of real numbers, meaning that every polynomial with coefficients in &lt;math&gt;\mathbb{R}&lt;/math&gt; has at least one [[Root of a function|root]] in this set. A blackboard bold capital '''C''' (&lt;math&gt;\mathbb{C}&lt;/math&gt;) often represents this set. Note that since a number &lt;math&gt;r+s\,i&lt;/math&gt; can be identified with a point &lt;math&gt;(r,s)&lt;/math&gt; in the plane, &lt;math&gt;\mathbb{C}&lt;/math&gt; is basically &quot;the same&quot; as the [[Cartesian product]] &lt;math&gt;\mathbb{R}&lt;/math&gt;×&lt;math&gt;\mathbb{R}&lt;/math&gt; (&quot;the same&quot; meaning that any point in one determines a unique point in the other and for the result of calculations, it doesn't matter which one is used for the calculation, as long as multiplication rule is appropriate for &lt;math&gt;\mathbb{C}&lt;/math&gt;).
+
+== Paradoxes in early set theory ==
+{{main|Paradox}}
+The unrestricted formation principle of sets referred to as the [[Axiom schema of specification#Unrestricted comprehension|axiom schema of unrestricted comprehension]],
+:''If'' {{math|''P''}} ''is a property, then there exists a set'' {{math|''Y'' {{=}} {''x'' : ''P''(''x'')}&lt;nowiki/&gt;}} ('''false'''),&lt;ref name=Jech&gt;{{harvnb|Jech|2002}} p. 4.&lt;/ref&gt;
+is the source of several early appearing paradoxes:
+*{{math|''Y'' {{=}} {''x'' : ''x'' is an ordinal}&lt;nowiki/&gt;}} led, in the year 1897, to the [[Burali-Forti paradox]], the first published [[antinomy]].
+*{{math|''Y'' {{=}} {''x'' : ''x'' is a cardinal}&lt;nowiki/&gt;}} produced [[Cantor's paradox]] in 1897.&lt;ref name=Letter_to_Hilbert/&gt;
+*{{math|''Y'' {{=}} {''x'' : {} {{=}} {}&lt;nowiki/&gt;}&lt;nowiki/&gt;}} yielded '''Cantor's second antinomy''' in the year 1899.&lt;ref name=Letters_to_Dedekind/&gt; Here the property {{math|''P''}} is true for all {{math|''x''}}, whatever {{math|''x''}} may be, so {{math|''Y''}} would be a [[universal set]], containing everything.
+*{{math|''Y'' {{=}} {''x'' : ''x'' ∉ ''x''}&lt;nowiki/&gt;}}, i.e. the set of all sets that do not contain themselves as elements gave [[Russell's paradox]] in 1902.
+
+If the axiom schema of unrestricted comprehension is weakened to the [[axiom schema of specification]] or '''axiom schema of separation''',
+:''If'' {{math|''P''}} ''is a property, then for any set'' {{math|''X''}} ''there exists a set'' {{math|''Y'' {{=}} {''x'' ∈ ''X'' : ''P''(''x'')}&lt;nowiki/&gt;}},&lt;ref name=Jech/&gt;
+then all the above paradoxes disappear.&lt;ref name=Jech/&gt; There is a corollary. With the axiom schema of separation as an axiom of the theory, it follows, as a theorem of the theory:
+:''The set of all sets does not exist''.
+Or, more spectacularly (Halmos' phrasing&lt;ref&gt;{{citation|last=Halmos|year=1974|title=Naïve Set Theory|chapter=2}}&lt;/ref&gt;): There is no [[Domain of discourse|universe]]. ''Proof'': Suppose that it exists and call it {{math|''U''}}. Now apply the axiom schema of separation with {{math|''X'' {{=}} ''U''}} and for {{math|''P''(''x'')}} use {{math|''x'' ∉ ''x''}}. This leads to Russell's paradox again. Hence {{math|''U''}} can't exist in this theory.&lt;ref name=Jech/&gt;
+
+Related to the above constructions is formation of the set
+*{{math|''Y'' {{=}} {''x'' : (''x'' ∈ ''x'') → {} ≠ {}&lt;nowiki/&gt;}&lt;nowiki/&gt;}}, where the statement following the implication certainly is false. It follows, from the definition of {{math|''Y''}}, using the usual inference rules (and some afterthought when reading the proof in the linked article below) both that {{math|''Y'' ∈ ''Y'' → {} ≠ {}&lt;nowiki/&gt;}} and {{math|''Y'' ∈ ''Y''}} holds, hence {{math|{} ≠ {}&lt;nowiki/&gt;}}. This is [[Curry's paradox#Naive set theory|Curry's paradox]].
+
+It is (perhaps surprisingly) not the possibility of {{math|''x'' ∈ ''x''}} that is problematic. It is again the axiom schema of unrestricted comprehension allowing {{math|(''x'' ∈ ''x'') → {} ≠ {}&lt;nowiki/&gt;}} for {{math|''P''(''x'')}}. With the axiom schema of specification instead of unrestricted comprehension, the conclusion {{math|''Y'' ∈ ''Y''}} doesn't hold and, hence {{math|{} ≠ {}&lt;nowiki/&gt;}} is not a logical consequence.
+
+Nonetheless, the possibility of {{math|''x'' ∈ ''x''}} is often removed explicitly&lt;ref&gt;{{citation|last=Halmos|year=1974|title=Naïve Set Theory}} See discussion around Russell's paradox.&lt;/ref&gt; or, e.g. in ZFC, implicitly,&lt;ref name=&quot;Jech 2002&quot;&gt;{{harvnb|Jech|2002}} Section 1.6.&lt;/ref&gt; by demanding the [[axiom of regularity]] to hold.&lt;ref name=&quot;Jech 2002&quot;/&gt; One consequence of it is
+:''There is no set'' {{math|''X''}} ''for which'' {{math|''X'' ∈ ''X''}},
+or, in other words, no set is an element of itself.&lt;ref&gt;{{harvnb|Jech|2002}} p. 61.&lt;/ref&gt;
+
+The axiom schema of separation is simply too weak (while unrestricted comprehension is a very strong axiom&amp;mdash;too strong for set theory) to develop set theory with its usual operations and constructions outlined above.&lt;ref name=Jech/&gt; The axiom of regularity is of a restrictive nature as well. Therefore, one is led to the formulation of other axioms to guarantee the existence of enough sets to form a set theory. Some of these have been described informally above and many others are possible. Not all conceivable axioms can be combined freely into consistent theories. For example, the [[axiom of choice]] of ZFC is incompatible with the conceivable '''every set of reals is [[Lebesgue measurable]]'''. The former implies the latter is false.
+
+==See also==
+{{portal|Mathematics}}
+* [[Algebra of sets]]
+* [[Axiomatic set theory]]
+* [[Internal set theory]]
+* [[Set theory]]
+* [[Set (mathematics)]]
+* [[Partially ordered set]]
+
+== Notes ==
+{{Refimprove|date=July 2011}}
+{{reflist}}
+
+==References==
+* [[Nicolas Bourbaki|Bourbaki, N.]], ''Elements of the History of Mathematics'', John Meldrum (trans.), Springer-Verlag, Berlin, Germany, 1994.
+*{{citation|first=Georg|last=Cantor|author-link=Georg Cantor|title=Ueber eine Eigenschaft des Inbegriffes aller reellen algebraischen Zahlen|journal=[[Journal für die reine und angewandte Mathematik|J. Reine Angew. Math.]]|volume=77|year=1874|pages=258–262|url=http://www.digizeitschriften.de/main/dms/img/?PPN=GDZPPN002155583|postscript=, See also [http://bolyai.cs.elte.hu/~badam/matbsc/11o/cantor1874.pdf pdf version: ]|doi=10.1515/crll.1874.77.258}}
+* [[Keith J. Devlin|Devlin, K.J.]], ''The Joy of Sets: Fundamentals of Contemporary Set Theory'', 2nd edition, Springer-Verlag, New York, NY, 1993.
+* María J. Frápolli|Frápolli, María J., 1991, &quot;Is Cantorian set theory an iterative conception of set?&quot;. ''Modern Logic'', v. 1 n. 4, 1991, 302–318.
+* {{citation|first=Gottlob|last=Frege|authorlink=Gotlob Frege|title=Grundgesetze der Arithmetik|volume=1|year=1893|location=Jena 1893.}}
+* [[Paul Halmos|Halmos, Paul]], ''[[Naive Set Theory (book)|Naïve Set Theory]]''. Princeton, NJ: D. Van Nostrand Company, 1960. Reprinted by Springer-Verlag, New York, 1974. {{isbn|0-387-90092-6}} (Springer-Verlag edition). Reprinted by Martino Fine Books, 2011. {{isbn|978-1-61427-131-4}} (Paperback edition).
+* {{cite book|last=Jech|first=Thomas|title=Set theory, third millennium edition (revised and expanded)|publisher=Springer|year=2002|isbn=3-540-44085-2|authorlink=Thomas Jech|ref=harv}}
+* [[John L. Kelley|Kelley, J.L.]], ''General Topology'', Van Nostrand Reinhold, New York, NY, 1955.
+* [[Jean van Heijenoort|van Heijenoort, J.]], ''From Frege to Gödel, A Source Book in Mathematical Logic, 1879-1931'', Harvard University Press, Cambridge, MA, 1967. Reprinted with corrections, 1977. {{isbn|0-674-32449-8}}.
+* {{citation|last=Meschkowski|first=Herbert|authorlink=:de:Herbert Meschkowski|title=Georg Cantor: Briefe. Edited by the authors.|year=1991|first2=Winfried|last2=Nilson|publisher=Springer|location=Berlin|isbn=3-540-50621-7}}
+* {{citation|first=Giuseppe|last=Peano|authorlink=Giuseppe Peano|title=Arithmetices Principies nova Methoda exposita|year=1889|location=Turin 1889.}}
+* {{citation|last=Zermelo|authorlink=Ernst Zermelo|first=Ernst|title=Georg Cantor: Gesammelte Abhandlungen mathematischen und philosophischen Inhalts. Mit erläuternden Anmerkungen sowie mit Ergänzungen aus dem Briefwechsel Cantor-Dedekind. Edited by the author.|publisher=Springer|location=Berlin|year=1932}}
+
+== External links ==
+* [http://www-groups.dcs.st-and.ac.uk/~history/HistTopics/Beginnings_of_set_theory.html Beginnings of set theory] page at St. Andrews
+* [http://jeff560.tripod.com/s.html Earliest Known Uses of Some of the Words of Mathematics (S)]
+
+{{Set theory}}
+
+[[Category:Set theory]]
+[[Category:Systems of set theory]]</text>
+      <sha1>s0b2730vq06fxd5dvr01wajo1s90nn4</sha1>
+    </revision>
+  </page>

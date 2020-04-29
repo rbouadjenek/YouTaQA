@@ -1,0 +1,367 @@
+  <page>
+    <title>Calculus</title>
+    <ns>0</ns>
+    <id>5176</id>
+    <revision>
+      <id>932738477</id>
+      <parentid>929392797</parentid>
+      <timestamp>2019-12-27T23:00:52Z</timestamp>
+      <contributor>
+        <username>Monkbot</username>
+        <id>20483999</id>
+      </contributor>
+      <minor />
+      <comment>/* External links */[[User:Monkbot/task 15: normalize lang icon templates|Task 15]]:  language icon template(s) replaced (2×);</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{About|the branch of mathematics}}
+{{pp-move-indef}}
+{{short description|Branch of mathematics}}
+{{Use dmy dates|date=May 2016}}
+{{Calculus}}
+[[File:Calculus homework 11-21.jpg|thumb|right|230px|Calculus equations written on a chalkboard for students.]]
+'''Calculus''', originally called '''infinitesimal calculus''' or &quot;the calculus of [[infinitesimal]]s&quot;, is the [[mathematics|mathematical]] study of &lt;!-- Please, do not link &quot;continuous&quot;, it has the common-language meaning, and does not refer to the technical mathematical concept --&gt;continuous change, in the same way that [[geometry]] is the study of shape and [[algebra]] is the study of generalizations of [[arithmetic operations]].
+
+It has two major branches, [[differential calculus]] and [[integral calculus]]; the former concerns instantaneous rates of change, and the slopes of curves, while  integral calculus concerns accumulation of quantities, and areas under or between curves. These two branches are related to each other by the [[fundamental theorem of calculus]], and they make use of the fundamental notions of [[convergence (mathematics)|convergence]] of [[infinite sequence]]s and [[Series (mathematics)|infinite series]] to a well-defined [[limit (mathematics)|limit]].&lt;ref&gt;{{cite book |first=Henry F. |last=DeBaggis |first2=Kenneth S. |last2=Miller |title=Foundations of the Calculus |location=Philadelphia |publisher=Saunders |year=1966 |isbn= |oclc=527896 }}&lt;/ref&gt;
+
+Infinitesimal calculus was developed independently in the late 17th century by [[Isaac Newton]] and [[Gottfried Wilhelm Leibniz]].&lt;ref&gt;{{cite book |first=Carl B. |last=Boyer |authorlink=Carl Benjamin Boyer |title=The History of the Calculus and its Conceptual Development |url=https://archive.org/details/historyofcalculu0000boye |url-access=registration |location=New York |publisher=Dover |year=1959 |oclc=643872 }}&lt;/ref&gt;&lt;ref&gt;{{cite book |first=Jason Socrates |last=Bardi |title=The Calculus Wars : Newton, Leibniz, and the Greatest Mathematical Clash of All Time |location=New York |publisher=Thunder's Mouth Press |year=2006 |isbn=1-56025-706-7 }}&lt;/ref&gt; Today, calculus has widespread uses in [[science]], [[engineering]], and [[economics]].&lt;ref&gt;{{cite book |last=Hoffmann |first=Laurence D. |last2=Bradley |first2=Gerald L. |title=Calculus for Business, Economics, and the Social and Life Sciences |location=Boston |publisher=McGraw Hill |year=2004 |edition=8th |isbn=0-07-242432-X }}&lt;/ref&gt;
+
+In [[mathematics education]], ''calculus'' denotes courses of elementary [[mathematical analysis]], which are mainly  devoted to the study of [[Function (mathematics)|functions]] and limits. The word ''calculus'' (plural ''calculi'') is a  [[Latin]] word, meaning originally &quot;small pebble&quot; (this meaning is [[Calculus (medicine)|kept in medicine]]). Because such pebbles were used for calculation, the meaning of the word has evolved and today usually means a method of computation. It is therefore used for naming specific methods of calculation and related theories, such as [[propositional calculus]], [[Ricci calculus]], [[calculus of variations]], [[lambda calculus]], and [[process calculus]].
+
+== History ==
+&lt;!--
+Attention: leave dates as they are. We're not really that bothered, as the majority of Wikipedia dates state &quot;BC&quot;. Just think of it as &quot;Before Cronholm&quot;.
+--&gt;
+{{Main|History of calculus}}
+
+Modern calculus was developed in 17th-century Europe by [[Isaac Newton]] and [[Gottfried Wilhelm Leibniz]] (independently of each other, first publishing around the same time) but elements of it appeared in ancient Greece, then in China&lt;!-- Alphabetically, so please don't change the order, thank you --&gt; and the Middle East, and still later again in medieval Europe and in India.
+
+=== Ancient ===
+[[File:Parabolic segment and inscribed triangle.svg|thumb|150px|right|Archimedes used the [[method of exhaustion]] to calculate the area under a parabola.]]
+The ancient period introduced some of the ideas that led to [[integral]] calculus, but does not seem to have developed these ideas in a rigorous and systematic way. Calculations of [[volume]] and [[area]], one goal of integral calculus, can be found in the [[Egyptian mathematics|Egyptian]] [[Moscow Mathematical Papyrus|Moscow papyrus]] ([[13th dynasty]], {{circa|1820}}&amp;nbsp;BC); but the formulas are simple instructions, with no indication as to method, and some of them lack major components.&lt;ref&gt;Morris Kline, ''[https://books.google.com/books?id=-OsRDAAAQBAJ&amp;printsec=frontcover#v=onepage&amp;q&amp;f=false Mathematical thought from ancient to modern times]'', Vol. I&lt;/ref&gt;
+
+From the age of [[Greek mathematics]], [[Eudoxus of Cnidus|Eudoxus]] ({{circa|408–355}}&amp;nbsp;BC) used the [[method of exhaustion]], which foreshadows the concept of the limit, to calculate areas and volumes, while [[Archimedes]] ({{circa|287–212}}&amp;nbsp;BC) [[Archimedes' use of infinitesimals|developed this idea further]], inventing [[heuristics]] which resemble the methods of integral calculus.&lt;ref&gt;Archimedes, ''Method'', in ''The Works of Archimedes'' {{isbn|978-0-521-66160-7}}&lt;/ref&gt;
+
+The method of exhaustion was later discovered independently in [[Chinese mathematics|China]] by [[Liu Hui]] in the 3rd century AD in order to find the area of a circle.&lt;ref&gt;{{cite book
+|series=Chinese studies in the history and philosophy of science and technology|volume=130|title=A comparison of Archimdes' and Liu Hui's studies of circles|first1=Liu|last1=Dun|first2=Dainian|last2=Fan|first3=Robert Sonné|last3=Cohen|publisher=Springer|year=1966|isbn=978-0-7923-3463-7|page=279|url=https://books.google.com/books?id=jaQH6_8Ju-MC}},[https://books.google.com/books?id=jaQH6_8Ju-MC&amp;pg=PA279  pp. 279ff]&lt;/ref&gt; In the 5th century AD, [[Zu Gengzhi]], son of [[Zu Chongzhi]], established a method&lt;ref&gt;{{cite book|last1=Katz|first1=Victor J.|title=A history of mathematics|date=2008|publisher=Addison-Wesley|location=Boston, MA|isbn=978-0-321-38700-4|pages=203|edition=3rd}}&lt;/ref&gt;&lt;ref&gt;{{cite book|title=Calculus: Early Transcendentals|edition=3|first1=Dennis G.|last1=Zill|first2=Scott|last2=Wright|first3=Warren S.|last3=Wright|publisher=Jones &amp; Bartlett Learning|year=2009|isbn=978-0-7637-5995-7|page=xxvii|url=https://books.google.com/books?id=R3Hk4Uhb1Z0C}} [https://books.google.com/books?id=R3Hk4Uhb1Z0C&amp;pg=PR27 Extract of page 27]&lt;/ref&gt; that would later be called [[Cavalieri's principle]] to find the volume of a [[sphere]].
+
+=== Medieval ===
+[[File:Alhazen-cropped.png|thumb|Alhazen, 11th century Arab mathematician and physicist]]
+In the Middle East, Hasan Ibn al-Haytham, Latinized as [[Alhazen]] ({{c.|lk=no|965|1040}}&amp;nbsp;{{sc|ce}}) derived a formula for the sum of [[fourth power]]s. He used the results to carry out what would now be called an [[Integral|integration]] of this function, where the formulae for the sums of integral squares and fourth powers allowed him to calculate the volume of a [[paraboloid]].&lt;ref name=katz&gt;Katz, V.J.  1995.  &quot;Ideas of Calculus in Islam and India.&quot;  ''Mathematics Magazine'' (Mathematical Association of America), 68(3):163–174.&lt;/ref&gt;
+
+In the 14th century, Indian mathematicians gave a non-rigorous method, resembling differentiation, applicable to some trigonometric functions. [[Madhava of Sangamagrama]] and the [[Kerala School of Astronomy and Mathematics]] thereby stated components of calculus. A complete theory encompassing these components is now well known in the Western world as the ''[[Taylor series]]'' or ''[[infinite series]] approximations''.&lt;ref&gt;{{cite web|url=http://www-history.mcs.st-andrews.ac.uk/HistTopics/Indian_mathematics.html|title=Indian mathematics|publisher=}}&lt;/ref&gt; However, they were not able to &quot;combine many differing ideas under the two unifying themes of the [[derivative]] and the [[integral]], show the connection between the two, and turn calculus into the great problem-solving tool we have today&quot;.&lt;ref name=katz/&gt;
+
+=== Modern ===
+{{quote box|width=30em|align=right|quote=The calculus was the first achievement of modern mathematics and it is difficult to overestimate its importance. I think it defines more unequivocally than anything else the inception of modern mathematics, and the system of mathematical analysis, which is its logical development, still constitutes the greatest technical advance in exact thinking.|author=—[[John von Neumann]]&lt;ref&gt;von Neumann, J., &quot;The Mathematician&quot;, in Heywood, R.B., ed., ''The Works of the Mind'', University of Chicago Press, 1947, pp. 180–196.  Reprinted in Bródy, F., Vámos, T., eds., ''The Neumann Compendium'', World Scientific Publishing Co. Pte. Ltd., 1995, {{isbn|981-02-2201-7}}, pp. 618–626.&lt;/ref&gt;}}
+
+In Europe, the foundational work was a treatise written by [[Bonaventura Cavalieri]], who argued that volumes and areas should be computed as the sums of the volumes and areas of infinitesimally thin cross-sections. The ideas were similar to Archimedes' in ''[[The Method of Mechanical Theorems|The Method]]'', but this treatise is believed to have been lost in the 13th century, and was only rediscovered in the early 20th century, and so would have been unknown to Cavalieri. Cavalieri's work was not well respected since his methods could lead to erroneous results, and the infinitesimal quantities he introduced were disreputable at first.
+
+The formal study of calculus brought together Cavalieri's infinitesimals with the [[calculus of finite differences]] developed in Europe at around the same time. [[Pierre de Fermat]], claiming that he borrowed from [[Diophantus]], introduced the concept of [[adequality]], which represented equality up to an infinitesimal error term.&lt;ref&gt;[[André Weil]]: ''Number theory: An approach through History from Hammurapi to Legendre''. Boston: Birkhauser Boston, 1984, {{isbn|0-8176-4565-9}}, p. 28.&lt;/ref&gt; The combination was achieved by [[John Wallis]], [[Isaac Barrow]], and [[James Gregory (astronomer and mathematician)|James Gregory]], the latter two proving the [[Fundamental theorem of calculus|second fundamental theorem of calculus]] around 1670.
+
+[[File:GodfreyKneller-IsaacNewton-1689.jpg|thumb|200px|right|[[Isaac Newton]] developed the use of calculus in his [[Newton's laws of motion|laws of motion]] and [[gravitation]].]]
+
+The [[product rule]] and [[chain rule]],&lt;ref&gt;{{cite book |title=Calculus: Single Variable, Volume 1 |edition=Illustrated |first1=Brian E. |last1=Blank |first2=Steven George |last2=Krantz |publisher=Springer Science &amp; Business Media |year=2006 |isbn=978-1-931914-59-8 |page=248 |url=https://books.google.com/books?id=hMY8lbX87Y8C&amp;pg=PA248}}&lt;/ref&gt; the notions of [[higher derivative]]s and [[Taylor series]],&lt;ref&gt;{{cite book |title=The Rise and Development of the Theory of Series up to the Early 1820s |edition=Illustrated |first1=Giovanni |last1=Ferraro |publisher=Springer Science &amp; Business Media |year=2007 |isbn=978-0-387-73468-2 |page=87 |url=https://books.google.com/books?id=vLBJSmA9zgAC&amp;pg=PA87}}&lt;/ref&gt; and of [[analytic function]]s{{citation needed|date=August 2017}} were used by [[Isaac Newton]] in an idiosyncratic notation which he applied to solve problems of [[mathematical physics]]. In his works, Newton rephrased his ideas to suit the mathematical idiom of the time, replacing calculations with infinitesimals by equivalent geometrical arguments which were considered beyond reproach. He used the methods of calculus to solve the problem of planetary motion, the shape of the surface of a rotating fluid, the oblateness of the earth, the motion of a weight sliding on a [[cycloid]], and many other problems discussed in his ''[[Philosophiæ Naturalis Principia Mathematica|Principia Mathematica]]'' (1687). In other work, he developed series expansions for functions, including fractional and irrational powers, and it was clear that he understood the principles of the [[Taylor series]]. He did not publish all these discoveries, and at this time infinitesimal methods were still considered disreputable.
+
+[[File:Gottfried Wilhelm Leibniz, Bernhard Christoph Francke.jpg|thumb|200px|left|[[Gottfried Wilhelm Leibniz]] was the first to state clearly the rules of calculus.]]
+
+These ideas were arranged into a true calculus of infinitesimals by [[Gottfried Wilhelm Leibniz]], who was originally accused of [[plagiarism]] by Newton.&lt;ref name=leib&gt;Leibniz, Gottfried Wilhelm. ''The Early Mathematical Manuscripts of Leibniz''. Cosimo, Inc., 2008. p. 228. [https://books.google.com/books?hl=en&amp;lr=&amp;id=7d8_4WPc9SMC&amp;oi=fnd&amp;pg=PA3&amp;dq=Gottfried+Wilhelm+Leibniz+accused+of+plagiarism+by+Newton#v=onepage&amp;q=plagairism&amp;f=false|Online Copy]&lt;/ref&gt; He is now regarded as an [[Multiple discovery|independent inventor]] of and contributor to calculus. His contribution was to provide a clear set of rules for working with infinitesimal quantities, allowing the computation of second and higher derivatives, and providing the [[product rule]] and [[chain rule]], in their differential and integral forms. Unlike Newton, Leibniz paid a lot of attention to the formalism, often spending days determining appropriate symbols for concepts.
+
+Today, [[Gottfried Leibniz|Leibniz]] and [[Isaac Newton|Newton]] are usually both given credit for independently inventing and developing calculus. Newton was the first to apply calculus to general [[physics]] and Leibniz developed much of the notation used in calculus today. The basic insights that both Newton and Leibniz provided were the laws of differentiation and integration, second and higher derivatives, and the notion of an approximating polynomial series. By Newton's time, the fundamental theorem of calculus was known.
+
+When Newton and Leibniz first published their results, there was [[Newton v. Leibniz calculus controversy|great controversy]] over which mathematician (and therefore which country) deserved credit. Newton derived his results first (later to be published in his ''[[Method of Fluxions]]''), but Leibniz published his &quot;[[Nova Methodus pro Maximis et Minimis]]&quot; first. Newton claimed Leibniz stole ideas from his unpublished notes, which Newton had shared with a few members of the [[Royal Society]]. This controversy divided English-speaking mathematicians from continental European mathematicians for many years, to the detriment of English mathematics.{{citation needed|date=February 2018}} A careful examination of the papers of Leibniz and Newton shows that they arrived at their results independently, with Leibniz starting first with integration and Newton with differentiation.  It is Leibniz, however, who gave the new discipline its name. Newton called his calculus &quot;[[Method of fluxions|the science of fluxions]]&quot;.
+
+Since the time of Leibniz and Newton, many mathematicians have contributed to the continuing development of calculus. One of the first and most complete works on both infinitesimal and [[integral calculus]] was written in 1748 by [[Maria Gaetana Agnesi]].&lt;ref&gt;{{cite book |title=A Biography of Maria Gaetana Agnesi, an Eighteenth-century Woman Mathematician |edition=illustrated |first1=Antonella |last1=Cupillari |publisher=Edwin Mellen Press |year=2007 |isbn=978-0-7734-5226-8 |page=iii |url=https://books.google.com/books?id=urEfAQAAIAAJ&amp;q=most+complete |contributor-last=Allaire|contributor-first=Patricia R.|contribution=Foreword}}&lt;/ref&gt;&lt;ref&gt;{{cite web| url=http://www.agnesscott.edu/lriddle/women/agnesi.htm| title=Maria Gaetana Agnesi| first=Elif| last=Unlu|date=April 1995| publisher   =[[Agnes Scott College]]}}&lt;/ref&gt;
+[[File:Maria Gaetana Agnesi.jpg|thumb|150px|right|[[Maria Gaetana Agnesi]]]]
+
+=== Foundations ===
+In calculus, ''foundations'' refers to the [[Rigorous#Mathematical rigour|rigorous]] development of the subject from [[axiom]]s and definitions.  In early calculus the use of [[infinitesimal]] quantities was thought unrigorous, and was fiercely criticized by a number of authors, most notably [[Michel Rolle]] and [[George Berkeley|Bishop Berkeley]]. Berkeley famously described infinitesimals as the [[ghosts of departed quantities]] in his book ''[[The Analyst]]'' in 1734.  Working out a rigorous foundation for calculus occupied mathematicians for much of the century following Newton and Leibniz, and is still to some extent an active area of research today.
+
+Several mathematicians, including [[Colin Maclaurin|Maclaurin]], tried to prove the soundness of using infinitesimals, but it would not be until 150 years later when, due to the work of [[Augustin Louis Cauchy|Cauchy]] and [[Karl Weierstrass|Weierstrass]], a way was finally found to avoid mere &quot;notions&quot; of infinitely small quantities.&lt;ref&gt;{{Cite book |last= Russell |first= Bertrand |authorlink= Bertrand Russell |year= 1946 |title= History of Western Philosophy |location= London |publisher= [[George Allen &amp; Unwin Ltd]] |page= [https://archive.org/stream/westernphilosoph035502mbp#page/n857/mode/2up 857] |quote= The great mathematicians of the seventeenth century were optimistic and anxious for quick results; consequently they left the foundations of analytical geometry and the infinitesimal calculus insecure. Leibniz believed in actual infinitesimals, but although this belief suited his metaphysics it had no sound basis in mathematics. Weierstrass, soon after the middle of the nineteenth century, showed how to establish the calculus without infinitesimals, and thus at last made it logically secure. Next came Georg Cantor, who developed the theory of continuity and infinite number. &quot;Continuity&quot; had been, until he defined it, a vague word, convenient for philosophers like Hegel, who wished to introduce metaphysical muddles into mathematics. Cantor gave a precise significance to the word, and showed that continuity, as he defined it, was the concept needed by mathematicians and physicists. By this means a great deal of mysticism, such as that of Bergson, was rendered antiquated. |title-link= A History of Western Philosophy }}&lt;/ref&gt; The foundations of differential and integral calculus had been laid. In Cauchy's ''[[Cours d'Analyse]]'', we find a broad range of foundational approaches, including a definition of [[continuous function|continuity]] in terms of infinitesimals, and a (somewhat imprecise) prototype of an [[(ε, δ)-definition of limit]] in the definition of differentiation.&lt;ref&gt;{{cite book |first=Judith V. |last=Grabiner |title=The Origins of Cauchy's Rigorous Calculus |url=https://archive.org/details/originsofcauchys00judi |url-access=registration |location=Cambridge |publisher=MIT Press |year=1981 |isbn=978-0-387-90527-3 }}&lt;/ref&gt; In his work Weierstrass formalized the concept of [[Limit of a function|limit]]&lt;!--correct link?--&gt; and eliminated infinitesimals (although his definition can actually validate [[nilsquare]] infinitesimals). Following the work of Weierstrass, it eventually became common to base calculus on limits instead of infinitesimal quantities, though the subject is still occasionally called &quot;infinitesimal calculus&quot;. [[Bernhard Riemann]] used these ideas to give a precise definition of the integral. It was also during this period that the ideas of calculus were generalized to [[Euclidean space]] and the [[complex plane]].
+
+In modern mathematics, the foundations of calculus are included in the field of [[real analysis]], which contains full definitions and [[mathematical proof|proofs]] of the theorems of calculus.  The reach of calculus has also been greatly extended. [[Henri Lebesgue]] invented [[measure theory]] and used it to define integrals of all but the most [[Pathological (mathematics)|pathological]] functions.  [[Laurent Schwartz]] introduced [[Distribution (mathematics)|distributions]], which can be used to take the derivative of any function whatsoever.
+
+Limits are not the only rigorous approach to the foundation of calculus. Another way is to use [[Abraham Robinson]]'s [[non-standard analysis]]. Robinson's approach, developed in the 1960s, uses technical machinery from [[mathematical logic]] to augment the real number system with [[infinitesimal]] and [[Infinity|infinite]] numbers, as in the original Newton-Leibniz conception. The resulting numbers are called [[hyperreal number]]s, and they can be used to give a Leibniz-like development of the usual rules of calculus. There is also [[smooth infinitesimal analysis]], which differs from non-standard analysis in that it mandates neglecting higher power infinitesimals during derivations.
+
+=== Significance ===
+While many of the ideas of calculus had been developed earlier in [[Greek mathematics|Greece]], [[Chinese mathematics|China]], [[Indian mathematics|India]], [[Islamic mathematics|Iraq, Persia]], and [[Japanese mathematics|Japan]], the use of calculus began in Europe, during the 17th century, when [[Isaac Newton]] and [[Gottfried Wilhelm Leibniz]] built on the work of earlier mathematicians to introduce its basic principles. The development of calculus was built on earlier concepts of instantaneous motion and area underneath curves.
+
+Applications of differential calculus include computations involving [[velocity]] and [[acceleration]], the [[slope]] of a curve, and [[Mathematical optimization|optimization]]. Applications of integral calculus include computations involving area, [[volume]], [[arc length]], [[center of mass]], [[work (physics)|work]], and [[pressure]]. More advanced applications include [[power series]] and [[Fourier series]].
+
+Calculus is also used to gain a more precise understanding of the nature of space, time, and motion. For centuries, mathematicians and philosophers wrestled with paradoxes involving [[division by zero]] or sums of infinitely many numbers. These questions arise in the study of [[Motion (physics)|motion]] and area. The [[ancient Greek]] philosopher [[Zeno of Elea]] gave several famous examples of such [[Zeno's paradoxes|paradoxes]]. Calculus provides tools, especially the [[Limit (mathematics)|limit]] and the [[infinite series]], that resolve the paradoxes.
+
+== Principles ==
+
+=== Limits and infinitesimals ===
+{{Main|Limit of a function|Infinitesimal}}
+Calculus is usually developed by working with very small quantities. Historically, the first method of doing so was by [[infinitesimal]]s. These are objects which can be treated like real numbers but which are, in some sense, &quot;infinitely small&quot;.  For example, an infinitesimal number could be greater than 0, but less than any number in the sequence 1, 1/2, 1/3, ... and thus less than any positive [[real number]]. From this point of view, calculus is a collection of techniques for manipulating infinitesimals.  The symbols '''&lt;math&gt;dx&lt;/math&gt;''' and &lt;math&gt;dy&lt;/math&gt; were taken to be infinitesimal, and the derivative &lt;math&gt;dy/dx&lt;/math&gt; was simply their ratio.
+
+The infinitesimal approach fell out of favor in the 19th century because it was difficult to make the notion of an infinitesimal precise. However, the concept was revived in the 20th century with the introduction of [[non-standard analysis]] and [[smooth infinitesimal analysis]], which provided solid foundations for the manipulation of infinitesimals.
+
+In the late 19th century, infinitesimals were replaced within academia by the [[epsilon, delta]] approach to [[Limit of a function|limits]]. Limits describe the value of a [[function (mathematics)|function]] at a certain input in terms of its values at nearby inputs. They capture small-scale behavior in the context of the [[real number|real number system]]. In this treatment, calculus is a collection of techniques for manipulating certain limits. Infinitesimals get replaced by very small numbers, and the infinitely small behavior of the function is found by taking the limiting behavior for smaller and smaller numbers. Limits were thought to provide a more rigorous foundation for calculus, and for this reason they became the standard approach during the twentieth century.
+
+=== Differential calculus ===
+{{Main|Differential calculus}}
+[[File:Tangent derivative calculusdia.svg|thumb|300px|Tangent line at {{math|(''x'', ''f''(''x''))}}. The derivative {{math|''f′''(''x'')}} of a curve at a point is the slope (rise over run) of the line tangent to that curve at that point.]]
+
+Differential calculus is the study of the definition, properties, and applications of the [[derivative]] of a function. The process of finding the derivative is called ''differentiation''. Given a function and a point in the domain, the derivative at that point is a way of encoding the small-scale behavior of the function near that point. By finding the derivative of a function at every point in its domain, it is possible to produce a new function, called the ''derivative function'' or just the ''derivative'' of the original function. In formal terms, the derivative is a [[linear operator]] which takes a function as its input and produces a second function as its output. This is more abstract than many of the processes studied in elementary algebra, where functions usually input a number and output another number. For example, if the doubling function is given the input three, then it outputs six, and if the squaring function is given the input three, then it outputs nine. The derivative, however, can take the squaring function as an input. This means that the derivative takes all the information of the squaring function—such as that two is sent to four, three is sent to nine, four is sent to sixteen, and so on—and uses this information to produce another function. The function produced by deriving the squaring function turns out to be the doubling function.
+
+In more explicit terms the &quot;doubling function&quot; may be denoted by {{math|''g''(''x'') {{=}} 2''x''}} and the &quot;squaring function&quot; by {{math|''f''(''x'') {{=}} ''x''&lt;sup&gt;2&lt;/sup&gt;}}. The &quot;derivative&quot; now takes the function {{math|''f''(''x'')}}, defined by the expression &quot;{{math|''x''&lt;sup&gt;2&lt;/sup&gt;}}&quot;, as an input, that is all the information—such as that two is sent to four, three is sent to nine, four is sent to sixteen, and so on—and uses this information to output another function, the function {{math|''g''(''x'') {{=}} 2''x''}}, as will turn out.
+
+The most common symbol for a derivative is an [[apostrophe]]-like mark called [[prime (symbol)|prime]]. Thus, the derivative of a function called {{math|''f''}} is denoted by {{math|''f′''}}, pronounced &quot;f prime&quot;. For instance, if {{math|''f''(''x'') {{=}} ''x''&lt;sup&gt;2&lt;/sup&gt;}} is the squaring function, then {{math|''f′''(''x'') {{=}} 2''x''}} is its derivative (the doubling function {{math|''g''}} from above). This notation is known as [[Lagrange's notation]].
+
+If the input of the function represents time, then the derivative represents change with respect to time. For example, if {{math|''f''}} is a function that takes a time as input and gives the position of a ball at that time as output, then the derivative of {{math|''f''}} is how the position is changing in time, that is, it is the [[velocity]] of the ball.
+
+If a function is [[linear function|linear]] (that is, if the [[Graph of a function|graph]] of the function is a straight line), then the function can be written as {{math|''y'' {{=}} ''mx'' + ''b''}}, where {{math|''x''}} is the independent variable, {{math|''y''}} is the dependent variable, {{math|''b''}} is the ''y''-intercept, and:
+
+:&lt;math&gt;m= \frac{\text{rise}}{\text{run}}= \frac{\text{change in } y}{\text{change in } x} = \frac{\Delta y}{\Delta x}.&lt;/math&gt;
+
+This gives an exact value for the slope of a straight line. If the graph of the function is not a straight line, however, then the change in {{math|''y''}} divided by the change in {{math|''x''}} varies. Derivatives give an exact meaning to the notion of change in output with respect to change in input. To be concrete, let {{math|''f''}} be a function, and fix a point {{math|''a''}} in the domain of {{math|''f''}}. {{math|(''a'', ''f''(''a''))}} is a point on the graph of the function. If {{math|''h''}} is a number close to zero, then {{math|''a'' + ''h''}} is a number close to {{math|''a''}}. Therefore, {{math|(''a'' + ''h'', ''f''(''a'' + ''h''))}} is close to {{math|(''a'', ''f''(''a''))}}. The slope between these two points is
+
+:&lt;math&gt;m = \frac{f(a+h) - f(a)}{(a+h) - a} = \frac{f(a+h) - f(a)}{h}.&lt;/math&gt;
+
+This expression is called a ''[[difference quotient]]''. A line through two points on a curve is called a ''secant line'', so {{math|''m''}} is the slope of the secant line between {{math|(''a'', ''f''(''a''))}} and {{math|(''a'' + ''h'', ''f''(''a'' + ''h''))}}. The secant line is only an approximation to the behavior of the function at the point {{math|''a''}} because it does not account for what happens between {{math|''a''}} and {{math|''a'' + ''h''}}. It is not possible to discover the behavior at {{math|''a''}} by setting {{math|''h''}} to zero because this would require [[dividing by zero]], which is undefined. The derivative is defined by taking the [[limit (mathematics)|limit]] as {{math|''h''}} tends to zero, meaning that it considers the behavior of {{math|''f''}} for all small values of {{math|''h''}} and extracts a consistent value for the case when {{math|''h''}} equals zero:
+
+:&lt;math&gt;\lim_{h \to 0}{f(a+h) - f(a)\over{h}}.&lt;/math&gt;
+
+Geometrically, the derivative is the slope of the [[tangent line]] to the graph of {{math|''f''}} at {{math|''a''}}. The tangent line is a limit of secant lines just as the derivative is a limit of difference quotients. For this reason, the derivative is sometimes called the slope of the function {{math|''f''}}.
+
+Here is a particular example, the derivative of the squaring function at the input 3. Let {{math|''f''(''x'') {{=}} ''x''&lt;sup&gt;2&lt;/sup&gt;}} be the squaring function.
+
+[[File:Sec2tan.gif|thumb|300px|The derivative {{math|''f′''(''x'')}} of a curve at a point is the slope of the line tangent to that curve at that point. This slope is determined by considering the limiting value of the slopes of secant lines. Here the function involved (drawn in red) is {{math|''f''(''x'') {{=}} ''x''&lt;sup&gt;3&lt;/sup&gt; − ''x''}}. The tangent line (in green) which passes through the point {{nowrap|(−3/2, −15/8)}} has a slope of 23/4. Note that the vertical and horizontal scales in this image are different.]]
+
+:&lt;math&gt;\begin{align}f'(3) &amp;=\lim_{h \to 0}{(3+h)^2 - 3^2\over{h}} \\
+&amp;=\lim_{h \to 0}{9 + 6h + h^2 - 9\over{h}} \\
+&amp;=\lim_{h \to 0}{6h + h^2\over{h}} \\
+&amp;=\lim_{h \to 0} (6 + h) \\
+&amp;= 6
+\end{align}
+&lt;/math&gt;
+
+The slope of the tangent line to the squaring function at the point (3, 9) is 6, that is to say, it is going up six times as fast as it is going to the right. The limit process just described can be performed for any point in the domain of the squaring function. This defines the ''derivative function'' of the squaring function, or just the ''derivative'' of the squaring function for short. A computation similar to the one above shows that the derivative of the squaring function is the doubling function.
+
+=== Leibniz notation ===
+{{Main|Leibniz's notation}}
+
+A common notation, introduced by Leibniz, for the derivative in the example above is
+:&lt;math&gt;
+\begin{align}
+y&amp;=x^2 \\
+\frac{dy}{dx}&amp;=2x.
+\end{align}
+&lt;/math&gt;
+In an approach based on limits, the symbol {{math|{{sfrac|''dy''|''dx''}}}} is to be interpreted not as the quotient of two numbers but as a shorthand for the limit computed above. Leibniz, however, did intend it to represent the quotient of two infinitesimally small numbers, {{math|''dy''}} being the infinitesimally small change in {{math|''y''}} caused by an infinitesimally small change {{math|''dx''}} applied to {{math|''x''}}. We can also think of {{math|{{sfrac|''d''|''dx''}}}} as a differentiation operator, which takes a function as an input and gives another function, the derivative, as the output. For example:
+:&lt;math&gt;
+\frac{d}{dx}(x^2)=2x.
+&lt;/math&gt;
+
+In this usage, the {{math|''dx''}} in the denominator is read as &quot;with respect to {{math|''x''}}&quot;. Another example of correct notation could be:
+
+&lt;math&gt;\begin{align}
+g(t) = t^2 + 2t + 4 \\ \\
+{d \over dt}g(t) = 2t + 2
+\end{align}
+&lt;/math&gt;
+
+Even when calculus is developed using limits rather than infinitesimals, it is common to manipulate symbols like {{math|''dx''}} and {{math|''dy''}} as if they were real numbers; although it is possible to avoid such manipulations, they are sometimes notationally convenient in expressing operations such as the [[total derivative]].
+
+=== Integral calculus ===
+{{Main|Integral}}
+
+''Integral calculus'' is the study of the definitions, properties, and applications of two related concepts, the ''indefinite integral'' and the ''definite integral''. The process of finding the value of an integral is called ''integration''. In technical language, integral calculus studies two related [[linear operator]]s.
+
+The ''indefinite integral'', also known as the ''[[antiderivative]]'', is the inverse operation to the derivative. {{math|''F''}} is an indefinite integral of {{math|''f''}} when {{math|''f''}} is a derivative of {{math|''F''}}.  (This use of lower- and upper-case letters for a function and its indefinite integral is common in calculus.)
+
+The ''definite integral'' inputs a function and outputs a number, which gives the algebraic sum of areas between the graph of the input and the [[x-axis]]. The technical definition of the definite integral involves the [[limit (mathematics)|limit]] of a sum of areas of rectangles, called a [[Riemann sum]].
+
+A motivating example is the distances traveled in a given time.
+
+:&lt;math&gt;\mathrm{Distance} = \mathrm{Speed} \cdot \mathrm{Time}&lt;/math&gt;
+
+If the speed is constant, only multiplication is needed, but if the speed changes, a more powerful method of finding the distance is necessary. One such method is to approximate the distance traveled by breaking up the time into many short intervals of time, then multiplying the time elapsed in each interval by one of the speeds in that interval, and then taking the sum (a [[Riemann sum]]) of the approximate distance traveled in each interval. The basic idea is that if only a short time elapses, then the speed will stay more or less the same. However, a Riemann sum only gives an approximation of the distance traveled. We must take the limit of all such Riemann sums to find the exact distance traveled.
+
+[[File:Constant velocity.png|left|thumb|Constant velocity]]
+[[File:Integral as region under curve.svg|right|thumb|280px|Integration can be thought of as measuring the area under a curve, defined by {{math|''f''(''x'')}}, between two points (here {{math|''a''}} and {{math|''b''}}).]]
+When velocity is constant, the total distance traveled over the given time interval can be computed by multiplying velocity and time.  For example, travelling a steady 50&amp;nbsp;mph for 3 hours results in a total distance of 150 miles.  In the diagram on the left, when constant velocity and time are graphed, these two values form a rectangle with height equal to the velocity and width equal to the time elapsed.  Therefore, the product of velocity and time also calculates the rectangular area under the (constant) velocity curve.  This connection between the area under a curve and distance traveled can be extended to ''any'' irregularly shaped region exhibiting a fluctuating velocity over a given time period. If {{math|''f''(''x'')}} in the diagram on the right represents speed as it varies over time, the distance traveled (between the times represented by {{math|''a''}} and {{math|''b''}}) is the area of the shaded region&amp;nbsp;{{math|''s''}}.
+
+To approximate that area, an intuitive method would be to divide up the distance between {{math|''a''}} and {{math|''b''}} into a number of equal segments, the length of each segment represented by the symbol {{math|Δ''x''}}. For each small segment, we can choose one value of the function {{math|''f''(''x'')}}. Call that value {{math|''h''}}. Then the area of the rectangle with base {{math|Δ''x''}} and height {{math|''h''}} gives the distance (time {{math|Δ''x''}} multiplied by speed {{math|''h''}}) traveled in that segment.   Associated with each segment is the average value of the function above it, {{math|''f''(''x'') {{=}} ''h''}}. The sum of all such rectangles gives an approximation of the area between the axis and the curve, which is an approximation of the total distance traveled. A smaller value for {{math|Δ''x''}} will give more rectangles and in most cases a better approximation, but for an exact answer we need to take a limit as {{math|Δ''x''}} approaches zero.
+
+The symbol of integration is &lt;math&gt;\int &lt;/math&gt;, an [[long s|elongated ''S'']] (the ''S'' stands for &quot;sum&quot;). The definite integral is written as:
+
+:&lt;math&gt;\int_a^b f(x)\, dx.&lt;/math&gt;
+
+and is read &quot;the integral from ''a'' to ''b'' of ''f''-of-''x'' with respect to ''x''.&quot;  The Leibniz notation {{math|''dx''}} is intended to suggest dividing the area under the curve into an infinite number of rectangles, so that their width {{math|Δ''x''}} becomes the infinitesimally small {{math|''dx''}}.  In a formulation of the calculus based on limits, the notation
+
+:&lt;math&gt;\int_a^b \cdots\, dx&lt;/math&gt;
+
+is to be understood as an operator that takes a function as an input and gives a number, the area, as an output. The terminating differential, {{math|''dx''}}, is not a number, and is not being multiplied by {{math|''f''(''x'')}}, although, serving as a reminder of the {{math|Δ''x''}} limit definition, it can be treated as such in symbolic manipulations of the integral. Formally, the differential indicates the variable over which the function is integrated and serves as a closing bracket for the integration operator.
+
+The indefinite integral, or antiderivative, is written:
+
+:&lt;math&gt;\int f(x)\, dx.&lt;/math&gt;
+
+Functions differing by only a constant have the same derivative, and it can be shown that the antiderivative of a given function is actually a family of functions differing only by a constant. Since the derivative of the function {{math|''y'' {{=}} ''x''&lt;sup&gt;2&lt;/sup&gt; + ''C''}}, where {{math|''C''}} is any constant, is {{math|''y′'' {{=}} 2''x''}}, the antiderivative of the latter given by:
+:&lt;math&gt;\int 2x\, dx = x^2 + C.&lt;/math&gt;
+The unspecified constant {{math|''C''}} present in the indefinite integral or antiderivative is known as the [[constant of integration]].
+
+=== Fundamental theorem ===
+{{Main|Fundamental theorem of calculus}}
+The [[fundamental theorem of calculus]] states that differentiation and integration are inverse operations. More precisely, it relates the values of antiderivatives to definite integrals. Because it is usually easier to compute an antiderivative than to apply the definition of a definite integral, the fundamental theorem of calculus provides a practical way of computing definite integrals. It can also be interpreted as a precise statement of the fact that differentiation is the inverse of integration.
+
+The fundamental theorem of calculus states: If a function {{math|''f''}} is [[continuous function|continuous]] on the interval {{math|[''a'', ''b'']}} and if {{math|''F''}} is a function whose derivative is {{math|''f''}} on the interval {{math|(''a'', ''b'')}}, then
+
+:&lt;math&gt;\int_{a}^{b} f(x)\,dx = F(b) - F(a).&lt;/math&gt;
+
+Furthermore, for every {{math|''x''}} in the interval {{math|(''a'', ''b'')}},
+
+:&lt;math&gt;\frac{d}{dx}\int_a^x f(t)\, dt = f(x).&lt;/math&gt;
+
+This realization, made by both [[Isaac Newton|Newton]] and [[Gottfried Leibniz|Leibniz]], who based their results on earlier work by [[Isaac Barrow]], was key to the proliferation of analytic results after their work became known. The fundamental theorem provides an algebraic method of computing many definite integrals—without performing limit processes—by finding formulas for [[antiderivative]]s. It is also a prototype solution of a [[differential equation]]. Differential equations relate an unknown function to its derivatives, and are ubiquitous in the sciences.
+
+== Applications ==
+[[File:NautilusCutawayLogarithmicSpiral.jpg|thumb|right|The [[logarithmic spiral]] of the [[Nautilus|Nautilus shell]] is a classical image used to depict the growth and change related to calculus.]]
+Calculus is used in every branch of the physical sciences, [[actuarial science]], [[computer science]], [[statistics]], [[engineering]], [[economics]], [[business]], [[medicine]], [[demography]], and in other fields wherever a problem can be [[mathematical model|mathematically modeled]] and an [[optimization (mathematics)|optimal]] solution is desired. It allows one to go from (non-constant) rates of change to the total change or vice versa, and many times in studying a problem we know one and are trying to find the other.
+
+[[Physics]] makes particular use of calculus; all concepts in [[classical mechanics]] and [[electromagnetism]] are related through calculus. The [[mass]] of an object of known [[density]], the [[moment of inertia]] of objects, as well as the total energy of an object within a conservative field can be found by the use of calculus. An example of the use of calculus in mechanics is [[Newton's laws of motion|Newton's second law of motion]]: historically stated it expressly uses the term &quot;change of motion&quot; which implies the derivative saying ''The'' '''change''' ''of momentum of a body is equal to the resultant force acting on the body and is in the same direction.'' Commonly expressed today as Force&amp;nbsp;=&amp;nbsp;Mass&amp;nbsp;×&amp;nbsp;acceleration, it implies differential calculus because acceleration is the time derivative of velocity or second time derivative of trajectory or spatial position. Starting from knowing how an object is accelerating, we use calculus to derive its path.
+
+Maxwell's theory of [[electromagnetism]] and [[Albert Einstein|Einstein]]'s theory of [[general relativity]] are also expressed in the language of differential calculus. Chemistry also uses calculus in determining reaction rates and radioactive decay. In biology, population dynamics starts with reproduction and death rates to model population changes.
+
+Calculus can be used in conjunction with other mathematical disciplines. For example, it can be used with [[linear algebra]] to find the &quot;best fit&quot; linear approximation for a set of points in a domain. Or it can be used in [[probability theory]] to determine the probability of a continuous random variable from an assumed density function. In [[analytic geometry]], the study of graphs of functions, calculus is used to find high points and low points (maxima and minima), slope, [[Concave function|concavity]] and [[inflection points]].
+
+[[Green's Theorem]], which gives the relationship between a line integral around a simple closed curve C and a double integral over the plane region D bounded by C, is applied in an instrument known as a [[planimeter]], which is used to calculate the area of a flat surface on a drawing. For example, it can be used to calculate the amount of area taken up by an irregularly shaped flower bed or swimming pool when designing the layout of a piece of property.
+
+[[Discrete Green's Theorem]], which gives the relationship between a double integral of a function around a simple closed rectangular curve ''C'' and a linear combination of the antiderivative's values at corner points along the edge of the curve, allows fast calculation of sums of values in rectangular domains.  For example, it can be used to efficiently calculate sums of rectangular domains in images, in order to rapidly extract features and detect object; another algorithm that could be used is the [[summed area table]].
+
+In the realm of medicine, calculus can be used to find the optimal branching angle of a blood vessel so as to maximize flow. From the decay laws for a particular drug's elimination from the body, it is used to derive dosing laws. In nuclear medicine, it is used to build models of radiation transport in targeted tumor therapies.
+
+In economics, calculus allows for the determination of maximal profit by providing a way to easily calculate both [[marginal cost]] and [[marginal revenue]].
+
+Calculus is also used to find approximate solutions to equations; in practice it is the standard way to solve differential equations and do root finding in most applications. Examples are methods such as [[Newton's method]], [[fixed point iteration]], and [[linear approximation]]. For instance, spacecraft use a variation of the [[Euler method]] to approximate curved courses within zero gravity environments.
+
+==Varieties==
+Over the years, many reformulations of calculus have been investigated for different purposes.
+
+=== Non-standard calculus ===
+{{Main|Non-standard calculus}}
+Imprecise calculations with infinitesimals were widely replaced with the rigorous [[(ε, δ)-definition of limit]] starting in the 1870s. Meanwhile, calculations with infinitesimals persisted and often led to correct results. This led [[Abraham Robinson]] to investigate if it were possible to develop a number system with infinitesimal quantities over which the theorems of calculus were still valid. In 1960, building upon the work of [[Edwin Hewitt]] and [[Jerzy Łoś]], he succeeded in developing [[non-standard analysis]]. The theory of non-standard analysis is rich enough to be applied in many branches of mathematics.  As such, books and articles dedicated solely to the traditional theorems of calculus often go by the title [[non-standard calculus]].
+
+=== Smooth infinitesimal analysis ===
+{{Main|Smooth infinitesimal analysis}}
+This is another reformulation of the calculus in terms of [[infinitesimal]]s. Based on the ideas of [[F. W. Lawvere]] and employing the methods of [[category theory]], it views all functions as being [[continuous function|continuous]] and incapable of being expressed in terms of [[Discrete mathematics|discrete]] entities.  One aspect of this formulation is that the [[law of excluded middle]] does not hold in this formulation.
+
+=== Constructive analysis ===
+{{Main|Constructive analysis}}
+
+[[Constructive mathematics]] is a branch of mathematics that insists that proofs of the existence of a number, function, or other mathematical object should give a construction of the object. As such constructive mathematics also rejects the [[law of excluded middle]]. Reformulations of calculus in a constructive framework are generally part of the subject of [[constructive analysis]].
+
+== See also ==
+{{Main|Outline of calculus}}
+
+=== Lists ===
+* [[Glossary of calculus]]
+* [[List of calculus topics]]
+* [[List of derivatives and integrals in alternative calculi]]
+* [[List of differentiation identities]]
+* [[List of publications in mathematics#Calculus|Publications in calculus]]
+* [[Table of integrals]]
+
+=== Other related topics ===
+* [[Calculus of finite differences]]
+* [[Calculus with polynomials]]
+* [[Complex analysis]]
+* [[Differential equation]]
+* [[Differential geometry and topology|Differential geometry]]
+* ''[[Elementary Calculus: An Infinitesimal Approach]]''
+* [[Discrete calculus]]
+* [[Fourier series]]
+* [[Integral equation]]
+* [[Mathematical analysis]]
+* [[Multiplicative calculus]]
+* [[Multivariable calculus]]
+* [[Non-classical analysis]]
+* [[Multiplicative calculus|Non-Newtonian calculus]]
+* [[Non-standard analysis]]
+* [[Non-standard calculus]]
+* [[Precalculus]] ([[Mathematics education|mathematical education]])
+* [[Product integral]]
+* [[Stochastic calculus]]
+* [[Taylor series]]
+
+== References ==
+{{Reflist}}
+
+==Further reading==
+
+=== Books ===
+&lt;!-- Please use APA style; it's a lot easier for it to stay universally readable. --&gt;
+{{Refbegin|2}}
+* [[Carl Benjamin Boyer|Boyer, Carl Benjamin]] (1949). [https://books.google.com/books?id=KLQSHUW8FnUC&amp;printsec=frontcover ''The History of the Calculus and its Conceptual Development'']. Hafner. Dover edition 1959, {{isbn|0-486-60509-4}}
+* [[Richard Courant|Courant, Richard]] {{isbn|978-3-540-65058-4}} ''Introduction to calculus and analysis 1.''
+* [[Edmund Landau]]. {{isbn|0-8218-2830-4}} ''Differential and Integral Calculus'', [[American Mathematical Society]].
+* Robert A. Adams. (1999). {{isbn|978-0-201-39607-2}} ''Calculus: A complete course''.
+* Albers, Donald J.; Richard D. Anderson and Don O. Loftsgaarden, ed. (1986) ''Undergraduate Programs in the Mathematics and Computer Sciences: The 1985–1986 Survey'', Mathematical Association of America No. 7.
+* [[John Lane Bell]]: ''A Primer of Infinitesimal Analysis'', Cambridge University Press, 1998. {{isbn|978-0-521-62401-5}}. Uses [[synthetic differential geometry]] and nilpotent infinitesimals.
+* [[Florian Cajori]], &quot;The History of Notations of the Calculus.&quot; ''Annals of Mathematics'', 2nd Ser., Vol. 25, No. 1 (Sep. 1923), pp.&amp;nbsp;1–46.
+* Leonid P. Lebedev and Michael J. Cloud: &quot;Approximating Perfection: a Mathematician's Journey into the World of Mechanics, Ch. 1: The Tools of Calculus&quot;, Princeton Univ. Press, 2004.
+* [[Cliff Pickover]]. (2003). {{isbn|978-0-471-26987-8}} ''Calculus and Pizza: A Math Cookbook for the Hungry Mind''.
+* [[Michael Spivak]]. (September 1994). {{isbn|978-0-914098-89-8}}'' Calculus''. Publish or Perish publishing.
+* [[Tom M. Apostol]]. (1967). {{isbn|978-0-471-00005-1}} ''Calculus, Volume 1, One-Variable Calculus with an Introduction to Linear Algebra''. Wiley.
+* [[Tom M. Apostol]]. (1969). {{isbn|978-0-471-00007-5}} ''Calculus, Volume 2, Multi-Variable Calculus and Linear Algebra with Applications''. Wiley.
+* [[Silvanus P. Thompson]] and [[Martin Gardner]]. (1998). {{isbn|978-0-312-18548-0}} ''Calculus Made Easy''.
+* [[Mathematical Association of America]]. (1988). ''Calculus for a New Century; A Pump, Not a Filter'', The Association, Stony Brook, NY. ED 300 252.
+* Thomas/Finney. (1996). {{isbn|978-0-201-53174-9}} ''Calculus and Analytic geometry 9th'', Addison Wesley.
+* Weisstein, Eric W. [http://mathworld.wolfram.com/SecondFundamentalTheoremofCalculus.html &quot;Second Fundamental Theorem of Calculus.&quot;] From MathWorld—A Wolfram Web Resource.
+* Howard Anton, Irl Bivens, Stephen Davis:&quot;Calculus&quot;, John Willey and Sons Pte. Ltd., 2002. {{ISBN|978-81-265-1259-1}}
+* [[Ron Larson (mathematician)|Larson, Ron]], Bruce H. Edwards (2010). ''Calculus'', 9th ed., Brooks Cole Cengage Learning. {{isbn|978-0-547-16702-2}}
+* McQuarrie, Donald A. (2003). ''Mathematical Methods for Scientists and Engineers'', University Science Books. {{isbn|978-1-891389-24-5}}
+* {{Cite book |last1= Salas |first1= Saturnino L. |last2= Hille |first2= Einar |author2-link= Einar Hille |last3= Etgen |first3= Garret J. |year= 2007 |title= Calculus: One and Several Variables |edition= 10th |location= [[John Wiley &amp; Sons|Wiley]] |isbn= 978-0-471-69804-3 }}
+* [[James Stewart (mathematician)|Stewart, James]] (2012). ''Calculus: Early Transcendentals'', 7th ed., Brooks Cole Cengage Learning. {{isbn|978-0-538-49790-9}}
+* [[George B. Thomas|Thomas, George B.]], Maurice D. Weir, [[Joel Hass]], Frank R. Giordano (2008), ''Calculus'', 11th ed., Addison-Wesley. {{isbn|0-321-48987-X}}
+{{Refend}}
+
+=== Online books ===
+{{Refbegin|2}}
+* {{cite book |author=Boelkins, M. |year=2012 |title=Active Calculus: a free, open text |access-date=1 February 2013 |url=http://gvsu.edu/s/km |archive-url=https://web.archive.org/web/20130530024317/http://faculty.gvsu.edu/boelkinm/Home/Download_files/Active%20Calculus%20ch1-8%20%28v.1.1%20W13%29.pdf |archive-date=30 May 2013 |url-status=dead |df=dmy-all }}
+* Crowell, B. (2003). &quot;''Calculus''&quot;. Light and Matter, Fullerton. Retrieved 6 May 2007 from [http://www.lightandmatter.com/calc/calc.pdf http://www.lightandmatter.com/calc/calc.pdf]
+* Garrett, P. (2006). &quot;''Notes on first year calculus''&quot;. University of Minnesota. Retrieved 6 May 2007 from [http://www.math.umn.edu/~garrett/calculus/first_year/notes.pdf &lt;nowiki&gt;http://www.math.umn.edu/~garrett/calculus/first_year/notes.pdf&lt;/nowiki&gt;]
+* Faraz, H. (2006). &quot;''Understanding Calculus''&quot;. Retrieved 6 May 2007 from UnderstandingCalculus.com, URL http://www.understandingcalculus.com (HTML only)
+* Keisler, H.J. (2000). &quot;''Elementary Calculus: An Approach Using Infinitesimals''&quot;. Retrieved 29 August 2010 from [http://www.math.wisc.edu/~keisler/calc.html &lt;nowiki&gt;http://www.math.wisc.edu/~keisler/calc.html&lt;/nowiki&gt;]
+* Mauch, S. (2004). &quot;''Sean's Applied Math Book''&quot; (pdf). California Institute of Technology. Retrieved 6 May 2007 from [https://web.archive.org/web/20070614183657/http://www.cacr.caltech.edu/~sean/applied_math.pdf &lt;nowiki&gt;https://web.archive.org/web/20070614183657/http://www.cacr.caltech.edu/~sean/applied_math.pdf&lt;/nowiki&gt;]
+* Sloughter, Dan (2000). &quot;''Difference Equations to Differential Equations: An introduction to calculus''&quot;. Retrieved 17 March 2009 from [http://synechism.org/drupal/de2de/ http://synechism.org/drupal/de2de/]
+* Stroyan, K.D. (2004). &quot;''A brief introduction to infinitesimal calculus''&quot;. University of Iowa. Retrieved 6 May 2007 from https://web.archive.org/web/20050911104158/http://www.math.uiowa.edu/~stroyan/InfsmlCalculus/InfsmlCalc.htm (HTML only)
+* Strang, G. (1991). &quot;''Calculus''&quot; Massachusetts Institute of Technology. Retrieved 6 May 2007 from [http://ocw.mit.edu/ans7870/resources/Strang/strangtext.htm http://ocw.mit.edu/ans7870/resources/Strang/strangtext.htm]
+* Smith, William V. (2001). &quot;''The Calculus''&quot;. Retrieved 4 July 2008 [http://www.math.byu.edu/~smithw/Calculus/] (HTML only).
+{{Refend}}
+
+== External links ==
+{{Sister project links|Calculus}}
+* {{springer|title=Calculus|id=p/c020050}}
+* {{MathWorld | urlname=Calculus | title=Calculus}}
+* {{PlanetMath | urlname=TopicsOnCalculus | title=Topics on Calculus | id=7592}}
+* [http://djm.cc/library/Calculus_Made_Easy_Thompson.pdf Calculus Made Easy (1914) by Silvanus P. Thompson] Full text in PDF
+* {{In Our Time|Calculus|b00mrfwq|Calculus}}
+* [http://www.calculus.org Calculus.org: The Calculus page] at University of California, Davis&amp;nbsp;– contains resources and links to other sites
+* [http://cow.math.temple.edu/ COW: Calculus on the Web] at Temple University&amp;nbsp;– contains resources ranging from pre-calculus and associated algebra
+* [http://www.economics.soton.ac.uk/staff/aldrich/Calculus%20and%20Analysis%20Earliest%20Uses.htm Earliest Known Uses of Some of the Words of Mathematics: Calculus &amp; Analysis]
+* [https://web.archive.org/web/20080704114104/http://integrals.wolfram.com/ Online Integrator (WebMathematica)] from Wolfram Research
+* [http://www.ericdigests.org/pre-9217/calculus.htm The Role of Calculus in College Mathematics] from ERICDigests.org
+* [http://ocw.mit.edu/OcwWeb/Mathematics/index.htm OpenCourseWare Calculus] from the [[Massachusetts Institute of Technology]]
+* [http://www.encyclopediaofmath.org/index.php?title=Infinitesimal_calculus&amp;oldid=18648 Infinitesimal Calculus]&amp;nbsp;– an article on its historical development, in ''Encyclopedia of Mathematics'', ed. [[Michiel Hazewinkel]].
+* {{cite web |url=http://math.mit.edu/~djk/calculus_beginners/ |title=Calculus for Beginners and Artists |author=Daniel Kleitman, MIT}}
+* [http://www.math.ucdavis.edu/~kouba/ProblemsList.html Calculus Problems and Solutions] by D.A. Kouba
+* [http://www.math.tamu.edu/~dallen/history/calc1/calc1.html Donald Allen's notes on calculus]
+* [http://www.imomath.com/index.php?options=277 Calculus training materials at imomath.com]
+* {{in lang|en|ar}} [http://www.wdl.org/en/item/4327/ The Excursion of Calculus], 1772
+
+{{Integral}}
+{{Infinitesimals}}
+{{Calculus topics}}
+{{Areas of mathematics}}
+{{Isaac Newton}}
+{{Glossaries of science and engineering}}
+
+{{Authority control}}
+
+[[Category:Calculus| ]]</text>
+      <sha1>hapkexyh3kiku1wu2eepuh2e8t7ziub</sha1>
+    </revision>
+  </page>

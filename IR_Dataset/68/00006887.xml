@@ -1,0 +1,124 @@
+  <page>
+    <title>Cyrix 6x86</title>
+    <ns>0</ns>
+    <id>6887</id>
+    <revision>
+      <id>923733737</id>
+      <parentid>902038159</parentid>
+      <timestamp>2019-10-30T13:09:32Z</timestamp>
+      <contributor>
+        <username>W like wiki</username>
+        <id>2128794</id>
+      </contributor>
+      <minor />
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{More footnotes|date=September 2011}}
+{{Infobox CPU
+|name           = 6x86
+|image          = Cyrix 6x86-P166.jpg
+|image_size     = 200px
+|caption        = A Cyrix 6x86-P166 processor
+|manufacturers  = [[Cyrix]]
+|produced-start = 
+|produced-end   = 
+|model          = M1, M1L, MII
+|transistors    = 4.3M 500 [[nanometers|nm]]
+|slowest        = 
+|fastest        = 
+|fsb-slowest    = 
+|fsb-fastest    = 
+|soldby         = 
+|sock1          = [[Socket 5]]
+|sock2          = [[Socket 7]]
+|brand1         = 
+|arch           = [[IA-32]]/[[x86]]
+|microarch      = 6x86
+|cpuid          =
+|code           = 
+|numcores       = 1
+|l1cache        = 16 KB (6x86/L) or 64 KB (6x86MX / MII)
+|platform       = Desktop
+|predecessor    = [[Cyrix Cx486]]
+|successor      = 
+}}
+The '''Cyrix 6x86''' (codename M1) is a sixth-generation, [[32-bit]] [[x86]] [[microprocessor]] designed by [[Cyrix]] and manufactured by [[International Business Machines|IBM]] and [[SGS-Thomson]]. It was originally released in 1996.
+
+==Architecture==
+[[Image:Cyrix 6x86 arch.svg|250px|thumb|A simplistic block diagram of the Cyrix 6x86 [[microarchitecture]] ]]
+
+The 6x86 is [[superscalar]] and [[superpipelined]] and performs [[register renaming]], [[speculative execution]], [[out-of-order execution]], and [[data dependency]] removal.&lt;ref name=M1DataSheet&gt;{{cite web |url=http://datasheets.chipdb.org/Cyrix/M1/6x86/M1-1.PDF |title=Cyrix M1 datasheet}}&lt;/ref&gt; However, it continued to use native x86 execution and ordinary [[microcode]] only, like [[Centaur Technology|Centaur]]'s [[Winchip]], unlike competitors [[Intel]] and [[AMD]] which introduced the method of ''dynamic'' translation to [[micro-operation]]s with [[Pentium Pro]] and [[AMD K5|K5]]. The 6x86 is [[CPU socket|socket]]-compatible with the Intel [[P5 (microarchitecture)#P54C|P54C]] [[Pentium (brand)|Pentium]], and was offered in six performance levels: PR 90+, PR 120+, PR 133+, PR 150+, PR 166+ and PR 200+. These performance levels do not map to the clock speed of the chip itself (for example, a PR 133+ ran at 110&amp;nbsp;MHz, a PR 166+ ran at 133&amp;nbsp;MHz, etc.).
+
+With regard to internal caches, it has a 16-[[Kibibyte|KB]] primary [[CPU cache|cache]] and a fully associative 256-byte instruction line cache is included alongside the primary cache, which functions as the primary instruction cache.&lt;ref name=M1DataSheet /&gt;
+
+The 6x86 and 6x86L weren't completely compatible with the Intel [[P5 (microarchitecture)|P5]] [[Pentium (brand)|Pentium]] instruction set and is not multi-processor capable. For this reason, the chip identified itself as a [[Intel 80486|80486]] and disabled the [[CPUID]] instruction by default. CPUID support could be enabled by first enabling extended CCR registers then setting bit 7 in CCR4. The lack of full P5 Pentium compatibility caused problems with some applications because programmers had begun to use P5 Pentium-specific instructions. Some companies released patches for their products to make them function on the 6x86. 
+
+Compatibility with the Pentium was improved in the 6x86MX, by adding a [[Time Stamp Counter]] to support the P5 Pentium's RDTSC instruction.&lt;ref name=6x86MXDataSheet&gt;{{cite web |url=http://datasheets.chipdb.org/IBM/x86/6x86MX/mx_full.pdf |title=IBM 6x86MX datasheet}}&lt;/ref&gt; Support for the Pentium Pro's CMOVcc instructions were also added.&lt;ref name=6x86MXDataSheet /&gt;
+
+==Performance==
+Similarly to [[Advanced Micro Devices|AMD]] with their [[AMD K5|K5]] and early [[AMD K6|K6]] processors, Cyrix used a [[PR rating]] (Performance Rating) to relate their performance to the Intel [[P5 (microarchitecture)|P5]] [[Pentium (brand)|Pentium]] (pre-[[P55C (microprocessor)|P55C]]), as the 6x86's higher per-clock performance relative to a P5 Pentium could be quantified against a higher-clocked Pentium part. For example, a 133&amp;nbsp;MHz 6x86 will match or outperform a P5 Pentium at 166&amp;nbsp;MHz, and as a result Cyrix could market the 133&amp;nbsp;MHz chip as being a P5 Pentium 166's equal. However, the PR rating was not an entirely truthful representation of the 6x86's performance.
+
+While the 6x86's integer performance was significantly higher than P5 Pentium's, its floating point performance was more mediocre—between 2 and 4 times the performance of the 486 FPU per clock cycle (depending on the operation and precision). The [[Floating point unit|FPU]] in the 6x86 was largely the same circuitry that was developed for Cyrix's earlier high performance 8087/80287/80387-compatible coprocessors, which was very fast for its time—the Cyrix FPU was much faster than the 80387, and even the 80486 FPU. However, it was still considerably slower than the new and completely redesigned P5 Pentium and [[P6 (microarchitecture)|P6]] [[Pentium Pro]]-[[Pentium III]] FPUs.
+
+During the 6x86's development, the majority of applications ([[office software]] as well as games) performed almost entirely integer operations. The designers foresaw that future applications would most likely maintain this instruction focus. So, to optimize the chip's performance for what they believed to be the most likely application of the CPU, the integer execution resources received most of the transistor budget. This would later prove to be a strategic mistake, as the popularity of the P5 Pentium caused many [[software developer]]s to hand-optimize code in [[X86 assembly language|assembly language]], to take advantage of the P5 Pentium's tightly pipelined and lower latency FPU. For example, the highly anticipated [[first person shooter]] ''[[Quake (video game)|Quake]]'' used highly optimized assembly code designed almost entirely around the P5 Pentium's FPU. As a result, the P5 Pentium significantly outperformed other CPUs in the game. 
+
+Therefore, despite being very fast clock by clock, the 6x86 and MII were forced to compete at the low-end of the market as AMD K6 and Intel [[P6 (microarchitecture)|P6]] [[Pentium II]] were always ahead on clock speed. The 6x86's and MII's old generation &quot;486 class&quot; floating point unit combined with an integer section that was at best on-par with the newer P6 and K6 chips meant that Cyrix could no longer compete in performance.
+
+==Models==
+
+===6x86===
+[[File:Cyrix 6x86-P166.jpg|thumb|Cyrix 6x86 133MHz]]
+The ''6x86'' (codename M1) was released by [[Cyrix]] in 1996. The first generation of 6x86 had heat problems. This was primarily caused by their higher heat output than other x86 CPUs of the day and, as such, computer builders sometimes did not equip them with adequate cooling. The CPUs topped out at around 25&amp;nbsp;[[Watt|W]] heat output (like the [[AMD K6]]), whereas the P5 Pentium produced around 15&amp;nbsp;W of [[waste heat]] at its peak. However, both numbers would be a fraction of the heat generated by many high performance processors, some years later.
+[[File: IBM_6x86_P120%2B.jpg |thumb| Cyrix 6x86  100MHz sold under IBM label]]
+
+&lt;gallery mode=packed heights=200px&gt;
+Image:Cyrix_6x86_early_die.jpg|Early Cyrix 6x86 (M1) die shot
+&lt;/gallery&gt;
+
+===6x86L===
+[[File:KL IBM 6x86L Cyrix.jpg|thumb|Cyrix 6x86L 133MHz sold under IBM label.]]
+
+The '''6x86L''' (codename M1L) was later released by [[Cyrix]] to address heat issues; the ''L'' standing for ''low-power''. Improved manufacturing technologies permitted usage of a lower Vcore. Just like the Pentium MMX, the 6x86L required a split powerplane voltage regulator with separate voltages for I/O and CPU core. 
+
+&lt;gallery mode=packed heights=200px&gt;
+Image:Cyrix_6x86_die.JPG|Cyrix 6x86L (M1L) die shot
+&lt;/gallery&gt;
+
+===6x86MX / MII===
+[[File:IBM PR300.jpg|thumb|IBM 6x86MX PR300 processor]]
+[[File:IBM_6x86MX_PR233.jpg |thumb| Cyrix 6x86MX  198MHz sold under IBM label]]
+[[File:Cyrix IBM CPU 6x86MX PR200 bottom.jpg|thumb|View of the [[socket 7]] 321-pin connectors of an IBM 6x86MX PR200 CPU.]]
+
+Another release of the 6x86, the '''6x86MX''', added [[MMX (instruction set)|MMX]] compatibility along with the [[Extended MMX|EMMI]] instruction set, improved compatibility with the Pentium and Pentium Pro by adding a [[Time Stamp Counter]] and CMOVcc instructions respectively, and quadrupled the primary cache size to 64&amp;nbsp;KB. The 256-byte instruction line cache can be turned into a [[Scratchpad_memory|scratchpad cache]] to provide support for multimedia operations.&lt;ref name=6x86MXDataSheet /&gt; Later revisions of this chip were renamed  '''MII''', to better compete with the Pentium II processor. Unfortunately, 6x86MX / '''MII''' was late to market, and couldn't scale well in clock speed with the manufacturing processes used at the time.
+
+&lt;gallery mode=packed heights=200px&gt;
+Image:KL Cyrix_6x86MX.jpg|Cyrix 6x86MX 150 MHz
+Image:KL IBM 6x86MX.jpg|IBM 6x86MX 133MHz
+Image:KL Cyrix MII-333.jpg|Cyrix MII 250MHz
+Image:Cyrix_6x86MX_die.JPG|Cyrix 6x86MX (M2) die shot
+&lt;/gallery&gt;
+
+==References==
+{{Reflist}}
+
+==Further reading==
+*Gwennap, Linley (25 October 1993). &quot;Cyrix Describes Pentium Competitor&quot; ''[[Microprocessor Report]]''.
+*Gwennap, Linley (5 December 1994). &quot;Cyrix M1 Design Tapes Out&quot;. ''[[Microprocessor Report]]''.
+*Gwennap, Linley (2 June 1997). &quot;Cyrix 6x68MX Outperforms AMD K6&quot;. ''[[Microprocessor Report]]''.
+*Slater, Michael (12 February 1996). &quot;Cyrix, IBM Push 6x86 to 133 MHz&quot;. ''[[Microprocessor Report]]''.
+*Slater, Michael (28 October 1996). &quot;Cyrix Doubles x86 Performance with M2&quot;. ''[[Microprocessor Report]]''.
+
+==External links==
+* {{webarchive |url=https://web.archive.org/web/20170622042421/http://www.pcguide.com/ref/cpu/fam/g5C6x86-c.html |date=June 22, 2017 |title=Cyrix 6x86 (&quot;M1&quot;) at PCGuide }}
+*[http://www.pcguide.com/ref/cpu/fam/g5C6x86-c.html Cyrix 6x86 (&quot;M1&quot;)] at PCGuide
+*[http://www.cpu-collection.de/?l0=co&amp;l1=Cyrix&amp;l2=6x86 cpu-collection.de] Cyrix 6x86 processor images and descriptions
+*[http://www.azillionmonkeys.com/qed/cpuwar.html#6x86MX Paul Hsieh's 6th Generation x86 CPU Comparison] in-depth analysis of 6th generation x86 CPUs, including the 6x86MX.
+*[https://web.archive.org/web/20060615180354/http://www.sandpile.org/impl/m1.htm Cyrix M1 stats] at Sandpile.org
+
+{{FOLDOC}}
+
+[[Category:Cyrix x86 microprocessors|686]]
+[[Category:Superscalar microprocessors]]</text>
+      <sha1>dbghzocirvqz0qws4d0rxzke9flbsaq</sha1>
+    </revision>
+  </page>

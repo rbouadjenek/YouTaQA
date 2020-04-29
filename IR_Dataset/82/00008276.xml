@@ -1,0 +1,99 @@
+  <page>
+    <title>Digital data</title>
+    <ns>0</ns>
+    <id>8276</id>
+    <revision>
+      <id>921541131</id>
+      <parentid>921539754</parentid>
+      <timestamp>2019-10-16T10:04:05Z</timestamp>
+      <contributor>
+        <username>Guy Harris</username>
+        <id>122189</id>
+      </contributor>
+      <comment>Undid revision 921539754 by [[Special:Contributions/2601:8C4:0:1F84:A5C4:14EC:4BC3:2460|2601:8C4:0:1F84:A5C4:14EC:4BC3:2460]] ([[User talk:2601:8C4:0:1F84:A5C4:14EC:4BC3:2460|talk]]) - rvv</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{about|broad technical and mathematical information regarding digital data|alternate or more specific uses|Digital (disambiguation)}}
+
+'''Digital data''', in [[information theory]] and [[information systems]], is the discrete, discontinuous [[Representation (mathematics)|representation]] of information or works. [[Number]]s and [[Letter (alphabet)|letters]] are commonly used representations.
+
+Digital data can be contrasted with [[analog signal]]s which behave in a continuous manner, and with [[continuous function]]s such as sounds, images, and other measurements.
+
+The word ''digital'' comes from the same source as the words [[digit (anatomy)|digit]] and ''digitus'' (the [[Latin]] word for ''[[finger]]''), as fingers are often used for discrete counting. Mathematician [[George Stibitz]] of [[Bell Labs|Bell Telephone Laboratories]] used the word ''digital'' in reference to the fast electric pulses emitted by a device designed to aim and fire anti-aircraft guns in 1942.&lt;ref&gt;{{cite book|last1=Ceruzzi|first1=Paul E|date=June 29, 2012|title=Computing: A Concise History|publisher=[[MIT Press]]|isbn=978-0-262-51767-6}}&lt;/ref&gt; The term is most commonly used in [[computing]] and [[electronics]], especially where real-world information is converted to [[Binary numeral system|binary]] numeric form as in [[digital audio]] and [[digital photography]].
+
+== Symbol to digital conversion ==
+{{original research|section|date=August 2016}}
+Since symbols (for example, [[alphanumeric]] [[Character (computing)|characters]]) are not continuous, representing symbols digitally is rather simpler than conversion of continuous or analog information to digital. Instead of [[sampling (signal processing)|sampling]] and [[quantization (signal processing)|quantization]] as in [[analog-to-digital conversion]], such techniques as [[polling (computer science)|polling]] and [[Character encoding|encoding]] are used.
+
+A symbol input device usually consists of a group of switches that are polled at regular intervals to see which switches are switched. Data will be lost if, within a single polling interval, two switches are pressed, or a switch is pressed, released, and pressed again. This polling can be done by a specialized processor in the device to prevent burdening the main [[Central processing unit|CPU]]. When a new symbol has been entered, the device typically sends an [[interrupt]], in a specialized format, so that the CPU can read it.
+
+For devices with only a few switches (such as the buttons on a [[joystick]]), the status of each can be encoded as bits (usually 0 for released and 1 for pressed) in a single word. This is useful when combinations of key presses are meaningful, and is sometimes used for passing the status of modifier keys on a keyboard (such as shift and control). But it does not scale to support more keys than the number of bits in a single byte or word.
+
+Devices with many switches (such as a [[computer keyboard]]) usually arrange these switches in a scan matrix, with the individual switches on the intersections of x and y lines. When a switch is pressed, it connects the corresponding x and y lines together. Polling (often called scanning in this case) is done by activating each x line in sequence and detecting which y lines then have a signal, thus which keys are pressed. When the keyboard processor detects that a key has changed state, it sends a signal to the CPU indicating the scan code of the key and its new state. The symbol is then [[Code|encoded]], or converted into a number, based on the status of modifier keys and the desired [[character encoding]].
+
+A custom [[Character encoding|encoding]] can be used for a specific application with no loss of data. However, using a standard encoding such as [[ASCII]] is problematic if a symbol such as 'ß' needs to be converted but is not in the standard.
+
+It is estimated that in the year 1986 less than 1% of the world's technological capacity to store information was digital and in 2007 it was already 94%.&lt;ref name=&quot;HilbertLopez2011&quot;&gt;[http://www.sciencemag.org/content/332/6025/60 &quot;The World’s Technological Capacity to Store, Communicate, and Compute Information&quot;], especially [http://www.sciencemag.org/content/suppl/2011/02/08/science.1200970.DC1/Hilbert-SOM.pdf Supporting online material], Martin Hilbert and Priscila López (2011), [[Science (journal)|Science]], 332(6025), 60–65; free access to the article through here: martinhilbert.net/WorldInfoCapacity.html&lt;/ref&gt; The year 2002 is assumed to be the year when human kind was able to store more information in digital than in analog format (the &quot;beginning of the [[digital age]]&quot;).&lt;ref name=&quot;Hilbertvideo2011&quot;&gt;[https://www.youtube.com/watch?v=iIKPjOuwqHo &quot;video animation on The World’s Technological Capacity to Store, Communicate, and Compute Information from 1986 to 2010]&lt;/ref&gt;&lt;ref name=&quot;:0&quot; /&gt;
+
+== States ==
+Digital data come in these three states: [[data at rest]], [[data in transit]] and [[data in use]]. The [[CIA Triad|confidentiality, integrity and availability]] have to be managed during the entire lifecycle from 'birth' to the destruction of the data.
+
+== Properties of digital information ==
+All digital information possesses common properties that distinguish it from analog data with respect to communications:
+* '''Synchronization:''' Since digital information is conveyed by the sequence in which symbols are ordered, all digital schemes have some method for determining the beginning of a sequence. In written or spoken human languages, synchronization is typically provided by [[pausa|pauses]] (spaces), [[capitalization]], and [[punctuation]]. Machine communications typically use special [[synchronization sequence]]s.
+* '''Language:''' All digital communications require a ''[[formal language]]'', which in this context consists of all the information that the sender and receiver of the digital communication must both possess, in advance, in order for the communication to be successful. Languages are generally arbitrary and specify the meaning to be assigned to particular symbol sequences, the allowed range of values, methods to be used for synchronization, etc.
+* '''Errors:''' Disturbances ([[noise (signal processing)|noise]]) in analog communications invariably introduce some, generally small deviation or error between the intended and actual communication. Disturbances in a digital communication do not result in errors unless the disturbance is so large as to result in a symbol being misinterpreted as another symbol or disturb the sequence of symbols. It is therefore generally possible to have an entirely [[Error detection and correction|error-free]] digital communication. Further, techniques such as check codes may be used to detect errors and guarantee error-free communications through redundancy or re-transmission. Errors in digital communications can take the form of ''substitution errors'' in which a symbol is replaced by another symbol, or ''insertion/deletion'' errors in which an extra incorrect symbol is inserted into or deleted from a digital message. Uncorrected errors in digital communications have unpredictable and generally large impact on the information content of the communication.
+* '''[[data transmission|Copying]]:''' Because of the inevitable presence of noise, making many successive copies of an analog communication is infeasible because each generation increases the noise. Because digital communications are generally error-free, copies of copies can be made indefinitely.
+* '''[[Granularity]]:''' The digital representation of a continuously variable analog value typically involves a selection of the number of symbols to be assigned to that value. The number of symbols determines the precision or resolution of the resulting datum. The difference between the actual analog value and the digital representation is known as ''[[quantization error]]''. For example, if the actual temperature is 23.234456544453 degrees, but if only two digits (23) are assigned to this parameter in a particular digital representation, the quantizing error is: 0.234456544453. This property of digital communication is known as ''granularity''.
+*'''[[data compression|Compressible]]:''' According to Miller, &quot;Uncompressed digital data is very large, and in its raw form, it would actually produce a larger signal (therefore be more difficult to transfer) than analog data. However, digital data can be compressed. Compression reduces the amount of bandwidth space needed to send information.  Data can be compressed, sent and then decompressed at the site of consumption. This makes it possible to send much more information and result in, for example, digital television signals offering more room on the airwave spectrum for more television channels.&quot;&lt;ref name=&quot;:0&quot;&gt;{{cite book|last1=Miller|first1=Vincent|year=2011|title=Understanding digital culture|at=sec. &quot;Convergence and the contemporary media experience&quot;|location=London|publisher=Sage Publications|isbn=978-1-84787-497-9}}&lt;/ref&gt;
+
+== Historical digital systems ==
+Even though digital signals are generally associated with the binary electronic digital systems used in modern electronics and computing, digital systems are actually ancient, and need not be binary or electronic.
+* [[DNA]] [[genetic code]] is a naturally occurring form of digital data storage.
+* Written text (due to the limited character set and the use of discrete symbols&amp;nbsp;– the alphabet in most cases)
+* The ''[[abacus]]'' was created sometime between 1000 BC and 500 BC, it later became a form of calculation frequency. Nowadays it can be used as a very advanced, yet basic digital calculator that uses beads on rows to represent numbers. Beads only have meaning in discrete up and down states, not in analog in-between states.
+* A ''[[beacon]]'' is perhaps the simplest non-electronic digital signal, with just two states (on and off). In particular, ''[[smoke signal]]s'' are one of the oldest examples of a digital signal, where an analog &quot;carrier&quot; (smoke) is [[modulated]] with a blanket to generate a digital signal (puffs) that conveys information.
+* [[Morse code]] uses six digital states—dot, dash, intra-character gap (between each dot or dash), short gap (between each letter), medium gap (between words), and long gap (between sentences)—to send messages via a variety of potential carriers such as electricity or light, for example using an [[electrical telegraph]] or a flashing light.
+* The [[Braille]] system was the first binary format for character encoding, using a six-bit code rendered as dot patterns.
+* [[Flag semaphore]] uses rods or flags held in particular positions to send messages to the receiver watching them some distance away.
+* [[International maritime signal flags]] have distinctive markings that represent letters of the alphabet to allow ships to send messages to each other.
+* More recently invented, a [[modem]] modulates an analog &quot;carrier&quot; signal (such as sound) to encode binary electrical digital information, as a series of binary digital sound pulses. A slightly earlier, surprisingly reliable version of the same concept was to bundle a sequence of audio digital &quot;signal&quot; and &quot;no signal&quot; information (i.e. &quot;sound&quot; and &quot;silence&quot;) on [[compact audio cassette|magnetic cassette tape]] for use with early [[home computer]]s.
+
+== See also ==
+{{div col||colwidth=20em}}
+* [[Analog-to-digital converter]]
+* [[Binary number]]
+* [[Comparison of analog and digital recording]]
+* [[Data (computing)]]
+* [[Data remanence]]
+* [[Digital architecture]]
+* [[Digital art]]
+* [[Digital control]]
+* [[Digital divide]]
+* [[Digital electronics]]
+* [[Digital infinity]]
+* [[Digital native]]
+* [[Digital physics]]
+* [[Digital recording]]
+* [[Digital Revolution]]
+* [[Digital video]]
+* [[Digital-to-analog converter]]
+* [[Internet forum]]
+{{div col end}}
+
+== References ==
+{{reflist}}
+
+== Further reading ==
+*Tocci, R. 2006. Digital Systems: Principles and Applications (10th Edition). Prentice Hall. {{ISBN|0-13-172579-3}}
+
+{{Digital systems}}
+
+{{DEFAULTSORT:Digital data}}
+[[Category:Digital media]]
+[[Category:Digital systems]]
+[[Category:Digital technology]]
+[[Category:Consumer electronics]]</text>
+      <sha1>ioj8a4sgpyocvgbgsq7weg02msmte80</sha1>
+    </revision>
+  </page>

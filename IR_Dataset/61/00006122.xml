@@ -1,0 +1,422 @@
+  <page>
+    <title>Continuous function</title>
+    <ns>0</ns>
+    <id>6122</id>
+    <revision>
+      <id>939143255</id>
+      <parentid>935617789</parentid>
+      <timestamp>2020-02-04T17:05:23Z</timestamp>
+      <contributor>
+        <username>Adam majewski</username>
+        <id>441224</id>
+      </contributor>
+      <minor />
+      <comment>Continuous function (set theory)/* See also */</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{short description|Mathematical function that is fundamental for calculus}}
+{{Calculus}}
+
+In [[mathematics]], a '''continuous function''' is a [[function (mathematics)|function]] that does not have any abrupt changes in value, known as [[Classification of discontinuities|discontinuities]]. More precisely, sufficiently small changes in the input of a continuous function result in arbitrarily small changes in its output. Otherwise, a function is said to be a ''discontinuous'' function. A continuous function with a continuous [[inverse function]] is called a [[homeomorphism]].
+
+Continuity of functions is one of the core concepts of [[topology]], which is treated in full generality below. The introductory portion of this article focuses on the special case where the inputs and outputs of functions are [[real number]]s.  A stronger form of continuity is [[uniform continuity]]. In addition, this article discusses the definition for the more general case of functions between two [[metric space]]s. In [[order theory]], especially in [[domain theory]], one considers a notion of continuity known as [[Scott continuity]]. Other forms of continuity do exist but they are not discussed in this article.
+
+As an example, consider the function ''h''(''t''), which describes the [[height]] of a growing flower at time ''t''. This function is continuous. By contrast, if ''M''(''t'') denotes the amount of money in a bank account at time ''t'', then the function jumps at each point in time when money is deposited or withdrawn, so the function ''M''(''t'') is discontinuous.
+
+==History==
+
+A form of the [[(ε, δ)-definition of limit|epsilon–delta definition]] of continuity was first given by [[Bernard Bolzano]] in 1817. [[Augustin-Louis Cauchy]] defined continuity of &lt;math&gt;y=f(x)&lt;/math&gt; as follows: an infinitely small increment &lt;math&gt;\alpha&lt;/math&gt; of the independent variable ''x'' always produces an infinitely small change &lt;math&gt;f(x+\alpha)-f(x)&lt;/math&gt; of the dependent variable ''y'' (see e.g. ''[[Cours d'Analyse]]'', p.&amp;nbsp;34). Cauchy defined infinitely small quantities in terms of variable quantities, and his definition of continuity closely parallels the infinitesimal definition used today (see [[microcontinuity]]). The formal definition and the distinction between pointwise continuity and [[uniform continuity]] were first given by Bolzano in the 1830s but the work wasn't published until the 1930s. Like Bolzano,&lt;ref&gt;{{citation|last1=Bolzano|first1=Bernard|title=Rein analytischer Beweis des Lehrsatzes dass zwischen je zwey Werthen, die ein entgegengesetztes Resultat gewaehren, wenigstens eine reele Wurzel der Gleichung liege|publisher=Haase|location=Prague|date=1817}}&lt;/ref&gt; [[Karl Weierstrass]]&lt;ref&gt;{{Citation | last1=Dugac | first1=Pierre | title=Eléments d'Analyse de Karl Weierstrass | journal=Archive for History of Exact Sciences | year=1973 | volume=10 | pages=41–176 | doi=10.1007/bf00343406}}&lt;/ref&gt; denied continuity of a function at a point ''c'' unless it was defined at and on both sides of ''c'', but [[Édouard Goursat]]&lt;ref&gt;{{Citation | last1=Goursat | first1=E. | title=A course in mathematical analysis | publisher=Ginn | location=Boston | year=1904 | page=2}}&lt;/ref&gt; allowed the function to be defined only at and on one side of ''c'', and [[Camille Jordan]]&lt;ref&gt;{{Citation | last1=Jordan | first1=M.C. | title=Cours d'analyse de l'École polytechnique | publisher=Gauthier-Villars | location=Paris | edition=2nd |year=1893 | volume=1|page=46}}&lt;/ref&gt; allowed it even if the function was defined only at ''c''. All three of those nonequivalent definitions of pointwise continuity are still in use.&lt;ref&gt;{{Citation|last1=Harper|first1=J.F.|title=Defining continuity of real functions of real variables|journal=BSHM Bulletin: Journal of the British Society for the History of Mathematics|year=2016|doi=10.1080/17498430.2015.1116053|pages=1–16}}&lt;/ref&gt; [[Eduard Heine]] provided the first published definition of uniform continuity in 1872, but based these ideas on lectures given by [[Peter Gustav Lejeune Dirichlet]] in 1854.&lt;ref&gt;{{citation|last1=Rusnock|first1=P.|last2=Kerr-Lawson|first2=A.|title=Bolzano and uniform continuity|journal=Historia Mathematica|volume=32|year=2005|pages=303–311|issue=3|doi=10.1016/j.hm.2004.11.003}}&lt;/ref&gt;
+
+==Real functions==
+
+===Definition===
+[[File:Function-1 x.svg|thumb|The function &lt;math&gt;f(x)=\tfrac 1x&lt;/math&gt; is continuous on the domain &lt;math&gt;\R\smallsetminus \{0\}&lt;/math&gt;, but is not continuous over the domain &lt;math&gt;\R&lt;/math&gt; because it is undefined at &lt;math&gt;x=0&lt;/math&gt;]]
+
+A [[real function]], that is a [[function (mathematics)|function]] from [[real number]]s to real numbers can be represented by a [[graph of a function|graph]] in the [[Cartesian coordinate system|Cartesian plane]]; such a function is continuous if, roughly speaking, the graph is a single unbroken [[curve]] whose [[domain (math)|domain]] is the entire real line.  A more mathematically rigorous definition is given below.&lt;ref&gt;{{cite web | url=http://math.mit.edu/~jspeck/18.01_Fall%202014/Supplementary%20notes/01c.pdf | title=Continuity and Discontinuity | last1=Speck | first1=Jared | year=2014 | page=3 | access-date=2016-09-02 | website=MIT Math | quote=Example 5. The function 1/''x'' is continuous on (0, ∞) and on (−∞, 0), i.e., for ''x'' &gt; 0 and for ''x'' &lt; 0, in other words, at every point in its domain. However, it is not a continuous function since its domain is not an interval. It has a single point of discontinuity, namely ''x'' = 0, and it has an infinite discontinuity there.}}&lt;/ref&gt;
+
+A rigorous definition of continuity of real functions is usually given in a first course in calculus in terms of the idea of a [[limit (mathematics)|limit]]. First, a function {{math|''f''}} with variable {{mvar|x}} is said to be continuous ''at the point'' {{math|c}} on the real line, if the limit of {{math|''f''(''x'')}}, as {{mvar|x}} approaches that point {{math|c}}, is equal to the value {{math|''f''(c)}}; and second, the ''function (as a whole)'' is said to be ''continuous'', if it is continuous at every point. A function is said to be ''discontinuous'' (or to have a ''discontinuity'') at some point when it is not continuous there. These points themselves are also addressed as ''discontinuities''.
+
+There are several different definitions of continuity of a function.  Sometimes a function is said to be continuous if it is continuous at every point in its domain.  In this case, the function {{math|''f''(''x'')&amp;thinsp;{{=}}&amp;thinsp;tan(''x'')}}, with the domain of all real {{math|''x'' ≠ (2''n''+1)π/2}}, {{math|''n''}}&amp;nbsp;any integer, is continuous. Sometimes an exception is made for boundaries of the domain. For example, the graph of the function {{math|''f''(''x'')&amp;thinsp;{{=}}&amp;thinsp;{{sqrt|''x''}}}}, with the domain of all non-negative reals, has a ''left-hand'' endpoint. In this case only the limit from the ''right'' is required to equal the value of the function. Under this definition ''f'' is continuous at the boundary {{math|''x'' {{=}} 0}} and so for all non-negative arguments. The most common and restrictive definition is that a function is continuous if it is continuous at all real numbers.  In this case, the previous two examples are not continuous, but every [[polynomial]] function is continuous, as are the [[sine]], [[cosine]], and [[exponential functions]].  Care should be exercised in using the word ''continuous'', so that it is clear from the context which meaning of the word is intended.
+
+Using mathematical notation, there are several ways to define continuous functions in each of the three senses mentioned above.
+
+Let
+:&lt;math&gt;f\colon D \rightarrow \mathbf R \quad&lt;/math&gt; be a function defined on a [[subset]] &lt;math&gt; D &lt;/math&gt; of the set &lt;math&gt;\mathbf R&lt;/math&gt; of real numbers.
+
+This subset &lt;math&gt; D &lt;/math&gt; is the [[domain of a function|domain]] of ''f''. Some possible choices include 
+:&lt;math&gt;D = \mathbf R \quad &lt;/math&gt; (&lt;math&gt; D &lt;/math&gt; is the whole set of real numbers), or, for ''a'' and ''b'' real numbers,
+:&lt;math&gt;D = [a, b] = \{x \in \mathbf R \,|\, a \leq x \leq b \} \quad &lt;/math&gt; (&lt;math&gt; D &lt;/math&gt; is a [[closed interval]]), or
+:&lt;math&gt;D = (a, b) = \{x \in \mathbf R \,|\, a &lt; x &lt; b \} \quad &lt;/math&gt; (&lt;math&gt; D &lt;/math&gt; is an [[open interval]]).
+
+In case of the domain &lt;math&gt;D&lt;/math&gt; being defined as an open interval, &lt;math&gt;a&lt;/math&gt; and &lt;math&gt;b&lt;/math&gt; are not boundaries in the above sense, and the values of &lt;math&gt;f(a)&lt;/math&gt; and &lt;math&gt;f(b)&lt;/math&gt; do not matter for continuity on &lt;math&gt;D&lt;/math&gt;.
+
+====Definition in terms of limits of functions====
+The function ''f'' is ''continuous at some point'' ''c'' of its domain if the [[limit of a function|limit]] of ''f''(''x''), as ''x'' approaches ''c'' through the domain of ''f'',  exists and is equal to ''f''(''c'').&lt;ref&gt;{{Citation | last1=Lang | first1=Serge | author1-link=Serge Lang | title=Undergraduate analysis | publisher=[[Springer-Verlag]] | location=Berlin, New York | edition=2nd | series=[[Undergraduate Texts in Mathematics]] | isbn=978-0-387-94841-6 | year=1997}}, section II.4&lt;/ref&gt; In mathematical notation, this is written as
+:&lt;math&gt;\lim_{x \to c}{f(x)} = f(c).&lt;/math&gt;
+In detail this means three conditions: first, ''f'' has to be defined at ''c'' (guaranteed by the requirement that ''c'' is in the domain of ''f''). Second, the limit on the left hand side of that equation has to exist.  Third, the value of this limit must equal ''f''(''c'').
+
+(We have here assumed that the domain of ''f'' does not have any [[isolated point]]s.  For example, an interval or union of intervals has no isolated points.)
+
+====Definition in terms of neighborhoods====
+A [[neighborhood (mathematics)|neighborhood]] of a point ''c'' is a set that contains, at least, all points within some fixed distance of ''c''.  Intuitively, a function is continuous at a point ''c'' if the range of ''f'' over the neighborhood of ''c'' shrinks to a single point ''f''(''c'') as the width of the neighborhood around ''c'' shrinks to zero.  More precisely, a function ''f'' is continuous at a point ''c'' of its domain if, for any neighborhood &lt;math&gt;N_1(f(c))&lt;/math&gt; there is a neighborhood &lt;math&gt;N_2(c)&lt;/math&gt; in its domain such that &lt;math&gt;f(x)\in N_1(f(c))&lt;/math&gt; whenever &lt;math&gt;x\in N_2(c)&lt;/math&gt;.
+
+This definition only requires that the domain and the codomain are topological spaces and is thus the most general definition.  It follows from this definition that a function ''f'' is automatically continuous at every [[isolated point]] of its domain.  As a specific example, every real valued function on the set of integers is continuous.
+
+====Definition in terms of limits of sequences====
+[[File:Continuity of the Exponential at 0.svg|thumb|The sequence exp(1/''n'') converges to exp(0)]]
+One can instead require that for any [[sequence (mathematics)|sequence]] &lt;math&gt;(x_n)_{n\in\mathbb{N}}&lt;/math&gt; of points in the domain which [[convergent sequence|converges]] to ''c'', the corresponding sequence &lt;math&gt;\left(f(x_n)\right)_{n\in \mathbb{N}}&lt;/math&gt; converges to ''f''(''c'').  In mathematical notation, &lt;math&gt;\forall (x_n)_{n\in\mathbb{N}} \subset D:\lim_{n\to\infty} x_n=c \Rightarrow \lim_{n\to\infty} f(x_n)=f(c)\,.&lt;/math&gt;
+
+====Weierstrass and Jordan definitions (epsilon–delta) of continuous functions====
+[[File:Example of continuous function.svg|right|thumb|Illustration of the ε-δ-definition: for ε=0.5, c=2, the value δ=0.5 satisfies the condition of the definition.]]
+Explicitly including the definition of the limit of a function, we obtain a self-contained definition:
+Given a function  ''f''&amp;nbsp;:&amp;nbsp;''D''&amp;nbsp;→&amp;nbsp;''R'' as above and an element ''x''&lt;sub&gt;0&lt;/sub&gt; of the domain ''D'', ''f'' is said to be continuous at the point ''x''&lt;sub&gt;0&lt;/sub&gt; when the following holds: For any number ''ε''&amp;nbsp;&gt;&amp;nbsp;0, however small, there exists some number ''δ''&amp;nbsp;&gt;&amp;nbsp;0 such that for all ''x'' in the domain of ''f'' with ''x''&lt;sub&gt;0&lt;/sub&gt;&amp;nbsp;−&amp;nbsp;''δ''&amp;nbsp;&lt;&amp;nbsp;''x''&amp;nbsp;&lt;&amp;nbsp;''x''&lt;sub&gt;0&lt;/sub&gt;&amp;nbsp;+&amp;nbsp;''δ'', the value of ''f''(''x'') satisfies
+
+:&lt;math&gt; f(x_0) - \varepsilon &lt; f(x) &lt; f(x_0) + \varepsilon.&lt;/math&gt;
+
+Alternatively written, continuity of ''f''&amp;nbsp;:&amp;nbsp;''D''&amp;nbsp;→&amp;nbsp;''R'' at ''x''&lt;sub&gt;0&lt;/sub&gt;&amp;nbsp;∈&amp;nbsp;''D'' means that for every&amp;nbsp;''ε''&amp;nbsp;&gt;&amp;nbsp;0 there exists a ''δ''&amp;nbsp;&gt;&amp;nbsp;0 such that for all ''x''&amp;nbsp;∈&amp;nbsp;''D''&amp;nbsp;:
+
+:&lt;math&gt;| x - x_0 | &lt; \delta \Rightarrow | f(x) - f(x_0) | &lt; \varepsilon. &lt;/math&gt;
+
+More intuitively, we can say that if we want to get all the ''f''(''x'') values to stay in some small [[topological neighbourhood|neighborhood]] around ''f''(''x''&lt;sub&gt;0&lt;/sub&gt;), we simply need to choose a small enough neighborhood for the ''x'' values around ''x''&lt;sub&gt;0&lt;/sub&gt;. If we can do that no matter how small the ''f''(''x'') neighborhood is, then ''f'' is continuous at&amp;nbsp;''x''&lt;sub&gt;0&lt;/sub&gt;.
+
+In modern terms, this is generalized by the definition of continuity of a function with respect to a [[basis (topology)|basis for the topology]], here the [[metric topology]].
+
+Weierstrass had required that the interval ''x''&lt;sub&gt;0&lt;/sub&gt;&amp;nbsp;−&amp;nbsp;''δ''&amp;nbsp;&lt;&amp;nbsp;''x''&amp;nbsp;&lt;&amp;nbsp;''x''&lt;sub&gt;0&lt;/sub&gt;&amp;nbsp;+&amp;nbsp;''δ'' be entirely within the domain ''D'', but Jordan removed that restriction.
+
+====Definition in terms of control of the remainder====
+In proofs and numerical analysis we often need to know how fast limits are converging, or in other words, control of the remainder. We can formalise this to a definition of continuity. 
+A function &lt;math&gt;C: [0,\infty) \to [0,\infty]&lt;/math&gt; is called a control function if
+* ''C'' is non decreasing
+*&lt;math&gt; \inf_{\delta &gt; 0} C(\delta) = 0&lt;/math&gt;
+
+A function ''f''&amp;nbsp;:&amp;nbsp;''D''&amp;nbsp;→&amp;nbsp;''R''  is ''C''-continuous at ''x''&lt;sub&gt;0&lt;/sub&gt; if 
+::  &lt;math&gt;| f(x) - f(x_0)| \le C(|x- x_0|)&lt;/math&gt;  for all &lt;math&gt; x \in D &lt;/math&gt;
+
+A function is continuous in ''x''&lt;sub&gt;0&lt;/sub&gt; if it is ''C''-continuous for some control function ''C''.
+
+This approach leads naturally to refining the notion of  continuity by restricting the set of admissible control functions. For a given set of control functions &lt;math&gt;\mathcal{C}&lt;/math&gt; a function is &lt;math&gt;\mathcal{C}&lt;/math&gt;-continuous if it is &lt;math&gt;C&lt;/math&gt;-continuous for some &lt;math&gt; C \in \mathcal{C}&lt;/math&gt;. For example, the [[Lipschitz continuity|Lipschitz]] and [[Hölder continuous function]]s of exponent &amp;alpha;  below are defined by the set of control functions 
+::&lt;math&gt;\mathcal{C}_{\mathrm{Lipschitz}} = \{C |  C(\delta) = K|\delta| ,\  K &gt; 0\} &lt;/math&gt; 
+respectively  
+::&lt;math&gt;\mathcal{C}_{\text{Hölder}-\alpha} =&lt;/math&gt;&lt;math&gt; \{C | C(\delta)  = K |\delta|^\alpha, \ K &gt; 0\} &lt;/math&gt;.
+
+====Definition using oscillation====
+[[File:Rapid Oscillation.svg|thumb|The failure of a function to be continuous at a point is quantified by its [[Oscillation (mathematics)|oscillation]].]]
+Continuity can also be defined in terms of [[Oscillation (mathematics)|oscillation]]: a function ''f'' is continuous at a point ''x''&lt;sub&gt;0&lt;/sub&gt; if and only if its oscillation at that point is zero;&lt;ref&gt;''[http://ramanujan.math.trinity.edu/wtrench/texts/TRENCH_REAL_ANALYSIS.PDF Introduction to Real Analysis],'' updated April 2010, William F. Trench, Theorem 3.5.2, p. 172&lt;/ref&gt; in symbols, &lt;math&gt;\omega_f(x_0) = 0.&lt;/math&gt; A benefit of this definition is that it ''quantifies'' discontinuity: the oscillation gives how ''much'' the function is discontinuous at a point.
+
+This definition is useful in [[descriptive set theory]] to study the set of discontinuities and continuous points – the continuous points are the intersection of the sets where the oscillation is less than ''ε'' (hence a [[G-delta set|G&lt;sub&gt;δ&lt;/sub&gt; set]]) – and gives a very quick proof of one direction of the [[Lebesgue integrability condition]].&lt;ref&gt;''[http://ramanujan.math.trinity.edu/wtrench/texts/TRENCH_REAL_ANALYSIS.PDF Introduction to Real Analysis],'' updated April 2010, William F. Trench, 3.5 &quot;A More Advanced Look at the Existence of the Proper Riemann Integral&quot;, pp. 171–177&lt;/ref&gt;
+
+The oscillation is equivalent to the ''ε''-''δ'' definition by a simple re-arrangement, and by using a limit ([[lim sup]], [[lim inf]]) to define oscillation: if (at a given point) for a given ''ε''&lt;sub&gt;0&lt;/sub&gt; there is no ''δ'' that satisfies the ''ε''-''δ'' definition, then the oscillation is at least ''ε''&lt;sub&gt;0&lt;/sub&gt;, and conversely if for every ''ε'' there is a desired ''δ,'' the oscillation is 0. The oscillation definition can be naturally generalized to maps from a topological space to a metric space.
+
+====Definition using the hyperreals====
+[[Cauchy]] defined continuity of a function in the following intuitive terms: an [[infinitesimal]] change in the independent variable corresponds to an infinitesimal change of the dependent variable (see ''Cours d'analyse'', page 34). [[Non-standard analysis]] is a way of making this mathematically rigorous. The real line is augmented by the addition of infinite and infinitesimal numbers to form the [[hyperreal numbers]].  In nonstandard analysis, continuity can be defined as follows.
+
+:A real-valued function ''f'' is continuous at ''x'' if its natural extension to the hyperreals has the property that for all infinitesimal ''dx'', {{nowrap|''f''(''x''+''dx'') − ''f''(''x'')}} is infinitesimal&lt;ref&gt;{{cite web|url=http://www.math.wisc.edu/~keisler/calc.html|title=Elementary Calculus|work=wisc.edu}}&lt;/ref&gt;
+
+(see [[microcontinuity]]).  In other words, an infinitesimal increment of the independent variable always produces to an infinitesimal change of the dependent variable, giving a modern expression to [[Augustin-Louis Cauchy]]'s definition of continuity.
+
+===Construction of continuous functions===
+[[File:Brent method example.svg|right|thumb|The graph of a [[cubic function]] has no jumps or holes. The function is continuous.]]
+
+Checking the continuity of a given function can be simplified by checking one of the above defining properties for the building blocks of the given function. It is straightforward to show that the sum of two functions, continuous on some domain, is also continuous on this domain. Given
+:&lt;math&gt;f, g\colon D \rightarrow \mathbf R&lt;/math&gt;,
+
+then the ''sum of continuous functions''
+:&lt;math&gt;s = f + g&lt;/math&gt; 
+(defined  by &lt;math&gt;s(x) = f(x) + g(x)&lt;/math&gt; for all &lt;math&gt;x\in D&lt;/math&gt;)
+is continuous in &lt;math&gt;D&lt;/math&gt;.
+
+The same holds for the ''product of continuous functions,''
+:&lt;math&gt;p = f \cdot g&lt;/math&gt;
+(defined by &lt;math&gt;p(x) = f(x) \cdot g(x)&lt;/math&gt; for all &lt;math&gt;x \in D&lt;/math&gt;)
+is continuous in &lt;math&gt;D&lt;/math&gt;.
+
+Combining the above preservations of continuity and the continuity of [[constant function]]s and of the [[identity function]] &lt;math&gt;I(x) = x&lt;/math&gt; {{nowrap|on &lt;math&gt;\mathbf R&lt;/math&gt;,}} one arrives at the continuity of all [[polynomial|polynomial function]]s {{nowrap|on &lt;math&gt;\mathbf R&lt;/math&gt;,}} such as
+:{{math|1=''f''(''x'') = ''x''&lt;sup&gt;3&lt;/sup&gt; + ''x''&lt;sup&gt;2&lt;/sup&gt; - 5''x'' + 3}}
+(pictured on the right).
+
+[[File:Homografia.svg|right|thumb|The graph of a continuous [[rational function]]. The function is not defined for ''x''=−2. The vertical and horizontal lines are [[asymptote]]s.]]
+
+In the same way it can be shown that the ''reciprocal of a continuous function'' 
+:&lt;math&gt;r = 1/f&lt;/math&gt;
+(defined by &lt;math&gt;r(x) = 1/f(x)&lt;/math&gt; for all &lt;math&gt;x \in D&lt;/math&gt; such that &lt;math&gt;f(x) \ne 0&lt;/math&gt;)
+is continuous in &lt;math&gt;D\smallsetminus \{x:f(x) = 0\}&lt;/math&gt;.
+
+This implies that, excluding the roots of &lt;math&gt;g&lt;/math&gt;, the ''quotient of continuous functions'' 
+:&lt;math&gt;q = f/g&lt;/math&gt;
+(defined by &lt;math&gt;q(x) = f(x)/g(x)&lt;/math&gt; for all &lt;math&gt;x \in D&lt;/math&gt;, such that &lt;math&gt;g(x) \ne 0&lt;/math&gt;)
+is also continuous on &lt;math&gt;D\smallsetminus \{x:g(x) = 0\}&lt;/math&gt;.
+
+For example, the function (pictured)
+:&lt;math&gt;y(x) = \frac {2x-1} {x+2}&lt;/math&gt;
+
+is defined for all real numbers {{nowrap|''x'' ≠ −2}} and is continuous at every such point. Thus it is a continuous function. The question of continuity at {{nowrap|''x'' {{=}} −2}} does not arise, since  {{nowrap|''x'' {{=}} −2}} is not in the domain of ''y''. There is no continuous function ''F'': '''R''' → '''R''' that agrees with ''y''(''x'') for all {{nowrap|''x'' ≠ −2}}.
+
+[[File:Si cos.svg|thumb|The sinc and the cos functions]]
+
+Since the function [[sine]] is continuous on all reals, the [[sinc function]] ''G''(''x'') = sin&amp;nbsp;''x''/''x'', is defined and continuous for all real ''x'' ≠ 0. However, unlike the previous example, ''G'' ''can'' be extended to a continuous function on ''all'' real numbers, by ''defining'' the value ''G''(0) to be 1, which is the limit of ''G''(''x''), when ''x'' approaches 0, i.e.,
+: &lt;math&gt;G(0) = \lim_{x\rightarrow 0}\frac{\sin x}{x} = 1.&lt;/math&gt;
+
+Thus, by setting
+:&lt;math&gt;
+G(x) = 
+\begin{cases}
+\frac {\sin (x)}x &amp; \text{ if }x \ne 0\\
+1 &amp; \text{ if }x = 0,
+\end{cases}
+&lt;/math&gt;
+
+the sinc-function becomes a continuous function on all real numbers. The term ''[[removable singularity]]'' is used in such cases, when (re)defining values of a function to coincide with the appropriate limits make a function continuous at specific points.
+
+A more involved construction of continuous functions is the [[function composition]]. Given two continuous functions
+:&lt;math&gt;\quad g\colon D_g \subseteq \mathbf R \rightarrow R_g \subseteq\mathbf R\quad\text{and}\quad f\colon D_f \subseteq \mathbf R\rightarrow R_f\subseteq D_g,&lt;/math&gt; 
+their composition, denoted as
+&lt;math&gt;c = g \circ f \colon D_f \rightarrow \mathbf R&lt;/math&gt;, and defined by &lt;math&gt;c(x) = g(f(x)),&lt;/math&gt; is continuous.
+
+This construction allows stating, for example, that
+: &lt;math&gt;e^{\sin(\ln x)}&lt;/math&gt; is continuous for all &lt;math&gt;x &gt; 0.&lt;/math&gt;
+
+===Examples of discontinuous functions===
+[[File:Discontinuity of the sign function at 0.svg|thumb|300px|Plot of the signum function. It shows that &lt;math&gt;\lim_{n\to\infty} \sgn\left(\tfrac 1n\right) \neq\sgn\left(\lim_{n\to\infty} \tfrac 1n\right)&lt;/math&gt;. Thus, the signum function is discontinuous at 0 (see [[#Definition in terms of limits of sequences|section 2.1.3]]).]]
+An example of a discontinuous function is the [[Heaviside step function]] &lt;math&gt;H&lt;/math&gt;, defined by
+
+:&lt;math&gt;H(x) = \begin{cases}
+1 &amp; \text{ if } x \ge 0\\
+0 &amp; \text{ if } x &lt; 0
+\end{cases}
+&lt;/math&gt;
+
+Pick for instance &lt;math&gt;\varepsilon = 1/2&lt;/math&gt;. Then there is no {{nowrap|&lt;math&gt;\delta&lt;/math&gt;-neighborhood}} around &lt;math&gt;x = 0&lt;/math&gt;, i.e. no open interval &lt;math&gt;(-\delta,\;\delta)&lt;/math&gt; with &lt;math&gt;\delta &gt; 0,&lt;/math&gt; that will force all the &lt;math&gt;H(x)&lt;/math&gt; values to be within the {{nowrap|&lt;math&gt;\varepsilon&lt;/math&gt;-neighborhood}} of &lt;math&gt;H(0)&lt;/math&gt;, i.e. within &lt;math&gt;(1/2,\;3/2)&lt;/math&gt;. Intuitively we can think of this type of discontinuity as a sudden [[Jump discontinuity|jump]] in function values.
+
+Similarly, the [[sign function|signum]] or sign function
+:&lt;math&gt;
+\sgn(x) = \begin{cases}
+\;\;\ 1 &amp; \text{ if }x &gt; 0\\
+\;\;\ 0 &amp; \text{ if }x = 0\\
+-1 &amp; \text{ if }x &lt; 0
+\end{cases}
+&lt;/math&gt;
+is discontinuous at &lt;math&gt;x = 0&lt;/math&gt; but continuous everywhere else. Yet another example: the function
+:&lt;math&gt;f(x)=\begin{cases}
+  \sin\left(x^{-2}\right)&amp;\text{ if }x \ne 0\\
+   0&amp;\text{ if }x = 0
+\end{cases}&lt;/math&gt;
+is continuous everywhere apart from &lt;math&gt;x = 0&lt;/math&gt;.
+
+[[File:Thomae function (0,1).svg|200px|right|thumb|Point plot of Thomae's function on the interval (0,1). The topmost point in the middle shows f(1/2) = 1/2.]]
+Besides plausible continuities and discontinuities like above, there are also functions with a behavior, often coined [[Pathological (mathematics)|pathological]], for example, [[Thomae's function]],
+:&lt;math&gt;f(x)=\begin{cases}
+1   &amp;\text{ if }x=0\\
+\frac{1}{q}&amp;\text{ if }x=\frac{p}{q}\text{(in lowest terms) is a rational number}\\
+  0&amp;\text{ if }x\text{ is irrational}.
+\end{cases}&lt;/math&gt;
+is continuous at all irrational numbers and discontinuous at all rational numbers. In a similar vein, [[Dirichlet's function]], the [[indicator function]] for the set of rational numbers,
+:&lt;math&gt;D(x)=\begin{cases}
+  0&amp;\text{ if }x\text{  is irrational } (\in \mathbb{R} \smallsetminus \mathbb{Q})\\
+  1&amp;\text{ if }x\text{ is rational } (\in \mathbb{Q})
+\end{cases}&lt;/math&gt;
+is nowhere continuous.
+
+===Properties===
+
+====Intermediate value theorem====
+The [[intermediate value theorem]] is an [[existence theorem]], based on the real number property of [[Real number#Completeness|completeness]], and states:
+
+: If the real-valued function ''f'' is continuous on the [[interval (mathematics)|closed interval]] [''a'',&amp;nbsp;''b''] and ''k'' is some number between ''f''(''a'') and ''f''(''b''), then there is some number ''c'' in [''a'',&amp;nbsp;''b''] such that ''f''(''c'')&amp;nbsp;=&amp;nbsp;''k''.
+
+For example, if a child grows from 1&amp;nbsp;m to 1.5&amp;nbsp;m between the ages of two and six years, then, at some time between two and six years of age, the child's height must have been 1.25&amp;nbsp;m.
+
+As a consequence, if ''f'' is continuous on [''a'',&amp;nbsp;''b''] and ''f''(''a'') and ''f''(''b'') differ in [[Sign (mathematics)|sign]], then, at some point ''c'' in [''a'',&amp;nbsp;''b''], ''f''(''c'') must equal [[0 (number)|zero]].
+
+====Extreme value theorem====
+The [[extreme value theorem]] states that if a function ''f'' is defined on a closed interval [''a'',''b''] (or any closed and bounded set) and is continuous there, then the function attains its maximum, i.e. there exists ''c''&amp;nbsp;∈&amp;nbsp;[''a'',''b''] with ''f''(''c'') ≥ ''f''(''x'') for all ''x''&amp;nbsp;∈&amp;nbsp;[''a'',''b'']. The same is true of the minimum of ''f''. These statements are not, in general, true if the function is defined on an open interval (''a'',''b'') (or any set that is not both closed and bounded), as, for example, the continuous function ''f''(''x'') = 1/''x'', defined on the open interval (0,1), does not attain a maximum, being unbounded above.
+
+====Relation to differentiability and integrability====
+Every [[differentiable function]]
+:&lt;math&gt;f\colon (a, b) \rightarrow \mathbf R&lt;/math&gt;
+is continuous, as can be shown. The [[Theorem#Converse|converse]]  does not hold: for example, the [[absolute value]] function
+:&lt;math&gt;f(x)=|x| = \begin{cases}
+  \;\;\ x &amp; \text{ if }x \geq 0\\
+  -x &amp; \text{ if }x &lt; 0
+\end{cases}&lt;/math&gt;
+is everywhere continuous. However, it is not differentiable at ''x'' = 0 (but is so everywhere else). [[Weierstrass function|Weierstrass's function]] is also everywhere continuous but nowhere differentiable.
+
+The [[derivative]] ''f′''(''x'') of a differentiable function ''f''(''x'') need not be continuous. If ''f′''(''x'') is continuous, ''f''(''x'') is said to be continuously differentiable. The set of such functions is denoted ''C''&lt;sup&gt;1&lt;/sup&gt;({{open-open|''a'', ''b''}}). More generally, the set of functions
+:&lt;math&gt;f\colon \Omega \rightarrow \mathbf R&lt;/math&gt;
+(from an open interval (or [[open subset]] of '''R''') Ω to the reals) such that ''f'' is ''n'' times differentiable and such that the ''n''-th derivative of ''f'' is continuous is denoted ''C''&lt;sup&gt;''n''&lt;/sup&gt;(Ω). See [[differentiability class]]. In the field of computer graphics, properties related (but not identical) to ''C''&lt;sup&gt;0&lt;/sup&gt;, ''C''&lt;sup&gt;1&lt;/sup&gt;, ''C''&lt;sup&gt;2&lt;/sup&gt; are sometimes called ''G''&lt;sup&gt;0&lt;/sup&gt; (continuity of position), ''G''&lt;sup&gt;1&lt;/sup&gt; (continuity of tangency), and ''G''&lt;sup&gt;2&lt;/sup&gt; (continuity of curvature); see [[Smoothness#Smoothness of curves and surfaces|Smoothness of curves and surfaces]].
+
+Every continuous function
+:&lt;math&gt;f\colon [a, b] \rightarrow \mathbf R&lt;/math&gt;
+is [[integrable function|integrable]] (for example in the sense of the [[Riemann integral]]). The converse does not hold, as the (integrable, but discontinuous) [[sign function]] shows.
+
+====Pointwise and uniform limits====
+[[File:Uniform continuity animation.gif|A sequence of continuous functions ''f''&lt;sub&gt;''n''&lt;/sub&gt;(''x'') whose (pointwise) limit function ''f''(''x'') is discontinuous. The convergence is not uniform.|right|thumb]]
+Given a [[sequence (mathematics)|sequence]]
+:&lt;math&gt;f_1, f_2, \dotsc \colon I \rightarrow \mathbf R&lt;/math&gt;
+of functions such that the limit
+:&lt;math&gt;f(x) := \lim_{n \rightarrow \infty} f_n(x)&lt;/math&gt;
+exists for all ''x'' in ''D'', the resulting function ''f''(''x'') is referred to as the [[pointwise convergence|pointwise limit]] of the sequence of functions (''f''&lt;sub&gt;''n''&lt;/sub&gt;)&lt;sub&gt;''n''∈'''N'''&lt;/sub&gt;. The pointwise limit function need not be continuous, even if all functions ''f''&lt;sub&gt;''n''&lt;/sub&gt; are continuous, as the animation at the right shows. However, ''f'' is continuous if all functions ''f''&lt;sub&gt;''n''&lt;/sub&gt; are continuous and the sequence [[uniform convergence|converges uniformly]], by the [[uniform convergence theorem]]. This theorem can be used to show that the [[exponential function]]s, [[logarithm]]s, [[square root]] function, and [[trigonometric function]]s are continuous.
+
+===Directional and semi-continuity===
+&lt;div style=&quot;float:right;&quot;&gt;
+&lt;gallery&gt;Image:Right-continuous.svg|A right-continuous function
+Image:Left-continuous.svg|A left-continuous function&lt;/gallery&gt;&lt;/div&gt;
+Discontinuous functions may be discontinuous in a restricted way, giving rise to the concept of directional continuity (or right and left continuous functions) and [[semi-continuity]]. Roughly speaking, a function is ''right-continuous'' if no jump occurs when the limit point is approached from the right. Formally, ''f'' is said to be right-continuous at the point ''c'' if the following holds: For any number ''ε''&amp;nbsp;&amp;gt; 0 however small, there exists some number ''δ''&amp;nbsp;&amp;gt; 0 such that for all ''x'' in the domain with {{nowrap|''c'' &amp;lt; ''x'' &amp;lt; ''c'' + ''δ''}}, the value of ''f''(''x'') will satisfy
+
+:&lt;math&gt; |f(x) - f(c)| &lt; \varepsilon.&lt;/math&gt;
+
+This is the same condition as for continuous functions, except that it is required to hold for ''x'' strictly larger than ''c'' only. Requiring it instead for all ''x'' with {{nowrap|''c'' − ''δ'' &amp;lt; ''x'' &amp;lt; ''c''}} yields the notion of ''left-continuous'' functions. A function is continuous if and only if it is both right-continuous and left-continuous.
+
+A function ''f'' is ''[[Semi-continuity|lower semi-continuous]]'' if, roughly, any jumps that might occur only go down, but not up. That is, for any ''ε''&amp;nbsp;&amp;gt; 0, there exists some number ''δ''&amp;nbsp;&amp;gt; 0 such that for all ''x'' in the domain with {{nowrap|{{abs|x − c}} &lt; ''δ''}}, the value of ''f''(''x'') satisfies
+:&lt;math&gt;f(x) \geq f(c) - \epsilon.&lt;/math&gt;
+The reverse condition is ''[[Semi-continuity|upper semi-continuity]]''.
+
+==Continuous functions between metric spaces== &lt;!--This section is linked from [[F-space]]--&gt;
+
+The concept of continuous real-valued functions can be generalized to functions between [[metric space]]s. A metric space is a set ''X'' equipped with a function (called [[metric (mathematics)|metric]]) ''d''&lt;sub&gt;''X''&lt;/sub&gt;, that can be thought of as a measurement of the distance of any two elements in ''X''. Formally, the metric is a function
+:&lt;math&gt;d_X \colon X \times X \rightarrow \mathbf R&lt;/math&gt;
+that satisfies a number of requirements, notably the [[triangle inequality]]. Given two metric spaces (''X'', d&lt;sub&gt;''X''&lt;/sub&gt;) and (''Y'', d&lt;sub&gt;''Y''&lt;/sub&gt;) and a function
+:&lt;math&gt;f\colon X \rightarrow Y&lt;/math&gt;
+then ''f'' is continuous at the point ''c'' in ''X'' (with respect to the given metrics) if for any positive real number ε, there exists a positive real number δ such that all ''x'' in ''X'' satisfying d&lt;sub&gt;''X''&lt;/sub&gt;(''x'', ''c'') &lt; δ will also satisfy d&lt;sub&gt;''Y''&lt;/sub&gt;(''f''(''x''), ''f''(''c'')) &lt; ε. As in the case of real functions above, this is equivalent to the condition that for every sequence (''x''&lt;sub&gt;''n''&lt;/sub&gt;) in ''X'' with limit lim ''x''&lt;sub&gt;''n''&lt;/sub&gt; = ''c'', we have lim ''f''(''x''&lt;sub&gt;''n''&lt;/sub&gt;) = ''f''(''c''). The latter condition can be weakened as follows: ''f'' is continuous at the point ''c'' if and only if for every convergent sequence (''x''&lt;sub&gt;''n''&lt;/sub&gt;) in ''X'' with limit ''c'', the sequence (''f''(''x''&lt;sub&gt;''n''&lt;/sub&gt;)) is a [[Cauchy sequence]], and ''c'' is in the domain of ''f''.
+
+The set of points at which a function between metric spaces is continuous is a [[Gδ set|G&lt;sub&gt;δ&lt;/sub&gt; set]]&amp;nbsp;– this follows from the ε-δ definition of continuity.
+
+This notion of continuity is applied, for example, in [[functional analysis]]. A key statement in this area says that a [[linear operator]]
+:&lt;math&gt;T\colon V \rightarrow W&lt;/math&gt;
+between [[normed vector space]]s ''V'' and ''W'' (which are [[vector spaces]] equipped with a compatible [[norm (mathematics)|norm]], denoted ||''x''||)
+is continuous if and only if it is [[Bounded linear operator|bounded]], that is, there is a constant ''K'' such that
+:&lt;math&gt;\|T(x)\| \leq K \|x\|&lt;/math&gt;
+for all ''x'' in ''V''.
+
+===Uniform, Hölder and Lipschitz continuity===
+[[File:Lipschitz continuity.png|thumb|For a Lipschitz continuous function, there is a double cone (shown in white) whose vertex can be translated along the graph, so that the graph always remains entirely outside the cone.]]
+The concept of continuity for functions between metric spaces can be strengthened in various ways by limiting the way δ depends on ε and ''c'' in the definition above. Intuitively, a function ''f'' as above is [[uniformly continuous]] if the δ does
+not depend on the point ''c''. More precisely, it is required that for every [[real number]] ''ε''&amp;nbsp;&gt;&amp;nbsp;0 there exists ''δ''&amp;nbsp;&gt;&amp;nbsp;0 such that for every ''c'',&amp;nbsp;''b''&amp;nbsp;∈&amp;nbsp;''X'' with ''d''&lt;sub&gt;''X''&lt;/sub&gt;(''b'',&amp;nbsp;''c'')&amp;nbsp;&lt;&amp;nbsp;''δ'', we have that ''d''&lt;sub&gt;''Y''&lt;/sub&gt;(''f''(''b''),&amp;nbsp;''f''(''c''))&amp;nbsp;&lt;&amp;nbsp;''ε''. Thus, any uniformly continuous function is continuous. The converse does not hold in general, but holds when the domain space ''X'' is [[compact topological space|compact]]. Uniformly continuous maps can be defined in the more general situation of [[uniform space]]s.&lt;ref&gt;{{Citation | last1=Gaal | first1=Steven A. | title=Point set topology | publisher=[[Dover Publications]] | location=New York | isbn=978-0-486-47222-5 | year=2009}}, section IV.10&lt;/ref&gt;
+
+A function is [[Hölder continuity|Hölder continuous]] with exponent α (a real number) if there is a constant ''K'' such that for all ''b'' and ''c'' in ''X'', the inequality
+:&lt;math&gt;d_Y (f(b), f(c)) \leq K \cdot (d_X (b, c))^\alpha&lt;/math&gt;
+holds. Any Hölder continuous function is uniformly continuous. The particular case {{nowrap|α {{=}} 1}} is referred to as [[Lipschitz continuity]]. That is, a function is Lipschitz continuous if there is a constant ''K'' such that the inequality
+:&lt;math&gt;d_Y (f(b), f(c)) \leq K \cdot d_X (b, c)&lt;/math&gt;
+holds for any ''b'', ''c'' in ''X''.&lt;ref&gt;{{Citation | last1=Searcóid | first1=Mícheál Ó | title=Metric spaces | url=https://books.google.com/books?id=aP37I4QWFRcC | publisher=[[Springer-Verlag]] | location=Berlin, New York | series=Springer undergraduate mathematics series | isbn=978-1-84628-369-7 | year=2006}}, section 9.4&lt;/ref&gt; The Lipschitz condition occurs, for example, in the [[Picard–Lindelöf theorem]] concerning the solutions of [[ordinary differential equation]]s.
+
+=={{anchor|Continuous map (topology)}}Continuous functions between topological spaces==
+&lt;!--Linked from [[Preference (economics)]] and [[Continuity (topology)]]--&gt;
+
+Another, more abstract, notion of continuity is continuity of functions between [[topological space]]s in which there generally is no formal notion of distance, as there is in the case of [[metric space]]s. A topological space is a set ''X'' together with a topology on ''X'', which is a set of [[subset]]s of ''X'' satisfying a few requirements with respect to their unions and intersections that generalize the properties of the [[open ball]]s in metric spaces while still allowing to talk about the [[neighbourhood (mathematics)|neighbourhoods]] of a given point. The elements of a topology are called [[open subset]]s of ''X'' (with respect to the topology).
+
+A function
+:&lt;math&gt;f\colon X \rightarrow Y&lt;/math&gt;
+between two topological spaces ''X'' and ''Y'' is continuous if for every open set ''V'' ⊆ ''Y'', the [[Image (mathematics)#Inverse image|inverse image]]
+:&lt;math&gt;f^{-1}(V) = \{x \in X \; | \; f(x) \in V \}&lt;/math&gt;
+is an open subset of ''X''. That is, ''f'' is a function between the sets ''X'' and ''Y'' (not on the elements of the topology ''T&lt;sub&gt;X&lt;/sub&gt;''), but the continuity of ''f'' depends on the topologies used on ''X'' and ''Y''.
+
+This is equivalent to the condition that the [[Image (mathematics)#Inverse image|preimages]] of the [[closed set]]s (which are the complements of the open subsets) in ''Y'' are closed in ''X''.
+
+An extreme example: if a set ''X'' is given the [[discrete topology]] (in which every subset is open), all functions
+:&lt;math&gt;f\colon X \rightarrow T&lt;/math&gt;
+to any topological space ''T'' are continuous. On the other hand, if ''X'' is equipped with the [[indiscrete topology]] (in which the only open subsets are the empty set and ''X'') and the space ''T'' set is at least [[T0 space|T&lt;sub&gt;0&lt;/sub&gt;]], then the only continuous functions are the constant functions. Conversely, any function whose range is indiscrete is continuous.
+
+===Continuity at a point===
+[[File:continuity topology.svg|300px|right|frame|Continuity at a point: For every neighborhood ''V'' of ''f''(''x''), there is a neighborhood ''U'' of ''x'' such that ''f''(''U'') ⊆ ''V'']]
+The translation in the language of neighborhoods of the [[(ε, δ)-definition of limit|(ε, δ)-definition of continuity]] leads to the following definition of the continuity at a point:
+{{Quote frame|A function &lt;math&gt;f:X\rightarrow Y&lt;/math&gt; is continuous at a point &lt;math&gt;x\in X&lt;/math&gt; if and only if for any neighborhood {{mvar|V}} of &lt;math&gt;f(x)&lt;/math&gt; in {{mvar|Y}}, there is a neighborhood {{mvar|U}} of {{mvar|x}} such that {{math|1=''f''(''U'') ⊆ ''V''}}.}}
+
+This definition is equivalent to the same statement with neighborhoods restricted to open neighborhoods and can be restated in several ways by using [[preimage]]s rather than images.
+
+Also, as every set that contains a neighborhood is also a neighborhood, and &lt;math&gt;f^{-1}(V)&lt;/math&gt; is the largest subset {{mvar|U}} of {{mvar|X}} such that {{math|''f''(''U'') ⊆ ''V''}}, this definition may be simplified into:
+{{Quote frame|A function &lt;math&gt;f:X\rightarrow Y&lt;/math&gt; is continuous at a point &lt;math&gt;x\in X&lt;/math&gt; if and only if &lt;math&gt;f^{-1}(V)&lt;/math&gt; is a neighborhood of {{mvar|x}} for every neighborhood {{mvar|V}} of &lt;math&gt;f(x)&lt;/math&gt; in {{mvar|Y}}.}}
+
+As an open set is a set that is a neighborhood of all its points, a function &lt;math&gt;f:X\rightarrow Y&lt;/math&gt; is continuous at every point of {{mvar|''X''}} if and only if it is a continuous function.
+
+If ''X'' and ''Y'' are metric spaces, it is equivalent to consider the [[neighborhood system]] of [[open ball]]s centered at ''x'' and ''f''(''x'') instead of all neighborhoods. This gives back the above δ-ε definition of continuity in the context of metric spaces.  In general topological spaces, there is no notion of nearness or distance. If however the target space is a [[Hausdorff space]], it is still true that ''f'' is continuous at ''a'' if and only if the limit of ''f'' as ''x'' approaches ''a'' is ''f''(''a''). At an isolated point, every function is continuous.
+
+===Alternative definitions===
+Several [[Characterizations of the category of topological spaces|equivalent definitions for a topological structure]] exist and thus there are several equivalent ways to define a continuous function.
+
+====Sequences and nets {{anchor|Heine definition of continuity}}====
+In several contexts, the topology of a space is conveniently  specified in terms of [[limit points]].  In many instances, this is accomplished by specifying when a point is the [[limit of a sequence]], but for some spaces that are too large in some sense, one specifies also when a point is the limit of more general sets of points indexed by a [[directed set]], known as [[net (mathematics)|nets]].  A function is (Heine-)continuous only if it takes limits of sequences to limits of sequences.  In the former case, preservation of limits is also sufficient; in the latter, a function may preserve all limits of sequences yet still fail to be continuous, and preservation of nets is a necessary and sufficient condition.
+
+In detail, a function ''f'': ''X'' → ''Y'' is '''sequentially continuous''' if whenever a sequence (''x''&lt;sub&gt;''n''&lt;/sub&gt;) in ''X'' converges to a limit ''x'', the sequence (''f''(''x''&lt;sub&gt;''n''&lt;/sub&gt;)) converges to ''f''(''x'').  Thus sequentially continuous functions &quot;preserve sequential limits&quot;.  Every continuous function is sequentially continuous.  If ''X'' is a [[first-countable space]] and [[Axiom of countable choice|countable choice]] holds, then the converse also holds: any function preserving sequential limits is continuous.  In particular, if ''X'' is a metric space, sequential continuity and continuity are equivalent.  For non first-countable spaces, sequential continuity might be strictly weaker than continuity. (The spaces for which the two properties are equivalent are called [[sequential space]]s.) This motivates the consideration of nets instead of sequences in general topological spaces.  Continuous functions preserve limits of nets, and in fact this property characterizes continuous functions.
+
+====Closure operator definition====
+Instead of specifying the open subsets of a topological space, the topology can also be determined by a [[Kuratowski closure operator|closure operator]] (denoted cl) which assigns to any subset ''A'' ⊆ ''X'' its [[closure (topology)|closure]], or an [[interior operator]] (denoted int), which assigns to any subset ''A'' of ''X'' its [[interior (topology)|interior]]. In these terms, a function
+:&lt;math&gt;f\colon (X,\mathrm{cl}) \to (X' ,\mathrm{cl}')&lt;/math&gt;
+between topological spaces is continuous in the sense above if and only if for all subsets ''A'' of ''X''
+:&lt;math&gt;f(\mathrm{cl}(A)) \subseteq \mathrm{cl}'(f(A)).&lt;/math&gt;
+That is to say, given any element ''x'' of ''X'' that is in the closure of any subset ''A'', ''f''(''x'') belongs to the closure of ''f''(''A''). This is equivalent to the requirement that for all subsets ''A''&lt;nowiki&gt;'&lt;/nowiki&gt; of ''X''&lt;nowiki&gt;'&lt;/nowiki&gt;
+:&lt;math&gt;f^{-1}(\mathrm{cl}'(A')) \supseteq \mathrm{cl}(f^{-1}(A')).&lt;/math&gt;
+Moreover,
+:&lt;math&gt;f\colon (X,\mathrm{int}) \to (X' ,\mathrm{int}') &lt;/math&gt;
+is continuous if and only if
+:&lt;math&gt;f^{-1}(\mathrm{int}'(A')) \subseteq \mathrm{int}(f^{-1}(A'))&lt;/math&gt;
+for any subset ''A''' of ''Y''.
+
+===Properties===
+If ''f'': ''X'' → ''Y'' and ''g'': ''Y'' → ''Z'' are continuous, then so is the composition ''g'' ∘ ''f'': ''X'' → ''Z''. If ''f'': ''X'' → ''Y'' is continuous and
+* ''X'' is [[Compact space|compact]], then ''f''(''X'') is compact.
+* ''X'' is [[Connected space|connected]], then ''f''(''X'') is connected.
+* ''X'' is [[path-connected]], then ''f''(''X'') is path-connected.
+* ''X'' is [[Lindelöf space|Lindelöf]], then ''f''(''X'') is Lindelöf.
+* ''X'' is [[separable space|separable]], then ''f''(''X'') is separable.
+
+The possible topologies on a fixed set ''X'' are [[partial ordering|partially ordered]]: a topology τ&lt;sub&gt;1&lt;/sub&gt; is said to be [[comparison of topologies|coarser]] than another topology τ&lt;sub&gt;2&lt;/sub&gt; (notation: τ&lt;sub&gt;1&lt;/sub&gt; ⊆ τ&lt;sub&gt;2&lt;/sub&gt;) if every open subset with respect to τ&lt;sub&gt;1&lt;/sub&gt; is also open with respect to τ&lt;sub&gt;2&lt;/sub&gt;. Then, the [[identity function|identity map]]
+:id&lt;sub&gt;X&lt;/sub&gt;: (''X'', τ&lt;sub&gt;2&lt;/sub&gt;) → (''X'', τ&lt;sub&gt;1&lt;/sub&gt;)
+is continuous if and only if τ&lt;sub&gt;1&lt;/sub&gt; ⊆ τ&lt;sub&gt;2&lt;/sub&gt; (see also [[comparison of topologies]]). More generally, a continuous function
+:&lt;math&gt;(X, \tau_X) \rightarrow (Y, \tau_Y)&lt;/math&gt;
+stays continuous if the topology τ&lt;sub&gt;''Y''&lt;/sub&gt; is replaced by a [[Comparison of topologies|coarser topology]] and/or τ&lt;sub&gt;''X''&lt;/sub&gt; is replaced by a [[Comparison of topologies|finer topology]].
+
+===Homeomorphisms===
+Symmetric to the concept of a continuous map is an [[open map]], for which ''images'' of open sets are open. In fact, if an open map ''f'' has an [[inverse function]], that inverse is continuous, and if a continuous map ''g'' has an inverse, that inverse is open. Given a [[bijective]] function ''f'' between two topological spaces, the inverse function ''f''&lt;sup&gt;−1&lt;/sup&gt; need not be continuous. A bijective continuous function with continuous inverse function is called a ''[[homeomorphism]]''.
+
+If a continuous bijection has as its [[Domain of a function|domain]] a [[compact space]] and its [[codomain]] is [[Hausdorff space|Hausdorff]], then it is a homeomorphism.
+
+===Defining topologies via continuous functions===
+Given a function
+:&lt;math&gt;f\colon X \rightarrow S, &lt;/math&gt;
+where ''X'' is a topological space and ''S'' is a set (without a specified topology), the [[final topology]] on ''S'' is defined by letting the open sets of ''S'' be those subsets ''A'' of ''S'' for which ''f''&lt;sup&gt;−1&lt;/sup&gt;(''A'') is open in ''X''. If ''S'' has an existing topology, ''f'' is continuous with respect to this topology if and only if the existing topology is [[Comparison of topologies|coarser]] than the final topology on ''S''.  Thus the final topology can be characterized as the finest topology on ''S'' that makes ''f'' continuous.  If ''f'' is [[surjective]], this topology is canonically identified with the [[quotient topology]] under the [[equivalence relation]] defined by ''f''.
+
+Dually, for a function ''f'' from a set ''S'' to a topological space ''X'', the [[initial topology]] on ''S'' is defined by designating as an open set every subset ''A'' of ''S'' such that &lt;math&gt;A = f^{-1}(U)&lt;/math&gt; for some open subset ''U'' of ''X''.  If ''S'' has an existing topology, ''f'' is continuous with respect to this topology if and only if the existing topology is finer than the initial topology on ''S''.  Thus the initial topology can be characterized as the coarsest topology on ''S'' that makes ''f'' continuous.  If ''f'' is injective, this topology is canonically identified with the [[subspace topology]] of ''S'', viewed as a subset of ''X''.
+
+A topology on a set ''S'' is uniquely determined by the class of all continuous functions &lt;math&gt;S \rightarrow X&lt;/math&gt; into all topological spaces ''X''. [[Duality (mathematics)|Dually]], a similar idea can be applied to maps &lt;math&gt;X \rightarrow S.&lt;/math&gt;
+
+==Related notions==
+
+Various other mathematical domains use the concept of continuity in different, but related meanings. For example, in [[order theory]], an order-preserving function ''f'': ''X'' → ''Y'' between particular types of [[partially ordered set]]s ''X'' and ''Y'' is [[Scott continuity|continuous]] if for each directed subset ''A'' of ''X'', we have sup(''f''(''A'')) = ''f''(sup(''A'')). Here sup is the [[supremum]] with respect to the orderings in ''X'' and ''Y'', respectively. This notion of continuity is the same as topological continuity when the partially ordered sets are given the [[Scott topology]].&lt;ref&gt;{{cite book |last=Goubault-Larrecq |first=Jean |title=Non-Hausdorff Topology and Domain Theory: Selected Topics in Point-Set Topology |publisher=[[Cambridge University Press]] |year=2013 |ISBN=1107034132}}&lt;/ref&gt;&lt;ref&gt;{{cite book |last1=Gierz |first1=G. |last2=Hofmann |first2=K. H. |last3=Keimel |first3=K. |last4=Lawson |first4=J. D. |last5=Mislove |first5=M. W. |last6=Scott |first6=D. S. |title=Continuous Lattices and Domains |volume=93 |series=Encyclopedia of Mathematics and its Applications |publisher=Cambridge University Press |year=2003 |ISBN=0521803381 |url-access=registration |url=https://archive.org/details/continuouslattic0000unse }}&lt;/ref&gt;
+
+In [[category theory]], a [[functor]]
+:&lt;math&gt;F\colon \mathcal C \rightarrow \mathcal D&lt;/math&gt;
+between two [[category (mathematics)|categories]] is called ''[[continuous functor|continuous]]'', if it commutes with small [[limit (category theory)|limits]]. That is to say,
+:&lt;math&gt;\varprojlim_{i \in I} F(C_i) \cong F \left(\varprojlim_{i \in I} C_i \right)&lt;/math&gt;
+for any small (i.e., indexed by a set ''I'', as opposed to a [[class (mathematics)|class]]) diagram of objects in &lt;math&gt;\mathcal C&lt;/math&gt;.
+
+A ''continuity space'' is a generalization of metric spaces and posets,&lt;ref&gt;{{cite journal | title = Quantales and continuity spaces | citeseerx=10.1.1.48.851 | first = R. C. | last =Flagg | journal = Algebra Universalis | year = 1997 }}&lt;/ref&gt;&lt;ref&gt;{{cite journal | title = All topologies come from generalized metrics | first = R. | last = Kopperman | journal =  American Mathematical Monthly | year = 1988 |volume=95 |issue=2 |pages=89–97 |doi=10.2307/2323060 }}&lt;/ref&gt; which uses the concept of [[quantale]]s, and that can be used to unify the notions of metric spaces and [[Domain theory|domain]]s.&lt;ref&gt;{{cite journal | title = Continuity spaces: Reconciling domains and metric spaces | first1 = B. | last1 = Flagg | first2 = R. | last2 = Kopperman | journal = Theoretical Computer Science |volume=177 |issue=1 |pages=111–138 |doi=10.1016/S0304-3975(97)00236-3 | year = 1997 }}&lt;/ref&gt;
+
+==See also==
+{{Div col|colwidth=25em}}
+* [[Absolute continuity]]
+* [[Classification of discontinuities]]
+* [[Coarse function]]
+* [[Continuous function (set theory)]]
+* [[Continuous stochastic process]]
+* [[Dini continuity]]
+* [[Equicontinuity]]
+* [[Normal function]]
+* [[Piecewise]]
+* [[Symmetrically continuous function]]
+{{Div col end}}
+
+==Notes==
+{{Commons category|Continuity&amp;nbsp;(functions)}}
+{{reflist}}
+
+==References==
+* {{Springer |title=Continuous function |id=p/c025650}}
+
+{{Topology}}
+
+{{DEFAULTSORT:Continuous Function}}
+[[Category:Continuous mappings| ]]
+[[Category:Calculus]]
+[[Category:Types of functions]]</text>
+      <sha1>1w8yv7rpjd68avcgihooo47p9qbrb3a</sha1>
+    </revision>
+  </page>

@@ -1,0 +1,125 @@
+  <page>
+    <title>Banach algebra</title>
+    <ns>0</ns>
+    <id>4665</id>
+    <revision>
+      <id>925405187</id>
+      <parentid>925378775</parentid>
+      <timestamp>2019-11-09T23:00:32Z</timestamp>
+      <contributor>
+        <ip>2001:861:3AC0:4FA0:619B:877:E28F:C429</ip>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">In [[mathematics]], especially [[functional analysis]], a '''Banach algebra''', named after [[Stefan Banach]], is an [[associative algebra]] ''A'' over the [[real number|real]] or [[complex number|complex]] numbers (or over a [[nonarchimedean field|non-Archimedean]] complete [[normed field]]) that at the same time is also a [[Banach space]], i.e. a [[normed space]] and [[complete metric space|complete]] in the [[metric (mathematics)|metric]] induced by the norm. The norm is required to satisfy
+
+:&lt;math&gt; \forall x, y \in A : \|x \, y\| \ \leq  \|x \| \, \| y\|. &lt;/math&gt;
+
+This ensures that the multiplication operation is [[continuous function (topology)|continuous]].
+
+A Banach algebra is called ''unital'' if it has an [[identity element]] for the multiplication whose norm is 1, and ''commutative'' if its multiplication is [[commutative]].
+Any Banach algebra &lt;math&gt;A&lt;/math&gt; (whether it has an [[identity element]] or not) can be embedded isometrically into a unital Banach algebra &lt;math&gt;A_e&lt;/math&gt; so as to form a closed ideal of &lt;math&gt;A_e&lt;/math&gt;. Often one assumes ''a priori'' that the algebra under consideration is unital: for one can develop much of the theory by considering &lt;math&gt;A_e&lt;/math&gt; and then applying the outcome in the original algebra. However, this is not the case all the time. For example, one cannot define all the trigonometric functions in a Banach algebra without identity.
+
+The theory of real Banach algebras can be very different from the theory of complex Banach algebras. For example, the [[Spectrum (functional analysis)|spectrum]] of an element of a nontrivial complex Banach algebra can never be empty, whereas in a real Banach algebra it could be empty for some elements.
+
+Banach algebras can also be defined over fields of [[p-adic number|''p''-adic number]]s. This is part of [[p-adic analysis|''p''-adic analysis]].
+
+== Examples ==
+The prototypical example of a Banach algebra is &lt;math&gt;C_0(X)&lt;/math&gt;, the space of (complex-valued) continuous functions on a locally compact (Hausdorff) space that vanish at infinity. &lt;math&gt;C_0(X)&lt;/math&gt; is unital if and only if ''X'' is compact. The complex conjugation being an involution, &lt;math&gt;C_0(X)&lt;/math&gt; is in fact a [[C*-algebra]]. More generally, every C*-algebra is a Banach algebra.
+
+* The set of real (or complex) numbers is a Banach algebra with norm given by the [[absolute value]].
+* The set of all real or complex ''n''-by-''n'' [[matrix (mathematics)|matrices]] becomes a [[unital algebra|unital]] Banach algebra if we equip it with a sub-multiplicative [[matrix norm]].
+* Take the Banach space '''R'''&lt;sup&gt;''n''&lt;/sup&gt;  (or '''C'''&lt;sup&gt;''n''&lt;/sup&gt;) with norm ||''x''|| = max |''x''&lt;sub&gt;''i''&lt;/sub&gt;| and define multiplication componentwise: (''x''&lt;sub&gt;1&lt;/sub&gt;,...,''x''&lt;sub&gt;''n''&lt;/sub&gt;)(''y''&lt;sub&gt;1&lt;/sub&gt;,...,''y''&lt;sub&gt;''n''&lt;/sub&gt;) = (''x''&lt;sub&gt;1&lt;/sub&gt;''y''&lt;sub&gt;1&lt;/sub&gt;,...,''x''&lt;sub&gt;''n''&lt;/sub&gt;''y''&lt;sub&gt;''n''&lt;/sub&gt;).
+* The [[quaternion]]s form a 4-dimensional real Banach algebra, with the norm being given by the absolute value of quaternions.
+* The algebra of all bounded real- or complex-valued functions defined on some set (with pointwise multiplication and the [[supremum]] norm) is a unital Banach algebra.
+* The algebra of all bounded [[continuous function (topology)|continuous]] real- or complex-valued functions on some [[locally compact space]] (again with pointwise operations and supremum norm) is a Banach algebra.
+* The algebra of all [[continuous function (topology)|continuous]] [[linear transformation|linear]] operators on a Banach space ''E'' (with functional composition as multiplication and the [[operator norm]] as norm) is a unital Banach algebra. The set of all [[compact operator]]s on ''E'' is a Banach algebra and closed ideal. It is without identity if {{math|dim ''E'' {{=}} ∞}}.&lt;ref&gt;{{harvnb|Conway|1990|loc=Example VII.1.8.}}&lt;/ref&gt;
+* If ''G'' is a [[locally compact]] [[Hausdorff space|Hausdorff]] [[topological group]] and ''μ'' is its [[Haar measure]], then the Banach space L&lt;sup&gt;1&lt;/sup&gt;(''G'') of all ''μ''-integrable functions on ''G'' becomes a Banach algebra under the [[convolution]] ''xy''(''g'') = ∫ ''x''(''h'') ''y''(''h''&lt;sup&gt;−1&lt;/sup&gt;''g'') d''μ''(''h'') for ''x'', ''y'' in L&lt;sup&gt;1&lt;/sup&gt;(''G'').&lt;ref&gt;{{harvnb|Conway|1990|loc=Example VII.1.9.}}&lt;/ref&gt;
+* [[Uniform algebra]]: A Banach algebra that is a subalgebra of the complex algebra C(X) with the supremum norm and that contains the constants and separates the points of ''X'' (which must be a compact Hausdorff space).
+* [[Uniform algebra|Natural Banach function algebra]]: A uniform algebra all of whose characters are evaluations at points of ''X''.
+* [[C*-algebra]]: A Banach algebra that is a closed *-subalgebra of the algebra of bounded operators on some [[Hilbert space]].
+* [[Measure algebra]]: A Banach algebra consisting of all [[Radon measure]]s on some [[locally compact group]], where the product of two measures is given by [[Convolution#Measures|convolution of measures]].&lt;ref&gt;{{harvnb|Conway|1990|loc=Example VII.1.9.}}&lt;/ref&gt;
+
+== Counterexamples ==
+The algebra of the [[quaternion]]s &lt;math&gt;\H&lt;/math&gt; is not a complex Banach algebra (for any norm on &lt;math&gt;\H&lt;/math&gt;), for if &lt;math&gt;\mathcal A&lt;/math&gt; is a complex Banach algebra that is also a [[division algebra]], then &lt;math&gt;\mathcal A \approx \C&lt;/math&gt; ([[Gelfand&amp;ndash;Mazur theorem]]), since if &lt;math&gt;\lambda \in \C&lt;/math&gt; is a point in the non-empty&lt;ref&gt;{{harvnb|Conway|1990|loc=Theorem 7.3.6.}}&lt;/ref&gt; [[Spectrum (functional analysis)|spectrum]] &lt;math&gt;\sigma(a) \subseteq \C&lt;/math&gt; of &lt;math&gt;a \in \mathcal A&lt;/math&gt;, &lt;math&gt;a - \lambda 1&lt;/math&gt; is not invertible, hence &lt;math&gt;a - \lambda 1 = 0&lt;/math&gt; since &lt;math&gt;\mathcal A&lt;/math&gt; is a division algebra, whence &lt;math&gt;a = \lambda 1&lt;/math&gt;&lt;ref&gt; {{harvnb|Conway|1990|loc=Corollary to theorem 8.1.}}&lt;/ref&gt; (which also proves the Gelfand&amp;ndash;Mazur theorem).
+
+== Properties ==
+Several [[list of functions|elementary functions]] that are defined via [[power series]] may be defined in any unital Banach algebra; examples include the [[exponential function]] and the [[trigonometric functions]], and more generally any [[entire function]]. (In particular, the exponential map can be used to define [[abstract index group]]s.) The formula for the [[geometric series]] remains valid in general unital Banach algebras. The [[binomial theorem]] also holds for two commuting elements of a Banach algebra.
+
+The set of [[invertible element]]s in any unital Banach algebra is an [[open set]], and the inversion operation on this set is continuous, (and hence is a homeomorphism) so that it forms a [[topological group]] under multiplication.&lt;ref&gt;{{harvnb|Conway|1990|loc=Theorem VII.2.2.}}&lt;/ref&gt;
+
+If a Banach algebra has unit '''1''', then '''1''' cannot be a [[commutator (ring theory)|commutator]]; i.e., &lt;math&gt;xy - yx \ne \mathbf{1}&lt;/math&gt;&amp;thinsp; for any ''x'', ''y''&amp;nbsp;∈&amp;nbsp;''A''. This is because ''xy'' and ''yx'' have the same [[spectrum (functional analysis)|spectrum]] except possibly 0.
+
+The various algebras of functions given in the examples above have very different properties from standard examples of algebras such as the reals. For example:
+
+* Every real Banach algebra that is a [[division algebra]] is isomorphic to the reals, the complexes, or the quaternions. Hence, the only complex Banach algebra that is a division algebra is the complexes. (This is known as the [[Gelfand–Mazur theorem]].)
+* Every unital real Banach algebra with no [[zero divisor]]s, and in which every [[principal ideal]] is [[closed set|closed]], is isomorphic to the reals, the complexes, or the quaternions.
+* Every commutative real unital [[Noetherian ring|Noetherian]] Banach algebra with no zero divisors is isomorphic to the real or complex numbers.
+* Every commutative real unital Noetherian Banach algebra (possibly having zero divisors) is finite-dimensional.
+* Permanently singular elements in Banach algebras are [[topological divisor of zero|topological divisors of zero]], ''i.e.'', considering extensions ''B'' of Banach algebras ''A'' some elements that are singular in the given algebra ''A'' have a multiplicative inverse element in a Banach algebra extension ''B''.  Topological divisors of zero in ''A'' are permanently singular in any Banach extension ''B'' of&amp;nbsp;''A''.
+
+== Spectral theory ==
+{{main|Spectral theory}}
+
+Unital Banach algebras over the complex field provide a general setting to develop spectral theory. The ''spectrum'' of an element ''x''&amp;nbsp;∈&amp;nbsp;''A'', denoted by &lt;math&gt;\sigma(x)&lt;/math&gt;, consists of all those complex [[scalar (mathematics)|scalar]]s ''λ'' such that ''x''&amp;nbsp;&amp;minus;&amp;nbsp;''λ'''''1''' is not invertible in ''A''.  The spectrum of any element ''x'' is a closed subset of the closed disc in '''C''' with radius ||''x''|| and center 0, and thus is  [[Compact space|compact]]. Moreover, the spectrum &lt;math&gt;\sigma(x)&lt;/math&gt; of an element ''x'' is [[non-empty]] and satisfies the [[spectral radius]] formula:
+
+:&lt;math&gt;\sup \{ |\lambda| : \lambda \in \sigma(x) \} = \lim_{n \to \infty} \|x^n\|^{1/n}.&lt;/math&gt;
+
+Given ''x''&amp;nbsp;&amp;isin;&amp;nbsp;''A'', the [[holomorphic functional calculus]] allows to define ''ƒ''(''x'')&amp;nbsp;∈ ''A'' for any function ''ƒ'' [[holomorphic function|holomorphic]] in a neighborhood of &lt;math&gt;\sigma(x).&lt;/math&gt;  Furthermore, the spectral mapping theorem holds:
+
+:&lt;math&gt;\sigma(f(x)) = f(\sigma(x)).&lt;/math&gt;&lt;ref&gt;{{harvnb|Takesaki|1979|loc=Proposition 2.8.}}&lt;/ref&gt;
+
+When the Banach algebra ''A'' is the algebra L(''X'') of bounded linear operators on a complex Banach space ''X''&amp;thinsp; (e.g., the algebra of square matrices), the notion of the spectrum in ''A'' coincides with the usual one in [[operator theory]]. For ''ƒ''&amp;nbsp;&amp;isin; ''C''(''X'') (with a compact Hausdorff space&amp;nbsp;''X''), one sees that:
+
+:&lt;math&gt;\sigma(f) = \{ f(t) : t \in X \}.&lt;/math&gt;
+
+The norm of a normal element ''x'' of a C*-algebra coincides with its spectral radius.  This generalizes an analogous fact for normal operators.
+
+Let ''A''&amp;thinsp; be a complex unital Banach algebra in which every non-zero element ''x'' is invertible (a division algebra).  For every ''a''&amp;nbsp;&amp;isin; ''A'', there is ''λ''&amp;nbsp;&amp;isin; '''C''' such that
+''a''&amp;nbsp;&amp;minus;&amp;nbsp;''λ'''''1''' is not invertible (because the spectrum of ''a'' is not empty) hence ''a''&amp;nbsp;=&amp;nbsp;''λ'''''1'''&amp;nbsp;:  this algebra ''A'' is naturally isomorphic to '''C''' (the complex case of the Gelfand–Mazur theorem).
+
+== Ideals and characters ==
+Let ''A''&amp;thinsp; be a unital ''commutative'' Banach algebra over '''C'''. Since ''A'' is then a commutative ring with unit, every non-invertible element of ''A'' belongs to some [[maximal ideal]] of ''A''. Since a maximal ideal &lt;math&gt;\mathfrak m&lt;/math&gt; in ''A'' is closed, &lt;math&gt;A / \mathfrak m&lt;/math&gt; is a Banach algebra that is a field, and it follows from the Gelfand–Mazur theorem that there is a bijection between the set of all maximal ideals of ''A'' and the set Δ(''A'') of all nonzero homomorphisms from ''A''&amp;thinsp; to '''C'''. The set Δ(''A'') is called the &quot;[[structure space]]&quot; or &quot;character space&quot; of ''A'', and its members &quot;characters.&quot;
+
+A character ''χ'' is a linear functional on ''A'' that is at the same time multiplicative, ''χ''(''ab'') = ''χ''(''a'') ''χ''(''b''), and satisfies ''χ''('''1''') = 1.  Every character is automatically continuous from ''A''&amp;thinsp; to '''C''', since the kernel of a character is a maximal ideal, which is closed. Moreover, the norm (''i.e.'', operator norm) of a character is one. Equipped with the topology of pointwise convergence on ''A'' (''i.e.'', the topology induced by the weak-* topology of&amp;nbsp;''A''&lt;sup&gt;∗&lt;/sup&gt;), the character space, Δ(''A''), is a Hausdorff compact space.
+
+For any ''x'' ∈ ''A'',
+
+:&lt;math&gt;\sigma(x) = \sigma(\hat x)&lt;/math&gt;
+
+where &lt;math&gt;\hat x&lt;/math&gt; is the [[Gelfand representation]] of ''x'' defined as follows: &lt;math&gt;\hat x&lt;/math&gt; is the continuous function from Δ(''A'') to '''C''' given by &lt;math&gt;\hat x(\chi) = \chi(x).&lt;/math&gt;&amp;thinsp;  The spectrum of &lt;math&gt;\hat x,&lt;/math&gt; in the formula above, is the spectrum as element of the algebra ''C''(Δ(''A'')) of complex continuous functions on the compact space Δ(''A'').  Explicitly,
+
+:&lt;math&gt;\sigma(\hat x) = \{ \chi(x) : \chi \in \Delta(A) \}&lt;/math&gt;.
+
+As an algebra, a unital commutative Banach algebra is [[semisimple algebra|semisimple]] (i.e., its [[Jacobson radical]] is zero) if and only if its Gelfand representation has trivial kernel. An important example of such an algebra is a commutative C*-algebra. In fact, when ''A'' is a commutative unital C*-algebra, the Gelfand representation is then an isometric *-isomorphism between ''A'' and  ''C''(Δ(''A'')) .&lt;ref group=nb&gt;Proof: Since every element of a commutative C*-algebra is normal, the Gelfand representation is isometric; in particular, it is injective and its image is closed. But the image of the Gelfand representation is dense by the [[Stone–Weierstrass theorem]].&lt;/ref&gt;
+
+== See also ==
+* [[Operator algebra]]
+* [[Shilov boundary]]
+* [[Automatic continuity]]
+* [[Kaplansky's conjecture]]
+* [[Approximate identity]]
+
+==Remarks==
+{{Reflist|group=nb}}
+
+==Notes==
+{{Reflist}}
+
+==References==
+* {{cite book|ref=harv|first=B|last=Bollobás|authorlink=Béla Bollobás|title=Linear Analysis|publisher=Cambridge University Press|year=1990|isbn=0-521-38729-9}}
+* {{cite book|ref=harv|first1=F. F.|last1=Bonsall|authorlink1=Frank Bonsall|first2=J.|last2=Duncan|title=Complete Normed Algebras|publisher=Springer-Verlag|location=New York|year=1973|isbn=0-387-06386-2}}
+* {{cite book|ref=harv|last=Conway|first=J. B.|authorlink=John B. Conway|title=A Course in Functional Analysis|year=1990|series=Graduate Texts in Mathematics|volume=96|publisher=[[Springer Verlag]]|isbn=0-387-97245-5}}
+* {{cite book|ref=harv|first1=H. G.|last1=Dales|first2=P.|last2=Aeina|first3=J|last3=Eschmeier|first4=K.|last4=Laursen|first5=G. A.|last5=Willis|title=Introduction to Banach Algebras, Operators and Harmonic Analysis|publisher=Cambridge University Press|year=2003|isbn=0-521-53584-0}}
+* {{cite book|ref=harv|first=R. D.|last=Mosak|title=Banach algebras|series=Chicago Lectures in Mathematics|year=1975|publisher=University of Chicago Press)|isbn=0-226-54203-3}}
+*{{cite book|ref=harv|last=Takesaki|first=M.|authorlink=Masamichi Takesaki|title=Theory of Operator Algebras I|year=1979|edition=1st|series=Encyclopaedia of Mathematical Sciences|volume=124|publisher=Springer-Verlag|location=Berlin Heidelberg|issn=0938-0396|isbn=978-3-540-42248-8}}
+
+{{Functional Analysis}}
+
+{{DEFAULTSORT:Banach Algebra}}
+[[Category:Banach algebras| ]]
+[[Category:Fourier analysis]]
+[[Category:Science and technology in Poland]]</text>
+      <sha1>dyzdcaisqmbj19gbl2pst7gmgs8lgo7</sha1>
+    </revision>
+  </page>

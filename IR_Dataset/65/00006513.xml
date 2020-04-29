@@ -1,0 +1,110 @@
+  <page>
+    <title>Client–server model</title>
+    <ns>0</ns>
+    <id>6513</id>
+    <revision>
+      <id>943269235</id>
+      <parentid>943120790</parentid>
+      <timestamp>2020-02-29T22:11:49Z</timestamp>
+      <contributor>
+        <username>BernardoSulzbach</username>
+        <id>33434303</id>
+      </contributor>
+      <comment>Reverted [[WP:AGF|good faith]] edits by [[Special:Contributions/125.162.32.251|125.162.32.251]] ([[User talk:125.162.32.251|talk]]): No ([[WP:TW|TW]])</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{short description|Distributed application structure in computing}}
+[[File:Client-server-model.svg|thumb|250px|A computer network diagram of clients communicating with a server via the [[Internet]]]]
+
+'''Client–server model''' is a [[distributed application]] structure that partitions tasks or workloads between the providers of a resource or service, called [[server (computing)|server]]s, and service requesters, called [[client (computing)|client]]s.&lt;ref&gt;{{cite web|url=http://java.sun.com/developer/Books/jdbc/ch07.pdf|publisher=Sun Microsystem|title=Distributed Application Architecture|archiveurl=https://web.archive.org/web/20110406121920/http://java.sun.com/developer/Books/jdbc/ch07.pdf|accessdate=2009-06-16|archivedate=6 April 2011}}&lt;/ref&gt; Often clients and servers communicate over a [[computer network]] on separate hardware, but both client and server may reside in the same system. A server [[Host (network)|host]]  runs one or more server programs, which share their resources with clients. A client does not share any of its resources, but it requests content or service from a server. Clients therefore initiate communication sessions with servers, which await incoming requests.
+Examples of computer applications that use the client–server model are [[Email]], [[network printing]], and the [[World Wide Web]].
+
+==Client and server role==
+The ''client-server'' characteristic describes the relationship of cooperating programs in an application. The server component provides a function or service to one or many clients, which initiate requests for such services.
+Servers are classified by the services they provide. For example, a [[web server]] serves [[web page]]s and a [[file server]] serves [[computer file]]s. A shared resource may be any of the server computer's software and electronic components, from [[Computer program|programs]] and [[Data (computing)|data]] to [[Microprocessor|processors]] and [[Data storage device|storage devices]]. The sharing of resources of a server constitutes a ''service''.
+
+Whether a computer is a client, a server, or both, is determined by the nature of the application that requires the service functions. For example, a single computer can run web server and file server software at the same time to serve different data to clients making different kinds of requests. Client software can also communicate with server software within the same computer.&lt;ref&gt;The [[X Window System]] is one example.&lt;/ref&gt; Communication between servers, such as to synchronize data, is sometimes called ''[[inter-server]]'' or ''server-to-server'' communication.
+
+==Client and server communication==
+In general, a service is an [[Abstraction (computer science)|abstraction]] of computer resources and a client does not have to be [[Concern (computer science)|concerned]] with how the server performs while fulfilling the request and delivering the response. The client only has to understand the response based on the well-known application protocol, i.e. the content and the formatting of the data for the requested service.
+
+Clients and servers exchange messages in a [[request–response]] [[messaging pattern]]. The client sends a request, and the server returns a response. This exchange of messages is an example of [[inter-process communication]]. To communicate, the computers must have a common language, and they must follow rules so that both the client and the server know what to expect. The language and rules of communication are defined in a [[communications protocol]]. All client-server protocols operate in the [[application layer]]. The application layer protocol defines the basic patterns of the dialogue. To formalize the data exchange even further, the server may implement an [[application programming interface]] (API).&lt;ref&gt;{{Cite journal | last1 = Benatallah | first1 = B. | last2 = Casati | first2 = F. | last3 = Toumani | first3 = F. | title = Web service conversation modeling: A cornerstone for e-business automation | doi = 10.1109/MIC.2004.1260703 | journal = IEEE Internet Computing | volume = 8 | pages = 46–54 | year = 2004 | pmid =  | pmc = }}&lt;/ref&gt; The API is an [[abstraction layer]] for accessing a service.  By restricting communication to a specific [[content format]], it facilitates [[parsing]]. By abstracting access, it facilitates cross-platform data exchange.&lt;ref&gt;{{Cite journal | last1 = Dustdar | first1 = S. | last2 = Schreiner | first2 = W. | doi = 10.1504/IJWGS.2005.007545 | title = A survey on web services composition | journal = International Journal of Web and Grid Services | volume = 1 | pages = 1 | year = 2005 | pmid =  | pmc = | url = http://www.infosys.tuwien.ac.at/Staff/sd/papers/A%20survey%20on%20web%20services%20composition_Dustdar_Schreiner_inPress.pdf | citeseerx = 10.1.1.139.4827 }}&lt;/ref&gt;
+
+A server may receive requests from many distinct clients in a short period of time. A computer can only perform a limited number of [[Task (computing)|tasks]] at any moment, and relies on a [[Scheduling (computing)|scheduling]] system to prioritize incoming requests from clients to accommodate them. To prevent abuse and maximize [[uptime|availability]], server software may limit the availability to clients. [[Denial of service attack]]s are designed to exploit a server's obligation to process requests by overloading it with excessive request rates.
+Encryption should be applied if sensitive information are to be communicated between the client and the server.
+
+==Example==
+When a [[bank]] customer accesses [[online banking]] services with a [[web browser]] (the client), the client initiates a request to the bank's web server. The customer's [[login]] credentials may be stored in a [[database]], and the web server accesses the [[database server]] as a client. An [[application server]] interprets the returned data by applying the bank's [[business logic]], and provides the [[Input/output|output]] to the web server. Finally, the web server returns the result to the client web browser for display.  
+
+In each step of this sequence of client–server message exchanges, a computer processes a request and returns data. This is the request-response messaging pattern. When all the requests are met, the sequence is complete and the web browser presents the data to the customer.
+
+This example illustrates a [[design pattern]] applicable to the client–server model: [[separation of concerns]].
+
+==Early history==
+An early form of client–server architecture is [[remote job entry]], dating at least to [[OS/360]] (announced 1964), where the request was to run a [[job (computing)|job]], and the response was the output.
+
+While formulating the client–server model in the 1960s and 1970s, [[computer scientist]]s building [[ARPANET]] (at the [[Stanford Research Institute]]) used the terms ''server-host'' (or ''serving host'') and ''user-host'' (or ''using-host''), and these appear in the early documents RFC 5&lt;ref name=&quot;rulifson&quot;&gt;{{cite IETF |title=DEL |rfc=5 |last=Rulifson |first=Jeff |authorlink=Jeff Rulifson |date=June 1969 |publisher=[[Internet Engineering Task Force|IETF]] |accessdate=30 November 2013}}&lt;/ref&gt; and RFC 4.&lt;ref&gt;{{cite IETF |title=Network Timetable |rfc=4 |last=Shapiro |first=Elmer B. |date=March 1969 |publisher=[[Internet Engineering Task Force|IETF]] |accessdate=30 November 2013}}&lt;/ref&gt; This usage was continued at [[Xerox PARC]] in the mid-1970s.
+
+One context in which researchers used these terms was in the design of a [[computer network programming]] language called Decode-Encode Language (DEL).&lt;ref name=&quot;rulifson&quot;/&gt; The purpose of this language was to accept commands from one computer (the user-host), which would return status reports to the user as it encoded the commands in network packets. Another DEL-capable computer, the server-host, received the packets, decoded them, and returned formatted data to the user-host. A DEL program on the user-host received the results to present to the user. This is a client–server transaction. Development of DEL was just beginning in 1969, the year that the [[United States Department of Defense]] established ARPANET (predecessor of [[Internet]]).
+
+===Client-host and server-host===
+''Client-host'' and ''server-host'' have subtly different meanings than ''client'' and ''server''. A host is any computer connected to a network. Whereas the words ''server'' and ''client'' may refer either to a computer or to a computer program, ''server-host'' and ''user-host'' always refer to computers. The host is a versatile, multifunction computer; ''clients'' and ''servers'' are just programs that run on a host. In the client–server model, a server is more likely to be devoted to the task of serving.
+
+An early use of the word ''client'' occurs in &quot;Separating Data from Function in a Distributed File System&quot;, a 1978 paper by Xerox PARC computer scientists Howard Sturgis, James Mitchell, and Jay Israel. The authors are careful to define the term for readers, and explain that they use it to distinguish between the user and the user's network node (the client).&lt;ref&gt;{{Cite journal | title=Separating Data from Function in a Distributed File System |last = Sturgis |first = Howard E. |last2 = Mitchell |first2 = James George |last3 = Israel | first3 = Jay E. |publisher=[[Xerox PARC]] |url=http://ip.com/IPCOM/000128883 |year = 1978}}&lt;/ref&gt; (By 1992, the word ''server'' had entered into general parlance.)&lt;ref&gt;{{OEtymD|server|accessdate=30 November 2013}}&lt;/ref&gt;&lt;ref&gt;{{cite web |url=https://getinfo.de/app/Separating-data-from-function-in-a-distributed/id/TIBKAT%3A509976956 |title=Separating data from function in a distributed file system |author=&lt;!--Staff writer(s); no by-line.--&gt; |website=[[GetInfo]] |publisher=[[German National Library of Science and Technology]] |accessdate=29 November 2013}}&lt;/ref&gt;
+
+==Centralized computing==
+{{Further|History of personal computers|Decentralized computing|Computer cluster}}
+
+The client–server model does not dictate that server-hosts must have more resources than client-hosts. Rather, it enables any general-purpose computer to extend its capabilities by using the shared resources of other hosts. [[Centralized computing]], however, specifically allocates a large amount of resources to a small number of computers. The more computation is offloaded from client-hosts to the central computers, the simpler the client-hosts can be.&lt;ref name=&quot;Columbia&quot;&gt;{{cite journal |last1=Nieh |first1=Jason |last2=Yang |first2=S. Jae |last3=Novik |first3=Naomi |title=A Comparison of Thin-Client Computing Architectures |journal=Academic Commons |date=2000 |doi=10.7916/D8Z329VF |url=https://academiccommons.columbia.edu/doi/10.7916/D8Z329VF |accessdate=28 November 2018 |language=en}}&lt;/ref&gt; It relies heavily on network resources (servers and infrastructure) for computation and storage. A [[diskless node]] loads even its [[operating system]] from the network, and a [[computer terminal]] has no operating system at all; it is only an input/output interface to the server. In contrast, a [[fat client]], such as a [[personal computer]], has many resources, and does not rely on a server for essential functions.
+
+As [[microcomputer]]s decreased in price and increased in power from the 1980s to the late 1990s, many organizations transitioned computation from centralized servers, such as [[Mainframe computer|mainframe]]s and [[minicomputer]]s, to fat clients.&lt;ref&gt;{{Cite book | last1 = d'Amore | first1 = M. J. | last2 = Oberst | first2 = D. J. | doi = 10.1145/800041.801417 | chapter = Microcomputers and mainframes | title = Proceedings of the 11th annual ACM SIGUCCS conference on User services - SIGUCCS '83 | pages = 7 | year = 1983 | isbn = 978-0897911160 | pmid =  | pmc = }}&lt;/ref&gt; This afforded greater, more individualized dominion over computer resources, but complicated [[information technology management]].&lt;ref name=&quot;Columbia&quot;/&gt;&lt;ref name=&quot;tolia&quot;&gt;{{Cite journal |last = Tolia |first = Niraj |last2 = Andersen |first2 = David G. |last3 = Satyanarayanan |first3 = M. |title = Quantifying Interactive User Experience on Thin Clients |journal = [[Computer (magazine)|Computer]] |volume = 39 |pages = 46–52 |number = 3 |date = March 2006 |publisher = [[IEEE Computer Society]] |url = https://www.cs.cmu.edu/~dga/papers/tolia06-ieee.pdf |doi = 10.1109/mc.2006.101 }}&lt;/ref&gt;&lt;ref&gt;{{cite web |url=http://sqlmag.com/cloud/cloud-really-just-return-mainframe-computing |title=Is the Cloud Really Just the Return of Mainframe Computing? |last=Otey |first=Michael |date=22 March 2011 |website=[[SQL Server Pro]] |publisher=[[Penton Media]] |accessdate=1 December 2013}}&lt;/ref&gt; During the 2000s, [[web application]]s matured enough to rival [[application software]] developed for a specific [[microarchitecture]]. This maturation, more affordable [[mass storage]], and the advent of [[service-oriented architecture]] were among the factors that gave rise to the [[cloud computing]] trend of the 2010s.&lt;ref&gt;{{Cite journal | last1 = Barros | first1 = A. P. | last2 = Dumas | first2 = M. | doi = 10.1109/MITP.2006.123 | title = The Rise of Web Service Ecosystems | journal = IT Professional | volume = 8 | issue = 5 | pages = 31 | year = 2006 | pmid =  | pmc = }}&lt;/ref&gt;
+
+==Comparison with peer-to-peer architecture==
+In addition to the client–server model, [[distributed computing]] applications often use the [[peer-to-peer]] (P2P) application architecture.
+
+In the client–server model, the server is often designed to operate as a centralized system that serves many clients. The computing power, memory and storage requirements of a server must be scaled appropriately to the expected workload. [[Load balancing (computing)|Load-balancing]] and [[failover]] systems are often employed to scale the server beyond a single physical machine.&lt;ref name=&quot;Cardellini Colajanni Yu 1999 pp. 28–39&quot;&gt;{{cite journal | last=Cardellini | first=V. | last2=Colajanni | first2=M. | last3=Yu | first3=P.S. | title=Dynamic load balancing on Web-server systems | journal=IEEE Internet Computing | publisher=Institute of Electrical and Electronics Engineers (IEEE) | volume=3 | issue=3 | year=1999 | issn=1089-7801 | doi=10.1109/4236.769420 | pages=28–39}}&lt;/ref&gt;&lt;ref name=&quot;NGINX 2014&quot;&gt;{{cite web | title=What Is Load Balancing? How Load Balancers Work | website=NGINX | date=June 1, 2014 | url=https://www.nginx.com/resources/glossary/load-balancing/ | access-date=January 21, 2020}}&lt;/ref&gt;
+
+In a [[peer-to-peer]] network, two or more computers (''peers'') pool their resources and communicate in a [[decentralized system]]. Peers are coequal, or equipotent [[Node (networking)|nodes]] in a non-hierarchical network. Unlike clients in a client–server or [[client–queue–client]] network, peers communicate with each other directly.{{cn|date=August 2019}} In peer-to-peer networking, an [[Computer algorithm|algorithm]] in the peer-to-peer communications protocol balances [[Load (computing)|load]], and even peers with modest resources can help to share the load.{{cn|date=August 2019}} If a node becomes unavailable, its shared resources remain available as long as other peers offer it. Ideally, a peer does not need to achieve [[high availability]] because other, [[Redundancy (engineering)|redundant]] peers make up for any resource [[downtime]]; as the availability and load capacity of peers change, the protocol reroutes requests.
+
+Both client-server and [[Master/slave (technology) | master-slave]] are regarded as sub-categories of distributed peer-to-peer systems.&lt;ref&gt;
+{{cite book
+| last1 = Varma
+| first1 = Vasudeva
+| chapter = 1: Software Architecture Primer
+| title = Software Architecture: A Case Based Approach
+| chapter-url = https://books.google.com/books?id=jOMYtrJ6r_0C 
+| location = Delhi
+| publisher = Pearson Education India
+| date = 2009
+| page = 29
+| isbn = 9788131707494
+| access-date = 2017-07-04
+| quote = Distributed Peer-to-Peer Systems [...] This is a generic style of which popular styles are the client-server and master-slave styles.
+}}
+&lt;/ref&gt;
+
+==See also==
+{{Columns-list|colwidth=30em|
+* [[Front and back ends]]
+* [[Modular programming]]
+* [[Observer pattern]]
+* [[Publish–subscribe pattern]]
+* [[Pull technology]]
+* [[Push technology]]
+* [[Remote procedure call]]
+}}
+
+==Notes==
+{{Reflist|30em}}
+
+{{IPC}}
+
+{{DEFAULTSORT:Client-server model}}
+[[Category:Application layer protocols|*]]
+[[Category:Clients (computing)|*]]
+[[Category:Inter-process communication]]
+[[Category:Servers (computing)|*]]
+[[Category:Network architecture]]</text>
+      <sha1>otz12czehvx7zfncnslwjy0jyj3t7dv</sha1>
+    </revision>
+  </page>

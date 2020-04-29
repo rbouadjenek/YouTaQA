@@ -1,0 +1,184 @@
+  <page>
+    <title>Carbide</title>
+    <ns>0</ns>
+    <id>7739</id>
+    <revision>
+      <id>941059431</id>
+      <parentid>941059279</parentid>
+      <timestamp>2020-02-16T10:29:54Z</timestamp>
+      <contributor>
+        <ip>110.227.179.107</ip>
+      </contributor>
+      <comment>/* Salt-like / saline / ionic carbides */</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{short description|Inorganic compound group}}
+{{About||the software development tool targeting the Symbian OS|Carbide.c++|the metallic compound commonly used in machine tools|Tungsten carbide|the town in West Virginia|Carbide, Wetzel County, West Virginia}}
+
+[[Image:TiC-xtal-3D-vdW.png|thumb|Lattice structure of [[titanium carbide]].]]
+In [[chemistry]], a '''carbide''' usually describes a compound composed of [[carbon]] and a metal.  In [[metallurgy]], '''carbiding''' or [[carburizing]] is the process for producing carbide coatings on a metal piece.&lt;ref&gt;{{Ullmann|title=Metals, Surface Treatment|first1=Helmut |last1=Kunst |first2=Brigitte |last2=Haase |first3=James C. |last3=Malloy |first4=Klaus |last4=Wittel |first5=Montia C. |last5=Nestler |first6=Andrew R. |last6=Nicoll |first7=Ulrich |last7=Erning |first8=Gerhard |last8=Rauscher|year=2006|doi=10.1002/14356007.a16_403.pub2}}&lt;/ref&gt;
+
+==Interstitial / Metallic carbides==
+[[Image:Tungsten carbide.jpg|thumb|[[Tungsten carbide]] end mills.]]
+The carbides of the group 4, 5 and 6 transition metals (with the exception of chromium) are often described as [[interstitial compound]]s.&lt;ref name=&quot;Greenwood&quot; /&gt; These carbides have metallic properties and are [[refractory]]. Some exhibit a range of [[stoichiometries]], being a non stoichiometric mixture of various carbides arising due to crystal defects. Some of them e.g. [[titanium carbide]], TiC and [[tungsten carbide]] are important industrially and are used to coat metals in cutting tools.&lt;ref name=&quot;Ettmayer&quot;&gt;{{cite book|chapter=Carbides: transition metal solid state chemistry|author1=Peter Ettmayer |author2=Walter Lengauer |title=Encyclopedia of Inorganic Chemistry| editor=R. Bruce King |year=1994 |publisher=John Wiley &amp; Sons|isbn=978-0-471-93620-6}}&lt;/ref&gt;
+
+The long-held view is that the carbon atoms fit into octahedral interstices in a close-packed metal lattice when the metal atom radius is greater than approximately 135 pm:&lt;ref name=&quot;Greenwood&quot; /&gt;
+*When the metal atoms are [[close-packing|cubic close-packed]], (ccp), then filling all of the octahedral interstices with carbon achieves 1:1 stoichiometry with the rock salt structure.
+*When the metal atoms are [[close-packing|hexagonal close-packed]], (hcp), as the octahedral interstices lie directly opposite each other on either side of the layer of metal atoms, filling only one of these with carbon achieves 2:1 stoichiometry with the CdI&lt;sub&gt;2&lt;/sub&gt; structure.
+
+The following table&lt;ref name=&quot;Greenwood&quot; /&gt;&lt;ref name=&quot;Ettmayer&quot; /&gt; shows actual structures of the metals and their carbides. (N.B. the body centered cubic structure adopted by vanadium, niobium, tantalum, chromium, molybdenum and tungsten is not a close-packed lattice.) The notation &quot;h/2&quot; refers to the M&lt;sub&gt;2&lt;/sub&gt;C type structure described above, which is only an approximate description of the actual structures. The simple view that the lattice of the pure metal &quot;absorbs&quot; carbon atoms can be seen to be untrue as the packing of the metal atom lattice in the carbides is different from the packing in the pure metal, although it is technically correct that the carbon atoms fit into the octahedral interstices of a close-packed metal lattice.
+
+{| class=&quot;wikitable&quot; style=&quot;text-align:center&quot;
+|-
+! Metal
+! Structure of pure metal
+! Metallic &lt;br /&gt;radius (pm)
+! MC &lt;br /&gt;metal atom packing
+! MC structure
+! M&lt;sub&gt;2&lt;/sub&gt;C &lt;br /&gt;metal atom packing
+! M&lt;sub&gt;2&lt;/sub&gt;C structure
+! Other carbides
+|-
+| [[titanium]]
+| hcp
+| 147
+| ccp
+| rock salt
+| 
+|
+|
+|-
+| [[zirconium]]
+| hcp
+| 160
+| ccp
+| rock salt
+|
+|
+|
+|-
+| [[hafnium]]
+| hcp
+| 159
+| ccp
+| rock salt
+|
+|
+|
+|-
+| [[vanadium]]
+| [[Cubic crystal system|bcc]]
+| 134
+| ccp
+| rock salt
+| hcp
+| h/2
+| V&lt;sub&gt;4&lt;/sub&gt;C&lt;sub&gt;3&lt;/sub&gt;
+|-
+| [[niobium]]
+| bcc
+| 146
+| ccp
+| rock salt
+| hcp
+| h/2
+| Nb&lt;sub&gt;4&lt;/sub&gt;C&lt;sub&gt;3&lt;/sub&gt;
+|-
+| [[tantalum]]
+| bcc
+| 146
+| ccp
+| rock salt
+| hcp
+| h/2
+| Ta&lt;sub&gt;4&lt;/sub&gt;C&lt;sub&gt;3&lt;/sub&gt;
+|-
+| [[chromium]]
+| bcc
+| 128
+|
+|
+| 
+| 
+|Cr&lt;sub&gt;23&lt;/sub&gt;C&lt;sub&gt;6&lt;/sub&gt;, Cr&lt;sub&gt;3&lt;/sub&gt;C,&lt;br /&gt; Cr&lt;sub&gt;7&lt;/sub&gt;C&lt;sub&gt;3&lt;/sub&gt;, Cr&lt;sub&gt;3&lt;/sub&gt;C&lt;sub&gt;2&lt;/sub&gt;
+|-
+| [[molybdenum]]
+| bcc
+| 139
+|
+| hexagonal
+| hcp
+| h/2
+| Mo&lt;sub&gt;3&lt;/sub&gt;C&lt;sub&gt;2&lt;/sub&gt;
+|-
+| [[tungsten]]
+| bcc
+| 139
+|
+| hexagonal
+| hcp
+| h/2
+| 
+|}
+
+For a long time the [[non-stoichiometric]] phases were believed to be disordered with a random filling of the interstices, however short and longer range ordering has been detected.&lt;ref&gt;{{cite journal|title=Order and disorder in transition metal carbides and nitrides: experimental and theoretical aspects|author1=C.H. de Novion |author2=J.P. Landesman |journal=Pure Appl. Chem.|volume=57|issue=10|year=1985|page=1391|doi=10.1351/pac198557101391}}&lt;/ref&gt;
+
+Iron forms a number of carbides, Fe&lt;sub&gt;3&lt;/sub&gt;C, Fe&lt;sub&gt;7&lt;/sub&gt;C&lt;sub&gt;3&lt;/sub&gt; and Fe&lt;sub&gt;2&lt;/sub&gt;C. The best known is [[cementite]], Fe&lt;sub&gt;3&lt;/sub&gt;C, which is present in steels. These carbides are more reactive than the interstitial carbides; for example, the carbides of Cr, Mn, Fe, Co and Ni are all hydrolysed by dilute acids and sometimes by water, to give a mixture of hydrogen and hydrocarbons. These compounds share features with both the inert interstitials and the more reactive salt-like carbides.&lt;ref name=&quot;Greenwood&quot; /&gt;
+
+Some metals, such as [[lead]] and [[tin]], are believed not to form carbides under any circumstances.&lt;ref name=&quot;percy&quot;&gt;{{cite book|author=John Percy|page=67|year=1870|url=https://archive.org/stream/metallurgyleadi01percgoog#page/n86/mode/2up/ |title=The Metallurgy of Lead, including Desiverization and Cupellation|publisher= J. Murray|place=London|accessdate=2013-04-06|author-link=John Percy (metallurgist)}}
+&lt;/ref&gt; There exists however a mixed titanium-tin carbide, which is a two-dimensional conductor.&lt;ref&gt;{{cite journal|author1=Y. C. Zhou |author2=H. Y. Dong |author3=B. H. Yu |year=2000|title=Development of two-dimensional titanium tin carbide (Ti2SnC) plates based on the electronic structure investigation|journal=Materials Research Innovations |volume=4|issue=1|pages=36–41|doi=10.1007/s100190000065}}&lt;/ref&gt;
+
+==Chemical classification of carbides== 
+Carbides can be generally classified by the chemical bonds type as follows: (i) salt-like (ionic), (ii) [[covalent compound]]s, (iii) [[interstitial compound]]s, and (iv) &quot;intermediate&quot; [[transition metal]] carbides. Examples include [[calcium carbide]] (CaC&lt;sub&gt;2&lt;/sub&gt;), [[silicon carbide]] (SiC), [[tungsten carbide]] (WC; often called, simply, ''carbide'' when referring to machine tooling), and [[cementite]] (Fe&lt;sub&gt;3&lt;/sub&gt;C),&lt;ref name=&quot;Greenwood&quot;&gt;{{Greenwood&amp;Earnshaw1st|pages=318–22}}&lt;/ref&gt; each used in key industrial applications. The naming of ionic carbides is not systematic.
+
+===Salt-like / saline / ionic carbides===
+Salt-like carbides are composed of highly electropositive elements such as the [[alkali metal]]s, [[alkaline earth metal]]s, and group 3 metals, including [[scandium]], [[yttrium]], and [[lanthanum]].  [[Aluminium]] from group 13 forms [[Aluminium carbide|carbides]], but [[gallium]], [[indium]], and [[thallium]] do not.  These materials feature isolated carbon centers, often described as &quot;C&lt;sup&gt;4−&lt;/sup&gt;&quot;, in the methanides or methides; two-atom units, &quot;{{chem|C|2|2−}}&quot;, in the [[acetylide]]s; and three-atom units, &quot;{{chem|C|3|4−}}&quot;, in the allylides.&lt;ref name=&quot;Greenwood&quot; /&gt;  The [[graphite intercalation compound | graphite intercalation compound KC&lt;sub&gt;8&lt;/sub&gt;]], prepared from vapour of potassium and graphite, and the alkali metal derivatives of C&lt;sub&gt;60&lt;/sub&gt; are not usually classified as carbides.&lt;ref&gt;Shriver and Atkins&amp;nbsp;— Inorganic Chemistry&lt;/ref&gt;
+
+Methanides are a subset of carbides distinguished by their tendency to decompose in water producing [[methane]]. Three examples are [[aluminium carbide]]  {{chem|Al|4|C|3}}, [[magnesium carbide]]  {{chem|Mg|2|C}}&lt;ref&gt;{{cite journal|title=Synthesis of Mg2C: A Magnesium Methanide|author1=O.O. Kurakevych |author2=T.A. Strobel |author3=D.Y. Kim |author4=G.D. Cody |volume =52|issue=34|year=2013|pages=8930–8933|journal=Angewandte Chemie International Edition|doi=10.1002/anie.201303463|pmid = 23824698}}&lt;/ref&gt; and [[beryllium carbide]] {{chem|Be|2|C}}.
+
+Transition metal carbides are not saline carbides but their reaction  with water is very slow and is usually neglected. For example, depending on surface porosity, 5–30 atomic layers of [[titanium carbide]] are hydrolyzed, forming [[methane]] within 5 minutes at ambient conditions, following by saturation of the reaction.&lt;ref&gt;{{cite journal|url=https://link.springer.com/article/10.1007%2FBF00780135|title=Reaction of titanium carbide with water|author1=A. I. Avgustinik |author2=G. V. Drozdetskaya |author3=S. S. Ordan'yan |volume =6|issue=6|year=1967|pages=470–473|journal=Powder Metallurgy and Metal Ceramics|doi=10.1007/BF00780135|doi-broken-date=2019-12-02}}&lt;/ref&gt;
+
+Note that methanide in this context is a trivial historical name.  According to the IUPAC systematic naming conventions, a compound such as NaCH&lt;sub&gt;3&lt;/sub&gt; would be termed a  &quot;methanide&quot;, although this compound is often called methylsodium.&lt;ref name=&quot;WeissCorbelin1990&quot;&gt;{{cite journal|last1=Weiss|first1=Erwin|last2=Corbelin|first2=Siegfried|last3=Cockcroft|first3=Jeremy Karl|last4=Fitch|first4=Andrew Nicholas|title=Über Metallalkyl- und -aryl-Verbindungen, 44 Darstellung und Struktur von Methylnatrium. Strukturbestimmung an NaCD3-Pulvern bei 1.5 und 300 K durch Neutronen- und Synchrotronstrahlenbeugung|journal=Chemische Berichte|volume=123|issue=8|year=1990|pages=1629–1634|issn=0009-2940|doi=10.1002/cber.19901230807}}&lt;/ref&gt;
+
+
+===Acetylides / Ethynides===
+[[Image:Carbid.jpg|thumb|[[Calcium carbide]].]]
+Several carbides are assumed to be salts of the [[acetylide|acetylide anion]] C&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;2– &lt;/sup&gt; (also called percarbide), which has a [[covalent bond|triple bond]] between the two carbon atoms. Alkali metals, alkaline earth metals, and [[lanthanoid|lanthanoid metals]] form acetylides, e.g., sodium carbide Na&lt;sub&gt;2&lt;/sub&gt;C&lt;sub&gt;2&lt;/sub&gt;, [[calcium carbide]] CaC&lt;sub&gt;2&lt;/sub&gt;, and [[lanthanum carbide|LaC&lt;sub&gt;2&lt;/sub&gt;]].&lt;ref name=&quot;Greenwood&quot; /&gt; Lanthanides also form carbides (sesquicarbides, see below) with formula M&lt;sub&gt;2&lt;/sub&gt;C&lt;sub&gt;3&lt;/sub&gt;. Metals from group 11 also tend to form acetylides, such as [[copper(I) acetylide]] and [[silver acetylide]]. Carbides of the [[actinides|actinide elements]], which have stoichiometry MC&lt;sub&gt;2&lt;/sub&gt; and M&lt;sub&gt;2&lt;/sub&gt;C&lt;sub&gt;3&lt;/sub&gt;, are also described as salt-like derivatives of {{chem|C|2|2−}}.
+
+The C-C triple bond length ranges from 119.2 pm in CaC&lt;sub&gt;2&lt;/sub&gt; (similar to ethyne), to 130.3 pm in [[lanthanum carbide|LaC&lt;sub&gt;2&lt;/sub&gt;]] and 134 pm in [[uranium carbide|UC&lt;sub&gt;2&lt;/sub&gt;]]. The bonding in [[lanthanum carbide|LaC&lt;sub&gt;2&lt;/sub&gt;]] has been described in terms of La&lt;sup&gt;III&lt;/sup&gt; with the extra electron delocalised into the antibonding orbital on {{chem|C|2|2−}}, explaining the metallic conduction.&lt;ref name=&quot;Greenwood&quot; /&gt;
+
+===Allylides===
+The [[polyatomic ion]] {{chem|C|3|4−}}, sometimes called '''allylide''', is found in Li&lt;sub&gt;4&lt;/sub&gt;C&lt;sub&gt;3&lt;/sub&gt; and Mg&lt;sub&gt;2&lt;/sub&gt;C&lt;sub&gt;3&lt;/sub&gt;. The ion is linear and is [[isoelectronic]] with CO&lt;sub&gt;2&lt;/sub&gt;.&lt;ref name=&quot;Greenwood&quot; /&gt; The C-C distance in Mg&lt;sub&gt;2&lt;/sub&gt;C&lt;sub&gt;3&lt;/sub&gt; is 133.2 pm.&lt;ref&gt;{{cite journal|title=Crystal Structure of Magnesium Sesquicarbide|doi=10.1021/ic00041a018|author1=Fjellvag H. |author2=Pavel K. |journal=Inorg. Chem. |year=1992|volume=31|page=3260|issue=15}}&lt;/ref&gt; Mg&lt;sub&gt;2&lt;/sub&gt;C&lt;sub&gt;3&lt;/sub&gt; yields [[methylacetylene]], CH&lt;sub&gt;3&lt;/sub&gt;CCH, and [[propadiene]], CH&lt;sub&gt;2&lt;/sub&gt;CCH&lt;sub&gt;2&lt;/sub&gt;, on hydrolysis, which was the first indication that it contains {{chem|C|3|4−}}.
+
+===Covalent carbides===
+The carbides of silicon and [[boron]] are described as &quot;covalent carbides&quot;, although virtually all compounds of carbon exhibit some covalent character. [[Silicon carbide]] has two similar crystalline forms, which are both related to the diamond structure.&lt;ref name=&quot;Greenwood&quot; /&gt; [[Boron carbide]], B&lt;sub&gt;4&lt;/sub&gt;C, on the other hand, has an unusual structure which includes icosahedral boron units linked by carbon atoms. In this respect [[boron carbide]] is similar to the boron rich [[boride]]s. Both silicon carbide (also known as ''carborundum'') and boron carbide are very hard materials and [[refractory]]. Both materials are important industrially. Boron also forms other covalent carbides, e.g. B&lt;sub&gt;25&lt;/sub&gt;C.
+
+===Molecular carbides===
+[[Image:Au6C(PPh3)6.png|thumb|right|The complex [Au&lt;sub&gt;6&lt;/sub&gt;C(PPh&lt;sub&gt;3&lt;/sub&gt;)&lt;sub&gt;6&lt;/sub&gt;]&lt;sup&gt;2+&lt;/sup&gt;, containing a carbon-gold core.]]
+Metal complexes containing C are known as [[metal carbido complex]]es. Most common are carbon-centered octahedral clusters, such as [Au&lt;sub&gt;6&lt;/sub&gt;C(PPh&lt;sub&gt;3&lt;/sub&gt;)&lt;sub&gt;6&lt;/sub&gt;]&lt;sup&gt;2+&lt;/sup&gt; and [Fe&lt;sub&gt;6&lt;/sub&gt;C(CO)&lt;sub&gt;6&lt;/sub&gt;]&lt;sup&gt;2−&lt;/sup&gt;.  Similar species are known for the [[metal carbonyl]]s and the early metal halides. A few terminal carbides have been isolated, e.g., [CRuCl&lt;sub&gt;2&lt;/sub&gt;{P(C&lt;sub&gt;6&lt;/sub&gt;H&lt;sub&gt;11&lt;/sub&gt;)&lt;sub&gt;3&lt;/sub&gt;}&lt;sub&gt;2&lt;/sub&gt;].
+
+[[Metallocarbohedryne]]s (or &quot;met-cars&quot;) are stable clusters with the general formula {{chem|M|8|C|12}} where M is a transition metal (Ti, Zr, V, etc.).
+
+==Related materials==
+In addition to the carbides, other groups of related carbon compounds exist:&lt;ref name=&quot;Greenwood&quot; /&gt;
+*[[graphite intercalation compound]]s
+*alkali metal [[fullerides]]
+*[[endohedral fullerenes]], where the metal atom is encapsulated within a fullerene molecule
+*metallacarbohedrenes(met-cars) which are cluster compounds containing C&lt;sub&gt;2&lt;/sub&gt; units.
+*[[tunable nanoporous carbon]], where gas chlorination of metallic carbides removes metal molecules to form a highly porous, near-pure carbon material capable of high-density energy storage.
+*[[transition metal carbene complex]]es.
+* two dimensional transition metal carbides: [[MXenes]]
+
+==References==
+{{reflist|25em}}
+
+{{Inorganic compounds of carbon}}
+
+{{Authority control}}
+
+[[Category:Carbides|*]]
+[[Category:Anions]]
+[[Category:Salts]]</text>
+      <sha1>ofzc6936lx4i47o43womilvyhqxqrr2</sha1>
+    </revision>
+  </page>

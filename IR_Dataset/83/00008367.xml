@@ -1,0 +1,212 @@
+  <page>
+    <title>Depth of field</title>
+    <ns>0</ns>
+    <id>8367</id>
+    <revision>
+      <id>942445364</id>
+      <parentid>942442168</parentid>
+      <timestamp>2020-02-24T18:45:47Z</timestamp>
+      <contributor>
+        <username>AnomieBOT</username>
+        <id>7611264</id>
+      </contributor>
+      <minor />
+      <comment>Dating maintenance tags: {{Self-published inline}}</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{other uses}}
+
+{{short description|Distance between the nearest and the furthest objects that are in focus in an image}}
+[[Image:DOF-ShallowDepthofField.jpg|thumb|A [[Macro photography|macro photograph]] illustrating the effect of depth of field on a tilted object.]]
+For many cameras, '''depth of field''' ('''DOF''') is the distance between the nearest and the farthest objects that are in acceptably sharp focus in an image.  The depth of field can be calculated based on [[focal length]], distance to subject, the acceptable circle of confusion size, and aperture. A particular depth of field may be chosen for technical or artistic purposes. Limitations of depth of field can sometimes be overcome with various techniques/equipment.
+
+==Factors affecting depth of field==
+
+[[Image:Depth of field illustration.svg|thumb|Effect of aperture on blur and DOF. The points in focus&amp;nbsp;('''2''') project points onto the image plane&amp;nbsp;('''5'''), but points at different distances&amp;nbsp;('''1''' and '''3''') project blurred images, or [[circle of confusion|circles of confusion]]. Decreasing the aperture size&amp;nbsp;('''4''') reduces the size of the blur spots for points not in the focused plane, so that the blurring is imperceptible, and all points are within the DOF.]]
+For Cameras that can only focus on one object distance at a time, Depth of field is the distance between the nearest and the farthest objects that are in acceptably sharp focus.{{sfn|Salvaggio|Stroebel|2009| pp=110-}} &quot;Acceptably sharp focus&quot; is defined using a property called the ''[[circle of confusion]]''.
+
+The depth of field can be determined by [[focal length]], distance to subject, the acceptable circle of confusion size, and aperture.&lt;ref name=&quot;LondonStone2016&quot;&gt;{{cite book|author1=Barbara London|author2=Jim Stone|author3=John Upton|title=Photography|edition= 8th|year=2005|publisher=Pearson|isbn=978-0-13-448202-6|pages=58}}&lt;/ref&gt;  The approximate depth of field can be given by:
+
+:&lt;math&gt;
+\text{DOF} \approx \frac{2u^2Nc}{f^2} 
+&lt;/math&gt;
+
+for a given circle of confusion (c), focal length (f), [[F-number]] (N), and distance to subject (u).&lt;ref name=&quot;AllenTriantaphillidou2011&quot;&gt;{{cite book|author1=Elizabeth Allen|author2=Sophie Triantaphillidou|title=The Manual of Photography|url=https://books.google.com/books?id=IfWivY3mIgAC&amp;pg=PA111|year=2011|publisher=Taylor &amp; Francis|isbn=978-0-240-52037-7|pages=111–}}&lt;/ref&gt;&lt;ref&gt;{{cite web |title=Depth of field |url=https://graphics.stanford.edu/courses/cs178/applets/dof.html |website=graphics.stanford.edu}}&lt;/ref&gt;
+
+As distance or the size of the acceptable circle of confusion increases, the depth of field increases; however, increasing the size of the aperture or increasing the focal length reduces the depth of field. Depth of Field changes linearly with F-number and circle of confusion, but changes in proportional to the square of the focal length and the distance to the subject. As a result, photos taken at extremely close range have a proportionally much smaller depth of field.
+
+Sensor size affects DOF only in that changing the sensor size on a camera requires changing the focal length to get the same picture. It is the change in focal length that then affects the DOF.&lt;ref&gt;{{cite web |title=Digital Camera Sensor Sizes: How it Influences Your Photography |url=https://www.cambridgeincolour.com/tutorials/digital-camera-sensor-size.htm |website=www.cambridgeincolour.com}}&lt;/ref&gt;&lt;ref&gt;{{cite web |title=Sensor Size, Perspective and Depth of Field |url=https://photographylife.com/sensor-size-perspective-and-depth-of-field |website=Photography Life}}&lt;/ref&gt;&lt;ref&gt;{{cite web |last1=Vinson |first1=Jason |title=The Smaller the Sensor Size, the Shallower Your Depth of Field |url=https://fstoppers.com/education/smaller-sensor-size-shallower-your-depth-field-110547 |website=Fstoppers |language=en |date=22 January 2016}}&lt;/ref&gt;
+
+===Effect of lens aperture===
+
+For a given subject framing and camera position, the DOF is controlled by the lens aperture diameter, which is usually specified as the [[f-number]] (the ratio of lens focal length to aperture diameter). Reducing the aperture diameter (increasing the &lt;var&gt;f&lt;/var&gt;-number) increases the DOF because only the light travelling at shallower angles passes through the aperture. Because the angles are shallow, the light rays are within the acceptable [[circle of confusion]] for a greater distance.&lt;ref&gt;[http://physicssoup.wordpress.com/2012/05/18/why-does-a-small-aperture-increase-depth-of-field/ Why Does a Small Aperture Increase Depth of Field?]&lt;/ref&gt;
+
+Motion pictures make only limited use of this control; to produce a consistent image quality from shot to shot, cinematographers usually choose a single aperture setting for interiors and another for exteriors, and adjust exposure through the use of camera filters or light levels. Aperture settings are adjusted more frequently in still photography, where variations in depth of field are used to produce a variety of special effects.{{Multiple image
+| align = center
+| direction = 
+| width = 250
+| footer = Depth of field for different values of aperture using 50 mm objective lens and full-frame DSLR camera. Focus point is on the first blocks column.&lt;ref name=&quot;photoskop&quot;&gt;{{cite web |url=http://www.photoskop.com/player.html?l=all&amp;ch=3&amp;sec=0 |title=photoskop: Interactive Photography Lessons |date=April 25, 2015}}&lt;/ref&gt;
+| image1 = Dof blocks f1_4.jpg
+| caption1 = Aperture = f/1.4. DOF=0.8 cm
+| image2 = Dof blocks f4_0.jpg
+| caption2 = Aperture = f/4.0. DOF=2.2 cm
+| image3 = Dof blocks f22.jpg
+| caption3 = Aperture = f/22. DOF=12.4 cm
+}}
+
+=== Effect of circle of confusion===
+Precise focus is only possible at an exact distance from the lens;{{efn|strictly, at an exact distance from a plane}} at that distance, a point object will produce a point image.  Otherwise, a point object will produce a blur spot shaped like the [[aperture]], typically and approximately a circle. When this circular spot is sufficiently small, it is visually indistinguishable from a point, and appears to be in focus. The diameter of the largest circle that is indistinguishable from a point is known as the [[acceptable circle of confusion]], or informally, simply as the circle of confusion. Points that produce a blur spot smaller than this acceptable circle of confusion are considered acceptably sharp.
+
+The acceptable circle of confusion depends on how the final image will be used. It is generally accepted to be 0.25&amp;nbsp;mm for an image viewed from 25&amp;nbsp;cm away.{{sfn|Savazzi|2011|p=109}}
+
+For [[35mm movie film|35&amp;nbsp;mm]] motion pictures, the image area on the film is roughly 22&amp;nbsp;mm by 16&amp;nbsp;mm. The limit of tolerable error was traditionally set at 0.05&amp;nbsp;mm (0.002&amp;nbsp;in) diameter, while for [[16 mm film|16&amp;nbsp;mm&amp;nbsp;film]], where the size is about half as large, the tolerance is stricter, 0.025&amp;nbsp;mm (0.001&amp;nbsp;in).&lt;ref&gt;{{cite book|title=Film and Its Techniques|date=1966|publisher=University of California Press|page=56|url=https://books.google.com/books?id=Ocfs3ZsLresC&amp;pg=PA56&amp;dq=35+mm+motion+picture+film+circle+of+confusion&amp;hl=en&amp;sa=X&amp;ved=0ahUKEwjLqLnVt4_LAhVQwmMKHSmRBXoQ6AEITTAJ#v=onepage&amp;q=35%20mm%20motion%20picture%20film%20circle%20of%20confusion&amp;f=false|accessdate=24 February 2016}}&lt;/ref&gt; More modern practice for 35&amp;nbsp;mm productions set the circle of confusion limit at 0.025&amp;nbsp;mm (0.001&amp;nbsp;in).&lt;ref&gt;{{cite book|author=Thomas Ohanian and Natalie Phillips|title=Digital Filmmaking: The Changing Art and Craft of Making Motion Pictures|date=2013|publisher=CRC Press|isbn=9781136053542|page=96|url=https://books.google.com/books?id=usMqBgAAQBAJ&amp;pg=PA96&amp;dq=35+mm+motion+picture+film+circle+of+confusion&amp;hl=en&amp;sa=X&amp;ved=0ahUKEwi93Nqquo_LAhVY6mMKHcQIAlQQ6AEILTAD#v=onepage&amp;q=35%20mm%20motion%20picture%20film%20circle%20of%20confusion&amp;f=false|accessdate=24 February 2016}}&lt;/ref&gt;
+
+===Camera movements===
+{{See also|View camera}}
+
+The term &quot;camera movements&quot; refers to swivel (swing and tilt, in modern terminology) and shift adjustments of the lens holder and the film holder. These features have been in use since the 1800's and are still in use today on view cameras, technical cameras, cameras with tilt/shift or perspective control lenses, etc. Swiveling the lens or sensor causes the POF to swivel, and also causes the field of acceptable focus to swivel with the POF; and depending on the DOF criteria, to also change the shape of the field of acceptable focus. While calculations for DOF of cameras with swivel set to zero have been discussed, formulated, and documented since before the 1940's (DOF was understood in the 1800's), documenting calculations for cameras with non-zero swivel seem to have begun in 1990.
+
+More so than in the case of the zero swivel camera, there are various methods to form criteria and set up calculations for DOF when swivel is non-zero. However, since the 1800's there seems to have been universal agreement that there is a gradual reduction of clarity in objects as they move away from the POF, and at some virtual flat or curved surface the reduced clarity becomes unacceptable. Some photographers do calculations or use tables, some use markings on their equipment, some judge by previewing the image.
+
+When the POF is rotated, the near and far limits of DOF may be thought of as wedge-shaped, with the apex of the wedge nearest the camera; or they may be thought of as parallel to the POF.{{sfn|Merklinger|2010|pp=49–56}}{{sfn|Tillmanns|1997|p=71}}
+
+==Object field calculation methods==
+Traditional depth-of-field formulas can be hard to use in practice. As an alternative, the same effective calculation can be done without regard to the focal length and f-number.{{efn|notwithstanding that the f-number is derived from the focal length}} [[Moritz von Rohr]] and later Merklinger observe that the effective absolute aperture diameter can be used for similar formula in certain circumstances.{{sfn|Merklinger|1992}}
+
+Moreover, traditional depth-of-field formulas assume equal acceptable circles of confusion for near and far objects. Merklinger{{efn|Englander describes a similar approach in his paper [http://www.englander-workshops.com/documents/depth.pdf Apparent Depth of Field: Practical Use in Landscape Photography]{{dead link|date=July 2019}}; Conrad discusses this approach, under Different Circles of Confusion for Near and Far Limits of Depth of Field, and The Object Field Method, in [http://www.largeformatphotography.info/articles/DoFinDepth.pdf Depth of Field in Depth]}} suggested that distant objects often need to be much sharper to be clearly recognizable, whereas closer objects, being larger on the film, do not need to be so sharp.{{sfn|Merklinger|1992}} The loss of detail in distant objects may be particularly noticeable with extreme enlargements. Achieving this additional sharpness in distant objects usually requires focusing beyond the [[hyperfocal distance]], sometimes almost at infinity. For example, if photographing a cityscape with a [[Bollard#Road bollard|traffic bollard]] in the foreground, this approach, termed the ''object field method'' by Merklinger, would recommend focusing very close to infinity, and stopping down to make the bollard sharp enough. With this approach, foreground objects cannot always be made perfectly sharp, but the loss of sharpness in near objects may be acceptable if recognizability of distant objects is paramount.
+
+Other authors such as [[Ansel Adams]] have taken the opposite position, maintaining that slight unsharpness in foreground objects is usually more disturbing than slight unsharpness in distant parts of a scene.{{sfn|Adams|1980|p=51}}
+
+==Overcoming DOF limitations==
+Some methods and equipment allow altering the apparent DOF, and some even allow the DOF to be determined after the image is made. For example, [[Focus stacking]] combines multiple images focused on different planes, resulting in an image with a greater (or less, if so desired) apparent depth of field than any of the individual source images. Similarly, in order to [[3D reconstruction|reconstruct]] the 3-dimensional shape of an object, a [[depth map]] can be generated from multiple photographs with different depths of field. Xiong and Shafer concluded, in part, &quot;...the improvements on precisions of focus ranging and defocus ranging can lead to efficient shape recovery methods.&quot;&lt;ref&gt;Xiong, Yalin, and Steven A. Shafer. &quot;[http://www.dtic.mil/get-tr-doc/pdf?AD=ADA266644 Depth from focusing and defocusing].&quot; Computer Vision and Pattern Recognition, 1993. Proceedings CVPR'93., 1993 IEEE Computer Society Conference on. IEEE, 1993.&lt;/ref&gt;
+
+Other technologies use a combination of lens design and post-processing: [[Wavefront coding]] is a method by which controlled aberrations are added to the optical system so that the focus and depth of field can be improved later in the process.&lt;ref&gt;{{cite journal|last1=Mary|first1=D.|last2=Roche|first2=M.|last3=Theys|first3=C.|last4=Aime|first4=C.|title=Introduction to Wavefront Coding for Incoherent Imaging|journal=EAS Publications Series|volume=59|year=2013|pages=77–92|issn=1633-4760|doi=10.1051/eas/1359005}}&lt;/ref&gt;
+
+The lens design can be changed even more: in colour apodization the lens is modified such that each colour channel has a different lens aperture. For example, the red channel may be ''f''/2.4, green may be ''f''/2.4, whilst the blue channel may be ''f''/5.6. Therefore, the blue channel will have a greater depth of field than the other colours. The image processing identifies blurred regions in the red and green channels and in these regions copies the sharper edge data from the blue channel. The result is an image that combines the best features from the different ''f''-numbers.{{sfn|Kay|2011}}
+
+At the extreme, a [[plenoptic camera]] captures [[4D light field]] information about a scene, so the focus and depth of field can be altered after the photo is taken.
+
+==Diffraction and DOF==
+[[Diffraction]] causes images to lose sharpness at high F-numbers, and hence limits the potential depth of field.{{sfn|Gibson|1975| p=64}} In general photography this is rarely an issue; because large &lt;var&gt;f&lt;/var&gt;-numbers typically require long exposure times, [[motion blur]] may cause greater loss of sharpness than the loss from diffraction. However, diffraction is a greater issue in close-up photography, and the tradeoff between DOF and overall sharpness can become quite noticeable as photographers are trying to maximise depth of field with very small apertures.{{sfn|Gibson|1975| p=53}}{{sfn|Lefkowitz|1979| p=84}}
+
+Hansma and Peterson have discussed determining the combined effects of defocus and diffraction using a root-square combination of the individual blur spots.{{sfn|Hansma|1996}}{{sfn|Peterson|1996}} Hansma's approach determines the &lt;var&gt;f&lt;/var&gt;-number that will give the maximum possible sharpness; Peterson's approach determines the minimum &lt;var&gt;f&lt;/var&gt;-number that will give the desired sharpness in the final image, and yields a maximum depth of field for which the desired sharpness can be achieved.{{efn|Peterson does not give a closed-form expression for the minimum &lt;var&gt;f&lt;/var&gt;-number, though such an expression obtains from simple algebraic manipulation of his Equation&amp;nbsp;3}} In combination, the two methods can be regarded as giving a maximum and minimum &lt;var&gt;f&lt;/var&gt;-number for a given situation, with the photographer free to choose any value within the range, as conditions (e.g., potential motion blur) permit. Gibson gives a similar discussion, additionally considering blurring effects of camera lens aberrations, enlarging lens diffraction and aberrations, the negative emulsion, and the printing paper.{{sfn|Gibson|1975|p=64}}{{efn|The analytical section at the end of [[#CITEREFGibson1975|Gibson (1975)]] was originally published as &quot;Magnification and Depth of Detail in Photomacrography&quot; in the ''Journal of the Photographic Society of America'', Vol. 26, No. 6, June 1960}} Couzin gave a formula essentially the same as Hansma's for optimal ''f''-number, but did not discuss its derivation.{{sfn|Couzin|1982}}
+
+Hopkins,{{sfn|Hopkins|1955}} Stokseth,{{sfn|Stokseth|1969}} and Williams and Becklund{{sfn|Williams|Becklund|1989}} have discussed the combined effects using the [[modulation transfer function]].&lt;ref&gt;&quot;[http://www.largeformatphotography.info/articles/DoFinDepth.pdf Depth of Field in Depth]&quot;, Jeff Conrad&lt;/ref&gt;&lt;ref&gt;&quot;[http://www.faqs.org/faqs/rec-photo/lenses/tutorial/ Photographic Lenses Tutorial]&quot;, David M. Jacobson, 26 October 1996&lt;/ref&gt;
+
+==DOF scales==
+
+[[File:DOF scale detail.png|thumb|Detail from a lens set to {{f/|11}}. The point half-way between the 1&amp;nbsp;m and 2&amp;nbsp;m marks, the DOF limits at {{f/|11}}, represents the focus distance of approximately 1.33&amp;nbsp;m (the reciprocal of the mean of the reciprocals of 1 and 2 being 4/3).]]
+[[File:TessinaDOF.jpg|thumb|DOF scale on Tessina focusing dial]]
+
+Many lenses include scales that indicate the DOF for a given focus distance and &lt;var&gt;f&lt;/var&gt;-number; the 35&amp;nbsp;mm lens in the image is typical. That lens includes distance scales in feet and meters; when a marked distance is set opposite the large white index mark, the focus is set to that distance. The DOF scale below the distance scales includes markings on either side of the index that correspond to &lt;var&gt;f&lt;/var&gt;-numbers. When the lens is set to a given &lt;var&gt;f&lt;/var&gt;-number, the DOF extends between the distances that align with the &lt;var&gt;f&lt;/var&gt;-number markings.
+
+Photographers can use the lens scales to work backwards from the desired depth of field to find the necessary focus distance and aperture.{{sfn|Ray|1994|p=315}} For the 35&amp;nbsp;mm lens shown, if it were desired for the DOF to extend from 1&amp;nbsp;m to 2&amp;nbsp;m, focus would be set so that index mark was centered between the marks for those distances, and the aperture would be set to &lt;var&gt;f&lt;/var&gt;/11.{{efn|The focus distance to have the DOF extend between given near and far object distances is the harmonic mean of the ''object conjugates''. Most helicoid-focused lenses are marked with image plane-to-subject distances,{{citation needed|date=September 2019}} so the focus determined from the lens distance scale is not exactly the harmonic mean of the marked near and far distances.}}
+
+On a view camera, the focus and &lt;var&gt;f&lt;/var&gt;-number can be obtained by measuring the depth of field and performing simple calculations. Some view cameras include DOF calculators that indicate focus and &lt;var&gt;f&lt;/var&gt;-number without the need for any calculations by the photographer.{{sfn|Tillmanns|1997|p=67-68}}{{sfn|Ray|1994|p=230-231}}
+
+==Hyperfocal distance==
+[[File:Contessa hyperfocal.JPG|thumb|Zeiss Ikon Contessa with red marks for hyperfocal distance 20&amp;nbsp;ft at {{f/}}8]]
+{{Excerpt|Hyperfocal distance}}
+
+Some cameras have their hyperfocal distance marked on the focus dial. For example, on the Minox LX focusing dial there is a red dot between 2 m and infinity; when the lens is set at the red dot, that is, focused at the hyperfocal distance, the depth of field stretches from 2 m to infinity.
+
+==Near:far distribution==
+
+The DOF beyond the subject is always greater than the DOF in front of the subject. When the subject is at the hyperfocal distance or beyond, the far DOF is infinite, so the ratio is 1:∞; as the subject distance decreases, near:far DOF ratio increases, approaching unity at high magnification. For large apertures at typical portrait distances, the ratio is still close to 1:1.
+
+==DOF formulae==
+This section covers some additional formula for evaluating depth of field; however they are all subject to significant simplifying assumptions: for example, they assume [[Paraxial approximation|paraxial]] ([[Gaussian optics|Gaussian]]). They are suitable for practical photography, lens designers would use significantly more complex ones.
+
+===Focus and &lt;var&gt;f&lt;/var&gt;-number from DOF limits===
+
+For given near and far DOF limits &lt;math&gt;D_{\mathrm N}&lt;/math&gt; and &lt;math&gt;D_{\mathrm F}&lt;/math&gt;, the required [[f-number|&lt;var&gt;f&lt;/var&gt;-number]] is smallest when focus is set to
+
+:&lt;math&gt;s = \frac{2 D_{\mathrm N} D_{\mathrm F}}{D_{\mathrm N} +  D_{\mathrm F}},&lt;/math&gt;
+
+the [[harmonic mean]] of the near and far distances. In practice, this is equivalent to the [[arithmetic mean]] for shallow depths of field.&lt;ref&gt;https://www.largeformatphotography.info/articles/DoFinDepth.pdf&lt;/ref&gt;  Sometimes, view camera users refer to the difference &lt;math&gt;v_{\mathrm N} - v_{\mathrm F}&lt;/math&gt; as the ''focus spread''.{{sfn|Hansma|1996| p=55}}
+
+===Foreground and background blur===
+
+If a subject is at distance &lt;math&gt;s&lt;/math&gt; and the foreground or background is at distance &lt;math&gt;D&lt;/math&gt;, let the distance between the subject and the foreground or background be indicated by
+
+:&lt;math&gt;x_{\mathrm d} = |D - s|.&lt;/math&gt;
+
+The blur disk diameter &lt;math&gt;b&lt;/math&gt; of a detail at distance &lt;math&gt;x_\mathrm{d}&lt;/math&gt; from the subject can be expressed as a function of the subject magnification &lt;math&gt;m_\mathrm{s}&lt;/math&gt;, focal length &lt;math&gt;f&lt;/math&gt;, [[F-number|&lt;var&gt;f&lt;/var&gt;-number]] &lt;math&gt;N&lt;/math&gt;, or alternatively the [[aperture]] &lt;math&gt;d&lt;/math&gt;, according to
+
+:&lt;math&gt;b = \frac{fm_\mathrm s}{N} \frac{x_\mathrm{d}}{s \pm x_\mathrm{d}} = dm_\mathrm{s} \frac{x_\mathrm{d}}{D}.&lt;/math&gt;
+
+The minus sign applies to a foreground object, and the plus sign applies to a background object.
+
+The blur increases with the distance from the subject; when &lt;math&gt;b&lt;/math&gt; is less than the circle of confusion, the detail is within the depth of field.
+
+==See also==
+
+{{Portal|Photography}}
+{{columns-list|
+*[[Angle of view]]
+*[[Bokeh]]
+*[[Camera angle]]
+*[[Depth-of-field adapter]]
+*[[Depth of focus]]
+*[[Frazier lens]] (very deep DOF)
+*[[Light-field camera]] 
+*[[Miniature faking]]
+*[[Numerical aperture]]
+*[[Perspective distortion (photography)|Perspective distortion]]
+}}
+
+== Notes ==
+{{Notelist}}
+
+== References ==
+=== Citations ===
+{{Reflist}}
+
+=== Sources ===
+{{refbegin}}
+* {{cite book |first1=Nanette |last1=Salvaggio|first2=Leslie |last2=Stroebel |title=Basic Photographic Materials and Processes |url = https://books.google.com/books?id=71uE_OrGw5oC&amp;pg=PA110 |year=2009 |publisher=Taylor &amp; Francis |ISBN = 978-0-240-80984-7 |pages=110– |ref=harv }}
+* {{cite book |last=Adams |first=Ansel |title=The Camera |year=1980 |publisher=New York Graphic Society |ISBN = 9780821210925 |url = https://books.google.co.uk/books?id=H-5jQgAACAAJ&amp;dq=Adams%2C%20Ansel.%201980.%20%27%27The%20Camera%27%27&amp;source=gbs_book_other_versions |language=en |ref=harv }}
+* {{wikicite | ref=&quot;CITEREFCouzin1982&quot; | reference=Couzin, Dennis. 1982. Depths of Field. ''SMPTE Journal'', November 1982, 1096–1098. Available in PDF at [https://sites.google.com/site/cinetechinfo/atts/dof_82.pdf https://sites.google.com/site/cinetechinfo/atts/dof_82.pdf].}}
+* {{wikicite | ref = {{harvid|Gibson1975}} | reference=Gibson, H. Lou. 1975. ''Close-Up Photography and Photomacrography''. 2nd combined ed. Kodak Publication No. N-16. Rochester, NY: Eastman Kodak Company, Vol&amp;nbsp;II: Photomacrography. {{ISBN|0-87985-160-0}}}}
+* {{wikicite | ref={{harvid|Hansma1996}} | reference=Hansma, Paul K. 1996. View Camera Focusing in Practice. ''Photo Techniques'', March/April 1996, 54–57.}} Available as GIF images on the [http://www.largeformatphotography.info/ Large Format page].
+* {{wikicite | ref=&quot;CITEREFHopkins1955&quot; | reference=Hopkins, H.H. 1955. The frequency response of a defocused optical system. ''Proceedings of the Royal Society A'', 231:91–103.}}
+* {{wikicite | ref = {{harvid|Lefkowitz1979}} | reference = Lefkowitz, Lester. 1979 ''The Manual of Close-Up Photography''. Garden City, NY: Amphoto. {{ISBN|0-8174-2456-3}} }}
+* {{wikicite | ref = {{harvid|Merklinger1992}} | reference = Merklinger, Harold M. 1992. ''The INs and OUTs of FOCUS: An Alternative Way to Estimate Depth-of-Field and Sharpness in the Photographic Image''. v. 1.0.3. Bedford, Nova Scotia: Seaboard Printing Limited. {{ISBN|0-9695025-0-8}}. Version 1.03e available in PDF at http://www.trenholm.org/hmmerk/.}}
+* {{wikicite | ref = {{harvid|Merklinger1993}} | reference = Merklinger, Harold M. 1993. ''Focusing the View Camera: A Scientific Way to Focus the View Camera and Estimate Depth of Field''. v. 1.0. Bedford, Nova Scotia: Seaboard Printing Limited. {{ISBN|0-9695025-2-4}}. Version 1.6.1 available in PDF at http://www.trenholm.org/hmmerk/.}}
+* {{wikicite | ref=&quot;CITEREFPeterson1996&quot; | reference = Peterson, Stephen. 1996. Image Sharpness and Focusing the View Camera. ''Photo Techniques'', March/April 1996, 51–53. Available as GIF images on the [http://www.largeformatphotography.info/ Large Format page].}}
+* {{wikicite | ref = {{harvid|Ray1994}} | reference = Ray, Sidney F. 1994. ''Photographic Lenses and Optics''. Oxford: Focal Press. {{ISBN|0-240-51387-8}}}}
+* {{wikicite | ref = {{harvid|Ray2000}}  | reference=Ray, Sidney F. 2000. The geometry of image formation. In ''The Manual of Photography: Photographic and Digital Imaging'', 9th ed. Ed. Ralph E. Jacobson, Sidney F. Ray, Geoffrey G. Atteridge, and Norman R. Axford. Oxford: Focal Press. {{ISBN|0-240-51574-9}} }}
+* {{wikicite | ref=&quot;CITEREFRay2002&quot; | reference=Ray, Sidney F. 2002. [http://www.elsevierdirect.com/product.jsp?isbn=9780240515403 ''Applied Photographic Optics'']. 3rd ed. Oxford: Focal Press. {{ISBN|0-240-51540-4}} }}
+* {{wikicite | ref=&quot;CITEREFShipman1977&quot; | reference=Shipman, Carl. 1977. ''SLR Photographers Handbook''. Tucson: H.P. Books. {{ISBN|0-912656-59-X}} }}
+* {{wikicite | ref=&quot;CITEREFStokseth1969&quot; | reference=Stokseth, Per A. 1969. Properties of a Defocused Optical System. ''Journal of the Optical Society of America'' 59:10, Oct. 1969, 1314–1321.}}
+* {{wikicite | ref=&quot;CITEREFStroebel1976&quot; | reference=Stroebel, Leslie. 1976. ''View Camera Technique''. 3rd ed. London: Focal Press. {{ISBN|0-240-50901-3}} }}
+* {{wikicite | ref = {{harvid|Tillmanns1997}} | reference=Tillmanns, Urs. 1997. ''Creative Large Format: Basics and Applications''. 2nd ed. Feuerthalen, Switzerland: Sinar AG. {{ISBN|3-7231-0030-9}} }}
+* {{wikicite | ref=&quot;CITEREFvon Rohr1906&quot; | reference=[[Moritz von Rohr|von Rohr, Moritz]]. 1906. ''Die optischen Instrumente''. Leipzig: B. G. Teubner}}
+* {{wikicite | ref=&quot;CITEREFWilliamsBecklund1989&quot; | reference=Williams, Charles S., and Becklund, Orville. 1989. ''Introduction to the Optical Transfer Function''. New York: Wiley. Reprinted 2002, Bellingham, WA: SPIE Press, 293–300. {{ISBN|0-8194-4336-0}} }}
+* {{wikicite | ref=&quot;CITEREFWilliams1990&quot; | reference=Williams, John B. 1990. ''Image Clarity: High-Resolution Photography''. Boston: Focal Press. {{ISBN|0-240-80033-8}} }}
+* {{wikicite | ref = {{harvid|Kay2011}} | reference=Andrew Kay, Jonathan Mather, and Harry Walton, &quot;Extended depth of field by colored apodization&quot;, Optics Letters, Vol. 36, Issue 23, pp. 4614–4616 (2011).}}
+* {{cite book |first=Enrico |last=Savazzi |title=Digital Photography for Science (Hardcover) |url = https://books.google.com/books?id=YabFAQAAQBAJ&amp;pg=PA109 |year=2011 |publisher=Lulu.com |ISBN = 978-0-557-91133-2 |ref=harv }}{{self-published inline|date=February 2020}}
+{{refend}}
+
+==Further reading==
+*Hummel, Rob (editor). 2001. ''American Cinematographer Manual''. 8th ed. Hollywood: ASC Press. {{ISBN|0-935578-15-3}}
+
+==External links==
+{{commons|Depth of field|Depth of field}}
+{{Wikibooks|Maple|Depth of field for optical lens}}
+*[https://www.naturettl.com/depth-of-field/ Depth of Field in Photography - Beginner's Guide]
+*[http://www.dofmaster.com/dofjs.html Online Depth of Field Calculator] Simple depth of field and hyperfocal distance calculator
+* [http://www.photoskop.com/player.html?l=all&amp;ch=3&amp;sec=0 photoskop: Interactive Photography Lessons] – Interactive Depth of Field
+* [http://dofsimulator.net/en/ Bokeh simulator and depth of field calculator] Interactive depth of field calculator with background blur simulation feature
+* [http://mhmyers.com/1.4dg.html Lens Comparison: Nikon 50mm f/1.4D vs. 50mm f/1.4G] Demonstration of varying apertures on Depth of Field
+
+{{photography subject}}
+{{Cinematic techniques}}
+
+{{DEFAULTSORT:Depth Of Field}}
+[[Category:Geometrical optics]]
+[[Category:Science of photography]]
+[[Category:Photographic techniques]]</text>
+      <sha1>q1p6rhz78xppi4t2hmveg2oremr0v7h</sha1>
+    </revision>
+  </page>

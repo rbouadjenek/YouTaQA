@@ -1,0 +1,57 @@
+  <page>
+    <title>Engineering statistics</title>
+    <ns>0</ns>
+    <id>9546</id>
+    <revision>
+      <id>936495029</id>
+      <parentid>858238215</parentid>
+      <timestamp>2020-01-19T06:37:56Z</timestamp>
+      <contributor>
+        <username>NeedsGlasses</username>
+        <id>33324950</id>
+      </contributor>
+      <minor />
+      <comment>removed engineering category as too broad and covered by other categories</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">'''Engineering statistics''' combines [[engineering]] and [[statistics]] using [[scientific methods]] for analyzing data. Engineering statistics involves data concerning [[manufacturing]] processes such as: component dimensions, [[engineering tolerance|tolerances]], type of material, and fabrication process control. There are many methods used in engineering analysis and they are often displayed as [[histograms]] to give a visual of the data as opposed to being just numerical. Examples of methods are:&lt;ref name=&quot;BHH&quot;/&gt;&lt;ref name=&quot;WuHamada&quot;/&gt;&lt;ref name=&quot;LogoWynn&quot;&gt;{{cite book |author=Logothetis, N. and [http://www.lse.ac.uk/collections/cats/People/HenryPage.htm Wynn, H. P]|title=Quality Through Design: Experimental Design, Off-line Quality Control, and Taguchi's Contributions
+|publisher=Oxford U. P.
+|year=1989 &lt;!-- |pages=464+xi --&gt;
+|isbn=0-19-851993-1|ref=harv}}&lt;/ref&gt;&lt;ref&gt;Hogg, Robert V. and Ledolter, J. (1992). ''Applied Statistics for Engineers and Physical Scientists''. Macmillan, New York.&lt;/ref&gt;&lt;ref&gt;Walpole, Ronald; Myers, Raymond; Ye, Keying. ''Probability and Statistics for Engineers and Scientists''. Pearson Education, 2002, 7th edition, pg. 237&lt;/ref&gt;&lt;ref name=&quot;Prentice Hall&quot;&gt;{{cite book|last1=Rao|first1=Singiresu|title=Applied Numerical Methods of Engineers and Scientists|date=2002|publisher=Prentice Hall|location=Upper Saddle River, New Jersey|isbn=013089480X}}&lt;/ref&gt;
+# [[Design of Experiments]] (DOE) is a methodology for formulating scientific and engineering problems using statistical models. The protocol specifies a randomization procedure for the experiment and specifies the primary data-analysis, particularly in hypothesis testing. In a secondary analysis, the statistical analyst further examines the data to suggest other questions and to help plan future experiments. In engineering applications, the goal is often to optimize a process or product, rather than to subject a scientific hypothesis to test of its predictive adequacy.&lt;ref name=&quot;BHH&quot;&gt;[[George E. P. Box|Box, G. E.]], Hunter,W.G., Hunter, J.S., Hunter,W.G., &quot;Statistics for Experimenters: Design, Innovation, and Discovery&quot;, 2nd Edition, Wiley, 2005, {{ISBN|0-471-71813-0}}&lt;/ref&gt;&lt;ref name=&quot;WuHamada&quot;&gt;{{cite book |author1=Wu, C. F. Jeff  |author2=Hamada, Michael |title=Experiments: Planning, Analysis, and Parameter Design Optimization |publisher=Wiley |year=2002 |isbn=0-471-25511-4}}&lt;/ref&gt;&lt;ref name=&quot;LogoWynn&quot;/&gt; The use of [[optimal design|optimal (or near optimal) design]]s reduces the cost of experimentation.&lt;ref name=&quot;WuHamada&quot;/&gt;&lt;ref name=&quot;ADT&quot;&gt;{{cite book |authors=Atkinson, A. C. and  Donev, A. N. and Tobias, R. D. |title=Optimum Experimental Designs, with SAS |url=https://books.google.com/books?id=oIHsrw6NBmoC|publisher=Oxford University Press |year=2007 |pages=511+xvi |isbn=978-0-19-929660-6 |oclc= |doi=}}&lt;/ref&gt;
+# [[Quality control]] and [[process control]] use statistics as a tool to manage conformance to specifications of manufacturing processes and their products.&lt;ref name=&quot;BHH&quot;/&gt;&lt;ref name=&quot;WuHamada&quot;/&gt;&lt;ref name=&quot;LogoWynn&quot;/&gt;
+# [[Time and methods engineering]] use statistics to study repetitive operations in manufacturing in order to set standards and find optimum (in some sense) manufacturing procedures.
+# [[Reliability engineering]] which measures the ability of a system to perform for its intended function (and time) and has tools for improving performance.&lt;ref name=&quot;WuHamada&quot;/&gt;&lt;ref name=&quot;Barlow&quot;&gt;{{cite book|last=Barlow|first=Richard E.|authorlink=Richard E. Barlow|title=Engineering reliability|series=ASA-SIAM Series on Statistics and Applied Probability|publisher=Society for Industrial and Applied Mathematics (SIAM), Philadelphia, PA; American Statistical Association, Alexandria, VA|year=1998|pages=xx+199|isbn=0-89871-405-2|mr=1621421}}&lt;/ref&gt;&lt;ref&gt;Nelson, Wayne B., (2004), ''Accelerated Testing - Statistical Models, Test Plans, and Data Analysis'', John Wiley &amp; Sons, New York, {{ISBN|0-471-69736-2}}&lt;/ref&gt;&lt;ref&gt;LogoWynn&lt;/ref&gt;
+# [[Probabilistic design]] involving the use of probability in product and system design
+# [[System identification]] uses [[statistical method]]s to build [[mathematical model]]s of [[dynamical system]]s from measured data. System identification also includes the [[optimal design#System identification and stochastic approximation|optimal]] [[design of experiments]] for efficiently generating informative data for [[regression analysis|fitting]] such models.&lt;ref&gt;{{cite book |author1=Goodwin, Graham C.  |author2=Payne, Robert L.|title=Dynamic System Identification: Experiment Design and Data Analysis | publisher=Academic Press | year=1977 |isbn=0-12-289750-1}}&lt;/ref&gt;&lt;ref&gt;{{cite book |author1=Walter, Éric  |author2=Pronzato, Luc |title=Identification of Parametric Models from Experimental Data |publisher=Springer |year=1997}}
+&lt;/ref&gt;
+
+==History==
+
+Engineering statistics dates back to 1000 B.C. when the [[Abacus]] was developed as means to calculate numerical data. In the 1600s, the development of information processing to systematically analyze and process data began. In 1654, the [[Slide Rule]] technique was developed by [https://www.britannica.com/science/slide-rule#ref81001 Robert Bissaker] for advanced data calculations. In 1833, a British mathematician named [[Charles Babbage]] designed the idea of an automatic computer which inspired developers at [[Harvard University]] and [[IBM]] to design the first mechanical automatic-sequence-controlled calculator called [[harvard mark I|MARK I]]. The integration of computers and calculators into the industry brought about a more efficient means of analyzing data and the beginning of engineering statistics.&lt;ref&gt;{{cite web|last1=The Editors of Encyclopaedia Britannica|title=Slide Rule|url=https://www.britannica.com/science/slide-rule#ref81001|website=Encyclopaedia Britannica|publisher=Encyclopaedia Britannica Inc|accessdate=17 April 2018}}&lt;/ref&gt;&lt;ref name=&quot;Prentice Hall&quot;/&gt;&lt;ref&gt;{{cite book|last1=Montgomery|first1=Douglas|last2=Runger|first2=George|last3=Hubele|first3=Norma|title=Engineering Statistics|isbn=0470631473|edition=5}}&lt;/ref&gt;
+
+==Notes==
+&lt;references/&gt;
+
+==References==
+*{{cite book |authors=Atkinson, A. C. and Donev, A. N. and Tobias, R. D.|title=Optimum Experimental Designs, with SAS |url=https://books.google.com/books?id=oIHsrw6NBmoC |publisher=Oxford University Press |year=2007 |pages=511+xvi |isbn=978-0-19-929660-6 |oclc= |doi=|ref=harv}}
+*[[George E. P. Box|Box, G. E.]], Hunter,W.G., Hunter, J.S., Hunter,W.G., &quot;Statistics for Experimenters: Design, Innovation, and Discovery&quot;, 2nd Edition, Wiley, 2005, {{ISBN|0-471-71813-0}}
+*{{cite book |author=Logothetis, N. and [http://www.lse.ac.uk/collections/cats/People/HenryPage.htm Wynn, H. P]|title=Quality Through Design: Experimental Design, Off-line Quality Control, and Taguchi's Contributions
+|publisher=Oxford U. P.
+|year=1989 &lt;!-- |pages=464+xi --&gt;
+|isbn=0-19-851993-1|ref=harv}}
+*{{cite book|last1=Rao|first1=Singiresu|title=Applied Numerical Methods of Engineers and Scientists|date=2002|publisher=Prentice Hall|location=Upper Saddle River, New Jersey|isbn=013089480X}}
+*{{cite web|last1=The Editors of Encyclopaedia Britannica|title=Slide Rule|url=https://www.britannica.com/science/slide-rule#ref81001|website=Encyclopaedia Britannica|publisher=Encyclopaedia Britannica Inc|accessdate=17 April 2018}}
+*{{cite book|last1=Montgomery|first1=Douglas|last2=Runger|first2=George|last3=Hubele|first3=Norma|title=Engineering Statistics|isbn=0470631473|edition=5}}
+
+==External links==
+*{{Commonscat-inline}}
+
+{{Statistics|applications|state=expanded}}
+
+{{DEFAULTSORT:Engineering Statistics}}
+
+[[Category:Engineering statistics]]</text>
+      <sha1>ryb1riobnbsqd6rac7rjmenwam87t3b</sha1>
+    </revision>
+  </page>

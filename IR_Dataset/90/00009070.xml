@@ -1,0 +1,229 @@
+  <page>
+    <title>Deep Space 1</title>
+    <ns>0</ns>
+    <id>9070</id>
+    <revision>
+      <id>927837585</id>
+      <parentid>924501308</parentid>
+      <timestamp>2019-11-25T02:51:06Z</timestamp>
+      <contributor>
+        <username>InternetArchiveBot</username>
+        <id>27015025</id>
+      </contributor>
+      <comment>Rescuing 1 sources and tagging 0 as dead.) #IABot (v2.0</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{italic title}}
+{{refimprove|date=October 2012}}
+{{Infobox spaceflight |auto=all
+| name                  = ''Deep Space 1''
+| image                 = Deep Space 1 clean (PIA04242).png
+| image_caption         = Artist concept of ''Deep Space 1''
+| image_size            = 275px
+
+| mission_type          = Technology demonstrator
+| operator              = [[NASA]]{{\}}[[Jet Propulsion Laboratory|JPL]]
+| COSPAR_ID             = 1998-061A
+| SATCAT                = 25508
+| website               = http://www.jpl.nasa.gov/missions/deep-space-1-ds1/
+| mission_duration      = Final: {{time interval|24 October 1998 12:08|18 December 2001 20:00|show=ymd|sep=,}}
+
+| manufacturer          = [[Orbital Sciences Corporation]]
+| launch_mass           = {{convert|1071|lb|kg|order=flip|abbr=on}}&lt;ref name=&quot;flyby.press.kit&quot;&gt;{{cite web |url=http://www.jpl.nasa.gov/news/press_kits/ds1asteroid.pdf |title=Deep Space 1 Asteroid Flyby |publisher=[[NASA]] |type=Press kit |date=26 July 1999 |accessdate=20 November 2016}}&lt;/ref&gt;
+| dry_mass              = {{convert|822|lb|kg|order=flip|abbr=on}}&lt;ref name=&quot;flyby.press.kit&quot; /&gt;
+| dimensions            = {{convert|6.9|xx|38.6|xx|8.2|ft|m|order=flip|abbr=on}}
+| power                 = 2,500 watts&lt;ref name=&quot;flyby.press.kit&quot; /&gt;
+
+| launch_date           = {{start-date|24 October 1998, 12:08}}&amp;nbsp;UTC&lt;ref name=&quot;nssdc&quot;&gt;{{cite web |url=https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1998-061A |title=Deep Space 1 |work=[[National Space Science Data Center]] |publisher=NASA |accessdate=20 November 2016}}&lt;/ref&gt;
+| launch_rocket         = [[Delta II]] 7326&lt;ref name=&quot;flyby.press.kit&quot; /&gt;
+| launch_site           = [[Cape Canaveral Air Force Station|Cape Canaveral]] [[Cape Canaveral Air Force Station Space Launch Complex 17|SLC-17A]]&lt;ref name=&quot;flyby.press.kit&quot; /&gt;
+| launch_contractor     = &lt;!--United Launch Alliance, Arianespace, etc--&gt;
+
+| disposal_type         = Decommissioned
+| deactivated           = {{end-date|18 December 2001, 20:00}}&amp;nbsp;UTC&lt;ref name=&quot;nssdc&quot; /&gt;
+
+|interplanetary         = 
+ {{Infobox spaceflight/IP
+  |type                 = flyby
+  |object               = [[9969 Braille]]
+  |arrival_date         = 29 July 1999, 04:46&amp;nbsp;UTC&lt;ref name=&quot;nssdc&quot; /&gt;
+  |distance             = {{convert|26|km|mi|abbr=on}}
+ }}
+ {{Infobox spaceflight/IP
+  |type                 = flyby
+  |object               = [[19P/Borrelly]]
+  |arrival_date         = {{nowrap|22 September 2001, 22:29:33&amp;nbsp;UTC&lt;ref name=&quot;nssdc&quot; /&gt;}}
+  |distance             = {{convert|2171|km|mi|abbr=on}}
+ }}
+
+| instruments_list      = {{Infobox spaceflight/Instruments
+  | acronym1 = MICAS | name1 = Miniature Integrated Camera-Spectrometer
+  | acronym2 = PEPE  | name2 = Plasma Experiment for Planetary Exploration
+  | acronym3 = IDS   | name3 =  Ion Propulsion System (IPS) Diagnostic Subsystem
+ }}
+
+| insignia              = Deep Space 1 - ds1logo.png
+| insignia_caption      = DS1 mission logo
+| insignia_size         = 180px
+}}
+
+'''''Deep Space 1''''' ('''DS1''') was a [[NASA]] technology demonstration [[spacecraft]] which flew by an [[asteroid]] and a [[comet]]. It was part of the [[New Millennium Program]], dedicated to testing advanced technologies.
+
+Launched on 24 October 1998, the ''Deep Space 1'' spacecraft carried out a flyby of asteroid [[9969 Braille]], which was its primary science target. The mission was extended twice to include an encounter with comet [[19P/Borrelly]] and further engineering testing. Problems during its initial stages and with its star tracker led to repeated changes in mission configuration. While the flyby of the asteroid was only a partial success, the encounter with the comet retrieved valuable information. Three of twelve technologies on board had to work within a few minutes of separation from the carrier rocket for the mission to continue.
+
+The Deep Space series was continued by the ''[[Deep Space 2]]'' probes, which were launched in January 1999 piggybacked on the [[Mars Polar Lander]] and were intended to strike the surface of Mars (though contact was lost and the mission failed). ''Deep Space 1'' was the first NASA spacecraft to use [[ion thruster|ion propulsion]] rather than the traditional chemical-powered rockets.&lt;ref&gt;{{cite book |url=https://www.nasa.gov/sites/default/files/atoms/files/beyond-earth-tagged.pdf |title=Beyond Earth: A Chronicle of Deep Space Exploration, 1958–2016 |series=NASA History Series |publisher=NASA |last=Siddiqi |first=Asif A. |edition=2nd |page=2 |year=2018 |id=SP-2018-4041 |lccn=2017059404 |isbn=978-1-62683-042-4}}&lt;/ref&gt;
+
+==Technologies==
+The purpose of ''Deep Space 1'' was technology development and validation for future missions; 12 technologies were tested:&lt;ref&gt;{{cite web |url=http://www.jpl.nasa.gov/nmp/ds1/tech/index.php |title=Advanced Technologies |publisher=NASA/Jet Propulsion Laboratory |accessdate=20 November 2016}}&lt;/ref&gt;
+#Solar Electric Propulsion
+#Solar Concentrator Arrays
+#Multi-functional Structure
+#Miniature Integrated Camera and Imaging Spectrometer
+#Ion and Electron Spectrometer
+#Small Deep Space Transponder
+#Ka-Band Solid State Power Amplifier
+#Beacon Monitor Operations
+#Autonomous Remote Agent
+#Low Power Electronics
+#Power Actuation and Switching Module
+#Autonomous Navigation
+
+===Autonav===
+The Autonav system, developed by NASA's [[Jet Propulsion Laboratory]], takes images of known bright [[asteroid]]s. The asteroids in the inner Solar System move in relation to other bodies at a noticeable, predictable speed. Thus a spacecraft can determine its relative position by tracking such asteroids across the star background, which appears fixed over such timescales. Two or more asteroids let the spacecraft triangulate its position; two or more positions in time let the spacecraft determine its trajectory. Existing spacecraft are tracked by their interactions with the transmitters of the [[NASA Deep Space Network]] (DSN), in effect an inverse [[Global Positioning System|GPS]]. However, DSN tracking requires many skilled operators, and the DSN is overburdened by its use as a communications network. The use of Autonav reduces mission cost and DSN demands.
+
+The Autonav system can also be used in reverse, tracking the position of bodies relative to the spacecraft. This is used to acquire targets for the scientific instruments. The spacecraft is programmed with the target's coarse location. After initial acquisition, Autonav keeps the subject in frame, even commandeering the spacecraft's attitude control.&lt;ref name=ANS-PFR&gt;{{cite conference |title=The Deep Space 1 Autonomous Navigation System: A Post-Flight Analysis |conference=AIAA/AAS Astrodynamics Specialist Conference. 14-17 August 2000. Denver, Colorado. |first1=S. |last1=Bhaskaran |first2=J. E. |last2=Riedel |first3=S. P. |last3=Synnott |first4=T. C. |last4=Wang |display-authors=1 |date=2000 |id=AIAA-2000-3935 |doi=10.2514/6.2000-3935 |citeseerx=10.1.1.457.7850}}&lt;/ref&gt; The next spacecraft to use Autonav was ''[[Deep Impact (spacecraft)|Deep Impact]]''.
+
+===SCARLET concentrating solar array===
+Primary power for the mission was produced by a new solar array technology, the Solar Concentrator Array with Refractive Linear Element Technology (SCARLET), which uses linear [[Fresnel lens]]es made of [[silicone]] to concentrate sunlight onto solar cells.&lt;ref&gt;{{cite conference |url=http://nmp-techval-reports.jpl.nasa.gov/DS1/Scarlet_Integrated_Report.pdf |title=The Scarlet Solar Array: Technology Validation and Flight Results |conference=Deep Space 1 Technology Validation Symposium. 8–9 February 2000. Pasadena, California |first=David M. |last=Murphy |date=2000 |url-status=dead |archiveurl=https://web.archive.org/web/20111015071801/http://nmp-techval-reports.jpl.nasa.gov/DS1/Scarlet_Integrated_Report.pdf |archivedate=15 October 2011}}&lt;/ref&gt; ABLE Engineering developed the concentrator technology and built the solar array for DS1, with Entech Inc, who supplied the Fresnel optics, and the NASA [[Glenn Research Center]]. The activity was sponsored by the Ballistic Missile Defense Organization. The concentrating lens technology was combined with dual-junction solar cells, which had considerably better performance than the [[GaAs]] solar cells that were the state of the art at the time of the mission launch.
+
+The SCARLET arrays generated 2.5 kilowatts at 1 AU, with less size and weight than conventional arrays.
+
+===NSTAR ion engine===
+{{main article|NASA Solar Technology Application Readiness}}
+Although [[ion engine]]s had been developed at NASA since the late 1950s, with the exception of the [[SERT-1|SERT]] missions in the 1960s, the technology had not been demonstrated in flight on United States spacecraft, though hundreds of [[Hall-effect thruster|Hall-effect engines]] had been used on Soviet and Russian spacecraft.  This lack of a performance history in space meant that despite the potential savings in propellant mass, the technology was considered too experimental to be used for high-cost missions. Furthermore, unforeseen side effects of ion propulsion might in some way interfere with typical scientific experiments, such as fields and particle measurements.  Therefore, it was a primary mission of the ''Deep Space 1'' demonstration to show long-duration use of an ion thruster on a scientific mission.&lt;ref name=&quot;MD&quot;&gt;{{cite journal |url=http://trs-new.jpl.nasa.gov/dspace/bitstream/2014/19098/1/98-0310.pdf |title=Mision Design for Deep Space 1: A Low-thrust Technology Validation Mission |journal=Acta Astronautica |first1=Marc D. |last1=Rayman |first2=Pamela A. |last2=Chadbourne |first3=Jeffery S. |last3=Culwell |first4=Steven N. |last4=Williams |volume=45 |issue=4–9 |pages=381–388 |date=August–November 1999 |doi=10.1016/S0094-5765(99)00157-5 |bibcode=1999AcAau..45..381R |url-status=dead |archiveurl=https://web.archive.org/web/20150509172350/http://trs-new.jpl.nasa.gov/dspace/bitstream/2014/19098/1/98-0310.pdf |archivedate=9 May 2015}}&lt;/ref&gt;
+
+The [[NASA Solar Technology Application Readiness]] (NSTAR) [[electrostatic ion thruster]], developed at NASA Glenn, achieves a [[specific impulse]] of 1000–3000 seconds. This is an order of magnitude higher than traditional space propulsion methods, resulting in a mass savings of approximately half. This leads to much cheaper launch vehicles. Although the engine produces just {{convert|92|mN|lk=on}} thrust at maximal power (2,100 W on DS1), the craft achieved high speeds because ion engines thrust continuously for long periods.&lt;ref name=&quot;MD&quot;/&gt;
+
+The next spacecraft to use NSTAR engines was ''[[Dawn (spacecraft)|Dawn]]'', with three redundant units.&lt;ref&gt;{{cite web |url=http://dawn.jpl.nasa.gov/mission/spacecraft.asp |title=Dawn: Spacecraft |publisher=NASA/Jet Propulsion Laboratory |accessdate=20 November 2016}}&lt;/ref&gt;
+
+{{Multiple image |align=center |direction=horizontal |total_width=600
+ |image1=Ion Engine Being Installed in High Vacuum Tank - GPN-2000-000597.jpg |caption1=Technicians installing ion engine #1 in the High Vacuum Tank in the Electric Propulsion Research Building, 1959
+ |image2=Deep Space 1 spacecraft.jpg |caption2=The fully assembled {{nowrap|''Deep Space 1''}}
+ |image3=Deep Space 1 lifted.jpg |caption3=''Deep Space 1'' experimental solar-powered [[Ion thruster|ion propulsion engine]]
+}}
+
+===Remote Agent===
+Remote Agent (RAX), remote intelligent self-repair software developed at NASA's [[Ames Research Center]] and the Jet Propulsion Laboratory, was the first artificial-intelligence control system to control a spacecraft without human supervision.&lt;ref&gt;{{cite web |url=https://ti.arc.nasa.gov/tech/asr/planning-and-scheduling/remote-agent/ |title=Remote Agent |publisher=NASA |accessdate=22 April 2009 |archive-url=https://web.archive.org/web/20100413232345/http://ti.arc.nasa.gov/tech/asr/planning-and-scheduling/remote-agent/ |archive-date=13 April 2010 |url-status=dead }}&lt;/ref&gt; Remote Agent successfully demonstrated the ability to plan onboard activities and correctly diagnose and respond to simulated faults in spacecraft components through its built-in REPL environment.&lt;ref name=&quot;RAX.debug&quot;&gt;{{cite AV media |url=https://www.youtube.com/watch?v=_gZK0tW8EhQ#t=2371s |title=The Remote Agent Experiment: Debugging Code from 60 Million Miles Away |work=YouTube.com |publisher=Google Tech Talks |first=Ron |last=Garret |date=14 February 2012}} [http://www.flownet.com/ron/RAX2.pdf Slides].&lt;/ref&gt; Autonomous control will enable future spacecraft to operate at greater distances from Earth and to carry out more sophisticated science-gathering activities in deep space. Components of the Remote Agent software have been used to support other NASA missions. Major components of Remote Agent were a robust planner (EUROPA), a plan-execution system (EXEC) and a model-based diagnostic system (Livingstone).&lt;ref name=&quot;RAX.debug&quot; /&gt; EUROPA was used as a ground-based planner for the [[Mars Exploration Rover]]s. EUROPA II was used to support the [[Phoenix (spacecraft)|''Phoenix'' Mars lander]] and the [[Mars Science Laboratory]]. Livingstone2 was flown as an experiment aboard [[Earth Observing-1]] and on an [[McDonnell Douglas F/A-18 Hornet|F/A-18 Hornet]] at NASA's [[Dryden Flight Research Center]].
+
+===Beacon Monitor===
+Another method for reducing DSN burdens is the [[Beacon mode service|Beacon Monitor]] experiment. During the long cruise periods of the mission, spacecraft operations are essentially suspended. Instead of data, the craft emits a [[carrier signal]] on a predetermined frequency. Without data decoding, the carrier can be detected by much simpler ground antennas and receivers. If the spacecraft detects an anomaly, it changes the carrier between four tones, based on urgency. Ground receivers then signal operators to divert DSN resources. This prevents skilled operators and expensive hardware from babysitting an unburdened mission operating nominally. A similar system is used on the ''[[New Horizons]]'' Pluto probe to keep costs down during its ten-year cruise from Jupiter to Pluto.
+
+===SDST===
+[[File:MSL-SDST.jpg|thumb|A Small Deep Space Transponder]]
+The [[Small Deep Space Transponder]] (SDST) is a compact and lightweight radio-communications system. Aside from using miniaturized components, the SDST is capable of communicating over the [[Ka band|K&lt;sub&gt;a&lt;/sub&gt; band]]. Because this band is higher in frequency than bands currently in use by deep-space missions, the same amount of data can be sent by smaller equipment in space and on the ground. Conversely, existing DSN antennas can split time among more missions. At the time of launch, the DSN had a small number of K&lt;sub&gt;a&lt;/sub&gt; receivers installed on an experimental basis; K&lt;sub&gt;a&lt;/sub&gt; operations and missions are increasing.
+
+The SDST was later used on other space missions such as the [[Mars Science Laboratory]] (the Mars rover ''[[Curiosity (rover)|Curiosity]]'').&lt;ref&gt;{{cite paper |url=http://descanso.jpl.nasa.gov/DPSummary/Descanso14_MSL_Telecom.pdf |title=Mars Science Laboratory Telecommunications System Design |series=Design and Performance Summary Series |publisher=NASA/Jet Propulsion Laboratory |first1=Andre |last1=Makovsky |first2=Peter |last2=Ilott |first3=Jim |last3=Taylor |date=November 2009}}&lt;/ref&gt;
+
+===PEPE===
+Once at a target, DS1 senses the particle environment with the PEPE (Plasma Experiment for Planetary Exploration) instrument. This instrument measured the flux of ions and electrons as a function of their energy and direction. The composition of the ions was determined by using a [[time-of-flight mass spectrometer]].
+
+===MICAS===
+The MICAS (Miniature Integrated Camera And [[Spectrometer]]) instrument combined visible light imaging with infrared and ultraviolet spectroscopy to determine chemical composition. All channels share a {{convert|10|cm|in|abbr=on}} telescope, which uses a [[silicon carbide]] mirror.
+
+Both PEPE and MICAS were similar in capabilities to larger instruments or suites of instruments on other spacecraft. They were designed to be smaller and require lower power than those used on previous missions.
+
+==Mission overview==
+{{multiple image |align=right |direction=horizontal |total_width=400
+ |image1=Deep Space 1 Launch.png |caption1=Launch of DS1 aboard a Delta II from Cape Canaveral SLC-17A
+ |image2=Animation of Deep Space 1 trajectory.gif |caption2=Animation of DS1{{'s}} trajectory from 24 October 1998 to 31 December 2003 &lt;br/&gt; {{legend2|magenta|''Deep Space 1''}}{{·}}{{legend2|lime|[[9969 Braille]]}}{{·}}{{legend2|royalblue|[[Earth]]}}{{·}}{{legend2|Cyan|[[19P/Borrelly]]}}
+}}
+
+Prior to launch, ''Deep Space 1'' was intended to visit comet [[76P/West–Kohoutek–Ikemura]] and asteroid [[3352 McAuliffe]].&lt;ref name=&quot;comets&quot;&gt;{{cite web |url=http://spider.seds.org/spider/Comets/c_missions.html |title=Comet Space Missions |website=SEDS.org |accessdate=20 November 2016}}&lt;/ref&gt; Because of the delayed launch, the targets were changed to asteroid [[9969 Braille]] (at the time called 1992&amp;nbsp;KD) and comet [[4015 Wilson–Harrington|107P/Wilson–Harrington]].&lt;ref name=&quot;comets&quot; /&gt; It achieved an impaired flyby of Braille and, due to problems with the star tracker, was re-tasked to fly by comet [[19P/Borrelly]], which was successful.&lt;ref name=&quot;results2001&quot; /&gt; An August 2002 flyby of asteroid {{mpl|1999 KK|1}} as another extended mission was considered, but ultimately was not advanced due to cost concerns.&lt;ref name=&quot;wired20011218&quot;&gt;{{cite news |url=https://www.wired.com/science/discoveries/news/2001/12/49210 |title=End of the Line for NASA Probe |work=[[Wired (magazine)|Wired]] |first=Noah |last=Schactman |date=18 December 2001 |archiveurl=https://web.archive.org/web/20080617005731/http://www.wired.com/science/discoveries/news/2001/12/49210 |archivedate=17 June 2008 |url-status=dead}}&lt;/ref&gt;&lt;ref name=&quot;rayman20011218&quot;&gt;{{cite web |url=http://nmp.jpl.nasa.gov/ds1/arch/mrlog74.html |title=Mission Update |work=Dr. Marc Rayman's Mission Log |publisher=NASA/Jet Propulsion Laboratory |first=Marc |last=Rayman |date=18 December 2001 |archiveurl=https://web.archive.org/web/20090813095208/http://nmp.jpl.nasa.gov/ds1/arch/mrlog74.html |archivedate=13 August 2009 |url-status=dead}}&lt;/ref&gt; During the mission, high quality infrared spectra of [[Mars]] were also taken.&lt;ref name=&quot;results2001&quot; /&gt;&lt;ref name=&quot;naif.ds1.mission&quot; /&gt;
+
+===Results and achievements===
+[[File:Deep Space 1 spacecraft imaged by 5 meter Hale telescope on Palomar Mountain.png|thumb|Deep Space-1 as seen from [[Hale Telescope]] while at distance of {{convert|3.7|e6km|e6mi|abbr=unit}}]]
+The ion propulsion engine initially failed after 4.5 minutes of operation. However, it was later restored to action and performed excellently. Early in the mission, material ejected during launch vehicle separation caused the closely spaced ion extraction grids to short-circuit. The contamination was eventually cleared, as the material was eroded by electrical arcing, sublimed by outgassing, or simply allowed to drift out. This was achieved by repeatedly restarting the engine in an engine repair mode, arcing across trapped material.&lt;ref name=&quot;results2000&quot;&gt;{{cite journal |url=http://trs-new.jpl.nasa.gov/dspace/bitstream/2014/17743/1/99-1185.pdf |title=Results from the Deep Space 1 Technology Validation Mission |journal=Acta Astronautica |first1=Marc D. |last1=Rayman |first2=Philip |last2=Varghese |first3=David H. |last3=Lehman |first4=Leslie L. |last4=Livesay |volume=47 |issue=2–9 |pages=475–487 |date=July–November 2000 |doi=10.1016/S0094-5765(00)00087-4 |bibcode=2000AcAau..47..475R |url-status=dead |archiveurl=https://web.archive.org/web/20120415134047/http://trs-new.jpl.nasa.gov/dspace/bitstream/2014/17743/1/99-1185.pdf |archivedate=15 April 2012 |citeseerx=10.1.1.504.9572}}&lt;/ref&gt;
+
+It was thought that the ion engine exhaust might interfere with other spacecraft systems, such as radio communications or the science instruments. The PEPE detectors had a secondary function to monitor such effects from the engine. No interference was found.
+
+Another failure was the loss of the [[star tracker]]. The star tracker determines spacecraft orientation by comparing the star field to its internal charts. The mission was saved when the MICAS camera was reprogrammed to substitute for the star tracker. Although MICAS is more sensitive, its field-of-view is an order of magnitude smaller, creating a greater information processing burden. Ironically, the star tracker was an off-the-shelf component, expected to be highly reliable.&lt;ref name=&quot;results2001&quot;&gt;{{cite journal |url=http://nmp.jpl.nasa.gov/ds1/DS1_Extended_Mission.pdf |title=The Deep Space 1 Extended Mission |journal=Acta Astronautica |first1=Marc D. |last1=Rayman |first2=Philip |last2=Varghese |volume=48 |issue=5–12 |pages=693–705 |date=March–June 2001 |doi=10.1016/S0094-5765(01)00044-3 |bibcode=2001AcAau..48..693R |archiveurl=https://web.archive.org/web/20090509104812/http://nmp.jpl.nasa.gov/ds1/DS1_Extended_Mission.pdf |archivedate=9 May 2009 |url-status=dead}}&lt;/ref&gt;
+
+Without a working star tracker, ion thrusting was temporarily suspended. The loss of thrust time forced the cancellation of a flyby past comet [[107P/Wilson–Harrington]].
+
+The Autonav system required occasional manual corrections. Most problems were in identifying objects that were too dim, or were difficult to identify because of brighter objects causing diffraction spikes and reflections in the camera, causing Autonav to misidentify targets.
+
+The Remote Agent system was presented with three simulated failures on the spacecraft and correctly handled each event.
+# a failed electronics unit, which Remote Agent fixed by reactivating the unit.
+# a failed sensor providing false information, which Remote Agent recognized as unreliable and therefore correctly ignored.
+# an attitude control thruster (a small engine for controlling the spacecraft's orientation) stuck in the &quot;off&quot; position, which Remote Agent detected and compensated for by switching to a mode that did not rely on that thruster.
+Overall this constituted a successful demonstration of fully autonomous planning, diagnosis, and recovery.
+
+The MICAS instrument was a design success, but the ultraviolet channel failed due to an electrical fault.  Later in the mission, after the star tracker failure, MICAS assumed this duty as well.  This caused continual interruptions in its scientific use during the remaining mission, including the Comet Borrelly encounter.&lt;ref name=&quot;results2003&quot;/&gt;
+
+{{multiple image |align=right |direction=horizontal |total_width=400
+ |image1=9969 Braille - PIA01345.png |caption1=9969 Braille as imaged by DS1
+ |image2=Comet Borrelly Nucleus.jpg |caption2=Comet 19P/Borrelly imaged just 160 seconds before DS1's closest approach
+}}
+
+The flyby of the asteroid [[9969 Braille]] was only a partial success. ''Deep Space 1'' was intended to perform the flyby at {{convert|56000|km/h|abbr=on}} at only {{convert|240|m|abbr=on}} from the asteroid. Due to technical difficulties, including a software crash shortly before approach, the craft instead passed Braille at a distance of {{convert|26|km|0|abbr=on}}. This, plus Braille's lower [[albedo]], meant that the asteroid was not bright enough for the Autonav to focus the camera in the right direction, and the picture shoot was delayed by almost an hour.&lt;ref name=&quot;results2001&quot;/&gt;  The resulting pictures were disappointingly indistinct.
+
+However, the flyby of Comet Borrelly was a great success and returned extremely detailed images of the comet's surface. Such images were of higher resolution than the only previous pictures, of [[Halley's Comet]] taken by the ''[[Giotto (spacecraft)|Giotto]]'' spacecraft. The PEPE instrument reported that the comet's fields were offset from the nucleus. This is believed to be due to emission of jets, which were not distributed evenly across the comet's surface.
+
+Despite having no debris shields, the spacecraft survived the comet passage intact. Once again, the sparse comet jets did not appear to point towards the spacecraft. ''Deep Space 1'' then entered its second extended mission phase, focused on retesting the spacecraft's hardware technologies. The focus of this mission phase was on the ion engine systems. The spacecraft eventually ran out of [[hydrazine]] fuel for its attitude control thrusters. The highly efficient ion thruster had a sufficient amount of propellant left to perform attitude control in addition to main propulsion, thus allowing the mission to continue.&lt;ref name=&quot;results2003&quot;&gt;{{cite journal |url=http://www.jpl.nasa.gov/nmp/ds1/DS1_conclusion.pdf |title=The Successful Conclusion of the Deep Space 1 Mission: Important Results without a Flashy Title |journal=Space Technology |first=Marc D. |last=Rayman |volume=23 |issue=2 |pages=185–196 |date=2003}}&lt;/ref&gt;
+
+During late October and early November 1999, during the spacecraft's post-Braille encounter coast phase, ''Deep Space 1'' observed Mars with its MICAS instrument. Although this was a very distant flyby, the instrument did succeed in taking multiple infrared spectra of the planet.&lt;ref name=&quot;results2001&quot; /&gt;&lt;ref name=&quot;naif.ds1.mission&quot;&gt;{{cite web |url=http://naif.jpl.nasa.gov/pub/naif/pds/data/ds1-a_c-spice-6-v1.0/ds1sp_1000/catalog/mission.cat |title=Deep Space 1: Mission Information |publisher=NASA |date=29 September 2003 |accessdate=20 November 2016}}&lt;/ref&gt;
+
+===Current status===
+''Deep Space 1'' succeeded in its primary and secondary objectives, returning valuable science data and images. DS1's ion engines were shut down on 18 December 2001 at approximately 20:00:00&amp;nbsp;UTC, signaling the end of the mission. On-board communications were commanded to remain active in case the craft is needed in the future. However, attempts to resume contact in March 2002 were unsuccessful.&lt;ref name=&quot;results2003&quot; /&gt; It remains within the Solar System, orbiting the Sun.&lt;ref name=&quot;nssdc&quot; /&gt;
+
+==Statistics==
+* Launch mass: {{convert|1071|lb|kg|order=flip|abbr=on}}
+* Dry mass: {{convert|822|lb|kg|order=flip|abbr=on}}
+* Fuel: {{convert|68|lb|kg|order=flip|abbr=on}} of [[hydrazine]] for attitude control thrusters; {{convert|181|lb|kg|order=flip|abbr=on}} of [[xenon]] for the NSTAR ion engine&lt;ref name=&quot;flyby.press.kit&quot; /&gt;
+* Power: 2,500 watts, of which 2,100 watts powers the ion engine
+* Prime contractor: [[Spectrum Astro]], later acquired by [[General Dynamics]], and later sold to [[Orbital Sciences Corporation]]
+* Launch vehicle: Boeing [[Delta II]] 7326
+* Launch site: [[Cape Canaveral Air Force Station]] [[Cape Canaveral Air Force Station Space Launch Complex 17|Space Launch Complex 17A]]
+* Total cost: {{US$|149.7 million}}
+* Development cost: {{US$|94.8 million}}
+* Personnel:
+** Project manager: David Lehman
+** Mission manager: Philip Varghese
+** Chief mission engineer and deputy mission manager: Marc Rayman
+** Project scientist: Robert Nelson
+
+==See also==
+{{Portal|Spaceflight}}
+*[[Solar panels on spacecraft]]
+*[[List of minor planets and comets visited by spacecraft]]
+
+==References==
+{{reflist}}
+
+==External links==
+{{Commons category|Deep Space 1}}
+
+* [http://www.jpl.nasa.gov/missions/deep-space-1-ds1/ ''Deep Space 1'' website] by NASA{{\}}Jet Propulsion Laboratory
+* [http://www.jpl.nasa.gov/nmp/ds1/index.php ''Deep Space 1'' website] by NASA{{\}}New Millennium Program
+* [http://www.astronautix.com/d/deepspace1.html ''Deep Space 1''] by Encyclopedia Astronautica
+* [https://pdssbn.astro.umd.edu/data_sb/missions/deepspace1/index.shtml ''Deep Space 1 Mission Archive''] at the NASA Planetary Data System, Small Bodies Node
+
+{{Asteroid spacecraft}}
+{{Jet Propulsion Laboratory}}
+{{New Millennium Program}}
+{{Solar System probes}}
+{{Orbital launches in 1998}}
+
+{{Use dmy dates|date=November 2019}}
+{{Use American English|date=January 2014}}
+
+[[Category:Spacecraft launched in 1998]]
+[[Category:Derelict space probes]]
+[[Category:NASA space probes]]
+[[Category:New Millennium Program]]
+[[Category:Spacecraft launched by Delta II rockets]]
+[[Category:Missions to comets]]
+[[Category:Missions to asteroids]]</text>
+      <sha1>erm6y7upgmq9evqu562w0ddcggg3ivs</sha1>
+    </revision>
+  </page>

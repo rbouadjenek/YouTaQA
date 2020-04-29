@@ -1,0 +1,178 @@
+  <page>
+    <title>Computer file</title>
+    <ns>0</ns>
+    <id>7077</id>
+    <revision>
+      <id>925884087</id>
+      <parentid>916576868</parentid>
+      <timestamp>2019-11-12T22:44:56Z</timestamp>
+      <contributor>
+        <username>Avelludo</username>
+        <id>27595460</id>
+      </contributor>
+      <minor />
+      <comment>/* File corruption */ Change `.` to `;`, link to Backup article, clarify countermeasure is for &gt;unintentional&lt; corruptions</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{About|computer files and file systems in general terms|a more detailed and technical article|File system}}
+{{refimprove| date=June 2009}}
+
+A '''computer file''' is a [[System resource|computer resource]] for recording [[Data (computing)|data]] discretely in a [[Computer data storage|computer storage device]]. Just as words can be written to paper, so can information be written to a computer file. Files can be edited and transferred through the internet on that particular computer system.
+
+There are different [[File format|types of computer files]], designed for different purposes. A file may be designed to store a picture, a written message, a [[Digital video|video]], a [[computer program]], or a wide variety of other kinds of data. Some types of files can store several types of information at once.
+
+By using computer programs, a person can open, read, change, save, and close a computer file. Computer files may be reopened, modified, and copied an arbitrary number of times.
+
+Typically,  files are organised in a [[file system]], which keeps track of where the files are located on disk and enables user access.
+
+==Etymology==
+[[File:PunchCardDecks.agr.jpg|right|thumb|A [[punched card]] file]]
+[[File:BRL61-IBM 305 RAMAC.jpeg|right|thumb|The twin [[Disk storage|disk files]] of an [[IBM 305]] system]]
+
+The word &quot;file&quot; derives from the Latin ''filum'' (&quot;a thread&quot;).&lt;ref&gt;{{cite web|url=http://www.etymonline.com/index.php?term=file|title=Online Etymology Dictionary|publisher=}}&lt;/ref&gt;
+
+&quot;File&quot; was used in the context of computer storage as early as January 1940. In ''Punched Card Methods in Scientific Computation'',&lt;ref&gt;{{Cite book|url=https://catalog.hathitrust.org/Record/002523225|title=Punched card methods in scientific computation|last=Eckert|first=W. J.|last2=Thomas J. Watson Astronomical Computing Bureau|first2=New York.|date=1940|publisher=The Thomas J. Watson Astronomical Computing Bureau, Columbia University|location=New York}}&lt;/ref&gt; W. J. Eckert stated, &quot;The first extensive use of the early Hollerith Tabulator in astronomy was made by [[Leslie Comrie|Comrie]].&lt;ref&gt;{{Cite journal|last=Comrie|first=L. J.|date=1928-04-13|title=On the Construction of Tables by Interpolation (Plate 6)|journal=Monthly Notices of the Royal Astronomical Society|language=en|volume=88|issue=6|pages=506–523|doi=10.1093/mnras/88.6.506|issn=0035-8711|bibcode=1928MNRAS..88..506C}}&lt;/ref&gt; He used it for building a table from successive differences, and for adding large numbers of harmonic terms&quot;. &quot;Tables of functions are constructed from their differences with great efficiency, either as printed tables or as a ''[https://hdl.handle.net/2027/uc1.b3621946?urlappend=%3Bseq=16 file of punched cards]''.&quot;
+
+In February 1950, in a [[Radio Corporation of America]] (RCA) advertisement in ''[[Popular Science]]'' magazine&lt;ref&gt;{{citation|mode=cs1|url=https://books.google.com/books?id=9SwDAAAAMBAJ&amp;lpg=PA210&amp;pg=PA96 |title=Popular Science |page=96|date= February 1950|accessdate=2014-03-07|publisher=Bonnier Corporation}}&lt;/ref&gt; describing a new &quot;memory&quot; vacuum tube it had developed, RCA stated: &quot;the results of countless computations can be kept 'on file' and taken out again.  Such a 'file' now exists in a 'memory' tube developed at RCA Laboratories. Electronically it retains figures fed into calculating machines, holds them in storage while it memorizes new ones – speeds intelligent solutions through mazes of mathematics.&quot;
+
+In 1952, &quot;file&quot; denoted, among other things, information stored on [[punched card|punched cards]].&lt;ref&gt;Robert S. Casey, et al. ''Punched Cards: Their Applications to Science and Industry''. 1952.&lt;/ref&gt;
+
+In early use, the underlying hardware, rather than the contents stored on it, was denominated a &quot;file&quot;. For example, the [[IBM 350]] disk drives were denominated &quot;disk files&quot;.&lt;ref&gt;Martin H. Weik. Ballistic Research Laboratories Report #1115. March 1961. [http://ed-thelen.org/comp-hist/BRL61-ibm03.html#IBM-305-RAMAC pp. 314–331].&lt;/ref&gt; The introduction, circa 1961, by the [[Burroughs MCP]] and the MIT [[Compatible Time-Sharing System]] of the concept of a &quot;[[file system]]&quot; that managed several virtual &quot;files&quot; on one storage device is the origin of the contemporary denotation of the word. Although the contemporary &quot;[[register file]]&quot; demonstrates the early concept of files, its use has greatly decreased.
+
+==File contents==
+On most modern [[operating system]]s, files are organized into one-dimensional arrays of [[byte]]s. The [[file format|format]] of a file is defined by its content since a file is solely a container for data, although on some platforms the format is usually indicated by its [[filename extension]], specifying the rules for how the bytes must be organized and interpreted meaningfully. For example, the bytes of a plain text file ({{Mono|.txt}} in Windows) are associated with either [[ASCII]] or [[UTF-8]] characters, while the bytes of image, video, and audio files are interpreted otherwise. Most file types also allocate a few bytes for [[metadata]], which allows a file to carry some basic information about itself.
+
+Some file systems can store arbitrary (not interpreted by the file system) file-specific data outside of the file format, but linked to the file, for example [[extended attributes]] or [[Fork (file system)|forks]]. On other file systems this can be done via [[sidecar file]]s or software-specific databases. All those methods, however, are more susceptible to loss of metadata than are [[Digital container format|container]] and [[archive file]] formats.
+
+=== File size ===
+{{Misleading|section|date=March 2019}}
+{{Main article | File size}}
+
+At any instant in time, a file might have a size, normally expressed as number of [[byte]]s, that indicates how much storage is associated with the file. In most modern operating systems the size can be any non-negative whole number of bytes up to a system limit. Many older operating systems kept track only of the number of [[disk sector|blocks]] or [[track (disk drive)|tracks]] occupied by a file on a physical storage device. In such systems, software employed other methods to track the exact byte count (e.g., [[CP/M]] used a special control character, [[Ctrl-Z]], to signal the end of text files).
+
+The general definition of a file does not require that its size have any real meaning, however, unless the data within the file happens to correspond to data within a pool of persistent storage. A special case is a [[zero byte file]]; these files can be newly created files that have not yet had any data written to them, or may serve as some kind of [[Flag (computing)|flag]] in the file system, or are accidents (the results of aborted disk operations). For example, the file to which the link {{Mono|/bin/ls}} points in a typical [[Unix-like]] system probably has a defined size that seldom changes. Compare this with {{Mono|[[/dev/null]]}} which is also a file, but as a [[character special file]], its size is not meaningful.
+
+=== Organization of data in a file ===
+Information in a computer file can consist of smaller packets of information (often called &quot;[[Row (database)|records]]&quot; or &quot;lines&quot;) that are individually different but share some common traits. For example, a payroll file might contain information concerning all the employees in a company and their payroll details; each record in the payroll file concerns just one employee, and all the records have the common trait of being related to payroll—this is very similar to placing all payroll information into a specific filing cabinet in an office that does not have a computer. A text file may contain lines of text, corresponding to printed lines on a piece of paper. Alternatively, a file may contain an arbitrary binary image (a [[Blob (computing)|blob]]) or it may contain an [[executable]].
+
+The way information is grouped into a file is entirely up to how it is designed. This has led to a plethora of more or less standardized file structures for all imaginable purposes, from the simplest to the most complex. Most computer files are used by [[Computer program|computer programs]] which create, modify or delete the files for their own use on an as-needed basis. The programmers who create the programs decide what files are needed, how they are to be used and (often) their names.
+
+In some cases, computer programs manipulate files that are made visible to the computer user. For example, in a [[Word processor|word-processing program]], the user manipulates document files that the user personally names. Although the content of the document file is arranged in a format that the word-processing program understands, the user is able to choose the name and location of the file and provide the bulk of the information (such as words and text) that will be stored in the file.
+
+Many applications pack all their data files into a single file called an [[archive file]], using internal markers to discern the different types of information contained within. The benefits of the archive file are to lower the number of files for easier transfer, to reduce storage usage, or just to organize outdated files. The archive file must often be unpacked before next using.
+
+=== Operations ===
+The most basic operations that programs can perform on a file are:
+* Create&lt;!--needs a link--&gt; a new file
+* Change the [[file system permissions|access permissions]] and [[file attribute|attributes]] of a file
+* [[open (system call)|Open]] a file, which makes the file contents available to the program
+* [[read (system call)|Read]] data from a file
+* [[write (system call)|Write]] data to a file
+* [[close (system call)|Close]] a file, terminating the association between it and the program
+
+Files on a computer can be created, moved, modified, grown, shrunk, and deleted. In most cases, computer programs that are executed on the computer handle these operations, but the user of a computer can also manipulate files if necessary. For instance, [[Microsoft Word]] files are normally created and modified by the Microsoft Word program in response to user commands, but the user can also move, [[rename (computing)|rename]], or [[File deletion|delete]] these files directly by using a [[file manager|file manager program]] such as [[Windows Explorer]] (on Windows computers) or by [[command-line interface|command lines]] (CLI).
+
+In [[Unix-like]] systems, [[user space]] programs do not operate directly, at a low level, on a file. Only the [[Kernel (operating system)|kernel]] deals with files, and it handles all user-space interaction with files in a manner that is transparent to the user-space programs. The [[operating system]] provides a level of [[Abstraction (computer science)|abstraction]], which means that interaction with a file from user-space is simply through its filename (instead of its [[inode]]).  For example, &lt;kbd&gt;[[rm (Unix)|rm]] ''filename''&lt;/kbd&gt; will not delete the file itself, but only a [[hard link|link]] to the file. There can be many links to a file, but when they are all removed, the [[Kernel (computing)|kernel]] considers that file's memory space free to be reallocated. This [[Data remanence|free space]] is commonly considered a security risk (due to the existence of [[File recovery|file recovery software]]). Any secure-deletion program uses kernel-space (system) functions to wipe the file's data.
+
+==Identifying and organizing==
+[[File:FileFolders.svg|thumb|200px|right|Files and folders arranged in a hierarchy]]
+In modern computer systems, files are typically accessed using names ([[filename]]s).  In some operating systems, the name is associated with the file itself. In others, the file is anonymous, and is pointed to by links that have names. In the latter case, a user can identify the name of the link with the file itself, but this is a false analogue, especially where there exists more than one link to the same file.
+
+Files (or links to files) can be located in directories. However, more generally, a [[File directory|directory]] can contain either a list of files or a list of links to files.  Within this definition, it is of paramount importance that the term &quot;file&quot; includes directories.  This permits the existence of directory hierarchies, i.e., directories containing sub-directories.  A name that refers to a file within a directory must be typically unique. In other words, there must be no identical names within a directory.  However, in some operating systems, a name may include a specification of type that means a directory can contain an identical name for more than one type of object such as a directory and a file.
+
+In environments in which a file is named, a file's name and the path to the file's directory must uniquely identify it among all other files in the computer system—no two files can have the same name and path.  Where a file is anonymous, named references to it will exist within a namespace.  In most cases, any name within the namespace will refer to exactly zero or one file.  However, any file may be represented within any namespace by zero, one or more names.
+
+Any string of characters may be a well-formed&lt;!-- Could this be a misuse of a term? --&gt; name for a file or a link depending upon the context of application. Whether or not a name is well-formed depends on the type of computer system being used. Early computers&lt;!-- software? --&gt; permitted only a few letters or digits in the name of a file, but modern computers allow long names (some up to 255 characters) containing almost any combination of [[unicode]] letters or unicode digits, making it easier to understand the purpose of a file at a glance. Some computer systems allow file names to contain spaces; others do not. Case-sensitivity of file names is determined by the [[file system]]. Unix file systems are usually case sensitive and allow user-level applications to create files whose names differ only in the case of characters. [[Microsoft Windows]] supports multiple&lt;!-- after Unix, this could be &quot;only a few&quot; ;) --&gt; file systems, each with different policies{{which|date=February 2014}} regarding case-sensitivity. The common [[File Allocation Table|FAT]] file system can have multiple files whose names differ only in case if the user uses a [[disk editor]] to edit the file names in the [[FAT directory table|directory entries]]. User applications, however, will usually not allow the user to create multiple files with the same name but differing in case.
+
+Most computers organize files into hierarchies using folders, directories, or catalogs. The concept is the same irrespective of the terminology used. Each folder can contain an arbitrary number of files, and it can also contain other folders. These other folders are referred to as subfolders. Subfolders can contain still more files and folders and so on, thus building a tree-like structure in which one &quot;master folder&quot; (or &quot;root folder&quot; — the name varies from one operating system to another) can contain any number of levels of other folders and files. Folders can be named just as files can (except for the root folder, which often does not have a name). The use of folders makes it easier to organize files in a logical way.
+
+When a computer allows the use of folders, each file and folder has not only a name of its own, but also a path, which identifies the folder or folders in which a file or folder resides. In the path, some sort of special character—such as a slash—is used to separate the file and folder names. For example, in the illustration shown in this article, the path {{Mono|/Payroll/Salaries/Managers}} uniquely identifies a file called {{Mono|Managers}} in a folder called {{Mono|Salaries}}, which in turn is contained in a folder called {{Mono|Payroll}}. The folder and file names are separated by slashes in this example; the topmost or root folder has no name, and so the path begins with a slash (if the root folder had a name, it would precede this first slash).
+
+Many computer systems use [[filename extension|extensions]] in file names to help identify what they contain, also known as the file type. On Windows computers, extensions consist of a dot (period) at the end of a file name, followed by a few letters to identify the type of file. An extension of {{Mono|.txt}} identifies a text file; a {{Mono|.doc}} extension identifies any type of document or documentation, commonly in the [[Microsoft Word]] [[file format]]; [[List of file formats|and so on]]. Even when extensions are used in a computer system, the degree to which the computer system recognizes and heeds them can vary; in some systems, they are required, while in other systems, they are completely ignored if they are presented.
+
+==Protection==
+Many modern computer systems provide methods for protecting files against accidental and deliberate damage. Computers that allow for multiple users implement [[file permissions]] to control who may or may not modify, delete, or create files and folders. For example, a given user may be granted only permission to read a file or folder, but not to modify or delete it; or a user may be given permission to read and modify files or folders, but not to execute them. Permissions may also be used to allow only certain users to see the contents of a file or folder. Permissions protect against unauthorized tampering or destruction of information in files, and keep private information confidential from unauthorized users.
+
+Another protection mechanism implemented in many computers is a ''read-only flag.'' When this flag is turned on for a file (which can be accomplished by a computer program or by a human user), the file can be examined, but it cannot be modified. This flag is useful for critical information that must not be modified or erased, such as special files that are used only by internal parts of the computer system. Some systems also include a ''[[Hidden file and hidden directory|hidden flag]]'' to make certain files invisible; this flag is used by the computer system to hide essential system files that users should not alter.
+
+==Storage==
+Any file that has any useful purpose, must have some physical manifestation. That is, a file (an abstract concept) in a real computer system must have a real physical analogue if it is to exist at all.
+
+In physical terms, most computer files are stored on some type of data storage device. For example, most [[operating system]]s store files on a [[hard disk]]. Hard disks have been the ubiquitous form of [[non-volatile]] storage since the early 1960s.&lt;ref name=&quot;Mee&quot;&gt;Magnetic Storage Handbook 2nd Ed., Section 2.1.1, Disk File Technology, Mee and Daniel, (c)1990,&lt;/ref&gt; Where files contain only temporary information, they may be stored in [[RAM]]. Computer files can be also stored on other media in some cases, such as [[magnetic tape]]s, [[compact disc]]s, [[Digital Versatile Disc]]s, [[Zip drive]]s, [[USB flash drive]]s, etc. The use of [[solid state drives]] is also beginning to rival the hard disk drive.
+
+In Unix-like operating systems, many files have no associated physical storage device. Examples are {{Mono|[[/dev/null]]}} and most files under directories {{Mono|/dev}}, {{Mono|/proc}} and {{Mono|/sys}}.  These are virtual files: they exist as objects within the operating system kernel.
+
+As seen by a running user program, files are usually represented either by a [[File Control Block|file control block]] or by a [[file handle]]. A file control block (FCB) is an area of memory which is manipulated to establish a filename etc. and then passed to the operating system as a parameter; it was used by older IBM operating systems and early PC operating systems including [[CP/M]] and early versions of [[MS-DOS]]. A file handle is generally either an [[opaque data type]] or an integer; it was introduced in around 1961 by the [[ALGOL 60|ALGOL-based]] [[Burroughs MCP]] running on the [[Burroughs B5000]] but is now ubiquitous.
+
+==File corruption==
+{{further|Data corruption|Data degradation}}
+
+{{multiple image
+ | width = 200
+ | image1 = Bitrot_in_JPEG_files,_0_bits_flipped.jpg
+ | caption1 = Original [[JPEG]] file
+ | alt1 = Photo of a child
+ | image2 = Bitrot_in_JPEG_files,_1_bit_flipped.jpg
+ | caption2 = Corrupted JPEG file, with a single [[bit]] flipped (turned from 0 to 1, or vice-versa)
+ | al1 = The same photo of a child, but noticeably corrupted: a different color tone and square shapes from the middle to the bottom of the image
+ | footer = While there is visible corruption on the second file, one can still make out what the original image might have looked like.
+}}
+
+When a file is said to be corrupted, it is because its contents have been saved to the computer in such a way that they can't be properly read, either by a human or by software. Depending on the extension of the damage, the original file can sometimes be [[Data recovery|recovered]], or at least partially understood.&lt;ref name=&quot;techwalla-corruption&quot;&gt;{{ cite web | url=https://www.techwalla.com/articles/what-causes-a-corrupt-file | title=What Causes a Corrupt File? | first=Victoria | last=Gorski | accessdate=2019-03-17 }}&lt;/ref&gt; A file may be created corrupt, or it may be corrupted at a later point through [[Overwriting (computer science)|overwriting]].
+
+There are many ways by which a file can become corrupted. Most commonly, the issue happens in the process of [[write (system call)|writing]] the file to a [[Disk storage|disk]].&lt;ref name=&quot;housonchronicle-corruption&quot;&gt;{{cite news | url=https://smallbusiness.chron.com/mean-file-corrupt-70768.html | title=What Does It Mean When Your File Is Corrupt? | first=Jane | last=Williams | date=2019-01-14 | newspaper=[[Houston Chronicle]] | accessdate=2019-03-17 }}&lt;/ref&gt; For example, if an [[Graphics software|image-editing program]] unexpectedly [[Crash (computing)|crashes]] while saving an image, that file may be corrupted because the program couldn't save its entirety. The program itself might warn the user that there was an error, allowing for another attempt at saving the file.&lt;ref name=&quot;howtogeek-corruption&quot;&gt;{{cite web | url=https://www.howtogeek.com/336099/what-is-a-corrupted-file-and-is-there-a-way-to-get-it-back/ | accessdate=2019-03-17 | date=2017-12-14 | first=Walter | last=Glenn | title=What Is a Corrupted File, and Is There a Way to Get It Back? | publisher=[[How-To Geek]] | url-status=live | archiveurl=https://web.archive.org/web/20181206135510/https://www.howtogeek.com/336099/what-is-a-corrupted-file-and-is-there-a-way-to-get-it-back/ | archivedate=2018-12-06 }}&lt;/ref&gt; Some other examples of reasons for which files become corrupted include:
+* The computer itself [[Shutdown (computing)|shutting down]] unexpectedly (for example, due to a power loss) with open files, or files in the process of being saved;&lt;ref name=&quot;techwalla-corruption&quot;&gt;&lt;/ref&gt;&lt;ref name=&quot;housonchronicle-corruption&quot;&gt;&lt;/ref&gt;&lt;ref name=&quot;howtogeek-corruption&quot;&gt;&lt;/ref&gt;
+* A [[download]] being interrupted before it was completed;
+* Due to a [[bad sector]] on the [[Hard disk drive|hard drive]];&lt;ref name=&quot;techwalla-corruption&quot;&gt;&lt;/ref&gt;&lt;ref name=&quot;housonchronicle-corruption&quot;&gt;&lt;/ref&gt;
+* The user removing a [[flash drive]] (such as a [[USB flash drive|USB stick]]) without properly [[Mount (computing)|unmounting]] (commonly referred to as &quot;safely removing&quot;);&lt;ref&gt;{{ cite web | url=https://www.securedatarecovery.com/services/hard-drive-recovery/what-causes-flash-media-corruption | title=What Causes Flash Memory Corruption? | accessdate=2019-03-17 | publisher=[[SecureDataRecovery]] }}&lt;/ref&gt;&lt;ref&gt;{{ cite web | url=https://www.howtogeek.com/118546/htg-explains-do-you-really-need-to-safely-remove-usb-sticks/ | date=2016-09-28 | title=Do You Really Need to Safely Remove USB Flash Drives? | first=Chris | last=Hoffman | publisher=[[How-To Geek]] | accessdate=2019-03-17 }}&lt;/ref&gt;&lt;ref&gt;{{ cite web | url=https://support.office.com/en-us/article/open-a-document-after-a-file-corruption-error-47df9d48-2165-4411-a699-1786ac734bc3 | title=Open a document after a file corruption error | publisher=[[Microsoft Office]] Support | accessdate=2019-03-17 }}&lt;/ref&gt;&lt;ref name=&quot;datarecovery.net-corruption&quot;&gt;{{ cite web | url=https://www.datarecovery.net/newsletters/what-kills-flash-drive.aspx | title=What kills your Flash Drive and how you can avoid it | publisher=DataRecovery.net | accessdate=2019-03-17 }}&lt;/ref&gt;
+* Malicious software, such as a [[computer virus]];&lt;ref name=&quot;techwalla-corruption&quot;&gt;&lt;/ref&gt;&lt;ref name=&quot;housonchronicle-corruption&quot;&gt;&lt;/ref&gt;&lt;ref&gt;{{ cite web | url=https://windowsreport.com/fix-windows-10-file-corruption-issues/ | title=Fix Windows 10 File Corruption Issues | first=Robert | last=Neagoe | date=2018-08-14 | publisher=Windowsreport.com | accessdate=2019-03-17 }}&lt;/ref&gt;&lt;ref&gt;{{ cite book | title=Ethical Hacking and Countermeasures: Linux, Macintosh and Mobile Systems | date=2009-09-24 | publisher=[[Cengage]] | author-link=EC-Council | last=International Council of Electronic Commerce Consultants | chapter=Mac OS X Hacking | lang=English | pages=2.6–2.7 | url=https://books.google.com/books?id=LYFoU2HG_AkC&amp;pg=SA2-PA6 | isbn=978-1-4354-8364-4 | accessdate=2019-03-17 }}&lt;/ref&gt;
+* A flash drive becoming too old.&lt;ref name=&quot;datarecovery.net-corruption&quot;&gt;&lt;/ref&gt;
+
+Although file corruption usually happens accidentally, it may also be done [[Procrastination|on purpose]], as to fool someone else into thinking an assignment was ready at an earlier date, potentially gaining time to finish said assignment. There are services that provide on demand file corruption, which essentially fill a given file with random data so that it can't be opened or read, yet still seems legitimate.&lt;ref&gt;{{ cite web | url=https://corrupt-a-file.net/ | title=Corrupt a file - Corrupt file online, deliver on time! | accessdate=2019-03-17 }}&lt;/ref&gt;&lt;ref&gt;{{ cite web | url=http://www.corruptmyfile.com/ | title=Corrupt My File: Get your file corrupted for you | accessdate=2019-03-17 }}&lt;/ref&gt;
+
+One of the most effective countermeasures for unintentional file corruption is [[Backup|backing up]] important files.&lt;ref&gt;{{ cite web | url=https://support.intego.com/hc/en-us/articles/207114508-What-is-a-Corrupted-File- | title=What is a Corrupted File? | date=2019-03-07 | publisher=[[Intego]] }}&lt;/ref&gt; In the event of an important file becoming corrupted, the user can simply replace it with the backed up version.
+
+==Backup==
+{{Main|Backup}}
+When computer files contain information that is extremely important, a ''[[back-up]]'' process is used to protect against disasters that might destroy the files. Backing up files simply means making copies of the files in a separate location so that they can be restored if something happens to the computer, or if they are deleted accidentally.
+
+There are many ways to back up files. Most computer systems provide utility programs to assist in the back-up process, which can become very time-consuming if there are many files to safeguard. Files are often copied to removable media such as writable CDs or cartridge tapes. Copying files to another hard disk in the same computer protects against failure of one disk, but if it is necessary to protect against failure or destruction of the entire computer, then copies of the files must be made on other media that can be taken away from the computer and stored in a safe, distant location.
+
+The [[grandfather-father-son backup]] method automatically makes three back-ups; the grandfather file is the oldest copy of the file and the son is the current copy.
+
+==File systems and file managers==
+The way a computer organizes, names, stores and manipulates files is globally referred to as its ''[[file system]].'' Most computers have at least one file system. Some computers allow the use of several different file systems. For instance, on newer MS Windows computers, the older FAT-type file systems of [[MS-DOS]] and old versions of Windows are supported, in addition to the [[NTFS]] file system that is the normal file system for recent versions of Windows. Each system has its own advantages and disadvantages. Standard FAT allows only eight-character file names (plus a three-character extension) with no spaces, for example, whereas NTFS allows much longer names that can contain spaces. You can call a file &quot;{{Mono|Payroll records}}&quot; in NTFS, but in FAT you would be restricted to something like {{Mono|payroll.dat}} (unless you were using [[File Allocation Table#Long file names|VFAT]], a FAT extension allowing long file names).
+
+[[File manager]] programs are utility programs that allow users to manipulate files directly. They allow you to move, create, delete and rename files and folders, although they do not actually allow you to read the contents of a file or store information in it. Every computer system provides at least one file-manager program for its native file system. For example, [[File Explorer]] (formerly Windows Explorer) is commonly used in Microsoft Windows operating systems, and Nautilus is common under several distributions of Linux.
+
+==See also==
+* [[Block (data storage)]]
+* [[Computer file management]]
+* [[Data hierarchy]]
+* [[File camouflage]]
+* [[File copying]]
+* [[File conversion]]
+* [[File deletion]]
+* [[File directory]]
+* [[File manager]]
+* [[File system]]
+* [[Filename]]
+* [[Flat file database]]
+* [[Object composition]]
+* [[Soft copy]]
+
+==References==
+{{reflist}}
+
+==External links==
+*{{Commonscatinline|Computer files}}
+*{{dmoz|Computers/Data_Formats/ Data Formats}}
+
+{{Computer files}}
+
+[[Category:Computer files| ]]
+[[Category:Computer file systems|File]]
+[[Category:Inter-process communication]]</text>
+      <sha1>840jk5toyyqk772xthg0ue2ygb31cip</sha1>
+    </revision>
+  </page>

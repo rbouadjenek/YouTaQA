@@ -1,0 +1,169 @@
+  <page>
+    <title>Chemical thermodynamics</title>
+    <ns>0</ns>
+    <id>5936</id>
+    <revision>
+      <id>929045474</id>
+      <parentid>926169777</parentid>
+      <timestamp>2019-12-03T09:09:38Z</timestamp>
+      <contributor>
+        <username>Kishore178</username>
+        <id>14401991</id>
+      </contributor>
+      <comment>/* Gibbs function or Gibbs Energy */  Make a convoluted sentence clearer.</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">'''Chemical thermodynamics''' is the study of the interrelation of [[heat]] and [[thermodynamic work|work]] with [[chemical reaction]]s or with physical changes of [[thermodynamic state|state]] within the confines of the [[laws of thermodynamics]]. Chemical thermodynamics involves not only laboratory measurements of various thermodynamic properties, but also the application of mathematical methods to the study of chemical questions and the ''spontaneity'' of processes.
+
+The structure of chemical thermodynamics is based on the first two [[laws of thermodynamics]].  Starting from the first and second laws of thermodynamics, four equations called the &quot;fundamental equations of Gibbs&quot; can be derived.  From these four, a multitude of equations, relating the thermodynamic properties of the [[thermodynamic system]] can be derived using relatively simple mathematics.  This outlines the mathematical framework of chemical thermodynamics.&lt;ref name=&quot;Book1&quot; &gt;{{cite book | last = Ott | first = Bevan J.  |author2=Boerio-Goates, Juliana | title = Chemical Thermodynamics – Principles and Applications | publisher = Academic Press | year = 2000 | isbn = 0-12-530990-2}}&lt;/ref&gt;
+
+==History==
+[[File:Willard Gibbs.jpg|right|thumb|[[J. Willard Gibbs]] - founder of ''chemical thermodynamics'']]
+In 1865, the German physicist [[Rudolf Clausius]], in his ''Mechanical Theory of Heat'', suggested that the principles of [[thermochemistry]], e.g. the [[heat]] evolved in [[Combustion|combustion reactions]], could be applied to the principles of [[thermodynamics]].&lt;ref&gt;Clausius, R. (1865). ''The Mechanical Theory of Heat – with its Applications to the Steam Engine and to Physical Properties of Bodies.'' London: John van Voorst, 1 Paternoster Row. MDCCCLXVII.&lt;/ref&gt;  Building on the work of Clausius, between the years 1873-76 the American mathematical physicist [[Willard Gibbs]] published a series of three papers, the most famous one being the paper ''[[On the Equilibrium of Heterogeneous Substances]]''.  In these papers, Gibbs showed how the first two [[laws of thermodynamics]] could be measured graphically and mathematically to determine both the [[thermodynamic equilibrium]] of chemical reactions as well as their tendencies to occur or proceed.  Gibbs’ collection of papers provided the first unified body of thermodynamic theorems from the principles developed by others, such as Clausius and [[Nicolas Léonard Sadi Carnot|Sadi Carnot]].
+
+During the early 20th century, two major publications successfully applied the principles developed by Gibbs to chemical processes, and thus established the foundation of the science of chemical thermodynamics.  The first was the 1923 textbook ''Thermodynamics and the Free Energy of Chemical Substances'' by [[Gilbert N. Lewis]] and [[Merle Randall]].  This book was responsible for supplanting the [[chemical affinity]] with the term [[thermodynamic free energy|free energy]] in the English-speaking world.  The second was the 1933 book ''Modern Thermodynamics by the methods of Willard Gibbs'' written by [[E. A. Guggenheim]].  In this manner, Lewis, Randall, and Guggenheim are considered as the founders of modern chemical thermodynamics because of the major contribution of these two books in unifying the application of [[thermodynamics]] to [[chemistry]].&lt;ref name=&quot;Book1&quot; /&gt;
+
+== Overview ==
+The primary objective of chemical thermodynamics is the establishment of a criterion for determination of the feasibility or [[spontaneous process|spontaneity]] of a given transformation.&lt;ref&gt;Klotz, I. (1950). ''Chemical Thermodynamics.'' New York: Prentice-Hall, Inc.&lt;/ref&gt; In this manner, chemical thermodynamics is typically used to predict the [[energy]] exchanges that occur in the following processes:
+#[[Chemical reaction]]s
+#[[Phase changes]]
+#The formation of [[solutions]]
+
+The following [[state function]]s are of primary concern in chemical thermodynamics:
+
+*[[Internal energy]] (''U'')
+*[[Enthalpy]] (''H'')
+*[[Entropy]] (''S'')
+*[[Gibbs free energy]] (''G'')
+
+Most [[Identity (mathematics)|identities]] in chemical thermodynamics arise from application of the first and second laws of thermodynamics, particularly the [[Conservation of energy|law of conservation of energy]], to these state functions.
+
+'''The 3 laws of thermodynamics''':
+#The energy of the universe is constant.
+#In any spontaneous process, there is always an increase in entropy of the universe.
+#The entropy of a perfect crystal (well ordered) at 0 Kelvin is zero.
+
+==Chemical energy==
+{{Main|Chemical energy}}
+'''Chemical energy''' is the potential of a [[chemical substance]] to undergo a transformation through a [[chemical reaction]] or to transform other chemical substances. Breaking or making of chemical bonds involves [[energy]] or heat, which may be either absorbed or evolved from a chemical system.
+
+Energy that can be released (or absorbed) because of a reaction between a set of chemical substances is equal to the difference between the energy content of the products and the reactants. This change in energy is called the change in [[internal energy]] of a chemical reaction. Where &lt;math&gt;\Delta_{\rm f}U^{\rm o}_{\mathrm {reactants}}&lt;/math&gt; is the [[internal energy]] of formation of the reactant molecules that can be calculated from the [[bond energy|bond energies]] of the various chemical bonds of the molecules under consideration and &lt;math&gt;\Delta_{\rm f}U^{\rm o}_{\mathrm {products}}&lt;/math&gt; is the internal energy of formation of the product molecules. The change in internal energy is a process which is equal to the heat change if it is measured under conditions of constant volume (at STP condition), as in a closed rigid container such as a [[Calorimeter#Bomb calorimeters|bomb calorimeter]]. However, under conditions of constant pressure, as in reactions in vessels open to the atmosphere, the measured heat change is not always equal to the internal energy change, because pressure-volume work also releases or absorbs energy. (The heat change at constant pressure is called the [[enthalpy]] change; in this case the [[Standard enthalpy change of formation|enthalpy of formation]]).
+
+Another useful term is the [[heat of combustion]], which is the energy released due to a [[combustion]] reaction and often applied in the study of [[fuels]]. Food is similar to hydrocarbon fuel and carbohydrate fuels, and when it is oxidized, its caloric content is similar (though not assessed in the same way as a hydrocarbon fuel — see [[food energy]]).
+
+In chemical thermodynamics the term used for the chemical potential energy is [[chemical potential]], and for chemical transformation an equation most often used is the [[Gibbs-Duhem equation]].
+
+==Chemical reactions==
+{{Main|Chemical reaction}}
+In most cases of interest in chemical thermodynamics there are internal [[degrees of freedom (physics and chemistry)|degrees of freedom]] and processes, such as [[chemical reaction]]s and [[phase transition]]s, which always create [[entropy]] unless they are at equilibrium, or are maintained at a &quot;running equilibrium&quot; through &quot;quasi-static&quot; changes by being coupled to constraining devices, such as [[piston]]s or [[electrode]]s, to deliver and receive external work. Even for homogeneous &quot;bulk&quot; materials, the free energy functions depend on the [[chemical compound|composition]], as do all the [[extensive quantity|extensive]] [[thermodynamic potentials]], including the internal energy. If the quantities {&amp;nbsp;''N''&lt;sub&gt;''i''&lt;/sub&gt;&amp;nbsp;}, the number of [[chemical species]], are omitted from the formulae, it is impossible to describe compositional changes.
+
+===Gibbs function or Gibbs Energy===
+For a &quot;bulk&quot; (unstructured) system they are the last remaining extensive variables. For an unstructured, homogeneous &quot;bulk&quot; system, there are still various ''extensive'' compositional variables {&amp;nbsp;''N''&lt;sub&gt;''i''&lt;/sub&gt;&amp;nbsp;} that ''G'' depends on, which specify the composition (the amounts of each [[chemical substance]], expressed as the numbers of molecules present or the numbers of [[mole (unit)|moles]]). Explicitly,
+
+:&lt;math&gt; G = G(T,P,\{N_i\})\,.&lt;/math&gt;
+
+For the case where only ''PV'' work is possible
+
+:&lt;math&gt; \mathrm{d}G = -S\, \mathrm{d}T + V \, \mathrm{d}P + \sum_i \mu_i \, \mathrm{d}N_i \,&lt;/math&gt;
+
+in which ''μ&lt;sub&gt;i&lt;/sub&gt;'' is the [[chemical potential]] for the ''i''-th [[component (thermodynamics)|component]] in the system
+
+:&lt;math&gt; \mu_i  = \left( \frac{\partial G}{\partial N_i}\right)_{T,P,N_{j\ne i},etc. } \,.&lt;/math&gt;
+
+The expression for d''G'' is especially useful at constant ''T'' and ''P'', conditions which are easy to achieve experimentally and which approximates the condition in [[life|living]] creatures
+
+:&lt;math&gt; (\mathrm{d}G)_{T,P} = \sum_i \mu_i \, \mathrm{d}N_i\,.&lt;/math&gt;
+
+===Chemical affinity===
+{{main|Chemical affinity}}
+While this formulation is mathematically defensible, it is not particularly transparent since one does not simply add or remove molecules from a system. There is always a ''process'' involved in changing the composition; e.g., a chemical reaction (or many), or movement of molecules from one phase (liquid) to another (gas or solid). We should find a notation which does not seem to imply that the amounts of the components (&amp;nbsp;''N''&lt;sub&gt;''i''&lt;/sub&gt;&amp;nbsp;) can be changed independently. All real processes obey [[conservation of mass]], and in addition, conservation of the numbers of [[atom]]s of each kind. Whatever molecules are transferred to or from should be considered part of the &quot;system&quot;.
+
+Consequently, we introduce an explicit variable to represent the degree of advancement of a process, a progress [[Variable (mathematics)|variable]]&amp;nbsp;''ξ'' for the ''[[extent of reaction]]'' (Prigogine &amp; Defay, p.&amp;nbsp;18; Prigogine, pp.&amp;nbsp;4–7; Guggenheim, p.&amp;nbsp;37.62), and to the use of the [[partial derivative]] ∂''G''/∂''ξ'' (in place of the widely used &quot;Δ''G''&quot;, since the quantity at issue is not a finite change). The result is an understandable [[expression (mathematics)|expression]] for the dependence of d''G'' on [[chemical reaction]]s (or other processes). If there is just one reaction
+:&lt;math&gt;(\mathrm{d}G)_{T,P} = \left( \frac{\partial G}{\partial \xi}\right)_{T,P} \, \mathrm{d}\xi.\,&lt;/math&gt;
+
+If we introduce the ''[[stoichiometric coefficient]]'' for the ''i-th'' component in the reaction
+
+::&lt;math&gt;\nu_i = \partial N_i / \partial \xi \,&lt;/math&gt;
+
+which tells how many molecules of ''i'' are produced or consumed, we obtain an algebraic expression for the partial derivative
+
+:&lt;math&gt; \left( \frac{\partial G}{\partial \xi} \right)_{T,P} = \sum_i \mu_i \nu_i = -\mathbb{A}\,&lt;/math&gt;
+
+where, (De Donder; Progoine &amp; Defay, p.&amp;nbsp;69; Guggenheim, pp.&amp;nbsp;37,240), we introduce a concise and historical name for this quantity, the &quot;[[chemical affinity|affinity]]&quot;, symbolized by '''A''', as introduced by [[Théophile de Donder]] in 1923. The minus sign comes from the fact the affinity was defined to represent the rule that spontaneous changes will ensue only when the change in the Gibbs free energy of the process is negative, meaning that the chemical species have a positive affinity for each other. The differential for ''G'' takes on a simple form which displays its dependence on compositional change
+
+:&lt;math&gt;(\mathrm{d}G)_{T,P} = -\mathbb{A}\, d\xi  \,.&lt;/math&gt;
+
+If there are a number of chemical reactions going on simultaneously, as is usually the case
+
+:&lt;math&gt;(\mathrm{d}G)_{T,P} = -\sum_k\mathbb{A}_k\, d\xi_k  \,.&lt;/math&gt;
+
+a set of reaction coordinates {&amp;nbsp;ξ&lt;sub&gt;''j''&lt;/sub&gt;&amp;nbsp;}, avoiding the notion that the amounts of the components (&amp;nbsp;''N''&lt;sub&gt;''i''&lt;/sub&gt;&amp;nbsp;) can be changed independently. The expressions above are equal to zero at [[thermodynamic equilibrium]], while in the general case for real systems, they are negative because all chemical reactions proceeding at a finite rate produce entropy. This can be made even more explicit by introducing the reaction ''rates'' d''ξ''&lt;sub&gt;''j''&lt;/sub&gt;/d''t''. For each and every &lt;span style=&quot;color:maroon;&quot;&gt;''physically independent''&lt;/span&gt; ''process'' (Prigogine &amp; Defay, p.&amp;nbsp;38; Prigogine, p.&amp;nbsp;24)
+
+::&lt;math&gt; \mathbb{A}\ \dot{\xi} \le 0  \,.&lt;/math&gt;
+
+This is a remarkable result since the chemical potentials are intensive system variables, depending only on the local molecular milieu. They cannot &quot;know&quot; whether the temperature and pressure (or any other system variables) are going to be held constant over time. It is a purely local criterion and must hold regardless of any such constraints. Of course, it could have been obtained by taking partial derivatives of any of the other fundamental state functions, but nonetheless is a general criterion for (&amp;minus;''T'' times) the entropy production from that spontaneous process; or at least any part of it that is not captured as external work. (See ''Constraints'' below.)
+
+We now relax the requirement of a homogeneous “bulk” system by letting the [[chemical potential]]s and the affinity apply to any locality in which a chemical reaction (or any other process) is occurring. By accounting for the [[entropy production]] due to irreversible processes, the inequality for d''G'' is now replaced by an equality
+
+:&lt;math&gt; \mathrm{d}G = - S \, \mathrm{d}T + V \, \mathrm{d}P -\sum_k\mathbb{A}_k\, \mathrm{d}\xi_k  + W'\,&lt;/math&gt;
+
+or
+
+:&lt;math&gt; \mathrm{d}G_{T,P} = -\sum_k\mathbb{A}_k\, \mathrm{d}\xi_k  + W'.\,&lt;/math&gt;
+
+Any decrease in the [[Gibbs function]] of a system is the upper limit for any [[isothermal process|isothermal]], [[isobaric process|isobaric]] work that can be captured in the [[surroundings]], or it may simply be [[dissipation|dissipated]], appearing as ''T'' times a corresponding increase in the entropy of the system and/or its surrounding. Or it may go partly toward doing external work and partly toward creating entropy. The important point is that the ''[[extent of reaction]]'' for a chemical reaction may be coupled to the displacement of some external mechanical or electrical quantity in such a way that one can advance only if the other one also does. The coupling may occasionally be ''rigid'', but it is often flexible and variable.
+
+===Solutions===
+In solution [[chemistry]] and [[biochemistry]], the [[Gibbs free energy]] decrease (∂''G''/∂''ξ'', in molar units, denoted cryptically by Δ''G'') is commonly used as a surrogate for (&amp;minus;''T'' times) the entropy produced by spontaneous [[chemical reaction]]s in situations where there is no work being done; or at least no &quot;useful&quot; work; i.e., other than perhaps some ±&amp;nbsp;''P'' d''V''. The assertion that all ''spontaneous reactions have a negative Δ''G'' is merely a restatement of the [[fundamental thermodynamic relation]], giving it the [[dimensional analysis|physical dimensions]] of energy and somewhat obscuring its significance in terms of entropy. When there is no useful work being done, it would be less misleading to use the [[Legendre transformation|Legendre transform]]s of the entropy appropriate for constant ''T'', or for constant ''T'' and ''P'', the Massieu functions  &amp;minus;''F''/''T'' and &amp;minus;''G''/''T'' respectively.
+
+==Non equilibrium==
+{{Main|non-equilibrium thermodynamics}}
+
+Generally the systems treated with the conventional chemical thermodynamics are either at equilibrium or near equilibrium. [[Ilya Prigogine]] developed the thermodynamic treatment of [[Open system (systems theory)|open systems]] that are far from equilibrium. In doing so he has discovered phenomena and structures of completely new and completely unexpected types. His generalized, nonlinear and irreversible thermodynamics has found surprising applications in a wide variety of fields.
+
+The non equilibrium thermodynamics has been applied for explaining how ordered structures e.g. the biological systems, can develop from disorder. Even if Onsager's relations are utilized, the classical principles of equilibrium in thermodynamics still show that linear systems close to equilibrium always develop into states of disorder which are stable to perturbations and cannot explain the occurrence of ordered structures.
+
+Prigogine called these systems [[dissipative systems]], because they are formed and maintained by the dissipative processes which take place because of the exchange of energy between the system and its environment and because they disappear if that exchange ceases. They may be said to live in [[symbiosis]] with their environment.
+
+The method which Prigogine used to study the stability of the dissipative structures to perturbations is of very great general interest. It makes it possible to study the most varied problems, such as city traffic problems, the stability of insect communities, the development of ordered biological structures and the growth of cancer cells to mention but a few examples.
+
+===System constraints===
+
+In this regard, it is crucial to understand the role of walls and other ''constraints'', and the distinction between ''independent'' processes and ''coupling''. Contrary to the clear implications of many reference sources, the previous analysis is not restricted to [[wiktionary:homogeneous|homogeneous]], [[isotropy|isotropic]] bulk systems which can deliver only ''P''d''V'' work to the outside world, but applies even to the most structured systems. There are complex systems with many chemical &quot;reactions&quot; going on at the same time, some of which are really only parts of the same, overall process. An ''independent'' process is one that ''could'' proceed even if all others were unaccountably stopped in their tracks. Understanding this is perhaps a “[[thought experiment]]” in [[chemical kinetics]], but actual examples exist.
+
+A gas reaction which results in an increase in the number of molecules will lead to an increase in volume at constant external pressure. If it occurs inside a cylinder closed with a piston, the equilibrated reaction can proceed only by doing work against an external force on the piston. The extent variable for the reaction can increase only if the piston moves, and conversely, if the piston is pushed inward, the reaction is driven backwards.
+
+Similarly, a [[redox]] reaction might occur in an [[electrochemistry|electrochemical]] cell with the passage of [[electric current|current]] in [[wire]]s connecting the [[electrode]]s. The half-cell reactions at the [[electrode]]s are constrained if no current is allowed to flow. The current might be dissipated as [[joule heating]], or it might in turn run an electrical device like a [[electric motor|motor]] doing [[mechanical work]]. An [[automobile]] [[lead]]-[[acid]] [[battery (electricity)|battery]] can be recharged, driving the chemical reaction backwards. In this case as well, the reaction is not an independent process. Some, perhaps most, of the Gibbs free energy of reaction may be delivered as external work.
+
+The [[hydrolysis]] of [[Adenosine triphosphate|ATP]] to [[adenosine diphosphate|ADP]] and [[phosphate]] can drive the [[force]] times [[distance]] work delivered by living [[muscle]]s, and synthesis of ATP is in turn driven by a redox chain in [[Mitochonndrion|mitochondria]] and [[chloroplast]]s, which involves the transport of [[ion]]s across the membranes of these [[cell (biology)|cell]]ular [[organelle]]s. The coupling of processes here, and in the previous examples, is often not complete. Gas can leak slowly past a piston, just as it can slowly leak out of a [[rubber]] [[balloon]]. Some reaction may occur in a battery even if no external current is flowing. There is usually a coupling [[coefficient]], which may depend on relative rates, which determines what percentage of the driving free energy is turned into external work, or captured as &quot;chemical work&quot;; a misnomer for the free energy of another chemical process.
+
+==See also==
+*[[Thermodynamic databases for pure substances]]
+
+== References ==
+{{reflist}}
+
+==Further reading==
+* {{cite book | author=Herbert B. Callen | title=Thermodynamics | url=https://archive.org/details/thermodynamicsin00call | url-access=registration | year=1960 | publisher=Wiley &amp; Sons. The clearest account of the logical foundations of the subject | isbn=0-471-13035-4}} Library of Congress Catalog No. 60-5597
+* {{cite book | author=Ilya Prigogine &amp; R. Defay, translated by D.H. Everett; Chapter IV | title=Chemical Thermodynamics | year=1954 | publisher=Longmans, Green &amp; Co. Exceptionally clear on the logical foundations as applied to chemistry; includes [[non-equilibrium thermodynamics]]}}
+* {{cite book | author=Ilya Prigogine | title=Thermodynamics of Irreversible Processes, 3rd ed. | year=1967 | publisher=Interscience: John Wiley &amp; Sons. A simple, concise monograph explaining all the basic ideas}} Library of Congress Catalog No. 67-29540
+* {{cite book | author=E.A. Guggenheim | title=Thermodynamics: An Advanced Treatment for Chemists and Physicists, 5th ed. | year=1967 | publisher=North Holland; John Wiley &amp; Sons (Interscience). A remarkably astute treatise}} Library of Congress Catalog No. 67-20003
+* {{cite journal | author=Th. De Donder | title=L'affinite. Applications aux gaz parfaits |journal=Bulletin de la Classe des Sciences, Académie Royale de Belgique (series 5) | year=1922 | volume=8 | pages=197–205}}
+* {{cite journal | author=Th. De Donder | title=Sur le theoreme de Nernst |journal=Bulletin de la Classe des Sciences, Académie Royale de Belgique (series 5) | year=1922 | volume=8 | pages=205–210}}
+
+== External links ==
+*[http://www.shodor.org/UNChem/advanced/thermo/index.html Chemical Thermodynamics] - University of North Carolina
+*[http://www.chem1.com/acad/webtext/chemeq/ ''Chemical energetics''] (Introduction to thermodynamics and the First Law)
+*[http://www.chem1.com/acad/webtext/thermeq/ ''Thermodynamics of chemical equilibrium''] (Entropy, Second Law and free energy)
+
+{{Chemical engg}}
+{{Branches of chemistry}}
+
+{{DEFAULTSORT:Chemical Thermodynamics}}
+[[Category:Chemical thermodynamics| ]]
+[[Category:Physical chemistry]]
+[[Category:Branches of thermodynamics]]
+[[Category:Chemical engineering thermodynamics]]</text>
+      <sha1>h9qw2vfy1h3xl4o2awgiktolvxievx8</sha1>
+    </revision>
+  </page>

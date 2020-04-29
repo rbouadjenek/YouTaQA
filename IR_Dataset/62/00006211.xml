@@ -1,0 +1,241 @@
+  <page>
+    <title>Context-sensitive grammar</title>
+    <ns>0</ns>
+    <id>6211</id>
+    <revision>
+      <id>941795233</id>
+      <parentid>937858096</parentid>
+      <timestamp>2020-02-20T18:58:45Z</timestamp>
+      <contributor>
+        <username>AManWithNoPlan</username>
+        <id>12416903</id>
+      </contributor>
+      <comment>matches doi/isbn and such</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">A '''context-sensitive grammar''' ('''CSG''') is a [[formal grammar]] in which the left-hand sides and right-hand sides of any [[Production (computer science)|production rules]] may be surrounded by a context of [[terminal symbol|terminal]] and [[nonterminal symbol]]s. Context-sensitive grammars are more general than [[context-free grammar]]s, in the sense that there are languages that can be described by CSG but not by context-free grammars. Context-sensitive grammars are less general (in the same sense) than [[unrestricted grammar]]s. Thus, CSG are positioned between context-free and unrestricted grammars in the [[Chomsky hierarchy]].
+
+A [[formal language]] that can be described by a context-sensitive grammar, or, equivalently, by a [[noncontracting grammar]] or a [[linear bounded automaton]], is called a [[context-sensitive language]]. Some textbooks actually define CSGs as non-contracting,&lt;ref name=&quot;Linz2011&quot;&gt;{{cite book|first=Peter|last=Linz|title=An Introduction to Formal Languages and Automata|url=https://books.google.com/books?id=hsxDiWvVdBcC&amp;pg=PA291|year=2011|publisher=Jones &amp; Bartlett Publishers|isbn=978-1-4496-1552-9|page=291}}&lt;/ref&gt;&lt;ref name=&quot;Meduna2000&quot;&gt;{{cite book|first=Alexander|last=Meduna|authorlink=Alexander Meduna|title=Automata and Languages: Theory and Applications|url=https://books.google.com/books?id=s7gEErax71cC&amp;pg=PA730|year=2000|publisher=Springer Science &amp; Business Media|isbn=978-1-85233-074-3|page=730}}&lt;/ref&gt;&lt;ref name=&quot;DavisSigal1994&quot;&gt;{{cite book|first1=Martin|last=Davis|authorlink1=Martin Davis (mathematician)|first2=Ron|last2=Sigal|first3=Elaine J.|last3=Weyuker|authorlink3=Elaine Weyuker|title=Computability, Complexity, and Languages: Fundamentals of Theoretical Computer Science|url=https://books.google.com/books?id=dSHIIx0uGx0C&amp;pg=PA189|year=1994|publisher=Morgan Kaufmann|isbn=978-0-08-050246-5|page=189|edition=2nd}}&lt;/ref&gt;&lt;ref&gt;{{cite book|last=Martin|first=John C.|title=Introduction to Languages and the Theory of Computation|year=2010|publisher=McGraw-Hill|location=New York, NY|isbn=9780073191461|edition=4th|page=277}}&lt;/ref&gt; although this is not how [[Noam Chomsky]] defined them in 1959.&lt;ref name=&quot;Levelt2008&quot;&gt;{{cite book|first=Willem J. M.|last=Levelt|authorlink=Willem Levelt|title=An Introduction to the Theory of Formal Languages and Automata|url=https://books.google.com/books?id=tFvtwGYNe7kC&amp;pg=PA26|year=2008|publisher=John Benjamins Publishing|isbn=978-90-272-3250-2|page=26}}&lt;/ref&gt;&lt;ref name=&quot;DavisSigal1994b&quot;&gt;{{cite book|first1=Martin|last1=Davis|authorlink1=Martin Davis (mathematician)|first2=Ron |last2=Sigal|first3=Elaine J.|last3=Weyuker|authorlink3=Elaine Weyuker|title=Computability, Complexity, and Languages: Fundamentals of Theoretical Computer Science|url=https://books.google.com/books?id=dSHIIx0uGx0C&amp;pg=PA330|year=1994|publisher=Morgan Kaufmann|isbn=978-0-08-050246-5|pages=330–331|edition=2nd}}&lt;/ref&gt; This choice of definition makes no difference in terms of the languages generated (i.e. the two definitions are [[weak equivalence (formal languages)|weakly equivalent]]), but it does make a difference in terms of what grammars are structurally considered context-sensitive; the latter issue was analyzed by Chomsky in 1963.&lt;ref&gt;{{cite book |last=Chomsky |first=N. |authorlink=Noam Chomsky|year=1963|chapter=Formal properties of grammar|title=Handbook of Mathematical Psychology|editor1-first=R. D.|editor1-last=Luce|editor2-first=R. R.|editor2-last=Bush|editor3-first=E.|editor3-last=Galanter|location=New York|publisher=Wiley|pages=360–363|chapter-url=https://archive.org/details/handbookofmathem017893mbp}}&lt;/ref&gt;&lt;ref name=&quot;Levelt2008-126&quot;&gt;{{cite book|first=Willem J. M.|last=Levelt|authorlink=Willem Levelt|title=An Introduction to the Theory of Formal Languages and Automata|url=https://books.google.com/books?id=tFvtwGYNe7kC&amp;pg=PA125|year=2008|publisher=John Benjamins Publishing|isbn=978-90-272-3250-2|pages=125–126}}&lt;/ref&gt;
+
+Chomsky introduced context-sensitive grammars as a way to describe the syntax of [[natural language]] where it is often the case that a word may or may not be appropriate in a certain place depending on the context. [[Walter Savitch]] has criticized the terminology &quot;context-sensitive&quot; as misleading and proposed &quot;non-erasing&quot; as better explaining the distinction between a CSG and an [[unrestricted grammar]].&lt;ref name=&quot;Vide1999&quot;&gt;{{cite book|editor=Carlos Martín Vide|title=Issues in Mathematical Linguistics: Workshop on Mathematical Linguistics, State College, Pa., April 1998|url=https://books.google.com/books?id=BW2QNSvH2CoC&amp;pg=PA186|year=1999|publisher=John Benjamins Publishing|isbn=90-272-1556-1|pages=186–187}}&lt;/ref&gt;
+
+Although it is well known that certain features of languages (e.g. [[cross-serial dependency]]) are not context-free, it is an open question how much of CSG's expressive power is needed to capture the context sensitivity found in natural languages. Subsequent research in this area has focused on the more computationally tractable [[mildly context-sensitive language]]s.{{citation needed|date=March 2018}} The syntaxes of some [[visual programming language]]s can be described by context-sensitive [[graph grammar]]s.&lt;ref&gt;Zhang, Da-Qian, Kang Zhang, and Jiannong Cao. &quot;[https://pdfs.semanticscholar.org/5d3d/217d73e0f6bbeefa3749c16fbc7b2e00ec0b.pdf A context-sensitive graph grammar formalism for the specification of visual languages].&quot; The Computer Journal 44.3 (2001): 186–200.&lt;/ref&gt;
+
+==Formal definition==
+A [[formal grammar]] ''G'' = (''N'', Σ, ''P'', ''S''), where ''N'' is a set of nonterminal symbols, Σ is a set of terminal symbols, ''P'' is a set of production rules, and ''S'' is the [[Start symbol (formal languages)|start symbol]], is '''context-sensitive''' if all rules in ''P'' are of the form
+: α''A''β → αγβ
+where ''A'' ∈ ''N'',&lt;ref group=note&gt;i.e., ''A'' is a single [[nonterminal]]&lt;/ref&gt; α,β ∈ (''N''∪Σ)&lt;sup&gt;*&lt;/sup&gt; &lt;ref group=note&gt;i.e., α and β are strings of nonterminals and [[Terminal symbol|terminal]]s&lt;/ref&gt; and γ ∈ (''N''∪Σ)&lt;sup&gt;+&lt;/sup&gt;.&lt;ref group=note&gt;i.e., γ is a nonempty string of nonterminals and terminals&lt;/ref&gt;
+
+A string ''u'' ∈ (''N''∪Σ)&lt;sup&gt;*&lt;/sup&gt; '''directly yields''', or '''directly derives to''', a string ''v'' ∈ (''N''∪Σ)&lt;sup&gt;*&lt;/sup&gt;, denoted as ''u'' ⇒ ''v'', if ''u'' can be written as ''l''α''A''β''r'', and ''v'' can be written as ''l''αγβ''r'', for some production rule (α''A''β→αγβ) ∈ ''P'', and some context strings ''l'', ''r'' ∈ (''N''∪Σ)&lt;sup&gt;*&lt;/sup&gt;.
+More generally, ''u'' is said to '''yield''', or '''derive to''', ''v'', denoted as ''u'' ⇒&lt;sup&gt;*&lt;/sup&gt; ''v'', if ''u'' = ''u''&lt;sub&gt;1&lt;/sub&gt; ⇒ ... ⇒ ''u''&lt;sub&gt;''n''&lt;/sub&gt; = ''v'' for some ''n''≥0 and some strings ''u''&lt;sub&gt;2&lt;/sub&gt;, ..., ''u''&lt;sub&gt;''n''-1&lt;/sub&gt; (''N''∪Σ)&lt;sup&gt;*&lt;/sup&gt;. That is, the relation (⇒&lt;sup&gt;*&lt;/sup&gt;) is the [[reflexive transitive closure]] of the relation (⇒).
+
+The '''language''' of the grammar ''G'' is the set of all terminal symbol strings derivable from its start symbol, formally: ''L''(''G'') = { ''w'' ∈ Σ&lt;sup&gt;*&lt;/sup&gt;: ''S'' ⇒&lt;sup&gt;*&lt;/sup&gt; ''w'' }.
+Derivations that do not end in a string composed of terminal symbols only are possible, but don't contribute to ''L''(''G'').
+
+The only difference between this definition of Chomsky and that of [[unrestricted grammar]]s is that γ can be empty in the unrestricted case.&lt;ref name=&quot;Vide1999&quot;/&gt;
+
+Some definitions of a context-sensitive grammar only require that for any production rule of the form u → v, the length of u shall be less than or equal to the length of v.  This seemingly weaker requirement is in fact [[weak equivalence (formal languages)|weakly equivalent]],&lt;ref&gt;{{cite book|first1=John E.|last1=Hopcroft|authorlink1=John Hopcroft|first2=Jeffrey D.|last2=Ullman|authorlink2=Jeffrey Ullman|title=Introduction to Automata Theory, Languages, and Computation|url=https://archive.org/details/introductiontoau00hopc|url-access=registration|publisher=Addison-Wesley|year=1979}}; p.&amp;nbsp;223–224; Exercise 9, p.&amp;nbsp;230. In the 2003 edition, the chapter on CSG has been omitted.&lt;/ref&gt; see [[Noncontracting grammar#Transforming into context-sensitive grammar]].
+
+In addition, a rule of the form
+: ''S'' → λ
+where λ represents the [[empty string]] and ''S'' does not appear on the right-hand side of any rule is permitted.  The addition of the empty string allows the statement that the context sensitive languages are a proper superset of the context-free languages, rather than having to make the weaker statement that all context-free grammars with no →λ productions are also context sensitive grammars.
+
+The name ''context-sensitive'' is explained by the α and β that form the context of ''A'' and determine whether ''A'' can be replaced with γ or not. This is different from a [[context-free grammar]] where the context of a nonterminal is not taken into consideration. Indeed, every production of a context-free grammar is of the form ''V'' → ''w'' where ''V'' is a ''single'' nonterminal symbol, and ''w'' is a string of terminals and/or nonterminals; ''w'' can be empty.
+
+If the possibility of adding the empty string to a language is added to the strings recognized by the noncontracting grammars (which can never include the empty string) then the languages in these two definitions are identical.
+
+The '''left-context'''- and '''right-context'''-sensitive grammars are defined by restricting the rules to just the form α''A'' → αγ and to just ''A''β → γβ, respectively. The languages generated by these grammars are also the full class of context-sensitive languages.&lt;ref name=&quot;Hazewinkel1989&quot;&gt;{{cite book|first=Michiel|last=Hazewinkel|authorlink=Michiel Hazewinkel|title=Encyclopaedia of Mathematics|url=https://books.google.com/books?id=s9F71NJxwzoC&amp;pg=PA297|year=1989|publisher=Springer Science &amp; Business Media|isbn=978-1-55608-003-6|page=297|volume=4}} also at http://www.encyclopediaofmath.org/index.php/Grammar,_context-sensitive&lt;/ref&gt; The equivalence was established by [[Penttonen normal form]].&lt;ref name=&quot;ItoKobayashi2010&quot;&gt;{{cite book|first1=Masami|last1=Ito|first2=Yūji|last2=Kobayashi|first3=Kunitaka|last3=Shoji|title=Automata, Formal Languages and Algebraic Systems: Proceedings of AFLAS 2008, Kyoto, Japan, 20–22 September 2008|url=https://books.google.com/books?id=xuaR2bJq0rcC&amp;pg=PA183|year=2010|publisher=World Scientific|isbn=978-981-4317-60-3|page=183}} citing {{Cite journal | last1 = Penttonen | first1 = Martti | date = Aug 1974 | title = One-sided and two-sided context in formal grammars | journal = Information and Control | volume = 25 | issue = 4 | pages = 371–392 | doi = 10.1016/S0019-9958(74)91049-3 }}&lt;/ref&gt;
+
+== Examples ==
+The following context-sensitive grammar, with start symbol ''S'', generates the canonical non-[[context-free language]] { ''a''&lt;sup&gt;''n''&lt;/sup&gt;''b''&lt;sup&gt;''n''&lt;/sup&gt;''c''&lt;sup&gt;''n''&lt;/sup&gt; : ''n'' ≥ 1 } :
+
+{|
+|- 
+| 1. &amp;nbsp; &amp;nbsp; &amp;nbsp; || || ''S'' &amp;nbsp; &amp;nbsp; || → &amp;nbsp; &amp;nbsp; || ''a'' || ''B'' || ''C'' 
+|-
+| 2. || || ''S'' || → || ''a'' || ''S'' || ''B'' || ''C''
+|-
+| 3. || ''C'' || ''B'' || → || ''C'' || ''Z''
+|-
+| 4. || ''C'' || ''Z'' || → || ''W'' || ''Z''
+|-
+| 5. || ''W'' || ''Z'' || → || ''W'' || ''C''
+|-
+| 6. || ''W'' || ''C'' || → || ''B'' || ''C''
+|-
+| 7. || ''a'' || ''B'' || → || ''a'' || ''b'' 
+|-
+| 8. || ''b'' || ''B'' || → || ''b'' || ''b''
+|
+|-
+| 9. || ''b'' || ''C'' || → || ''b'' || ''c''
+|-
+|10. || ''c'' || ''C'' || → || ''c'' || ''c''
+|}
+&lt;!---
+# ''S'' → ''aSBC''
+# ''S'' → ''aBC''
+# ''CB'' → ''HB''
+# ''HB'' → ''HC''
+# ''HC'' → ''BC''
+# ''aB'' → ''ab''
+# ''bB'' → ''bb''
+# ''bC'' → ''bc''
+# ''cC'' → ''cc''
+---&gt;
+
+Rules 1 and 2 allow for blowing-up ''S'' to ''a''&lt;sup&gt;''n''&lt;/sup&gt;''BC''(''BC'')&lt;sup&gt;''n''-1&lt;/sup&gt;; rules 3 to 6 allow for successively exchanging each ''CB'' to ''BC'' ([[Revesz' trick|four rules]] are needed for that since a rule ''CB'' → ''BC'' wouldn't fit into the scheme α''A''β → αγβ); rules 7–10 allow replacing a non-terminals ''B'' and ''C'' with its corresponding terminals ''b'' and ''c'' respectively, provided it is in the right place.
+A generation chain for ''{{not a typo|aaabbbccc}}'' is:
+: ''S''
+: →&lt;sub&gt;2&lt;/sub&gt; {{not a typo|'''aSBC'''}}
+: →&lt;sub&gt;2&lt;/sub&gt; {{not a typo|''a'''aSBC'''BC''}}
+: →&lt;sub&gt;1&lt;/sub&gt; {{not a typo|''aa'''aBC'''BCBC''}}
+: →&lt;sub&gt;3&lt;/sub&gt; {{not a typo|''aaaB'''CZ'''CBC''}}
+: →&lt;sub&gt;4&lt;/sub&gt; {{not a typo|''aaaB'''WZ'''CBC''}}
+: →&lt;sub&gt;5&lt;/sub&gt; {{not a typo|''aaaB'''WC'''CBC''}}
+: →&lt;sub&gt;6&lt;/sub&gt; {{not a typo|''aaaB'''BC'''CBC''}}
+: →&lt;sub&gt;3&lt;/sub&gt; {{not a typo|''aaaBBC'''CZ'''C''}}
+: →&lt;sub&gt;4&lt;/sub&gt; {{not a typo|''aaaBBC'''WZ'''C''}}
+: →&lt;sub&gt;5&lt;/sub&gt; {{not a typo|''aaaBBC'''WC'''C''}}
+: →&lt;sub&gt;6&lt;/sub&gt; {{not a typo|''aaaBBC'''BC'''C''}}
+: →&lt;sub&gt;3&lt;/sub&gt; {{not a typo|''aaaBB'''CZ'''CC''}}
+: →&lt;sub&gt;4&lt;/sub&gt; {{not a typo|''aaaBB'''WZ'''CC''}}
+: →&lt;sub&gt;5&lt;/sub&gt; {{not a typo|''aaaBB'''WC'''CC''}}
+: →&lt;sub&gt;6&lt;/sub&gt; {{not a typo|''aaaBB'''BC'''CC''}}
+: →&lt;sub&gt;7&lt;/sub&gt; {{not a typo|''aa'''ab'''BBCCC''}}
+: →&lt;sub&gt;8&lt;/sub&gt; {{not a typo|''aaa'''bb'''BCCC''}}
+: →&lt;sub&gt;8&lt;/sub&gt; {{not a typo|''aaab'''bb'''CCC''}}
+: →&lt;sub&gt;9&lt;/sub&gt; {{not a typo|''aaabb'''bc'''CC''}}
+: →&lt;sub&gt;10&lt;/sub&gt; {{not a typo|''aaabbb'''cc'''C''}}
+: →&lt;sub&gt;10&lt;/sub&gt; {{not a typo|''aaabbbc'''cc'''''}}
+:
+
+More complicated grammars &lt;math&gt;CSG&lt;/math&gt;can be used to parse { ''a''&lt;sup&gt;''n''&lt;/sup&gt;''b''&lt;sup&gt;''n''&lt;/sup&gt;''c''&lt;sup&gt;''n''&lt;/sup&gt;''d''&lt;sup&gt;''n''&lt;/sup&gt;: ''n'' ≥ 1 }, and other languages with even more letters. Here we show a simpler approach using non-contracting grammars:
+Start with a kernel of regular productions generating the sentential forms
+&lt;math&gt;(ABCD)^{n}abcd&lt;/math&gt; and then include the non contracting productions
+&lt;math&gt;p_{Da} : Da\rightarrow aD&lt;/math&gt;,
+&lt;math&gt;p_{Db} : Db\rightarrow bD&lt;/math&gt;,
+&lt;math&gt;p_{Dc} : Dc\rightarrow cD&lt;/math&gt;,
+&lt;math&gt;p_{Dd} : Dd\rightarrow dd&lt;/math&gt;,
+&lt;math&gt;p_{Ca} : Ca\rightarrow aC&lt;/math&gt;,
+&lt;math&gt;p_{Cb} : Cb\rightarrow bC&lt;/math&gt;,
+&lt;math&gt;p_{Cc} : Cc\rightarrow cc&lt;/math&gt;,
+&lt;math&gt;p_{Ba} : Ba\rightarrow aB&lt;/math&gt;,
+&lt;math&gt;p_{Bb} : Bb\rightarrow bb&lt;/math&gt;,
+&lt;math&gt;p_{Aa} : Aa\rightarrow aa&lt;/math&gt;.
+
+A non contracting grammar (for which there is an equivalent &lt;math&gt;CSG&lt;/math&gt;) for the language &lt;math&gt;L_{Cross} = \{ a^mb^nc^{m}d^{n} : m \ge 1, n \ge 1 \}&lt;/math&gt; is defined by
+&lt;math&gt;p_1 : R\rightarrow aRC | aC&lt;/math&gt;
+and
+&lt;math&gt;p_3 : T\rightarrow BTd | Bd&lt;/math&gt;,
+&lt;math&gt;p_5 : CB\rightarrow BC&lt;/math&gt;, &lt;math&gt;p_0 : S \rightarrow RT&lt;/math&gt;, &lt;math&gt;p_6 : aB\rightarrow ab&lt;/math&gt;, &lt;math&gt;p_7 : bB\rightarrow bb&lt;/math&gt;, &lt;math&gt;p_8 : Cd\rightarrow cd&lt;/math&gt;, &lt;math&gt;p_9 : Cc\rightarrow cc&lt;/math&gt;.
+
+With these definitions, a derivation for &lt;math&gt;a^3b^2c^3d^2&lt;/math&gt; is:
+&lt;math&gt;S
+\Rightarrow_{p_0} RT
+\Rightarrow_{p^{2}_{1}p_{2}} a^3C^3T
+\Rightarrow_{p_{3}p_{4}    } a^3C^3B^2d^2
+\Rightarrow_{p^{6}_{5}     } a^3B^2C^3d^2
+\Rightarrow_{p_{6}p_{7}    } a^3b^2C^3d^2
+\Rightarrow_{p_{8}p^{2}_{9}} a^3b^2c^3d^2
+&lt;/math&gt;.{{citation needed|date=November 2018}}
+
+A noncontracting grammar for the language { ''a''&lt;sup&gt;2&lt;sup&gt;i&lt;/sup&gt;&lt;/sup&gt; : i ≥ 1 } is constructed in Example 9.5 (p.&amp;nbsp;224) of (Hopcroft, Ullman, 1979):&lt;ref&gt;They obtained the grammar by systematic transformation of an [[unrestricted grammar]], given in Exm. 9.4, viz.:
+# &lt;math&gt;S\rightarrow ACaB&lt;/math&gt;,
+# &lt;math&gt;Ca\rightarrow aaC&lt;/math&gt;,
+# &lt;math&gt;CB\rightarrow DB&lt;/math&gt;,
+# &lt;math&gt;CB\rightarrow E&lt;/math&gt;,
+# &lt;math&gt;aD\rightarrow Da&lt;/math&gt;,
+# &lt;math&gt;AD\rightarrow AC&lt;/math&gt;,
+# &lt;math&gt;aE\rightarrow Ea&lt;/math&gt;,
+# &lt;math&gt;AE\rightarrow \varepsilon&lt;/math&gt;.
+In the context-sensitive grammar, a string enclosed in square brackets, like &lt;math&gt;[ACaB]&lt;/math&gt;, is considered a single symbol (similar to e.g. &lt;code&gt;&lt;name-part&gt;&lt;/code&gt; in [[Backus–Naur form#Example|Backus–Naur form]]). The symbol names are chosen to resemble the unrestricted grammar. Likewise, rule groups in the context-sensitive grammar are numbered by the unrestricted-grammar rule they originated from.&lt;/ref&gt;
+
+# &lt;math&gt;S\rightarrow [ACaB]&lt;/math&gt;
+# &lt;math&gt;\begin{cases}
+\ [Ca]a\rightarrow aa[Ca] \\ 
+\ [Ca][aB]\rightarrow aa[CaB] \\ 
+\ [ACa]a\rightarrow [Aa]a[Ca] \\ 
+\ [ACa][aB]\rightarrow [Aa]a[CaB] \\ 
+\ [ACaB]\rightarrow [Aa][aCB] \\ 
+\ [CaB]\rightarrow a[aCB]
+\end{cases}&lt;/math&gt;
+# &lt;math&gt;[aCB]\rightarrow [aDB]&lt;/math&gt;
+# &lt;math&gt;[aCB]\rightarrow [aE]&lt;/math&gt;
+# &lt;math&gt;\begin{cases}
+\ a[Da]\rightarrow [Da]a \\
+\ [aDB]\rightarrow [DaB] \\ 
+\ [Aa][Da]\rightarrow [ADa]a \\ 
+\ a[DaB]\rightarrow [Da][aB] \\
+\ [Aa][DaB]\rightarrow [ADa][aB]
+\end{cases}&lt;/math&gt;
+# &lt;math&gt;[ADa]\rightarrow [ACa]&lt;/math&gt;
+# &lt;math&gt;\begin{cases}
+\ a[Ea]\rightarrow [Ea]a \\
+\ [aE]\rightarrow [Ea] \\
+\ [Aa][Ea]\rightarrow [AEa]a
+\end{cases}&lt;/math&gt;
+# &lt;math&gt;[AEa]\rightarrow a&lt;/math&gt;
+
+== Kuroda normal form ==
+Every context-sensitive grammar which does not generate the empty string can be transformed into a [[weak equivalence (formal languages)|weakly equivalent]] one in [[Kuroda normal form]]. &quot;Weakly equivalent&quot; here means that the two grammars generate the same language. The normal form will not in general be context-sensitive, but will be a [[noncontracting grammar]].&lt;ref&gt;{{cite journal | first=Sige-Yuki | last=Kuroda | authorlink=S.-Y. Kuroda | title=Classes of languages and linear-bounded automata | journal=Information and Control | volume=7 | number=2 | pages=207–223 | date=June 1964 | doi=10.1016/s0019-9958(64)90120-2}}&lt;/ref&gt;&lt;ref&gt;{{cite book |last1=Mateescu | first1=Alexandru |last2=Salomaa|first2=Arto |authorlink2=Arto Salomaa|editor1-first=Grzegorz| editor1-last=Rozenberg|editorlink1=Grzegorz Rozenberg |editor2-first=Arto| editor2-last=Salomaa |editorlink2=Arto Salomaa|title=Handbook of Formal Languages. Volume I: Word, language, grammar |publisher=Springer-Verlag |year=1997 |pages=175–252 |chapter=Chapter 4: Aspects of Classical Language Theory |isbn=3-540-61486-9}}, Here: Theorem 2.2, p. 190&lt;/ref&gt;
+
+The Kuroda normal form is an actual normal form for non-contracting grammars.
+
+== Properties and uses ==
+{{see also|context-sensitive language}}
+{{more citations needed section|date=August 2014}}
+
+=== Equivalence to linear bounded automaton ===
+A formal language can be described by a context-sensitive grammar if and only if it is accepted by some [[linear bounded automaton]] (LBA).&lt;ref&gt;(Hopcroft, Ullman, 1979); Theorem 9.5, 9.6, p.&amp;nbsp;225–226&lt;/ref&gt; In some textbooks this result is attributed solely to Landweber and [[S.-Y. Kuroda|Kuroda]].&lt;ref name=&quot;DavisSigal1994b&quot;/&gt; Others call it the [[John Myhill|Myhill]]–Landweber–Kuroda theorem.&lt;ref name=&quot;flac&quot;&gt;https://www.cs.cmu.edu/~flac/pdf/ContSens.pdf&lt;/ref&gt; (Myhill introduced the concept of deterministic LBA in 1960. Peter S. Landweber published in 1963 that the language accepted by a deterministic LBA is context sensitive. Kuroda introduced the notion of non-deterministic LBA and the equivalence between LBA and CSGs in 1964.&lt;ref&gt;{{cite book|first=Alexander|last=Meduna|authorlink=Alexander Meduna|title=Automata and Languages: Theory and Applications|url=https://books.google.com/books?id=s7gEErax71cC&amp;pg=PA755|year=2000|publisher=Springer Science &amp; Business Media|isbn=978-1-85233-074-3|page=755}}&lt;/ref&gt;&lt;ref&gt;{{cite book|first=Willem J. M.|last=Levelt|authorlink=Willem Levelt|title=An Introduction to the Theory of Formal Languages and Automata|url=https://books.google.com/books?id=tFvtwGYNe7kC&amp;pg=PA126|year=2008|publisher=John Benjamins Publishing|isbn=978-90-272-3250-2|pages=126–127}}&lt;/ref&gt;)
+
+{{As of|2010}} it is still an open question whether every context-sensitive language can be accepted by a ''deterministic'' LBA.&lt;ref&gt;{{cite book|last=Martin|first=John C.|title=Introduction to Languages and the Theory of Computation|year=2010|publisher=McGraw-Hill|location=New York, NY|isbn=9780073191461|edition=4th|page=283}}&lt;/ref&gt;
+
+=== Closure properties ===
+Context-sensitive languages are closed under [[complement (set theory)|complement]]. This 1988 result is known as the [[Immerman–Szelepcsényi theorem]].&lt;ref name=&quot;flac&quot;/&gt;
+Moreover, they are closed under [[union (set theory)|union]], [[intersection (set theory)|intersection]], [[concatenation#Concatenation of sets of strings|concatenation]], [[String substitution|substitution]],&lt;ref group=note&gt;more formally: if ''L'' ⊆ Σ&lt;sup&gt;*&lt;/sup&gt; is a context-sensitive language and ''f'' maps each ''a''∈Σ to a context-sensitive language ''f''(''a''), the ''f''(''L'') is again a context-sensitive language&lt;/ref&gt; [[inverse string homomorphism|inverse homomorphism]], and [[Kleene plus]].&lt;ref&gt;(Hopcroft, Ullman, 1979); Exercise S9.10, p.&amp;nbsp;230–231&lt;/ref&gt;
+
+Every [[recursively enumerable language]] ''L'' can be written as ''h''(''L'') for some context-sensitive language ''L'' and some [[string homomorphism]] ''h''.&lt;ref&gt;(Hopcroft, Ullman, 1979); Exercise S9.14, p.&amp;nbsp;230–232. ''h'' maps each symbol to itself or to the empty string.&lt;/ref&gt;
+
+=== Computational problems ===
+The [[decision problem]] that asks whether a certain string ''s'' belongs to the language of a given context-sensitive grammar ''G'', is [[PSPACE-complete]]. Moreover, there are context-sensitive grammars whose languages are PSPACE-complete. In other words, there is a context-sensitive grammar ''G'' such that deciding whether a certain string ''s'' belongs to the language of ''G'' is PSPACE-complete (so ''G'' is fixed and only ''s'' is part of the input of the problem).&lt;ref&gt;An example of such a grammar, designed to solve the [[QSAT]] problem, is given in {{Cite journal|last=Lita|first=C. V.|date=2016-09-01|title=On Complexity of the Detection Problem for Bounded Length Polymorphic Viruses|journal=2016 18th International Symposium on Symbolic and Numeric Algorithms for Scientific Computing (SYNASC)|pages=371–378|doi=10.1109/SYNASC.2016.064|isbn=978-1-5090-5707-8}}&lt;/ref&gt;
+
+The emptiness problem for context-sensitive grammars (given a context-sensitive grammar ''G'', is ''L''(''G'')=∅ ?) is [[Undecidable language|undecidable]].&lt;ref&gt;(Hopcroft, Ullman, 1979); Exercise S9.13, p.&amp;nbsp;230–231&lt;/ref&gt;&lt;ref group=note&gt;This also follows from (1) [[#top|context-free languages being also context-sensitive]], (2) [[#Closure properties|context-sensitive language being closed under intersection]], but (3) [[Context-free grammar#Language disjointness|disjointness of context-free languages being undecidable]].&lt;/ref&gt;
+
+=== As model of natural languages ===
+Savitch has proven the following theoretical result, on which he bases his criticism of CSGs as basis for natural language: for any [[recursively enumerable]] set ''R'', there exists a context-sensitive language/grammar ''G'' which can be used as a sort of proxy to test membership in ''R'' in the following way: given a string ''s'', ''s'' is in ''R'' if and only if there exists a positive integer ''n'' for which ''sc&lt;sup&gt;n&lt;/sup&gt;'' is in G, where ''c'' is an arbitrary symbol not part of ''R''.&lt;ref name=&quot;Vide1999&quot;/&gt;
+
+It has been shown that nearly all [[natural language]]s may in general be characterized by context-sensitive grammars, but the whole class of CSG's seems to be much bigger than natural languages.{{citation needed|date=November 2011}}  Worse yet, since the aforementioned decision problem for CSG's is PSPACE-complete, that makes them totally unworkable for practical use, as a polynomial-time algorithm for a PSPACE-complete problem would imply [[P=NP problem|P=NP]].
+
+It was proven that some natural languages are not context-free, based on identifying so-called [[cross-serial dependency|cross-serial dependencies]] and [[unbounded scrambling]] phenomena. However this does not necessarily imply that all the class CSG is necessary to capture &quot;context sensitivity&quot; in the colloquial sense of these terms in natural languages. For example, the strictly weaker (than CSG) [[linear context-free rewriting system]]s (LCFRS) can account for the phenomenon of cross-serial dependencies; one can write a LCFRS grammar for {''a&lt;sup&gt;n&lt;/sup&gt;b&lt;sup&gt;n&lt;/sup&gt;c&lt;sup&gt;n&lt;/sup&gt;d&lt;sup&gt;n&lt;/sup&gt;'' | ''n'' ≥ 1} for example.&lt;ref&gt;{{cite web|url=http://user.phil-fak.uni-duesseldorf.de/~kallmeyer/GrammarFormalisms/4nl-cfg.pdf|title=Mildly Context-Sensitive Grammar Formalisms: Natural Languages are not Context-Free|first=Laura|last=Kallmeyer|year=2011}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://user.phil-fak.uni-duesseldorf.de/~kallmeyer/GrammarFormalisms/4lcfrs-intro.pdf|title=Mildly Context-Sensitive Grammar Formalisms: Linear Context-Free Rewriting Systems|first=Laura|last=Kallmeyer|year=2011}}&lt;/ref&gt;&lt;ref name=&quot;Kallmeyer2010&quot;&gt;{{cite book|first=Laura|last=Kallmeyer|title=Parsing Beyond Context-Free Grammars|year=2010|publisher=Springer Science &amp; Business Media|isbn=978-3-642-14846-0|pages=1–5}}&lt;/ref&gt;
+
+Ongoing research on [[computational linguistics]] has focused on formulating other classes of languages that are &quot;[[mildly context-sensitive language|mildly context-sensitive]]&quot; whose decision problems are feasible, such as [[tree-adjoining grammar]]s, [[combinatory categorial grammar]]s, [[coupled context-free language]]s, and [[Generalized context-free grammar#Linear Context-free Rewriting Systems (LCFRSs)|linear context-free rewriting system]]s.  The languages generated by these formalisms properly lie between the context-free and context-sensitive languages.
+
+More recently, the class [[PTIME]] has been identified with [[range concatenation grammars]], which are now considered to be the most expressive of the mild-context sensitive languages.&lt;ref name=&quot;Kallmeyer2010&quot;/&gt;
+
+==See also==
+* [[Chomsky hierarchy]]
+* [[Growing context-sensitive grammar]]
+* [[Definite clause grammar#Non-context-free grammars]]
+* [[List of parser generators for context-sensitive grammars]]
+
+==Notes==
+{{reflist|group=note}}
+
+==References==
+{{reflist}}
+
+==Further reading==
+* {{cite book|first1=Alexander|last1=Meduna|authorlink1=Alexander Meduna|first2=Martin|last2=Švec|title=Grammars with Context Conditions and Their Applications|year=2005|publisher=John Wiley &amp; Sons|isbn=978-0-471-73655-4}}
+
+==External links==
+* [https://web.archive.org/web/20110708224600/https://danielmattosroberts.com/earley/context-sensitive-earley.pdf Earley Parsing for Context-Sensitive Grammars]
+
+{{Formal languages and grammars}}
+
+{{DEFAULTSORT:Context-Sensitive Grammar}}
+[[Category:Formal languages]]
+[[Category:Grammar frameworks]]</text>
+      <sha1>te3r25johg4xk6kisje1kbc70jnhlqy</sha1>
+    </revision>
+  </page>

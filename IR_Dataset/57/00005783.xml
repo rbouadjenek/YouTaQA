@@ -1,0 +1,389 @@
+  <page>
+    <title>Computer program</title>
+    <ns>0</ns>
+    <id>5783</id>
+    <revision>
+      <id>941898961</id>
+      <parentid>941898933</parentid>
+      <timestamp>2020-02-21T09:42:57Z</timestamp>
+      <contributor>
+        <ip>2003:D2:6715:DE00:D0D8:658F:ABFA:F30C</ip>
+      </contributor>
+      <comment>english</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{short description|Instructions to be executed by a computer}}
+{{for|the TV program|The Computer Programme}}
+[[File:Hello World Brian Kernighan 1974.jpg|thumb|&quot;hello, world&quot; computer program by [[Brian Kernighan]] (1978)]]
+
+A '''computer program''' is a collection of [[instruction set|instructions]]&lt;ref name=&quot;aup-ch4-p132&quot;&gt;{{cite book
+  | last = Rochkind
+  | first = Marc J.
+  | title = Advanced Unix Programming, Second Edition
+  | publisher = Addison-Wesley
+  | year = 2004
+  | page = 1.1.2
+}}&lt;/ref&gt; that can be [[execution (computing)|executed]] by a [[computer]] to perform a specific task. Most computer devices require programs to function properly.
+
+A computer program is usually written by a [[computer programmer]] in a [[programming language]]. From the program in its human-readable form of [[source code]], a [[compiler]] or [[Assembly language#Assembler|assembler]] can derive [[machine code]]—a form consisting of instructions that the computer can directly execute. Alternatively, a computer program may be executed with the aid of an [[interpreter (computing)|interpreter]].
+
+A collection of computer programs, [[Library (computing)|libraries]], and related [[Data (computing)|data]] are referred to as [[software]]. Computer programs may be categorized along functional lines, such as [[application software]] and [[system software]].  The underlying method used for some calculation or manipulation is known as an [[algorithm]].
+
+==History==
+{{See also|History of computing|History of programming languages|History of software}}
+
+[[Code-breaking]] algorithms have existed for centuries. In the 9th century, the [[Mathematics in medieval Islam|Arab mathematician]] [[Al-Kindi]] described a [[cryptographic]] algorithm for deciphering encrypted code, in ''A Manuscript On Deciphering Cryptographic Messages''. He gave the first description of [[cryptanalysis]] by [[frequency analysis]], the earliest code-breaking algorithm.&lt;ref&gt;{{cite book |last1=Dooley |first1=John F. |title=A Brief History of Cryptology and Cryptographic Algorithms |date=2013 |publisher=Springer Science &amp; Business Media |isbn=9783319016283 |pages=12–3}}&lt;/ref&gt;
+
+===Early programmable machines===
+The earliest programmable machines preceded the [[History of computing hardware|invention of the digital computer]]. As early as the 9th century, a programmable [[music sequencer]] was invented by the Persian [[Banu Musa]] brothers, who described an automated mechanical [[flute]] player in the ''[[Book of Ingenious Devices]]''.&lt;ref name=Koetsier&gt;{{Citation |last1=Koetsier |first1=Teun  |year=2001 |title=On the prehistory of programmable machines: musical automata, looms, calculators |journal=Mechanism and Machine Theory |volume=36 |issue=5 |pages=589–603 |publisher=Elsevier |doi=10.1016/S0094-114X(01)00005-2 |postscript=.}}&lt;/ref&gt;&lt;ref&gt;{{cite journal |last1=Kapur |first1=Ajay |last2=Carnegie |first2=Dale |last3=Murphy |first3=Jim |last4=Long |first4=Jason |title=Loudspeakers Optional: A history of non-loudspeaker-based electroacoustic music |journal=[[Organised Sound]] |date=2017 |volume=22 |issue=2 |pages=195–205 |doi=10.1017/S1355771817000103 |publisher=[[Cambridge University Press]] |issn=1355-7718}}&lt;/ref&gt; In 1206, the Arab engineer [[Al-Jazari]] invented a programmable [[drum machine]] where musical mechanical [[automata]] could be made to play different rhythms and drum patterns.&lt;ref name=Sharkey&gt;[[Noel Sharkey]] (2007), [https://web.archive.org/web/20070629182810/http://www.shef.ac.uk/marcoms/eview/articles58/robot.html A 13th Century Programmable Robot], [[University of Sheffield]]&lt;/ref&gt; In 1801, [[Joseph-Marie Jacquard]] devised a [[Jacquard loom|loom]] that would weave a pattern by following a series of perforated cards. Patterns could be woven and repeated by arranging the cards.&lt;ref name=&quot;eniac-ch1-p16&quot;&gt;{{cite book
+  | last = McCartney
+  | first = Scott
+  | title = ENIAC – The Triumphs and Tragedies of the World's First Computer
+  | publisher = Walker and Company
+  | year = 1999
+  | page = [https://archive.org/details/eniac00scot/page/16 16]
+  | isbn = 978-0-8027-1348-3
+  | url = https://archive.org/details/eniac00scot/page/16
+  }}&lt;/ref&gt;
+
+===Analytical Engine===
+[[File:Diagram for the computation of Bernoulli numbers.jpg|thumb|right|Lovelace's diagram from Note G, the [[Ada Lovelace#First computer program|first published computer algorithm]] ]]
+In 1837, [[Charles Babbage]] was inspired by Jacquard's loom to attempt to build the [[Analytical Engine]].&lt;ref name=&quot;eniac-ch1-p16&quot;/&gt;
+The names of the components of the calculating device were borrowed from the textile industry. In the textile industry, yarn was brought from the store to be milled. The device would have had a &quot;store&quot;—memory to hold 1,000 numbers of 40 decimal digits each.  Numbers from the &quot;store&quot; would then have then been transferred to the &quot;mill&quot; (analogous to the CPU of a modern machine), for processing. And a &quot;thread&quot; being the execution of programmed instructions by the device. It was programmed using two sets of perforated cards—one to direct the operation and the other for the input variables.&lt;ref name=&quot;eniac-ch1-p16&quot;/&gt;
+&lt;ref&gt;{{cite journal
+  | first = Allan G.
+  | last = Bromley
+  | authorlink = Allan G. Bromley
+  | year = 1998
+  | url = http://profs.scienze.univr.it/~manca/storia-informatica/babbage.pdf
+  | title = Charles Babbage's Analytical Engine, 1838
+  | journal = [[IEEE Annals of the History of Computing]]
+  | volume = 20
+  | number = 4
+}}&lt;/ref&gt; However, after more than 17,000 pounds of the British government's money, the thousands of cogged wheels and gears never fully worked together.&lt;ref name=&quot;sco-ch1-p15&quot;&gt;{{cite book
+  | last = Tanenbaum
+  | first = Andrew S.
+  | title = Structured Computer Organization, Third Edition
+  | publisher = Prentice Hall
+  | year = 1990
+  | page = [https://archive.org/details/structuredcomput00tane/page/15 15]
+  | isbn = 978-0-13-854662-5
+  | url = https://archive.org/details/structuredcomput00tane/page/15
+  }}&lt;/ref&gt;
+
+During a nine-month period in 1842–43, [[Ada Lovelace]] translated the memoir of Italian mathematician [[Luigi Menabrea]]. The memoir covered the Analytical Engine. The translation contained Note G which completely detailed a method for calculating [[Bernoulli number]]s using the Analytical Engine. This note is recognized by some historians as the world's first written computer program.&lt;ref&gt;{{citation|author1 = J. Fuegi |author2 =J. Francis| title = Lovelace &amp; Babbage and the creation of the 1843 'notes'|journal = Annals of the History of Computing| volume = 25| issue = 4|date=October–December 2003| doi = 10.1109/MAHC.2003.1253887| pages = 16, 19, 25}}&lt;/ref&gt;
+
+===Universal Turing machine===
+In 1936, [[Alan Turing]] introduced the [[Universal Turing machine]]—a theoretical device that can model every computation that can be performed on a [[Turing complete]] computing machine.&lt;ref name=&quot;discrete-ch10-p654&quot;&gt;{{cite book
+  | last = Rosen
+  | first = Kenneth H.
+  | title = Discrete Mathematics and Its Applications
+  | publisher = McGraw-Hill, Inc.
+  | year = 1991
+  | page = [https://archive.org/details/discretemathemat00rose/page/654 654]
+  | isbn = 978-0-07-053744-6
+  | url = https://archive.org/details/discretemathemat00rose/page/654
+  }}&lt;/ref&gt;
+It is a [[finite-state machine]] that has an infinitely long read/write tape. The machine can move the tape back and forth, changing its contents as it performs an [[algorithm]]. The machine starts in the initial state, goes through a sequence of steps, and halts when it encounters the halt state.&lt;ref name=&quot;formal_languages-ch9-p234&quot;&gt;{{cite book
+  | last = Linz
+  | first = Peter
+  | title = An Introduction to Formal Languages and Automata
+  | publisher = D. C. Heath and Company
+  | year = 1990
+  | page = 234
+  | isbn = 978-0-669-17342-0
+}}&lt;/ref&gt;
+This machine is considered by some to be the origin of the [[stored-program computer]]—used by [[John von Neumann]] (1946) for the &quot;Electronic Computing Instrument&quot; that now bears the [[von Neumann architecture]] name.&lt;ref&gt;{{Citation
+  | first = Martin | last = Davis | author-link = Martin Davis (mathematician)
+  | title = Engines of Logic: Mathematicians and the origin of the Computer
+  | edition = 1st
+  | year = 2000
+  | place = New York NY
+  | publisher = W. W. Norton &amp; Company
+  | id =  (pb.)
+  | isbn = 978-0-393-32229-3}}&lt;/ref&gt;
+
+===Early programmable computers===
+The [[Z3 (computer)|Z3 computer]], invented by [[Konrad Zuse]] (1941) in [[Germany]], was a digital and programmable computer.&lt;ref name=&quot;hoc-zuse&quot;&gt;{{cite web
+  | url = http://history-computer.com/ModernComputer/Relays/Zuse.html
+  | title = History of Computing
+}}&lt;/ref&gt; A digital computer uses electricity as the calculating component. The Z3 contained 2,400 relays to create the [[Electronic circuit|circuits]]. The circuits provided a [[Binary code|binary]], [[floating-point]], nine-instruction computer. Programming the Z3 was through a specially designed keyboard and [[punched tape]].
+
+The [[ENIAC|Electronic Numerical Integrator And Computer]] (Fall 1945) was a [[Turing complete]], general-purpose computer that used 17,468 [[vacuum tube]]s to create the [[Electronic circuit|circuits]]. At its core, it was a series of [[Pascaline]]s wired together.&lt;ref name=&quot;eniac-ch5-p102&quot;&gt;{{cite book
+  | last = McCartney
+  | first = Scott
+  | title = ENIAC – The Triumphs and Tragedies of the World's First Computer
+  | publisher = Walker and Company
+  | year = 1999
+  | page = [https://archive.org/details/eniac00scot/page/102 102]
+  | isbn = 978-0-8027-1348-3
+  | url = https://archive.org/details/eniac00scot/page/102
+  }}&lt;/ref&gt; Its 40 units weighed 30 tons, occupied {{convert|1,800|sqft|m2|0}}, and consumed $650 per hour ([[Inflation|in 1940s currency]]) in electricity when idle.&lt;ref name=&quot;eniac-ch5-p102&quot;/&gt; It had 20 [[base-10]] [[Accumulator (computing)|accumulators]]. Programming the ENIAC took up to two months.&lt;ref name=&quot;eniac-ch5-p102&quot;/&gt; Three function tables were on wheels and needed to be rolled to fixed function panels. Function tables were connected to function panels using heavy black cables. Each function table had 728 rotating knobs. Programming the ENIAC also involved setting some of the 3,000 switches. Debugging a program took a week.&lt;ref name=&quot;eniac-ch5-p102&quot;/&gt;  The programmers of the ENIAC were women who were known collectively as the &quot;ENIAC girls&quot;&lt;ref&gt;{{Cite web|url=http://gender.stanford.edu/news/2011/researcher-reveals-how-“computer-geeks”-replaced-“computergirls”|title=Researcher reveals how &quot;Computer Geeks&quot; replaced &quot;Computer Girls&quot;|last=Frink|first=Brenda D.|date=1 June 2011|website=Gender News|publisher=Stanford University|archive-url=https://web.archive.org/web/20150312130252/http://gender.stanford.edu/news/2011/researcher-reveals-how-%E2%80%9Ccomputer-geeks%E2%80%9D-replaced-%E2%80%9Ccomputergirls%E2%80%9D|archive-date=12 March 2015|url-status=dead|access-date=22 October 2018}}&lt;/ref&gt; and included [[Jean Jennings Bartik]], [[Betty Holberton]], [[Marlyn Meltzer|Marlyn Wescoff]], [[Kathleen Antonelli|Kathleen McNulty]], [[Ruth Teitelbaum]], and [[Frances Spence]].
+&lt;ref&gt;
+{{cite book
+  | last = Bartik
+  | first = Jean Jennings
+  | title = Pioneer programmer: Jean Jennings Bartik and the computer that changed the world.
+  | publisher = Truman State University Press
+  | year = 2013
+  | editor-last1 = Rickman
+  | editor-first1 = Jon
+  | editor-last2 = Todd
+  | editor-first2 = Kim D.
+}}
+&lt;/ref&gt;
+The ENIAC featured [[Parallel computing|parallel operations]]. Different sets of accumulators could simultaneously work on different algorithms. It used [[Punched card|punched card machines]] for input and output, and it was controlled with a [[clock signal]]. It ran for eight years, calculating hydrogen bomb parameters, predicting weather patterns, and producing firing tables to aim artillery guns. 
+
+The [[Manchester Baby]] (June 1948) was a [[stored-program computer]].&lt;ref&gt;{{citation |last=Enticknap |first=Nicholas |title=Computing's Golden Jubilee |journal=Resurrection |issue=20 |date=Summer 1998 |url=http://www.cs.man.ac.uk/CCS/res/res20.htm#d |issn=0958-7403 |accessdate=19 April 2008 |archive-url=https://web.archive.org/web/20120109142655/http://www.cs.man.ac.uk/CCS/res/res20.htm#d |archive-date=9 January 2012 |url-status=dead }}&lt;/ref&gt; Programming transitioned away from moving cables and setting dials; instead, a computer program was stored in memory as numbers. Only three [[bit]]s of memory were available to store each instruction, so it was limited to eight instructions. 32 switches were available for programming.
+
+===Later computers===
+[[File:Dg-nova3.jpg|thumb|Switches for manual input on a [[Data General Nova]] 3, manufactured in the mid-1970s]]
+Computers manufactured until the 1970s had front-panel switches for programming. The computer program was written on paper for reference. An instruction was represented by a configuration of on/off settings. After setting the configuration, an execute button was pressed. This process was then repeated. Computer programs also were manually input via [[paper tape]] or [[punched cards]]. After the medium was loaded, the starting address was set via switches and the execute button pressed.&lt;ref name=&quot;osc-ch1-p6&quot;&gt;{{cite book
+  | last = Silberschatz
+  | first = Abraham
+  | title = Operating System Concepts, Fourth Edition
+  | publisher = Addison-Wesley
+  | year = 1994
+  | page = 6
+  | isbn = 978-0-201-50480-4
+}}&lt;/ref&gt;
+
+In 1961, the [[Burroughs large systems#B5000|Burroughs B5000]] was built specifically to be programmed in the [[ALGOL 60]] language. The hardware featured circuits to ease the [[compiler|compile]] phase.&lt;ref name=&quot;sco-ch1-p20&quot;&gt;{{cite book
+  | last = Tanenbaum
+  | first = Andrew S.
+  | title = Structured Computer Organization, Third Edition
+  | publisher = Prentice Hall
+  | year = 1990
+  | page = [https://archive.org/details/structuredcomput00tane/page/20 20]
+  | isbn = 978-0-13-854662-5
+  | url = https://archive.org/details/structuredcomput00tane/page/20
+  }}&lt;/ref&gt;
+
+In 1964, the [[IBM System/360]] was a line of six computers each having the same [[instruction set|instruction set architecture]]. The Model 30 was the smallest and least expensive. Customers could upgrade and retain the same [[application software]].&lt;ref name=&quot;sco-ch1-p21&quot;&gt;{{cite book
+  | last = Tanenbaum
+  | first = Andrew S.
+  | title = Structured Computer Organization, Third Edition
+  | publisher = Prentice Hall
+  | year = 1990
+  | page = [https://archive.org/details/structuredcomput00tane/page/21 21]
+  | isbn = 978-0-13-854662-5
+  | url = https://archive.org/details/structuredcomput00tane/page/21
+  }}&lt;/ref&gt; Each System/360 model featured [[Computer multitasking#Multiprogramming|multiprogramming]]. With operating system support, multiple programs could be in memory at once. When one was waiting for [[input/output]], another could compute. Each model also could [[emulator|emulate]] other computers. Customers could upgrade to the System/360 and retain their [[IBM 7090#IBM 7094|IBM 7094]] or [[IBM 1401]] application software.&lt;ref name=&quot;sco-ch1-p21&quot;/&gt;
+
+==Computer programming==
+{{Main|Computer programming}}
+
+[[Computer programming]] is the process of writing or editing [[source code]]. Editing source code involves testing, analyzing, refining, and sometimes coordinating with other programmers on a jointly developed program. A person who practices this skill is referred to as a computer [[programmer]], software developer, and sometimes coder.
+
+The sometimes lengthy process of computer programming is usually referred to as [[software development]]. The term [[software engineering]] is becoming popular as the process is seen as an [[engineering]] discipline.
+
+===Programming languages===
+{{main|Programming language}}
+[[File:Object-Oriented-Programming-Methods-And-Classes-with-Inheritance.png|thumb|A computer program written in the imperative programming style]]
+
+Computer programs can be categorized by the [[programming language]] [[programming paradigm|paradigm]] used to produce them. Two of the main paradigms are [[imperative programming|imperative]] and [[declarative language|declarative]].
+
+====Imperative languages====
+''Imperative programming languages'' specify a sequential [[algorithm#Computer algorithm|algorithm]] using declarations, expressions, and statements:&lt;ref name=&quot;cpl-ch4-75&quot;&gt;{{cite book
+  | last = Wilson
+  | first = Leslie B.
+  | title = Comparative Programming Languages, Second Edition
+  | publisher = Addison-Wesley
+  | year = 1993
+  | page = 75
+  | isbn = 978-0-201-56885-1
+}}&lt;/ref&gt;
+* A ''declaration'' couples a [[variable (programming)|variable]] name to a [[datatype]] – for example: &lt;code&gt; var x: integer; &lt;/code&gt;
+* An ''expression'' yields a value – for example: &lt;code&gt; 2 + 2 &lt;/code&gt; yields 4
+* A ''statement'' might assign an expression to a variable or use the value of a variable to alter the program's [[control flow]] – for example: &lt;code&gt;x := 2 + 2; if x = 4 then do_something();&lt;/code&gt;
+
+One criticism of imperative languages is the side effect of an assignment statement on a class of variables called non-local variables.&lt;ref name=&quot;cpl-ch9-213&quot; /&gt;
+
+====Declarative languages====
+''Declarative programming languages'' describe ''what'' computation should be performed and not ''how'' to compute it. Declarative programs omit the [[control flow]] and are considered ''sets'' of instructions. Two broad categories of declarative languages are [[functional language]]s and [[logical language]]s. The principle behind functional languages (like [[Haskell (programming language)|Haskell]]) is to not allow [[side effect (computer science)|side effects]], which makes it easier to reason about programs like mathematical functions.&lt;ref name=&quot;cpl-ch9-213&quot;&gt;{{cite book
+  | last = Wilson
+  | first = Leslie B.
+  | title = Comparative Programming Languages, Second Edition
+  | publisher = Addison-Wesley
+  | year = 1993
+  | page = 213
+  | isbn = 978-0-201-56885-1
+}}&lt;/ref&gt; The principle behind logical languages (like [[Prolog]]) is to define the problem to be solved&amp;nbsp;– the goal&amp;nbsp;– and leave the detailed solution to the Prolog system itself.&lt;ref name=&quot;cpl-ch10-244&quot;&gt;{{cite book
+  | last = Wilson
+  | first = Leslie B.
+  | title = Comparative   Programming Languages, Second Edition
+  | publisher = Addison-Wesley
+  | year = 1993
+  | page = 244
+  | isbn = 978-0-201-56885-1
+}}&lt;/ref&gt; The goal is defined by providing a list of subgoals. Then each subgoal is defined by further providing a list of its subgoals, etc. If a path of subgoals fails to find a solution, then that subgoal is [[backtracking|backtracked]] and another path is systematically attempted.
+
+===Compilation and interpretation===
+A computer program in the form of a [[human-readable]], computer programming language is called [[source code]]. Source code may be converted into an [[Executable file|executable image]] by a [[compiler]] or [[Assembly language#Assembler|assembler]], or [[execution (computing)|executed]] immediately with the aid of an [[Interpreter (computing)|interpreter]].
+
+Compilers are used to translate source code from a programming language into either [[Object file|object code]] or [[machine code]].&lt;ref&gt;{{cite web|title=What is a Compiler?|url=http://lambda.uta.edu/cse5317/notes/node3.html|accessdate=2012-01-10}}&lt;/ref&gt;  Object code needs further processing to become machine code, and machine code consists of the [[central processing unit|central processing unit's]] native instructions, ready for execution. Compiled computer programs are commonly referred to as executables, binary images, or simply as [[Binary file|binaries]]&amp;nbsp;– a reference to the [[Binary numeral system|binary]] [[file format]] used to store the executable code.
+
+Some compiled and assembled object programs need to be combined as modules with a [[Linker (computing)|linker]] utility in order to produce an executable program.
+
+Interpreters are used to execute source code from a programming language line-by-line. The interpreter [[Parsing|decodes]] each [[Statement (computer science)|statement]] and performs its behavior. One advantage of interpreters is that they can easily be extended to an [[REPL|interactive session]]. The programmer is presented with a prompt, and individual lines of code are typed in and performed immediately.
+
+The main disadvantage of interpreters is computer programs run slower than when compiled. Interpreting code is slower because the interpreter must decode each statement and then perform it. However, software development may be faster using an interpreter because testing is immediate when the compiling step is omitted. Another disadvantage of interpreters is an interpreter must be present on the executing computer. By contrast, compiled computer programs need no compiler present during execution.
+
+[[just-in-time compilation|Just in time compilers]] pre-compile computer programs just before execution. For example, the [[Java (programming language)|Java]] [[virtual machine#Process virtual machines|virtual machine]] Hotspot contains a Just In Time Compiler which selectively compiles Java bytecode into machine code – but only code which Hotspot predicts is likely to be used many times.
+
+Either compiled or interpreted programs might be executed in a [[batch processing|batch process]] without human interaction.
+
+[[Scripting language]]s are often used to create batch processes. One common scripting language is [[Unix shell]], and its executing environment is called the [[command-line interface]].
+
+No properties of a programming language require it to be exclusively compiled or exclusively interpreted. The categorization usually reflects the most popular method of language execution. For example, Java is thought of as an interpreted language and C a compiled language, despite the existence of Java compilers and C interpreters.
+
+==Storage and execution==
+[[File:Papertape3.jpg|thumb|In the 1950s, computer programs were stored on [[Punched tape|perforated paper tape]] ]]
+
+Typically, computer programs are stored in [[non-volatile memory]] until requested either directly or indirectly to be [[execution (computing)|executed]] by the computer user. Upon such a request, the program is loaded into [[random-access memory]], by a computer program called an [[operating system]], where it can be accessed directly by the central processor. The central processor then executes (&quot;runs&quot;) the program, instruction by instruction, until termination. A program in execution is called a [[process (computing)|process]].&lt;ref name=&quot;osc-ch4-97&quot;&gt;{{cite book
+  | last = Silberschatz
+  | first = Abraham
+  | title = Operating System Concepts, Fourth Edition
+  | publisher = Addison-Wesley
+  | year = 1994
+  | page = 97
+  | isbn = 978-0-201-50480-4
+}}&lt;/ref&gt; Termination is either by normal self-termination, by user intervention, or by error&amp;nbsp;– software or hardware error.
+
+===Simultaneous execution===
+{{See also|Process (computing)|Multiprocessing}}
+
+Many operating systems support [[computer multitasking|multitasking]] which enables many computer programs to appear to run simultaneously on one computer.  Operating systems may run multiple programs through [[process scheduling]]&amp;nbsp;– a software mechanism to [[context switch|switch]] the [[Central processing unit|CPU]] among processes often so users can [[time-sharing|interact]] with each program while it runs.&lt;ref name=&quot;osc-ch4-100&quot;&gt;{{cite book
+  | last = Silberschatz
+  | first = Abraham
+  | title = Operating System Concepts, Fourth Edition
+  | publisher = Addison-Wesley
+  | year = 1994
+  | page = 100
+  | isbn = 978-0-201-50480-4
+}}&lt;/ref&gt; Within hardware, modern day multiprocessor computers or computers with multicore processors may run multiple programs.&lt;ref name=&quot;mcore&quot;&gt;{{cite book
+  | last = Akhter
+  | first = Shameem
+  | title = Multi-Core Programming
+  | publisher = Richard Bowles (Intel Press)
+  | year = 2006
+  | pages = 11–13
+  | isbn = 978-0-9764832-4-3
+}}&lt;/ref&gt;
+
+===Self-modifying programs===
+{{Main|Self-modifying code}}
+
+A computer program in [[execution (computing)|execution]] is normally treated as being different from the [[Data (computing)|data]] the program operates on. However, in some cases, this distinction is blurred when a computer program modifies itself. The modified computer program is subsequently executed as part of the same program. [[Self-modifying code]] is possible for programs written in [[machine code]], [[assembly language]], [[Lisp (programming language)|Lisp]], [[C (programming language)|C]], [[COBOL]], [[PL/1]], and [[Prolog]].
+
+==Functional categories==
+Computer programs may be categorized along functional lines. The main functional categories are [[application software]] and [[system software]]. System software includes the [[operating system]] which couples [[computer hardware]] with application software.&lt;ref name=&quot;osc-overview&quot;/&gt; The purpose of the operating system is to provide an environment in which application software executes in a convenient and efficient manner.&lt;ref name=&quot;osc-overview&quot;&gt;{{cite book
+  | last = Silberschatz
+  | first = Abraham
+  | title = Operating System Concepts, Fourth Edition
+  | publisher = Addison-Wesley
+  | year = 1994
+  | page = 1
+  | isbn = 978-0-201-50480-4
+}}&lt;/ref&gt; In addition to the operating system, system software includes [[Firmware|embedded programs]], [[Booting|boot programs]], and [[Microcode|micro programs]]. Application software designed for [[end user]]s have a [[Interface (computing)|user interface]]. Application software not designed for the end user includes [[middleware]], which couples one application with another. Application software also includes [[Utility software|utility programs]]. The distinction between system software and application software is under debate.
+
+===Application software===
+{{Main|Application software}}
+[[File:Gcalctool-scientific.png|thumb|Example of an app: [[GCalctool]], a software calculator]]
+
+There are many types of application software:
+* The word '''app''' came to being in 21st century. It is a [[Clipping (morphology)|clipping]] of the word &quot;application&quot;. They have been designed for many platforms, but the word was first used for smaller mobile apps. Desktop apps are traditional computer programs that run on [[desktop computer]]s. [[Mobile app]]s run on [[mobile device]]s. [[Web app]]s run inside a [[web browser]]. Both mobile and desktop apps may be downloaded from the developers' website or purchased from [[app store]]s such as [[Microsoft Store (digital)|Microsoft Store]], [[Apple App Store]], [[Mac App Store]], [[Google Play]] or [[Intel AppUp]].
+* An '''[[application suite]]''' consists of multiple applications bundled together. Examples include [[Microsoft Office]], [[LibreOffice]], and [[iWork]]. They bundle a word processor, spreadsheet, and other applications.
+* '''[[Enterprise software|Enterprise applications]]''' bundle accounting, personnel, customer, and vendor applications. Examples include [[enterprise resource planning]], [[customer relationship management]], and [[supply chain management software]].
+* '''Enterprise infrastructure software''' supports the enterprise's [[software systems]]. Examples include databases, email servers, and network servers.
+* '''[[Information worker]] software''' are designed for workers at the departmental level. Examples include [[time management]], [[schedule (workplace)|resource management]], analytical, collaborative and documentation tools. Word processors, spreadsheets, email and blog clients, personal information system, and individual media editors may aid in multiple information worker tasks.
+* '''Media development software''' generates print and electronic media for others to consume, most often in a commercial or educational setting. These produce graphics, publications, animations, and videos.
+* '''Product engineering software''' is used to help develop large machines and other application software. Examples includes [[computer-aided design]] (CAD), [[computer-aided engineering]] (CAE), and [[integrated development environment]]s.
+* '''Entertainment Software''' can refer to video games, movie recorders and players, and music recorders and players.
+
+===Utility programs===
+[[Utility software|Utility programs]] are application programs designed to aid [[system administrator]]s and [[computer programmer]]s.
+
+===Operating system===
+{{See also|Operating system}}
+
+An [[operating system]] is a computer program that acts as an intermediary between a user of a computer and the computer hardware.
+&lt;ref name=&quot;osc-overview&quot;/&gt;
+
+In the 1950s, the programmer, who was also the operator, would write a program and run it. After the program finished executing, the output may have been printed, or it may have been punched onto paper tape or cards for later processing.&lt;ref name=&quot;osc-ch1-p6&quot;/&gt;
+More often than not the program did not work.The programmer then looked at the console lights and fiddled with the console switches. If less fortunate, a memory printout was made for further study.In the 1960s, programmers reduced the amount of wasted time by automating the operator's job. A program called an ''operating system'' was kept in the computer at all times.&lt;ref name=&quot;sco-ch1-p11&quot;&gt;{{cite book|url=https://archive.org/details/structuredcomput00tane/page/11|title=Structured Computer Organization, Third Edition|last=Tanenbaum|first=Andrew S.|publisher=Prentice Hall|year=1990|isbn=978-0-13-854662-5|page=[https://archive.org/details/structuredcomput00tane/page/11 11]}}&lt;/ref&gt;
+
+Originally, operating systems were programmed in [[assembly language|assembly]]; however, modern operating systems are typically written in [[C (programming language)|C]].
+
+===Boot program===
+A [[stored-program computer]] requires an initial computer program stored in its [[read-only memory]] to [[booting|boot]]. The boot process is to identify and initialize all aspects of the system, from [[processor register]]s to [[device driver|device controllers]] to [[volatile memory|memory]] contents.&lt;ref name=&quot;osc-ch2-p30&quot;&gt;{{cite book
+  | last = Silberschatz
+  | first = Abraham
+  | title = Operating System Concepts, Fourth Edition
+  | publisher = Addison-Wesley
+  | year = 1994
+  | page = 30
+  | isbn = 978-0-201-50480-4
+}}&lt;/ref&gt; Following the initialization process, this initial computer program loads the [[operating system]] and sets the [[program counter]] to begin normal operations.
+
+===Embedded programs===
+[[File:USB flash drive.JPG|thumb|230px|right|The [[microcontroller]] on the right of this [[USB flash drive]] is controlled with embedded [[firmware]].]]
+
+Independent of the host computer, a [[Peripheral|hardware device]] might have embedded [[firmware]] to control its operation. Firmware is used when the computer program is rarely or never expected to change, or when the program must not be lost when the power is off.&lt;ref name=&quot;sco-ch1-p11&quot;/&gt;
+
+===Microcode programs===
+{{main|Microcode}}
+
+[[Microcode]] programs control some [[central processing unit]]s and some other hardware. This code moves data between the [[Processor register|registers]], [[Bus (computing)|buses]], [[arithmetic logic unit]]s, and other functional units in the CPU.  Unlike conventional programs, microcode is not usually written by, or even visible to, the end users of systems, and is usually provided by the manufacturer, and is considered internal to the device.
+
+==See also==
+* [[Artificial intelligence]]
+* [[Automatic programming]]
+* [[Computer virus]]
+* [[Firmware]]
+* [[Killer application]]
+* [[Software]]
+* [[Software bug]]
+
+==References==
+{{reflist|30em}}
+
+==Further reading==
+* {{cite book
+  | last = Knuth
+  | first = Donald E.
+  | title = The Art of Computer Programming, Volume 1, 3rd Edition
+  | year = 1997
+  | publisher = Addison-Wesley
+  | location = Boston
+  | isbn = 978-0-201-89683-1
+| title-link = The Art of Computer Programming
+  }}
+* {{cite book
+ |last=Knuth
+ |first=Donald E.
+ |title=The Art of Computer Programming, Volume 2, 3rd Edition
+ |year=1997
+ |publisher=Addison-Wesley
+ |location = Boston
+ |isbn=978-0-201-89684-8
+}}
+* {{cite book
+ |last=Knuth
+ |first=Donald E.
+ |title=The Art of Computer Programming, Volume 3, 3rd Edition
+ |year=1997
+ |publisher=Addison-Wesley
+ |location = Boston
+ |isbn=978-0-201-89685-5
+}}
+
+{{Authority control}}
+
+{{DEFAULTSORT:Computer Program}}
+[[Category:Computer programming]]
+[[Category:Software]]
+[[Category:Mathematical and quantitative methods (economics)]]</text>
+      <sha1>2czvpbtghcwdnpzox9z113u3w0vv2rs</sha1>
+    </revision>
+  </page>

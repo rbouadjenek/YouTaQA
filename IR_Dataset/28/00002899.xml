@@ -1,0 +1,89 @@
+  <page>
+    <title>ArgoUML</title>
+    <ns>0</ns>
+    <id>2899</id>
+    <revision>
+      <id>915267671</id>
+      <parentid>904455283</parentid>
+      <timestamp>2019-09-12T06:01:31Z</timestamp>
+      <contributor>
+        <username>Monkbot</username>
+        <id>20483999</id>
+      </contributor>
+      <minor />
+      <comment>/* History */[[User:Monkbot/task 16: remove replace deprecated dead-url params|Task 16]]: replaced (1×) / removed (0×) deprecated |dead-url= and |deadurl= with |url-status=;</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{Infobox software
+| name                   = ArgoUML
+| logo                   =
+| screenshot             = ArgoUML.png
+| caption                = 
+| developer              = 
+| released               = April 1999
+| latest release version = 
+| latest release date    = 
+| latest preview version = 0.34
+| latest preview date    = {{Start date and age|2011|12|15}}
+| programming language   = [[Java (programming language)|Java]]
+| platform               = [[Java SE]]
+| genre                  = [[Software development]], [[UML Tool]]
+| license                = [[Eclipse Public License|Eclipse Public License 1.0]]
+| website                = {{URL|argouml.tigris.org}}
+}}
+'''ArgoUML''' is an [[Unified Modeling Language|UML]] diagramming application written in Java and released under the [[Open-source license|open source]] [[Eclipse Public License]].  By virtue of being a [[Java (programming language)|Java]] application, it is available on any platform supported by [[Java SE]].
+
+==History==
+ArgoUML was originally developed at [[University of California, Irvine|UC Irvine]] by Jason E. Robbins, leading to his [[Doctor of Philosophy|Ph.D.]] It is now an open source project hosted by [[Tigris.org]]. The ArgoUML project now includes more than 19,000 registered users and over 150 developers.&lt;ref&gt;{{cite web |url=http://www.isr.uci.edu/tech-transition.html |title=Tech Transitions at ISR UCI |url-status=dead |archiveurl=https://wayback.archive-it.org/all/20120128012458/http://www.isr.uci.edu/tech-transition.html |archivedate=2012-01-28 }}&lt;/ref&gt;
+
+In 2003, ArgoUML won the Software Development Magazine's annual Readers' Choice Award in the “Design and Analysis Tools” category.&lt;ref&gt;{{cite web | url = http://www.ddj.com/architect/184414997#designtools | title = Dr. Dobb's Readers' Choice Awards, 2003 }}&lt;/ref&gt;
+
+ArgoUML development has suffered from lack of manpower. For example, ''Undo'' has been a perpetually requested feature since 2003 but has not been implemented yet.&lt;ref&gt;Issue 1834 (May 5th, 2003): Implement undo. http://argouml.tigris.org/issues/show_bug.cgi?id=1834&lt;/ref&gt;
+
+==Features==
+According to the official feature list,&lt;ref&gt;{{cite web | url = http://argouml.tigris.org/features.html | title = ArgoUML Features }}&lt;/ref&gt; ArgoUML is capable of the following: 
+*All 9 UML 1.4 diagrams are supported.
+*Closely follows the UML standard.
+*Platform independent – Java 1.5+ and C++.
+*Click and Go! with Java Web Start (no setup required, starts from your web browser).
+*Standard UML 1.4 Metamodel.
+*[[XML Metadata Interchange|XMI]] support.
+*Export diagrams as [[GIF]], [[Portable Network Graphics|PNG]], [[PostScript|PS]], [[Encapsulated PostScript|EPS]], [[PGML]] and [[SVG]].
+*Available in ten languages: EN, EN-GB, DE, ES, IT, RU, FR, NB, PT, ZH.
+*Advanced diagram editing and zoom.
+*Built-in design critics provide unobtrusive review of design and suggestions for improvements.
+*Extensible modules interface.
+*[[Object Constraint Language|OCL]] support.
+*Forward engineering (code generation supports C++ and C#, Java, PHP&amp;nbsp;4, PHP&amp;nbsp;5, Ruby and, with less mature modules, Ada, Delphi and SQL).
+*Reverse engineering / [[JAR (file format)|JAR]]/class file import.
+
+==Weaknesses==
+*ArgoUML does not yet completely implement the UML standard.&lt;ref&gt;{{cite web | url = http://argouml.tigris.org/documentation/umlsupport/index.html | work = ArgoUML documentation | title = UML Specification Incompatibility list }}&lt;/ref&gt;
+* Partial undo feature (working for graphics edits &lt;ref&gt;{{cite web
+|url=http://argouml.tigris.org/servlets/NewsItemView?newsItemID=1228
+|title=ArgoUML 0.19.3 released
+}} Undo working for graphics edits (this is mostly a GEF addition).&lt;/ref&gt;&lt;ref&gt;{{cite web
+|url=http://argouml.tigris.org/issues/show_bug.cgi?id=1834
+|title=Issue 1834. Implement undo
+}} Undo working for graphics edits (this is mostly a GEF addition).&lt;/ref&gt;)
+
+==See also==
+*[[List of UML tools]]
+*[[MetaCASE tool]]
+*[[Poseidon for UML]] – a commercial descendant of ArgoUML
+
+==References==
+{{Reflist}}
+
+==External links==
+{{Commons category|ArgoUML}}
+*{{Official website|argouml.tigris.org}}
+
+{{DEFAULTSORT:Argouml}}
+[[Category:Java platform software]]
+[[Category:Free UML tools]]
+[[Category:1999 software]]
+[[Category:Software using the Eclipse license]]</text>
+      <sha1>p4up4p0itgchg1wzxy4sgfsxtilkggy</sha1>
+    </revision>
+  </page>

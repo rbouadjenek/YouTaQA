@@ -1,0 +1,129 @@
+  <page>
+    <title>BeBox</title>
+    <ns>0</ns>
+    <id>4825</id>
+    <revision>
+      <id>915539579</id>
+      <parentid>886220273</parentid>
+      <timestamp>2019-09-13T21:32:38Z</timestamp>
+      <contributor>
+        <username>Monkbot</username>
+        <id>20483999</id>
+      </contributor>
+      <minor />
+      <comment>/* top */[[User:Monkbot/task 16: remove replace deprecated dead-url params|Task 16]]: replaced (2×) / removed (0×) deprecated |dead-url= and |deadurl= with |url-status=;</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{About|the personal computer|the router|Be Unlimited}}
+
+{{primary sources|date=April 2013}}
+{{Infobox information appliance
+| name         = BeBox
+| title        = 
+| aka          = 
+| logo         = 
+| image        = Samsung SyncMaster 191T and BeBox 20081114.jpg
+| caption      = A BeBox, with aftermarket monitor
+| developer    = 
+| manufacturer = [[Be Inc.]]
+| family       = 
+| type         = [[Workstation]]
+| generation   = 
+| releasedate  = BeBox Dual603-66 : {{Start date and age|1995|10|03}}&lt;ref&gt;{{cite press |url=https://web.archive.org/web/20000128072331/http://www-classic.be.com/aboutbe/pressreleases/95-10-03_Intro.html |title=Jean-Louis Gassée Unveils the BeBox |date=October 3, 1995}} for the original BeBox Dual603-66.&lt;/ref&gt;&lt;br /&gt;BeBox Dual603e-133 : {{Start date and age|1996|08|05}}&lt;ref&gt;{{cite press |url=https://web.archive.org/web/20000128162559/http://www-classic.be.com/aboutbe/pressreleases/96-08-05_BeBox133.html |title=Be Announces the BeBox Dual603-133 |date=August 5, 1996}}&lt;/ref&gt;
+| lifespan     = 
+| price        = BeBox Dual603-66 US$1,600&lt;br /&gt;BeBox Dual603-133 US$2,995
+| discontinued = {{End date and age|1997|01}}
+| unitssold    = 1000 – BeBox Dual603-66&lt;br /&gt;800 – BeBox Dual603e-133&lt;ref name=production&gt;[http://testou.free.fr/www.beatjapan.org/mirror/www.be.com/support/qandas/faqs/faq-0261.html The BeBox, General, FAQ, How many BeBoxes were sold before they were discontinued?] Be, Inc.&lt;/ref&gt;
+| unitsshipped = 
+| media        = 
+| os           = [[BeOS]]
+| power        = 100–240 volt AC single-phase
+| soc          = 
+| cpu          = 2× [[PowerPC 600#PowerPC 603|PowerPC 603]]&lt;ref name=bbdatasheet&gt;[http://testou.free.fr/www.beatjapan.org/mirror/www.be.com/products/bebox/dual603ds.html Be Product Datasheet], The BeBox Dual603, BeBox Dual603-66, BeBox Dual603-133&lt;/ref&gt;
+| memory       = Up to 256&amp;nbsp;MB of RAM (Supports up to eight 72-pin SIMMs)
+| storage      = 
+| memory card  = 
+| display      = 
+| graphics     = 
+| sound        = 
+| input        = 
+| controllers  = 
+| camera       = 
+| touchpad     = 
+| connectivity = 
+| platform     = 
+| service      = 
+| dimensions   = 15.68&amp;nbsp;in × 8.28&amp;nbsp;in × 18.15&amp;nbsp;in&lt;br /&gt;39.8&amp;nbsp;cm × 21.0&amp;nbsp;cm × 46.1&amp;nbsp;cm	 
+| weight       = 
+| topgame      = 
+| compatibility= 
+| predecessor  = 
+| successor    = 
+| related      = 
+| website      = Historical: www.be.com&lt;ref&gt;{{cite web|url=http://www.be.com/ |title=Archived copy |accessdate=2015-04-28 |url-status=bot: unknown |archiveurl=https://web.archive.org/web/19961020193020/http://www.be.com/ |archivedate=1996-10-20 }}&lt;/ref&gt; &lt;!--{{URL|example.org}}--&gt;
+}}
+The '''BeBox''' is a dual CPU [[personal computer]], briefly sold by [[Be Inc.]] to run the company's own [[operating system]], [[BeOS]]. Notable aspects of the system include its CPU configuration, I/O board with &quot;GeekPort&quot;, and &quot;[[Blinkenlights]]&quot; on the front bezel.
+
+The BeBox made its debut in October 1995 (BeBox Dual603-66). The processors were upgraded to 133&amp;nbsp;MHz in August 1996 (BeBox Dual603e-133). Production was halted in January 1997,&lt;ref&gt;{{cite web|url=http://www.bebox.nu/history.php?s=history/1997|title=BeBox History, 1997|work=The BeBox Zone|archiveurl=https://web.archive.org/web/20120204152621/http://bebox.nu/history.php?s=history%2F1997|archivedate=4 February 2012|url-status=dead}}&lt;/ref&gt; following the port of BeOS to the [[Apple Macintosh|Macintosh]], in order for the company to concentrate on software. Be sold around a thousand 66&amp;nbsp;MHz BeBoxes and 800 133&amp;nbsp;MHz BeBoxes.&lt;ref name=production /&gt;
+
+BeBox creator [[Jean-Louis Gassée]] did not see the BeBox as a general consumer device, warning that &quot;Before we let you use the BeBox, we believe you must have some aptitude toward programming{{snd}} the standard language is [[C++]].&quot;&lt;ref name=&quot;NGen21&quot;&gt;{{cite magazine|last=|first= |title=New Amiga Prepares to Kill Mac/PC|magazine=[[Next Generation (magazine)|Next Generation]]|issue=21 |publisher=[[Imagine Media]]|date=September 1996|page=21}}&lt;/ref&gt;
+
+== CPU configuration ==
+Initial prototypes are equipped with two [[AT&amp;T Hobbit]] processors and three AT&amp;T 9308S [[digital signal processor|DSP]]s.&lt;ref&gt;https://www.hirlimann.net/Ludovic/beos/hobbitdoc/intro1.jpg&lt;/ref&gt;
+
+Production models use two [[PowerPC 600#PowerPC 603|PowerPC 603]] [[Central processing unit|processors]] running at 66 or 133&amp;nbsp;[[Hertz|MHz]] to power the BeBox. Prototypes having dual 200&amp;nbsp;MHz CPUs or four CPUs exist, but these were never publicly available.&lt;ref&gt;{{cite web|url=http://www.bebox.nu/news.php?lookat=65|title=Interview with Joseph Palmer|date=2 December 2005|work=Be Informed, The BeBox Zone|archiveurl=https://web.archive.org/web/20080224230323/http://www.bebox.nu/news.php?lookat=65|archivedate=24 February 2008}}&lt;/ref&gt;
+
+== I/O board ==
+{{prose|section|date=April 2013}}
+[[File:BeBox.Le dos.jpg|thumb|connectors of the I/O board]]
+* Four serial ports (9-pin D-shell)
+* One mouse port, PS/2-type
+* Two joystick ports (15-pin D-shell)
+* Two MIDI out ports
+* Two MIDI in ports
+* Three infrared (IR) I/O ports (6-pin mini DIN)
+* One internal CD audio line-level input (5-pin strip)
+* One internal microphone audio input (4-pin strip)
+* One internal headphone audio output (4-pin strip)
+* Two line-level RCA inputs (L/R)
+* Two line-level outputs (L/R)
+* One microphone input 3.5&amp;nbsp;mm stereo phono jack
+* One headphone output 3.5&amp;nbsp;mm stereo phono jack
+* A 16-bit stereo sound system capable of 48&amp;nbsp;kHz and 44.1&amp;nbsp;kHz
+* One &quot;GeekPort&quot; (37-pin D-shell)
+** An experimental-electronic-development oriented port, backed by three fuses on the mainboard
+** Digital and analog [[Input/output|I/O]] and [[Direct current|DC power]] connector, 37-pin connector on the [[ISA bus]]
+** Two independent, bidirectional 8-bit ports
+** Four A/D pins routing to a 12-bit [[Analog-to-digital converter|A/D converter]]
+** Four D/A pins connected to an independent 8-bit [[Digital-to-analog converter|D/A converter]]
+** Two signal [[ground (electricity)|ground]] reference pins
+** Eleven power and ground pins:
+*** Two at +5&amp;nbsp;V, one at +12&amp;nbsp;V, one at -12&amp;nbsp;V, seven ground pins
+
+== &quot;Blinkenlights&quot; ==
+Two yellow/green vertical LED arrays, dubbed the &quot;blinkenlights&quot;, are built into the front bezel to illustrate the [[Central processing unit|CPU]] load. The bottommost LED on the right side indicates hard disk activity.
+
+== See also ==
+* [[Multi Emulator Super System]] (MESS){{snd}} able to emulate both BeBox [http://www.progettoemma.net/mess/system.php?machine=bebox 66] and [http://www.progettoemma.net/mess/system.php?machine=bebox2 133]
+
+== References ==
+{{reflist}}
+
+== External links ==
+* {{cite web|url=http://www.bebox.nu/|title=The BeBox Zone|archiveurl=https://web.archive.org/web/20130415074143/http://www.bebox.nu/|archivedate=15 April 2013}}
+* [http://www.josephpalmer.com/BeBox/BeBox.shtml BeBox Photo Gallery (Joseph Palmer: Be HW Engineer)]
+* [http://pinouts.ru/Motherboard/GeekPort_pinout.shtml Pinout for the GeekPort connector]
+* {{US trademark|75054089}} (BeBox)
+
+{{BeOS}}
+
+{{Commons category|BeBox}}
+
+{{DEFAULTSORT:Bebox}}
+[[Category:Be Inc.]]
+[[Category:Computer-related introductions in 1995]]
+[[Category:Computer workstations]]
+[[Category:Personal computers]]</text>
+      <sha1>le2fcqgflnsdks94muby275212p3eqd</sha1>
+    </revision>
+  </page>

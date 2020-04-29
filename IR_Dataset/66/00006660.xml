@@ -1,0 +1,78 @@
+  <page>
+    <title>Codec</title>
+    <ns>0</ns>
+    <id>6660</id>
+    <revision>
+      <id>941847383</id>
+      <parentid>941847300</parentid>
+      <timestamp>2020-02-21T01:18:57Z</timestamp>
+      <contributor>
+        <ip>202.90.240.51</ip>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{short description|Device or software for encoding or decoding a digital data stream}}
+{{About|encoding and decoding a digital data stream}}
+
+A '''codec''' is a device or [[computer program]] which encodes or [[Decoding methods|decodes]] a [[digital data stream]] or [[signal (information theory)|signal]].&lt;ref&gt;{{cite web|url=https://support.microsoft.com/en-us/help/15070/windows-media-player-codecs-frequently-asked-questions|title=Using codecs|last=|first=|date=|website=|publisher=[[Microsoft]]|url-status=live|archive-url=https://web.archive.org/web/20100906114538/https://www.microsoft.com/windows/windowsmedia/player/faq/codec.mspx|archive-date=September 6, 2010|accessdate=2009-12-21}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://desktopvideo.about.com/od/glossary/g/codec.htm|title=About.com - Codec|last=Siegchrist|first=Gretchen|date=|website=|publisher=About.com|url-status=dead|archive-url=https://web.archive.org/web/20150405161202/http://desktopvideo.about.com/od/glossary/g/codec.htm|archive-date=April 5, 2015|accessdate=2009-12-21}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=https://help.ubuntu.com/8.04/musicvideophotos/C/codecs.html |title=Ubuntu Documentation - What is a codec? |publisher=Ubuntu Documentation Team |accessdate=2009-12-21 |url-status=dead |archiveurl=https://web.archive.org/web/20120219101738/https://help.ubuntu.com/8.04/musicvideophotos/C/codecs.html |archivedate=February 19, 2012 }}&lt;/ref&gt; ''Codec'' is a [[portmanteau]] of ''coder-decoder''.&lt;ref&gt;{{cite dictionary |url=https://www.merriam-webster.com/dictionary/codec |title=Codec – Definition of Codec by Merriam-Webster |dictionary=Merriam-Webster |accessdate=2019-01-15}}&lt;/ref&gt;
+
+A coder encodes a data stream or a signal for transmission or storage, possibly in [[encryption|encrypted]] form, and the decoder function reverses the encoding for playback or editing. Codecs are used in [[Video teleconference|videoconferencing]], [[streaming media]], and [[video editing]] applications.
+
+==History==
+{{See|Image compression#History|Video coding format#History|Audio coding format#History}}
+
+In the mid-20th century, a codec was a device that coded analog signals into digital form using [[pulse-code modulation]] (PCM).  Later, the name was also applied to software for converting between digital signal formats, including [[compander]] functions.
+
+An [[audio codec]] converts analog audio signals into digital signals for transmission or encodes them for storage. A receiving device converts the digital signals back to analog form using an audio decoder for playback. An example of this are the codecs used in the sound cards of personal computers. A [[video codec]] accomplishes the same task for video signals.
+
+==Compression==
+{{See|Image compression|Video coding format|Audio coding format}}
+
+In addition to encoding a signal, a codec may also compress the data to reduce transmission bandwidth or storage space. Compression codecs are classified primarily into [[Lossy compression|lossy]] codecs and [[Lossless compression|lossless]] codecs.
+
+Lossless codecs are often used for archiving data in a compressed form while retaining all information present in the original stream. If preserving the original quality of the stream is more important than eliminating the correspondingly larger data sizes, lossless codecs are preferred. This is especially true if the data is to undergo further processing (for example [[editing]]) in which case the repeated application of processing (encoding and decoding) on lossy codecs will degrade the quality of the resulting data such that it is no longer identifiable (visually, audibly or both). Using more than one codec or encoding scheme successively can also degrade quality significantly. The decreasing cost of storage capacity and network bandwidth has a tendency to reduce the need for lossy codecs for some media.
+
+Many popular codecs are lossy. They reduce quality in order to maximize compression. Often, this type of compression is virtually indistinguishable from the original uncompressed sound or images, depending on the codec and the settings used.&lt;ref&gt;{{cite web |title=Audio quality of aac vs. mp3 vs. wma vs. ogg encoders |publisher=SoundExpert |url=http://soundexpert.org/ |accessdate=2010-07-25 |quote=above 5.0 – all sound artifacts will be beyond threshold of human perception with corresponding perception margin}}&lt;/ref&gt; The most widely used lossy data compression technique in [[digital media]] is based on the [[discrete cosine transform]] (DCT), used in compression standards such as [[JPEG]] images, [[H.26x]] and [[MPEG]] video, and [[MP3]] and [[Advanced Audio Coding|AAC]] audio. Smaller data sets ease the strain on relatively expensive storage sub-systems such as [[non-volatile memory]] and [[hard disk]], as well as [[write once read many|write-once-read-many]] formats such as [[CD-ROM]], [[DVD]] and [[Blu-ray Disc]]. Lower data rates also reduce cost and improve performance when the data is transmitted.
+
+==Media codecs==
+{{See|Video codec|Audio codec}}
+
+Two principal techniques are used in codecs, pulse-code modulation and [[delta modulation]]. Codecs are often designed to emphasize certain aspects of the media to be encoded.  For example, a digital video (using a [[DV]] codec) of a sports event needs to encode motion well but not necessarily exact colors, while a video of an art exhibit needs to encode color and surface texture well.
+
+Audio codecs for cell phones need to have very low [[Latency (audio)|latency]] between source encoding and playback. In contrast, audio codecs for recording or broadcast can use high-latency [[audio compression (data)|audio compression]] techniques to achieve higher fidelity at a lower bit-rate.
+
+There are thousands of audio and video codecs, ranging in cost from free to hundreds of dollars or more. This variety of codecs can create compatibility and obsolescence issues. The impact is lessened for older formats, for which free or nearly-free codecs have existed for a long time. The older formats are often ill-suited to modern applications, however, such as playback in small portable devices. For example, raw uncompressed [[PCM audio]] (44.1&amp;nbsp;kHz, 16 bit stereo, as represented on an audio CD or in a .wav or .aiff file) has long been a standard across multiple platforms, but its transmission over networks is slow and expensive compared with more modern compressed formats, such as [[Opus (audio format)|Opus]] and MP3.
+
+Many [[multimedia]] data streams contain both [[Sound|audio]] and [[video]], and often some metadata that permits synchronization of audio and video. Each of these three streams may be handled by different programs, processes, or hardware; but for the multimedia data streams to be useful in stored or transmitted form, they must be encapsulated together in a [[container format (digital)|container format]].
+
+Lower [[bitrate]] codecs allow more users, but they also have more distortion. Beyond the initial increase in distortion, lower bit rate codecs also achieve their lower bit rates by using more complex algorithms that make certain assumptions, such as those about the media and the packet loss rate. Other codecs may not make those same assumptions. When a user with a low bitrate codec talks to a user with another codec, additional distortion is introduced by each [[transcoding]].
+
+[[Audio Video Interleave]] (AVI) is sometimes erroneously described as a codec, but AVI is actually a container format, while a codec is a software or hardware tool that encodes or decodes audio or video into or from some audio or video format. Audio and video encoded with many codecs might be put into an AVI container, although AVI is not an [[ISO standard]]. There are also other well-known container formats, such as [[Ogg]], [[Advanced Systems Format|ASF]], [[QuickTime]], [[RealMedia]], [[Matroska]], and [[DivX#DivX Media Format .28DMF.29|DivX Media Format]]. [[MPEG transport stream]], [[MPEG program stream]], [[MP4]], and [[ISO base media file format]] are examples of container formats that are ISO standardized.
+
+== See also ==
+{{div col|colwidth=20em}}
+* [[Audio signal processing]]
+* [[Digital signal processing]]
+* [[List of codecs]]
+* [[List of open-source codecs]]
+{{div col end}}
+
+=== Comparisons ===
+{{div col|colwidth=20em}}
+* [[Comparison of audio coding formats]]
+* [[Comparison of video codecs]]
+* [[Comparison of video container formats]]
+{{div col end}}
+
+== References ==
+{{reflist}}
+
+{{Compression Methods}}
+{{Media player (application software)}}
+{{Audio broadcasting}}
+
+[[Category:Codecs| ]]
+[[Category:Digital signal processing]]</text>
+      <sha1>d0pgpxa8d7wfyt09r7tk2i05luyv35o</sha1>
+    </revision>
+  </page>

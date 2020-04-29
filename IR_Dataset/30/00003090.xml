@@ -1,0 +1,260 @@
+  <page>
+    <title>Arithmetic–geometric mean</title>
+    <ns>0</ns>
+    <id>3090</id>
+    <revision>
+      <id>910041135</id>
+      <parentid>910040900</parentid>
+      <timestamp>2019-08-09T08:32:53Z</timestamp>
+      <contributor>
+        <username>BetterMath</username>
+        <id>27435083</id>
+      </contributor>
+      <minor />
+      <comment>/* Example */  revise presentation of reference</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{pp-protect|small=yes}}
+In [[mathematics]], the '''arithmetic–geometric mean''' ('''AGM''') of two positive [[real number]]s {{math|''x''}} and {{math|''y''}} is defined as follows:
+
+Call {{math|''x''}} and {{math|''y''}} {{math|''a''&lt;sub&gt;0&lt;/sub&gt;}} and {{math|''g''&lt;sub&gt;0&lt;/sub&gt;}}:
+:&lt;math&gt;\begin{align}
+ a_0 &amp;= x,\\
+ g_0 &amp;= y.
+\end{align}&lt;/math&gt;
+
+Then define the two interdependent [[sequence]]s {{math|(''a''&lt;sub&gt;''n''&lt;/sub&gt;)}} and {{math|(''g''&lt;sub&gt;''n''&lt;/sub&gt;)}} as
+
+:&lt;math&gt;\begin{align}
+ a_{n+1} &amp;= \tfrac12(a_n + g_n),\\
+ g_{n+1} &amp;= \sqrt{a_n g_n}\, ,
+\end{align}&lt;/math&gt;
+
+where the square root takes the [[principal value]]. These two sequences [[limit of a sequence|converge]] to the same number, the arithmetic–geometric mean of {{math|''x''}} and {{math|''y''}}; it is denoted by {{math|''M''(''x'', ''y'')}}, or sometimes by {{math|agm(''x'', ''y'')}}.
+
+The arithmetic-geometric mean is used in fast [[algorithm]]s for [[exponential function|exponential]] and [[trigonometric functions]], as well as some [[mathematical constant]]s, in particular, [[computing π|computing &lt;math&gt;\pi&lt;/math&gt;]].
+
+==Example==
+To find the arithmetic–geometric mean of {{math|''a''&lt;sub&gt;0&lt;/sub&gt; {{=}} 24}} and {{math|''g''&lt;sub&gt;0&lt;/sub&gt; {{=}} 6}}, iterate as follows:
+
+:&lt;math&gt;\begin{array}{rcccl}
+ a_1 &amp; = &amp; \tfrac12(24 + 6) &amp; = &amp; 15\\
+ g_1 &amp; = &amp; \sqrt{24 \cdot 6} &amp; = &amp; 12\\
+ a_2 &amp; = &amp; \tfrac12(15 + 12) &amp; = &amp; 13.5\\
+ g_2 &amp; = &amp; \sqrt{15 \cdot 12} &amp; = &amp; 13.416\ 407\ 8649\dots\\
+ &amp; &amp; \vdots &amp; &amp;
+\end{array}&lt;/math&gt;
+
+The first five iterations give the following values:
+
+:{| class=&quot;wikitable&quot;
+|-
+! {{math|''n''}}
+! {{math|''a''&lt;sub&gt;''n''&lt;/sub&gt;}}
+! {{math|''g''&lt;sub&gt;''n''&lt;/sub&gt;}}
+|-
+| 0
+| 24
+| 6
+|-
+| 1
+| {{underline|1}}5
+| {{underline|1}}2
+|-
+| 2
+| {{underline|13}}.5
+| {{underline|13}}.416 407 864 998 738 178 455 042...
+|-
+| 3
+| {{underline|13.458}} 203 932 499 369 089 227 521...
+| {{underline|13.458}} 139 030 990 984 877 207 090...
+|-
+| 4
+| {{underline|13.458 171 481 7}}45 176 983 217 305...
+| {{underline|13.458 171 481 7}}06 053 858 316 334...
+|-
+| 5
+| {{underline|13.458 171 481 725 615 420 766 8}}20...
+| {{underline|13.458 171 481 725 615 420 766 8}}06...
+|}
+
+The number of digits in which {{math|''a''&lt;sub&gt;''n''&lt;/sub&gt;}} and {{math|''g''&lt;sub&gt;''n''&lt;/sub&gt;}} agree (underlined) approximately doubles with each iteration. The arithmetic–geometric mean of 24 and 6 is the common limit of these two sequences, which is approximately {{val|13.4581714817256154207668131569743992430538388544}}.&lt;ref&gt;[http://www.wolframalpha.com/input/?i=agm%2824%2C+6%29 agm(24, 6)] at [[Wolfram Alpha]]&lt;/ref&gt;
+
+== History ==
+The first algorithm based on this sequence pair appeared in the works of [[Joseph-Louis Lagrange|Lagrange]]. Its properties were further analyzed by [[Gauss]].&lt;ref name=&quot;BerggrenBorwein2004&quot;&gt;{{cite book|editor1=J.L. Berggren |editor2=Jonathan M. Borwein |editor3=Peter Borwein |title=Pi: A Source Book|url=https://books.google.com/books?id=QlbzjN_5pDoC&amp;pg=PA481|year=2004|publisher=Springer|isbn=978-0-387-20571-7|page=481|chapter=The Arithmetic-Geometric Mean of Gauss|author=David A. Cox}} first published in ''[[L'Enseignement Mathématique]]'', t. 30 (1984), p. 275-330&lt;/ref&gt;
+
+==Properties==
+The geometric mean of two positive numbers is never bigger than the arithmetic mean (see [[inequality of arithmetic and geometric means]]). As a consequence, for {{math|''n'' &gt; 0}}, {{math|(''g&lt;sub&gt;n&lt;/sub&gt;'')}} is an increasing sequence, {{math|(''a&lt;sub&gt;n&lt;/sub&gt;'')}} is a decreasing sequence, and {{math|''g&lt;sub&gt;n&lt;/sub&gt;'' ≤ ''M''(''x'',&amp;nbsp;''y'') ≤ ''a&lt;sub&gt;n&lt;/sub&gt;''}}. These are strict inequalities if {{math|''x'' ≠ ''y''}}.
+
+{{math|''M''(''x'', ''y'')}} is thus a number between the geometric and arithmetic mean of {{math|''x''}} and {{math|''y''}}; it is also between {{math|''x''}} and {{math|''y''}}.
+
+If {{math|''r'' ≥ 0}}, then {{math|''M''(''rx'',''ry'') {{=}} ''r M''(''x'',''y'')}}.
+
+There is an integral-form expression for {{math|''M''(''x'',''y'')}}:
+
+:&lt;math&gt;\begin{align}
+ M(x,y) &amp;= \frac{\pi}{2} \div \int_0^\frac{\pi}{2}\frac{d\theta}{\sqrt{x^2\cos^2\theta+y^2\sin^2\theta}}\\
+        &amp;= \frac{\pi}{4} \cdot \frac{x + y}{K\left( \frac{x - y}{x + y} \right)}
+\end{align}&lt;/math&gt;
+
+where {{math|''K''(''k'')}} is the [[elliptic integral|complete elliptic integral of the first kind]]:
+
+:&lt;math&gt;K(k) = \int_0^\frac{\pi}{2}\frac{d\theta}{\sqrt{1 - k^2\sin^2(\theta)}} &lt;/math&gt;
+
+Indeed, since the arithmetic–geometric process converges so quickly, it provides an efficient way to compute elliptic integrals via this formula. In engineering, it is used for instance in [[elliptic filter]] design.&lt;ref name=&quot;Dimopoulos2011&quot;&gt;{{cite book|author-first=Hercules G. | author-last= Dimopoulos|title=Analog Electronic Filters: Theory, Design and Synthesis|url=https://books.google.com/books?id=6W1eX4QwtyYC&amp;pg=PA147|year=2011|publisher=Springer|isbn=978-94-007-2189-0|pages=147–155}}&lt;/ref&gt;
+
+== Related concepts ==
+The reciprocal of the arithmetic–geometric mean of 1 and the [[square root of 2]] is called [[Gauss's constant]], after [[Carl Friedrich Gauss]].
+
+:&lt;math&gt;\frac{1}{M(1, \sqrt{2})} = G = 0.8346268\dots&lt;/math&gt;
+
+The [[geometric–harmonic mean]] can be calculated by an analogous method, using sequences of geometric and [[harmonic mean|harmonic]] means. The arithmetic–harmonic mean can be similarly defined, but takes the same value as the [[geometric mean]].
+
+The arithmetic–geometric mean can be used to compute – among others – [[Logarithm#Arithmetic–geometric mean approximation|logarithms]],  [[Elliptic integral|complete and incomplete elliptic integrals of the first and second kind]],&lt;ref&gt;{{AS ref|17|598–599}}&lt;/ref&gt; and [[Jacobi elliptic functions]].&lt;ref&gt;{{cite book | first=Louis V. | last=King | url=https://archive.org/details/onthenumerical032686mbp | title=On The Direct Numerical Calculation Of Elliptic Functions And Integrals | publisher=Cambridge University Press | year=1924 }}&lt;/ref&gt;
+
+==Proof of existence==
+From the [[inequality of arithmetic and geometric means]] we can conclude that:
+
+:&lt;math&gt;g_n \leq a_n&lt;/math&gt;
+
+and thus
+
+:&lt;math&gt;g_{n + 1} = \sqrt{g_n \cdot a_n} \geq \sqrt{g_n \cdot g_n} = g_n&lt;/math&gt;
+
+that is, the sequence {{math|''g&lt;sub&gt;n&lt;/sub&gt;''}} is nondecreasing.
+
+Furthermore, it is easy to see that it is also bounded above by the larger of {{math|''x''}} and {{math|''y''}} (which follows from the fact that both the arithmetic and geometric means of two numbers lie between them). Thus, by the [[monotone convergence theorem]], the sequence is convergent, so there exists a {{math|''g''}} such that:
+
+:&lt;math&gt;\lim_{n\to \infty}g_n = g&lt;/math&gt;
+
+However, we can also see that:
+
+:&lt;math&gt;a_n = \frac{g_{n + 1}^2}{g_n}&lt;/math&gt;
+
+and so:
+
+:&lt;math&gt;\lim_{n\to \infty}a_n = \lim_{n\to \infty}\frac{g_{n + 1}^2}{g_{n}} = \frac{g^2}{g} = g&lt;/math&gt;
+
+[[Q.E.D.]]
+
+==Proof of the integral-form expression==
+This proof is given by Gauss.&lt;ref name=&quot;BerggrenBorwein2004&quot; /&gt;
+Let
+
+:&lt;math&gt;I(x,y) = \int_0^{\pi/2}\frac{d\theta}{\sqrt{x^2\cos^2\theta+y^2\sin^2\theta}},&lt;/math&gt;
+
+Changing the variable of integration to &lt;math&gt;\theta'&lt;/math&gt;, where
+
+:&lt;math&gt; \sin\theta = \frac{2x\sin\theta'}{(x+y)+(x-y)\sin^2\theta'}, &lt;/math&gt;
+
+gives
+
+:&lt;math&gt;
+\begin{align}
+I(x,y) &amp;= \int_0^{\pi/2}\frac{d\theta'}{\sqrt{\bigl(\frac12(x+y)\bigr)^2\cos^2\theta'+\bigl(\sqrt{xy}\bigr)^2\sin^2\theta'}}\\
+       &amp;= I\bigl(\tfrac12(x+y),\sqrt{xy}\bigr).
+\end{align}
+&lt;/math&gt;
+
+Thus, we have
+
+:&lt;math&gt;
+\begin{align}
+I(x,y) &amp;= I(a_1, g_1) = I(a_2, g_2) = \cdots\\
+  &amp;= I\bigl(M(x,y),M(x,y)\bigr) = \pi/\bigr(2M(x,y)\bigl).
+\end{align}
+&lt;/math&gt;
+The last equality comes from observing that &lt;math&gt;I(z,z) = \pi/(2z)&lt;/math&gt;.
+
+Finally, we obtain the desired result
+
+:&lt;math&gt;M(x,y) = \pi/\bigl(2 I(x,y) \bigr). &lt;/math&gt;
+
+==The AGM method==
+[[Gauss]] noticed&lt;ref&gt;{{cite journal |author=B. C. Carlson |title=Algorithms involving arithmetic and geometric means |journal=Amer. Math. Monthly |volume=78 |year=1971 |pages=496–505 |doi=10.2307/2317754 |mr=0283246}}&lt;/ref&gt;&lt;ref&gt;{{cite journal |author=B. C. Carlson |title=An algorithm for computing logarithms and arctangents |journal=Math. Comp. |volume=26 |issue=118 |year=1972 |pages=543–549 |doi=10.2307/2005182 |mr=0307438}}&lt;/ref&gt; that the sequences
+
+: &lt;math&gt;
+\begin{align}
+a_0 &amp; &amp; b_0 \\
+a_1 &amp; = \frac{a_0+b_0}{2}, &amp; b_1 &amp; = \sqrt{a_0 b_0} \\
+a_2 &amp; = \frac{a_1+b_1}{2}, &amp; b_2 &amp; = \sqrt{a_1 b_1} \\
+    &amp; {}\ \ \vdots &amp; &amp; {}\ \ \vdots \\
+a_{N+1} &amp; = \frac{a_N + b_N}{2}, &amp; b_{N+1} &amp; = \sqrt{a_N b_N}
+\end{align}
+&lt;/math&gt;
+
+as
+: &lt;math&gt;N\to +\infty, &lt;/math&gt;
+
+have the same limit:
+: &lt;math&gt;
+\lim_{N\to\infty}a_N = \lim_{N\to\infty}b_N = M(a,b),
+&lt;/math&gt;
+the arithmetic–geometric mean, ''agm''.
+
+It is possible to use this fact to construct [[fast algorithms]] for calculating [[elementary function|elementary]] [[transcendental function]]s and some classical constants, in particular, the constant [[pi|{{pi}}]].
+
+===Applications===
+
+====The number ''π''====
+For example, according to the Gauss–[[Eugene Salamin (mathematician)|Salamin]] formula:&lt;ref&gt;{{cite journal |author=[[Eugene Salamin (mathematician)|E. Salamin]] |title=Computation of π using arithmetic-geometric mean |journal=Math. Comp. |volume=30 |issue=135 |year=1976 |pages=565–570 |doi=10.2307/2005327 |mr=0404124}}&lt;/ref&gt;
+
+: &lt;math&gt;
+\pi = \frac{4 \left( M(1; \frac{1}{\sqrt{2}}) \right)^2} {\displaystyle 1 - \sum_{j=1}^\infty 2^{j+1} c_j^2}
+,
+&lt;/math&gt;
+
+where
+
+: &lt;math&gt;c_j = \frac 12\left(a_{j-1}-b_{j-1}\right)&lt;/math&gt;
+
+which can be computed without loss of precision using
+
+: &lt;math&gt;c_j = \frac{c_{j-1}^2}{4a_j}.&lt;/math&gt;
+
+====Complete elliptic integral ''K''(sin''α'')====
+Taking &lt;math&gt;
+a_0 = 1, \quad b_0 = \cos\alpha
+&lt;/math&gt; ,     yields the ''agm'',
+: &lt;math&gt;
+\lim_{N\to\infty}a_N = \frac{\pi}{2K(\sin \alpha)}~,
+&lt;/math&gt;
+where {{math|''K''(''k'')}} is a complete [[elliptic integral|elliptic integral of the first kind]],
+:&lt;math&gt;
+K(k) = \int_0^{\pi/2}(1 - k^2 \sin^2\theta)^{-1/2} \, d\theta ~.
+&lt;/math&gt;
+That is to say that this [[quarter period]] may be efficiently computed through the ''agm'',
+:&lt;math&gt;
+K(k) =  \frac{\pi}{2~M(1,\sqrt{1-k^2})} ~.
+&lt;/math&gt;
+
+====Other applications====
+Using this property of the AGM along with the ascending transformations of Landen,&lt;ref&gt;{{cite journal |author=J. Landen |title=An investigation of a general theorem for finding the length of any arc of any conic hyperbola, by means of two elliptic arcs, with some other new and useful theorems deduced therefrom |journal=Philosophical Transactions of the Royal Society |volume=65 |year=1775 |pages=283–289 |doi=10.1098/rstl.1775.0028}}&lt;/ref&gt; [[Richard P. Brent|Richard Brent]]&lt;ref&gt;{{cite journal |author=[[Richard P. Brent|R. P. Brent]] |title=Fast Multiple-Precision Evaluation of Elementary Functions |journal=J. Assoc. Comput. Mach. |volume=23 |issue=2 |year=1976 |pages=242–251 |doi=10.1145/321941.321944 |mr=0395314|citeseerx=10.1.1.98.4721 }}&lt;/ref&gt; suggested the first AGM algorithms for the fast evaluation of elementary transcendental functions (''e''&lt;sup&gt;''x''&lt;/sup&gt;, cos&amp;nbsp;''x'', sin&amp;nbsp;''x''). Subsequently, many authors went on to study the use of the AGM algorithms.&lt;ref&gt;{{cite book |author1-link=Jonathan Borwein |first1=J. M. |last1=Borwein| author2-link=Peter Borwein |first2=P. B. |last2=Borwein |title=Pi and the AGM |publisher=Wiley |place=New York |year=1987 |isbn=0-471-83138-7 |mr=0877728}}&lt;/ref&gt;
+
+==See also==
+* [[Generalized mean]]
+* [[Gauss–Legendre algorithm]]
+
+==External links==
+* [http://arithmeticgeometricmean.blogspot.de/ Arithmetic-Geometric Mean Calculator]
+*[https://planetmath.org/ConvergenceOfArithmeticGeometricMean Proof of convergence rate in PlanetMath]
+
+==References== 
+===Notes===
+{{reflist|30em}}
+
+===Other===
+{{refbegin}}
+* {{cite journal | author1-last = Daróczy | author1-first= Zoltán | author2-last= Páles | author2-first= Zsolt | year = 2002 | title = Gauss-composition of means and the solution of the Matkowski–Suto problem | url = | journal = [[Publicationes Mathematicae Debrecen]] | volume = 61 | issue = 1–2| pages = 157–218 }}
+*{{SpringerEOM|title=Arithmetic–geometric mean process|urlname=a/a130280}}
+*{{mathworld|urlname=Arithmetic-GeometricMean}}
+{{refend}}
+
+{{DEFAULTSORT:Arithmetic-Geometric Mean}}
+[[Category:Means]]
+[[Category:Special functions]]
+[[Category:Elliptic functions]]
+[[Category:Articles containing proofs]]</text>
+      <sha1>9ozqt0o9dosofiujtegemc0mn5dg7ba</sha1>
+    </revision>
+  </page>

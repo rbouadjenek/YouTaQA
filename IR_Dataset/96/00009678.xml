@@ -1,0 +1,341 @@
+  <page>
+    <title>Exponential function</title>
+    <ns>0</ns>
+    <id>9678</id>
+    <revision>
+      <id>940887047</id>
+      <parentid>940887038</parentid>
+      <timestamp>2020-02-15T06:47:29Z</timestamp>
+      <contributor>
+        <username>ClueBot NG</username>
+        <id>13286072</id>
+      </contributor>
+      <minor />
+      <comment>Reverting possible vandalism by [[Special:Contribs/116.118.5.189|116.118.5.189]] to version by Plandu. [[WP:CBFP|Report False Positive?]] Thanks, [[WP:CBNG|ClueBot NG]]. (3700044) (Bot)</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{About|functions of the form f(x)&amp;nbsp;{{=}}&amp;nbsp;ab&lt;sup&gt;x&lt;/sup&gt;|functions of the form f(x,y)&amp;nbsp;{{=}}&amp;nbsp;x&lt;sup&gt;y&lt;/sup&gt;|Exponentiation|functions of the form f(x)&amp;nbsp;{{=}}&amp;nbsp;x&lt;sup&gt;r&lt;/sup&gt;|Power function}}
+{{Short description|A class of mathematical functions}}
+{{Use dmy dates|date=August 2019|cs1-dates=y}}
+[[Image:exp.svg|thumb|200px|right|The natural exponential function {{math|''y'' {{=}} ''e{{sup|x}}''}}]]
+[[Image:Exponenciala priklad.png|thumb|200px|right|Exponential functions with bases 2 and 1/2]]
+
+In [[mathematics]], an '''exponential function''' is a [[Function (mathematics)|function]] of the form
+{{block indent|&lt;math&gt; f(x) = ab^x, &lt;/math&gt;}}
+where {{mvar|b}} is a positive real number, and in which the argument {{math|''x''}} occurs as an exponent. For real numbers {{mvar|c}} and {{mvar|d,}} a function of the form &lt;math&gt;f(x)=ab^{cx+d}&lt;/math&gt; is also an exponential function, as it can be rewritten as 
+:&lt;math&gt;ab^{cx+d}=\left(ab^d\right) \left(b^c\right)^x.&lt;/math&gt;
+
+As functions of a real variable, exponential functions are uniquely [[characterization (mathematics)|characterized]] by the fact that the growth rate of such a function (that is, its [[derivative]]) is [[Proportionality (mathematics)#Direct proportionality|directly proportional]] to the value of the function.  The constant of proportionality of this relationship is the [[natural logarithm]] of the base {{mvar|b}}:
+
+{{block indent|&lt;math&gt;\frac{d}{dx} b^x = b^x \log_e b.&lt;/math&gt;}}
+
+For {{math|''b'' {{=}} 1}} the real exponential function is a constant and the derivative is zero because &lt;math&gt;\log_e b = 0,&lt;/math&gt; for positive {{mvar|a}} and {{math|''b'' &gt; 1}} the real exponential functions are monotonically increasing (as depicted for {{math|''b'' {{=}} ''e''}} and {{math|''b'' {{=}} 2}}), because the derivative is greater than zero for all arguments, and for {{math|''b'' &lt; 1}} they are monotonically decreasing (as depicted for {{math|''b'' {{=}} {{sfrac|1|2}}}}), because the derivative is less than zero for all arguments.
+
+The constant [[e (mathematical constant)|{{math|1=''e'' = 2.71828...}}]] is the unique base for which the constant of proportionality is 1, so that the function's derivative is itself:
+
+{{block indent|&lt;math&gt;\frac{d}{dx} e^x = e^x \log_e e = e^x.&lt;/math&gt;}}
+
+Since changing the base of the exponential function merely results in the appearance of an additional constant factor, it is computationally convenient to reduce the study of exponential functions in mathematical analysis to the study of this particular function, conventionally called the &quot;natural exponential function&quot;,&lt;ref name=&quot;Goldstein_2006&quot;/&gt;&lt;ref name=&quot;Courant_1996&quot;/&gt; or simply, &quot;the exponential function&quot; and denoted by
+
+{{block indent|&lt;math&gt;x\mapsto e^x&lt;/math&gt; or &lt;math&gt;x\mapsto \exp x.&lt;/math&gt;}}
+
+While both notations are common, the former notation is generally used for simpler exponents, while the latter tends to be used when the exponent is a complicated expression.
+
+The exponential function satisfies the fundamental multiplicative identity
+
+{{block indent|&lt;math&gt;e^{x+y} = e^x e^y,&lt;/math&gt; for all &lt;math&gt;x,y\in\mathbb{R}.&lt;/math&gt;}}
+
+This identity extends to complex-valued exponents. It can be shown that every continuous, nonzero solution of the functional equation &lt;math&gt;f(x+y)=f(x)f(y)&lt;/math&gt; is an exponential function, &lt;math&gt;f:\mathbb{R}\to\mathbb{R},\ x\mapsto b^x,&lt;/math&gt; with &lt;math&gt;b&gt;0.&lt;/math&gt;  The fundamental multiplicative identity, along with the definition of the number {{mvar|e}} as {{math|''e''&lt;sup&gt;1&lt;/sup&gt;}}, shows that &lt;math&gt;e^n=\underbrace{ e\times\cdots\times e }_{n\text{ terms}}&lt;/math&gt; for positive integers {{mvar|n}} and relates the exponential function to the elementary notion of exponentiation.
+
+The argument of the exponential function can be any [[Real number|real]] or [[complex number]] or even an entirely different kind of [[mathematical object]] (for example, a matrix).
+
+Its ubiquitous occurrence in [[Pure mathematics|pure]] and [[applied mathematics]] has led mathematician [[Walter Rudin|W. Rudin]] to opine that the exponential function is &quot;the most important function in mathematics&quot;.&lt;ref name=&quot;Rudin_1987&quot;/&gt; In applied settings, exponential functions model a relationship in which a constant change in the independent variable gives the same proportional change (that is, percentage increase or decrease) in the dependent variable. This occurs widely in the natural and social sciences; thus, the exponential function also appears in a variety of contexts within [[physics]], [[chemistry]], [[engineering]], [[mathematical biology]], and [[economics]]. 
+
+The [[graph of a function|graph]] of &lt;math&gt;y=e^x&lt;/math&gt; is upward-sloping, and increases faster as {{mvar|x}} increases. The graph always lies above the {{mvar|x}}-axis but can be arbitrarily close to it for negative {{mvar|x}}; thus, the {{mvar|x}}-axis is a horizontal [[asymptote]]. The [[slope]] of the [[tangent]] to the graph at each point is equal to its {{mvar|y}}-coordinate at that point, as implied by its derivative function (''see above''). Its [[inverse function]] is the [[natural logarithm]], denoted &lt;math&gt;\log,&lt;/math&gt;&lt;ref group=&quot;nb&quot; name=&quot;Logx&quot;/&gt; &lt;math&gt;\ln,&lt;/math&gt;&lt;ref group=&quot;nb&quot; name=&quot;lnx&quot;/&gt; or &lt;math&gt;\log_e;&lt;/math&gt; because of this, some old texts&lt;ref name=&quot;Durell_1911&quot;/&gt; refer to the exponential function as the '''antilogarithm'''.
+{{E (mathematical constant)}}
+
+==Formal definition==
+{{main|Characterizations of the exponential function}}
+[[Image:Exp series.gif|right|thumb|The exponential function (in blue), and the sum of the first {{math|''n'' + 1}} terms of its power series (in red).]]
+
+The real exponential function &lt;math&gt;\exp:\mathbb{R}\to\mathbb{R}&lt;/math&gt; can be characterized in a variety of equivalent ways. Most commonly, it is defined by the following [[power series]]:&lt;ref name=&quot;Rudin_1987&quot;/&gt;
+
+:&lt;math&gt;\exp x := \sum_{k = 0}^{\infty} \frac{x^k}{k!} = 1 + x + \frac{x^2}{2} + \frac{x^3}{6} + \frac{x^4}{24} + \cdots&lt;/math&gt;
+
+Since the [[radius of convergence]] of this power series is infinite, this definition is, in fact, applicable to all complex numbers &lt;math&gt;z \in \mathbb{C}&lt;/math&gt; (see [[Exponential function#Complex plane|below]] for the extension of &lt;math&gt;\exp x&lt;/math&gt; to the complex plane). The constant {{mvar|e}} can then be defined as &lt;math display=&quot;inline&quot;&gt;e=\exp 1=\sum_{k=0}^\infty(1/k!).&lt;/math&gt;
+
+The term-by-term differentiation of this power series reveals that &lt;math&gt;(d/dx) (\exp x) = \exp x&lt;/math&gt; for all real {{mvar|x}}, leading to another common characterization of &lt;math&gt;\exp x&lt;/math&gt; as the unique solution of the [[differential equation]]
+:&lt;math&gt;y'(x)=y(x),&lt;/math&gt;
+
+satisfying the initial condition &lt;math&gt;y(0)=1.&lt;/math&gt;
+
+Based on this characterization, the [[chain rule]] shows that its inverse function, the [[natural logarithm]], satisfies &lt;math&gt;(d/dy) (\log_e y) = 1/y&lt;/math&gt; for &lt;math&gt;y&gt;0,&lt;/math&gt; or &lt;math display=&quot;inline&quot;&gt;\log_e y=\int_1^y \frac{1}{t}\,dt.&lt;/math&gt;  This relationship leads to a less common definition of the real exponential function &lt;math&gt;\exp x&lt;/math&gt; as the solution &lt;math&gt;y&lt;/math&gt; to the equation
+: &lt;math&gt;x = \int_1^y \frac{1}{t} \, dt.&lt;/math&gt;
+
+By way of the [[binomial theorem]] and the power series definition, the exponential function can also be defined as the following limit:&lt;ref name=&quot;Maor&quot;/&gt;
+
+: &lt;math&gt;\exp x = \lim_{n \to \infty} \left(1 + \frac{x}{n}\right)^n.&lt;/math&gt;
+
+==Overview==
+[[File:Animation of exponential function.gif|thumb|The red curve is the exponential function.  The black horizontal lines show where it crosses the green vertical lines.]]
+The exponential function arises whenever a quantity [[exponential growth|grows]] or [[exponential decay|decays]] at a rate [[Proportionality (mathematics)|proportional]] to its current value.  One such situation is [[continuously compounded interest]], and in fact it was this observation that led [[Jacob Bernoulli]] in 1683&lt;ref name=&quot;O'Connor_2001&quot;/&gt; to the number
+
+:&lt;math&gt;\lim_{n\to\infty}\left(1 + \frac{1}{n}\right)^{n}&lt;/math&gt;
+
+now known as {{math|''e''}}.  Later, in 1697, [[Johann Bernoulli]] studied the calculus of the exponential function.&lt;ref name=&quot;O'Connor_2001&quot;/&gt;
+
+If a principal amount of 1 earns interest at an annual rate of {{math|''x''}} compounded monthly, then the interest earned each month is {{math|{{sfrac|''x''|12}}}} times the current value, so each month the total value is multiplied by {{math|(1 + {{sfrac|''x''|12}})}}, and the value at the end of the year is {{math|(1 + {{sfrac|''x''|12}})&lt;sup&gt;12&lt;/sup&gt;}}.  If instead interest is compounded daily, this becomes {{math|(1 + {{sfrac|''x''|365}})&lt;sup&gt;365&lt;/sup&gt;}}.  Letting the number of time intervals per year grow without bound leads to the [[limit of a function|limit]] definition of the exponential function,
+
+:&lt;math&gt;\exp x = \lim_{n\to\infty}\left(1 + \frac{x}{n}\right)^{n}&lt;/math&gt;
+
+first given by [[Leonhard Euler]].&lt;ref name=&quot;Maor&quot;/&gt;
+This is one of a number of [[characterizations of the exponential function]]; others involve [[series (mathematics)|series]] or [[differential equation]]s.
+
+From any of these definitions it can be shown that the exponential function obeys the basic [[exponentiation]] identity,
+:&lt;math&gt;\exp(x + y) = \exp x \cdot \exp y&lt;/math&gt;
+
+which justifies the notation {{math|''e''&lt;sup&gt;''x''&lt;/sup&gt;}}.
+
+The [[derivative]] (rate of change) of the exponential function is the exponential function itself. More generally, a function with a rate of change ''proportional'' to the function itself (rather than equal to it) is expressible in terms of the exponential function. This function property leads to [[exponential growth]] or [[exponential decay]].
+
+The exponential function extends to an [[entire function]] on the [[complex plane]]. [[Euler's formula]] relates its values at purely imaginary arguments to [[trigonometric functions]].  The exponential function also has analogues for which the argument is a [[matrix exponential|matrix]], or even an element of a [[Banach algebra]] or a [[Lie algebra]].
+
+==Derivatives and differential equations==
+[[Image:Exp tangent.svg|thumb|250px|right |The derivative of the exponential function is equal to the value of the function. From any point {{math|''P''}} on the curve (blue), let a tangent line (red), and a vertical line (green) with height {{math|''h''}} be drawn, forming a right triangle with a base {{math|''b''}} on the {{math|''x''}}-axis. Since the slope of the red tangent line (the derivative) at {{math|''P''}} is equal to the ratio of the triangle's height to the triangle's base (rise over run), and the derivative is equal to the value of the function, {{math|''h''}} must be equal to the ratio of {{math|''h''}} to {{math|''b''}}. Therefore, the base ''b'' must always be&amp;nbsp;1.]]
+
+The importance of the exponential function in mathematics and the sciences stems mainly from its definition as the unique function which is equal to its derivative and is equal to 1 when {{math|1=''x'' = 0}}. That is,
+: &lt;math&gt;\frac{d}{dx}e^x = e^x \quad\text{and}\quad e^0=1.&lt;/math&gt;
+
+Functions of the form {{math|''ce''&lt;sup&gt;''x''&lt;/sup&gt;}} for constant {{math|''c''}} are the only functions that are equal to their derivative (by the [[Picard–Lindelöf theorem]]). Other ways of saying the same thing include:
+* The slope of the graph at any point is the height of the function at that point.
+* The rate of increase of the function at {{math|''x''}} is equal to the value of the function at {{math|''x''}}.
+* The function solves the [[differential equation]] {{math|1=''y''′ = ''y''}}.
+* {{math|exp}} is a [[fixed point (mathematics)|fixed point]] of derivative as a [[Functional (mathematics)|functional]].
+
+If a variable's growth or decay rate is [[proportionality (mathematics)|proportional]] to its size—as is the case in unlimited population growth (see [[Malthusian catastrophe]]), continuously compounded [[interest]], or [[radioactive decay]]—then the variable can be written as a constant times an exponential function of time.  Explicitly for any real constant {{math|''k''}}, a function {{math|''f'': '''R''' → '''R'''}} satisfies {{math|1=''f''′ = ''kf''}} if and only if {{math|1=''f''(''x'') = ''ce''&lt;sup&gt;''kx''&lt;/sup&gt;}} for some constant {{math|''c''}}.
+
+Furthermore, for any differentiable function {{math|''f''(''x'')}}, we find, by the [[chain rule]]:
+
+: &lt;math&gt;\frac{d}{dx} e^{f(x)} = f'(x)e^{f(x)}.&lt;/math&gt;
+
+==Continued fractions for {{small|{{math|''e''&lt;sup&gt;''x''&lt;/sup&gt;}}}}==
+A [[continued fraction]] for {{math|''e''&lt;sup&gt;''x''&lt;/sup&gt;}} can be obtained via [[Euler's continued fraction formula|an identity of Euler]]:
+
+:&lt;math&gt;  e^x = 1 + \cfrac{x}{1 - \cfrac{x}{x + 2 - \cfrac{2x}{x + 3 - \cfrac{3x}{x + 4 - \ddots}}}}&lt;/math&gt;
+
+The following [[generalized continued fraction]] for {{math|''e''&lt;sup&gt;''z''&lt;/sup&gt;}} converges more quickly:&lt;ref name=&quot;Lorentzen_2008&quot;/&gt;
+:&lt;math&gt;  e^z = 1 + \cfrac{2z}{2 - z + \cfrac{z^2}{6 + \cfrac{z^2}{10 + \cfrac{z^2}{14 + \ddots}}}}&lt;/math&gt;
+
+or, by applying the substitution {{math|''z'' {{=}} {{sfrac|''x''|''y''}}}}:
+:&lt;math&gt;  e^\frac{x}{y} = 1 + \cfrac{2x}{2y - x + \cfrac{x^2} {6y + \cfrac{x^2} {10y + \cfrac{x^2} {14y + \ddots}}}}&lt;/math&gt;
+
+with a special case for {{math|''z'' {{=}} 2}}:
+:&lt;math&gt;  e^2 = 1 + \cfrac{4}{0 + \cfrac{2^2}{6 + \cfrac{2^2}{10 + \cfrac{2^2}{14 + \ddots\,}}}} = 7 + \cfrac{2}{5 + \cfrac{1}{7 + \cfrac{1}{9 + \cfrac{1}{11 + \ddots\,}}}}&lt;/math&gt;
+
+This formula also converges, though more slowly, for {{math|''z'' &gt; 2}}. For example:
+
+:&lt;math&gt;  e^3 = 1 + \cfrac{6}{-1 + \cfrac{3^2}{6 + \cfrac{3^2}{10 + \cfrac{3^2}{14 + \ddots\,}}}} = 13 + \cfrac{54}{7 + \cfrac{9}{14 + \cfrac{9}{18 + \cfrac{9}{22 + \ddots\,}}}}&lt;/math&gt;
+
+{{anchor|On the complex plane}}&lt;!-- This section is linked from [[Complex plane]] --&gt;
+
+==Complex plane==
+[[Image:Complex exp.jpg|thumb|right|Exponential function on the complex plane. The transition from dark to light colors shows that the magnitude of the exponential function is increasing to the right. The periodic horizontal bands indicate that the exponential function is [[periodic function|periodic]] in the [[imaginary part]] of its argument.]]
+
+As in the [[real number|real]] case, the exponential function can be defined on the [[complex plane]] in several equivalent forms. The most common definition of the complex exponential function parallels the power series definition for real arguments, where the real variable is replaced by a complex one:
+
+:&lt;math&gt;\exp z := \sum_{k = 0}^\infty\frac{z^k}{k!} &lt;/math&gt;
+
+Term-wise multiplication of two copies of these power series in the [[Cauchy product|Cauchy]] sense, permitted by [[Cauchy product|Mertens' theorem]], shows that the defining multiplicative property of exponential functions continues to hold for all complex arguments:
+
+:&lt;math&gt;\exp(w+z)=\exp w\exp z&lt;/math&gt; for all &lt;math&gt;w,z\in\mathbb{C}&lt;/math&gt;
+
+The definition of the complex exponential function in turn leads to the appropriate definitions extending the [[trigonometric functions]] to complex arguments.
+
+In particular, when &lt;math&gt;z=it&lt;/math&gt; (&lt;math&gt;t&lt;/math&gt; real), the series definition yields the expansion
+
+:&lt;math&gt;\exp(it) = \Big( 1-\frac{t^2}{2!}+\frac{t^4}{4!}-\frac{t^6}{6!}+\cdots\Big)+i\Big(t-\frac{t^3}{3!}+
+\frac{t^5}{5!}-\frac{t^7}{7!}+\cdots\Big)&lt;/math&gt;
+
+In this expansion, the rearrangement of the terms into real and imaginary parts is justified by the absolute convergence of the series.  The real and imaginary parts of the above expression in fact correspond to the series expansions of &lt;math&gt;\cos t&lt;/math&gt; and &lt;math&gt;\sin t&lt;/math&gt;, respectively. 
+
+This correspondence provides motivation for ''defining'' cosine and sine for all complex arguments in terms of &lt;math&gt;\exp(\pm iz) &lt;/math&gt; and the equivalent power series:&lt;ref name=&quot;Rudin_1976&quot;/&gt;
+
+:&lt;math&gt;\cos z:=\frac{1}{2}\Big[\exp(iz)+\exp(-iz)\Big]=\sum_{k=0}^{\infty}(-1)^k
+\frac{z^{2k}}{(2k)!}&lt;/math&gt; and &lt;math&gt;\sin z:=\frac{1}{2i}\Big[\exp(iz)-\exp(-iz)\Big]=\sum_{k=0}^{\infty}(-1)^k\frac{z^{2k+1}}{(2k+1)!}&lt;/math&gt; for all &lt;math&gt;z\in\mathbb{C}&lt;/math&gt;
+
+The functions exp, cos, and sin so defined have infinite [[Radius of convergence|radii of convergence]] by the [[ratio test]] and are therefore [[Entire function|entire functions]] (''i.e.'', [[Holomorphic function|holomorphic]] on &lt;math&gt;\mathbb{C}&lt;/math&gt;).  The range of the exponential function is &lt;math&gt;\mathbb{C}\setminus \{0\}&lt;/math&gt;, while the ranges of the complex sine and cosine functions are both &lt;math&gt;\mathbb{C}&lt;/math&gt; in its entirety, in accord with [[Picard theorem|Picard's theorem]], which asserts that the range of a nonconstant entire function is either all of &lt;math&gt;\mathbb{C}&lt;/math&gt;, or &lt;math&gt;\mathbb{C}&lt;/math&gt; excluding one [[lacunary value]].
+
+These definitions for the exponential and trigonometric functions lead trivially to [[Euler's formula]]:
+
+:&lt;math&gt;\exp(iz)=\cos z+i\sin z&lt;/math&gt; for all &lt;math&gt;z\in\mathbb{C}&lt;/math&gt;
+
+We could alternatively define the complex exponential function based on this relationship.  If &lt;math&gt;z=x+iy&lt;/math&gt;, where &lt;math&gt;x&lt;/math&gt; and &lt;math&gt;y&lt;/math&gt; are both real, then we could define its exponential as
+
+:&lt;math&gt;\exp z = \exp(x+iy) :=  (\exp x)(\cos y + i \sin y)&lt;/math&gt;
+
+where exp, cos, and sin on the right-hand side of the definition sign are to be interpreted as functions of a real variable, previously defined by other means.&lt;ref name=&quot;Apostol_1974&quot;/&gt;
+
+For &lt;math&gt;t\in\mathbb{R} &lt;/math&gt;, the relationship &lt;math&gt;\overline{\exp(it)}=\exp(-it)&lt;/math&gt; holds, so that &lt;math&gt;|\exp(it)|=1&lt;/math&gt; for real &lt;math&gt;t&lt;/math&gt; and &lt;math&gt;t\mapsto\exp(it)&lt;/math&gt; maps the real line (mod &lt;math&gt;2\pi&lt;/math&gt;) to the unit circle.  Based on the relationship between &lt;math&gt;\exp(it)&lt;/math&gt; and the unit circle, it is easy to see that, restricted to real arguments, the definitions of sine and cosine given above coincide with their more elementary definitions based on geometric notions.
+
+The complex exponential function is periodic with period &lt;math&gt;2\pi i&lt;/math&gt; and &lt;math&gt;\exp(z+2\pi i k)=\exp z&lt;/math&gt; holds for all &lt;math&gt;z\in\mathbb{C},k\in\mathbb{Z}&lt;/math&gt;. 
+
+When its domain is extended from the real line to the complex plane, the exponential function retains the following properties:
+* &lt;math&gt;e^{z + w} = e^z e^w\,&lt;/math&gt;
+* &lt;math&gt;e^0 = 1\,&lt;/math&gt;
+* &lt;math&gt;e^z \ne 0&lt;/math&gt;
+* &lt;math&gt;\tfrac{d}{dz} e^z = e^z&lt;/math&gt;
+* &lt;math&gt;\left(e^z\right)^n = e^{nz}, n \in \mathbb{Z}&lt;/math&gt;
+for all &lt;math&gt;w,z\in\mathbb{C}&lt;/math&gt;.
+
+Extending the natural logarithm to complex arguments yields the [[complex logarithm]] {{math|log ''z''}}, which is a [[multivalued function]].
+
+We can then define a more general exponentiation:
+: &lt;math&gt;z^w = e^{w \log z}&lt;/math&gt;
+
+for all complex numbers {{math|''z''}} and {{math|''w''}}. This is also a multivalued function, even when {{math|''z''}} is real. This distinction is problematic, as the multivalued functions {{math|log ''z''}} and {{math|''z''&lt;sup&gt;''w''&lt;/sup&gt;}} are easily confused with their single-valued equivalents when substituting a real number for {{math|''z''}}. The rule about multiplying exponents for the case of positive real numbers must be modified in a multivalued context:
+: {{math|(''e{{sup|z}}''){{su|p=''w''}} ≠ ''e{{sup|zw}}''}}, but rather {{math|(''e{{sup|z}}''){{su|p=''w''}} {{=}} ''e''{{sup|(''z'' + 2π''in'')''w''}}}} multivalued over integers {{math|''n''}}
+
+See [[Exponentiation#Failure of power and logarithm identities|failure of power and logarithm identities]] for more about problems with combining powers.
+
+The exponential function maps any [[line (mathematics)|line]] in the complex plane to a [[logarithmic spiral]] in the complex plane with the center at the [[Origin (mathematics)|origin]]. Two special cases exist: when the original line is parallel to the real axis, the resulting spiral never closes in on itself; when the original line is parallel to the imaginary axis, the resulting spiral is a circle of some radius.
+
+&lt;gallery caption=&quot;3D-Plots of Real Part, Imaginary Part, and Modulus of the exponential function&quot; class=&quot;center&quot; mode=&quot;packed&quot; style=&quot;text-align:left&quot; heights=&quot;150px&quot;&gt;
+ Image:ExponentialAbs_real_SVG.svg| {{math|''z'' {{=}} Re(''e''&lt;sup&gt;''x'' + ''iy''&lt;/sup&gt;)}}
+ Image:ExponentialAbs_image_SVG.svg| {{math|''z'' {{=}} Im(''e''&lt;sup&gt;''x'' + ''iy''&lt;/sup&gt;)}}
+ Image:ExponentialAbs_SVG.svg| {{math|''z'' {{=}} {{abs|''e''&lt;sup&gt;''x'' + ''iy''&lt;/sup&gt;}}}}
+&lt;/gallery&gt;
+
+Considering the complex exponential function as a function involving four real variables:
+: &lt;math&gt;v+iw = \exp(x+iy)&lt;/math&gt;
+the graph of the exponential function is a two-dimensional surface curving through four dimensions.
+
+Starting with a color-coded portion of the &lt;math&gt;xy&lt;/math&gt; domain, the following are depictions of the graph as variously projected into two or three dimensions.
+
+&lt;gallery caption=&quot;Graphs of the complex exponential function&quot; class=&quot;center&quot; mode=&quot;packed&quot; style=&quot;text-align:left&quot; heights=&quot;200px&quot;&gt;
+File: Complex exponential function graph domain xy dimensions.svg|Checker board key:&lt;br&gt; &lt;math&gt;x&gt; 0:\; \text{green}&lt;/math&gt;&lt;br&gt; &lt;math&gt;x&lt; 0:\; \text{red}&lt;/math&gt;&lt;br&gt;&lt;math&gt; y&gt; 0:\; \text{yellow}&lt;/math&gt;&lt;br&gt;&lt;math&gt; y&lt; 0:\; \text{blue}&lt;/math&gt;
+File: Complex exponential function graph range vw dimensions.svg|Projection onto the range complex plane (V/W). Compare to the next, perspective picture.
+File: Complex exponential function graph horn shape xvw dimensions.jpg|Projection into the &lt;math&gt;x&lt;/math&gt;, &lt;math&gt;v&lt;/math&gt;, and &lt;math&gt;w&lt;/math&gt; dimensions, producing a flared horn or funnel shape (envisioned as 2-D perspective image).
+File: Complex exponential function graph spiral shape yvw dimensions.jpg|Projection into the &lt;math&gt;y&lt;/math&gt;, &lt;math&gt;v&lt;/math&gt;, and &lt;math&gt;w&lt;/math&gt; dimensions, producing a spiral shape. (&lt;math&gt;y&lt;/math&gt; range extended to ±2{{pi}}, again as  2-D perspective image).
+&lt;/gallery&gt;
+
+The second image shows how the domain complex plane is mapped into the range complex plane:
+* zero is mapped to 1
+* the real &lt;math&gt;x&lt;/math&gt; axis is mapped to the positive real &lt;math&gt;v&lt;/math&gt; axis
+* the imaginary &lt;math&gt;y&lt;/math&gt; axis is wrapped around the unit circle at a constant angular rate
+* values with negative real parts are mapped inside the unit circle
+* values with positive real parts are mapped outside of the unit circle
+* values with a constant real part are mapped to circles centered at zero
+* values with a constant imaginary part are mapped to rays extending from zero
+
+The third and fourth images show how the graph in the second image extends into one of the other two dimensions not shown in the second image.
+
+The third image shows the graph extended along the real &lt;math&gt;x&lt;/math&gt; axis.  It shows the graph is a surface of revolution about the &lt;math&gt;x&lt;/math&gt; axis of the graph of the real exponential function, producing a horn or funnel shape.
+
+The fourth image shows the graph extended along the imaginary &lt;math&gt;y&lt;/math&gt; axis.  It shows that the graph's surface for positive and negative &lt;math&gt;y&lt;/math&gt; values doesn't really meet along the negative real &lt;math&gt;v&lt;/math&gt; axis, but instead forms a spiral surface about the &lt;math&gt;y&lt;/math&gt; axis.  Because its &lt;math&gt;y&lt;/math&gt; values have been extended to ±2π, this image also better depicts the 2π periodicity in the imaginary &lt;math&gt;y&lt;/math&gt; value.
+
+===Computation of {{math|''a''&lt;sup&gt;''b''&lt;/sup&gt;}} where both {{math|''a''}} and {{math|''b''}} are complex===
+{{Main|Exponentiation}}
+Complex exponentiation {{math|''a''&lt;sup&gt;''b''&lt;/sup&gt;}} can be defined by converting {{math|''a''}} to polar coordinates and using the identity {{math|(''e''&lt;sup&gt;ln ''a''&lt;/sup&gt;){{su|p=''b''}} {{=}} ''a''&lt;sup&gt;''b''&lt;/sup&gt;}}:
+: &lt;math&gt;a^b = \left(re^{\theta i}\right)^b = \left(e^{(\ln r) + \theta i}\right)^b = e^{\left((\ln r) + \theta i\right)b}&lt;/math&gt;
+
+However, when {{math|''b''}} is not an integer, this function is [[multivalued function|multivalued]], because {{math|''θ''}} is not unique (see [[exponentiation#Failure of power and logarithm identities|failure of power and logarithm identities]]).
+
+==Matrices and Banach algebras==
+The power series definition of the exponential function makes sense for square [[matrix (mathematics)|matrices]] (for which the function is called the [[matrix exponential]]) and more generally in any unital [[Banach algebra]] {{math|''B''}}.  In this setting, {{math|''e''&lt;sup&gt;0&lt;/sup&gt; {{=}} 1}}, and {{math|''e''&lt;sup&gt;''x''&lt;/sup&gt;}} is invertible with inverse {{math|''e''&lt;sup&gt;−''x''&lt;/sup&gt;}} for any {{math|''x''}} in {{math|''B''}}.  If {{math|''xy'' {{=}} ''yx''}}, then {{math|''e''&lt;sup&gt;''x'' + ''y''&lt;/sup&gt; {{=}} ''e''&lt;sup&gt;''x''&lt;/sup&gt;''e''&lt;sup&gt;''y''&lt;/sup&gt;}}, but this identity can fail for noncommuting {{math|''x''}} and {{math|''y''}}.
+
+Some alternative definitions lead to the same function.  For instance, {{math|''e''&lt;sup&gt;''x''&lt;/sup&gt;}} can be defined as
+:&lt;math&gt;\lim_{n \to \infty} \left(1 + \frac{x}{n} \right)^n .&lt;/math&gt;
+
+Or {{math|''e''&lt;sup&gt;''x''&lt;/sup&gt;}} can be defined as {{math|''f''&lt;sub&gt;''x''&lt;/sub&gt;(1)}}, where {{math|''f''&lt;sub&gt;''x''&lt;/sub&gt;: '''R'''→''B''}} is the solution to the differential equation {{math|{{sfrac|''df&lt;sub&gt;x&lt;/sub&gt;''|''dt''}}(''t'') {{=}} ''x{{space|hair}}f''&lt;sub&gt;''x''&lt;/sub&gt;(''t'')}}, with initial condition {{math|''f''&lt;sub&gt;''x''&lt;/sub&gt;(0) {{=}} 1}}; it follows that {{math|''f''&lt;sub&gt;''x''&lt;/sub&gt;(''t'') {{=}} ''e''&lt;sup&gt;''tx''&lt;/sup&gt;}} for every {{mvar|t}} in {{math|'''R'''.}}
+
+==Lie algebras==
+Given a [[Lie group]] {{math|''G''}} and its associated [[Lie algebra]] &lt;math&gt;\mathfrak{g}&lt;/math&gt;, the [[exponential map (Lie theory)|exponential map]] is a map &lt;math&gt;\mathfrak{g}&lt;/math&gt; {{math|↦ ''G''}} satisfying similar properties. In fact, since {{math|'''R'''}} is the Lie algebra of the Lie group of all positive real numbers under multiplication, the ordinary exponential function for real arguments is a special case of the Lie algebra situation. Similarly, since the Lie group {{math|GL(''n'','''R''')}} of invertible {{math|''n'' × ''n''}} matrices has as Lie algebra {{math|M(''n'','''R''')}}, the space of all {{math|''n'' × ''n''}} matrices, the exponential function for square matrices is a special case of the Lie algebra exponential map.
+
+The identity {{math|exp(''x'' + ''y'') {{=}} exp ''x'' exp ''y''}} can fail for Lie algebra elements {{math|''x''}} and {{math|''y''}} that do not commute; the [[Baker–Campbell–Hausdorff formula]] supplies the necessary correction terms.
+
+==Transcendency==
+The function {{math|''e''&lt;sup&gt;''z''&lt;/sup&gt;}} is not in {{math|'''C'''(''z'')}} (i.e., is not the quotient of two polynomials with complex coefficients).
+
+For {{math|''n''}} distinct complex numbers {{math|{''a''&lt;sub&gt;1&lt;/sub&gt;, …, ''a''&lt;sub&gt;''n''&lt;/sub&gt;}}}, the set {{math|{''e''&lt;sup&gt;''a''&lt;sub&gt;1&lt;/sub&gt;''z''&lt;/sup&gt;, …, ''e''&lt;sup&gt;''a''&lt;sub&gt;''n''&lt;/sub&gt;''z''&lt;/sup&gt;}}} is linearly independent over {{math|'''C'''(''z'')}}.
+
+The function {{math|''e''&lt;sup&gt;''z''&lt;/sup&gt;}} is [[transcendental function|transcendental]] over {{math|'''C'''(''z'')}}.
+
+=={{anchor|exp|expm1}}Computation==
+When computing (an approximation of) the exponential function near the argument {{math|0}}, the result will be close to 1, and computing the value of the difference &lt;math&gt;\exp x-1&lt;/math&gt; with [[floating-point arithmetic]] may lead to the loss of (possibly all) [[significant figures]], producing a large calculation error, possibly even a meaningless result. 
+
+Following a proposal by [[William Kahan]], it may thus be useful to have a dedicated routine, often called &lt;code&gt;expm1&lt;/code&gt;, for computing  {{math|''e&lt;sup&gt;x&lt;/sup&gt;'' − 1}} directly, bypassing computation of {{math|''e''&lt;sup&gt;''x''&lt;/sup&gt;}}. For example, if the exponential is computed by using its [[Taylor series]]
+:&lt;math&gt;e^x=1+x+\frac {x^2}2 + \frac{x^3}6+\cdots +\frac{x^n}{n!}+\cdots,&lt;/math&gt;
+one may use the Taylor series of &lt;math&gt;e^x-1:&lt;/math&gt;
+:&lt;math&gt;e^x-1=x+\frac {x^2}2 + \frac{x^3}6+\cdots +\frac{x^n}{n!}+\cdots.&lt;/math&gt;
+
+This was first implemented in 1979 in the [[Hewlett-Packard]] [[HP-41C]] calculator, and provided by several calculators,&lt;ref name=&quot;HP48_AUR&quot;/&gt;&lt;ref name=&quot;HP50_AUR&quot;/&gt; [[operating system]]s (for example [[Berkeley UNIX 4.3BSD]]&lt;ref name=&quot;Beebe_2017&quot;/&gt;), [[computer algebra system]]s, and programming languages (for example [[C99]]).&lt;ref name=&quot;Beebe_2002&quot;/&gt;
+
+In addition to base {{math|''e''}}, the [[IEEE 754-2008]] standard defines similar exponential functions near 0 for base 2 and 10: &lt;math&gt;2^x - 1&lt;/math&gt; and &lt;math&gt;10^x - 1&lt;/math&gt;.
+
+A similar approach has been used for the logarithm (see [[lnp1]]).&lt;ref group=&quot;nb&quot; name=&quot;Alternative_funcs&quot;/&gt;
+
+An identity in terms of the [[hyperbolic tangent]],
+:&lt;math&gt;\operatorname{expm1} (x) = \exp x - 1 = \frac{2 \tanh(x/2)}{1 - \tanh(x/2)},&lt;/math&gt;
+gives a high-precision value for small values of {{math|''x''}} on systems that do not implement {{math|expm1(''x'')}}.
+
+==See also==
+{{Portal|Mathematics}}
+{{div col}}
+* [[Mental calculation#nat-exp|Approximating natural exponents (log base {{math|''e''}})]]
+* [[Carlitz exponential]], a characteristic {{math|''p''}} analogue
+* [[Double exponential function]]
+* [[Exponential field]]
+* [[Half-exponential function]], a compositional square root of an exponential function
+* [[Linear function]]
+* [[List of exponential topics]]
+* [[List of integrals of exponential functions]]
+* [[Mittag-Leffler function]], a generalization of the exponential function
+* [[Multiplicative calculus]]
+* [[p-adic exponential function|{{math|''p''}}-adic exponential function]]
+* [[Polynomial function]]
+* [[Padé table for exponential function]] – [[Padé approximation]] of exponential function by a fraction of polynomial functions
+* [[Tetration]]
+* [[Unrestricted algorithm]] for the computation of the exponential function
+{{div col end}}
+
+==Notes==
+{{Reflist|group=&quot;nb&quot;|refs=
+&lt;ref group=&quot;nb&quot; name=&quot;Alternative_funcs&quot;&gt;A similar approach to reduce [[round-off error]]s of calculations for certain input values of [[trigonometric function]]s consists of using the less common trigonometric functions [[versine]], [[vercosine]], [[coversine]], [[covercosine]], [[haversine]], [[havercosine]], [[hacoversine]], [[hacovercosine]], [[exsecant]] and [[excosecant]].&lt;/ref&gt;
+&lt;ref group=&quot;nb&quot; name=&quot;Logx&quot;&gt;In pure mathematics, the notation {{math|log ''x''}} generally refers to the natural logarithm of {{mvar|x}} or a logarithm in general if the base is immaterial.&lt;/ref&gt;
+&lt;ref group=&quot;nb&quot; name=&quot;lnx&quot;&gt;The notation {{math|ln ''x''}} is the ISO standard and is prevalent in the natural sciences and secondary education (US).  However, some mathematicians (e.g., [[Paul Halmos]]) have criticized this notation and prefer to use {{math|log ''x''}} for the natural logarithm of {{mvar|x}}.&lt;/ref&gt;
+}}
+
+==References==
+{{Reflist|refs=
+&lt;ref name=&quot;Goldstein_2006&quot;&gt;{{cite book |author-last1=Goldstein |author-first1=Larry Joel |author-last2=Lay |author-first2=David C. |author-last3=Schneider |author-first3=David I. |author-last4=Asmar |author-first4=Nakhle H. |title=Brief calculus and its applications |edition=11th |publisher=Prentice–Hall |date=2006 |isbn=978-0-13-191965-5 |url=https://books.google.com/books?id=F82cPAAACAAJ&amp;pg=PA448}} (467 pages)&lt;/ref&gt;
+&lt;ref name=&quot;Courant_1996&quot;&gt;{{cite book |quote=''This natural exponential function is identical with its derivative.'' This is really the source of all the properties of the exponential function, and the basic reason for its importance in applications… |page=448 |author-last1=Courant |author-first1= |author-last2=Robbins |author-first2= |title=What is Mathematics? An Elementary Approach to Ideas and Methods |editor-last=Stewart |editor-first= |edition=2nd revised |publisher=[[Oxford University Press]] |date=1996 |isbn=978-0-13-191965-5}}&lt;/ref&gt;
+&lt;ref name=&quot;Durell_1911&quot;&gt;{{cite book |author-last1=Converse |author-first1=Henry Augustus |author-last2=Durell |author-first2=Fletcher |title=Plane and Spherical Trigonometry |publisher=C. E. Merrill Company |date=1911 |page=[https://archive.org/details/planeandspheric00duregoog/page/n18 12] |series=Durell's mathematical series |url=https://archive.org/details/planeandspheric00duregoog |quote=Inverse Use of a Table of Logarithms; that is, given a logarithm, to find the number corresponding to it, (called its antilogarithm) ...}} [https://books.google.com/books/about/Plane_and_spherical_trigonometry.html?id=9NwOAAAAYAAJ]&lt;/ref&gt;
+&lt;ref name=&quot;Rudin_1976&quot;&gt;{{Cite book |title=Principles of Mathematical Analysis |author-last=Rudin |author-first=Walter |publisher=[[McGraw-Hill]] |date=1976 |isbn=978-0-07054235-8 |location=New York |pages=182 |url=https://archive.org/details/PrinciplesOfMathematicalAnalysis}}&lt;/ref&gt; 
+&lt;ref name=&quot;Rudin_1987&quot;&gt;{{cite book |title=Real and complex analysis |author-last=Rudin |author-first=Walter |date=1987 |publisher=[[McGraw-Hill]] |isbn=978-0-07-054234-1 |edition=3rd |location=New York |page=1 |url=https://archive.org/details/RudinW.RealAndComplexAnalysis3e1987}}&lt;/ref&gt;
+&lt;ref name=&quot;Maor&quot;&gt;{{cite book |author-first=Eli |author-last=Maor |author-link=Eli Maor |title=e: the Story of a Number |page=156}}&lt;/ref&gt;
+&lt;ref name=&quot;O'Connor_2001&quot;&gt;{{cite web |title=The number e |author-first1=John J. |author-last1=O'Connor |author-first2=Edmund F. |author-last2=Robertson |publisher=University of St Andrews, Scotland |work=School of Mathematics and Statistics  |date=September 2001 |url=http://www-history.mcs.st-andrews.ac.uk/HistTopics/e.html |access-date=2011-06-13}}&lt;/ref&gt;
+&lt;ref name=&quot;Lorentzen_2008&quot;&gt;{{cite book |title=Continued Fractions |chapter=A.2.2 The exponential function. |author-first1=L. |author-last1=Lorentzen |author-first2=H. |author-last2=Waadeland |series=Atlantis Studies in Mathematics |date=2008 |doi=10.2991/978-94-91216-37-4 |page=268 |chapter-url=https://link.springer.com/content/pdf/bbm%3A978-94-91216-37-4%2F1}}&lt;/ref&gt;
+&lt;ref name=&quot;Apostol_1974&quot;&gt;{{Cite book |title=Mathematical Analysis |author-last=Apostol |author-first=Tom M. |publisher=[[Addison Wesley]] |date=1974 |isbn=978-0-20100288-1 |edition=2nd |location=Reading, Mass. |pages=19}}&lt;/ref&gt;
+&lt;ref name=&quot;Beebe_2002&quot;&gt;{{cite web |title=Computation of expm1 = exp(x)−1 |author-first=Nelson H. F. |author-last=Beebe |publisher=Department of Mathematics, Center for Scientific Computing, University of Utah |location=Salt Lake City, Utah, USA |date=2002-07-09 |version=1.00 |url=http://www.math.utah.edu/~beebe/reports/expm1.pdf |access-date=2015-11-02}}&lt;/ref&gt;
+&lt;ref name=&quot;Beebe_2017&quot;&gt;{{cite book |author-first=Nelson H. F. |author-last=Beebe |title=The Mathematical-Function Computation Handbook - Programming Using the MathCW Portable Software Library |chapter=Chapter 10.2. Exponential near zero |date=2017-08-22 |location=Salt Lake City, UT, USA |publisher=[[Springer International Publishing AG]] |edition=1 |lccn=2017947446 |isbn=978-3-319-64109-6 |doi=10.1007/978-3-319-64110-2 |pages=273–282 |quote=Berkeley UNIX 4.3BSD introduced the expm1() function in 1987.}}&lt;/ref&gt;
+&lt;ref name=&quot;HP48_AUR&quot;&gt;{{cite book |title=HP&amp;nbsp;48G Series – Advanced User's Reference Manual (AUR) |publisher=[[Hewlett-Packard]] |edition=4 |date=December 1994 |id=HP 00048-90136, 0-88698-01574-2 |orig-year=1993&lt;!-- edition 1 (1993-07) --&gt; |url=http://www.hpcalc.org/details.php?id=6036 |access-date=2015-09-06}}&lt;/ref&gt;
+&lt;ref name=&quot;HP50_AUR&quot;&gt;{{cite book |title=HP 50g / 49g+ / 48gII graphing calculator advanced user's reference manual (AUR) |publisher=[[Hewlett-Packard]] |edition=2 |date=2009-07-14 |orig-year=2005&lt;!-- first published: Edition 1 (2005–09) --&gt; |id=HP F2228-90010 |url=http://www.hpcalc.org/details.php?id=7141 |access-date=2015-10-10}} [http://holyjoe.net/hp/HP_50g_AUR_v2_English_searchable.pdf]&lt;/ref&gt;
+}}
+
+==External links==
+* {{springer|title=Exponential function|id=p/e036910}}
+* {{planetmath reference|id=6341|title=Complex exponential function}}
+* {{planetmath reference|id=9313|title=Derivative of exponential function}}
+* {{MathWorld|urlname= ExponentialFunction|title= Exponential Function}}
+
+{{Authority control}}
+
+{{DEFAULTSORT:Exponential Function}}
+[[Category:Elementary special functions]]
+[[Category:Analytic functions]]
+[[Category:Exponentials]]
+[[Category:Special hypergeometric functions]]
+[[Category:E (mathematical constant)]]</text>
+      <sha1>4ox8ecq95b7h0qwnkl3jcuy4isycr4h</sha1>
+    </revision>
+  </page>

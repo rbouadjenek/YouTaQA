@@ -1,0 +1,416 @@
+  <page>
+    <title>Classification of finite simple groups</title>
+    <ns>0</ns>
+    <id>7445</id>
+    <revision>
+      <id>939620574</id>
+      <parentid>932107871</parentid>
+      <timestamp>2020-02-07T16:45:26Z</timestamp>
+      <contributor>
+        <ip>24.131.221.92</ip>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{Group theory sidebar|Finite}}
+
+In [[mathematics]], the '''classification of the finite [[Simple group|simple groups]]''' is a theorem stating that every [[List of finite simple groups|finite simple group]] belongs to one of four broad classes described below. These [[group (mathematics)|groups]] can be seen as the basic building blocks of all [[finite group]]s, reminiscent of the way the [[prime number]]s are the basic building blocks of the [[natural number]]s.  The [[Jordan–Hölder theorem]] is a more precise way of stating this fact about finite groups. However, a significant difference from  [[integer factorization]] is that such &quot;building blocks&quot; do not necessarily determine  a unique group, since there might be many non-[[isomorphic]] groups with the same [[composition series]] or, put in another way, the [[group extension#Extension problem|extension problem]] does not have a unique solution.
+
+[[Group theory]] is central to many areas of pure and applied mathematics and the classification theorem is one of the great achievements of modern mathematics. The proof consists of tens of thousands of pages in several hundred journal articles written by about 100 authors, published mostly between 1955 and 2004. [[Daniel Gorenstein|Gorenstein]] (d.1992), [[Richard Lyons (mathematician)|Lyons]], and [[Ronald Solomon|Solomon]] are gradually publishing a simplified and revised version of the proof.
+
+==Statement of the classification theorem==
+{{Main|List of finite simple groups}}
+{{math_theorem|Every finite [[simple group]] is isomorphic to one of the following groups:
+* a member of one of three infinite classes of such, namely:
+** the [[cyclic groups]] of prime order,
+** the [[alternating groups]] of degree at least 5,
+** the [[groups of Lie type]]
+* one of 26 groups called the &quot;[[sporadic groups]]&quot;
+* the [[Tits group]] (which is sometimes considered a 27th sporadic group).}}
+
+The classification theorem has applications in many branches of mathematics, as questions about the structure of [[finite group]]s (and their action on other mathematical objects) can sometimes be reduced to questions about finite simple groups. Thanks to the classification theorem, such questions can sometimes be answered by checking each family of simple groups and each sporadic group.
+
+[[Daniel Gorenstein]] announced in 1983 that the finite simple groups had all been classified, but this was premature as he had been misinformed about the proof of the classification of [[quasithin group]]s. The completed proof of the classification was announced by {{harvtxt|Aschbacher|2004}} after Aschbacher and Smith published a 1221-page proof for the missing quasithin case.
+
+==Overview of the proof of the classification theorem==
+{{harvs|txt|last=Gorenstein|year1=1982|year2=1983}} wrote two volumes outlining the low rank and odd characteristic part of the proof, and {{harvs|txt| | last1=Aschbacher | first1=Michael | author1-link=Michael Aschbacher | last2=Lyons | first2=Richard | last3=Smith | first3=Stephen D. | last4=Solomon | first4=Ronald | title=The Classification of Finite Simple Groups: Groups of Characteristic 2 Type | url=http://www.ams.org/bookstore?fn=20&amp;ikey=SURV-172 | series=Mathematical Surveys and Monographs | isbn=978-0-8218-5336-8 | year=2011 | volume=172}}
+wrote a 3rd volume covering the remaining characteristic 2 case. The proof can be broken up into several major pieces as follows:
+
+===Groups of small 2-rank===
+The simple groups of low [[rank of a group#Generalizations and related notions|2-rank]] are mostly groups of Lie type of small rank over fields of odd characteristic, together with five alternating and seven characteristic 2 type and nine sporadic groups.
+
+The simple groups of small 2-rank include:
+*Groups of 2-rank 0, in other words groups of odd order, which are all [[Solvable group|solvable]] by the [[Feit–Thompson theorem]].
+*Groups of 2-rank 1. The Sylow 2-subgroups are either cyclic, which is easy to handle using the transfer map, or generalized [[quaternion]], which are handled with the [[Brauer–Suzuki theorem]]: in particular there are no simple groups of 2-rank 1.
+*Groups of 2-rank 2. Alperin showed that the Sylow subgroup must be dihedral, quasidihedral, wreathed, or a Sylow 2-subgroup of ''U''&lt;sub&gt;3&lt;/sub&gt;(4). The first case was done by the [[Gorenstein–Walter theorem]] which showed that the only simple groups are isomorphic to ''L''&lt;sub&gt;2&lt;/sub&gt;(''q'') for ''q'' odd or ''A''&lt;sub&gt;7&lt;/sub&gt;, the second and third cases were done by the [[Alperin–Brauer–Gorenstein theorem]] which implies that the only simple groups are isomorphic to ''L''&lt;sub&gt;3&lt;/sub&gt;(''q'') or ''U''&lt;sub&gt;3&lt;/sub&gt;(''q'') for ''q'' odd or ''M''&lt;sub&gt;11&lt;/sub&gt;, and the last case was done by Lyons who showed that ''U''&lt;sub&gt;3&lt;/sub&gt;(4) is the only simple possibility.
+*Groups of sectional 2-rank at most 4, classified by the [[Gorenstein–Harada theorem]].
+The classification of groups of small 2-rank, especially ranks at most 2, makes heavy use of ordinary and modular character theory, which is almost never directly used elsewhere in the classification.
+
+All groups not of small 2 rank can be split into two major classes: groups of component type and groups of characteristic 2 type. This is because if a group has sectional 2-rank at least 5 then MacWilliams showed that its Sylow 2-subgroups are connected, and the [[balance theorem]] implies that any simple group with connected Sylow 2-subgroups is either of component type or characteristic 2 type. (For groups of low 2-rank the proof of this breaks down, because theorems such as the [[signalizer functor]] theorem only work for groups with elementary abelian subgroups of rank at least 3.)
+
+===Groups of component type===
+A group is said to be of component type if for some centralizer ''C'' of an involution, ''C''/''O''(''C'') has a component (where ''O''(''C'') is the core of ''C'', the maximal normal subgroup of odd order).
+These are more or less the groups of Lie type of odd characteristic of large rank, and alternating groups, together with some sporadic groups.
+A major step in this case is to eliminate the obstruction of the core of an involution. This is accomplished by the [[B-theorem]], which states that every component of ''C''/''O''(''C'') is the image of a component of ''C''.
+
+The idea is that these groups have a centralizer of an involution with a component that is a smaller quasisimple group, which can be assumed to be already known by induction. So to classify these groups one takes every central extension of every known finite simple group, and finds all simple groups with a centralizer of involution with this as a component. This gives a rather large number of different cases to check: there are not only 26 sporadic groups and 16 families of groups of Lie type and the alternating groups, but also many of the groups of small rank or over small fields behave differently from the general case and have to be treated separately, and the groups of Lie type of even and odd characteristic are also quite different.
+
+===Groups of characteristic 2 type===
+
+A group is of characteristic 2 type if the [[generalized Fitting subgroup]] ''F''*(''Y'') of every 2-local subgroup ''Y'' is a 2-group.
+As the name suggests these are roughly the groups of Lie type over fields of characteristic 2, plus a handful of others that are alternating or sporadic or of odd characteristic. Their classification is divided into the small and large rank cases, where the rank is the largest rank of an odd abelian subgroup normalizing a nontrivial 2-subgroup, which is often (but not always) the same as the rank of a Cartan subalgebra when the group is a group of Lie type in characteristic 2.
+
+The rank 1 groups are the thin groups, classified by Aschbacher, and the rank 2 ones are the notorious [[quasithin group]]s, classified by Aschbacher and Smith. These correspond roughly to groups of Lie type of ranks 1 or 2 over fields of characteristic 2.
+
+Groups of rank at least 3 are further subdivided into 3 classes by the [[trichotomy theorem]], proved by Aschbacher for rank 3 and by Gorenstein and Lyons for rank at least 4.
+The three classes are groups of GF(2) type (classified mainly by Timmesfeld), groups of &quot;standard type&quot; for some odd prime (classified by the Gilman–Griess theorem and work by several others), and groups of uniqueness type, where a result of Aschbacher implies that there are no simple groups.
+The general higher rank case consists mostly of the groups of Lie type over fields of characteristic 2 of rank at least 3 or 4.
+
+===Existence and uniqueness of the simple groups===
+
+The main part of the classification produces a characterization of each simple group. It is then necessary to check that there exists a simple group for each characterization and that it is unique. This gives a large number of separate problems; for example, the original proofs of existence and uniqueness of the [[monster group]] totaled about 200 pages, and the identification of the [[Ree groups]] by Thompson and Bombieri was one of the hardest parts of the classification. Many of the existence proofs and some of the uniqueness proofs for the sporadic groups originally used computer calculations, most of which have since been replaced by shorter hand proofs.
+
+==History of the proof==
+
+===Gorenstein's program===
+In 1972 {{harvtxt|Gorenstein|1979|loc=Appendix}} announced a program for completing the classification of finite simple groups, consisting of the following 16 steps:
+# Groups of low 2-rank. This was essentially done by Gorenstein and Harada, who classified the groups with sectional 2-rank at most 4. Most of the cases of 2-rank at most 2 had been done by the time Gorenstein announced his program.
+# The semisimplicity of 2-layers. The problem is to prove that the 2-layer of the centralizer of an involution in a simple group is semisimple.
+# Standard form in odd characteristic. If a group has an involution with a 2-component that is a group of Lie type of odd characteristic, the goal is to show that it has a centralizer of involution in &quot;standard form&quot; meaning that a centralizer of involution has a component that is of Lie type in odd characteristic and also has a centralizer of 2-rank 1.
+# Classification of groups of odd type. The problem is to show that if a group has a centralizer of involution in &quot;standard form&quot; then it is a group of Lie type of odd characteristic. This was solved by Aschbacher's [[classical involution theorem]].
+# Quasi-standard form
+# Central involutions
+# Classification of alternating groups.
+# Some sporadic groups
+# Thin groups. The simple [[thin finite groups]], those with 2-local ''p''-rank at most 1 for odd primes ''p'', were classified by Aschbacher in 1978
+# Groups with a strongly p-embedded subgroup for ''p'' odd
+# The signalizer functor method for odd primes. The main problem is to prove a [[signalizer functor]] theorem for nonsolvable signalizer functors. This was solved by McBride in 1982.
+# Groups of characteristic ''p'' type. This is the problem of groups with a strongly ''p''-embedded 2-local subgroup with ''p'' odd, which was handled by Aschbacher.
+# Quasithin groups. A [[quasithin group]] is one whose 2-local subgroups have ''p''-rank at most 2 for all odd primes ''p'', and the problem is to classify the simple ones of characteristic 2 type. This was completed by Aschbacher and Smith in 2004.
+# Groups of low 2-local 3-rank. This was essentially solved by Aschbacher's [[trichotomy theorem]] for groups with ''e''(''G'')=3. The main change is that 2-local 3-rank is replaced by 2-local ''p''-rank for odd primes.
+# Centralizers of 3-elements in standard form. This was essentially done by the [[Trichotomy theorem]].
+# Classification of simple groups of characteristic 2 type. This was handled by the [[Gilman–Griess theorem]], with 3-elements replaced by ''p''-elements for odd primes.
+
+===Timeline of the proof===
+
+Many of the items in the list below are taken from {{harvtxt|Solomon|2001}}. The date given is usually the publication date of the complete proof of a result, which is sometimes several years later than the proof or first announcement of the result, so some of the items appear in the &quot;wrong&quot; order.
+{|
+|-
+!Publication date
+!
+|-
+|1832
+|Galois introduces normal subgroups and finds the simple groups A&lt;sub&gt;''n''&lt;/sub&gt; (''n'' ≥ 5) and PSL&lt;sub&gt;2&lt;/sub&gt;('''F'''&lt;sub&gt;''p''&lt;/sub&gt;) (''p'' ≥ 5)
+|-
+|1854
+|Cayley defines abstract groups
+|-
+|1861
+|Mathieu describes the first two [[Mathieu group]]s M&lt;sub&gt;11&lt;/sub&gt;, M&lt;sub&gt;12&lt;/sub&gt;, the first sporadic simple groups, and announces the existence of M&lt;sub&gt;24&lt;/sub&gt;.
+|-
+|1870
+|Jordan lists some simple groups: the alternating and projective special linear ones, and emphasizes the importance of the simple groups.
+|-
+|1872
+|Sylow proves the [[Sylow theorem]]s
+|-
+|1873
+|Mathieu introduces three more [[Mathieu group]]s M&lt;sub&gt;22&lt;/sub&gt;, M&lt;sub&gt;23&lt;/sub&gt;, M&lt;sub&gt;24&lt;/sub&gt;.
+|-
+|1892
+|Hölder proves that the order of any nonabelian finite simple group must be a product of at least four (not necessarily distinct) primes, and asks for a classification of finite simple groups.
+|-
+|1893
+|Cole classifies simple groups of order up to 660
+|-
+|1896
+|Frobenius and Burnside begin the study of character theory of finite groups.
+|-
+|1899
+|Burnside classifies the simple groups such that the centralizer of every involution is a non-trivial elementary abelian 2-group.
+|-
+|1901
+|Frobenius proves that a [[Frobenius group]] has a Frobenius kernel, so in particular is not simple.
+|-
+|1901
+|Dickson defines classical groups over arbitrary finite fields, and exceptional groups of type ''G''&lt;sub&gt;2&lt;/sub&gt; over fields of odd characteristic.
+|-
+|1901
+|Dickson introduces the exceptional finite simple groups of type ''E''&lt;sub&gt;6&lt;/sub&gt;.
+|-
+|1904
+|Burnside uses character theory to prove [[Burnside's theorem]] that the order of any non-abelian finite simple group must be divisible by at least 3 distinct primes.
+|-
+|1905
+|Dickson introduces simple groups of type G&lt;sub&gt;2&lt;/sub&gt; over fields of even characteristic
+|-
+| 1911
+|Burnside conjectures that every non-abelian finite simple group has even order
+|-
+|1928
+|Hall proves the existence of [[Hall subgroup]]s of solvable groups
+|-
+|1933
+|Hall begins his study of ''p''-groups
+|-
+|1935
+|Brauer begins the study of [[modular character]]s.
+|-
+|1936
+|Zassenhaus classifies finite sharply 3-transitive permutation groups
+|-
+|1938
+|Fitting introduces the [[Fitting subgroup]] and proves Fitting's theorem that for solvable groups the Fitting subgroup contains its centralizer.
+|-
+|1942
+|Brauer describes the modular characters of a group divisible by a prime to the first power.
+|-
+|1954
+|Brauer classifies simple groups with GL&lt;sub&gt;2&lt;/sub&gt;('''F'''&lt;sub&gt;''q''&lt;/sub&gt;) as the centralizer of an involution.
+|-
+|1955
+|The [[Brauer–Fowler theorem]] implies that the number of finite simple groups with given centralizer of involution is finite, suggesting an attack on the classification using centralizers of involutions.
+|-
+|1955
+|Chevalley introduces the [[Chevalley groups]], in particular introducing exceptional simple groups of types ''F''&lt;sub&gt;4&lt;/sub&gt;, ''E''&lt;sub&gt;7&lt;/sub&gt;, and ''E''&lt;sub&gt;8&lt;/sub&gt;.
+|-
+|1956
+|[[Hall–Higman theorem]]
+|-
+|1957
+| Suzuki shows that all finite simple [[CA group]]s of odd order are cyclic.
+|-
+|1958
+|The [[Brauer–Suzuki–Wall theorem]] characterizes the projective special linear groups of rank 1, and classifies the simple [[CA group]]s.
+|-
+|1959
+|Steinberg introduces the [[Group of Lie type#Steinberg groups|Steinberg group]]s, giving some new finite simple groups, of types &lt;sup&gt;3&lt;/sup&gt;''D''&lt;sub&gt;4&lt;/sub&gt; and &lt;sup&gt;2&lt;/sup&gt;''E''&lt;sub&gt;6&lt;/sub&gt; (the latter were independently found at about the same time by Tits).
+|-
+|1959
+|The [[Brauer–Suzuki theorem]] about groups with generalized quaternion Sylow 2-subgroups shows in particular that none of them are simple.
+|-
+|1960
+|Thompson proves that a group with a fixed-point-free automorphism of prime order is nilpotent.
+|-
+|1960
+| Feit, Marshall Hall, and Thompson show that all finite simple [[CN group]]s of odd order are cyclic.
+|-
+|1960
+|Suzuki introduces the [[Suzuki groups]], with types &lt;sup&gt;2&lt;/sup&gt;''B''&lt;sub&gt;2&lt;/sub&gt;.
+|-
+|1961
+|Ree introduces the [[Ree group]]s, with types &lt;sup&gt;2&lt;/sup&gt;''F''&lt;sub&gt;4&lt;/sub&gt; and  &lt;sup&gt;2&lt;/sup&gt;''G''&lt;sub&gt;2&lt;/sub&gt;.
+|-
+| 1963
+| Feit and Thompson prove the [[odd order theorem]].
+|-
+|1964
+|Tits introduces BN pairs for groups of Lie type and finds the [[Tits group]]
+|-
+|1965
+|The [[Gorenstein–Walter theorem]] classifies groups with a dihedral Sylow 2-subgroup.
+|-
+|1966
+|Glauberman proves the [[Z* theorem]]
+|-
+|1966
+|Janko introduces the [[Janko group J1]], the first new sporadic group for about a century.
+|-
+|1968
+|Glauberman proves the [[ZJ theorem]]
+|-
+|1968
+|Higman and Sims introduce the [[Higman–Sims group]]
+|-
+|1968
+|Conway introduces the [[Conway groups]]
+|-
+|1969
+|[[Walter's theorem]] classifies groups with abelian Sylow 2-subgroups
+|-
+|1969
+|Introduction of the [[Suzuki sporadic group]], the [[Janko group J2]], the [[Janko group J3]], the [[McLaughlin group (mathematics)|McLaughlin group]], and the [[Held group]].
+|-
+|1969
+|Gorenstein introduces [[signalizer functor]]s based on Thompson's ideas.
+|-
+|1970
+|MacWilliams shows that the 2-groups with no normal abelian subgroup of rank 3 have sectional 2-rank at most 4. (The simple groups with Sylow subgroups satisfying the latter condition were later classified by Gorenstein and Harada.)
+|-
+|1970
+|Bender introduced the [[generalized Fitting subgroup]]
+|-
+|1970
+|The [[Alperin–Brauer–Gorenstein theorem]] classifies groups with quasi-dihedral or wreathed Sylow 2-subgroups, completing the classification of the simple groups of 2-rank at most 2
+|-
+|1971
+|Fischer introduces the three [[Fischer groups]]
+|-
+|1971
+|Thompson classifies [[quadratic pair]]s
+|-
+|1971
+|Bender classifies group with a [[strongly embedded subgroup]]
+|-
+|1972
+|Gorenstein proposes a 16-step program for classifying finite simple groups; the final classification follows his outline quite closely.
+|-
+|1972
+|Lyons introduces the [[Lyons group]]
+|-
+|1973
+|Rudvalis introduces the [[Rudvalis group]]
+|-
+|1973
+|Fischer discovers the [[baby monster group]] (unpublished), which Fischer and Griess use to discover the [[monster group]], which in turn leads Thompson to the [[Thompson sporadic group]] and Norton to the [[Harada–Norton group]] (also found in a different way by Harada).
+|-
+|1974
+|Thompson classifies [[N-group (finite group theory)|N-groups]], groups all of whose local subgroups are solvable.
+|-
+|1974
+|The [[Gorenstein–Harada theorem]] classifies the simple groups of sectional 2-rank at most 4, dividing the remaining finite simple groups into those of component type and those of characteristic 2 type.
+|-
+|1974
+|Tits shows that groups with [[BN pair]]s of rank at least 3 are groups of Lie type
+|-
+|1974
+|Aschbacher classifies the groups with a proper [[2-generated core]]
+|-
+|1975
+|Gorenstein and Walter prove the [[L-balance theorem]]
+|-
+|1976
+|Glauberman proves the solvable [[signalizer functor]] theorem
+|-
+|1976
+|Aschbacher proves the [[component theorem]], showing roughly that groups of odd type satisfying some conditions have a component in standard form. The groups with a component of standard form were classified in a large collection of papers by many authors.
+|-
+|1976
+|O'Nan introduces the [[O'Nan group]]
+|-
+|1976
+|Janko introduces the [[Janko group J4]], the last sporadic group to be discovered
+|-
+|1977
+|Aschbacher characterizes the groups of Lie type of odd characteristic in his [[classical involution theorem]]. After this theorem, which in some sense deals with &quot;most&quot; of the simple groups, it was generally felt that the end of the classification was in sight.
+|-
+|1978
+|Timmesfeld proves the O&lt;sub&gt;2&lt;/sub&gt; extraspecial theorem, breaking the classification of [[groups of GF(2)-type]] into several smaller problems.
+|-
+|1978
+|Aschbacher classifies the [[thin finite group]]s, which are mostly rank 1 groups of Lie type over fields of even characteristic.
+|-
+|1981
+|Bombieri uses elimination theory to complete Thompson's work on the characterization of [[Ree group]]s, one of the hardest steps of the classification.
+|-
+|1982
+|McBride proves the [[signalizer functor theorem]] for all finite groups.
+|-
+|1982
+|Griess constructs the [[monster group]] by hand
+|-
+|1983
+| The [[Gilman–Griess theorem]] classifies groups of characteristic 2 type and rank at least 4 with standard components, one of the three cases of the trichotomy theorem.
+|-
+|1983
+|Aschbacher proves that no finite group satisfies the hypothesis of the [[uniqueness case]], one of the three cases given by the trichotomy theorem for groups of characteristic 2 type.
+|-
+|1983
+|Gorenstein and Lyons prove the [[trichotomy theorem]] for groups of characteristic 2 type and rank at least 4, while Aschbacher does the case of rank 3. This divides these groups into 3 subcases: the uniqueness case, groups of GF(2) type, and groups with a standard component.
+|-
+| 1983
+| Gorenstein announces the proof of the classification is complete, somewhat prematurely as the proof of the quasithin case was incomplete.
+|-
+|1994
+| Gorenstein, Lyons, and Solomon begin publication of the revised classification
+|-
+|2004
+|Aschbacher and Smith publish their work on [[quasithin group]]s (which are mostly groups of Lie type of rank at most 2 over fields of even characteristic), filling the last gap in the classification known at that time.
+|-
+|2008
+|Harada and Solomon fill a minor gap in the classification by describing groups with a standard component that is a cover of the [[Mathieu group M22]], a case that was accidentally omitted from the proof of the classification due to an error in the calculation of the Schur multiplier of M22.
+|-
+|2012
+|Gonthier and collaborators announce a computer-checked version of the [[Feit–Thompson theorem]] using the [[Coq]] [[proof assistant]].&lt;ref&gt;{{cite web |url=http://www.msr-inria.fr/news/feit-thomson-proved-in-coq/ |title=Feit–Thompson theorem has been totally checked in Coq |publisher=Msr-inria.inria.fr |date=2012-09-20 |accessdate=2012-09-25 |archive-url=https://web.archive.org/web/20161119094854/http://www.msr-inria.fr/news/feit-thomson-proved-in-coq/ |archive-date=2016-11-19 |url-status=dead }}&lt;/ref&gt;
+|}
+
+==Second-generation classification==
+The proof of the theorem, as it stood around 1985 or so, can be called ''first generation''. Because of the extreme length of the first generation proof, much effort has been devoted to finding a simpler proof, called a '''second-generation classification proof'''. This effort, called &quot;revisionism&quot;, was originally led by [[Daniel Gorenstein]].
+
+{{As of|2019}}, eight volumes of the second generation proof have been published (Gorenstein, Lyons &amp; Solomon 1994, 1996, 1998, 1999, 2002, 2005, 2018a, 2018b). In 2012 Solomon estimated that the project would need another 5 volumes, but said that progress on them was slow. It is estimated that the new proof will eventually fill approximately 5,000 pages. (This length stems in part from the second generation proof being written in a more relaxed style.) Aschbacher and Smith wrote their two volumes devoted to the quasithin case in such a way that those volumes can be part of the second generation proof.
+
+Gorenstein and his collaborators have given several reasons why a simpler proof is possible.
+* The most important is that the correct, final statement of the theorem is now known. Simpler techniques can be applied that are known to be adequate for the types of groups we know to be finite simple. In contrast, those who worked on the first generation proof did not know how many sporadic groups there were, and in fact some of the sporadic groups (e.g., the [[Janko group]]s) were discovered while proving other cases of the classification theorem. As a result, many of the pieces of the theorem were proved using techniques that were overly general.
+*Because the conclusion was unknown, the first generation proof consists of many stand-alone theorems, dealing with important special cases. Much of the work of proving these theorems was devoted to the analysis of numerous special cases. Given a larger, orchestrated proof, dealing with many of these special cases can be postponed until the most powerful assumptions can be applied. The price paid under this revised strategy is that these first generation theorems no longer have comparatively short proofs, but instead rely on the complete classification.
+*Many first generation theorems overlap, and so divide the possible cases in inefficient ways. As a result, families and subfamilies of finite simple groups were identified multiple times. The revised proof eliminates these redundancies by relying on a different subdivision of cases.
+*Finite group theorists have more experience at this sort of exercise, and have new techniques at their disposal.
+
+{{harvtxt|Aschbacher|2004}} has called the work on the classification problem by Ulrich Meierfrankenfeld, Bernd Stellmacher, Gernot Stroth, and a few others, a '''third generation program'''. One goal of this is to treat all groups in characteristic 2 uniformly using the amalgam method.
+
+===Why is the proof so long?===
+
+Gorenstein has discussed some of the reasons why there might not be a short proof of the classification similar to the classification of [[compact Lie group]]s.
+
+*The most obvious reason is that the list of simple groups is quite complicated: with 26 sporadic groups there are likely to be many special cases that have to be considered in any proof. So far no one has yet found a clean uniform description of the finite simple groups similar to the parameterization of the compact Lie groups by [[Dynkin diagram]]s.
+*Atiyah and others have suggested that the classification ought to be simplified by constructing some geometric object that the groups act on and then classifying these geometric structures. The problem is that no one has been able to suggest an easy way to find such a geometric structure associated to a simple group. In some sense the classification does work by finding geometric structures such as [[BN-pair]]s, but this only comes at the end of a very long and difficult analysis of the structure of a finite simple group.
+*Another suggestion for simplifying the proof is to make greater use of [[representation theory]]. The problem here is that representation theory seems to require very tight control over the subgroups of a group in order to work well. For groups of small rank one has such control and representation theory works very well, but for groups of larger rank no-one has succeeded in using it to simplify the classification. In the early days of the classification there was considerable effort made to use representation theory, but this never achieved much success in the higher rank case.
+
+==Consequences of the classification==
+
+This section lists some results that have been proved using the classification of finite simple groups.
+
+*The [[Schreier conjecture]]
+*The [[Signalizer functor theorem]]
+*The [[B conjecture]]
+*The [[Schur–Zassenhaus theorem]] for all groups (though this only uses the [[Feit–Thompson theorem]]).
+*A transitive permutation group on a finite set with more than 1 element has a fixed-point-free element of prime power order.
+*The classification of [[multiple transitivity|2-transitive permutation groups]].
+*The classification of [[rank 3 permutation group]]s.
+*The [[Sims conjecture]]&lt;ref&gt;{{cite journal|last=Cameron |first1=P. J. |last2=Praeger |first2=C. E. |last3=Saxl |first3=J. |last4=Seitz |first4=G. M. |authorlink1=Peter Cameron (mathematician) |authorlink2=Cheryl Praeger |authorlink4=Gary Seitz |title=On the Sims conjecture and distance transitive graphs |journal=[[Bull. London Math. Soc.]] |volume=15 |year=1983 |pages=499–506 |doi=10.1112/blms/15.5.499}}&lt;/ref&gt;
+*[[Frobenius's theorem (group theory)|Frobenius's conjecture]] on the number of solutions of {{nowrap|1=''x''&lt;sup&gt;''n''&lt;/sup&gt; = 1}}.
+
+==See also==
+
+*[[O'Nan–Scott theorem]]
+
+==References==
+{{reflist}}
+* {{cite news | first = Michael | last = Aschbacher | authorlink = Michael Aschbacher | year = 2004 | url = http://www.ams.org/notices/200407/fea-aschbacher.pdf | title = The Status of the Classification of the Finite Simple Groups | journal = [[Notices of the American Mathematical Society]] | volume = 51 | issue = 7 | pages = 736–740 | ref=harv}}
+*{{Citation | last1=Aschbacher | first1=Michael | author1-link=Michael Aschbacher | last2=Lyons | first2=Richard | last3=Smith | first3=Stephen D. | last4=Solomon | first4=Ronald | title=The Classification of Finite Simple Groups: Groups of Characteristic 2 Type | url=http://www.ams.org/bookstore?fn=20&amp;ikey=SURV-172 | series=Mathematical Surveys and Monographs | isbn=978-0-8218-5336-8 | year=2011 | volume=172}}
+* {{Citation |last1=Conway |first1=John Horton |authorlink1=John Horton Conway |last2=Curtis |first2=Robert Turner |last3=Norton |first3=Simon Phillips |authorlink3=Simon P. Norton |last4=Parker |first4=Richard A |authorlink4=Richard A. Parker |last5=Wilson |first5=Robert Arnott |authorlink5=Robert Arnott Wilson |title=Atlas of Finite Groups: Maximal Subgroups and Ordinary Characters for Simple Groups |year=1985 |month= |origyear= |publisher=Oxford University Press |isbn=978-0-19-853199-9 |title-link=ATLAS of Finite Groups }}
+*{{Citation | last1=Gorenstein | first1=D. | author1-link=Daniel Gorenstein | title=The classification of finite simple groups. I. Simple groups and local analysis | doi=10.1090/S0273-0979-1979-14551-8 | year=1979 | journal=American Mathematical Society. Bulletin. New Series | issn=0002-9904 | volume=1 | issue=1 | pages=43–199 | mr=513750}}
+*{{Citation | last1=Gorenstein | first1=D. | author1-link=Daniel Gorenstein | title=Finite simple groups | publisher=Plenum Publishing Corp. | location=New York | series=University Series in Mathematics | isbn=978-0-306-40779-6 | year=1982 | mr=698782 | url-access=registration | url=https://archive.org/details/finitesimplegrou0000gore }}
+*{{Citation | last1=Gorenstein | first1=D. | author1-link=Daniel Gorenstein | title=The classification of finite simple groups. Vol. 1. Groups of noncharacteristic 2 type | publisher=Plenum Press | series=The University Series in Mathematics | isbn=978-0-306-41305-6 | year=1983 | mr=746470}}
+* [[Daniel Gorenstein]] (1985), &quot;The Enormous Theorem&quot;, ''Scientific American'', December 1, 1985, vol. 253, no. 6, pp.&amp;nbsp;104–115.
+*{{Citation | last1=Gorenstein | first1=D. | author1-link=Daniel Gorenstein | title=Classifying the finite simple groups | doi=10.1090/S0273-0979-1986-15392-9 | year=1986 | journal=American Mathematical Society. Bulletin. New Series | issn=0002-9904 | volume=14 | issue=1 | pages=1–98 | mr=818060}}
+*{{Citation | last1=Gorenstein | first1=D. | author1-link=Daniel Gorenstein | last2=Lyons | first2=Richard | last3=Solomon | first3=Ronald | title=The classification of the finite simple groups | url=http://www.ams.org/online_bks/surv401 | publisher=[[American Mathematical Society]] | location=Providence, R.I. | series=Mathematical Surveys and Monographs | isbn=978-0-8218-0334-9 | year=1994 | volume=40 | mr=1303592}}
+*{{Citation | last1=Gorenstein | first1=D. | author1-link=Daniel Gorenstein | last2=Lyons | first2=Richard | last3=Solomon | first3=Ronald | title=The classification of the finite simple groups. Number 2. Part I. Chapter G | url=http://www.ams.org/online_bks/surv402 | publisher=[[American Mathematical Society]] | location=Providence, R.I. | series=Mathematical Surveys and Monographs | isbn=978-0-8218-0390-5 | year=1996 | volume=40 | mr=1358135}}
+*{{Citation | last1=Gorenstein | first1=D. | author1-link=Daniel Gorenstein | last2=Lyons | first2=Richard | last3=Solomon | first3=Ronald | title=The classification of the finite simple groups. Number 3. Part I. Chapter A | publisher=[[American Mathematical Society]] | location=Providence, R.I. | series=Mathematical Surveys and Monographs | isbn=978-0-8218-0391-2 | year=1998 | volume=40 | mr=1490581}}
+*{{Citation | last1=Gorenstein | first1=D. | author1-link=Daniel Gorenstein | last2=Lyons | first2=Richard | last3=Solomon | first3=Ronald | title=The classification of the finite simple groups. Number 4. Part II, Chapters 1-4: Uniqueness Theorems | publisher=[[American Mathematical Society]] | location=Providence, R.I. | series=Mathematical Surveys and Monographs | isbn=978-0-8218-1379-9 | year=1999 | volume=40 | mr=1675976}}
+*{{Citation | last1=Gorenstein | first1=D. | author1-link=Daniel Gorenstein | last2=Lyons | first2=Richard | last3=Solomon | first3=Ronald | title=The classification of the finite simple groups. Number 5. Part III. Chapters 1–6 | publisher=[[American Mathematical Society]] | location=Providence, R.I. | series=Mathematical Surveys and Monographs | isbn=978-0-8218-2776-5 | year=2002 | volume=40 | mr=1923000}}
+*{{Citation | last1=Gorenstein | first1=D. | author1-link=Daniel Gorenstein | last2=Lyons | first2=Richard | last3=Solomon | first3=Ronald | title=The classification of the finite simple groups. Number 6. Part IV: The Special Odd Case | publisher=[[American Mathematical Society]] | location=Providence, R.I. | series=Mathematical Surveys and Monographs | isbn=978-0-8218-2777-2 | year=2005 | volume=40 | mr=2104668}}
+*{{Citation | last1=Gorenstein | first1=D. | author1-link=Daniel Gorenstein | last2=Lyons | first2=Richard | last3=Solomon | first3=Ronald | title=The classification of the finite simple groups. Number 7. Part III, Chapters 7–11: The Generic Case, Stages 3b and 4a | publisher=[[American Mathematical Society]] | location=Providence, R.I. | series=Mathematical Surveys and Monographs | isbn=978-0-8218-4069-6 | year=2018 | volume=40 | mr=3752626}}
+*{{Citation | last1=Gorenstein | first1=D. | author1-link=Daniel Gorenstein | last2=Lyons | first2=Richard | last3=Solomon | first3=Ronald | title=The Classification of the Finite Simple Groups, Number 8: Part III, Chapters 12–17: The Generic Case, Completed | publisher=[[American Mathematical Society]] | location=Providence, R.I. | series=Mathematical Surveys and Monographs | isbn=978-1-4704-4189-0 | year=2018 | volume=40}}
+* [[Mark Ronan]], ''Symmetry and the Monster'', {{ISBN|978-0-19-280723-6}}, Oxford University Press, 2006. (Concise introduction for lay reader)
+*[[Marcus du Sautoy]], ''Finding Moonshine'', Fourth Estate, 2008, {{ISBN|978-0-00-721461-7}} (another introduction for the lay reader)
+* [[Ronald Solomon|Ron Solomon]] (1995) &quot;[http://www.ams.org/notices/199502/solomon.pdf On Finite Simple Groups and their Classification,]&quot; ''Notices of the American Mathematical Society''. (Not too technical and good on history)
+* {{Citation | last1=Solomon | first1=Ronald | title=A brief history of the classification of the finite simple groups | url=http://www.ams.org/bull/2001-38-03/S0273-0979-01-00909-0/S0273-0979-01-00909-0.pdf | doi=10.1090/S0273-0979-01-00909-0 | year=2001 | journal=American Mathematical Society. Bulletin. New Series | issn=0002-9904 | volume=38 | issue=3 | pages=315–352 | mr=1824893}} – article won [http://www.ams.org/notices/200604/comm-conant.pdf Levi L. Conant prize] for exposition
+*{{Citation | last1=Thompson | first1=John G. | author1-link=John G. Thompson | editor1-last=Gruenberg | editor1-first=K. W. | editor2-last=Roseblade | editor2-first=J. E. | title=Group theory. Essays for Philip Hall | publisher=[[Academic Press]] | location=Boston, MA | isbn=978-0-12-304880-6 | year=1984 | chapter=Finite nonsolvable groups | pages=1–12 | mr=780566}}
+*{{Citation | last1=Wilson | first1=Robert A. | authorlink = Robert Arnott Wilson | title=The finite simple groups | publisher=[[Springer-Verlag]] | location=Berlin, New York | series=[[Graduate Texts in Mathematics]] 251 | isbn=978-1-84800-987-5 | doi=10.1007/978-1-84800-988-2 | year=2009 | zbl=1203.20012 | volume=251 }}
+
+==External links==
+* ''[http://brauer.maths.qmul.ac.uk/Atlas/v3/ ATLAS of Finite Group Representations.]'' Searchable database of [[Group representation|representations]] and other data for many finite simple groups.
+* Elwes, Richard, &quot;[http://plus.maths.org/issue41/features/elwes/index.html An enormous theorem: the classification of finite simple groups,]&quot; ''Plus Magazine'', Issue 41, December 2006. For laypeople.
+* Madore, David (2003) ''[http://www.eleves.ens.fr:8080/home/madore/math/simplegroups.html Orders of nonabelian simple groups.]'' Includes a list of all nonabelian simple groups up to order 10&lt;sup&gt;10&lt;/sup&gt;.
+* [https://mathoverflow.net/q/180355 In what sense is the classification of all finite groups “impossible”?]
+
+{{DEFAULTSORT:Classification Of Finite Simple Groups}}
+[[Category:Group theory]]
+[[Category:Sporadic groups|*]]
+[[Category:Finite groups]]
+[[Category:Theorems in algebra]]
+[[Category:2004 in science]]
+[[Category:History of mathematics]]
+[[Category:Mathematical classification systems]]</text>
+      <sha1>3ie8n6hdng1bl7avs749sabk1y08lh6</sha1>
+    </revision>
+  </page>

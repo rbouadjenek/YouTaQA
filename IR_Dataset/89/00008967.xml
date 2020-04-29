@@ -1,0 +1,53 @@
+  <page>
+    <title>Digital Access Signalling System 2</title>
+    <ns>0</ns>
+    <id>8967</id>
+    <revision>
+      <id>825631163</id>
+      <parentid>810510755</parentid>
+      <timestamp>2018-02-14T13:54:00Z</timestamp>
+      <contributor>
+        <ip>157.97.120.15</ip>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{Unreferenced|date=December 2009}}
+
+'''Digital Access Signalling System 2''' ('''DASS2''') is an obsolescent [[protocol (computing)|protocol]] defined by [[British Telecom]] for digital links to [[PSTN]] based on [[Integrated Services Digital Network|ISDN]]. Although still available on request, it has been superseded by [[ETS 300 102]] (&quot;EuroISDN&quot;).
+
+DASS2 is an improved version over [[DASS1]], based on experiences with [[DPNSS]]. 
+
+In the UK, the ISDN concept was first introduced to customers by BT with their
+DASS2 connections. DASS2 (Digital Access Signalling System) is a BT-designed
+signalling standard, and was introduced before the [[Q.931]] standard was finalised
+by the international community. British Telecom used the term '''ISDN''' when
+describing their DASS2 lines.
+
+DASS2 lines are provided to customers on a 2Mbit/s link and can handle 30 simultaneous calls (64kbit/s each). DASS2 is still offered by BT and other UK carriers. Q.931 is the name of the [[CCITT]] document that describes the agreed signalling format for International ISDN. CCITT had previously been known as ''International Telegraph and Telephone Consultative Committee''. The organisation set out the internationally agreed standards for telecommunications, and subsequently evolved into the ITU. In the United Kingdom, the Q.931-based protocol is ETS 300 102 (also known as EuroISDN). This is a very close implementation of the original CCITT specification. It is a 2Mbit/s service as
+with DASS2, but the feature capability is far greater and has negated the problems associated with DASS2, including echo problems and circuit spikes. In the UK, both DASS 2 and EuroISDN (ETS 300 102) lines are available to customers with EuroISDN as the preferred signalling type. Customers normally choose the desired signalling system, as this will be dictated by their CPE (Customer Premises Equipment),
+usually a PABX.
+
+Most modern PABXs can handle many different types of signalling system, however
+the trend seems to be away from the DASS2 (which is no longer being developed by
+BT and has been known to deny problems with their DASS2 circuits), and towards the internationally recognised Q.931 standard, which is utilised by many country's telephony service providers.
+
+The CCITT specify the standards for the layers 1, 2 and 3 signalling messages. The layer 3 messages are the messages which actually control the call setup, teardown, and routing.
+
+The layer 3 messages or ''call control messages'' are the minimum messages that must be understood by the interfacing equipment. Individual service providers may
+publish their own documentation which details further messages that will be
+transported in addition to Q.931 messages. There are a number of additional
+European documents that cover supplementary services. These cover features that may be instigated by exchanges via the ISDN and require a higher degree of layer 3 implementation.
+
+==See also==
+*[[DSS1]] ([[ETSI]] &quot;[[Europe|Euro]]-ISDN&quot;, also used in many non-European countries)
+*[[DSS2]] (Digital Subscriber Signalling System No. 2) - enhanced DSS1.
+
+{{BT Group}}
+
+{{DEFAULTSORT:Dass2}}
+
+[[Category:BT Group]]
+[[Category:Integrated Services Digital Network]]</text>
+      <sha1>29vqh7pm0iju66u5p35vuolwqrpn6b7</sha1>
+    </revision>
+  </page>

@@ -1,0 +1,468 @@
+  <page>
+    <title>Binary relation</title>
+    <ns>0</ns>
+    <id>3931</id>
+    <revision>
+      <id>942739474</id>
+      <parentid>942738320</parentid>
+      <timestamp>2020-02-26T15:06:08Z</timestamp>
+      <contributor>
+        <username>Jochen Burghardt</username>
+        <id>17350134</id>
+      </contributor>
+      <comment>/* Example */ rm &gt;6 year old comment with still unsatisfied image request; no idea how to illustrate ownership better than by the tables</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{short description|Set of ordered pairs with first element in a set and second element in another set (possibly the same)}}
+{{redirect|Relation (mathematics)|a binary relation over a single set (a special case)|#Homogeneous relation|a more general notion of relation|finitary relation|other uses|Relation (disambiguation)}}
+
+In [[mathematics]], a '''binary relation''' over two [[Set (mathematics)|set]]s ''X'' and ''Y'' is a set of [[ordered pair]]s {{nowrap|(''x'', ''y'')}} consisting of elements {{nowrap|''x'' in ''X''}} and {{nowrap|''y'' in ''Y''}}. That is, it is a subset of the [[Cartesian product]] {{nowrap|''X'' × ''Y''}}. It encodes the information of relation: an element ''x'' is related to an element ''y'', if and only if the pair {{nowrap|(''x'', ''y'')}} belongs to the set. Binary relation is the most studied form of relations among all [[n-ary relations]].&lt;ref&gt;{{Cite web|url=https://mathvault.ca/math-glossary/#relation|title=The Definitive Glossary of Higher Mathematical Jargon — Relation|last=|first=|date=2019-08-01|website=Math Vault|language=en-US|url-status=live|archive-url=|archive-date=|access-date=2019-12-11}}&lt;/ref&gt;
+
+An example of a binary relation is the &quot;[[divides]]&quot; relation over the set of [[prime number]]s '''P''' and the set of [[integer]]s '''Z''', in which each prime ''p'' is related to each integer ''z'' that is a [[Divisibility|multiple]] of ''p'', but not to an integer that is not a multiple of ''p''. In this relation, for instance, the prime number 2 is related to numbers such as −4, 0, 6, 10, but not to 1 or 9, just as the prime number 3 is related to 0, 6, and 9, but not to 4 or 13.
+
+Binary relations are used in many branches of mathematics to model a wide variety of concepts. These include, among others:
+* the &quot;[[Inequality (mathematics)|is greater than]]&quot;, &quot;[[Equality (mathematics)|is equal to]]&quot;, and &quot;divides&quot; relations in [[arithmetic]];
+* the &quot;[[Congruence (geometry)|is congruent to]]&quot; relation in [[geometry]];
+* the &quot;is adjacent to&quot; relation in [[graph theory]];
+* the &quot;is [[orthogonal]] to&quot; relation in [[linear algebra]].
+
+A [[Function (mathematics)|function]] may be defined as a special kind of binary relation.&lt;ref&gt;{{Cite web|url=https://mathinsight.org/definition/relation|title=Relation definition - Math Insight|website=mathinsight.org|access-date=2019-12-11}}&lt;/ref&gt; Binary relations are also heavily used in [[computer science]].
+
+A binary relation is the special case {{nowrap|1=''n'' = 2}} of an [[finitary relation|''n''-ary relation]] {{nowrap|''R'' ⊆ ''X''&lt;sub&gt;1&lt;/sub&gt; × ⋯ × ''X''&lt;sub&gt;''n''&lt;/sub&gt;}}, that is, a set of [[tuple|''n''-tuple]]s where the ''j''th component of each ''n''-tuple is taken from the ''j''th domain ''X''&lt;sub&gt;''j''&lt;/sub&gt; of the relation.&lt;ref&gt;{{Cite web|url=https://www.encyclopediaofmath.org/index.php/Relation|title=Relation - Encyclopedia of Mathematics|website=www.encyclopediaofmath.org|access-date=2019-12-11}}&lt;/ref&gt; An example of a ternary relation over '''Z''' is &quot;… lies between … and …&quot;, which contains triples such as {{nowrap|(5, 2, 8)}}, {{nowrap|(5, 8, 2)}} and {{nowrap|(−4, 9, −7)}}.
+
+A binary relation over two sets ''X'' and ''Y'' is an element of the [[power set]] of {{nowrap|''X'' × ''Y''}}. Since the latter set is ordered by [[Inclusion (set theory)|inclusion]] (⊆), each relation has a place in the [[Lattice (order)|lattice]] of subsets of {{nowrap|''X'' × ''Y''}}.
+
+As part of [[set theory]], relations are manipulated with the [[algebra of sets]], including [[complement (set theory)|complementation]]. Furthermore, the two sets are considered symmetrically by introduction of the [[converse relation]], which exchanges their places. Another operation is [[composition of relations]]. Altogether these tools form the [[calculus of relations]], for which there are [[textbook]]s by [[Ernst Schröder]], [[Clarence Lewis]], and [[Gunther Schmidt]]. A deeper analysis of relations involves decomposing them into [[subset]]s called ''concepts'', and placing them in a [[complete lattice]].
+
+In some systems of [[axiomatic set theory]], relations are extended to [[Class (mathematics)|classes]], which are generalizations of sets. This extension is needed for, among other things, modeling the concepts of &quot;is an element of&quot; or &quot;is a subset of&quot; in [[set theory]], without running into logical inconsistencies such as [[Russell's paradox]].
+
+The terms '''correspondence''',&lt;!---keep boldface: [[Correspondence (mathematics)]] redirects here---&gt;&lt;ref&gt;Jacobson, Nathan (2009), [https://books.google.com/books?id=hn75exNZZ-EC&amp;printsec=frontcover#v=onepage&amp;q=correspondence&amp;f=false Basic Algebra II (2nd ed.)] § 2.1.&lt;/ref&gt; '''dyadic relation'''&lt;!---[[Dyadic relation]]---&gt; and '''two-place relation'''&lt;!---[[Two-place relation]]---&gt; are synonyms for binary relation, though some authors use the term &quot;binary relation&quot; for any subset of a Cartesian product {{nowrap|''X'' × ''Y''}} without reference to ''X'' and ''Y'', and reserve the term &quot;correspondence&quot; for a binary relation with reference to ''X'' and ''Y''.
+
+== Definition ==
+Given two sets ''X'' and ''Y'', the [[Cartesian product]] {{nowrap|''X'' × ''Y''}} is defined as {{nowrap begin}}{(''x'', ''y'') | ''x'' in ''X'' and ''y'' in ''Y''}{{nowrap end}}, and its elements are called ordered pairs.
+
+A binary relation ''R'' over two sets ''X'' and ''Y'' is a subset of {{nowrap|''X'' × ''Y''}}; that is, it is a set of ordered pairs {{nowrap|(''x'', ''y'')}} consisting of elements {{nowrap|''x'' in ''X''}} and {{nowrap|''y'' in ''Y''}}.&lt;ref&gt;{{harvnb|Enderton|1977|loc=Ch 3. pg. 40}}&lt;/ref&gt;&lt;ref group=note&gt;the set ''R'' is also sometimes called the graph of the relation ''R''.&lt;/ref&gt; The set ''X'' is called the ''set of departure'', and the set ''Y'' the ''set of destination'' or ''[[codomain]]''. (In order to specify the choices of the sets ''X'' and ''Y'', some authors define a binary relation or a correspondence as an ordered triple {{nowrap|(''X'', ''Y'', ''R'')}}, where ''R'' is a subset of {{nowrap|''X'' × ''Y''}}.) The statement {{nowrap|(''x'', ''y'') in ''R''}} reads &quot;''x'' is ''R''-related to ''y''&quot;, and is denoted by ''xRy''. The ''domain'' of ''R'' is the set of all ''x'' such that ''xRy'' for at least one ''y''. The ''range'' or ''[[Image (mathematics)|image]]'' of ''R'' is the set of all ''y'' such that ''xRy'' for at least one ''x''. The ''field'' of ''R'' is the union of its domain and its range.&lt;ref name=&quot;suppes&quot;&gt;
+{{cite book
+|title=Axiomatic Set Theory
+|last=Suppes
+|first=Patrick
+|authorlink=Patrick Suppes
+|publisher=Dover
+|year=1972
+|origyear=originally published by D. van Nostrand Company in 1960
+|isbn=0-486-61630-4
+|url-access=registration
+|url=https://archive.org/details/axiomaticsettheo00supp_0
+}}
+&lt;/ref&gt;&lt;ref name=&quot;smullyan&quot;&gt;
+{{cite book
+|title=Set Theory and the Continuum Problem
+|last=Smullyan
+|first=Raymond M.
+|authorlink=Raymond Smullyan
+|last2=Fitting
+|first2=Melvin
+|publisher=Dover
+|year=2010
+|origyear=revised and corrected republication of the work originally published in 1996 by Oxford University Press, New York
+|isbn=978-0-486-47484-7
+}}
+&lt;/ref&gt;&lt;ref name=&quot;levy&quot;&gt;
+{{cite book
+|title=Basic Set Theory
+|last=Levy
+|first=Azriel
+|authorlink=Azriel Levy
+|publisher=Dover
+|year=2002
+|origyear=republication of the work published by Springer-Verlag, Berlin, Heidelberg and New York in 1979
+|isbn=0-486-42079-5
+}}
+&lt;/ref&gt;
+
+When {{nowrap|1=''X'' = ''Y''}}, a binary relation is called a [[#Homogeneous relation|''homogeneous relation'']] (or ''endorelation''). To emphasize the fact that ''X'' and ''Y'' are allowed to be different, a binary relation is also called a ''[[heterogeneous relation]]''.&lt;ref name=&quot;Schmidt&quot;&gt;{{cite book|last1=Schmidt|first1=Gunther|last2=Ströhlein|first2=Thomas|title=Relations and Graphs: Discrete Mathematics for Computer Scientists|url={{google books |plainurl=y |id=ZgarCAAAQBAJ|paged=277}}|date=2012|publisher=Springer Science &amp; Business Media|isbn=978-3-642-77968-8|authorlink1=Gunther Schmidt |location=Definition 4.1.1.}}&lt;/ref&gt;&lt;ref name=&quot;FloudasPardalos2008&quot;&gt;{{cite book|author1=Christodoulos A. Floudas|author2=Panos M. Pardalos|title=Encyclopedia of Optimization|year=2008|publisher=Springer Science &amp; Business Media|isbn=978-0-387-74758-3|pages=299–300|edition=2nd|url=https://books.google.com/books?id=1a6lSRbQ4YsC&amp;printsec=frontcover#v=onepage&amp;q=relation&amp;f=false}}&lt;/ref&gt;&lt;ref name=&quot;Winter2007&quot;&gt;{{cite book|author=Michael Winter|title=Goguen Categories: A Categorical Approach to L-fuzzy Relations|year=2007|publisher=Springer|isbn=978-1-4020-6164-6|pages=x-xi}}&lt;/ref&gt;
+
+In a binary relation, the order of the elements is important; if {{nowrap|''x'' ≠ ''y''}} then ''xRy'', but ''yRx'' can be true or false independently of ''xRy''. For example, 3 divides 9, but 9 does not divide 3.
+
+=== Example ===
+{| class=&quot;wikitable&quot; style=&quot;float: right; margin-left:1em; text-align:center;&quot;
+|+ 2nd example relation
+!
+! scope=&quot;col&quot; | ball
+! scope=&quot;col&quot;    | car
+! scope=&quot;col&quot;        | doll
+! scope=&quot;col&quot;           | cup
+|-
+! scope=&quot;row&quot; | John 
+| '''+''' ||  −  ||  −  || −
+|-
+! scope=&quot;row&quot; | Mary 
+|  −  ||  −  || '''+''' || −
+|-
+! scope=&quot;row&quot; | Venus 
+|  −  || '''+''' ||  −  || −
+|}
+{| class=&quot;wikitable&quot; style=&quot;float: right; margin-left:1em; text-align:center;&quot;
+|+ 1st example relation
+!
+! scope=&quot;col&quot; | ball
+! scope=&quot;col&quot;    | car
+! scope=&quot;col&quot;        | doll
+! scope=&quot;col&quot;           | cup
+|-
+! scope=&quot;row&quot; | John 
+| '''+''' ||  −  ||  −  || −
+|-
+! scope=&quot;row&quot; | Mary 
+|  −  ||  −  || '''+''' || −
+|-
+! scope=&quot;row&quot; | Ian  
+|  −  ||  −  ||  −  || −
+|-
+! scope=&quot;row&quot; | Venus 
+|  −  || '''+''' ||  −  || −
+|}
+
+The following example shows that the choice of codomain is important. Suppose there are four objects {{nowrap begin}}''A'' = {ball, car, doll, cup}{{nowrap end}} and four people {{nowrap begin}}''B'' = {John, Mary, Ian, Venus}{{nowrap end}}. A possible relation on ''A'' and ''B'' is the relation &quot;is owned by&quot;, given by {{nowrap begin}}''R'' = {(ball, John), (doll, Mary), (car, Venus)}{{nowrap end}}. That is, John owns the ball, Mary owns the doll, and Venus owns the car. Nobody owns the cup and Ian owns nothing. As a set, ''R'' does not involve Ian, and therefore ''R'' could have been viewed as a subset of {{nowrap begin}}''A'' × {John, Mary, Venus}{{nowrap end}}, i.e. a relation over ''A'' and {John, Mary, Venus}.
+
+== Special types of binary relations ==
+&lt;!-- [[functional relation]] redirects to this section --&gt;
+[[File:Graph of non-injective, non-surjective function (red) and of bijective function (green).gif|thumb|Example relations over the real numbers.
+{{legend-line|red solid 1px|{{nowrap|1=''y'' = ''x''&lt;sup&gt;2&lt;/sup&gt;}}.}}
+{{legend-line|#55FF55 solid 1px|{{nowrap|1=''y'' = 2''x'' + 20}}.}}
+]]
+
+Some important types of binary relations ''R'' over two sets ''X'' and ''Y'' are listed below. 
+
+Uniqueness properties:
+* '''Injective'''&lt;!---keep boldface: [[Injective relation]] redirects here---&gt; (also called '''left-unique'''&lt;!---[[Left-unique relation]]---&gt;&lt;ref name=kkm/&gt;): for all ''x'' and ''z'' in ''X'' and ''y'' in ''Y'', if ''xRy'' and ''zRy'' then {{nowrap|1=''x'' = ''z''}}. For example, the green relation in the diagram is injective, but the red relation is not, as, e.g., it relates both −5 and 5 to 25.
+* '''Functional'''&lt;!---[[Functional relation]]---&gt; (also called '''right-unique'''&lt;!---[[Right-unique relation]]---&gt;&lt;ref name=kkm/&gt;, '''right-definite'''&lt;!---[[Right-definite relation]]---&gt;&lt;ref&gt;{{citation|title=Spatial Information Theory: 8th International Conference, COSIT 2007, Melbourne, Australia, September 19–23, 2007, Proceedings|series=Lecture Notes in Computer Science|publisher=Springer|volume=4736|year=2007|pages=285–302|contribution=Reasoning on Spatial Semantic Integrity Constraints|first=Stephan|last=Mäs|doi=10.1007/978-3-540-74788-8_18}}&lt;/ref&gt; or {{anchor|univalent}}'''univalent'''&lt;!---[[univalent relation]]---&gt;&lt;ref name=gs&gt;[[Gunther Schmidt]], 2010. ''Relational Mathematics''. Cambridge University Press, {{ISBN|978-0-521-76268-7}}, Chapt. 5&lt;/ref&gt;): for all ''x'' in ''X'', and ''y'' and ''z'' in ''Y'', if ''xRy'' and ''xRz'' then {{nowrap|1=''y'' = ''z''}}. Such a relation is called a ''[[partial function]]''. Both relations in the picture are functional. An example of a non-functional relation can be obtained by rotating the red graph clockwise by 90 degrees, i.e. by considering the relation {{nowrap|1=''x'' = ''y''&lt;sup&gt;2&lt;/sup&gt;}} which, e.g., relates 25 to both −5 and 5.
+* '''One-to-one'''&lt;!---[[One-to-one relation]]---&gt; (also written '''1-to-1'''): injective and functional. The green relation is one-to-one, but the red is not.
+
+Totality properties (only definable if the sets of departure ''X'' and destination ''Y'' are specified):
+* '''{{vanchor|Left-total}}''':&lt;ref name=kkm&gt;Kilp, Knauer and Mikhalev: p.&amp;nbsp;3. The same four definitions appear in the following:
+* {{cite book
+ | author1=Peter J. Pahl
+ | author2=Rudolf Damrath
+ | title=Mathematical Foundations of Computational Engineering: A Handbook
+ | year=2001
+ | publisher=Springer Science &amp; Business Media|isbn=978-3-540-67995-0
+ | page=506
+}}
+* {{cite book
+ | author=Eike Best
+ | title=Semantics of Sequential and Parallel Programs
+ | year=1996
+ | publisher=Prentice Hall
+ | isbn=978-0-13-460643-9
+ | pages=19–21
+}}
+* {{cite book
+ | author=Robert-Christoph Riemann
+ | title=Modelling of Concurrent Systems: Structural and Semantical Methods in the High Level Petri Net Calculus
+ | year=1999
+ | publisher=Herbert Utz Verlag
+ | isbn=978-3-89675-629-9
+ | pages=21–22
+}}&lt;/ref&gt; for all ''x'' in ''X'' there exists a ''y'' in ''Y'' such that ''xRy''; such an ''R'' is also called a [[multivalued function]] by some authors.{{cn|date=June 2019}} This property, although also referred to as ''total'' by some authors,{{cn|date=June 2019}} is different from the definition of ''total'' in the section [[Binary relation#Properties|Properties]]. Both relations in the picture are left-total. The relation {{nowrap|1=''x'' = ''y''&lt;sup&gt;2&lt;/sup&gt;}}, obtained from the above rotation, is not left-total, as, for example, it doesn't relate −14 to any real number.
+* '''Surjective'''&lt;!---[[surjective relation]]---&gt; (also called '''right-total'''&lt;!---[[right-total relation]]---&gt;&lt;ref name=kkm/&gt; or '''onto'''&lt;!---[[onto relation]]]---&gt;): for all ''y'' in ''Y'', there exists an ''x'' in ''X'' such that ''xRy''. The green relation is surjective, but the red relation is not, as, for example, it doesn't relate any real number to −14.
+
+Uniqueness and totality properties:
+* A ''[[function (mathematics)|function]]'': a relation that is functional and left-total. Both the green and the red relation are functions.
+* An ''[[injective function]]'' or ''injection'': a relation that is injective, functional, and left-total.
+* A ''[[surjective function]]'' or ''surjection'': a relation that is functional, left-total, and right-total.
+* A ''[[bijection]]'': a function that is surjective one-to-one (or surjective injective) is said to be ''bijective'', also known as ''one-to-one correspondence''.&lt;ref&gt;Note that the use of &quot;correspondence&quot; here is narrower than as general synonym for binary relation.&lt;/ref&gt; The green relation is bijective, but the red is not.
+
+== Operations on binary relations ==&lt;!-- This section is linked from [[Preorder]] --&gt;
+=== Union ===
+&lt;!---This definition should appear before the closure defs, which refer to it:---&gt;
+If ''R'' and ''S'' are binary relations over two sets ''X'' and ''Y'' then {{nowrap begin}}''R'' ∪ ''S'' = {(''x'', ''y'') | ''xRy'' or ''xSy''}{{nowrap end}} is the ''union relation'' of ''R'' and ''S'' over ''X'' and ''Y''.
+
+The identity element is the empty relation. For example, ≥ is the union of &gt; and =.
+
+=== Intersection ===
+If ''R'' and ''S'' are binary relations over two sets ''X'' and ''Y'' then {{nowrap begin}}''R'' ∩ ''S'' = {(''x'', ''y'') | ''xRy'' and ''xSy''}{{nowrap end}} is the ''intersection relation'' of ''R'' and ''S'' over ''X'' and ''Y''.
+
+The identity element is the universal relation. For example, the relation &quot;is divisible by 6&quot; is the intersection of the relations &quot;is divisible by 3&quot; and &quot;is divisible by 2&quot;.
+
+=== Composition ===
+{{main|Composition of relations}}
+If ''R'' is a binary relation over two sets ''X'' and ''Y'', and ''S'' is a binary relation over two sets ''Y'' and ''Z'' then {{nowrap begin}}''S'' ∘ ''R'' = {(''x'', ''z'') | there exists a ''y'' in ''Y'' such that ''xRy'' and ''ySz''}{{nowrap end}} (also denoted {{nowrap|''R''; ''S''}}) is the ''composition relation'' of ''R'' and ''S'' over ''X'' and ''Z''. 
+
+The identity element is the identity relation. The order of ''R'' and ''S'' in the notation {{nowrap|''S'' ∘ ''R''}}, used here agrees with the standard notational order for [[composition of functions]]. For example, the composition &quot;is mother of&quot; ∘ &quot;is parent of&quot; yields &quot;is maternal grandparent of&quot;, while the composition &quot;is parent of&quot; ∘ &quot;is mother of&quot; yields &quot;is grandmother of&quot;.
+
+=== Converse ===
+{{main|Converse relation}}
+{{see also|Duality (order theory)}}
+If ''R'' is a binary relation over two sets ''X'' and ''Y'' then {{nowrap begin}}''R''&lt;sup&gt;T&lt;/sup&gt; = {(''y'', ''x'') | ''xRy''}{{nowrap end}} is the ''converse relation'' of ''R'' over ''Y'' and ''X''.
+
+For example, &gt; is the converse of &lt;. A binary relation is equal to its converse if and only if it is [[Symmetric relation|symmetric]].
+
+=== Complement ===
+{{main|Complementary relation}}
+If ''R'' is a binary relation over two sets ''X'' and ''Y'' then {{nowrap begin}}{{overline|''R''}} = {(''x'', ''y'') | not ''xRy''}{{nowrap end}} (also denoted {{strikethrough|''R''}} or ¬''R'') is the ''complementary relation'' of ''R'' over ''X'' and ''Y''.
+
+For example, = and ≠ are complementary to each other, as are ⊆ and ⊈, ⊇ and ⊉, and ∈ and ∉, and, for [[total order]]s, also &lt; and ≥, and &gt; and ≤.
+
+The complement of the [[converse relation]] ''R''&lt;sup&gt;T&lt;/sup&gt; is the converse of the complement: &lt;math&gt;\overline{R^\mathsf{T}} = \bar{R}^\mathsf{T}.&lt;/math&gt;
+
+If {{nowrap|1=''X'' = ''Y''}}, the complement has the following properties:
+* If a relation is symmetric, then so is the complement.
+* The complement of a reflexive relation is irreflexive—and vice versa.
+* The complement of a [[strict weak order]] is a total preorder—and vice versa.
+
+=== Restriction ===
+{{main|Restriction (mathematics)}}
+If ''R'' is a binary relation over a set ''X'' and ''S'' is a subset of ''X'' then {{nowrap begin}}''R''&lt;sub&gt;|''S''&lt;/sub&gt; = {(''x'', ''y'') | ''xRy'' and ''x'' in ''S'' and ''y'' in ''S''}{{nowrap end}} is the ''restriction relation'' of ''R'' to ''S'' over ''X''.
+
+If ''R'' is a binary relation over two sets ''X'' and ''Y'' and ''S'' is a subset of ''X'' then {{nowrap begin}}''R''&lt;sub&gt;|''S''&lt;/sub&gt; = {(''x'', ''y'') | ''xRy'' and ''x'' in ''S''}{{nowrap end}} is the ''left-restriction relation'' of ''R'' to ''S'' over ''X'' and ''Y''.
+
+If ''R'' is a binary relation over two sets ''X'' and ''Y'' and ''S'' is a subset of ''Y'' then {{nowrap begin}}''R''&lt;sup&gt;|''S''&lt;/sup&gt; = {(''x'', ''y'') | ''xRy'' and ''y'' in ''S''}{{nowrap end}} is the ''right-restriction relation'' of ''R'' to ''S'' over ''X'' and ''Y''.
+
+If a relation is [[Reflexive relation|reflexive]], irreflexive, [[Symmetric relation|symmetric]], [[Antisymmetric relation|antisymmetric]], [[Asymmetric relation|asymmetric]], [[Transitive relation|transitive]], [[Serial relation|total]], [[Trichotomy (mathematics)|trichotomous]], a [[partial order]], [[total order]], [[strict weak order]], [[Strict weak order#Total preorders|total preorder]] (weak order), or an [[equivalence relation]], then so are its restrictions too.
+
+However, the transitive closure of a restriction is a subset of the restriction of the transitive closure, i.e., in general not equal. For example, restricting the relation &quot;''x'' is parent of ''y''&quot; to females yields the relation &quot;''x'' is mother of the woman ''y''&quot;; its transitive closure doesn't relate a woman with her paternal grandmother. On the other hand, the transitive closure of &quot;is parent of&quot; is &quot;is ancestor of&quot;; its restriction to females does relate a woman with her paternal grandmother.
+
+Also, the various concepts of [[Completeness (order theory)|completeness]] (not to be confused with being &quot;total&quot;) do not carry over to restrictions. For example, over the [[real number]]s a property of the relation ≤ is that every [[Empty set|non-empty]] subset ''S'' of '''R''' with an [[upper bound]] in '''R''' has a [[Supremum|least upper bound]] (also called supremum) in '''R'''. However, for the rational numbers this supremum is not necessarily rational, so the same property does not hold on the restriction of the relation ≤ to the rational numbers.
+
+&lt;!---This definition is needed by the closure defs, too, but maybe should better given in an earlier section(?):---&gt;
+A binary relation ''R'' over two sets ''X'' and ''Y'' is said to be ''contained'' in a relation ''S'' over ''X'' and ''Y'', written ''R'' ⊆ ''S'', if ''R'' is a subset of ''S'', that is, for all ''x'' in ''X'' and ''y'' in ''Y'', if ''xRy'', then ''xSy''. If ''R'' is contained in ''S'' and ''S'' is contained in ''R'', then ''R'' and ''S'' are called ''equal'' written ''R'' = ''S''. If ''R'' is contained in ''S'' but ''S'' is not contained in ''R'', then ''R'' is said to be ''smaller'' than ''S'', written ''R'' ⊊ ''S''. For example on the [[rational number]]s, the relation &gt; is smaller than ≥, and equal to the composition {{nowrap|&gt; ∘ &gt;.}}
+
+=== Matrix representation ===
+Binary relations over two sets ''X'' and ''Y'' can be represented algebraically by matrices indexed by ''X'' and ''Y'' with entries in the [[Boolean semiring]] (addition corresponds to OR and multiplication to AND) where [[matrix addition]] corresponds to union of relations, [[matrix multiplication]] corresponds to composition of relations (of a relation over ''X'' and ''Y'' and a relation over ''Y'' and ''Z''),&lt;ref&gt;{{cite newsgroup |title=quantum mechanics over a commutative rig |author=[[John C. Baez]] |date=6 Nov 2001 |newsgroup=sci.physics.research |message-id=9s87n0$iv5@gap.cco.caltech.edu |url=https://groups.google.com/d/msg/sci.physics.research/VJNPMCfreao/TMKt9tFYNwEJ |access-date=November 25, 2018}}&lt;/ref&gt; the [[Hadamard product (matrices)|Hadamard product]] corresponds to intersection of relations, the [[zero matrix]] corresponds to the empty relation, and the [[matrix of ones]] corresponds to the universal relation. Homogeneous relations (when {{nowrap|1=''X'' = ''Y''}}) form a [[matrix semiring]] (indeed, a [[matrix semialgebra]] over the Boolean semiring) where the [[identity matrix]] corresponds to the identity relation.&lt;ref name=&quot;droste&quot;&gt;Droste, M., &amp; Kuich, W. (2009). Semirings and Formal Power Series. ''Handbook of Weighted Automata'', 3–28. {{doi|10.1007/978-3-642-01492-5_1}}, pp. 7-10&lt;/ref&gt;
+
+== Sets versus classes ==
+Certain mathematical &quot;relations&quot;, such as &quot;equal to&quot;, &quot;subset of&quot;, and &quot;member of&quot;, cannot be understood to be binary relations as defined above, because their domains and codomains cannot be taken to be sets in the usual systems of [[axiomatic set theory]]. For example, if we try to model the general concept of &quot;equality&quot; as a binary relation =, we must take the domain and codomain to be the &quot;class of all sets&quot;, which is not a set in the usual set theory.
+
+In most mathematical contexts, references to the relations of equality, membership and subset are harmless because they can be understood implicitly to be restricted to some set in the context. The usual work-around to this problem is to select a &quot;large enough&quot; set ''A'', that contains all the objects of interest, and work with the restriction =&lt;sub&gt;''A''&lt;/sub&gt; instead of =. Similarly, the &quot;subset of&quot; relation ⊆ needs to be restricted to have domain and codomain P(''A'') (the power set of a specific set ''A''): the resulting set relation can be denoted ⊆&lt;sub&gt;''A''&lt;/sub&gt;. Also, the &quot;member of&quot; relation needs to be restricted to have domain ''A'' and codomain P(''A'') to obtain a binary relation ∈&lt;sub&gt;''A''&lt;/sub&gt; that is a set. Bertrand Russell has shown that assuming ∈ to be defined over all sets leads to a [[Russell's paradox|contradiction]] in naive set theory.
+
+Another solution to this problem is to use a set theory with proper classes, such as [[Von Neumann–Bernays–Gödel set theory|NBG]] or [[Morse–Kelley set theory]], and allow the domain and codomain (and so the graph) to be [[proper class]]es: in such a theory, equality, membership, and subset are binary relations without special comment. (A minor modification needs to be made to the concept of the ordered triple {{nowrap|(''X'', ''Y'', ''G'')}}, as normally a proper class cannot be a member of an ordered tuple; or of course one can identify the binary relation with its graph in this context.)&lt;ref&gt;{{cite book |title=A formalization of set theory without variables |last1=Tarski |first1=Alfred |authorlink=Alfred Tarski |last2=Givant |first2=Steven |year=1987 |page=[https://archive.org/details/formalizationofs0000tars/page/3 3] |publisher=American Mathematical Society |isbn=0-8218-1041-3 |url=https://archive.org/details/formalizationofs0000tars/page/3 }}&lt;/ref&gt; With this definition one can for instance define a binary relation over every set and its power set.
+
+== Homogeneous relation ==
+A '''homogeneous relation'''&lt;!---keep boldface: [[Homogeneous relation]] redirects to here---&gt; (also called '''endorelation'''&lt;!---[[endorelation]]---&gt;) over a set ''X'' is a binary relation over ''X'' and itself, i.e. it is a subset of the Cartesian product {{nowrap|''X'' × ''X''}}.&lt;ref name=&quot;Winter2007&quot;/&gt;&lt;ref name=&quot;Müller2012&quot;&gt;{{cite book|author=M. E. Müller|title=Relational Knowledge Discovery|year=2012|publisher=Cambridge University Press|isbn=978-0-521-19021-3|page=22}}&lt;/ref&gt;&lt;ref name=&quot;PahlDamrath2001-p496&quot;&gt;{{cite book|author1=Peter J. Pahl|author2=Rudolf Damrath|title=Mathematical Foundations of Computational Engineering: A Handbook|year=2001|publisher=Springer Science &amp; Business Media|isbn=978-3-540-67995-0|page=496}}&lt;/ref&gt; It is also simply called a binary relation over ''X''. An example of a homogeneous relation is the relation of [[kinship]], where the relation is over people.
+
+A homogeneous relation ''R'' over a set ''X'' may be identified with a [[Graph theory#Directed graph|directed simple graph permitting loops]], or if it is [[Symmetric relation|symmetric]], with an [[Graph theory#Graph|undirected simple graph permitting loops]], where ''X'' is the vertex set and ''R'' is the edge set (there is an edge from a vertex ''x'' to a vertex ''y'' if and only if ''xRy''). It is called the ''adjacency relation'' of the graph.
+
+The set of all binary relations &lt;math&gt;\mathcal{B}(X)&lt;/math&gt; over a set ''X'' is the set [[Power set|2&lt;sup&gt;''X'' × ''X''&lt;/sup&gt;]] which is a [[Boolean algebra (structure)|Boolean algebra]] augmented with the [[Involution (mathematics)|involution]] of mapping of a relation to its [[converse relation]]. Considering [[composition of relations]] as a [[binary operation]] on &lt;math&gt;\mathcal{B}(X),&lt;/math&gt; it forms an [[inverse semigroup]].
+
+=== Particular homogeneous relations ===
+Some important particular binary relations over a set ''X'' are:
+* the '''empty relation'''&lt;!---[[empty relation]]---&gt; {{nowrap|1=''E'' = [[Empty set|∅]] ⊆ ''X'' × ''X''}};
+* the '''universal relation'''&lt;!---[[universal relation]]---&gt; {{nowrap|1=''U'' = ''X'' × ''X''}};
+* the '''identity relation'''&lt;!---[[identity relation]]---&gt; {{nowrap begin}}''I'' = {(''x'', ''x'') | ''x'' in ''X''}{{nowrap end}}.
+
+For arbitrary elements ''x'' and ''y'' of ''X'':
+* ''xEy'' holds never;
+* ''xUy'' holds always;
+* ''xIy'' holds if and only if {{nowrap|1=''x'' = ''y''}}.
+
+=== Properties ===
+{| class=&quot;wikitable mw-collapsible mw-collapsed&quot; style=&quot;float:right;&quot;
+|-
+! Implications and conflicts between properties of homogenous binary relations
+|-
+| [[File:BinRelProp Impl Confl.gif|thumb|750px|Implications (blue) and conflicts (red) between properties (yellow) of homogenous binary relations. For example, every asymmetric relation is irreflexive (''&quot;{{color|#808000|ASym}} {{color|#000080|⇒}} {{color|#808000|Irrefl}}&quot;''), and no relation on a non-empty set can be both irreflexive and reflexive (''&quot;{{color|#808000|Irrefl}} {{color|#800000|#}} {{color|#808000|Refl}}&quot;''). Omitting the red edges results in a [[Hasse diagram]].]]
+|}
+Some important properties that a binary relation ''R'' over a set ''X'' may have are:
+* ''[[Reflexive relation|Reflexive]]'': for all ''x'' in ''X'', ''xRx''. For example, ≥ is a reflexive relation but &gt; is not.
+* ''Irreflexive'' (or ''strict''): for no ''x'' in ''X'', ''xRx''. For example, &gt; is an irreflexive relation, but ≥ is not.
+* ''Coreflexive'': for all ''x'' and ''y'' in ''X'', if ''xRy'' then {{nowrap|1=''x'' = ''y''}}.&lt;ref&gt;Fonseca de Oliveira, J. N., &amp; Pereira Cunha Rodrigues, C. D. J. (2004). [ftp://nozdr.ru/biblio/kolxo3/Cs/CsLn/Mathematics%20of%20Program%20Construction,%207%20conf.,%20MPC%202004(LNCS3125,%20Springer,%202004)(ISBN%203540223800)(412s).pdf#page=345 Transposing Relations: From Maybe Functions to Hash Tables]. In Mathematics of Program Construction (p. 337).&lt;/ref&gt; For example, the relation over the integers in which each odd number is related to itself is a coreflexive relation. The equality relation is the only example of a both reflexive and coreflexive relation, and any coreflexive relation is a subset of the identity relation.
+* ''Quasi-reflexive'': for all ''x'' and ''y'' in ''X'', if ''xRy'' then ''xRx'' and ''yRy''.
+
+The previous 4 alternatives are far from being exhaustive; e.g., the red relation {{nowrap|1=''y'' = ''x''&lt;sup&gt;2&lt;/sup&gt;}} from the [[#Special types of binary relations|above]] picture is neither irreflexive, nor coreflexive, nor reflexive, since it contains the pair {{nowrap|(0, 0)}}, and {{nowrap|(2, 4)}}, but not {{nowrap|(2, 2)}}, respectively. The latter two facts also rule out quasi-reflexivity.
+
+* ''[[Symmetric relation|Symmetric]]'': for all ''x'' and ''y'' in ''X'', if ''xRy'' then ''yRx''. For example, &quot;is a blood relative of&quot; is a symmetric relation, because ''x'' is a blood relative of ''y'' if and only if ''y'' is a blood relative of ''x''.
+* ''[[Antisymmetric relation|Antisymmetric]]'': for all ''x'' and ''y'' in ''X'', if ''xRy ''and ''yRx'' then {{nowrap|1=''x'' = ''y''}}. For example, ≥ is an antisymmetric relation; so is &gt;, but [[Vacuous truth|vacuously]] (the condition in the definition is always false).&lt;ref&gt;{{citation|first1=Douglas|last1=Smith|first2=Maurice|last2=Eggen|first3=Richard|last3=St. Andre|title=A Transition to Advanced Mathematics|edition=6th|publisher=Brooks/Cole|year=2006|isbn=0-534-39900-2|page=160}}&lt;/ref&gt;
+* ''[[Asymmetric relation|Asymmetric]]'': for all ''x'' and ''y'' in ''X'', if ''xRy'' then not ''yRx''. A relation is asymmetric if and only if it is both antisymmetric and irreflexive.&lt;ref&gt;{{citation|first1=Yves|last1=Nievergelt|title=Foundations of Logic and Mathematics: Applications to Computer Science and Cryptography|publisher=Springer-Verlag|year=2002|page=[https://books.google.com/books?id=_H_nJdagqL8C&amp;pg=PA158 158]}}.&lt;/ref&gt; For example, &gt; is an asymmetric relation, but ≥ is not.
+
+Again, the previous 3 alternatives are far from being exhaustive; as an example over the natural numbers, the relation ''xRy'' defined by {{nowrap|''x'' &gt; 2}} is neither symmetric nor antisymmetric, let alone asymmetric.
+
+* ''[[Transitive relation|Transitive]]'': for all ''x'', ''y'' and ''z'' in ''X'', if ''xRy'' and ''yRz'' then ''xRz''. A transitive relation is irreflexive if and only if it is asymmetric.&lt;ref&gt;{{cite book|last1=Flaška|first1=V.|last2=Ježek|first2=J.|last3=Kepka|first3=T.|last4=Kortelainen|first4=J.|title=Transitive Closures of Binary Relations I|year=2007|publisher=School of Mathematics&amp;nbsp;– Physics Charles University|location=Prague|page=1|url=http://www.karlin.mff.cuni.cz/~jezek/120/transitive1.pdf|url-status=dead|archiveurl=https://web.archive.org/web/20131102214049/http://www.karlin.mff.cuni.cz/~jezek/120/transitive1.pdf|archivedate=2013-11-02}} Lemma 1.1 (iv). This source refers to asymmetric relations as &quot;strictly antisymmetric&quot;.&lt;/ref&gt; For example, &quot;is ancestor of&quot; is a transitive relation, while &quot;is parent of&quot; is not.
+* ''[[Connex relation|Connex]]'': for all ''x'' and ''y'' in ''X'', ''xRy'' or ''yRx'' (or both). This property is sometimes called &quot;total&quot;, which is distinct from the definitions of &quot;total&quot; given in the section [[Binary relation#Special types of binary relations|Special types of binary relations]].
+* ''[[Trichotomy (mathematics)|Trichotomous]]'': for all ''x'' and ''y'' in ''X'', exactly one of ''xRy'', ''yRx'' or {{nowrap|1=''x'' = ''y''}} holds. For example, &gt; is a trichotomous relation, while the relation &quot;divides&quot; over the natural numbers is not.&lt;ref&gt;Since neither 5 divides 3, nor 3 divides 5, nor 3=5.&lt;/ref&gt;
+* ''[[Euclidean relation|Right Euclidean]]'' (or just ''Euclidean''): for all ''x'', ''y'' and ''z'' in ''X'', if ''xRy'' and ''xRz'' then ''yRz''. For example, = is a Euclidean relation because if {{nowrap|1=''x'' = ''y''}} and {{nowrap|1=''x'' = ''z''}} then {{nowrap|1=''y'' = ''z''}}.
+* ''Left Euclidean'': for all ''x'', ''y'' and ''z'' in ''X'', if ''yRx'' and ''zRx'' then ''yRz''.
+* ''[[Serial relation|Serial]]'': for all ''x'' in ''X'', there exists a ''y'' in ''X'' such that ''xRy''. For example, &gt; is a serial relation over the integers. But it is not a serial relation over the positive integers, because there is no ''y'' in the positive integers such that {{nowrap|1 &gt; ''y''}}.&lt;ref&gt;{{cite journal|last = Yao|first = Y.Y.|author2=Wong, S.K.M.|title = Generalization of rough sets using relationships between attribute values|journal = Proceedings of the 2nd Annual Joint Conference on Information Sciences|year = 1995|pages = 30–33|url = http://www2.cs.uregina.ca/~yyao/PAPERS/relation.pdf}}.&lt;/ref&gt; However, &lt; is a serial relation over the positive integers, the rational numbers and the real numbers. Every reflexive relation is serial: for a given ''x'', choose ''y'' = ''x''. 
+* ''Set-like''{{cn|date=June 2019}} (or ''local''):{{cn|date=June 2019}} for all ''x'' in ''X'', the [[Class (set theory)|class]] of all ''y'' such that ''yRx'' is a set. (This makes sense only if relations over proper classes are allowed.) For example, the usual ordering &lt; over the class of [[ordinal number]]s is a set-like relation, while its inverse &gt; is not.
+* ''[[Well-founded relation|Well-founded]]'': every nonempty subset ''S'' of ''X'' contains a [[Maximal and minimal elements|minimal element]] with respect to ''R''. Well-foundedness implies the [[descending chain condition]] (that is, no infinite chain ... ''x''&lt;sub&gt;''n''&lt;/sub&gt;''R''...''Rx''&lt;sub&gt;3&lt;/sub&gt;''Rx''&lt;sub&gt;2&lt;/sub&gt;''Rx''&lt;sub&gt;1&lt;/sub&gt; can exist). If the [[axiom of dependent choice]] is assumed, both conditions are equivalent.&lt;ref&gt;{{cite web |title=Condition for Well-Foundedness |url=https://proofwiki.org/wiki/Condition_for_Well-Foundedness |website=ProofWiki |accessdate=20 February 2019}}&lt;/ref&gt;&lt;ref&gt;{{cite book |last1=Fraisse |first1=R. |title=Theory of Relations, Volume 145 - 1st Edition |date=15 December 2000 |publisher=Elsevier |isbn=9780444505422 |page=46 |edition=1st |url=https://www.elsevier.com/books/theory-of-relations/fraisse/978-0-444-50542-2 |accessdate=20 February 2019}}&lt;/ref&gt;
+
+A ''[[preorder]]'' is a relation that is reflexive and transitive. A ''[[Weak ordering|total preorder]]'', also called ''weak order'', is a relation that is reflexive, transitive, and connex. A ''[[Partially ordered set|partial order]]'' is a relation that is reflexive, antisymmetric, and transitive. A ''[[total order]]'', also called ''linear order'', ''simple order'', ''connex order'', or ''chain'' is a relation that is reflexive, antisymmetric, transitive and connex.&lt;ref&gt;Joseph G. Rosenstein, ''Linear orderings'', Academic Press, 1982, {{ISBN|0-12-597680-1}}, p.&amp;nbsp;4&lt;/ref&gt;
+
+A ''[[partial equivalence relation]]'' is a relation that is symmetric and transitive. An ''[[equivalence relation]]'' is a relation that is reflexive, symmetric, and transitive. It is also a relation that is symmetric, transitive, and serial, since these properties imply reflexivity.
+
+=== Operations on homogeneous relations ===
+If ''R'' is a homogeneous relation over a set ''X'' then each of the following is a homogeneous relation over ''X'':
+* ''[[Reflexive closure]]'': ''R''&lt;sup&gt;=&lt;/sup&gt;, defined as {{nowrap begin}}''R''&lt;sup&gt;=&lt;/sup&gt; = {(''x'', ''x'') | ''x'' in ''X''} ∪ ''R''{{nowrap end}} or the smallest reflexive relation over ''X'' containing ''R''. This can be proven to be equal to the [[Intersection (set theory)|intersection]] of all reflexive relations containing ''R''.
+* ''Reflexive reduction'': ''R''&lt;sup&gt;≠&lt;/sup&gt;, defined as {{nowrap begin}}''R''&lt;sup&gt;≠&lt;/sup&gt; = ''R'' \ {(''x'', ''x'') | ''x'' in ''X''}{{nowrap end}} or the largest [[irreflexive]] relation over ''X'' contained in ''R''.
+* ''[[Transitive closure]]'': ''R''&lt;sup&gt;+&lt;/sup&gt;, defined as the smallest transitive relation over ''X'' containing ''R''. This can be seen to be equal to the intersection of all transitive relations containing ''R''.
+* ''Reflexive transitive closure'': ''R''*, defined as {{nowrap|1=''R''* = (''R''&lt;sup&gt;+&lt;/sup&gt;)&lt;sup&gt;=&lt;/sup&gt;}}, the smallest [[preorder]] containing ''R''.
+* ''[[Reflexive transitive symmetric closure]]'': ''R''&lt;sup&gt;≡&lt;/sup&gt;, defined as the smallest [[equivalence relation]] over ''X'' containing ''R''.
+All operations defined in the [[#Operations on binary relations|above section]] also apply to homogeneous relations.
+ 
+:{| class=&quot;wikitable sortable&quot; style=&quot;text-align:center;&quot;
+|+ align=&quot;top&quot; | Homogeneous relations by property
+|-
+!
+! [[Reflexive relation|Reflexivity]]
+! [[Symmetric relation|Symmetry]]
+! [[Transitive relation|Transitivity]]
+! Symbol
+! Example
+|-
+! [[Directed graph]]
+|
+|
+|
+| →
+|
+|-
+! [[Undirected graph]]
+|
+| {{yes|Symmetric}}
+|
+|
+|
+|-
+! [[Tournament (graph theory)|Tournament]]
+| {{no|Irreflexive}}
+| {{no|Antisymmetric}}
+|
+|
+| [[Pecking order]]
+|-
+! [[Dependency relation|Dependency]]
+| {{yes|Reflexive}}
+| {{yes|Symmetric}}
+|
+|
+|
+|-
+! [[Preorder]]
+| {{yes|Reflexive}}
+|
+| {{yes}}
+| ≤
+| [[Preference]]
+|-
+! [[Preorder|Strict preorder]]
+| {{no|Irreflexive}}
+|
+| {{yes}}
+| &lt;
+| 
+|-
+! [[Total preorder]]
+| {{yes|Reflexive}}
+|
+| {{yes}}
+| ≤
+|
+|-
+! [[Partial order]]
+| {{yes|Reflexive}}
+| {{no|Antisymmetric}}
+| {{yes}}
+| ≤
+| [[Subset]]
+|-
+! [[Strict partial order]]
+| {{no|Irreflexive}}
+| {{no|Antisymmetric}}
+| {{yes}}
+| &lt;
+| Proper subset
+|-
+! [[Strict weak order]]
+| {{no|Irreflexive}}
+| {{no|Antisymmetric}}
+| {{yes}}
+| &lt;
+|
+|-
+! [[Total order]]
+| {{yes|Reflexive}}
+| {{no|Antisymmetric}}
+| {{yes}}
+| ≤
+|
+|-
+! [[Partial equivalence relation]]
+|
+| {{yes|Symmetric}}
+| {{yes}}
+|
+|
+|-
+! [[Equivalence relation]]
+| {{yes|Reflexive}}
+| {{yes|Symmetric}}
+| {{yes}}
+| ∼, ≅, ≈, ≡
+| [[Equality (mathematics)|Equality]]
+|}
+
+=== The number of homogeneous relations ===
+The number of distinct binary relations over an ''n''-element set is 2&lt;sup&gt;''n''&lt;sup&gt;2&lt;/sup&gt;&lt;/sup&gt; {{OEIS|id=A002416}}:
+{{number of relations}}
+
+Notes:
+* The number of irreflexive relations is the same as that of reflexive relations.
+* The number of [[Partially ordered set#Strict and non-strict partial orders|strict partial orders]] (irreflexive transitive relations) is the same as that of partial orders.
+* The number of strict weak orders is the same as that of total preorders.
+* The total orders are the partial orders that are also total preorders. The number of preorders that are neither a partial order nor a total preorder is, therefore, the number of preorders, minus the number of partial orders, minus the number of total preorders, plus the number of total orders: 0, 0, 0, 3, and 85, respectively.
+* The number of equivalence relations is the number of [[Partition of a set|partition]]s, which is the [[Bell number]].
+
+The binary relations can be grouped into pairs (relation, [[Binary relation#Complement|complement]]), except that for {{nowrap|1=''n'' = 0}} the relation is its own complement. The non-symmetric ones can be grouped into [[4-tuple|quadruple]]s (relation, complement, [[Binary relation#Operations on binary relations|inverse]], inverse complement).
+
+=== Examples of common homogeneous relations ===
+* [[Order relation]]s, including [[strict order]]s:
+** [[Greater than]]
+** Greater than or equal to
+** [[Less than]]
+** Less than or equal to
+** [[Divides]] (evenly)
+** [[Subset]] of
+* [[Equivalence relation]]s:
+** [[Equality (mathematics)|Equality]]
+** [[Parallel (geometry)|Parallel]] with (for [[affine space]]s)
+** Is in [[bijection]] with
+** [[Isomorphism|Isomorphic]]
+* [[Tolerance relation]], a reflexive and symmetric relation:
+** [[Dependency relation]], a finite tolerance relation
+** [[Independency relation]], the complement of some dependency relation
+* [[Kinship#Composition of relations|Kinship relations]]
+
+== See also ==
+{{div col}}
+* [[Abstract rewriting system]]
+* [[Additive relation]], a many-valued homomorphism between modules
+* [[Category of relations]], a category having sets as objects and heterogeneous binary relations as morphisms 
+* [[Confluence (term rewriting)]], discusses several unusual but fundamental properties of binary relations
+* [[Correspondence (algebraic geometry)]], a binary relation defined by algebraic equations
+* [[Hasse diagram]], a graphic means to display an order relation
+* [[Incidence structure]], a heterogeneous relation between set of points and lines
+* [[Logic of relatives]], a theory of relations by Charles Sanders Peirce
+* [[Order theory]], inverstigates properties of order relations
+{{colend}}
+
+== Notes ==
+{{reflist|group=note}}
+
+== References ==
+{{reflist}}
+
+== Bibliography ==
+* {{citation | last1=Enderton | first1=Herbert | title=Elements of set theory | publisher=[[Academic Press]] | location=Boston, MA | isbn=978-0-12-238440-0 | year=1977}}.
+* M. Kilp, U. Knauer, A.V. Mikhalev (2000) ''Monoids, Acts and Categories: with Applications to Wreath Products and Graphs'', De Gruyter Expositions in Mathematics vol. 29, Walter de Gruyter, {{ISBN|3-11-015248-7}}.
+* [[Charles Saunders Pierce]] (1870) [https://archive.org/details/descriptionanot00peirgoog Description of a Notation for the Logic of Relatives] from [[Google Books]]
+* [[Gunther Schmidt]] (2010) ''Relational Mathematics'' [[Cambridge University Press]] {{ISBN|978-0-521-76268-7}}.
+
+== External links ==
+* {{commonscatinline|Binary relations}}
+* {{springer|title=Binary relation|id=p/b016380}}
+
+{{DEFAULTSORT:Binary Relation}}
+[[Category:Binary relations| ]]</text>
+      <sha1>q497ia2gpqqrvxf81d03gnrmsndn86x</sha1>
+    </revision>
+  </page>

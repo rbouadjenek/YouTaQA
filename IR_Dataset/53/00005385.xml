@@ -1,0 +1,114 @@
+  <page>
+    <title>Candela</title>
+    <ns>0</ns>
+    <id>5385</id>
+    <revision>
+      <id>931057097</id>
+      <parentid>931035548</parentid>
+      <timestamp>2019-12-16T18:06:48Z</timestamp>
+      <contributor>
+        <username>Srleffler</username>
+        <id>252195</id>
+      </contributor>
+      <minor />
+      <comment>/* Examples */ ce</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{short description|SI unit of luminous intensity}}
+{{About|the unit of luminous intensity}}
+{{Use dmy dates|date=July 2012}}
+{{Infobox Unit
+| bgcolour = [[#0000FF]]
+| name = Candela
+| image = [[File:Luminosity.png|290px]]
+| caption = [[Photopic vision|Photopic]] (black) and [[scotopic vision|scotopic]]&lt;ref&gt;[http://www.cvrl.org/database/text/lum/scvl.htm CIE Scotopic luminosity curve (1951)]&lt;/ref&gt; (green) luminosity functions. The photopic includes the CIE 1931 standard&lt;ref&gt;[http://www.cvrl.org/database/text/cmfs/ciexyz31.htm CIE (1931) 2-deg color matching functions]&lt;/ref&gt; (solid), the Judd–Vos 1978 modified data&lt;ref&gt;[http://www.cvrl.org/database/text/lum/vljv.htm Judd–Vos modified CIE 2-deg photopic luminosity curve (1978)]&lt;/ref&gt; (dashed), and the Sharpe, Stockman, Jagla &amp; Jägle 2005 data&lt;ref name=&quot;Sharpe&quot;&gt;[http://www.cvrl.org/database/text/lum/ssvl2.htm Sharpe, Stockman, Jagla &amp;amp; Jägle (2005) 2-deg V*(l) luminous efficiency function] {{webarchive|url=https://web.archive.org/web/20070927222337/http://www.cvrl.org/database/text/lum/ssvl2.htm |date=27 September 2007 }}&lt;/ref&gt; (dotted). The horizontal axis is wavelength in nm.
+| standard = [[SI base unit]]
+| quantity = [[Luminous intensity]]
+| symbol = cd
+| namedafter =
+| units1 = international candles
+| inunits1 = ≈&amp;thinsp;{{val|1.02}} [[candlepower|cp]]&amp;thinsp;
+| units2 = Hefner Kerze
+| inunits2 = ≈&amp;thinsp;{{val|1.11}} [[hefner lamp|HK]]&amp;thinsp;
+}}
+
+The '''candela''' ({{IPAc-en|k|æ|n|ˈ|d|ɛ|l|ə}} or {{IPAc-en|k|æ|n|ˈ|d|iː|l|ə}}; symbol: '''cd''') is the [[SI base unit|base unit]] of [[luminous intensity]] in the [[International System of Units]] (SI); that is, luminous power per unit [[solid angle]] emitted by a point light source in a particular direction. Luminous intensity is analogous to [[radiant intensity]], but instead of simply adding up the contributions of every [[wavelength]] of light in the source's spectrum, the contribution of each wavelength is [[weighting|weighted]] by the standard [[luminosity function]] (a model of the sensitivity of the human eye to different wavelengths).&lt;ref name=&quot;Sharpe&quot;/&gt;&lt;ref&gt;{{cite book |last=Wyzecki |first=G. |author2=Stiles, W.S. |year=1982 |edition=2nd |title=Color Science: Concepts and Methods, Quantitative Data and Formulae | isbn = 0-471-02106-7 |publisher=Wiley-Interscience}}&lt;/ref&gt; A common wax [[candle]] emits light with a luminous intensity of roughly one candela. If emission in some directions is blocked by an opaque barrier, the emission would still be approximately one candela in the directions that are not obscured.
+
+The word ''candela'' is [[Latin language|Latin]] for ''candle''. The old name &quot;candle&quot; is still sometimes used, as in ''[[foot-candle]]'' and the modern definition of ''[[candlepower]]''.&lt;ref name=Webster&gt;{{cite web|url=http://m-w.com/dictionary/candlepower|title=Candlepower - Definition |work=Merriam-Webster Dictionary|accessdate=15 February 2015}}&lt;/ref&gt;
+
+==Definition==
+The 26th [[General Conference on Weights and Measures]] (CGPM) redefined the candela in 2018.&lt;ref&gt;{{cite web |title=Convocation of the General Conference on Weights and Measures (26th meeting) |location=Versailles  |date=13 November 2018 |publisher=Bureau International des Poids et Mesures |format=pdf |url=https://www.bipm.org/utils/en/pdf/CGPM/Convocation-2018.pdf#page=25 |mode=cs1}}&lt;/ref&gt; The new definition, which took effect on 20 May 2019, is:
+
+&lt;blockquote&gt;The candela [...] is defined by taking the fixed numerical value of the luminous efficacy of monochromatic radiation of frequency 540&amp;nbsp;×&amp;nbsp;10&lt;sup&gt;12&lt;/sup&gt;&amp;nbsp;Hz, ''K''&lt;sub&gt;cd&lt;/sub&gt;, to be 683 when expressed in the unit lm&amp;nbsp;W&lt;sup&gt;–1&lt;/sup&gt;, which is equal to {{nowrap|cd sr W&lt;sup&gt;–1&lt;/sup&gt;}}, or {{nowrap|cd sr kg&lt;sup&gt;–1&lt;/sup&gt; m&lt;sup&gt;–2&lt;/sup&gt; s&lt;sup&gt;3&lt;/sup&gt;}}, where the kilogram, metre and second are defined in terms of ''[[Planck constant|h]]'', ''[[Speed of light in vacuum|c]]'' and [[unperturbed ground state hyperfine transition frequency of the caesium 133 atom|Δ''ν''&lt;sub&gt;Cs&lt;/sub&gt;]].&lt;/blockquote&gt;
+
+==Explanation==
+[[File:Linear visible spectrum.svg|thumb|right|upright=1.5]]
+The frequency chosen is in the [[visible light|visible spectrum]] near [[green]], corresponding to a wavelength of about 555&amp;nbsp;nanometres. The [[human eye]], when [[Adaptation (eye)|adapted]] for bright conditions, is most sensitive near this frequency.  At other frequencies, more radiant intensity is required to achieve the same luminous intensity, according to the frequency response of the human eye. The luminous intensity for light of a particular wavelength ''λ'' is given by
+:&lt;math&gt;I_\mathrm{v}(\lambda)= 683.002\ \mathrm{lm/W} \cdot \overline{y}(\lambda) \cdot I_\mathrm{e}(\lambda) ,&lt;/math&gt;
+where ''I''&lt;sub&gt;v&lt;/sub&gt;(''λ'') is the [[luminous intensity]], ''I''&lt;sub&gt;e&lt;/sub&gt;(''λ'') is the [[radiant intensity]] and &lt;math&gt;\textstyle \overline{y}(\lambda)&lt;/math&gt; is the [[photopic]] luminosity function. If more than one wavelength is present (as is usually the case), one must integrate over the [[spectrum]] of wavelengths to get the total luminous intensity.
+
+===Examples===
+*A common candle emits light with roughly 1&amp;nbsp;cd luminous intensity. 
+*A 25&amp;nbsp;W compact fluorescent light bulb puts out around 1700&amp;nbsp;[[lumen (unit)|lumen]]s; if that light is radiated equally in all directions (i.e. over 4''π'' [[steradian]]s), it will have an intensity of &lt;math&gt;I_\text{V} = \frac{1700\ \text{lm}}{4 \pi\ \text{sr}} \approx 135\ \text{lm/sr} = 135\ \text{cd}&lt;/math&gt;.
+*Focused into a 20°&amp;nbsp;beam, the same light bulb would have an intensity of around 18,000&amp;nbsp;cd within the beam.
+
+==History==
+Prior to 1948, various standards for luminous intensity were in use in a number of countries. These were typically based on the brightness of the flame from a &quot;standard candle&quot; of defined composition, or the brightness of an incandescent filament of specific design. One of the best-known of these was the English standard of candlepower. One candlepower was the light produced by a pure [[spermaceti]] candle weighing one sixth of a pound and burning at a rate of 120&amp;nbsp;[[Grain (unit)|grains]] per hour. Germany, Austria and Scandinavia used the [[Hefnerkerze]], a unit based on the output of a [[Hefner lamp]].&lt;ref&gt;{{cite web |url=http://www.sizes.com/units/hefner.htm |title=Hefner unit, or Hefner candle |work=Sizes.com |date=30 May 2007 |accessdate=25 February 2009}}&lt;/ref&gt;
+
+It became clear that a better-defined unit was needed. [[Jules Violle]] had proposed a standard based on the light emitted by 1&amp;nbsp;cm&lt;sup&gt;2&lt;/sup&gt; of [[platinum]] at its melting point (or freezing point), calling this the Violle. The light intensity was due to the [[Planck radiator]] (a [[black body]]) effect, and was thus independent of the construction of the device. This made it easy for anyone to measure the standard, as high-purity platinum was widely available and easily prepared.
+
+The [[Commission Internationale de l'Éclairage]] (International Commission on Illumination) and the CIPM proposed a “new candle” based on this basic concept. However, the value of the new unit was chosen to make it similar to the earlier unit candlepower by dividing the Violle by 60. The decision was promulgated by the CIPM in 1946:
+&lt;blockquote&gt;The value of the '''new candle''' is such that the brightness of the full radiator at the temperature of solidification of platinum is 60&amp;nbsp;new candles per [[square centimetre]].&lt;ref&gt;{{cite book | title = The Metric System: The International System of Units (SI) | author = Barry N. Taylor | publisher = U. S. Department of Commerce | year = 1992 | isbn = 0-941375-74-9 | page = 18 | url = https://books.google.com/books?id=y2-BDaoBVnwC&amp;pg=PA18&amp;dq=%22value+of+the+new+candle+is+such+that+the+brightness+of+the+full+radiator%22&amp;as_brr=3&amp;ei=elatR_S1FofgswPvu430BQ&amp;sig=yl2AU7A-R1O9e5ZuEzuLwekiM2E }} (NIST Special Publication 330, 1991 ed.)&lt;/ref&gt;&lt;/blockquote&gt;
+
+It was then ratified in 1948 by the 9th&amp;nbsp;CGPM which adopted a new name for this unit, the ''candela''. In 1967 the 13th CGPM removed the term &quot;new candle&quot; and gave an amended version of the candela definition, specifying the atmospheric pressure applied to the freezing platinum:
+&lt;blockquote&gt;The candela is the luminous intensity, in the perpendicular direction, of a surface of {{nowrap|1&amp;thinsp;/&amp;thinsp;600&amp;thinsp;000}} square&amp;nbsp;metre of a black body at the temperature of freezing platinum under a pressure of {{nowrap|101&amp;thinsp;325}}&amp;nbsp;newtons per square&amp;nbsp;metre.&lt;ref&gt;13th CGPM Resolution 5, CR, 104 (1967), and ''Metrologia'', '''4''', 43–44 (1968).&lt;/ref&gt;&lt;/blockquote&gt;
+
+In 1979, because of the difficulties in realizing a Planck radiator at high temperatures and the new possibilities offered by [[radiometry]], the 16th&amp;nbsp;CGPM adopted a new definition of the candela:&lt;ref&gt;16th CGPM Resolution 3, CR, 100 (1979), and ''Metrologia'', '''16''', 56 (1980).&lt;/ref&gt;&lt;ref&gt;{{cite web
+| title = Base unit definitions: Candela
+| work = The [[NIST]] Reference on Constants, Units, and Uncertainty
+| url = http://physics.nist.gov/cuu/Units/candela.html
+| accessdate =27 September 2010
+}}&lt;/ref&gt;
+
+&lt;blockquote&gt;
+The candela is the luminous intensity, in a given direction, of a source that emits monochromatic radiation of frequency {{val|540|e=12|ul=hertz}} and that has a [[radiant intensity]] in that direction of {{sfrac|683}}&amp;nbsp;[[watt]] per [[steradian]].
+&lt;/blockquote&gt;
+
+The definition describes how to produce a light source that (by definition) emits one candela, but does not specify the luminosity function for weighting radiation at other frequencies.  Such a source could then be used to calibrate instruments designed to measure luminous intensity with reference to a specified luminosity function.  An appendix to the SI Brochure&lt;ref&gt;{{cite web |url=http://www1.bipm.org/utils/en/pdf/SIApp2_cd_en.pdf |title=''Mise en pratique'' for the definition of the candela and associated derived units for photometric and radiometric quantities in the International System of Units (SI) |work=SI Brochure Appendix 2 |date=July 2015 |publisher=Bureau International des Poids et Mesures |format=pdf |access-date=2017-12-07 }}&lt;/ref&gt; makes it clear that the luminosity function is not uniquely specified, but must be selected to fully define the candela.
+
+The arbitrary (1/683) term was chosen so that the new definition would precisely match the old definition. Although the candela is now defined in terms of the [[second]] (an SI base unit) and the watt (a derived SI unit), the candela remains a base unit of the SI system, by definition.&lt;ref&gt;{{cite web |url=http://www1.bipm.org/utils/en/pdf/SIApp2_cd_en.pdf |title=The photometric base unit – the candela |work=SI Brochure |date=7 September 2007|publisher=Bureau International des Poids et Mesures |format=pdf}}&lt;/ref&gt;
+
+The 26th CGPM approved the modern definition of the candela in 2018 as part of the [[2019 redefinition of SI base units]], which redefined the SI base units in terms of fundamental physical constants.
+
+==SI photometric light units==
+{{SI light units}}
+
+===Relationships between luminous intensity, luminous flux, and illuminance===
+If a source emits a known luminous intensity ''I''&lt;sub&gt;v&lt;/sub&gt; (in candelas) in a well-defined cone, the total [[luminous flux]] ''Φ''&lt;sub&gt;v&lt;/sub&gt; in [[lumen (unit)|lumen]]s is given by
+:''Φ''&lt;sub&gt;v&lt;/sub&gt;&amp;nbsp;= ''I''&lt;sub&gt;v&lt;/sub&gt; 2π [1&amp;nbsp;− cos(''A''/2)],
+
+where ''A'' is the ''radiation angle'' of the lamp—the full vertex angle of the emission cone. For example, a lamp that emits 590&amp;nbsp;cd with a radiation angle of 40° emits about 224&amp;nbsp;lumens. See [[MR16]] for emission angles of some common lamps.&lt;ref&gt;[http://www.theledlight.com/lumens.html Theory]&lt;/ref&gt;&lt;ref&gt;[http://led.linear1.org/lumen.wiz Online converter]&lt;/ref&gt;
+
+If the source emits light uniformly in all directions, the flux can be found by multiplying the intensity by 4π: a uniform 1&amp;nbsp;candela source emits 12.6&amp;nbsp;lumens.
+
+For the purpose of measuring illumination, the candela is not a practical unit, as it only applies to idealized point light sources, each approximated by a source small compared to the distance from which its luminous radiation is measured, also assuming that it is done so in the absence of other light sources. What gets directly measured by a [[light meter]] is incident light on a sensor of finite area, i.e. [[illuminance]] in lm/m&lt;sup&gt;2&lt;/sup&gt; (lux). However, if designing illumination from many point light sources, like light bulbs, of known approximate omnidirectionally-uniform intensities, the contributions to illuminance from [[incoherent light]] being additive, it is mathematically estimated as follows. If '''r'''&lt;sub&gt;''i''&lt;/sub&gt; is the position of the ''i''-th source of uniform intensity ''I&lt;sub&gt;i&lt;/sub&gt;'', and '''â''' is the unit vector [[normal (geometry)|normal]] to the illuminated elemental opaque area ''dA'' being measured, and provided that all light sources lie in the same half-space divided by the plane of this area,
+
+:&lt;math&gt; \text{illuminance at point } \mathbf{r}\text{ on } dA\text{, } E_v(\mathbf{r}) = \sum _{i}{ \frac{|\mathbf{\hat{a}}\cdot(\mathbf{r}-\mathbf{r}_i)|}{|\mathbf{r}-\mathbf{r}_i|^3} I_i }.&lt;/math&gt;
+In the case of a single point light source of intensity ''I&lt;sub&gt;v&lt;/sub&gt;'', at a distance ''r'' and normally incident, this reduces to
+:&lt;math&gt; E_v(r) = \frac{I_v}{r^2}.&lt;/math&gt;
+
+==See also==
+{{wiktionary}}
+
+==References==
+{{Reflist|30em}}
+
+{{SI units}}
+
+[[Category:SI base units]]
+[[Category:UCUM base units]]
+[[Category:Photometry]]
+[[Category:Units of luminous intensity]]</text>
+      <sha1>50jvxk83i5m8yj8mr6622r0d42gort2</sha1>
+    </revision>
+  </page>

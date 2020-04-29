@@ -1,0 +1,251 @@
+  <page>
+    <title>Difference engine</title>
+    <ns>0</ns>
+    <id>8324</id>
+    <revision>
+      <id>941936654</id>
+      <parentid>936174216</parentid>
+      <timestamp>2020-02-21T15:32:07Z</timestamp>
+      <contributor>
+        <ip>2601:602:8200:AB90:C496:344E:7B25:2A43</ip>
+      </contributor>
+      <comment>/* Charles Babbage's difference engines */</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{For|the novel by William Gibson and Bruce Sterling|The Difference Engine}}
+[[File:Babbage Difference Engine.jpg|thumb|300px| The London [[Science Museum (London)|Science Museum]]'s difference engine, the first one actually built from Babbage's design. The design has the same precision on all columns, but when calculating polynomials, the precision on the higher-order columns could be lower.]]
+
+A '''difference engine''', first created by [[Charles Babbage]], is an automatic [[mechanical calculator]] designed to tabulate [[polynomial|polynomial functions]]. Its name is derived from the method of [[divided differences]], a way to interpolate or tabulate functions by using a small set of [[polynomial]] coefficients. Most [[mathematical function]]s commonly used by engineers, scientists and navigators, including [[logarithm]]ic and [[trigonometric functions]], can be [[Taylor series|approximated]] by polynomials, so a difference engine can compute many useful [[mathematical table|tables of numbers]].
+
+The historical difficulty in producing error-free tables by teams of mathematicians and [[Human computer|human &quot;computers&quot;]] spurred [[Charles Babbage]]'s desire to build a mechanism to automate the process.
+
+== History ==
+{{Wikisource|Astronomische Nachrichten/Volume 46/On Mr. Babbage's new machine for calculating and printing mathematical and astronomical tables}}
+[[File:LondonScienceMuseumsReplicaDifferenceEngine.jpg|thumb|Closeup of the London Science Museum's difference engine showing some of the number wheels and the sector gears between columns. The sector gears on the left show the double-high teeth very clearly. The sector gears on the middle-right are facing the back side of the engine, but the single-high teeth are clearly visible. Notice how the wheels are mirrored, with counting up from left-to-right, or counting down from left-to-right. Also notice the metal tab between &quot;6&quot; and &quot;7&quot;. That tab trips the carry lever in the back when &quot;9&quot; passes to &quot;0&quot; in the front during the add steps (Step 1 and Step 3).]]
+[[File:Difference engine Scheutz.jpg|thumb|right|250px|Per Georg Scheutz's third differencine]]
+The notion of a [[mechanical calculator]] for mathematical functions can be traced back to the [[Antikythera mechanism]] of the 2nd century BC, while early modern examples are attributed to [[Blaise Pascal|Pascal]] and [[Gottfried Leibniz|Leibniz]] in the 17th century. 
+In 1784 [[J. H. Müller]], an engineer in the [[Hessian (soldier)|Hessian]] army, devised and built an [[adding machine]] and described the basic principles of a difference machine in a book published in 1786 (the first written reference to a difference machine is dated to 1784), but he was unable to obtain funding to progress with the idea.&lt;ref&gt;Johann Helfrich von Müller, ''Beschreibung seiner neu erfundenen Rechenmachine, nach ihrer Gestalt, ihrem Gebrauch und Nutzen'' [Description of his newly invented calculating machine, according to its form, its use and benefit] (Frankfurt and Mainz, Germany:  Varrentrapp Sohn &amp; Wenner, 1786); pages 48–50.  The following Web site (in German) contains detailed photos of Müller's calculator as well as a transcription of Müller's booklet, ''Beschreibung …'':  https://www.fbi.h-da.de/fileadmin/vmi/darmstadt/objekte/rechenmaschinen/mueller/index.htm {{Webarchive|url=https://web.archive.org/web/20160305045701/https://www.fbi.h-da.de/fileadmin/vmi/darmstadt/objekte/rechenmaschinen/mueller/index.htm |date=2016-03-05 }} {{Webarchive|url=https://web.archive.org/web/20160305045701/https://www.fbi.h-da.de/fileadmin/vmi/darmstadt/objekte/rechenmaschinen/mueller/index.htm |date=2016-03-05 }}&lt;nowiki/&gt;.  An animated simulation of Müller's machine in operation is available on this Web site (in German):  https://www.fbi.h-da.de/fileadmin/vmi/darmstadt/objekte/rechenmaschinen/mueller/simulation/index.htm {{Webarchive|url=https://web.archive.org/web/20160306174013/https://www.fbi.h-da.de/fileadmin/vmi/darmstadt/objekte/rechenmaschinen/mueller/simulation/index.htm |date=2016-03-06 }} {{Webarchive|url=https://web.archive.org/web/20160306174013/https://www.fbi.h-da.de/fileadmin/vmi/darmstadt/objekte/rechenmaschinen/mueller/simulation/index.htm |date=2016-03-06 }}&lt;nowiki/&gt;.&lt;/ref&gt;&lt;ref&gt;Michael Lindgren (Craig G. McKay, trans.), ''Glory and Failure:  The Difference Engines of Johann Müller, Charles Babbage, and Georg and Edvard Scheutz'' (Cambridge, Massachusetts:  MIT Press, 1990), [https://books.google.com/books?id=plgMl2yfVkwC&amp;pg=PA64 pages 64 ff].&lt;/ref&gt;&lt;ref&gt;{{cite book|url=https://books.google.com/books?id=c1QbNtTz4CYC&amp;pg=PA14|title=Computers: The Life Story of a Technology|author1=Swedin, E.G.|author2=Ferro, D.L.|publisher=Greenwood Press, Westport, CT|year=2005|isbn=978-0-313-33149-7|page=14}}&lt;/ref&gt;
+
+===Charles Babbage's difference engines===
+[[Charles Babbage]] began to construct a small difference engine in c. 1819&lt;ref&gt;{{Cite book|url=https://books.google.com/books?id=tXBVAgAAQBAJ&amp;pg=PT22|title=It Began with Babbage: The Genesis of Computer Science|last=Dasgupta|first=Subrata|date=2014|publisher=Oxford University Press|isbn=978-0-19-930943-6|page=22}}&lt;/ref&gt; and had completed it by 1822 (Difference Engine 0).&lt;ref name=&quot;:0&quot;&gt;{{Cite book| title=The Turing Guide | authorlink1=Jack Copeland | last1=Copeland |first1=B. Jack | authorlink2=Jonathan Bowen | last2=Bowen | first2=Jonathan P. | authorlink3=Robin Wilson (mathematician) | last3=Wilson | first3=Robin | last4=Sprevak | first4=Mark |date=2017 |publisher=[[Oxford University Press]] | isbn=9780191065002| location=|page=251|language=en| title-link=The Turing Guide }}&lt;/ref&gt; He announced his invention on 14 June 1822, in a paper to the [[Royal Astronomical Society]], entitled &quot;Note on the application of machinery to the computation of astronomical and mathematical tables&quot;.&lt;ref&gt;{{cite web
+ |author      = O'Connor, John J.
+ |author2     = Robertson, Edmund F.
+ |authorlink2 = Edmund F. Robertson
+ |year        = 1998
+ |url         = http://www-gap.dcs.st-and.ac.uk/~history/Mathematicians/Babbage.html
+ |title       = Charles Babbage
+ |work        = MacTutor History of Mathematics archive
+ |publisher   = School of Mathematics and Statistics, University of St Andrews, Scotland
+ |accessdate  = 2006-06-14
+ |url-status     = dead
+ |archiveurl  = https://web.archive.org/web/20060616002258/http://www-gap.dcs.st-and.ac.uk/~history/Mathematicians/Babbage.html
+ |archivedate = 2006-06-16
+}}&lt;/ref&gt; This machine used the decimal number system and was powered by cranking a handle. The [[British government]] was interested, since producing tables was time-consuming and expensive and they hoped the difference engine would make the task more economical.&lt;ref name=&quot;Campbell-Kelly 2004&quot;&gt;{{cite book|title=Computer: A History of the Information Machine 2nd ed.|last=Campbell-Kelly|first=Martin|publisher=Westview Press|year=2004|isbn=978-0-8133-4264-1|location=Boulder, Co|pages=|author-link=Martin Campbell-Kelly|url-access=registration|url=https://archive.org/details/computerhistoryo02edcamp}}&lt;/ref&gt;
+
+In 1823, the British government gave Babbage £1700 to start work on the project. Although Babbage's design was feasible, the metalworking techniques of the era could not economically make parts in the precision and quantity required. Thus the implementation proved to be much more expensive and doubtful of success than the government's initial estimate. In 1832, Babbage and [[Joseph Clement]] produced a small working model (one-seventh of the calculating section of Difference Engine No. 1,&lt;ref name=&quot;:0&quot; /&gt; which was intended to operate on 20-digit numbers and sixth-order differences) which operated on 6-digit numbers and second-order differences.&lt;ref name=&quot;:1&quot;&gt;{{Cite book|url=https://books.google.com/books?id=QqrItgm351EC&amp;pg=PA204|title=A Brief History of Computing|last=O'Regan|first=Gerard|date=2012|publisher=Springer Science &amp; Business Media|isbn=978-1-4471-2359-0|page=204}}&lt;/ref&gt;&lt;ref name=&quot;:2&quot;&gt;{{Cite book|url=https://books.google.com/books?id=JckCvpOQDOoC&amp;pg=PP1|title=The Philosophical Breakfast Club: Four Remarkable Friends Who Transformed Science and Changed the World|last=Snyder|first=Laura J.|date=2011|publisher=Crown/Archetype|isbn=978-0-307-71617-0|pages=192, 210, 217}}&lt;/ref&gt; [[Lady Byron]] described seeing the working prototype in 1833: &quot;We both went to see the thinking machine (or so it seems) last Monday. It raised several Nos. to the 2nd and 3rd powers, and extracted the root of a Quadratic equation.&quot;&lt;ref&gt;{{Cite book|title=Ada, the Enchantress of Numbers|last1=Toole|first1=Betty Alexandra|last2=Lovelace|first2=Ada|date=1998|publisher=Strawberry Press|isbn=978-0912647180|location=Mill Valley, California|oclc=40943907|page=[https://archive.org/details/adaenchantressof00tool/page/38 38]|url=https://archive.org/details/adaenchantressof00tool/page/38}}&lt;/ref&gt; Work on the larger engine was suspended in 1833.
+
+By the time the government abandoned the project in 1842,&lt;ref name=&quot;:2&quot; /&gt;&lt;ref&gt;{{Cite book|url=https://books.google.com/books?id=UmNJAAAAYAAJ&amp;pg=PA387|title=A History of the Royal Society: With Memoirs of the Presidents|last=Weld|first=Charles Richard|date=1848|publisher=J. W. Parker|pages=387–390}}&lt;/ref&gt; Babbage had received and spent over £17,000 on development, which still fell short of achieving a working engine. The government valued only the machine's output (economically produced tables), not the development (at unknown and unpredictable cost to complete) of the machine itself.  Babbage did not, or was unwilling to, recognize that predicament.&lt;ref name=&quot;Campbell-Kelly 2004&quot; /&gt; Meanwhile, Babbage's attention had moved on to developing an [[analytical engine]], further undermining the government's confidence in the eventual success of the difference engine. By improving the concept as an analytical engine, Babbage had made the difference engine concept obsolete, and the project to implement it an utter failure in the view of the government.&lt;ref name=&quot;Campbell-Kelly 2004&quot; /&gt;
+
+The incomplete Difference Engine No. 1 was put on display to the public at the [[1862 International Exhibition]] in [[South Kensington]], London.&lt;ref&gt;{{Cite book|url=https://books.google.com/books?id=aDJRAAAAYAAJ|title=Cyclopaedia of useful arts, mechanical and chemical, manufactures, mining and engineering: in three volumes, illustrated by 63 steel engravings and 3063 wood engravings|last=Tomlinson|first=Charles|date=1868|publisher=Virtue &amp; Co.|pages=136}}&lt;/ref&gt;&lt;ref&gt;{{Cite book|url=https://books.google.com/books?id=j_QHAAAAQAAJ&amp;pg=PA49|title=Official catalogue of the industrial department|last=1862|first=International exhibition|date=1862|page=49}}&lt;/ref&gt;
+
+Babbage went on to design his much more general [[Analytical Engine|analytical engine]], but later produced an improved &quot;Difference Engine No. 2&quot; design (31-digit numbers and seventh-order differences),&lt;ref name=&quot;:1&quot; /&gt; between 1846 and 1849. Babbage was able to take advantage of ideas developed for the analytical engine to make the new difference engine calculate more quickly while using fewer parts.&lt;ref&gt;{{cite book|title=The Philosophical Breakfast Club|last=Snyder|first=Laura J.|publisher=Broadway Brooks|year=2011 |isbn=978-0-7679-3048-2|location=New York}}&lt;/ref&gt;&lt;ref&gt;{{Cite book |title=The Dawn of Innovation: The First American Industrial Revolution |last=Morris |first=Charles R. |url=https://books.google.com/books?id=hRQBAwAAQBAJ&amp;pg=PA63 |date=October 23, 2012 |publisher=PublicAffairs |isbn=9781610393577 |page=63|language=en}}&lt;/ref&gt;
+
+=== Scheutzian calculation engine ===
+Inspired by Babbage's difference engine in 1834, [[Per Georg Scheutz]] built several experimental models. In 1837 his son Edward proposed to construct a working model in metal, and in 1840 finished the calculating part, capable of calculating series with 5-digit numbers and first-order differences, which was later extended to third-order (1842). In 1843, after adding the printing part, the model was completed.
+
+In 1851, funded by the government, construction of the larger and improved (15-digit numbers and fourth-order differences) machine began, and finished in 1853. The machine was demonstrated at the [[Exposition Universelle (1855)|World's Fair in Paris, 1855]] and then sold in 1856 to the [[Dudley Observatory]] in [[Albany, New York]]. Delivered in 1857, it was the first printing calculator sold.&lt;ref name=&quot;:3&quot;&gt;{{Cite book|url=https://books.google.com/books?id=Ut1wgt6kSBEC&amp;pg=PA12|title=Specimens of Tables, Calculated, Stereomoulded, and Printed by Machinery|last=Scheutz|first=George|last2=Scheutz|first2=Edward|date=1857|publisher=Whitnig|pages=VIII–XII, XIV–XV, 3}}&lt;/ref&gt;&lt;ref name=SI&gt;{{cite web |title=Scheutz Difference Engine |url=https://americanhistory.si.edu/collections/search/object/nmah_997042 |website=Smithsonian National Museum of American History |accessdate=June 14, 2019}}&lt;/ref&gt;.&lt;ref name=&quot;:6&quot; /&gt; In 1857 the British government ordered the next [[Per Georg Scheutz|Scheutz's]] difference machine, which was built in 1859.&lt;ref&gt;{{Cite book|url=https://books.google.com/books?id=b7rvAAAAMAAJ|title=The Difference Engine: Charles Babbage and the Quest to Build the First Computer|last=Swade|first=Doron|date=2002-10-29|publisher=Penguin Books|isbn=9780142001448|location=|pages=4,207|language=en}}&lt;/ref&gt;&lt;ref&gt;{{Cite book|url=https://books.google.com/books?id=jlmVKZ1psCkC&amp;pg=PA37|title=The Universal Machine: From the Dawn of Computing to Digital Consciousness|last=Watson|first=Ian|date=2012|publisher=Springer Science &amp; Business Media|isbn=978-3-642-28102-0|pages=37–38}}&lt;/ref&gt; It had the same basic construction as the previous one, weighing about {{Convert|10|-Lcwt|lb kg|lk=on|abbr=on}}.&lt;ref name=&quot;:6&quot;&gt;{{Cite book|title=First Printing Calculator|last=Merzbach|first=Uta C.|authorlink= Uta Merzbach |last2=Zoology|first2=Smithsonian Contributions To|last3=Ripley|first3=S. Dillon|last4=Merzbach|first4=Uta C.|publisher=|year=|isbn=|location=|pages=8–9, 13, 25–26, 29–30|citeseerx = 10.1.1.639.3286}}&lt;/ref&gt;
+
+=== Others ===
+[[Martin Wiberg]] improved Scheutz's construction (c. 1859, his machine has the same capacity as Scheutz's - 15-digit and fourth-order) but used his device only for producing and publishing printed tables (interest tables in 1860, and [[logarithm]]ic tables in 1875).&lt;ref&gt;Raymond Clare Archibald: ''Martin Wiberg, his Table and Difference Engine'', Mathematical Tables and Other Aids to Computation, 1947(2:20) 371–374. [http://www.ams.org/journals/mcom/1947-02-020/S0025-5718-47-99566-5/S0025-5718-47-99566-5.pdf (online review)] (PDF; 561&amp;nbsp;kB).&lt;/ref&gt;
+
+Alfred Deacon of London in c. 1862 produced a small difference engine (20-digit numbers and third-order differences).&lt;ref name=&quot;:3&quot; /&gt;&lt;ref name=&quot;:4&quot;&gt;{{Cite book|url=https://books.google.com/books?id=O170gWPZ7M8C&amp;pg=PA136|title=The History of Mathematical Tables: From Sumer to Spreadsheets|last=Campbell-Kelly|first=Martin|date=2003|publisher=OUP Oxford|isbn=978-0-19-850841-0|pages=132–136}}&lt;/ref&gt;
+
+American [[George B. Grant]] started working on his calculating machine in 1869, unaware of the works of Babbage and Scheutz (Schentz). One year later (1870) he learned about difference engines and proceed to design one himself, describing his construction in 1871. In 1874 the Boston Thursday Club raised a subscription for the construction of a large-scale model, which was built in 1876. It could be expanded to enhance precision and weighed about {{convert|2000|lb|kg}}.&lt;ref name=&quot;:4&quot; /&gt;&lt;ref&gt;{{Cite web|url=http://history-computer.com/Babbage/NextDifferentialEngines/Grant.html|title=History of Computers and Computing, Babbage, Next differential engines, George Grant|website=history-computer.com|access-date=2017-08-29}}&lt;/ref&gt;&lt;ref&gt;{{Cite book|url=https://books.google.com/books?id=LFQ9AQAAIAAJ&amp;pg=PA423|title=The Great Centennial Exhibition Critically Described and Illustrated|last=Sandhurst|first=Phillip T.|date=1876|publisher=P. W. Ziegler &amp; Company|pages=423, 427}}&lt;/ref&gt;
+
+[[Christel Hamann]] built one machine (16-digit numbers and second-order differences) in 1909 for the &quot;Tables of [[Julius Bauschinger|Bauschinger]] and Peters&quot; (&quot;Logarithmic-Trigonometrical Tables with eight decimal places&quot;), which was first published in Leipzig in 1910. It weighed about {{convert|40|kg|lb}}.&lt;ref&gt;{{Cite web|url=http://history-computer.com/Babbage/NextDifferentialEngines/Hamann.html|title=History of Computers and Computing, Babbage, Next differential engines, Hamann|website=history-computer.com|access-date=2017-09-14}}&lt;/ref&gt;&lt;ref&gt;{{Cite book|url=https://books.google.com/books?id=vD7PAAAAMAAJ|title=Logarithmisch-trigonometrische Tafeln mit acht Dezimalstellen, enthaltend die Logarithmen aller Zahlen von 1 bis 200000 und die Logarithmen der trigonometrischen Funktionen f&quot;ur jede Sexagesimalsekunde des Quadranten: Bd. Tafel der achtstelligen Logarithmen aller Zahlen von 1 bis 200000|last=Bauschinger|first=Julius|last2=Peters|first2=Jean|date=1958|publisher=H. R. Engelmann|pages=Preface V–VI}}&lt;/ref&gt;&lt;ref&gt;{{Cite book|url=https://archive.org/details/logarithmischtri01bausuoft|title=Logarithmisch-trigonometrische Tafeln, mit acht Dezimalstellen, enthaltend die Logarithmen aller Zahlen von 1 bis 200000 und die Logarithmen der trigonometrischen Funktionen für jede Sexagesimalsekunde des Quadranten. Neu berechnet und hrsg. von J. Bauschinger und J. Peters. Stereotypausg|last=Bauschinger|first=Julius|last2=Peters|first2=J. (Jean)|date=1910|publisher=Leipzig W. Englemann|others=Gerstein - University of Toronto|pages=Einleitung VI|language=German}}&lt;/ref&gt;
+
+[[Burroughs Corporation]] in about 1912 built a machine for the [[HM Nautical Almanac Office|Nautical Almanac Office]] which was used as a difference engine of second-order.&lt;ref name=&quot;:5&quot;&gt;{{Cite journal|last=Comrie|first=L. J.|date=1928-03-01|title=On the application of the BrunsvigaDupla calculating machine to double summation with finite differences|bibcode=1928MNRAS..88..447C|journal=Monthly Notices of the Royal Astronomical Society|volume=88|issue=5|pages=451, 453–454, 458–459|doi=10.1093/mnras/88.5.447|issn=0035-8711|via=[[Astrophysics Data System]]}}&lt;/ref&gt;{{Rp|451}}&lt;ref&gt;{{Cite book|url=https://archive.org/stream/moderninstrument00horsuoft#page/127/mode/1up/search/hudson|title=Modern instruments and methods of calculation : a handbook of the Napier Tercentenary Exhibition|last=Horsburg|first=E. M. (Ellice Martin)|last2=Napier Tercentenary Exhibition|date=1914|publisher=London : G. Bell|others=Gerstein - University of Toronto|isbn=|location=|pages=127–131}}&lt;/ref&gt; It was later replaced in 1929 by a Burroughs Class 11 (13-digit numbers and second-order differences, or 11-digit numbers and &lt;nowiki&gt;[at least up to]&lt;/nowiki&gt; fifth-order differences).&lt;ref&gt;{{Cite journal|last=Comrie|first=L. J.|date=1932-04-01|title=The Nautical Almanac Office Burroughs machine|bibcode=1932MNRAS..92..523C|journal=Monthly Notices of the Royal Astronomical Society|volume=92|issue=6|pages=523–524, 537–538|doi=10.1093/mnras/92.6.523|issn=0035-8711|via=[[Astrophysics Data System]]}}&lt;/ref&gt;
+
+[[Alexander John Thompson]] about 1927 built ''integrating and differencing machine'' (13-digit numbers and fifth-order differences) for his table of logarithms &quot;Logarithmetica britannica&quot;. This machine was composed of four modified Triumphator calculators.&lt;ref&gt;{{Cite book|url=https://books.google.com/books?id=fH48AAAAIAAJ|title=Logarithmetica Britannica: Being a Standard Table of Logarithms to Twenty Decimal Places|last=Thompson|first=Alexander John|date=1924|publisher=CUP Archive|isbn=9781001406893|pages=V/VI, XXIX, LIV–LVI, LXV (archive: pp. 7, 30, 55–59, 68)|language=en|archive-url=https://archive.org/stream/in.ernet.dli.2015.285845/2015.285845.Logarithmetica-Britannica#page/n29/mode/1up/search/Integrating+and+Differencing+machine|archive-date=2015-08-06|url-status=live}}&lt;/ref&gt;&lt;ref&gt;{{Cite web|url=https://history-computer.com/Babbage/NextDifferentialEngines/Thompson.html|title=History of Computers and Computing, Babbage, Next differential engines, Alexander John Thompson|website=history-computer.com|access-date=2017-09-22}}&lt;/ref&gt;&lt;ref&gt;{{Cite web|url=http://mechrech.info/publikat/publikat.html#pub70|title=Publikationen|last=Weiss|first=Stephan|date=|website=mechrech.info|pages=160–163|others=''Difference Engines in the 20th Century''. First published in Proceedings 16th International Meeting of Collectors of Historical Calculating Instruments, Sep. 2010, Leiden|access-date=2017-09-22}}&lt;/ref&gt;
+
+[[Leslie Comrie]] in 1928 described how to use the [[Odhner Arithmometer|Brunsviga]]-Dupla calculating machine as a difference engine of second-order (15-digit numbers).&lt;ref name=&quot;:5&quot; /&gt; He also noted in 1931 that National Accounting Machine Class 3000 could be used as a difference engine of sixth-order.&lt;ref name=&quot;:4&quot; /&gt;{{Rp|137–138}}
+
+===Construction of two working No. 2 difference engines===
+During the 1980s, [[Allan G. Bromley]], an associate professor at the [[University of Sydney]], [[Australia]], studied Babbage's original drawings for the Difference and Analytical Engines at the [[Science Museum (London)|Science Museum]] library in London.&lt;ref&gt;[http://csdl2.computer.org/persagen/DLAbsToc.jsp?resourcePath=/dl/mags/an/&amp;toc=comp/mags/an/2000/04/a4toc.xml ''IEEE Annals of the History of Computing'', 22(4), October–December 2000].&lt;/ref&gt;  This work led the Science Museum to construct a working calculating section of difference engine No. 2 from 1985 to 1991, under [[Doron Swade]], the then Curator of Computing. This was to celebrate the 200th anniversary of Babbage's birth in 1999. In 2002, the [[Printer (computing)|printer]] which Babbage originally designed for the difference engine was also completed.&lt;ref&gt;{{cite web |title=A Modern Sequel {{!}}  Babbage Engine {{!}} Computer History Museum |url=http://www.computerhistory.org/babbage/modernsequel/ |website=www.computerhistory.org |language=en}}&lt;/ref&gt; The conversion of the original design drawings into drawings suitable for engineering manufacturers' use revealed some minor errors in Babbage's design (possibly introduced as a protection in case the plans were stolen),&lt;ref&gt;[http://news.bbc.co.uk/1/hi/sci/tech/710950.stm Babbage printer finally runs, BBC news quoting Reg Crick] Accessed May 17, 2012&lt;/ref&gt; which had to be corrected. Once completed, both the engine and its printer worked flawlessly, and still do. The difference engine and printer were constructed to tolerances achievable with 19th-century technology, resolving a long-standing debate as to whether Babbage's design would actually have worked. (One of the reasons formerly advanced for the non-completion of Babbage's engines had been that engineering methods were insufficiently developed in the Victorian era.)
+
+The printer's primary purpose is to produce [[Stereotype (printing)|stereotype]] plates for use in printing presses, which it does by pressing type into soft plaster to create a [[flong]]. Babbage intended that the Engine's results be conveyed directly to mass printing, having recognized that many errors in previous tables were not the result of human calculating mistakes but from error in the manual [[typesetting]] process.&lt;ref name=&quot;Campbell-Kelly 2004&quot; /&gt; The printer's paper output is mainly a means of checking the Engine's performance.
+
+In addition to funding the construction of the output mechanism for the Science Museum's Difference Engine, [[Nathan Myhrvold]] commissioned the construction of a second complete Difference Engine No. 2, which was on exhibit at the [[Computer History Museum]] in [[Mountain View, California]] from 10 May 2008 until 31 January 2016.&lt;ref&gt;{{Cite web|url=http://www.computerhistory.org/exhibits/babbage/|title=The Babbage Difference Engine No. 2 {{!}} Computer History Museum|website=www.computerhistory.org|language=en|access-date=2018-10-26}}&lt;/ref&gt;&lt;ref name=&quot;chm2&quot;&gt;{{cite web
+|url=http://news.cnet.com/8301-13772_3-9915667-52.html{{dl}}
+|title=Charles Babbage's masterpiece difference engine comes to Silicon Valley
+|author=[[Daniel Terdiman|Terdiman, Daniel]]
+|work=[[CNET News]]
+|date=April 9, 2008
+}}&lt;/ref&gt;&lt;ref&gt;Press Releases {{!}} Computer History
+*{{Cite web|url=http://www.computerhistory.org/press/babbage-engine-exhibit.html|title=The Computer History Museum Debuts Charles Babbage's Difference Engine No. 2, On Display for the First Time in North America {{!}} Press Releases {{!}} Computer History Museum|date=2008-05-05|website=www.computerhistory.org|language=en|access-date=2018-10-27}}
+*{{cite web|url=http://www.computerhistory.org/press/babbage-engine-extension.html|title=The Computer History Museum Extends Its Exhibition of Babbage's Difference Engine No. 2|date=March 31, 2009|work=press release|publisher=[[Computer History Museum]]|archive-url=https://web.archive.org/web/20160103015136/http://www.computerhistory.org/press/babbage-engine-extension.html|archive-date=2016-01-03|url-status=|accessdate=2009-11-06}}&lt;/ref&gt;&lt;ref&gt;[http://www.mv-voice.com/news/2016/01/29/computer-museum-bids-farewell-to-babbage-engine Difference Engine Leaves Computer History Museum], Mark Moack, Mountain View Voice, January 29, 2016&lt;/ref&gt;
+It has since been transferred to [[Intellectual Ventures]] in [[Seattle]] where it is on display just outside the main lobby.
+
+== Operation ==
+{{unreferenced section|date=June 2017}}
+[[File:Babbage Engine Demonstration pt. 3.webm|thumb|The Mountain View machine in action]]
+
+The difference engine consists of a number of columns, numbered from '''1''' to '''''N'''''. The machine is able to store one decimal number in each column. The machine can only add the value of a column ''n''&amp;nbsp;+&amp;nbsp;1 to column ''n'' to produce the new value of ''n''. Column ''N'' can only store a [[wiktionary:Constant|constant]], column 1 displays (and possibly [[Computer printer|prints]]) the value of the calculation on the current [[iteration]].
+
+The engine is programmed by setting initial values to the columns. Column 1 is set to the value of the polynomial at the start of computation. Column 2 is set to a value derived from the first and higher [[derivative]]s of the polynomial at the same value of '''''X'''''. Each of the columns from 3 to ''N'' is set to a value derived from the &lt;math&gt;(n-1)&lt;/math&gt; first and higher derivatives of the polynomial.
+
+=== Timing ===
+In the Babbage design, one iteration (i.e., one full set of addition and [[carry (arithmetic)|carry]] operations) happens for each rotation of the main shaft. Odd and even columns alternately perform an addition in one cycle. The sequence of operations for column &lt;math&gt;n&lt;/math&gt; is thus:
+
+# Count up, receiving the value from column &lt;math&gt;n+1&lt;/math&gt; (Addition step)
+# Perform [[carry propagation]] on the counted up value
+# Count down to zero, adding to column &lt;math&gt;n-1&lt;/math&gt;
+# Reset the counted-down value to its original value
+
+Steps 1,2,3,4 occur for every odd column, while steps 3,4,1,2 occur for every even column.
+
+While Babbage's original design placed the crank directly on the main shaft, it was later realized that the force required to crank the machine would have been too great for a human to handle comfortably. Therefore, the two models that were built incorporate a 4:1 reduction gear at the crank, and four revolutions of the crank are required to perform one full cycle.
+
+=== Steps ===
+Each iteration creates a new result, and is accomplished in four steps corresponding to four complete turns of the handle shown at the far right in the picture below. The four steps are:
+
+* Step 1. All even numbered columns (2,4,6,8) are added to all odd numbered columns (1,3,5,7) simultaneously. An interior sweep arm turns each even column to cause whatever number is on each wheel to count down to zero. As a wheel turns to zero, it transfers its value to a sector gear located between the odd/even columns. These values are transferred to the odd column causing them to count up. Any odd column value that passes from &quot;9&quot; to &quot;0&quot; activates a [[carry (arithmetic)|carry]] lever.
+* Step 2.  [[Carry propagation]] is accomplished by a set of spiral arms in the back that poll the carry levers in a helical manner so that a carry at any level can increment the wheel above by one. That can create a carry, which is why the arms move in a spiral. At the same time, the sector gears are returned to their original position, which causes them to increment the even column wheels back to their original values. The sector gears are double-high on one side so they can be lifted to disengage from the odd column wheels while they still remain in contact with the even column wheels.
+* Step 3. This is like Step 1, except it is odd columns (3,5,7) added to even columns (2,4,6), and column one has its values transferred by a sector gear to the print mechanism on the left end of the engine. Any even column value that passes from &quot;9&quot; to &quot;0&quot; activates a carry lever. The column 1 value, the result for the polynomial, is sent to the attached printer mechanism.
+* Step 4. This is like Step 2, but for doing carries on even columns, and returning odd columns to their original values.
+
+=== Subtraction ===
+The engine represents negative numbers as [[Method of complements|ten's complements]]. Subtraction amounts to addition of a negative number. This works in the same manner that modern computers perform subtraction, known as [[two's complement]].
+
+== Method of differences ==
+[[File:Difference engine.JPG|thumb|320px|right|Fully operational difference engine at the [[Computer History Museum]] in [[Mountain View, California]]]]
+The principle of a difference engine is [[Newton polynomial|Newton's method]] of [[divided differences]]. If the initial value of a polynomial (and of its [[finite difference]]s) is calculated by some means for some value of '''''X''''', the difference engine can calculate any number of nearby values, using the method generally known as the '''method of finite differences'''. For example, consider the quadratic [[polynomial]]
+
+: &lt;math&gt;p(x) = 2x^2 - 3x + 2 \,&lt;/math&gt;
+
+with the goal of tabulating the values ''p''(0), ''p''(1), ''p''(2), ''p''(3), ''p''(4), and so forth. The table below is constructed as follows: the second column contains the values of the polynomial, the third column contains the differences of the two left neighbors in the second column, and the fourth column contains the differences of the two neighbors in the third column:
+
+{| class=&quot;wikitable&quot;
+!x!!''p''(''x'') = 2''x''&lt;sup&gt;2&lt;/sup&gt; − 3''x'' + 2!!diff1(''x'') = (&amp;nbsp;''p''(''x''&amp;nbsp;+&amp;nbsp;1)&amp;nbsp;−&amp;nbsp;p(''x'') )!!diff2(''x'') = (&amp;nbsp;diff1(''x''&amp;nbsp;+&amp;nbsp;1)&amp;nbsp;−&amp;nbsp;diff1(''x'')&amp;nbsp;)
+|-
+|0||2||−1||4
+|-
+|1||1||3||4
+|-
+|2||4||7||4
+|-
+|3||11||11||
+|-
+|4||22|| ||
+|}
+
+The numbers in the third values-column are constant. In fact, by starting with any polynomial of degree ''n'', the column number ''n''&amp;nbsp;+&amp;nbsp;1 will always be constant. This is the crucial fact behind the success of the method.
+
+This table was built from left to right, but it is possible to continue building it from right to left down a diagonal in order to compute more values.  To calculate ''p''(4) use the values from the lowest diagonal. Start with the fourth column constant value of 4 and copy it down the column. Then continue the third column by adding 4 to 11 to get 15. Next continue the second column by taking its previous value, 22 and adding the 15 from the third column. Thus ''p''(5) is 22&amp;nbsp;+&amp;nbsp;15&amp;nbsp;=&amp;nbsp;37.  In order to compute ''p''(6), we iterate the same algorithm on the ''p''(5) values: take 4 from the fourth column, add that to the third column's value 15 to get 19, then add that to the second column's value 37 to get 56, which is ''p''(6).  This process may be continued [[ad infinitum]]. The values of the polynomial are produced without ever having to multiply. A difference engine only needs to be able to add. From one loop to the next, it needs to store 2 numbers—in this example (the last elements in the first and second columns).  To tabulate polynomials of degree ''n'', one needs sufficient storage to hold ''n'' numbers.
+
+Babbage's difference engine No. 2, finally built in 1991, could hold 8 numbers of 31 decimal digits each and could thus tabulate 7th degree polynomials to that precision. The best machines from Scheutz could store 4 numbers with 15 digits each.&lt;ref&gt;{{Cite book|url=https://books.google.com/books?id=QqrItgm351EC&amp;pg=PA201|title=A Brief History of Computing|last=O'Regan|first=Gerard|date=2012|publisher=Springer Science &amp; Business Media|isbn=978-1-4471-2359-0|page=201}}&lt;/ref&gt;
+
+== Initial values ==
+The initial values of columns can be calculated by first manually calculating N consecutive values of the function and by [[backtracking]], i.e. calculating the required differences.
+
+Col &lt;math&gt;1_0&lt;/math&gt; gets the value of the function at the start of computation &lt;math&gt;f(0)&lt;/math&gt;. Col &lt;math&gt;2_0&lt;/math&gt; is the difference between  &lt;math&gt;f(1)&lt;/math&gt; and &lt;math&gt;f(0)&lt;/math&gt;...&lt;ref name=&quot;Thelen&quot;&gt;{{cite web
+| url = http://ed-thelen.org/bab/bab-intro.html
+| title  = Babbage Difference Engine #2 – How to Initialize the Machine –
+| author = Thelen, Ed
+| year = 2008}}&lt;/ref&gt;
+
+If the function to be calculated is a [[polynomial function]], expressed as
+: &lt;math&gt; f(x) = a_n x^n + a_{n-1} x^{n-1} + \cdots + a_2 x^2 + a_1 x + a_0 \, &lt;/math&gt;
+the initial values can be calculated directly from the constant coefficients ''a''&lt;sub&gt;0&lt;/sub&gt;, ''a''&lt;sub&gt;1&lt;/sub&gt;,''a''&lt;sub&gt;2&lt;/sub&gt;, ..., ''a&lt;sub&gt;n&lt;/sub&gt;'' without calculating any data points. The initial values are thus:
+
+* Col &lt;math&gt;1_0&lt;/math&gt; = ''a''&lt;sub&gt;0&lt;/sub&gt;
+* Col &lt;math&gt;2_0&lt;/math&gt; = ''a''&lt;sub&gt;1&lt;/sub&gt; + ''a''&lt;sub&gt;2&lt;/sub&gt; + ''a''&lt;sub&gt;3&lt;/sub&gt; + ''a''&lt;sub&gt;4&lt;/sub&gt; + ... + ''a&lt;sub&gt;n&lt;/sub&gt;''
+* Col &lt;math&gt;3_0&lt;/math&gt; = 2''a''&lt;sub&gt;2&lt;/sub&gt; + 6''a''&lt;sub&gt;3&lt;/sub&gt; + 14''a''&lt;sub&gt;4&lt;/sub&gt; + 30''a''&lt;sub&gt;5&lt;/sub&gt; + ...
+* Col &lt;math&gt;4_0&lt;/math&gt; = 6''a''&lt;sub&gt;3&lt;/sub&gt; + 36''a''&lt;sub&gt;4&lt;/sub&gt; + 150''a''&lt;sub&gt;5&lt;/sub&gt; + ...
+* Col &lt;math&gt;5_0&lt;/math&gt; = 24''a''&lt;sub&gt;4&lt;/sub&gt; + 240''a''&lt;sub&gt;5&lt;/sub&gt; + ...
+* Col &lt;math&gt;6_0&lt;/math&gt; = 120''a''&lt;sub&gt;5&lt;/sub&gt; + ...
+* &lt;math&gt;...&lt;/math&gt;
+
+=== Use of derivatives ===
+Many commonly used functions are [[analytic function]]s, which can be expressed as [[power series]], for example as a [[Taylor series]]. The initial values can be calculated to any degree of accuracy; if done correctly the engine will give exact results for first N steps. After that, the engine will only give an [[approximation]] of the function.
+
+The Taylor series expresses the function as a sum obtained from its [[derivative]]s at one point.  For many functions the higher derivatives are trivial to obtain; for instance, the [[sine]] function at 0 has values of 0 or &lt;math&gt;\pm1&lt;/math&gt; for all derivatives. Setting 0 as the start of computation we get the simplified [[Maclaurin series]]
+:&lt;math&gt;
+\sum_{n=0}^{\infin} \frac{f^{(n)}(0)}{n!}\  x^{n}
+&lt;/math&gt;
+
+The same method of calculating the initial values from the coefficients can be used as for polynomial functions. The polynomial constant coefficients will now have the value
+:&lt;math&gt;
+a_n \equiv \frac{f^{(n)}(0)}{n!}
+&lt;/math&gt;
+
+=== Curve fitting ===
+The problem with the methods described above is that errors will accumulate and the series will tend to diverge from the true function. A solution which guarantees a constant maximum error is to use [[curve fitting]]. A minimum of ''N'' values are calculated evenly spaced along the range of the desired calculations. Using a curve fitting technique like [[Gaussian reduction]] an ''N''−1th degree [[polynomial interpolation]] of the function is found.&lt;ref name=&quot;Thelen&quot; /&gt; With the optimized polynomial, the initial values can be calculated as above.
+
+== The difference engine in other works ==
+William Gibson and Bruce Sterling's ''[[The Difference Engine]]'' is an alternate history&lt;ref&gt;{{cite book|last1=Gibson|first1=William|title=The Difference Engine|url=https://archive.org/details/differenceengine00gibs|url-access=registration}}&lt;/ref&gt; novel that looks how society would have progressed had the difference engine worked the way Babbage envisioned it.
+
+The story takes place in Victorian England where technological advancement is on the rise. This is due to the effect of the success of Babbage's analytical machine. The convention of [[steampunk]] where Victorian fashion is combined with the technological elements of the Industrial Revolution is seen throughout the story due to technology being so advanced in that era.
+
+== See also ==
+{{Portal|Mathematics}}
+&lt;!-- Please keep entries in alphabetical order &amp; add a short description [[WP:SEEALSO]] --&gt;
+{{div col}}
+* [[Ada Lovelace]]
+* [[Allan G. Bromley]]
+* [[Analytical Engine]]
+* [[Antikythera mechanism]]
+* [[Johann Helfrich von Müller]]
+* [[Martin Wiberg]]
+* [[Per Georg Scheutz]]
+* [[Pinwheel calculator]]
+{{div col end}}
+
+== References ==
+{{Reflist|30em}}
+
+== Further reading ==
+{{refbegin|}}
+*{{cite book|title = The Philosophical Breakfast Club: Four Remarkable Friends Who Transformed Science and Changed the World|last = Snyder|first = Laura J.|publisher = Broadway|year = 2011|isbn = 978-0-7679-3048-2|location=|pages=}}
+*{{cite book|url=http://ed-thelen.org/bab/bab_tech.html|title=Charles Babbage's Difference Engine No. 2 – Technical Description|last=Swade|first=Doron|date=September 1996|publisher=[[National Museum of Science and Industry]]|isbn=|series=Science Museum Papers in the History of Technology No 5|location=London|pages=|doi=|oclc=|accessdate=2009-01-11}}
+*{{cite book|title = The Difference Engine: Charles Babbage and the Quest to Build the First Computer|last = Swade|first = Doron|publisher = Penguin (reprint)|year = 2002|isbn = 978-0-14-200144-8|location = |pages = |author-link = Doron Swade|url = https://archive.org/details/differenceengine00doro}}
+*{{cite book|title = The Cogwheel Brain|last = Swade|first = Doron|publisher = Abacus|year = 2001|isbn = 978-0-349-11239-8|location=|pages=}}
+*{{cite video
+  | people=Doron Swade, [[Nathan Myhrvold]]
+  | title=Myhrvold &amp; Swade Discuss Babbage's Difference Engine.
+  | url=https://www.youtube.com/watch?v=p1sEowi1Txc
+  | medium=lecture: [[Len Shustek]], intro; Doron Swade @7:35, Nathan Myhrvold @36:25; discussion @46:45
+  | publisher=[[Computer History Museum]]
+  | date=June 10, 2008
+  | accessdate=2009-11-06 |first=|language=|type=}}
+*{{cite book|chapter-url=https://books.google.com/books?id=O170gWPZ7M8C|title=The History of Mathematical Tables: From Sumer to Spreadsheets|last1=Campbell-Kelly|first1=Martin|date=2003|publisher=OUP Oxford|others=Michael R. Williams|isbn=9780198508410|location=|pages=|language=en|chapter=Difference engines: from Müller to Comrie}}
+{{refend}}
+
+== External links ==
+{{Commons category|Difference engines}}
+*[http://www.computerhistory.org/babbage/ The Computer History Museum exhibition on Babbage and the difference engine]
+*[https://web.archive.org/web/20080511205136/http://www.sciencemuseum.org.uk/onlinestuff/stories/babbage.aspx ''Babbage''] Science Museum, London. Description of Babbage's calculating machine projects and the Science Museum's study of Babbage's works, including modern reconstruction and model-building projects.
+*[http://www.meccano.us/difference_engines/rde_1/ Meccano Difference Engine #1]
+*[http://www.meccano.us/difference_engines/rde_2/index.html Meccano Difference Engine #2]
+*[http://sites.google.com/site/babbagedifferenceengine/howitwasintendedtowork Babbage's First Difference Engine – How it was intended to work]
+*[http://sites.google.com/site/babbagedifferenceengine/analysisofexpenditureondifferenceenginen Analysis of Expenditure on Babbage's Difference Engine No. 1]
+*[http://satyam.com.ar/Babbage/en/index.html Difference engine workings with animations]
+*[http://www.powerhousemuseum.com/collection/database/?irn=150269&amp;img=146773 Difference Engine No1 specimen piece at the Powerhouse Museum, Sydney]
+*[http://www.xrez.com/blog/babbage-difference-engine-in-gigapixel/ Gigapixel Image of the Difference Engine No2]
+*[https://www.youtube.com/watch?v=YtZCYnBlZpk Scheutz Difference Engine in action video.  Purchased by the Dudley Observatory's first director, Benjamin Apthorp Gould, in 1856. Gould was an acquaintance of Babbage. The Difference Engine performed astronomical calculations for the Observatory for many years, and is now part of the national collection at the Smithsonian.]
+*Links to videos about Babbage DE 2 and its construction: {{cite web |title=Computer Histories: To Learn More |url=http://www.computerhistories.org/ToLearnMore.html |website=www.computerhistories.org|at=Topic 5 - Computers in the Steam Era (Not Hackers But Clackers)}}
+{{Authority control}}
+{{DEFAULTSORT:Difference Engine}}
+[[Category:1822 introductions]]
+[[Category:English inventions]]
+[[Category:Mechanical calculators]]
+[[Category:Collections of the Science Museum, London]]
+[[Category:Replicas]]
+[[Category:Charles Babbage]]
+[[Category:Computer-related introductions in the 19th century]]
+[[Category:Articles containing video clips]]
+[[Category:Subtraction]]&lt;!-- hand calculated --&gt;
+[[Category:Addition]]&lt;!-- the only thing a 'difference' engine does! ----&gt;</text>
+      <sha1>81ga2w650l2ql11c4st997ggvj8ittm</sha1>
+    </revision>
+  </page>

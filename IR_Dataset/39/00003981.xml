@@ -1,0 +1,699 @@
+  <page>
+    <title>Blackjack</title>
+    <ns>0</ns>
+    <id>3981</id>
+    <revision>
+      <id>940498972</id>
+      <parentid>938334871</parentid>
+      <timestamp>2020-02-12T22:15:47Z</timestamp>
+      <contributor>
+        <username>Bermicourt</username>
+        <id>7254364</id>
+      </contributor>
+      <comment>there's another card game called Black Jack</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{About|the gambling game|the variant of Hearts called Black Jack|Black Jack (Hearts)|the shedding-type card game sometimes called Black Jack|Switch (card game)|other uses|Black Jack (disambiguation){{!}}Black Jack}}
+{{short description|Gambling card game}}
+
+{{Use mdy dates|date=June 2015}}
+{{Infobox card game
+| title         = Blackjack
+| subtitle      = 
+| image_link    = [[File:BlackJack6.jpg|250px]]
+| image_caption = A blackjack
+| alt_names     = Twenty-One
+| type          = Comparing
+| players       = 2+, usually 2–7
+| play          = Clockwise
+| ages          = 
+| num_cards     = 52 to 416
+| deck          = [[French playing cards|French]]
+| origin        = 
+| related       = 
+| playing_time  = 
+| random_chance = High
+| skills        = Probability
+| footnotes     =
+}}
+
+'''Blackjack''' is the American version of a  popular global [[banking game]] known as [[Twenty-One (card game)|Twenty-One]], whose relatives include [[Pontoon (card game)|Pontoon]] and [[Vingt-et-Un]].&lt;ref&gt;Parlett, David (1990). ''A History of Card Games'', OUP, Oxford, p. 78. {{ISBN|0-19-282905-X}}&lt;/ref&gt; It is a comparing [[card game]] between one or more players and a dealer, where each player in turn competes against the dealer. Players do not compete against each other. It is played with one or more [[Playing card|decks]] of 52 cards, and is the most widely played [[casino game|casino]] banking game in the world.&lt;ref name=&quot;Scarne&quot;&gt;{{cite book |last1=Scarne |first1=John |title=Scarne's new complete guide to gambling |publisher=Simon &amp; Schuster |isbn=978-0671630638 |edition=Fully rev., expanded , updated|year=1986 }}&lt;/ref&gt;{{rp|342}} 
+
+Players are each dealt two cards, face up or down depending on the casino and the table. In the U.S., the dealer is also dealt two cards, normally one up (exposed) and one down (hidden). In most other countries, the dealer only receives one card face up. The value of cards two through ten is their pip value (2 through 10). Face cards (Jack, Queen, and King) are all worth ten. Aces can be worth one or eleven. A hand's value is the sum of the card values. Players are allowed to draw additional cards to improve their hands. A hand with an ace valued as 11 is called &quot;soft&quot;, meaning that the hand will not bust by taking an additional card. The value of the ace will become one to prevent the hand from exceeding 21. Otherwise, the hand is called &quot;hard&quot;.
+
+Once all the players have completed their hands, it is the dealer's turn. The dealer hand will not be completed if all players have either busted or received blackjacks. The dealer then reveals the hidden card and must hit until the cards total up to 17 points. At 17 points or higher the dealer must stay. (At most tables the dealer also hits on a &quot;soft&quot; 17, i.e. a hand containing an ace and one or more other cards totaling six.) You are betting that you have a better hand than the dealer. The better hand is the hand where the sum of the card values is closer to 21 without exceeding 21. The detailed outcome of the hand follows:
+
+* If the player is dealt an Ace and a ten-value card (called a &quot;blackjack&quot; or &quot;[[natural (gambling)|natural]]&quot;), and the dealer does not, the player wins and usually receives a bonus.
+* If the player exceeds a sum of 21 (&quot;busts&quot;); the player loses, even if the dealer also exceeds 21.
+* If the dealer exceeds 21 (&quot;busts&quot;) and the player does not; the player wins.
+* If the player attains a final sum higher than the dealer and does not bust; the player wins.
+* If both dealer and player receive a blackjack or any other hands with the same sum, called a &quot;push&quot;, no one wins.
+
+Blackjack has over 100 rule variations. Since the 1960s, blackjack has been a high-profile target of [[Advantage gambling|advantage players]], particularly [[card counting|card counters]], who track the profile of cards that have been dealt and adapt their wagers and playing strategies accordingly. In response, casinos have introduced counter-measures that can increase the difficulty of advantage play.
+
+Blackjack has inspired other casino games, including [[Spanish 21]] and [[Pontoon (card game)|pontoon]].
+
+==History==
+Blackjack's precursor was ''twenty-one'', a game of unknown origin. The first written reference is found in a book by the Spanish author [[Miguel de Cervantes]], most famous for writing ''[[Don Quixote]]''. Cervantes was a [[gambler]], and the main characters of his tale &quot;[[Rinconete y Cortadillo]]&quot;, from ''[[Novelas Ejemplares]]'', are a couple of cheats working in [[Seville]]. They are proficient at cheating at ''veintiuna'' (Spanish for twenty-one), and state that the object of the game is to reach 21 points without going over and that the [[ace]] values 1 or 11. The game is played with the Spanish ''[[Spanish playing cards|baraja]]'' deck. This short story was written between 1601 and 1602, implying that ''ventiuna'' was played in [[Kingdom of Castile|Castile]] since the beginning of the 17th century or earlier. Later references to this game are found in France and Spain.&lt;ref&gt;{{cite book | last = Fontbona | first = Marc | title = Historia del Juego en España. De la Hispania romana a nuestros días | isbn = 978-84-96495-30-2 | url = https://www.casadellibro.com/libro-historia-del-juego-en-espana-de-la-hispania-romana-a-nuestros-di-as/9788496495302/1226464 | year = 2008 | publisher = Flor del Viento Ediciones | location = Barcelona | page = 89}}&lt;/ref&gt;
+
+When twenty-one was introduced in the United States, gambling houses offered bonus payouts to stimulate players' interest. One such bonus was a ten-to-one payout if the player's hand consisted of the [[ace of spades]] and a black [[jack (playing card)|jack]] (either the [[jack of clubs]] or the [[jack of spades]]). This hand was called a &quot;blackjack&quot;, and the name stuck to the game even though the ten-to-one bonus was soon withdrawn. In the modern game, a ''blackjack'' refers to any hand of an ace plus a ten or face card regardless of suits or colors.&lt;ref name=&quot;Scarne&quot; /&gt;{{rp|350}}
+
+The first scientific and mathematically sound attempt to devise an optimal blackjack playing strategy was revealed in September 1956.  Roger Baldwin, Wilbert Cantey, Herbert Maisel and James McDermott published a paper titled ''The Optimum Strategy in Blackjack'' in the Journal of the American Statistical Association.  This paper would become the foundation of future sound efforts to beat the game of blackjack. [[Ed Thorp]] would use Baldwin's hand calculations to verify the basic strategy and later publish (in 1963) his famous book ''Beat the Dealer''.&lt;ref&gt;{{cite web|title=Blackjack History and Events|url=https://www.blackjackreview.com/wp/historical-events/|publisher=blackjackreview.com|accessdate=21 May 2017}}&lt;/ref&gt;
+
+==Rules of play at casinos==
+{{multiple image
+ | align     = right
+ | direction = vertical
+ | header    = Blackjack example game
+ | header_align = center
+ | header_background =
+ | footer    =
+ | footer_align =
+ | footer_background =
+ | width     =
+ | image1    = Blackjack game 1.JPG
+ | width1    = 250
+ | caption1  = Initial deal
+ | image2    = Blackjack game 2.JPG
+ | width2    = 250
+ | caption2  = Player action
+ | image3    = Blackjack game 3.JPG
+ | width3    = 250
+ | caption3  = Dealer's hand revealed
+ | image4    = Blackjack game 4.JPG
+ | width4    = 250
+ | caption4  = Bets settled
+ }}
+At a casino blackjack table, the dealer faces five to seven playing positions from behind a semicircular table. Between one and eight [[standard 52-card deck]]s are [[shuffling|shuffled]] together. At the beginning of each round, up to three players can place their bets in the &quot;betting box&quot; at each position in play. That is, there could be up to three players at each position at a table in jurisdictions that allow back betting. The player whose bet is at the front of the betting box is deemed to have control over the position, and the dealer will consult the controlling player for playing decisions regarding the hand; the other players of that box are said to &quot;play behind&quot;. Any player is usually allowed to control or bet in as many boxes as desired at a single table, but it is prohibited for an individual to play on more than one table at a time or to place multiple bets within a single box. In many U.S. casinos, however, players are limited to playing two or three positions at a table and often only one person is allowed to bet on each position.
+
+The dealer deals cards from their left (the position on the dealer's far left is often referred to as &quot;first base&quot;) to their far right (&quot;third base&quot;). Each box is dealt an initial hand of two cards visible to the people playing on it, and often to any other players. The dealer's hand receives its first card face up, and in &quot;hole card&quot; games immediately receives its second card face down (the hole card), which the dealer peeks at but does not reveal unless it makes the dealer's hand a blackjack. Hole card games are sometimes played on tables with a small mirror or electronic sensor that is used to peek securely at the hole card. In European casinos, &quot;no hole card&quot; games are prevalent; the dealer's second card is neither drawn nor consulted until the players have all played their hands.
+
+Cards are dealt either from one or two handheld decks, from a [[shoe (cards)|dealer's shoe]], or from a [[shuffling machine]]. Single cards are dealt to each wagered-on position clockwise from the dealer's left, followed by a single card to the dealer, followed by an additional card to each of the positions in play. The players' initial cards may be dealt face up or face down (more common in single-deck games).
+
+The object of the game from the player's perspective is to win money by creating card totals that are higher than those of the dealer's hand, but do not exceed 21 (&quot;busting&quot;/&quot;breaking&quot;), or alternatively, by &quot;standing&quot; (not taking a card) at any total in the hope that dealer will bust. On their turn, players must choose whether to &quot;hit&quot; (take a card), &quot;stand&quot; (end their turn), &quot;double&quot; (double wager, take a single card and finish), &quot;split&quot; (if the two cards have the same value, separate them to make two hands) or &quot;surrender&quot; (give up a half-bet and retire from the game). Number cards count as their natural value; the jack, queen, and king (also known as &quot;face cards&quot; or &quot;pictures&quot;) count as 10; aces are valued as either 1 or 11 according to the player's choice. If the hand value exceeds 21 points, it busts, and all bets on it are immediately forfeit. After all boxes have finished playing, the dealer's hand is resolved by drawing cards until the hand busts or achieves a value of 17 or higher (a dealer total of 17 including an ace valued as 11, also known as a &quot;soft 17&quot;, must be drawn to in some games and must stand in others). The dealer never doubles, splits, or surrenders. If the dealer busts, all remaining player hands win. If the dealer does not bust, each remaining bet wins if its hand is higher than the dealer's, and loses if it is lower. If a player receives 21 on the 1st and 2nd card it is considered a &quot;natural&quot; or &quot;blackjack&quot; and the player is paid out immediately unless dealer also has a natural, in which case the hand ties. In the case of a tied score, known as &quot;push&quot; or &quot;standoff&quot;,  bets are normally returned without adjustment; however, a blackjack beats any hand that is not a blackjack, even one with a value of 21. Wins are paid out at 1:1, or equal to the wager, except for player blackjacks which are traditionally paid at 3:2 (meaning the player receives three dollars for every two bet) or one-and-a-half times the wager. Many casinos today pay blackjacks at less than 3:2 at some tables; for instance, single-deck blackjack tables often pay 6:5 for a blackjack instead of 3:2.&lt;ref name=LVSun20031113/&gt;
+
+Blackjack games almost always provide a [[side bet]] called insurance, which may be played when dealer's upcard is an ace. Additional side bets, such as &quot;Dealer Match&quot; which pays when the player's cards match the dealer's up card, are sometimes available.
+
+===Player decisions===
+{{anchor|doubledown}}
+{{redirect|Doubling Down|the South Park episode|Doubling Down (South Park)}}
+After receiving an initial two cards, the player has up to four standard options: &quot;hit&quot;, &quot;stand&quot;, &quot;double down&quot;, or &quot;split&quot;. Each option has a corresponding hand signal. Some games give the player a fifth option, &quot;surrender&quot;.
+* '''Hit:''' Take another card from the dealer.
+: ''Signal'': Scrape cards against table (in handheld games); tap the table with finger or wave hand toward body (in games dealt face up).
+* '''Stand:''' Take no more cards, also known as &quot;stand pat&quot;, &quot;stick&quot;, or &quot;stay&quot;.
+: ''Signal'': Slide cards under chips (in handheld games); wave hand horizontally (in games dealt face up).
+* '''Double down:''' The player is allowed to increase the initial bet by up to 100% in exchange for committing to stand after receiving exactly one more card. The additional bet is placed in the betting box next to the original bet. Some games do not permit the player to increase the bet by amounts other than 100%. Non-controlling players may double their wager or decline to do so, but they are bound by the controlling player's decision to take only one card.
+: ''Signal'': Place additional chips beside the original bet outside the betting box, and point with one finger.
+* '''Split''': If the first two cards of a hand have the same value, the player can split them into two hands, by moving a second bet equal to the first into an area outside the betting box. The dealer separates the two cards and draws an additional card on each, placing one bet with each hand. The player then plays out the two separate hands in turn; except for a few restrictions, the hands are treated as independent new hands, with the player winning or losing their wager separately for each hand. Occasionally, in the case of ten-valued cards, some casinos allow splitting only when the cards have the identical ranks; for instance, a hand of 10-10 may be split, but not one of 10-king. However, usually all 10-value cards are treated the same. Doubling and further splitting of post-split hands may be restricted, and an ace and ten value card after a split are counted as a non-blackjack 21. Hitting split aces is usually not allowed. Non-controlling players may follow the controlling player by putting down an additional bet or decline to do so, instead associating their existing wager with one of the two post-split hands. In that case they must choose which hand to play behind before the second cards are drawn. Some casinos do not give non-controlling players this option, and require that the wager of a player not electing to split remains with the first of the two post-split hands.
+: ''Signal'': Place additional chips next to the original bet outside the betting box; point with two fingers spread into a V formation.
+* '''Surrender''' (only available as first decision of a hand): Some games offer the option to &quot;surrender&quot; directly after the dealer has checked for blackjack (see below for variations). When the player surrenders, the house takes half the player's bet and returns the other half to the player; this terminates the player's interest in the hand.
+: ''Signal'': The request to surrender is made verbally, there being no standard hand signal.
+
+Hand signals are used to assist the &quot;[[eye in the sky (camera)|eye in the sky]]&quot;, a person or [[video camera]] located above the table and sometimes concealed behind [[one-way glass]]. The eye in the sky usually makes a video recording of the table, which helps in resolving disputes and identifying dealer mistakes, and is also used to protect the casino against dealers who steal chips or players who cheat. The recording can further be used to identify [[advantage players]] whose activities, while legal, make them undesirable customers. In the event of a disagreement between a player's hand signals and their words, the hand signal takes precedence.
+Each hand may normally &quot;hit&quot; as many times as desired so long as the total is not above hard 20. On reaching 21 (including soft 21), the hand is normally required to stand; busting is an irrevocable loss and the players' wagers are immediately forfeited to the house. After a bust or a stand, play proceeds to the next hand clockwise around the table. When the last hand has finished being played, the dealer reveals the hole card, and stands or draws further cards according to the rules of the game for dealer drawing. When the outcome of the dealer's hand is established, any hands with bets remaining on the table are resolved (usually in [[counterclockwise]] order): bets on losing hands are forfeited, the bet on a push is left on the table, and winners are paid out.
+
+===Insurance===
+If the dealer's upcard is an ace, the player is offered the option of taking &quot;insurance&quot; before the dealer checks the hole card.
+
+Insurance is a side bet that the dealer has blackjack and is treated independently of the main wager. It pays 2:1 (meaning that the player receives two dollars for every dollar bet) and is available when the dealer's exposed card is an ace. The idea is that the dealer's second card has a fairly high probability (nearly one-third) to be ten-valued, giving the dealer blackjack and disappointment for the player. It is attractive (although not necessarily wise) for the player to insure against the possibility of a dealer blackjack by making a maximum &quot;insurance&quot; bet, in which case the &quot;insurance proceeds&quot; will make up for the concomitant loss on the original bet. The player may add up to half the value of their original bet to the insurance and these extra chips are placed on a portion of the table usually marked &quot;Insurance pays 2 to 1&quot;.
+
+Players with a blackjack may also take insurance, and in taking maximum insurance they commit themselves to winning an amount exactly equal to their main wager, regardless of the dealer's outcome. Fully insuring a blackjack against blackjack is thus referred to as &quot;taking even money&quot;, and paid out immediately, before the dealer's hand is resolved; the players do not need to place more chips for the insurance wager.
+
+Insurance bets are expected to lose money in the long run, because the dealer is likely to have blackjack less than one-third of the time. However the insurance outcome is strongly [[correlation|anti-correlated]] with that of the main wager, and if the player's priority is to reduce [[variance|variation]], they might choose to pay for this.
+
+Furthermore, the insurance bet is susceptible to advantage play. It is advantageous to make an insurance bet whenever the hole card has more than a chance of one in three of being a ten. Advantage play techniques can sometimes identify such situations. In a multi-hand, face-up, single deck game, it is possible to establish whether insurance is a good bet simply by observing the other cards on the table after the deal; even if there are just 2 player hands exposed, and neither of their two initial cards is a ten, then 16 in 47 of the remaining cards are tens, which is larger than 1 in 3, so insurance is a profitable bet. This is an elementary example of the family of advantage play techniques known as card counting.
+
+Bets to insure against blackjack are slightly less likely to be advantageous than insurance bets in general, since the ten in the player's blackjack makes it less likely that the dealer has blackjack too.&lt;ref&gt;{{cite web|url=http://www.beatingbonuses.com/insurance.htm|title=Blackjack Insurance Exceptions|website=www.beatingbonuses.com}}&lt;/ref&gt;&lt;!--is this true? blackjack also means that the player can't have *two* tens, which would make insurance worse.--&gt;
+
+==Rule variations and effects on house edge==
+''Note: where changes in the house edge due to changes in the rules are stated in percentage terms, the difference is usually stated here in [[percentage point]]s, not percentage; strictly speaking if, say, an edge of 10% is reduced to 9%, the amount is reduced by ten percent, or by one percentage point.''
+[[File:Double down.JPG|thumb|right|Doubling down. The third card is placed at right angles to signify that the player cannot receive any more cards.]]
+The rules of casino blackjack are generally determined by law or regulation, which establishes certain rule variations allowed at the discretion of the casino. The rules of any particular game are generally posted on or near the table, failing which there is an expectation that casino staff will provide them on request. Over 100 variations of blackjack have been documented.&lt;ref&gt;{{cite web|url=http://www.qfit.com/blackjack-rules.htm|title=Blackjack Rules - 113 variations|website=www.qfit.com}}&lt;/ref&gt;
+
+As with all casino games, blackjack incorporates a &quot;house edge&quot;, a statistical advantage for the casino that is built into the game. The advantage of the dealer's position in blackjack relative to the player comes from the fact that if the player busts, the player loses, regardless of whether the dealer subsequently busts. Nonetheless, blackjack players using basic strategy will lose less than 1% of their total wagered amount with strictly average luck; this is very favorable to the player compared to other casino games. The loss rate of players who deviate from basic strategy through ignorance is generally expected to be greater.
+
+*'''Dealer hits soft 17'''
+[[File:Soft17.jpg|thumb|right|A &quot;soft 17&quot; in blackjack. An ace and any combination of 6.]]
+:Each game has a rule about whether the dealer must hit or stand on soft 17, which is generally printed on the table surface. The variation where the dealer must hit soft 17 is abbreviated &quot;H17&quot; in blackjack literature, with &quot;S17&quot; used for the stand-on-soft-17 variation. Substituting an &quot;H17&quot; rule with an &quot;S17&quot; rule in a game benefits the player, decreasing the house edge by about 0.2%.
+
+*'''Number of decks'''
+:All things being equal, using fewer decks decreases the house edge. This mainly reflects an increased likelihood of player blackjack, since if the players draws a ten on their first card, the subsequent probability of drawing an ace is higher with fewer decks. It also reflects a decreased likelihood of blackjack-blackjack push in a game with fewer decks.
+
+:Casinos generally compensate by tightening other rules in games with fewer decks, in order to preserve the house edge or discourage play altogether. When offering single deck blackjack games, casinos are more likely to disallow doubling on soft hands or after splitting, to restrict resplitting, require higher minimum bets, and to pay the player less than 3:2 for a winning blackjack.
+
+:The following table illustrates the mathematical effect on the house edge of the number of decks, by considering games with various deck counts under the following ruleset: double after split allowed, resplit to four hands allowed, no hitting split aces, no surrender, double on any two cards, original bets only lost on dealer blackjack, dealer hits soft 17, and cut-card used. The increase in house edge per unit increase in the number of decks is most dramatic when comparing the single deck game to the two-deck game, and becomes progressively smaller as more decks are added.
+
+{| class=&quot;wikitable&quot;
+! Number of decks !! House advantage
+|-
+| Single deck || 0.17%
+|-
+| Double deck || 0.46%
+|-
+| Four decks || 0.60%
+|-
+| Six decks || 0.64%
+|-
+| Eight decks || 0.65%
+|}
+
+;Late/early surrender:
+
+Surrender, for those games that allow it, is usually not permitted against a dealer blackjack; if the dealer's first card is an ace or ten, the hole card is checked to make sure there is no blackjack before surrender is offered. This rule protocol is consequently known as &quot;late&quot; surrender. The alternative, &quot;early&quot; surrender, gives player the option to surrender ''before'' the dealer checks for blackjack, or in a no-hole-card game. Early surrender is much more favorable to the player than late surrender. Most medium-strength hands should be surrendered against a dealer Ace if the hole card has not been checked.
+
+For late surrender, however, while it is tempting to opt for surrender on any hand which will probably lose, the correct strategy is to only surrender on the very worst hands, because having even a one in four chance of winning the full bet is better than losing half the bet and pushing the other half, as entailed by surrendering.
+
+;Resplitting: If the cards of a post-split hand have the same value, most games allow the player to split again, or &quot;resplit&quot;. The player places a further wager and the dealer separates the new pair dealing a further card to each as before. Some games allow unlimited resplitting, while others may limit it to a certain number of hands, such as four hands (for example, &quot;resplit to 4&quot;).
+;Hit/resplit split aces: After splitting aces, the common rule is that only one card will be dealt to each ace; the player cannot split, double, or take another hit on either hand. Rule variants include allowing resplitting aces or allowing the player to hit split aces. Games allowing aces to be resplit are not uncommon, but those allowing the player to hit split aces are extremely rare. Allowing the player to hit hands resulting from split aces reduces the house edge by about 0.13%; allowing resplitting of aces reduces house edge by about 0.03%. Note that a ten-value card dealt on a split ace (or vice versa) is a &quot;soft 21&quot; and not a &quot;natural&quot;.
+;No double after split: After a split, most games allow doubling down on the new two-card hands. Disallowing doubling after a split increases the house edge by about 0.12%.
+;Double on 9/10/11 or 10/11 only: Under the &quot;[[Reno, Nevada|Reno]] rule&quot;, double down is only permitted on hard totals of 9, 10, or 11 (under a similar European rule, only 10 or 11). Basic strategy would otherwise call for some doubling down with hard 9 and soft 13–18, and advanced players can identify situations where doubling on soft 19–20 and hard 8, 7 and even 6 is advantageous. The Reno rule prevents the player from taking advantage of double down in these situations and thereby increases the player's expected loss. The Reno rule increases the house edge by around 1 in 1,000, and its European version by around 1 in 500.
+;No hole card and OBO:
+
+In most non-U.S. casinos, a 'no hole card' game is played, meaning that the dealer does not draw nor consult his or her second card until after all players have finished making decisions. With no hole card, it is almost never correct basic strategy to double or split against a dealer ten or ace, since a dealer blackjack will result in the loss of the split and double bets; the only exception is with a pair of aces against a dealer 10, where it is still correct to split. In all other cases, a stand, hit or surrender is called for. For instance, holding 11 against a dealer 10, the correct strategy is to double in a hole card game (where the player knows the dealer's second card is not an ace), but to hit in a no hole card game.  The no hole card rule adds approximately 0.11% to the house edge.
+
+The &quot;original bets only&quot; rule variation appearing in certain no hole card games states that if the player's hand loses to a dealer blackjack, only the mandatory initial bet (&quot;original&quot;) is forfeited, and all optional bets, meaning doubles and splits, are pushed. &quot;Original bets only&quot; is also known by the acronym OBO; it has the same effect on basic strategy and house edge as reverting to a hole card game.&lt;ref&gt;{{cite web|url=http://www.qfit.com/book/ModernBlackjackPage39.htm|title=Modern Blackjack|website=www.qfit.com}}&lt;/ref&gt;
+
+;Altered payout for a winning blackjack: In many casinos, a blackjack pays only 6:5 or even 1:1 instead of the usual 3:2. This is most common at tables with lower [[Table limit|table minimums]]. Although this payoff was originally limited to single-deck games, it has spread to double-deck and shoe games. Among common rule variations in the U.S., these altered payouts for blackjack are the most damaging to the player, causing the greatest increase in house edge. Since blackjack occurs in approximately 4.8% of hands, the 1:1 game increases the house edge by 2.3%, while the 6:5 game adds 1.4% to the house edge. Video blackjack machines generally pay 1:1 payout for a blackjack.&lt;ref name=LVSun20031113&gt;[http://www.lasvegassun.com/news/2003/nov/13/taking-a-hit-new-blackjack-odds-further-tilt-advan/ ''Taking a hit: New blackjack odds further tilt advantage toward the house''] by Jeff Haney, [[Las Vegas Sun]], November 13, 2003.&lt;/ref&gt;
+;Dealer wins ties: The rule that bets on tied hands are lost rather than pushed is catastrophic to the player.  Though rarely used in standard blackjack, it is sometimes seen in &quot;blackjack-like&quot; games such as in some charity casinos.
+
+==Blackjack strategy==
+
+===Basic strategy===
+Each blackjack game has a ''basic strategy'', which prescribes the optimal method of playing any hand against any dealer up-card so that the long-term [[house advantage]] (the expected loss of the player) is minimized.
+
+An example of a basic strategy is shown in the table below, which applies to a game with the following specifications:&lt;ref name=&quot;wizardofodds.com&quot;&gt;{{cite web|title=4-Deck to 8-Deck Blackjack Strategy - Wizard of Odds|url=http://wizardofodds.com/games/blackjack/strategy/4-decks/|publisher=Wizard of Odds Consulting, Inc|accessdate=30 April 2014}}&lt;/ref&gt; 
+* Four to eight decks
+* The dealer hits on a soft 17
+* A double is allowed after a split
+* Only original bets are lost on dealer blackjack
+
+&lt;center&gt;
+{| border=&quot;1&quot; class=&quot;wikitable&quot; style=&quot;text-align:center&quot;
+|-
+! rowspan=&quot;2&quot; | Player hand
+! colspan=&quot;10&quot; | Dealer's face-up card
+|-
+| 2
+| 3
+| 4
+| 5
+| 6
+| 7
+| 8
+| 9
+| 10
+| A
+|-
+! colspan=&quot;11&quot; | Hard totals (excluding pairs)
+|-
+! 18–21
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:red; color:black&quot; | S
+|-
+! 17
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:white; color:black&quot; | Us
+|-
+! 16
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:white; color:black&quot; | Uh
+| style=&quot;background:white; color:black&quot; | Uh
+| style=&quot;background:white; color:black&quot; | Uh
+|-
+! 15
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:white; color:black&quot; | Uh
+| style=&quot;background:white; color:black&quot; | Uh
+|-
+! 13–14
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+|-
+
+! 12
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+|-
+! 11
+| style=&quot;background:cyan; color:black&quot; | Dh
+| style=&quot;background:cyan; color:black&quot; | Dh
+| style=&quot;background:cyan; color:black&quot; | Dh
+| style=&quot;background:cyan; color:black&quot; | Dh
+| style=&quot;background:cyan; color:black&quot; | Dh
+| style=&quot;background:cyan; color:black&quot; | Dh
+| style=&quot;background:cyan; color:black&quot; | Dh
+| style=&quot;background:cyan; color:black&quot; | Dh
+| style=&quot;background:cyan; color:black&quot; | Dh
+| style=&quot;background:cyan; color:black&quot; | Dh
+|-
+! 10
+| style=&quot;background:cyan; color:black&quot; | Dh
+| style=&quot;background:cyan; color:black&quot; | Dh
+| style=&quot;background:cyan; color:black&quot; | Dh
+| style=&quot;background:cyan; color:black&quot; | Dh
+| style=&quot;background:cyan; color:black&quot; | Dh
+| style=&quot;background:cyan; color:black&quot; | Dh
+| style=&quot;background:cyan; color:black&quot; | Dh
+| style=&quot;background:cyan; color:black&quot; | Dh
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+|-
+! 9
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:cyan; color:black&quot; | Dh
+| style=&quot;background:cyan; color:black&quot; | Dh
+| style=&quot;background:cyan; color:black&quot; | Dh
+| style=&quot;background:cyan; color:black&quot; | Dh
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+|-
+! 5–8
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+|-
+! colspan=&quot;11&quot; | Soft totals
+|-
+|
+| 2
+| 3
+| 4
+| 5
+| 6
+| 7
+| 8
+| 9
+| 10
+| A
+|-
+! A,9
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:red; color:black&quot; | S
+|-
+! A,8
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:cyan; color:black&quot; | Ds
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:red; color:black&quot; | S
+|-
+! A,7
+| style=&quot;background:cyan; color:black&quot; | Ds
+| style=&quot;background:cyan; color:black&quot; | Ds
+| style=&quot;background:cyan; color:black&quot; | Ds
+| style=&quot;background:cyan; color:black&quot; | Ds
+| style=&quot;background:cyan; color:black&quot; | Ds
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+|-
+! A,6
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:cyan; color:black&quot; | Dh
+| style=&quot;background:cyan; color:black&quot; | Dh
+| style=&quot;background:cyan; color:black&quot; | Dh
+| style=&quot;background:cyan; color:black&quot; | Dh
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+|-
+! A,4–A,5
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:cyan; color:black&quot; | Dh
+| style=&quot;background:cyan; color:black&quot; | Dh
+| style=&quot;background:cyan; color:black&quot; | Dh
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+|-
+! A,2–A,3
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:cyan; color:black&quot; | Dh
+| style=&quot;background:cyan; color:black&quot; | Dh
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+|-
+! colspan=&quot;11&quot; | Pairs
+|-
+|
+| 2
+| 3
+| 4
+| 5
+| 6
+| 7
+| 8
+| 9
+| 10
+| A
+|-
+! A,A
+| style=&quot;background:yellow; color:black&quot; | SP
+| style=&quot;background:yellow; color:black&quot; | SP
+| style=&quot;background:yellow; color:black&quot; | SP
+| style=&quot;background:yellow; color:black&quot; | SP
+| style=&quot;background:yellow; color:black&quot; | SP
+| style=&quot;background:yellow; color:black&quot; | SP
+| style=&quot;background:yellow; color:black&quot; | SP
+| style=&quot;background:yellow; color:black&quot; | SP
+| style=&quot;background:yellow; color:black&quot; | SP
+| style=&quot;background:yellow; color:black&quot; | SP
+|-
+! 10,10
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:red; color:black&quot; | S
+|-
+! 9,9
+| style=&quot;background:yellow; color:black&quot; | SP
+| style=&quot;background:yellow; color:black&quot; | SP
+| style=&quot;background:yellow; color:black&quot; | SP
+| style=&quot;background:yellow; color:black&quot; | SP
+| style=&quot;background:yellow; color:black&quot; | SP
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:yellow; color:black&quot; | SP
+| style=&quot;background:yellow; color:black&quot; | SP
+| style=&quot;background:red; color:black&quot; | S
+| style=&quot;background:red; color:black&quot; | S
+|-
+! 8,8
+| style=&quot;background:yellow; color:black&quot; | SP
+| style=&quot;background:yellow; color:black&quot; | SP
+| style=&quot;background:yellow; color:black&quot; | SP
+| style=&quot;background:yellow; color:black&quot; | SP
+| style=&quot;background:yellow; color:black&quot; | SP
+| style=&quot;background:yellow; color:black&quot; | SP
+| style=&quot;background:yellow; color:black&quot; | SP
+| style=&quot;background:yellow; color:black&quot; | SP
+| style=&quot;background:yellow; color:black&quot; | SP
+| style=&quot;background:white; color:black&quot; | Usp
+|-
+! 7,7
+| style=&quot;background:yellow; color:black&quot; | SP
+| style=&quot;background:yellow; color:black&quot; | SP
+| style=&quot;background:yellow; color:black&quot; | SP
+| style=&quot;background:yellow; color:black&quot; | SP
+| style=&quot;background:yellow; color:black&quot; | SP
+| style=&quot;background:yellow; color:black&quot; | SP
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+|-
+! 6,6
+| style=&quot;background:yellow; color:black&quot; | SP
+| style=&quot;background:yellow; color:black&quot; | SP
+| style=&quot;background:yellow; color:black&quot; | SP
+| style=&quot;background:yellow; color:black&quot; | SP
+| style=&quot;background:yellow; color:black&quot; | SP
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+|-
+! 5,5
+| style=&quot;background:cyan; color:black&quot; | Dh
+| style=&quot;background:cyan; color:black&quot; | Dh
+| style=&quot;background:cyan; color:black&quot; | Dh
+| style=&quot;background:cyan; color:black&quot; | Dh
+| style=&quot;background:cyan; color:black&quot; | Dh
+| style=&quot;background:cyan; color:black&quot; | Dh
+| style=&quot;background:cyan; color:black&quot; | Dh
+| style=&quot;background:cyan; color:black&quot; | Dh
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+|-
+! 4,4
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:yellow; color:black&quot; | SP
+| style=&quot;background:yellow; color:black&quot; | SP
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+|-
+! 2,2–3,3
+| style=&quot;background:yellow; color:black&quot; | SP
+| style=&quot;background:yellow; color:black&quot; | SP
+| style=&quot;background:yellow; color:black&quot; | SP
+| style=&quot;background:yellow; color:black&quot; | SP
+| style=&quot;background:yellow; color:black&quot; | SP
+| style=&quot;background:yellow; color:black&quot; | SP
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+| style=&quot;background:lime; color:black&quot; | H
+|}
+&lt;/center&gt;
+
+Key:
+:&lt;span style=&quot;background:red; color:black&quot;&gt;'''S'''&lt;/span&gt; = Stand
+:&lt;span style=&quot;background:lime; color:black&quot;&gt;'''H'''&lt;/span&gt; = Hit
+:&lt;span style=&quot;background:cyan; color:black&quot;&gt;'''Dh'''&lt;/span&gt; = Double (if not allowed, then hit)
+:&lt;span style=&quot;background:cyan; color:black&quot;&gt;'''Ds'''&lt;/span&gt; = Double (if not allowed, then stand)
+:&lt;span style=&quot;background:yellow; color:black&quot;&gt;'''SP'''&lt;/span&gt; = Split
+:&lt;span style=&quot;background:white; color:black&quot;&gt;'''Uh'''&lt;/span&gt; = Surrender (if not allowed, then hit)
+:&lt;span style=&quot;background:white; color:black&quot;&gt;'''Us'''&lt;/span&gt; = Surrender (if not allowed, then stand)
+:&lt;span style=&quot;background:white; color:black&quot;&gt;'''Usp'''&lt;/span&gt; = Surrender (if not allowed, then split)
+
+The bulk of basic strategy is common to all blackjack games, with most rule variations calling for changes in only a few situations. For example, to use the table above on a game with the stand on soft 17 rule (which favors the player, and is typically found only at higher-limit tables today) only 6 cells would need to be changed: hit on 11 ''vs.'' A, hit on 15 ''vs.'' A, stand on 17 ''vs.'' A, stand on A,7 ''vs.'' 2, stand on A,8 ''vs.'' 6, and split on 8,8 ''vs.'' A. Regardless of the specific rule variations, taking insurance or &quot;even money&quot; is never the correct play under basic strategy.&lt;ref name=&quot;wizardofodds.com&quot;/&gt;
+
+Estimates of the house edge for blackjack games quoted by casinos and gaming regulators are generally based on the assumption that the players follow basic strategy and do not systematically change their bet size.
+
+Most blackjack games have a house edge of between 0.5% and 1%, placing blackjack among the cheapest casino table games from the perspective of the player. Casino promotions such as complimentary match play vouchers or 2:1 blackjack payouts allow the player to acquire an advantage without deviating from basic strategy.
+
+===Composition-dependent strategy===
+Basic strategy is based upon a player's point total and the dealer's visible card. Players may be able to improve on this decision by considering the precise composition of their hand, not just the point total. For example, players should ordinarily stand when holding 12 against a dealer 4. However, in a single deck game, players should hit if their 12 consists of a 10 and a 2. The presence of a 10 in the player's hand has two consequences:&lt;ref name= wizard&gt;{{cite web | url= http://wizardofodds.com/blackjack/appendix3c.html | title= The Wizard of Odds | work=  Fine points of basic strategy in single-deck blackjack |accessdate=December 8, 2006}}&lt;/ref&gt;
+* It makes the player's 12 a worse hand to stand on (since the only way to avoid losing is for the dealer to go bust, which is less likely if there are fewer 10s left in the shoe).
+* It makes hitting safer, since the only way of going bust is to draw a 10, and this is less likely with a 10 already in the hand.
+
+However, even when basic and composition-dependent strategy lead to different actions, the difference in expected reward is small, and it becomes even smaller with more decks. Using a composition-dependent strategy rather than basic strategy in a single deck game reduces the house edge by 4 in 10,000, which falls to 3 in 100,000 for a six-deck game.&lt;ref name= wizard2&gt;{{cite web | url= http://wizardofodds.com/blackjack/appendix15.html | title= The Wizard of Odds | work=  Total Dependent and Composition Dependent Basic Strategy in Blackjack |accessdate=December 19, 2006}}&lt;/ref&gt;
+
+===Advantage play===
+{{Main|Advantage player}}
+Blackjack has been a high-profile target for advantage players since the 1960s. Advantage play is the attempt to win more using skills such as memory, computation, and observation. These techniques, while generally legal, can be powerful enough to give the player a long-term edge in the game, making them an undesirable customer for the casino and potentially leading to ejection or [[blacklist]]ing if they are detected. The main techniques of advantage play in blackjack are as follows:
+
+====Card counting====
+{{Main|Card counting}}
+
+During the course of a blackjack shoe, the dealer exposes the dealt cards. Careful accounting of the exposed cards allows a player to make inferences about the cards which remain to be dealt. These inferences can be used in the following ways:
+* Players can make larger bets when they have an advantage. For example, the players can increase the starting bet if there are many aces and tens left in the deck, in the hope of hitting a blackjack.
+* Players can deviate from basic strategy according to the composition of their undealt cards. For example, with many tens left in the deck, players might double down in more situations since there is a better chance of getting a good hand.
+
+A card counting system assigns a point score to each rank of card (e.g., 1 point for 2–6, 0 points for 7–9 and −1 point for 10–A). When a card is exposed, a counter adds the score of that card to a running total, the 'count'. A card counter uses this count to make betting and playing decisions according to a table which they have learned. The count starts at 0 for a freshly shuffled deck for &quot;balanced&quot; counting systems. Unbalanced counts are often started at a value which depends on the number of decks used in the game.
+
+Blackjack's house edge is usually between 0.5%–1% when players use basic strategy.&lt;ref&gt;{{cite web|url=http://www.beatingbonuses.com/blackjack.htm#table|title=Blackjack - Beating Bonuses|website=www.beatingbonuses.com}}&lt;/ref&gt; Card counting can give the player an edge of up to 2% over the house.&lt;ref name=&quot;TOB&quot;&gt;{{cite book |last1=Griffin |first1=Peter |title=The theory of blackjack : the compleat card counter's guide to the casino game of 21 |date=March 1, 1999 |publisher=Huntington Press |isbn=978-0929712130 |edition=6th}}&lt;/ref&gt;{{rp|5}}
+
+Card counting is most rewarding near the end of a complete shoe when as few as possible cards remain. Single-deck games are therefore particularly advantageous to the card counting player. As a result, casinos are more likely to insist that players do not reveal their cards to one another in single-deck games. In games with more decks of cards, casinos limit penetration by ending the shoe and reshuffling when one or more decks remain undealt. Casinos also sometimes use a shuffling machine to reintroduce the exhausted cards every time a deck has been played.
+
+Card counting is legal and is not considered cheating as long as the counter is not using an external device,&lt;ref name=&quot;TOB&quot; /&gt;{{rp|6–7}} but if a casino realizes a player is counting, the casino might inform them that they are no longer welcome to play blackjack. Sometimes a casino might ban a card counter from the property.&lt;ref&gt;[[Edward O. Thorp|Thorp, Edward O.]] (1966) ''Beat The Dealer'', Vintage Books, a Division of Random House, {{ISBN|978-0-394-70310-7}}, pp 132–136&lt;/ref&gt;
+
+The use of external devices to help counting cards is illegal in all US states that license blackjack card games.&lt;ref&gt;{{cite web|url=http://www.gambling-law-us.com/State-Laws/|title=State Gambling Laws|website=www.gambling-law-us.com|access-date=October 26, 2011|archive-url=https://web.archive.org/web/20111007151916/http://www.gambling-law-us.com/State-Laws/|archive-date=October 7, 2011|url-status=dead}}&lt;/ref&gt;
+
+====Shuffle tracking====
+{{main|Shuffle tracking}}
+Techniques other than card counting can swing the advantage of casino blackjack toward the player. All such techniques are based on the value of the cards to the player and the casino as originally conceived by [[Edward O. Thorp]].&lt;ref&gt;Edward Thorp: ''A Favorable Strategy for Twenty-One'', Proceedings of the National Academy of Sciences of the United States of America, Vol. 47, No. 1, 1961, pp. 110–112, [https://www.jstor.org/pss/70615 JSTOR], [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC285252/pdf/pnas00217-0125.pdf archive of PNAS].&lt;/ref&gt; One technique, mainly applicable in multi-deck games, involves tracking groups of cards (also known as slugs, clumps, or packs) during the play of the shoe, following them through the shuffle, and then playing and betting accordingly when those cards come into play from the new shoe. Shuffle tracking requires excellent eyesight and powers of visual estimation but is more difficult to detect since the player's actions are largely unrelated to the composition of the cards in the shoe.&lt;ref&gt;{{cite web|url=http://www.blackjackincolor.com/Shuffletracking2.htm|title=Blackjack in Color|work=Shuffle Tracking Counts}}&lt;/ref&gt;
+
+Arnold Snyder's articles in ''[[Blackjack Forum]]'' magazine brought shuffle tracking to the general public. His book, ''The Shuffle Tracker's Cookbook,'' mathematically analyzed the player edge available from shuffle tracking based on the actual size of the tracked slug. [[Jerry L. Patterson]] also developed and published a shuffle-tracking method for tracking favorable clumps of cards and cutting them into play and tracking unfavorable clumps of cards and cutting them out of play.&lt;ref&gt;''The Gambling Times Guide to Blackjack''; Gambling Times Incorporated, Hollywood, CA;  1984; Page 110; {{ISBN|0-89746-015-4}} Shuffle-Tracking An Easy Way to Start&lt;/ref&gt;&lt;ref&gt;''Break the Dealer''; by Jerry L. Patterson and Eddie Olsen; Perigee Books; A Division of Penguin Putnam;  1986; {{ISBN|0-399-51233-0}} Shuffle-Tracking; Chapter 6, Page 83&lt;/ref&gt;&lt;ref&gt;''Blackjack: A Winner's Handbook''; by Jerry L. Patterson; Perigee Books; A Division of Penguin Putnam; © 1990; {{ISBN|0-399-51598-4}}  Shuffle-Tracking; Chapter 4, Page 51&lt;/ref&gt;
+
+====Identifying concealed cards====
+The player can also gain an advantage by identifying cards from distinctive wear markings on their backs, or by [[hole carding]] (observing during the dealing process the front of a card dealt face down). These methods are generally legal although their status in particular jurisdictions may vary.
+
+==Side bets==
+Many blackjack tables offer a side bet on various outcomes including:&lt;ref&gt;{{cite web|title=The Wizard of Odds|work=Blackjack Side Bets|url=http://wizardofodds.com/blackjack/appendix8.html}}&lt;/ref&gt;
+*Player hand and dealer's up card sum to 19, 20, or 21 (&quot;Lucky Lucky&quot;)
+*Player initial hand is a pair (&quot;Perfect pairs&quot;)
+*Player initial hand is suited, suited and connected, or a suited K-Q (&quot;Royal match&quot;)
+*Player initial hand plus dealer's card makes a flush, straight, or three-of-a-kind [[three card poker|poker]] hand (&quot;21+3&quot;)
+*Player initial hand totals 20 (&quot;Lucky Ladies&quot;)
+*Dealer upcard is in between the value of the players two cards (&quot;In Bet&quot;)
+*First card drawn to the dealer will result in a dealer bust  (&quot;Bust It!&quot;)
+*One or both of the players cards is the same as the dealers card (&quot;Match the Dealer&quot;)
+
+The side wager is typically placed in a designated area next to the box for the main wager. A player wishing to wager on a side bet is usually required to place a wager on blackjack. Some games require that the blackjack wager should equal or exceed any side bet wager. A non-controlling player of a blackjack hand is usually permitted to place a side bet regardless of whether the controlling player does so.
+
+The house edge for side bets is generally far higher than for the blackjack game itself. Nonetheless side bets can be susceptible to card counting. A side count, designed specifically for a particular side bet, can improve the player edge. Only a few side bets, like &quot;Lucky Ladies&quot;, offer a sufficient win rate to justify the effort of advantage play.
+
+In team play it is common for team members to be dedicated toward counting only a sidebet using a specialized count.
+
+==Blackjack tournaments==
+Blackjack can be played in tournament form. Players start with an equal numbers of chips; the goal is to finish among the top chip-holders. Depending on the number of competitors, tournaments may be held over several rounds, with one or two players qualifying from each table after a set number of deals to meet the qualifiers from the other tables in the next round. Another tournament format, [[Elimination Blackjack]], drops the lowest-stacked player from the table at pre-determined points in the tournament. Good strategy for blackjack tournaments can differ from non-tournament strategy because of the added dimension of choosing the amount to be wagered. As in poker tournaments, players pay the casino an initial entry fee to participate in a tournament, and re-buys are sometimes permitted.
+
+==Video blackjack==
+[[Image:Video Blackjack Machine at Seven Feathers.jpg|thumb|right|250px|A video Blackjack machine at [[Seven Feathers Casino Resort|Seven Feathers Casino]].]]
+Some casinos, as well as general betting outlets, provide blackjack among a selection of casino-style games at electronic consoles. Video blackjack game rules are generally more favorable to the house; e.g., paying out only even money for winning blackjacks. Video and online blackjack games generally deal each round from a fresh shoe, rendering card counting ineffective in most situations.
+
+==Variants of the game==
+Blackjack is a member of a large family of traditional card games played recreationally all around the world. Most of these games have not been adapted for casino play. Furthermore, the casino game development industry is very active in producing blackjack variants, most of which are ultimately not adopted for widespread use in casinos. The following are the prominent twenty-one themed comparing card games which have been adapted or invented for use in casinos and have become established in the gambling industry.
+
+*'''[[Spanish 21]]''' provides players with many liberal blackjack rules, such as doubling down any number of cards (with the option to ''rescue'', or surrender only one wager to the house), payout bonuses for five or more card 21s, 6–7–8 21s, 7–7–7 21s, late surrender, and player blackjacks always winning and player 21s always winning, at the cost of having no 10 cards in the deck (though there are jacks, queens, and kings). An unlicensed version of Spanish 21 played without a hole card is found in Australian casinos under the name [[Pontoon (card game)|&quot;Pontoon&quot;]] (presumably borrowed from the British recreational blackjack-like game &quot;Pontoon&quot; which has substantially different rules).
+*'''21st-Century Blackjack''' (also known as &quot;Vegas Style&quot; Blackjack) is found in California card rooms. In this form of the game, a player bust does not always result in an automatic loss; depending on the casino, the player can still push if the dealer busts as well, although the dealer typically has to bust with a higher total.
+*'''[[Double Exposure Blackjack]]''' deals the first two cards of the dealer's hand face up. Blackjacks pay [[even money]], and players lose on ties; also, they can neither buy insurance nor can they surrender their hand (as both dealer's cards are exposed at the outset).
+*'''[[Double Attack Blackjack]]''' has very liberal blackjack rules and the option of increasing one's wager after seeing the dealer's up card. This game is dealt from a Spanish shoe, and blackjacks only pay even money.
+*'''[[Blackjack Switch]]''' is played over two hands whose second cards the player is allowed to interchange. For example, if the player is dealt 10–6 and 5–10, then the player can switch two cards to make hands of 10–10 and 6–5.  Natural blackjacks are paid 1:1 instead of the standard 3:2, and a dealer 22 is a push.
+*'''[[Super Fun 21]]''' allows a player to split a hand up to four times. If the player has six cards totaling 20, he automatically wins. Wins are paid 1:1.
+
+Examples of the many local traditional and recreational blackjack-like games include '''French/German Blackjack''', called ''Vingt-et-un'' (French: Twenty-one) or &quot;Siebzehn und Vier&quot; (German: Seventeen and Four). The French/German game does not allow splitting. An ace can only count as eleven, but two aces count as a blackjack. It is mostly played in private circles and barracks. A British variation is called &quot;Pontoon&quot;, the name being probably a corruption of &quot;Vingt-et-un&quot;.
+
+===TV show variations===
+Blackjack is also featured in various television shows. Here are a few shows inspired by the game.
+
+*'''''[[Gambit (game show)|Gambit]]''''' was a game show with [[Wink Martindale]] where couples answer questions to collect cards that could add up to 21.
+*'''''[[Catch 21]]''''' is a game show with [[Alfonso Ribeiro]] from ''[[The Fresh Prince of Bel-Air]]''. On this show, three players answer questions to earn cards in order to win cash and ties are not allowed.
+*From 1980 to 2006, there was a blackjack-based [[List of The Price is Right pricing games|pricing game]] on ''[[The Price is Right (U.S. game show)|The Price is Right]]'', called '''Hit Me'''. In this game, six grocery products were used, and five of those products' prices were multiplied by various numbers from 2 to 10, but with the one remaining product having the exact price. In order to win a large prize, the contestant had to achieve a score of 21 (which was usually done by picking a product whose price was multiplied by ten and the one that was correctly priced), or beat the house with any score that did not exceed 21.
+
+==Blackjack Hall of Fame==
+{{Main|Blackjack Hall of Fame}}
+
+In 2002, professional gamblers around the world were invited to nominate great blackjack players for admission into the [[Blackjack Hall of Fame]]. Seven members were inducted in 2002, with new people inducted every year after. The Hall of Fame is at the [[Barona Casino]] in [[San Diego]]. Members include [[Edward O. Thorp]], author of the 1960s book ''Beat the Dealer'' which proved that the game could be beaten with a combination of basic strategy and [[card counting]]; [[Ken Uston]], who popularized the concept of team play; [[Arnold Snyder]], author and editor of the ''[[Blackjack Forum]]'' trade journal; [[Stanford Wong]], author and popularizer of the &quot;Wonging&quot; technique of only playing at a positive count, and several others.
+
+== Blackjack in the arts ==
+Novels have been written around blackjack and the possibility of winning games via some kind of method. Among these were ''The Blackjack Hijack'' (Charles Einstein, 1976), later produced as the TV movie [[Nowhere to Run (1978 film)|''Nowhere to Run'']], and [[Bringing Down the House (book)|''Bringing Down the House'']] (Ben Mezrich), also filmed as [[21 (2008 film)|''21'']]. An almost identical theme was shown in the 2004 Canadian film ''[[The Last Casino]]''.
+
+In ''The Hangover'', an American comedy, four friends try to count cards to win back enough money to secure the release of their friend from the clutches of a notorious criminal they stole from the previous night while blacked out. A central part of the plot of ''[[Rain Man]]'' is that Raymond ([[Dustin Hoffman]]), an autistic [[savant syndrome|savant]], is able to win at blackjack by counting cards. In the 2014 film ''[[The Gambler (2014 film)|The Gambler]]'' we see Jim Bennett ([[Mark Wahlberg]]) playing high stakes Blackjack in order to win large sums of money. This movie displays different blackjack lingo and risky moves that have high rewards.
+
+==See also==
+* [[The Gambler (film series)]]
+* [[Glossary of blackjack terms]]
+* [[MIT Blackjack Team]]
+
+==Blackjack literature==
+* ''Beat the Dealer : A Winning Strategy for the Game of Twenty-One'', [[Edward O. Thorp]], 1966, {{ISBN|978-0-394-70310-7}}
+* ''Blackbelt in Blackjack'', [[Arnold Snyder]], 1998 (1980), {{ISBN|978-0-910575-05-8}}
+* ''Blackjack and the Law'', [[I. Nelson Rose]] and Robert A. Loeb, 1998, {{ISBN|0-910575-08-8}}
+* ''Blackjack: A Winner's Handbook'', [[Jerry L. Patterson]], 2001, (1978), {{ISBN|978-0-399-52683-1}}
+* ''Encyclopedia of Casino Twenty-One'', [[Michael Dalton (gambler)|Michael Dalton]], 2016, (1993), {{ISBN|1-879712-02-4}}
+* ''Ken Uston on Blackjack'', [[Ken Uston]], 1986,  {{ISBN|978-0-8184-0411-5}}
+* ''Knock-Out Blackjack'', Olaf Vancura and Ken Fuchs, 1998, {{ISBN|978-0-929712-31-4}}
+* ''Luck, Logic, and White Lies: The Mathematics of Games'', [[Jörg Bewersdorff]], 2004, {{ISBN|978-1-56881-210-6}}, 121–134, supplement: [http://bewersdorff-online.de/black-jack/ ''Blackjack calculator'' (JavaScript)]
+* ''Million Dollar Blackjack'', [[Ken Uston]], 1994 (1981), {{ISBN|978-0-89746-068-2}}
+* ''Playing Blackjack as a Business'', [[Lawrence Revere]], 1998 (1971), {{ISBN|978-0-8184-0064-3}}
+* ''Professional Blackjack'', [[Stanford Wong]], 1994 (1975), {{ISBN|978-0-935926-21-7}}
+* ''The Theory of Blackjack'', Peter Griffin, 1996 (1979), {{ISBN|978-0-929712-12-3}}
+* ''The Theory of Gambling and Statistical Logic'', [[Richard Arnold Epstein|Richard A. Epstein]], 1977, {{ISBN|978-0-12-240761-1}}, 215–251
+* ''The World's Greatest Blackjack Book'', Lance Humble and Carl Cooper, 1980, {{ISBN|978-0-385-15382-9}}
+* ''The Blackjack Life'', Nathaniel Tilton, 2012, {{ISBN|978-1935396338}}
+* [http://www.blackjackincolor.com/ BlackjackinColor]
+'''Regulation in the United Kingdom'''
+* [http://www.legislation.gov.uk/uksi/1994/2899/regulation/7/made The Gaming Clubs (Bankers' Games) No. 2899 Regulation 7 1994]
+* [http://www.legislation.gov.uk/uksi/2000/597/regulation/3/made The Gaming Clubs (Bankers' Games) (Amendment) No. 597 Regulation 3 2000]
+* [http://www.legislation.gov.uk/uksi/2002/1130/regulation/2/made The Gaming Clubs (Bankers' Games)(Amendment) No. 1130 Regulation 2 2002]
+
+==References==
+{{Reflist|30em}}
+
+==External links==
+&lt;!--===========================({{NoMoreLinks}})===============================--&gt;
+&lt;!--| PLEASE KEEP EXTERNAL LINKS TO A MINIMUM. WIKIPEDIA IS NOT A COLLECTION OF |--&gt;
+&lt;!--| LINKS.   There are dozens of links on this game across the internet,      |--&gt;
+&lt;!--| too much to fit here.  Therefore, this link will send you to an external  |--&gt;
+&lt;!--| list of links for Blackjack.                                              |--&gt;
+&lt;!--| Spamming links to unrelable sources is forbidden.   Please see            |--&gt;
+&lt;!--| [[WP:Reliable sources]].  Thank you.                                      |--&gt;
+&lt;!--|                                                                           |--&gt;
+&lt;!--|           Links that have not been verified WILL BE DELETED.              |--&gt;
+&lt;!--|  See [[Wikipedia:External links]] and [[Wikipedia:Spam]] for details      |--&gt;
+&lt;!--===========================({{NoMoreLinks}})===============================--&gt;
+*Search for {{Curlie|Games/Gambling/Blackjack|Blackjack}}
+
+{{Blackjack}}
+{{Banking games}}
+
+[[Category:Blackjack| ]]
+[[Category:Anglo-American card games]]
+[[Category:French deck card games]]
+[[Category:Banking games]]</text>
+      <sha1>9l71cepu2rqfnncthgdk5td6ceymkvu</sha1>
+    </revision>
+  </page>

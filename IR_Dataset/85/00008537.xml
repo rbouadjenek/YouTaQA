@@ -1,0 +1,425 @@
+  <page>
+    <title>Document type definition</title>
+    <ns>0</ns>
+    <id>8537</id>
+    <revision>
+      <id>941325723</id>
+      <parentid>941325623</parentid>
+      <timestamp>2020-02-17T22:50:35Z</timestamp>
+      <contributor>
+        <username>Reyk</username>
+        <id>378651</id>
+      </contributor>
+      <comment>reduce verbosity per [[Wikipedia:Manual_of_Style/Words_to_watch#Editorializing]] and [[MOS:NOTE]]</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{short description|Set of markup declarations that define a document type for an SGML-family markup language}}
+A '''document type definition''' ('''DTD''') is a set of ''markup declarations'' that define a ''document type'' for a [[SGML]]-family [[markup language]] ([[IBM Generalized Markup Language|GML]], [[SGML]], [[XML]], [[HTML]]).
+
+A DTD defines the valid building blocks of an XML document. It defines the document structure with a list of validated elements and attributes. A DTD can be declared inline inside an XML document, or as an external reference.&lt;ref&gt;{{cite web|title=Introduction to DTD|url=https://www.w3schools.com/xml/xml_dtd_intro.asp}}&lt;/ref&gt;
+
+[[XML]] uses a subset of [[SGML]] DTD.
+
+{{As of | 2009}}, newer [[XML namespace]]-aware [[XML schema|schema language]]s (such as [[W3C]] [[XML Schema (W3C)|XML Schema]] and [[International Organization for Standardization|ISO]] [[RELAX NG]]) have largely superseded DTDs. A namespace-aware version of DTDs is being developed as Part 9 of ISO [[DSDL]]. DTDs persist in applications that need special publishing characters, such as the [[List of XML and HTML character entity references|XML and HTML Character Entity References]], which derive from larger sets defined as part of the [[International Organization for Standardization|ISO]] [[SGML]] [[Technical standard|standard]] effort.
+
+== Associating DTDs with documents ==
+A DTD is associated with an XML or SGML document by means of a [[document type declaration]] (DOCTYPE). The DOCTYPE appears in the syntactic fragment ''doctypedecl'' near the start of an XML document.&lt;ref name=&quot;W3C, doctypedecl&quot; &gt;{{cite web
+ |title=doctypedecl
+ |url=http://www.w3.org/TR/2004/REC-xml11-20040204/#NT-doctypedecl
+ |work=Extensible Markup Language (XML) 1.1
+ |publisher=W3C
+}}&lt;/ref&gt; The declaration establishes that the document is an instance of the type defined by the referenced DTD.
+
+DOCTYPEs make two sorts of declaration:
+* an optional ''external subset''
+* an optional ''internal subset''.
+
+The declarations in the internal subset form part of the DOCTYPE in the document itself. The declarations in the external subset are located in a separate text file. The external subset may be referenced via a ''[[public identifier]]'' and/or a ''[[system identifier]]''. Programs for reading documents may not be required to read the external subset.
+
+Any valid SGML or XML document that references an ''external subset'' in its DTD, or whose body contains references to ''parsed external entities'' declared in its DTD (including those declared within its ''internal subset''), may only be partially parsed but cannot be fully validated by ''validating'' SGML or XML parsers in their ''standalone'' mode (this means that these validating parsers don't attempt to retrieve these external entities, and their replacement text is not accessible).
+
+However, such documents are still fully parsable in the ''non''-standalone mode of validating parsers, which signals an error if it can't locate these external entities with their specified [[Formal Public Identifier|''public identifier'' (FPI)]] or ''system identifier'' (a URI), or are inaccessible. (Notations declared in the DTD are also referencing external entities, but these unparsed entities are not needed for the validation of documents in the ''standalone'' mode of these parsers: the validation of all external entities referenced by notations is left to the application using the SGML or XML parser). Non-validating parsers ''may'' eventually attempt to locate these external entities in the ''non''-standalone mode (by partially interpreting the DTD only to resolve their declared parsable entities), but do not validate the content model of these documents.
+
+=== Examples ===
+The following example of a DOCTYPE contains both public and system identifiers:
+
+&lt;source lang=&quot;dtd&quot;&gt;
+&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot;
+&quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;/source&gt;
+
+All HTML 4.01 documents conform to one of three SGML DTDs. The public identifiers of these DTDs are constant and are as follows:
+* &lt;code&gt;[http://www.w3.org/TR/html4/strict.dtd -//W3C//DTD HTML 4.01//EN]&lt;/code&gt;
+* &lt;code&gt;[http://www.w3.org/TR/html4/loose.dtd -//W3C//DTD HTML 4.01 Transitional//EN]&lt;/code&gt;
+* &lt;code&gt;[http://www.w3.org/TR/html4/frameset.dtd -//W3C//DTD HTML 4.01 Frameset//EN]&lt;/code&gt;
+
+The system identifiers of these DTDs, if present in the DOCTYPE, are [[Uniform Resource Identifier|URI references]]. A system identifier usually points to a specific set of declarations in a resolvable location. SGML allows mapping public identifiers to system identifiers in [[XML Catalog|catalogs]] that are optionally available to the URI resolvers used by document [[parsing]] software.
+
+This DOCTYPE can only appear ''after'' the optional [[XHTML#XML declaration|XML declaration]], and before the document body, if the document syntax conforms to XML. This includes [[XHTML]] documents:
+
+&lt;source lang=&quot;xml&quot;&gt;
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot;
+&quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;!-- the XHTML document body starts here--&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+ ...
+&lt;/html&gt;
+&lt;/source&gt;
+
+An additional internal subset can also be provided after the external subset:
+
+&lt;source lang=&quot;xml&quot;&gt;
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot;
+&quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot; [
+  &lt;!-- an internal subset can be embedded here --&gt;
+]&gt;
+&lt;!-- the XHTML document body starts here--&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+ ...
+&lt;/html&gt;
+&lt;/source&gt;
+
+Alternatively, only the internal subset may be provided:
+
+&lt;source lang=&quot;xml&quot;&gt;
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;!DOCTYPE html [
+  &lt;!-- an internal subset can be embedded here --&gt;
+]&gt;
+&lt;!-- the XHTML document body starts here--&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+ ...
+&lt;/html&gt;
+&lt;/source&gt;
+
+Finally, the document type definition may include no subset at all; in that case, it just specifies that the document has a single top-level element (this is an implicit requirement for all valid XML and HTML documents, but not for document fragments or for all SGML documents, whose top-level elements may be different from the implied root element), and it indicates the type name of the root element:
+&lt;source lang=&quot;xml&quot;&gt;
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;!DOCTYPE html&gt;
+&lt;!-- the XHTML document body starts here--&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+ ...
+&lt;/html&gt;
+&lt;/source&gt;
+
+== Markup declarations ==
+DTDs describe the structure of a class of documents via element and attribute-list declarations. Element declarations name the allowable set of elements within the document, and specify whether and how declared elements and runs of character data may be contained within each element. Attribute-list declarations name the allowable set of attributes for each declared element, including the [[data type|type]] of each attribute value, if not an explicit set of valid values.
+
+DTD markup declarations declare which [[#Element type declarations|element type]]s, [[#Attribute list declarations|attribute list]]s, [[#Entity declarations|entities]], and [[#Notation declarations|notation]]s are allowed in the structure of the corresponding class of XML documents.&lt;ref&gt;{{cite book |title=Sams teach yourself XML in 10 minutes |url=https://books.google.com/books?id=_NqW2BjQtFIC&amp;lpg=PP1&amp;pg=PP1#v=onepage&amp;q&amp;f=false |last=Watt |first=Andrew H. |year=2002 |publisher=Sams Publishing|isbn = 9780672324710}}&lt;/ref&gt;
+
+=== Element type declarations ===
+An element type declaration defines an element and its possible content. A valid XML document contains only elements that are defined in the DTD.
+
+Various keywords and characters specify an element's content:
+* &lt;source lang=&quot;dtd&quot; inline&gt;EMPTY&lt;/source&gt; for specifying that the defined element allows no content, i.e., it cannot have any children elements, not even text elements (if there are whitespaces, they are ignored);
+* &lt;source lang=&quot;dtd&quot; inline&gt;ANY&lt;/source&gt; for specifying that the defined element allows any content, without restriction, i.e., that it may have any number (including none) and type of children elements (including text elements);
+* or an expression, specifying the only elements allowed as direct children in the content of the defined element; this content can be either:
+** a '''mixed content''', which means that the content may include at least one text element and zero or more named elements, but their order and number of occurrences cannot be restricted; this can be:
+*** &lt;source lang=&quot;dtd&quot; inline&gt;( #PCDATA )&lt;/source&gt;: historically meaning ''parsed character data'', this means that only one text element is allowed in the content (no quantifier is allowed);
+*** &lt;source lang=&quot;dtd&quot; inline&gt;( #PCDATA | ''element name'' | ... )*&lt;/source&gt;: a limited choice (in an exclusive list between parentheses and separated by &quot;&lt;source lang=&quot;dtd&quot; inline&gt;|&lt;/source&gt;&quot; pipe characters and terminated by the required &quot;&lt;source lang=&quot;dtd&quot; inline&gt;*&lt;/source&gt;&quot; quantifier) of two or more child elements (including only text elements or the specified named elements) may be used in any order and number of occurrences in the content.
+** an '''element content''', which means that there must be no text elements in the children elements of the content (all whitespaces encoded between child elements are then ignored, just like comments). Such element content is specified as ''content particle'' in a variant of [[Backus–Naur form]] without terminal symbols and element names as non-terminal symbols. Element content consists of:
+*** a '''content particle''' can be either the name of an element declared in the DTD, or a ''sequence list'' or ''choice list''. It may be followed by an optional ''quantifier''.
+**** a '''sequence list''' means an ordered list (specified between parentheses and separated by a &quot;&lt;source lang=&quot;dtd&quot; inline&gt;,&lt;/source&gt;&quot; comma character) of one or more ''content particles'': all the ''content particles'' must appear successively as direct children in the content of the defined element, at the specified position and relative order;
+**** a '''choice list''' means a mutually exclusive list (specified between parentheses and separated by a &quot;&lt;source lang=&quot;dtd&quot; inline&gt;|&lt;/source&gt;&quot; pipe character) of two or more ''content particles'': only one of these ''content particles'' may appear in the content of the defined element at the same position.
+*** A '''quantifier''' is a single character that immediately follows the specified item it applies to, to restrict the number of successive occurrences of these items at the specified position in the content of the element; it may be either:
+**** &lt;source lang=&quot;dtd&quot; inline&gt;+&lt;/source&gt; for specifying that there must be one or more occurrences of the item — the effective content of each occurrence may be different;
+**** &lt;source lang=&quot;dtd&quot; inline&gt;*&lt;/source&gt; for specifying that any number (zero or more) of occurrences is allowed — the item is optional and the effective content of each occurrence may be different;
+**** &lt;source lang=&quot;dtd&quot; inline&gt;?&lt;/source&gt; for specifying that there must not be more than one occurrence — the item is optional;
+**** If there is no quantifier, the specified item must occur exactly one time at the specified position in the content of the element.
+
+For example:
+&lt;source lang=&quot;dtd&quot;&gt;
+&lt;!ELEMENT html (head, body)&gt;
+&lt;!ELEMENT p (#PCDATA | p | ul | dl | table | h1|h2|h3)*&gt;
+&lt;/source&gt;
+
+Element type declarations are ignored by ''non-validating'' SGML and XML parsers (in which cases, any elements are accepted in any order, and in any number of occurrences in the parsed document), but these declarations are still checked for form and validity.
+
+=== Attribute list declarations ===
+An attribute list specifies for a given element type the list of all possible attribute associated with that type. For each possible attribute, it contains:
+* the declared name of the attribute,
+* its data type (or an enumeration of its possible values),
+* and its default value.&lt;ref&gt;[http://www.w3.org/TR/xml11/#dt-attdecl ''Attribute-list Declaration''], Specifications of ''Extensible Markup Language'' (XML) 1.1, W3C.&lt;/ref&gt;
+
+For example:
+&lt;source lang=&quot;dtd&quot;&gt;
+&lt;!ATTLIST img
+   src    CDATA          #REQUIRED
+   id     ID             #IMPLIED
+   sort   CDATA          #FIXED &quot;true&quot;
+   print  (yes | no) &quot;yes&quot;
+&gt;
+&lt;/source&gt;
+
+Here are some attribute types supported by both SGML and XML:
+; &lt;source lang=&quot;dtd&quot; inline&gt;CDATA&lt;/source&gt;: this type means ''characters data'' and indicates that the effective value of the attribute can be any textual value, unless the attribute is specified as fixed (the comments in the DTD may further document values that are effectively accepted, but the DTD syntax does not allow such precise specification);
+; &lt;source lang=&quot;dtd&quot; inline&gt;ID&lt;/source&gt;: the effective value of the attribute must be a valid identifier, and it is used to define and anchor to the current element the target of references using this defined identifier (including as document fragment identifiers that may be specified at end of an URI after a &quot;#&quot; sign); it is an error if distinct elements in the same document are defining the same identifier; the uniqueness constraint also implies that the identifier itself carries no other semantics and that identifiers must be treated as opaque in applications; XML also predefines the standard pseudo-attribute &quot;&lt;source lang=&quot;dtd&quot; inline&gt;xml:id&lt;/source&gt;&quot; with this type, without needing any declaration in the DTD, so the uniqueness constraint also applies to these defined identifiers when they are specified anywhere in a XML document.
+; &lt;source lang=&quot;dtd&quot; inline&gt;IDREF&lt;/source&gt; or &lt;source lang=&quot;dtd&quot; inline&gt;IDREFS&lt;/source&gt;: the effective value of the attribute can only be a valid identifier (or a space-separated list of such identifiers) and must be referencing the unique element defined in the document with an attribute declared with the type &lt;source lang=&quot;dtd&quot; inline&gt;ID&lt;/source&gt; in the DTD (or the unique element defined in an XML document with a pseudo-attribute &quot;&lt;source lang=&quot;dtd&quot; inline&gt;xml:id&lt;/source&gt;&quot;) and whose effective value is the same identifier;
+; &lt;source lang=&quot;dtd&quot; inline&gt;NMTOKEN&lt;/source&gt; or &lt;source lang=&quot;dtd&quot; inline&gt;NMTOKENS&lt;/source&gt;: the effective value of the attribute can only be a valid name token (or a spaced-separated list of such name tokens), but it is not restricted to a unique identifier within the document; this name may carry supplementary and application-dependent semantics and may require additional naming constraints, but this is out of scope of the DTD;
+; &lt;source lang=&quot;dtd&quot; inline&gt;ENTITY&lt;/source&gt; or &lt;source lang=&quot;dtd&quot; inline&gt;ENTITIES&lt;/source&gt;: the effective value of the attribute can only be the name of an unparsed external entity (or a space-separated list of such names), which must also be declared in the document type declaration; this type is not supported in HTML parsers, but is valid in SGML and XML 1.0 or 1.1 (including XHTML and SVG);
+; &lt;source lang=&quot;dtd&quot; inline&gt;(''value1''|...)&lt;/source&gt;: the effective value of the attribute can only be one of the enumerated list (specified between parentheses and separated by a &quot;&lt;source lang=&quot;dtd&quot; inline&gt;|&lt;/source&gt;&quot; pipe character) of textual values, where each value in the enumeration is possibly specified between &lt;source lang=&quot;dtd&quot; inline&gt;'&lt;/source&gt;single&lt;source lang=&quot;dtd&quot; inline&gt;'&lt;/source&gt; or &lt;source lang=&quot;dtd&quot; inline&gt;&quot;&lt;/source&gt;double&lt;source lang=&quot;dtd&quot; inline&gt;&quot;&lt;/source&gt; quotation marks if it's not a simple name token;
+; &lt;source lang=&quot;dtd&quot; inline&gt;NOTATION (''notation1''|...)&lt;/source&gt;: the effective value of the attribute can only be any one of the enumerated list (specified between parentheses and separated by a &quot;&lt;source lang=&quot;dtd&quot; inline&gt;|&lt;/source&gt;&quot; pipe character) of notation names, where each notation name in the enumeration must also be declared in the document type declaration; this type is not supported in HTML parsers, but is valid in SGML and XML 1.0 or 1.1 (including XHTML and SVG).
+
+A default value can define whether an attribute must occur (&lt;source lang=&quot;dtd&quot; inline&gt;#REQUIRED&lt;/source&gt;) or not (&lt;source lang=&quot;dtd&quot; inline&gt;#IMPLIED&lt;/source&gt;), or whether it has a fixed value (&lt;source lang=&quot;dtd&quot; inline&gt;#FIXED&lt;/source&gt;), or which value should be used as a default value (&quot;…&quot;) in case the given attribute is left out in an XML tag.
+
+Attribute list declarations are ignored by ''non-validating'' SGML and XML parsers (in which cases any attribute is accepted within all elements of the parsed document), but these declarations are still checked for well-formedness and validity.
+
+=== Entity declarations ===
+An entity is similar to a [[macro (computer science)|macro]]. The entity declaration assigns it a value that is retained throughout the document. A common use is to have a name more recognizable than a numeric character reference for an unfamiliar character.&lt;ref&gt;{{cite web |url=https://www.w3schools.com/xml/xml_dtd_entities.asp |title=DTD Entities |work=DTD Tutorial |publisher=W3Schools}}&lt;/ref&gt; Entities help to improve legibility of an XML text. In general, there are two types: internal and external.
+* '''Internal (parsed) entities''' are associating a name with any arbitrary textual content defined in their declaration (which may be in the ''internal subset'' or in the ''external subset'' of the DTD declared in the document). When a named entity reference is then encountered in the rest of the document (including in the rest of the DTD), and if this entity name has effectively been defined as a parsed entity, the reference itself is replaced immediately by the textual content defined in the parsed entity, and the parsing continues within this replacement text.
+** '''Predefined named character entities''' are similar to internal entities: 5 of them however are treated specially in all SGML, HTML and XML parsers. These entities are a bit different from normal parsed entities, because when a named character entity reference is encountered in the document, the reference is also replaced immediately by the character content defined in the entity, but the parsing continues '''after''' the replacement text, which is immediately inserted literally in the currently parsed token (if such character is permitted in the textual value of that token). This allows some characters that are needed for the core syntax of HTML or XML themselves to be escaped from their special syntactic role (notably &quot;&amp;&quot; which is reserved for beginning entity references, &quot;&lt;&quot; or &quot;&gt;&quot; which delimit the markup tags, and &quot;double&quot; or 'single' quotation marks, which delimit the values of attributes and entity definitions). Predefined character entities also include numeric character references that are handled the same way and can also be used to escape the characters they represent, or to bypass limitations in the character repertoire supported by the document encoding.
+** In basic profiles for SGML or in HTML documents, the declaration of internal entities is not possible (because external DTD subsets are not retrieved, and internal DTD subsets are not supported in these basic profiles).
+** Instead, HTML standards predefine a large set of several hundred named character entities, which can still be handled as standard parsed entities defined in the DTD used by the parser.
+* '''External entities''' refer to external storage objects. They are just declared by a unique name in the document, and defined with a public identifier (an FPI) and/or a system identifier (interpreted as an [[URI]]) specifying where the source of their content. They exist in fact in two variants:
+** '''parsed external entities''' (most often defined with a SYSTEM identifier indicating the URI of their content) that are ''not'' associated in their definition to a named annotation, in which case validating XML or SGML parsers retrieve their contents and parse them as if they were declared as internal entities (the external entity containing their effective replacement text);
+** '''unparsed external entities''' that are defined and associated with an annotation name, in which case they are treated as opaque references and signaled as such to the application using the SGML or XML parser: their interpretation, retrieval and parsing is left to the application, according to the types of annotations it supports (see the next section about annotations and for examples of unparsed external entities).
+** External entities are not supported in basic profiles for SGML or in HTML documents, but are valid in full implementations of SGML and in XML 1.0 or 1.1 (including XHTML and SVG, even if they are not strictly needed in those document types).
+
+An example of internal entity declarations (here in an internal DTD subset of an SGML document) is:
+&lt;source lang=&quot;dtd&quot;&gt;
+&lt;!DOCTYPE sgml [
+  &lt;!ELEMENT sgml ANY&gt;
+  &lt;!ENTITY % std       &quot;standard SGML&quot;&gt;
+  &lt;!ENTITY % signature &quot; &amp;#x2014; &amp;author;.&quot;&gt;
+  &lt;!ENTITY % question  &quot;Why couldn&amp;#x2019;t I publish my books directly in %std;?&quot;&gt;
+  &lt;!ENTITY % author    &quot;William Shakespeare&quot;&gt;
+]&gt;
+&lt;/source&gt;
+&lt;source lang=&quot;xml&quot;&gt;
+&lt;sgml&gt;&amp;question;&amp;signature;&lt;/sgml&gt;
+&lt;/source&gt;
+
+Internal entities may be defined in any order, as long as they are not referenced and parsed in the DTD or in the body of the document, in their order of parsing: it is valid to include a reference to a still undefined entity within the content of a parsed entity, but it is invalid to include anywhere else any named entity reference before this entity has been fully defined, including all other internal entities referenced in its defined content (this also prevents circular or recursive definitions of internal entities). This document is parsed as if it was:
+&lt;source lang=&quot;dtd&quot;&gt;
+&lt;!DOCTYPE sgml [
+  &lt;!ELEMENT sgml ANY&gt;
+  &lt;!ENTITY % std       &quot;standard SGML&quot;&gt;
+  &lt;!ENTITY % signature &quot; — &amp;author;.&quot;&gt;
+  &lt;!ENTITY % question  &quot;Why couldn’t I publish my books directly in standard SGML?&quot;&gt;
+  &lt;!ENTITY % author    &quot;William Shakespeare&quot;&gt;
+]&gt;
+&lt;/source&gt;
+&lt;source lang=&quot;xml&quot;&gt;
+&lt;sgml&gt;Why couldn’t I publish my books directly in standard SGML? — William Shakespeare.&lt;/sgml&gt;
+&lt;/source&gt;
+
+Reference to the &quot;author&quot; internal entity is not substituted in the replacement text of the &quot;signature&quot; internal entity. Instead, it is replaced only when the &quot;signature&quot; entity reference is parsed within the content of the &quot;sgml&quot; element, but only by validating parsers (non-validating parsers do not substitute entity references occurring within contents of element or within attribute values, in the body of the document.
+
+This is possible because the replacement text specified in the internal entity definitions permits a distinction between '''parameter''' entity references (that are introduced by the &quot;%&quot; character and whose replacement applies to the parsed DTD contents) and '''general''' entity references (that are introduced by the &quot;&amp;&quot; character and whose replacement is delayed until they are effectively parsed and validated). The &quot;%&quot; character for introducing parameter entity references in the DTD loses its special role outside the DTD and it becomes a literal character.
+
+However, the references to predefined numeric character entities are substituted wherever they occur, without needing a validating parser (they are only introduced by the &quot;&amp;&quot; character).
+
+=== Notation declarations ===
+Notations are used in SGML or XML. They provide a complete reference to unparsed external entities whose interpretation is left to the application (which interprets them directly or retrieves the external entity themselves), by assigning them a simple name, which is usable in the body of the document. For example, notations may be used to reference non-XML data in an XML 1.1 document. For example, to annotate SVG images to associate them with a specific renderer:
+&lt;source lang=&quot;dtd&quot;&gt;
+&lt;!NOTATION type-image-svg SYSTEM &quot;image/svg&quot;&gt;
+&lt;/source&gt;
+
+This declares the [[MIME type]] of external images with this type, and associates it with a notation name &quot;type-image-svg&quot;. However, notation names usually follow a naming convention that is specific to the application generating or using the notation: notations are interpreted as additional meta-data whose effective content is an external entity and either a PUBLIC FPI, registered in the catalogs used by XML or SGML parsers, or a SYSTEM URI, whose interpretation is application dependent (here a MIME type, interpreted as a relative URI, but it could be an absolute URI to a specific renderer, or a URN indicating an OS-specific object identifier such as a UUID).
+
+The declared notation name must be unique within all the document type declaration, i.e. in the external subset as well as the internal subset, at least for conformance with XML.&lt;ref&gt;[http://www.w3.org/TR/REC-xml/#Notations ''Notation Declarations''], Specifications of ''Extensible Markup Language'' (XML) 1.0, W3C.&lt;/ref&gt;&lt;ref&gt;[http://www.w3.org/TR/xml11/#NT-PublicID ''Notation Declarations''], Specifications of ''Extensible Markup Language'' (XML) 1.1, W3C.&lt;/ref&gt;
+
+Notations can be associated to unparsed external entities included in the body of the SGML or XML document. The &lt;source lang=&quot;dtd&quot; inline&gt;PUBLIC&lt;/source&gt; or &lt;source lang=&quot;dtd&quot; inline&gt;SYSTEM&lt;/source&gt; parameter of these external entities specifies the FPI and/or the URI where the unparsed data of the external entity is located, and the additional &lt;source lang=&quot;dtd&quot; inline&gt;NDATA&lt;/source&gt; parameter of these defined entities specifies the additional notation (i.e., effectively the MIME type here). For example:
+&lt;source lang=&quot;dtd&quot;&gt;
+&lt;!DOCTYPE sgml [
+  &lt;!ELEMENT sgml (img)*&gt;
+
+  &lt;!ELEMENT img EMPTY&gt;
+  &lt;!ATTLIST img
+     data ENTITY #IMPLIED&gt;
+
+  &lt;!ENTITY   example1SVG     SYSTEM &quot;example1.svg&quot; NDATA example1SVG-rdf&gt;
+  &lt;!NOTATION example1SVG-rdf SYSTEM &quot;example1.svg.rdf&quot;&gt;
+]&gt;
+&lt;/source&gt;
+&lt;source lang=&quot;xml&quot;&gt;
+&lt;sgml&gt;
+  &lt;img data=&quot;example1SVG&quot; /&gt;
+&lt;/sgml&gt;
+&lt;/source&gt;
+
+Within the body of the SGML document, these referenced external entities (whose name is specified between &quot;&amp;&quot; and &quot;;&quot;) are ''not'' replaced like usual named entities (defined with a CDATA value), but are left as distinct unparsed tokens that may be used either as the value of an element attribute (like above) or within the element contents, provided that either the DTD allows such external entities in the declared content type of elements or in the declared type of attributes (here the &lt;source lang=&quot;dtd&quot; inline&gt;ENTITY&lt;/source&gt; type for the &lt;source lang=&quot;dtd&quot; inline&gt;data&lt;/source&gt; attribute), or the SGML parser is not validating the content.
+
+Notations may also be associated directly to elements as additional meta-data, without associating them to another external entity, by giving their names as possible values of some additional attributes (also declared in the DTD within the &lt;source lang=&quot;dtd&quot; inline&gt;&lt;!ATTLIST ...&gt;&lt;/source&gt; declaration of the element). For example:
+&lt;source lang=&quot;dtd&quot;&gt;
+&lt;!DOCTYPE sgml [
+  &lt;!ELEMENT sgml (img)*&gt;
+   &lt;!--
+     the optional &quot;type&quot; attribute value can only be set to this notation.
+   --&gt;
+  &lt;!ATTLIST sgml
+    type  NOTATION (
+      type-vendor-specific ) #IMPLIED&gt;
+
+  &lt;!ELEMENT img ANY&gt; &lt;!-- optional content can be only parsable SGML or XML data --&gt;
+   &lt;!--
+     The optional &quot;title&quot; attribute value must be parsable as text.
+     The optional &quot;data&quot; attribute value is set to an unparsed external entity.
+     The optional &quot;type&quot; attribute value can only be one of the two notations.
+   --&gt;
+  &lt;!ATTLIST img
+    title CDATA              #IMPLIED
+    data  ENTITY             #IMPLIED
+    type  NOTATION (
+      type-image-svg |
+      type-image-gif )       #IMPLIED&gt;
+
+  &lt;!--
+    Notations are referencing external entities and may be set in the &quot;type&quot; attributes above,
+    or must be referenced by any defined external entities that cannot be parsed.
+  --&gt;
+  &lt;!NOTATION type-image-svg       PUBLIC &quot;-//W3C//DTD SVG 1.1//EN&quot;
+     &quot;http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd&quot;&gt;
+  &lt;!NOTATION type-image-gif       PUBLIC &quot;image/gif&quot;&gt;
+  &lt;!NOTATION type-vendor-specific PUBLIC &quot;application/VND.specific+sgml&quot;&gt;
+
+  &lt;!ENTITY example1SVGTitle &quot;Title of example1.svg&quot;&gt; &lt;!-- parsed internal entity --&gt;
+  &lt;!ENTITY example1SVG      SYSTEM &quot;example1.svg&quot;&gt; &lt;!-- parsed external entity --&gt;
+  &lt;!ENTITY example1GIFTitle &quot;Title of example1.gif&quot;&gt; &lt;!-- parsed internal entity --&gt;
+  &lt;!ENTITY example1GIF      SYSTEM &quot;example1.gif&quot; NDATA type-image-gif&gt; &lt;!-- unparsed external entity --&gt;
+]&gt;
+&lt;/source&gt;
+&lt;source lang=&quot;xml&quot;&gt;
+&lt;sgml type=&quot;type-vendor-specific&quot;&gt;
+  &lt;!-- an SVG image is parsable as valid SGML or XML text --&gt;
+  &lt;img title=&quot;&amp;example1SVGTitle;&quot; type=&quot;type-image-svg&quot;&gt;&amp;example1SVG;&lt;/img&gt;
+
+  &lt;!-- it can also be referenced as an unparsed external entity --&gt;
+  &lt;img title=&quot;&amp;example1SVGTitle;&quot; data=&quot;example1SVG&quot; /&gt;
+
+  &lt;!-- a GIF image is not parsable and can only be referenced as an external entity --&gt;
+  &lt;img title=&quot;&amp;example1GIFTitle;&quot; data=&quot;example1GIF&quot; /&gt;
+&lt;/sgml&gt;
+&lt;/source&gt;
+
+The example above shows a notation named &quot;type-image-svg&quot; that references the standard public FPI and the system identifier (the standard URI) of an SVG 1.1 document, instead of specifying just a system identifier as in the first example (which was a relative URI interpreted locally as a MIME type). This annotation is referenced directly within the unparsed &quot;type&quot; attribute of the &quot;img&quot; element, but its content is not retrieved. It also declares another notation for a vendor-specific application, to annotate the &quot;sgml&quot; root element in the document. In both cases, the declared notation named is used directly in a declared &quot;type&quot; attribute, whose content is specified in the DTD with the &quot;NOTATION&quot; attribute type (this &quot;type&quot; attribute is declared for the &quot;sgml&quot; element, as well as for the &quot;img&quot; element).
+
+However, the &quot;title&quot; attribute of the &quot;img&quot; element specifies the internal entity &quot;example1SVGTitle&quot; whose declaration that does not define an annotation, so it is parsed by validating parsers and the entity replacement text is &quot;Title of example1.svg&quot;.
+
+The content of the &quot;img&quot; element references another external entity &quot;example1SVG&quot; whose declaration also does not define an notation, so it is also parsed by validating parsers and the entity replacement text is located by its defined SYSTEM identifier &quot;example1.svg&quot; (also interpreted as a relative URI). The effective content for the &quot;img&quot; element be the content of this second external resource. The difference with the GIF image, is that the SVG image is parsed within the SGML document, according to the declarations in the DTD, where the GIF image is just referenced as an opaque external object (which is not parsable with SGML) via its &quot;data&quot; attribute (whose value type is an opaque ENTITY).
+
+Only one notation name may be specified in the value of ENTITY attributes (there's no support in SGML, XML 1.0 or XML 1.1 for multiple notation names in the same declared external ENTITY, so separate attributes are needed). However multiple external entities may be referenced (in a space-separated list of names) in attributes declared with type ENTITIES, and where each named external entity is also declared with its own notation).
+
+Notations are also completely opaque for XML and SGML parsers, so they are not differentiated by the type of the external entity that they may reference (for these parsers they just have a unique name associated to a public identifier (an FPI) and/or a system identifier (a URI)).
+
+Some applications (but not XML or SGML parsers themselves) also allow referencing notations indirectly by naming them in the &lt;source lang=&quot;dtd&quot; inline&gt;&quot;URN:''name''&quot;&lt;/source&gt; value of a standard CDATA attribute, everywhere a URI can be specified. However this behaviour is application-specific, and requires that the application maintains a catalog of known URNs to resolve them into the notations that have been parsed in a standard SGML or XML parser. This use allows notations to be defined only in a DTD stored as an external entity and referenced only as the external subset of documents, and allows these documents to remain compatible with validating XML or SGML parsers that have no direct support for notations.
+
+Notations are not used in HTML, or in basic profiles for XHTML and SVG, because:
+* All external entities used by these standard document types are referenced by simple attributes, declared with the CDATA type in their standard DTD (such as the &quot;href&quot; attribute of an anchor &quot;a&quot; element, or the &quot;src&quot; attribute of an image &quot;img&quot; element, whose values are interpreted as a URI, without needing any catalog of public identifiers, i.e., known FPI)
+* All external entities for additional meta-data are referenced by either:
+** Additional attributes (such as ''type'', which indicates the MIME type of the external entity, or the ''charset'' attribute, which indicates its encoding)
+** Additional elements (such as ''link'' or ''meta'' in HTML and XHTML) within their own attributes
+** Standard pseudo-attributes in XML and XHTML (such as ''xml:lang'', or ''xmlns'' and ''xmlns:*'' for namespace declarations).
+
+Even in validating SGML or XML 1.0 or XML 1.1 parsers, the external entities referenced by an FPI and/or URI in declared notations are not retrieved automatically by the parsers themselves. Instead, these parsers just provide to the application the parsed FPI and/or URI associated to the notations found in the parsed SGML or XML document, and with a facility for a dictionary containing all notation names declared in the DTD; these validating parsers also check the uniqueness of notation name declarations, and report a validation error if some notation names are used anywhere in the DTD or in the document body but not declared:
+* If the application can't use any notation (or if their FPI and/or URI are unknown or not supported in their local catalog), these notations may be either ignored silently by the application or the application could signal an error.
+* Otherwise, the applications decide themselves how to interpret them, then if the external entities must be retrieved and then parsed separately.
+* Applications may then signal an error, if such interpretation, retrieval or separate parsing fails.
+* Unrecognized notations that may cause an application to signal an error should not block interpretation of the validated document using them.
+
+== XML DTDs and schema validation ==
+The XML DTD syntax is one of several [[XML schema]] languages. However, many of the schema languages do not fully replace the XML DTD. Notably, the XML DTD allows defining entities and notations that have no direct equivalents in DTD-less XML (because internal entities and parsable external entities are not part of XML schema languages, and because other unparsed external entities and notations have no simple equivalent mappings in most XML schema languages).
+
+Most XML schema languages are only replacements for element declarations and attribute list declarations, in such a way that it becomes possible to parse XML documents with ''non-validating'' XML parsers (if the only purpose of the external DTD subset was to define the schema). In addition, documents for these XML schema languages must be parsed separately, so validating the schema of XML documents in pure standalone mode is not really possible with these languages: the document type declaration remains necessary for at least identifying (with a [[XML Catalog]]) the schema used in the parsed XML document and that is validated in another language.
+
+A common misconception holds that a ''non-validating'' XML parser does not have to read document type declarations, when in fact, the document type declarations must still be scanned for correct syntax as well as validity of declarations, and the parser must still parse all entity declarations in the ''internal subset'', and substitute the replacement texts of internal entities occurring anywhere in the document type declaration or in the document body.
+
+A ''non-validating'' parser may, however, elect not to read parsable ''external entities'' (including the ''external subset''), and does not have to honor the content model restrictions defined in element declarations and in attribute list declarations.
+
+If the XML document depends on parsable external entities (including the specified ''external subset'', or parsable external entities declared in the ''internal subset''), it should assert &lt;code&gt;standalone=&quot;no&quot;&lt;/code&gt; in its [[XML declaration]]. The validating DTD may be identified by using [[XML Catalog]]s to retrieve its specified ''external subset''.
+
+In the example below, the XML document is declared with &lt;code&gt;standalone=&quot;no&quot;&lt;/code&gt; because it has an external subset in its document type declaration:
+&lt;source lang=&quot;xml&quot;&gt;
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;
+&lt;!DOCTYPE people_list SYSTEM &quot;example.dtd&quot;&gt;
+&lt;people_list /&gt;
+&lt;/source&gt;
+
+If the XML document type declaration includes any SYSTEM identifier for the external subset, it can't be safely processed as standalone: the URI should be retrieved, otherwise there may be unknown named character entities whose definition may be needed to correctly parse the effective XML syntax in the internal subset or in the document body (the XML syntax parsing is normally performed ''after'' the substitution of all named entities, excluding the five entities that are predefined in XML and that are implicitly substituted ''after'' parsing the XML document into lexical tokens). If it just includes any PUBLIC identifier, it ''may'' be processed as standalone, if the XML processor knows this PUBLIC identifier in its local catalog from where it can retrieve an associated DTD entity.
+
+== XML DTD schema example ==
+An example of a very simple external XML DTD to describe the schema of a list of persons might consist of:
+&lt;source lang=&quot;dtd&quot;&gt;
+&lt;!ELEMENT people_list (person)*&gt;
+&lt;!ELEMENT person (name, birthdate?, gender?, socialsecuritynumber?)&gt;
+&lt;!ELEMENT name (#PCDATA)&gt;
+&lt;!ELEMENT birthdate (#PCDATA)&gt;
+&lt;!ELEMENT gender (#PCDATA)&gt;
+&lt;!ELEMENT socialsecuritynumber (#PCDATA)&gt;
+&lt;/source&gt;
+
+Taking this line by line:
+# &lt;code&gt;people_list&lt;/code&gt; is a valid element name, and an instance of such an element contains any number of &lt;code&gt;person&lt;/code&gt; elements. The &lt;code&gt;*&lt;/code&gt; denotes there can be 0 or more &lt;code&gt;person&lt;/code&gt; elements within the &lt;code&gt;people_list&lt;/code&gt; element.
+# &lt;code&gt;person&lt;/code&gt; is a valid element name, and an instance of such an element contains one element named &lt;code&gt;name&lt;/code&gt;, followed by one named &lt;code&gt;birthdate&lt;/code&gt; (optional), then &lt;code&gt;gender&lt;/code&gt; (also optional) and &lt;code&gt;socialsecuritynumber&lt;/code&gt; (also optional). The &lt;code&gt;?&lt;/code&gt; indicates that an element is optional. The reference to the &lt;code&gt;name&lt;/code&gt; element name has no &lt;code&gt;?&lt;/code&gt;, so a &lt;code&gt;person&lt;/code&gt; element ''must'' contain a &lt;code&gt;name&lt;/code&gt; element.
+# &lt;code&gt;name&lt;/code&gt; is a valid element name, and an instance of such an element contains &quot;parsed character data&quot; (#PCDATA).
+# &lt;code&gt;birthdate&lt;/code&gt; is a valid element name, and an instance of such an element contains parsed character data.
+# &lt;code&gt;gender&lt;/code&gt; is a valid element name, and an instance of such an element contains parsed character data.
+# &lt;code&gt;socialsecuritynumber&lt;/code&gt; is a valid element name, and an instance of such an element contains parsed character data.
+
+An example of an XML file that uses and conforms to this DTD follows. The DTD is referenced here as an external subset, via the SYSTEM specifier and a URI. It assumes that we can identify the DTD with the relative URI reference &quot;example.dtd&quot;; the &quot;people_list&quot; after &quot;!DOCTYPE&quot; tells us that the root tags, or the first element defined in the DTD, is called &quot;people_list&quot;:
+&lt;source lang=&quot;xml&quot;&gt;
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;
+&lt;!DOCTYPE people_list SYSTEM &quot;example.dtd&quot;&gt;
+&lt;people_list&gt;
+  &lt;person&gt;
+    &lt;name&gt;Fred Bloggs&lt;/name&gt;
+    &lt;birthdate&gt;2008-11-27&lt;/birthdate&gt;
+    &lt;gender&gt;Male&lt;/gender&gt;
+  &lt;/person&gt;
+&lt;/people_list&gt;
+&lt;/source&gt;
+
+One can render this in an XML-enabled [[web browser|browser]] (such as [[Internet Explorer]] or [[Mozilla Firefox]]) by pasting and saving the DTD component above to a text file named ''example.dtd'' and the XML file to a differently-named text file, and opening the XML file with the browser. The files should both be saved in the same directory. However, many browsers do not check that an XML document confirms to the rules in the DTD; they are only required to check that the DTD is syntactically correct. For security reasons, they may also choose not to read the external DTD.
+
+The same DTD can also be embedded directly in the XML document itself as an internal subset, by encasing it within [square brackets] in the document type declaration, in which case the document no longer depends on external entities and can be processed in standalone mode:
+&lt;source lang=&quot;xml&quot;&gt;
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+&lt;!DOCTYPE people_list [
+  &lt;!ELEMENT people_list (person*)&gt;
+  &lt;!ELEMENT person (name, birthdate?, gender?, socialsecuritynumber?)&gt;
+  &lt;!ELEMENT name (#PCDATA)&gt;
+  &lt;!ELEMENT birthdate (#PCDATA)&gt;
+  &lt;!ELEMENT gender (#PCDATA)&gt;
+  &lt;!ELEMENT socialsecuritynumber (#PCDATA)&gt;
+]&gt;
+&lt;people_list&gt;
+  &lt;person&gt;
+    &lt;name&gt;Fred Bloggs&lt;/name&gt;
+    &lt;birthdate&gt;2008-11-27&lt;/birthdate&gt;
+    &lt;gender&gt;Male&lt;/gender&gt;
+  &lt;/person&gt;
+&lt;/people_list&gt;
+&lt;/source&gt;
+
+Alternatives to DTDs (for specifying schemas) are available:
+* [[XML Schema (W3C)|XML Schema]], also referred to as XML Schema Definition (XSD), has achieved Recommendation status within the W3C,&lt;ref&gt;{{cite web |url=https://www.w3.org/standards/techs/xmlschema#w3c_all |title=XML Schema Part 1: Structures (Second Edition) |year=2004 |publisher=W3C |accessdate=2011-05-17}}&lt;/ref&gt; and is popular for &quot;data oriented&quot; (that is, transactional non-publishing) XML use because of its stronger typing and easier round-tripping to Java declarations.{{Citation needed|date=February 2011}} Most of the publishing world has found that the added complexity of XSD would not bring them any particular benefits,{{Citation needed|date=November 2008}} so DTDs are still far more popular there. An XML Schema Definition is itself an XML document while a DTD is not.
+* [[RELAX NG]], which is also a part of [[DSDL]], is an ISO international standard.&lt;ref&gt;{{cite web |url=http://www.iso.org/iso/home/store/catalogue_ics/catalogue_detail_ics.htm?csnumber=52348 |title=ISO/IEC 19757-2:2008 - Information technology -- Document Schema Definition Language (DSDL) -- Part 2: Regular-grammar-based validation -- RELAX NG |publisher=ISO |accessdate=2011-05-17}}&lt;/ref&gt; It is more expressive than XSD,{{Citation needed|date=February 2011}} while providing a simpler syntax,{{Citation needed|date=February 2011}} but commercial software support has been slow in coming.
+
+== Security ==
+An XML DTD can be used to create a denial of service (DoS) attack by defining nested entities that expand exponentially, or by sending the XML parser to an external resource that never returns.&lt;ref name=&quot;XMLDenial&quot;&gt;{{cite web
+|title=XML Denial of Service Attacks and Defenses
+|url=http://msdn.microsoft.com/en-us/magazine/ee335713.aspx
+|publisher=MSDN Magazine
+|date=November 2009
+|author=Bryan Sullivan
+|accessdate=2013-10-21}}&lt;/ref&gt;
+
+For this reason, .NET Framework provides a property that allows prohibiting or skipping DTD parsing,&lt;ref name=&quot;XMLDenial&quot; /&gt; and recent versions of Microsoft Office applications (Microsoft Office 2010 and higher) refuse to open XML files that contain DTD declarations.
+
+== See also ==
+* [[Semantic Web]]
+* [[XML Schema Language Comparison]] – Comparison to other XML Schema languages.
+* [[XML Schema (W3C)]]
+
+== References ==
+{{Reflist}}
+
+==External links==
+* [http://www.w3.org/TR/REC-xml/#dt-doctype Definition of the XML document type declaration from Extensible Markup Language (XML) 1.0 (Fourth Edition) on W3.org]
+
+[[Category:XML-based standards]]</text>
+      <sha1>ifryaz6t3hlta8nbiv8veqnev3v3mfg</sha1>
+    </revision>
+  </page>

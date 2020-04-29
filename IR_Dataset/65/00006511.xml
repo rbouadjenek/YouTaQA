@@ -1,0 +1,176 @@
+  <page>
+    <title>Computational complexity</title>
+    <ns>0</ns>
+    <id>6511</id>
+    <revision>
+      <id>933435748</id>
+      <parentid>927964195</parentid>
+      <timestamp>2019-12-31T23:19:25Z</timestamp>
+      <contributor>
+        <username>Seyerian</username>
+        <id>37435168</id>
+      </contributor>
+      <minor />
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{Short description|amount of resources (usually time and/or memory) to perform an algorithm}}
+{{no footnotes|date=December 2017}}
+In [[computer science]], the '''computational complexity''', or simply '''complexity''' of an [[algorithm]] is the amount of resources required for running it (a property unrelated to “[[complex system|complexity]]” in a conventional sense). The computational complexity of a problem is the minimum of the complexities of all possible algorithms for this problem (including the unknown algorithms).
+
+As the amount of needed resources varies with the input, the complexity is generally expressed as a function {{math|''n'' → ''f''(''n'')}}, where {{math|''n''}} is the size of the input, and {{math|''f''(''n'')}} is either the [[worst-case complexity]], that is the maximum of the amount of resources that are needed for all inputs of size {{math|''n''}}, or the [[average-case complexity]], that is average of the amount of resources over all input of size {{math|''n''}}.
+
+When the nature of the resources is not explicitly given, this is usually the time needed for running the algorithm, and one talks of [[time complexity]]. However, this depends on the [[computer]] that is used, and the time is generally expressed as the number of needed elementary operations, which are supposed to take a constant time on a given computer, and to change by a constant factor when one changes computer.
+
+Otherwise, the resource that is considered is often the size of the memory that is needed, and one talks of [[space complexity]].
+
+The study of the complexity of explicitly given algorithms is called [[analysis of algorithms]], while the study of the complexity of problems is called [[computational complexity theory]]. Clearly, both areas are strongly related, as the complexity of an algorithm is always an [[upper bound]] of the complexity of the problem solved by this algorithm.
+
+==Resources==
+===Time===
+The resource that is most commonly considered is the time, and one talks of [[time complexity]]. When &quot;complexity&quot; is used without being qualified, this generally means time complexity.
+
+The usual units of time are not used in [[computational complexity theory|complexity theory]], because they are too dependent on the choice of a specific computer and of the evolution of the technology. Therefore, instead of the real time, one generally consider the elementary operations that are done during the computation. These operations are supposed to take a constant time on a given machine, and are often called ''steps''.
+
+===Space===
+Another important resource is the size of [[computer memory]] that is needed for running algorithms.
+
+===Others===
+The number of [[arithmetic operations]] is another resource that is commonly used. In this case, one talks of '''arithmetic complexity'''. If one knows an [[upper bound]] on the size of the [[binary representation]] of the numbers that occur during a computation, the time complexity is generally the product of the arithmetic complexity by a constant factor.
+
+For many algorithms the size of the integers that are used during a computation is not bounded, and it is not realistic to consider that arithmetic operations take a constant time. Therefore, the time complexity, generally called [[bit complexity]] in this context, may be much larger than the arithmetic complexity. For example, the arithmetic complexity of the computation of the [[determinant]] of a {{math|''n''×''n''}} [[integer matrix]] is &lt;math&gt;O(n^3)&lt;/math&gt; for the usual algorithms ([[Gaussian elimination]]). The bit complexity of the same algorithms is [[exponential function|exponential]] in {{mvar|n}}, because the size of the coefficients may grow exponentially during the computation. On the other hand, if these algorithms are coupled with [[modular arithmetic|multi-modular arithmetic]], the bit complexity may be reduced to [[soft O notation|{{math|''O''&lt;sup&gt;~&lt;/sup&gt;(''n''&lt;sup&gt;4&lt;/sup&gt;)}}]].
+
+In [[sorting]] and [[search algorithm|searching]], the resource that is generally considered is the number of entries comparisons. This is generally a good measure of the time complexity if data are suitably organized.
+
+==Complexity as a function of input size==
+:''For clarity, only time complexity is considered in this section, but everything applies (with slight modifications) to the complexity with respect to other resources.'' 
+It is impossible to count the number of steps of an algorithm on all possible inputs. As the complexity increases generally with the size of the input, the complexity is generally expressed as a function of the size {{math|''n''}} (in [[bit]]s) of the input, and therefore, the complexity is a function of {{math|''n''}}. However, the complexity of an algorithm may vary dramatically for different inputs of the same size. Therefore, several complexity functions are commonly used.
+
+The [[worst-case complexity]] is the maximum of the complexity over all inputs of size {{mvar|n}}, and the [[average-case complexity]] is the average of the complexity over all inputs of size {{mvar|n}} (this makes sense, as the number of possible inputs of a given size is finite). Generally, when &quot;complexity&quot; is used without being further specified, this is the worst-case time complexity that is considered.
+
+==Asymptotic complexity==
+{{see also|Asymptotic computational complexity}}
+It is generally difficult to compute precisely the worst-case and the average-case complexity. In addition, these exact values provide little practical application, as any change of computer or of model of computation would change the complexity somewhat. Moreover, the resource use is not critical for small values of {{mvar|n}}, and this makes that, for small {{mvar|n}}, the ease of implementation is generally more interesting than a good complexity.
+
+For these reasons, one generally focuses on the behavior of the complexity for large {{mvar|n}}, that is on its [[asymptotic analysis|asymptotic behavior]] when {{mvar|n}} tends to the infinity. Therefore, the complexity is generally expressed by using [[big O notation]].
+
+For example, the usual algorithm for integer [[multiplication]] has a complexity of &lt;math&gt;O(n^2),&lt;/math&gt; this means that there is a constant &lt;math&gt;c_u&lt;/math&gt; such that the multiplication of two integers of at most {{mvar|n}} digits may be done in a time less than &lt;math&gt;c_un^2.&lt;/math&gt; This bound is ''sharp'' in the sense that the worst-case complexity and the average-case complexity are &lt;math&gt;\Omega(n^2),&lt;/math&gt; which means that there is a constant &lt;math&gt;c_l&lt;/math&gt; such that these complexities are larger than &lt;math&gt;c_ln^2.&lt;/math&gt; The [[radix]] does not appear in these complexity, as changing of radix changes only the constants &lt;math&gt;c_u&lt;/math&gt; and &lt;math&gt;c_l.&lt;/math&gt;
+
+==Models of computation==
+The evaluation of the complexity relies on the choice of a [[model of computation]], which consists in defining the basic operations that are done in a unit of time. When the model of computation is not explicitly specified, this is generally meant as being [[multitape Turing machine]].
+
+===Deterministic models===
+A [[deterministic model]] of computation is a model of computation such that the successive states of the machine and the operations to be performed are completely determined by the preceding state. Historically, the first deterministic models were [[μ-recursive function|recursive function]]s, [[lambda calculus]], and [[Turing machine]]s. The model of [[Random access machine]]s (also called RAM-machines) is also widely used, as closer to real [[computer]]s.
+
+When the model of computation is not specified, it is generally the model of [[multitape Turing machine]]s. For most algorithms, the complexity is the same on multitape Turing machines and on RAM-machines, although, some care may be needed in storing data for getting this equivalence.
+
+===Non-deterministic computation===
+In a [[non-deterministic algorithm|non-deterministic model of computation]], such as [[non-deterministic Turing machine]]s, some choices may be done at some steps of the computation. In complexity theory, one considers all possible choices simultaneously, and the non-deterministic time complexity is the time needed, when the best choices are always done. In other words, one considers that the computation is done simultaneously on as many (identical) processors as needed, and the non-deterministic computation time is the time spent by the first processor that finishes the computation. This parallelism is partly amenable to [[quantum computing]] via superposed [[entangled state]]s in running specific [[quantum algorithms]], like e.g. [[Shor's algorithm|Shor's factorization]] of yet only small integers ({{as of|2018|03|lc=yes}}: 21 = 3 × 7).
+
+Even when such a computation model is not realistic yet, it has theoretical importance, mostly related to the [[P = NP]] problem, which questions the identity of the complexity classes formed by taking &quot;polynomial time&quot; and &quot;non-deterministic polynomial time&quot; as least upper bounds. Simulating an NP-algorithm on a deterministic computer usually takes &quot;exponential time&quot;. A problem is in the complexity class [[NP (complexity)|NP]], if it may be solved in [[polynomial time]] on a non-deterministic machine. A problem is [[NP-complete]] if, roughly speaking, it is in NP and is not easier than any other NP problem. Many [[combinatorics|combinatorial]] problems, such as the [[Knapsack problem]], the [[travelling salesman problem]], and the [[Boolean satisfiability problem]] are NP-complete. For all these problems, the best known algorithm has exponential complexity. If any one of these problems could be solved in polynomial time on a deterministic machine, then all NP problems could also be solved in polynomial time, and one would have P = NP. {{As of|2017}} it is generally conjectured that {{nowrap|P ≠ NP,}} with the practical implication that the worst cases of NP problems are intrinsically difficult to solve, i.e., take longer than any reasonable time span (decades!) for interesting lengths of input.
+
+===Parallel and distributed computation===
+{{main|Parallel computing|Distributed computing}}
+Parallel and distributed computing consist of splitting computation on several processors, which work simultaneously. The difference between the different model lies mainly in the way of transmitting information between processors. Typically, in parallel computing the data transmission between processors is very fast, while, in distributed computing, the data transmission is done through a [[computer network|network]] and is therefore much slower.
+
+The time needed for a computation on {{mvar|N}} processors is at least the quotient by {{mvar|N}} of the time needed by a single processor. In fact this theoretically optimal bound can never be reached, because some subtasks cannot be parallelized, and some processors may have to wait a result from another processor.
+
+The main complexity problem is thus to design algorithms such that the product of the computation time by the number of processors is as close as possible to the time needed for the same computation on a single processor.
+
+===Quantum computing===
+A [[quantum computer]] is a computer whose model of computation is based on [[quantum mechanics]]. The [[Church–Turing thesis (complexity theory)|Church–Turing thesis]] applies to quantum computers, that is, every problem that can be solved by a quantum computer may be also solved by a Turing machine. However, some problems may theoretically be solved with a much lower complexity using a quantum computer than using a classical computer. This is, for the moment, purely theoretical, as no one knows how to build an efficient quantum computer.
+
+[[Quantum complexity theory]] has been developed for studying computational complexity of quantum computing. It is used in [[post-quantum cryptography]], which consists of designing [[cryptographic protocol]]s that will resist to attacks with quantum computers, when such computers will really exist.
+
+==Problem complexity (lower bounds)==
+The complexity of a problem is the [[infimum]] of the complexities of the algorithms that may solve the problem, including unknown algorithms. Thus the complexity of a problem is not greater than the complexity of any algorithm that solves the problems.
+
+It follows that every complexity that is expressed with [[big O notation]] is a complexity of the algorithm as well as of the corresponding problem.
+
+On the other hand, it is generally hard to obtain nontrivial lower bounds for problem complexity, and there are few methods for obtaining such lower bounds.
+
+For solving most problems, it is required to read all input data, which, normally, needs a time proportional to the size of the data. Thus, such problems have a complexity that is at least [[linear time|linear]], that is, using [[big omega notation]], a complexity &lt;math&gt;\Omega(n).&lt;/math&gt;
+
+The solution of some problems, typically in [[computer algebra]] and [[computational algebraic geometry]], may be very large. In such a case, the complexity is lower bounded by the maximal size of the output, since the output must be written. For example, a [[system of polynomial equations|system of {{mvar|n}} polynomial equations of degree {{mvar|d}} in {{mvar|n}} indeterminates]] may have up to &lt;math&gt;d^n&lt;/math&gt; [[complex number|complex]] solutions, if the number of solutions is finite (this is [[Bézout's theorem]]). As these solutions must be written down, the complexity of this problem is &lt;math&gt;\Omega(d^n).&lt;/math&gt; For this problem, an algorithm of complexity &lt;math&gt;d^{O(n)}&lt;/math&gt; is known, which may thus be considered as asymptotically quasi-optimal.
+
+A nonlinear lower bound of &lt;math&gt;\Omega(n\log n)&lt;/math&gt; is known for the number of comparisons needed for a [[sorting algorithm]]. Thus the best sorting algorithms are optimal, as their complexity is &lt;math&gt;O(n\log n).&lt;/math&gt; This lower bound results from the fact that there are {{math|''n''!}} ways of ordering {{mvar|n}} objects. As each comparison splits in two parts this set of {{math|''n''!}} orders, the number of {{mvar|N}} of comparisons that are needed for distinguishing all orders must verify &lt;math&gt;2^N&gt;n!,&lt;/math&gt; which implies &lt;math&gt;N =\Omega(n\log n),&lt;/math&gt; by [[Stirling's formula]].
+
+A standard method for getting lower bounds of complexity consists of ''reducing'' a problem to another problem. More precisely, suppose that one may encode a problem {{mvar|A}} of size {{mvar|n}} into a subproblem of size {{math|''f''(''n'')}} of a problem {{mvar|B}}, and that the complexity of {{mvar|A}} is &lt;math&gt;\Omega(g(n)).&lt;/math&gt; Without loss of generality, one may suppose that the function {{mvar|f}} increases with {{mvar|n}} and has an [[inverse function]] {{mvar|h}}. Then the complexity of the problem {{mvar|B}} is &lt;math&gt;\Omega(g(h(n))).&lt;/math&gt; This is this method that is used for proving that, if [[P ≠ NP]] (an unsolved conjecture), the complexity of every [[NP-complete problem]] is &lt;math&gt;\Omega(n^k),&lt;/math&gt; for every positive integer {{mvar|k}}.
+
+==Use in algorithm design==
+
+Evaluating the complexity of an algorithm is an important part of [[algorithm design]], as this gives useful information on the performance that may be expected.
+
+It is a common misconception that the evaluation of the complexity of algorithms becomes less important, because of the exponential growth ([[Moore's law]]) of the power of modern [[computer]]s. This is wrong because, this power increase allows working with large input data ([[big data]]). For example, when one wants to sort alphabetically a list of a few hundreds of entries, such as the [[bibliography]] of a book, any algorithm should work well in less than a second. On the other hand, for a list of a million of entries (the phone numbers of a large town, for example), the elementary algorithms that require &lt;math&gt;O(n^2)&lt;/math&gt; comparisons would have to do a trillion of comparisons, which would need around three hours at the speed of 10 million of comparisons per second. On the other hand, the [[quicksort]] and [[merge sort]] require only &lt;math&gt;n\log_2 n&lt;/math&gt; comparisons (as average-case complexity for the former, as worst-case complexity for the latter). For {{math|1=''n'' = 1,000,000}}, this gives approximately 30,000,000 comparisons, which may be done in less than a second on a powerful computer.
+
+Thus the evaluation of the complexity may allow eliminating many inefficient algorithms before any implementation. This may also be used for tuning complex algorithms without testing all variants. By determining the most costly steps of a complex algorithms, the study of complexity allows also focusing on these steps the effort for improving the efficiency of an implementation.
+
+==See also==
+* [[Computational complexity of mathematical operations]]
+
+==References==
+*{{Citation
+| last1=Arora | first1=Sanjeev | authorlink1=Sanjeev Arora
+| last2=Barak | first2=Boaz
+| title=Computational Complexity: A Modern Approach
+| url = http://www.cs.princeton.edu/theory/complexity/
+| publisher=[[Cambridge University Press|Cambridge]]
+| year=2009
+| isbn=978-0-521-42426-4
+| zbl=1193.68112
+}}
+* {{citation
+| last=Du
+| first=Ding-Zhu
+| author2=Ko, Ker-I
+| title=Theory of Computational Complexity
+| publisher=[[John Wiley &amp; Sons]]
+| year=2000
+| isbn=978-0-471-34506-0
+}}
+* {{Garey-Johnson}}
+* {{Citation
+| last=Goldreich
+| first=Oded
+| authorlink=Oded Goldreich
+| url = http://www.wisdom.weizmann.ac.il/~oded/cc-book.html
+| title = Computational Complexity: A Conceptual Perspective
+| publisher = Cambridge University Press
+| year = 2008
+}}
+* {{Citation
+| editor1-last=van Leeuwen
+| editor1-first=Jan
+| editor1-link = Jan van Leeuwen
+| title=Handbook of theoretical computer science (vol. A): algorithms and complexity
+| publisher=[[MIT Press]]
+| isbn=978-0-444-88071-0
+| year=1990
+}}
+* {{citation
+ | last = Papadimitriou
+ | first = Christos
+ | authorlink = Christos Papadimitriou
+ | title = Computational Complexity
+ | edition = 1st
+ | year = 1994
+ | publisher = Addison Wesley
+ | isbn = 0-201-53082-1
+}}
+* {{Citation
+|last=Sipser
+|first=Michael
+|authorlink=Michael Sipser
+|title=[[Introduction to the Theory of Computation]]
+|edition=2nd
+|year=2006
+|publisher=[[Thomson Learning|Thomson Course Technology]]
+|location=USA
+|isbn=0-534-95097-3
+}}
+
+[[Category:Analysis of algorithms]]
+[[Category:Computational complexity theory]]
+[[Category:Computational resources]]</text>
+      <sha1>528a49omr6l6nkr49delo38j9k72h01</sha1>
+    </revision>
+  </page>

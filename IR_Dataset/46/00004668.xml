@@ -1,0 +1,853 @@
+  <page>
+    <title>Binomial coefficient</title>
+    <ns>0</ns>
+    <id>4668</id>
+    <revision>
+      <id>942853135</id>
+      <parentid>942853092</parentid>
+      <timestamp>2020-02-27T07:28:44Z</timestamp>
+      <contributor>
+        <username>David Eppstein</username>
+        <id>2051880</id>
+      </contributor>
+      <comment>/* References */ rm Amazon link</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{redirect|nCk||NCK (disambiguation)}}
+[[Image:Pascal's triangle 5.svg|right|thumb|200px|The binomial coefficients can be arranged to form [[Pascal's triangle]], in which each entry is the sum of the two immediately above.]]
+[[Image:binomial_theorem_visualisation.svg|thumb|300px|Visualisation of binomial expansion up to the 4th power]]
+
+In [[mathematics]], the '''binomial coefficients''' are the positive [[integer]]s that occur as [[coefficient]]s in the [[binomial theorem]].  Commonly, a binomial coefficient is indexed by a pair of integers {{math|''n'' ≥ ''k'' ≥ 0}} and is written &lt;math&gt;\tbinom{n}{k}.&lt;/math&gt; It is the coefficient of the {{math|''x''&lt;sup&gt;''k''&lt;/sup&gt;}} term in the [[polynomial expansion]] of the [[binomial (polynomial)|binomial]] [[exponentiation|power]] {{math|(1 + ''x'')&lt;sup&gt;''n''&lt;/sup&gt;}}, and it is given by the formula
+
+:&lt;math&gt;\binom{n}{k} = \frac{n!}{k! (n-k)!}.&lt;/math&gt;
+
+For example, the fourth power of {{math|1 + ''x''}} is
+:&lt;math&gt;\begin{align}
+   (1 + x)^4 &amp;= \tbinom{4}{0} x^0 + \tbinom{4}{1} x^1 + \tbinom{4}{2} x^2 + \tbinom{4}{3} x^3 + \tbinom{4}{4} x^4 \\
+   &amp;= 1 + 4x + 6 x^2 + 4x^3 + x^4,
+ \end{align}&lt;/math&gt;
+and the binomial coefficient &lt;math&gt;\tbinom{4}{2} =\tfrac{4!}{2!2!} = 6&lt;/math&gt; is the coefficient of the {{math|''x''&lt;sup&gt;2&lt;/sup&gt;}} term.
+
+Arranging the numbers &lt;math&gt;\tbinom{n}{0}, \tbinom{n}{1}, \ldots, \tbinom{n}{n}&lt;/math&gt; in successive rows for &lt;math&gt;n=0,1,2,\ldots&lt;/math&gt; gives a triangular array called [[Pascal's triangle]], satisfying the [[recurrence relation]] 
+:&lt;math&gt;\binom{n}{k} = \binom{n-1}{k} + \binom{n-1}{k-1}.&lt;/math&gt;
+
+The binomial coefficients occur in many areas of mathematics, and especially in [[combinatorics]].  The symbol &lt;math&gt;\tbinom{n}{k}&lt;/math&gt; is usually read as &quot;{{math|''n''}} choose {{math|''k''}}&quot; because there are &lt;math&gt;\tbinom{n}{k}&lt;/math&gt; ways to choose an (unordered) subset of {{math|''k''}} elements from a fixed set of {{math|''n''}} elements. For example, there are &lt;math&gt;\tbinom{4}{2}=6&lt;/math&gt; ways to choose 2 elements from &lt;math&gt;\{1,2,3,4\},&lt;/math&gt; namely &lt;math&gt;\{1,2\} \text{, } \{1,3\} \text{, } \{1,4\} \text{, } \{2,3\} \text{, } \{2,4\} \text{,}&lt;/math&gt; and &lt;math&gt;\{3,4\}.&lt;/math&gt;
+
+The binomial coefficients can be generalized to &lt;math&gt;\tbinom{z}{k}&lt;/math&gt; for any complex number {{mvar|z}} and integer {{math|''k'' &amp;ge; 0}}, and many of their properties continue to hold in this more general form.
+
+==History and notation==
+
+[[Andreas von Ettingshausen]] introduced the notation &lt;math&gt;\tbinom nk&lt;/math&gt; in 1826,&lt;ref&gt;{{harvtxt|Higham|1998}}&lt;/ref&gt; although the numbers were known centuries earlier (see [[Pascal's triangle]]). The earliest known detailed discussion of binomial coefficients is in a tenth-century commentary, by [[Halayudha]], on an ancient [[Sanskrit]] text, [[Pingala]]'s ''Chandaḥśāstra''.  In about 1150, the Indian mathematician [[Bhaskaracharya]] gave an exposition of binomial coefficients in his book ''[[Līlāvatī]]''.&lt;ref&gt;[[Lilavati]] Section 6, Chapter 4 (see {{harvtxt|Knuth|1997}}).&lt;/ref&gt;
+
+Alternative notations include {{math|''C''(''n'', ''k'')}}, {{math|&lt;sub&gt;''n''&lt;/sub&gt;''C''&lt;sub&gt;''k''&lt;/sub&gt;}}, {{math|&lt;sup&gt;''n''&lt;/sup&gt;''C''&lt;sub&gt;''k''&lt;/sub&gt;}}, {{math|1=''C''&lt;sup&gt;''k''&lt;/sup&gt;&lt;sub style=&quot;position:relative; left:-.5em;&quot;&gt;''n''&lt;/sub&gt;}}, {{math|1=''C''&lt;sup&gt;''n''&lt;/sup&gt;&lt;sub style=&quot;position:relative; left:-.5em;&quot;&gt;''k''&lt;/sub&gt;}}, and {{math|''C''&lt;sub&gt;''n'',''k''&lt;/sub&gt;}} in all of which the {{math|''C''}} stands for ''[[combination]]s'' or ''choices''. Many calculators use variants of the {{nowrap|{{math|''C''}} notation}} because they can represent it on a single-line display.  In this form the binomial coefficients are easily compared to [[permutation#k-permutations of n|{{math|''k''}}-permutations of {{math|''n''}}]], written as {{math|''P''(''n'', ''k'')}}, etc.
+
+== Definition and interpretations ==
+For [[natural number]]s (taken to include 0) ''n'' and ''k'', the binomial coefficient &lt;math&gt;\tbinom nk&lt;/math&gt; can be defined as the [[coefficient]] of the [[monomial]] ''X''&lt;sup&gt;''k''&lt;/sup&gt; in the expansion of {{nowrap|(1 + ''X'')&lt;sup&gt;''n''&lt;/sup&gt;}}. The same coefficient also occurs (if {{nowrap|''k'' ≤ ''n''}}) in the [[binomial formula]]
+{{NumBlk|:|&lt;math&gt;(x+y)^n=\sum_{k=0}^n\binom nk x^{n-k}y^k&lt;/math&gt;|{{EquationRef|∗}}}}
+(valid for any elements ''x'',''y'' of a [[commutative ring]]),
+which explains the name &quot;binomial coefficient&quot;.
+
+Another occurrence of this number is in combinatorics, where it gives the number of ways, disregarding order, that ''k'' objects can be chosen from among ''n'' objects; more formally, the number of ''k''-element subsets (or ''k''-[[combination]]s) of an ''n''-element set. This number can be seen as equal to the one of the first definition, independently of any of the formulas below to compute it: if in each of the ''n'' factors of the power {{math|(1 + ''X'')&lt;sup&gt;''n''&lt;/sup&gt;}} one temporarily labels the term ''X'' with an index ''i'' (running from 1 to ''n''), then each subset of ''k'' indices gives after expansion a contribution ''X''&lt;sup&gt;''k''&lt;/sup&gt;, and the coefficient of that monomial in the result will be the number of such subsets. This shows in particular that &lt;math&gt;\tbinom nk&lt;/math&gt; is a natural number for any natural numbers ''n'' and ''k''. There are many other combinatorial interpretations of binomial coefficients (counting problems for which the answer is given by a binomial coefficient expression), for instance the number of words formed of ''n'' [[bit]]s (digits 0 or 1) whose sum is ''k'' is given by &lt;math&gt;\tbinom nk&lt;/math&gt;, while the number of ways to write &lt;math&gt;k=a_1+a_2+\cdots+a_n&lt;/math&gt; where every ''a''&lt;sub&gt;''i''&lt;/sub&gt; is a nonnegative integer is given by &lt;math&gt;\tbinom{n+k-1}{n-1}&lt;/math&gt;. Most of these interpretations are easily seen to be equivalent to counting ''k''-combinations.
+
+== Computing the value of binomial coefficients ==
+Several methods exist to compute the value of &lt;math&gt;\tbinom nk&lt;/math&gt; without actually expanding a binomial power or counting ''k''-combinations.
+
+=== Recursive formula ===
+One method uses the [[recursion|recursive]], purely additive, formula
+
+:&lt;math&gt;  \binom nk = \binom{n-1}{k-1} + \binom{n-1}k \quad \text{for all integers }n,k : 1\le k\le n-1,&lt;/math&gt;
+
+with initial/boundary values
+
+:&lt;math&gt;\binom n0 = \binom nn = 1 \quad \text{for all integers } n\ge0,&lt;/math&gt;
+
+The formula follows from considering the set {1,2,3,…,''n''} and counting separately (a) the ''k''-element groupings that include a particular set element, say &quot;''i''&quot;, in every group (since &quot;''i''&quot; is already chosen to fill one spot in every group, we need only choose ''k''&amp;nbsp;−&amp;nbsp;1 from the remaining ''n''&amp;nbsp;&amp;minus;&amp;nbsp;1) and (b) all the ''k''-groupings that don't include &quot;''i''&quot;; this enumerates all the possible ''k''-combinations of ''n'' elements. It also follows from tracing the contributions to ''X''&lt;sup&gt;''k''&lt;/sup&gt; in {{nowrap|(1 + ''X'')&lt;sup&gt;''n''−1&lt;/sup&gt;(1 + ''X'')}}. As there is zero ''X''&lt;sup&gt;''n''+1&lt;/sup&gt; or ''X''&lt;sup&gt;&amp;minus;1&lt;/sup&gt; in {{nowrap|(1 + ''X'')&lt;sup&gt;''n''&lt;/sup&gt;}}, one might extend the definition beyond the above boundaries to include &lt;math&gt;\tbinom nk&lt;/math&gt;&amp;nbsp;=&amp;nbsp;0 when either ''k''&amp;nbsp;&gt;&amp;nbsp;''n'' or ''k''&amp;nbsp;&lt;&amp;nbsp;0. This recursive formula then allows the construction of [[Pascal's triangle]], surrounded by white spaces where the zeros, or the trivial coefficients, would be.
+
+=== Multiplicative formula ===
+A more efficient method to compute individual binomial coefficients is given by the formula
+
+:&lt;math&gt;\binom nk = \frac{n^{\underline{k}}}{k!} = \frac{n(n-1)(n-2)\cdots(n-(k-1))}{k(k-1)(k-2)\cdots 1}=\prod_{i=1}^k \frac{n+1-i}{i},&lt;/math&gt;
+
+where the numerator of the first fraction &lt;math&gt;n^{\underline{k}}&lt;/math&gt; is expressed as a [[falling factorial power]].
+This formula is easiest to understand for the combinatorial interpretation of binomial coefficients.
+The numerator gives the number of ways to select a sequence of ''k'' distinct objects, retaining the order of selection, from a set of ''n'' objects. The denominator counts the number of distinct sequences that define the same ''k''-combination when order is disregarded.
+
+Due to the symmetry of the binomial coefficient with regard to ''k'' and ''n''−''k'', calculation may be optimised by setting the upper limit of the product above to the smaller of ''k'' and ''n''−''k''.
+
+=== Factorial formula ===
+Finally, though computationally unsuitable, there is the compact form, often used in proofs and derivations, which makes repeated use of the familiar [[factorial]] function:
+
+:&lt;math&gt; \binom nk = \frac{n!}{k!\,(n-k)!} \quad \text{for }\ 0\leq k\leq n,&lt;/math&gt;
+
+where ''n''! denotes the factorial of ''n''. This formula follows from the multiplicative formula above by multiplying numerator and denominator by {{nowrap|(''n'' − ''k'')!}}; as a consequence it involves many factors common to numerator and denominator.  It is less practical for explicit computation (in the case that ''k'' is small and ''n'' is large) unless common factors are first cancelled (in particular since factorial values grow very rapidly). The formula does exhibit a symmetry that is less evident from the multiplicative formula (though it is from the definitions)
+
+{{NumBlk|:|&lt;math&gt; \binom nk = \binom n{n-k} \quad \text{for }\ 0\leq k\leq n,&lt;/math&gt;|{{EquationRef|1}}}}
+
+which leads to a more efficient multiplicative computational routine. Using the [[Pochhammer symbol|falling factorial notation]],
+
+:&lt;math&gt; \binom nk =  
+\begin{cases}
+ n^{\underline{k}}/k! &amp; \text{if }\ k \le \frac{n}{2} \\
+ n^{\underline{n-k}}/(n-k)! &amp; \text{if }\ k &gt; \frac{n}{2}
+\end{cases}.
+&lt;/math&gt;
+
+=== Generalization and connection to the binomial series ===
+The multiplicative formula allows the definition of binomial coefficients to be extended&lt;ref&gt;See {{Harv|Graham|Knuth|Patashnik|1994}}, which also defines &lt;math&gt;\tbinom n k = 0&lt;/math&gt; for &lt;math&gt;k&lt;0&lt;/math&gt;. Alternative generalizations, such as to [[#Two real or complex valued arguments|two real or complex valued arguments]] using the [[Gamma function]] assign nonzero values to &lt;math&gt;\tbinom n k&lt;/math&gt; for &lt;math&gt;k&lt;0&lt;/math&gt;, but this causes most binomial coefficient identities to fail, and thus is not widely used by the majority of definitions.  One such choice of nonzero values leads to the aesthetically pleasing &quot;Pascal windmill&quot; in Hilton, Holton and Pedersen, ''Mathematical reflections: in a room with many mirrors'', Springer, 1997, but causes even [[Pascal's identity]] to fail (at the origin).&lt;/ref&gt; by replacing ''n'' by an arbitrary number ''α'' (negative, real, complex) or even an element of any [[commutative ring]] in which all positive integers are invertible:
+:&lt;math&gt;\binom \alpha k = \frac{\alpha^{\underline k}}{k!} = \frac{\alpha(\alpha-1)(\alpha-2)\cdots(\alpha-k+1)}{k(k-1)(k-2)\cdots 1}
+  \quad\text{for } k\in\N \text{ and arbitrary } \alpha.
+&lt;/math&gt;
+
+With this definition one has a generalization of the binomial formula (with one of the variables set to 1), which justifies still calling the &lt;math&gt;\tbinom\alpha k&lt;/math&gt; binomial coefficients:
+
+{{NumBlk|:|&lt;math&gt; (1+X)^\alpha = \sum_{k=0}^\infty {\alpha \choose k} X^k.&lt;/math&gt;|{{EquationRef|2}}}}
+
+This formula is valid for all complex numbers ''α'' and ''X'' with |''X''|&amp;nbsp;&amp;lt;&amp;nbsp;1. It can also be interpreted as an identity of [[formal power series]] in ''X'', where it actually can serve as definition of arbitrary powers of power series with constant coefficient equal to&amp;nbsp;1; the point is that with this definition all identities hold that one expects for [[exponentiation]], notably
+
+:&lt;math&gt;(1+X)^\alpha(1+X)^\beta=(1+X)^{\alpha+\beta} \quad\text{and}\quad ((1+X)^\alpha)^\beta=(1+X)^{\alpha\beta}.&lt;/math&gt;
+
+If ''α'' is a nonnegative integer ''n'', then all terms with ''k''&amp;nbsp;&amp;gt;&amp;nbsp;''n'' are zero, and the infinite series becomes a finite sum, thereby recovering the binomial formula. However, for other values of ''α'', including negative integers and rational numbers, the series is really infinite.
+
+== Pascal's triangle ==
+[[Image:Pascal's triangle - 1000th row.png|150px|right|thumb|1000th row of Pascal's triangle, arranged vertically, with grey-scale representations of decimal digits of the coefficients, right-aligned. The left boundary of the image corresponds roughly to the graph of the logarithm of the binomial coefficients, and illustrates that they form a [[logarithmically concave sequence|log-concave sequence]].]]
+
+{{Main|Pascal's triangle|Pascal's rule}}
+
+[[Pascal's rule]] is the important [[recurrence relation]]
+{{NumBlk|:|&lt;math&gt; {n \choose k} +  {n \choose k+1} = {n+1 \choose k+1},&lt;/math&gt;|{{EquationRef|3}}}}
+which can be used to prove by [[mathematical induction]] that &lt;math&gt; \tbinom n k&lt;/math&gt; is a natural number for all ''n'' and ''k'', a fact that is not immediately obvious from [[#Definition_and_interpretations|formula (1)]].
+
+Pascal's rule also gives rise to [[Pascal's triangle]]:
+:{|
+|-
+|0: || || || || || || || || ||1|| || || || || || || ||
+|-
+|1: || || || || || || || ||1|| ||1|| || || || || || ||
+|-
+|2: || || || || || || ||1|| ||2|| ||1|| || || || || ||
+|-
+|3: || || || || || ||1|| ||3|| ||3|| ||1|| || || || ||
+|-
+|4: || || || || ||1|| ||4|| ||6|| ||4|| ||1|| || || ||
+|-
+|5: || || || ||1|| ||5|| ||10|| ||10|| ||5|| ||1|| || ||
+|-
+|6: || || ||1|| ||6|| ||15|| ||20|| ||15|| ||6|| ||1|| ||
+|-
+|7: || ||1&amp;nbsp;|| ||7&amp;nbsp;|| ||21|| ||35|| ||35|| ||21|| ||7&amp;nbsp;|| ||1&amp;nbsp;||
+|-
+|8: ||1&amp;nbsp;|| ||8&amp;nbsp;|| ||28|| ||56|| ||70|| ||56|| ||28|| ||8&amp;nbsp;|| ||1&amp;nbsp;
+|} &lt;!--There is a wider cell made with &amp;nbsp; in 1-digit columns, so triangle becomes more graphically symmetrical --&gt;
+
+Row number {{mvar|n}} contains the numbers &lt;math&gt;\tbinom{n}{k}&lt;/math&gt; for {{math|1=''k'' = 0, ..., ''n''}}. It is constructed by first placing 1s in the outermost positions, and then filling each inner position with the sum of the two numbers directly above. This method allows the quick calculation of binomial coefficients without the need for fractions or multiplications. For instance, by looking at row number 5 of the triangle, one can quickly read off that
+:&lt;math&gt;(x + y)^5 = \underline{1}x^5 + \underline{5}x^4y + \underline{10}x^3y^2 + \underline{10}x^2y^3 + \underline{5}xy^4 + \underline{1}y^5.&lt;/math&gt;
+
+== Combinatorics and statistics ==
+Binomial coefficients are of importance in [[combinatorics]], because they provide ready formulas for certain frequent counting problems:
+* There are &lt;math&gt;\tbinom n k&lt;/math&gt; ways to choose ''k'' elements from a set of ''n'' elements.  See [[Combination]].
+* There are &lt;math&gt;\tbinom {n+k-1}k&lt;/math&gt; ways to choose ''k'' elements from a set of ''n'' elements if repetitions are allowed. See [[Multiset]].
+* There are &lt;math&gt; \tbinom {n+k} k&lt;/math&gt; [[string (computer science)|strings]] containing ''k'' ones and ''n'' zeros.
+* There are &lt;math&gt; \tbinom {n+1} k&lt;/math&gt; strings consisting of ''k'' ones and ''n'' zeros such that no two ones are adjacent.&lt;ref&gt;{{cite journal|last=Muir|first=Thomas|title=Note on Selected Combinations|journal=Proceedings of the Royal Society of Edinburgh|year=1902|url=https://books.google.com/books?id=EN8vAAAAIAAJ&amp;output=reader&amp;pg=GBS.PA102}}&lt;/ref&gt;
+* The [[Catalan number]]s are &lt;math&gt;\tfrac{1}{n+1}\tbinom{2n}{n}.&lt;/math&gt;
+* The [[binomial distribution]] in [[statistics]] is &lt;math&gt;\tbinom n k p^k (1-p)^{n-k} \!.&lt;/math&gt;
+
+== Binomial coefficients as polynomials ==
+For any nonnegative integer ''k'', the expression &lt;math&gt;\scriptstyle{\binom{t}{k}}&lt;/math&gt; can be simplified and defined as a polynomial divided by ''k''!:
+
+:&lt;math&gt;\binom{t}{k} =\frac{(t)_k}{k!}=\frac{(t)_k}{(k)_k}= \frac{t(t-1)(t-2)\cdots(t-k+1)}{k(k-1)(k-2)\cdots2 \cdot 1};&lt;/math&gt;
+
+this presents a [[polynomial]] in ''t'' with [[rational number|rational]] coefficients.
+
+As such, it can be evaluated at any real or complex number ''t'' to define binomial coefficients with such first arguments.
+These &quot;generalized binomial coefficients&quot; appear in [[Binomial theorem#Newton's generalized binomial theorem|Newton's generalized binomial theorem]].
+
+For each ''k'', the polynomial &lt;math&gt;\tbinom{t}{k}&lt;/math&gt; can be characterized as the unique degree ''k'' polynomial ''p''(''t'') satisfying ''p''(0) = ''p''(1) = ... = ''p''(''k'' &amp;minus; 1) = 0 and ''p''(''k'') = 1.
+
+Its coefficients are expressible in terms of [[Stirling numbers of the first kind]]:
+:&lt;math&gt;\binom{t}{k} = \sum_{i=0}^k s(k,i)\frac{t^i}{k!}.&lt;/math&gt;
+The [[derivative]] of &lt;math&gt;\tbinom{t}{k}&lt;/math&gt; can be calculated by [[logarithmic differentiation]]:
+:&lt;math&gt;\frac{\mathrm{d}}{\mathrm{d}t} \binom{t}{k} = \binom{t}{k} \sum_{i=0}^{k-1} \frac{1}{t-i}\,.&lt;/math&gt;
+
+=== Binomial coefficients as a basis for the space of polynomials ===
+Over any [[field (mathematics)|field]] of [[characteristic (algebra)|characteristic 0]] (that is, any field that contains the [[rational number]]s), each polynomial ''p''(''t'') of degree at most ''d'' is uniquely expressible as a linear combination &lt;math&gt;\sum_{k=0}^d a_k \binom{t}{k}&lt;/math&gt; of binomial coefficients.  The coefficient ''a''&lt;sub&gt;''k''&lt;/sub&gt; is the [[finite difference|''k''th difference]] of the sequence ''p''(0), ''p''(1), …, ''p''(''k'').
+Explicitly,&lt;ref&gt;This can be seen as a discrete analog of [[Taylor's theorem]]. It is closely related to [[Newton's polynomial]]. Alternating sums of this form may be expressed as the [[Nörlund–Rice integral]].&lt;/ref&gt;
+{{NumBlk|:|&lt;math&gt;a_k = \sum_{i=0}^k (-1)^{k-i} \binom{k}{i} p(i).&lt;/math&gt;|{{EquationRef|4}}}}
+
+=== Integer-valued polynomials ===
+{{main|Integer-valued polynomial}}
+Each polynomial &lt;math&gt;\tbinom{t}{k}&lt;/math&gt; is [[integer-valued polynomial|integer-valued]]: it has an integer value at all integer inputs &lt;math&gt;t&lt;/math&gt;.
+(One way to prove this is by induction on ''k'', using [[Pascal's identity]].)
+Therefore, any integer linear combination of binomial coefficient polynomials is integer-valued too.
+Conversely, ({{EquationNote|4}}) shows that any integer-valued polynomial is an integer linear combination of these binomial coefficient polynomials.
+More generally, for any subring ''R'' of a characteristic 0 field ''K'', a polynomial in ''K''[''t''] takes values in ''R'' at all integers if and only if it is an ''R''-linear combination of binomial coefficient polynomials.
+
+=== Example ===
+The integer-valued polynomial 3''t''(3''t''&amp;nbsp;+&amp;nbsp;1)/2 can be rewritten as
+:&lt;math&gt;9\tbinom{t}{2} + 6 \tbinom{t}{1} + 0\tbinom{t}{0}.&lt;/math&gt;
+
+== Identities involving binomial coefficients ==
+The factorial formula facilitates relating nearby binomial coefficients.  For instance, if ''k'' is a positive integer and ''n'' is arbitrary, then
+{{NumBlk|:|&lt;math&gt; \binom{n}{k} = \frac{n}{k} \binom{n-1}{k-1}&lt;/math&gt;|{{EquationRef|5}}}}
+and, with a little more work,
+:&lt;math&gt;\binom {n-1}{k} - \binom{n-1}{k-1} = \frac{n-2k}{n} \binom{n}{k}.&lt;/math&gt;
+Moreover, the following may be useful:
+:&lt;math&gt;\binom{n}{h}\binom{n-h}{k}=\binom{n}{k}\binom{n-k}{h}.&lt;/math&gt;
+For constant ''n'', we have the following recurrence:
+:&lt;math&gt; \binom{n}{k} = \frac{n+1-k}{k} \binom{n}{k-1}.&lt;/math&gt;
+
+=== Sums of the binomial coefficients ===
+The formula
+{{NumBlk|:|&lt;math&gt; \sum_{k=0}^n \binom n k = 2^n&lt;/math&gt;|{{EquationRef|∗∗}}}}
+says the elements in the ''n''&lt;sup&gt;th&lt;/sup&gt; row of Pascal's triangle always add up to 2 raised to the ''n''&lt;sup&gt;th&lt;/sup&gt; power. This is obtained from the binomial theorem ({{EquationNote|∗}}) by setting ''x'' = 1 and ''y'' = 1.  The formula also has a natural combinatorial interpretation: the left side sums the number of subsets of {1,...,''n''} of sizes ''k'' = 0,1,...,''n'', giving the total number of subsets. (That is, the left side counts the [[power set]] of {1,...,''n''}.) However, these subsets can also be generated by successively choosing or excluding each element 1,...,''n''; the ''n'' independent binary choices (bit-strings) allow a total of &lt;math&gt;2^n&lt;/math&gt; choices. The left and right sides are two ways to count the same collection of subsets, so they are equal.
+
+The formulas
+{{NumBlk|:|&lt;math&gt;\sum_{k=0}^n k \binom n k = n 2^{n-1}&lt;/math&gt;|{{EquationRef|6}}}}
+and
+&lt;math&gt;\sum_{k=0}^n k^2 \binom n k = (n + n^2)2^{n-2}&lt;/math&gt;
+follow from ({{EquationNote|2}}) after [[derivative|differentiating]] with respect to ''x'' (twice in the latter)  and then substituting ''x'' = 1.
+
+The [[Chu–Vandermonde identity]], which holds for any complex-values ''m'' and ''n'' and any non-negative integer ''k'', is
+{{NumBlk|:|&lt;math&gt; \sum_{j=0}^k \binom m j \binom{n-m}{k-j} = \binom n k&lt;/math&gt;|{{EquationRef|7}}}}
+and can be found by examination of the coefficient of &lt;math&gt;x^k&lt;/math&gt; in the expansion of {{math|1=(1&amp;nbsp;+&amp;nbsp;''x'')&lt;sup&gt;''m''&lt;/sup&gt;&amp;nbsp;(1&amp;nbsp;+&amp;nbsp;''x'')&lt;sup&gt;''n''&amp;nbsp;−&amp;nbsp;''m''&lt;/sup&gt; = (1&amp;nbsp;+&amp;nbsp;''x'')&lt;sup&gt;''n''&lt;/sup&gt;}} using equation ({{EquationNote|2}}).  When {{math|1=''m''&amp;nbsp;=&amp;nbsp;1}}, equation ({{EquationNote|7}}) reduces to equation ({{EquationNote|3}}).  In the special case {{math|1=''n''&amp;nbsp;=&amp;nbsp;2''m'', ''k''&amp;nbsp;=&amp;nbsp;''m''}}, using ({{EquationNote|1}}), the expansion ({{EquationNote|7}}) becomes (as seen in Pascal's triangle at right)
+{{Image frame|width=395
+|content=
+&lt;math&gt;
+\begin{array}{c}
+ 1 \\
+ 1 \qquad 1 \\
+ 1 \qquad 2 \qquad 1 \\
+ {\color{blue}1 \qquad 3 \qquad 3 \qquad 1} \\
+ 1 \qquad 4 \qquad 6 \qquad 4 \qquad 1 \\
+ 1 \qquad 5 \qquad 10 \qquad 10 \qquad 5 \qquad 1 \\
+ 1 \qquad 6 \qquad 15 \qquad {\color{red}20} \qquad 15 \qquad 6 \qquad 1 \\
+ 1 \qquad 7 \qquad 21 \qquad 35 \qquad 35 \qquad 21 \qquad 7 \qquad 1
+\end{array}
+&lt;/math&gt;
+|caption=Pascal's triangle, rows 0 through 7. Equation {{EquationNote|8}} for ''m'' = 3 is illustrated in rows 3 and 6 as &lt;math&gt;1^2+3^2+3^2+1^2=20.&lt;/math&gt;
+}}
+{{NumBlk|:|&lt;math&gt; \sum_{j=0}^m \binom{m}{j} ^2 = \binom {2m} m,&lt;/math&gt;|{{EquationRef|8}}}}
+where the term on the right side is a [[central binomial coefficient]].
+
+Another form of the Chu–Vandermonde identity, which applies for any integers ''j'', ''k'', and ''n'' satisfying {{math|1=0&amp;nbsp;≤&amp;nbsp;''j''&amp;nbsp;≤&amp;nbsp;''k''&amp;nbsp;≤&amp;nbsp;''n''}}, is
+{{NumBlk|:|&lt;math&gt;\sum_{m=0}^n \binom m j \binom {n-m}{k-j}= \binom {n+1}{k+1}.&lt;/math&gt;|{{EquationRef|9}}}}
+The proof is similar, but uses the binomial series expansion ({{EquationNote|2}}) with negative integer exponents.
+When {{math|1=''j''&amp;nbsp;=&amp;nbsp;''k''}}, equation ({{EquationNote|9}}) gives the [[hockey-stick identity]]
+:&lt;math&gt;\sum_{m=k}^n \binom m k = \binom {n+1}{k+1}&lt;/math&gt;
+and its relative
+:&lt;math&gt;\sum_{r=0}^m \binom {n+r} r = \binom {n+m+1}{m}.&lt;/math&gt;
+
+Let ''F''(''n'') denote the ''n''-th [[Fibonacci number]].
+Then
+:&lt;math&gt; \sum_{k=0}^{\lfloor n/2\rfloor} \binom {n-k} k = F(n+1).&lt;/math&gt;
+This can be proved by [[mathematical induction|induction]] using ({{EquationNote|3}}) or by [[Zeckendorf's theorem|Zeckendorf's representation]]. A combinatorial proof is given below.
+
+==== Multisections of sums ====
+For integers ''s'' and ''t'' such that &lt;math&gt;0\leq t &lt; s,&lt;/math&gt; [[series multisection]] gives the following identity for the sum of binomial coefficients:
+: &lt;math&gt;\binom{n}{t}+\binom{n}{t+s}+\binom{n}{t+2s}+\ldots=\frac{1}{s}\sum_{j=0}^{s-1}\left(2\cos\frac{\pi j}{s}\right)^n\cos\frac{\pi(n-2t)j}{s}.&lt;/math&gt;
+
+For small ''s'', these series have particularly nice forms; for example,&lt;ref&gt;{{harvtxt|Gradshteyn|Ryzhik|2014|pp=3–4}}
+.&lt;/ref&gt;
+
+:&lt;math&gt; \binom{n}{0} + \binom{n}{3}+\binom{n}{6}+\cdots = \frac{1}{3}\left(2^n +2 \cos\frac{n\pi}{3}\right) &lt;/math&gt;
+
+:&lt;math&gt; \binom{n}{1} + \binom{n}{4}+\binom{n}{7}+\cdots = \frac{1}{3}\left(2^n +2 \cos\frac{(n-2)\pi}{3}\right) &lt;/math&gt;
+
+:&lt;math&gt; \binom{n}{2} + \binom{n}{5}+\binom{n}{8}+\cdots = \frac{1}{3}\left(2^n +2 \cos\frac{(n-4)\pi}{3}\right) &lt;/math&gt;
+
+:&lt;math&gt; \binom{n}{0} + \binom{n}{4}+\binom{n}{8}+\cdots = \frac{1}{2}\left(2^{n-1} +2^{\frac{n}{2}} \cos\frac{n\pi}{4}\right) &lt;/math&gt;
+
+:&lt;math&gt; \binom{n}{1} + \binom{n}{5}+\binom{n}{9}+\cdots = \frac{1}{2}\left(2^{n-1} +2^{\frac{n}{2}} \sin\frac{n\pi}{4}\right) &lt;/math&gt;
+
+:&lt;math&gt; \binom{n}{2} + \binom{n}{6}+\binom{n}{10}+\cdots = \frac{1}{2}\left(2^{n-1} -2^{\frac{n}{2}} \cos\frac{n\pi}{4}\right) &lt;/math&gt;
+
+:&lt;math&gt; \binom{n}{3} + \binom{n}{7}+\binom{n}{11}+\cdots = \frac{1}{2}\left(2^{n-1} -2^{\frac{n}{2}} \sin\frac{n\pi}{4}\right) &lt;/math&gt;
+
+==== Partial sums ====
+
+Although there is no closed formula for partial sums
+
+:&lt;math&gt; \sum_{j=0}^k \binom n j&lt;/math&gt;
+
+of binomial coefficients,&lt;ref&gt;{{citation
+ | last = Boardman | first = Michael
+ | issue = 5
+ | journal = [[Mathematics Magazine]]
+ | jstor = 3219201
+ | doi = 10.2307/3219201
+ | mr = 1573776
+ | quote = it is well known that there is no closed form (that is, direct formula) for the partial sum of binomial coefficients
+ | pages = 368–372
+ | title = The Egg-Drop Numbers
+ | volume = 77
+ | year = 2004}}.&lt;/ref&gt; one can again use ({{EquationNote|3}}) and induction to show that for ''k'' = 0, ..., ''n''&amp;nbsp;&amp;minus;&amp;nbsp;1,
+:&lt;math&gt; \sum_{j=0}^k (-1)^j\binom n j = (-1)^k\binom {n-1}k&lt;/math&gt;,
+
+with special case&lt;ref&gt;see induction developed in eq (7) p. 1389 in {{citation
+ | last = Aupetit | first = Michael
+ | journal = [[Neurocomputing (journal)|Neurocomputing]]
+ | pages = 1379–1389
+ | title = Nearly homogeneous multi-partitioning with a deterministic generator
+ | volume = 72
+ | number = 7-9
+ | year = 2009
+ | issn = 0925-2312
+ | doi = 10.1016/j.neucom.2008.12.024}}.&lt;/ref&gt;
+
+:&lt;math&gt;\sum_{j=0}^n (-1)^j\binom n j = 0&lt;/math&gt;
+
+for ''n'' &gt; 0.  This latter result is also a special case of the result from the theory of [[finite differences]] that for any polynomial ''P''(''x'') of degree less than ''n'',&lt;ref&gt;{{cite journal|last=Ruiz|first=Sebastian|title=An Algebraic Identity Leading to Wilson's Theorem|journal=The Mathematical Gazette|year=1996|volume=80|issue=489|pages=579–582|doi=10.2307/3618534|jstor=3618534|arxiv=math/0406086}}&lt;/ref&gt;
+:&lt;math&gt; \sum_{j=0}^n (-1)^j\binom n j P(j) = 0.&lt;/math&gt;
+Differentiating ({{EquationNote|2}}) ''k'' times and setting ''x'' = &amp;minus;1 yields this for
+&lt;math&gt;P(x)=x(x-1)\cdots(x-k+1)&lt;/math&gt;,
+when 0 ≤ ''k'' &lt; ''n'',
+and the general case follows by taking linear combinations of these.
+
+When ''P''(''x'') is of degree less than or equal to ''n'',
+
+{{NumBlk|:|&lt;math&gt; \sum_{j=0}^n (-1)^j\binom n j P(n-j) = n!a_n&lt;/math&gt;|{{EquationRef|10}}}}
+
+where &lt;math&gt;a_n&lt;/math&gt; is the coefficient of degree ''n'' in ''P''(''x'').
+
+More generally for ({{EquationNote|10}}),
+:&lt;math&gt; \sum_{j=0}^n (-1)^j\binom n j P(m+(n-j)d) = d^n n! a_n&lt;/math&gt;
+where ''m'' and ''d'' are complex numbers. This follows immediately applying ({{EquationNote|10}}) to the polynomial {{tmath|1=Q(x):=P(m + dx)}} instead of {{tmath|P(x)}}, and observing that {{tmath|Q(x)}} has still degree less than or equal to ''n'', and that its coefficient of degree ''n'' is ''d&lt;sup&gt;n&lt;/sup&gt;a&lt;sub&gt;n&lt;/sub&gt;''.
+
+The [[series (mathematics)|series]]
+&lt;math&gt;\frac{k-1}k\sum_{j=0}^\infty \frac 1 {\binom {j+x} k}= \frac 1 {\binom{x-1}{k-1}}&lt;/math&gt; is convergent for ''k'' ≥ 2. This formula is used in the analysis of the [[German tank problem]]. It follows from  &lt;math&gt;\frac{k-1}k\sum_{j=0}^{M}\frac 1 {\binom{j+x} k}=\frac 1{\binom{x-1}{k-1}}-\frac 1{\binom{M+x}{k-1}}&lt;/math&gt;
+which is proved by [[mathematical induction|induction]] on ''M''.
+
+=== Identities with combinatorial proofs ===
+Many identities involving binomial coefficients can be proved by [[combinatorial proof|combinatorial means]]. For example, for nonnegative integers &lt;math&gt;{n} \geq {q}&lt;/math&gt;, the identity
+
+:&lt;math&gt;\sum_{k=q}^n \binom{n}{k} \binom{k}{q} = 2^{n-q}\binom{n}{q}&lt;/math&gt;
+
+(which reduces to ({{EquationNote|6}}) when ''q'' = 1) can be given a [[double counting (proof technique)|double counting proof]], as follows. The left side counts the number of ways of selecting a subset of [''n''] = {1, 2, …, ''n''} with at least ''q'' elements, and marking ''q'' elements among those selected. The right side counts the same thing, because there are &lt;math&gt;\tbinom n q&lt;/math&gt; ways of choosing a set of ''q'' elements to mark, and &lt;math&gt;2^{n-q}&lt;/math&gt; to choose which of the remaining elements of [''n''] also belong to the subset.
+
+In Pascal's identity
+:&lt;math&gt;{n \choose k} = {n-1 \choose k-1} + {n-1 \choose k},&lt;/math&gt;
+both sides count the number of ''k''-element subsets of [''n'']: the two terms on the right side group them into those that contain element ''n'' and those that do not.
+
+The identity ({{EquationNote|8}}) also has a combinatorial proof. The identity reads
+
+:&lt;math&gt;\sum_{k=0}^n \binom{n}{k}^2 = \binom{2n}{n}.&lt;/math&gt;
+
+Suppose you have &lt;math&gt;2n&lt;/math&gt; empty squares arranged in a row and you want to mark (select) ''n'' of them. There are &lt;math&gt;\tbinom {2n}n&lt;/math&gt; ways to do this. On the other hand, you may select your ''n'' squares by selecting ''k'' squares from among the first ''n'' and &lt;math&gt;n-k&lt;/math&gt; squares from the remaining ''n'' squares; any ''k'' from 0 to ''n'' will work. This gives
+:&lt;math&gt;\sum_{k=0}^n\binom  n k\binom n{n-k} = \binom {2n} n.&lt;/math&gt;
+Now apply ({{EquationNote|5}}) to get the result.
+
+If one denotes by {{math|''F''(''i'')}} the sequence of [[Fibonacci number]]s, indexed so that {{math|''F''(0) {{=}} ''F''(1) {{=}} 1}}, then the identity 
+&lt;math display=&quot;block&quot;&gt;\sum_{k=0}^{\left\lfloor\frac{n}{2}\right\rfloor} \tbinom {n-k} k = F(n)&lt;/math&gt;
+has the following combinatorial proof.&lt;ref&gt;{{harvnb|Benjamin|Quinn|2003|loc=pp. 4−5}}&lt;/ref&gt;  One may show by [[mathematical induction|induction]] that {{math|''F''(''n'')}} counts the number of ways that a {{math|''n'' × 1}} strip of squares may be covered by {{math|2 × 1}} and {{math|1 × 1}} tiles.  On the other hand, if such a tiling uses exactly {{mvar|k}} of the {{math|2 × 1}} tiles, then it uses {{math|''n'' − 2''k''}} of the {{math|1 × 1}} tiles, and so uses {{math|''n'' − ''k''}} tiles total.  There are &lt;math&gt;\tbinom{n-k}{k}&lt;/math&gt; ways to order these tiles, and so summing this coefficient over all possible values of {{mvar|k}} gives the identity.
+
+==== Sum of coefficients row ====
+{{See also|Combination#Number of k-combinations for all k}}
+
+The number of ''k''-[[Combination#Number of k-combinations for all k|combinations]] for all ''k'', &lt;math&gt;\sum_{0\leq{k}\leq{n}}\binom nk = 2^n&lt;/math&gt;, is the sum of the ''n''th row (counting from 0) of the binomial coefficients. These combinations are enumerated by the 1 digits of the set of [[base 2]] numbers counting from 0 to &lt;math&gt;2^n - 1&lt;/math&gt;, where each digit position is an item from the set of ''n''.
+
+=== Dixon's identity ===
+[[Dixon's identity]] is
+
+:&lt;math&gt;\sum_{k=-a}^{a}(-1)^{k}{2a\choose k+a}^3 =\frac{(3a)!}{(a!)^3}&lt;/math&gt;
+
+or, more generally,
+
+:&lt;math&gt;\sum_{k=-a}^a(-1)^k{a+b\choose a+k} {b+c\choose b+k}{c+a\choose c+k}  = \frac{(a+b+c)!}{a!\,b!\,c!}\,,&lt;/math&gt;
+
+where ''a'', ''b'', and ''c'' are non-negative integers.
+
+=== Continuous identities ===
+Certain trigonometric integrals have values expressible in terms of
+binomial coefficients: For any &lt;math&gt;m, n \in \mathbb{N},&lt;/math&gt;
+
+: &lt;math&gt;
+\int_{-\pi}^{\pi} \cos((2m-n)x)\cos^n(x)\ dx = \frac{\pi}{2^{n-1}} \binom{n}{m}
+&lt;/math&gt;
+
+: &lt;math&gt;
+\int_{-\pi}^{\pi} \sin((2m-n)x)\sin^n(x)\ dx =
+\begin{cases}
+(-1)^{m+(n+1)/2} \frac{\pi}{2^{n-1}} \binom{n}{m}, &amp; n \text{ odd} \\
+0, &amp; \text{otherwise}
+\end{cases}&lt;/math&gt;
+
+: &lt;math&gt;
+\int_{-\pi}^{\pi} \cos((2m-n)x)\sin^n(x)\ dx =
+\begin{cases}
+(-1)^{m+(n/2)} \frac{\pi}{2^{n-1}} \binom{n}{m}, &amp; n \text{ even} \\
+0, &amp; \text{otherwise}
+\end{cases}&lt;/math&gt;
+
+These can be proved by using [[Euler's formula]] to convert [[trigonometric functions]] to complex exponentials, expanding using the binomial theorem, and integrating term by term.
+
+== Generating functions ==
+
+=== Ordinary generating functions ===
+For a fixed {{math|''n''}}, the [[ordinary generating function]] of the sequence &lt;math&gt;\tbinom n0,\tbinom n1,\tbinom n2,\ldots&lt;/math&gt; is
+: &lt;math&gt;\sum_{k=0}^\infty {n\choose k} x^k = (1+x)^n.&lt;/math&gt;
+
+For a fixed {{math|''k''}},  the ordinary generating function of the sequence &lt;math&gt;\tbinom 0k,\tbinom 1k, \tbinom 2k,\ldots,&lt;/math&gt; is
+: &lt;math&gt;\sum_{n=k}^\infty {n\choose k} y^n = \frac{y^k}{(1-y)^{k+1}}.&lt;/math&gt;
+
+The [[bivariate generating function]] of the binomial coefficients is
+: &lt;math&gt;\sum_{n=0}^\infty \sum_{k=0}^n {n\choose k} x^k y^n = \frac{1}{1-y-xy}.&lt;/math&gt;
+
+Another, symmetric, bivariate generating function of the binomial coefficients is
+: &lt;math&gt;\sum_{n=0}^\infty \sum_{k=0}^\infty {n+k\choose k} x^k y^n = \frac{1}{1-x-y}.&lt;/math&gt;
+
+=== Exponential generating function ===
+A symmetric [[exponential generating function|exponential bivariate generating function]] of the binomial coefficients is:
+: &lt;math&gt;\sum_{n=0}^\infty \sum_{k=0}^\infty {n+k\choose k} \frac{x^k y^n}{(n+k)!} = e^{x+y}.&lt;/math&gt;
+
+== Divisibility properties ==
+{{main|Kummer's theorem|Lucas' theorem}}
+In 1852, [[Ernst Kummer|Kummer]] proved that if ''m'' and ''n'' are nonnegative integers and ''p'' is a prime number, then the largest power of ''p'' dividing &lt;math&gt;\tbinom{m+n}{m}&lt;/math&gt; equals ''p''&lt;sup&gt;''c''&lt;/sup&gt;, where ''c'' is the number of carries when ''m'' and ''n'' are added in base ''p''.
+Equivalently, the exponent of a prime ''p'' in &lt;math&gt;\tbinom n k&lt;/math&gt;
+equals the number of nonnegative integers ''j'' such that the [[fractional part]] of ''k''/''p''&lt;sup&gt;''j''&lt;/sup&gt; is greater than the fractional part of ''n''/''p''&lt;sup&gt;''j''&lt;/sup&gt;.  It can be deduced from this that &lt;math&gt;\tbinom n k&lt;/math&gt; is divisible by ''n''/[[greatest common divisor|gcd]](''n'',''k''). In particular therefore it follows that ''p'' divides &lt;math&gt;\tbinom{p^r}{s}&lt;/math&gt; for all positive integers ''r'' and ''s'' such that {{math|''s'' &lt; ''p''&lt;sup&gt;''r''&lt;/sup&gt;}}. However this is not true of higher powers of ''p'': for example 9 does not divide &lt;math&gt;\tbinom{9}{6}&lt;/math&gt;.
+
+A somewhat surprising result by [[David Singmaster]] (1974) is that any integer divides [[almost all]] binomial coefficients. More precisely, fix an integer ''d'' and let ''f''(''N'') denote the number of binomial coefficients &lt;math&gt;\tbinom n k&lt;/math&gt; with ''n'' &lt; ''N'' such that ''d'' divides &lt;math&gt;\tbinom n k&lt;/math&gt;. Then
+:&lt;math&gt; \lim_{N\to\infty} \frac{f(N)}{N(N+1)/2} = 1. &lt;/math&gt;
+Since the number of binomial coefficients &lt;math&gt;\tbinom n k&lt;/math&gt; with ''n'' &lt; ''N'' is ''N''(''N'' + 1) / 2, this implies that the density of binomial coefficients divisible by ''d'' goes to 1.
+
+Binomial coefficients have divisibility properties related to least common multiples of consecutive integers. For example:&lt;ref name=&quot;Farhi2007&quot;&gt;{{cite journal |last=Farhi |first=Bakir |title=Nontrivial lower bounds for the least common multiple of some finite sequence of integers |journal=Journal of Number Theory |volume=125 |year=2007 |pages=393–411 |doi=10.1016/j.jnt.2006.10.017 |arxiv=0803.0290 }}&lt;/ref&gt;
+
+&lt;math&gt;\binom{n+k}k&lt;/math&gt; divides &lt;math&gt;\frac{\text{lcm}(n,n+1,\ldots,n+k)}n&lt;/math&gt;.
+
+&lt;math&gt;\binom{n+k}k&lt;/math&gt; is a multiple of &lt;math&gt;\frac{\text{lcm}(n,n+1,\ldots,n+k)}{n\cdot \text{lcm}(\binom{k}0,\binom{k}1,\ldots,\binom{k}k)}&lt;/math&gt;.
+
+Another fact:
+An integer {{math|''n'' ≥ 2}} is prime if and only if
+all the intermediate binomial coefficients
+: &lt;math&gt; \binom n 1, \binom n 2, \ldots, \binom n{n-1} &lt;/math&gt;
+are divisible by ''n''.
+
+Proof:
+When ''p'' is prime, ''p'' divides
+:&lt;math&gt; \binom p k = \frac{p \cdot (p-1) \cdots (p-k+1)}{k \cdot (k-1) \cdots 1} &lt;/math&gt; for all {{math|1=0 &lt; ''k'' &lt; ''p''}}
+because &lt;math&gt;\tbinom p k&lt;/math&gt; is a natural number and ''p'' divides the numerator but not the denominator.
+When ''n'' is composite, let ''p'' be the smallest prime factor of ''n'' and let {{math|1=''k'' = ''n/p''}}. Then {{math|1=0 &lt; ''p'' &lt; ''n''}} and
+:&lt;math&gt; \binom n p = \frac{n(n-1)(n-2)\cdots(n-p+1)}{p!}=\frac{k(n-1)(n-2)\cdots(n-p+1)}{(p-1)!}\not\equiv 0 \pmod{n}&lt;/math&gt;
+otherwise the numerator {{math|1=''k''(''n'' &amp;minus; 1)(''n'' &amp;minus; 2)&amp;times;...&amp;times;(''n'' &amp;minus; ''p'' + 1)}} has to be divisible by {{math|1=''n'' = ''k''&amp;times;''p''}}, this can only be the case when {{math|1=(''n'' &amp;minus; 1)(''n'' &amp;minus; 2)&amp;times;...&amp;times;(''n'' &amp;minus; ''p'' + 1)}} is divisible by ''p''. But ''n'' is divisible by ''p'', so ''p'' does not divide {{math|1=''n'' &amp;minus; 1, ''n'' &amp;minus; 2, ..., ''n'' &amp;minus; ''p'' + 1}} and because ''p'' is prime, we know that ''p'' does not divide {{math|1=(''n'' &amp;minus; 1)(''n'' &amp;minus; 2)&amp;times;...&amp;times;(''n'' &amp;minus; ''p'' + 1)}} and so the numerator cannot be divisible by ''n''.
+
+== Bounds and asymptotic formulas ==
+The following bounds for &lt;math&gt;\tbinom n k&lt;/math&gt; hold for all values of ''n'' and ''k'' such that  1&amp;nbsp;≤&amp;nbsp;''k''&amp;nbsp;≤&amp;nbsp;''n'':
+
+:&lt;math&gt;\frac{n^k}{k^k} \le {n \choose k}  \le \frac{n^k}{k!} &lt; \left(\frac{n\cdot e}{k}\right)^k&lt;/math&gt;.
+
+The first inequality follows from the fact that
+
+:&lt;math&gt; {n \choose k} = \frac{n}{k} \cdot \frac{n-1}{k-1} \cdots \frac{n-(k-1)}{1} &lt;/math&gt; 
+
+and each of these &lt;math&gt;k &lt;/math&gt; terms in this product is &lt;math&gt; \geq \frac{n}{k} &lt;/math&gt;. A similar argument can be made to show the second inequality.  The final strict inequality is equivalent to &lt;math&gt;e^k&gt;k^k/k!&lt;/math&gt;, that is clear since the RHS is a term of the exponential series &lt;math&gt; e^k=\sum_{j=0}^\infty k^j/j! &lt;/math&gt;. 
+
+From the divisibility properties we can infer that
+
+:&lt;math&gt;\frac{\text{lcm}(n-k,\ldots,n)}{(n-k)\cdot \text{lcm}(\binom{k}0,\ldots,\binom{k}k)}\leq\binom{n}k\leq\frac{\text{lcm}(n-k,\ldots,n)}{n-k}&lt;/math&gt;,
+
+where both equalities can be achieved.&lt;ref name=&quot;Farhi2007&quot; /&gt;
+
+=== Both {{Mvar|n}} and {{Mvar|k}} large ===
+[[Stirling's approximation]] yields the following approximation, valid when &lt;math&gt;n,k&lt;/math&gt; both tend to infinity:
+:&lt;math&gt;{n \choose k} \sim 
+\sqrt{n\over 2\pi k (n-k)} \cdot
+{n^n \over k^k (n-k)^{n-k}}
+&lt;/math&gt;
+
+Because the inequality forms of Stirling's formula also bound the factorials, slight variants on the above asymptotic approximation give exact bounds.
+
+In particular, when &lt;math&gt;n&lt;/math&gt; is sufficiently large:
+: &lt;math&gt; {2n \choose n} \sim \frac{2^{2n}}{\sqrt{\pi n}}&lt;/math&gt;and &lt;math&gt;\sqrt{n}{2n \choose n} \ge 2^{2n-1}&lt;/math&gt;
+
+and, in general, for ''m''&amp;nbsp;≥&amp;nbsp;2 and ''n''&amp;nbsp;≥&amp;nbsp;1,{{why|date=September 2017}}
+
+:&lt;math&gt;\sqrt{n}{mn \choose n} \ge \frac{m^{m(n-1)+1}}{(m-1)^{(m-1)(n-1)}}&lt;/math&gt;
+
+Another useful asymptotic approximation for when both numbers grow at the same rate is
+
+:&lt;math&gt;\log_2{n \choose k} \sim n H(k/n)  = k\log_2(n/k) + (n-k)\log_2(n/(n-k))&lt;/math&gt;  
+
+where &lt;math&gt;H(p) = -p\log_2(p) -(1-p)\log_2(1-p)&lt;/math&gt; is the [[binary entropy function]]. 
+
+=== {{Mvar|n}} much larger than {{Mvar|k}} ===
+When &lt;math&gt;n&lt;/math&gt; is large and &lt;math&gt;k&lt;/math&gt; is much smaller than &lt;math&gt;n&lt;/math&gt;, one can also write
+
+:&lt;math&gt;{n \choose k} = \frac{n(n-1)\dots(n-k+1)}{k!} \approx \frac{(n-k/2)^k }{ k^k e^{-k} \sqrt{2\pi k}} = \frac{(n/k-0.5)^k e^k }{ \sqrt{2\pi k}}\,,&lt;/math&gt;
+
+This gives the following analogue of Stirling's formula:
+
+:&lt;math&gt;\ln{n \choose k} \approx k \ln(n/k-0.5) + k - 0.5 \ln(2 \pi k)\,.&lt;/math&gt;
+
+If more precision is desired, one can approximate &lt;math&gt;\ln{(n(n-1)\dots(n-k+1))}&lt;/math&gt; with an integral, obtaining
+
+:&lt;math&gt;\ln{n \choose k} \approx (n+0.5) \ln\frac{n+0.5}{n-k+0.5} + k \ln \frac{n-k+0.5}{k} - 0.5 \ln(2 \pi k)&lt;/math&gt;
+
+For &lt;math&gt;n=20&lt;/math&gt; and &lt;math&gt;k=10&lt;/math&gt;, &lt;math&gt;\ln{\tbinom n k} \approx 12.127&lt;/math&gt;, and these approximations yield 12.312 and 12.133 respectively.
+
+If ''n'' is large and ''k'' is linear in ''n'', various precise asymptotic estimates exist for the binomial coefficient &lt;math&gt; \binom{n}{k}&lt;/math&gt;.  For example, if &lt;math&gt;| n/2 - k | = o(n^{2/3})&lt;/math&gt; then&lt;ref&gt;{{cite book|title=Asymptopia|last1=Spencer|first1=Joel|last2=Florescu|first2=Laura|date=2014|publisher=[[American Mathematical Society|AMS]]|isbn=978-1-4704-0904-3|series=Student mathematical library|volume=71|page=66|oclc=865574788|author1link=Joel Spencer}}&lt;/ref&gt;
+
+:&lt;math&gt; \binom{n}{k} \sim \binom{n}{\frac{n}{2}} e^{-d^2/(2n)} \sim \frac{2^n}{\sqrt{\frac{1}{2}n \pi }} e^{-d^2/(2n)}&lt;/math&gt;
+
+where ''d'' = ''n'' − 2''k''.
+
+===Sums of binomial coefficients===
+A simple and rough upper bound for the sum of binomial coefficients can be obtained using the [[binomial theorem]]:
+
+:&lt;math&gt;\sum_{i=0}^k {n \choose i} \leq \sum_{i=0}^k n^i\cdot 1^{k-i} \leq (1+n)^k&lt;/math&gt;
+
+More precise bounds are given by 
+
+:&lt;math&gt;\frac{1}{\sqrt{8n\epsilon(1-\epsilon)}} \cdot 2^{H(\epsilon) \cdot n} \leq \sum_{i=0}^{k} \binom{n}{i} \leq 2^{H(\epsilon) \cdot n}\,.&lt;/math&gt;
+
+which is valid by for all integers &lt;math&gt;n \geq k \geq 1&lt;/math&gt; with &lt;math&gt;\epsilon \doteq k/n \leq 1/2&lt;/math&gt;.&lt;ref&gt;see e.g. {{harvtxt|Ash|1990|p=121}} or {{harvtxt|Flum|Grohe|2006|p=427}}.&lt;/ref&gt;
+
+=== Generalized binomial coefficients ===
+The [[Gamma function#Euler's definition as an infinite product|infinite product formula for the Gamma function]] also gives an expression for binomial coefficients
+
+:&lt;math&gt;(-1)^k {z \choose k}= {-z+k-1 \choose k} = \frac{1}{\Gamma(-z)} \frac{1}{(k+1)^{z+1}} \prod_{j=k+1} \frac{(1+\frac{1}{j})^{-z-1}}{1-\frac{z+1}{j}}&lt;/math&gt;
+
+which yields the asymptotic formulas
+
+:&lt;math&gt;{z \choose k} \approx \frac{(-1)^k}{\Gamma(-z) k^{z+1}} \qquad  \mathrm{and}  \qquad {z+k \choose k} = \frac{k^z}{\Gamma(z+1)}\left( 1+\frac{z(z+1)}{2k}+\mathcal{O}\left(k^{-2}\right)\right)&lt;/math&gt;
+
+as &lt;math&gt;k \to \infty&lt;/math&gt;.
+
+This asymptotic behaviour is contained in the approximation
+:&lt;math&gt;{z+k \choose k}\approx \frac{e^{z(H_k-\gamma)}}{\Gamma(z+1)}&lt;/math&gt;
+as well. (Here &lt;math&gt;H_k&lt;/math&gt; is the ''k''-th [[harmonic number]] and &lt;math&gt;\gamma&lt;/math&gt; is the [[Euler–Mascheroni constant]].)
+
+Further, the asymptotic formula
+:&lt;math&gt;\frac{{z+k\choose j}}{{k\choose j}}\to \left(1-\frac{j}{k}\right)^{-z}\quad\text{and}\quad \frac{{j\choose j-k}}{{j-z\choose j-k}}\to \left(\frac{j}{k}\right)^z&lt;/math&gt;
+hold true, whenever &lt;math&gt;k\to\infty&lt;/math&gt; and &lt;math&gt;j/k\to x&lt;/math&gt; for some complex number &lt;math&gt;x&lt;/math&gt;.
+
+==Generalizations==
+
+===Generalization to multinomials===
+{{main|Multinomial theorem}}
+Binomial coefficients can be generalized to '''multinomial coefficients''' defined to be the number:
+:&lt;math&gt;{n\choose k_1,k_2,\ldots,k_r} =\frac{n!}{k_1!k_2!\cdots k_r!}&lt;/math&gt;
+where
+:&lt;math&gt;\sum_{i=1}^rk_i=n.&lt;/math&gt;
+
+While the binomial coefficients represent the coefficients of (''x''+''y'')&lt;sup&gt;''n''&lt;/sup&gt;, the multinomial coefficients
+represent the coefficients of the polynomial
+:&lt;math&gt;(x_1 + x_2 + \cdots + x_r)^n.&lt;/math&gt;
+The case ''r'' = 2 gives binomial coefficients:
+:&lt;math&gt;{n\choose k_1,k_2}={n\choose k_1, n-k_1}={n\choose k_1}= {n\choose k_2}.&lt;/math&gt;
+
+The combinatorial interpretation of multinomial coefficients is distribution of ''n'' distinguishable elements over ''r'' (distinguishable) containers, each containing exactly ''k&lt;sub&gt;i&lt;/sub&gt;'' elements, where ''i'' is the index of the container.
+
+Multinomial coefficients have many properties similar to those of binomial coefficients, for example the recurrence relation:
+:&lt;math&gt;{n\choose k_1,k_2,\ldots,k_r} ={n-1\choose k_1-1,k_2,\ldots,k_r}+{n-1\choose k_1,k_2-1,\ldots,k_r}+\ldots+{n-1\choose k_1,k_2,\ldots,k_r-1}&lt;/math&gt;
+and symmetry:
+:&lt;math&gt;{n\choose k_1,k_2,\ldots,k_r} ={n\choose k_{\sigma_1},k_{\sigma_2},\ldots,k_{\sigma_r}}&lt;/math&gt;
+where &lt;math&gt;(\sigma_i)&lt;/math&gt; is a [[permutation]] of (1,2,...,''r'').
+
+=== Taylor series ===
+Using [[Stirling numbers of the first kind]] the [[Taylor series|series expansion]] around any arbitrarily chosen point &lt;math&gt;z_0&lt;/math&gt; is
+:&lt;math&gt;\begin{align} {z \choose k} = \frac{1}{k!}\sum_{i=0}^k z^i s_{k,i}&amp;=\sum_{i=0}^k (z- z_0)^i \sum_{j=i}^k {z_0 \choose j-i} \frac{s_{k+i-j,i}}{(k+i-j)!} \\ &amp;=\sum_{i=0}^k (z-z_0)^i \sum_{j=i}^k z_0^{j-i} {j \choose i} \frac{s_{k,j}}{k!}.\end{align}&lt;/math&gt;
+
+=== Binomial coefficient with ''n'' = 1/2 ===
+The definition of the binomial coefficients can be extended to the case where &lt;math&gt;n&lt;/math&gt; is real and &lt;math&gt;k&lt;/math&gt; is integer.
+
+In particular, the following identity holds for any non-negative integer &lt;math&gt;k&lt;/math&gt; :
+:&lt;math&gt;{{1/2}\choose{k}}={{2k}\choose{k}}\frac{(-1)^{k+1}}{2^{2k}(2k-1)}.&lt;/math&gt;
+
+This shows up when expanding &lt;math&gt;\sqrt{1+x}&lt;/math&gt; into a power series using the Newton binomial series :
+:&lt;math&gt;\sqrt{1+x}=\sum_{k\geq 0}{\binom{1/2}{k}}x^k.&lt;/math&gt;
+
+=== Identity for the product of binomial coefficients ===
+One can express the product of binomial coefficients as a linear combination of binomial coefficients:
+
+:&lt;math&gt;{z \choose m} {z\choose n} = \sum_{k=0}^m {m + n - k \choose k, m - k, n - k} {z \choose m + n - k},&lt;/math&gt;
+
+where the connection coefficients are [[Multinomial theorem|multinomial coefficients]]. In terms of labelled combinatorial objects, the connection coefficients represent the number of ways to assign ''m'' + ''n'' − ''k'' labels to a pair of labelled combinatorial objects&amp;mdash;of weight ''m'' and ''n'' respectively&amp;mdash;that have had their first ''k'' labels identified, or glued together to get a new labelled combinatorial object of weight ''m'' + ''n'' − ''k''. (That is, to separate the labels into three portions to apply to the glued part, the unglued part of the first object, and the unglued part of the second object.) In this regard, binomial coefficients are to exponential generating series what [[falling factorial]]s are to ordinary generating series.
+
+=== Partial fraction decomposition ===
+The [[partial fraction decomposition]] of the reciprocal is given by
+:&lt;math&gt;\frac{1}{{z \choose n}}= \sum_{i=0}^{n-1} (-1)^{n-1-i} {n \choose i} \frac{n-i}{z-i}, 
+\qquad \frac{1}{{z+n \choose n}}= \sum_{i=1}^n (-1)^{i-1} {n \choose i} \frac{i}{z+i}.&lt;/math&gt;
+
+=== Newton's binomial series ===
+{{main|Binomial series}}
+Newton's binomial series, named after [[Sir Isaac Newton]], is a generalization of the binomial theorem to infinite series:
+
+:&lt;math&gt; (1+z)^{\alpha} = \sum_{n=0}^{\infty}{\alpha\choose n}z^n = 1+{\alpha\choose1}z+{\alpha\choose 2}z^2+\cdots.&lt;/math&gt;
+
+The identity can be obtained by showing that both sides satisfy the [[differential equation]] (1 + ''z'') ''f'''(''z'') = α ''f''(''z'').
+
+The [[radius of convergence]] of this series is 1.  An alternative expression is
+
+:&lt;math&gt;\frac{1}{(1-z)^{\alpha+1}} = \sum_{n=0}^{\infty}{n+\alpha \choose n}z^n&lt;/math&gt;
+
+where the identity
+
+:&lt;math&gt;{n \choose k} = (-1)^k {k-n-1 \choose k}&lt;/math&gt;
+
+is applied.
+
+=== Multiset (rising) binomial coefficient ===
+{{main|Multichoose#Counting multisets}}
+Binomial coefficients count subsets of prescribed size from a given set.  A related combinatorial problem is to count [[multiset]]s of prescribed size with elements drawn from a given set, that is, to count the number of ways to select a certain number of elements from a given set with the possibility of selecting the same element repeatedly.  The resulting numbers are called ''[[Multiset#Counting multisets|multiset coefficients]]'';&lt;ref&gt;{{citation
+ | last = Munarini | first = Emanuele
+ | doi = 10.2298/AADM110609014M
+ | issue = 2
+ | journal = Applicable Analysis and Discrete Mathematics
+ | mr = 2867317
+ | pages = 176–200
+ | title = Riordan matrices and sums of harmonic numbers
+ | volume = 5
+ | year = 2011| url = http://www.doiserbia.nb.rs/img/doi/1452-8630/2011/1452-86301100014M.pdf
+ }}.&lt;/ref&gt; the number of ways to &quot;multichoose&quot; (i.e., choose with replacement) ''k'' items from an ''n'' element set is denoted &lt;math&gt;\left(\!\!\binom n k\!\!\right)&lt;/math&gt;.
+
+To avoid ambiguity and confusion with ''n'''s main denotation in this article,&lt;br&gt; let ''f'' = ''n'' = ''r'' + (''k'' – 1) and ''r'' = ''f'' – (''k'' – 1).
+
+Multiset coefficients may be expressed in terms of binomial coefficients by the rule
+:::::&lt;math&gt;\binom{f}{k}=\left(\!\!\binom{r}{k}\!\!\right)=\binom{r+k-1}{k}.&lt;/math&gt;
+One possible alternative characterization of this identity is as follows:
+We may define the [[falling factorial]] as
+:::::&lt;math&gt;(f)_{k}=f^{\underline k}=(f-k+1)\cdots(f-3)\cdot(f-2)\cdot(f-1)\cdot f&lt;/math&gt;,
+and the corresponding rising factorial as
+:::::&lt;math&gt;{\color{white}{ \big|}}r^{(k)}=\,r^{\overline k}=\,r\cdot(r+1)\cdot(r+2)\cdot(r+3)\cdots(r+k-1)&lt;/math&gt;;
+so, for example,
+:::::&lt;math&gt;17\cdot18\cdot19\cdot20\cdot21=(21)_{5}=21^{\underline 5}=17^{\overline 5}=17^{(5)}&lt;/math&gt;.
+Then the binomial coefficients may be written as 
+:::::&lt;math&gt;\binom{f}{k} = \frac{(f)_{k}}{k!} =\frac{(f-k+1)\cdots(f-2)\cdot(f-1)\cdot f}{1\cdot2\cdot3\cdot4\cdot5\cdots k}&lt;/math&gt;, 
+while the corresponding multiset coefficient is defined by replacing the falling with the rising factorial:
+:::::&lt;math&gt;\left(\!\!\binom{r}{k}\!\!\right)=\frac{r^{(k)}}{k!}=\frac{r\cdot(r+1)\cdot(r+2)\cdots(r+k-1)}{1\cdot2\cdot3\cdot4\cdot5\cdots k}&lt;/math&gt;.
+
+==== Generalization to negative integers ====
+For any ''n'',
+
+:&lt;math&gt;\begin{align}\binom{-n}{k} &amp;= \frac{-n\cdot-(n+1)\dots-(n+k-2)\cdot-(n+k-1)}{k!}\\
+&amp;=(-1)^k\;\frac{n\cdot(n+1)\cdot(n+2)\cdots (n + k - 1)}{k!}\\
+&amp;=(-1)^k\binom{n + k - 1}{k}\\
+&amp;=(-1)^k\left(\!\!\binom{n}{k}\!\!\right)\;.\end{align}&lt;/math&gt;
+In particular, binomial coefficients evaluated at negative integers are given by signed multiset coefficients.  In the special case &lt;math&gt;n = -1&lt;/math&gt;, this reduces to &lt;math&gt;(-1)^k=\binom{-1}{k}=\left(\!\!\binom{-k}{k}\!\!\right) \,.&lt;/math&gt;
+
+For example, if ''n'' = -4 and ''k'' = 7, then ''r'' = 4 and ''f'' = 10:
+:&lt;math&gt;\begin{align}\binom{-4}{7} &amp;= \frac
+{-10\cdot-9\cdot-8\cdot-7\cdot-6\cdot-5\cdot-4}
+{1\cdot2\cdot3\cdot4\cdot5\cdot6\cdot7}\\
+&amp;=(-1)^7\;\frac{4\cdot5\cdot6\cdot7\cdot8\cdot9\cdot10}
+{1\cdot2\cdot3\cdot4\cdot5\cdot6\cdot7}\\
+&amp;=\left(\!\!\binom{-7}{7}\!\!\right)\left(\!\!\binom{4}{7}\!\!\right)=\binom{-1}{7}\binom{10}{7}.\end{align}&lt;/math&gt;
+
+=== Two real or complex valued arguments ===
+The binomial coefficient is generalized to two real or complex valued arguments using the [[gamma function]] or [[beta function]] via
+:&lt;math&gt;{x \choose y}= \frac{\Gamma(x+1)}{\Gamma(y+1) \Gamma(x-y+1)}= \frac{1}{(x+1) \Beta(x-y+1,y+1)}.&lt;/math&gt;
+This definition inherits these following additional properties from &lt;math&gt;\Gamma&lt;/math&gt;:
+:&lt;math&gt;{x \choose y}= \frac{\sin (y \pi)}{\sin(x \pi)} {-y-1 \choose -x-1}= \frac{\sin((x-y) \pi)}{\sin (x \pi)} {y-x-1 \choose y};&lt;/math&gt;
+moreover,
+:&lt;math&gt;{x \choose y} \cdot {y \choose x}= \frac{\sin((x-y) \pi)}{(x-y) \pi}.&lt;/math&gt;
+
+The resulting function has been little-studied, apparently first being graphed in {{Harv|Fowler|1996}}. Notably, many binomial identities fail: &lt;math&gt;\textstyle{{n \choose m} = {n \choose n-m}}&lt;/math&gt; but &lt;math&gt;\textstyle{{-n \choose m} \neq {-n \choose -n-m}}&lt;/math&gt; for ''n'' positive (so &lt;math&gt;-n&lt;/math&gt; negative). The behavior is quite complex, and markedly different in various octants (that is, with respect to the ''x'' and ''y'' axes and the line &lt;math&gt;y=x&lt;/math&gt;), with the behavior for negative ''x'' having singularities at negative integer values and a checkerboard of positive and negative regions:
+* in the octant &lt;math&gt;0 \leq y \leq x&lt;/math&gt; it is a smoothly interpolated form of the usual binomial, with a ridge (&quot;Pascal's ridge&quot;).
+* in the octant &lt;math&gt;0 \leq x \leq y&lt;/math&gt; and in the quadrant &lt;math&gt;x \geq 0, y \leq 0&lt;/math&gt; the function is close to zero.
+* in the quadrant &lt;math&gt;x \leq 0, y \geq 0&lt;/math&gt; the function is alternatingly very large positive and negative on the parallelograms with vertices 
+:&lt;math&gt;(-n,m+1), (-n,m), (-n-1,m-1), (-n-1,m)&lt;/math&gt;
+* in the octant &lt;math&gt;0 &gt; x &gt; y&lt;/math&gt; the behavior is again alternatingly very large positive and negative, but on a square grid.
+* in the octant &lt;math&gt;-1 &gt; y &gt; x + 1&lt;/math&gt; it is close to zero, except for near the singularities.
+
+=== Generalization to ''q''-series ===
+The binomial coefficient has a [[q-analog]] generalization known as the [[Gaussian binomial coefficient]].
+
+=== Generalization to infinite cardinals ===
+The definition of the binomial coefficient can be generalized to [[Cardinal Number|infinite cardinals]] by defining:
+
+:&lt;math&gt;{\alpha \choose \beta} = | \{ B \subseteq A : |B| = \beta \} |&lt;/math&gt;
+
+where A is some set with [[cardinality]] &lt;math&gt;\alpha&lt;/math&gt;. One can show that the generalized binomial coefficient is well-defined, in the sense that no matter what set we choose to represent the cardinal number &lt;math&gt;\alpha&lt;/math&gt;, &lt;math&gt;{\alpha \choose \beta}&lt;/math&gt; will remain the same. For finite cardinals, this definition coincides with the standard definition of the binomial coefficient.
+
+Assuming the [[Axiom of Choice]], one can show that &lt;math&gt;{\alpha \choose \alpha} = 2^{\alpha}&lt;/math&gt; for any infinite cardinal &lt;math&gt;\alpha&lt;/math&gt;.
+
+==Binomial coefficient in programming languages==
+The notation &lt;math&gt; {n \choose k} &lt;/math&gt; is convenient in handwriting but inconvenient for [[typewriter]]s and [[computer terminal]]s. Many [[programming language]]s do not offer a standard [[subroutine]] for computing the binomial coefficient, but for example both the [[APL programming language]] and the (related) [[J programming language]] use the exclamation mark:  k ! n .
+
+Naive implementations of the factorial formula, such as the following snippet in [[Python (programming language)|Python]]:
+&lt;syntaxhighlight lang=&quot;python&quot;&gt;
+from math import factorial
+def binomial_coefficient(n: int, k: int) -&gt; int:
+    return factorial(n) // (factorial(k) * factorial(n - k))
+&lt;/syntaxhighlight&gt;
+
+are very slow and are useless for calculating factorials of very high numbers (in languages such as [[C (programming language)|C]] or [[Java (programming language)|Java]] they suffer from overflow errors because of this reason). A direct implementation of the multiplicative formula works well:
+
+&lt;syntaxhighlight lang=&quot;python&quot;&gt;
+def binomial_coefficient(n: int, k: int) -&gt; int:
+    if k &lt; 0 or k &gt; n:
+        return 0
+    if k == 0 or k == n:
+        return 1
+    k = min(k, n - k)  # Take advantage of symmetry
+    c = 1
+    for i in range(k):
+        c = c * (n - i) / (i + 1)
+    return c
+&lt;/syntaxhighlight&gt;
+(In Python, range(k) produces a list from 0 to k–1.)
+
+[[Pascal's rule]] provides a recursive definition which can also be implemented in Python, although it is less efficient:
+&lt;syntaxhighlight lang=&quot;python&quot;&gt;
+def binomial_coefficient(n: int, k: int) -&gt; int:
+    if k &lt; 0 or k &gt; n:
+        return 0
+    if k &gt; n - k:  # Take advantage of symmetry
+        k = n - k
+    if k == 0 or n &lt;= 1:
+    	return 1
+    return binomial_coefficient(n-1, k) + binomial_coefficient(n-1, k-1)
+&lt;/syntaxhighlight&gt;
+
+The example mentioned above can be also written in functional style. The following [[Scheme (programming language)|Scheme]] example uses the recursive definition
+:&lt;math&gt;{n \choose k+1} = \frac{n-k}{k+1} {n \choose k} &lt;/math&gt;
+Rational arithmetic can be easily avoided using integer division
+:&lt;math&gt;{n \choose k+1} = \left[(n-k) {n \choose k}\right] \div (k+1) &lt;/math&gt;
+The following implementation uses all these ideas
+&lt;syntaxhighlight lang=&quot;scheme&quot;&gt;
+(define (binomial n k)
+;; Helper function to compute C(n,k) via forward recursion
+  (define (binomial-iter n k i prev)
+    (if (&gt;= i k)
+      prev
+     (binomial-iter n k (+ i 1) (/ (* (- n i) prev) (+ i 1)))))
+;; Use symmetry property C(n,k)=C(n, n-k)
+  (if (&lt; k (-  n k))
+    (binomial-iter n k 0 1)
+    (binomial-iter n (- n k) 0 1)))
+&lt;/syntaxhighlight&gt;
+
+When computing &lt;math&gt;\textstyle {n \choose k+1} = \left[(n-k) {n \choose k}\right] \div (k+1) &lt;/math&gt; in a language with fixed-length integers, the multiplication by &lt;math&gt;(n-k)&lt;/math&gt; may overflow even when the result would fit. The overflow can be avoided by dividing first and fixing the result using the remainder:
+:&lt;math&gt;{n \choose k+1} = \left[\textstyle {n \choose k} \div (k+1)\right](n-k) + {\left[{n\choose k}\ \mathrm{mod}\ (k+1)\right](n-k) \over (k+1)}&lt;/math&gt;
+
+Implementation in the C language:
+
+&lt;syntaxhighlight lang=&quot;c&quot; start=&quot;1&quot;&gt;
+#include &lt;limits.h&gt;
+
+unsigned long binomial(unsigned long n, unsigned long k) {
+  unsigned long c = 1, i;
+  
+  if (k &gt; n-k) // take advantage of symmetry
+    k = n-k;
+  
+  for (i = 1; i &lt;= k; i++, n--) {
+    if (c/i &gt; UINT_MAX/n) // return 0 on overflow
+      return 0;
+      
+    c = c / i * n + c % i * n / i;  // split c * n / i into (c / i * i + c % i) * n / i
+  }
+  
+  return c;
+}
+&lt;/syntaxhighlight&gt;
+Another way to compute the binomial coefficient when using large numbers is to recognize that
+
+:&lt;math&gt;
+  {n \choose k} = \frac{n!}{k!\,(n-k)!} = \frac{\Gamma(n+1)}{\Gamma(k+1)\,\Gamma(n-k+1)} = \exp(\ln\Gamma(n+1)-\ln\Gamma(k+1)-\ln\Gamma(n-k+1)),&lt;/math&gt;
+
+where &lt;math&gt;\ln&lt;/math&gt;&amp;thinsp;&lt;math&gt;\Gamma(n)&lt;/math&gt; denotes the [[natural logarithm]] of the [[gamma function]] at &lt;math&gt;n&lt;/math&gt;. It is a special function that is easily computed and is standard in some programming languages such as using ''log_gamma'' in [[Maxima (software)|Maxima]], ''LogGamma'' in [[Mathematica]], ''gammaln'' in [[MATLAB]] and Python's [[SciPy]] module, ''lngamma'' in [[PARI/GP]] or ''lgamma'' in C, [[R (programming language)|R]],&lt;ref&gt;{{cite book |first=Victor A. |last=Bloomfield |title=Using R for Numerical Analysis in Science and Engineering |location= |publisher=CRC Press |isbn=978-1-4987-8662-1 |year=2016 |page=74 |url=https://books.google.com/books?id=QfEbDAAAQBAJ&amp;pg=PA74 }}&lt;/ref&gt; and [[Julia (programming language)|Julia]]. Roundoff error may cause the returned value to not be an integer.
+
+==See also==
+{{Div col|colwidth=25em}}
+* [[Binomial transform]]
+* [[Delannoy number]]
+* [[Eulerian number]]
+* [[Hypergeometric function]]
+* [[List of factorial and binomial topics]]
+* [[Macaulay representation of an integer]]
+* [[Motzkin number]]
+* [[Multiplicities of entries in Pascal's triangle]]
+* [[Narayana number]]
+* [[Star of David theorem]]
+* [[Sun's curious identity]]
+* [[Table of Newtonian series]]
+* [[Trinomial expansion]]
+{{Div col end}}
+
+== Notes ==
+{{Reflist|25em}}
+
+== References ==
+{{refbegin|colwidth=25em}}
+* {{cite book | first=Robert B. | last=Ash | title=Information Theory | publisher = Dover Publications, Inc. | origyear = 1965| year = 1990 | isbn = 0-486-66521-6 |ref=harv
+  }}
+*{{cite book
+ | title = Proofs that Really Count: The Art of Combinatorial Proof
+ | first1 = Arthur T.
+ | last1 = Benjamin
+ | author1-link = Arthur T. Benjamin
+ | first2 = Jennifer J.
+ | last2 = Quinn
+ | author2-link = Jennifer Quinn
+ | publisher = [[Mathematical Association of America]]
+ | series = Dolciani Mathematical Expositions
+ | volume = 27
+ | year = 2003
+ | isbn = 978-0-88385-333-7
+ | ref = harv
+ | title-link = Proofs That Really Count
+ }}
+* {{cite book | first=Victor | last=Bryant | authorlink=Victor Bryant
+  | title=Aspects of combinatorics | publisher= Cambridge University Press | year=1993 | isbn=0-521-41974-3
+  }}
+* {{cite book
+ | last=Flum   | first=Jörg
+ | last2=Grohe | first2=Martin | author2-link = Martin Grohe
+ | title = Parameterized Complexity Theory | year = 2006 | publisher = Springer
+ | url = https://www.springer.com/east/home/generic/search/results?SGWID=5-40109-22-141358322-0
+ | isbn = 978-3-540-29952-3 |ref=harv
+}}
+* {{Cite journal | doi = 10.2307/2975209 | title = The Binomial Coefficient Function | first =  David | last = Fowler | authorlink = David Fowler (mathematician) | journal = [[The American Mathematical Monthly]] | volume = 103 |date=January 1996 | pages = 1–17 | issue = 1 | publisher = Mathematical Association of America | ref = harv | postscript = &lt;!--None--&gt; | jstor = 2975209 }}
+* {{cite journal |first=P. |last=Goetgheluck |title=Computing Binomial Coefficients |journal=American Mathematical Monthly |volume=94 |year=1987 |pages=360–365 |doi=10.2307/2323099}}
+* {{cite book | first=Ronald L.  | last=Graham     | authorlink= Ronald Graham
+             | first2=Donald E. | last2=Knuth     | author2-link= Donald Knuth
+             | first3=Oren      | last3=Patashnik | author3-link= Oren Patashnik
+  | title=Concrete Mathematics | publisher=Addison-Wesley | year=1994 | edition=Second | isbn= 0-201-55802-5 | pages=153–256 | ref=harv
+  }}
+* {{cite book
+ | last = Gradshteyn | first = I. S.
+ | last2 = Ryzhik | first2 = I. M.
+ | title =Table of Integrals, Series, and Products | titlelink = Gradshteyn and Ryzhik
+ | edition = 8th
+ | year = 2014
+ | publisher = Academic Press
+ | isbn = 978-0-12-384933-5
+|ref=harv}}
+*{{Citation | last1=Grinshpan | first1=A. Z. | title=Weighted inequalities and negative binomials | doi=10.1016/j.aam.2010.04.004 | year=2010 | 
+journal=Advances in Applied Mathematics | volume=45 | issue=4 | pages=564–606 }}
+* {{cite book |first=Nicholas J. |last=Higham |authorlink=Nicholas J. Higham
+  |title=Handbook of writing for the mathematical sciences
+  |url=https://archive.org/details/handbookofwritin0000high |url-access=registration |publisher=[[Society for Industrial and Applied Mathematics|SIAM]] |isbn=0-89871-420-6 |year=1998|page=[https://archive.org/details/handbookofwritin0000high/page/25 25]|ref=harv}}
+* {{cite book | first=Donald E.| last=Knuth | authorlink=Donald Knuth
+  | title=The Art of Computer Programming, Volume 1: ''Fundamental Algorithms'' | edition=Third | publisher=Addison-Wesley
+  | year=1997 | isbn= 0-201-89683-4 | pages=52–74 | ref=harv
+  }}
+* {{cite journal | first=David | last=Singmaster | authorlink=David Singmaster
+  | title=Notes on binomial coefficients. III. Any integer divides almost all binomial coefficients
+  | journal=Journal of the London Mathematical Society | volume=8 | issue=3 | year=1974 | pages=555–560
+  | doi=10.1112/jlms/s2-8.3.555 | ref=harv
+  }}
+* {{cite book |first=G. E. |last=Shilov |title=Linear algebra |publisher=Dover Publications |year=1977 |isbn=978-0-486-63518-7|ref=harv}}
+{{refend}}
+
+==External links==
+* {{springer|title=Binomial coefficients|id=p/b016410}}
+* {{cite journal |author=[[Andrew Granville]] |url=http://www.cecm.sfu.ca/organics/papers/granville/Binomial/toppage.html |title=Arithmetic Properties of Binomial Coefficients I. Binomial coefficients modulo prime powers |journal=CMS Conf. Proc |volume=20 |pages=151–162 |year=1997}}
+
+{{PlanetMath attribution
+| urlname = Binomialcoefficient | title = Binomial Coefficient
+| urlname2 = UpperandLowerBoundstoBinomialCoefficient | title2 = Upper and lower bounds to binomial coefficient
+| urlname3 = Nchooserisaninteger | title3 = Binomial coefficient is an integer
+| urlname4 = Generalizedbinomialcoefficients | title4 = Generalized binomial coefficients
+}}
+
+{{DEFAULTSORT:Binomial Coefficient}}
+[[Category:Combinatorics]]
+[[Category:Factorial and binomial topics]]
+[[Category:Integer sequences]]
+[[Category:Triangles of numbers]]
+[[Category:Articles with example Python code]]
+[[Category:Articles with example Scheme code]]
+[[Category:Articles with example C code]]</text>
+      <sha1>lhcwgd0vx3xkcjd9g2zusjyyksthsbc</sha1>
+    </revision>
+  </page>

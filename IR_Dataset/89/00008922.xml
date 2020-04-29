@@ -1,0 +1,479 @@
+  <page>
+    <title>DDR SDRAM</title>
+    <ns>0</ns>
+    <id>8922</id>
+    <revision>
+      <id>940408612</id>
+      <parentid>933893103</parentid>
+      <timestamp>2020-02-12T11:10:49Z</timestamp>
+      <contributor>
+        <username>Pancho507</username>
+        <id>23914831</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{about|DDR SDRAM|graphics DDR|GDDR SDRAM{{!}}GDDR}}
+{{Memory types}}
+
+{{Infobox
+| title    = DDR SDRAM&lt;br /&gt;{{Small|Double Data Rate Synchronous Dynamic Random-Access Memory}}
+| image    = [[Image:Desktop DDR Memory Comparison.svg|frameless]]
+| caption  = Comparison of DDR modules for desktop PCs (DIMM).
+| label1   = Developer
+| data1    = [[Samsung]]&lt;ref name=&quot;techpowerup&quot;/&gt;&lt;ref name=&quot;samsung98&quot;/&gt;&lt;ref name=&quot;phys&quot;/&gt; &lt;br&gt; [[JEDEC]]
+| label2   = Type
+| data2    = [[Synchronous dynamic random-access memory]]
+| label3   = Generations
+| data3    = {{Unbulleted list|[[DDR2 SDRAM|DDR2]]|[[DDR3]]|[[DDR4]]|[[DDR5]]}}
+| label4   = Release date
+| data4    = {{Unbulleted list|'''DDR:''' 1998|'''DDR2:''' 2003|'''DDR3:''' 2007|'''DDR4:''' 2014|'''DDR5:''' 2020 (estimated)}}
+| header5  = Specifications
+| label6   = [[Voltage]]
+| data6    = {{Unbulleted list|'''DDR:''' 2.5/2.6|'''DDR2:''' 1.8|'''DDR3:''' 1.5/1.35|'''DDR4:''' 1.2/1.05}}
+}}
+
+'''Double Data Rate Synchronous Dynamic Random-Access Memory''', officially abbreviated as '''DDR SDRAM''', is a [[double data rate]] (DDR) [[synchronous dynamic random-access memory]] (SDRAM) class of memory [[integrated circuit]]s used in [[computer]]s. DDR SDRAM, also retroactively called DDR1 SDRAM, has been superseded by [[DDR2 SDRAM]], [[DDR3 SDRAM]] and [[DDR4 SDRAM]]. None of its successors are [[Forward compatibility|forward]] or [[Backward compatibility|backward compatible]] with DDR1 SDRAM, meaning DDR2, DDR3, and DDR4 [[memory module]]s will not work in DDR1-equipped [[motherboard]]s, and vice versa.
+
+Compared to single data rate ([[SDRAM#SDR SDRAM|SDR]]) SDRAM, the DDR SDRAM [[External memory interface|interface]] makes higher transfer rates possible by more strict control of the timing of the electrical data and clock signals. Implementations often have to use schemes such as [[phase-locked loop]]s and self-calibration to reach the required timing accuracy.&lt;ref&gt;[http://www.nwlogic.com/docs/ASIC_DDR_PHY.pdf Northwest Logic DDR Phy datasheet] {{webarchive|url=https://web.archive.org/web/20080821101233/http://www.nwlogic.com/docs/ASIC_DDR_PHY.pdf |date=2008-08-21 }}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.xilinx.com/support/documentation/application_notes/xapp701.pdf|title=Memory Interfaces Data Capture Using Direct Clocking Technique (Xilinx application note)|author=|date=|website=xilinx.com}}&lt;/ref&gt; The interface uses [[double data rate|double pumping]] (transferring data on both the rising and falling edges of the [[clock signal]]) to double data bus bandwidth without a corresponding increase in clock frequency. One advantage of keeping the clock frequency down is that it reduces the [[signal integrity]] requirements on the circuit board connecting the memory to the controller. The name &quot;double data rate&quot; refers to the fact that a DDR SDRAM with a certain clock frequency achieves nearly twice the [[bandwidth (computing)|bandwidth]] of a SDR SDRAM running at the same clock frequency, due to this double pumping.
+
+With data being transferred 64 [[bit]]s at a time, DDR SDRAM gives a transfer rate (in bytes/s) of (memory bus clock rate) × 2 (for dual rate) × 64 (number of bits transferred) / 8 (number of bits/byte). Thus, with a bus frequency of 100&amp;nbsp;MHz, DDR SDRAM gives a maximum transfer rate of 1600&amp;nbsp;[[MB/s]].
+
+== History ==
+[[Samsung]] demonstrated the first DDR memory prototype in 1997,&lt;ref name=&quot;techpowerup&quot;&gt;{{cite web |title=Samsung 30 nm Green PC3-12800 Low Profile 1.35 V DDR3 Review |url=https://www.techpowerup.com/review/samsung-mv-3v4g3/ |website=TechPowerUp |accessdate=25 June 2019 |date= March 8, 2012}}&lt;/ref&gt; and released the first commercial DDR SDRAM chip (64{{nbsp}}[[Mebibit|Mb]]) in June 1998,&lt;ref name=&quot;samsung99&quot;&gt;{{cite news |title=Samsung Electronics Develops First 128Mb SDRAM with DDR/SDR Manufacturing Option |url=https://www.samsung.com/semiconductor/insights/news-events/samsung-electronics-develops-first-128mb-sdram-with-ddr-sdr-manufacturing-option/ |accessdate=23 June 2019 |work=[[Samsung Electronics]] |publisher=[[Samsung]] |date=10 February 1999}}&lt;/ref&gt;&lt;ref name=&quot;samsung98&quot;&gt;{{cite news |title=Samsung Electronics Comes Out with Super-Fast 16M DDR SGRAMs |url=https://www.samsung.com/semiconductor/insights/news-events/samsung-electronics-comes-out-with-super-fast-16m-ddr-sgrams/ |accessdate=23 June 2019 |work=[[Samsung Electronics]] |publisher=[[Samsung]] |date=17 September 1998}}&lt;/ref&gt;&lt;ref name=&quot;phys&quot;&gt;{{cite news |title=Samsung Demonstrates World's First DDR 3 Memory Prototype |url=https://phys.org/news/2005-02-samsung-world-ddr-memory-prototype.html |accessdate=23 June 2019 |work=[[Phys.org]] |date=17 February 2005 |language=en-us}}&lt;/ref&gt; followed soon after by [[Hyundai Electronics]] (now [[SK Hynix]]) the same year.&lt;ref name=&quot;hynix90s&quot;&gt;{{cite web |title=History: 1990s |url=https://www.skhynix.com/eng/about/history1990.jsp |website=[[SK Hynix]] |accessdate=6 July 2019}}&lt;/ref&gt; The development of DDR began in 1996, before its specification was finalized by [[JEDEC]] in June 2000 (JESD79).&lt;ref&gt;{{cite web | url = http://www.design-reuse.com/articles/13805/the-love-hate-relationship-with-ddr-sdram-controllers.html | title = The Love/Hate Relationship with DDR SDRAM Controllers}}&lt;/ref&gt;  JEDEC has set standards for data rates of DDR SDRAM, divided into two parts. The first specification is for memory chips, and the second is for memory modules. The first retail PC motherboard using DDR SDRAM was released in August 2000.&lt;ref name=&quot;iwill&quot;&gt;{{Cite web|url=http://www.pcstats.com/releaseview.cfm?releaseID=317|title=Iwill Reveals First DDR Motherboard - PCStats.com|website=www.pcstats.com|access-date=2019-09-09}}&lt;/ref&gt;
+
+== Specification ==
+[[File:Generic DDR Memory (Xytram).jpg|thumb]]
+[[Image:4 slots DDR.JPG|thumb|4 DDR slots]]
+[[Image:Corsair CMX512-3200C2PT 20080602.jpg|thumb|Corsair DDR-400 memory with heat spreaders]]
+[[Image:DDR layout sketch.png|thumb|Physical DDR layout]]
+[[Image:Laptop SODIMM DDR Memory Comparison V2.svg|thumb|Comparison of memory modules for portable/mobile PCs ([[SO-DIMM]]).]]
+
+=== Modules ===
+To increase memory capacity and bandwidth, chips are combined on a module. For instance, the 64-bit data bus for DIMM requires eight 8-bit chips, addressed in parallel. Multiple chips with the common address lines are called a [[memory rank]]. The term was introduced to avoid confusion with chip internal '''rows''' and '''banks'''. A memory module may bear more than one rank. The term '''sides''' would also be confusing because it incorrectly suggests the physical placement of chips on the module. All ranks are connected to the same memory bus (address + data). The [[chip select]] signal is used to issue commands to specific rank.
+
+Adding modules to the single memory bus creates additional electrical load on its drivers. To mitigate the resulting bus signaling rate drop and overcome the [[Von Neumann architecture#Von Neumann bottleneck|memory bottleneck]], new [[chipsets]] employ the [[dual-channel|multi-channel]] architecture.
+
+{|class=&quot;wikitable&quot; style=&quot;text-align:center;&quot;
+|+ Comparison of DDR SDRAM standards
+
+! colspan=&quot;3&quot; scope=&quot;col&quot; | Name
+! colspan=&quot;2&quot; scope=&quot;col&quot; | [[Chip (computing)|Chip]]
+! colspan=&quot;3&quot; scope=&quot;col&quot; | [[Bus (computing)|Bus]]
+! colspan=&quot;2&quot; scope=&quot;col&quot; | [[Memory timings|Timings]]
+! rowspan=&quot;2&quot; scope=&quot;col&quot; | [[Voltage]] {{Small|([[Volt|V]])}}
+
+|-
+! scope=&quot;col&quot; | Standard
+! scope=&quot;col&quot; | Type
+! scope=&quot;col&quot; | Module
+! scope=&quot;col&quot; |[[Clock rate]] {{Small|([[MHz]])}}
+! scope=&quot;col&quot; | Cycle time {{Small|([[Nanosecond|ns]])}}&lt;ref&gt;Cycle time is the inverse of the I/O bus clock frequency; e.g., 1/(100&amp;nbsp;MHz) = 10&amp;nbsp;ns per clock cycle.&lt;/ref&gt;
+! scope=&quot;col&quot; | Clock rate {{Small|(MHz)}}
+! scope=&quot;col&quot; | [[Transfer (computing)|Transfer rate]] {{Small|(MT/s)}}
+! scope=&quot;col&quot; | [[Bandwidth (computing)|Bandwidth]] &lt;small&gt;([[MB/s]])&lt;/small&gt;
+! scope=&quot;col&quot; | CL-T{{Sub|RCD}}-T{{Sub|RP}}
+! scope=&quot;col&quot; | [[CAS latency]] {{Small|(ns)}}
+
+|-
+! colspan=&quot;2&quot; scope=&quot;row&quot; | DDR-200
+| PC-1600
+| 100
+| 10
+| 100 
+| 200
+| 1600
+|
+|
+| rowspan=&quot;3&quot; | 2.5±0.2
+
+|-
+! colspan=&quot;2&quot; scope=&quot;row&quot; | DDR-266
+| PC-2100
+| 133⅓
+| 7.5
+| 133⅓
+| 266.67
+| 2133⅓
+| 2.5-3-3
+|
+|-
+! colspan=&quot;2&quot; scope=&quot;row&quot; | DDR-333
+| PC-2700
+| 166⅔
+| 6
+| 166⅔
+| 333⅓
+| 2666⅔
+|
+| 2.5
+
+|-
+! rowspan=&quot;3&quot; scope=&quot;row&quot; | DDR-400
+| A
+| rowspan=&quot;3&quot; | PC-3200
+| rowspan=&quot;3&quot; | 200
+| rowspan=&quot;3&quot; | 5
+| rowspan=&quot;3&quot; | 200
+| rowspan=&quot;3&quot; | 400
+| rowspan=&quot;3&quot; | 3200
+| 2.5-3-3
+| 3
+| rowspan=&quot;3&quot; | 2.6±0.1
+
+|-
+| B
+| 3-3-3
+| 2.5
+|-
+| C
+| 3-4-4
+| 2
+|}
+
+'''Note:''' All above listed are specified by [[JEDEC]] as JESD79F.&lt;ref&gt;{{cite web|url=http://www.jedec.org/standards-documents/docs/jesd-79f|title=DOUBLE DATA RATE (DDR) SDRAM STANDARD - JEDEC|author=|date=|website=www.jedec.org}}&lt;/ref&gt; All RAM data rates in-between or above these listed specifications are not standardized by JEDEC—often they are simply manufacturer optimizations using tighter-tolerance or overvolted chips. The package sizes in which DDR SDRAM is manufactured are also standardized by JEDEC.
+
+There is no architectural difference between DDR SDRAM modules. Modules are instead designed to run at different clock frequencies: for example, a PC-1600 module is designed to run at {{Nbsp|100 MHz}}, and a PC-2100 is designed to run at {{Nbsp|133 MHz}}. A module's clock speed designates the data rate at which it is guaranteed to perform, hence it is guaranteed to run at lower (''[[underclocking]]'') and can possibly run at higher (''[[overclocking]]'') clock rates than those for which it was made.&lt;ref&gt;{{Cite web|url=http://www.crucial.com/support/memory_speeds.aspx|title=What is the difference between PC-2100 (DDR-266), PC-2700 (DDR-333), and PC-3200 (DDR-400)?|publisher=Micron Technology, Inc.|access-date=2009-06-01|archive-url=https://web.archive.org/web/20131203004412/http://www.crucial.com/support/memory_speeds.aspx|archive-date=2013-12-03|url-status=dead}}&lt;/ref&gt;
+
+DDR SDRAM modules for desktop computers, [[DIMM|dual in-line memory modules (DIMMs)]], have 184 pins (as opposed to 168 pins on SDRAM, or 240 pins on DDR2 SDRAM), and can be differentiated from SDRAM DIMMs by the number of notches (DDR SDRAM has one, SDRAM has two). DDR SDRAM for notebook computers, [[SO-DIMM]]s, have 200 pins, which is the same number of pins as DDR2 SO-DIMMs. These two specifications are notched very similarly and care must be taken during insertion if unsure of a correct match. Most DDR SDRAM operates at a voltage of 2.5&amp;nbsp;V, compared to 3.3&amp;nbsp;V for SDRAM. This can significantly reduce power consumption. Chips and modules with DDR-400/PC-3200 standard have a nominal voltage of 2.6&amp;nbsp;V.
+
+JEDEC Standard No. 21–C defines three possible operating voltages for 184 pin DDR, as identified by the key notch position relative to its centreline. Page 4.5.10-7 defines 2.5V (left), 1.8V (centre), TBD (right), while page 4.20.5–40 nominates 3.3V for the right notch position. The orientation of the module for determining the key notch position is with 52 contact positions to the left and 40 contact positions to the right.
+
+Increasing operating voltage slightly can increase maximum speed, at the cost of higher power dissipation and heating, and at the risk of malfunctioning or damage.
+
+;Capacity
+;Number of DRAM devices: The number of chips is a multiple of 8 for non-[[Error-correcting code|ECC]] modules and a multiple of 9 for ECC modules. Chips can occupy one side (''single sided'') or both sides (''dual sided'') of the module. The maximal number of chips per DDR module is 36 (9×4) for ECC and 32 (8x4) for non-ECC.
+;ECC vs non-ECC: Modules that have [[Error detection and correction#Error-correcting memory|error-correcting code]] are labeled as [[dynamic random-access memory#Error detection and correction|ECC]].  Modules without error correcting code are labeled '''non-ECC'''.
+;Timings: [[CAS latency]] (CL), clock cycle time (t&lt;sub&gt;CK&lt;/sub&gt;), row cycle time (t&lt;sub&gt;RC&lt;/sub&gt;), refresh row cycle time (t&lt;sub&gt;RFC&lt;/sub&gt;), row active time (t&lt;sub&gt;RAS&lt;/sub&gt;).
+;Buffering: [[Registered memory|registered]] (or buffered) vs [[Unbuffered memory|unbuffered]].
+;Packaging: Typically [[DIMM]] or [[SO-DIMM]].
+;Power consumption: A test with DDR and DDR2 RAM in 2005 found that average power consumption appeared to be of the [[Order of magnitude|order]] of 1–3&amp;nbsp;W per 512&amp;nbsp;MB module; this increases with clock rate and when in use rather than idling.&lt;ref&gt;[http://www.silentpcreview.com/article265-page4.html Mike Chin: Power Distribution within Six PCs].&lt;/ref&gt;&lt;!--Out of order and from 2003, but very useful &lt;ref&gt;[http://www.overclockers.com/articles696/]&lt;/ref&gt;--&gt; A manufacturer has produced calculators to estimate the power used by various types of RAM.&lt;ref&gt;[https://www.micron.com/support/power-calc Micron: System Power Calculators] {{webarchive|url=https://web.archive.org/web/20160126211816/https://www.micron.com/support/power-calc |date=2016-01-26 }}&lt;/ref&gt;
+
+Module and chip characteristics are inherently linked.
+
+Total module capacity is a product of one chip's capacity and the number of chips. ECC modules multiply it by 8/9 because they use 1&amp;nbsp;bit per byte (8&amp;nbsp;bits) for error correction. A module of any particular size can therefore be assembled either from 32 small chips (36 for ECC memory), or 16(18) or 8(9) bigger ones.
+
+DDR memory bus width per channel is 64 bits (72 for ECC memory). Total module bit width is a product of bits per chip and number of chips. It also equals number of ranks (rows) multiplied by DDR memory bus width. Consequently, a module with a greater number of chips or using ×8 chips instead of ×4 will have more ranks.
+
+{| class=&quot;wikitable&quot;
+|+ Example: Variations of 1&amp;nbsp;GB PC2100 registered DDR SDRAM module with ECC
+! Module size (GB)
+! Number of chips
+! Chip size (Mbit)
+! Chip organization
+! Number of ranks
+|-----
+| 1
+| 36
+| 256
+| 64M×4
+| 2
+|-----
+| 1
+| 18
+| 512
+| 64M×8
+| 2
+|-----
+| 1
+| 18
+| 512
+| 128M×4
+| 1
+|+
+|}
+
+This example compares different real-world server memory modules with a common size of 1&amp;nbsp;GB. One should definitely be careful buying 1&amp;nbsp;GB memory modules, because all these variations can be sold under one price position without stating whether they are ×4 or ×8, single- or dual-ranked.
+
+There is a common belief that number of module ranks equals number of sides. As above data shows, this is not true.  One can also find 2-side/1-rank modules. One can even think of a 1-side/2-rank memory module having 16(18) chips on single side ×8 each, but it's unlikely such a module was ever produced.
+
+=== Chip characteristics ===
+;DRAM density: Size of the chip is measured in [[megabits]]. Most motherboards recognize only 1&amp;nbsp;GB modules if they contain ''64M×8'' chips ''(low density).'' If ''128M×4 (high density)'' 1&amp;nbsp;GB modules are used, they most likely will not work. The [[JEDEC]] standard allows ''128M×4'' only for slower buffered/registered modules designed specifically for some servers, but some generic manufacturers do not comply.&lt;ref&gt;{{cite web|url=http://reviews.ebay.com/Myth-Low-Density-vs-High-Density-memory-modules_W0QQugidZ10000000001236178|title=Low Density vs High Density memory modules|author=|date=|website=ebay.com}}&lt;/ref&gt;{{Verify source|date=November 2010}}
+;Organization: The notation like ''64M×4'' means that the memory matrix has 64 million (the product of ''banks'' x ''rows'' x ''columns'') 4-bit storage locations. There are ''×4, ×8,'' and ''×16'' DDR chips. The ''×4'' chips allow the use of advanced error correction features like [[Chipkill]], [[memory scrubbing]] and Intel SDDC in server environments, while the ''×8'' and ''×16'' chips are somewhat less expensive. ''x8'' chips are mainly used in desktops/notebooks but are making entry into the server market. There are normally 4 banks and only one row can be active in each bank.
+
+==== Double data rate (DDR) SDRAM specification ====
+From Ballot JCB-99-70, and modified by numerous other Board Ballots, formulated under the cognizance of Committee JC-42.3 on DRAM Parametrics.
+
+Standard No. 79 Revision Log:
+*Release 1, June 2000
+*Release 2, May 2002
+*Release C, March 2003 – JEDEC Standard No. 79C.&lt;ref&gt;http://www.jedec.org/download/search/JESD79F.pdf DOUBLE DATA RATE (DDR) SDRAM SPECIFICATION (Release F)&lt;/ref&gt;
+
+&quot;This comprehensive standard defines all required aspects of 64Mb through 1Gb DDR SDRAMs with X4/X8/X16 data interfaces, including features, functionality, ac and dc parametrics, packages and pin assignments. This scope will subsequently be expanded to formally apply to x32 devices, and higher density devices as well.&quot;
+
+=== Organization ===
+PC3200 is DDR SDRAM designed to operate at 200&amp;nbsp;MHz using DDR-400 chips with a bandwidth of 3,200&amp;nbsp;MB/s.  Because PC3200 memory transfers data on both the rising and falling clock edges, its effective clock rate is 400&amp;nbsp;MHz.
+
+1&amp;nbsp;GB PC3200 non-ECC modules are usually made with 16 512&amp;nbsp;Mbit chips, 8 on each side (512&amp;nbsp;Mbits × 16&amp;nbsp;chips) / (8 bits (per byte)) = 1,024&amp;nbsp;MB.  The individual chips making up a 1&amp;nbsp;GB memory module are usually organized as 2&lt;sup&gt;26&lt;/sup&gt; 8-bit words, commonly expressed as 64M×8.  Memory manufactured in this way is low-density RAM and is usually compatible with any motherboard specifying PC3200 DDR-400 memory.&lt;ref&gt;{{Cite web|url=https://superuser.com/questions/138800/per-bytes-ram-memory-acess|title=Per bytes RAM memory access|website=Super User|access-date=2018-10-21}}&lt;/ref&gt;{{Citation needed|date=October 2010}}
+
+=== High-density RAM ===
+In the context of the 1&amp;nbsp;GB non-ECC PC3200 SDRAM module, there is very little visually to differentiate low-density from high-density RAM.  High-density DDR RAM modules will, like their low-density counterparts, usually be [[double-sided RAM|double-sided]] with eight 512&amp;nbsp;Mbit chips per side.  The difference is that each chip, instead of being organized as 64M×8, is organized as 2&lt;sup&gt;27&lt;/sup&gt; 4-bit words, or 128M×4.
+
+High-density memory modules are assembled using chips from multiple manufacturers.  These chips come in both the familiar 22 × 10&amp;nbsp;mm (approx.) TSOP2 and smaller squarer 12 × 9&amp;nbsp;mm (approx.) FBGA package sizes.  High-density chips can be identified by the numbers on each chip.
+
+High-density RAM devices were designed to be used in registered memory modules for servers.  JEDEC standards do not apply to high-density DDR RAM in desktop implementations.{{Citation needed|date=October 2010}} JEDEC's technical documentation, however, supports 128M×4 semiconductors {{clarify span|as such that contradicts 128×4 being classified as high-density|date=December 2017}}. As such, ''high density'' is a relative term, which can be used to describe memory that is not supported by a particular motherboard's memory controller.{{Citation needed|date=October 2010}}
+
+== Generations ==
+DDR (DDR1) was superseded by [[DDR2 SDRAM]], which had modifications for higher clock frequency and again doubled throughput, but operates on the same principle as DDR. Competing with DDR2 was [[Rambus]] [[XDR DRAM]]. DDR2 dominated due to cost and support factors.  DDR2 was in turn superseded by [[DDR3 SDRAM]], which offered higher performance for increased bus speeds and new features.  DDR3 has been superseded by [[DDR4 SDRAM]], which was first produced in 2011 and whose standards were still in flux (2012) with significant architectural changes.
+
+DDR's prefetch buffer depth is 2 (bits), while DDR2 uses 4.  Although the effective clock rates of DDR2 are higher than DDR, the overall performance was not greater in the early implementations, primarily due to the high latencies of the first DDR2 modules.  DDR2 started to be effective by the end of 2004, as modules with lower latencies became available.&lt;ref&gt;[http://www.xbitlabs.com/articles/memory/display/ddr2-ddr.html DDR2 vs. DDR: Revenge Gained] {{webarchive|url=https://web.archive.org/web/20061121045622/http://www.xbitlabs.com/articles/memory/display/ddr2-ddr.html |date=2006-11-21 }}&lt;/ref&gt;
+
+Memory manufacturers stated that it was impractical to mass-produce DDR1 memory with effective transfer rates in excess of 400&amp;nbsp;MHz (i.e. 400&amp;nbsp;MT/s and 200&amp;nbsp;MHz external clock) due to internal speed limitations. DDR2 picks up where DDR1 leaves off, utilizing internal clock rates similar to DDR1, but is available at effective transfer rates of 400&amp;nbsp;MHz and higher. DDR3 advances extended the ability to preserve internal clock rates while providing higher effective transfer rates by again doubling the prefetch depth.
+
+The DDR4 SDRAM is a high-speed dynamic random-access memory internally configured as 16 banks, 4 bank groups with 4
+banks for each bank group for x4/x8 and 8 banks, 2 bank groups with 4 banks for each bank group for x16 DRAM.
+The DDR4 SDRAM uses an 8n prefetch architecture to achieve high-speed operation. The 8n prefetch architecture is combined with
+an interface designed to transfer two data words per clock cycle at the I/O pins. A single read or write operation for the DDR4 SDRAM
+consists of a single 8''n''-bit-wide 4-clock data transfer at the internal DRAM core and 8 corresponding ''n''-bit-wide half-clock-cycle data transfers at the I/O pins.&lt;ref&gt;{{cite web|title=DDR4 SDRAM Standard JESD79-4B|url=https://www.jedec.org}}&lt;/ref&gt;
+
+[[RDRAM]] was a particularly expensive alternative to DDR SDRAM, and most manufacturers dropped its support from their chipsets.  DDR1 memory's prices substantially increased since Q2 2008, while DDR2 prices declined. In January 2009, 1&amp;nbsp;GB DDR1 was 2–3 times more expensive than 1&amp;nbsp;GB DDR2.  High-density DDR RAM suit about 10% of PC motherboards on the market, while low-density suit almost all motherboards on the PC Desktop market.{{citation needed|date=December 2017}}
+
+{| class=&quot;wikitable sortable&quot; style=&quot;text-align: center;&quot;
+|+ Comparison of DDR SDRAM generations
+! colspan=&quot;2&quot; scope=&quot;col&quot; | Name
+! rowspan=&quot;2&quot; scope=&quot;col&quot; | Release&lt;br&gt;year
+! colspan=&quot;3&quot; scope=&quot;col&quot; | [[Chip (computing)|Chip]]
+! colspan=&quot;3&quot; scope=&quot;col&quot; | [[Bus (computing)|Bus]]
+! rowspan=&quot;2&quot; scope=&quot;col&quot; | [[Voltage]]&lt;br&gt;(V)
+! colspan=&quot;3&quot; scope=&quot;col&quot; | Pins
+|-
+! scope=&quot;col&quot; | Gen
+! scope=&quot;col&quot; | Standard
+! scope=&quot;col&quot; | [[Clock rate]]&lt;br&gt;(MHz)
+! scope=&quot;col&quot; | Cycle time&lt;br&gt;(ns)
+! scope=&quot;col&quot; | [[Prefetch buffer|Pre-&lt;br&gt;fetch]]
+! scope=&quot;col&quot; | Clock rate&lt;br&gt;(MHz)
+! scope=&quot;col&quot; | [[Transfer (computing)|Transfer rate]]&lt;br&gt;([[MT/s]])
+! scope=&quot;col&quot; | [[Bandwidth (computing)|Bandwidth]]&lt;br&gt;(MB/s)
+! scope=&quot;col&quot; | [[DIMM]]
+! scope=&quot;col&quot; | [[SO-DIMM|SO-&lt;br&gt;DIMM]]
+! scope=&quot;col&quot; | [[MicroDIMM|Micro-&lt;br&gt;DIMM]]
+|-
+! rowspan=&quot;4&quot; scope=&quot;row&quot; | DDR
+!DDR-200
+| rowspan=&quot;4&quot; | 2000
+| 100
+|10
+| rowspan=&quot;4&quot; | 2n
+| 100
+| 200
+|1600
+| rowspan=&quot;3&quot; | 2.5
+| rowspan=&quot;4&quot; | 184
+| rowspan=&quot;4&quot; | 200
+| rowspan=&quot;4&quot; | 172
+|-
+!DDR-266
+|133
+|7.5
+|133
+|266
+|2133
+|-
+!DDR-333
+|166⅔
+|6
+|166⅔
+|333
+|2666⅔
+|-
+!DDR-400
+|200
+|5
+|200
+|400
+|3200
+|2.6
+|-
+! rowspan=&quot;5&quot; scope=&quot;row&quot; |[[DDR2 SDRAM|DDR2]]
+!DDR2-400
+| rowspan=&quot;5&quot; | 2003
+| 100
+|10
+| rowspan=&quot;5&quot; | 4n
+| 200
+| 400
+|3200
+| rowspan=&quot;5&quot; | 1.8
+| rowspan=&quot;5&quot; | 240
+| rowspan=&quot;5&quot; | 200
+| rowspan=&quot;5&quot; | 214
+|-
+!DDR2-533
+|133⅓
+|7.5
+|266⅔
+|533⅓
+|4266⅔
+|-
+!DDR2-667
+|166⅔
+|6
+|333⅓
+|666⅔
+|5333⅓
+|-
+!DDR2-800
+|200
+|5
+|400
+|800
+|6400
+|-
+!DDR2-1066
+|266⅔
+|3.75
+|533⅓
+|1066⅔
+|8533⅓
+|-
+! rowspan=&quot;6&quot; scope=&quot;row&quot; |[[DDR3 SDRAM|DDR3]]
+!DDR3-800
+| rowspan=&quot;6&quot; | 2007
+| 100
+|10
+| rowspan=&quot;6&quot; | 8n
+| 400
+| 800
+|6400
+| 1.5/1.35
+| rowspan=&quot;6&quot; | 240
+| rowspan=&quot;6&quot; | 204
+| rowspan=&quot;6&quot; | 214
+|-
+!DDR3-1066
+|133⅓
+|7.5
+|533⅓
+|1066⅔
+|8533⅓
+|
+|-
+!DDR3-1333
+|166⅔
+|6
+|666⅔
+|1333⅓
+|10666⅔
+|
+|-
+!DDR3-1600
+|200
+|5
+|800
+|1600
+|12800
+|
+|-
+!DDR3-1866
+|233⅓
+|4.29
+|933⅓
+|1866⅔
+|14933⅓
+|
+|-
+!DDR3-2133
+|266⅔
+|3.75
+|1066⅔
+|2133⅓
+|17066⅔
+|
+|-
+! rowspan=&quot;7&quot; scope=&quot;row&quot; |[[DDR4 SDRAM|DDR4]]
+!DDR4-1600
+| rowspan=&quot;7&quot; | 2014
+| 200
+|5
+| rowspan=&quot;7&quot; | 8n
+| 800
+| 1600
+|12800
+| 1.2/1.05
+| rowspan=&quot;7&quot; | 288
+| rowspan=&quot;7&quot; | 260
+|
+|-
+!DDR4-1866
+|233⅓
+|4.29
+|933⅓
+|1866⅔
+|14933⅓
+|
+|
+|-
+!DDR4-2133
+|266⅔
+|3.75
+|1066⅔
+|2133⅓
+|17066⅔
+|
+|
+|-
+!DDR4-2400
+|300
+|3⅓
+|1200
+|2400
+|19200
+|
+|
+|-
+!DDR4-2666
+|333⅓
+|3
+|1333⅓
+|2666⅔
+|21333⅓
+|
+|
+|-
+!DDR4-2933
+|366⅔
+|2.73
+|1466⅔
+|2933⅓
+|23466⅔
+|
+|
+|-
+!DDR4-3200
+|400
+|2.5
+|1600
+|3200
+|25600
+|
+|
+|}
+
+=== Mobile DDR ===
+{{Main|LPDDR}}
+
+MDDR is an acronym that some enterprises use for [[Mobile DDR]] SDRAM, a type of memory used in some portable electronic devices, like [[mobile phone]]s, [[handheld]]s, and [[digital audio player]]s. Through techniques including reduced voltage supply and advanced refresh options, [[Mobile DDR]] can achieve greater power efficiency.
+
+== See also ==
+* [[Serial presence detect]]
+* [[Fully buffered DIMM]]
+* [[List of device bandwidths]]
+
+== References ==
+{{Reflist}}
+
+== External links ==
+* [http://www.jedec.org/ Official JEDEC website]
+
+{{DRAM}}
+
+{{DEFAULTSORT:Ddr Sdram}}
+[[Category:SDRAM]]
+[[Category:JEDEC standards]]
+[[Category:South Korean inventions]]
+
+[[el:Μνήμη τυχαίας προσπέλασης#Τύποι μνήμης RAM]]
+[[fi:DRAM#DDR SDRAM]]</text>
+      <sha1>d43hkkg1911ieoqeptetpn0ho2ldwbp</sha1>
+    </revision>
+  </page>

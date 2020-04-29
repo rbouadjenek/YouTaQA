@@ -1,0 +1,1222 @@
+  <page>
+    <title>Database normalization</title>
+    <ns>0</ns>
+    <id>8640</id>
+    <revision>
+      <id>940407198</id>
+      <parentid>940407071</parentid>
+      <timestamp>2020-02-12T10:55:15Z</timestamp>
+      <contributor>
+        <username>Emperor045</username>
+        <id>9278762</id>
+      </contributor>
+      <comment>/* Example of a step by step normalization */</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{Use American English|date = February 2019}}
+{{Short description|Reduction of data redundancy}}
+{{Use mdy dates|date = February 2019}}
+{{Expert needed|Databases|talk=Expanding on normal forms &amp; clarifying terminology|date=March 2018}}
+
+'''Database normalization''' is the process of structuring a [[relational database]]{{Clarify|reason=I believe it is not for relational dbs only, but for any where models may be linked by some kind of identifier|date=February 2019}} in accordance with a series of so-called [[Database normalization#Normal forms|normal forms]] in order to reduce [[data redundancy]] and improve [[data integrity]]. It was first proposed by [[Edgar F. Codd]] as part of his [[relational model]].
+
+Normalization entails organizing the [[column (database)|columns]] (attributes) and [[relation (database)|tables]] (relations) of a database to ensure that their [[Dependency theory (database theory)|dependencies]] are properly enforced by database integrity constraints. It is accomplished by applying some formal rules either by a process of ''synthesis'' (creating a new database design) or ''decomposition'' (improving an existing database design).
+
+==Objectives==
+A basic objective of the first normal form defined by Codd in 1970 was to permit data to be queried and manipulated using a &quot;universal data sub-language&quot; grounded in [[first-order logic]].&lt;ref&gt;&quot;The adoption of a relational model of data ... permits the development of a universal data sub-language based on an applied predicate calculus. A first-order predicate calculus suffices if the collection of relations is in first normal form. Such a language would provide a yardstick of linguistic power for all other proposed data languages, and would itself be a strong candidate for embedding (with appropriate syntactic modification) in a variety of host languages (programming, command- or problem-oriented).&quot;  Codd, [http://www.acm.org/classics/nov95/toc.html &quot;A Relational Model of Data for Large Shared Data Banks&quot;] {{Webarchive|url=https://web.archive.org/web/20070612235326/http://www.acm.org/classics/nov95/toc.html |date=June 12, 2007 }}, p. 381&lt;/ref&gt; ([[SQL]] is an example of such a data sub-language, albeit one that Codd regarded as seriously flawed.&lt;ref&gt;Codd, E.F. Chapter 23, &quot;Serious Flaws in SQL&quot;, in ''The Relational Model for Database Management: Version 2''. Addison-Wesley (1990), pp. 371–389&lt;/ref&gt;)
+
+The objectives of normalization beyond 1NF (first normal form) were stated as follows by Codd:
+
+{{Quotation|
+# To free the collection of relations from undesirable insertion, update and deletion dependencies.
+# To reduce the need for restructuring the collection of relations, as new types of data are introduced, and thus increase the life span of application programs.
+# To make the relational model more informative to users.
+# To make the collection of relations neutral to the query statistics, where these statistics are liable to change as time goes by.
+|E.F. Codd|&quot;Further Normalization of the Data Base Relational Model&quot;&lt;ref&gt;Codd, E.F. &quot;Further Normalization of the Data Base Relational Model&quot;, p. 34&lt;/ref&gt;}}
+
+[[File:Update anomaly.svg|280px|thumb|right|An '''update anomaly'''. Employee 519 is shown as having different addresses on different records.]]
+[[File:Insertion anomaly.svg|280px|thumb|right|An '''insertion anomaly'''. Until the new faculty member, Dr. Newsome, is assigned to teach at least one course, his or her details cannot be recorded.]]
+[[File:Deletion anomaly.svg|280px|thumb|right|A '''deletion anomaly'''. All information about Dr. Giddens is lost if he or she temporarily ceases to be assigned to any courses.]]
+
+When an attempt is made to modify (update, insert into, or delete from) a relation, the following undesirable side-effects may arise in relations that have not been sufficiently normalized:
+
+* '''Update anomaly.''' The same information can be expressed on multiple rows; therefore updates to the relation may result in logical inconsistencies. For example, each record in an &quot;Employees' Skills&quot; relation might contain an Employee ID, Employee Address, and Skill; thus a change of address for a particular employee may need to be applied to multiple records (one for each skill). If the update is only partially successful – the employee's address is updated on some records but not others – then the relation is left in an inconsistent state. Specifically, the relation provides conflicting answers to the question of what this particular employee's address is. This phenomenon is known as an update anomaly.
+* '''Insertion anomaly.''' There are circumstances in which certain facts cannot be recorded at all. For example, each record in a &quot;Faculty and Their Courses&quot; relation might contain a Faculty ID, Faculty Name, Faculty Hire Date, and Course Code. Therefore, we can record the details of any faculty member who teaches at least one course, but we cannot record a newly hired faculty member who has not yet been assigned to teach any courses, except by setting the Course Code to null. This phenomenon is known as an insertion anomaly.
+* '''Deletion anomaly.''' Under certain circumstances, deletion of data representing certain facts necessitates deletion of data representing completely different facts. The &quot;Faculty and Their Courses&quot; relation described in the previous example suffers from this type of anomaly, for if a faculty member temporarily ceases to be assigned to any courses, we must delete the last of the records on which that faculty member appears, effectively also deleting the faculty member, unless we set the Course Code to null. This phenomenon is known as a deletion anomaly.
+
+===Minimize redesign when extending the database structure===
+A fully normalized database allows its structure to be extended to accommodate new types of data without changing existing structure too much. As a result, applications interacting with the database are minimally affected.
+
+Normalized relations, and the relationship between one normalized relation and another, mirror real-world concepts and their interrelationships.
+
+===Example===
+Querying and manipulating the data within a data structure that is not normalized, such as the following non-1NF representation of customers' credit card transactions, involves more complexity than is really necessary:
+
+{| class=&quot;wikitable&quot;
+! Customer !! Cust. ID !! Transactions
+|-
+| Abraham || 1
+||
+{| class=&quot;wikitable&quot;
+! Tr. ID !! Date !! Amount
+|-
+| 12890
+| 14-Oct-2003
+|&amp;minus;87
+|-
+|12904
+|15-Oct-2003
+|&amp;minus;50
+|}
+
+|-
+| Isaac || 2
+|| 
+{| class=&quot;wikitable&quot;
+! Tr. ID !! Date !! Amount
+|-
+| 12898
+| 14-Oct-2003
+|&amp;minus;21
+|}
+|-
+| Jacob || 3
+|| 
+{| class=&quot;wikitable&quot;
+! Tr. ID !! Date !! Amount
+|-
+| 12907
+| 15-Oct-2003
+| &amp;minus;18
+|-
+| 14920
+| 20-Nov-2003
+| &amp;minus;70
+|-
+| 15003
+| 27-Nov-2003
+| &amp;minus;60
+|}
+|}
+&lt;br&gt;
+To each customer corresponds a 'repeating group' of transactions. The automated evaluation of any query relating to customers' transactions, therefore, would broadly involve two stages:
+# Unpacking one or more customers' groups of transactions allowing the individual transactions in a group to be examined, and
+# Deriving a query result based on the results of the first stage
+
+For example, in order to find out the monetary sum of all transactions that occurred in October 2003 for all customers, the system would have to know that it must first unpack the ''Transactions'' group of each customer, then sum the ''Amounts'' of all transactions thus obtained where the ''Date'' of the transaction falls in October 2003.
+
+One of Codd's important insights was that structural complexity can be reduced. Reduced structural complexity gives users, applications, and DBMSs more power and flexibility to formulate and evaluate the queries. A more normalized equivalent of the structure above might look like this:
+
+{| class=&quot;wikitable&quot;
+|-
+! Customer !! Cust. ID
+|-
+| Abraham|| 1
+|-
+| Isaac || 2
+|-
+| Jacob || 3
+|}
+
+{| class=&quot;wikitable&quot;
+|-
+! Cust. ID !! Tr. ID !! Date !! Amount
+|-
+| 1 || 12890 || 14-Oct-2003 || &amp;minus;87
+|-
+| 1 || 12904 || 15-Oct-2003 || &amp;minus;50
+|-
+| 2 || 12898 || 14-Oct-2003 || &amp;minus;21
+|-
+| 3 || 12907 || 15-Oct-2003 || &amp;minus;18
+|-
+| 3 || 14920 || 20-Nov-2003 || &amp;minus;70
+|-
+| 3 || 15003 || 27-Nov-2003 || &amp;minus;60
+|}
+
+In the modified structure, the key is {Cust. ID} in the first relation, {Cust. ID, Tr ID} in the second relation.
+
+Now each row represents an individual credit card transaction, and the DBMS can obtain the answer of interest, simply by finding all rows with a Date falling in October, and summing their Amounts. The data structure places all of the values on an equal footing, exposing each to the DBMS directly, so each can potentially participate directly in queries; whereas in the previous situation some values were embedded in lower-level structures that had to be handled specially. Accordingly, the normalized design lends itself to general-purpose query processing, whereas the unnormalized design does not. The normalized version also allows the user to change the customer name in one place and guards against errors that arise if the customer name is misspelled on some records.
+
+==Normal forms==
+Codd introduced the concept of normalization and what is now known as the [[first normal form]] (1NF) in 1970.&lt;ref name=&quot;Codd1970&quot;&gt;{{cite journal |first=E. F. |last=Codd |authorlink=Edgar F. Codd |title=A Relational Model of Data for Large Shared Data Banks |journal=[[Communications of the ACM]] |volume=13 |issue=6 |date=June 1970 |pages=377–387 |url=http://www.acm.org/classics/nov95/toc.html |doi=10.1145/362384.362685 |access-date=August 25, 2005 |archive-url=https://web.archive.org/web/20070612235326/http://www.acm.org/classics/nov95/toc.html |archive-date=June 12, 2007 |url-status=dead }}&lt;/ref&gt; Codd went on to define the [[second normal form]] (2NF) and [[third normal form]] (3NF) in 1971,&lt;ref name=&quot;Codd, E.F 1971&quot;&gt;Codd, E. F. &quot;Further Normalization of the Data Base Relational Model&quot;. (Presented at Courant Computer Science Symposia Series 6, &quot;Data Base Systems&quot;, New York City, May 24–25, 1971.) IBM Research Report RJ909 (August 31, 1971). Republished in Randall J. Rustin (ed.), ''Data Base Systems: Courant Computer Science Symposia Series 6''. Prentice-Hall, 1972.&lt;/ref&gt; and Codd and [[Raymond F. Boyce]] defined the [[Boyce-Codd normal form]] (BCNF) in 1974.&lt;ref name=&quot;CoddBCNF&quot;&gt;Codd, E. F. &quot;Recent Investigations into Relational Data Base Systems&quot;. IBM Research Report RJ1385 (April 23, 1974). Republished in ''Proc. 1974 Congress'' (Stockholm, Sweden, 1974), N.Y.: North-Holland (1974).&lt;/ref&gt;
+
+Informally, a relational database relation is often described as &quot;normalized&quot; if it meets third normal form.&lt;ref name=&quot;DateIntroDBSys&quot;&gt;{{cite book |first=C. J. |last=Date |title=An Introduction to Database Systems |publisher=Addison-Wesley |year=1999 |page=290}}&lt;/ref&gt; Most 3NF relations are free of insertion, update, and deletion anomalies.
+
+The normal forms (from least normalized to most normalized) are:
+
+{{columns-list|colwidth=20em|
+* UNF: [[Unnormalized form]]
+* 1NF: [[First normal form]]
+* 2NF: [[Second normal form]]
+* 3NF: [[Third normal form]]
+* EKNF: [[Elementary key normal form]]
+* BCNF: [[Boyce–Codd normal form]]
+* 4NF: [[Fourth normal form]]
+* ETNF: [[Essential tuple normal form]]
+* 5NF: [[Fifth normal form]]
+* DKNF: [[Domain-key normal form]]
+* 6NF: [[Sixth normal form]]
+}}
+
+{| class=&quot;wikitable&quot;
+| 
+! scope=&quot;col&quot; | [[Unnormalized form|UNF]]&lt;br&gt;&lt;span style=&quot;font-weight:normal&quot;&gt;{{small|(1970)}}&lt;/span&gt;
+! scope=&quot;col&quot; | [[1NF]] &lt;br&gt;&lt;span style=&quot;font-weight:normal&quot;&gt;{{small|(1970)}}&lt;/span&gt;
+! scope=&quot;col&quot; | [[2NF]] &lt;br&gt;&lt;span style=&quot;font-weight:normal&quot;&gt;{{small|(1971)}}&lt;/span&gt;
+! scope=&quot;col&quot; | [[3NF]] &lt;br&gt;&lt;span style=&quot;font-weight:normal&quot;&gt;{{small|(1971)}}&lt;/span&gt;
+! scope=&quot;col&quot; | [[EKNF]]&lt;br&gt;&lt;span style=&quot;font-weight:normal&quot;&gt;{{small|(1982)}}&lt;/span&gt;
+! scope=&quot;col&quot; | [[BCNF]]&lt;br&gt;&lt;span style=&quot;font-weight:normal&quot;&gt;{{small|(1974)}}&lt;/span&gt;
+! scope=&quot;col&quot; | [[4NF]] &lt;br&gt;&lt;span style=&quot;font-weight:normal&quot;&gt;{{small|(1977)}}&lt;/span&gt;
+! scope=&quot;col&quot; | [[ETNF]] &lt;br&gt;&lt;span style=&quot;font-weight:normal&quot;&gt;{{small|(2012)}}&lt;/span&gt;
+! scope=&quot;col&quot; | [[5NF]] &lt;br&gt;&lt;span style=&quot;font-weight:normal&quot;&gt;{{small|(1979)}}&lt;/span&gt;
+! scope=&quot;col&quot; | [[DKNF]] &lt;br&gt;&lt;span style=&quot;font-weight:normal&quot;&gt;{{small|(1981)}}&lt;/span&gt;
+! scope=&quot;col&quot; | [[6NF]] &lt;br&gt;&lt;span style=&quot;font-weight:normal&quot;&gt;{{small|(2003)}}&lt;/span&gt;
+|-
+| style=&quot;text-align:right&quot; | [[Primary key]] (no duplicate tuples) || {{MaybeCheck}} || {{ya}} || {{ya}} || {{ya}} || {{ya}} || {{ya}} || {{ya}} || {{ya}} || {{ya}} || {{ya}} || {{ya}}
+|-
+| style=&quot;text-align:right&quot; | No repeating groups || {{MaybeCheck}} || {{ya}} || {{ya}} || {{ya}} || {{ya}} || {{ya}} || {{ya}} || {{ya}} || {{ya}} || {{ya}} || {{ya}}
+|-
+| style=&quot;text-align:right&quot; | Atomic columns (cells have single value) || {{na}} || {{ya}} || {{ya}} || {{ya}} || {{ya}} || {{ya}} || {{ya}} || {{ya}} || {{ya}} || {{ya}} || {{ya}}
+|-
+| style=&quot;text-align:right&quot; | No partial dependencies (values depend on the whole of every [[Candidate key]]) || {{na}} || {{na}} || {{ya}} || {{ya}} || {{ya}} || {{ya}} || {{ya}} || {{ya}} || {{ya}} || {{ya}} || {{ya}}
+|-
+| style=&quot;text-align:right&quot; | No [[Transitive dependency|transitive dependencies]] (values depend only on [[Candidate key]]s) || {{na}} || {{na}} || {{na}} || {{ya}} || {{ya}} || {{ya}} || {{ya}} || {{ya}} || {{ya}} || {{ya}} || {{ya}}
+|-
+| style=&quot;text-align:right&quot; | Every non-trivial [[functional dependency]] involves either a [[superkey]] or an elementary key's subkey || {{na}} || {{na}} || {{na}} || {{na}} || {{ya}} || {{ya}} || {{ya}} || {{ya}} || {{ya}} || {{ya}} || {{n/a}}
+|-
+| style=&quot;text-align:right&quot; | No redundancy from any functional dependency || {{na}} || {{na}} || {{na}} || {{na}} || {{na}} || {{ya}} || {{ya}} || {{ya}} || {{ya}} || {{ya}} || {{n/a}}
+|-
+| style=&quot;text-align:right&quot; | Every non-trivial, multi-value dependency has a superkey || {{na}} || {{na}} || {{na}} || {{na}} || {{na}} || {{na}} || {{ya}} || {{ya}} || {{ya}} || {{ya}} || {{n/a}}
+|-
+| style=&quot;text-align:right&quot; | A component of every explicit join dependency is a superkey&lt;ref&gt;{{cite conference |url=https://researcher.watson.ibm.com/researcher/files/us-fagin/icdt12.pdf |title=A Normal Form for Preventing Redundant Tuples in Relational Databases |first=Hugh |last=Darwen |first2=C. J. |last2=Date |first3=Ronald |last3=Fagin |year=2012 |conference=EDBT/ICDT 2012 Joint Conference |conference-url=http://edbticdt2012.dima.tu-berlin.de/ |book-title=Proceedings of the 15th International Conference on Database Theory |publisher=[[Association for Computing Machinery]] |series=ACM International Conference Proceeding Series |isbn=978-1-4503-0791-8 |oclc=802369023 |doi=10.1145/2274576.2274589 |access-date=2018-05-22 |page=114}}&lt;/ref&gt; || {{na}} || {{na}} || {{na}} || {{na}} || {{na}} || {{na}} || {{na}} || {{ya}} || {{ya}} || {{ya}} || {{n/a}}
+|-
+| style=&quot;text-align:right&quot; | Every non-trivial join dependency is implied by a [[candidate key]] || {{na}} || {{na}} || {{na}} || {{na}} || {{na}} || {{na}} || {{na}} || {{na}} || {{ya}} || {{ya}} || {{n/a}}
+|-
+| style=&quot;text-align:right&quot; | Every constraint is a consequence of domain constraints and key constraints || {{na}} || {{na}} || {{na}} || {{na}} || {{na}} || {{na}} || {{na}} || {{na}} || {{na}} || {{ya}} || {{n/a}}
+|-
+| style=&quot;text-align:right&quot; | Every join dependency is trivial || {{na}} || {{na}} || {{na}} || {{na}} || {{na}} || {{na}} || {{na}} || {{na}} || {{na}} || {{na}} || {{ya}} 
+|}
+
+== Example of a step by step normalization ==
+Normalization is a database design technique, which is used to design a [[relational database]] table up to higher normal form. &lt;ref&gt;{{Cite book|last=Kumar|first=Kunal|last2=Azad|first2=S. K.|date=October 2017|title=Database normalization design pattern|journal=2017 4th IEEE Uttar Pradesh Section International Conference on Electrical, Computer and Electronics (UPCON)|publisher=IEEE|volume=|pages=|doi=10.1109/upcon.2017.8251067|isbn=9781538630044}}&lt;/ref&gt; The process is progressive, and a higher level of database normalization cannot be achieved unless the previous levels have been satisfied. &lt;ref name=&quot;:0&quot;&gt;{{Cite web|url=https://www.computerweekly.com/tutorial/Database-normalization-in-MySQL-Four-quick-and-easy-steps|title=Database normalization in MySQL: Four quick and easy steps|website=ComputerWeekly.com|language=en|access-date=2019-01-21}}&lt;/ref&gt; 
+
+That means that, having data in [[unnormalized form]] (the least normalized) and aiming to achieve the highest level of normalization, the first step would be to ensure compliance to [[first normal form]], the second step would be to ensure [[second normal form]] is satisfied, and so forth in order mentioned above, until the data conform to [[sixth normal form]].
+
+However, it is worth noting that normal forms beyond [[4NF]] are mainly of academic interest, as the problems they exist to solve rarely appear in practice &lt;ref&gt;{{Cite web|url=https://mariadb.com/kb/en/library/database-normalization-5th-normal-form-and-beyond/|title=Database Normalization: 5th Normal Form and Beyond|website=MariaDB KnowledgeBase|access-date=2019-01-23}}&lt;/ref&gt; 
+
+''Please note that the data in the following example were intentionally designed to contradict most of the normal forms. In real life, it's quite possible to be able to skip some of the normalization steps because the table doesn't contain anything contradicting the given normal form. It also commonly occurs that fixing a violation of one normal form also fixes a violation of a higher normal form in the process. Also one table has been chosen for normalization at each step, meaning that at the end of this example process, there might still be some tables not satisfying the highest normal form.'' 
+
+=== Initial data ===
+Let a database table with the following structure: &lt;ref name=&quot;:0&quot; /&gt;
+{| class=&quot;wikitable&quot;
+!Title
+!Author
+!Author Nationality
+!Format
+!Price
+!Subject
+!Pages
+!Thickness
+!Publisher
+!Publisher Country
+!Publication Type
+!Genre ID
+!Genre Name
+|-
+|Beginning MySQL Database Design and Optimization
+|Chad Russell
+|American
+|Hardcover
+|49.99
+|MySQL,
+Database,
+
+Design
+|520
+|Thick
+|Apress
+|USA
+|E-book
+|1
+|Tutorial
+|}
+We assume in this example that each book has only one author.
+
+=== Satisfying 1NF ===
+To satisfy 1NF, the values in each column of a table must be atomic. In the initial table, '''Subject''' contains a set of subject values, meaning it does not comply.
+
+One way to achieve the 1NF would be to separate the duplicities into multiple columns using repeating groups 'subject':
+{| class=&quot;wikitable&quot;
+!&lt;u&gt;Title&lt;/u&gt;
+!&lt;u&gt;Format&lt;/u&gt;
+!Author
+!Author Nationality
+!Price
+!Subject 1
+!Subject 2
+!Subject 3
+!Pages
+!Thickness
+!Publisher
+!Publisher country
+!Genre ID
+!Genre Name
+|-
+|Beginning MySQL Database Design and Optimization
+|Hardcover
+|Chad Russell
+|American
+|49.99
+|MySQL
+|Database
+|Design
+|520
+|Thick
+|Apress
+|USA
+|1
+|Tutorial
+|}
+Although now the table formally complies to the 1NF (is atomic), the problem with this solution is obvious - if a book has more than three subjects, it cannot be added to the database without altering its structure.
+
+To solve the problem in a more elegant way, it is necessary to identify entities represented in the table and separate them into their own respective tables. In this case, it would result in '''Book''', '''Subject''' and '''Publisher''' tables: &lt;ref name=&quot;:0&quot; /&gt;
+{| class=&quot;wikitable&quot;
+|+Book
+!&lt;u&gt;Title&lt;/u&gt;
+!&lt;u&gt;Format&lt;/u&gt;
+!Author
+!Author Nationality
+!Price
+!Pages
+!Thickness
+!Genre ID
+!Genre Name
+!''Publisher ID''
+|-
+|Beginning MySQL Database Design and Optimization
+|Hardcover
+|Chad Russell
+|American
+|49.99
+|520
+|Thick
+|1
+|Tutorial
+|''1''
+|}
+{|
+|
+{| class=&quot;wikitable&quot;
+|+'''Subject'''
+!'''&lt;u&gt;Subject ID&lt;/u&gt;'''
+!'''Subject name'''
+|-
+|1
+|MySQL
+|-
+|2
+|Database
+|-
+|3
+|Design
+|}
+|
+{| class=&quot;wikitable&quot;
+|+'''Publisher'''
+!'''&lt;u&gt;Publisher_ID&lt;/u&gt;'''
+!'''Name'''
+!'''Country'''
+|-
+|1
+|Apress
+|USA
+|}
+ |}
+Simply separating the initial data into multiple tables would break the connection between the data. That means the relationships between the newly introduced tables need to be determined. Notice that the ''Publisher ID'' column in the Book's table is a [[foreign key]] realizing [[many-to-one]] relation between a book and a publisher.
+
+A book can fit many subjects, as well as a subject may correspond to many books. That means also a [[Many-to-many (data model)|many-to-many]] relationship needs to be defined, achieved by creating a [[Link Table|link table]]: &lt;ref name=&quot;:0&quot; /&gt;
+{|
+|
+{| class=&quot;wikitable&quot;
+|+'''Title - Subject'''
+!&lt;u&gt;Title&lt;/u&gt;
+!'''''Subject ID'''''
+|-
+|Beginning MySQL Database Design and Optimization
+|1
+|-
+|Beginning MySQL Database Design and Optimization
+|2
+|-
+|Beginning MySQL Database Design and Optimization
+|3
+|}
+&lt;br /&gt;
+|}
+Instead of one table in [[unnormalized form]], there are now 4 tables conforming to the 1NF.
+
+=== Satisfying 2NF ===
+The ''Book'' table has one [[candidate key]], the [[compound key]] '''{Title , Format}'''.&lt;ref&gt;The table fragment itself has several candidate keys (simple key ''Price'', and compound keys of ''Format'' together with any column except ''Price'' or ''Thickness''), but we assume that in the complete table only ''{Title, Format}'' will be unique.&lt;/ref&gt; Consider the following table fragment: 
+{| class=&quot;wikitable&quot;
+|+Book
+!&lt;u&gt;Title&lt;/u&gt;
+!&lt;u&gt;Format&lt;/u&gt;
+!Author
+!Author Nationality
+!Price
+!Pages
+!Thickness
+!Genre ID
+!Genre Name
+!''Publisher ID''
+|-
+|Beginning MySQL Database Design and Optimization
+|Hardcover
+|Chad Russell
+|American
+|49.99
+|520
+|Thick
+|1
+|Tutorial
+|''1''
+|-
+|Beginning MySQL Database Design and Optimization
+|E-book
+|Chad Russell
+|American
+|22.34
+|520
+|Thick
+|1
+|Tutorial
+|''1''
+|-
+|The Relational Model for Database Management: Version 2
+|E-book
+|E.F.Codd
+|British
+|13.88
+|538
+|Thick
+|2
+|Popular science
+|''2''
+|-
+|The Relational Model for Database Management: Version 2
+|Paperback
+|E.F.Codd
+|British
+|39.99
+|538
+|Thick
+|2
+|Popular science
+|''2''
+|}
+All of the attributes that are not part of the key depend on ''Title'', but only ''Price'' also depends on ''Format''. To conform to [[Second normal form|2NF]] and remove duplicities, every non-key attribute must depend on the whole key, not just part of it. 
+
+To normalize this table, make '''{Title}''' the (simple) key so that every non-key attribute depends upon the whole key, and remove ''Price'' into a separate table so that its dependency on ''Format'' can be preserved:
+{|
+|
+{| class=&quot;wikitable&quot;
+|+Book
+!&lt;u&gt;Title&lt;/u&gt;
+!Author
+!Author Nationality
+!Pages
+!Thickness
+!Genre ID
+!Genre Name
+!''Publisher ID''
+|-
+|Beginning MySQL Database Design and Optimization
+|Chad Russell
+|American
+|520
+|Thick
+|1
+|Tutorial
+|''1''
+|-
+|The Relational Model for Database Management: Version 2
+|E.F.Codd
+|British
+|538
+|Thick
+|2
+|Popular science
+|''2''
+|}
+|
+{| class=&quot;wikitable&quot;
+|+Format - Prices
+!&lt;u&gt;Title&lt;/u&gt;
+!&lt;u&gt;Format&lt;/u&gt;
+!Price
+|-
+|Beginning MySQL Database Design and Optimization
+|Hardcover
+|49.99
+|-
+|Beginning MySQL Database Design and Optimization
+|E-book
+|22.34
+|-
+|The Relational Model for Database Management: Version 2
+|E-book
+|13.88
+|-
+|The Relational Model for Database Management: Version 2
+|Paperback
+|39.99
+|}
+|}
+Now, the book table conforms to [[Second normal form|2NF]].
+
+=== Satisfying 3NF ===
+A table in [[third normal form]] (3NF) is a table in 2NF that has no [[Transitive dependency|transitive dependencies]]. Note the book table with more rows (previously omitted for brevity):
+{| class=&quot;wikitable&quot;
+|+Book
+!&lt;u&gt;Title&lt;/u&gt;
+!Author
+!Author Nationality
+!Pages
+!Thickness
+!Genre ID
+!Genre Name
+!''Publisher ID''
+|-
+|Beginning MySQL Database Design and Optimization
+|Chad Russell
+|American
+|520
+|Thick
+|1
+|Tutorial
+|''1''
+|-
+|The Relational Model for Database Management: Version 2
+|E.F.Codd
+|British
+|538
+|Thick
+|2
+|Popular science
+|''2''
+|-
+|Learning SQL
+|Alan Beaulieu
+|American
+|338
+|Slim
+|1
+|Tutorial
+|''3''
+|-
+|SQL Cookbook
+|Anthony Molinaro
+|American
+|636
+|Thick
+|1
+|Tutorial
+|''3''
+|}
+'''Genre ID''' and '''Genre Name''' both [[functional dependency|depend]] upon the primary key '''{Title}''', but they are not independent of one another. The dependency of, say, '''Genre Name''' on the primary key can be deduced from the dependency of '''Genre Name''' on '''Genre ID''' and of '''Genre ID''' on the primary key. Since there are more titles than genres, that dependency introduces redundant data into the Book table which can be eliminated by abstracting the dependency of '''Genre Name''' on '''Genre ID''' into its own table:
+
+{|
+|
+{| class=&quot;wikitable&quot;
+|+Book
+!&lt;u&gt;Title&lt;/u&gt;
+!Author
+!Author Nationality
+!Pages
+!Thickness
+!''Genre ID''
+!''Publisher ID''
+|-
+|Beginning MySQL Database Design and Optimization
+|Chad Russell
+|American
+|520
+|Thick
+|''1''
+|''1''
+|-
+|The Relational Model for Database Management: Version 2
+|E.F.Codd
+|British
+|538
+|Thick
+|''2''
+|''2''
+|-
+|Learning SQL
+|Alan Beaulieu
+|American
+|338
+|Slim
+|''1''
+|''3''
+|-
+|SQL Cookbook
+|Anthony Molinaro
+|American
+|636
+|Thick
+|''1''
+|''3''
+|}
+|&lt;br /&gt;
+{| class=&quot;wikitable&quot;
+|+Book Genres
+!&lt;u&gt;Genre ID&lt;/u&gt;
+!Genre Name
+|-
+|1
+|Tutorial
+|-
+|2
+|Popular science
+|}
+|}
+The Book table is now in third normal form. Although tables in 1NF are by definition normalized, &quot;normalized&quot; is commonly used to mean 3NF.&lt;ref name=&quot;DateIntroDBSys&quot; /&gt;
+
+=== Satisfying EKNF ===
+{{main|Elementary key normal form}} 
+The elementary key normal form (EKNF) falls strictly between 3NF and BCNF and is not much discussed in the literature. It is intended ''“to capture the salient qualities of both 3NF and BCNF”'' while avoiding the problems of both (namely, that 3NF is “too forgiving” and BCNF is “prone to computational complexity”). Since it is rarely mentioned in literature, it is not included in this example.&lt;ref&gt;{{Cite web |url=http://what-when-how.com/Tutorial/topic-1114galv/Database-Design-and-Relational-Theory-167.html |title=Additional Normal Forms - Database Design and Relational Theory - page 151 |website=what-when-how.com |access-date=2019-01-22}}&lt;/ref&gt;
+
+=== Satisfying BCNF ===
+A relational schema R is considered to be in Boyce–Codd normal form (BCNF) if, for every one of its dependencies X → Y, one of the following conditions hold true:
+* X → Y is a trivial functional dependency (i.e., Y is a subset of X)
+* X is a superkey for schema R
+
+Consider the table in 3NF from the previous step:
+{| class=&quot;wikitable&quot;
+|+Book
+!&lt;u&gt;Title&lt;/u&gt;
+!Author
+!Author Nationality
+!Pages
+!Thickness
+!''Genre ID''
+!''Publisher ID''
+|-
+|Beginning MySQL Database Design and Optimization
+|Chad Russell
+|American
+|520
+|Thick
+|''1''
+|''1''
+|-
+|The Relational Model for Database Management: Version 2
+|E.F.Codd
+|British
+|538
+|Thick
+|''2''
+|''2''
+|-
+|Learning SQL
+|Alan Beaulieu
+|American
+|338
+|Slim
+|''1''
+|''3''
+|-
+|SQL Cookbook
+|Anthony Molinaro
+|American
+|636
+|Thick
+|''1''
+|''3''
+|}
+There is a non-trivial dependency violating [[Boyce–Codd normal form|BCNF]] - '''''{Author} → {Author Nationality}'''''. Therefore, the table should be decomposed:
+{|
+|
+{| class=&quot;wikitable&quot;
+|+Book
+!&lt;u&gt;Title&lt;/u&gt;
+!Author
+!Pages
+!Thickness
+!''Genre ID''
+!''Publisher ID''
+|-
+|Beginning MySQL Database Design and Optimization
+|Chad Russell
+|520
+|Thick
+|''1''
+|''1''
+|-
+|The Relational Model for Database Management: Version 2
+|E.F.Codd
+|538
+|Thick
+|''2''
+|''2''
+|-
+|Learning SQL
+|Alan Beaulieu
+|338
+|Slim
+|''1''
+|''3''
+|-
+|SQL Cookbook
+|Anthony Molinaro
+|636
+|Thick
+|''1''
+|''3''
+|}
+|
+{| class=&quot;wikitable&quot;
+|+Author - Nationality
+!&lt;u&gt;Author&lt;/u&gt;
+!Author Nationality
+|-
+|Chad Russell
+|American
+|-
+|E.F.Codd
+|British
+|-
+|Alan Beaulieu
+|American
+|-
+|Anthony Molinaro
+|American
+|}
+|
+|}
+
+Now, ''each attribute represents a fact about the key, the whole key, and nothing but the key''. Therefore [[Boyce–Codd normal form|BCNF]] has been achieved. &lt;ref name=&quot;:1&quot;&gt;{{Cite web|url=https://www.vertabelo.com/blog/technical-articles/boyce-codd-normal-form-bcnf|title=The Boyce-Codd Normal Form (BCNF)|last=Kozubek|first=Agnieszka|date=2014-04-03|website=vertabelo|access-date=2019-01-22}}&lt;/ref&gt;
+
+=== Satisfying 4NF ===
+Assume the database is owned by a book retailer franchise that has several franchisees that own shops in different locations. And therefore the retailer decided to add a table that contains data about availability of the books at different locations:
+{| class=&quot;wikitable&quot;
+|+ align=&quot;top&quot; |'''Franchisee - Book  Location'''
+!&lt;u&gt;Franchisee ID&lt;/u&gt;
+!&lt;u&gt;Title&lt;/u&gt;
+!&lt;u&gt;Location&lt;/u&gt;
+|-
+|1
+|Beginning MySQL Database Design and Optimization
+|California
+|-
+|1
+|Beginning MySQL Database Design and Optimization
+|Florida
+|-
+|1
+|Beginning MySQL Database Design and Optimization
+|Texas
+|-
+|1
+|The Relational Model for Database Management: Version 2
+|California
+|-
+|1
+|The Relational Model for Database Management: Version 2
+|Florida
+|-
+|1
+|The Relational Model for Database Management: Version 2
+|Texas
+|-
+|2
+|Beginning MySQL Database Design and Optimization
+|California
+|-
+|2
+|Beginning MySQL Database Design and Optimization
+|Florida
+|-
+|2
+|Beginning MySQL Database Design and Optimization
+|Texas
+|-
+|2
+|The Relational Model for Database Management: Version 2
+|California
+|-
+|2
+|The Relational Model for Database Management: Version 2
+|Florida
+|-
+|2
+|The Relational Model for Database Management: Version 2
+|Texas
+|-
+|3
+|Beginning MySQL Database Design and Optimization
+|Texas
+|-
+|}
+As this table structure consists of a [[Compound key|compound primary key]], it doesn't contain any non-key attributes and it's already in [[Boyce–Codd normal form|BCNF]] (and therefore also satisfies all the previous [[Database normalization#Normal forms|normal forms]]). However, if we assume that all available books are offered in each area, we might notice that the '''Title''' is not unambiguously bound to a certain '''Location''' and therefore the table doesn't satisfy  [[Fourth normal form|4NF]].
+
+That means that, to satisfy the [[fourth normal form]], this table needs to be decomposed as well: 
+{|
+|
+{| class=&quot;wikitable&quot;
+|+ align=&quot;top&quot; |'''Franchisee - Book'''
+!&lt;u&gt;Franchisee ID&lt;/u&gt;
+!&lt;u&gt;Title&lt;/u&gt;
+|-
+|1
+|Beginning MySQL Database Design and Optimization
+|-
+|1
+|The Relational Model for Database Management: Version 2
+|-
+|2
+|Beginning MySQL Database Design and Optimization
+|-
+|2
+|The Relational Model for Database Management: Version 2
+|-
+|3
+|Beginning MySQL Database Design and Optimization
+|-
+|}
+|
+{| class=&quot;wikitable&quot;
+|+ align=&quot;top&quot; |Franchisee - Location
+!&lt;u&gt;Franchisee ID&lt;/u&gt;
+!&lt;u&gt;Location&lt;/u&gt;
+|-
+|1
+|California
+|-
+|1
+|Florida
+|-
+|1
+|Texas
+|-
+|2
+|California
+|-
+|2
+|Florida
+|-
+|2
+|Texas
+|-
+|3
+|Texas
+|-
+|}
+|}
+Now, every record is unambiguously identified by a [[superkey]], therefore [[4NF]] is satisfied. &lt;ref name=&quot;:3&quot;&gt;{{Citation|title=Normalizace databáze|date=2018-11-07|url=https://cs.wikipedia.org/w/index.php?title=Normalizace_datab%C3%A1ze&amp;oldid=16615346|work=Wikipedie|language=cs|access-date=2019-01-22}}&lt;/ref&gt;
+
+=== Satisfying ETNF ===
+Suppose the franchisees can also order books from different suppliers. Let the relation also be subject to the following constraint:
+
+* If a certain '''supplier''' supplies a certain '''title''' 
+* and the '''title''' is supplied to the '''franchisee''' 
+* and the '''franchisee''' is being supplied by the '''supplier,'''
+* then the '''supplier''' supplies the '''title''' to the '''franchisee'''. &lt;ref name=&quot;:2&quot;&gt;{{Cite book|url=https://books.google.com/?id=Jx5UCwAAQBAJ&amp;lpg=PT163&amp;dq=etnf%20normalization&amp;pg=PT138#v=onepage&amp;q=etnf&amp;f=false|title=The New Relational Database Dictionary: Terms, Concepts, and Examples|last=Date|first=C. J.|date=2015-12-21|publisher=&quot;O'Reilly Media, Inc.&quot;|isbn=9781491951699|location=|pages=138|language=en}}&lt;/ref&gt;
+
+{| class=&quot;wikitable&quot;
+|+Supplier - Book - Franchisee
+!&lt;u&gt;Supplier ID&lt;/u&gt;
+!&lt;u&gt;Title&lt;/u&gt;
+!&lt;u&gt;Franchisee ID&lt;/u&gt;
+|-
+|1
+|Beginning MySQL Database Design and Optimization
+|1
+|-
+|2
+|The Relational Model for Database Management: Version 2
+|2
+|-
+|3
+|Learning SQL
+|3
+|}
+This table is in [[Fourth normal form|4NF]], but the Supplier ID is equal to the join of its projections: '''{  { Supplier ID , Book } , { Book, Franchisee ID } , { Franchisee ID , Supplier ID } }.''' No component of that join dependency is a [[superkey]] (the sole [[superkey]] being the entire heading), so the table does not satisfy the [[Essential tuple normal form|ETNF]] and can be further decomposed: &lt;ref name=&quot;:2&quot; /&gt; 
+{|
+|
+{| class=&quot;wikitable&quot;
+|+Supplier - Book
+!&lt;u&gt;Supplier ID&lt;/u&gt;
+!&lt;u&gt;Title&lt;/u&gt;
+|-
+|1
+|Beginning MySQL Database Design and Optimization
+|-
+|2
+|The Relational Model for Database Management: Version 2
+|-
+|3
+|Learning SQL
+|}
+|
+{| class=&quot;wikitable&quot;
+|+Book - Franchisee
+!&lt;u&gt;Title&lt;/u&gt;
+!&lt;u&gt;Franchisee ID&lt;/u&gt;
+|-
+|Beginning MySQL Database Design and Optimization
+|1
+|-
+|The Relational Model for Database Management: Version 2
+|2
+|-
+|Learning SQL
+|3
+|}
+|
+{| class=&quot;wikitable&quot;
+|+Franchisee - Supplier
+!&lt;u&gt;Supplier ID&lt;/u&gt;
+!&lt;u&gt;Franchisee ID&lt;/u&gt;
+|-
+|1
+|1
+|-
+|2
+|2
+|-
+|3
+|3
+|}
+|}
+The decomposition produces [[Essential tuple normal form|ETNF]] compliance.
+
+=== Satisfying 5NF ===
+To spot a table not satisfying the [[Fifth normal form|5NF]], it is usually necessary to examine the data thoroughly. Suppose the table from [[Database normalization#Satisfying_4NF|4NF example]] with a little modification in data and let's examine if it satisfies [[Fifth normal form|5NF]]:
+{| class=&quot;wikitable&quot;
+|+ align=&quot;top&quot; |'''Franchisee - Book  Location'''
+!&lt;u&gt;Franchisee ID&lt;/u&gt;
+!&lt;u&gt;Title&lt;/u&gt;
+!&lt;u&gt;Location&lt;/u&gt;
+|-
+|1
+|Beginning MySQL Database Design and Optimization
+|California
+|-
+|1
+|Learning SQL
+|California
+|-
+|1
+|The Relational Model for Database Management: Version 2
+|Texas
+|-
+|2
+|The Relational Model for Database Management: Version 2
+|California
+|-
+|}
+If we decompose this table, we lower redundancies and get the following two tables:
+{|
+|
+{| class=&quot;wikitable&quot;
+|+ align=&quot;top&quot; |'''Franchisee - Book''' 
+!&lt;u&gt;Franchisee ID&lt;/u&gt;
+!&lt;u&gt;Title&lt;/u&gt;
+|-
+|1
+|Beginning MySQL Database Design and Optimization
+|-
+|1
+|Learning SQL
+|-
+|1
+|The Relational Model for Database Management: Version 2
+|-
+|2
+|The Relational Model for Database Management: Version 2
+|-
+|}
+|
+{| class=&quot;wikitable&quot;
+|+ align=&quot;top&quot; |'''Franchisee - Location'''
+!&lt;u&gt;Franchisee ID&lt;/u&gt;
+!&lt;u&gt;Location&lt;/u&gt;
+|-
+|1
+|California
+|-
+|1
+|Texas
+|-
+|2
+|California
+|-
+|}
+|}
+What happens if we try to join these tables? The query would return the following data:
+{| class=&quot;wikitable&quot;
+|+ align=&quot;top&quot; |'''Franchisee - Book  - Location JOINed''' 
+!&lt;u&gt;Franchisee ID&lt;/u&gt;
+!&lt;u&gt;Title&lt;/u&gt;
+!&lt;u&gt;Location&lt;/u&gt;
+|-
+|1
+|Beginning MySQL Database Design and Optimization
+|California
+|-
+|1
+|Learning SQL
+|California
+|-
+|&lt;span style=&quot;color:red&quot;&gt;1&lt;/span&gt;
+|&lt;span style=&quot;color:red&quot;&gt;The Relational Model for Database Management: Version 2&lt;/span&gt;
+|&lt;span style=&quot;color:red&quot;&gt;California&lt;/span&gt;
+|-
+|1
+|The Relational Model for Database Management: Version 2
+|Texas
+|-
+|&lt;span style=&quot;color:red&quot;&gt;1&lt;/span&gt;
+|&lt;span style=&quot;color:red&quot;&gt;Learning SQL&lt;/span&gt;
+|&lt;span style=&quot;color:red&quot;&gt;Texas&lt;/span&gt;
+|-
+|&lt;span style=&quot;color:red&quot;&gt;1&lt;/span&gt;
+|&lt;span style=&quot;color:red&quot;&gt;Beginning MySQL Database Design and Optimization&lt;/span&gt;
+|&lt;span style=&quot;color:red&quot;&gt;Texas&lt;/span&gt;
+|-
+|2
+|The Relational Model for Database Management: Version 2
+|California
+|-
+|}
+Apparently, the JOIN returns three more rows than it should - let's try to add another table to clarify the relation. We end up with three separate tables:
+&lt;br /&gt;
+{|
+|
+{| class=&quot;wikitable&quot;
+|+ align=&quot;top&quot; |'''Franchisee - Book'''
+!&lt;u&gt;Franchisee ID&lt;/u&gt;
+!&lt;u&gt;Title&lt;/u&gt;
+|-
+|1
+|Beginning MySQL Database Design and Optimization
+|-
+|1
+|Learning SQL
+|-
+|1
+|The Relational Model for Database Management: Version 2
+|-
+|2
+|The Relational Model for Database Management: Version 2
+|-
+|}
+|
+{| class=&quot;wikitable&quot;
+|+ align=&quot;top&quot; |'''Franchisee - Location'''
+!&lt;u&gt;Franchisee ID&lt;/u&gt;
+!&lt;u&gt;Location&lt;/u&gt;
+|-
+|1
+|California
+|-
+|1
+|Texas
+|-
+|2
+|California
+|-
+|}
+|
+{| class=&quot;wikitable&quot;
+|+ align=&quot;top&quot; |'''Location - Book'''
+!&lt;u&gt;Location&lt;/u&gt;
+!&lt;u&gt;Title&lt;/u&gt;
+|-
+|California
+|Beginning MySQL Database Design and Optimization
+|-
+|California
+|Learning SQL
+|-
+|California
+|The Relational Model for Database Management: Version 2
+|-
+|Texas
+|The Relational Model for Database Management: Version 2
+|-
+|}
+|}
+What will the JOIN return now? It actually is not possible to join these three tables. That means it wasn't possible to decompose the '''Franchisee - Book  Location''' without data loss, therefore the table already satisfies [[5NF]]. &lt;ref name=&quot;:3&quot; /&gt;
+
+C.J. Date has argued that only a database in 5NF is truly &quot;normalized&quot;.&lt;ref&gt;{{Cite book|url=https://books.google.com/?id=Jx5UCwAAQBAJ&amp;lpg=PT163&amp;dq=etnf%20normalization&amp;pg=PT163#v=onepage&amp;q=etnf%20normalization&amp;f=false|title=The New Relational Database Dictionary: Terms, Concepts, and Examples|last=Date|first=C. J.|date=2015-12-21|publisher=&quot;O'Reilly Media, Inc.&quot;|isbn=9781491951699|location=|pages=163|language=en}}&lt;/ref&gt;
+
+=== Satisfying DKNF ===
+Let's have a look at the '''Book''' table from previous examples and see if it satisfies the [[Domain-key normal form|Domain Key Normal Form]]:
+{| class=&quot;wikitable&quot;
+|+Book
+!&lt;u&gt;Title&lt;/u&gt;
+!'''Pages'''
+!Thickness
+!''Genre ID''
+!''Publisher ID''
+|-
+|Beginning MySQL Database Design and Optimization
+|520
+|Thick
+|''1''
+|''1''
+|-
+|The Relational Model for Database Management: Version 2
+|538
+|Thick
+|''2''
+|''2''
+|-
+|Learning SQL
+|338
+|Slim
+|''1''
+|''3''
+|-
+|SQL Cookbook
+|636
+|Thick
+|''1''
+|''3''
+|}
+Logically, '''Thickness''' is determined by number of pages. That means it depends on '''Pages''' which is not a key. Let's set an example convention saying a book up to 350 pages is considered &quot;slim&quot; and a book over 350 pages is considered &quot;thick&quot;. 
+
+This convention is technically a constraint but it is neither a domain constraint nor a key constraint; therefore we cannot rely on domain constraints and key constraints to keep the data integrity. 
+
+In other words - nothing prevents us from putting, for example, &quot;Thick&quot; for a book with only 50 pages - and this makes the table violate [[Domain-key normal form|DKNF]].
+
+To solve this, we can create a table holding enumeration that defines the '''Thickness''' and remove that column from the original table:
+{|
+|
+{| class=&quot;wikitable&quot;
+|+Thickness Enum
+!&lt;u&gt;Thickness&lt;/u&gt;
+!Min pages
+!Max pages
+|-
+|Slim
+|1
+|350
+|-
+|Thick
+|351
+|999,999,999,999
+|}
+|
+{| class=&quot;wikitable&quot;
+|+Book -  Pages - Genre - Publisher
+!&lt;u&gt;Title&lt;/u&gt;
+!Pages
+!''Genre ID''
+!''Publisher ID''
+|-
+|Beginning MySQL Database Design and Optimization
+|520
+|''1''
+|''1''
+|-
+|The Relational Model for Database Management: Version 2
+|538
+|''2''
+|''2''
+|-
+|Learning SQL
+|338
+|''1''
+|''3''
+|-
+|SQL Cookbook
+|636
+|''1''
+|''3''
+|}
+|}
+That way, the domain integrity violation has been eliminated, and the table is in [[Domain-key normal form|DKNF]].
+
+=== Satisfying 6NF ===
+
+A simple and intuitive definition of the [[sixth normal form]] is that ''&quot;a table is in [[Sixth normal form|6NF]] when '''the row contains the Primary Key, and at most one other attribute&quot;'''''&lt;nowiki/&gt;'''.''' &lt;ref&gt;{{Cite web|url=https://stackoverflow.com/questions/4824714/would-like-to-understand-6nf-with-an-example|title=normalization - Would like to Understand 6NF with an Example|website=Stack Overflow|access-date=2019-01-23}}&lt;/ref&gt;
+
+That means, for example, the '''Publishers''' table designed while [[#Satisfying_1NF|creating the 1NF]] 
+{| class=&quot;wikitable&quot;
+|+Publisher
+!&lt;u&gt;Publisher_ID&lt;/u&gt;
+!Name
+!Country
+|-
+|1
+|Apress
+|USA
+|}
+needs to be further decomposed into two tables:
+{|
+|
+{| class=&quot;wikitable&quot;
+|+Publisher
+!&lt;u&gt;Publisher_ID&lt;/u&gt;
+!Name
+|-
+|1
+|Apress
+|}
+|
+{| class=&quot;wikitable&quot;
+|+Publisher country
+!&lt;u&gt;Publisher_ID&lt;/u&gt;
+!Country
+|-
+|1
+|USA
+|}
+ |}
+Such normalization to 6NF is mostly used in data warehouses where the benefits outweigh the drawbacks.{{Citation needed|date=August 2019}}
+
+==See also==
+* [[Denormalization]]
+* [[Database refactoring]]
+
+==Notes and references==
+{{Reflist}}
+{{refbegin}}
+{{refend}}
+
+==Further reading==
+* Date, C. J. (1999), ''[https://web.archive.org/web/20050404010227/http://www.aw-bc.com/catalog/academic/product/0%2C1144%2C0321197844%2C00.html  An Introduction to Database Systems]'' (8th ed.). Addison-Wesley Longman. {{ISBN|0-321-19784-4}}.
+* Kent, W. (1983) ''[http://www.bkent.net/Doc/simple5.htm A Simple Guide to Five Normal Forms in Relational Database Theory]'', Communications of the ACM, vol. 26, pp.&amp;nbsp;120–125
+* H.-J. Schek, P. Pistor Data Structures for an Integrated Data Base Management and Information Retrieval System
+
+==External links==
+* {{cite journal |first= William |last=Kent |title=A Simple Guide to Five Normal Forms in Relational Database Theory |journal=Communications of the ACM |volume=26 |issue=2 |date=February 1983 |pages=120–125 |url=http://www.bkent.net/Doc/simple5.htm |doi=10.1145/358024.358054}}
+* [http://databases.about.com/od/specificproducts/a/normalization.htm Database Normalization Basics] by Mike Chapple (About.com)
+* [http://www.databasejournal.com/sqletc/article.php/1428511 Database Normalization Intro], [http://www.databasejournal.com/sqletc/article.php/26861_1474411_1 Part 2]
+* [http://mikehillyer.com/articles/an-introduction-to-database-normalization/ An Introduction to Database Normalization] by Mike Hillyer.
+* [http://phlonx.com/resources/nf3/ A tutorial on the first 3 normal forms] by Fred Coulson
+* [http://support.microsoft.com/kb/283878 Description of the database normalization basics] by Microsoft
+* [http://beginnersbook.com/2015/05/normalization-in-dbms/ Normalization in DBMS by Chaitanya (beginnersbook.com)]
+* [https://www.databasestar.com/normalization-in-dbms/ A Step-by-Step Guide to Database Normalization]
+* [http://researcher.watson.ibm.com/researcher/files/us-fagin/icdt12.pdf ETNF – Essential tuple normal form]
+
+{{Database normalization}}
+{{Database}}
+{{Databases}}
+
+{{DEFAULTSORT:Database Normalization}}
+[[Category:Database normalization| ]]
+[[Category:Database constraints]]
+[[Category:Data management]]
+[[Category:Data modeling]]
+[[Category:Relational algebra]]</text>
+      <sha1>m9fodxuty3p2x6t0hxe80jchbp4hl1s</sha1>
+    </revision>
+  </page>

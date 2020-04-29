@@ -1,0 +1,134 @@
+  <page>
+    <title>Beta sheet</title>
+    <ns>0</ns>
+    <id>4906</id>
+    <revision>
+      <id>941680498</id>
+      <parentid>926799894</parentid>
+      <timestamp>2020-02-20T01:47:34Z</timestamp>
+      <contributor>
+        <ip>2A01:4C8:141B:6402:54A6:7E54:BCA9:893B</ip>
+      </contributor>
+      <comment>/* Geometry */</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{Alpha beta structure}}
+The '''β-sheet''' (also '''β-pleated sheet''') is a common motif of regular [[protein secondary structure|secondary structure]] in [[protein]]s. Beta sheets consist of '''beta strands''' (also '''β-strand''') connected laterally by at least two or three backbone [[hydrogen bond]]s, forming a generally twisted, pleated sheet. A β-strand is a stretch of [[peptide|polypeptide]] chain typically 3 to 10 [[amino acid]]s long with backbone in an extended conformation. The supramolecular association of β-sheets has been implicated in formation of the protein aggregates and fibrils observed in many human diseases, notably the [[amyloidosis|amyloidoses]] such as [[Alzheimer's disease]].
+
+==History==
+[[File:1gwe antipar betaSheet both.png|thumb|right|500px| An example of a 4-stranded [[Antiparallel (biochemistry)|antiparallel]] β-sheet fragment from a crystal structure of the enzyme [[catalase]] ([[Protein Data Bank|PDB]] file 1GWE at 0.88&amp;nbsp;Å resolution). a) Front view, showing the antiparallel hydrogen bonds (dotted) between peptide NH and CO groups on adjacent strands. Arrows indicate chain direction, and electron density contours outline the non-hydrogen atoms. Oxygen atoms are red balls, nitrogen atoms are blue, and hydrogen atoms are omitted for simplicity; sidechains are shown only out to the first sidechain carbon atom (green). b) Edge-on view of the central two β-strands in a, showing the righthanded ''twist'' and the ''pleat'' of C&lt;sup&gt;α&lt;/sup&gt;s and sidechains that alternately stick out in opposite directions from the sheet.]]
+The first β-sheet structure was proposed by [[William Astbury]] in the 1930s. He proposed the idea of hydrogen bonding between the [[peptide bond]]s of parallel or antiparallel extended β-strands. However, Astbury did not have the necessary data on the bond geometry of the amino acids in order to build accurate models, especially since he did not then know that the [[peptide bond]] was planar. A refined version was proposed by [[Linus Pauling]] and [[Robert Corey]] in 1951. Their model incorporated the planarity of the peptide bond which they previously explained as resulting from keto-enol [[tautomerization]].
+
+==Structure and orientation==
+
+===Geometry===
+The majority of β-strands are arranged adjacent to other strands and form an extensive [[hydrogen bond]] network with their neighbors in which the [[amine|N−H]] groups in the backbone of one strand establish [[hydrogen bond]]s with the [[carbonyl|C=O]] groups in the backbone of the adjacent strands. In the fully extended β-strand, successive side chains point straight up, then straight down, then straight up, etc. Adjacent β-strands in a β-sheet are aligned so that their C&lt;sup&gt;α&lt;/sup&gt; atoms are adjacent and their side chains point in the same direction. The &quot;pleated&quot; appearance of β-strands arises from tetrahedral chemical bonding at the C&lt;sup&gt;α&lt;/sup&gt; atom; for example, if a side chain points straight up, then the bonds to the C′ must point slightly downwards, since its bond angle is approximately 109.5°. The pleating causes the distance between C{{su|p=α|b=''i''}} and C{{su|p=α|b=''i'' + 2}} to be approximately {{cvt|6|Å|nm|lk=on}}, rather than the {{cvt|7.6|Å|nm}} expected from two fully extended ''[[Cis-trans isomerism|trans]]'' [[peptide bond|peptide]]s. The &quot;sideways&quot; distance between adjacent C&lt;sup&gt;α&lt;/sup&gt; atoms in [[hydrogen bond|hydrogen-bonded]] β-strands is roughly {{cvt|5|Å|nm}}.
+[[File:Ramachandran plot general 100K.jpg|thumb|left|200px| Ramachandran (''φ'',&amp;nbsp;''ψ'') plot of about 100,000 high-resolution data points, showing the broad, favorable region around the conformation typical for β-sheet amino acid residues.]]
+However, β-strands are rarely perfectly extended; rather, they exhibit a twist. The energetically preferred [[dihedral angle]]s near (''φ'',&amp;nbsp;''ψ'') = (–135°,&amp;nbsp;135°) (broadly, the upper left region of the [[Ramachandran plot]]) diverge significantly from the fully extended conformation (''φ'',&amp;nbsp;''ψ'') = (–180°,&amp;nbsp;180°).&lt;ref&gt;{{cite book |title=Biochemistry | last1 = Voet | first1 = Donald | last2 = Voet | first2 = Judith G. | name-list-format = vanc |year=2004 |edition=3rd |publisher=Wiley |location=Hoboken, NJ |isbn=0-471-19350-X |page= |pages=[https://archive.org/details/biochemistry00voet_1/page/227 227–231] |url=https://archive.org/details/biochemistry00voet_1|url-access=registration }}&lt;/ref&gt; The twist is often associated with alternating fluctuations in the [[dihedral angle]]s to prevent the individual β-strands in a larger sheet from splaying apart. A good example of a strongly twisted β-hairpin can be seen in the protein [[BPTI]].
+
+The side chains point outwards from the folds of the pleats, roughly perpendicularly to the plane of the sheet; successive amino acid residues point outwards on alternating faces of the sheet.
+
+===Hydrogen bonding patterns===
+{{multiple image
+| direction = horizontal
+| width = 150
+| image1 = Beta sheet bonding antiparallel-color.svg
+| image2 = Beta sheet bonding parallel-color.svg
+| alt1 = 
+| alt2 =
+| caption1 = '''Antiparallel''' β-sheet [[hydrogen bonding]] patterns, represented by dotted lines. [[Oxygen]] atoms are colored &lt;span style=&quot;color:red;&quot;&gt;'''red'''&lt;/span&gt; and [[nitrogen]] atoms colored &lt;span style=&quot;color:blue;&quot;&gt;'''blue'''&lt;/span&gt;.
+| caption2 = '''Parallel''' β-sheet [[hydrogen bonding]] patterns, represented by dotted lines. [[Oxygen]] atoms are colored &lt;span style=&quot;color:red;&quot;&gt;'''red'''&lt;/span&gt; and [[nitrogen]] atoms colored &lt;span style=&quot;color:blue;&quot;&gt;'''blue'''&lt;/span&gt;.
+}}
+Because peptide chains have a directionality conferred by their [[N-terminal end|N-terminus]] and [[C-terminal end|C-terminus]], β-strands too can be said to be directional. They are usually represented in protein topology diagrams by an arrow pointing toward the C-terminus. Adjacent β-strands can form [[hydrogen bond]]s in antiparallel, parallel, or mixed arrangements.
+
+In an antiparallel arrangement, the successive β-strands alternate directions so that the N-terminus of one strand is adjacent to the C-terminus of the next. This is the arrangement that produces the strongest inter-strand stability because it allows the inter-strand hydrogen bonds between carbonyls and amines to be planar, which is their preferred orientation. The peptide backbone dihedral angles (''φ'',&amp;nbsp;''ψ'') are about (–140°,&amp;nbsp;135°) in antiparallel sheets. In this case, if two atoms C{{su|p=α|b=''i''}} and C{{su|p=α|b=''j''}} are adjacent in two [[hydrogen bond|hydrogen-bonded]] β-strands, then they form two mutual backbone hydrogen bonds to each other's flanking [[peptide bond|peptide groups]]; this is known as a '''close pair''' of hydrogen bonds.
+
+In a parallel arrangement, all of the N-termini of successive strands are oriented in the same direction; this orientation may be slightly less stable because it introduces nonplanarity in the inter-strand hydrogen bonding pattern. The dihedral angles (''φ'',&amp;nbsp;''ψ'') are about (–120°,&amp;nbsp;115°) in parallel sheets. It is rare to find less than five interacting parallel strands in a motif, suggesting that a smaller number of strands may be unstable, however it is also fundamentally more difficult for parallel β-sheets to form because strands with N and C termini aligned necessarily must be very distant in sequence {{Citation needed|date=August 2019}}. There is also evidence that parallel β-sheet may be more stable since small amyloidogenic sequences appear to generally aggregate into β-sheet fibrils composed of primarily parallel β-sheet strands, where one would expect anti-parallel fibrils if anti-parallel were more stable.
+
+In parallel β-sheet structure, if two atoms C{{su|p=α|b=''i''}} and C{{su|p=α|b=''j''}} are adjacent in two [[hydrogen bond|hydrogen-bonded]] β-strands, then they do ''not'' hydrogen bond to each other; rather, one residue forms hydrogen bonds to the residues that flank the other (but not vice versa). For example, residue ''i'' may form hydrogen bonds to residues ''j''&amp;nbsp;−&amp;nbsp;1 and ''j''&amp;nbsp;+&amp;nbsp;1; this is known as a '''wide pair''' of hydrogen bonds. By contrast, residue ''j'' may hydrogen-bond to different residues altogether, or to none at all.
+
+The hydrogen bond arrangement in parallel beta sheet resembles that in an [[amide ring]] motif with 11 atoms. 
+
+Finally, an individual strand may exhibit a mixed bonding pattern, with a parallel strand on one side and an antiparallel strand on the other. Such arrangements are less common than a random distribution of orientations would suggest, suggesting that this pattern is less stable than the anti-parallel arrangement, however bioinformatic analysis always struggles with extracting structural thermodynamics since there are always numerous other structural features present in whole proteins. Also proteins are inherently constrained by folding kinetics as well as folding thermodynamics, so one must always be careful in concluding stability from bioinformatic analysis.
+
+The [[hydrogen bond]]ing of β-strands need not be perfect, but can exhibit localized disruptions known as [[beta bulge|β-bulge]]s.
+
+The hydrogen bonds lie roughly in the plane of the sheet, with the [[peptide bond|peptide]] [[carbonyl]] groups pointing in alternating directions with successive residues; for comparison, successive carbonyls point in the ''same'' direction in the [[alpha helix]].
+
+===Amino acid propensities===
+Large aromatic residues ([[tyrosine]], [[phenylalanine]], [[tryptophan]]) and β-branched amino acids ([[threonine]], [[valine]], [[isoleucine]]) are favored to be found in β-strands in the ''middle'' of β-sheets. Different types of residues (such as [[proline]]) are likely to be found in the ''edge'' strands in β-sheets, presumably to avoid the &quot;edge-to-edge&quot; association between proteins that might lead to aggregation and [[amyloid]] formation.&lt;ref&gt;{{cite journal | vauthors = Richardson JS, Richardson DC | title = Natural beta-sheet proteins use negative design to avoid edge-to-edge aggregation | journal = Proceedings of the National Academy of Sciences of the United States of America | volume = 99 | issue = 5 | pages = 2754–9 | date = March 2002 | pmid = 11880627 | pmc = 122420 | doi = 10.1073/pnas.052706099 }}&lt;/ref&gt;
+
+==Common structural motifs==
+[[File:Beta hairpin.png|thumb|right|upright=0.6|The [[beta hairpin|β-hairpin]] motif]]
+[[File:Anthrax toxin protein key motif.svg|left|thumb|The Greek-key motif]]
+A very simple [[structural motif]] involving β-sheets is the [[beta hairpin|β-hairpin]], in which two antiparallel strands are linked by a short loop of two to five residues, of which one is frequently a [[glycine]] or a [[proline]], both of which can assume the dihedral-angle conformations required for a tight [[turn (biochemistry)|turn]] or a [[beta bulge loop|β-bulge loop]]. Individual strands can also be linked in more elaborate ways with longer loops that may contain [[alpha helix|α-helices]].
+
+===Greek key motif===
+The Greek key motif consists of four adjacent antiparallel strands and their linking loops. It consists of three antiparallel strands connected by hairpins, while the fourth is adjacent to the first and linked to the third by a longer loop. This type of structure forms easily during the [[protein folding]] process.&lt;ref&gt;[http://swissmodel.expasy.org/course/text/chapter4.htm Tertiary Protein Structure and Folds: section 4.3.2.1]. From [http://swissmodel.expasy.org/course/ Principles of Protein Structure, Comparative Protein Modelling, and Visualisation]&lt;/ref&gt;&lt;ref name=&quot;pmid8506258&quot;&gt;{{cite journal | vauthors = Hutchinson EG, Thornton JM | title = The Greek key motif: extraction, classification and analysis | journal = Protein Engineering | volume = 6 | issue = 3 | pages = 233–45 | date = April 1993 | pmid = 8506258 | doi = 10.1093/protein/6.3.233 }}&lt;/ref&gt; It was named after a pattern common to Greek ornamental artwork (see [[meander (art)|meander]]).
+
+===The β-α-β motif===
+Due to the chirality of their component amino acids, all strands exhibit right-handed twist evident in most higher-order β-sheet structures. In particular, the linking loop between two parallel strands almost always has a right-handed crossover chirality, which is strongly favored by the inherent twist of the sheet.&lt;ref&gt;See sections II B and III C, D in {{cite book | vauthors = Richardson JS |year= 1981 |title=Anatomy and Taxonomy of Protein Structures |journal=Advances in Protein Chemistry |volume=34 |pages=167–339|isbn=0-12-034234-0 |doi=10.1016/s0065-3233(08)60520-3}}&lt;/ref&gt; This linking loop frequently contains a helical region, in which case it is called a [[beta-alpha-beta|β-α-β]] motif. A closely related motif called a β-α-β-α motif forms the basic component of the most commonly observed protein [[tertiary structure]], the [[TIM barrel]].
+
+[[File:beta-meander1.png|left|thumb|The β-meander motif from the outer surface [[Protein A]]]]
+
+===β-meander motif===
+A simple [[structural motif|supersecondary]] protein topology composed of 2 or more consecutive antiparallel β-strands linked together by [[beta hairpin|hairpin]] loops.&lt;ref&gt;[http://scop.mrc-lmb.cam.ac.uk/scop/data/scop.b.c.bbf.html SCOP: Fold: WW domain-like&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;&lt;ref&gt;[http://www.cryst.bbk.ac.uk/PPS2/course/section9/sss/super2.html PPS '96 - Super Secondary Structure&lt;!-- Bot generated title --&gt;]&lt;/ref&gt; This motif is common in β-sheets and can be found in several structural architectures including [[beta barrel|β-barrels]] and [[beta propeller|β-propellers]].
+
+[[File:5CPAgood.png|right|thumb|Psi-loop motif from [[Carboxypeptidase A]]]]
+
+===Psi-loop motif===
+The psi-loop (Ψ-loop) motif consists of two antiparallel strands with one strand in between that is connected to both by hydrogen bonds.&lt;ref&gt;{{cite journal | vauthors = Hutchinson EG, Thornton JM | title = PROMOTIF--a program to identify and analyze structural motifs in proteins | journal = Protein Science | volume = 5 | issue = 2 | pages = 212–20 | date = February 1996 | pmid = 8745398 | pmc = 2143354 | doi = 10.1002/pro.5560050204 }}&lt;/ref&gt; There are four possible strand topologies for single Ψ-loops.&lt;ref name=&quot;pmid2281084&quot;&gt;{{cite journal | vauthors = Hutchinson EG, Thornton JM | title = HERA--a program to draw schematic diagrams of protein secondary structures | journal = Proteins | volume = 8 | issue = 3 | pages = 203–12 | year = 1990 | pmid = 2281084 | doi = 10.1002/prot.340080303 }}&lt;/ref&gt; This motif is rare as the process resulting in its formation seems unlikely to occur during protein folding. The Ψ-loop was first identified in the [[aspartic acid protease|aspartic protease]] family.&lt;ref name=&quot;pmid2281084&quot;/&gt;
+
+==Structural architectures of proteins with β-sheets==
+β-sheets are present in [[All-β proteins|all-β]], [[Α+β proteins|α+β]] and [[Α/β proteins|α/β]] domains, and in many [[peptide]]s or small proteins with poorly defined overall architecture.&lt;ref&gt;{{cite journal | vauthors = Hubbard TJ, Murzin AG, Brenner SE, Chothia C | title = SCOP: a structural classification of proteins database | journal = Nucleic Acids Research | volume = 25 | issue = 1 | pages = 236–9 | date = January 1997 | pmid = 9016544 | pmc = 146380 | doi = 10.1093/nar/25.1.236 }}&lt;/ref&gt;&lt;ref&gt;{{cite journal | vauthors = Fox NK, Brenner SE, Chandonia JM | title = SCOPe: Structural Classification of Proteins--extended, integrating SCOP and ASTRAL data and classification of new structures | journal = Nucleic Acids Research | volume = 42 | issue = Database issue | pages = D304-9 | date = January 2014 | pmid = 24304899 | doi = 10.1093/nar/gkt1240 | pmc=3965108}}&lt;/ref&gt; [[All-β proteins|All-β domains]] may form [[beta barrel|β-barrels]], β-sandwiches, β-prisms, [[Beta-propeller domain|β-propellers]], and [[Beta helix|β-helices]].
+
+==Structural topology==
+The '''topology''' of a β-sheet describes the order of [[hydrogen bond|hydrogen-bonded]] β-strands along the backbone. For example, the [[flavodoxin fold]] has a five-stranded, parallel β-sheet with topology 21345; thus, the edge strands are β-strand 2 and β-strand 5 along the backbone. Spelled out explicitly, β-strand 2 is H-bonded to β-strand 1, which is H-bonded to β-strand 3, which is H-bonded to β-strand 4, which is H-bonded to β-strand 5, the other edge strand. In the same system, the Greek key motif described above has a 4123 topology. The [[secondary structure]] of a β-sheet can be described roughly by giving the number of strands, their topology, and whether their [[hydrogen bond]]s are parallel or antiparallel.
+
+β-sheets can be ''open'', meaning that they have two edge strands (as in the [[flavodoxin fold]] or the [[immunoglobulin fold]]) or they can be ''closed [[beta-barrel|β-barrel]]s'' (such as the [[TIM barrel]]). [[beta-barrel|β-Barrels]] are often described by their ''stagger'' or ''shear''. Some open β-sheets are very curved and fold over on themselves (as in the [[SH3 domain]]) or form horseshoe shapes (as in the [[ribonuclease inhibitor]]). Open β-sheets can assemble face-to-face (such as the [[beta-propeller domain|β-propeller domain]] or [[immunoglobulin fold]]) or edge-to-edge, forming one big β-sheet.
+
+==Dynamic features==
+
+β-pleated sheet structures are made from extended β-strand polypeptide chains, with strands linked to their neighbours by [[hydrogen bonds]]. Due to this extended backbone conformation, β-sheets resist [[stretching]]. β-sheets in proteins may carry out [[low-frequency collective motion in proteins and DNA|low-frequency]] accordion-like motion as observed by the [[Raman spectroscopy]]&lt;ref name=&quot;pmid7115900&quot;&gt;{{cite journal | vauthors = Painter PC, Mosher LE, Rhoads C | title = Low-frequency modes in the Raman spectra of proteins | journal = Biopolymers | volume = 21 | issue = 7 | pages = 1469–72 | date = July 1982 | pmid = 7115900 | doi = 10.1002/bip.360210715 }}&lt;/ref&gt; and analyzed with the quasi-continuum model.&lt;ref name=&quot;pmid4052563&quot;&gt;{{cite journal | vauthors = Chou KC | title = Low-frequency motions in protein molecules. Beta-sheet and beta-barrel | journal = Biophysical Journal | volume = 48 | issue = 2 | pages = 289–97 | date = August 1985 | pmid = 4052563 | pmc = 1329320 | doi = 10.1016/S0006-3495(85)83782-6 }}&lt;/ref&gt;
+
+==Parallel β-helices==
+[[File:1QRE L3betaHelix.jpg|thumb|right| End-view of a 3-sided, left handed β-helix ({{PDB|1QRE}})]]
+A [[beta helix|β-helix]] is formed from repeating structural units consisting of two or three short β-strands linked by short loops. These units &quot;stack&quot; atop one another in a helical fashion so that successive repetitions of the same strand hydrogen-bond with each other in a parallel orientation. See the [[beta helix|β-helix]] article for further information.
+
+In lefthanded β-helices, the strands themselves are quite straight and untwisted; the resulting helical surfaces are nearly flat, forming a regular [[triangular prism]] shape, as shown for the 1QRE archaeal carbonic anhydrase at right. Other examples are the lipid A synthesis enzyme [[LpxA]] and insect antifreeze proteins with a regular array of Thr sidechains on one face that mimic the structure of ice.&lt;ref&gt;{{cite journal | vauthors = Liou YC, Tocilj A, Davies PL, Jia Z | title = Mimicry of ice structure by surface hydroxyls and water of a beta-helix antifreeze protein | journal = Nature | volume = 406 | issue = 6793 | pages = 322–4 | date = July 2000 | pmid = 10917536 | doi = 10.1038/35018604 }}&lt;/ref&gt;
+
+[[File:Pectate lyase R3betaHelix.jpg|thumb|left| End-view of a 3-sided, right-handed β-helix ({{PDB|2PEC}})]]
+Righthanded β-helices, typified by the [[pectate lyase]] enzyme shown at left or [[P22 phage]] tailspike protein, have a less regular cross-section, longer and indented on one of the sides; of the three linker loops, one is consistently just two residues long and the others are variable, often elaborated to form a binding or active site.&lt;ref&gt;{{cite book | title =Introduction to Protein Structure | last1 = Branden | first1 = Carl | last2 = Tooze | first2 = John | name-list-format = vanc |year=1999 |publisher=Garland |location=New York |isbn=0-8153-2305-0 |pages=20–32 }}&lt;/ref&gt; &lt;br&gt;
+A two-sided β-helix (right-handed) is found in some bacterial [[metalloprotease]]s; its two loops are each six residues long and bind stabilizing calcium ions to maintain the integrity of the structure, using the backbone and the Asp side chain oxygens of a GGXGXD sequence motif.&lt;ref&gt;{{cite journal | vauthors = Baumann U, Wu S, Flaherty KM, McKay DB | title = Three-dimensional structure of the alkaline protease of Pseudomonas aeruginosa: a two-domain protein with a calcium binding parallel beta roll motif | journal = The EMBO Journal | volume = 12 | issue = 9 | pages = 3357–64 | date = September 1993 | pmid = 8253063 | pmc = 413609 }}&lt;/ref&gt; This fold is called a β-roll in the SCOP classification.
+
+==In pathology==
+Some proteins that are disordered or helical as monomers, such as amyloid β (see [[amyloid plaque]]) can form β-sheet-rich oligomeric structures associated with pathological states. The amyloid β protein's oligomeric form is implicated as a cause of [[Alzheimer's disease|Alzheimer's]]. Its structure has yet to be determined in full, but recent data suggest that it may resemble an unusual two-strand β-helix.&lt;ref name=&quot;pmid15944695&quot;&gt;{{cite journal | vauthors = Nelson R, Sawaya MR, Balbirnie M, Madsen AØ, Riekel C, Grothe R, Eisenberg D | title = Structure of the cross-beta pine of amyloid-like fibrils | journal = Nature | volume = 435 | issue = 7043 | pages = 773–8 | date = June 2005 | pmid = 15944695 | pmc = 1479801 | doi = 10.1038/nature03680 }}&lt;/ref&gt;
+
+The side chains from the amino acid residues found in a β-sheet structure may also be arranged such that many of the adjacent sidechains on one side of the sheet are hydrophobic, while many of those adjacent to each other on the alternate side of the sheet are polar or charged (hydrophilic),&lt;ref name=&quot;pmid7682699&quot;&gt;{{cite journal | vauthors = Zhang S, Holmes T, Lockshin C, Rich A | title = Spontaneous assembly of a self-complementary oligopeptide to form a stable macroscopic membrane | journal = Proceedings of the National Academy of Sciences of the United States of America | volume = 90 | issue = 8 | pages = 3334–8 | date = April 1993 | pmid = 7682699 | pmc = 46294 | doi = 10.1073/pnas.90.8.3334 }}&lt;/ref&gt; which can be useful if the sheet is to form a boundary between polar/watery and nonpolar/greasy environments.
+
+== See also ==
+*[[Collagen helix]]
+*[[Foldamers]]
+*[[Folding (chemistry)]]
+*[[Tertiary structure]]
+*[[Alpha helix|α-helix]]
+*[[Structural motif]]
+
+== References ==
+{{Reflist|33em}}
+
+== Further reading ==
+* {{cite web | vauthors = Cooper J | url = http://www.cryst.bbk.ac.uk/PPS2/course/section9/sss/super2.html | title = Super Secondary Structure - Part II | work = Principles of Protein Structure Using the Internet | date = 31 May 1996 | access-date = 25 May 2007 }}
+* {{cite web | work = Structural Classification of Proteins (SCOP) | url = http://scop.mrc-lmb.cam.ac.uk/scop/data/scop.b.c.bbf.html | title = Open-sided Beta-meander | date = 20 October 2006 | access-date = 31 May 2007 }}
+
+== External links ==
+*[http://kinemage.biochem.duke.edu/teaching/anatax/ Anatomy &amp; Taxonomy of Protein Structures -survey]
+*[http://www.cbs.dtu.dk/services/NetSurfP/ NetSurfP - Secondary Structure and Surface Accessibility predictor]
+
+{{Protein secondary structure}}
+
+{{DEFAULTSORT:Beta Sheet}}
+[[Category:Protein structural motifs]]</text>
+      <sha1>125h9zi0mgx1m7fb9l984tyurlxcvke</sha1>
+    </revision>
+  </page>

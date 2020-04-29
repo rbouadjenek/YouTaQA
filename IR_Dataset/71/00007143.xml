@@ -1,0 +1,240 @@
+  <page>
+    <title>Code-division multiple access</title>
+    <ns>0</ns>
+    <id>7143</id>
+    <revision>
+      <id>930196313</id>
+      <parentid>928092373</parentid>
+      <timestamp>2019-12-10T21:32:33Z</timestamp>
+      <contributor>
+        <ip>108.45.167.5</ip>
+      </contributor>
+      <comment>The citations and sources were updated. More recent terminology was inserted.</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{short description|Channel access method used by various radio communication technologies}}
+{{About|a channel access method|the mobile phone technology referred to as CDMA|cdmaOne|and|CDMA2000}}
+{{Multiplex_techniques}}
+
+'''Code-division multiple access''' ('''CDMA''') is a [[channel access method]] used by various [[radio]] communication technologies. CDMA is an example of [[channel access method|multiple access]],  where several transmitters can send information simultaneously over a single communication channel. This allows several users to share a band of frequencies (see [[bandwidth (signal processing)|bandwidth]]). To permit this without undue interference between the users, CDMA employs [[spread spectrum]] technology and a special coding scheme (where each transmitter is assigned a code).&lt;ref name=&quot;ref 1&quot;&gt;{{cite book| title=Principles of Spread-Spectrum Communication Systems, 4th ed.| year=2018|last1=Torrieri|first1=Don}}&lt;/ref&gt;&lt;ref name=&quot;ref 2&quot;&gt;{{cite book| title=Principles of Mobile Communication, 4th ed.| year=2017|last1=Stuber|first1=Gordon L.}}&lt;/ref&gt;
+
+CDMA is used as the access method in many [[mobile phone standards]]. [[cdmaOne|IS-95]], also called &quot;cdmaOne&quot;, and its [[3G]] evolution [[CDMA2000]], are often simply referred to as &quot;CDMA&quot;, but [[UMTS]], the 3G standard used by [[GSM]] carriers, also uses &quot;wideband CDMA&quot;, or W-CDMA, as well as TD-CDMA and TD-SCDMA, as its radio technologies.
+
+==History==
+The technology of code-division multiple access channels has long been known. In the [[Soviet Union]] (USSR), the first work devoted to this subject was published in 1935 by [[Dmitry Vasiliyevich Ageev|Dmitry Ageev]].&lt;ref&gt;{{cite journal|last=Ageev|first=D. V.|title=Bases of the Theory of Linear Selection. Code Demultiplexing|journal=Proceedings of the Leningrad Experimental Institute of Communication|year=1935|pages=3–35}}&lt;/ref&gt; It was shown that through the use of linear methods, there are three types of signal separation: frequency, time and compensatory. The technology of CDMA was used in 1957, when the young military radio engineer [[Leonid Kupriyanovich]] in Moscow made an experimental model of a wearable automatic mobile phone, called LK-1 by him, with a base station. LK-1 has a weight of 3&amp;nbsp;kg, 20–30&amp;nbsp;km operating distance, and 20–30 hours of battery life.&lt;ref&gt;''[[Nauka i Zhizn]]'' 8, 1957, p. 49.&lt;/ref&gt;&lt;ref&gt;''Yuniy technik'' 7, 1957, p. 43–44.&lt;/ref&gt; The base station, as described by the author, could serve several customers. In 1958, Kupriyanovich made the new experimental &quot;pocket&quot; model of mobile phone. This phone weighed 0.5&amp;nbsp;kg. To serve more customers, Kupriyanovich proposed the device, which he called &quot;correlator.&quot;&lt;ref&gt;''Nauka i Zhizn'' 10, 1958, p. 66.&lt;/ref&gt;&lt;ref&gt;''[[Tekhnika Molodezhi]]'' 2, 1959, p. 18–19.&lt;/ref&gt; In 1958, the USSR also started the development of the &quot;[[Altai (mobile telephone system)|Altai]]&quot; national civil mobile phone service for cars, based on the Soviet MRT-1327 standard. The phone system weighed {{convert|11|kg|abbr=on}}.  It was placed in the trunk of the vehicles of high-ranking officials and used a standard handset in the passenger compartment. The main developers of the Altai system were VNIIS (Voronezh Science Research Institute of Communications) and GSPI (State Specialized Project Institute). In 1963 this service started in Moscow, and in 1970 Altai service was used in 30 USSR cities.&lt;ref&gt;{{cite web|url=http://englishrussia.com/2006/09/18/first-russian-mobile-phone/|title=First Russian Mobile Phone|date=September 18, 2006}}&lt;/ref&gt;
+
+== Uses ==
+[[File:Au CDMA 1X WIN W31SAII gravelly silver expansion.jpg|thumb|A CDMA2000 [[mobile phone]]]]
+
+* Synchronous CDM (code-division 'multiplexing', an early generation of CDMA) was implemented in the [[Global Positioning System]] (GPS). This predates and is distinct from its use in [[mobile phone]]s.
+* The [[Qualcomm]] standard [[IS-95]], marketed as cdmaOne.
+* The Qualcomm standard [[IS-2000]], known as CDMA2000, is used by several mobile phone companies, including the [[Globalstar]] network.
+* The [[UMTS]] 3G mobile phone standard, which uses [[W-CDMA]].
+* CDMA has been used in the '''OmniTRACS''' satellite system for transportation [[logistics]].
+
+==Steps in CDMA modulation==
+CDMA is a spread-spectrum multiple-access technique. A spread-spectrum technique spreads the bandwidth of the data uniformly for the same transmitted power.  A spreading code is a pseudo-random code that has a narrow [[ambiguity function]], unlike other narrow pulse codes. In CDMA a locally generated code runs at a much higher rate than the data to be transmitted.  Data for transmission is combined by bitwise [[XOR#Bitwise operation|XOR]] (exclusive OR) with the faster code.  The figure shows how a spread-spectrum signal is generated. The data signal with pulse duration of &lt;math&gt;T_b&lt;/math&gt; (symbol period) is XORed with the code signal with pulse duration of &lt;math&gt;T_c&lt;/math&gt; (chip period). (Note: [[Bandwidth (signal processing)|bandwidth]] is proportional to &lt;math&gt;1/T&lt;/math&gt;, where &lt;math&gt;T&lt;/math&gt; = bit time.) Therefore, the bandwidth of the data signal is &lt;math&gt;1/T_b&lt;/math&gt; and the bandwidth of the spread spectrum signal is &lt;math&gt;1/T_c&lt;/math&gt;.  Since &lt;math&gt;T_c&lt;/math&gt; is much smaller than &lt;math&gt;T_b&lt;/math&gt;, the bandwidth of the spread-spectrum signal is much larger than the bandwidth of the original signal. The ratio &lt;math&gt;T_b/T_c&lt;/math&gt; is called the spreading factor or processing gain and determines to a certain extent the upper limit of the total number of users supported simultaneously by a base station.&lt;ref name=&quot;ref 1&quot;&gt;{{cite book| title=Principles of Spread-Spectrum Communication Systems, 4th ed.| year=2018|last1=Torrieri|first1=Don}}&lt;/ref&gt;&lt;ref name=&quot;ref 2&quot;&gt;{{cite book| title=Principles of Mobile Communication, 4th ed.| year=2017|last1=Stuber|first1=Gordon L.}}&lt;/ref&gt;
+
+[[File:Generation of CDMA.svg|thumb|500px|center|Generation of a CDMA signal]]
+
+Each user in a CDMA system uses a different code to modulate their signal. Choosing the codes used to modulate the signal is very important in the performance of CDMA systems.The best performance occurs when there is good separation between the signal of a desired user and the signals of other users. The separation of the signals is made by [[Cross-correlation|correlating]] the received signal with the locally generated code of the desired user. If the signal matches the desired user's code, then the correlation function will be high and the system can extract that signal.  If the desired user's code has nothing in common with the signal, the correlation should be as close to zero as possible (thus eliminating the signal); this is referred to as [[cross-correlation]]. If the code is correlated with the signal at any time offset other than zero, the correlation should be as close to zero as possible.  This is referred to as auto-correlation and is used to reject multi-path interference.&lt;ref name=&quot;ref 3&quot;&gt;{{cite book| title= Digital Communications: Fundamentals and Applications, 2nd ed.| year=2014|last1=Sklar|first1=Bernard|last2=Ray|first2=Pabitra K.}}&lt;/ref&gt;&lt;ref name=&quot;ref 4&quot;&gt;{{cite book| title=Wireless Communications, 2nd ed.| year=2010|last1=Molisch|first1=Andreas}}&lt;/ref&gt;
+
+An analogy to the problem of multiple access is a room (channel) in which people wish to talk to each other simultaneously.  To avoid confusion, people could take turns speaking (time division), speak at different pitches (frequency division), or speak in different languages (code division). CDMA is analogous to the last example where people speaking the same language can understand each other, but other languages are perceived as [[noise]] and rejected.  Similarly, in radio CDMA, each group of users is given a shared code.  Many codes occupy the same channel, but only users associated with a particular code can communicate.
+
+In general, CDMA belongs to two basic categories: synchronous (orthogonal codes) and asynchronous (pseudorandom codes).
+
+==Code-division multiplexing (synchronous CDMA)==
+The digital modulation method is analogous to those used in simple radio transceivers. In the analog case, a low-frequency data signal is time-multiplied with a high-frequency pure sine-wave carrier and transmitted. This is effectively a frequency convolution ([[Wiener–Khinchin theorem]]) of the two signals, resulting in a carrier with narrow sidebands. In the digital case, the sinusoidal carrier is replaced by [[Walsh function]]s. These are binary square waves that form a complete orthonormal set. The data signal is also binary and the time multiplication is achieved with a simple XOR function. This is usually a [[Gilbert cell]] mixer in the circuitry.
+
+Synchronous CDMA exploits mathematical properties of [[orthogonality]] between [[coordinate vector|vectors]] representing the data strings. For example, binary string ''1011'' is represented by the vector (1, 0, 1, 1). Vectors can be multiplied by taking their [[dot product]], by summing the products of their respective components (for example, if '''u''' = (''a'', ''b'') and '''v''' = (''c'', ''d''), then their dot product '''u'''·'''v''' = ''ac'' + ''bd'').  If the dot product is zero, the two vectors are said to be ''orthogonal'' to each other. Some properties of the dot product aid understanding of how [[W-CDMA]] works. If vectors '''a''' and '''b''' are orthogonal, then &lt;math&gt;\mathbf{a}\cdot\mathbf{b} = 0&lt;/math&gt; and:
+:&lt;math&gt;
+\mathbf{a}\cdot(\mathbf{a} + \mathbf{b}) = \|\mathbf{a}\|^2,\ \text{since}\ \mathbf{a}\cdot\mathbf{a} + \mathbf{a}\cdot\mathbf{b} = \|\mathbf{a}\|^2 + 0, 
+&lt;/math&gt;
+:&lt;math&gt;
+\mathbf{a}\cdot(-\mathbf{a} + \mathbf{b}) = -\|\mathbf{a}\|^2,\ \text{since}\ {-\mathbf{a}}\cdot\mathbf{a} + \mathbf{a}\cdot\mathbf{b} = -\|\mathbf{a}\|^2 + 0,
+&lt;/math&gt;
+:&lt;math&gt;
+\mathbf{b}\cdot(\mathbf{a} + \mathbf{b}) = \|\mathbf{b}\|^2,\ \text{since}\ \mathbf{b}\cdot\mathbf{a} + \mathbf{b}\cdot\mathbf{b} = 0 + \|\mathbf{b}\|^2,
+&lt;/math&gt;
+:&lt;math&gt;
+\mathbf{b}\cdot(\mathbf{a} - \mathbf{b}) = -\|\mathbf{b}\|^2,\ \text{since}\ \mathbf{b}\cdot\mathbf{a} - \mathbf{b}\cdot\mathbf{b} = 0 - \|\mathbf{b}\|^2.
+&lt;/math&gt;
+
+Each user in synchronous CDMA uses a code orthogonal to the others' codes to modulate their signal.  An example of 4 mutually orthogonal digital signals is shown in the figure below.  Orthogonal codes have a cross-correlation equal to zero; in other words, they do not interfere with each other.  In the case of IS-95, 64-bit [[Walsh code]]s are used to encode the signal to separate different users.  Since each of the 64 Walsh codes is orthogonal to all other, the signals are channelized into 64 orthogonal signals.  The following example demonstrates how each user's signal can be encoded and decoded.
+
+===Example===
+[[Image:Cdma orthogonal signals.png|thumb|right|An example of 4 mutually orthogonal digital signals]]
+
+Start with a set of vectors that are mutually [[orthogonality|orthogonal]]. (Although mutual orthogonality is the only condition, these vectors are usually constructed for ease of decoding, for example columns or rows from [[Walsh matrix|Walsh matrices]].) An example of orthogonal functions is shown in the adjacent picture.  These vectors will be assigned to individual users and are called the ''code'', ''[[chip (CDMA)|chip]] code'', or ''chipping code''.  In the interest of brevity, the rest of this example uses codes '''v''' with only two bits.
+
+Each user is associated with a different code, say '''v'''. A 1 bit is represented by transmitting a positive code '''v''', and a 0 bit is represented by a negative code '''−v'''.  For example, if '''v''' = (''v''&lt;sub&gt;0&lt;/sub&gt;, ''v''&lt;sub&gt;1&lt;/sub&gt;) = (1, −1) and the data that the user wishes to transmit is (1, 0, 1, 1), then the transmitted symbols would be
+:('''v''', '''−v''', '''v''', '''v''') = (''v''&lt;sub&gt;0&lt;/sub&gt;, ''v''&lt;sub&gt;1&lt;/sub&gt;, −''v''&lt;sub&gt;0&lt;/sub&gt;, −''v''&lt;sub&gt;1&lt;/sub&gt;, ''v''&lt;sub&gt;0&lt;/sub&gt;, ''v''&lt;sub&gt;1&lt;/sub&gt;, ''v''&lt;sub&gt;0&lt;/sub&gt;, ''v''&lt;sub&gt;1&lt;/sub&gt;) = (1, −1, −1, 1, 1, −1, 1, −1).
+For the purposes of this article, we call this constructed vector the ''transmitted vector''.
+
+Each sender has a different, unique vector '''v''' chosen from that set, but the construction method of the transmitted vector is identical.
+
+Now, due to physical properties of interference, if two signals at a point are in phase, they add to give twice the amplitude of each signal, but if they are out of phase, they subtract and give a signal that is the difference of the amplitudes. Digitally, this behaviour can be modelled by the addition of the transmission vectors, component by component.
+
+If sender0 has code (1, −1) and data (1, 0, 1, 1), and sender1 has code (1, 1) and data (0, 0, 1, 1), and both senders transmit simultaneously, then this table describes the coding steps:
+
+{| style=&quot;border: 1px #aaaaaa solid; background-color: #f7f8ff; margin-left: auto; margin-right: auto;&quot;
+| align=center bgcolor=&quot;#CCCCCC&quot; | Step
+| align=center bgcolor=&quot;#CCCCCC&quot; | Encode sender0
+| align=center bgcolor=&quot;#CCCCCC&quot; | Encode sender1
+|-
+| valign=top | 0
+| code0 = (1, −1), data0 = (1, 0, 1, 1)
+| code1 = (1, 1), data1 = (0, 0, 1, 1)
+|-
+| valign=top | 1
+| encode0 = 2(1, 0, 1, 1) − (1, 1, 1, 1) = (1, −1, 1, 1)
+| encode1 = 2(0, 0, 1, 1) − (1, 1, 1, 1) = (−1, −1, 1, 1)
+|-
+| valign=top | 2
+| signal0 = encode0 ⊗ code0&lt;br /&gt;= (1, −1, 1, 1) ⊗ (1, −1)&lt;br /&gt;= (1, −1, −1, 1, 1, −1, 1, −1)
+| signal1 = encode1 ⊗ code1&lt;br /&gt;= (−1, −1, 1, 1) ⊗ (1, 1)&lt;br /&gt;= (−1, −1, −1, −1, 1, 1, 1, 1)
+|}
+
+Because signal0 and signal1 are transmitted at the same time into the air, they add to produce the raw signal
+
+:(1, −1, −1, 1, 1, −1, 1, −1) + (−1, −1, −1, −1, 1, 1, 1, 1) = (0, −2, −2, 0, 2, 0, 2, 0).
+
+This raw signal is called an interference pattern.  The receiver then extracts an intelligible signal for any known sender by combining the sender's code with the interference pattern. The following table explains how this works and shows that the signals do not interfere with one another:
+
+{|style=&quot;border: 1px #aaaaaa solid; background-color: #f7f8ff; margin-left: auto; margin-right: auto;&quot;
+|align=center bgcolor=&quot;#CCCCCC&quot;|Step
+|align=center bgcolor=&quot;#CCCCCC&quot;|Decode sender0
+|align=center bgcolor=&quot;#CCCCCC&quot;|Decode sender1
+|-
+|0
+|code0 = (1, −1), signal = (0, −2, −2, 0, 2, 0, 2, 0)
+|code1 = (1, 1), signal = (0, −2, −2, 0, 2, 0, 2, 0)
+|-
+|1
+|decode0 = pattern.vector0
+|decode1 = pattern.vector1
+|-
+|2
+|decode0 = ((0, −2), (−2, 0), (2, 0), (2, 0)) · (1, −1)
+|decode1 = ((0, −2), (−2, 0), (2, 0), (2, 0)) · (1, 1)
+|-
+|3
+|decode0 = ((0 + 2), (−2 + 0), (2 + 0), (2 + 0))
+|decode1 = ((0 − 2), (−2 + 0), (2 + 0), (2 + 0))
+|-
+|4
+|data0=(2, −2, 2, 2), meaning (1, 0, 1, 1)
+|data1=(−2, −2, 2, 2), meaning (0, 0, 1, 1)
+|}
+
+Further, after decoding, all values greater than 0 are interpreted as 1, while all values less than zero are interpreted as 0. For example, after decoding, data0 is (2, −2, 2, 2), but the receiver interprets this as (1, 0, 1, 1). Values of exactly 0 means that the sender did not transmit any data, as in the following example:
+
+Assume signal0 = (1, −1, −1, 1, 1, −1, 1, −1) is transmitted alone.  The following table shows the decode at the receiver:
+
+{|style=&quot;border: 1px #aaaaaa solid; background-color: #f7f8ff; margin-left: auto; margin-right: auto;&quot;
+|align=center bgcolor=&quot;#CCCCCC&quot;|Step
+|align=center bgcolor=&quot;#CCCCCC&quot;|Decode sender0
+|align=center bgcolor=&quot;#CCCCCC&quot;|Decode sender1
+|-
+|0
+|code0 = (1, −1), signal = (1, −1, −1, 1, 1, −1, 1, −1)
+|code1 = (1, 1), signal = (1, −1, −1, 1, 1, −1, 1, −1)
+|-
+|1
+|decode0 = pattern.vector0
+|decode1 = pattern.vector1
+|-
+|2
+|decode0 = ((1, −1), (−1, 1), (1, −1), (1, −1)) · (1, −1)
+|decode1 = ((1, −1), (−1, 1), (1, −1), (1, −1)) · (1, 1)
+|-
+|3
+|decode0 = ((1 + 1), (−1 − 1), (1 + 1), (1 + 1))
+|decode1 = ((1 − 1), (−1 + 1), (1 − 1), (1 − 1))
+|-
+|4
+|data0 = (2, −2, 2, 2), meaning (1, 0, 1, 1)
+|data1 = (0, 0, 0, 0), meaning no data
+|}
+
+When the receiver attempts to decode the signal using sender1's code, the data is all zeros, therefore the cross-correlation is equal to zero and it is clear that sender1 did not transmit any data.
+
+==Asynchronous CDMA==
+{{See also|Direct-sequence spread spectrum|near-far problem}}
+When mobile-to-base links cannot be precisely coordinated, particularly due to the mobility of the handsets, a different  approach is required.  Since it is not mathematically possible to create signature sequences that are both orthogonal for arbitrarily random starting points and which make full use of the code space, unique &quot;pseudo-random&quot; or &quot;pseudo-noise&quot; sequences called spreading sequences are used in ''asynchronous'' CDMA systems. A spreading sequence is a binary sequence that appears random but can be reproduced in a deterministic manner by intended receivers. These spreading sequences are used to encode and decode a user's signal in asynchronous CDMA in the same manner as the orthogonal codes in synchronous CDMA (shown in the example above). These spreading sequences are statistically uncorrelated, and the sum of a large number of spreading sequences results in ''multiple access interference'' (MAI) that is approximated by a Gaussian noise process (following the [[central limit theorem]] in statistics).  [[Gold code]]s are an example of a spreading sequence suitable for this purpose, as there is low correlation between the codes. If all of the users are received with the same power level, then the variance (e.g., the noise power) of the MAI increases in direct proportion to the number of users. In other words, unlike synchronous CDMA, the signals of other users will appear as noise to the signal of interest and interfere slightly with the desired signal in proportion to number of users.
+
+All forms of CDMA use the [[spread-spectrum]] [[spreading factor]] to allow receivers to partially discriminate against unwanted signals. Signals encoded with the specified spreading sequences are received, while signals with different sequences (or the same sequences but different timing offsets) appear as wideband noise reduced by the spreading factor.
+
+Since each user generates MAI, controlling the signal strength is an important issue with CDMA transmitters. A CDM (synchronous CDMA), TDMA, or FDMA receiver can in theory completely reject arbitrarily strong signals using different codes, time slots or frequency channels due to the orthogonality of these systems. This is not true for asynchronous CDMA; rejection of unwanted signals is only partial. If any or all of the unwanted signals are much stronger than the desired signal, they will overwhelm it. This leads to a general requirement in any asynchronous CDMA system to approximately match the various signal power levels as seen at the receiver. In CDMA cellular, the base station uses a fast closed-loop power-control scheme to tightly control each mobile's transmit power.
+
+===Advantages of asynchronous CDMA over other techniques===
+
+====Efficient practical utilization of the fixed frequency spectrum====
+In theory CDMA, TDMA and FDMA have exactly the same spectral efficiency, but, in practice, each has its own challenges – power control in the case of CDMA, timing in the case of TDMA, and frequency generation/filtering in the case of FDMA.
+
+TDMA systems must carefully synchronize the transmission times of all the users to ensure that they are received in the correct time slot and do not cause interference.  Since this cannot be perfectly controlled in a mobile environment, each time slot must have a guard time, which reduces the probability that users will interfere, but decreases the spectral efficiency.
+
+Similarly, FDMA systems must use a guard band between adjacent channels, due to the unpredictable [[Doppler effect|Doppler shift]] of the signal spectrum because of user mobility. The guard bands will reduce the probability that adjacent channels will interfere, but decrease the utilization of the spectrum.
+
+====Flexible allocation of resources====
+Asynchronous CDMA offers a key advantage in the flexible allocation of resources i.e. allocation of spreading sequences to active users.  In the case of CDM (synchronous CDMA), TDMA, and FDMA the number of simultaneous orthogonal codes, time slots, and frequency slots respectively are fixed, hence the capacity in terms of the number of simultaneous users is limited. There are a fixed number of orthogonal codes, time slots or frequency bands that can be allocated for CDM, TDMA, and FDMA systems, which remain underutilized due to the bursty nature of telephony and packetized data transmissions.  There is no strict limit to the number of users that can be supported in an asynchronous CDMA system, only a practical limit governed by the desired bit error probability since the SIR (signal-to-interference ratio) varies inversely with the number of users.  In a bursty traffic environment like mobile telephony, the advantage afforded by asynchronous CDMA is that the performance (bit error rate) is allowed to fluctuate randomly, with an average value determined by the number of users times the percentage of utilization.  Suppose there are 2''N'' users that only talk half of the time, then 2''N'' users can be accommodated with the same ''average'' bit error probability as ''N'' users that talk all of the time.  The key difference here is that the bit error probability for ''N'' users talking all of the time is constant, whereas it is a ''random'' quantity (with the same mean) for 2''N'' users talking half of the time.
+
+In other words, asynchronous CDMA is ideally suited to a mobile network where large numbers of transmitters each generate a relatively small amount of traffic at irregular intervals. CDM (synchronous CDMA), TDMA, and FDMA systems cannot recover the underutilized resources inherent to bursty traffic due to the fixed number of [[orthogonal]] codes, time slots or frequency channels that can be assigned to individual transmitters. For instance, if there are ''N'' time slots in a TDMA system and 2''N'' users that talk half of the time, then half of the time there will be more than ''N'' users needing to use more than ''N'' time slots.  Furthermore, it would require significant overhead to continually allocate and deallocate the orthogonal-code, time-slot or frequency-channel resources. By comparison, asynchronous CDMA transmitters simply send when they have something to say and go off the air when they do not, keeping the same signature sequence as long as they are connected to the system.
+
+===Spread-spectrum characteristics of CDMA===
+Most modulation schemes try to minimize the bandwidth of this signal since bandwidth is a limited resource.  However, spread-spectrum techniques use a transmission bandwidth that is several orders of magnitude greater than the minimum required signal bandwidth.  One of the initial reasons for doing this was military applications including guidance and communication systems. These systems were designed using spread spectrum because of its security and resistance to jamming.  Asynchronous CDMA has some level of privacy built in because the signal is spread using a pseudo-random code; this code makes the spread-spectrum signals appear random or have noise-like properties.  A receiver cannot demodulate this transmission without knowledge of the pseudo-random sequence used to encode the data.  CDMA is also resistant to jamming.  A jamming signal only has a finite amount of power available to jam the signal.  The jammer can either spread its energy over the entire bandwidth of the signal or jam only part of the entire signal.&lt;ref name=&quot;ref 3&quot;&gt;{{cite book| title= Digital Communications: Fundamentals and Applications, 2nd ed.| year=2014|last1=Sklar|first1=Bernard|last2=Ray|first2=Pabitra K.}}&lt;/ref&gt;&lt;ref name=&quot;ref 4&quot;&gt;{{cite book| title=Wireless Communications, 2nd ed.| year=2010|last1=Molisch|first1=Andreas}}&lt;/ref&gt;
+ 
+CDMA can also effectively reject narrow-band interference.  Since narrow-band interference affects only a small portion of the spread-spectrum signal, it can easily be removed through notch filtering without much loss of information.  [[Convolution encoding]] and [[forward error correction#Interleaving|interleaving]] can be used to assist in recovering this lost data.  CDMA signals are also resistant to multipath fading.  Since the spread-spectrum signal occupies a large bandwidth, only a small portion of this will undergo fading due to multipath at any given time.  Like the narrow-band interference, this will result in only a small loss of data and can be overcome.
+
+Another reason CDMA is resistant to multipath interference is because the delayed versions of the transmitted pseudo-random codes will have poor correlation with the original pseudo-random code, and will thus appear as another user, which is ignored at the receiver.  In other words, as long as the multipath channel induces at least one chip of delay, the multipath signals will arrive at the receiver such that they are shifted in time by at least one chip from the intended signal.  The correlation properties of the pseudo-random codes are such that this slight delay causes the multipath to appear uncorrelated with the intended signal, and it is thus ignored.
+
+Some CDMA devices use a [[rake receiver]], which exploits multipath delay components to improve the performance of the system. A rake receiver combines the information from several correlators, each one tuned to a different path delay, producing a stronger version of the signal than a simple receiver with a single correlation tuned to the path delay of the strongest signal.&lt;ref name=&quot;ref 1&quot;&gt;{{cite book| title=Principles of Spread-Spectrum Communication Systems, 4th ed.| year=2018|last1=Torrieri|first1=Don}}&lt;/ref&gt;&lt;ref name=&quot;ref 2&quot;&gt;{{cite book| title=Principles of Mobile Communication, 4th ed.| year=2017|last1=Stuber|first1=Gordon L.}}&lt;/ref&gt;
+
+Frequency reuse is the ability to reuse the same radio channel frequency at other cell sites within a cellular system.  In the FDMA and TDMA systems, frequency planning is an important consideration.  The frequencies used in different cells must be planned carefully to ensure signals from different cells do not interfere with each other.  In a CDMA system, the same frequency can be used in every cell, because channelization is done using the pseudo-random codes.  Reusing the same frequency in every cell eliminates the need for frequency planning in a CDMA system; however, planning of the different pseudo-random sequences must be done to ensure that the received signal from one cell does not correlate with the signal from a nearby cell.&lt;ref name=&quot;ref 1&quot;&gt;{{cite book| title=Principles of Spread-Spectrum Communication Systems, 4th ed.| year=2018|last1=Torrieri|first1=Don}}&lt;/ref&gt;
+
+Since adjacent cells use the same frequencies, CDMA systems have the ability to perform soft hand-offs.  Soft hand-offs allow the mobile telephone to communicate simultaneously with two or more cells.  The best signal quality is selected until the hand-off is complete.  This is different from hard hand-offs utilized in other cellular systems.  In a hard-hand-off situation, as the mobile telephone approaches a hand-off, signal strength may vary abruptly. In contrast, CDMA systems use the soft hand-off, which is undetectable and provides a more reliable and higher-quality signal.&lt;ref name=&quot;ref 2&quot;&gt;{{cite book| title=Principles of Mobile Communication, 4th ed.| year=2017|last1=Stuber|first1=Gordon L.}}&lt;/ref&gt;
+
+==Collaborative CDMA==
+A novel collaborative multi-user transmission and detection scheme called collaborative CDMA&lt;ref&gt;{{cite news
+ | first = Indu L.
+ | last = Shakya
+ | year = 2011
+ | title = High User Capacity Collaborative CDMA
+ | edition =
+ | publisher = IET Communications
+}}&lt;/ref&gt; has been investigated for the uplink that exploits the differences between users' fading channel signatures to increase the user capacity well beyond the spreading length in the MAI-limited environment. The authors show that it is possible to achieve this increase at a low complexity and high [[bit error rate]] performance in flat fading channels, which is a major research challenge for overloaded CDMA systems. In this approach, instead of using one sequence per user as in conventional CDMA, the authors group a small number of users to share the same spreading sequence and enable group spreading and despreading operations. The new collaborative multi-user receiver consists of two stages: group multi-user detection (MUD) stage to suppress the MAI between the groups and a low-complexity maximum-likelihood detection stage to recover jointly the co-spread users' data using minimal Euclidean-distance measure and users' channel-gain coefficients. An enhanced CDMA version known as interleave-division multiple access (IDMA) uses the orthogonal interleaving as the only means of user separation in place of signature sequence used in CDMA system. 
+
+==See also==
+{{Div col|colwidth=25em}}
+* [[CDMA spectral efficiency]]
+* [[CDMA2000]]
+* [[IS-95|cdmaOne]]
+* [[Comparison of mobile phone standards]]
+* [[Orthogonal variable spreading factor]] (OVSF), an implementation of CDMA
+* [[Pseudo-random noise]]
+* [[Quadrature-division multiple access]] (QDMA), an implementation of CDMA
+* [[Spread spectrum]]
+* [[W-CDMA]]
+{{Div col end}}
+
+==References==
+{{Reflist|30em}}
+
+==Further reading==
+* Papathanassiou, A., Salkintzis, A. K., &amp; Mathiopoulos, P. T. (2001). [https://www.researchgate.net/publication/3344159_A_comparison_study_of_the_uplink_performance_of_W-CDMA_and_OFDM_for_mobile_multimedia_communications_via_LEO_satellites &quot;A comparison study of the uplink performance of W-CDMA and OFDM for mobile multimedia communications via LEO satellites&quot;]. ''IEEE Personal Communications'', 8(3), 35–43.
+
+==External links==
+{{Commons category|CDMA}}
+* [http://video.ias.edu/goresky-lecture-4-13   Talk at Princeton Institute for Advanced Study on Solomon Golomb's work on pseudorandom sequences]
+
+{{cdma|state=uncollapsed}}
+{{Channel access methods}}
+
+{{DEFAULTSORT:Code Division Multiple Access}}
+[[Category:Code division multiple access| ]]
+[[Category:Multiplexing]]
+[[Category:Radio resource management]]
+[[Category:Media access control]]</text>
+      <sha1>e61rgczghv81bynou5p5i3l2qziq3ix</sha1>
+    </revision>
+  </page>

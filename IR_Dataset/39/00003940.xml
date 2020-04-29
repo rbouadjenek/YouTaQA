@@ -1,0 +1,244 @@
+  <page>
+    <title>Blowfish (cipher)</title>
+    <ns>0</ns>
+    <id>3940</id>
+    <revision>
+      <id>929342152</id>
+      <parentid>929316908</parentid>
+      <timestamp>2019-12-05T05:19:28Z</timestamp>
+      <contributor>
+        <username>Royce</username>
+        <id>12469</id>
+      </contributor>
+      <comment>Reverted [[WP:AGF|good faith]] edits by [[Special:Contributions/34.92.158.52|34.92.158.52]] ([[User talk:34.92.158.52|talk]]): Revert apparent inadvertent shortening of AES256 ([[WP:TW|TW]])</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">&lt;!-- This article is the top result for &quot;blowfish&quot; on Google, so we need a link to the disambiguation page. --&gt;
+{{Infobox block cipher
+| name          = Blowfish
+| caption       = The round function (Feistel function) of Blowfish
+| designers     = [[Bruce Schneier]]
+| publish date  = 1993
+| derived from  =
+| derived to    = [[Twofish]]
+| key size      = 32–448 bits
+| block size    = 64 bits
+| structure     = [[Feistel network]]
+| rounds        = 16
+| cryptanalysis = Four rounds of Blowfish are susceptible to a second-order [[differential attack]] (Rijmen, 1997);&lt;ref name=&quot;rijmen-phd&quot;&gt;{{cite journal
+ |author      = Vincent Rijmen
+ |author-link = Vincent Rijmen
+ |year        = 1997
+ |title       = Cryptanalysis and Design of Iterated Block Ciphers
+ |work        = Ph.D thesis
+ |url         = https://www.cosic.esat.kuleuven.be/publications/thesis-4.ps
+ |format      = [[PostScript]]
+ |url-status     = live
+ |archiveurl  = https://web.archive.org/web/20130508181935/http://www.cosic.esat.kuleuven.be/publications/thesis-4.ps
+ |archivedate = 2013-05-08
+}}&lt;/ref&gt; for a class of [[weak key]]s, 14 rounds of Blowfish can be distinguished from a [[pseudorandom permutation]] (Vaudenay, 1996).
+}}
+'''Blowfish''' is a [[Symmetric-key algorithm|symmetric-key]] [[block cipher]], designed in 1993 by [[Bruce Schneier]] and included in many cipher suites and encryption products. Blowfish provides a good encryption rate in software and no effective [[cryptanalysis]] of it has been found to date. However, the [[Advanced Encryption Standard]] (AES) now receives more attention, and Schneier recommends [[Twofish]] for modern applications.&lt;ref name=&quot;schneier-interview-dec-2007&quot; /&gt;
+
+Schneier designed Blowfish as a general-purpose algorithm, intended as an alternative to the aging [[Data Encryption Standard|DES]] and free of the problems and constraints associated with other algorithms. At the time Blowfish was released, many other designs were proprietary, encumbered by [[patent]]s or were commercial or government secrets. Schneier has stated that, &quot;Blowfish is unpatented, and will remain so in all countries. The algorithm is hereby placed in the [[public domain]], and can be freely used by anyone.&quot;&lt;ref name=&quot;blowfish-paper&quot;/&gt;
+
+Notable features of the design include key-dependent [[S-box]]es and a highly complex [[key schedule]].
+
+==The algorithm==
+Blowfish has a 64-bit [[block size (cryptography)|block size]] and a variable [[key length]] from 32 bits up to 448 bits.&lt;ref name=&quot;blowfish-paper&quot;&gt;{{cite journal
+ |url         = https://www.schneier.com/paper-blowfish-fse.html
+ |title       = Description of a New Variable-Length Key, 64-Bit Block Cipher (Blowfish)
+ |author      = Bruce Schneier
+ |author-link = Bruce Schneier
+ |work        = [[Fast Software Encryption]], Cambridge Security Workshop Proceedings
+ |publisher   = [[Springer-Verlag]]
+ |pages       = 191–204
+ |year        = 1993
+ |url-status     = live
+ |archiveurl  = https://web.archive.org/web/20140126182135/https://www.schneier.com/paper-blowfish-fse.html
+ |archivedate = 2014-01-26
+}}&lt;/ref&gt; It is a 16-round [[Feistel cipher]] and uses large key-dependent [[Substitution box|S-boxes]]. In structure it resembles [[CAST-128]], which uses fixed S-boxes.
+[[File:Blowfish diagram.png|left|thumb|181x181px|The Feistel structure of Blowfish]]
+The adjacent diagram shows Blowfish's encryption routine. Each line represents 32 bits. There are five subkey-arrays: one 18-entry P-array (denoted as K in the diagram, to avoid confusion with the Plaintext) and four 256-entry S-boxes (S0, S1, S2 and S3).
+
+Every round ''r'' consists of 4 actions: 
+{| class=&quot;wikitable&quot;
+|'''Action 1'''
+|XOR the left half (L) of the data with the ''r'' th P-array entry
+|-
+|'''Action 2'''
+|Use the XORed data as input for Blowfish's F-function
+|-
+|'''Action 3'''
+|XOR the F-function's output with the right half (R) of the data
+|-
+|'''Action 4'''
+|Swap L and R
+|}
+
+The F-function splits the 32-bit input into four eight-bit quarters, and uses the quarters as input to the S-boxes. The S-boxes accept 8-bit input and produce 32-bit output. The outputs are added [[modular arithmetic|modulo]] 2&lt;sup&gt;32&lt;/sup&gt; and XORed to produce the final 32-bit output (see image in the upper right corner).&lt;ref&gt;{{Cite web|title = Cryptography: Description of a New Variable-Length Key, 64-Bit Block Cipher (Blowfish) - Schneier on Security|url = https://www.schneier.com/cryptography/archives/1994/09/description_of_a_new.html|website = www.schneier.com|accessdate = 2015-12-31|url-status = live|archiveurl = https://web.archive.org/web/20160304200440/https://www.schneier.com/cryptography/archives/1994/09/description_of_a_new.html|archivedate = 2016-03-04}}&lt;/ref&gt;
+
+After the 16th round, undo the last swap, and XOR L with K18 and R with K17 (output whitening).
+
+Decryption is exactly the same as encryption, except that P1, P2, …, P18 are used in the reverse order. This is not so obvious because xor is commutative and associative. A common misconception is to use inverse order of encryption as decryption algorithm (i.e. first XORing P17 and P18 to the ciphertext block, then using the P-entries in reverse order).
+
+Blowfish's [[key schedule]] starts by initializing the P-array and S-boxes with values derived from the [[hexadecimal]] digits of [[pi]], which contain no obvious pattern (see [[nothing up my sleeve number]]). The secret key is then, byte by byte, cycling the key if necessary, XORed with all the P-entries in order. A 64-bit all-zero block is then encrypted with the algorithm as it stands. The resultant ciphertext replaces P&lt;sub&gt;1&lt;/sub&gt; and P&lt;sub&gt;2&lt;/sub&gt;. The same ciphertext is then encrypted again with the new subkeys, and the new ciphertext replaces P&lt;sub&gt;3&lt;/sub&gt; and P&lt;sub&gt;4&lt;/sub&gt;. This continues, replacing the entire P-array and all the S-box entries. In all, the Blowfish encryption algorithm will run 521 times to generate all the subkeys - about 4KB of data is processed.
+
+Because the P-array is 576 bits long, and the key bytes are XORed through all these 576 bits during the initialization, many implementations support key sizes up to 576 bits. The reason for that is a discrepancy between the original Blowfish description, which uses 448-bit key, and its reference implementation, which uses 576-bit key. The test vectors for verifying third party implementations were also produced with 576-bit keys. When asked which Blowfish version is the correct one, Bruce Schneier answered: &quot;The test vectors should be used to determine the one true Blowfish&quot;.
+
+Another opinion is that the 448 bits limit is here to ensure that every bit of every subkey depends on every bit of the key,&lt;ref name=&quot;blowfish-paper&quot;/&gt; as the last four values of the P-array don't affect every bit of the ciphertext. This point should be taken in consideration for implementations with a different number of rounds, as even though it increases security against an exhaustive attack, it weakens the security guaranteed by the algorithm. And given the slow initialization of the cipher with each change of key, it is granted a natural protection against brute-force attacks, which doesn't really justify key sizes longer than 448 bits.
+
+==Blowfish in pseudocode==
+&lt;source lang=&quot;cpp&quot;&gt;
+uint32_t P[18];
+uint32_t S[4][256];
+
+uint32_t f (uint32_t x) {
+   uint32_t h = S[0][x &gt;&gt; 24] + S[1][x &gt;&gt; 16 &amp; 0xff];
+   return ( h ^ S[2][x &gt;&gt; 8 &amp; 0xff] ) + S[3][x &amp; 0xff];
+}
+
+void encrypt (uint32_t &amp; L, uint32_t &amp; R) {
+   for (int i=0 ; i&lt;16 ; i += 2) {
+      L ^= P[i];
+      R ^= f(L);
+      R ^= P[i+1];
+      L ^= f(R);
+   }
+   L ^= P[16];
+   R ^= P[17];
+   swap (L, R);
+}
+
+void decrypt (uint32_t &amp; L, uint32_t &amp; R) {
+   for (int i=16 ; i &gt; 0 ; i -= 2) {
+      L ^= P[i+1];
+      R ^= f(L);
+      R ^= P[i];
+      L ^= f(R);
+   }
+   L ^= P[1];
+   R ^= P[0];
+   swap (L, R);
+}
+
+  // ...
+  // initializing the P-array and S-boxes with values derived from pi; omitted in the example
+  // ...
+{
+   for (int i=0 ; i&lt;18 ; ++i)
+      P[i] ^= key[i % keylen];
+   uint32_t L = 0, R = 0;
+   for (int i=0 ; i&lt;18 ; i+=2) {
+      encrypt (L, R);
+      P[i] = L; P[i+1] = R;
+   }
+   for (int i=0 ; i&lt;4 ; ++i)
+      for (int j=0 ; j&lt;256; j+=2) {
+         encrypt (L, R);
+         S[i][j] = L; S[i][j+1] = R;
+      }
+}
+&lt;/source&gt;
+
+==Blowfish in practice==
+Blowfish is a fast [[block cipher]], except when changing keys. Each new [[key (cryptography)|key]] requires pre-processing equivalent to encrypting about 4 kilobytes of text, which is very slow compared to other block ciphers. This prevents its use in certain applications, but is not a problem in others.
+
+In one application Blowfish's slow key changing is actually a benefit: the [[password]]-hashing method (crypt $2, i.e. bcrypt) used in [[OpenBSD]] uses an algorithm derived from Blowfish that makes use of the slow key schedule; the idea is that the extra computational effort required gives protection against [[dictionary attack]]s. ''See'' [[key stretching]].
+
+Blowfish has a memory footprint of just over 4 kilobytes of [[Random Access Memory|RAM]]. This constraint is not a problem even for older desktop and [[laptop computers]], though it does prevent use in the smallest [[embedded systems]] such as early [[smartcard]]s.
+
+Blowfish was one of the first secure block ciphers not subject to any patents and therefore freely available for anyone to use. This benefit has contributed to its popularity in cryptographic software.
+
+[[bcrypt]] is a [[Cryptographic hash function#Password verification|password hashing function]] which, combined with a variable number of iterations (work &quot;cost&quot;), exploits the expensive key setup phase of Blowfish to increase the workload and duration of hash calculations, further reducing threats from brute force attacks.
+
+bcrypt is also the name of a cross-platform file encryption utility implementing Blowfish developed in 2002.&lt;ref&gt;[http://bcrypt.sourceforge.net &quot;Bcrypt - Blowfish File Encryption&quot;] {{webarchive |url=https://web.archive.org/web/20150829060804/http://bcrypt.sourceforge.net/ |date=2015-08-29}} bcrypt file encryption program homepage (bcrypt.sourceforge.net)&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://bcrypt463065.android.informer.com/|title=bcrypt Free Download - whodunnit.tools.bcrypt|website=bcrypt463065.android.informer.com|accessdate=7 May 2018|url-status=live|archiveurl=https://web.archive.org/web/20160304075720/http://bcrypt463065.android.informer.com/ |archivedate=4 March 2016}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.t2-project.org/packages/bcrypt.html|title=T2 package - trunk - bcrypt - A utility to encrypt files.|website=www.t2-project.org|accessdate=7 May 2018|url-status=live|archiveurl=https://web.archive.org/web/20170421043425/http://t2-project.org/packages/bcrypt.html|archivedate=21 April 2017}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=https://docs.oracle.com/cd/E51849_01/gg-winux/OGGLC/ogglc_licenses.htm|title=Oracle GoldenGateのライセンス|website=docs.oracle.com|accessdate=7 May 2018|url-status=live|archiveurl=https://web.archive.org/web/20171027233204/https://docs.oracle.com/cd/E51849_01/gg-winux/OGGLC/ogglc_licenses.htm|archivedate=27 October 2017}}&lt;/ref&gt;
+
+==Weakness and successors==
+Blowfish's use of a 64-bit block size (as opposed to e.g. AES's 128-bit block size) makes it vulnerable to [[birthday attack]]s, particularly in contexts like [[HTTPS]]. In 2016, the SWEET32 attack demonstrated how to leverage birthday attacks to perform plaintext recovery (i.e. decrypting ciphertext) against ciphers with a 64-bit block size.&lt;ref&gt;{{cite web
+ |url         = https://sweet32.info/
+ |title       = On the Practical (In-)Security of 64-bit Block Ciphers — Collision Attacks on HTTP over TLS and OpenVPN
+ |author      = Karthikeyan Bhargavan
+ |author2     = Gaëtan Leurent
+ |date        = August 2016
+ |publisher   = ACM CCS 2016
+ |url-status     = live
+ |archiveurl  = https://web.archive.org/web/20161009174028/https://sweet32.info/
+ |archivedate = 2016-10-09
+}}&lt;/ref&gt; The [[GnuPG]] project recommends that Blowfish not be used to encrypt files larger than 4 GB&lt;ref&gt;{{cite web |url=https://gnupg.org/faq/gnupg-faq.html#define_fish |title=GnuPG Frequently Asked Questions |quote=Blowfish should not be used to encrypt files larger than 4Gb in size, but Twofish has no such restrictions. |access-date=2018-01-26 |archive-url=https://web.archive.org/web/20171221180749/https://gnupg.org/faq/gnupg-faq.html#define_fish |archive-date=2017-12-21 |url-status=live}}&lt;/ref&gt; due to its small block size.&lt;ref&gt;{{cite web |url=https://gnupg.org/faq/gnupg-faq.html#recommended_ciphers |title=GnuPG Frequently Asked Questions |quote=For a cipher with an eight-byte block size, you’ll probably repeat a block after about 32 gigabytes of data. This means if you encrypt a single message larger than 32 gigabytes, it’s pretty much a statistical guarantee you’ll have a repeated block. That’s bad. For this reason, we recommend you not use ciphers with eight-byte data blocks if you’re going to be doing bulk encryption. It’s very unlikely you’ll have any problems if you keep your messages under 4 gigabytes in size. |access-date=2018-01-27 |archive-url=https://web.archive.org/web/20171221180749/https://gnupg.org/faq/gnupg-faq.html#recommended_ciphers |archive-date=2017-12-21 |url-status=live}}&lt;/ref&gt;
+
+A reduced-round variant of Blowfish is known to be susceptible to [[known-plaintext attack]]s on reflectively weak keys. Blowfish implementations use 16 rounds of encryption, and are not susceptible to this attack.&lt;ref&gt;{{cite web
+ |url         = http://karbalus.free.fr/sat/docsat/PaperGonzalezTom.pdf
+ |title       = A Reflection Attack on Blowfish
+ |author      = Tom Gonzalez
+ |date        = January 2007
+ |publisher   = Journal of LATEX Class Files
+ |volume      = 6
+ |issue       = 1
+ |url-status     = dead
+ |archiveurl  = https://web.archive.org/web/20151118102822/http://karbalus.free.fr/sat/docsat/PaperGonzalezTom.pdf#
+ |archivedate = 2015-11-18
+ |access-date = 2015-11-17
+}}&lt;/ref&gt;&lt;ref&gt;
+{{cite web
+ |url             = https://www.iacr.org/archive/fse2007/45930168/45930168.pdf
+ |title           = A New Class of Weak Keys for Blowfish
+ |author          = Orhun Kara
+ |author2         = Cevat Manap
+ |last-author-amp = yes
+ |date            = March 2007
+ |publisher       = FSE 2007
+ |url-status         = live
+ |archiveurl      = https://web.archive.org/web/20161005063215/https://www.iacr.org/archive/fse2007/45930168/45930168.pdf
+ |archivedate     = 2016-10-05
+}}&lt;/ref&gt; Nevertheless, Bruce Schneier has recommended migrating to his Blowfish successor, [[Twofish]].&lt;ref name=&quot;schneier-interview-dec-2007&quot;&gt;
+{{cite web
+| url = https://www.computerworld.com.au/article/46254/bruce_almighty_schneier_preaches_security_linux_faithful/?pp=3
+| title = Bruce Almighty: Schneier preaches security to Linux faithful
+| last = Dahna
+| first = McConnachie
+| date = 2007-12-27
+| accessdate = 2018-01-26
+| work = [[Computerworld]]
+| page = 3
+| archiveurl = https://web.archive.org/web/20161202063854/https://www.computerworld.com.au/article/46254/bruce_almighty_schneier_preaches_security_linux_faithful/?pp=3
+| archivedate = 2016-12-02
+| quote = At this point, though, I'm amazed it's still being used. If people ask, I recommend Twofish instead.
+| url-status = live
+}}
+&lt;/ref&gt;
+
+==See also==
+* [[Twofish]]
+* [[Threefish]]
+* [[MacGuffin (cipher)|MacGuffin]]
+* [[Advanced Encryption Standard|AES]]
+
+==References==
+{{Reflist|30em}}
+
+==External links==
+{{commons category|Blowfish (cipher)}}
+* {{cite web
+| url=https://www.schneier.com/blowfish.html
+| title=The Blowfish Encryption Algorithm
+| author=Bruce Schneier}}
+
+* {{cite web
+| url=https://www.schneier.com/blowfish-products.html
+| title=Products that Use Blowfish
+| author=Bruce Schneier}}
+
+* {{cite web
+| url=http://www.users.zetnet.co.uk/hopwood/crypto/scan/cs.html#Blowfish
+| title=Standard Cryptographic Algorithm Naming: Blowfish}}
+
+{{Cryptography navbox | block}}
+
+{{DEFAULTSORT:Blowfish (Cipher)}}
+[[Category:Feistel ciphers]]
+[[Category:Free ciphers]]
+[[Category:Articles with example pseudocode]]</text>
+      <sha1>rhofxdmnvvaa23uww2kf4d2kuf1z3hf</sha1>
+    </revision>
+  </page>

@@ -1,0 +1,147 @@
+  <page>
+    <title>Chymotrypsin</title>
+    <ns>0</ns>
+    <id>7060</id>
+    <revision>
+      <id>942576811</id>
+      <parentid>938274190</parentid>
+      <timestamp>2020-02-25T14:53:10Z</timestamp>
+      <contributor>
+        <ip>72.225.197.65</ip>
+      </contributor>
+      <comment>The P1 position was described incorrectly as C-terminal to the scissile bond (i.e. what is actually the P1' position). Fixed it state that it's N terminal to this bond</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{short description|Digestive enzyme that breaks down proteins and polypeptides}}
+{{enzyme
+| Name = Chymotrypsin
+| EC_number = 3.4.21.1
+| CAS_number = 9004-07-3
+| IUBMB_EC_number = 3/4/21/1
+| GO_code = 0004263
+| image = ChymotrypsinA1.jpg
+| width = 
+| caption = Crystallographic structure of [[Bos taurus]] chymotrypsinogen&lt;ref name=&quot;pmid5442169&quot;&gt;{{PDB|1CHG}}; {{cite journal |vauthors=Freer ST, Kraut J, Robertus JD, Wright HT, Xuong NH | title = Chymotrypsinogen: 2.5-angstrom crystal structure, comparison with alpha-chymotrypsin, and implications for zymogen activation | journal = Biochemistry | volume = 9 | issue = 9 | pages = 1997–2009 |date=April 1970 | pmid = 5442169 | doi = 10.1021/bi00811a022| url = }}&lt;/ref&gt;
+}}
+{{enzyme
+| Name = Chymotrypsin C
+| EC_number = 3.4.21.2
+| CAS_number = 9036-09-3
+| IUBMB_EC_number = 3/4/21/2
+| GO_code =
+| image = 
+| width = 
+| caption = 
+}}
+ 
+'''Chymotrypsin''' ({{EC number|3.4.21.1}}, chymotrypsins A and B, alpha-chymar ophth, avazyme, chymar, chymotest, enzeon, quimar, quimotrase, alpha-chymar, alpha-chymotrypsin A, alpha-chymotrypsin) is a [[digestive enzyme]] component of [[pancreatic juice]] acting in the [[duodenum]], where it performs [[proteolysis]], the breakdown of proteins and polypeptides.&lt;ref name=&quot;Wilcox_1970&quot;&gt;{{cite journal | author = Wilcox PE | year = 1970 | title = Chymotrypsinogens — chymotrypsins | volume = 19 | pages = 64–108 | doi = 10.1016/0076-6879(70)19007-0 | series = Methods in Enzymology | isbn = 978-0-12-181881-4}}&lt;/ref&gt; Chymotrypsin preferentially cleaves peptide amide bonds where the side chain of the amino acid N-terminal to the scissile amide bond (the P&lt;sub&gt;1&lt;/sub&gt; position) is a large [[hydrophobic]] [[amino acid]] ([[tyrosine]], [[tryptophan]], and [[phenylalanine]]). These amino acids contain an [[aromatic]] ring in their [[substituent|side chain]] that fits into a [[hydrophobe|hydrophobic]] pocket (the S&lt;sub&gt;1&lt;/sub&gt; position) of the enzyme. It is activated in the presence of [[trypsin]]. The hydrophobic and shape complementarity between the peptide [[enzyme substrate|substrate]] P&lt;sub&gt;1&lt;/sub&gt; side chain and the enzyme S&lt;sub&gt;1&lt;/sub&gt; binding cavity accounts for the substrate specificity of this enzyme.&lt;ref name=&quot;pmid3555886&quot;&gt;{{cite journal | author = Appel W | title = Chymotrypsin: molecular and catalytic properties | journal = Clin. Biochem. | volume = 19 | issue = 6 | pages = 317–22 |date=December 1986 | pmid = 3555886 | doi = 10.1016/S0009-9120(86)80002-9| url =  }}&lt;/ref&gt;&lt;ref name=&quot;pmid4399049&quot;&gt;{{cite journal |vauthors=Berger A, Schechter I | title = Mapping the active site of papain with the aid of peptide substrates and inhibitors | journal = Philos. Trans. R. Soc. Lond. B Biol. Sci. | volume = 257 | issue = 813 | pages = 249–64 |date=February 1970 | pmid = 4399049 | doi = 10.1098/rstb.1970.0024 | url =  https://semanticscholar.org/paper/8dd6b077a5a39af06ea025d3116642cfad9d2605}}&lt;/ref&gt;  Chymotrypsin also hydrolyzes other amide bonds in peptides at slower rates, particularly those containing [[leucine]] and [[methionine]] at the P&lt;sub&gt;1&lt;/sub&gt; position.
+
+Structurally, it is the archetypal structure for its [[superfamily (molecular biology)|superfamily]], the [[PA clan]] of proteases.
+
+== Activation ==
+
+Chymotrypsin is synthesized in the pancreas by [[protein biosynthesis]] as a [[wiktionary:Precursor|precursor]] called [[chymotrypsinogen]] that is enzymatically inactive. Trypsin activates chymotrypsinogen by cleaving peptidic bonds in positions Arg15 - Ile16 and produces π-chymotrypsin. In turn, aminic group (-NH3&lt;sup&gt;+&lt;/sup&gt;) of the Ile16 residue interacts with the side chain of Glu194, producing the &quot;oxyanion hole&quot; and the hydrophobic &quot;S1 pocket&quot;. Moreover, chymotrypsin induces its own activation by cleaving in positions 14-15, 146-147, and 148-149, producing α-chymotrypsin (which is more active and stable than π-chymotrypsin).{{Citation needed|date=July 2017}} The resulting molecule is a three-[[peptide|polypeptide]] molecule interconnected via [[disulfide bond]]s.
+
+== Mechanism of action and kinetics ==
+{{See also|Catalytic triad}}
+''In vivo'', chymotrypsin is a proteolytic enzyme ([[serine protease]]) acting in the digestive systems of many organisms. It facilitates the cleavage of peptide bonds by a [[hydrolysis]] reaction, which despite being thermodynamically favorable, occurs extremely slowly in the absence of a catalyst. The main substrates of chymotrypsin are peptide bonds in which the amino acid N-terminal to the bond is a tryptophan, tyrosine, phenylalanine, or leucine. Like many proteases, chymotrypsin also hydrolyses amide bonds ''in vitro'', a virtue that enabled the use of substrate analogs such as N-acetyl-L-phenylalanine p-nitrophenyl amide for enzyme assays.
+[[Image:Mechanism_of_peptide_bond_cleavage_in_a-chymotrypsin.svg|thumb|left|450px|Mechanism of peptide bond cleavage in &amp;alpha;-chymotrypsin]]
+
+Chymotrypsin cleaves peptide bonds by attacking the unreactive carbonyl group with a powerful nucleophile, the [[serine]] 195 residue located in the active site of the enzyme, which briefly becomes covalently bonded to the substrate, forming an enzyme-substrate intermediate. Along with [[histidine]] 57 and [[aspartic acid]] 102, this serine residue constitutes the [[catalytic triad]] of the active site.
+
+These findings rely on inhibition assays and the study of the kinetics of cleavage of the aforementioned substrate, exploiting the fact that the enzyme-substrate intermediate [[4-Nitrophenol|''p''-nitrophenolate]] has a yellow colour, enabling  measurement of its concentration by measuring light absorbance at 410&amp;nbsp;nm.
+
+The reaction of chymotrypsin with its substrate was found to take place in two stages, an initial “burst” phase at the beginning of the reaction and a steady-state phase following [[Michaelis-Menten kinetics]]. The mode of action of chymotrypsin explains this as hydrolysis takes place in two steps. First, acylation of the substrate to form an acyl-enzyme intermediate, and then deacylation to return the enzyme to its original state. This occurs via the concerted action of the three-amino-acid residues in the catalytic triad.&lt;ref name=Petsko&amp;Ringe&gt;{{cite book|title=Protein Structure and Function |last1=Petsko |first1=Gregory |last2=Ringe |first2=Dagmar |year=2009 |publisher=Oxford University Press |location=Oxford |isbn=978-0-19-955684-7 |pages=78–79}}&lt;/ref&gt;  Aspartate hydrogen bonds to the N-δ hydrogen of histidine, increasing the pKa of its ε nitrogen, thus making it able to deprotonate serine. This deprotonation allows the serine side chain to act as a nucleophile and bind to the electron-deficient carbonyl carbon of the protein main chain. Ionization of the carbonyl oxygen is stabilized by formation of two hydrogen bonds to adjacent main chain N-hydrogens. This occurs in the oxyanion hole. This forms a tetrahedral adduct and breakage of the peptide bond. An acyl-enzyme intermediate, bound to the serine, is formed, and the newly formed amino terminus of the cleaved protein can dissociate. In the second reaction step, a water molecule is activated by the basic histidine, and acts as a nucleophile. The oxygen of water attacks the carbonyl carbon of the serine-bound acyl group, resulting in formation of a second tetrahedral adduct, regeneration of the serine -OH group, and release of a proton, as well as the protein fragment with the newly formed carboxyl terminus &lt;ref name=Petsko&amp;Ringe /&gt;
+{{Clear}}
+
+== Isozymes ==
+
+{|
+|- valign=&quot;top&quot;
+|{{infobox protein
+| Name = Chymotrypsinogen B1
+| caption = 
+| image = 
+| width = 150 px
+| HGNCid = 2521
+| Symbol = CTRB1
+| AltSymbols =
+| EntrezGene = 1504
+| OMIM = 118890
+| RefSeq = NM_001906
+| UniProt = P17538
+| PDB = 
+| MEROPS = S01.152
+| ECnumber = 3.4.21.1
+| Chromosome = 16
+| Arm = q
+| Band = 23.1
+| LocusSupplementaryData = 
+}}
+|{{infobox protein
+| Name = Chymotrypsinogen B2
+| caption = 
+| image = 
+| width = 
+| HGNCid = 2522
+| Symbol = CTRB2
+| AltSymbols = 
+| EntrezGene = 440387
+| OMIM = 
+| RefSeq = NM_001025200
+| UniProt = Q6GPI1
+| PDB = 
+| ECnumber = 3.4.21.1
+| Chromosome = 16
+| Arm = q
+| Band = 22.3
+| LocusSupplementaryData = 
+}}
+|{{infobox protein
+| Name = [[Chymotrypsin-C|Chymotrypsin C (caldecrin)]]
+| caption = 
+| image = 
+| width = 
+| HGNCid = 2523
+| Symbol = [[Chymotrypsin-C|CTRC]]
+| AltSymbols = 
+| EntrezGene = 11330
+| OMIM = 601405
+| RefSeq = NM_007272
+| UniProt = Q99895
+| MEROPS = S01.157
+| PDB = 
+| ECnumber = 3.4.21.2
+| Chromosome = 1
+| Arm = p
+| Band = 36.21
+| LocusSupplementaryData = 
+}}
+|}
+
+==See also==
+*[[Trypsin]]
+*[[PA clan]] of proteases
+
+==References==
+{{Reflist}}
+
+== Further reading ==
+{{refbegin}}
+* {{cite book |vauthors=Stryer L, Berg JM, Tymoczko JL | title = Biochemistry | edition = | language = | publisher = W.H. Freeman | location = San Francisco | year = 2002 | origyear = | pages = | quote = | isbn = 0-7167-4684-0 | oclc = | doi = | url = | accessdate = }}
+* {{cite book |vauthors=Grisham CM, Reginald H | title = Biochemistry | edition = | language = | publisher = Thomson Brooks/Cole | location = Australia | year = 2005 | origyear = | pages = | quote = | isbn = 0-534-49033-6 | oclc = | doi = | url = | accessdate = }}
+{{refend}}
+
+==External links==
+* The [[MEROPS]] online database for peptidases and their inhibitors: [http://merops.sanger.ac.uk/cgi-bin/merops.cgi?id=S01.001 S01.001]
+* {{MeshName|Chymotrypsin}}
+
+{{Serine endopeptidases}}
+{{Enzymes}}
+{{Portal bar|Biology|border=no}}
+
+[[Category:EC 3.4.21]]
+[[Category:Peptidase]]</text>
+      <sha1>qh2rv2yc7k7vqkeox1kz2nw29y95ed5</sha1>
+    </revision>
+  </page>

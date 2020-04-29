@@ -1,0 +1,196 @@
+  <page>
+    <title>Electronvolt</title>
+    <ns>0</ns>
+    <id>9598</id>
+    <revision>
+      <id>943308060</id>
+      <parentid>943307861</parentid>
+      <timestamp>2020-03-01T03:47:50Z</timestamp>
+      <contributor>
+        <username>BarrelProof</username>
+        <id>13560851</id>
+      </contributor>
+      <comment>Undid revision 943307861 by [[Special:Contributions/106.205.117.172|106.205.117.172]] ([[User talk:106.205.117.172|talk]]) doesn't look helpful</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{Hatnote|meV, keV, MeV, GeV, TeV and PeV redirect here. For other uses, see [[MEV (disambiguation)|MEV]], [[KEV (disambiguation)|KEV]], [[GEV (disambiguation)|GEV]], [[TEV (disambiguation)|TEV]] and [[PEV (disambiguation)|PEV]].}}
+
+In [[physics]], an '''electronvolt''' (symbol '''eV''', also written '''electron-volt''' and '''electron volt''') is the amount of [[kinetic energy]] gained (or lost) by a single [[electron]] accelerating from rest through an [[Voltage|electric potential difference]] of one [[volt]] in vacuum. When used as a [[Units of energy|unit of energy]], the numerical value of 1 eV in [[joule]]s (symbol J) is equivalent to the numerical value of the charge of an electron in [[Coulomb|coulombs]] (symbol C). Under the [[2019 redefinition of the SI base units]], this sets 1 eV equal to {{val|1.602176634|e=-19}} J. 
+
+Historically, the electronvolt was devised as a standard unit of measure through its usefulness in [[Particle accelerator#Electrostatic particle accelerators|electrostatic particle accelerator]] sciences, because a particle with [[electric charge]] ''q'' has an energy {{nowrap|1=''E'' = ''qV''}} after passing through the potential ''V''; if ''q'' is quoted in integer units of the elementary charge and the potential in [[volts]], one gets an energy in eV.
+
+It is a common [[unit of energy]] within physics, widely used in [[Solid-state physics|solid state]], [[Atomic physics|atomic]], [[Nuclear physics|nuclear]], and [[particle physics]]. It is commonly used with the [[metric prefix]]es milli-, kilo-, mega-, giga-, tera-, peta- or exa- (meV, keV, MeV, GeV, TeV, PeV and EeV respectively). In some older documents, and in the name [[Bevatron]], the symbol BeV is used, which stands for [[billion]] (10&lt;sup&gt;9&lt;/sup&gt;) electronvolts; it is equivalent to the GeV.
+{| class=&quot;wikitable&quot; style=&quot;float:right; margin:0 0 1em 1em;&quot;
+|-
+! Measurement !! Unit || SI value of unit
+|-
+| Energy || eV || {{val|1.602176634|e=-19|u=J}}
+|-
+| Mass || eV/''c''&lt;sup&gt;2&lt;/sup&gt; || {{val|1.782662|e=-36|u=kg}}
+|-
+| Momentum || eV/''c'' || {{val|5.344286|e=-28|u=kg-m/s}}
+|-
+| Temperature || eV/''k''&lt;sub&gt;B&lt;/sub&gt; || {{val|1.160451812|e=4|u=K}}
+|-
+| Time || ''ħ''/eV || {{val|6.582119|e=-16|u=s}}
+|-
+| Distance || ''ħc''/eV || {{val|1.97327|e=-7|u=m}}
+|}
+
+==Definition==
+An electronvolt is the amount of kinetic energy gained or lost by a single [[electron]] accelerating from rest through an [[Voltage|electric potential difference]] of one [[volt]] in vacuum. Hence, it has a value of one [[volt]], {{val|1|u=J/C}}, multiplied by the electron's [[elementary charge]] ''e'', {{physconst|e|after=.}} Therefore, one electronvolt is equal to {{physconst|eV|after=.}}
+
+The electronvolt, as opposed to the volt, is not an [[International System of Units|SI unit]]. The electronvolt (eV) is a unit of energy whereas the volt (V) is the derived SI unit of electric potential. The SI unit for energy is the joule (J).
+
+==Mass==
+By [[mass–energy equivalence]], the electronvolt is also a unit of [[mass]]. It is common in [[particle physics]], where units of mass and energy are often interchanged, to express mass in units of eV/''c''&lt;sup&gt;2&lt;/sup&gt;, where ''c'' is the [[speed of light]] in vacuum (from [[Mass–energy equivalence|{{nowrap|1=''E'' = ''mc''&lt;sup&gt;2&lt;/sup&gt;}}]]). It is common to simply express mass in terms of &quot;eV&quot; as a [[unit of mass]], effectively using a system of [[natural units]] with ''c'' set to 1.&lt;ref&gt;Barrow, J. D. &quot;Natural Units Before Planck.&quot; Quarterly Journal of the Royal Astronomical Society 24 (1983): 24.&lt;/ref&gt; The mass equivalent of {{val|1|u=eV/c2}} is
+
+:&lt;math&gt;1\; \text{eV}/c^{2} = \frac{(1.602\ 176\ 634 \times 10^{-19} \; \text{C}) \cdot 1 \; \text{V}}{(2.99\ 792\ 458 \times 10^{8}\; \text{m}/\text{s})^2} = 1.782\ 661\ 92 \times 10^{-36}\; \text{kg}.&lt;/math&gt;
+
+For example, an electron and a [[positron]], each with a mass of {{val|0.511|u=MeV/c2}}, can [[Annihilation|annihilate]] to yield {{val|1.022|u=MeV}} of energy. The [[proton]] has a mass of {{val|0.938|u=GeV/c2}}. In general, the masses of all [[hadron]]s are of the order of {{val|1|u=GeV/c2}}, which makes the GeV (gigaelectronvolt) a convenient unit of mass for particle physics:
+:{{val|1|u=GeV/c2}}&amp;nbsp;= {{val|1.78266192|e=-27|u=kg}}.
+
+The [[unified atomic mass unit]] (u), almost exactly 1&amp;nbsp;gram divided by the [[Avogadro number]], is almost the mass of a [[hydrogen atom]], which is mostly the mass of the proton. To convert to electron volts, use the formula:
+
+:1&amp;nbsp;u&amp;nbsp;= {{val|931.4941|u=MeV/c2}}&amp;nbsp;= {{val|0.9314941|u=GeV/c2}}.
+
+==Momentum==
+In [[Particle physics|high-energy physics]], the electronvolt is often used as a unit of [[momentum]]. A potential difference of 1&amp;nbsp;volt causes an electron to gain an amount of energy (i.e., {{val|1|u=eV}}). This gives rise to usage of eV (and keV, MeV, GeV or TeV) as units of momentum, for the energy supplied results in acceleration of the particle.
+
+The dimensions of momentum units are {{dimanalysis|length=1|mass=1|time=−1}}. The dimensions of energy units are {{dimanalysis|length=2|mass=1|time=−2}}. Then, dividing the units of energy (such as eV) by a fundamental constant that has units of velocity ({{dimanalysis|length=1|time=−1}}), facilitates the required conversion of using energy units to describe momentum. In the field of high-energy particle physics, the fundamental velocity unit is the speed of light in vacuum ''c''. 
+
+By dividing energy in eV by the speed of light, one can describe the momentum of an electron in units of eV/''c''.&lt;ref name=&quot;FNALunits&quot;&gt;{{cite web |url=http://quarknet.fnal.gov/toolkits/ati/whatgevs.html |title=Units in particle physics |publisher=Fermilab |date=22 March 2002 |work=Associate Teacher Institute Toolkit |accessdate=13 February 2011 |url-status=live |archiveurl=https://web.archive.org/web/20110514152552/http://quarknet.fnal.gov/toolkits/ati/whatgevs.html |archivedate=14 May 2011 }}&lt;/ref&gt;
+&lt;ref name=&quot;SLACunits&quot;&gt;{{cite web |url=http://www2.slac.stanford.edu/vvc/theory/relativity.html |title=Special Relativity |publisher=SLAC |date=15 June 2009 |work=Virtual Visitor Center |accessdate=13 February 2011 }}&lt;/ref&gt;
+
+The fundamental velocity constant ''c'' is often ''dropped'' from the units of momentum by way of defining units of length such that the value of ''c'' is unity. For example, if the momentum ''p'' of an electron is said to be {{val|1|u=GeV}}, then the conversion to MKS can be achieved by:
+
+:&lt;math&gt;p = 1\; \text{GeV}/c = \frac{(1 \times 10^{9}) \cdot (1.602\ 176\ 634 \times 10^{-19} \; \text{C}) \cdot (1 \; \text{V})}{(2.99\ 792\ 458 \times 10^{8}\; \text{m}/\text{s})} = 5.344\ 286 \times 10^{-19}\; \text{kg} \cdot \text{m}/\text{s}.&lt;/math&gt;
+
+==Distance==
+In [[particle physics]], a system of &quot;natural units&quot; in which the speed of light in vacuum ''c'' and the [[Planck constant|reduced Planck constant]] ''ħ'' are dimensionless and equal to unity is widely used: {{nowrap|1=''c'' = ''ħ'' = 1}}. In these units, both distances and times are expressed in inverse energy units (while energy and mass are expressed in the same units, see [[mass–energy equivalence]]). In particular, particle [[scattering length]]s are often presented in units of inverse particle masses.
+
+Outside this system of units, the conversion factors between electronvolt, second, and nanometer are the following:
+:&lt;math&gt;\hbar = {{h}\over{2\pi}} = 1.054\ 571\ 817\ 646\times 10^{-34}\ \mbox{J s} = 6.582\ 119\ 569\ 509\times 10^{-16}\ \mbox{eV s}.&lt;/math&gt;
+
+The above relations also allow expressing the [[mean lifetime]] ''τ'' of an unstable particle (in seconds) in terms of its [[decay width]] ''Γ'' (in eV) via {{nowrap|1=''Γ'' = ''ħ''/''τ''}}. For example, the [[B meson|B&lt;sup&gt;0&lt;/sup&gt; meson]] has a lifetime of 1.530(9)&amp;nbsp;[[picosecond]]s, mean decay length is {{nowrap|1=''cτ'' = {{val|459.7|u=μm}}}}, or a decay width of {{val|4.302|25|e=-4|u=eV}}.
+
+Conversely, the tiny meson mass differences responsible for [[Neutral particle oscillation|meson oscillations]] are often expressed in the more convenient inverse picoseconds.
+
+Energy in electronvolts is sometimes expressed through the wavelength of light with photons of the same energy: 
+
+:&lt;math&gt;\frac{1\; \text{eV}}{hc} = \frac{(1.602\ 176\ 634 \times 10^{-19} \; \text{J})}{(2.99\ 792\ 458 \times 10^{10}\; \text{cm}/\text{s}) \cdot (6.62\ 607\ 015 \times 10^{-34}\; \text{J} \cdot \text{s})} \thickapprox 8065.5439 \; \text{cm}^{-1}.&lt;/math&gt;
+
+==Temperature==
+In certain fields, such as [[plasma physics]], it is convenient to use the electronvolt to express temperature. The electronvolt is divided by the [[Boltzmann constant]] to convert to the [[Kelvin scale]]:
+
+:&lt;math&gt;{1\; \text{eV} \over k_{\text{B}}} = {1.602\ 176\ 634 \times 10^{-19} \text{ J/eV} \over 1.380\ 649 \times 10^{-23} \text{ J/K}} = 11\ 604.518\ 12 \text{ K/eV}.&lt;/math&gt;
+
+Where ''k''&lt;sub&gt;B&lt;/sub&gt; is the [[Boltzmann constant]], K is Kelvin, J is Joules, eV is electronvolts.
+
+The ''k''&lt;sub&gt;B&lt;/sub&gt; is assumed when using the electronvolt to express temperature, for example, a typical [[magnetic confinement fusion]] plasma is {{val|15|u=keV}} (kilo-electronvolts), which is equal to 170&amp;nbsp;MK (million Kelvin).
+
+As an approximation: ''k''&lt;sub&gt;B&lt;/sub&gt;''T'' is about {{val|0.025|u=eV}} (≈ {{sfrac|290 K|11604 K/eV}}) at a temperature of {{val|20|u=degC}}.
+
+==Properties==
+[[File:Colors in eV.svg|thumb|Energy of photons in the visible spectrum in eV|239x239px]]
+[[File:EV to nm vis.png|thumb|Graph of wavelength (nm) to energy (eV)]]
+The energy ''E'', frequency ''v'', and wavelength λ of a photon are related by
+
+:&lt;math&gt;E=h\nu=\frac{hc}{\lambda}&lt;/math&gt; &lt;math&gt;=\frac{(4.135\ 667\ 516\times 10^{-15}\,\mbox{eV}\,\mbox{s})(299\ 792\ 458\,\mbox{m/s})}{\lambda}&lt;/math&gt;
+
+where ''h'' is the [[Planck constant]], ''c'' is the [[speed of light]]. This reduces to
+
+:&lt;math&gt;E\mbox{(eV)}=4.135\ 667\ 516\,\mbox{feVs}\cdot\nu\ \mbox{(PHz)}&lt;/math&gt; &lt;math&gt;=\frac{1\ 239.841\ 93\,\mbox{eV}\,\mbox{nm}}{\lambda\ \mbox{(nm)}}.&lt;/math&gt;&lt;ref&gt;{{cite web|title=CODATA Value: Planck constant in eV s|url=http://physics.nist.gov/cgi-bin/cuu/Value?hev|accessdate=30 March 2015|url-status=live|archiveurl=https://web.archive.org/web/20150122120538/http://physics.nist.gov/cgi-bin/cuu/Value?hev|archivedate=22 January 2015}}&lt;/ref&gt;
+A photon with a wavelength of {{val|532|u=nm}} (green light) would have an energy of approximately {{val|2.33|u=eV}}. Similarly, {{val|1|u=eV}} would correspond to an infrared photon of wavelength {{val|1240|u=nm}} or frequency {{val|241.8|u=THz}}.
+
+==Scattering experiments==
+In a low-energy nuclear scattering experiment, it is conventional to refer to the nuclear recoil energy in units of eVr, keVr, etc. This distinguishes the nuclear recoil energy from the &quot;electron equivalent&quot; recoil energy (eVee, keVee, etc.) measured by [[Scintillation (physics)|scintillation]] light. For example, the yield of a [[phototube]] is measured in phe/keVee ([[photoelectron]]s per keV electron-equivalent energy). The relationship between eV, eVr, and eVee depends on the medium the scattering takes place in, and must be established empirically for each material.
+
+==Energy comparisons==
+[[File:Light spectrum.svg|right|frame|'''Photon frequency vs. energy particle in electronvolts'''. The [[photon energy|energy of a photon]] varies only with the frequency of the photon, related by speed of light constant. This contrasts with a massive particle of which the energy depends on its velocity and [[rest mass]].&lt;ref&gt;[http://cbst.ucdavis.edu/education/courses/winter-2006-IST8A/ist8a_2006_01_09light.pdf What is Light?] {{webarchive |url=https://web.archive.org/web/20131205005843/http://cbst.ucdavis.edu/education/courses/winter-2006-IST8A/ist8a_2006_01_09light.pdf |date=December 5, 2013 }} – [[UC Davis]] lecture slides&lt;/ref&gt;&lt;ref&gt;{{cite web |author=Elert, Glenn |url=http://physics.info/em-spectrum/ |title=Electromagnetic Spectrum, The Physics Hypertextbook |publisher=hypertextbook.com |accessdate=2016-07-30 |url-status=live |archiveurl=https://web.archive.org/web/20160729235315/http://physics.info/em-spectrum/ |archivedate=2016-07-29 }}&lt;/ref&gt;&lt;ref&gt;{{cite web |url=http://www.vlf.it/frequency/bands.html |title=Definition of frequency bands on |publisher=Vlf.it |accessdate=2010-10-16 |url-status=live |archiveurl=https://web.archive.org/web/20100430012219/http://www.vlf.it/frequency/bands.html |archivedate=2010-04-30 }}&lt;/ref&gt;
+
+Legend
+{| border=&quot;0&quot;
+|-
+|γ: [[Gamma ray]]s|||MIR: Mid infrared|||HF: [[High frequency|High freq.]]
+|-
+|HX: Hard [[X-ray]]s ||FIR: Far infrared||MF: [[Medium frequency|Medium freq.]]
+|-
+|SX: Soft X-rays||[[Radio waves]]||LF: [[Low frequency|Low freq.]]
+|-
+|EUV: Extreme [[ultraviolet]]||EHF: [[Extremely high frequency|Extremely high freq.]]||VLF: [[Very low frequency|Very low freq.]]
+|-
+|NUV: [[Near ultraviolet]]||SHF: [[Super high frequency|Super high freq.]]||VF/ULF: [[Voice frequency|Voice freq.]]
+|-
+|[[Visible light]]||UHF: [[Ultra high frequency|Ultra high freq.]]||SLF: [[Super low frequency|Super low freq.]]
+|-
+|NIR: Near [[Infrared]]||VHF: [[Very high frequency|Very high freq.]]||ELF: [[Extremely low frequency|Extremely low freq.]]
+|-
+| || ||Freq: [[Frequency]]
+|}]]
+
+{| class=&quot;wikitable sortable&quot;
+! Energy || Source
+|-
+| {{val|5.25|e=32|u=eV}} || total energy released from a 20&amp;nbsp;[[TNT equivalent|kt]] nuclear fission device
+|-
+| {{val|1.22|e=28|u=eV}} || the [[Planck energy]]
+|-
+| 10 [[Yotta-|Y]]&lt;nowiki/&gt;eV ({{val|1|e=25|u=eV}}) || the approximate [[grand unification energy]]
+|-
+| ~624 [[exa-|E]]&lt;nowiki/&gt;eV ({{val|6.24|e=20|u=eV}}) || energy consumed by a single 100-watt light bulb in one second ({{val|100|u=W}} = {{val|100|u=J/s}} ≈ {{val|6.24|e=20|u=eV/s}})
+|-
+| 300 [[exa-|E]]&lt;nowiki/&gt;eV ({{val|3|e=20|u=eV}} = ~{{val|50|ul=J}}) || &lt;ref&gt;[http://www.desy.de/user/projects/Physics/General/open_questions.html Open Questions in Physics.] {{webarchive|url=https://web.archive.org/web/20140808124758/http://www.desy.de/user/projects/Physics/General/open_questions.html |date=2014-08-08 }} German Electron-Synchrotron. A Research Centre of the Helmholtz Association. Updated March 2006 by JCB. Original by John Baez.&lt;/ref&gt; the so-called [[Oh-My-God particle]] (the most energetic cosmic ray particle ever observed)
+|-
+| {{val|2|u=PeV}} || two petaelectronvolts, the most high-energetic neutrino detected by the [[IceCube]] neutrino telescope in Antarctica&lt;ref&gt;{{cite web|url=http://icecube.wisc.edu/news/view/227|title=A growing astrophysical neutrino signal in IceCube now features a 2-PeV neutrino|url-status=live|archiveurl=https://web.archive.org/web/20150319072501/http://icecube.wisc.edu/news/view/227|archivedate=2015-03-19}}&lt;/ref&gt;
+|-
+| {{val|14|u=TeV}} || the designed proton collision energy at the [[Large Hadron Collider]] (operated at about half of this energy since 30 March 2010, reached 13 TeV in May 2015)
+|-
+| {{val|1|u=TeV}} || a trillion electronvolts, or {{val|1.602|e=-7|u=J}}, about the kinetic energy of a flying [[mosquito]]&lt;ref&gt;[http://cms.web.cern.ch/content/glossary Glossary] {{webarchive|url=https://web.archive.org/web/20140915005403/http://cms.web.cern.ch/content/glossary |date=2014-09-15 }} - CMS Collaboration, CERN&lt;/ref&gt;
+|-
+| 125.1±0.2 GeV || the energy corresponding to the mass of the [[Higgs boson]], as measured by two separate detectors at the [[Large Hadron Collider|LHC]] to a certainty better than [[Standard deviation|5 sigma]]&lt;ref&gt;{{Cite journal|last1=ATLAS |last2=CMS |authorlink1=ATLAS experiment|authorlink2=Compact Muon Solenoid|arxiv=1503.07589 |title= Combined Measurement of the Higgs Boson Mass in pp Collisions at √s=7 and 8 TeV with the ATLAS and CMS Experiments|journal=Physical Review Letters |volume=114 |issue=19 |pages=191803 |date=26 March 2015 |version= |doi=10.1103/PhysRevLett.114.191803 |doi-access=free |pmid=26024162 |bibcode=2015PhRvL.114s1803A }}&lt;/ref&gt;
+|-
+| {{val|210|u=MeV}} || the average energy released in fission of one [[Plutonium-239|Pu-239]] atom
+|-
+| {{val|200|u=MeV}} || the average energy released in [[nuclear fission]] of one [[Uranium-235|U-235]] atom
+|-
+| {{val|17.6|u=MeV}} || the average energy released in the [[Nuclear fusion|fusion]] of [[deuterium]] and [[tritium]] to form [[helium-4|He-4]]; this is {{val|0.41|u=PJ}} per kilogram of product produced
+|-
+| {{val|1|u=MeV}} ({{val|1.602|e=-13|u=J}}) || about twice the [[rest energy]] of an electron
+|-
+| {{val|13.6|u=eV}} || the energy required to [[ion]]ize [[hydrogen atom|atomic hydrogen]]; [[Molecular bond|molecular]] [[bond energy|bond energies]] are on the [[orders of magnitude|order]] of {{val|1|u=eV}} to {{val|10|u=eV}} per bond
+|-
+| {{val|1.6|u=eV}} to {{val|3.4|u=eV}} || the [[photon energy]] of visible light
+|-
+| {{val|1.1|u=eV}} || the energy ''E''&lt;sub&gt;G&lt;/sub&gt; required to break a [[covalent]] bond in [[silicon]]
+|-
+| {{val|720|u=meV}} || the energy ''E''&lt;sub&gt;G&lt;/sub&gt; required to break a [[covalent]] bond in [[germanium]]
+|-
+| {{val|25|u=meV}} || the [[thermal energy]] ''k''&lt;sub&gt;B&lt;/sub&gt;''T'' at room temperature; one air molecule has an [[Kinetic theory of gases|average kinetic energy]] {{val|38|u=meV}}
+|-
+| {{val|230|u=μeV}} || the thermal energy ''k''&lt;sub&gt;B&lt;/sub&gt;''T'' of the [[cosmic microwave background]]
+|}
+
+===Per mole===
+One mole of particles given 1&amp;nbsp;eV of energy has approximately 96.5&amp;nbsp;kJ of energy — this corresponds to the [[Faraday constant]] (''F'' &amp;asymp; {{val|96485|u=C mol&lt;sup&gt;−1&lt;/sup&gt;}}), where the energy in joules of ''n'' moles of particles each with energy ''E'' eV is equal to ''E''·''F''·''n''.
+
+==See also==
+*[[Orders of magnitude (energy)]]
+
+== References ==
+{{Reflist}}
+
+==External links==
+*[http://www.bipm.org/en/publications/si-brochure/table7.html BIPM's definition of the electronvolt]
+*[http://physics.nist.gov/cuu/Constants physical constants reference; CODATA data]
+
+{{SI units}}
+
+{{DEFAULTSORT:Electron Volt}}
+[[Category:Particle physics]]
+[[Category:Units of chemical measurement]]
+[[Category:Units of energy]]
+[[Category:Voltage]]</text>
+      <sha1>m5grf5jx5a1l9fo4wjq7ln3vyldekp6</sha1>
+    </revision>
+  </page>

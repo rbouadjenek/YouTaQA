@@ -1,0 +1,624 @@
+  <page>
+    <title>Carbon dioxide</title>
+    <ns>0</ns>
+    <id>5906</id>
+    <revision>
+      <id>943210898</id>
+      <parentid>942542358</parentid>
+      <timestamp>2020-02-29T15:14:41Z</timestamp>
+      <contributor>
+        <username>Darkman101</username>
+        <id>11989503</id>
+      </contributor>
+      <comment>/* Ventilation */ added example of asphyxiation by CO2</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{Redirect|CO2}}
+{{pp-pc1|small=yes}}
+{{short description|Chemical compound}}
+{{Use dmy dates|date=September 2016}}
+{{Chembox
+| Verifiedfields = changed
+| Watchedfields = changed
+| verifiedrevid = 477004235
+| ImageFile1 = Carbon-dioxide-2D-dimensions.svg
+| ImageFile1_Ref = {{chemboximage|correct|??}}
+| ImageSize1 = 180
+| ImageName1 = Structural formula of carbon dioxide with bond length
+| ImageFileL1 = Carbon dioxide 3D ball.png
+| ImageFileL1_Ref = {{chemboximage|correct|??}}
+| ImageNameL1 = Ball-and-stick model of carbon dioxide
+| ImageFileR1 = Carbon dioxide 3D spacefill.png
+| ImageFileR1_Ref = {{chemboximage|correct|??}}
+| ImageNameR1 = Space-filling model of carbon dioxide
+| OtherNames = {{plainlist|
+* Carbonic acid gas
+* Carbonic anhydride
+* Carbonic oxide
+* Carbon oxide
+* Carbon(IV) oxide
+* [[Dry ice]] (solid phase)
+}}
+|Section1={{Chembox Identifiers
+| CASNo = 124-38-9
+| CASNo_Ref = {{cascite|correct|CAS}}
+| PubChem = 280
+| ChEMBL_Ref = {{ebicite|changed|EBI}}
+| ChEMBL = 1231871
+| ChemSpiderID = 274
+| ChemSpiderID_Ref = {{chemspidercite|correct|chemspider}}
+| UNII = 142M471B3J
+| UNII_Ref = {{fdacite|correct|FDA}}
+| EINECS = 204-696-9
+| UNNumber = 1013 (gas), 1845 (solid)
+| KEGG_Ref = {{keggcite|correct|kegg}}
+| KEGG = D00004
+| MeSHName = Carbon+dioxide
+| ChEBI_Ref = {{ebicite|correct|EBI}}
+| ChEBI = 16526
+| RTECS = FF6400000
+| Beilstein = 1900390
+| Gmelin = 989
+| 3DMet = B01131
+| SMILES = O=C=O
+| SMILES1 = C(=O)=O
+| StdInChI = 1S/CO2/c2-1-3
+| StdInChI_Ref = {{stdinchicite|correct|chemspider}}
+| InChI = 1/CO2/c2-1-3
+| StdInChIKey = CURLTUGMZLYLDI-UHFFFAOYSA-N
+| StdInChIKey_Ref = {{stdinchicite|correct|chemspider}}
+| InChIKey = CURLTUGMZLYLDI-UHFFFAOYAO}}
+|Section2={{Chembox Properties
+| C=1 | O=2
+| Appearance = Colorless gas
+| Odor = {{plainlist|
+* Low concentrations: none
+* High concentrations: sharp; acidic&lt;ref name=AirProductsMSDS/&gt;}}
+| Density = {{plainlist|
+* 1562{{nbsp}}kg/m&lt;sup&gt;3&lt;/sup&gt; &lt;small&gt;(solid at 1&amp;nbsp;atm and −78.5{{nbsp}}°C)&lt;/small&gt;
+* 1101{{nbsp}}kg/m&lt;sup&gt;3&lt;/sup&gt; &lt;small&gt;(liquid at saturation −37{{nbsp}}°C)&lt;/small&gt;
+* 1.977{{nbsp}}kg/m&lt;sup&gt;3&lt;/sup&gt; &lt;small&gt;(gas at 1&amp;nbsp;atm and 0&amp;nbsp;°C)&lt;/small&gt;
+}}
+| Solubility = 1.45{{nbsp}}g/L at {{convert|25|C}}, 100{{nbsp}}kPa
+| SublimationConditions = −78.5{{nbsp}}°C; −109.2{{nbsp}}°F; 194.7{{nbsp}}K (1{{nbsp}}atm)
+| MeltingPtK = 216.6
+| MeltingPt_notes = ([[triple point]] at 5.1{{nbsp}}atm)
+| pKa = 6.35, 10.33
+| RefractIndex = 1.00045
+| Viscosity = {{plainlist|
+* 14.90 μPa·s at 25&amp;nbsp;°C&lt;ref&gt;{{cite journal|last1=Schäfer|first1=Michael|last2=Richter|first2=Markus|last3=Span|first3=Roland|title=Measurements of the viscosity of carbon dioxide at temperatures from (253.15 to 473.15)K with pressures up to 1.2MPa|journal=The Journal of Chemical Thermodynamics|volume=89|year=2015|pages=7–15|issn=0021-9614|doi=10.1016/j.jct.2015.04.015}}&lt;/ref&gt;
+* 70{{nbsp}}μPa·s at −78.5{{nbsp}}°C
+}}
+| VaporPressure = 5.73{{nbsp}}MPa (20{{nbsp}}°C)
+| Dipole = 0{{nbsp}}D
+| MagSus = −20.5·10&lt;sup&gt;−6&lt;/sup&gt;{{nbsp}}cm&lt;sup&gt;3&lt;/sup&gt;/mol
+| ThermalConductivity = 0.01662{{nbsp}}W·m&lt;sup&gt;-1&lt;/sup&gt;·K&lt;sup&gt;-1&lt;/sup&gt; (300{{nbsp}}K)&lt;ref&gt;Touloukian, Y.S., Liley, P.E., and Saxena, S.C. Thermophysical properties of matter - the TPRC data series. Volume 3. Thermal conductivity - nonmetallic liquids and gases. Data book. 1970.&lt;/ref&gt;
+| CriticalTP={{convert|31.1|°C|K}}, {{convert|7.38|MPa|bar}}
+ }}
+|Section3={{Chembox Structure
+| CrystalStruct = Trigonal
+| MolShape = [[Linear (chemistry)|Linear]]
+ }}
+|Section5={{Chembox Thermochemistry
+| DeltaHf = −393.5{{nbsp}}kJ·mol&lt;sup&gt;−1&lt;/sup&gt;
+| HeatCapacity = 37.135{{nbsp}}J/K·mol
+| Entropy = 214{{nbsp}}J·mol&lt;sup&gt;−1&lt;/sup&gt;·K&lt;sup&gt;−1&lt;/sup&gt;
+ }}
+|Section6={{Chembox Pharmacology
+| ATCCode_prefix = V03
+| ATCCode_suffix = AN02
+}}
+|Section7={{Chembox Hazards
+| ExternalSDS = [http://www.sigmaaldrich.com/MSDS/MSDS/DisplayMSDSPage.do?country=PL&amp;language=EN-generic&amp;productNumber=295108&amp;brand=ALDRICH&amp;PageToGoToURL=http%3A%2F%2Fwww.sigmaaldrich.com%2Fcatalog%2Fproduct%2Faldrich%2F295108%3Flang%3Dpl Sigma-Aldrich]
+| NFPA-H = 2
+| NFPA-F = 0
+| NFPA-R = 0
+| NFPA-S = SA
+| NFPA_ref = &lt;ref name=&quot;AG-20180212&quot;&gt;{{cite web |title=Safety Data Sheet – Carbon Dioxide Gas – version 0.03 11/11 |url=https://www.airgas.com/msds/001013.pdf |date=12 February 2018 |work=AirGas.com |accessdate=4 August 2018 }}&lt;/ref&gt;&lt;ref&gt;{{cite web |url= http://www.praxair.com/-/media/documents/sds/carbon-dioxide/liquiflow-liquid-carbon-dioxide-medipure-gas-co2-safety-data-sheet-sds-p4573.pdf?la=en#page=9 |title= Carbon dioxide, refrigerated liquid |work= [[Praxair]] |page= 9 |accessdate= 26 July 2018 |archive-url= https://web.archive.org/web/20180729111736/http://www.praxair.com/-/media/documents/sds/carbon-dioxide/liquiflow-liquid-carbon-dioxide-medipure-gas-co2-safety-data-sheet-sds-p4573.pdf?la=en#page=9 |archive-date= 29 July 2018 |url-status= dead }}&lt;/ref&gt;
+| PEL = TWA 5000{{nbsp}}ppm (9000{{nbsp}}mg/m&lt;sup&gt;3&lt;/sup&gt;)&lt;ref name=PGCH&gt;{{PGCH|0103}}&lt;/ref&gt;
+| IDLH = 40,000{{nbsp}}ppm&lt;ref name=PGCH/&gt;
+| REL = TWA 5000{{nbsp}}ppm (9000{{nbsp}}mg/m&lt;sup&gt;3&lt;/sup&gt;), ST 30,000{{nbsp}}ppm (54,000{{nbsp}}mg/m&lt;sup&gt;3&lt;/sup&gt;)&lt;ref name=PGCH/&gt;
+| LCLo = 90,000{{nbsp}}ppm (human, 5{{nbsp}}min)&lt;ref&gt;{{IDLH|124389|Carbon dioxide}}&lt;/ref&gt;
+ }}
+|Section8={{Chembox Related
+| OtherAnions = {{plainlist|
+* [[Carbon disulfide]]
+* [[Carbon diselenide]]
+* [[Carbon ditelluride]]}}
+| OtherCations = {{plainlist|
+* [[Silicon dioxide]]
+* [[Germanium dioxide]]
+* [[Tin dioxide]]
+* [[Lead dioxide]]}}
+| OtherFunction_label = [[carbon]] [[oxide]]s
+| OtherFunction = {{plainlist|
+* [[Carbon monoxide]]
+* [[Carbon suboxide]]
+* [[Dicarbon monoxide]]
+* [[Carbon trioxide]]}}
+| OtherCompounds = {{plainlist|
+* [[Carbonic acid]]
+* [[Carbonyl sulfide]]}}
+ }}
+}}
+'''Carbon dioxide''' ([[chemical formula]] '''{{CO2}}''') is a colorless [[gas]] with a density about 60% higher than that of dry air.  Carbon dioxide consists of a [[carbon]] [[atom]] [[covalent bond|covalently]] [[double bond]]ed to two [[oxygen]] atoms. It occurs naturally in [[Atmosphere of Earth|Earth's atmosphere]] as a [[trace gas]]. The current concentration is about 0.04% (410&amp;nbsp;[[Parts per million|ppm]]) by volume, having risen from pre-industrial levels of 280&amp;nbsp;ppm.&lt;ref name=&quot;Cambridge2013&quot;&gt;{{cite book|last1=Eggleton|first1=Tony|title=A Short Introduction to Climate Change|date=2013|publisher=Cambridge University Press|page=52|url=https://books.google.com/books?id=jeSwRly2M_cC&amp;pg=PA52&amp;lpg=PA52&amp;dq=280|isbn=9781107618763}}&lt;/ref&gt;  Natural sources include [[volcano]]es, [[hot spring]]s and [[geyser]]s, and it is freed from [[carbonate rock]]s by [[dissolution (chemistry)|dissolution]] in water and acids. Because carbon dioxide is soluble in water, it occurs naturally in [[groundwater]], [[river]]s and [[lake]]s, [[ice cap]]s, [[glacier]]s and [[seawater]]. It is present in deposits of [[petroleum]] and [[natural gas]]. Carbon dioxide is odorless at normally encountered concentrations, but at high concentrations, it has a sharp and acidic odor.&lt;ref name=AirProductsMSDS/&gt; At such concentrations it generates the taste of [[Carbonated water|soda water]] in the mouth.
+
+As the source of available carbon in the [[carbon cycle]], [[atmospheric carbon dioxide]] is the primary carbon source for [[life|life on Earth]] and its concentration in Earth's pre-industrial atmosphere since late in the [[Precambrian]] has been regulated by [[photosynthesis|photosynthetic]] organisms and geological phenomena. [[Plant]]s, [[algae]] and [[cyanobacteria]] use [[light]] [[energy]] to [[photosynthesis|photosynthesize]] [[carbohydrate]] from carbon dioxide and water, with oxygen produced as a waste product.&lt;ref&gt;{{cite book |first1=Donald G. |last1=Kaufman |first2=Cecilia M. |last2=Franz |title=Biosphere 2000: protecting our global environment |year=1996 |publisher=Kendall/Hunt Pub. Co. |isbn=978-0-7872-0460-0 |url=https://archive.org/details/biosphere2000pro0000kauf }}&lt;/ref&gt;
+
+{{CO2}} is produced by all [[aerobic organisms]] when they metabolize carbohydrates and lipids to produce energy by [[Cellular respiration|respiration]].&lt;ref&gt;{{cite web |url=http://www.legacyproject.org/activities/foodfactories.html |title=Food Factories |website=www.legacyproject.org |access-date=2011-10-10}}&lt;/ref&gt; It is returned to water via the [[Fish gill|gills of fish]] and to the air via the lungs of air-breathing land animals, including humans. Carbon dioxide is produced during the processes of [[decomposition|decay]] of organic materials and the [[fermentation]] of sugars in [[bread]], [[beer]] and [[wine]] making. It is produced by combustion of [[wood]] and other organic materials and [[fossil fuel]]s such as [[coal]], [[peat]], [[petroleum]] and [[natural gas]]. It is an unwanted byproduct in many large scale [[oxidation]] processes, for example, in the production of [[acrylic acid]] (over 5 million tons/year).&lt;ref&gt;{{cite thesis |author=Lénárd-István Csepei |title=Kinetic studies of propane oxidation on Mo and V based mixed oxide catalysts |date=2011 |publisher=Technical University of Berlin |url=https://depositonce.tu-berlin.de/bitstream/11303/3269/1/Dokument_8.pdf |degree=PHD}}&lt;/ref&gt;&lt;ref&gt;{{cite journal |title=Surface chemistry of phase-pure M1 MoVTeNb oxide during operation in selective oxidation of propane to acrylic acid |journal=Journal of Catalysis |date=2012 |volume=285 |pages=48–60 |first1=M. |last1=Hävecker |first2=S. |last2=Wrabetz |first3=J. |last3=Kröhnert |first4=L.-I. |last4=Csepei |first5=R. |last5=Naumann d’Alnoncourt |first6=Y.V. |last6=Kolen’ko |first7=F. |last7=Girgsdies |first8=R. |last8=Schlögl |first9=A. |last9=Trunschke |url=http://pubman.mpdl.mpg.de/pubman/item/escidoc:1108560:8/component/escidoc:1402724/1108560.pdf |doi=10.1016/j.jcat.2011.09.012 |hdl=11858/00-001M-0000-0012-1BEB-F |access-date=9 July 2017 |archive-url=https://web.archive.org/web/20161030003154/http://pubman.mpdl.mpg.de/pubman/item/escidoc:1108560:8/component/escidoc:1402724/1108560.pdf |archive-date=30 October 2016 |url-status=dead }}&lt;/ref&gt;&lt;ref&gt;{{cite journal |title=Multifunctionality of Crystalline MoV(TeNb) M1 Oxide Catalysts in Selective Oxidation of Propane and Benzyl Alcohol |journal=ACS Catalysis |date=2013 |volume=3 |issue=6 |pages=1103–1113 |url=https://www.researchgate.net/publication/278196177 |last1=Amakawa |first1=Kazuhiko |last2=Kolen'ko |first2=Yury V. |last3=Villa |first3=Alberto |last4=Schuster |first4=Manfred Erwin |last5=Csepei |first5=Lenard-Istvan |last6=Weinberg |first6=Gisela |last7=Wrabetz |first7=Sabine |last8=Naumann d'Alnoncourt |first8=Raoul |last9=Girgsdies |first9=Frank |last10=Prati |first10=Laura |last11=Schloegl |first11=Robert |last12=Trunschke |first12=Annette |doi=10.1021/cs400010q}}&lt;/ref&gt;&lt;ref&gt;{{cite journal |title=The reaction network in propane oxidation over phase-pure MoVTeNb M1 oxide catalysts |journal=Journal of Catalysis |volume=311 |pages=369–385 |url=http://pubman.mpdl.mpg.de/pubman/item/escidoc:1896844:6/component/escidoc:1896843/JCAT-13-716_revised_06Dec2013.pdf |first1=Raoul |last1=Naumann d’Alnoncourt |first2=Lénárd-István |last2=Csepei |first3=Michael |last3=Hävecker |first4=Frank |last4=Girgsdies |first5=Manfred E. |last5=Schuster |first6=Robert |last6=Schlögl |first7=Annette |last7=Trunschke |doi=10.1016/j.jcat.2013.12.008 |year=2014 |hdl=11858/00-001M-0000-0014-F434-5 |access-date=9 July 2017 |archive-url=https://web.archive.org/web/20160215104605/http://pubman.mpdl.mpg.de/pubman/item/escidoc:1896844:6/component/escidoc:1896843/JCAT-13-716_revised_06Dec2013.pdf |archive-date=15 February 2016 |url-status=dead }}&lt;/ref&gt;
+
+It is a versatile industrial material, used, for example, as an inert gas in welding and [[fire extinguishers]], as a pressurizing gas in air guns and oil recovery, as a chemical feedstock and as a supercritical fluid solvent in decaffeination of coffee and [[supercritical drying]].&lt;ref name=Tsotsas&gt;{{cite book|first1=Evangelos |last1=Tsotsas |first2=Arun S. |last2=Mujumdar |title=Modern drying technology |volume=3: Product quality and formulation|url=https://books.google.com/books?id=5210HQIwxzsC&amp;pg=PA185 |date=2011 |publisher=John Wiley &amp; Sons |isbn=978-3-527-31558-1}}&lt;/ref&gt; It is added to drinking water and [[carbonated beverage]]s including [[beer]] and [[sparkling wine]] to add [[effervescence]]. The frozen solid form of {{CO2}}, known as ''[[dry ice]]'' is used as a refrigerant and as an abrasive in [[dry-ice blasting]]. It is a feedstock for the synthesis of fuels and chemicals.&lt;ref&gt;{{Cite journal|last=Mikhail|first=M.|last2=Wang|first2=B.|last3=Jalain|first3=R.|last4=Cavadias|first4=S.|last5=Tatoulian|first5=M.|last6=Ognier|first6=S.|last7=Gálvez|first7=M. E.|last8=Da Costa|first8=P.|date=2019-04-01|title=Plasma-catalytic hybrid process for CO2 methanation: optimization of operation parameters|journal=Reaction Kinetics, Mechanisms and Catalysis|volume=126|issue=2|pages=629–643|doi=10.1007/s11144-018-1508-8|issn=1878-5204}}&lt;/ref&gt;&lt;ref&gt;{{Cite patent|title=Regenerative Synthese von chemischen Energiespeichern und Feinchemikalien|gdate=2016-03-09|url=https://patents.google.com/patent/DE102016203889A1/de}}&lt;/ref&gt;&lt;ref&gt;{{Cite news|url=https://www.alphagalileo.org/en-gb/Item-Display/ItemId/181983|title=Catalysts for climate protection|last=|first=|date=2019-08-19|work=|access-date=}}&lt;/ref&gt;&lt;ref&gt;{{Cite journal|last=Voiry|first=Damien|last2=Shin|first2=Hyeon Suk|last3=Loh|first3=Kian Ping|last4=Chhowalla|first4=Manish|date=January 2018|title=Low-dimensional catalysts for hydrogen evolution and CO2 reduction|journal=Nature Reviews Chemistry|volume=2|issue=1|pages=0105|doi=10.1038/s41570-017-0105|issn=2397-3358}}&lt;/ref&gt;&lt;ref&gt;{{Cite journal|last=|first=|last2=|first2=|last3=|first3=|last4=|first4=|date=2019-09-10|title=Carbon dioxide reduction in tandem with light-alkane dehydrogenation|url=https://www.nature.com/articles/s41570-019-0128-9|journal=Nature Reviews Chemistry|volume=|pages=1–12|doi=|issn=2397-3358|via=}}&lt;/ref&gt;
+
+Carbon dioxide is the most significant long-lived [[greenhouse gas]] in [[Carbon dioxide in Earth's atmosphere|Earth's atmosphere]]. Since the [[Industrial Revolution]] anthropogenic emissions – primarily from use of fossil fuels and [[deforestation]] – have rapidly increased its concentration in the atmosphere, leading to [[global warming]].  Carbon dioxide also causes [[ocean acidification]] because it dissolves in water to form [[carbonic acid]].&lt;ref name=NRC2010&gt;{{cite book|title=Ocean Acidification: A National Strategy to Meet the Challenges of a Changing Ocean |url=http://www.nap.edu/catalog/12904/ocean-acidification-a-national-strategy-to-meet-the-challenges-of |isbn=978-0-309-15359-1 |doi=10.17226/12904 |publisher=National Academies Press |location=Washington, DC|date=2010-04-22 }}&lt;/ref&gt;
+
+== Background ==
+[[File:Carbon-dioxide-crystal-3D-vdW.png|thumb|left|upright|Crystal structure of [[dry ice]]]]
+Carbon dioxide was the first gas to be described as a discrete substance. In about 1640,&lt;ref&gt;{{cite journal | title=The Pioneer in the Hygiene of Ventilation | author=DavidFraser Harris | journal=The Lancet |date=September 1910  | volume=176 | issue=4542 | pages=906–908 | doi=10.1016/S0140-6736(00)52420-9| url=https://zenodo.org/record/2088803 }}&lt;/ref&gt; the [[Flemish people|Flemish]] chemist [[Jan Baptist van Helmont]] observed that when he burned [[charcoal]] in a closed vessel, the mass of the resulting [[ash (analytical chemistry)|ash]] was much less than that of the original charcoal. His interpretation was that the rest of the charcoal had been transmuted into an invisible substance he termed a &quot;gas&quot; or &quot;wild spirit&quot; (''spiritus sylvestris'').&lt;ref&gt;Almqvist, Ebbe  (2003). ''History of [[industrial gas]]es''. Springer. {{ISBN|978-0-306-47277-0}}. p. 93&lt;/ref&gt;
+
+The properties of carbon dioxide were further studied in the 1750s by the [[Scotland|Scottish]] physician [[Joseph Black]]. He found that [[limestone]] ([[calcium carbonate]]) could be heated or treated with [[acid]]s to yield a gas he called &quot;fixed air.&quot; He observed that the fixed air was denser than air and supported neither flame nor animal life. Black also found that when bubbled through [[limewater]] (a saturated aqueous solution of [[calcium hydroxide]]), it would [[Precipitation (chemistry)|precipitate]] calcium carbonate. He used this phenomenon to illustrate that carbon dioxide is produced by animal respiration and microbial fermentation. In 1772, English chemist [[Joseph Priestley]] published a paper entitled ''Impregnating Water with Fixed Air'' in which he described a process of dripping [[sulfuric acid]] (or ''oil of vitriol'' as Priestley knew it) on chalk in order to produce carbon dioxide, and forcing the gas to dissolve by agitating a bowl of water in contact with the gas.&lt;ref name=&quot;Priestley&quot;&gt;{{cite journal|first = Joseph|last = Priestley|authorlink = Joseph Priestley|title = Observations on Different Kinds of Air|journal = Philosophical Transactions|volume = 62|year = 1772|pages = 147–264|url = http://web.lemoyne.edu/~GIUNTA/priestley.html|doi = 10.1098/rstl.1772.0021|last2 =Hey|first2 = Wm}}&lt;/ref&gt;
+
+Carbon dioxide was first liquefied (at elevated pressures) in 1823 by [[Humphry Davy]] and [[Michael Faraday]].&lt;ref name=&quot;Davy&quot;&gt;{{cite journal|first = Humphry|last = Davy|authorlink = Humphry Davy|title = On the Application of Liquids Formed by the Condensation of Gases as Mechanical Agents|url=https://archive.org/details/jstor-107649|jstor=107649|journal = Philosophical Transactions|volume = 113|year = 1823|pages = 199–205|doi = 10.1098/rstl.1823.0020 }}&lt;/ref&gt; The earliest description of solid carbon dioxide ([[dry ice]]) was given by the French inventor [[Adrien-Jean-Pierre Thilorier]], who in 1835 opened a pressurized container of liquid carbon dioxide, only to find that the cooling produced by the rapid evaporation of the liquid yielded a &quot;snow&quot; of solid {{CO2}}.&lt;ref&gt;{{cite journal | last1 = Thilorier | first1 = Adrien-Jean-Pierre | year = 1835 | title = Solidification de l'Acide carbonique | url = http://gallica.bnf.fr/ark:/12148/bpt6k29606/f194.item | journal = Comptes Rendus | volume = 1 | issue = | pages = 194–196 }}&lt;/ref&gt;&lt;ref&gt;{{cite journal | last1 = | first1 =  | year = 1836 | title = Solidification of carbonic acid | url = https://books.google.com/books?id=4GwqAAAAYAAJ&amp;pg=PA446 | journal = The London and Edinburgh Philosophical Magazine | volume = 8 | issue = 48| pages = 446–447 | doi=10.1080/14786443608648911}}&lt;/ref&gt;
+
+== Chemical and physical properties ==
+[[File:Co2 vibrations.svg|thumb|left|[[Infrared spectroscopy#Number of vibrational modes|Stretching and bending oscillations]] of the {{CO2}} carbon dioxide molecule. Upper left: symmetric stretching. Upper right: antisymmetric stretching. Lower line: degenerate pair of bending modes.]]
+
+=== Structure and bonding ===
+{{See also|Molecular orbital diagram#Carbon dioxide}}
+The carbon dioxide molecule is linear and [[centrosymmetric]]. The [[carbon–oxygen bond]] length is 116.3&amp;nbsp;[[picometer|pm]], noticeably shorter than the [[bond length]] of a C–O single bond and even shorter than most other C–O multiply-bonded functional groups.&lt;ref name=Green/&gt; Since it is centrosymmetric, the molecule has no electrical [[dipole]]. Consequently, only two vibrational bands are observed in the [[IR spectrum]] – an antisymmetric stretching mode at [[wavenumber]] 2349&amp;nbsp;cm&lt;sup&gt;−1&lt;/sup&gt; and a [[Degenerate energy levels|degenerate]] pair of bending modes at 667&amp;nbsp;cm&lt;sup&gt;−1&lt;/sup&gt; (wavelength 15 μm). There is also a symmetric stretching mode at 1388&amp;nbsp;cm&lt;sup&gt;−1&lt;/sup&gt; which is only observed in the [[Raman spectrum]].&lt;ref&gt;Atkins P. and de Paula J. ''Physical Chemistry'' (8th ed., W.H. Freeman 2006) pp. 461, 464 {{ISBN|0-7167-8759-8}}&lt;/ref&gt;
+
+=== In aqueous solution ===
+{{See also|Carbonic acid}}
+Carbon dioxide is [[soluble]] in water, in which it reversibly forms {{chem|H|2|CO|3}} ([[carbonic acid]]), which is a [[Acid strength|weak acid]] since its ionization in water is incomplete.
+:{{chem|CO|2}} + {{chem|H|2|O}} {{eqm}} {{chem|H|2|CO|3}}
+
+The [[Henry's law|hydration equilibrium constant]] of carbonic acid is &lt;math&gt;K_{\mathrm h}=\frac{\rm{[H_2CO_3]}}{\rm{[CO_2(aq)]}}=1.70\times 10^{-3}&lt;/math&gt; (at 25&amp;nbsp;°C). Hence, the majority of the carbon dioxide is not converted into carbonic acid, but remains as {{CO2}} molecules, not affecting the pH.
+
+The relative concentrations of {{chem|CO|2|, H|2|CO|3}}, and the [[deprotonation|deprotonated]] forms {{chem|HCO|3|−}} ([[bicarbonate]]) and {{chem|CO|3|2−}}([[carbonate]]) depend on the [[pH]]. As shown in a [[Bjerrum plot]], in neutral or slightly alkaline water (pH &gt; 6.5), the bicarbonate form predominates (&gt;50%) becoming the most prevalent (&gt;95%) at the pH of seawater. In very alkaline water (pH &gt; 10.4), the predominant (&gt;50%) form is carbonate. The oceans, being mildly alkaline with typical pH = 8.2–8.5, contain about 120&amp;nbsp;mg of bicarbonate per liter.
+
+Being [[diprotic acid|diprotic]], carbonic acid has two [[acid dissociation constant]]s, the first one for the dissociation into the bicarbonate (also called hydrogen carbonate) ion (HCO&lt;sub&gt;3&lt;/sub&gt;&lt;sup&gt;−&lt;/sup&gt;):
+
+:H&lt;sub&gt;2&lt;/sub&gt;CO&lt;sub&gt;3&lt;/sub&gt; {{eqm}} HCO&lt;sub&gt;3&lt;/sub&gt;&lt;sup&gt;−&lt;/sup&gt; + H&lt;sup&gt;+&lt;/sup&gt;
+:''K''&lt;sub&gt;a1&lt;/sub&gt; = {{val|2.5|e=-4|u=mol/litre}}; p''K''&lt;sub&gt;a1&lt;/sub&gt; = 3.6 at 25 °C.&lt;ref name=Green&gt;{{Greenwood&amp;Earnshaw2nd}}&lt;/ref&gt;
+This is the ''true'' first acid dissociation constant, defined as &lt;math&gt;K_{a1}=\frac{\rm{[HCO_3^-] [H^+]}}{\rm{[H_2CO_3]}}&lt;/math&gt;, where the denominator includes only covalently bound H&lt;sub&gt;2&lt;/sub&gt;CO&lt;sub&gt;3&lt;/sub&gt; and does not include hydrated {{CO2}}(aq). The much smaller and often-quoted value near {{val|4.16|e=-7}} is an ''apparent'' value calculated on the (incorrect) assumption that all dissolved {{CO2}} is present as carbonic acid, so that &lt;math&gt;K_{\mathrm{a1}}{\rm{(apparent)}}=\frac{\rm{[HCO_3^-] [H^+]}}{\rm{[H_2CO_3] + [CO_2(aq)]}}&lt;/math&gt;. Since most of the dissolved {{CO2}} remains as {{CO2}} molecules, ''K''&lt;sub&gt;a1&lt;/sub&gt;(apparent) has a much larger denominator and a much smaller value than the true ''K''&lt;sub&gt;a1&lt;/sub&gt;.&lt;ref&gt;Jolly, William L., ''Modern Inorganic Chemistry'' (McGraw-Hill 1984), p. 196 {{ISBN|0-07-032760-2}}&lt;/ref&gt;
+
+The [[bicarbonate]] ion is an [[amphoteric]] species that can act as an acid or as a base, depending on pH of the solution. At high [[pH]], it dissociates significantly into the [[carbonate]] ion (CO&lt;sub&gt;3&lt;/sub&gt;&lt;sup&gt;2−&lt;/sup&gt;):
+:HCO&lt;sub&gt;3&lt;/sub&gt;&lt;sup&gt;−&lt;/sup&gt; {{eqm}} CO&lt;sub&gt;3&lt;/sub&gt;&lt;sup&gt;2−&lt;/sup&gt; + H&lt;sup&gt;+&lt;/sup&gt;
+:''K''&lt;sub&gt;a2&lt;/sub&gt; = {{val|4.69|e=-11|u=mol/litre}}; p''K''&lt;sub&gt;a2&lt;/sub&gt; = 10.329
+
+In organisms carbonic acid production is catalysed by the [[enzyme]], [[carbonic anhydrase]].
+
+=== Chemical reactions of CO&lt;sub&gt;2&lt;/sub&gt; ===
+{{CO2}} is a weak [[electrophile]]. Its reaction with basic water illustrates this property, in which case [[hydroxide]] is the [[nucleophile]]. Other nucleophiles react as well. For example, [[carbanion]]s as provided by  [[Grignard reagent]]s and [[organolithium compound]]s react with {{CO2}} to give [[carboxylate]]s:
+:MR  +  {{CO2}}   →   R{{CO2}}M
+:where M = [[Lithium|Li]] or [[Magnesium|Mg]] [[Bromine|Br]] and R = [[alkyl]] or [[aryl]].
+
+In [[metal carbon dioxide complex]]es, {{CO2}} serves as a [[ligand]], which can facilitate the conversion of {{CO2}} to other chemicals.&lt;ref&gt;M. Aresta (Ed.) &quot;Carbon Dioxide as a Chemical Feedstock&quot; 2010, Wiley-VCH: Weinheim. {{ISBN|978-3-527-32475-0}}&lt;/ref&gt;
+
+The reduction of {{CO2}} to [[Carbon monoxide|CO]] is ordinarily a difficult and slow reaction:
+:{{CO2}} +  2 e&lt;sup&gt;−&lt;/sup&gt;  +  2H&lt;sup&gt;+&lt;/sup&gt;   →   CO  +  H&lt;sub&gt;2&lt;/sub&gt;O
+
+[[Photoautotrophs]] (i.e. plants and [[cyanobacteria]]) use the energy contained in sunlight to [[Photosynthesis|photosynthesize]] simple sugars from {{CO2}} absorbed from the air and water:
+: ''n'' {{CO2}} + ''n'' {{chem|H|2|O}} → {{chem|(CH|2|O)|''n''}} + ''n'' {{chem|O|2}}
+
+The [[redox potential]] for this reaction near pH 7 is about −0.53 V ''versus'' the [[standard hydrogen electrode]]. The nickel-containing enzyme [[carbon monoxide dehydrogenase]] catalyses this process.&lt;ref&gt;{{cite journal | last1 = Finn | first1 = Colin | last2 = Schnittger | first2 = Sorcha | last3 = Yellowlees | first3 = Lesley J. | last4 = Love | first4 = Jason B. | title = Molecular approaches to the electrochemical reduction of carbon dioxide | journal = Chemical Communications | volume =  48| issue = 10| pages = 1392–1399 | doi = 10.1039/c1cc15393e | year = 2012 | pmid=22116300| url = https://www.pure.ed.ac.uk/ws/files/10852481/Molecular_approaches_to_the_electrochemical_reduction_of_carbon_dioxide.pdf }}&lt;/ref&gt;
+
+=== Physical properties ===
+{{details|Carbon dioxide data}}
+[[File:Dry Ice Pellets Subliming.jpg|right|thumb|Pellets of &quot;dry ice&quot;, a common form of solid carbon dioxide]]
+Carbon dioxide is colorless. At low concentrations the gas is odorless; however, at sufficiently-high concentrations, it has a sharp, acidic odor.&lt;ref name=AirProductsMSDS&gt;{{cite web |title=Carbon Dioxide |website=Air Products |url=http://www.airproducts.com/~/media/Files/PDF/company/product-summary-carbon-dioxide.pdf?la=en}}&lt;/ref&gt; At [[Standard conditions for temperature and pressure|standard temperature and pressure]], the density of carbon dioxide is around 1.98&amp;nbsp;kg/m&lt;sup&gt;3&lt;/sup&gt;, about 1.67 times that of [[Earth's atmosphere|air]].
+
+Carbon dioxide has no liquid state at pressures below {{convert|5.1|atm|lk=in}}. At 1 atmosphere (near mean sea level pressure), the gas [[deposition (physics)|deposits]] directly to a solid at temperatures below {{convert|-78.5|C|F K}} and the solid [[sublimation (chemistry)|sublimes]] directly to a gas above −78.5&amp;nbsp;°C. In its solid state, carbon dioxide is commonly called [[dry ice]].
+
+[[File:Carbon dioxide pressure-temperature phase diagram.svg|right|thumb|Pressure–temperature [[phase diagram]] of carbon dioxide]]
+
+Liquid carbon dioxide forms only at [[pressure]]s above 5.1 atm; the [[triple point]] of carbon dioxide is about 5.1 [[bar (unit)|bar]] (517 [[kPa]]) at 217&amp;nbsp;K (see phase diagram). The [[Critical point (thermodynamics)|critical point]] is 7.38 MPa at 31.1&amp;nbsp;°C.&lt;ref&gt;{{cite web|url=http://webbook.nist.gov/cgi/cbook.cgi?ID=C124389&amp;Units=SI&amp;Mask=4#Thermo-Phase|title=Phase change data for Carbon dioxide|publisher=National Institute of Standards and Technology|accessdate=2008-01-21}}&lt;/ref&gt;&lt;ref&gt;Kudryavtseva I.V., Kamotskii V.I., Rykov S.V., Rykov V.A., [http://processes.ihbt.ifmo.ru/en/article/10734/Calculation_carbon_dioxide_line_of_phase_equilibrium.htm &quot;Calculation Carbon Dioxide Line of Phase Equilibrium&quot;], Processes and equipment for food production, Number 4(18), 2013&lt;/ref&gt; Another form of solid carbon dioxide observed at high pressure is an [[amorphous]] glass-like solid.&lt;ref&gt;{{cite journal|last=Santoro|first=M.|year=2006|title=Amorphous silica-like carbon dioxide|journal=Nature|volume=441|pages=857–860|doi=10.1038/nature04879|pmid=16778885| last2=Gorelli|first2=FA|last3=Bini|first3=R|last4= Ruocco|first4=G|last5=Scandolo|first5=S|last6=Crichton|first6=WA|issue=7095|bibcode = 2006Natur.441..857S }}&lt;/ref&gt; This form of glass, called ''[[amorphous carbonia|carbonia]]'', is produced by [[supercooling]] heated {{CO2}} at extreme pressure (40–48 [[GPa]] or about 400,000 atmospheres) in a [[diamond anvil]]. This discovery confirmed the theory that carbon dioxide could exist in a glass state similar to other members of its elemental family, like [[silicon]] ([[silica|silica glass]]) and [[germanium dioxide]]. Unlike silica and germania glasses, however, carbonia glass is not stable at normal pressures and reverts to gas when pressure is released.
+
+At temperatures and pressures above the critical point, carbon dioxide behaves as a [[supercritical fluid]] known as [[supercritical carbon dioxide]].  In this state it is starting (as of 2018) to be used for [[Supercritical carbon dioxide#Power generation|power generation]] {{citation needed|date=September 2019}}.
+
+== Isolation and production ==
+
+Carbon dioxide can be obtained by [[distillation]] from air, but the method is inefficient. Industrially, carbon dioxide is predominantly an unrecovered waste product, produced by several methods which may be practiced at various scales.&lt;ref name=&quot;kirk&quot;&gt;{{cite encyclopedia|title = Kirk-Othmer Encyclopedia of Chemical Technology|first = Ronald|last = Pierantozzi|encyclopedia = Kirk-Othmer Encyclopedia of Chemical Technology|publisher = Wiley|year = 2001|doi = 10.1002/0471238961.0301180216090518.a01.pub2|chapter = Carbon Dioxide|isbn =978-0-471-23896-6}}&lt;/ref&gt;
+
+The [[combustion]] of all [[carbon-based fuel]]s, such as [[methane]] ([[natural gas]]), petroleum distillates ([[gasoline]], [[Diesel fuel|diesel]], [[kerosene]], [[propane]]), coal, wood and generic organic matter produces carbon dioxide and, except in the case of pure carbon, water. As an example, the chemical reaction between methane and oxygen:
+: {{chem|C|H|4}} + 2 {{chem|O|2}} → {{chem|CO|2}} + 2 {{chem|H|2|O}}
+
+It is produced by thermal decomposition of limestone, {{chem|CaCO|3}} by heating ([[calcining]]) at about {{convert|850|C}}, in the manufacture of [[Calcium oxide|quicklime]] ([[calcium oxide]], {{chem|CaO}}), a compound that has many industrial uses:
+: {{chem|Ca|C|O|3}} → {{chem|Ca|O}} + {{chem|C|O|2}}
+
+[[Iron]] is reduced from its oxides with [[coke (fuel)|coke]] in a [[blast furnace]], producing [[pig iron]] and carbon dioxide:&lt;ref&gt;
+{{Cite book
+| last = Strassburger
+| first = Julius
+| title = Blast Furnace Theory and Practice
+| publisher = American Institute of Mining, Metallurgical, and Petroleum Engineers
+| place = New York
+| year = 1969
+| isbn = 978-0-677-10420-1
+}}&lt;/ref&gt;
+
+Carbon dioxide is a byproduct of the industrial production of hydrogen by [[steam reforming]] and the [[water gas shift reaction]] in [[ammonia production]]. These processes begin with the reaction of water and natural gas (mainly methane).&lt;ref&gt;Susan Topham  &quot;Carbon Dioxide&quot; in Ullmann's Encyclopedia of Industrial Chemistry, 2005, Wiley-VCH, Weinheim.  {{DOI|10.1002/14356007.a05_165}}&lt;/ref&gt; This is a major source of food-grade carbon dioxide for use in carbonation of [[beer]] and [[soft drink]]s, and is also used for stunning animals such as [[poultry]]. In the summer of 2018 a shortage of carbon dioxide for these purposes arose in Europe due to the temporary shut-down of several ammonia plants for maintenance.&lt;ref&gt;{{cite news |title=CO2 shortage: Food industry calls for government action |url=https://www.bbc.com/news/business-44559669 |agency=BBC |date=Jun 21, 2018}}&lt;/ref&gt;
+
+Acids liberate {{CO2}} from most metal carbonates. Consequently, it may be obtained directly from natural carbon dioxide [[spring (hydrosphere)|springs]], where it is produced by the action of acidified water on [[limestone]] or [[Dolomite (mineral)|dolomite]]. The reaction between [[hydrochloric acid]] and calcium carbonate (limestone or chalk) is shown below:
+:{{chem|Ca|C|O|3}} + 2 {{chem|H|Cl}} → {{chem|Ca|Cl|2}} + {{chem|H|2|C|O|3}}
+
+The [[carbonic acid]] ({{chem|H|2|CO|3}}) then decomposes to water and {{CO2}}:
+:{{chem|H|2|C|O|3}} → {{chem|C|O|2}} + {{chem|H|2|O}}
+
+Such reactions are accompanied by foaming or bubbling, or both, as the gas is released. They have widespread uses in industry because they can be used to neutralize waste acid streams.
+
+Carbon dioxide is a by-product of the [[Fermentation (biochemistry)|fermentation]] of [[sugar]] in the [[brewing]] of [[beer]], [[whisky]] and other [[alcoholic beverage]]s and in the production of [[bioethanol]]. [[Yeast]] metabolizes [[sugar]] to produce {{CO2}} and [[ethanol]], also known as alcohol, as follows:
+: {{chem|C|6|H|12|O|6}} → 2 {{chem|C|O|2}} + 2 {{chem|C|2|H|5|O|H}}
+
+All [[cellular respiration|aerobic]] organisms produce {{CO2}} when they oxidize [[carbohydrate]]s, [[fatty acid]]s, and proteins. The large number of reactions involved are exceedingly complex and not described easily. Refer to ([[cellular respiration]], [[anaerobic respiration]] and [[photosynthesis]]). The equation for the respiration of glucose and other [[monosaccharide]]s is:
+: {{chem|C|6|H|12|O|6}} + 6 {{chem|O|2}} → 6 {{chem|CO|2}} + 6 {{chem|H|2|O}}
+
+[[Anaerobic organisms]] decompose organic material producing methane and carbon dioxide together with traces of other compounds.&lt;ref&gt;{{cite web |title= Collecting and using biogas from landfills |publisher= U.S. Energy Information Administration |url= http://www.eia.gov/Energyexplained/?page=biomass_biogas |date=January 11, 2017 |access-date= 2015-11-22}}&lt;/ref&gt; Regardless of the type of organic material, the production of gases follows well defined [[chemical kinetics|kinetic pattern]]. Carbon dioxide comprises about 40–45% of the gas that emanates from decomposition in landfills (termed &quot;[[landfill gas]]&quot;). Most of the remaining 50–55% is methane.&lt;ref&gt;{{cite web |title=Facts About Landfill Gas |publisher=U.S. Environmental Protection Agency |url=http://www.dem.ri.gov/programs/benviron/waste/central/lfgfact.pdf |date=January 2000}}&lt;/ref&gt;
+
+== Applications ==
+Carbon dioxide is used by the food industry, the oil industry, and the chemical industry.&lt;ref name=&quot;kirk&quot; /&gt;
+The compound has varied commercial uses but one of its greatest uses as a chemical is in the production of carbonated beverages; it provides the sparkle in carbonated beverages such as soda water, beer and sparkling wine.
+
+=== Precursor to chemicals ===
+{{expand section|date=July 2014}}
+In the chemical industry, carbon dioxide is mainly consumed as an ingredient in the production of [[urea]], with a smaller fraction being used to produce [[methanol]] and a range of other products,&lt;ref&gt;{{cite web|url=https://www.ipcc.ch/pdf/special-reports/srccs/srccs_chapter7.pdf|title=IPCC Special Report on Carbon dioxide Capture and Storage|publisher=|access-date=4 September 2015|archive-url=https://web.archive.org/web/20150924115331/http://www.ipcc.ch/pdf/special-reports/srccs/srccs_chapter7.pdf|archive-date=24 September 2015|url-status=dead}}&lt;/ref&gt; such as metal [[carbonate]]s and [[bicarbonate]]s.{{citation needed|date=December 2016}} Some carboxylic acid derivatives such as [[sodium salicylate]] are prepared using {{CO2}} by the [[Kolbe-Schmitt reaction]].&lt;ref&gt;{{cite book |author=R.T. Morrison and R.N. Boyd |title=Organic Chemistry |edition=4th |publisher=Allyn and Bacon |year=1983 |isbn=978-0-205-05838-9 |pages=[https://archive.org/details/organicchemistry04morr/page/976 976–977] |url=https://archive.org/details/organicchemistry04morr/page/976 }}&lt;/ref&gt;
+
+In addition to conventional processes using {{CO2}} for chemical production, electrochemical methods are also being explored at a research level. In particular, the use of renewable energy for production of fuels from {{CO2}} (such as methanol) is attractive as this could result in fuels that could be easily transported and used within conventional combustion technologies but have no net {{CO2}} emissions.&lt;ref&gt;{{cite journal|last1=Badwal|first1=Sukhvinder P. S.|last2=Giddey|first2=Sarbjit S.|last3=Munnings|first3=Christopher|last4=Bhatt|first4=Anand I.|last5=Hollenkamp|first5=Anthony F.|title=Emerging electrochemical energy conversion and storage technologies (open access)|journal=Frontiers in Chemistry|date=24 September 2014|volume=2|page=79|doi=10.3389/fchem.2014.00079|pmid=25309898|pmc=4174133|bibcode = 2014FrCh....2...79B }}&lt;/ref&gt;
+
+=== Foods ===
+[[File:Soda bubbles macro.jpg|thumb|Carbon dioxide bubbles in a soft drink.]]
+Carbon dioxide is a [[food additive]] used as a propellant and acidity regulator in the food industry. It is approved for usage in the EU&lt;ref&gt;UK Food Standards Agency: {{cite web |url=http://www.food.gov.uk/safereating/chemsafe/additivesbranch/enumberlist |title=Current EU approved additives and their E Numbers |accessdate=2011-10-27}}&lt;/ref&gt; (listed as [[E number]] E290), US&lt;ref&gt;US Food and Drug Administration: {{cite web |url=https://www.fda.gov/food/ingredientspackaginglabeling/foodadditivesingredients/ucm091048.htm |title=Food Additive Status List |accessdate=2015-06-13}}&lt;/ref&gt; and Australia and New Zealand&lt;ref&gt;Australia New Zealand Food Standards Code{{cite web |url=http://www.comlaw.gov.au/Details/F2011C00827 |title=Standard 1.2.4 – Labelling of ingredients |accessdate=2011-10-27}}&lt;/ref&gt; (listed by its [[INS number]] 290).
+
+A candy called [[Pop Rocks]] is pressurized with carbon dioxide gas&lt;ref&gt;{{Cite book|url=https://books.google.com/?id=0XeSJLflq90C&amp;pg=PA7-IA3&amp;dq=Pop+Rocks+is+pressurized+with+carbon+dioxide+gas#v=onepage&amp;q=Pop%20Rocks%20is%20pressurized%20with%20carbon%20dioxide%20gas&amp;f=false|title=Futurific Leading Indicators Magazine Volume 1|publisher=CRAES LLC|isbn=978-0-9847670-1-4}}&lt;/ref&gt; at about 4 × 10&lt;sup&gt;6&lt;/sup&gt; Pa (40 bar, 580 psi). When placed in the mouth, it dissolves (just like other hard candy) and releases the gas bubbles with an audible pop.
+
+[[Leavening agent]]s cause dough to rise by producing carbon dioxide.&lt;ref&gt;{{Cite book|url=https://books.google.com/?id=2bmaCgAAQBAJ&amp;pg=PT29&amp;dq=Leavening+agents+cause+dough+to+rise+by+producing+carbon+dioxide#v=onepage&amp;q=Leavening%20agents%20cause%20dough%20to%20rise%20by%20producing%20carbon%20dioxide&amp;f=false|title=Indian Breads: A Comprehensive Guide to Traditional and Innovative Indian Breads|last=Vijay|first=G. Padma|date=2015-09-25|publisher=Westland|isbn=978-93-85724-46-6}}&lt;/ref&gt; [[Baker's yeast]] produces carbon dioxide by fermentation of sugars within the dough, while chemical leaveners such as [[baking powder]] and [[baking soda]] release carbon dioxide when heated or if exposed to [[acid]]s.
+
+==== Beverages ====
+Carbon dioxide is used to produce [[carbonation|carbonated]] [[soft drink]]s and [[soda water]]. Traditionally, the carbonation of beer and sparkling wine came about through natural fermentation, but many manufacturers carbonate these drinks with carbon dioxide recovered from the fermentation process. In the case of bottled and kegged beer, the most common method used is carbonation with recycled carbon dioxide. With the exception of British [[cask ale#Real ale|real ale]], draught beer is usually transferred from kegs in a cold room or cellar to dispensing taps on the bar using pressurized carbon dioxide, sometimes mixed with nitrogen.
+
+==== Winemaking ====
+[[File:Dry ice used to preserve grapes after harvest.jpg|thumb|Dry ice used to preserve grapes after harvest.]]
+Carbon dioxide in the form of [[dry ice]] is often used during the [[cold soak]] phase in [[winemaking]] to cool clusters of [[grape]]s quickly after picking to help prevent spontaneous [[Fermentation (wine)|fermentation]] by wild [[yeast (wine)|yeast]]. The main advantage of using dry ice over water ice is that it cools the grapes without adding any additional water that might decrease the [[sugar]] concentration in the [[grape must]], and thus the [[ethanol|alcohol]] concentration in the finished wine. Carbon dioxide is also used to create a hypoxic environment for [[carbonic maceration]], the process used to produce [[Beaujolais]] wine.
+
+Carbon dioxide is sometimes used to top up wine bottles or other [[storage (wine)|storage]] vessels such as barrels to prevent oxidation, though it has the problem that it can dissolve into the wine, making a previously still wine slightly fizzy. For this reason, other gases such as [[nitrogen]] or [[argon]] are preferred for this process by professional wine makers.
+
+====Stunning animals====
+Carbon dioxide is often used to &quot;stun&quot; animals before slaughter.&lt;ref&gt;{{cite journal |last1=Andy Coghlan |title=A more humane way of slaughtering chickens might get EU approval |journal=New Scientist |date=Feb 3, 2018 |url=https://www.newscientist.com/article/2159895-a-more-humane-way-of-slaughtering-chickens-might-get-eu-approval}}&lt;/ref&gt; &quot;Stunning&quot; may be a misnomer, as the animals are not knocked out immediately and may suffer distress.&lt;ref&gt;{{cite web|url=http://kb.rspca.org.au/What-is-CO2-stunning_118.html|archive-url=https://web.archive.org/web/20140409003755/http://kb.rspca.org.au/What-is-CO2-stunning_118.html|url-status=dead|archive-date=2014-04-09|title=What is CO2 stunning?|publisher=RSPCA}}&lt;/ref&gt;&lt;ref name=Campbell&gt;{{cite journal |last1=Archie Campbell |title=Humane execution and the fear of the tumbril |journal=New Scientist |date=Mar 10, 2018 |url=https://www.newscientist.com/letter/mg23731680-900-humane-execution-and-the-fear-of-the-tumbril-3}}&lt;/ref&gt;
+
+=== Inert gas ===
+It is one of the most commonly used compressed gases for pneumatic (pressurized gas) systems in portable pressure tools. Carbon dioxide is also used as an atmosphere for [[welding]], although in the welding arc, it reacts to [[oxidation|oxidize]] most metals. Use in the automotive industry is common despite significant evidence that welds made in carbon dioxide are more [[brittle]] than those made in more inert atmospheres.{{citation needed|date=July 2019}} It is used as a welding gas primarily because it is much less expensive than more inert gases such as [[argon]] or [[helium]].{{citation needed|reason=why not use nitrogen?|date=July 2015}}  When used for [[MIG welding]], {{CO2}} use is sometimes referred to as MAG welding, for Metal Active Gas, as {{CO2}} can react at these high temperatures. It tends to produce a hotter puddle than truly inert atmospheres, improving the flow characteristics. Although, this may be due to atmospheric reactions occurring at the puddle site. This is usually the opposite of the desired effect when welding, as it tends to embrittle the site, but may not be a problem for general mild steel welding, where ultimate ductility is not a major concern.
+
+It is used in many consumer products that require pressurized gas because it is inexpensive and nonflammable, and because it undergoes a phase transition from gas to liquid at room temperature at an attainable pressure of approximately 60 [[Bar (unit)|bar]] (870 psi, 59 atm), allowing far more carbon dioxide to fit in a given container than otherwise would. Life jackets often contain canisters of pressured carbon dioxide for quick inflation. [[Aluminium]] capsules of {{CO2}} are also sold as supplies of compressed gas for [[air gun]]s, [[paintball]] markers/guns, inflating bicycle tires, and for making [[carbonated water]]. Rapid vaporization of liquid carbon dioxide is used for blasting in coal mines.{{citation needed|date=July 2017}} High concentrations of carbon dioxide can also be used to kill pests. Liquid carbon dioxide is used in [[supercritical drying]] of some food products and technological materials, in the preparation of specimens for [[scanning electron microscopy]]&lt;ref name=Nordestgaard&gt;{{cite journal |first1=B.G. |last1=Nordestgaard |first2=J. |last2=Rostgaard |date=1985 |journal=Journal of Microscopy |title=Critical‐point drying versus freeze drying for scanning electron microscopy: a quantitative and qualitative study on isolated hepatocytes |volume=137 |issue=2 |pages=189–207 |doi=10.1111/j.1365-2818.1985.tb02577.x |pmid=3989858 }}&lt;/ref&gt; and in the [[decaffeination]] of [[coffee]] beans.
+
+=== Fire extinguisher ===
+[[File:US Army 53023 Fire Prevention Week.jpg|thumb|Use of a {{CO2}} fire extinguisher.]]
+Carbon dioxide can be used to extinguish flames by flooding the environment around the flame with the gas. It does not itself react to extinguish the flame, but starves the flame of oxygen by displacing it. Some [[Fire extinguisher#Clean agents and carbon dioxide|fire extinguishers]], especially those designed for electrical fires, contain liquid carbon dioxide under pressure. Carbon dioxide extinguishers work well on small flammable liquid and electrical fires, but not on ordinary combustible fires, because although it excludes oxygen, it does not cool the burning substances significantly and when the carbon dioxide disperses they are free to catch fire upon exposure to atmospheric oxygen. Their desirability in electrical fire stems from the fact that, unlike water or other chemical based methods, Carbon dioxide will not cause short circuits, leading to even more damage to equipment. Because it is a gas, it is also easy to dispense large amounts of the gas automatically in IT infrastructure rooms, where the fire itself might be hard to reach with more immediate methods because it is behind rack doors and inside of cases. Carbon dioxide has also been widely used as an extinguishing agent in fixed fire protection systems for local application of specific hazards and total flooding of a protected space.&lt;ref&gt;National Fire Protection Association Code 12&lt;/ref&gt; [[International Maritime Organization]] standards also recognize carbon dioxide systems for fire protection of ship holds and engine rooms. Carbon dioxide based fire protection systems have been linked to several deaths, because it can cause suffocation in sufficiently high concentrations. A review of {{CO2}} systems identified 51 incidents between 1975 and the date of the report (2000), causing 72 deaths and 145 injuries.&lt;ref&gt;Carbon Dioxide as a Fire Suppressant: Examining the Risks, US EPA. 2000.&lt;/ref&gt;
+
+=== Supercritical CO&lt;sub&gt;2&lt;/sub&gt; as solvent ===
+{{See also|Supercritical carbon dioxide}}
+
+Liquid carbon dioxide is a good [[solvent]] for many [[lipophilic]] [[organic compound]]s and is used to remove [[caffeine]] from [[coffee]].&lt;ref name=Tsotsas/&gt; Carbon dioxide has attracted attention in the [[pharmaceutical]] and other chemical processing industries as a less toxic alternative to more traditional solvents such as [[organochloride]]s. It is also used by some [[dry cleaning|dry cleaners]] for this reason (see [[green chemistry]]). It is used in the preparation of some [[Aerogel#Production|aerogels]] because of the properties of supercritical carbon dioxide.
+
+=== Agricultural and biological applications ===
+Plants require carbon dioxide to conduct [[photosynthesis]]. The atmospheres of greenhouses may (if of large size, must) be enriched with additional {{CO2}} to sustain and increase the rate of plant growth.&lt;ref&gt;{{cite web |url=http://www.ext.colostate.edu/mg/gardennotes/141.html |title=Plant Growth Factors: Photosynthesis, Respiration, and Transpiration |website=CMG GardenNotes |first1=David |last1=Whiting |first2=Michael |last2=Roll |first3=Larry |last3=Vickerman |publisher=Colorado Master Gardener Program |date=August 2010 |access-date=2011-10-10 |archive-url=https://web.archive.org/web/20140902192633/http://www.ext.colostate.edu/mg/gardennotes/141.html |archive-date=2014-09-02}}&lt;/ref&gt;&lt;ref&gt;{{cite book |chapter-url=http://www-formal.stanford.edu/jmc/nature/node21.html |chapter=Carbon dioxide |url=http://www-formal.stanford.edu/jmc/nature/nature.html |title=How Much Land Can Ten Billion People Spare for Nature? |first=Paul E. |last=Waggoner |date=February 1994 |access-date=2011-10-10}}&lt;/ref&gt; At very high concentrations (100 times atmospheric concentration, or greater), carbon dioxide can be toxic to animal life, so raising the concentration to 10,000 ppm (1%) or higher for several hours will eliminate pests such as [[whitefly|whiteflies]] and [[spider mite]]s in a greenhouse.&lt;ref&gt;{{cite journal|author=Stafford, Ned |title=Future crops: The other greenhouse effect |journal=Nature |volume=448 |date=7 February 2007 |doi=10.1038/448526a |pmid=17671477 |issue=7153 |bibcode = 2007Natur.448..526S |pages=526–528}}&lt;/ref&gt;
+
+It has been proposed that {{CO2}} from power generation be bubbled into ponds to stimulate growth of algae that could then be converted into [[biodiesel]] fuel.&lt;ref name=&quot;csmon&quot;&gt;{{cite news|first=Mark|last=Clayton|title=Algae – like a breath mint for smokestacks|date=2006-01-11| url =http://www.csmonitor.com/2006/0111/p01s03-sten.html|work =[[The Christian Science Monitor]]| accessdate=2007-10-11}}&lt;/ref&gt;
+
+=== Medical and pharmacological uses ===
+In medicine, up to 5% carbon dioxide (130 times atmospheric concentration) is added to [[oxygen]] for stimulation of breathing after [[apnea]] and to stabilize the {{chem|O|2|/CO|2}} balance in blood.
+
+Carbon dioxide can be mixed with up to 50% oxygen, forming an inhalable gas; this is known as [[Carbogen]] and has a variety of medical and research uses.
+
+=== Oil recovery ===
+Carbon dioxide is used in [[enhanced oil recovery]] where it is injected into or adjacent to producing oil wells, usually under [[Supercritical fluid|supercritical]] conditions, when it becomes [[miscibility|miscible]] with the oil. This approach can increase original oil recovery by reducing residual oil saturation by between 7% to 23% additional to [[Extraction of petroleum#Primary recovery|primary extraction]].&lt;ref&gt;{{cite book |date=20 Dec 2011 |url=http://www.globalccsinstitute.com/publications/accelerating-uptake-ccs-industrial-use-captured-carbon-dioxide |chapter-url=http://hub.globalccsinstitute.com/publications/accelerating-uptake-ccs-industrial-use-captured-carbon-dioxide/appendix-co2-use |title=Accelerating the uptake of CCS: industrial use of captured carbon dioxide |chapter=Appendix A: {{CO2}} for use in enhanced oil recovery (EOR) |website=Global CCS Institute |access-date=2017-01-02}}&lt;/ref&gt; It acts as both a pressurizing agent and, when dissolved into the underground [[crude oil]], significantly reduces its viscosity, and changing surface chemistry enabling the oil to flow more rapidly through the reservoir to the removal well.&lt;ref&gt;{{cite journal |last=Austell |first=J Michael |year=2005 |title={{CO2}} for Enhanced Oil Recovery Needs – Enhanced Fiscal Incentives |journal=Exploration &amp; Production: The Oil &amp; Gas Review |url=http://www.touchoilandgas.com/enhanced-recovery-needs-enhanced-a423-1.html |archiveurl=https://web.archive.org/web/20120207071349/http://www.touchoilandgas.com/enhanced-recovery-needs-enhanced-a423-1.html |archivedate=2012-02-07 |accessdate= 2007-09-28}}&lt;/ref&gt; In mature oil fields, extensive pipe networks are used to carry the carbon dioxide to the injection points.
+
+=== Bio transformation into fuel ===
+{{main|Carbon capture and utilization}}
+A strain of the [[cyanobacterium]] ''[[Synechococcus|Synechococcus elongatus]]'' has been genetically engineered to produce the fuels [[isobutyraldehyde]] and [[isobutanol]] from {{CO2}} using photosynthesis.&lt;ref&gt;{{cite journal|journal=Nature Biotechnology|volume=27|pages=1177–1180|date=November 2009|author1=Atsum, Shota |author2=Higashide, Wendy |author3=Liauo, James C.|doi=10.1038/nbt.1586|pmid=19915552|title=Direct photosynthetic recycling of carbon dioxide to isobutyraldehyde|issue=12}}&lt;/ref&gt;
+
+=== Refrigerant ===
+[[File:Comparison carbon dioxide water phase diagrams.svg|thumb|upright=2|Comparison of phase diagrams of carbon dioxide (red) and water (blue) as a log-lin chart with phase transitions points at 1 atmosphere]]
+Liquid and solid carbon dioxide are important [[refrigerant]]s, especially in the food industry, where they are employed during the transportation and storage of ice cream and other frozen foods. Solid carbon dioxide is called &quot;dry ice&quot; and is used for small shipments where refrigeration equipment is not practical. Solid carbon dioxide is always below {{convert|-78.5|C|F}} at regular atmospheric pressure, regardless of the air temperature.
+
+{{anchor|R744}} Liquid carbon dioxide (industry nomenclature R744 or R-744) was used as a refrigerant prior to the discovery of [[Dichlorodifluoromethane|R-12]] and may enjoy a renaissance due to the fact that [[R134a]] contributes to [[climate change]] more than {{CO2}} does. Its physical properties are highly favorable for cooling, refrigeration, and heating purposes, having a high volumetric cooling capacity. Due to the need to operate at pressures of up to 130 [[Bar (unit)|bar]] (1880 [[Pounds per square inch|psi]]), {{CO2}} systems require highly resistant components that have already been developed for mass production in many sectors. In automobile air conditioning, in more than 90% of all driving conditions for latitudes higher than 50°, R744 operates more efficiently than systems using R134a. Its environmental advantages ([[Global warming potential|GWP]] of 1, non-ozone depleting, non-toxic, non-flammable) could make it the future working fluid to replace current HFCs in cars, supermarkets, and heat pump water heaters, among others. [[Coca-Cola]] has fielded {{CO2}}-based beverage coolers and the [[United States Army|U.S. Army]] is interested in {{CO2}} refrigeration and heating technology.&lt;ref name=&quot;ccref1&quot;&gt;{{cite web|url=http://www.coca-colacompany.com/cooling-equipment-pushing-forward-with-hfc-free |title=The Coca-Cola Company Announces Adoption of HFC-Free Insulation in Refrigeration Units to Combat Global Warming |accessdate=2007-10-11 |date=2006-06-05 |publisher=The Coca-Cola Company}}&lt;/ref&gt;&lt;ref name=&quot;usforces&quot;&gt;{{cite news|title = Modine reinforces its {{CO2}} research efforts|url = http://www.r744.com/news/news_ida145.php|archive-url = https://web.archive.org/web/20080210194203/http://www.r744.com/news/news_ida145.php|url-status = dead|archive-date = 2008-02-10|date = 2007-06-28|publisher = R744.com}}&lt;/ref&gt;
+
+The global automobile industry is expected to decide on the next-generation refrigerant in car air conditioning. {{CO2}} is one discussed option.(see [[Sustainable automotive air conditioning]])
+
+=== Coal bed methane recovery ===
+In [[enhanced coal bed methane recovery]], carbon dioxide would be pumped into the coal seam to displace methane, as opposed to current methods which primarily rely on the removal of water (to reduce pressure) to make the coal seam release its trapped methane.&lt;ref&gt;{{cite web|url=http://www.ipe.ethz.ch/laboratories/spl/research/adsorption/project03 |title=Enhanced coal bed methane recovery |publisher=ETH Zurich |date=2006-08-31 |url-status=dead |archiveurl=https://web.archive.org/web/20110706232006/http://www.ipe.ethz.ch/laboratories/spl/research/adsorption/project03 |archivedate=6 July 2011 |df=dmy }}&lt;/ref&gt;
+
+=== Minor uses ===
+[[File:Carbon Dioxide Laser At The Laser Effects Test Facility.jpg|thumb|right|upright=1.5|A [[carbon dioxide laser]].]]
+Carbon dioxide is the [[active laser medium|lasing medium]] in a [[carbon dioxide laser]], which is one of the earliest type of lasers.
+
+Carbon dioxide can be used as a means of controlling the [[pH]] of swimming pools,&lt;ref&gt;{{Cite book|url=https://books.google.com/?id=IWpWAAAAMAAJ&amp;q=%C2%A0%C2%A0Carbon+dioxide+can+be+used+as+a+means+of+controlling+the+pH+of+swimming+pool&amp;dq=%C2%A0%C2%A0Carbon+dioxide+can+be+used+as+a+means+of+controlling+the+pH+of+swimming+pool|title=TCE, the Chemical Engineer|date=1990|publisher=Institution of Chemical Engineers.}}&lt;/ref&gt; by continuously adding gas to the water, thus keeping the pH from rising. Among the advantages of this is the avoidance of handling (more hazardous) acids. Similarly, it is also used in the maintaining [[Reef aquarium|reef aquaria]], where it is commonly used in [[calcium reactor]]s to temporarily lower the pH of water being passed over [[calcium carbonate]] in order to allow the calcium carbonate to dissolve into the water more freely where it is used by some [[coral]]s to build their skeleton.
+
+Used as the primary coolant in the British [[advanced gas-cooled reactor]] for nuclear power generation.
+
+Carbon dioxide induction is commonly used for the euthanasia of laboratory research animals. Methods to administer {{CO2}} include placing animals directly into a closed, prefilled chamber containing {{CO2}}, or exposure to a gradually increasing concentration of {{CO2}}. In 2013, the [[American Veterinary Medical Association]] issued new guidelines for carbon dioxide induction, stating that a displacement rate of 10% to 30% of the [[gas chamber]] volume per minute is optimal for the humane euthanization of small rodents.&lt;ref name=&quot;2013 AVMA Guidelines for the Euthanasia of Animals: 2013 Edition&quot;&gt;{{cite web|url=https://www.avma.org/kb/policies/documents/euthanasia.pdf |title=2013 AVMA Guidelines for the Euthanasia of Animals |accessdate=2014-01-14}}&lt;/ref&gt; However, there is opposition to the practice of using carbon dioxide for this, on the grounds that it is cruel.&lt;ref name=Campbell/&gt;
+
+Carbon dioxide is also used in several related [[carbon dioxide cleaning|cleaning and surface preparation]] techniques.
+
+== In Earth's atmosphere ==
+{{Main|Carbon dioxide in Earth's atmosphere|Carbon cycle}}
+[[File:Mauna Loa CO2 monthly mean concentration.svg|thumb|The [[Keeling Curve]] of atmospheric {{CO2}} concentrations measured at [[Mauna Loa Observatory]]]]
+
+Carbon dioxide in [[Earth's atmosphere]] is a [[trace gas]], currently (mid 2018) having a global average concentration of 409 parts per million by volume&lt;ref name=NOAA&gt;[ftp://aftp.cmdl.noaa.gov/products/trends/co2/co2_mm_gl.txt National Oceanic &amp; Atmospheric Administration (NOAA) – Earth System Research Laboratory (ESRL), Trends in Carbon Dioxide: Globally averaged marine surface monthly mean data] Values given are dry air [[mole fraction]]s expressed in parts per million ([[Parts per million|ppm]]). For an [[ideal gas]] mixture this is equivalent to parts per million by volume (ppmv).&lt;/ref&gt;&lt;ref name=&quot;theguardian_mar_2016&quot;&gt;{{Cite news | url=https://www.theguardian.com/environment/2016/mar/10/co2-levels-make-largest-recorded-annual-leap-noaa-data-shows | title=CO2 levels make largest recorded annual leap, Noaa data shows | newspaper=The Guardian | date=10 March 2016 | accessdate=2016-03-14 | author=Pashley, Alex }}&lt;/ref&gt;&lt;ref name=&quot;NOAA_mar_10_2016&quot;&gt;{{cite web | url=http://www.noaa.gov/record-annual-increase-carbon-dioxide-observed-mauna-loa-2015 | title=Record annual increase of carbon dioxide observed at Mauna Loa for 2015 | publisher=NOAA | date=9 March 2016 | accessdate=2016-03-14}}&lt;/ref&gt; (or 622 parts per million by mass).&lt;!-- To convert from the usual ppmv units to ppm mass, multiply by the ratio of the molar weight of CO2 to that of air, i.e., 44.01/28.96=1.520) --&gt; Atmospheric concentrations of carbon dioxide fluctuate slightly with the seasons, falling during the [[Northern Hemisphere]] spring and summer as plants consume the gas and rising during northern autumn and winter as plants go dormant or die and decay. Concentrations also vary on a regional basis, most strongly [[planetary boundary layer|near the ground]] with much smaller variations aloft. In urban areas concentrations are generally higher&lt;ref&gt;{{Cite journal | doi = 10.1016/j.atmosenv.2007.08.018| title = Elevated atmospheric {{CO2}} concentration and temperature across an urban–rural transect| journal = Atmospheric Environment| volume = 41| issue = 35| pages = 7654–7665| year = 2007| last1 = George | first1 = K.| last2 = Ziska | first2 = L.H. | last3 = Bunce | first3 = J.A. | last4 = Quebedeaux | first4 = B. |bibcode = 2007AtmEn..41.7654G | url = https://zenodo.org/record/1258774}}&lt;/ref&gt; and indoors they can reach 10 times background levels.
+
+[[File:CO2 increase rate.png|thumb|left|Yearly increase of atmospheric {{CO2}}: In the 1960s, the average annual increase was 35% of the 2009-2018 average.&lt;ref&gt;Tans, Pieter (6 May 2019) [ftp://ftp.cmdl.noaa.gov/ccg/co2/trends/co2_gr_mlo.txt &quot;Annual {{CO2}} mole fraction increase (ppm)&quot; for 1959–2018]. [[National Oceanic and Atmospheric Administration]] Earth System Research Laboratory, Global Monitoring Division ([http://www.esrl.noaa.gov/gmd/ccgg/trends/ additional details].)&lt;/ref&gt;]]
+The concentration of carbon dioxide has risen due to human activities.&lt;ref&gt;Li, Anthony HF. &quot;Hopes of Limiting Global Warming? China and the Paris Agreement on Climate Change.&quot; China Perspectives 1 (2016): 49.&lt;/ref&gt; Combustion of [[fossil fuel]]s and [[deforestation]] have caused the atmospheric concentration of carbon dioxide to increase by about 43% since the beginning of the [[Industrial Revolution|age of industrialization]].&lt;ref name=&quot;nonanews&quot;&gt;{{cite news |title=After two large annual gains, rate of atmospheric {{CO2}} increase returns to average| url=http://www.noaanews.noaa.gov/stories2005/s2412.htm |date=2005-03-31 |publisher =NOAA News Online, Story 2412}}&lt;/ref&gt; Most carbon dioxide from human activities is released from burning coal and other fossil fuels. Other human activities, including deforestation, biomass burning, and cement production also produce carbon dioxide.  Human activities emit about 29 billion tons of carbon dioxide per year, while volcanoes emit between 0.2 and 0.3 billion tons.&lt;ref name=&quot;climate.gov&quot;&gt;{{cite web|url= https://www.climate.gov/news-features/understanding-climate/global-warming-frequently-asked-questions |title=Global Warming Frequently Asked Questions |publisher= NOAA |website=Climate.gov |archiveurl= https://web.archive.org/web/20170111214451/https://www.climate.gov/news-features/understanding-climate/global-warming-frequently-asked-questions |archivedate=11 January 2017|url-status=live &lt;!--from Gerlach DOI: 1029/2011EO240001 --&gt;}}&lt;/ref&gt;&lt;ref&gt;{{cite journal |author=Gerlach, T.M. |title=Present-day {{CO2}} emissions from volcanoes |journal=[[Eos (journal)|Eos, Transactions, American Geophysical Union]] |volume=72 |issue=23 |pages=249, 254–255 |date=4 June 1991 |doi=10.1029/90EO10192 |bibcode=1991EOSTr..72..249.}}&lt;/ref&gt; Human activities have caused {{CO2}} to increase above levels not seen in hundreds of thousands of years. Currently, about half of the carbon dioxide released from the [[Global warming|burning of fossil fuels]] remains in the [[atmosphere]] and is not absorbed by vegetation and the oceans.&lt;ref name=&quot;NASA-20151112-ab&quot;&gt;{{cite web |last1=Buis |first1=Alan |last2=Ramsayer |first2=Kate |last3=Rasmussen |first3=Carol |title=A breathing planet, off balance |url=http://www.jpl.nasa.gov/news/news.php?feature=4769 |date=12 November 2015 |work=NASA |accessdate=2015-11-13}}&lt;/ref&gt;&lt;ref name=&quot;NASA-20151112b&quot;&gt;{{cite web |author=Staff |title=Audio (66:01) – NASA News Conference – Carbon &amp; Climate Telecon |url=http://www.ustream.tv/recorded/77531778 |date=12 November 2015 |work=NASA |accessdate=2015-11-12}}&lt;/ref&gt;&lt;ref name=&quot;NYT-20151110&quot;&gt;{{cite news |last=St. Fleur |first=Nicholas |title=Atmospheric Greenhouse Gas Levels Hit Record, Report Says |url=https://www.nytimes.com/2015/11/11/science/atmospheric-greenhouse-gas-levels-hit-record-report-says.html |date=10 November 2015 |work=The New York Times |accessdate=2015-11-11}}&lt;/ref&gt;&lt;ref name=&quot;AP-20151109&quot;&gt;{{cite news |last=Ritter |first=Karl |title=UK: In 1st, global temps average could be 1 degree C higher |url=http://apnews.excite.com/article/20151109/climate_countdown-greenhouse_gases-d8a21f0397.html |date=9 November 2015 |agency=Associated Press |accessdate=2015-11-11}}&lt;/ref&gt;
+
+While transparent to [[visible light]], carbon dioxide is a [[greenhouse gas]], absorbing and emitting infrared radiation at its two infrared-active vibrational frequencies (see the section &quot;Structure and bonding&quot; above). Light emission from the earth's surface is most intense in the infrared region between 200 and 2500&amp;nbsp;cm&lt;sup&gt;−1&lt;/sup&gt;,&lt;ref&gt;{{cite book |last1=Atkins |first1=Peter |last2=de Paula |first2=Julio |edition=8th |date=2006 |title=Atkins' Physical Chemistry |publisher=W.H. Freeman |page=[https://archive.org/details/atkinsphysicalch00pwat/page/462 462] |isbn=978-0-7167-8759-4 |author-link=Peter Atkins |url=https://archive.org/details/atkinsphysicalch00pwat/page/462 }}&lt;/ref&gt; as opposed to light emission from the much hotter sun which is most intense in the visible region. Absorption of infrared light at the vibrational frequencies of atmospheric carbon dioxide traps energy near the surface, warming the surface and the lower atmosphere. Less energy reaches the upper atmosphere, which is therefore cooler because of this absorption.&lt;ref name=&quot;ucar_co2_absorb_IR&quot;&gt;{{cite web | url=https://scied.ucar.edu/carbon-dioxide-absorbs-and-re-emits-infrared-radiation | title=Carbon Dioxide Absorbs and Re-emits Infrared Radiation | publisher=UCAR Center for Science Education | date= 2012 | accessdate=2017-09-09| author=UCAR }}&lt;/ref&gt;&lt;ref name=&quot;know_co2_climate&quot;&gt;{{cite web | url=https://www.skepticalscience.com/print.php?r=35 | title=How do we know more CO2 is causing warming? | publisher=Skeptical Science | date=July 2015 | accessdate=2017-09-09 | author=dana1981 }}&lt;/ref&gt; Increases in atmospheric concentrations of {{CO2}} and other long-lived greenhouse gases such as methane, nitrous oxide and ozone have correspondingly strengthened their absorption and emission of infrared radiation, causing the rise in average global temperature since the mid-20th century. Carbon dioxide is of greatest concern because it exerts a larger overall warming influence than all of these other gases combined and because it has a long atmospheric lifetime (hundreds to thousands of years).
+[[File:M15-162b-EarthAtmosphere-CarbonDioxide-FutureRoleInGlobalWarming-Simulation-20151109.jpg|thumb|right|{{CO2}} in [[Earth]]'s [[atmosphere]] if ''half'' of global-warming emissions are ''not'' absorbed.&lt;ref name=&quot;NASA-20151112-ab&quot; /&gt;&lt;ref name=&quot;NASA-20151112b&quot; /&gt;&lt;ref name=&quot;NYT-20151110&quot; /&gt;&lt;ref name=&quot;AP-20151109&quot; /&gt;&lt;br&gt;([[NASA]] [[computer simulation]]).]]
+Not only do increasing carbon dioxide concentrations lead to increases in global surface temperature, but increasing global temperatures also cause increasing concentrations of carbon dioxide. This produces a [[positive feedback]] for changes induced by other processes such as [[Milankovitch cycles|orbital cycles]].&lt;ref&gt;{{Cite journal| last7 = Korotkevich | first6 = N.I. | last6 = Barkov | first5 = J. | first7 = Y.S. | last8 = Kotlyakov | pages = 414–418| volume = 329| journal = Nature | first8 = V.M.| doi = 10.1038/329414a0| last5 = Jouzel | first1 = G.| last1 = Genthon| year = 1987| title = Vostok ice core: climatic response to {{CO2}} and orbital forcing changes over the last climatic cycle | first4 = C.| last2 = Barnola| last4 = Lorius | first2 = J.M. | first3 = D.| last3 = Raynaud| issue = 6138|bibcode = 1987Natur.329..414G }}&lt;/ref&gt; Five hundred million years ago the carbon dioxide concentration was 20 times greater than today, decreasing to 4–5 times during the [[Jurassic]] period and then slowly declining with [[Azolla Event|a particularly swift reduction]] occurring 49 million years ago.&lt;ref&gt;{{cite web|title = Climate and {{CO2}} in the Atmosphere|url= http://earthguide.ucsd.edu/virtualmuseum/climatechange2/07_1.shtml| accessdate=2007-10-10}}&lt;/ref&gt;&lt;ref&gt;{{Cite journal |first1=Robert A.|last1=Berner| first2=Zavareth|last2=Kothavala |title = GEOCARB III: A revised model of atmospheric {{CO2}} over Phanerozoic Time |url=http://www.geocraft.com/WVFossils/Reference_Docs/Geocarb_III-Berner.pdf |journal=[[American Journal of Science]] |volume=301 |year=2001 |issue=2 |pages=182–204 |bibcode=2001AmJS..301..182B |doi=10.2475/ajs.301.2.182 |accessdate=2008-02-15 |citeseerx=10.1.1.393.582}}&lt;/ref&gt;
+
+Local concentrations of carbon dioxide can reach high values near strong sources, especially those that are isolated by surrounding terrain.  At the Bossoleto hot spring near [[Rapolano Terme]] in [[Tuscany]], [[Italy]], situated in a bowl-shaped depression about {{cvt|100|m}} in diameter, concentrations of {{CO2}} rise to above 75% overnight, sufficient to kill insects and small animals. After sunrise the gas is dispersed by convection.&lt;ref&gt;{{Cite book |last=van Gardingen |first=P.R. |author2=Grace, J. |author3=Jeffree, C.E. |author4=Byari, S.H. |author5=Miglietta, F. |author6=Raschi, A. |author7= Bettarini, I.  |chapter=Long-term effects of enhanced {{CO2}} concentrations on leaf gas exchange: research opportunities using {{CO2}} springs |title=Plant responses to elevated {{CO2}}: Evidence from natural springs |editor=Raschi, A. |editor2=Miglietta, F. |editor3=Tognetti, R. |editor4=van Gardingen, P.R. |year=1997 |publisher=Cambridge University Press |location=Cambridge |isbn=978-0-521-58203-2 |pages=69–86}}&lt;/ref&gt; High concentrations of {{CO2}} produced by disturbance of deep lake water saturated with {{CO2}} are thought to have caused 37 fatalities at [[Lake Monoun]], [[Cameroon]] in 1984 and 1700 casualties at [[Lake Nyos]], Cameroon in 1986.&lt;ref&gt;{{Cite book |last=Martini |first=M. |chapter={{CO2}} emissions in volcanic areas: case histories and hazards |title=Plant responses to elevated {{CO2}}: Evidence from natural springs |editor=Raschi, A. |editor2=Miglietta, F. |editor3=Tognetti, R. |editor4=van Gardingen, P.R. |year=1997 |publisher=Cambridge University Press |location=Cambridge |isbn=978-0-521-58203-2|pages=69–86}}&lt;/ref&gt;
+
+== In the oceans ==
+{{Main|Carbon cycle}}
+[[File:Pterapod shell dissolved in seawater adjusted to an ocean chemistry projected for the year 2100.jpg|thumb|left|upright=2|Pterapod shell dissolved in seawater adjusted to an ocean chemistry projected for the year 2100.]]
+Carbon dioxide dissolves in the ocean to form [[carbonic acid]] (H&lt;sub&gt;2&lt;/sub&gt;CO&lt;sub&gt;3&lt;/sub&gt;), [[bicarbonate]] (HCO&lt;sub&gt;3&lt;/sub&gt;&lt;sup&gt;−&lt;/sup&gt;) and [[carbonate]] (CO&lt;sub&gt;3&lt;/sub&gt;&lt;sup&gt;2−&lt;/sup&gt;). There is about fifty times as much carbon dioxide dissolved in the oceans as exists in the atmosphere. The oceans act as an enormous [[carbon sink]], and have taken up about a third of {{CO2}} emitted by human activity.&lt;ref&gt;{{cite web |last=Doney |first=Scott C. |first2=Naomi M. |last2=Levine |title= How Long Can the Ocean Slow Global Warming? |publisher= Oceanus |date= 2006-11-29|url= http://www.whoi.edu/oceanus/viewArticle.do?id=17726 |accessdate=2007-11-21}}&lt;/ref&gt;
+
+As the concentration of carbon dioxide increases in the atmosphere, the increased uptake of carbon dioxide into the oceans is causing a measurable decrease in the pH of the oceans, which is referred to as [[ocean acidification]]. This reduction in pH affects biological systems in the oceans, primarily oceanic [[calcification|calcifying]] organisms. These effects span the [[food chain]] from [[autotroph]]s to [[heterotroph]]s and include organisms such as [[coccolithophore]]s, [[coral]]s, [[foraminifera]], [[echinoderm]]s, [[crustacea]]ns and [[mollusca|mollusks]]. Under normal conditions, calcium carbonate is stable in surface waters since the carbonate ion is at [[supersaturation|supersaturating]] concentrations. However, as ocean pH falls, so does the concentration of this ion, and when carbonate becomes undersaturated, structures made of calcium carbonate are vulnerable to dissolution.&lt;ref&gt;{{Cite journal |last1 = Nienhuis |first1 = S. |last2 = Palmer |first2 = A. |last3 = Harley |first3 = C. |year = 2010 |title = Elevated {{CO2}} affects shell dissolution rate but not calcification rate in a marine snail |journal = [[Proceedings of the Royal Society B: Biological Sciences]] |volume = 277 |issue = 1693 |pages = 2553–2558 |pmc = 2894921 |doi = 10.1098/rspb.2010.0206 |pmid = 20392726}}&lt;/ref&gt; Corals,&lt;ref name=gatt98&gt;
+{{Cite journal
+| last=Gattuso|first=J.-P.|author2=Frankignoulle, M. |author3=Bourge, I. |author4= Romaine, S. |author5=Buddemeier, R.W. |last-author-amp=yes
+| year=1998
+| title=Effect of calcium carbonate saturation of seawater on coral calcification
+| url=http://www.obs-vlfr.fr/~gattuso/jpg_papers_list.php
+| journal=[[Global and Planetary Change]]
+| volume=18|issue=1–2|pages=37–46|doi=10.1016/S0921-8181(98)00035-6
+| bibcode = 1998GPC....18...37G }}&lt;/ref&gt;&lt;ref name=gatt99&gt;
+{{Cite journal
+| last=Gattuso|first=J.-P.|author2=Allemand, D. |author3=Frankignoulle, M
+| year=1999
+| title=Photosynthesis and calcification at cellular, organismal and community levels in coral reefs: a review on interactions and control by carbonate chemistry
+| url=http://www.obs-vlfr.fr/~gattuso/jpg_papers_list.php
+| journal=[[American Zoologist]]
+| volume=39|pages=160–183
+| doi=10.1093/icb/39.1.160
+}}&lt;/ref&gt;&lt;ref name=lan05&gt;
+{{Cite journal
+| last=Langdon|first=C|author2=Atkinson, M. J.
+| year=2005
+| title=Effect of elevated p{{CO2}} on photosynthesis and calcification of corals and interactions with seasonal change in temperature/irradiance and nutrient enrichment
+| journal=[[Journal of Geophysical Research]]
+| volume=110|issue=C09S07|doi=10.1029/2004JC002576
+| pages=C09S07 |bibcode=2005JGRC..110.9S07L
+}}&lt;/ref&gt; coccolithophore algae,&lt;ref name=rieb00&gt;
+{{Cite journal
+| last=Riebesell|first=Ulf|author2=Zondervan, Ingrid |author3=Rost, Björn |author4=Tortell, Philippe D. |author5= Zeebe, Richard E. |author6= François M.M. Morel |last-author-amp=yes
+| year=2000
+| title=Reduced calcification of marine plankton in response to increased atmospheric {{chem|CO|2}}
+| journal=[[Nature (journal)|Nature]]
+| volume=407|issue=6802|pages=364–367
+| bibcode=2000Natur.407..364R
+| doi=10.1038/35030078
+| pmid=11014189
+}}&lt;/ref&gt;&lt;ref name=zond01&gt;
+{{Cite journal | last=Zondervan | first=I. |author2=Zeebe, R.E. |author3=Rost, B. |author4=Rieblesell, U. | year=2001 | title=Decreasing marine biogenic calcification: a negative feedback on rising atmospheric {{CO2}} | journal=[[Global Biogeochemical Cycles]] | volume=15 | pages=507–516 | doi=10.1029/2000GB001321 | bibcode=2001GBioC..15..507Z | issue=2| url=http://oceanrep.geomar.de/1545/1/Zondervan.pdf }}&lt;/ref&gt;&lt;ref name=zond02&gt;{{Cite journal | last=Zondervan | first=I. |author2=Rost, B. |author3=Rieblesell, U. | year=2002 | title=Effect of {{CO2}} concentration on the PIC/POC ratio in the coccolithophore ''Emiliania huxleyi'' grown under light limiting conditions and different day lengths | journal=[[Journal of Experimental Marine Biology and Ecology]] | volume=272 |issue=1 |pages=55–70 | doi=10.1016/S0022-0981(02)00037-0| url=http://epic.awi.de/4613/1/Zon2001a.pdf }}&lt;/ref&gt;&lt;ref name=delille05&gt;{{Cite journal | last=Delille | first=B. |author2=Harlay, J. |author3=Zondervan, I. |author4=Jacquet, S. |author5=Chou, L. |author6=Wollast, R. |author7=Bellerby, R.G.J. |author8=Frankignoulle, M. |author9=Borges, A.V. |author10=Riebesell, U. |author11=Gattuso, J.-P. | year=2005 | title=Response of primary production and calcification to changes of p{{CO2}} during experimental blooms of the coccolithophorid ''Emiliania huxleyi'' | url=http://www.obs-vlfr.fr/~gattuso/jpg_papers_list.php | journal=[[Global Biogeochemical Cycles]] | volume=19 |doi=10.1029/2004GB002318 | pages=GB2023 | bibcode=2005GBioC..19.2023D | issue=2}}&lt;/ref&gt; coralline algae,&lt;ref name=kuffner&gt;{{Cite journal | last=Kuffner | first=I.B. |author2=Andersson, A.J. |author3=Jokiel, P.L. |author4=Rodgers, K.S. |author5=Mackenzie, F.T. | year=2007 | title=Decreased abundance of crustose coralline algae due to ocean acidification | journal=[[Nature Geoscience]] | volume=1 |issue=2 |pages=114–117 |doi=10.1038/ngeo100 |bibcode=2008NatGe...1..114K}}&lt;/ref&gt; foraminifera,&lt;ref name=&quot;catalyst-2007-09-13-OAtbgws&quot;&gt;
+{{Cite news
+| last=Phillips|first=Graham|author2=Chris Branagan
+| title=Ocean Acidification – The BIG global warming story
+| date=2007-09-13
+| work =ABC TV Science: Catalyst
+| publisher=Australian Broadcasting Corporation
+| url=http://www.abc.net.au/catalyst/stories/s2029333.htm
+| accessdate=2007-09-18
+ }}&lt;/ref&gt; [[shellfish]]&lt;ref name=gaz07&gt;
+{{Cite journal
+| last=Gazeau|first=F.|author2=Quiblier, C. |author3=Jansen, J.M. |author4=Gattuso, J.-P. |author5= Middelburg, J.J. |author6= Heip, C.H.R. |last-author-amp=yes
+| year=2007
+| title=Impact of elevated {{chem|CO|2}} on shellfish calcification
+| url=http://www.obs-vlfr.fr/~gattuso/jpg_papers_list.php
+| journal=[[Geophysical Research Letters]]
+| volume=34|issue=7|pages=L07603|doi=10.1029/2006GL028554 |bibcode=2007GeoRL..34.7603G
+|citeseerx=10.1.1.326.1630|hdl=20.500.11755/a8941c6a-6d0b-43d5-ba0d-157a7aa05668}}&lt;/ref&gt; and [[pteropod]]s&lt;ref name=comeau09&gt;
+{{Cite journal| last=Comeau | first=C. |author2=Gorsky, G. |author3=Jeffree, R. |author4=Teyssié, J.-L. |author5=Gattuso, J.-P. | journal=[[Biogeosciences]] | year=2009 | volume=6 | pages=1877–1882 | title=Impact of ocean acidification on a key Arctic pelagic mollusc (''Limacina helicina'') | doi=10.5194/bg-6-1877-2009| issue=9| bibcode=2009BGeo....6.1877C }}&lt;/ref&gt; experience reduced calcification or enhanced dissolution when exposed to elevated {{chem|CO|2}}.
+
+Gas solubility decreases as the temperature of water increases (except when both pressure exceeds 300 bar and temperature exceeds 393 K, only found near deep geothermal vents)&lt;ref&gt;{{cite journal |last=Duana |first=Zhenhao |author2=Rui Sun |year=2003 |title=An improved model calculating {{CO2}} solubility in pure water and aqueous NaCl solutions from 273 to 533 K and from 0 to 2000 bar |journal=Chemical Geology |volume=193 |issue=3–4 |pages=257–271 |bibcode=2003ChGeo.193..257D |doi=10.1016/S0009-2541(02)00263-2}}&lt;/ref&gt; and therefore the rate of uptake from the atmosphere decreases as ocean temperatures rise.
+
+Most of the {{CO2}} taken up by the ocean, which is about 30% of the total released into the atmosphere,&lt;ref&gt;{{Cite journal | last1= Cai | first1= W.-J. | last2= Chen | first2= L. | last3= Chen | first3= B. | last4= Gao | first4= Z. | last5= Lee | first5= S.H. | last6= Chen | first6= J. | last7= Pierrot | first7= D. | last8= Sullivan | first8= K. | last9= Wang | first9= Y. | last10= Hu |display-authors=4 | first10= X. | last11= Huang | first11= W.-J. | last12= Zhang | first12= Y. | last13= Xu | first13= S. | last14= Murata | first14= A. | last15= Grebmeier | first15= J.M. | last16= Jones | first16= E.P. | last17= Zhang | first17= H.| title= Decrease in the CO2 Uptake Capacity in an Ice-Free Arctic Ocean Basin | journal= Science | volume= 329 | issue= 5991 | pages= 556–559| year= 2010 | pmid= 20651119 | doi= 10.1126/science.1189338 |bibcode= 2010Sci...329..556C | url= https://semanticscholar.org/paper/5bf345b08f4d76c7a25e4a79f47080a791e031c1 }}&lt;/ref&gt; forms carbonic acid in equilibrium with bicarbonate. Some of these chemical species are consumed by photosynthetic organisms that remove carbon from the cycle. Increased {{CO2}} in the atmosphere has led to decreasing [[alkalinity]] of seawater, and there is concern that this may adversely affect organisms living in the water. In particular, with decreasing alkalinity, the availability of carbonates for forming shells decreases,&lt;ref&gt;{{cite book |title= Oceanography: An Invitation to Marine Science |last= Garrison |first= Tom |year= 2004 |publisher= [[The Thomson Corporation|Thomson Brooks]] |isbn= 978-0-534-40887-9 |page= 125}}&lt;/ref&gt; although there's evidence of increased shell production by certain species under increased {{CO2}} content.&lt;ref&gt;{{cite journal |doi= 10.1130/G30210A.1 |title= Marine calcifiers exhibit mixed responses to {{CO2}}-induced ocean acidification |journal= Geology |volume= 37|issue= 12|pages= 1131–1134|year= 2009|last1= Ries|first1= J.B.|last2= Cohen|first2= A.L.|last3= McCorkle|first3= D.C.|bibcode= 2009Geo....37.1131R}}&lt;/ref&gt;
+
+NOAA states in their May 2008 &quot;State of the science fact sheet for [[ocean acidification]]&quot; that:&lt;br&gt;
+&quot;The oceans have absorbed about 50% of the carbon dioxide ({{CO2}}) released from the burning of fossil fuels, resulting in chemical reactions that lower ocean pH. This has caused an increase in hydrogen ion (acidity) of about 30% since the start of the industrial age through a process known as &quot;ocean acidification.&quot; A growing number of studies have demonstrated adverse impacts on marine organisms, including:
+* The rate at which reef-building corals produce their skeletons decreases, while production of numerous varieties of jellyfish increases.
+* The ability of marine algae and free-swimming zooplankton to maintain protective shells is reduced.
+* The survival of larval marine species, including commercial fish and shellfish, is reduced.&quot;
+
+Also, the Intergovernmental Panel on Climate Change (IPCC) writes in their Climate Change 2007: Synthesis Report:&lt;ref&gt;[http://www.ipcc.ch/publications_and_data/publications_ipcc_fourth_assessment_report_synthesis_report.htm Climate Change 2007: Synthesis Report], IPCC&lt;/ref&gt; &lt;br&gt;
+&quot;The uptake of anthropogenic carbon since 1750 has led to the ocean becoming more acidic with an average decrease in pH of 0.1 units. Increasing atmospheric {{CO2}} concentrations lead to further acidification&amp;nbsp;... While the effects of observed ocean acidification on the marine biosphere are as yet undocumented, the progressive acidification of oceans is expected to have negative impacts on marine shell-forming organisms (e.g. corals) and their dependent species.&quot;
+
+Some marine calcifying organisms (including coral reefs) have been singled out by major research agencies, including NOAA, OSPAR commission, NANOOS and the IPCC, because their most current research shows that ocean acidification should be expected to impact them negatively.&lt;ref&gt;{{cite web|url=http://www.pmel.noaa.gov/co2/story/Ocean+Acidification |title=PMEL Ocean Acidification Home Page |publisher=Pmel.noaa.gov |accessdate=2014-01-14}}&lt;/ref&gt;
+
+Carbon dioxide is also introduced into the oceans through hydrothermal vents. The ''Champagne'' hydrothermal vent, found at the Northwest Eifuku volcano in the [[Marianas Trench]], produces almost pure liquid carbon dioxide, one of only two known sites in the world as of 2004, the other being in the [[Okinawa Trough]].&lt;ref&gt;{{cite journal
+|author1=Lupton, J. |author2=Lilley, M. |author3=Butterfield, D. |author4=Evans, L. |author5=Embley, R. |author6=Olson, E. |author7=Proskurowski, G. |author8=Resing, J. |author9=Roe, K. |author10=Greene, R. |author11=Lebon, G. | title = Liquid Carbon Dioxide Venting at the Champagne Hydrothermal Site, NW Eifuku Volcano, Mariana Arc
+| series = Fall
+| journal = American Geophysical Union
+| volume = Meeting
+| issue = abstract #V43F–08
+|pages=V43F–08 | year = 2004
+| bibcode = 2004AGUFM.V43F..08L
+}}&lt;/ref&gt;
+The finding of a submarine lake of liquid carbon dioxide in the Okinawa Trough was reported in 2006.&lt;ref&gt;{{cite journal|last1=Fumio Inagaki|title=Microbial community in a sediment-hosted CO2 lake of the southern Okinawa Trough hydrothermal system|journal=PNAS|volume=103|issue=38|pages=14164–14169|date=2006|bibcode=2006PNAS..10314164I|doi=10.1073/pnas.0606083103|pmid=16959888|pmc=1599929}} Videos can be downloaded at [http://www.pnas.org/content/103/38/14164.full?tab=ds Supporting Information].&lt;/ref&gt;
+
+== Biological role ==
+Carbon dioxide is an end product of [[cellular respiration]] in organisms that obtain energy by breaking down sugars, fats and [[amino acid]]s with [[oxygen]] as part of their [[metabolism]]. This includes all plants, algae and animals and [[aerobic respiration|aerobic]] fungi and bacteria. In [[vertebrate]]s, the carbon dioxide travels in the blood from the body's tissues to the skin (e.g., [[amphibian]]s) or the gills (e.g., [[fish]]), from where it dissolves in the water, or to the lungs from where it is exhaled. During active photosynthesis, [[compensation point|plants can absorb more carbon dioxide from the atmosphere than they release]] in respiration.
+
+=== Photosynthesis and carbon fixation ===
+[[File:Auto-and heterotrophs.png|thumb|Overview of photosynthesis and respiration. Carbon dioxide (at right), together with water, form oxygen and organic compounds (at left) by [[photosynthesis|&lt;span style=&quot;color:green;&quot;&gt;photosynthesis&lt;/span&gt;]], which can be [[cellular respiration|&lt;span style=&quot;color:red;&quot;&gt;respired&lt;/span&gt;]] to water and ({{CO2}}).]]
+
+[[File:Calvin-cycle4.svg|thumb|left|upright=1|Overview of the [[Calvin cycle]] and carbon fixation]]
+[[Carbon fixation]] is a biochemical process by which atmospheric carbon dioxide is incorporated by [[plant]]s, [[algae]] and ([[cyanobacteria]]) into [[fuel|energy-rich]] organic [[molecule]]s such as [[glucose]], thus creating their own food by [[photosynthesis]]. Photosynthesis uses carbon dioxide and [[water]] to produce [[sugar]]s from which other [[organic compound]]s can be constructed, and [[oxygen]] is produced as a by-product.
+
+[[RuBisCO|Ribulose-1,5-bisphosphate carboxylase oxygenase]], commonly abbreviated to RuBisCO, is the [[enzyme]] involved in the first major step of carbon fixation, the production of two molecules of [[3-phosphoglycerate]] from {{CO2}} and [[ribulose bisphosphate]], as shown in the diagram at left.
+
+RuBisCO is thought to be the single most abundant protein on Earth.&lt;ref&gt;{{cite journal |vauthors=Dhingra A, Portis AR, Daniell H | title = Enhanced translation of a chloroplast-expressed RbcS gene restores small subunit levels and photosynthesis in nuclear RbcS antisense plants | journal = Proc. Natl. Acad. Sci. U.S.A. | volume = 101 | issue = 16 | pages = 6315–6320 |year=2004 | pmid = 15067115 | pmc = 395966 | doi = 10.1073/pnas.0400981101 | quote = (Rubisco) is the most prevalent enzyme on this planet, accounting for 30–50% of total soluble protein in the chloroplast;  |bibcode = 2004PNAS..101.6315D}}&lt;/ref&gt;
+
+[[Phototroph]]s use the products of their photosynthesis as internal food sources and as raw material for the [[biosynthesis]] of more complex organic molecules, such as [[polysaccharides]], [[nucleic acid]]s and [[protein]]s. These are used for their own growth, and also as the basis of the [[food chain]]s and webs that feed other organisms, including animals such as ourselves. Some important phototrophs, the [[coccolithophore]]s synthesise hard [[calcium carbonate]] scales.&lt;ref&gt;{{Cite book|title=Evolution of primary producers in the sea|last=G.|first=Falkowski, Paul|last2=H.|first2=Knoll, Andrew|last3=(2006.01.)|first3=Symposium|date=2007-01-01|publisher=Elsevier, Academic Press|isbn=978-0-12-370518-1|oclc=845654016}}&lt;/ref&gt; A globally significant species of coccolithophore is ''[[Emiliania huxleyi]]'' whose [[calcite]] scales have formed the basis of many [[sedimentary rock]]s such as [[limestone]], where what was previously atmospheric carbon can remain fixed for geological timescales.
+
+Plants can grow as much as 50 percent faster in concentrations of 1,000 ppm {{CO2}} when compared with ambient conditions, though this assumes no change in climate and no limitation on other nutrients.&lt;ref&gt;{{cite web |title=Carbon Dioxide In Greenhouses |last=Blom |first=T.J. |author2=W.A. Straver |author3=F.J. Ingratta |author4=Shalin Khosla |author5=Wayne Brown |url=http://www.omafra.gov.on.ca/english/crops/facts/00-077.htm |date=December 2002 |accessdate=2007-06-12}}&lt;/ref&gt; Elevated {{CO2}} levels cause increased growth reflected in the harvestable yield of crops, with wheat, rice and soybean all showing increases in yield of 12–14% under elevated {{CO2}} in FACE experiments.&lt;ref&gt;{{cite journal |last1=Ainsworth |first1=Elizabeth A. |bibcode=2008GCBio..14.1642A |doi=10.1111/j.1365-2486.2008.01594.x |title=Rice production in a changing climate: a meta-analysis of responses to elevated carbon dioxide and elevated ozone concentration |year=2008 |pages=1642–1650 |issue=7 |volume=14 |journal=Global Change Biology |url=http://www.plant-biotech.dk/Meetings/PBD_Symposium_Plant%20Stress_litterature/LisaAinsworth_pdf2.pdf |archiveurl=https://web.archive.org/web/20110719130608/http://www.plant-biotech.dk/Meetings/PBD_Symposium_Plant%20Stress_litterature/LisaAinsworth_pdf2.pdf |archivedate=2011-07-19}}&lt;/ref&gt;&lt;ref&gt;{{cite journal |last1=Long |first1=S.P. |last2=Ainsworth |first2=E.A. |last3=Leakey |first3=A.D. |last4=Nösberger |first4=J. |last5=Ort |first5=D.R. |title=Food for thought: lower-than-expected crop yield stimulation with rising {{CO2}} concentrations |journal=Science |volume=312 |issue=5782 |pages=1918–1921 |year=2006 |pmid=16809532 |doi=10.1126/science.1114722 |bibcode= 2006Sci...312.1918L |url=http://www.as.wvu.edu/biology/bio463/Long%20et%20al%202006%20Lower%20yield%20than%20expected%20under%20increased%20CO2.pdf|citeseerx=10.1.1.542.5784 }}&lt;/ref&gt;
+
+Increased atmospheric {{CO2}} concentrations result in fewer stomata developing on plants&lt;ref&gt;{{cite journal|author1=F. Woodward |author2=C. Kelly |journal=New Phytologist|year=1995 |volume= 131|issue=3|pages=311–327 |title=The influence of {{CO2}} concentration on stomatal density|doi=10.1111/j.1469-8137.1995.tb03067.x}}&lt;/ref&gt; which leads to reduced water usage and increased [[water-use efficiency]].&lt;ref&gt;{{cite journal |doi=10.1146/annurev.arplant.48.1.609 |journal=Annual Review of Plant Physiology and Plant Molecular Biology |volume=48 |issue=1 |year=1997 |title=More efficient plants: A consequence of rising atmospheric {{CO2}}?|first1=Bert G. |last1=Drake |last2=Gonzalez-Meler |first2=Miquel A. |last3=Long |first3=Steve P. |pmid=15012276 |pages=609–639|url=https://semanticscholar.org/paper/9bbfad6ad5dd30dfbf0238514cb2a42a68829583 }}&lt;/ref&gt; Studies using [[Free-Air Concentration Enrichment|FACE]] have shown that {{CO2}} enrichment leads to decreased concentrations of micronutrients in crop plants.&lt;ref&gt;{{cite journal |doi=10.1016/S0169-5347(02)02587-9 |title=Rising atmospheric {{CO2}} and human nutrition: toward globally imbalanced plant stoichiometry? |year=2002 |author=Loladze, I| journal=Trends in Ecology &amp; Evolution |volume=17 |issue=10 |pages=457–461}}&lt;/ref&gt; This may have knock-on effects on other parts of [[ecosystem]]s as herbivores will need to eat more food to gain the same amount of protein.&lt;ref&gt;{{cite journal |jstor=2641685 |author1=Carlos E. Coviella |author2=John T. Trumble |journal=Conservation Biology |volume=13 |issue=4 |year=1999 |pages=700–712 |title=Effects of Elevated Atmospheric Carbon Dioxide on Insect-Plant Interactions |doi=10.1046/j.1523-1739.1999.98267.x|url=https://semanticscholar.org/paper/350000cd36c30b68267635e772d1404a7c7f8d56 }}&lt;/ref&gt;
+
+The concentration of secondary [[metabolites]] such as phenylpropanoids and flavonoids
+can also be altered in plants exposed to high concentrations of {{CO2}}.&lt;ref&gt;{{Cite journal | last1 = Davey | first1 = M.P. | last2 = Harmens | first2 = H. | last3 = Ashenden | first3 = T.W. | last4 = Edwards | first4 = R. | last5 = Baxter | first5 = R. | title = Species-specific effects of elevated {{CO2}} on resource allocation in ''Plantago maritima'' and ''Armeria maritima'' | doi = 10.1016/j.bse.2006.09.004 | journal = Biochemical Systematics and Ecology | volume = 35 | issue = 3 | pages = 121–129 | year = 2007 | pmid = | pmc = }}&lt;/ref&gt;&lt;ref&gt;{{Cite journal
+| last1 = Davey | first1 = M.
+| last2 = Bryant | first2 = D.N.
+| last3 = Cummins | first3 = I.
+| last4 = Ashenden | first4 = T.W.
+| last5 = Gates | first5 = P.
+| last6 = Baxter | first6 = R.
+| last7 = Edwards | first7 = R.
+| title = Effects of elevated {{CO2}} on the vasculature and phenolic secondary metabolism of ''Plantago maritima''
+| doi = 10.1016/j.phytochem.2004.06.016
+| journal = Phytochemistry
+| volume = 65
+| issue = 15
+| pages = 2197–2204
+| year = 2004
+| pmid = 15587703
+| pmc =
+}}&lt;/ref&gt;
+
+Plants also emit {{CO2}} during respiration, and so the majority of plants and algae, which use [[C3 photosynthesis]], are only net absorbers during the day. Though a growing forest will absorb many tons of {{CO2}} each year, a mature forest will produce as much {{CO2}} from respiration and decomposition of dead specimens (e.g., fallen branches) as is used in photosynthesis in growing plants.&lt;ref&gt;{{cite web |url=http://www-wds.worldbank.org/external/default/WDSContentServer/WDSP/IB/2002/09/07/000094946_02081604154234/Rendered/INDEX/multi0page.txt |archive-url=https://web.archive.org/web/20160603011630/http://www-wds.worldbank.org/external/default/WDSContentServer/WDSP/IB/2002/09/07/000094946_02081604154234/Rendered/INDEX/multi0page.txt |url-status=dead |archive-date=2016-06-03 |title=Global Environment Division Greenhouse Gas Assessment Handbook – A Practical Guidance Document for the Assessment of Project-level Greenhouse Gas Emissions |accessdate=2007-11-10 |publisher=[[World Bank]]}}&lt;/ref&gt; Contrary to the long-standing view that they are carbon neutral, mature forests can continue to accumulate carbon&lt;ref&gt;{{cite journal |doi=10.1038/nature07276 |title=Old-growth forests as global carbon sinks |year=2008 |last1=Luyssaert |first1=Sebastiaan |last2=Schulze |first2=E.-Detlef |last3=Börner |first3=Annett |last4=Knohl |first4=Alexander |last5=Hessenmöller |first5=Dominik |last6=Law |first6=Beverly E. |last7=Ciais |first7=Philippe |last8=Grace |first8=John |journal=Nature |volume=455 |pmid=18784722 |issue=7210 |bibcode= 2008Natur.455..213L |pages=213–215}}&lt;/ref&gt; and remain valuable [[carbon sink]]s, helping to maintain the carbon balance of Earth's atmosphere. Additionally, and crucially to life on earth, photosynthesis by phytoplankton consumes dissolved {{CO2}} in the upper ocean and thereby promotes the absorption of {{CO2}} from the atmosphere.&lt;ref&gt;{{cite journal|vauthors=Falkowski P, Scholes RJ, Boyle E, Canadell J, Canfield D, Elser J, Gruber N, Hibbard K, Högberg P, Linder S, Mackenzie FT, Moore B 3rd, Pedersen T, Rosenthal Y, Seitzinger S, Smetacek V, Steffen W | year=2000|title=The global carbon cycle: a test of our knowledge of earth as a system |journal=Science |volume=290 |issue=5490 |pages=291–296 |doi=10.1126/science.290.5490.291 |pmid=11030643 |bibcode= 2000Sci...290..291F| url=https://semanticscholar.org/paper/32a660e3ac0ea2bcba4b3135649c96fbec510c9c}}&lt;/ref&gt;
+
+=== Toxicity ===
+{{See also|Carbon dioxide poisoning}}
+[[File:Main symptoms of carbon dioxide toxicity.svg|thumb|right|Main symptoms of carbon dioxide toxicity, by increasing [[volume percent]] in air.&lt;ref name=friedman&gt;Friedman, Daniel. [http://www.inspect-ny.com/hazmat/CO2gashaz.htm Toxicity of Carbon Dioxide Gas Exposure, {{CO2}} Poisoning Symptoms, Carbon Dioxide Exposure Limits, and Links to Toxic Gas Testing Procedures]. InspectAPedia&lt;/ref&gt;]]
+
+Carbon dioxide content in fresh air (averaged between sea-level and 10 kPa level, i.e., about {{cvt|30|km}} altitude) varies between 0.036% (360 ppm) and 0.041% (410 ppm), depending on the location.&lt;ref&gt;{{cite web |url=http://www.esrl.noaa.gov/gmd/ccgg/carbontracker/ |title=CarbonTracker CT2011_oi (Graphical map of {{CO2}}) |work=esrl.noaa.gov}}&lt;/ref&gt;{{clarify|reason=what date/year are these figures for?|date=June 2014}}
+
+{{CO2}} is an [[asphyxiant gas]] and not classified as toxic or harmful in accordance with [[Globally Harmonized System of Classification and Labelling of Chemicals|Globally Harmonized System of Classification and Labelling of Chemicals standards]] of [[United Nations Economic Commission for Europe]] by using the [[OECD Guidelines for the Testing of Chemicals]]. In concentrations up to 1% (10,000 ppm), it will make some people feel drowsy and give the lungs a stuffy feeling.&lt;ref name=friedman/&gt; Concentrations of 7% to 10% (70,000 to 100,000 ppm) may cause suffocation, even in the presence of sufficient oxygen, manifesting as dizziness, headache, visual and hearing dysfunction, and unconsciousness within a few minutes to an hour.&lt;ref&gt;{{cite news|publisher=U.S. Environmental Protection Agency |url=http://www.epa.gov/ozone/snap/fire/co2/co2report.html |title=Carbon Dioxide as a Fire Suppressant: Examining the Risks |archiveurl=https://web.archive.org/web/20151002093443/http://www.epa.gov/ozone/snap/fire/co2/co2report.html |archivedate=2015-10-02}}&lt;/ref&gt; The physiological effects of acute carbon dioxide exposure are grouped together under the term [[hypercapnia]], a subset of [[Asphyxiant gas|asphyxiation]].
+
+Because it is heavier than air, in locations where the gas seeps from the ground (due to sub-surface volcanic or geothermal activity) in relatively high concentrations, without the dispersing effects of wind, it can collect in sheltered/pocketed locations below average ground level, causing animals located therein to be suffocated. Carrion feeders attracted to the carcasses are then also killed. Children have been killed in the same way near the city of [[Goma]] by {{CO2}} emissions from the nearby volcano [[Mt. Nyiragongo]].&lt;ref&gt;[https://www.pbs.org/wgbh/nova/transcripts/3215_volcanoc.html Volcano Under the City]. PBS.org (1 November 2005).&lt;/ref&gt; The [[Swahili language|Swahili]] term for this phenomenon is '[[mazuku]]'.
+
+[[File:Apollo13 apparatus.jpg|thumb|Rising levels of {{CO2}} threatened the [[Apollo 13]] astronauts who had to adapt cartridges from the command module to supply the [[carbon dioxide scrubber]] in the lunar module, which they used as a lifeboat.]]
+Adaptation to increased concentrations of {{CO2}} occurs in humans, including [[Respiratory adaptation|modified breathing]] and kidney bicarbonate production, in order to balance the effects of blood acidification ([[acidosis]]). Several studies suggested that 2.0 percent inspired concentrations could be used for closed air spaces (e.g. a [[submarine]]) since the adaptation is physiological and reversible, as deterioration in performance or in normal physical activity does not happen at this level of exposure for five days.&lt;ref name=&quot;Glatte Jr H.A., Motsay G.J., Welch B.E. 1967&quot;&gt;{{cite journal |title=Carbon Dioxide Tolerance Studies |author1=Glatte Jr H.A. |author2=Motsay G.J. |author3=Welch B.E. |year=1967 |volume=SAM-TR-67-77 |journal=Brooks AFB, TX School of Aerospace Medicine Technical Report|url=http://archive.rubicon-foundation.org/6045 |accessdate=2008-05-02}}&lt;/ref&gt;&lt;ref&gt;{{cite journal |title=Carbon Dioxide Tolerance and Toxicity |author=Lambertsen, C.J. |year=1971 |journal=Environmental Biomedical Stress Data Center, Institute for Environmental Medicine, University of Pennsylvania Medical Center |volume=Report No. 2-71 |series=IFEM |url=http://archive.rubicon-foundation.org/3861 |accessdate=2008-05-02}}&lt;/ref&gt; Yet, other studies show a decrease in cognitive function even at much lower levels.&lt;ref name=&quot;pollutant2012&quot; /&gt;&lt;ref name=&quot;scores2016&quot; /&gt; Also, with ongoing respiratory acidosis, adaptation or [[acidosis|compensatory mechanisms will be unable to reverse such condition]].
+
+==== Below 1% ====
+There are few studies of the health effects of long-term continuous {{CO2}} exposure on humans and animals at levels below 1%. Occupational {{CO2}} exposure limits have been set in the United States at 0.5% (5000 ppm) for an eight-hour period.&lt;ref&gt;{{cite web |url=http://www.inspectapedia.com/hazmat/CO2_Exposure_Limits.htm |title=Exposure Limits for Carbon Dioxide Gas – {{CO2}} Limits |publisher=InspectAPedia.com}}&lt;/ref&gt; At this {{CO2}} concentration, [[International Space Station]] crew experienced headaches, lethargy, mental slowness, emotional irritation, and sleep disruption.&lt;ref&gt;{{cite journal |title=In-Flight Carbon Dioxide Exposures and Related Symptoms: Associations, Susceptibility and Operational Implications |author1=Law J. |author2=Watkins S. |author3=Alexander, D. |year=2010 |volume=TP–2010–216126 |journal=NASA Technical Report |url=http://ston.jsc.nasa.gov/collections/trs/_techrep/TP-2010-216126.pdf |accessdate=2014-08-26 |url-status=dead |archiveurl=https://web.archive.org/web/20110627061502/http://ston.jsc.nasa.gov/collections/TRS/_techrep/TP-2010-216126.pdf |archivedate=27 June 2011}}&lt;/ref&gt; Studies in animals at 0.5% {{CO2}} have demonstrated kidney calcification and bone loss after eight weeks of exposure.&lt;ref&gt;{{cite journal |title=Effect of Prolonged Exposure to 0.5% {{CO2}} on Kidney Calcification and Ultrastructure of Lungs |author=Schaefer, K.E. |year=1979 |journal=Undersea Biomed Res | volume=S6 |pages=155–161 |pmid=505623 |url=http://handle.dtic.mil/100.2/ADA075625 |accessdate=2014-10-19}}&lt;/ref&gt; A study of humans exposed in 2.5 hour sessions demonstrated significant negative effects on cognitive abilities at concentrations as low as 0.1% (1000{{nbsp}}ppm) {{CO2}} likely due to {{CO2}} induced increases in cerebral blood flow.&lt;ref name=&quot;pollutant2012&quot;&gt;{{cite journal |title=Is {{CO2}} an Indoor Pollutant? Direct Effects of Low-to-Moderate {{CO2}} Concentrations on Human Decision-Making Performance |author=Satish U. |author2=Mendell M.J. |author3=Shekhar K. |author4=Hotchi T. |author5=Sullivan D. |author6=Streufert S. |author7=Fisk W.J. |year=2012 |journal=Environmental Health Perspectives |volume=120 |issue=12 |pages=1671–1677 |url=http://ehp.niehs.nih.gov/wp-content/uploads/2012/09/ehp.1104789.pdf |doi=10.1289/ehp.1104789 |pmid=23008272 |pmc=3548274 |access-date=11 December 2014 |archive-url=https://web.archive.org/web/20160305212909/http://ehp.niehs.nih.gov/wp-content/uploads/2012/09/ehp.1104789.pdf |archive-date=5 March 2016 |url-status=dead |df=dmy-all }}&lt;/ref&gt; Another study observed a decline in basic activity level and information usage at 1000 ppm, when compared to 500 ppm.&lt;ref name=&quot;scores2016&quot;&gt;{{cite journal |title=Associations of Cognitive Function Scores with Carbon Dioxide, Ventilation, and Volatile Organic Compound Exposures in Office Workers: A Controlled Exposure Study of Green and Conventional Office Environments |author=Joseph G. Allen |author2=Piers MacNaughton |author3=Usha Satish |author4=Suresh Santanam |author5=Jose Vallarino |author6=John D. Spengler |year=2016 |journal=Environmental Health Perspectives |volume=124 |issue=6 |pages=805–812 |doi=10.1289/ehp.1510037 |pmid=26502459 |pmc=4892924 |df=dmy-all }}&lt;/ref&gt;
+
+==== Ventilation ====
+[[File:CO2Mini monitor.jpg|thumb|{{CO2}} concentration meter using a [[nondispersive infrared sensor]]]]
+Poor ventilation is one of the main causes of excessive {{CO2}} concentrations in closed spaces. Carbon dioxide differential above outdoor concentrations at steady state conditions (when the occupancy and ventilation system operation are sufficiently long that {{CO2}} concentration has stabilized) are sometimes used to estimate ventilation rates per person.{{citation needed|date=June 2014}} Higher {{CO2}} concentrations are associated with occupant health, comfort and performance degradation.&lt;ref&gt;{{Cite journal|last=Allen Joseph G.|last2=MacNaughton Piers|last3=Satish Usha|last4=Santanam Suresh|last5=Vallarino Jose|last6=Spengler John D.|date=2016-06-01|title=Associations of Cognitive Function Scores with Carbon Dioxide, Ventilation, and Volatile Organic Compound Exposures in Office Workers: A Controlled Exposure Study of Green and Conventional Office Environments|journal=Environmental Health Perspectives|volume=124|issue=6|pages=805–812|doi=10.1289/ehp.1510037|pmc=4892924|pmid=26502459}}&lt;/ref&gt;&lt;ref&gt;{{Cite web|url=https://thinkprogress.org/exclusive-elevated-co2-levels-directly-affect-human-cognition-new-harvard-study-shows-2748e7378941/|title=Exclusive: Elevated CO2 Levels Directly Affect Human Cognition, New Harvard Study Shows|last=Romm|first=Joe|date=2015-10-26|website=ThinkProgress|url-status=live|archive-url=|archive-date=|access-date=2019-10-14}}&lt;/ref&gt; [[ASHRAE]] Standard 62.1–2007 ventilation rates may result in indoor concentrations up to 2,100 ppm above ambient outdoor conditions. Thus if the outdoor concentration is 400 ppm, indoor concentrations may reach 2,500 ppm with ventilation rates that meet this industry consensus standard. Concentrations in poorly ventilated spaces can be found even higher than this (range of 3,000 or 4,000).
+
+Miners, who are particularly vulnerable to gas exposure due to an insufficient ventilation, referred to mixtures of carbon dioxide and nitrogen as &quot;[[blackdamp]],&quot; &quot;choke damp&quot; or &quot;stythe.&quot; Before more effective technologies were developed, [[miners]] would frequently monitor for dangerous levels of blackdamp and other gases in mine shafts by bringing a caged [[Domestic Canary|canary]] with them as they worked. The canary is more sensitive to asphyxiant gases than humans, and as it became unconscious would stop singing and fall off its perch. The [[Davy lamp]] could also detect high levels of blackdamp (which sinks, and collects near the floor) by burning less brightly, while [[methane]], another suffocating gas and explosion risk, would make the lamp burn more brightly.
+
+In February 2020, three people died from suffocation at a party in Moscow when dry ice (frozen CO2) was added to a swimming pool to cool it down.&lt;ref&gt;https://www.bbc.co.uk/news/world-europe-51680049&lt;/ref&gt;
+{{clear}}
+
+=== Human physiology ===
+
+==== Content ====
+{|class=&quot;wikitable floatright&quot; style=&quot;text-align: center;&quot;
+|+[[Reference range]]s or averages for [[partial pressure of carbon dioxide|partial pressures of carbon dioxide]] (abbreviated p{{CO2}})
+|-
+! !! [[kilopascal|kPa]] !! [[mmHg]]
+|-
+! scope=&quot;row&quot; | [[vein|Venous]] blood carbon dioxide
+| {{convert|41–51|mmHg|kPa|order=flip|disp=tablecen}}&lt;ref name=brookside&gt;{{cite web |title=ABG (Arterial Blood Gas) |website=Brookside Associates |url=http://www.brooksidepress.org/Products/OperationalMedicine/DATA/operationalmed/Lab/ABG_ArterialBloodGas.htm |access-date=2017-01-02}}&lt;/ref&gt;
+|-
+! scope=&quot;row&quot; | Alveolar [[pulmonary gas pressures|pulmonary&lt;br&gt;gas pressures]]
+| {{convert|36|mmHg|kPa|order=flip|disp=tablecen}}
+|-
+! scope=&quot;row&quot; | [[Arterial blood gas#carbon dioxide|Arterial blood carbon dioxide]]
+| {{convert|35–45|mmHg|kPa|order=flip|disp=tablecen}}&lt;ref name=brookside/&gt;
+|}
+
+The body produces approximately {{convert|2.3|lb|kg}} of carbon dioxide per day per person,&lt;ref&gt;{{cite web |url=http://www.epa.gov/climatechange/fq/emissions.html |title=How much carbon dioxide do humans contribute through breathing? |accessdate=2009-04-30 |archiveurl=https://web.archive.org/web/20110202140715/http://www.epa.gov/climatechange/fq/emissions.html |archivedate=2011-02-02}}&lt;/ref&gt; containing {{convert|0.63|lb|g}} of carbon. {{anchor|partial pressure}} In humans, this carbon dioxide is carried through the [[venous system]] and is breathed out through the lungs, resulting in lower concentrations in the [[arteries]]. The carbon dioxide content of the blood is often given as the [[partial pressure]], which is the pressure which carbon dioxide would have had if it alone occupied the volume.&lt;ref&gt;{{cite book |author=Charles Henrickson |title=Chemistry |publisher=Cliffs Notes |year=2005 |isbn=978-0-7645-7419-1 |url=https://archive.org/details/chemistry00henr }}&lt;/ref&gt; In humans, the blood carbon dioxide contents is shown in the adjacent table:
+
+==== Transport in the blood ====
+{{CO2}} is carried in blood in three different ways. (The exact percentages vary depending whether it is arterial or venous blood).
+* Most of it (about 70% to 80%) is converted to [[bicarbonate]] ions {{chem|HCO|3|−}} by the enzyme [[carbonic anhydrase]] in the red blood cells,&lt;ref name=&quot;solarnav&quot;&gt;{{cite web |url=http://www.solarnavigator.net/solar_cola/carbon_dioxide.htm |title=Carbon dioxide |accessdate=2007-10-12 |publisher=solarnavigator.net}}&lt;/ref&gt; by the reaction {{CO2}} + {{chem|H|2|O}} → {{chem|H|2|CO|3}} → {{chem|H|+}} + {{chem|HCO|3|−}}.
+* 5–10% is dissolved in the [[Blood plasma|plasma]]&lt;ref name=&quot;solarnav&quot;/&gt;
+* 5–10% is bound to [[hemoglobin]] as [[carbamino]] compounds&lt;ref name=&quot;solarnav&quot;/&gt;
+
+[[Hemoglobin]], the main oxygen-carrying molecule in [[red blood cell]]s, carries both oxygen and carbon dioxide. However, the {{CO2}} bound to hemoglobin does not bind to the same site as oxygen. Instead, it combines with the N-terminal groups on the four globin chains. However, because of [[allosteric regulation|allosteric]] effects on the hemoglobin molecule, the binding of {{CO2}} decreases the amount of oxygen that is bound for a given partial pressure of oxygen. This is known as the [[Haldane Effect]], and is important in the transport of carbon dioxide from the tissues to the lungs. Conversely, a rise in the partial pressure of {{CO2}} or a lower pH will cause offloading of oxygen from hemoglobin, which is known as the [[Bohr effect]].
+
+==== Regulation of respiration ====
+{{more citations needed section|date=June 2014}}
+Carbon dioxide is one of the mediators of local [[autoregulation]] of blood supply. If its concentration is high, the [[capillaries]] expand to allow a greater blood flow to that tissue.
+
+Bicarbonate ions are crucial for regulating blood pH. A person's breathing rate influences the level of {{CO2}} in their blood. Breathing that is too slow or shallow causes [[respiratory acidosis]], while breathing that is too rapid leads to [[hyperventilation]], which can cause [[alkalosis|respiratory alkalosis]].
+
+Although the body requires oxygen for metabolism, low oxygen levels normally do not stimulate breathing. Rather, breathing is stimulated by higher carbon dioxide levels. As a result, breathing low-pressure air or a gas mixture with no oxygen at all (such as pure nitrogen) can lead to loss of consciousness without ever experiencing [[air hunger]]. This is especially perilous for high-altitude fighter pilots. It is also why flight attendants instruct passengers, in case of loss of cabin pressure, to apply the [[oxygen mask]] to themselves first before helping others; otherwise, one risks losing consciousness.&lt;ref name=&quot;solarnav&quot;/&gt;
+
+The respiratory centers try to maintain an arterial {{CO2}} pressure of 40&amp;nbsp;mm Hg. With intentional hyperventilation, the {{CO2}} content of arterial blood may be lowered to 10–20&amp;nbsp;mm Hg (the oxygen content of the blood is little affected), and the respiratory drive is diminished. This is why one can hold one's breath longer after hyperventilating than without hyperventilating. This carries the risk that unconsciousness may result before the need to breathe becomes overwhelming, which is why hyperventilation is particularly dangerous before free diving.
+
+== See also ==
+{{Portal|Chemistry}}
+{{div col}}
+* {{annotated link|Arterial blood gas}}
+* {{annotated link|Bosch reaction}}
+* {{annotated link|Bottled gas}}
+* {{annotated link|Carbon dioxide sensor}}
+* {{annotated link|Carbon sequestration}}
+* {{annotated link|Cave of Dogs}}
+* {{annotated link|EcoCute}} – as refrigerants
+* {{annotated link|Emission standard}}s
+* {{annotated link|Indoor air quality#Carbon dioxide|Indoor air quality}}
+* {{annotated link|Kaya identity}}
+* {{annotated link|Lake Kivu}}
+* {{annotated link|List of least carbon efficient power stations}}
+* {{annotated link|List of countries by carbon dioxide emissions}}
+* {{annotated link|Meromictic lake}}
+* {{annotated link|pCO2}}
+* {{annotated link|Gilbert Plass}} (early work on {{CO2}} and climate change)
+* {{annotated link|Sabatier reaction}}
+* NASA's {{annotated link|Orbiting Carbon Observatory 2}}
+* {{annotated link|Greenhouse Gases Observing Satellite}}
+{{div col end}}
+
+== References ==
+{{reflist}}
+
+== Further reading ==
+{{refbegin}}
+* {{cite journal |first=O.A. |last=Seppänen |last2=Fisk |first2=W.J. |last3=Mendell |first3=M.J. |title=Association of Ventilation Rates and {{CO2}} Concentrations with Health and Other Responses in Commercial and Institutional Buildings |journal=Indoor Air |volume=9 |issue=4 |pages=226–252 |date=December 1999 |doi=10.1111/j.1600-0668.1999.00003.x |pmid=10649857 |url=https://indoor.lbl.gov/sites/all/files/43334.pdf |url-status=dead |archiveurl=https://web.archive.org/web/20161227032839/https://indoor.lbl.gov/sites/all/files/43334.pdf |archivedate=27 December 2016 |df=dmy-all }}
+* {{cite journal |last=Shendell |first=D.G. |last2=Prill |first2=R. |last3=Fisk |first3=W.J. |last4=Apte |first4=M.G. |last5=Blake |first5=D. |last6=Faulkner |first6=D. |title=Associations between classroom {{CO2}} concentrations and student attendance in Washington and Idaho |journal=Indoor Air |volume=14 |issue=5 |pages=333–341 |date=October 2004 |doi=10.1111/j.1600-0668.2004.00251.x |pmid=15330793 |url=https://indoor.lbl.gov/sites/all/files/lbnl-54413.pdf |url-status=dead |archiveurl=https://web.archive.org/web/20161227030811/https://indoor.lbl.gov/sites/all/files/lbnl-54413.pdf |archivedate=27 December 2016 |df=dmy-all |hdl=2376/5954 }}
+* {{cite journal |first=Jens |last=Soentgen |title= Hot air: The science and politics of {{CO2}} |journal=Global Environment |volume= 7 |issue=1 |pages= 134–171 |date= February 2014 |doi= 10.3197/197337314X13927191904925 }}
+* {{cite book |title=Good plant design and operation for onshore carbon capture installations and onshore pipelines: a recommended practice guidance document |url=https://hub.globalccsinstitute.com/publications/good-plant-design-and-operation-onshore-carbon-capture-installations-and-onshore-pipelines-recommended-practice-guidance-document |publisher=Energy Institute and Global Carbon Capture and Storage Institute |date=1 Sep 2010 |website=Global CCS Institute |quote=This new title is an essential guide for engineers, managers, procurement specialists and designers working on global carbon capture and storage projects. |access-date=2 January 2018 |archive-url=https://web.archive.org/web/20181107001428/https://hub.globalccsinstitute.com/publications/good-plant-design-and-operation-onshore-carbon-capture-installations-and-onshore-pipelines-recommended-practice-guidance-document |archive-date=7 November 2018 |url-status=dead }}
+{{refend}}
+
+==External links==
+{{Commons category}}
+{{Library resources box |lcheading=Carbon dioxide}}
+* {{ICSC|0021}}&lt;!-- in general: {{ICSC|AllDigits|TwoDigits}} --&gt;
+* [http://sdsdata.org/68399 Carbon dioxide MSDS] by Amerigas in the SDSdata.org database.
+* [https://www.cdc.gov/niosh/npg/npgd0103.html CDC – NIOSH Pocket Guide to Chemical Hazards – Carbon Dioxide]
+* [http://www.uigi.com/carbondioxide.html {{CO2}} Carbon Dioxide Properties, Uses, Applications]
+* [http://www.dryiceinfo.com/science.htm Dry Ice information]
+* [https://web.archive.org/web/20070225181531/http://www.cmdl.noaa.gov/ccgg/trends/ Trends in Atmospheric Carbon Dioxide] (NOAA)
+* [https://books.google.com/books?id=RicDAAAAMBAJ&amp;pg=PA53 &quot;A War Gas That Saves Lives&quot;]. ''[[Popular Science]]'', June 1942, pp.&amp;nbsp;53–57.
+* [http://googas.ov.ingv.it/ The on-line catalogue of {{CO2}} natural emissions in Italy]
+* [http://www.chemistry-reference.com/q_compounds.asp?CAS=124-38-9 Reactions, Thermochemistry, Uses, and Function of Carbon Dioxide]
+* [http://www.periodicvideos.com/videos/mv_carbon_dioxide_one.htm Carbon Dioxide – Part One] and [http://www.periodicvideos.com/videos/mv_carbon_dioxide_two.htm Carbon Dioxide – Part Two] at ''[[The Periodic Table of Videos]]'' (University of Nottingham)
+
+{{Oxides}}
+{{Oxides of carbon}}
+{{Inorganic compounds of carbon}}
+{{Global Warming|state=collapsed}}
+{{Molecules detected in outer space}}
+{{Carbon compounds}}
+{{Authority control}}
+{{oxygen compounds}}
+
+{{DEFAULTSORT:Carbon Dioxide}}
+[[Category:Carbon dioxide| ]]
+[[Category:Acid anhydrides]]
+[[Category:Acidic oxides]]
+[[Category:Coolants]]
+[[Category:Fire suppression agents]]
+[[Category:Greenhouse gases]]
+[[Category:Household chemicals]]
+[[Category:Inorganic solvents]]
+[[Category:Laser gain media]]
+[[Category:Nuclear reactor coolants]]
+[[Category:Oxocarbons]]
+[[Category:Propellants]]
+[[Category:Refrigerants]]
+[[Category:Gaseous signaling molecules]]
+[[Category:Heterocumulenes]]
+[[Category:E-number additives]]</text>
+      <sha1>e41rhfumvymuvqvpyndolrpran92tux</sha1>
+    </revision>
+  </page>

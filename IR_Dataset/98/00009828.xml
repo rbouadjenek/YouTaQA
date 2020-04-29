@@ -1,0 +1,38 @@
+  <page>
+    <title>Execution unit</title>
+    <ns>0</ns>
+    <id>9828</id>
+    <revision>
+      <id>910778858</id>
+      <parentid>907486945</parentid>
+      <timestamp>2019-08-14T11:32:51Z</timestamp>
+      <contributor>
+        <ip>88.6.89.149</ip>
+      </contributor>
+      <comment>Removed &quot;see also&quot; misstakingly related to GPU execution units, not CPU execution units</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{Multiple issues|
+{{More footnotes|date=December 2014}}
+{{Update|date=December 2016 | inaccurate=yes}}
+}}
+
+In [[computer engineering]], an '''execution unit''' (also called a '''functional unit''') is a part of the [[central processing unit]] (CPU) that performs the operations and calculations as instructed by the [[computer program]]. It may have its own internal control sequence unit, which is not to be confused with the CPU's main [[control unit]], some [[Processor register|register]]s, and other internal units such as an [[arithmetic logic unit]] (ALU), [[address generation unit]] (AGU), [[floating-point unit]] (FPU), [[load-store unit (computing)|load-store unit]] (LSU), [[branch execution unit]] (BEU)&lt;ref&gt;https://www.realworldtech.com/haswell-cpu/4/&lt;/ref&gt; or some smaller and more specific components.&lt;ref&gt;[https://web.archive.org/web/20131231145405/http://people.cs.umass.edu/~weems/CmpSci535/Discussion10.html &quot;Execution Unit&quot; discussion from the University of Massachusetts Amherst], archived on the [[Wayback Machine]]&lt;/ref&gt;
+
+It is common for modern CPUs to have multiple parallel execution units, which is referred to as [[superscalar]] design. The simplest arrangement is to use one, the bus manager, to manage the memory interface, and the others to perform calculations. Additionally, modern CPUs' execution units are usually [[Instruction pipelining|pipelined]].
+
+== References ==
+{{Reflist}}
+
+{{CPU technologies}}
+{{Basic computer components}}
+
+[[Category:Central processing unit]]
+[[Category:Computer arithmetic]]
+[[Category:Superscalar microprocessors| ]]
+
+
+{{Comp-eng-stub}}</text>
+      <sha1>0v9zdqkeuheyob4fe66j4r6v6lcv7q8</sha1>
+    </revision>
+  </page>

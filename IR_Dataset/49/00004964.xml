@@ -1,0 +1,1229 @@
+  <page>
+    <title>Bernoulli number</title>
+    <ns>0</ns>
+    <id>4964</id>
+    <revision>
+      <id>942135766</id>
+      <parentid>942130636</parentid>
+      <timestamp>2020-02-22T20:41:59Z</timestamp>
+      <contributor>
+        <username>Sapphorain</username>
+        <id>12923157</id>
+      </contributor>
+      <comment>/* A companion to the Bernoulli numbers */ Section removed after 6 months without objection; see talk page</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{Use American English|date = March 2019}}
+{{Use Harvard referencing|date=May 2019}}
+{{Short description|Rational number sequence}}
+{| class=wikitable style=&quot;text-align: right; float:right; clear:right; margin-left:1em;&quot;
+|+ Bernoulli numbers {{math|''B''{{su|p=±|b=''n''}}}}
+|- 
+! {{mvar|n}} !! fraction !! decimal
+|- decimal
+| 0 || 1 || +1.000000000 
+|-
+| 1 || ±{{sfrac|1|2}} || ±0.500000000
+|-
+| 2 || {{sfrac|1|6}} || +0.166666666
+|- style=&quot;background:#ABE&quot;
+| 3 || 0 || +0.000000000
+|-
+| 4 || −{{sfrac|1|30}} || −0.033333333
+|- style=&quot;background:#ABE&quot;
+| 5 || 0 || +0.000000000
+|-
+| 6 || {{sfrac|1|42}} || +0.023809523
+|- style=&quot;background:#ABE&quot;
+| 7 || 0 || +0.000000000
+|-
+| 8 || −{{sfrac|1|30}} || −0.033333333
+|- style=&quot;background:#ABE&quot;
+| 9 || 0 || +0.000000000
+|-
+| 10 || {{sfrac|5|66}} || +0.075757575
+|- style=&quot;background:#ABE&quot;
+| 11 || 0 || +0.000000000
+|-
+| 12 || −{{sfrac|691|2730}} || −0.253113553
+|- style=&quot;background:#ABE&quot;
+| 13 || 0 || +0.000000000
+|-
+| 14 || {{sfrac|7|6}} || +1.166666666
+|- style=&quot;background:#ABE&quot;
+| 15 || 0 || +0.000000000
+|-
+| 16 || −{{sfrac|3617|510}} || −7.092156862
+|- style=&quot;background:#ABE&quot;
+| 17 || 0 || +0.000000000
+|-
+| 18 || {{sfrac|43867|798}} || +54.97117794
+|- style=&quot;background:#ABE&quot;
+| 19 || 0 || +0.000000000
+|-
+| 20 || −{{sfrac|174611|330}} || −529.1242424
+|}
+
+In [[mathematics]], the '''Bernoulli numbers''' {{math|''B''&lt;sub&gt;''n''&lt;/sub&gt;}} are a [[sequence]] of [[rational number]]s which occur frequently in [[number theory]]. The Bernoulli numbers appear in (and can be defined by) the [[Taylor series]] expansions of the [[tangent function|tangent]] and [[Hyperbolic function|hyperbolic tangent]] functions, in [[Faulhaber's formula]] for the sum of ''m''-th powers of the first ''n'' positive integers, in the [[Euler–Maclaurin formula]], and in expressions for certain values of the [[Riemann zeta function]].
+
+The values of the first 20 Bernoulli numbers are given in the adjacent table. Two conventions are used in the literature, denoted here by &lt;math&gt;B^{-{}}_n&lt;/math&gt; and &lt;math&gt;B^{+{}}_n&lt;/math&gt;; they differ only for {{math|''n'' {{=}} 1}}, where &lt;math&gt;B^{-{}}_1=-1/2&lt;/math&gt; and &lt;math&gt;B^{+{}}_1=+1/2&lt;/math&gt;. For every odd {{math|''n'' &gt; 1}}, {{math|''B''&lt;sub&gt;''n''&lt;/sub&gt; {{=}} 0}}. For every even {{math|''n'' &gt; 0}}, {{math|''B''&lt;sub&gt;''n''&lt;/sub&gt;}} is negative if {{math|''n''}} is divisible by 4 and positive otherwise. The Bernoulli numbers are special values of the [[Bernoulli polynomial]]s &lt;math&gt;B_n(x)&lt;/math&gt;, with &lt;math&gt;B^{-{}}_n=B_n(0)&lt;/math&gt; and &lt;math&gt;B^+_n=B_n(1)&lt;/math&gt; {{harv|Weisstein|2016}}. 
+
+The Bernoulli numbers were discovered around the same time by the Swiss mathematician [[Jacob Bernoulli]], after whom they are named, and independently by Japanese mathematician [[Takakazu Seki|Seki Kōwa]].  Seki's discovery was posthumously published in 1712 ({{harvnb|Selin|1997|p=891}}; {{harvnb|Smith|Mikami|1914|p=108}}) in his work ''Katsuyo Sampo''; Bernoulli's, also posthumously, in his ''[[Ars Conjectandi]]'' of 1713.  [[Ada Lovelace]]'s [[Ada Byron's notes on the analytical engine|note G]] on the [[Analytical Engine]] from 1842 describes an [[algorithm]] for generating Bernoulli numbers with [[Charles Babbage|Babbage]]'s machine {{harv|Menabrea|1842|loc=''Note G''}}. As a result, the Bernoulli numbers have the distinction of being the subject of the first published complex [[computer program]].
+
+==Notation==
+The superscript ± used in this article designates the two sign conventions for Bernoulli numbers. Only the {{math|1=''n'' = 1}} term is affected: 
+*{{math|''B''{{su|p=−|b=''n''}}}} with {{math|1=''B''{{su|p=−|b=1}} = −{{sfrac|1|2}}}} ({{OEIS2C|id=A027641}} / {{OEIS2C|id=A027642}}) is the sign convention prescribed by [[NIST]] and most modern textbooks {{harv|Arfken|1970|p=278}}.
+* {{math|''B''{{su|p=+|b=''n''}}}} with {{math|1=''B''{{su|p=+|b=1}} = +{{sfrac|1|2}}}} ({{OEIS2C|id=A164555}} / {{OEIS2C|id=A027642}}) is sometimes used in the older literature {{harv|Weisstein|2016}}.
+
+In the formulas below, one can switch from one sign convention to the other with the relation &lt;math&gt;B_n^{+{}}=(-1)^n B_n^{-{}}&lt;/math&gt;.
+
+Since {{math|1=''B''&lt;sub&gt;''n''&lt;/sub&gt; = 0}} for all odd {{math|''n'' &gt; 1}}, and many formulas only involve even-index Bernoulli numbers, some authors write &quot;{{math|''B''&lt;sub&gt;''n''&lt;/sub&gt;}}&quot; to mean {{math|''B''&lt;sub&gt;2''n''&lt;/sub&gt;}}.  This article does not follow this notation.
+
+==History==
+
+=== Early history ===
+
+The Bernoulli numbers are rooted in the early history of the computation of sums of integer powers, which have been of interest to mathematicians since antiquity.
+
+[[File:Seki Kowa Katsuyo Sampo Bernoulli numbers.png|thumb|right|A page from Seki Takakazu's ''Katsuyo Sampo'' (1712), tabulating binomial coefficients and Bernoulli numbers]]
+
+Methods to calculate the sum of the first {{mvar|n}} positive integers, the sum of the squares and of the cubes of the first {{mvar|n}} positive integers were known, but there were no real 'formulas', only descriptions given entirely in words. Among the great mathematicians of antiquity to consider this problem were [[Pythagoras]] (c. 572–497&amp;nbsp;BCE, Greece), [[Archimedes]] (287–212&amp;nbsp;BCE, Italy), [[Aryabhata]] (b. 476, India), [[Abu Bakr al-Karaji]] (d. 1019, Persia) and Abu Ali al-Hasan ibn al-Hasan ibn [[al-Haytham]] (965–1039, Iraq).
+
+During the late sixteenth and early seventeenth centuries mathematicians made significant progress.  In the West [[Thomas Harriot]] (1560–1621) of England, [[Johann Faulhaber]] (1580–1635) of Germany, [[Pierre de Fermat]] (1601–1665) and fellow French mathematician [[Blaise Pascal]] (1623–1662) all played important roles.
+
+Thomas Harriot seems to have been the first to derive and write formulas for sums of powers using symbolic notation, but even he calculated only up to the sum of the fourth powers.  Johann Faulhaber gave formulas for sums of powers up to the 17th power in his 1631 ''Academia Algebrae'', far higher than anyone before him, but he did not give a general formula.
+
+Blaise Pascal in 1654 proved [[Faulhaber's formula|''Pascal's identity'']] relating the sums of the {{math|''p''}}th powers of the first {{math|''n''}} positive integers for {{math|''p'' {{=}} 0, 1, 2, …, ''k''}}.
+
+The Swiss mathematician Jakob Bernoulli (1654–1705) was the first to realize the existence of a single sequence of constants {{math|''B''&lt;sub&gt;0&lt;/sub&gt;, ''B''&lt;sub&gt;1&lt;/sub&gt;, ''B''&lt;sub&gt;2&lt;/sub&gt;,…}} which provide a uniform formula for all sums of powers {{harv|Knuth|1993}}.
+
+The joy Bernoulli experienced when he hit upon the pattern needed to compute quickly and easily the coefficients of his formula for the sum of the {{mvar|c}}th powers for any positive integer {{math|''c''}} can be seen from his comment. He wrote:
+
+:&quot;With the help of this table, it took me less than half of a quarter of an hour to find that the tenth powers of the first 1000 numbers being added together will yield the sum 91,409,924,241,424,243,424,241,924,242,500.&quot;
+
+Bernoulli's result was published posthumously in ''[[Ars Conjectandi]]'' in 1713.  [[Seki Kōwa]] independently discovered the Bernoulli numbers and his result was published a year earlier, also posthumously, in 1712 {{harv|Selin|1997|p=891}}. However, Seki did not present his method as a formula based on a sequence of constants.
+
+Bernoulli's formula for sums of powers is the most useful and generalizable formulation to date. The coefficients in Bernoulli's formula are now called Bernoulli numbers, following a suggestion of [[Abraham de Moivre]].
+
+Bernoulli's formula is sometimes called [[Faulhaber's formula]] after Johann Faulhaber who found remarkable ways to calculate sum of powers but never stated Bernoulli's formula. To call Bernoulli's formula Faulhaber's formula does injustice to Bernoulli and simultaneously hides the genius of Faulhaber as Faulhaber's formula is in fact more efficient than Bernoulli's formula. According to Knuth {{harv|Knuth|1993}} a rigorous proof of Faulhaber's formula was first published by [[Carl Gustav Jacob Jacobi|Carl Jacobi]] in 1834 {{harv|Jacobi|1834}}. Knuth's in-depth study of Faulhaber's formula concludes (the nonstandard notation on the LHS is explained further on):
+
+:''&quot;Faulhaber never discovered the Bernoulli numbers; i.e., he never realized that a single sequence of constants'' {{math|''B''&lt;sub&gt;0&lt;/sub&gt;, ''B''&lt;sub&gt;1&lt;/sub&gt;, ''B''&lt;sub&gt;2&lt;/sub&gt;,}} ''… would provide a uniform''
+
+:: &lt;math&gt; \quad \sum n^m = \frac 1{m+1}\left( B_0n^{m+1}+\binom{m+1} 1 B^+_1 n^m+\binom{m+1} 2B_2n^{m-1}+\cdots+\binom{m+1}mB_mn\right) &lt;/math&gt;
+::or
+:: &lt;math&gt; \quad \sum n^m = \frac 1{m+1}\left( B_0n^{m+1}-\binom{m+1} 1 B^{-{}}_1 n^m+\binom{m+1} 2B_2n^{m-1}-\cdots +(-1)^m\binom{m+1}mB_mn\right) &lt;/math&gt;
+:''for all sums of powers. He never mentioned, for example, the fact that almost half of the coefficients turned out to be zero after he had converted his formulas for'' {{math|∑ ''n&lt;sup&gt;m&lt;/sup&gt;''}} ''from polynomials in {{mvar|N}} to polynomials in {{mvar|n}}.&quot;  {{harv|Knuth|1993|p=14}}''
+
+=== Reconstruction of &quot;Summae Potestatum&quot; ===
+
+[[File:JakobBernoulliSummaePotestatum.png|thumb|right|upright=2.5|Jakob Bernoulli's &quot;Summae Potestatum&quot;, 1713]]
+
+The Bernoulli numbers {{OEIS2C|id=A164555}}(n)/{{OEIS2C|id=A027642}}(n) were introduced by Jakob Bernoulli in the book ''[[Ars Conjectandi]]'' published posthumously in 1713 page 97. The main formula can be seen in the second half of the corresponding facsimile. The constant coefficients denoted {{math|''A''}}, {{math|''B''}}, {{math|''C''}} and {{math|''D''}} by Bernoulli are mapped to the notation which is now prevalent as {{math|''A'' {{=}} ''B''&lt;sub&gt;2&lt;/sub&gt;}}, {{math|''B'' {{=}} ''B''&lt;sub&gt;4&lt;/sub&gt;}}, {{math|''C'' {{=}} ''B''&lt;sub&gt;6&lt;/sub&gt;}}, {{math|''D'' {{=}} ''B''&lt;sub&gt;8&lt;/sub&gt;}}. The expression {{math|''c''·''c''−1·''c''−2·''c''−3}} means {{math|''c''·(''c''−1)·(''c''−2)·(''c''−3)}} – the small dots are used as grouping symbols. Using today's terminology these expressions are [[Pochhammer symbol|falling factorial powers]] {{math|''c''&lt;sup&gt;{{underline|''k''}}&lt;/sup&gt;}}. The factorial notation {{math|''k''!}} as a shortcut for {{math|1 × 2 × … × ''k''}} was not introduced until 100 years later. The integral symbol on the left hand side goes back to [[Gottfried Wilhelm Leibniz]] in 1675 who used it as a long letter {{math|''S''}} for &quot;summa&quot; (sum).{{efn|The {{harvp|''Mathematics Genealogy Project''|n.d.}} shows Leibniz as the academic&lt;!--not doctoral--&gt; advisor of Jakob Bernoulli. See also {{harvp|Miller|2017}}.}} The letter {{math|''n''}} on the left hand side is not an index of [[summation]] but gives the upper limit of the range of summation which is to be understood as {{math|1, 2, …, ''n''}}. Putting things together, for positive {{math|''c''}}, today a mathematician is likely to write Bernoulli's formula as:
+
+: &lt;math&gt; \sum_{k=1}^n k^c = \frac{n^{c+1}}{c+1}+\frac 1 2 n^c+\sum_{k=2}^c \frac{B_k}{k!} c^{\underline{k-1}}n^{c-k+1}.&lt;/math&gt;
+
+This formula suggests setting {{math|''B''&lt;sub&gt;1&lt;/sub&gt; {{=}} {{sfrac|1|2}}}} when switching from the so-called 'archaic' enumeration which uses only the even indices 2, 4, 6… to the modern form (more on different conventions in the next paragraph). Most striking in this context is the fact that the [[falling factorial]] {{math|''c''&lt;sup&gt;{{underline|''k''−1}}&lt;/sup&gt;}} has for {{math|''k'' {{=}} 0}} the value {{math|{{sfrac|1|''c'' + 1}}}} {{harv|Graham|Knuth|Patashnik|1989|loc=Section 2.51}}. Thus Bernoulli's formula can be written
+: &lt;math&gt; \sum_{k=1}^n k^c = \sum_{k=0}^c \frac{B_k}{k!}c^{\underline{k-1}} n^{c-k+1}&lt;/math&gt;
+
+if {{math|''B''&lt;sub&gt;1&lt;/sub&gt; {{=}} 1/2}}, recapturing the value Bernoulli gave to the coefficient at that position.
+
+The formula for &lt;math&gt;\textstyle \sum_{k=1}^n k^9&lt;/math&gt; in the first half contains an error at the last term; it should be &lt;math&gt;-\tfrac {3}{20}n^2&lt;/math&gt; instead of &lt;math&gt;-\tfrac {1}{12}n^2&lt;/math&gt;.
+
+== Definitions ==
+
+Many characterizations of the Bernoulli numbers have been found in the last 300 years, and each could be used to introduce these numbers.  Here only three of the most useful ones are mentioned:
+
+* a recursive equation,
+* an explicit formula,
+* a generating function.
+
+For the proof of the [[Logical equivalence|equivalence]] of the three approaches see {{Harv|Ireland|Rosen|1990}} or {{Harv|Conway|Guy|1996}}.
+
+=== Recursive definition ===
+
+The Bernoulli numbers obey the sum formulas {{harv|Weisstein|2016}}
+: &lt;math&gt; \begin{align} \sum_{k=0}^{m}\binom {m+1} k B^{-{}}_k &amp;= \delta_{m, 0} \\ \sum_{k=0}^{m}\binom {m+1} k B^{+{}}_k &amp;= m+1 \end{align}&lt;/math&gt;
+where &lt;math&gt;m=0,1,2...&lt;/math&gt; and {{math|''δ''}} denotes the [[Kronecker delta]]. Solving for &lt;math&gt;B^{\mp{}}_m&lt;/math&gt; gives the recursive formulas
+: &lt;math&gt;\begin{align}
+  B_m^{-{}} &amp;= \delta_{m, 0} - \sum_{k=0}^{m-1} \binom{m}{k} \frac{B^{-{}}_k}{m - k + 1} \\
+  B_m^+ &amp;= 1 - \sum_{k=0}^{m-1} \binom{m}{k} \frac{B^+_k}{m - k + 1}.
+\end{align}&lt;/math&gt;
+
+=== Explicit definition ===
+
+In 1893 [[Louis Saalschütz]] listed  a total of 38 explicit formulas for the Bernoulli numbers {{Harv|Saalschütz|1893}}, usually giving some reference in the older literature. One of them is:
+:&lt;math&gt;\begin{align}
+  B^{-{}}_m &amp;= \sum_{k=0}^m \sum_{v=0}^k (-1)^v \binom{k}{v} \frac{v^m}{k + 1} \\
+  B^+_m &amp;= \sum_{k=0}^m \sum_{v=0}^k (-1)^v \binom{k}{v} \frac{(v + 1)^m}{k + 1}.
+\end{align}&lt;/math&gt;
+
+=== Generating function ===
+
+The exponential [[generating function]]s are
+:&lt;math&gt;\begin{align}
+  \frac{t}{e^t - 1}    &amp;= \frac{t}{2} \left( \operatorname{coth} \frac{t}{2} -1 \right) &amp;= \sum_{m=0}^\infty \frac{B^{-{}}_m t^m}{m!}\\
+  \frac{t}{1 - e^{-t}} &amp;= \frac{t}{2} \left( \operatorname{coth} \frac{t}{2} +1 \right) &amp;= \sum_{m=0}^\infty \frac{B^+_m t^m}{m!}. 
+\end{align}&lt;/math&gt;
+
+The (ordinary) generating function
+: &lt;math&gt; z^{-1} \psi_1(z^{-1}) = \sum_{m=0}^{\infty} B^+_m z^m&lt;/math&gt;
+
+is an [[asymptotic series]]. It contains the [[trigamma function]] {{math|''ψ''&lt;sub&gt;1&lt;/sub&gt;}}.
+
+== Bernoulli numbers and the Riemann zeta function ==
+
+[[File:BernoulliNumbersByZetaLowRes.png|thumb|right|The Bernoulli numbers as given by the Riemann zeta function.]]
+
+The Bernoulli numbers can be expressed in terms of the [[Riemann zeta function]]:
+
+:{{math|1=''B''{{su|p=+|b=''n''}} = −''nζ''(1 − ''n'')}} for {{math|''n'' ≥ 1}}.
+
+Here the argument of the zeta function is 0 or negative.
+
+By means of the zeta [[Riemann zeta function#The functional equation|functional equation]] and the gamma [[Gamma function#General|reflection formula]] the following relation can be obtained {{harv|Arfken|1970|p=279}}:
+
+:&lt;math&gt; B_{2n} = \frac {(-1)^{n+1}2(2n)!} {(2\pi)^{2n}} \zeta(2n) &lt;/math&gt; for {{math|''n'' ≥ 1}}.
+
+Now the argument of the zeta function is positive.
+
+It then follows from {{math|''&amp;zeta;'' &amp;rarr; 1}} ({{math|''n'' &amp;rarr; &amp;infin;}}) and [[Stirling formula|Stirling's formula]] that
+: &lt;math&gt; |B_{2 n}| \sim 4 \sqrt{\pi n} \left(\frac{n}{ \pi e} \right)^{2n} &lt;/math&gt; for {{math|''n'' &amp;rarr; &amp;infin;}}.
+
+== Efficient computation of Bernoulli numbers ==
+
+In some applications it is useful to be able to compute the Bernoulli numbers {{math|''B''&lt;sub&gt;0&lt;/sub&gt;}} through {{math|''B''&lt;sub&gt;''p'' − 3&lt;/sub&gt;}} modulo {{mvar|p}}, where {{mvar|p}} is a prime; for example to test whether [[Vandiver's conjecture]] holds for {{mvar|p}}, or even just to determine whether {{mvar|p}} is an [[irregular prime]]. It is not feasible to carry out such a computation using the above recursive formulae, since at least (a constant multiple of) {{math|''p''&lt;sup&gt;2&lt;/sup&gt;}} arithmetic operations would be required. Fortunately, faster methods have been developed {{harv|Buhler|Crandall|Ernvall|Metsankyla|2001}} which require only {{math|''O''(''p'' (log ''p'')&lt;sup&gt;2&lt;/sup&gt;)}} operations (see [[big-O notation|big {{mvar|O}} notation]]).
+
+David Harvey {{harv|Harvey|2010}} describes an algorithm for computing Bernoulli numbers by computing {{math|''B''&lt;sub&gt;''n''&lt;/sub&gt;}} modulo {{mvar|p}} for many small primes {{mvar|p}}, and then reconstructing {{math|''B''&lt;sub&gt;''n''&lt;/sub&gt;}} via the [[Chinese remainder theorem]]. Harvey writes that the [[Asymptotic analysis|asymptotic]] [[Computational complexity theory|time complexity]] of this algorithm is {{math|''O''(''n''&lt;sup&gt;2&lt;/sup&gt; log(''n'')&lt;sup&gt;2 + ''ε''&lt;/sup&gt;)}} and claims that this [[implementation]] is significantly faster than implementations based on other methods. Using this implementation Harvey computed {{math|''B''&lt;sub&gt;''n''&lt;/sub&gt;}} for {{math|''n'' {{=}} 10&lt;sup&gt;8&lt;/sup&gt;}}. Harvey's implementation has been included in [[SageMath]] since version 3.1. Prior to that, Bernd Kellner {{harv|Kellner|2002}}&lt;!--A more specific citation would be preferable.--&gt; computed {{math|''B''&lt;sub&gt;''n''&lt;/sub&gt;}} to full precision for {{math|''n'' {{=}} 10&lt;sup&gt;6&lt;/sup&gt;}} in December 2002 and Oleksandr Pavlyk {{harv|Pavlyk|2008}} for {{math|''n'' {{=}} 10&lt;sup&gt;7&lt;/sup&gt;}} with [[Mathematica]] in April 2008.
+
+:{| class=wikitable style=&quot;text-align:right&quot;
+! Computer !! Year !! ''n'' !! Digits*
+|-
+|align=left| J. Bernoulli || ~1689 || 10 || 1
+|-
+|align=left| L. Euler || 1748 || 30 || 8
+|- 
+|align=left| J. C. Adams || 1878 || 62 || 36
+|- 
+|align=left| D. E. Knuth, T. J. Buckholtz || 1967 || {{val|1672|fmt=gaps}} || {{val|3330|fmt=gaps}}
+|- 
+|align=left| G. Fee, [[S. Plouffe]] || 1996 || {{val|10000}} || {{val|27677}}
+|- 
+|align=left| G. Fee, S. Plouffe || 1996 || {{val|100000}} || {{val|376755}}
+|- 
+|align=left| B. C. Kellner || 2002 || {{val|1000000}} || {{val|4767529}}
+|- 
+|align=left| O. Pavlyk || 2008 || {{val|10000000}} || {{val|57675260}}
+|- 
+|align=left| D. Harvey || 2008 || {{val|100000000}} || {{val|676752569}}
+|}
+::&lt;nowiki&gt;*&lt;/nowiki&gt; ''Digits'' is to be understood as the exponent of 10 when {{math|''B''&lt;sub&gt;''n''&lt;/sub&gt;}} is written as a real number in normalized [[scientific notation]].
+
+== Applications of the Bernoulli numbers ==
+
+=== Asymptotic analysis ===
+Arguably the most important application of the Bernoulli numbers in mathematics is their use in the [[Euler–Maclaurin formula]]. Assuming that {{mvar|f}} is a sufficiently often differentiable function the Euler–Maclaurin formula can be written as {{harv|Graham|Knuth|Patashnik|1989|loc=9.67}}
+
+: &lt;math&gt;\sum_{k=a}^{b-1} f(k) = \int_a^b f(x)\,dx + \sum_{k=1}^m \frac{B^-_k}{k!} (f^{(k-1)}(b)-f^{(k-1)}(a))+R_-(f,m).&lt;/math&gt;
+
+This formulation assumes the convention {{math|1=''B''{{su|p=−|b=1}} = −{{sfrac|1|2}}}}. Using the convention {{math|1=''B''{{su|p=+|b=1}} = +{{sfrac|1|2}}}} the formula becomes
+
+: &lt;math&gt;\sum_{k=a+1}^{b} f(k) = \int_a^b f(x)\,dx + \sum_{k=1}^m \frac{B^+_k}{k!} (f^{(k-1)}(b)-f^{(k-1)}(a))+R_+(f,m).&lt;/math&gt;
+
+Here &lt;math&gt;f^{(0)}=f&lt;/math&gt; (i.e. the zeroth-order derivative of &lt;math&gt;f&lt;/math&gt; is just &lt;math&gt;f&lt;/math&gt;). Moreover, let &lt;math&gt;f^{(-1)}&lt;/math&gt; denote an [[antiderivative]] of &lt;math&gt;f&lt;/math&gt;. By the [[fundamental theorem of calculus]],
+
+: &lt;math&gt;\int_a^b f(x)\,dx = f^{(-1)}(b) - f^{(-1)}(a).&lt;/math&gt;
+
+Thus the last formula can be further simplified to the following succinct form of the Euler–Maclaurin formula
+
+: &lt;math&gt; \sum_{k=a}^{b}f(k)= \sum_{k=0}^m \frac{B_k}{k!} (f^{(k-1)}(b)-f^{(k-1)}(a))+R(f,m). &lt;/math&gt;
+
+This form is for example the source for the important Euler–Maclaurin expansion of the zeta function
+
+: &lt;math&gt; \begin{align}
+  \zeta(s) &amp; =\sum_{k=0}^m \frac{B^+_k}{k!} s^{\overline{k-1}} + R(s,m) \\
+           &amp; = \frac{B_0}{0!}s^{\overline{-1}} + \frac{B^+_1}{1!} s^{\overline{0}} + \frac{B_2}{2!} s^{\overline{1}} +\cdots+R(s,m) \\
+           &amp; = \frac{1}{s-1} + \frac{1}{2} + \frac{1}{12}s + \cdots + R(s,m).
+\end{align} &lt;/math&gt;
+
+Here {{math|''s''&lt;sup&gt;{{overline|''k''}}&lt;/sup&gt;}} denotes the [[Pochhammer symbol|rising factorial power]] {{harv|Graham|Knuth|Patashnik|1989|loc=2.44 and 2.52}}.
+
+Bernoulli numbers are also frequently used in other kinds of [[asymptotic expansion]]s. The following example is the classical Poincaré-type asymptotic expansion of the [[digamma function]] {{math|''ψ''}}.
+
+:&lt;math&gt;\psi(z) \sim \ln z - \sum_{k=1}^\infty \frac{B^+_k}{k z^k} &lt;/math&gt;
+
+=== Sum of powers ===
+
+{{main article|Faulhaber's formula}}
+
+Bernoulli numbers feature prominently in the [[Closed-form expression|closed form]] expression of the sum of the {{math|''m''}}th powers of the first {{math|''n''}} positive integers. For {{math|''m'', ''n'' ≥ 0}} define
+
+:&lt;math&gt;S_m(n) = \sum_{k=1}^n k^m = 1^m + 2^m + \cdots + n^m. &lt;/math&gt;
+
+This expression can always be rewritten as a [[polynomial]] in {{math|''n''}} of degree {{math|''m'' + 1}}. The [[coefficient]]s of these polynomials are related to the Bernoulli numbers by '''Bernoulli's formula''':
+: &lt;math&gt;S_m(n) = \frac{1}{m + 1} \sum_{k=0}^m \binom{m + 1}{k} B^+_k n^{m + 1 - k} = m! \sum_{k=0}^m \frac{B^+_k n^{m + 1 - k}}{k! (m+1-k)!} ,&lt;/math&gt;
+where {{math|&lt;big&gt;&lt;big&gt;(&lt;/big&gt;&lt;/big&gt;{{su|p=''m'' + 1|b=''k''|a=c}}&lt;big&gt;&lt;big&gt;)&lt;/big&gt;&lt;/big&gt;}} denotes the [[binomial coefficient]].
+
+For example, taking {{math|''m''}} to be 1 gives the [[triangular number]]s {{math|0, 1, 3, 6, …}} {{OEIS2C|id=A000217}}.
+
+:&lt;math&gt; 1 + 2 + \cdots + n = \frac{1}{2} (B_0 n^2 + 2 B^+_1 n^1) = \tfrac12 (n^2 + n).&lt;/math&gt;
+
+Taking {{math|''m''}} to be 2 gives the [[square pyramidal number]]s {{math|0, 1, 5, 14, …}} {{OEIS2C|id=A000330}}.
+
+: &lt;math&gt;1^2 + 2^2 + \cdots + n^2 = \frac{1}{3} (B_0 n^3 + 3 B^+_1 n^2 + 3 B_2 n^1) = \tfrac13 \left(n^3 + \tfrac32 n^2 + \tfrac12 n\right).&lt;/math&gt;
+
+Some authors use the alternate convention for Bernoulli numbers and state Bernoulli's formula in this way:
+: &lt;math&gt;S_m(n) = \frac{1}{m + 1} \sum_{k=0}^m (-1)^k \binom{m + 1}{k} B^{-{}}_k n^{m + 1 - k}.&lt;/math&gt;
+
+Bernoulli's formula is sometimes called [[Faulhaber's formula]] after [[Johann Faulhaber]] who also found remarkable ways to calculate [[sums of powers]].
+
+Faulhaber's formula was generalized by V. Guo and J. Zeng to a [[q-analog|{{mvar|q}}-analog]] {{harv|Guo|Zeng|2005}}.
+
+===Taylor series===
+The Bernoulli numbers appear in the [[Taylor series]] expansion of many [[trigonometric functions]] and [[hyperbolic function]]s.
+
+;[[Tangent function|Tangent]]
+:&lt;math&gt; \begin{align}
+\tan x &amp;= \sum_{n=1}^\infty \frac{(-1)^{n-1} 2^{2n} (2^{2n}-1) B_{2n} }{(2n)!}\; x^{2n-1},&amp; \left |x \right | &amp;&lt; \frac \pi 2 \\
+\end{align} &lt;/math&gt;
+ 
+;[[Cotangent]]
+: &lt;math&gt; \begin{align}
+\cot x &amp; {} = \frac{1}{x} \sum_{n=0}^\infty \frac{(-1)^n B_{2n} (2x)^{2n}}{(2n)!},&amp;  \qquad 0 &lt; |x| &lt; \pi.
+\end{align} &lt;/math&gt;
+
+;[[Hyperbolic tangent]]
+:&lt;math&gt;\begin{align}
+\tanh x &amp;= \sum_{n=1}^\infty \frac{2^{2n}(2^{2n}-1)B_{2n}}{(2n)!}\;x^{2n-1},&amp; |x| &amp;&lt; \frac \pi 2.
+\end{align}&lt;/math&gt;
+
+;[[Hyperbolic cotangent]]
+: &lt;math&gt; \begin{align}
+\coth x &amp; {} = \frac{1}{x} \sum_{n=0}^\infty \frac{B_{2n} (2x)^{2n}}{(2n)!},&amp;  \qquad \qquad 0 &lt; |x| &lt; \pi.
+\end{align} &lt;/math&gt;
+
+===Laurent series===
+The Bernoulli numbers appear in the following [[Laurent series]] {{harv|Arfken|1970|p=463}}:
+
+[[Digamma function]]: &lt;math&gt; \psi(z)= \ln z- \sum_{k=1}^\infty \frac {B_k^{+{}}} {k z^k} &lt;/math&gt;
+
+=== Use in topology ===
+
+The [[Kervaire–Milnor's formula]] for the order of the cyclic group of diffeomorphism classes of [[exotic sphere|exotic {{math|(4''n'' − 1)}}-spheres]] which bound [[parallelizable manifold]]s involves Bernoulli numbers. Let {{math|''ES''&lt;sub&gt;''n''&lt;/sub&gt;}} be the number of such exotic spheres for {{Math|''n'' ≥ 2}}, then
+
+:&lt;math&gt;\textit{ES}_n = (2^{2n-2}-2^{4n-3}) \operatorname{Numerator}\left(\frac{B_{4n}}{4n} \right) .&lt;/math&gt;
+
+The [[Hirzebruch signature theorem#L genus and the Hirzebruch signature theorem|Hirzebruch signature theorem]] for the [[Hirzebruch signature theorem#L genus and the Hirzebruch signature theorem|{{mvar|L}} genus]] of a [[Smooth manifold|smooth]] [[Orientability|oriented]] [[closed manifold]] of [[dimension]] 4''n'' also involves Bernoulli numbers.
+
+== Connections with combinatorial numbers ==
+
+The connection of the Bernoulli number to various kinds of combinatorial numbers is based on the classical theory of finite differences and on the combinatorial interpretation of the Bernoulli numbers as an instance of a fundamental combinatorial principle, the [[inclusion–exclusion principle]].
+
+=== Connection with Worpitzky numbers ===
+
+The definition to proceed with was developed by Julius Worpitzky in 1883. Besides elementary arithmetic only the factorial function {{math|''n''!}} and the power function {{math|''k&lt;sup&gt;m&lt;/sup&gt;''}} is employed. The signless Worpitzky numbers are defined as
+
+: &lt;math&gt; W_{n,k}=\sum_{v=0}^k (-1)^{v+k} (v+1)^n \frac{k!}{v!(k-v)!} . &lt;/math&gt;
+
+They can also be expressed through the [[Stirling numbers of the second kind]]
+
+: &lt;math&gt; W_{n,k}=k! \left\{ {n+1\atop k+1} \right\}.&lt;/math&gt;
+
+A Bernoulli number is then introduced as an inclusion–exclusion sum of Worpitzky numbers weighted by the [[Harmonic progression (mathematics)|harmonic sequence]] 1,&amp;nbsp;{{sfrac|1|2}},&amp;nbsp;{{sfrac|1|3}},&amp;nbsp;…
+
+: &lt;math&gt; B_{n}=\sum_{k=0}^n (-1)^k \frac{W_{n,k}}{k+1}\ =\ \sum_{k=0}^n \frac{1}{k+1} \sum_{v=0}^k (-1)^v (v+1)^n {k \choose v}\ . &lt;/math&gt;
+
+:{{math|1=''B''&lt;sub&gt;0&lt;/sub&gt; = 1}}
+:{{math|1=''B''&lt;sub&gt;1&lt;/sub&gt; = 1 − {{sfrac|1|2}}}}
+:{{math|1=''B''&lt;sub&gt;2&lt;/sub&gt; = 1 − {{sfrac|3|2}} + {{sfrac|2|3}}}}
+:{{math|1=''B''&lt;sub&gt;3&lt;/sub&gt; = 1 − {{sfrac|7|2}} + {{sfrac|12|3}} − {{sfrac|6|4}}}}
+:{{math|1=''B''&lt;sub&gt;4&lt;/sub&gt; = 1 − {{sfrac|15|2}} + {{sfrac|50|3}} − {{sfrac|60|4}} + {{sfrac|24|5}}}}
+:{{math|1=''B''&lt;sub&gt;5&lt;/sub&gt; = 1 − {{sfrac|31|2}} + {{sfrac|180|3}} − {{sfrac|390|4}} + {{sfrac|360|5}} − {{sfrac|120|6}}}}
+:{{math|1=''B''&lt;sub&gt;6&lt;/sub&gt; = 1 − {{sfrac|63|2}} + {{sfrac|602|3}} − {{sfrac|2100|4}} + {{sfrac|3360|5}} − {{sfrac|2520|6}} + {{sfrac|720|7}}}}
+
+This representation has {{math|''B''{{su|p=+|b=1}} {{=}} +{{sfrac|1|2}}}}.
+
+Consider the sequence {{math|''s&lt;sub&gt;n&lt;/sub&gt;''}}, {{math|''n'' ≥ 0}}. From Worpitzky's numbers {{OEIS2C|id=A028246}}, {{OEIS2C|id=A163626}} applied to {{math|''s''&lt;sub&gt;0&lt;/sub&gt;, ''s''&lt;sub&gt;0&lt;/sub&gt;, ''s''&lt;sub&gt;1&lt;/sub&gt;, ''s''&lt;sub&gt;0&lt;/sub&gt;, ''s''&lt;sub&gt;1&lt;/sub&gt;, ''s''&lt;sub&gt;2&lt;/sub&gt;, ''s''&lt;sub&gt;0&lt;/sub&gt;, ''s''&lt;sub&gt;1&lt;/sub&gt;, ''s''&lt;sub&gt;2&lt;/sub&gt;, ''s''&lt;sub&gt;3&lt;/sub&gt;, …}} is identical to the Akiyama–Tanigawa transform applied to {{math|''s&lt;sub&gt;n&lt;/sub&gt;''}} (see [[Bernoulli number#Connection with Stirling numbers of the first kind|Connection with Stirling numbers of the first kind]]). This can be seen via the table:
+
+:{| style=&quot;text-align:center&quot;
+|+ '''Identity of&lt;br/&gt;Worpitzky's representation and Akiyama–Tanigawa transform'''
+|-
+|1|| || || || || ||0||1|| || || || ||0||0||1|| || || ||0||0||0||1|| || ||0||0||0||0||1|| 
+|-
+|1||−1|| || || || ||0||2||−2|| || || ||0||0||3||−3|| || ||0||0||0||4||−4|| || || || || || || 
+|-
+|1||−3||2|| || || ||0||4||−10||6|| || ||0||0||9||−21||12|| || || || || || || || || || || || || 
+|-
+|1||−7||12||−6|| || ||0||8||−38||54||−24|| || || || || || || || || || || || || || || || || || || 
+|-
+|1||−15||50||−60||24|| || || || || || || || || || || || || || || || || || || || || || || || || 
+|-
+|}
+
+The first row represents {{math|''s''&lt;sub&gt;0&lt;/sub&gt;, ''s''&lt;sub&gt;1&lt;/sub&gt;, ''s''&lt;sub&gt;2&lt;/sub&gt;, ''s''&lt;sub&gt;3&lt;/sub&gt;, ''s''&lt;sub&gt;4&lt;/sub&gt;}}.
+
+Hence for the second fractional Euler numbers {{OEIS2C|id=A198631}} ({{math|''n''}}) / {{OEIS2C|id=A006519}} ({{math|''n'' + 1}}):
+
+:{{math|1= ''E''&lt;sub&gt;0&lt;/sub&gt; = 1}}
+:{{math|1= ''E''&lt;sub&gt;1&lt;/sub&gt; = 1 − {{sfrac|1|2}}}}
+:{{math|1= ''E''&lt;sub&gt;2&lt;/sub&gt; = 1 − {{sfrac|3|2}} + {{sfrac|2|4}}}}
+:{{math|1= ''E''&lt;sub&gt;3&lt;/sub&gt; = 1 − {{sfrac|7|2}} + {{sfrac|12|4}} − {{sfrac|6|8}}}}
+:{{math|1= ''E''&lt;sub&gt;4&lt;/sub&gt; = 1 − {{sfrac|15|2}} + {{sfrac|50|4}} − {{sfrac|60|8}} + {{sfrac|24|16}}}}
+:{{math|1= ''E''&lt;sub&gt;5&lt;/sub&gt; = 1 − {{sfrac|31|2}} + {{sfrac|180|4}} − {{sfrac|390|8}} + {{sfrac|360|16}} − {{sfrac|120|32}}}}
+:{{math|1= ''E''&lt;sub&gt;6&lt;/sub&gt; = 1 − {{sfrac|63|2}} + {{sfrac|602|4}} − {{sfrac|2100|8}} + {{sfrac|3360|16}} − {{sfrac|2520|32}} + {{sfrac|720|64}}}}
+
+A second formula representing the Bernoulli numbers by the Worpitzky numbers is for {{math|''n'' ≥ 1}}
+
+: &lt;math&gt; B_n=\frac n {2^{n+1}-2}\sum_{k=0}^{n-1} (-2)^{-k}\, W_{n-1,k} . &lt;/math&gt;
+
+The simplified second Worpitzky's representation of the second Bernoulli numbers is:
+
+{{OEIS2C|id=A164555}} ({{math|''n'' + 1}}) / {{OEIS2C|id=A027642}}({{math|''n'' + 1}}) = {{math|{{sfrac|''n'' + 1|2&lt;sup&gt;''n'' + 2&lt;/sup&gt; − 2}}}} × {{OEIS2C|id=A198631}}({{math|''n''}}) / {{OEIS2C|id=A006519}}({{math|''n'' + 1}})
+
+which links the second Bernoulli numbers to the second fractional Euler numbers. The beginning is:
+
+:{{math|{{sfrac|1|2}}, {{sfrac|1|6}}, 0, −{{sfrac|1|30}}, 0, {{sfrac|1|42}}, … {{=}} ({{sfrac|1|2}}, {{sfrac|1|3}}, {{sfrac|3|14}}, {{sfrac|2|15}}, {{sfrac|5|62}}, {{sfrac|1|21}}, …) × (1, {{sfrac|1|2}}, 0, −{{sfrac|1|4}}, 0, {{sfrac|1|2}}, …)}}
+
+The numerators of the first parentheses are {{OEIS2C|id=A111701}} (see [[Bernoulli number#Connection with Stirling numbers of the first kind|Connection with Stirling numbers of the first kind]]).
+
+=== Connection with Stirling numbers of the second kind ===
+
+If {{math|''S''(''k'',''m'')}} denotes [[Stirling numbers of the second kind]] {{harv|Comtet|1974}} then one has:
+
+: &lt;math&gt;j^k=\sum_{m=0}^k {j^{\underline{m}}} S(k,m)&lt;/math&gt;
+                                                              
+where {{math|''j''&lt;sup&gt;{{underline|''m''}}&lt;/sup&gt;}} denotes the [[Pochhammer symbol|falling factorial]].
+
+If one defines the [[Bernoulli polynomials]] {{math|''B&lt;sub&gt;k&lt;/sub&gt;''(''j'')}} as {{harv|Rademacher|1973}}:
+
+:&lt;math&gt; B_k(j)=k\sum_{m=0}^{k-1}\binom{j}{m+1}S(k-1,m)m!+B_k &lt;/math&gt;
+
+where {{math|''B&lt;sub&gt;k&lt;/sub&gt;''}} for {{math|''k'' {{=}} 0, 1, 2,…}} are the Bernoulli numbers.
+
+Then after the following property of [[binomial coefficient]]:
+
+:&lt;math&gt; \binom{j}{m}=\binom{j+1}{m+1}-\binom{j}{m+1} &lt;/math&gt;
+ 
+one has,
+
+:&lt;math&gt; j^k=\frac{B_{k+1}(j+1)-B_{k+1}(j)}{k+1}. &lt;/math&gt;
+
+One also has following for Bernoulli polynomials {{harv|Rademacher|1973}},
+
+:&lt;math&gt;  B_k(j)=\sum_{n=0}^k \binom{k}{n} B_n j^{k-n}. &lt;/math&gt;
+
+The coefficient of {{mvar|j}} in {{math|&lt;big&gt;&lt;big&gt;(&lt;/big&gt;&lt;/big&gt;{{su|p=''j''|b=''m'' + 1|a=c}}&lt;big&gt;&lt;big&gt;)&lt;/big&gt;&lt;/big&gt;}} is {{math|{{sfrac|(−1)&lt;sup&gt;''m''&lt;/sup&gt;|''m'' + 1}}}}.
+
+Comparing the coefficient of {{mvar|j}} in the two expressions of Bernoulli polynomials, one has:
+
+: &lt;math&gt; B_k=\sum_{m=0}^k (-1)^m \frac{m!}{m+1} S(k,m)&lt;/math&gt;
+
+(resulting in {{math|''B''&lt;sub&gt;1&lt;/sub&gt; {{=}} +{{sfrac|1|2}}}}) which is an explicit formula for Bernoulli numbers and can be used to prove [[Von Staudt–Clausen theorem|Von-Staudt Clausen theorem]] ({{harvnb|Boole|1880}}; {{harvnb|Gould|1972}}; {{harvnb|Apostol||p=197}}).
+
+=== Connection with Stirling numbers of the first kind ===
+
+The two main formulas relating the unsigned [[Stirling numbers of the first kind]] {{math|&lt;big&gt;&lt;big&gt;[&lt;/big&gt;&lt;/big&gt;{{su|p=''n''|b=''m''|a=c}}&lt;big&gt;&lt;big&gt;]&lt;/big&gt;&lt;/big&gt;}} to the Bernoulli numbers (with {{math|''B''&lt;sub&gt;1&lt;/sub&gt; {{=}} +{{sfrac|1|2}}}}) are
+
+: &lt;math&gt; \frac{1}{m!}\sum_{k=0}^m (-1)^{k} \left[{m+1\atop k+1}\right] B_k = \frac{1}{m+1}, &lt;/math&gt;
+
+and the inversion of this sum (for {{math|''n'' ≥ 0}}, {{math|''m'' ≥ 0}})
+
+: &lt;math&gt; \frac{1}{m!}\sum_{k=0}^m (-1)^k \left[{m+1\atop k+1}\right] B_{n+k} = A_{n,m}. &lt;/math&gt;
+
+Here the number {{math|''A''&lt;sub&gt;''n'',''m''&lt;/sub&gt;}} are the rational Akiyama–Tanigawa numbers, the first few of which are displayed in the following table.
+
+:{| class=&quot;wikitable&quot; style=&quot;text-align=center&quot;
+|+ Akiyama–Tanigawa number
+! {{diagonal split header|{{mvar|n}}|{{mvar|m}}}}!!0!!1!!2!!3!!4
+|-
+! 0 
+| 1 || {{sfrac|1|2}} || {{sfrac|1|3}} || {{sfrac|1|4}} || {{sfrac|1|5}}
+|-
+! 1 
+| {{sfrac|1|2}} || {{sfrac|1|3}} || {{sfrac|1|4}} || {{sfrac|1|5}} || …
+|-
+! 2 
+| {{sfrac|1|6}} || {{sfrac|1|6}} || {{sfrac|3|20}} || … || …
+|-
+! 3 
+| 0 || {{sfrac|1|30}} || … || … || …
+|-
+! 4 
+| −{{sfrac|1|30}} || … || … || … || …
+|}
+
+The Akiyama–Tanigawa numbers satisfy a simple recurrence relation which can be exploited to iteratively compute the Bernoulli numbers. This leads to the algorithm shown in the section 'algorithmic description' above. See {{OEIS2C|id=A051714}}/{{OEIS2C|id=A051715}}.
+
+An ''autosequence'' is a sequence which has its inverse binomial transform equal to the signed sequence. If the main diagonal is zeroes = {{OEIS2C|id=A000004}}, the autosequence is of the first kind. Example: {{OEIS2C|id=A000045}}, the Fibonacci numbers. If the main diagonal is the first upper diagonal multiplied by 2, it is of the second kind. Example: {{OEIS2C|id=A164555}}/{{OEIS2C|id=A027642}}, the second Bernoulli numbers (see {{OEIS2C|id=A190339}}). The Akiyama–Tanigawa transform applied to {{math|''2''&lt;sup&gt;−''n''&lt;/sup&gt;}} = 1/{{OEIS2C|id=A000079}} leads to {{OEIS2C|id=A198631}} (''n'') / {{OEIS2C|id=A06519}} (''n'' + 1). Hence:
+
+:{| class=&quot;wikitable&quot; style=&quot;text-align:center&quot;
+|+ Akiyama–Tanigawa transform for the second Euler numbers
+|-
+! {{diagonal split header|{{mvar|n}}|{{mvar|m}}}} !! 0 !! 1 !! 2 !! 3 !! 4
+|-
+! 0
+| 1 || {{sfrac|1|2}} || {{sfrac|1|4}} || {{sfrac|1|8}} || {{sfrac|1|16}}
+|-
+! 1 
+| {{sfrac|1|2}} || {{sfrac|1|2}} || {{sfrac|3|8}} || {{sfrac|1|4}} || …
+|-
+! 2 
+| 0 || {{sfrac|1|4}} || {{sfrac|3|8}} || … || …
+|-
+! 3 
+| −{{sfrac|1|4}} || −{{sfrac|1|4}} || … || … || …
+|-
+! 4 
+| 0 || … || … || … || …
+|}
+
+See {{OEIS2C|id=A209308}} and {{OEIS2C|id=A227577}}. {{OEIS2C|id=A198631}} ({{math|''n''}}) / {{OEIS2C|id=A006519}} ({{math|''n'' + 1}}) are the second (fractional) Euler numbers and an autosequence of the second kind.
+
+:({{sfrac|{{OEIS2C|id=A164555}} ({{math|''n'' + 2}})|{{OEIS2C|id=A027642}} ({{math|''n'' + 2}})}} = {{math|{{sfrac|1|6}}, 0, −{{sfrac|1|30}}, 0, {{sfrac|1|42}}, …}}) × ( {{math|{{sfrac|2&lt;sup&gt;''n'' + 3&lt;/sup&gt; − 2|''n'' + 2}}}} = {{math|3, {{sfrac|14|3}}, {{sfrac|15|2}}, {{sfrac|62|5}}, 21, …}}) = {{sfrac|{{OEIS2C|id=A198631}} ({{math|''n'' + 1}})|{{OEIS2C|id=A006519}} ({{math|''n'' + 2}})}} = {{math|{{sfrac|1|2}}, 0, −{{sfrac|1|4}}, 0, {{sfrac|1|2}}, …}}.
+
+Also valuable for {{OEIS2C|id=A027641}} / {{OEIS2C|id=A027642}} (see [[Bernoulli number#Connection with Worpitzky numbers|Connection with Worpitzky numbers]]).
+
+===Connection with Pascal’s triangle===
+
+There are formulas connecting Pascal's triangle to Bernoulli numbers{{efn|this formula was discovered (or perhaps rediscovered) by Giorgio Pietrocola. His demonstration is available in Italian language {{harv|Pietrocola|2008}}.}}
+:&lt;math&gt; B^{+}_n=\frac{|A_n|}{(n+1)!}~~~&lt;/math&gt;
+where &lt;math&gt;|A_n|&lt;/math&gt; is the determinant of a n-by-n square matrix part of Pascal’s triangle whose elements are: &lt;math&gt;
+a_{i, k} = \begin{cases} 
+0 &amp; \text{if } k&gt;1+i \\
+{i+1 \choose k-1} &amp; \text{otherwise}
+\end{cases}
+&lt;/math&gt;
+
+Example:
+
+:&lt;math&gt; B^{+}_6 =\frac{\det\begin{pmatrix}
+1&amp; 2&amp; 0&amp; 0&amp; 0&amp; 0\\
+1&amp; 3&amp; 3&amp; 0&amp; 0&amp; 0\\
+1&amp; 4&amp; 6&amp; 4&amp; 0&amp; 0\\
+1&amp; 5&amp; 10&amp; 10&amp; 5&amp; 0\\
+1&amp; 6&amp; 15&amp; 20&amp; 15&amp; 6\\
+1&amp; 7&amp; 21&amp; 35&amp; 35&amp; 21
+\end{pmatrix}}{7!}=\frac{120}{5040}=\frac 1 {42}
+&lt;/math&gt;
+
+=== Connection with Eulerian numbers ===
+
+There are formulas connecting [[Eulerian number]]s {{math|&lt;big&gt;&lt;big&gt;⟨&lt;/big&gt;&lt;/big&gt;{{su|p=''n''|b=''m''|a=c}}&lt;big&gt;&lt;big&gt;⟩&lt;/big&gt;&lt;/big&gt;}} to Bernoulli numbers:
+
+:&lt;math&gt;\begin{align}
+\sum_{m=0}^n (-1)^m \left \langle {n\atop m} \right \rangle &amp;= 2^{n+1} (2^{n+1}-1) \frac{B_{n+1}}{n+1}, \\
+\sum_{m=0}^n (-1)^m \left \langle {n\atop m} \right \rangle \binom{n}{m}^{-1} &amp;= (n+1) B_n.
+\end{align}&lt;/math&gt;
+
+Both formulae are valid for {{math|''n'' ≥ 0}} if {{math|''B''&lt;sub&gt;1&lt;/sub&gt;}} is set to {{sfrac|1|2}}. If {{math|''B''&lt;sub&gt;1&lt;/sub&gt;}} is set to −{{sfrac|1|2}} they are valid only for {{math|''n'' ≥ 1}} and {{math|''n'' ≥ 2}} respectively.
+
+==A binary tree representation==
+The Stirling polynomials {{math|''σ''&lt;sub&gt;''n''&lt;/sub&gt;(''x'')}} are related to the Bernoulli numbers by {{math|''B''&lt;sub&gt;''n''&lt;/sub&gt; {{=}} ''n''!''σ''&lt;sub&gt;''n''&lt;/sub&gt;(1)}}. S. C. Woon {{harv|Woon|1997}} described an algorithm to compute {{math|''σ''&lt;sub&gt;''n''&lt;/sub&gt;(1)}} as a binary tree:
+
+:[[File:SCWoonTree.png]]
+
+Woon's recursive algorithm (for {{math|''n'' ≥ 1}}) starts by assigning to the root node {{math|''N'' {{=}} [1,2]}}. Given a node {{math|''N'' {{=}} [''a''&lt;sub&gt;1&lt;/sub&gt;, ''a''&lt;sub&gt;2&lt;/sub&gt;, …, ''a''&lt;sub&gt;''k''&lt;/sub&gt;]}} of the tree, the left child of the node is {{math|''L''(''N'') {{=}} [−''a''&lt;sub&gt;1&lt;/sub&gt;, ''a''&lt;sub&gt;2&lt;/sub&gt; + 1, ''a''&lt;sub&gt;3&lt;/sub&gt;, …, ''a''&lt;sub&gt;''k''&lt;/sub&gt;]}} and the right child {{math|''R''(''N'') {{=}} [''a''&lt;sub&gt;1&lt;/sub&gt;, 2, ''a''&lt;sub&gt;2&lt;/sub&gt;, …, ''a''&lt;sub&gt;''k''&lt;/sub&gt;]}}. A node {{math|''N'' {{=}} [''a''&lt;sub&gt;1&lt;/sub&gt;, ''a''&lt;sub&gt;2&lt;/sub&gt;, …, ''a''&lt;sub&gt;''k''&lt;/sub&gt;]}} is written as {{math|±[''a''&lt;sub&gt;2&lt;/sub&gt;, …, ''a''&lt;sub&gt;''k''&lt;/sub&gt;]}} in the initial part of the tree represented above with ± denoting the sign of {{math|''a''&lt;sub&gt;1&lt;/sub&gt;}}.
+
+Given a node {{mvar|N}} the factorial of {{mvar|N}} is defined as
+
+:&lt;math&gt; N! = a_1 \prod_{k=2}^{\operatorname{length}(N)} a_k!. &lt;/math&gt;
+
+Restricted to the nodes {{mvar|N}} of a fixed tree-level {{mvar|n}} the sum of {{math|{{sfrac|1|''N''!}}}} is {{math|''σ''&lt;sub&gt;''n''&lt;/sub&gt;(1)}}, thus
+
+:&lt;math&gt; B_n = \sum_\stackrel{N \text{ node of}}{\text{ tree-level } n} \frac{n!}{N!}. &lt;/math&gt;
+
+For example:
+:{{math|1=''B''&lt;sub&gt;1&lt;/sub&gt; = 1!({{sfrac|1|2!}})}}
+:{{math|1=''B''&lt;sub&gt;2&lt;/sub&gt; = 2!(−{{sfrac|1|3!}} + {{sfrac|1|2!2!}})}}
+:{{math|1=''B''&lt;sub&gt;3&lt;/sub&gt; = 3!({{sfrac|1|4!}} − {{sfrac|1|2!3!}} − {{sfrac|1|3!2!}} + {{sfrac|1|2!2!2!}})}}
+
+==Integral representation and continuation==
+
+The [[integral]]
+: &lt;math&gt; b(s) = 2e^{s i \pi/2}\int_0^\infty \frac{st^s}{1-e^{2\pi t}} \frac{dt}{t} &lt;/math&gt;
+has as special values {{math|''b''(2''n'') {{=}} ''B''&lt;sub&gt;2''n''&lt;/sub&gt;}} for {{math|''n'' &gt; 0}}.
+
+For example, {{math|1=''b''(3) = {{sfrac|3|2}}''ζ''(3)''&amp;pi;''&lt;sup&gt;−3&lt;/sup&gt;''i''}} and {{math|1=''b''(5) = −{{sfrac|15|2}}''ζ''(5)''&amp;pi;''&lt;sup&gt;−5&lt;/sup&gt;''i''}}. Here, {{mvar|ζ}} is the [[Riemann zeta function]], and {{mvar|i}} is the [[imaginary unit]]. Leonhard Euler (''Opera Omnia'', Ser. 1, Vol. 10, p.&amp;nbsp;351) considered these numbers and calculated
+
+: &lt;math&gt; \begin{align}
+  p &amp;=  \frac{3}{2\pi^3}\left(1+\frac{1}{2^3}+\frac{1}{3^3}+\cdots \right) = 0.0581522\ldots \\
+  q &amp;= \frac{15}{2\pi^5}\left(1+\frac{1}{2^5}+\frac{1}{3^5}+\cdots \right) = 0.0254132\ldots
+\end{align}&lt;/math&gt;
+
+==The relation to the Euler numbers and {{pi}}==
+
+The [[Euler number]]s are a sequence of integers intimately connected with the Bernoulli numbers. Comparing the
+asymptotic expansions of the Bernoulli and the Euler numbers shows that the Euler numbers {{math|''E''&lt;sub&gt;2''n''&lt;/sub&gt;}} are in magnitude approximately {{math|{{sfrac|2|π}}(4&lt;sup&gt;2''n''&lt;/sup&gt; − 2&lt;sup&gt;2''n''&lt;/sup&gt;)}} times larger than the Bernoulli numbers {{math|''B''&lt;sub&gt;2''n''&lt;/sub&gt;}}. In consequence:
+
+: &lt;math&gt; \pi \sim 2 (2^{2n} - 4^{2n}) \frac{B_{2n}}{E_{2n}}. &lt;/math&gt;
+
+This asymptotic equation reveals that {{pi}} lies in the common root of both the Bernoulli and the Euler numbers. In fact {{pi}} could be computed from these rational approximations.
+
+Bernoulli numbers can be expressed through the Euler numbers and vice versa. Since, for odd {{mvar|n}}, {{math|''B''&lt;sub&gt;''n''&lt;/sub&gt; {{=}} ''E''&lt;sub&gt;''n''&lt;/sub&gt; {{=}} 0}} (with the exception {{math|''B''&lt;sub&gt;1&lt;/sub&gt;}}), it suffices to consider the case when {{mvar|n}} is even.
+
+:&lt;math&gt;\begin{align}
+ B_{n} &amp;= \sum_{k=0}^{n-1}\binom{n-1}{k} \frac{n}{4^n-2^n}E_k &amp; n&amp;=2, 4, 6, \ldots \\
+ E_{n} &amp;= \sum_{k=1}^n \binom{n}{k-1} \frac{2^k-4^k}{k} B_k &amp; n&amp;=2,4,6,\ldots
+\end{align}&lt;/math&gt;
+
+These conversion formulas express an [[inverse relation]] between the Bernoulli and the Euler numbers. But more important, there is a deep arithmetic root common to both kinds of numbers, which can be expressed through a more fundamental sequence of numbers, also closely tied to {{pi}}. These numbers are defined for {{math|''n'' &gt; 1}} as
+
+:&lt;math&gt; S_n = 2 \left(\frac{2}{\pi}\right)^n \sum_{k=-\infty}^\infty (4k+1)^{-n} \qquad k=0,-1,1,-2,2,\ldots &lt;/math&gt;
+
+and {{math|''S''&lt;sub&gt;1&lt;/sub&gt; {{=}} 1}} by convention {{harv|Elkies|2003}}. The magic of these numbers lies in the fact that they turn out to be rational numbers.  This was first proved by [[Leonhard Euler]] in a landmark paper {{harv|Euler|1735}} ''‘De summis serierum reciprocarum’'' (On the sums of series of reciprocals) and has fascinated mathematicians ever since. The first few of these numbers are
+
+: &lt;math&gt; S_n = 1,1,\frac{1}{2},\frac{1}{3},\frac{5}{24}, \frac{2}{15},\frac{61}{720},\frac{17}{315},\frac{277}{8064},\frac{62}{2835},\ldots  &lt;/math&gt; ({{OEIS2C|id=A099612}} / {{OEIS2C|id=A099617}})
+
+These are the coefficients in the expansion of {{math|sec ''x'' + tan ''x''}}.
+
+The Bernoulli numbers and Euler numbers are best understood as ''special views'' of these numbers, selected from the sequence {{math|''S''&lt;sub&gt;''n''&lt;/sub&gt;}} and scaled for use in special applications.
+
+: &lt;math&gt;\begin{align}
+  B_{n} &amp;= (-1)^{\left\lfloor \frac{n}{2}\right\rfloor} [ n \text{ even}] \frac{n! }{2^n - 4^n}\, S_{n}\ , &amp; n&amp;= 2, 3, \ldots \\
+  E_n &amp;= (-1)^{\left\lfloor \frac{n}{2}\right\rfloor} [ n \text{ even}] n! \, S_{n+1}  &amp; n &amp;= 0, 1, \ldots
+\end{align}&lt;/math&gt;
+
+The expression [{{math|''n''}} even] has the value 1 if {{math|''n''}} is even and 0 otherwise ([[Iverson bracket]]).
+
+These identities show that the quotient of Bernoulli and Euler numbers at the beginning of this section is just the special case of {{math|''R''&lt;sub&gt;''n''&lt;/sub&gt; {{=}} {{sfrac|2''S''&lt;sub&gt;''n''&lt;/sub&gt;|''S''&lt;sub&gt;''n'' + 1&lt;/sub&gt;}}}} when {{mvar|n}} is even. The {{math|''R''&lt;sub&gt;''n''&lt;/sub&gt;}} are rational approximations to {{pi}} and two successive terms always enclose the true value of {{pi}}. Beginning with {{math|''n'' {{=}} 1}} the sequence starts ({{OEIS2C|id=A132049}} / {{OEIS2C|id=A132050}}):
+
+: &lt;math&gt; 2, 4, 3, \frac{16}{5}, \frac{25}{8}, \frac{192}{61}, \frac{427}{136}, \frac{4352}{1385}, \frac{12465}{3968}, \frac{158720}{50521},\ldots \quad \longrightarrow \pi. &lt;/math&gt;
+
+These rational numbers also appear in the last paragraph of Euler's paper cited above.
+
+Consider the Akiyama–Tanigawa transform for the sequence {{OEIS2C|id=A046978}} ({{math|''n'' + 2}}) / {{OEIS2C|id=A016116}} ({{math|''n'' + 1}}):
+
+:{| class=&quot;wikitable&quot; {{ts|ar}}
+! 0 
+|1||{{sfrac|1|2}}||0||−{{sfrac|1|4}}||−{{sfrac|1|4}}||−{{sfrac|1|8}}||0
+|-
+! 1 
+| {{sfrac|1|2}}|| 1|| {{sfrac|3|4}}|| 0|| −{{sfrac|5|8}}|| −{{sfrac|3|4}}||
+|-
+! 2 
+| −{{sfrac|1|2}}|| {{sfrac|1|2}}|| {{sfrac|9|4}}|| {{sfrac|5|2}}|| {{sfrac|5|8}}|| ||
+|-
+! 3 
+| −1|| −{{sfrac|7|2}}|| −{{sfrac|3|4}}|| {{sfrac|15|2}}|| || ||
+|-
+! 4 
+| {{sfrac|5|2}}|| −{{sfrac|11|2}}|| −{{sfrac|99|4}}|| || || ||
+|-
+! 5 
+| 8|| {{sfrac|77|2}}|| || || || ||
+|-
+! 6 
+| −{{sfrac|61|2}}|| || || || || ||
+|}
+
+From the second, the numerators of the first column are the denominators of Euler's formula. The first column is −{{sfrac|1|2}} × {{OEIS2C|id=A163982}}.
+
+==An algorithmic view: the Seidel triangle==
+
+The sequence ''S''&lt;sub&gt;''n''&lt;/sub&gt; has another unexpected yet important property: The denominators of ''S''&lt;sub&gt;''n''&lt;/sub&gt; divide the factorial {{math|(''n''&amp;nbsp;−&amp;nbsp;1)!}}. In other words: the numbers {{math|1=''T''&lt;sub&gt;''n''&lt;/sub&gt;&amp;nbsp;=&amp;nbsp;''S''&lt;sub&gt;''n''&lt;/sub&gt;(''n''&amp;nbsp;−&amp;nbsp;1)!}}, sometimes called [[Alternating permutations|Euler zigzag numbers]], are integers.
+
+: &lt;math&gt; T_n = 1,\,1,\,1,\,2,\,5,\,16,\,61,\,272,\,1385,\,7936,\,50521,\,353792,\ldots \quad n=0, 1, 2, 3, \ldots &lt;/math&gt; ({{OEIS2C|id=A000111}}). See ({{OEIS2C|id=A253671}}).
+
+Thus the above representations of the Bernoulli and Euler numbers can be rewritten in terms of this sequence as
+
+:&lt;math&gt;\begin{align}
+ B_n &amp;= (-1)^{\left\lfloor \frac{n}{2}\right\rfloor} [n\text{ even}] \frac{n }{2^n-4^n}\, T_{n-1}\  &amp; n &amp;= 2, 3, \ldots \\
+ E_n &amp;= (-1)^{\left\lfloor \frac{n}{2}\right\rfloor} [n\text{ even}] T_{n+1} &amp; n &amp;= 0, 1, \ldots
+\end{align}&lt;/math&gt;
+
+These identities make it easy to compute the Bernoulli and Euler numbers: the Euler numbers {{math|''E''&lt;sub&gt;''n''&lt;/sub&gt;}} are given immediately by {{math|''T''&lt;sub&gt;2''n'' + 1&lt;/sub&gt;}} and the Bernoulli numbers {{math|''B''&lt;sub&gt;2''n''&lt;/sub&gt;}} are obtained from {{math|''T''&lt;sub&gt;2''n''&lt;/sub&gt;}} by some easy shifting, avoiding rational arithmetic.
+
+What remains is to find a convenient way to compute the numbers {{math|''T''&lt;sub&gt;''n''&lt;/sub&gt;}}. However, already in 1877 [[Philipp Ludwig von Seidel]] {{harv|Seidel|1877}} published an ingenious algorithm, which makes it simple to calculate {{math|''T''&lt;sub&gt;''n''&lt;/sub&gt;}}.
+
+:{{image frame|align=none|caption=Seidel's algorithm for {{math|''T''&lt;sub&gt;''n''&lt;/sub&gt;}}
+|content=&lt;math&gt;
+\begin{array}{crrrcc}
+ { } &amp; { } &amp; {\color{red}1} &amp; { } &amp; { } &amp; { } \\
+ { } &amp; {\rightarrow} &amp; {\color{blue}1} &amp; {\color{red}1} &amp; { } \\
+ { } &amp; {\color{red}2} &amp; {\color{blue}2} &amp; {\color{blue}1} &amp; {\leftarrow} \\
+ {\rightarrow} &amp; {\color{blue}2} &amp; {\color{blue}4} &amp; {\color{blue}5} &amp; {\color{red}5} \\
+ {\color{red}16} &amp; {\color{blue}16} &amp; {\color{blue}14} &amp; {\color{blue}10} &amp; {\color{blue}5} &amp; {\leftarrow} 
+\end{array}
+&lt;/math&gt;}}
+#Start by putting 1 in row 0 and let {{math|''k''}} denote the number of the row currently being filled
+#If {{math|''k''}} is odd, then put the number on the left end of the row {{math|''k'' − 1}} in the first position of the row {{math|''k''}}, and fill the row from the left to the right, with every entry being the sum of the number to the left and the number to the upper
+#At the end of the row duplicate the last number.
+#If {{math|''k''}} is even, proceed similar in the other direction.
+
+Seidel's algorithm is in fact much more general (see the exposition of Dominique Dumont {{harv|Dumont|1981}}) and was rediscovered several times thereafter.
+
+Similar to Seidel's approach D. E. Knuth and T. J. Buckholtz {{harv|Knuth|Buckholtz|1967}} gave a recurrence equation for the numbers {{math|''T''&lt;sub&gt;2''n''&lt;/sub&gt;}} and recommended this method for computing {{math|''B''&lt;sub&gt;2''n''&lt;/sub&gt;}} and {{math|''E''&lt;sub&gt;2''n''&lt;/sub&gt;}} ‘on electronic computers using only simple operations on integers’.
+
+V. I. Arnold rediscovered Seidel's algorithm in {{harv|Arnold|1991}} and later Millar, Sloane and Young popularized Seidel's algorithm under the name [[boustrophedon transform]].
+
+Triangular form:
+
+:{| style=&quot;text-align:right&quot;
+| || || || || || || 1|| || || || || || 
+|-
+| || || || || || 1|| || 1|| || || || || 
+|-
+| || || || || 2|| || 2|| || 1|| || || || 
+|-
+| || || || 2|| || 4|| || 5|| || 5|| || || 
+|-
+| || || 16|| || 16|| || 14|| || 10|| || 5|| || 
+|-
+| || 16|| || 32|| || 46|| || 56|| || 61|| || 61|| 
+|-
+|272|| ||272|| ||256|| ||224|| ||178|| ||122|| || 61
+|}
+
+Only {{OEIS2C|id=A000657}}, with one 1, and {{OEIS2C|id=A214267}}, with two 1s, are in the OEIS.
+
+Distribution with a supplementary 1 and one 0 in the following rows:
+
+:{| style=&quot;text-align:right&quot;
+| || || || || || || 1|| || || || || ||   
+|-
+| || || || || || 0|| || 1|| || || || || 
+|-
+| || || || || −1|| || −1|| ||  0|| || || || 
+|-
+| || || || 0|| || −1|| || −2|| || −2|| || || 
+|-
+| || ||  5|| ||  5|| ||  4|| ||  2|| ||  0|| || 
+|-
+| || 0|| || 5|| || 10|| || 14|| || 16|| || 16|| 
+|-
+|−61|| ||−61|| ||−56|| ||−46|| ||−32|| ||−16|| || 0
+|}
+
+This is {{OEIS2C|id=A239005}}, a signed version of {{OEIS2C|id=A008280}}. The main andiagonal is {{OEIS2C|id=A122045}}. The main diagonal is {{OEIS2C|id=A155585}}. The central column is {{OEIS2C|id=A099023}}. Row sums: 1, 1, −2, −5, 16, 61…. See {{OEIS2C|id=A163747}}. See the array beginning with 1, 1, 0, −2, 0, 16, 0 below.
+
+The Akiyama–Tanigawa algorithm applied to {{OEIS2C|id=A046978}} ({{math|''n'' + 1}}) / {{OEIS2C|id=A016116}}({{math|''n''}}) yields:
+
+:{| style=&quot;text-align:right&quot;
+| 1|| 1|| {{sfrac|1|2}}|| 0|| −{{sfrac|1|4}}|| −{{sfrac|1|4}}|| −{{sfrac|1|8}}
+|-
+| 0|| 1|| {{sfrac|3|2}}|| 1|| 0|| −{{sfrac|3|4}}
+|-
+| −1|| −1|| {{sfrac|3|2}}|| 4|| {{sfrac|15|4}}
+|-
+| 0|| −5|| −{{sfrac|15|2}}|| 1
+|-
+| 5|| 5|| −{{sfrac|51|2}}
+|-
+| 0|| 61
+|-
+| −61
+|}
+
+'''1.''' The first column is {{OEIS2C|id=A122045}}. Its binomial transform leads to:
+
+:{| style=&quot;text-align:right&quot;
+|-
+| 1|| 1|| 0|| −2|| 0|| 16|| 0
+|-
+|0||−1||−2||2||16||−16
+|-
+|−1||−1||4||14||−32
+|-
+|0||5||10||−46
+|-
+|5||5||−56
+|-
+|0||−61
+|-
+|−61
+|}
+
+The first row of this array is {{OEIS2C|id=A155585}}. The absolute values of the increasing antidiagonals are {{OEIS2C|id=A008280}}. The sum of the antidiagonals is {{nowrap|−{{OEIS2C|id=A163747}} ({{math|''n'' + 1}}).}}
+
+'''2.''' The second column is {{nowrap|1 1 −1 −5 5 61 −61 −1385 1385…}}. Its binomial transform yields:
+
+:{| style=&quot;text-align:right&quot;
+|-
+| 1|| 2|| 2|| −4|| −16|| 32|| 272
+|-
+|1||0||−6||−12||48||240
+|-
+|−1||−6||−6||60||192
+|-
+|−5||0||66||32
+|-
+|5||66||66
+|-
+|61||0
+|-
+|−61
+|}
+
+The first row of this array is {{nowrap|1 2 2 −4 −16 32 272 544 −7936 15872 353792 −707584…}}. The absolute values of the second bisection are the double of the absolute values of the first bisection.
+
+Consider the Akiyama-Tanigawa algorithm applied to {{OEIS2C|id=A046978}} ({{math|''n''}}) / ({{OEIS2C|id=A158780}} ({{math|''n'' + 1}}) =&amp;nbsp;abs({{OEIS2C|id=A117575}} ({{mvar|n}})) + 1 = {{nowrap|1, 2, 2, {{sfrac|3|2}}, 1, {{sfrac|3|4}}, {{sfrac|3|4}}, {{sfrac|7|8}}, 1, {{sfrac|17|16}}, {{sfrac|17|16}}, {{sfrac|33|32}}…}}.
+
+:{| style=&quot;text-align:right&quot;
+|1||2||2||{{sfrac|3|2}}||1||{{sfrac|3|4}}||{{sfrac|3|4}}
+|-
+|−1||0||{{sfrac|3|2}}||2||{{sfrac|5|4}}||0
+|-
+|−1||−3||−{{sfrac|3|2}}||3||{{sfrac|25|4}}
+|-
+|2||−3||−{{sfrac|27|2}}||−13
+|-
+|5||21||−{{sfrac|3|2}}
+|-
+|−16||45
+|-
+|−61
+|}
+
+The first column whose the absolute values are {{OEIS2C|id=A000111}} could be the numerator of a trigonometric function.
+
+{{OEIS2C|id=A163747}} is an autosequence of the first kind (the main diagonal is {{OEIS2C|id=A000004}}). The corresponding array is:
+
+:{| style=&quot;text-align:right&quot;
+|0||−1||−1||2||5||−16||−61
+|-
+|−1||0||3||3||−21||−45
+|-
+|1||3||0||−24||−24
+|-
+|2||−3||−24||0
+|-
+|−5||−21||24
+|-
+|−16||45
+|-
+|−61
+|}
+
+The first two upper diagonals are {{nowrap|−1 3 −24 402…}} = {{math|(−1)&lt;sup&gt;''n'' + 1&lt;/sup&gt;}}&amp;nbsp;×&amp;nbsp;{{OEIS2C|id=A002832}}. The sum of the antidiagonals is {{nowrap|0 −2 0 10…}} = 2&amp;nbsp;×&amp;nbsp;{{OEIS2C|id=A122045}}(''n''&amp;nbsp;+&amp;nbsp;1).
+
+−{{OEIS2C|id=A163982}} is an autosequence of the second kind, like for instance {{OEIS2C|id=A164555}} / {{OEIS2C|id=A027642}}. Hence the array:
+
+:{| style=&quot;text-align:right&quot;
+|-
+|2||1||−1||−2||5||16||−61
+|-
+|−1||−2||−1||7||11||−77
+|-
+|−1||1||8||4||−88
+|-
+|2||7||−4||−92
+|-
+|5||−11||−88
+|-
+|−16||−77
+|-
+|−61
+|}
+
+The main diagonal, here {{nowrap|2 −2 8 −92…}}, is the double of the first upper one, here {{OEIS2C|id=A099023}}. The sum of the antidiagonals is {{nowrap|2 0 −4 0…}} = 2&amp;nbsp;×&amp;nbsp;{{OEIS2C|id=A155585}}({{math|''n'' + }}1). {{OEIS2C|id=A163747}}&amp;nbsp;−&amp;nbsp;{{OEIS2C|id=A163982}} =&amp;nbsp;2&amp;nbsp;×&amp;nbsp;{{OEIS2C|id=A122045}}.
+
+==A combinatorial view: alternating permutations==
+{{main article|Alternating permutations}}
+
+Around 1880, three years after the publication of Seidel's algorithm, [[Désiré André]] proved a now classic result of combinatorial analysis {{harv|André|1879}} &amp; {{harv|André|1881}}. Looking at the first terms of the Taylor expansion of the [[trigonometric functions]]
+{{math|tan ''x''}} and {{math|sec ''x''}} André made a startling discovery.
+
+:&lt;math&gt;\begin{align}
+ \tan x &amp;= x + \frac{2x^3}{3!} + \frac{16x^5}{5!} + \frac{272x^7}{7!} + \frac{7936x^9}{9!} + \cdots\\[6pt]
+ \sec x &amp;= 1 + \frac{x^2}{2!} + \frac{5x^4}{4!} + \frac{61x^6}{6!} + \frac{1385x^8}{8!} + \frac{50521x^{10}}{10!} + \cdots
+\end{align}&lt;/math&gt;
+
+The coefficients are the [[Euler number]]s of odd and even index, respectively. In consequence the ordinary expansion of {{math|tan ''x'' + sec ''x''}} has as coefficients the rational numbers {{math|''S''&lt;sub&gt;''n''&lt;/sub&gt;}}.
+
+: &lt;math&gt; \tan x + \sec x = 1 + x + \tfrac{1}{2}x^2 + \tfrac{1}{3}x^3 + \tfrac{5}{24}x^4 + \tfrac{2}{15}x^5 + \tfrac{61}{720}x^6 + \cdots &lt;/math&gt;
+
+André then succeeded by means of a recurrence argument to show that the [[alternating permutation]]s of odd size are enumerated by the Euler numbers of odd index (also called tangent numbers) and the alternating permutations of even size by the Euler numbers of even index (also called secant numbers).
+
+==Related sequences==
+
+The arithmetic mean of the first and the second Bernoulli numbers are the associate Bernoulli numbers: 
+{{math|1=''B''&lt;sub&gt;0&lt;/sub&gt; = 1}}, {{math|1=''B''&lt;sub&gt;1&lt;/sub&gt; = 0}}, {{math|1=''B''&lt;sub&gt;2&lt;/sub&gt; = {{sfrac|1|6}}}}, {{math|1=''B''&lt;sub&gt;3&lt;/sub&gt; = 0}}, {{math|1=''B''&lt;sub&gt;4&lt;/sub&gt; = −{{sfrac|1|30}}}}, {{OEIS2C|id=A176327}} / {{OEIS2C|id=A027642}}. Via the second row of its inverse Akiyama–Tanigawa transform {{OEIS2C|id=A177427}}, they lead to Balmer series {{OEIS2C|id=A061037}} / {{OEIS2C|id=A061038}}.
+
+The Akiyama–Tanigawa algorithm applied to {{OEIS2C|id=A060819}} ({{math|''n'' + 4}}) / {{OEIS2C|id=A145979}} ({{mvar|n}}) leads to the Bernoulli numbers {{OEIS2C|id=A027641}} / {{OEIS2C|id=A027642}}, {{OEIS2C|id=A164555}} / {{OEIS2C|id=A027642}}, or {{OEIS2C|id=A176327}} {{OEIS2C|id=A176289}} without {{math|''B''&lt;sub&gt;1&lt;/sub&gt;}}, named intrinsic Bernoulli numbers {{math|''B''&lt;sub&gt;''i''&lt;/sub&gt;(''n'')}}.
+
+:{| style=&quot;text-align:center; padding-left; padding-right: 2em;&quot;
+|-
+|1||{{sfrac|5|6}}||{{sfrac|3|4}}||{{sfrac|7|10}}||{{sfrac|2|3}}
+|-
+|{{sfrac|1|6}}||{{sfrac|1|6}}||{{sfrac|3|20}}||{{sfrac|2|15}}||{{sfrac|5|42}}
+|-
+|0||{{sfrac|1|30}}||{{sfrac|1|20}}||{{sfrac|2|35}}||{{sfrac|5|84}}
+|-
+|&amp;minus;{{sfrac|1|30}}||&amp;minus;{{sfrac|1|30}}||&amp;minus;{{sfrac|3|140}}||&amp;minus;{{sfrac|1|105}}||0
+|-
+|0||&amp;minus;{{sfrac|1|42}}||&amp;minus;{{sfrac|1|28}}||&amp;minus;{{sfrac|4|105}}||&amp;minus;{{sfrac|1|28}}
+|}
+
+Hence another link between the intrinsic Bernoulli numbers and the Balmer series via {{OEIS2C|id=A145979}} ({{math|''n''}}).
+
+{{OEIS2C|id=A145979}} ({{math|''n'' − 2}}) = 0, 2, 1, 6,… is a permutation of the non-negative numbers.
+
+The terms of the first row are f(n) = {{math|{{sfrac|1|2}} + {{sfrac|1|''n'' + 2}}}}. 2, f(n) is an autosequence of the second kind. 3/2, f(n) leads by its inverse binomial transform to 3/2 &amp;minus;1/2 1/3 &amp;minus;1/4 1/5 ... = 1/2 + log 2.
+
+Consider g(n) = 1/2 - 1 / (n+2) = 0, 1/6, 1/4, 3/10, 1/3. The Akiyama-Tanagiwa transforms gives:
+
+:{| style=&quot;text-align:center; padding-left; padding-right:2em;&quot;
+|-
+|0||{{sfrac|1|6}}||{{sfrac|1|4}}||{{sfrac|3|10}}||{{sfrac|1|3}}||{{sfrac|5|14}}||...
+|-
+|&amp;minus;{{sfrac|1|6}}||&amp;minus;{{sfrac|1|6}}||&amp;minus;{{sfrac|3|20}}||&amp;minus;{{sfrac|2|15}}||&amp;minus;{{sfrac|5|42}}||&amp;minus;{{sfrac|3|28}}||...
+|-
+|0||&amp;minus;{{sfrac|1|30}}||&amp;minus;{{sfrac|1|20}}||&amp;minus;{{sfrac|2|35}}||&amp;minus;{{sfrac|5|84}}||&amp;minus;{{sfrac|5|84}}||...
+|-
+|{{sfrac|1|30}}||{{sfrac|1|30}}||{{sfrac|3|140}}||{{sfrac|1|105}}||0||&amp;minus;{{sfrac|1|140}}||...
+|}
+
+0, g(n), is an autosequence of the second kind.
+
+Euler {{OEIS2C|id=A198631}} ({{math|''n''}}) / {{OEIS2C|id=A006519}} ({{math|''n'' + 1}}) without the second term ({{sfrac|1|2}}) are the fractional intrinsic Euler numbers {{math|''E''&lt;sub&gt;''i''&lt;/sub&gt;(''n'') {{=}} 1, 0, −{{sfrac|1|4}}, 0, {{sfrac|1|2}}, 0, −{{sfrac|17|8}}, 0, …}} The corresponding Akiyama transform is:
+
+:{| style=&quot;text-align:center; padding-left; padding-right: 2em;&quot;
+|-
+|1||1||{{sfrac|7|8}}||{{sfrac|3|4}}||{{sfrac|21|32}}
+|-
+|0||{{sfrac|1|4}}||{{sfrac|3|8}}||{{sfrac|3|8}}||{{sfrac|5|16}}
+|-
+|−{{sfrac|1|4}}||−{{sfrac|1|4}}||0||{{sfrac|1|4}}||{{sfrac|25|64}}
+|-
+|0||−{{sfrac|1|2}}||−{{sfrac|3|4}}||−{{sfrac|9|16}}||−{{sfrac|5|32}}
+|-
+|{{sfrac|1|2}}||{{sfrac|1|2}}||−{{sfrac|9|16}}||−{{sfrac|13|8}}||−{{sfrac|125|64}}
+|}
+
+The first line is {{math|''Eu''(''n'')}}. {{math|''Eu''(''n'')}} preceded by a zero is an autosequence of the first kind. It is linked to the Oresme numbers. The numerators of the second line are {{OEIS2C|id=A069834}} preceded by 0. The difference table is:
+
+:{| style=&quot;text-align:center; padding-left; padding-right: 2em;&quot;
+|-
+|0||1||1||{{sfrac|7|8}}||{{sfrac|3|4}}||{{sfrac|21|32}}||{{sfrac|19|32}}
+|-
+|1||0||−{{sfrac|1|8}}||−{{sfrac|1|8}}||−{{sfrac|3|32}}||−{{sfrac|1|16}}||−{{sfrac|5|128}}
+|-
+|−1||−{{sfrac|1|8}}||0||{{sfrac|1|32}}||{{sfrac|1|32}}||{{sfrac|3|128}}||{{sfrac|1|64}}
+|}
+
+==Arithmetical properties of the Bernoulli numbers==
+
+The Bernoulli numbers can be expressed in terms of the Riemann zeta function as {{math|''B''&lt;sub&gt;''n''&lt;/sub&gt; {{=}} −''nζ''(1 − ''n'')}} for integers {{math|''n'' ≥ 0}} provided for {{math|''n'' {{=}} 0}} the expression {{math|−''nζ''(1 − ''n'')}} is understood as the limiting value and the convention {{math|''B''&lt;sub&gt;1&lt;/sub&gt; {{=}} {{sfrac|1|2}}}} is used. This intimately relates them to the values of the zeta function at negative integers. As such, they could be expected to have and do have deep arithmetical properties. For example, the [[Agoh–Giuga conjecture]] postulates that {{mvar|p}} is a prime number if and only if {{math|''pB''&lt;sub&gt;''p'' − 1&lt;/sub&gt;}} is congruent to −1 modulo {{mvar|p}}. Divisibility properties of the Bernoulli numbers are related to the [[ideal class group]]s of [[cyclotomic field]]s by a theorem of Kummer and its strengthening in the [[Herbrand-Ribet theorem]], and to class numbers of real quadratic fields by [[Ankeny–Artin–Chowla congruence|Ankeny–Artin–Chowla]].
+
+=== The Kummer theorems ===
+
+The Bernoulli numbers are related to [[Fermat's Last Theorem]] (FLT) by [[Ernst Kummer|Kummer]]'s theorem {{harv|Kummer|1850}}, which says:
+
+:If the odd prime {{mvar|p}} does not divide any of the numerators of the Bernoulli numbers {{math|''B''&lt;sub&gt;2&lt;/sub&gt;, ''B''&lt;sub&gt;4&lt;/sub&gt;, …, ''B''&lt;sub&gt;''p'' − 3&lt;/sub&gt;}} then {{math|''x''&lt;sup&gt;''p''&lt;/sup&gt; + ''y''&lt;sup&gt;''p''&lt;/sup&gt; + ''z''&lt;sup&gt;''p''&lt;/sup&gt; {{=}} 0}} has no solutions in nonzero integers.
+
+Prime numbers with this property are called [[regular prime]]s. Another classical result of Kummer {{harv|Kummer|1851}} are the following [[Modular arithmetic#Congruence relation|congruences]].
+
+{{main article|Kummer's congruence}}
+
+:Let {{mvar|p}} be an odd prime and {{mvar|b}} an even number such that {{math|''p''&amp;nbsp;−&amp;nbsp;1}} does not divide {{mvar|b}}. Then for any non-negative integer {{mvar|k}}
+:: &lt;math&gt; \frac{B_{k(p-1)+b}}{k(p-1)+b} \equiv \frac{B_{b}}{b} \pmod{p}. &lt;/math&gt;
+
+A generalization of these congruences goes by the name of {{math|''p''}}-adic continuity.
+
+==={{math|''p''}}-adic continuity===
+
+If {{mvar|b}}, {{mvar|m}} and {{mvar|n}} are positive integers such that {{mvar|m}} and {{mvar|n}} are not divisible by {{math|''p'' − 1}} and {{math|''m'' ≡ ''n'' (mod ''p''&lt;sup&gt;''b'' − 1&lt;/sup&gt; (''p'' − 1))}}, then
+
+:&lt;math&gt;(1-p^{m-1})\frac{B_m}{m} \equiv (1-p^{n-1})\frac{B_n} n \pmod{p^b}.&lt;/math&gt;
+
+Since {{math|''B''&lt;sub&gt;''n''&lt;/sub&gt; {{=}} −''nζ''(1 − ''n'')}}, this can also be written
+
+:&lt;math&gt;\left(1-p^{-u}\right)\zeta(u) \equiv \left(1-p^{-v}\right)\zeta(v) \pmod{p^b},&lt;/math&gt;
+
+where {{math|''u'' {{=}} 1 − ''m''}} and {{math|''v'' {{=}} 1 − ''n''}}, so that {{mvar|u}} and {{mvar|v}} are nonpositive and not congruent to 1 modulo {{math|''p'' − 1}}. This tells us that the Riemann zeta function, with {{math|1 − ''p''&lt;sup&gt;−''s''&lt;/sup&gt;}} taken out of the Euler product formula, is continuous in the [[p-adic number|{{mvar|p}}-adic number]]s on odd negative integers congruent modulo {{math|''p'' − 1}} to a particular {{math|''a'' ≢ 1 mod (''p'' − 1)}}, and so can be extended to a continuous function {{math|''ζ''&lt;sub&gt;''p''&lt;/sub&gt;(''s'')}} for all {{mvar|p}}-adic integers {{math|'''ℤ'''&lt;sub&gt;''p''&lt;/sub&gt;}}, the [[p-adic zeta function|{{mvar|p}}-adic zeta function]].
+
+=== Ramanujan's congruences ===
+
+The following relations, due to [[Ramanujan]], provide a method for calculating Bernoulli numbers that is more efficient than the one given by their original recursive definition:
+
+:&lt;math&gt;\binom{m+3}{m} B_m=\begin{cases}
+\frac{m+3}{3}-\sum\limits_{j=1}^\frac{m}{6}\binom{m+3}{m-6j}B_{m-6j}, &amp; \text{if } m\equiv 0\pmod 6;\\
+\frac{m+3}{3}-\sum\limits_{j=1}^\frac{m-2}{6}\binom{m+3}{m-6j}B_{m-6j}, &amp; \text{if } m\equiv 2\pmod 6;\\
+-\frac{m+3}{6}-\sum\limits_{j=1}^\frac{m-4}{6}\binom{m+3}{m-6j}B_{m-6j}, &amp; \text{if } m\equiv 4\pmod 6.\end{cases}&lt;/math&gt;
+
+=== Von Staudt–Clausen theorem ===
+
+{{main article|Von Staudt–Clausen theorem}}
+
+The von Staudt–Clausen theorem was given by [[Karl Georg Christian von Staudt]] {{harv|von Staudt|1840}} and [[Thomas Clausen (mathematician)|Thomas Clausen]] {{harv|Clausen|1840}} independently in 1840. The theorem states that for every {{math|''n'' &gt; 0}},
+: &lt;math&gt; B_{2n} + \sum_{(p-1)\,\mid\,2n} \frac1p&lt;/math&gt;
+is an integer. The sum extends over all [[prime number|primes]] {{math|''p''}} for which {{math|''p'' − 1}} divides {{math|2''n''}}.
+
+A consequence of this is that the denominator of {{math|''B''&lt;sub&gt;2''n''&lt;/sub&gt;}} is given by the product of all primes {{math|''p''}} for which {{math|''p'' − 1}} divides {{math|2''n''}}. In particular, these denominators are [[square-free]] and divisible by&amp;nbsp;6.
+
+=== Why do the odd Bernoulli numbers vanish? ===
+The sum
+
+:&lt;math&gt;\varphi_k(n) = \sum_{i=0}^n i^k - \frac{n^k} 2&lt;/math&gt;
+
+can be evaluated for negative values of the index {{math|''n''}}. Doing so will show that it is an [[odd function]] for even values of {{math|''k''}}, which implies that the  sum has only terms of odd index. This and the formula for the Bernoulli sum imply that {{math|''B''&lt;sub&gt;2''k'' + 1 − ''m''&lt;/sub&gt;}} is 0 for {{math|''m''}} even and {{math|2''k'' + 1 − ''m'' &gt; 1}}; and that the term for {{math|''B''&lt;sub&gt;1&lt;/sub&gt;}} is cancelled by the subtraction.  The von Staudt–Clausen theorem combined with Worpitzky's representation also gives a combinatorial answer to this question (valid for ''n'' &gt; 1).
+
+From the von Staudt–Clausen theorem it is known that for odd {{math|''n'' &gt; 1}} the number {{math|2''B''&lt;sub&gt;''n''&lt;/sub&gt;}} is an integer. This seems trivial if one knows beforehand that the integer in question is zero. However, by applying Worpitzky's representation one gets
+
+: &lt;math&gt; 2B_n =\sum_{m=0}^n (-1)^m \frac{2}{m+1}m! \left\{{n+1\atop m+1} \right\} = 0\quad(n&gt;1 \text{ is odd})&lt;/math&gt;
+
+as a ''sum of integers'', which is not trivial. Here a combinatorial fact comes to surface which explains the vanishing of the Bernoulli numbers at odd index. Let {{math|''S''&lt;sub&gt;''n'',''m''&lt;/sub&gt;}} be the number of surjective maps from {{math|{1, 2, …, ''n''}|}} to {{math|{1, 2, …, ''m''}|}}, then {{math|''S''&lt;sub&gt;''n'',''m''&lt;/sub&gt; {{=}} ''m''!&lt;big&gt;&lt;big&gt;{&lt;/big&gt;&lt;/big&gt;{{su|p=''n''|b=''m''|a=c}}&lt;big&gt;&lt;big&gt;}&lt;/big&gt;&lt;/big&gt;}}. The last equation can only hold if
+
+: &lt;math&gt; \sum_{\text{odd }m=1}^{n-1} \frac 2 {m^2}S_{n,m}=\sum_{\text{even } m=2}^n \frac{2}{m^2} S_{n,m} \quad (n&gt;2 \text{ is even}). &lt;/math&gt;
+
+This equation can be proved by induction. The first two examples of this equation are
+
+:{{math|1=''n'' = 4: 2 + 8 = 7 + 3}},
+:{{math|1=''n'' = 6: 2 + 120 + 144 = 31 + 195 + 40}}.
+
+Thus the Bernoulli numbers vanish at odd index because some non-obvious combinatorial identities are embodied in the Bernoulli numbers.
+
+=== A restatement of the Riemann hypothesis ===
+
+The connection between the Bernoulli numbers and the Riemann zeta function is strong enough to provide an alternate formulation of the [[Riemann hypothesis]] (RH) which uses only the Bernoulli number. In fact [[Marcel Riesz]] {{harv|Riesz|1916}} proved that the RH is equivalent to the following assertion:
+
+:For every {{math|''ε'' &gt; {{sfrac|1|4}}}} there exists a constant {{math|''C''&lt;sub&gt;''ε''&lt;/sub&gt; &gt; 0}} (depending on {{math|''ε''}}) such that {{math|{{abs|''R''(''x'')}} &lt; ''C''&lt;sub&gt;''ε''&lt;/sub&gt;''x''&lt;sup&gt;''ε''&lt;/sup&gt;}} as {{math|''x'' → ∞}}.
+
+Here {{math|''R''(''x'')}} is the [[Riesz function]]
+
+: &lt;math&gt; R(x) = 2 \sum_{k=1}^\infty
+\frac{k^{\overline{k}} x^{k}}{(2\pi)^{2k}\left(\frac{B_{2k}}{2k}\right)}
+= 2\sum_{k=1}^\infty \frac{k^{\overline{k}}x^k}{(2\pi)^{2k}\beta_{2k}}. &lt;/math&gt;
+
+{{math|''n''&lt;sup&gt;{{overline|''k''}}&lt;/sup&gt;}} denotes the [[Pochhammer symbol#Alternate notations|rising factorial power]] in the notation of [[D. E. Knuth]]. The numbers {{math|''β''&lt;sub&gt;''n''&lt;/sub&gt; {{=}} {{sfrac|''B''&lt;sub&gt;''n''&lt;/sub&gt;|''n''}}}} occur frequently in the study of the zeta function and are significant  because {{math|''β''&lt;sub&gt;''n''&lt;/sub&gt;}} is a {{math|''p''}}-integer for primes {{math|''p''}} where {{math|''p'' − 1}} does not divide {{math|''n''}}.  The {{math|''β''&lt;sub&gt;''n''&lt;/sub&gt;}} are called ''divided Bernoulli numbers''.
+
+==&lt;span id=&quot;Generalized Bernoulli numbers&quot;&gt;&lt;/span&gt;Generalized Bernoulli numbers==
+The '''generalized Bernoulli numbers''' are certain [[algebraic number]]s, defined similarly to the Bernoulli numbers, that are related to [[Special values of L-functions|special values]] of [[Dirichlet L-function|Dirichlet {{mvar|L}}-functions]] in the same way that Bernoulli numbers are related to special values of the Riemann zeta function.
+
+Let {{mvar|χ}} be a [[Dirichlet character]] modulo {{mvar|f}}. The generalized Bernoulli numbers attached to {{mvar|χ}} are defined by
+
+: &lt;math&gt;\sum_{a=1}^f \chi(a) \frac{te^{at}}{e^{ft}-1} = \sum_{k=0}^\infty B_{k,\chi}\frac{t^k}{k!}.&lt;/math&gt;
+
+Apart from the exceptional {{math|''B''&lt;sub&gt;1,1&lt;/sub&gt; {{=}} {{sfrac|1|2}}}}, we have, for any Dirichlet character {{mvar|χ}}, that {{math|''B''&lt;sub&gt;''k'',''χ''&lt;/sub&gt; {{=}} 0}} if {{math|''χ''(−1) ≠ (−1)&lt;sup&gt;''k''&lt;/sup&gt;}}.
+
+Generalizing the relation between Bernoulli numbers and values of the Riemann zeta function at non-positive integers, one has the for all integers {{math|''k'' ≥ 1}}:
+
+: &lt;math&gt;L(1-k,\chi)=-\frac{B_{k,\chi}}k,&lt;/math&gt;
+
+where {{math|''L''(''s'',''χ'')}} is the Dirichlet {{mvar|L}}-function of {{mvar|χ}} {{harv|Neukirch|1999|loc=§VII.2}}.
+
+{{further information|Eisenstein–Kronecker number}}
+
+==Appendix==
+
+=== Assorted identities ===
+{{unordered list
+|1 = [[Umbral calculus]] gives a compact form of Bernoulli's formula by using an abstract symbol {{math|'''B'''}}:
+
+: &lt;math&gt;S_m(n) = \frac 1 {m+1} ((\mathbf{B} + n)^{m+1} - B_{m+1}) &lt;/math&gt;
+
+where the symbol {{math|'''B'''&lt;sup&gt;''k''&lt;/sup&gt;}} that appears during binomial expansion of the parenthesized term is to be replaced by the Bernoulli number {{math|''B&lt;sub&gt;k&lt;/sub&gt;''}} (and {{math|''B''&lt;sub&gt;1&lt;/sub&gt; {{=}} +{{sfrac|1|2}}}}). More suggestively and mnemonically, this may be written as a definite integral:
+
+:&lt;math&gt;S_m(n) = \int_0^n (\mathbf{B}+x)^m\,dx &lt;/math&gt;
+
+Many other Bernoulli identities can be written compactly with this symbol, e.g.
+
+:&lt;math&gt; (1-2\mathbf{B})^m  = (2-2^m) B_m  &lt;/math&gt;
+
+|2 = Let {{math|''n''}} be non-negative and even
+
+:&lt;math&gt; \zeta(n) = \frac{(-1)^{\frac{n}{2} - 1} B_n (2\pi)^n}{2(n!)}&lt;/math&gt;
+
+|3 = The {{math|''n''}}th [[cumulant]] of the [[uniform distribution (continuous)|uniform]] [[probability distribution]] on the interval [−1,&amp;nbsp;0] is {{math|{{sfrac|''B''&lt;sub&gt;''n''&lt;/sub&gt;|''n''}}}}.
+
+|4 = Let {{math|''n''? {{=}} {{sfrac|1|''n''!}}}} and {{math|''n'' ≥ 1}}. Then {{math|''B''&lt;sub&gt;''n''&lt;/sub&gt;}} is the following {{math|(''n'' + 1) × (''n'' + 1)}} determinant {{harv|Malenfant|2011}}:
+
+: &lt;math&gt;
+\begin{align}
+B_n &amp; = n! \begin{vmatrix}
+1 &amp; 0 &amp; \cdots &amp; 0 &amp; 1 \\
+2? &amp; 1 &amp; \cdots &amp; 0 &amp; 0 \\
+\vdots &amp; \vdots &amp; &amp; \vdots &amp; \vdots \\
+n? &amp; (n-1)? &amp; \cdots &amp; 1 &amp; 0 \\
+(n+1)? &amp; n? &amp; \cdots &amp; 2? &amp; 0
+\end{vmatrix} \\[8pt]
+&amp; = n! \begin{vmatrix}
+1 &amp; 0 &amp; \cdots &amp; 0 &amp; 1 \\
+\frac{1}{2!} &amp; 1 &amp; \cdots &amp; 0 &amp; 0 \\
+\vdots &amp; \vdots &amp; &amp; \vdots &amp; \vdots \\
+\frac{1}{n!} &amp; \frac{1}{(n-1)!} &amp; \cdots &amp; 1 &amp; 0 \\
+\frac{1}{(n+1)!} &amp; \frac{1}{n!} &amp; \cdots &amp; \frac{1}{2!} &amp; 0
+\end{vmatrix}
+\end{align}
+&lt;/math&gt;
+
+Thus the determinant is {{math|''σ''&lt;sub&gt;''n''&lt;/sub&gt;(1)}}, the [[Stirling polynomial]] at {{math|''x'' {{=}} 1}}.
+
+|5 = For even-numbered Bernoulli numbers, {{math|''B''&lt;sub&gt;2''p''&lt;/sub&gt;}} is given by the {{math|(''p'' + 1) × (''p'' + 1)}} determinant {{harv|Malenfant|2011}}:
+
+:&lt;math&gt; B_{2p} = -\frac{(2p)!}{2^{2p} - 2} \begin{vmatrix}
+1 &amp; 0 &amp; 0 &amp; \cdots &amp; 0 &amp; 1 \\
+\frac{1}{3!} &amp; 1 &amp; 0 &amp; \cdots &amp; 0 &amp; 0 \\
+\frac{1}{5!} &amp; \frac{1}{3!} &amp; 1 &amp; \cdots &amp; 0 &amp; 0 \\
+\vdots &amp; \vdots &amp; \vdots &amp; &amp; \vdots&amp; \vdots \\
+\frac{1}{(2p+1)!} &amp; \frac{1}{(2p-1)!} &amp; \frac{1}{(2p-3)!} &amp;\cdots &amp; \frac{1}{3!} &amp; 0
+\end{vmatrix}&lt;/math&gt;
+
+|6 = Let {{math|''n'' ≥ 1}}. Then ([[Leonhard Euler]])
+
+: &lt;math&gt; \frac{1}{n} \sum_{k=1}^n \binom{n}{k}B_k B_{n-k}+B_{n-1}=-B_n &lt;/math&gt;
+
+|7 = Let {{math|''n'' ≥ 1}}.  Then {{harv|von Ettingshausen|1827}}
+
+: &lt;math&gt; \sum_{k=0}^n \binom{n+1}k (n+k+1)B_{n+k}=0 &lt;/math&gt;
+
+|8 = Let {{math|''n'' ≥ 0}}.  Then ([[Leopold Kronecker]] 1883)
+
+: &lt;math&gt; B_n = - \sum_{k=1}^{n+1} \frac{(-1)^k}{k} \binom{n+1}{k} \sum_{j=1}^k j^n &lt;/math&gt;
+
+|9 = Let {{math|''n'' ≥ 1}} and {{math|''m'' ≥ 1}}.  Then {{harv|Carlitz|1968}}
+
+: &lt;math&gt; (-1)^m \sum_{r=0}^m \binom{m}{r} B_{n+r}=(-1)^n \sum_{s=0}^n \binom{n}{s} B_{m+s} &lt;/math&gt;
+
+|10 = Let {{math|''n'' ≥ 4}} and
+
+: &lt;math&gt; H_n=\sum_{k=1}^n k^{-1} &lt;/math&gt;
+
+the [[harmonic number]]. Then (H. Miki 1978)
+
+: &lt;math&gt; \frac{n}{2}\sum_{k=2}^{n-2}\frac{B_{n-k}}{n-k}\frac{B_k}{k} - \sum_{k=2}^{n-2} \binom{n}{k}\frac{B_{n-k}}{n-k} B_k =H_n B_n&lt;/math&gt;
+
+|11 = Let {{math|''n'' ≥ 4}}. [[Yuri Matiyasevich]] found (1997)
+
+: &lt;math&gt; (n+2)\sum_{k=2}^{n-2}B_k B_{n-k}-2\sum_{l=2}^{n-2}\binom{n+2}{l} B_l B_{n-l}=n(n+1)B_n &lt;/math&gt;
+
+|12 = ''Faber–[[Rahul Pandharipande|Pandharipande]]–[[Zagier]]–Gessel identity'': for {{math|''n'' ≥ 1}},
+
+: &lt;math&gt; \frac{n}{2}\left(B_{n-1}(x)+\sum_{k=1}^{n-1}\frac{B_{k}(x)}{k}
+\frac{B_{n-k}(x)}{n-k}\right) -\sum_{k=0}^{n-1}\binom{n}{k}\frac{B_{n-k}}
+{n-k} B_k(x) =H_{n-1}B_n(x).&lt;/math&gt;
+
+Choosing {{math|''x'' {{=}} 0}} or {{math|''x'' {{=}} 1}} results in the Bernoulli number identity in one or another convention.
+
+|13 = The next formula is true for {{math|''n'' ≥ 0}} if {{math|''B''&lt;sub&gt;1&lt;/sub&gt; {{=}} ''B''&lt;sub&gt;1&lt;/sub&gt;(1) {{=}} {{sfrac|1|2}}}}, but only for {{math|''n'' ≥ 1}} if {{math|''B''&lt;sub&gt;1&lt;/sub&gt; {{=}} ''B''&lt;sub&gt;1&lt;/sub&gt;(0) {{=}} −{{sfrac|1|2}}}}.
+
+:&lt;math&gt; \sum_{k=0}^n \binom{n}{k} \frac{B_k}{n-k+2} = \frac{B_{n+1}}{n+1} &lt;/math&gt;
+
+|14 = Let {{math|''n'' ≥ 0}}. Then
+
+:&lt;math&gt; -1 + \sum_{k=0}^n \binom{n}{k} \frac{2^{n-k+1}}{n-k+1}B_k(1) = 2^n &lt;/math&gt;
+
+and
+
+:&lt;math&gt; -1 + \sum_{k=0}^n \binom{n}{k} \frac{2^{n-k+1}}{n-k+1}B_{k}(0) = \delta_{n,0} &lt;/math&gt;
+
+|15 = A reciprocity relation of M.&amp;nbsp;B.&amp;nbsp;Gelfand {{harv|Agoh|Dilcher|2008}}:
+
+: &lt;math&gt; (-1)^{m+1} \sum_{j=0}^k \binom{k}{j} \frac{B_{m+1+j}}{m+1+j} + (-1)^{k+1} \sum_{j=0}^m \binom{m}{j}\frac{B_{k+1+j}}{k+1+j} = \frac{k!m!}{(k+m+1)!} &lt;/math&gt;
+
+}}
+
+== See also ==
+* [[Bernoulli polynomial]]
+* [[Bernoulli polynomials of the second kind]]
+* [[Bell number]]
+* [[Euler number]]
+* [[Genocchi number]]
+* [[Kummer's congruences]]
+* [[Poly-Bernoulli number]]
+* [[Hurwitz zeta function]]
+* [[Euler summation]]
+* [[Stirling polynomial]]
+* [[Sums of powers]]
+
+== Notes ==
+{{Notelist}}
+
+== References ==
+*{{citation |last1=Abramowitz |first1=M. |last2=Stegun |first2=C. A. |contribution=§23.1: Bernoulli and Euler Polynomials and the Euler-Maclaurin Formula |title=Handbook of Mathematical Functions with Formulas, Graphs, and Mathematical Tables |edition=9th printing |location=New York |publisher=Dover |pages=804–806 |year=1972}}.
+*{{citation |last=Arfken |first=George |date=1970 |title=Mathematical methods for physicists|edition=2nd |url= |location= |publisher=Academic Press, Inc. |isbn=978-0120598519 |author-link= }}.
+*{{citation |first1=Takashi |last1=Agoh |first2=Karl|last2=Dilcher|title=Reciprocity Relations for Bernoulli Numbers|journal=American Mathematical Monthly|volume=115|issue=3 |year=2008|pages=237–244|jstor=27642447 |doi=10.1080/00029890.2008.11920520 }}
+*{{citation |first=D. |last=André |title=Développements de sec x et tan x |journal=Comptes Rendus Acad. Sci. |volume=88 |year=1879 |pages=965–967}}.
+*{{citation |first=D. |last=André |title=Mémoire sur les permutations alternées |journal=Journal de Mathématiques Pures et Appliquées |volume=7 |year=1881 |pages=167–184}}.
+*{{citation |first=D. |last=Arlettaz |title=Die Bernoulli-Zahlen: eine Beziehung zwischen Topologie und Gruppentheorie |journal=Math. Semesterber |volume=45 |year=1998 |pages=61–75 |doi=10.1007/s005910050037}}.
+*{{citation |last=Apostol |first=T. M. |title=Introduction to Analytic Number Theory |publisher=Springer-Verlag }}.
+*{{citation |first=V. I. |last=Arnold |title=Bernoulli-Euler updown numbers associated with function singularities, their combinatorics and arithmetics |journal=Duke Math. J. |volume=63 |year=1991 |pages=537–555 |doi=10.1215/s0012-7094-91-06323-4}}.
+*{{citation |first=A. |last=Ayoub |title=Euler and the Zeta Function |journal=Amer. Math. Monthly |volume=74 |year=1981 |issue=2 |pages=1067–1086 |jstor=2319041| doi=10.2307/2319041}}.
+*{{citation |last=Boole |first=G. |title=A treatise of the calculus of finite differences |edition=3rd |place=London |year=1880}}.
+*{{citation |last1=Buhler |first1=J. |last2=Crandall |first2=R. |last3=Ernvall |first3=R. |last4=Metsankyla |first4=T. |last5=Shokrollahi |first5=M. |title=Irregular Primes and Cyclotomic Invariants to 12 Million |journal=Journal of Symbolic Computation |volume=31 |issue=1–2 |year=2001 |pages=89–96 |doi=10.1006/jsco.1999.1011}}.
+*{{citation |last=Carlitz |first=L. |title=Bernoulli Numbers |journal=[[Fibonacci Quarterly]] |volume=6 |pages=71–85 |year=1968}}.
+*{{citation |first=Thomas |last=Clausen |title=Lehrsatz aus einer Abhandlung über die Bernoullischen Zahlen |journal=Astron. Nachr. |volume=17 |year=1840 |issue=22 |pages=351–352 |doi=10.1002/asna.18400172205}}.
+*{{citation|last=Comtet|first=L. |title=Advanced combinatorics. The art of finite and infinite expansions|edition=Revised and Enlarged|publisher=D. Reidel Publ. Co.|location=Dordrecht-Boston|year=1974}}.
+*{{citation |first1=John |last1=Conway |authorlink1=John Horton Conway |first2=Richard |last2=Guy |authorlink2=Richard K. Guy |title=The Book of Numbers |publisher=Springer-Verlag |year=1996}}.
+*{{citation |title=Bernoulli numbers. Bibliography (1713–1990) |first1=K. |last1=Dilcher |first2=L. |last2=Skula |first3=I. Sh. |last3=Slavutskii |journal=Queen's Papers in Pure and Applied Mathematics |location=Kingston, Ontario |year=1991 |url=http://www.mscs.dal.ca/~dilcher/bernoulli.html |issue=87}}.
+*{{citation |first1=D. |last1=Dumont |first2=G. |last2=Viennot |title=A combinatorial interpretation of Seidel generation of Genocchi numbers |journal=Ann. Discrete Math. |volume=6 |year=1980 |pages=77–87 |doi=10.1016/S0167-5060(08)70696-4 |series=Annals of Discrete Mathematics |isbn=978-0-444-86048-4}}.
+*{{citation |first=D. |last=Dumont |contribution=Matrices d'Euler-Seidel |title=Séminaire Lotharingien de Combinatoire |volume = B05c|year=1981 |pages=25|url=http://emis.u-strasbg.fr/journals/SLC/opapers/s05dumont.html}}.
+*{{citation |first=N. D. |last=[[Noam Elkies|Elkies]] |title=On the sums Sum_(k=-infinity…infinity) (4k+1)^(-n) |journal=Amer. Math. Monthly |volume=110 |issue=7 |year=2003 |pages=561–573 |doi=10.2307/3647742|arxiv=math.CA/0101168|jstor=3647742 }}
+*{{citation |last=Entringer |first=R. C. |title=A combinatorial interpretation of the Euler and Bernoulli numbers |journal=Nieuw. Arch. V. Wiskunde |volume=14 |year=1966 |pages=241–6}}.
+*{{citation |last=von Ettingshausen |first=A. |title=Vorlesungen über die höhere Mathematik |volume=Bd. 1 |publisher=Carl Gerold |location=Vienna |year=1827}}.
+*{{citation |first=Leonhard |last=Euler |authorlink=Leonhard Euler |title=De summis serierum reciprocarum |year=1735 |journal=Opera Omnia |volume=I.14, E 41 |pages=73–86 |arxiv=math/0506415|bibcode = 2005math......6415E }}
+*{{cite arXiv |first1=G. |last1=Fee |first2=S. |last2=Plouffe |year=2007 |title=An efficient algorithm for the computation of Bernoulli numbers |eprint=math/0702300}}.
+*{{citation |first=Henry W. |last=Gould|title=Explicit formulas for Bernoulli numbers |journal=Amer. Math. Monthly |volume=79 |issue=1|year=1972 |pages=44–51 |doi=10.2307/2978125|jstor=2978125}}
+*{{Citation |last1=Graham|first=R.|authorlink1=Ronald Graham|last2=Knuth|first2=D. E.|authorlink2=Donald Knuth|last3=Patashnik|first3=O.|title=Concrete Mathematics |edition=2nd |year=1989 |publisher=Addison-Wesley |isbn=0-201-55802-5 }}.
+*{{citation |first1=Victor J. W. |last1=Guo |first2=Jiang |last2=Zeng |title=A q-Analogue of Faulhaber's Formula for Sums of Powers |journal=The Electronic Journal of Combinatorics |volume=11 |issue=2 |pages=1441 |year=2005 |url=http://www.combinatorics.org/Volume_11/Abstracts/v11i2r19.html |bibcode=2005math......1441G |arxiv=math/0501441}}.
+*{{citation |first=David |last=Harvey |year=2010 |title=A multimodular algorithm for computing Bernoulli numbers |arxiv=0807.1347 |doi=10.1090/S0025-5718-2010-02367-1 |zbl=1215.11016 | journal=Math. Comput. | volume=79 | issue=272 | pages=2361–2370}}.
+*{{citation|first1=Kenneth|last1=Ireland|first2=Michael|last2=Rosen|title=A Classical Introduction to Modern Number Theory|edition=2nd|publisher=Springer-Verlag|year=1990|isbn=0-387-97329-X}}
+*{{citation |first=C. G. J. |last=[[Carl Gustav Jacob Jacobi|Jacobi]] |title=De usu legitimo formulae summatoriae Maclaurinianae |journal=Journal für die reine und angewandte Mathematik |volume=12 |year=1834 |pages=263–272|url=https://zenodo.org/record/1448824/files/article.pdf }}.
+*{{citation |first=Charles |last=Jordan |title=Calculus of Finite Differences |publisher=Chelsea Publ. Co. |location=New York |year=1950}}.
+*{{citation |first=M. |last=Kaneko |title=The Akiyama-Tanigawa algorithm for Bernoulli numbers |journal=Journal of Integer Sequences |volume=12 |pages=29 |year=2000 |url=http://www.cs.uwaterloo.ca/journals/JIS/vol3.html |bibcode=2000JIntS...3...29K}}.
+*{{citation |first=Bernd |last=Kellner |title=Program Calcbn – A program for calculating Bernoulli numbers |year=2002 |url=http://www.bernoulli.org/}}.
+*{{citation |first1=D. E. |last1=Knuth |authorlink1= Donald Knuth |first2=T. J. |last2=Buckholtz |title=Computation of Tangent, Euler, and Bernoulli Numbers |journal=Mathematics of Computation |volume=21 | year=1967 | pages=663–688 | doi=10.2307/2005010 |jstor=2005010 |issue=100 |publisher=American Mathematical Society}}.
+*{{citation |first=D. E. |last=Knuth |authorlink=Donald Knuth | title=Johann Faulhaber and the Sums of Powers |year=1993 |journal=Mathematics of Computation |volume=61 |pages=277–294 |arxiv=math/9207222 |doi=10.2307/2152953 |jstor=2152953 |issue=203 |publisher=American Mathematical Society}}.
+*{{citation |first=E. E. |last=Kummer |authorlink=Ernst Kummer | title=Allgemeiner Beweis des Fermat'schen Satzes, dass die Gleichung x&lt;sup&gt;λ&lt;/sup&gt; + y&lt;sup&gt;λ&lt;/sup&gt; = z&lt;sup&gt;λ&lt;/sup&gt; durch ganze Zahlen unlösbar ist, für alle diejenigen Potenz-Exponenten λ, welche ungerade Primzahlen sind und in den Zählern der ersten (λ-3)/2 Bernoulli'schen Zahlen als Factoren nicht vorkommen |journal=J. Reine Angew. Math. |volume=40 |year=1850 |pages=131–138 |url=http://www.digizeitschriften.de/resolveppn/GDZPPN002146738}}.
+*{{citation |first=E. E. |last=Kummer |authorlink=Ernst Kummer |title=Über eine allgemeine Eigenschaft der rationalen Entwicklungscoefficienten einer bestimmten Gattung analytischer Functionen |journal=J. Reine Angew. Math. |volume=1851 |issue=41 |year=1851 |pages=368–372 |url=http://resolver.sub.uni-goettingen.de/purl?GDZPPN002147319|doi=10.1515/crll.1851.41.368 }}.
+*{{citation |first=Peter |last=Luschny |url=http://www.luschny.de/math/primes/bernincl.html |title=An inclusion of the Bernoulli numbers |year=2007}}.
+*{{citation |title=TheLostBernoulliNumbers |last=Luschny |first=Peter |work=OeisWiki |date=8 October 2011 |access-date=11 May 2019 |url= http://oeis.org/wiki/User:Peter_Luschny/TheLostBernoulliNumbers}}.
+*{{cite arXiv |eprint=1103.1585 |last=Malenfant|first=Jerome |title=Finite, closed-form expressions for the partition function and for Euler, Bernoulli, and Stirling numbers |class=math.NT |year=2011|ref=harv}}
+*{{citation |title=The Mathematics Genealogy Project |date=n.d. |location=Fargo |publisher=Department of Mathematics, North Dakota State University |access-date=11 May 2019 |url= https://www.genealogy.math.ndsu.nodak.edu/|ref={{SfnRef|Mathematics Genealogy Project|n.d.}}}}.
+*{{citation |last=Menabrea|first=L. F. |title=Sketch of the Analytic Engine invented by Charles Babbage, with notes upon the Memoir by the Translator Ada Augusta, Countess of Lovelace |journal=Bibliothèque Universelle de Genève |year=1842 |volume=82 |url=http://www.fourmilab.ch/babbage/sketch.html}}.
+*{{citation |title=Earliest Uses of Symbols of Calculus |last=Miller |first=Jeff |work=Earliest Uses of Various Mathematical Symbols |date=23 June 2017 |access-date=11 May 2019 |url= http://jeff560.tripod.com/calculus.html}}.
+*{{citation |first1=John W. |last1=Milnor |authorlink1=John Milnor |first2=James D. |last2=Stasheff |contribution=Appendix B: Bernoulli Numbers |pages=281–287 |title=Characteristic Classes |series=Annals of Mathematics Studies |volume=76 |publisher=Princeton University Press and University of Tokyo Press |year=1974}}.
+*{{Neukirch ANT}}
+*{{citation |first=Oleksandr |last=Pavlyk |title=Today We Broke the Bernoulli Record: From the Analytical Engine to Mathematica |year=2008 |url=http://blog.wolfram.com/2008/04/29/today-we-broke-the-bernoulli-record-from-the-analytical-engine-to-mathematica/ |publisher=Wolfram Blog}}.
+*{{citation |url=http://www.maecla.it/Matematica/sommapotenze/teorema_1B.htm#teorema1b |title=Esplorando un antico sentiero: teoremi sulla somma di potenze di interi successivi (Corollario 2b)|last=Pietrocola |first=Giorgio |date=October 31, 2008 |website=Maecla |access-date=April 8, 2017|language=it}}.
+*{{citation|last=Rademacher|first=H. |title=Analytic Number Theory|publisher=Springer-Verlag|location=New York|year=1973}}.
+*{{citation |first=M. |last=Riesz |title=Sur l'hypothèse de Riemann |journal=Acta Mathematica |volume=40 |year=1916 |pages=185–90 |doi=10.1007/BF02418544}}.
+*{{citation |first=Louis |last=Saalschütz |title=Vorlesungen über die Bernoullischen Zahlen, ihren Zusammenhang mit den Secanten-Coefficienten und ihre wichtigeren Anwendungen |publisher=Julius Springer |year=1893 |place=Berlin |url=http://digital.library.cornell.edu/cgi/t/text/text-idx?c=math;idno=00450002 }}.
+*{{citation |first=L. |last=Seidel |title=Über eine einfache Entstehungsweise der Bernoullischen Zahlen und einiger verwandten Reihen |journal=Sitzungsber. Münch. Akad. |volume=4 |year=1877 |pages=157–187}}.
+*{{citation |editor-first=Helaine |editor-last=Selin | editor-link=Helaine Selin|title=Encyclopaedia of the History of Science, Technology, and Medicine in Non-Western Cultures |publisher=Springer |journal=Encyclopaedia of the History of Science |year=1997 |page=819 |isbn=0-7923-4066-3 |bibcode=2008ehst.book.....S}}.
+*{{citation |first=Ilya Sh. |last=Slavutskii |title=Staudt and arithmetical properties of Bernoulli numbers |journal=Historia Scientiarum |volume=2 |year=1995 |pages=69–74}}.
+*{{citation |first1=David Eugene |last1=Smith |first2=Yoshio |last2=Mikami |title=A history of Japanese mathematics |publisher=Open Court publishing company |url=https://books.google.com/?id=pTcQsvfbSu4C&amp;pg=PA108 |year=1914 |isbn=978-0-486-43482-7}}.
+*{{citation |first=K. G. Ch. |last=von Staudt |title=Beweis eines Lehrsatzes, die Bernoullischen Zahlen betreffend |journal=Journal für die reine und angewandte Mathematik |volume=21 |year=1840 |pages=372–374}}.
+*{{citation |first=K. G. Ch. |last=von Staudt |contribution=De numeris Bernoullianis, commentationem alteram |title=Erlangen |year=1845}}.
+*{{citation |first=Zhi-Wei |last=Sun |title=Some curious results on Bernoulli and Euler polynomials |year=2005–2006 |url=http://pweb.nju.edu.cn/zwsun |archive-url=https://web.archive.org/web/20011031073728/http://pweb.nju.edu.cn/zwsun/ |url-status=dead |archive-date=2001-10-31 }}.
+*{{citation|title=Bernoulli Number |last=Weisstein |first=Eric W. |work=MathWorld |publisher=Wolfram |date=4 January 2016 |access-date=2 July 2017 |url= http://mathworld.wolfram.com/BernoulliNumber.html}}.
+*{{citation |doi=10.2307/2691054 |first=S. C. |last=Woon |title=A tree for generating Bernoulli numbers |jstor=2691054 |journal=Math. Mag. |volume=70 |issue=1 |year=1997 |pages=51–56}}.
+*{{cite arXiv |first=S. C. |last=Woon |title=Generalization of a relation between the Riemann zeta function and Bernoulli numbers |year=1998 |eprint=math.NT/9812143 }}.
+*{{citation |first=J. |last=Worpitzky |title=Studien über die Bernoullischen und Eulerschen Zahlen |journal=Journal für die reine und angewandte Mathematik |volume=94 |year=1883 |pages=203–232 |url=http://resolver.sub.uni-goettingen.de/purl?GDZPPN002158698}}.
+
+==External links==
+* {{springerEOM|title=Bernoulli numbers|id=p/b015640}}
+* ''[[:gutenberg:2586|The first 498 Bernoulli Numbers]]'' from [[Project Gutenberg]]
+* [http://web.maths.unsw.edu.au/~davidharvey/papers/bernmm/ A multimodular algorithm for computing Bernoulli numbers]
+* [http://www.bernoulli.org The Bernoulli Number Page]
+* [[:literateprograms:Category:Bernoulli numbers|Bernoulli number programs]] at [http://en.literateprograms.org LiteratePrograms]
+* {{MathWorld|title=Bernoulli Number|urlname=BernoulliNumber}}
+* {{cite web
+|url=http://www.luschny.de/math/primes/irregular.html
+|title= The Computation of Irregular Primes
+|author =  P. Luschny
+}}
+* {{cite web
+|url=http://oeis.org/wiki/User:Peter_Luschny/ComputationAndAsymptoticsOfBernoulliNumbers
+|title= The Computation And Asymptotics Of Bernoulli Numbers
+|author=P. Luschny
+}}
+* {{cite web | url=http://go.helms-net.de/math/pascal/bernoulli_en.pdf
+|title= Bernoullinumbers in context of Pascal-(Binomial)matrix
+|author=Gottfried Helms
+}}
+* {{cite web | url=http://go.helms-net.de/math/binomial/04_3_SummingOfLikePowers.pdf
+|title= summing of like powers in context with Pascal-/Bernoulli-matrix
+|author=Gottfried Helms
+}}
+* {{cite web | url =http://go.helms-net.de/math/binomial/02_2_GeneralizedBernoulliRecursion.pdf 
+|title= Some special properties, sums of Bernoulli-and related numbers
+|author=Gottfried Helms
+}}
+{{authority control}}
+{{DEFAULTSORT:Bernoulli Number}}
+[[Category:Number theory]]
+[[Category:Topology]]
+[[Category:Integer sequences]]</text>
+      <sha1>7xoa16sijb3ost39z82gpi8v47654x5</sha1>
+    </revision>
+  </page>

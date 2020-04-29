@@ -1,0 +1,154 @@
+  <page>
+    <title>Cygwin</title>
+    <ns>0</ns>
+    <id>6840</id>
+    <revision>
+      <id>941981468</id>
+      <parentid>941981208</parentid>
+      <timestamp>2020-02-21T20:52:22Z</timestamp>
+      <contributor>
+        <username>Walter Görlitz</username>
+        <id>121745</id>
+      </contributor>
+      <comment>Reverted to revision 941951142 by [[Special:Contributions/BluerJeans|BluerJeans]] ([[User talk:BluerJeans|talk]]): Agree with the new editior: this is not about Cygwin. Feel free to discuss on the talk page here. ([[WP:TW|TW]])</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{Refimprove|date=November 2011}}
+{{Infobox software
+| name = Cygwin
+| logo = Cygwin logo.svg
+| logo caption = 
+| screenshot = Cygwin X11 rootless WinXP.png
+| caption = Running Cygwin, including [[Cygwin/X]], under [[Windows XP]]
+| collapsible = 
+| author = Steve Chamberlain, [[Cygnus Solutions]]
+| developer = [[Cygnus Solutions]], [[Red Hat]], Cygwin project volunteers
+| released = {{start date and age|1995}}
+| latest release version = 3.1.2-1&lt;ref&gt;{{cite mailing list | mailinglist = Cygwin Announcements | title = cygwin 3.1.2-1 | date = 2019-12-21 | last = Vinschen | first = Corinna | url = https://cygwin.com/ml/cygwin-announce/2019-12/msg00026.html  | accessdate = 2020-01-10}}&lt;/ref&gt;
+| latest release date = {{release date and age|2019|12|21}}
+| operating system = [[Microsoft Windows]]
+| programming language = [[C (programming language)|C]]/[[C++]]
+| genre = [[:Category:Unix SUS2008 utilities|POSIX standard utilities]], [[C POSIX library|POSIX standard library]], [[C standard library]], [[Compatibility layer]]
+| license = [[GNU Lesser General Public License|LGPLv3]]
+}}
+'''Cygwin''' ({{IPAc-en|ˈ|s|ɪ|ɡ|w|ɪ|n}} {{respell|SIG|win}}&lt;ref&gt;{{Cite mailing list | mailinglist = Cygwin | url = http://cygwin.com/ml/cygwin/2004-09/msg00702.html | title = Re: How do you pronounce it? | first = Larry | last = Hall | date = 2004-09-14  | accessdate = 2007-10-10}}&lt;/ref&gt;) is a [[POSIX]]-compatible environment that runs natively on [[Microsoft Windows]]. Its goal is to allow programs of [[Unix-like]] systems to be recompiled and run natively on Windows with minimal [[source code]] modifications by providing them with the same underlying POSIX API they would expect in those systems. 
+
+The Cygwin installation directory behaves like the root and follows a similar directory layout to that found in Unix-like systems, with familiar directories like /bin, /home, /etc, /usr, /var available within it, and includes by default hundreds of programs and command-line tools commonly found in the Unix world, plus the terminal emulator [[Mintty]] which is the default [[command-line interface]] tool provided to interact with the environment.
+
+Cygwin provides native integration of Windows-based applications, data, and other system resources with applications, software tools, and data of the Unix-like environment. Thus it is possible to launch Windows applications from the Cygwin environment, as well as to use Cygwin tools and applications within the Windows operating context.
+
+Cygwin consists of two parts: a [[dynamic-link library]] (DLL) as an [[Application programming interface|API]] compatibility layer in the form of a [[C standard library]] providing a substantial part of the [[POSIX]] API functionality, and an extensive collection of [[Programming tool|software tools]] and applications that provide a Unix-like [[look and feel]].
+
+Cygwin was originally developed by [[Cygnus Solutions]]&lt;ref&gt;{{Cite web|url=https://cygwin.com/cygwin-ug-net/brief-history.html|title=A brief history of the Cygwin project|date=2018-02-02|website=Cygwin|access-date=2020-01-10}}&lt;/ref&gt;&lt;ref&gt;{{Cite web|url=https://www.usenix.org/legacy/publications/library/proceedings/usenix-nt98/full_papers/noer/noer_html/noer.html|title=Cygwin32: A Free Win32 Porting Layer for UNIX® Applications|date=1998-08-03|website=USENIX|access-date=2020-01-10}}&lt;/ref&gt;, which was later acquired by [[Red Hat]] (now part of [[IBM]]), to port the GNU/Linux [[toolchain]] to Win32, including the [[GNU Compiler Collection|GNU Compiler Suite]]. Rather than rewrite all the tools to use [[Windows API|Win32]] runtimes, Cygwin implemented a [[POSIX]] compatible runtime as a [[Dynamic-link library|DLL]].&lt;ref&gt;{{Cite web|url=https://discuss.howtogeek.com/t/solved-linux-subsystem-vs-cygwin-vs-mobaxterm/56366|title=(Solved) Linux Subsystem vs Cygwin vs MobaXterm|date=2017-01-24|website=Tech Help Forum by How-To Geek|access-date=2019-03-15}}&lt;/ref&gt; It is [[free and open-source software]], released under the [[GNU Lesser General Public License]] version 3.&lt;ref&gt;{{cite web|title=Cygwin library now available under GNU Lesser General Public License|url=https://www.redhat.com/en/about/blog/cygwin-library-now-available-under-gnu-lesser-general-public-license|website=Red Hat}}&lt;/ref&gt; Today it is maintained by volunteers including employees of Red Hat and many others.
+
+==Description==
+Cygwin consists of a library that implements the [[POSIX]] system call [[application programming interface|API]] in terms of [[Win32]] system calls, a [[GNU]] development toolchain (including [[GNU Compiler Collection|GCC]] and [[GNU Debugger|GDB]]) to allow software development, and running of a large number of application programs equivalent to those on [[Unix]] systems. Programmers have ported many Unix, GNU, [[BSD]] and [[Linux]] programs and packages to Cygwin, including the [[X Window System]], [[K Desktop Environment 3]], [[GNOME]],&lt;ref&gt;{{cite web|url=http://sourceware.org/cygwinports/|title=Cygwin Ports|accessdate=2 May 2015}}&lt;/ref&gt; [[Apache HTTP Server|Apache]], and [[TeX]]. Cygwin permits installing [[inetd]], [[syslogd]], [[Secure Shell|sshd]], [[Apache HTTP Server|Apache]], and other daemons as standard [[Windows service]]s, allowing Microsoft Windows systems to emulate Unix and Linux servers.
+
+Cygwin programs are installed by running Cygwin's &quot;setup&quot;&lt;ref&gt;{{Cite mailing list|mailinglist=Cygwin|title=New Cygwin Net Release|date=2000-04-17|last=Delorie|first=DJ|url=https://cygwin.com/ml/cygwin/2000-04/msg00269.html|accessdate=2020-01-10}}&lt;/ref&gt; program, which downloads the necessary program and feature package files from repositories on the Internet. Setup can install, update, and remove programs and their source code packages. A complete installation will take in excess of 90&amp;nbsp;GB&lt;ref&gt;{{Cite web|url=https://stackoverflow.com/questions/21230657/what-is-the-current-full-install-size-of-cygwin/21233990|title=What is the current full install size of Cygwin?|date=2018-05-28|website=StackOverflow|access-date=2020-01-11}}&lt;/ref&gt; of hard disk space, but usable configurations may require as little as 1 or 2&amp;nbsp;GB.
+
+Efforts to reconcile concepts that differ between Unix and Windows systems include:
+* A Cygwin-specific version of the Unix [[Mount (computing)|&lt;code&gt;mount&lt;/code&gt;]] command allows mounting Windows paths as &quot;filesystems&quot; in the Unix file space. Initial mount-points can be configured in &lt;code&gt;[[fstab|/etc/fstab]]&lt;/code&gt;, which has a format very similar to Unix systems, except that Windows paths appear in place of devices. Filesystems can be mounted in binary mode (by default), or in text mode, which enables automatic [[Newline#Common_problems|conversion]] between [[Newline|LF]] and [[CRLF]] endings (which only affects programs that open files without explicitly specifying text or binary mode).
+* Cygwin 1.7 introduced comprehensive support for POSIX [[Locale (computer software)|locales]] and many [[character encoding]]s, whereby the [[UTF-8]] [[Unicode]] encoding became the default. Windows file-names and other identifiers, which are encoded as [[UTF-16]], are automatically converted to and from the selected character-encoding.
+* Windows [[drive letter]]s map to a special directory, so for example &lt;code&gt;C:&lt;/code&gt; appears as &lt;code&gt;/cygdrive/c&lt;/code&gt;. The &lt;code&gt;/cygdrive&lt;/code&gt; prefix can be changed. Windows network paths of the form &lt;code&gt;\\HOST\SHARE\FILE&lt;/code&gt; are mapped to &lt;code&gt;//HOST/SHARE/FILE&lt;/code&gt;. Windows paths can also be used directly from Cygwin programs, but many programs do not support them correctly, hence this is discouraged.
+* Full-featured &lt;code&gt;[[/dev]]&lt;/code&gt; and &lt;code&gt;[[/proc]]&lt;/code&gt; file-systems are provided. &lt;code&gt;/proc/registry&lt;/code&gt; provides direct filesystem access to the registry.
+* Cygwin supports POSIX [[symbolic link]]s, representing them as plain-text files with the system [[attrib]]ute set. Cygwin 1.5 represented them as [[Windows Explorer]] [[File shortcut|shortcuts]], but this has been changed for reasons of performance and POSIX correctness. Cygwin also recognises NTFS [[NTFS junction point|junction points]] and [[NTFS symbolic link|symbolic links]] and treats them as POSIX symbolic links, but it does not create them as their semantics are not fully POSIX-compliant.
+* The [[POSIX]] API for handling [[access control list]]s (ACLs) is supported and maps to the Windows NT ACL system.&lt;ref&gt;{{Cite mailing list|last=Vinschen|first=Corinna|title=Updated: Cygwin 2.4.0-1|mailinglist=Cygwin Announcements|date=2016-01-16|url=http://www.cygwin.org/ml/cygwin-announce/2016-01/msg00018.html|accessdate = 2020-01-11}}&lt;/ref&gt;
+* Special formats of &lt;code&gt;/etc/passwd&lt;/code&gt; and &lt;code&gt;/etc/group&lt;/code&gt; are provided that include pointers to the Windows equivalent [[Security Identifier|SID]]s (in the [[Gecos field]]), allowing for mapping between Unix and Windows users and groups.
+* The [[Fork (computing)|fork]] system call for duplicating a process is fully implemented, but it does not map well to the Windows API. For example, the [[copy-on-write]] optimization strategy could not be used.&lt;ref&gt;
+{{cite web
+| title      = Cygwin FAQ: How is fork() implemented? 
+| url        = https://www.cygwin.com/faq.html
+| accessdate = Oct 10, 2010
+}}
+&lt;/ref&gt;&lt;ref&gt;
+{{cite web
+| title      = Highlights of Cygwin Functionality: Process Creation 
+| url        = http://cygwin.com/cygwin-ug-net/highlights.html#ov-hi-process
+| accessdate = Dec 24, 2014
+}}
+&lt;/ref&gt;&lt;ref&gt;
+{{Cite mailing list
+| last       = Blake
+| first      = Eric
+| title      = Bash doesn't launch the applications directly
+| mailinglist = Cygwin
+| date       = Jan 15, 2009
+| url        = http://www.cygwin.com/ml/cygwin/2009-01/msg00461.html
+
+| accessdate = Oct 10, 2010
+}}
+&lt;/ref&gt; As a result, Cygwin's fork is rather slow compared with Linux and others. (That overhead can often be avoided by replacing uses of the [[fork-exec|fork/exec]] technique with calls to the [[spawn (computing)|spawn]] functions declared in the Windows-specific [[process.h]] header).
+* The Cygwin DLL contains a console driver that emulates a Unix-style [[Terminal emulator|terminal]] within the [[Win32 console|Windows console]]. Cygwin's default user interface is the [[Bash (Unix shell)|bash]] shell running in the Cygwin console.
+* The DLL also implements [[pseudo terminal]] (pty) devices. Cygwin ships with a number of [[terminal emulator]]s that are based on them, including [[mintty]], [[rxvt]]([[rxvt-unicode|-unicode]]), and [[xterm]]. These are more compliant with Unix terminal standards and user interface conventions than the Cygwin console, but are less suited for running Windows console programs.
+* Various utilities are provided for converting between Windows and Unix paths and file formats, for handling line ending (CRLF/LF) issues, for displaying the [[Dynamic-link library|DLL]]s that an executable is linked with, etc.
+* Apart from always being linked against the Cygwin DLL, Cygwin executables are normal Windows executables. This means that Cygwin programs have full access to the [[Windows API]] and other Windows libraries, which allows gradual porting of programs from one platform to the other. However, programmers need to be careful about mixing conflicting POSIX and Windows functions.
+
+The version of [[GNU Compiler Collection|gcc]] that comes with Cygwin has various extensions for creating Windows DLLs, specifying whether a program is a windowing or console-mode program, adding resources, etc. Support for compiling programs that do not require the POSIX compatibility layer provided by the Cygwin DLL used to be included in the default &lt;code&gt;gcc&lt;/code&gt;, but {{as of | 2014 | lc = on}} is provided by cross-compilers contributed by the [[MinGW#MinGW-w64|MinGW-w64]] project.
+
+Cygwin is used heavily for porting many popular pieces of software to the Windows platform. It is used to compile [[Sun Microsystems|Sun]] [[Java (programming language)|Java]], [[LibreOffice]], and even web server software like [[Lighttpd]] and [[Hiawatha (web server)|Hiawatha]].&lt;ref&gt;
+[http://www.hiawatha-webserver.org/download Windows package of Hiawatha Webserver compiled via Cygwin]&lt;/ref&gt;
+
+The Cygwin API library is licensed under the [[GNU Lesser General Public License]] version 3 (or later) with an exception to allow linking to any [[free and open-source software]] whose license conforms to the [[Open Source Definition]]&lt;ref name=&quot;cyglicense&quot;&gt;{{cite web | url = https://cygwin.com/licensing.html | title = What are the licensing terms? | archiveurl = https://web.archive.org/web/20120728133502/http://cygwin.com/licensing.html | archivedate=2012-07-28  | url-status = live |work = Cygwin}}
+&lt;/ref&gt; (less strict than the Free Software Definition).
+
+==History==
+Cygwin began in 1995 as a project of Steve Chamberlain, a [[Cygnus Solutions|Cygnus]] engineer who observed that Windows NT and 95 used [[COFF]] as their [[object file format]], and that GNU already included support for [[x86]] and COFF, and the C library [[newlib]]. He thought it would be possible to retarget [[GNU Compiler Collection|GCC]] and produce a [[cross compiler]] generating executables that could run on Windows. This proved practical and a prototype was quickly developed.
+
+The next step was to attempt to [[Bootstrapping (compilers)|bootstrap]] the compiler on a Windows system, requiring sufficient emulation of Unix to let the [[Autoconf|GNU configure]] [[shell script]] run. A [[Bourne shell]]-compatible command interpreter, such as [[Bash (Unix shell)|bash]], was needed and in turn a [[Fork (computing)|fork]] system call emulation and [[Standard streams|standard input/output]]. Windows includes similar functionality, so the Cygwin library just needed to provide a [[POSIX]]-compatible [[application programming interface]] (API) and properly translate calls and manage private versions of data, such as [[file descriptor]]s.
+
+Initially, Cygwin was called gnuwin32 (not to be confused with the current [[GnuWin32]] project). The name was changed to Cygwin32 to emphasize Cygnus' role in creating it. When [[Microsoft]] registered the trademark [[Win32]], the 32 was dropped to simply become Cygwin.
+
+By 1996, other engineers had joined in, because it was clear that Cygwin would be a useful way to provide Cygnus' embedded tools hosted on Windows systems (the previous strategy had been to use [[DJGPP]]). It was especially attractive because it was possible to do a [[Canadian cross|three-way cross-compile]], for instance to use a hefty [[Sun Microsystems]] workstation to build, say, a Windows-x-[[MIPS architecture|MIPS]] cross-compiler, which was faster than using the PC at the time. In 1999, Cygnus offered Cygwin 1.0 as a commercial product&lt;ref&gt;{{cite web|url=https://books.google.com/?id=_k4EAAAAMBAJ&amp;pg=PA110&amp;dq=InfoWorld+15+Nov+1999+Cygwin#v=onepage&amp;q=InfoWorld%2015%20Nov%201999%20Cygwin&amp;f=false|title=Cygwin Unites Unix and Windows Apps|website=Google Books|date=1999-11-15|accessdate=2020-01-13}}&lt;/ref&gt; of interest in its own right although subsequent versions have not been released, instead relying on continued open source releases.
+
+Geoffrey Noer was the project lead from 1996 to 1999.&lt;ref&gt;{{cite mailing list|mailinglist=Cygwin|first=DJ|last=Delorie|date=1999-02-17|url=https://cygwin.com/ml/cygwin/1999-02/msg00556.html|title=fyi: who does what|accessdate=2020-01-13}}&lt;/ref&gt;&lt;ref&gt;{{cite mailing list|mailinglist=Cygwin|first=Geoffrey|last=Noer|date=1999-02-19|url=https://cygwin.com/ml/cygwin/1999-02/msg00639.html|title=A partial goodbye...|accessdate=2020-01-13}}&lt;/ref&gt; Christopher Faylor was the project lead from 1999 to mid-2014. Corinna Vinschen became co-lead since 2004&lt;ref&gt;{{cite mailing list|mailinglist=Cygwin|first=Christopher|last=Faylor|date=2004-03-31|url=https://cygwin.com/ml/cygwin/2004-03/msg01568.html|title=Changing jobs|accessdate=2020-01-13}}&lt;/ref&gt; when Faylor left Red Hat and has been lead since mid-2014, when Faylor withdrew from active participation in the project.&lt;ref&gt;{{cite mailing list|mailinglist=Cygwin|first=Christopher|last=Faylor|date=2014-07-31|url=https://sourceware.org/ml/cygwin/2014-07/msg00392.html|title=Christopher Faylor – Withdrawing from the project|accessdate=2 May 2015}}&lt;/ref&gt;
+
+==Features==
+Cygwin's base package selection is fairly small (about 100&amp;nbsp;MB&lt;ref&gt;{{cite web|url=https://cygwin.com/install.html|title=Installing and Updating Cygwin Packages|website=Cygwin|accessdate=2020-01-11}}&lt;/ref&gt;), containing little more than the [[Bash (Unix shell)|bash]] (interactive user) and [[Dash (shell)|dash]] (installation) shells and the core file and text manipulation utilities expected of a Unix command line. Additional packages are available as optional installs from within Cygwin's package manager (&quot;setup-x86.exe&quot; – 32bit &amp; &quot;setup-x86_64.exe&quot; – 64bit). These include (among many others&lt;ref&gt;{{cite web|url=https://cygwin.com/packages/package_list.html|title=Cygwin Package List|website=Cygwin|accessdate=2020-01-11}}&lt;/ref&gt;):
+* Shells (i.e. command line interpreters): [[Bash (Unix shell)|bash]], [[Debian Almquist shell|dash]], [[Friendly interactive shell|fish]], [[Korn shell|pdksh]], [[tcsh]], [[zsh]]
+* File and system utilities: [[coreutils]], [[findutils]], [[util-linux]]
+* Text utilities: [[grep]], [[sed]], [[diff]], [[patch (Unix)|patch]], [[awk]]
+* Terminals: [[mintty]], [[rxvt]], [[GNU Screen|screen]]
+* Editors: [[ed (editor)|ed]], [[emacs]], [[Joe's Own Editor|joe]], [[mined (text editor)|mined]], [[nano (text editor)|nano]], [[Vim (text editor)|vim]]
+* Remote login: [[OpenSSH|ssh]], [[Remote Shell|rsh]], [[telnet]]
+* Remote file transfer/synchronization: [[ftp]], [[Secure copy|scp]], [[rsync]], [[Unison (file synchronizer)|unison]], [[rtorrent]]
+* Compression/archiving: [[tar (file format)|tar]], [[gzip]], [[bzip2]], [[lzma]], [[ZIP (file format)|zip]]
+* Text processing: [[TeX]], [[groff (software)|groff]], [[Ghostscript]]
+* Programming languages: [[C (programming language)|C]], [[C++]], [[Objective-C]], [[Fortran]], [[Gambas]], [[Perl]], [[Python (programming language)|Python]], [[Ruby (programming language)|Ruby]], [[Tcl]], [[Ada (programming language)|Ada]], [[CLISP]], [[Scheme (programming language)|Scheme]], [[OCaml]], [[Prolog]]
+* Development tools: [[make (software)|make]], [[autotools]], [[flex lexical analyser|flex]], [[GNU bison|bison]], [[doxygen]]
+* Version control systems: [[Concurrent Versions System|cvs]], [[Subversion (software)|subversion]], [[Git (software)|git]], [[mercurial]]
+* Servers: [[Apache HTTP Server|Apache]], [[BIND]], [[PostgreSQL]], [[Pure-FTPd]], [[OpenSSH]], [[telnetd]], [[exim]], [[UW IMAP]]
+* Clients: [[Mutt (e-mail client)|Mutt]] (email), [[Lynx (web browser)|Lynx]] (web), [[Irssi]] (IRC), [[tin (newsreader)|tin]] (newsgroups)
+
+The [[Cygwin/X]] project contributes an implementation of the [[X Window System]] that allows graphical Unix programs to display their user interfaces on the Windows desktop. This can be used with both local and remote programs. Cygwin/X supports over 500 packages including major X window managers, desktop environments, and applications, for example:
+* Terminals: [[rxvt-unicode]], [[xterm]]
+* Editors: emacs-X11, [[Vim (text editor)|gvim]]
+* Text processors/viewers: [[LyX]], [[xpdf]], [[Device independent file format|xdvi]]
+* WWW browsers: [[Epiphany (GNOME)|epiphany]], [[konqueror]], [[Links (web browser)|links]], [[Lynx (web browser)|lynx]], [[Midori (web browser)|midori]], [[qupzilla]], [[w3m]]
+
+In addition to the low-level [[Xlib]]/[[XCB]] libraries for developing X applications, Cygwin also ships with various higher-level and cross-platform [[Graphical user interface|GUI]] frameworks, including [[GTK+]] and [[Qt (software)|Qt]].
+
+The [[Cygwin Ports]] project provided many additional packages that were not available in the Cygwin distribution itself. Examples included [[GNOME]] and [[K Desktop Environment 3]] as well as the [[MySQL]] database and the [[PHP]] scripting language. Most ports have been adopted by volunteer maintainers as Cygwin packages, and Cygwin Ports are no longer maintained. 
+
+==References==
+{{Reflist}}
+
+==External links==
+{{wikibooks}}
+* {{official website}}
+
+{{FLOSS}}
+{{Unix-Windows Interoperability}}
+
+[[Category:Compatibility layers]]
+[[Category:Computer programming tools]]
+[[Category:Free compilers and interpreters]]
+[[Category:Free emulation software]]
+[[Category:Free software programmed in C]]
+[[Category:Free software programmed in C++]]
+[[Category:Red Hat software]]
+[[Category:System administration]]
+[[Category:Unix emulators]]
+[[Category:Windows-only free software]]</text>
+      <sha1>alct17n5law06ckwoz5tv1jnrw8yu9x</sha1>
+    </revision>
+  </page>

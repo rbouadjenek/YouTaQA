@@ -1,0 +1,178 @@
+  <page>
+    <title>Anemometer</title>
+    <ns>0</ns>
+    <id>2994</id>
+    <revision>
+      <id>940648963</id>
+      <parentid>939249211</parentid>
+      <timestamp>2020-02-13T20:28:07Z</timestamp>
+      <contributor>
+        <username>Aku-PDF-Finder</username>
+        <id>37637513</id>
+      </contributor>
+      <comment>found working pdf links</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{short description|Meteorological instrumentation used for measuring the speed of wind}}
+{{pp-semi-indef}}
+[[File:Wea00920.jpg|thumb|A hemispherical cup anemometer of the type invented in 1846 by [[Thomas Romney Robinson|John Thomas Romney Robinson]].]]
+
+An '''anemometer''' is a device used for measuring [[wind speed]] and [[wind direction|direction]]. It is also a common [[weather station]] instrument. The term is derived from the Greek word ''anemos'', which means [[wind]], and is used to describe any wind speed instrument used in [[meteorology]]. The first known description  of an anemometer was given by [[Leon Battista Alberti]] in 1450.
+
+==History==
+The anemometer has changed little since its development in the 15th century. [[Leon Battista Alberti]] (1404–1472) is said to have invented the first mechanical anemometer around 1450. In following centuries, numerous others, including [[Robert Hooke]]
+(1635–1703), developed their own versions, with some being mistakenly credited as the inventor. In 1846, [[John Thomas Romney Robinson]] (1792–1882) improved upon the design by using four hemispherical cups and mechanical wheels. In 1926, Canadian meteorologist [[John Patterson (meteorologist)|John Patterson]] (January 3, 1872 – February 22, 1956) developed a three-cup anemometer, which was improved by Brevoort and Joiner in 1935. In 1991, [[Derek Weston]] added the ability to measure wind direction. In 1994, [[Andreas Pflitsch]] developed the sonic anemometer.&lt;ref&gt;{{cite web|url=https://www.windlogger.com/blogs/news/history-of-the-anemometer |title=History of the Anemometer|publisher=Logic Energy|date=2012-06-18}}&lt;/ref&gt;
+
+==Velocity anemometers==
+
+===Cup anemometers===
+[[File:Cup-Anemometer-Animation.gif|thumb|right|Cup anemometer animation]]
+A simple type of anemometer was invented in 1845 by Rev Dr [[John Thomas Romney Robinson]], of [[Armagh Observatory]]. It consisted of four [[hemispherical]] cups mounted on horizontal arms, which were mounted on a vertical shaft. The air flow past the cups in any horizontal direction turned the shaft at a rate that was roughly proportional to the wind speed. Therefore, counting the turns of the shaft over a set time interval produced a value proportional to the average wind speed for a wide range of speeds. It is also called a rotational anemometer.
+
+On an anemometer with four cups, it is easy to see that since the cups are arranged symmetrically on the end of the arms, the wind always has the hollow of one cup presented to it and is blowing on the back of the cup on the opposite end of the cross. Since a hollow hemisphere has a [[drag coefficient]] of .38 on the spherical side and 1.42 on the hollow side,&lt;ref&gt;{{Citation|url=https://ia600707.us.archive.org/13/items/FluidDynamicDragHoerner1965/Fluid-dynamic_drag__Hoerner__1965.pdf#page=60&amp;zoom=auto,-77,435 |title=Sighard Hoerner's Fluid Dynamic Drag|pages=3–17, Figure 32|date=1965}} (pg 60 of 455) &lt;/ref&gt; more force is generated on the cup that is presenting its hollow side to the wind. Because of this asymmetrical force, torque is generated on the axis of the anemometer, causing it to spin.
+
+Theoretically, the speed of rotation of the anemometer should be proportional to the wind speed, because the force produced on an object is proportional to the speed of the fluid flowing past it, but other factors influence the rotational speed, including turbulence produced by the apparatus, increasing drag in opposition to the torque that is produced by the cups and support arms, and friction of the mount point. When Robinson first designed his anemometer, he asserted that the cups moved one-third of the speed of the wind, unaffected by the cup size or arm length. This was apparently confirmed by some early independent experiments, but it was incorrect. Instead, the ratio of the speed of the wind and that of the cups, the ''anemometer factor'', depends on the dimensions of the cups and arms, and may have a value between two and a little over three. Every previous experiment involving an anemometer had to be repeated after the error was discovered.
+
+The three-cup anemometer developed by the Canadian [[John Patterson (meteorologist)|John Patterson]] in 1926 and subsequent cup improvements by Brevoort &amp; Joiner of the United States in 1935 led to a cupwheel design with a nearly linear response and had an error of less than 3% up to {{convert|60|mi/h|km/h|abbr=on}}. Patterson found that each cup produced maximum torque when it was at 45° to the wind flow. The three-cup anemometer also had a more constant torque and responded more quickly to gusts than the four-cup anemometer.
+
+The three-cup anemometer was further modified by the Australian Dr. Derek Weston in 1991 to measure both wind direction and wind speed. Weston added a tag to one cup, which causes the cupwheel speed to increase and decrease as the tag moves alternately with and against the wind. Wind direction is calculated from these cyclical changes in cupwheel speed, while wind speed is determined from the average cupwheel speed.
+
+Three-cup anemometers are currently used as the industry standard for [[wind resource assessment]] studies &amp; practice.
+
+===Vane anemometers===
+One of the other forms of mechanical velocity anemometer is the ''vane anemometer''. It may be described as a [[windmill]] or a propeller anemometer. Unlike the Robinson anemometer, whose axis of rotation is vertical, the vane anemometer must have its axis parallel to the direction of the wind and therefore horizontal. Furthermore, since the wind varies in direction and the axis has to follow its changes, a [[weather vane|wind vane]] or some other contrivance to fulfill the same purpose must be employed.
+
+A ''vane anemometer'' thus combines a propeller and a tail on the same axis to obtain accurate and precise wind speed and direction measurements from the same instrument.&lt;ref name= WMO&gt;{{cite web|url=http://www.eumetcal.org/resources/ukmeteocal/rapid_cyclo/www/english/glossary/vaneanem.htm|title=Vane anemometer|author=[[World Meteorological Organization]]|work=Eumetcal|access-date=6 April 2014|archive-url=https://web.archive.org/web/20140408221107/http://www.eumetcal.org/resources/ukmeteocal/rapid_cyclo/www/english/glossary/vaneanem.htm|archive-date=8 April 2014|url-status=dead}}&lt;/ref&gt; The speed of the fan is measured by a rev counter and converted to a windspeed by an electronic chip. Hence, volumetric flow rate may be calculated if the cross-sectional area is known.
+
+In cases where the direction of the air motion is always the same, as in ventilating shafts of mines and buildings, wind vanes known as air meters are employed, and give satisfactory results.{{Citation needed|date=December 2014}}
+
+&lt;gallery caption=&quot;Vane anemometers&quot; class=&quot;center&quot;&gt;
+File:Wind speed and direction instrument - NOAA.jpg|Vane style of anemometer
+File:Prop vane anemometer.jpg|[[Helicoid]] propeller anemometer incorporating a [[wind vane]] for orientation
+File:Anemometer-IMG 4734-white.jpg|Hand-held low-speed vane anemometer
+File:Digital_Handheld_Anemometer.jpg|Hand-held digital anemometer
+&lt;/gallery&gt;
+
+===Hot-wire anemometers===
+[[File:Hd sonde.jpg|thumb|left|Hot-wire sensor]]
+Hot wire anemometers use a fine wire (on the order of several micrometres) electrically heated to some temperature above the ambient. Air flowing past the wire cools the wire. As the electrical resistance of most metals is dependent upon the temperature of the metal ([[tungsten]] is a popular choice for hot-wires), a relationship can be obtained between the resistance of the wire and the flow speed.&lt;ref&gt;{{cite web|url=http://www.efunda.com/designstandards/sensors/hot_wires/hot_wires_intro.cfm|title=Hot-wire Anemometer explanation|publisher=eFunda|access-date=18 September 2006|archiveurl=https://web.archive.org/web/20061010125307/http://www.efunda.com/DesignStandards/sensors/hot_wires/hot_wires_intro.cfm |archivedate=10 October 2006|url-status=live}}&lt;/ref&gt; In most cases, they cannot be used to measure wind direction, unless coupled with a wind vane.
+
+Several ways of implementing this exist, and hot-wire devices can be further classified as CCA ([[constant current]] anemometer), CVA ([[Voltage source|constant voltage]] anemometer) and CTA (constant-temperature anemometer). The voltage output from these anemometers is thus the result of some sort of circuit within the device trying to maintain the specific variable (current, voltage or temperature) constant, following [[Ohm's law]].
+
+Additionally, PWM ([[pulse-width modulation]]) anemometers are also used, wherein the velocity is inferred by the time length of a repeating pulse of current that brings the wire up to a specified resistance and then stops until a threshold &quot;floor&quot; is reached, at which time the pulse is sent again.
+
+Hot-wire anemometers, while extremely delicate, have extremely high frequency-response and fine spatial resolution compared to other measurement methods, and as such are almost universally employed for the detailed study of turbulent flows, or any flow in which rapid velocity fluctuations are of interest.
+
+An industrial version of the fine-wire anemometer is the [[Thermal mass flow meter|thermal flow meter]], which follows the same concept, but uses two pins or strings to monitor the variation in temperature. The strings contain fine wires, but encasing the wires makes them much more durable and capable of accurately measuring air, gas, and emissions flow in pipes, ducts, and stacks. Industrial applications often contain dirt that will damage the classic hot-wire anemometer.
+
+[[File:Laser anemometer.png|thumb|360px|Drawing of a laser anemometer. The laser light is emitted (1) through the front lens (6) of the anemometer and is backscattered off the air molecules (7). The backscattered radiation (dots) re-enters the device and is reflected and directed into a detector (12).]]
+
+===Laser Doppler anemometers===
+In [[laser Doppler velocimetry]], laser Doppler anemometers use a beam of light from a [[laser]] that is divided into two beams, with one propagated out of the anemometer. Particulates (or deliberately introduced seed material) flowing along with air molecules near where the beam exits reflect, or backscatter, the light back into a detector, where it is measured relative to the original laser beam. When the particles are in great motion, they produce a [[Doppler shift]] for measuring wind speed in the laser light, which is used to calculate the speed of the particles, and therefore the air around the anemometer.&lt;ref&gt;{{cite web|last=Iten|first=Paul D.|date=29 June 1976|url=http://patft.uspto.gov/netacgi/nph-Parser?patentnumber=3966324|title=Laser Doppler Anemometer|publisher=United States Patent and Trademark Office|access-date=18 September 2006}}&lt;/ref&gt;
+[[File:Ultrasonic Windsensor.png|thumb|2D ultrasonic anemometer with 3 paths]]
+
+===Ultrasonic anemometers===
+[[File:WindMaster.jpg|thumb|3D ultrasonic anemometer]]
+Ultrasonic anemometers, first developed in the 1950s, use [[ultrasound|ultrasonic sound waves]] to measure wind velocity. They measure wind speed based on the time of flight of sonic pulses between pairs of [[transducer]]s. Measurements from pairs of transducers can be combined to yield a measurement of velocity in 1-, 2-, or 3-dimensional flow. The [[spatial resolution]] is given by the path length between transducers, which is typically 10 to 20 [[centimeter|cm]]. Ultrasonic anemometers can take measurements with very fine [[temporal resolution]], 20 [[hertz|Hz]] or better, which makes them well suited for [[turbulence]] measurements. The lack of moving parts makes them appropriate for long-term use in exposed automated weather stations and weather buoys where the accuracy and reliability of traditional cup-and-vane anemometers are adversely affected by salty air or dust. Their main disadvantage is the distortion of the air flow by the structure supporting the transducers, which requires a correction based upon wind tunnel measurements to minimize the effect. An international standard for this process, [[ISO 16622]] ''Meteorology—Ultrasonic anemometers/thermometers—Acceptance test methods for mean wind measurements'' is in general circulation. Another disadvantage is lower accuracy due to precipitation, where rain drops may vary the [[speed of sound]].
+
+Since the speed of sound varies with temperature, and is virtually stable with pressure change, ultrasonic anemometers are also used as [[thermometers]].
+
+Two-dimensional (wind speed and wind direction) sonic anemometers are used in applications such as [[weather station]]s, ship navigation, aviation, [[weather buoy]]s and wind turbines. Monitoring wind turbines usually requires a refresh rate of wind speed measurements of 3&amp;nbsp;Hz,&lt;ref&gt;{{cite book |last=Giebhardt |first=Jochen |editor-last1=Dalsgaard Sørensen |editor-first1=John |editor-last2=N Sørensen |editor-first2=Jens |title=Wind Energy Systems: Optimising design and construction for safe and reliable operation |publisher=Elsevier |date=December 20, 2010 |pages=329–349 |chapter=Chapter 11: Wind turbine condition monitoring systems and techniques |isbn=9780857090638 }}&lt;/ref&gt; easily achieved by sonic anemometers. Three-dimensional sonic anemometers are widely used to measure gas emissions and ecosystem fluxes using the [[eddy covariance]] method when used with fast-response [[infrared gas analyzer]]s or [[laser]]-based analyzers.
+
+Two-dimensional wind sensors are of two types:
+* '''Two ultrasounds paths''': These sensors have four arms. The disadvantage of this type of sensor is that when the wind comes in the direction of an ultrasound path, the arms disturb the airflow, reducing the accuracy of the resulting measurement.
+* '''Three ultrasounds paths''': These sensors have three arms. They give one path redundancy of the measurement which improves the sensor accuracy and reduces aerodynamic turbulence.
+
+====Acoustic resonance anemometers====
+[[File:Acoustic Resonance Wind Sensor.jpg|thumb|left|Acoustic resonance anemometer]]
+Acoustic resonance anemometers are a more recent variant of sonic anemometer. The technology was invented by Savvas Kapartis and patented in 1999.&lt;ref&gt;Kapartis, Savvas (1999) &quot;Anemometer employing standing wave normal to fluid flow and travelling wave normal to standing wave&quot; {{US Patent|5877416}}&lt;/ref&gt; Whereas conventional sonic anemometers rely on time of flight measurement, acoustic resonance sensors use resonating acoustic (ultrasonic) waves within a small purpose-built cavity in order to perform their measurement.
+
+[[File:Acoustic Resonance Anemometer.jpg|thumb|Acoustic resonance principle]]
+Built into the cavity is an array of ultrasonic transducers, which are used to create the separate standing-wave patterns at ultrasonic frequencies. As wind passes through the cavity, a change in the wave's property occurs (phase shift). By measuring the amount of phase shift in the received signals by each transducer, and then by mathematically processing the data, the sensor is able to provide an accurate horizontal measurement of wind speed and direction.
+
+Acoustic resonance technology enables measurement within a small cavity, the sensors therefore tend to be typically smaller in size than other ultrasonic sensors. The small size of acoustic resonance anemometers makes them physically strong and easy to heat and therefore resistant to icing. This combination of features means that they achieve high levels of data availability and are well suited to wind turbine control and to other uses that require small robust sensors such as battlefield meteorology. One issue with this sensor type is measurement accuracy when compared to a calibrated mechanical sensor. For many end uses, this weakness is compensated for by the sensor's longevity and the fact that it does not require re-calibrating once installed.
+
+===Ping-pong ball anemometers===
+A common anemometer for basic use is constructed from a [[ping-pong ball]] attached to a string. When the wind blows horizontally, it presses on and moves the ball; because ping-pong balls are very lightweight, they move easily in light winds. Measuring the angle between the string-ball apparatus and the vertical gives an estimate of the wind speed.
+
+This type of anemometer is mostly used for middle-school level instruction, which most students make on their own, but a similar device was also flown on [[Phoenix Mars Lander#Meteorological station|Phoenix Mars Lander]].&lt;ref&gt;[http://marslab.au.dk/research/instrument-development/the-telltale-project/ &quot;The Telltale project.&quot;] {{webarchive |url=https://web.archive.org/web/20120220080017/http://www.marslab.dk/TelltaleProject.html |date=20 February 2012 }}&lt;/ref&gt;
+
+==Pressure anemometers==
+[[File:Britannia Yacht Club tour, burgee, and wind gauge.jpg|thumb|right|[[Britannia Yacht Club]] clubhouse tour, burgee, and wind gauge on roof]]
+The first designs of anemometers that measure the pressure were divided into plate and tube classes.
+
+===Plate anemometers===
+These are the first modern anemometers. They consist of a flat plate suspended from the top so that the wind deflects the plate. In 1450, the Italian art architect Leon Battista Alberti invented the first mechanical anemometer; in 1664 it was re-invented by Robert Hooke (who is often mistakenly considered the inventor of the first anemometer). Later versions of this form consisted of a flat plate, either square or circular, which is kept normal to the wind by a wind vane. The pressure of the wind on its face is balanced by a spring. The compression of the spring determines the actual force which the wind is exerting on the plate, and this is either read off on a suitable gauge, or on a recorder. Instruments of this kind do not respond to light winds, are inaccurate for high wind readings, and are slow at responding to variable winds. Plate anemometers have been used to trigger high wind alarms on bridges.
+
+===Tube anemometers===
+[[File:Tube anemometer invented by William Henry Dines.jpg|thumb|left|Tube anemometer invented by William Henry Dines. The movable part (right) is mounted on the fixed part (left).]]
+[[File:Instruments at Mount Washington Observatory.JPG|thumb|Instruments at [[Mount Washington Observatory]]. The pitot tube static anemometer is on the right.]]
+[[File:Pitot tube static anemometer.JPG|thumb|The pointed head is the pitot port. The small holes are connected to the static port.]]
+
+[[James Lind (1736–1812)|James Lind]]'s anemometer of 1775 consisted of a glass U tube containing a liquid [[manometer]] (pressure gauge), with one end bent in a horizontal direction to face the wind and the other vertical end remains parallel to the wind flow. Though the Lind was not the first it was the most practical and best known anemometer of this type. If the wind blows into the mouth of a tube it causes an increase of pressure on one side of the manometer. The wind over the open end of a vertical tube causes little change in pressure on the other side of the manometer. The resulting elevation difference in the two legs of the U tube is an indication of the wind speed. However, an accurate measurement requires that the wind speed be directly into the open end of the tube; small departures from the true direction of the wind causes large variations in the reading.
+
+The successful metal pressure tube anemometer of William Henry Dines in 1892 utilized the same pressure difference between the open mouth of a straight tube facing the wind and a ring of small holes in a vertical tube which is closed at the upper end. Both are mounted at the same height. The pressure differences on which the action depends are very small, and special means are required to register them. The recorder consists of a float in a sealed chamber partially filled with water. The pipe from the straight tube is connected to the top of the sealed chamber and the pipe from the small tubes is directed into the bottom inside the float. Since the pressure difference determines the vertical position of the float this is a measure of the wind speed.&lt;ref&gt;{{cite journal|title=Anemometer Comparisons|first=W. H.|last=Dines|journal=Quarterly Journal of the Royal Meteorological Society|date=1892|volume=18|issue=83|page=168|url=https://ia800208.us.archive.org/24/items/quarterlyjourna33britgoog/quarterlyjourna33britgoog.pdf#page=195&amp;zoom=auto,-136,736 |accessdate=14 July 2014|doi=10.1002/qj.4970188303|bibcode=1892QJRMS..18..165D}}&lt;/ref&gt;
+
+The great advantage of the tube anemometer lies in the fact that the exposed part can be mounted on a high pole, and requires no oiling or attention for years; and the registering part can be placed in any convenient position. Two connecting tubes are required. It might appear at first sight as though one connection would serve, but the differences in pressure on which these instruments depend are so minute, that the pressure of the air in the room where the recording part is placed has to be considered. Thus if the instrument depends on the pressure or suction effect alone, and this pressure or suction is measured against the air pressure in an ordinary room, in which the doors and windows are carefully closed and a newspaper is then burnt up the chimney, an effect may be produced equal to a wind of 10&amp;nbsp;mi/h (16&amp;nbsp;km/h); and the opening of a window in rough weather, or the opening of a door, may entirely alter the registration.
+
+While the Dines anemometer had an error of only 1% at {{convert|10|mi/h|km/h|abbr=on}}, it did not respond very well to low winds due to the poor response of the flat plate vane required to turn the head into the wind. In 1918 an aerodynamic vane with eight times the torque of the flat plate overcame this problem.
+
+====Pitot tube static anemometers====
+Modern tube anemometers use the same principle as in the Dines anemometer but using a different design. The implementation uses a [[pitot tube|pitot-static tube]] which is a pitot tube with two ports, pitot and static, that is normally used in measuring the airspeed of aircraft. The pitot port measures the dynamic pressure of the open mouth of a tube with pointed head facing wind, and the static port measures the static pressure from small holes along the side on that tube. The pitot tube is connected to a tail so that it always makes the tube's head to face the wind. Additionally, the tube is heated to prevent [[rime ice]] formation on the tube.&lt;ref&gt;{{cite web|title=Instrumentation: Pitot Tube Static Anemometer, Part 1|url=http://www.accuweather.com/en/weather-blogs/clarkb/instrumentation/14828|publisher=Mt. Washington Observatory|access-date=14 July 2014|archive-url=https://web.archive.org/web/20140714135450/http://www.accuweather.com/en/weather-blogs/clarkb/instrumentation/14828|archive-date=14 July 2014|url-status=dead}}&lt;/ref&gt; There are two lines from the tube down to the devices to measure the difference in pressure of the two lines. The measurement devices can be [[manometer]]s, [[pressure transducer]]s, or analog [[chart recorder]]s.&lt;ref&gt;{{cite web|title=Instrumentation: Pitot Tube Static Anemometer, Part 2|url=http://www.accuweather.com/en/weather-blogs/clarkb/instrumentation-1/15065|publisher=Mt. Washington Observatory|access-date=14 July 2014|archive-url=https://web.archive.org/web/20140714232314/http://www.accuweather.com/en/weather-blogs/clarkb/instrumentation-1/15065|archive-date=14 July 2014|url-status=dead}}&lt;/ref&gt;
+
+===Effect of density on measurements===
+In the tube anemometer the dynamic pressure is actually being measured, although the scale is usually graduated as a velocity scale. If the actual air density differs from the calibration value, due to differing temperature, elevation or barometric pressure, a correction is required to obtain the actual wind speed. Approximately 1.5% (1.6% above 6,000 feet) should be added to the velocity recorded by a tube anemometer for each 1000&amp;nbsp;ft (5% for each kilometer) above sea-level.
+
+==Effect of icing==
+At airports, it is essential to have accurate wind data under all conditions, including freezing precipitation. Anemometry is also required in monitoring and controlling the operation of wind turbines, which in cold environments are prone to in-cloud icing. Icing alters the aerodynamics of an anemometer and may entirely block it from operating. Therefore, anemometers used in these applications must be internally heated.&lt;ref&gt;{{cite journal|doi=10.1175/1520-0426(2001)018&lt;1457:AIIC&gt;2.0.CO;2|year=2001|volume=18|issue=9|pages=1457|bibcode=2001JAtOT..18.1457M|title=Anemometry in Icing Conditions|journal=Journal of Atmospheric and Oceanic Technology|last1=Makkonen|first1=Lasse|last2=Lehtonen|first2=Pertti|last3=Helle|first3=Lauri}} {{free access}} &lt;/ref&gt; Both cup anemometers and sonic anemometers are presently available with heated versions.
+
+==Instrument location==
+In order for wind speeds to be comparable from location to location, the effect of the terrain needs to be considered, especially in regard to height. Other considerations are the presence of trees, and both natural canyons and artificial canyons (urban buildings). The standard anemometer height in open rural terrain is 10 meters.&lt;ref&gt;{{cite book|last=Oke|first=Tim R.|title=Initial Guidance to Obtain Representative Meteorological Observations At Urban Sites|chapter-url=https://www.wmo.int/pages/prog/www/IMOP/publications/IOM-81/IOM-81-UrbanMetObs.pdf#page=23&amp;zoom=auto,-16,235 |accessdate=4 February 2013|series=Instruments and Observing Methods|volume=81|year=2006|publisher=World Meteorological Organization|pages=19–26|chapter=3.5 Wind speed and direction}}&lt;/ref&gt;
+
+==See also==
+{{Portal|Geography}}
+* [[Air flow meter]]
+* [[Anemoi]], for the ancient origin of the name of this technology
+* [[Anemoscope]], ancient device for measuring or predicting wind direction or weather
+* [[Automated airport weather station]]
+* [[Night of the Big Wind]]
+* [[Particle image velocimetry]]
+* [[Savonius wind turbine]]
+* [[Wind power forecasting]]
+* [[Wind run]]
+* [[Windsock]], a simple high-visibility indicator of approximate wind speed and direction
+
+==Notes==
+{{reflist|30em}}
+
+==References==
+{{refbegin}}
+*Meteorological Instruments, W.E. Knowles Middleton and Athelstan F. Spilhaus, Third Edition revised, University of Toronto Press, Toronto, 1953
+*Invention of the Meteorological Instruments, W. E. Knowles Middleton, The Johns Hopkins Press, Baltimore, 1969
+{{refend}}
+
+==External links==
+{{Commons|Anemometer}}
+{{Wiktionary|anemometer}}
+* {{cite EB9 |wstitle=Anemometer |volume=2 |pages=24–26 |short=x}}
+* {{cite EB1911 |last=Dines |first=William Henry |authorlink=William Henry Dines |wstitle=Anemometer |volume=2 |pages=2–3 |short=x}}
+*[http://www.dl1glh.de/ultrasonic-anemometer.html Description of the development and the construction of an ultrasonic anemometer]
+*[http://www.gill.co.uk/products/anemometer/principleofoperation.htm Animation Showing Sonic Principle of Operation (Time of Flight Theory)] – Gill Instruments
+*[http://www.geag.de/txt_sammlung.htm Collection of historical anemometer]
+*[http://www.fttechnologies.com/About-FT/FT-Technologies/Acu-Res-Technology Principle of Operation: Acoustic Resonance measurement] – FT Technologies
+* [http://www.thermopedia.com/content/558 Thermopedia, &quot;Anemometers (laser doppler)&quot;]
+* [http://www.thermopedia.com/content/559 Thermopedia, &quot;Anemometers (pulsed thermal)&quot;]
+* [http://www.thermopedia.com/content/560 Thermopedia, &quot;Anemometers (vane)&quot;]
+* [http://users.tpg.com.au/derekwtpg/diy_anemometer/anemain.htm The Rotorvane Anemometer. Measuring both wind speed and direction using a tagged three-cup sensor]
+
+{{Meteorological equipment}}
+{{Sensors}}
+
+[[Category:Italian inventions]]
+[[Category:Measuring instruments]]
+[[Category:Meteorological instrumentation and equipment]]
+[[Category:Navigational equipment]]
+[[Category:Wind power]]</text>
+      <sha1>i9pezmbde3poo8vh3eiloptbun00c4g</sha1>
+    </revision>
+  </page>

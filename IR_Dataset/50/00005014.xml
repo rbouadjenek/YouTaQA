@@ -1,0 +1,135 @@
+  <page>
+    <title>Bistability</title>
+    <ns>0</ns>
+    <id>5014</id>
+    <revision>
+      <id>940318953</id>
+      <parentid>940318503</parentid>
+      <timestamp>2020-02-11T20:47:04Z</timestamp>
+      <contributor>
+        <ip>141.70.5.22</ip>
+      </contributor>
+      <comment>/* Mathematical modelling */</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{for|electronics|Flip-flop (electronics)|Multivibrator}}
+{{Use dmy dates|date=July 2012}}
+
+[[Image:Bistability graph.svg|thumb|upright=1.4|A graph of the [[potential energy]] of a bistable system; it has two local minima &lt;math&gt;x_1&lt;/math&gt; and &lt;math&gt;x_2&lt;/math&gt;.  A surface shaped like this with two &quot;low points&quot; can act as a bistable system; a ball resting on the surface can only be stable at those two positions, such as balls marked &quot;1&quot; and &quot;2&quot;.  Between the two is a local maximum &lt;math&gt;x_3&lt;/math&gt;. A ball located at this point, ball 3, is in equilibrium but unstable; the slightest disturbance will cause it to move to one of the stable points.]]
+
+In a [[dynamical system]], '''bistability''' means the system has two [[stable equilibrium (disambiguation)|stable equilibrium states]].&lt;ref name=&quot;Morris&quot;&gt;{{cite book
+ | last1  = Morris
+ | first1 =  Christopher G. 
+ | title  = Academic Press Dictionary of Science and Technology
+ | publisher = Gulf Professional publishing
+ | date   = 1992
+ | pages  = 267
+ | url    = https://books.google.com/books?id=nauWlPTBcjIC&amp;pg=PA267&amp;dq=bistable+bistability
+ | doi    = 
+ | id     = 
+ | isbn   = 978-0122004001
+ }}&lt;/ref&gt;  Something that is '''bistable''' can be resting in either of two states.   An example of a mechanical device which is bistable is a [[light switch]]. The switch lever is designed to rest in the &quot;on&quot; or &quot;off&quot; position, but not between the two.  Bistable behavior can occur in mechanical linkages, electronic circuits, nonlinear optical systems, chemical reactions, and physiological and biological systems.
+
+In a [[conservative force]] field, bistability stems from the fact that the [[potential energy]] has two [[local minimum|local minima]], which are the stable equilibrium points.&lt;ref name=&quot;Nazarov&quot;&gt;{{cite book
+ | last1  = Nazarov
+ | first1 = Yuli V.
+ | last2  = Danon
+ | first2 = Jeroen
+ | title  = Advanced Quantum Mechanics: A Practical Guide
+ | publisher = Cambridge University Press
+ | date   = 2013
+ | pages  = 291
+ | url    = https://books.google.com/books?id=w20gAwAAQBAJ&amp;pg=PA291&amp;dq=bistability+minimum
+ | doi    = 
+ | id     = 
+ | isbn   = 978-1139619028
+ }}&lt;/ref&gt;  These rest states need not have equal potential energy.  By mathematical arguments, a [[local maximum]], an unstable equilibrium point, must lie between the two minima.  At rest, a particle will be in one of the minimum equilibrium positions, because that corresponds to the state of lowest energy. The maximum can be visualized as a barrier between them.
+
+A system can transition from one state of minimal energy to the other if it is given enough activation energy to penetrate the barrier (compare [[activation energy]] and [[Arrhenius equation]] for the chemical case). After the barrier has been reached, the system will relax into the other minimum state in a time called the [[relaxation time]].
+
+Bistability is widely used in [[digital electronics]] devices to store [[binary number|binary]] data. It is the essential characteristic of the [[flip-flop (electronics)|flip-flop]], a circuit widely used in latches and some types of [[semiconductor memory]].  A bistable device can store one [[binary digit|bit]] of binary data, with one state representing a &quot;0&quot; and the other state a &quot;1&quot;.  It is also used in [[relaxation oscillator]]s, [[multivibrator]]s, and the [[Schmitt trigger]].
+[[Optical bistability]] is an attribute of certain optical devices where two resonant transmissions states are possible and stable, dependent on the input.
+Bistability can also arise in biochemical systems, where it creates digital, switch-like outputs from the constituent chemical concentrations and activities. It is often associated with [[Hysteresis#In biology|hysteresis]] in such systems.
+
+==Mathematical modelling==
+
+In the mathematical language of [[Dynamical systems theory|dynamic systems analysis]], one of the simplest bistable systems is
+
+:&lt;math&gt;
+\frac{dy}{dt} = y (1-y^2).
+&lt;/math&gt;
+
+This system describes a ball rolling down a curve with shape &lt;math&gt;\frac{y^4}{4} - \frac{y^2}{2}&lt;/math&gt;, and has three steady-states: &lt;math&gt; y = 1 &lt;/math&gt;, &lt;math&gt; y = 0 &lt;/math&gt;, and &lt;math&gt; y = -1&lt;/math&gt;. The middle steady-state &lt;math&gt;y=0&lt;/math&gt; is unstable, while the other two states are stable. The direction of change of &lt;math&gt;y(t)&lt;/math&gt; over time depends on the initial condition &lt;math&gt;y(0)&lt;/math&gt;.  If the initial condition is positive (&lt;math&gt;y(0)&gt;0&lt;/math&gt;), then the solution &lt;math&gt;y(t)&lt;/math&gt; approaches 1 over time, but if the initial condition is negative (&lt;math&gt;y(0)&lt; 0&lt;/math&gt;), then &lt;math&gt;y(t)&lt;/math&gt; approaches −1 over time. Thus, the dynamics are &quot;bistable&quot;. The final state of the system can be either &lt;math&gt; y = 1 &lt;/math&gt; or &lt;math&gt; y = -1 &lt;/math&gt;, depending on the initial conditions.&lt;ref&gt;For detailed techniques of mathematical modelling of bistability, see the tutorial by Chong et al. (2015) http://www.mssanz.org.au/modsim2015/C2/chong.pdf{{full citation needed|date=December 2016}} The tutorial provides a simple example illustration of bistability using a synthetic toggle switch proposed in {{cite journal |last1=Collins |first1=James J. |last2=Gardner |first2=Timothy S. |last3=Cantor |first3=Charles R. |title=Construction of a genetic toggle switch in Escherichia coli |journal=Nature |volume=403 |issue=6767 |pages=339–42 |year=2000 |pmid=10659857 |doi=10.1038/35002131 |bibcode=2000Natur.403..339G }}. The tutorial also uses the dynamical system software XPPAUT http://www.math.pitt.edu/~bard/xpp/xpp.html{{full citation needed|date=December 2016}} to show practically how to see bistability captured by a saddle-node bifurcation diagram and the hysteresis behaviours when the bifurcation parameter is increased or decreased slowly over the tipping points and a protein gets turned 'On' or turned 'Off'.&lt;/ref&gt;
+
+The appearance of a bistable region can be understood for the model system 
+&lt;math&gt;
+\frac{dy}{dt} = y (r-y^2)
+&lt;/math&gt;
+which undergoes a supercritical [[pitchfork bifurcation]] with [[Bifurcation theory|bifurcation parameter]] &lt;math&gt; r &lt;/math&gt;.
+
+==In biological and chemical systems==
+[[File:Stimuli.pdf|thumb|Three-dimensional invariant measure for cellular-differentiation featuring a two-stable mode.
+The axes denote cell counts for three types of cells: progenitor (&lt;math&gt;z&lt;/math&gt;), osteoblast (&lt;math&gt;y&lt;/math&gt;), and chondrocyte (&lt;math&gt;x&lt;/math&gt;). Pro-osteoblast stimulus promotes P→O transition.&lt;ref name=CME&gt;{{cite journal | last1       = Kryven| first1     = I.| last2       = Röblitz| first2      = S.| last3       = Schütte| first3      =  Ch.| year       =2015| title      = Solution of the chemical master equation by radial basis functions approximation with interface tracking| journal  = BMC Systems Biology | volume = 9| issue = 1| pages = 67| doi = 10.1186/s12918-015-0210-y| pmid = 26449665| pmc= 4599742}} {{open access}}&lt;/ref&gt;]]
+
+Bistability is key for understanding basic phenomena of cellular functioning, such as decision-making processes in [[cell cycle]] progression, [[cellular differentiation]],&lt;ref name=Ghaffarizadeh&gt;{{cite journal |vauthors=Ghaffarizadeh A, Flann NS, Podgorski GJ |year = 2014 |title = Multistable switches and their role in cellular differentiation networks |journal = BMC Bioinformatics |volume = 15 |pages = S7+ |doi = 10.1186/1471-2105-15-s7-s7 |pmid = 25078021 |pmc = 4110729}}&lt;/ref&gt; and [[apoptosis]]. It is also involved in loss of cellular homeostasis associated with early events in [[cancer]] onset and in [[prion]] diseases as well as in the origin of new species ([[speciation]]).&lt;ref name=Wilhelm&gt;{{cite journal |author = Wilhelm, T |year = 2009 |title = The smallest chemical reaction system with bistability |journal = BMC Systems Biology |volume = 3 |pages = 90 |doi = 10.1186/1752-0509-3-90 |pmid = 19737387 |pmc = 2749052}}&lt;/ref&gt;
+
+Bistability can be generated by a positive feedback loop with an ultrasensitive regulatory step.  Positive feedback loops, such as the simple X activates Y and Y activates X motif, essentially links output signals to their input signals and have been noted to be an important regulatory motif in cellular signal transduction because positive feedback loops can create switches with an all-or-nothing decision.&lt;ref name=&quot;O. Brandman, J. E 2005&quot;&gt;O. Brandman, J. E. Ferrell Jr., R. Li, T. Meyer, Science 310, 496 (2005)&lt;/ref&gt;  Studies have shown that numerous biological systems, such as ''Xenopus'' oocyte maturation,&lt;ref&gt;{{cite journal|author1=Ferrell JE Jr. |author2=Machleder EM |title=The biochemical basis of an all-or-none cell fate switch in Xenopus oocytes.|journal=Science|date=1998|volume=280|issue=5365|pages=895–8|pmid=9572732|doi=10.1126/science.280.5365.895|bibcode=1998Sci...280..895F |url=https://semanticscholar.org/paper/4ad05ae4c209601b8743e6e8fba9fe7df6f4289a }}&lt;!--|accessdate=20 March 2015--&gt;&lt;/ref&gt; mammalian calcium signal transduction, and polarity in budding yeast, incorporate temporal (slow and fast) positive feedback loops, or more than one feedback loop that occurs at different times.&lt;ref name=&quot;O. Brandman, J. E 2005&quot;/&gt; Having two different temporal positive feedback loops or “dual-time switches” allows for (a) increased regulation: two switches that have independent changeable activation and deactivation times; and (b) linked feedback loops on multiple timescales can filter noise.&lt;ref name=&quot;O. Brandman, J. E 2005&quot;/&gt;
+
+Bistability can also arise in a biochemical system only for a particular range of parameter values, where the parameter can often be interpreted as the strength of the feedback. In several typical examples, the system has only one stable fixed point at low values of the parameter. A [[saddle-node bifurcation]] gives rise to a pair of new fixed points emerging, one stable and the other unstable, at a critical value of the parameter. The unstable solution can then form another saddle-node bifurcation with the initial stable solution at a higher value of the parameter, leaving only the higher fixed solution. Thus, at values of the parameter between the two critical values, the system has two stable solutions. An example of a dynamical system that demonstrates similar features is
+
+:&lt;math&gt;
+\frac{\mathrm{d}x}{\mathrm{d}t} = r + \frac{x^5}{1+x^5} - x
+&lt;/math&gt;
+
+where &lt;math&gt;x&lt;/math&gt; is the output, and &lt;math&gt;r&lt;/math&gt; is the parameter, acting as the input.&lt;ref name=&quot;Angeli 2003&quot;&gt;{{cite journal| author1 = Angeli, David| author2=Ferrell, JE| author3=Sontag, Eduardo D| title=Detection of multistability, bifurcations, and hysteresis in a large calss of biological positive-feedback systems| journal=PNAS| year=2003| volume=101| issue=7| doi=10.1073/pnas.0308265100| pmid=14766974| pmc=357011| pages=1822–7}}&lt;/ref&gt;
+
+Bistability can be modified to be more robust and to tolerate significant changes in concentrations of reactants, while still maintaining its &quot;switch-like&quot; character.  Feedback on both the activator of a system and inhibitor make the system able to tolerate a wide range of concentrations.  An example of this in cell biology is that activated CDK1 (Cyclin Dependent Kinase 1) activates its activator Cdc25 while at the same time inactivating its inactivator, Wee1, thus allowing for progression of a cell into mitosis.  Without this double feedback, the system would still be bistable, but would not be able to tolerate such a wide range of concentrations.&lt;ref&gt;{{cite journal|author=Ferrell JE Jr.|title=Feedback regulation of opposing enzymes generates robust, all-or-none bistable responses|journal=Current Biology|year=2008|volume=18|issue=6|doi=10.1016/j.cub.2008.02.035|pages=R244–R245|pmid=18364225|pmc=2832910}}&lt;/ref&gt;
+
+Bistability has also been described in the embryonic development of ''Drosophila melanogaster'' (the fruit fly). Examples are anterior-posterior &lt;ref&gt;{{cite journal|last=Lopes|first=Francisco J. P.|author2=Vieira, Fernando M. C.|author3=Holloway, David M.|author4=Bisch, Paulo M.|author5=Spirov, Alexander V.|author6=Ohler, Uwe|title=Spatial Bistability Generates hunchback Expression Sharpness in the Drosophila Embryo|journal=PLOS Computational Biology|date=26 September 2008|volume=4|issue=9|pages=e1000184|doi=10.1371/journal.pcbi.1000184|pmid=18818726|pmc=2527687|bibcode=2008PLSCB...4E0184L}}&lt;/ref&gt; and dorso-ventral &lt;ref&gt;{{cite journal|last=Wang|first=Yu-Chiun|author2=Ferguson, Edwin L.|title=Spatial bistability of Dpp–receptor interactions during Drosophila dorsal–ventral patterning|journal=Nature|date=10 March 2005|volume=434|issue=7030|pages=229–234|doi=10.1038/nature03318|pmid=15759004|bibcode=2005Natur.434..229W}}&lt;/ref&gt;&lt;ref&gt;{{cite journal|last=Umulis|first=D. M. |author2=Mihaela Serpe |author3=Michael B. O’Connor |author4=Hans G. Othmer|title=Robust, bistable patterning of the dorsal surface of the Drosophila embryo|journal=Proceedings of the National Academy of Sciences|date=1 August 2006|volume=103|issue=31|pages=11613–11618|doi=10.1073/pnas.0510398103 |pmid=16864795 |pmc=1544218|bibcode=2006PNAS..10311613U }}&lt;/ref&gt; axis formation and eye development.&lt;ref&gt;{{cite journal|last=Graham|first=T. G. W.|author2=Tabei, S. M. A.|author3=Dinner, A. R.|author4=Rebay, I.|title=Modeling bistable cell-fate choices in the Drosophila eye: qualitative and quantitative perspectives|journal=Development|date=22 June 2010|volume=137|issue=14|pages=2265–2278|doi=10.1242/dev.044826|pmid=20570936|pmc=2889600}}&lt;/ref&gt;
+
+A prime example of bistability in biological systems is that of [[Sonic hedgehog]] (Shh), a secreted signaling molecule, which plays a critical role in development. Shh functions in diverse processes in development, including patterning limb bud tissue differentiation. The Shh signaling network behaves as a bistable switch, allowing the cell to abruptly switch states at precise Shh concentrations. ''gli1'' and ''gli2'' transcription is activated by Shh, and their gene products act as transcriptional activators for their own expression and for targets downstream of Shh signaling.&lt;ref&gt;Lai, K., M.J. Robertson, and D.V. Schaffer, The sonic hedgehog signaling system as a bistable genetic switch. Biophys J, 2004. 86(5): p. 2748-57.&lt;/ref&gt; Simultaneously, the Shh signaling network is controlled by a negative feedback loop wherein the Gli transcription factors activate the enhanced transcription of a repressor (Ptc). This signaling network illustrates the simultaneous positive and negative feedback loops whose exquisite sensitivity helps create a bistable switch.
+
+Bistability can only arise in biological and chemical systems if three necessary conditions are fulfilled: positive [[feedback]], a mechanism to filter out small stimuli and a mechanism to prevent increase without bound.&lt;ref name=Wilhelm/&gt;
+
+Bistable chemical systems have been studied extensively to analyze relaxation kinetics, [[non-equilibrium thermodynamics]], [[stochastic resonance]], as well as [[climate change (general concept)|climate change]].&lt;ref name=Wilhelm/&gt; In bistable spatially extended systems the onset of local correlations and propagation of traveling waves have been analyzed.&lt;ref name=Elf&gt;{{cite journal |last1 = Elf |first1 = J. | last2 = Ehrenberg| first2 = M. |year = 2004 |title = Spontaneous separation of bi-stable biochemical systems into spatial domains of opposite phases |journal = Systems Biology|volume = 1 |number = 2| pages = 230–236 |pmid = 17051695 | doi=10.1049/sb:20045021|url = https://semanticscholar.org/paper/bd6b7da8fd6b32c9151718835a9407039880e100 }}&lt;/ref&gt;&lt;ref name=Kochanzyck&gt;{{cite journal |last1 = Kochanczyk |first1 = M. |last2 = Jaruszewicz |first2 = J. |last3 = Lipniacki |first3 = T. |title = Stochastic transitions in a bistable reaction system on the membrane |journal = Journal of the Royal Society Interface |volume = 10 |number = 84 |pages = 20130151 |pmid = 23635492 |pmc = 3673150 |doi =  10.1098/rsif.2013.0151 |date=Jul 2013}}&lt;/ref&gt;
+
+Bistability is often accompanied by [[hysteresis]]. On a population level, if many realisations of a bistable system are considered (e.g. many bistable cells ([[speciation]])&lt;ref name=Nielsen&gt;{{cite journal |author = Nielsen |last2 = Dolganov |first2 = Nadia A. |last3 = Rasmussen |first3 = Thomas |last4 = Otto |first4 = Glen |last5 = Miller |first5 = Michael C. |last6 = Felt |first6 = Stephen A. |last7 = Torreilles |first7 = Stéphanie |last8 = Schoolnik |first8 = Gary K. |editor1-last = Isberg |year = 2010 |editor1-first = Ralph R. |title = A Bistable Switch and Anatomical Site Control Vibrio cholerae Virulence Gene Expression in the Intestine |journal = PLOS Pathogens |volume = 6 |issue = 9 |pages = 1 |doi=10.1371/journal.ppat.1001102
+|pmid = 20862321 |pmc = 2940755|display-authors=etal}}&lt;/ref&gt;), one typically observes [[bimodal distribution]]s. In an ensemble average over the population, the result may simply look like a smooth transition, thus showing the value of single-cell resolution.
+
+A specific type of instability is known as ''modehopping'', which is bi-stability in the frequency space. Here trajectories can shoot between two stable limit cycles, and thus show similar characteristics as normal bi-stability when measured inside a Poincare section.
+
+== In mechanical systems ==
+Bistability is the ability of a material to present in two stable phases that can both exist within a given range of temperatures but above and below that range only one or the other phase exists.
+
+Bistability as applied in the design of mechanical systems is more commonly said to be &quot;over centre&quot;—that is, work is done on the system to move it just past the peak, at which point the mechanism goes &quot;over centre&quot; to its secondary stable position. The result is a toggle-type action- work applied to the system below a threshold sufficient to send it 'over center' results in no change to the mechanism's state.
+
+[[spring (device)|Springs]] are a common method of achieving an &quot;over centre&quot; action. A spring attached to a simple two position ratchet-type mechanism can create a button or plunger that is clicked or toggled between two mechanical states. Many [[Ballpoint Pen|ballpoint]] and [[Rollerball Pen|rollerball]] retractable pens employ this type of bistable mechanism.
+
+An even more common example of an over-center device is an ordinary electric wall switch.  These switches are often designed to snap firmly into the &quot;on&quot; or &quot;off&quot; position once the toggle handle has been moved a certain distance past the center-point.
+
+A [[ratchet (device)|ratchet-and-pawl]] is an elaboration—a multi-stable &quot;over center&quot; system used to create irreversible motion.  The pawl goes over center as it is turned in the forward direction. In this case, &quot;over center&quot; refers to the ratchet being stable and &quot;locked&quot; in a given position until clicked forward again; it has nothing to do with the ratchet being unable to turn in the reverse direction.
+
+[[File:Ratchet example.gif|thumbnail|A ratchet in action. Each tooth in the ratchet together with the regions to either side of it constitutes a simple bistable mechanism.]]
+
+==See also==
+*[[ferroelectric]], [[ferromagnetic]], [[hysteresis]], [[bistable perception]]
+*[[astable]] multivibrator, [[monostable]] multivibrator.
+*[[Schmitt trigger]]
+*[[Allee effect|strong Allee effect]]
+*[[Multistable perception]] describes the spontaneous or exogenous alternation of different [[percept]]s in face of the same physical [[Stimulus (physiology)|stimulus]].
+*[[Interferometric modulator display]], a bistable reflective display technology found in mirasol displays by [[Qualcomm]]
+
+==References==
+{{reflist}}
+
+==External links==
+*http://www.answers.com/topic/optical-bistability
+*[http://www.innovision.us/LatchingReed.htm BiStable Reed Sensor]
+
+[[Category:Digital electronics]]
+[[Category:2 (number)]]
+
+[[es:Biestable]]</text>
+      <sha1>adyollvcydivlxas1zawhl4xjicrawb</sha1>
+    </revision>
+  </page>

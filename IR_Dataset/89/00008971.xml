@@ -1,0 +1,792 @@
+  <page>
+    <title>DEC Alpha</title>
+    <ns>0</ns>
+    <id>8971</id>
+    <revision>
+      <id>942900925</id>
+      <parentid>934440477</parentid>
+      <timestamp>2020-02-27T15:55:09Z</timestamp>
+      <contributor>
+        <username>Citation bot</username>
+        <id>7903804</id>
+      </contributor>
+      <minor />
+      <comment>Alter: pages, author7. Add: bibcode, author pars. 7-7. Removed URL that duplicated unique identifier. Removed accessdate with no specified URL. Removed parameters. Formatted [[WP:ENDASH|dashes]]. | You can [[WP:UCB|use this bot]] yourself. [[WP:DBUG|Report bugs here]]. | Activated by [[User:AManWithNoPlan]] | via #UCB_toolbar</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{Infobox CPU architecture
+| name       = Alpha
+| designer   = [[Digital Equipment Corporation]]
+| bits       = [[64-bit computing|64-bit]]
+| introduced = 1992
+| design     = RISC
+| type       = Register-Register
+| encoding   = Fixed
+| branching  =
+| endianness = [[Endianness#Bi-endian hardware|Bi]]
+| extensions = Byte/Word Extension (BWX), Square-root and Floating-point Convert Extension (FIX), Count Extension (CIX), Motion Video Instructions (MVI)
+| open       = Yes&lt;ref name=&quot;facts and comments&quot; /&gt;
+| gpr        = 31 plus always-zero R31
+| fpr        = 31 plus always-0.0 F31
+}}
+[[Image:Alpha AXP 21064 diephoto1.jpg|thumb|DEC Alpha AXP 21064 microprocessor die photo]]
+[[Image:DEC Alpha 21-35023-13 J40793-28 top.jpg|thumb|Package for DEC Alpha AXP 21064 microprocessor]]
+[[Image:Alpha AXP 21064 card1.jpg|thumb|Alpha AXP 21064 bare die mounted on a business card with some statistics]]
+[[Image:KL Compaq DEC ALPHA 21264C.jpg|right|thumb|Compaq Alpha 21264C]]
+'''Alpha''', originally known as '''Alpha AXP''', is a [[64-bit computing|64-bit]] [[reduced instruction set computing]] (RISC) [[instruction set architecture]] (ISA) developed by [[Digital Equipment Corporation]] (DEC), designed to replace their [[32-bit]] [[VAX]] [[complex instruction set computer]] (CISC) ISA. Alpha was implemented in [[microprocessor]]s originally developed and [[Semiconductor device fabrication|fabricated]] by DEC. These microprocessors were most prominently used in a variety of DEC workstations and servers, which eventually formed the basis for almost all of their mid-to-upper-scale lineup. Several third-party vendors also produced Alpha systems, including [[PC motherboard form factor|PC form factor]] motherboards.
+
+[[Operating system]]s that supported Alpha included [[OpenVMS]] (previously known as OpenVMS AXP), [[Tru64 UNIX]] (previously known as DEC OSF/1 AXP and Digital UNIX), [[Windows NT]] (discontinued after [[Windows NT 4.0|NT 4.0]]; and pre-release [[Windows 2000]] [[Software release life cycle|RC1]]),&lt;ref name=alphant&gt;{{cite web 
+| author=Aaron Sakovich
+| publisher=The AlphaNT Source 
+| year=2001 
+| url=http://www.alphant.com/articles/windows2000.html
+| title=Windows 2000?
+| accessdate=2007-01-01
+| archive-url=https://web.archive.org/web/20080708183609/http://www.alphant.com/articles/windows2000.html
+| archive-date=2008-07-08
+}}&lt;/ref&gt; [[Linux]] ([[Debian]], [[SUSE Linux|SUSE]],&lt;ref name=alphaSUSE&gt;{{cite web 
+| publisher=SUSE
+| year=2000 
+| url=https://www.suse.com/company/press/2000/11/alpha70.html
+| title=SUSE Linux 7.0 Alpha Edition
+| accessdate=2014-01-08
+}}&lt;/ref&gt; [[Gentoo Linux|Gentoo]] and [[Red Hat Linux|Red Hat]]), [[Berkeley Software Distribution|BSD]] UNIX ([[NetBSD]], [[OpenBSD]] and [[FreeBSD]] up to 6.x), [[Plan 9 from Bell Labs]], as well as the [[L4 microkernel family|L4Ka::Pistachio]] kernel. The Alpha architecture was sold, along with most parts of DEC, to [[Compaq]] in 1998.&lt;ref name=Reg.98&gt;{{cite web |website=TheRegister.co.uk |date=November 2, 2016
+|url=https://www.theregister.co.uk/2016/11/02/ghost_of_dec_alpha_sees_microsoft_dumb_down_windows_file_compression |title=Ghost of DEC Alpha is why Windows is rubbish at file compression}}&lt;/ref&gt; Compaq, already an [[Intel]] customer, phased out Alpha in favor of the forthcoming [[Hewlett-Packard]]/Intel [[Itanium]] architecture, and sold all Alpha [[intellectual property]] to Intel in 2001, effectively killing the product. Hewlett-Packard purchased Compaq later that same year, continuing development of the existing product line until 2004, and selling Alpha-based systems, largely to the existing customer base, until April 2007.&lt;ref name=alphasupportend&gt;{{cite web 
+ |publisher=HP 
+ |url=http://h18002.www1.hp.com/alphaserver/evolution.html 
+ |title=Transforming your AlphaServer environment 
+ |accessdate=2007-01-11 
+ |url-status=dead 
+ |archiveurl=https://web.archive.org/web/20070208212316/http://h18002.www1.hp.com/alphaserver/evolution.html 
+ |archivedate=2007-02-08 
+ }}&lt;/ref&gt;
+
+==History==
+
+===PRISM===
+{{main|DEC Prism}}
+Alpha was born out of an earlier RISC project named [[DEC Prism|Prism]] ('''P'''arallel '''R'''educed '''I'''nstruction '''S'''et '''M'''achine), itself the product of several earlier projects. PRISM was intended to be a flexible design, supporting both Unix-like applications, as well as Digital's existing [[OpenVMS|VMS]] programs from the [[VAX]] after minor conversion. A new Unix-like&lt;ref&gt;{{cite web |title=Dave Cutler, PRISM, Mica, Emerald, etc. |author=Neil S. Rieck
+|url=http://neilrieck.net/docs/dave_cutler-prism-mica-emerald-etc.html}}&lt;/ref&gt;&lt;ref&gt;{{cite web
+|title=How much UNIX is there in NT?  |website=ARS technica
+|url=https://arstechnica.com/civis/viewtopic.php?f=17&amp;t=404247}}&lt;/ref&gt; [[operating system]] known as '''Mica''' would run applications natively, supporting VMS under emulation running at the same time.
+
+During development, the Palo Alto design team were working on a Unix-only [[workstation]] that originally included the PRISM. However, development of the workstation was well ahead of the PRISM, and the engineers proposed that they release the machines using the [[R2000 (microprocessor)|MIPS R2000]] processor instead,&lt;ref&gt;{{cite web |url=http://alasir.com/articles/alpha_history/prism_to_alpha.html
+|title=Alpha: The History in Facts and Comments|access-date=2019-09-09|date=2007-04-22|first1=Paul V|last1=Bolotoff}}&lt;/ref&gt; moving its release date up considerably. DEC management doubted the need to produce a new computer architecture to replace their existing VAX and DECstation lines, and eventually ended the PRISM project in 1988.&lt;ref&gt;{{cite web 
+|title=Sketch of DEC PRISM |author=Mark Smotherman 
+|url=https://people.cs.clemson.edu/~mark/prism.html
+|quote=PRISM (Parallel Reduced Instruction Set Machine) ... first draft of PRISM architecture in August 1985; DEC cancels the project in 1988 in favor of a MIPS-based ...}}&lt;/ref&gt;
+
+By the time of cancellation, however, second-generation RISC chips (such as the newer [[SPARC]] architecture) were offering much better [[price/performance ratio]]s than the VAX lineup. It was clear a third generation would completely outperform the VAX in all ways, not just on cost.
+
+===Alpha===
+Another study was started to see if a new RISC architecture could be defined that could directly support the VMS operating system. The new design used most of the basic PRISM concepts, but was re-tuned to allow VMS and VMS programs to run at reasonable speed with no conversion at all. The decision was also made to upgrade the design to a full [[64-bit]] implementation from PRISM's 32-bit, a conversion all of the major RISC vendors were undertaking. Eventually that new architecture became Alpha. The primary Alpha instruction set architects were Richard L. Sites and Richard T. Witek.&lt;ref&gt;{{cite book
+|url=https://www.elsevier.com/books/alpha-axp-architecture-reference-manual/sites/978-1-4831-8403-6  |isbn=978-1-4831-8403-6 |title=Alpha AXP Architecture Reference Manual - 2nd Edition
+|author1=Richard L. Sites |author2= Richard T. Witek|date=2014-05-16 }}&lt;/ref&gt;  The PRISM's Epicode was developed into the Alpha's [[PALcode]], providing an abstracted interface to platform- and processor implementation-specific features.
+
+The main contribution of Alpha to the microprocessor industry, and the main reason for its performance, was not so much the architecture but rather its implementation.&lt;ref&gt;{{Cite web|url=https://www.ibm.com/developerworks/library/pa-microhist/|title=Great moments in microprocessor history|last=Warner|first=W.|date=December 22, 2004|website=IBM}}&lt;/ref&gt; At that time (as it is now), the microchip industry was dominated by automated design and layout tools. The chip designers at Digital continued pursuing sophisticated manual circuit design in order to deal with the overly complex VAX architecture. The Alpha chips showed that manual circuit design applied to a simpler, cleaner architecture allowed for much higher operating frequencies than those that were possible with the more automated design systems. These chips caused a renaissance of custom circuit design within the microprocessor design community.
+
+Originally, the Alpha processors were designated the '''DECchip 21x64''' series,&lt;ref name=X21&gt;{{cite web
+|title=cpu-collection.de - DEC Alpha AXP
+|url=http://www.cpu-collection.de/?l0=co&amp;l1=DEC&amp;l2=Alpha+AXP
+|quote=The first processors of the Alpha family were designated the DECchip 21064 series (the &quot;21&quot; signifying 21st century)}}&lt;/ref&gt; with &quot;DECchip&quot; replaced in the mid-1990s with &quot;Alpha&quot;. The first two digits, &quot;21&quot; signifies the 21st century, and the last two digits, &quot;64&quot; signifies 64 bits.&lt;ref name=X21/&gt; The Alpha was designed as 64-bit from the start and there is no 32-bit version. The middle digit corresponded to the generation of the Alpha architecture. Internally, Alpha processors were also identified by '''EV''' numbers, EV officially standing for &quot;Extended VAX&quot; but having an alternative humorous meaning of &quot;Electric [[Vlasic Pickles|Vlasic]]&quot;, giving homage to the Electric Pickle experiment at Western Research Lab.&lt;ref name=pickle&gt;{{
+cite journal
+  | title = WRL Technical Note TN-13: Characterization of Organic Illumination Systems
+  | version =
+  | publisher = Digital Equipment Corporation
+  | year = 1989
+  | url = http://www.hpl.hp.com/techreports/Compaq-DEC/WRL-TN-13.html
+  | format = [[PDF]]
+  | accessdate = 2007-10-04
+  | author1 = Bill Hamburgen
+  | author2 = Jeff Mogul
+  | author3 = Brian Reid
+  | authorlink3 = Brian Reid (computer scientist)
+  | author4 = Alan Eustace
+  | authorlink4 = Alan Eustace
+  | author5 = Richard Swan
+  | author6 = Mary Jo Doherty
+  | author7 = Joel Bartlett}}&lt;/ref&gt;
+
+===Improved models===
+The first few generations of the Alpha chips were some of the most innovative of their time. 
+* The first version, the '''[[Alpha 21064]]''' or '''EV4''', was the first [[CMOS]] microprocessor whose operating frequency rivalled higher-powered [[Emitter coupled logic|ECL]] minicomputers and mainframes. 
+* The second, '''21164''' or '''EV5''', was the first microprocessor to place a large secondary cache on-chip. &lt;ref&gt;{{cite journal |title=Internal Organization of the Alpha 21164, a 300-MHz 64-bit Quad-issue CMOS RISC Microprocessor |author1=John H. Edmondson |author2=Paul I. Rubinfeld |author3=Peter J. Bannon |author4=Bradley J. Benschneider |author5=Debra Bernstein |author6=Ruben W. Castelino |author7=Elizabeth M. Cooper |author8=Daniel E. Dever |author9=Dale R. Donchin |author10=Timothy C. Fischer |author11=Anil K. Jain |author12=Shekhar Mehta |author13=Jeanne E. Meyer |author14=Ronald P. Preston |author15=Vidya Rajagopalan |author16=Chandrasekhara Somanathan |author17=Scott A. Taylor |author18=Gilbert M. Wolrich |journal=Digital Technical Journal |volume=7 | issue=1 |year=1995 | pages=119–135 |quote=large, on-chip, second-level, write-back cache|citeseerx=10.1.1.38.9551}}&lt;/ref&gt;
+* The third, '''21264''' or '''EV6''', was the first microprocessor to combine both high operating frequency and the more complicated [[out-of-order execution]] microarchitecture. 
+* The '''21364''' or '''EV7''' was the first high performance processor to have an on-chip [[memory controller]].&lt;ref&gt;{{cite book
+|quote=21364 ... first high performance processor to have an onchip memory controller.
+|title=Structured Computer Organization
+|url=https://books.google.com/books?isbn=147842673X
+|isbn=978-1478426738 |date=2016|last1=Reviews
+|first1=C.T.I
+}}&lt;/ref&gt; 
+* The unproduced '''[[Alpha 21464|21464]]''' or '''EV8''' would have been the first to include [[simultaneous multithreading]], but this version was canceled after the sale of DEC to [[Compaq]]. The '''[[Alpha 21464#Tarantula|Tarantula]]''' research project, which most likely would have been called '''EV9''', would have been the first Alpha processor to feature a [[vector processor|vector unit]].&lt;ref name='Tarantula'&gt;{{
+cite conference
+  | title = Tarantula: A Vector Extension to the Alpha Architecture
+  | conference = 29th Annual International Symposium on Computer Architecture (ISCA '02)
+  | conferenceurl = http://systems.cs.colorado.edu/ISCA2002
+  | booktitle = Proceedings: 29th Annual International Symposium on Computer Architecture (ISCA '02)
+  | editor = Danielle C. Martin
+  | others = Joe Daigle/Studio Productions
+  | edition =
+  | publisher = IEEE Computer Society
+  | location = Los Alamitos, Calif
+  | year = 2002
+  | author1 = Roger Espasa
+  | author2 = Federico Ardanaz
+  | author3 = Julio Gago
+  | author4 = Roger Gramunt
+  | author5 = Isaac Hernandez
+  | author6 = Toni Juan
+  | author7-link = Joel Emer
+ | author7 = Joel Emer
+  | author8 = Stephen Felix
+  | author9 = Geoff Lowney
+  | author10 = Matthew Mattina
+  | author11 = Andre Seznec
+  | volume = 
+  | issue =
+  | pages = Page(s): 281–292
+  | isbn = 0-7695-1605-X
+  | doi = 10.1109/ISCA.2002.1003586
+  }}&lt;/ref&gt;
+
+A persistent report attributed to DEC insiders suggests the choice of the '''AXP''' tag for the processor was made by DEC's legal department, which was still smarting from the [[Vax_(brand)#Trademark_conflict|VAX trademark]] fiasco.&lt;ref&gt;{{cite web |title=The VAX Vacuum 
+|url=https://groups.google.com/d/topic/comp.os.vms/8ptFdR3KYxg
+|quote=... legally, if DEC had used VAX in the U.S. before that ..... &quot;reasonable person&quot; has no difficulty distinguishing between the two uses}}&lt;/ref&gt; After a lengthy search the tag &quot;AXP&quot; was found to be entirely unencumbered. Within the computer industry, a joke got started that the acronym '''AXP''' meant &quot;Almost eXactly PRISM&quot;.
+
+==Design principles==
+The Alpha architecture was intended to be a high-performance design. Digital intended the architecture to support a one-thousandfold increase in performance over twenty-five years. To ensure this, any architectural feature that impeded multiple instruction issue, clock rate or multiprocessing was removed. As a result, the Alpha does not have:
+
+* [[Branch delay slot]]s
+* Suppressed instructions
+* Byte load or store instructions (later added with the Byte Word Extensions (BWX))&lt;ref&gt;{{cite web
+|title=The Alpha AXP, part 8: Memory access, storing bytes and words
+|url=https://blogs.msdn.microsoft.com/oldnewthing/20170816-00/?p=96825
+|date=August 16, 2017
+|quote=Dealing with unaligned memory on the Alpha AXP is very annoying}}&lt;/ref&gt;&lt;ref&gt;{{cite web 
+|quote=The instructions that comprise the BWX extension are ...
+|title=Alpha 21264 Microprocessor Data Sheet
+|url=https://www.star.bnl.gov/public/daq/HARDWARE/21264_data_sheet.pdf}}&lt;/ref&gt;
+
+===Condition codes===
+The Alpha does not have [[Status register|condition code]]s for integer instructions&lt;ref&gt;{{cite web 
+|title=MIPS Instructions
+|url=http://eas.uccs.edu/~cwang/ECE4480_sp_16/ch2(3rdEdition).PPT
+|quote=DEC Alpha ... , no integer condition code.}}&lt;/ref&gt; to remove a potential bottleneck at the condition status register. Instructions resulting in an overflow, such as adding two numbers whose result does not fit in 64 bits, write the 32 or 64 [[least significant bit]]s to the destination register. The carry is generated by performing an unsigned compare on the result with either operand to see if the result is smaller than either operand. If the test was true, the value one is written to the least significant bit of the destination register to indicate the condition.
+
+==Registers==
+{| class=&quot;infobox&quot; style=&quot;font-size:88%&quot;
+|-
+|align=&quot;center&quot; |''DEC Alpha registers''
+|-
+|
+{| style=&quot;font-size:88%;&quot;
+|- 
+| style=&quot;width:10px; text-align:left;&quot;  | &lt;sup&gt;6&lt;/sup&gt;&lt;sub&gt;3&lt;/sub&gt;
+| style=&quot;width:50px; text-align:center;&quot;| . . .
+| style=&quot;width:10px; text-align:right;&quot; | &lt;sup&gt;4&lt;/sup&gt;&lt;sub&gt;7&lt;/sub&gt;
+| style=&quot;width:50px; text-align:center;&quot;| . . .
+| style=&quot;width:10px; text-align:center;&quot;| &lt;sup&gt;3&lt;/sup&gt;&lt;sub&gt;1&lt;/sub&gt;
+| style=&quot;width:50px; text-align:center;&quot;| . . .
+| style=&quot;width:10px; text-align:center;&quot;| &lt;sup&gt;1&lt;/sup&gt;&lt;sub&gt;5&lt;/sub&gt;
+| style=&quot;width:50px; text-align:center;&quot;| . . .
+| style=&quot;width:10px; text-align:center;&quot;| &lt;sup&gt;0&lt;/sup&gt;&lt;sub&gt;1&lt;/sub&gt;
+| style=&quot;width:10px; text-align:center;&quot;| &lt;sup&gt;0&lt;/sup&gt;&lt;sub&gt;0&lt;/sub&gt;
+| style=&quot;width:auto; background:white; color:black&quot; | ''(bit position)''
+|- 
+|colspan=&quot;11&quot; | '''General-purpose registers''' &lt;br/&gt;
+|- style=&quot;background:silver;color:black&quot;
+| style=&quot;text-align:center;&quot; colspan=&quot;10&quot;| R0
+| style=&quot;background:white; color:black;&quot;| R0
+|- style=&quot;background:silver;color:black&quot;
+| style=&quot;text-align:center;&quot; colspan=&quot;10&quot;| R1
+| style=&quot;background:white; color:black;&quot;| R1
+|- style=&quot;background:silver;color:black&quot;
+| style=&quot;text-align:center;&quot; colspan=&quot;10&quot;| R2
+| style=&quot;background:white; color:black;&quot;| R2
+|-
+| style=&quot;text-align:center;&quot; colspan=&quot;10&quot;| •
+| style=&quot;background:white; color:black;&quot;| &amp;nbsp;
+|-
+| style=&quot;text-align:center;&quot; colspan=&quot;10&quot;| •
+| style=&quot;background:white; color:black;&quot;| &amp;nbsp;
+|-
+| style=&quot;text-align:center;&quot; colspan=&quot;10&quot;| •
+| style=&quot;background:white; color:black;&quot;| &amp;nbsp;
+|- style=&quot;background:silver;color:black&quot;
+| style=&quot;text-align:center;&quot; colspan=&quot;10&quot;| R29
+| style=&quot;background:white; color:black;&quot;| R29
+|- style=&quot;background:silver;color:black&quot;
+| style=&quot;text-align:center;&quot; colspan=&quot;10&quot;| R30
+| style=&quot;background:white; color:black;&quot;| R30
+|- style=&quot;background:silver;color:black&quot;
+| style=&quot;text-align:center;&quot; colspan=&quot;10&quot;| {{0|{{ns|10}}}} R31 ''(zero)''
+| style=&quot;background:white; color:black;&quot;| R31, always zero
+|- 
+|colspan=&quot;11&quot; | '''Floating-point registers''' &lt;br/&gt;
+|- style=&quot;background:silver;color:black&quot;
+| style=&quot;text-align:center;&quot; colspan=&quot;10&quot;| F0
+| style=&quot;background:white; color:black;&quot;| F0
+|- style=&quot;background:silver;color:black&quot;
+| style=&quot;text-align:center;&quot; colspan=&quot;10&quot;| F1
+| style=&quot;background:white; color:black;&quot;| F1
+|- style=&quot;background:silver;color:black&quot;
+| style=&quot;text-align:center;&quot; colspan=&quot;10&quot;| F2
+| style=&quot;background:white; color:black;&quot;| F2
+|-
+| style=&quot;text-align:center;&quot; colspan=&quot;10&quot;| •
+| style=&quot;background:white; color:black;&quot;| &amp;nbsp;
+|-
+| style=&quot;text-align:center;&quot; colspan=&quot;10&quot;| •
+| style=&quot;background:white; color:black;&quot;| &amp;nbsp;
+|-
+| style=&quot;text-align:center;&quot; colspan=&quot;10&quot;| •
+| style=&quot;background:white; color:black;&quot;| &amp;nbsp;
+|- style=&quot;background:silver;color:black&quot;
+| style=&quot;text-align:center;&quot; colspan=&quot;10&quot;| F29
+| style=&quot;background:white; color:black;&quot;| F29
+|- style=&quot;background:silver;color:black&quot;
+| style=&quot;text-align:center;&quot; colspan=&quot;10&quot;| F30
+| style=&quot;background:white; color:black;&quot;| F30
+|- style=&quot;background:silver;color:black&quot;
+| style=&quot;text-align:center;&quot; colspan=&quot;10&quot;| {{0|{{ns|10}}}} F31 ''(zero)''
+| style=&quot;background:white; color:black;&quot;| F31, always zero
+|-
+|colspan=&quot;11&quot; | '''Program counter'''
+|- style=&quot;background:silver;color:black&quot;
+| style=&quot;text-align:center;&quot; colspan=&quot;8&quot;| {{0|{{ns|8}}}} PC
+| style=&quot;text-align:center;&quot; colspan=&quot;1&quot;| 0
+| style=&quot;text-align:center;&quot; colspan=&quot;1&quot;| 0
+| style=&quot;background:white; color:black;&quot;| '''P'''rogram '''C'''ounter
+|-
+|colspan=&quot;11&quot; | '''Control registers''' &lt;br/&gt;
+|- style=&quot;background:silver;color:black&quot;
+| style=&quot;text-align:center;&quot; colspan=&quot;10&quot;| LR0
+| style=&quot;background:white; color:black;&quot;| '''L'''ock '''R'''egister 0 &lt;!--How many bits wide are these registers?--&gt;
+|- style=&quot;background:silver;color:black&quot;
+| style=&quot;text-align:center;&quot; colspan=&quot;10&quot;| LR1
+| style=&quot;background:white; color:black;&quot;| '''L'''ock '''R'''egister 1
+|- style=&quot;background:silver;color:black&quot;
+| style=&quot;text-align:center;&quot; colspan=&quot;10&quot;| FPCR
+| style=&quot;background:white; color:black;&quot;| '''FP''' '''C'''ontrol '''R'''egister &lt;!--How many bits wide is this register?--&gt;
+|}
+|}
+
+The architecture defined a set of 32 integer [[Processor register|register]]s and a set of 32 floating-point registers in addition to a [[program counter]], two lock registers and a floating-point control register (FPCR). It also defined registers that were optional, implemented only if the implementation required them. Lastly, registers for [[PALcode]] were defined.
+
+The integer registers were denoted by R0 to R31 and floating-point registers were denoted by F0 to F31. The R31 and F31 registers were hardwired to zero and writes to those registers by instructions are ignored. Digital considered using a combined register file, but a split register file was determined to be better as it enabled two-chip implementations to have a register file located on each chip and integer-only implementations to omit the floating-point register file containing the floating point registers. A split register file was also determined to be more suitable for multiple instruction issue due to the reduced number of read and write ports. The number of registers per register file was also considered, with 32 and 64 being contenders. Digital concluded that 32 registers was more suitable as it required less [[Die (integrated circuit)|die]] space, which improved clock frequencies. This number of registers was deemed not to be a major issue in respect to performance and future growth, as thirty-two registers could support at least eight-way instruction issue.
+
+The [[program counter]] is a 64-bit register which contains a longword-aligned virtual byte address, that is, the low two bits of the program counter are always zero. The PC is incremented by four to the address of the next instruction when an instruction is decoded. A lock flag and locked physical address register are used by the load-locked and store-conditional instructions for multiprocessor support. The floating-point control register (FPCR) is a 64-bit register defined by the architecture intended for use by Alpha implementations with [[IEEE 754]]-compliant floating-point hardware.
+
+==Data types==
+In the Alpha architecture, a ''[[byte]]'' was defined as an [[8-bit]] [[Data (computing)|datum]] (octet), a ''[[Word (data type)|word]]'' as a [[16-bit]] datum, a ''[[longword]]'' as a [[32-bit]] datum, a ''[[quadword]]'' as a [[64-bit]] datum, and an ''[[octaword]]'' as a [[128-bit]] datum.
+
+The Alpha architecture originally defined six data types:
+
+* Quadword (64-bit) integer
+* Longword (32-bit) integer
+* IEEE T-floating-point (double precision, 64-bit)
+* IEEE S-floating-point (single precision, 32-bit)
+
+To maintain a level of compatibility with the [[VAX]], the 32-bit architecture that preceded the Alpha, two other floating-point data types were included:
+
+* VAX G-floating point (double precision, 64-bit)
+* VAX F-floating point (single precision, 32-bit)
+* VAX H-floating point (quad precision, 128-bit) was not supported,&lt;ref&gt;{{cite magazine
+|magazine=DEC Professional  |page=62 |title=Alpha Bits - Migrating To The Future
+|quote=H floating datatypes are unavailable on Alpha |date=August 1992}}&lt;/ref&gt; but another 128-bit floating point option, X-floating point, was available on Alpha, but not VAX.&lt;ref&gt;{{cite web
+|url=ftp://ftp.mrynet.com/operatingsystems/VMS/docs/ssb71/6459/6459p002.htm
+|title=Migrating an Application from OpenVMS VAX to OpenVMS Alpha}}&lt;/ref&gt;&lt;br&gt;H and X have been described as similar, but not identical. Software emulation for H-floating is available from DEC, as is a source-code level converter named DECmigrate.
+
+==Memory==
+The Alpha has a 64-bit linear [[virtual address]] space with no memory segmentation. Implementations can implement a smaller virtual address space with a minimum size of 43 bits. Although the unused bits were not implemented in hardware such as [[translation lookaside buffer|TLBs]], the architecture required implementations to check whether they are zero to ensure software compatibility with implementations with a larger (or full) virtual address space.
+
+==Instruction formats==
+The Alpha ISA has a fixed instruction length of 32 bits. It has six instruction formats.
+
+{| class=&quot;wikitable&quot; style=&quot;text-align:center;&quot;
+|-
+| width=&quot;15px&quot; | 31
+| width=&quot;15px&quot; | 30
+| width=&quot;15px&quot; | 29
+| width=&quot;15px&quot; | 28
+| width=&quot;15px&quot; | 27
+| width=&quot;15px&quot; | 26
+| width=&quot;15px&quot; | 25
+| width=&quot;15px&quot; | 24
+| width=&quot;15px&quot; | 23
+| width=&quot;15px&quot; | 22
+| width=&quot;15px&quot; | 21
+| width=&quot;15px&quot; | 20
+| width=&quot;15px&quot; | 19
+| width=&quot;15px&quot; | 18
+| width=&quot;15px&quot; | 17
+| width=&quot;15px&quot; | 16
+| width=&quot;15px&quot; | 15
+| width=&quot;15px&quot; | 14
+| width=&quot;15px&quot; | 13
+| width=&quot;15px&quot; | 12
+| width=&quot;15px&quot; | 11
+| width=&quot;15px&quot; | 10
+| width=&quot;15px&quot; | 9
+| width=&quot;15px&quot; | 8
+| width=&quot;15px&quot; | 7
+| width=&quot;15px&quot; | 6
+| width=&quot;15px&quot; | 5
+| width=&quot;15px&quot; | 4
+| width=&quot;15px&quot; | 3
+| width=&quot;15px&quot; | 2
+| width=&quot;15px&quot; | 1
+| width=&quot;15px&quot; | 0
+| style=&quot;background-color:#DDDDFF&quot;| '''Type'''
+|-
+| colspan=&quot;6&quot; | Opcode
+| colspan=&quot;5&quot; | Ra
+| colspan=&quot;5&quot; | Rb
+| colspan=&quot;3&quot; | Unused
+| colspan=&quot;1&quot; | 0
+| colspan=&quot;7&quot; | Function
+| colspan=&quot;5&quot; | Rc
+| style=&quot;background-color:#EEEEFF&quot;| Integer operate
+|-
+| colspan=&quot;6&quot; | Opcode
+| colspan=&quot;5&quot; | Ra
+| colspan=&quot;8&quot; | Literal
+| colspan=&quot;1&quot; | 1
+| colspan=&quot;7&quot; | Function
+| colspan=&quot;5&quot; | Rc
+| style=&quot;background-color:#EEEEFF&quot;| Integer operate, literal
+|-
+| colspan=&quot;6&quot;  | Opcode
+| colspan=&quot;5&quot;  | Ra
+| colspan=&quot;5&quot;  | Rb
+| colspan=&quot;11&quot; | Function
+| colspan=&quot;5&quot;  | Rc
+| style=&quot;background-color:#EEEEFF&quot;| Floating-point operate
+|-
+| colspan=&quot;6&quot; | Opcode
+| colspan=&quot;5&quot; | Ra
+| colspan=&quot;5&quot; | Rb
+| colspan=&quot;16&quot; | Displacement
+| style=&quot;background-color:#EEEEFF&quot;| Memory format
+|-
+| colspan=&quot;6&quot;  | Opcode
+| colspan=&quot;5&quot;  | Ra
+| colspan=&quot;21&quot; | Displacement
+| style=&quot;background-color:#EEEEFF&quot;| Branch format
+|-
+| colspan=&quot;6&quot;  | Opcode
+| colspan=&quot;26&quot; | Function
+| style=&quot;background-color:#EEEEFF&quot;| CALL_PAL format
+|-
+|}
+
+The integer operate format is used by integer instructions. It contains a 6-bit opcode field, followed by the Ra field, which specifies the register containing the first operand and the Rb field, specifies the register containing the second operand. Next is a 3-bit field which is unused and reserved. A 1-bit field contains a &quot;0&quot;, which distinguished this format from the integer literal format. A 7-bit function field follows, which is used in conjunction with the opcode to specify an operation. The last field is the Rc field, which specifies the register which the result of a computation should be written to. The register fields are all 5 bits long, required to address 32 unique locations, the 32 integer registers.
+
+The integer literal format is used by integer instructions which use a literal as one of the operands. The format is the same as the integer operate format except for the replacement of the 5-bit Rb field and the 3 bits of unused space with an 8-bit literal field which is zero-extended to a 64-bit operand.
+
+The floating-point operate format is used by floating-point instructions. It is similar to the integer operate format, but has an 11-bit function field made possible by using the literal and unused bits which are reserved in integer operate format.
+
+The memory format is used mostly by load and store instructions. It has a 6-bit opcode field, a 5-bit Ra field, a 5-bit Rb field and a 16-bit displacement field.
+
+Branch instructions have a 6-bit opcode field, a 5-bit Ra field and a 21-bit displacement field. The Ra field specifies a register to be tested by a conditional branch instruction, and if the condition is met, the program counter is updated by adding the contents of the displacement field with the program counter. The displacement field contains a signed integer and if the value of the integer is positive, if the branch is taken then the program counter is incremented. If the value of the integer is negative, then program counter is decremented if the branch is taken. The range of a branch thus is ±1 Mi instructions, or ±4 MiB. The Alpha Architecture was designed with a large range as part of the architecture's forward-looking goal.
+
+The CALL_PAL format is used by the &lt;code&gt;CALL_PAL&lt;/code&gt; instruction, which is used to call [[PALcode]] subroutines. The format retains the opcode field but replaces the others with a 26-bit function field, which contains an integer specifying a PAL subroutine.
+
+==Instruction set==
+
+===Control instructions===
+The [[Control flow|control]] instructions consist of conditional and unconditional branches, and jumps. The conditional and unconditional branch instructions use the branch instruction format, while the jump instructions use the memory instruction format.
+
+Conditional branches test whether the least significant bit of a register is set or clear, or compare a register as a signed quadword to zero, and branch if the specified condition is true. The conditions available for comparing a register to zero are equality, inequality, less than, less than or equal to, greater than or equal to, and greater than. The new address is computed by longword aligning and sign extending the 21-bit displacement and adding it to the address of the instruction following the conditional branch.
+
+Unconditional branches update the program counter with a new address computed in the same way as conditional branches. They also save the address of the instruction following the unconditional branch to a register. There are two such instructions, and they differ only in the hints provided for the branch prediction hardware.
+
+There are four jump instructions. These all perform the same operation, saving the address of the instruction following the jump, and providing the program counter with a new address from a register. They differ in the hints provided to the branch prediction hardware. The unused displacement field is used for this purpose.
+
+===Integer arithmetic===
+The integer arithmetic instructions perform addition, multiplication, and subtraction on longwords and quadwords; and comparison on quadwords. There is no instruction(s) for division as the architects considered the implementation of division in hardware to be adverse to simplicity. In addition to the standard add and subtract instructions, there are ''scaled'' versions. These versions shift the second operand to the left by two or three bits before adding or subtracting. The ''Multiply Longword'' and ''Multiply Quadword'' instructions write the least significant 32 or 64 bits of a 64- or 128-bit result to the destination register, respectively. Since it is useful to obtain the most significant half, the ''Unsigned Multiply Quadword High'' (UMULH) instruction is provided. UMULH is used for implementing multi-precision arithmetic and division algorithms. The concept of a separate instruction for multiplication that returns the most significant half of a result was taken from [[DEC PRISM|PRISM]].
+
+The instructions that operate on longwords ignore the most significant half of the register and the 32-bit result is sign-extended before it is written to the destination register. By default, the add, multiply, and subtract instructions, with the exception of UMULH and scaled versions of add and subtract, do not trap on overflow. When such functionality is required, versions of these instructions that perform overflow detection and trap on overflow are provided.
+
+The compare instructions compare two registers or a register and a literal and write '1' to the destination register if the specified condition is true or '0' if not. The conditions are equality, inequality, less than or equal to, and less than. With the exception of the instructions that specify the former two conditions, there are versions that perform signed and unsigned compares.
+
+The integer arithmetic instructions use the integer operate instruction formats.
+
+===Logical and shift===
+The logical instructions consist of those for performing [[Bitwise operation|bitwise]] logical operations and [[conditional move]]s on the integer registers. The bitwise logical instructions perform [[Logical conjunction|AND]], [[Sheffer stroke|NAND]], [[Logical NOR|NOR]], [[Logical disjunction|OR]], [[XNOR]], and [[XOR]] between two registers or a register and literal. The conditional move instructions test a register as a signed quadword to zero and move if the specified condition is true. The specified conditions are equality, inequality, less than or equal to, less than, greater than or equal to, and greater than. The shift instructions perform [[Arithmetic shift|arithmetic right shift]], and [[Logical shift|logical left and right shifts]]. The shift amount is given by a register or literal. Logical and shift instructions use the integer operate instruction formats.
+
+==Extensions==
+
+===Byte-Word Extensions (BWX)===
+Later, the Alpha included byte-word extensions, a set of instructions to manipulate 8-bit and 16-bit data types. These instructions were first introduced in the [[Alpha 21164#Alpha 21164 (EV56)|21164A]] (EV56) microprocessor and are present in all subsequent implementations. These instructions performed operations that previously required multiple instructions to implement, which improved code density and the performance of certain applications. BWX also made the emulation of x86 machine code and the writing of [[device driver]]s easier.&lt;ref&gt;{{Cite journal | doi = 10.1109/JSSC.1996.542313| bibcode = 1996IJSSC..31.1687G| title = A 433-MHz 64-b quad-issue RISC microprocessor| journal = IEEE Journal of Solid-State Circuits| volume = 31| issue = 11| pages = 1687–1696| year = 1996| last1 = Gronowski | first1 = P. E. | last2 = Bowhill | first2 = W. J. | last3 = Donchin | first3 = D. R. | last4 = Blake-Campos | first4 = R. P. | last5 = Carlson | first5 = D. A. | last6 = Equi | first6 = E. R. | last7 = Loughlin | first7 = B. J. | last8 = Mehta | first8 = S.| last9 = Mueller | first9 = R. O. | last10 = Olesin | first10 = A.| last11 = Noorlag | first11 = D. J. W. | last12 = Preston | first12 = R. P. }}&lt;/ref&gt;
+
+{| class=&quot;wikitable&quot;
+|-
+! width=&quot;120&quot; | Mnemonic
+! width=&quot;360&quot; | Instruction
+|-
+| &lt;code&gt;LDBU&lt;/code&gt;
+| Load Zero-Extended Byte from Memory to Register
+|-
+| &lt;code&gt;LDWU&lt;/code&gt;
+| Load Zero-Extended Word from Memory to Register
+|-
+| &lt;code&gt;SEXTB&lt;/code&gt;
+| Sign Extend Byte
+|-
+| &lt;code&gt;SEXTW&lt;/code&gt;
+| Sign Extend Word
+|-
+| &lt;code&gt;STB&lt;/code&gt;
+| Store Byte from Register to Memory
+|-
+| &lt;code&gt;STW&lt;/code&gt;
+| Store Word from Register to Memory
+|-
+|}
+
+===Motion Video Instructions (MVI)===
+Motion Video Instructions (MVI) was an instruction set extension to the Alpha ISA that added instructions for [[SIMD|single instruction, multiple data]] (SIMD) operations.&lt;ref&gt;Gwennap, Linley (18 November 1996). &quot;Digital, MIPS Add Multimedia Extensions&quot;. ''[[Microprocessor Report]]''.&lt;/ref&gt; Alpha implementations that implement MVI, in chronological order, are the [[Alpha 21164#Alpha 21164PC|Alpha 21164PC]] (PCA56 and PCA57), [[Alpha 21264]] (EV6) and [[Alpha 21364]] (EV7). Unlike most other SIMD instruction sets of the same period, such as [[MIPS architecture|MIPS]]' [[MDMX]] or [[SPARC]]'s [[Visual Instruction Set]], but like [[PA-RISC]]'s [[Multimedia Acceleration eXtensions]] (MAX-1, MAX-2), MVI was a simple instruction set composed of a few instructions that operate on integer data types stored in existing integer registers.
+
+MVI's simplicity was due to two reasons. Firstly, Digital had determined that the [[Alpha 21164]] was already capable of performing [[DVD]] decoding through software, therefore not requiring hardware provisions for the purpose, but was inefficient in [[MPEG-2]] encoding. The second reason was the requirement to retain the fast cycle times of implementations. Adding many instructions would have complicated and enlarged the instruction decode logic, reducing an implementation's clock frequency.
+
+MVI consisted of 13 instructions:
+
+{| class=&quot;wikitable&quot;
+|-
+! width=&quot;120&quot; | Mnemonic
+! width=&quot;360&quot; | Instruction
+|-
+| &lt;code&gt;MAXSB8&lt;/code&gt;
+| Vector Signed Byte Maximum
+|-
+| &lt;code&gt;MAXSW4&lt;/code&gt;
+| Vector Signed Word Maximum
+|-
+| &lt;code&gt;MAXUB8&lt;/code&gt;
+| Vector Unsigned Byte Maximum
+|-
+| &lt;code&gt;MAXUW4&lt;/code&gt;
+| Vector Unsigned Word Maximum
+|-
+| &lt;code&gt;MINSB8&lt;/code&gt;
+| Vector Signed Byte Minimum
+|-
+| &lt;code&gt;MINSW4&lt;/code&gt;
+| Vector Signed Word Minimum
+|-
+| &lt;code&gt;MINUB8&lt;/code&gt;
+| Vector Unsigned Byte Minimum
+|-
+| &lt;code&gt;MINUW4&lt;/code&gt;
+| Vector Unsigned Word Minimum
+|-
+| &lt;code&gt;PERR&lt;/code&gt;
+| Pixel Error
+|-
+| &lt;code&gt;PKLB&lt;/code&gt;
+| Pack Longwords to Bytes
+|-
+| &lt;code&gt;PKWB&lt;/code&gt;
+| Pack Words to Bytes
+|-
+| &lt;code&gt;UNPKBL&lt;/code&gt;
+| Unpack Bytes to Longwords
+|-
+| &lt;code&gt;UNPKBW&lt;/code&gt;
+| Unpack Bytes to Words
+|-
+|}
+
+{{Multimedia extensions}}
+
+===Floating-point Extensions (FIX)===
+Floating-point extensions (FIX) was an extension the Alpha Architecture. It introduced nine instructions for floating-point square-root and for transferring data to and from the integer registers and floating-point registers. The [[Alpha 21264]] (EV6) was the first microprocessor to implement these instructions.
+
+{| class=&quot;wikitable&quot;
+|-
+! width=&quot;120&quot; | Mnemonic
+! width=&quot;360&quot; | Instruction
+|-
+| &lt;code&gt;FTOIS&lt;/code&gt;
+| Floating-point to Integer Register Move, S_floating
+|-
+| &lt;code&gt;FTOIT&lt;/code&gt;
+| Floating-point to Integer Register Move, T_floating
+|-
+| &lt;code&gt;ITOFF&lt;/code&gt;
+| Integer to Floating-point Register Move, F_floating
+|-
+| &lt;code&gt;ITOFS&lt;/code&gt;
+| Integer to Floating-point Register Move, S_floating
+|-
+| &lt;code&gt;ITOFT&lt;/code&gt;
+| Integer to Floating-point Register Move, T_floating
+|-
+| &lt;code&gt;SQRTF&lt;/code&gt;
+| Square root F_floating
+|-
+| &lt;code&gt;SQRTG&lt;/code&gt;
+| Square root G_floating
+|-
+| &lt;code&gt;SQRTS&lt;/code&gt;
+| Square root S_floating
+|-
+| &lt;code&gt;SQRTT&lt;/code&gt;
+| Square root T_floating
+|-
+|}
+
+===Count Extensions (CIX)===
+Count Extensions (CIX) was an extension to the architecture which introduced three instructions for counting bits. These instructions were categorized as integer arithmetic instructions. They were first implemented on the [[Alpha 21264#Alpha 21264A|Alpha 21264A]] (EV67).
+
+{| class=&quot;wikitable&quot;
+|-
+! width=&quot;120&quot; | Mnemonic
+! width=&quot;360&quot; | Instruction
+|-
+| &lt;code&gt;CTLZ&lt;/code&gt;
+| Count Leading Zero
+|-
+| &lt;code&gt;CTPOP&lt;/code&gt;
+| Count Population
+|-
+| &lt;code&gt;CTTZ&lt;/code&gt;
+| Count Trailing Zero
+|-
+|}
+
+==Implementations==
+At the time of its announcement, Alpha was heralded as an architecture for the next 25 years. While this was not to be, Alpha has nevertheless had a reasonably long life. The first version, the '''[[Alpha 21064]]''' (otherwise known as the '''EV4''') was introduced in November 1992 running at up to 192&amp;nbsp;MHz; a slight shrink of the die (the '''EV4S''', shrunk from 0.75&amp;nbsp;µm to 0.675&amp;nbsp;µm) ran at 200&amp;nbsp;MHz a few months later. The 64-bit processor was a [[superpipelined]] and [[superscalar]] design, like other RISC designs, but nevertheless outperformed them all and DEC touted it as the world's fastest processor. Careful attention to circuit design, a hallmark of the Hudson design team, like a huge centralized clock circuitry, allowed them to run the CPU at higher speeds, even though the microarchitecture was fairly similar to other RISC chips. In comparison, the less expensive [[Original Intel Pentium (P5 microarchitecture)|Intel Pentium]] ran at 66&amp;nbsp;MHz when it was launched the following spring.
+
+The '''[[Alpha 21164]]''' or '''EV5''' became available in 1995 at processor frequencies of up to 333&amp;nbsp;MHz. In July 1996 the line was speed bumped to 500&amp;nbsp;MHz, in March 1998 to 666&amp;nbsp;MHz. Also in 1998 the '''[[Alpha 21264]]''' ('''EV6''') was released at 450&amp;nbsp;MHz, eventually reaching (in 2001 with the '''21264C'''/'''EV68CB''') 1.25&amp;nbsp;GHz. In 2003, the '''[[Alpha 21364]]''' or '''EV7''' ''Marvel'' was launched, essentially an EV68 core with four 1.6 GB/s&lt;ref&gt;In the context of data transfer, 1 GB is used to mean 1 billion bytes&lt;/ref&gt; inter-processor communication links for improved [[multiprocessor]] system performance, running at 1 or 1.15&amp;nbsp;GHz.
+
+In 1996, the production of Alpha chips was licensed to [[Samsung Electronics|Samsung Electronics Company]]. Following the purchase of Digital by [[Compaq]] the majority of the Alpha products were placed with [[API NetWorks|API NetWorks, Inc.]] (previously Alpha Processor Inc.), a private company funded by Samsung and Compaq. In October 2001, [[Microway]] became the exclusive sales and service provider of API NetWorks' Alpha-based product line.
+
+On June 25, 2001, Compaq announced that Alpha would be phased out by 2004 in favor of [[Intel]]'s [[Itanium]], canceled the planned '''[[Alpha 21464|EV8]]''' chip, and sold all Alpha intellectual property to [[Intel]].&lt;ref name=&quot;zdnet-compaq&quot;&gt;{{cite web|url=http://www.zdnet.com/article/alpha-proved-costly-for-compaq-3002090197/|title=Alpha proved costly for Compaq|last=Popovich|first=Ken|date=2001-06-28|work=www.zdnet.com|publisher=[[ZDNet]]|accessdate=2016-03-02}}&lt;/ref&gt; HP, new owner of Compaq later the same year, announced that development of the Alpha series would continue for a few more years, including the release of a 1.3&amp;nbsp;GHz EV7 variant called the '''EV7z'''. This would be the final iteration of Alpha, the 0.13&amp;nbsp;µm '''EV79''' also being canceled.
+
+Alpha was also implemented in the ''Piranha'', a research prototype developed by Compaq's Corporate Research and Nonstop Hardware Development groups at the Western Research Laboratory and Systems Research Center. ''Piranha'' was a [[Multi-core processor|multicore]] design for [[transaction processing]] workloads that contained eight simple cores. It was described at the 27th Annual International Symposium on Computer Architecture in June 2000.&lt;ref&gt;{{cite conference|author1=Luiz André Barroso |author2=Kourosh Gharachorloo |author3=Robert McNamara |author4=Andreas Nowatzyk |author5=Shaz Qadeer |author6=Barton Sano |author7=Scott Smith |author8=Robert Stets |author9=Ben Verghese|year=2000|title=Piranha: A Scalable Architecture Based on Single-Chip Multiprocessing|doi=10.1145/339647.339696|conference=27th Annual International Symposium on Computer Architecture}}&lt;/ref&gt;
+
+===Model history===
+{| class=&quot;wikitable sortable&quot; style=&quot;font-size:97%; text-align:center;&quot;
+!                      Model
+! abbr=&quot;Number&quot;      | Model number
+!                      Year
+! abbr=&quot;Frequency&quot;   | Frequency [MHz]
+! abbr=&quot;Process&quot;     | Process [µm]
+! abbr=&quot;Transistors&quot; | Transistors [millions]
+! abbr=&quot;Wize&quot;        | Die size [mm&lt;sup&gt;2&lt;/sup&gt;]
+!                      IO Pins
+! abbr=&quot;Power&quot;       | Power [W]
+!                      Voltage
+! abbr=&quot;Dcache&quot;      | Dcache [KB]&lt;ref&gt;In the context of cache memory, 1 KB = 1024 [[byte]]s; 1 MB = 1024 KB&lt;/ref&gt;
+! abbr=&quot;Icache&quot;      | Icache [KB]
+!                      Scache
+!                      Bcache
+!                      [[#ISA|ISA]]
+|-
+!EV4
+|[[Alpha 21064|21064]]||1992||100&amp;ndash;200||0.75||1.68||234||290||30||3.3||8||8||–||128&amp;nbsp;KB&amp;ndash;16&amp;nbsp;MB||&amp;nbsp;
+|-
+!EV4S
+|21064||1993||100&amp;ndash;200||0.675||1.68||186||290||27||3.3||8||8||–||128&amp;nbsp;KB&amp;ndash;16&amp;nbsp;MB||&amp;nbsp;
+|-
+!EV45
+|21064A||1994||200&amp;ndash;300||0.5||2.85||164||||33||3.3||16||16||–||256&amp;nbsp;KB&amp;ndash;16&amp;nbsp;MB||&amp;nbsp;
+|-
+!LCA4
+|21066||1993||100&amp;ndash;166||0.675||1.75||209||||21||3.3||8||8||–||&amp;nbsp;||&amp;nbsp;
+|-
+!LCA4
+|21068||1994||66||0.675||1.75||209||||9||3.3||8||8||–||&amp;nbsp;||&amp;nbsp;
+|-
+!LCA45
+|21066A||1994||100&amp;ndash;266||0.5||1.8||161||||23||3.3||8||8||–||&amp;nbsp;||&amp;nbsp;
+|-
+!LCA45
+|21068A||1994||100||0.5||1.8||161||||||3.3||8||8||–||&amp;nbsp;||&amp;nbsp;
+|-
+!EV5
+|[[Alpha 21164|21164]]||1995||266&amp;ndash;500||0.5||9.3||299||296||56||3.3/2.5||8||8||96&amp;nbsp;KB||Up to 64&amp;nbsp;MB||R
+|-
+!EV56
+|21164A||1996||366&amp;ndash;666&lt;ref name=&quot;facts and comments&quot; /&gt;||0.35||9.66&lt;ref name=&quot;facts and comments&quot; /&gt;||209||||31&amp;ndash;55&lt;ref name=&quot;facts and comments&quot; /&gt;||3.3/2.5&lt;ref name=&quot;facts and comments&quot; /&gt;||8||8||96&amp;nbsp;KB||Up to 64&amp;nbsp;MB||R,B
+|-
+!PCA56
+|21164PC||1997||400&amp;ndash;533||0.35||3.5||141||264||26&amp;ndash;35||3.3/2.5||8||16||–||512&amp;nbsp;KB&amp;ndash;4&amp;nbsp;MB||R,B,M
+|-
+!PCA57
+|21164PC||&amp;nbsp;||600&amp;ndash;666||0.28||5.7||101||283||18&amp;ndash;23||2.5/2.0||16||32&lt;ref name=&quot;facts and comments&quot;&gt;{{cite web
+ |url          = http://www.alasir.com/articles/alpha_history/
+ |title        = Alpha: The History in Facts and Comments
+ |accessdate   = Nov 22, 2008
+ |author       = Paul V. Bolotoff
+ |date         = 21 April 2007
+ |archive-url  = https://web.archive.org/web/20131203130550/http://alasir.com/articles/alpha_history/
+ |archive-date = 3 December 2013
+ |url-status     = dead
+}}&lt;/ref&gt;
+||–||512&amp;nbsp;KB&amp;ndash;4&amp;nbsp;MB||R,B,M
+|-
+!EV6
+|[[Alpha 21264|21264]]||1998||450&amp;ndash;600||0.35||15.2||314||389||73||2.0||64||64||–||2&amp;ndash;8&amp;nbsp;MB||R,B,M,F
+|-
+!EV67
+|21264A||1999||600&amp;ndash;750||0.25||15.2||210||389||&amp;nbsp;||2.0||64||64||–||2&amp;ndash;8&amp;nbsp;MB||R,B,M,F,C
+|-
+!EV68AL
+|21264B||2001||800&amp;ndash;833||0.18||15.2||125||&amp;nbsp;||&amp;nbsp;||1.7||64||64||–||2&amp;ndash;8&amp;nbsp;MB||R,B,M,F,C,T
+|-
+!EV68CB
+|21264C||2001||1000&amp;ndash;1250||0.18||15.2||125||&amp;nbsp;||65&amp;ndash;75||1.65||64||64||–||2&amp;ndash;8&amp;nbsp;MB||R,B,M,F,C,T
+|-
+!EV68CX
+|21264D||&amp;nbsp;||&amp;nbsp;||&amp;nbsp;||&amp;nbsp;||&amp;nbsp;||&amp;nbsp;||&amp;nbsp;||1.65||64||64||–||2&amp;ndash;8&amp;nbsp;MB||R,B,M,F,C,T
+|-
+!EV7
+|[[Alpha 21364|21364]]||2003||1000&amp;ndash;1150||0.18||130||397||||125||1.5||64||64||1.75&amp;nbsp;MB||–||R,B,M,F,C,T
+|-
+!EV7z
+|21364||2004||1300||0.18||130||397||||125||1.5||64||64||1.75&amp;nbsp;MB||–||R,B,M,F,C,T
+|-
+!colspan=16| Cancelled
+|-
+!EV78/EV79
+|21364A||Slated for 2004||1700||0.13||152||300||||120||1.2||64||64||1.75&amp;nbsp;MB||–||R,B,M,F,C,T
+|-
+!EV8
+|[[Alpha 21464|21464]]||Slated for 2003||1200&amp;ndash;2000||0.125||250||420||1800||??||1.2||64||64||3&amp;nbsp;MB||–||R,B,M,F,C,T
+|-
+!                      Model
+! abbr=&quot;Number&quot;      | Model number
+!                      Year
+! abbr=&quot;Frequency&quot;   | Frequency [MHz]
+! abbr=&quot;Process&quot;     | Process [µm]
+! abbr=&quot;Transistors&quot; | Transistors [millions]
+! abbr=&quot;Wize&quot;        | Die size [mm²]
+!                      IO Pins
+! abbr=&quot;Power&quot;       | Power [W]
+!                      Voltage
+! abbr=&quot;Dcache&quot;      | Dcache [KB]
+! abbr=&quot;Icache&quot;      | Icache [KB]
+!                      Scache
+!                      Bcache
+!                      [[#ISA|ISA]]
+|}
+
+;ISA extensions:
+
+* '''R''' – Hardware support for rounding to infinity and negative infinity.&lt;ref&gt;
+{{cite web
+| url         = http://www.mostang.com/~davidm/papers/expo97/paper/doc003.html
+| title       = Overview of Alpha Family
+| accessdate  = Dec 9, 2009
+| author      = David Mosberger
+}}&lt;/ref&gt;
+* '''B''' – BWX, the &quot;Byte/Word Extension&quot;, adding instructions to allow 8- and 16-bit operations from memory and I/O
+* '''M''' – MVI, &quot;multimedia&quot; instructions
+* '''F''' – FIX, instructions to move data between integer and floating point registers and for square root
+* '''C''' – CIX, instructions for counting and finding bits
+* '''T''' – support for prefetch with modify intent to improve the performance of the first attempt to acquire a lock
+
+==Performance==
+To illustrate the comparative performance of Alpha-based systems, some [[Standard Performance Evaluation Corporation|SPEC]] performance numbers (SPECint95, SPECfp95) are listed below. Note that the SPEC results claim to report the measured performance of a whole computer system (CPU, bus, memory, compiler optimizer), not just the CPU. Also note that the benchmark and scale changed from 1992 to 1995. However, the figures give a rough impression of the performance of the Alpha architecture (64-bit), compared with the contemporary HP (64-bit) and Intel-based offerings (32-bit). Perhaps the most obvious trend is that while Intel could always get reasonably close to Alpha in integer performance, in floating point performance the difference was considerable. On the other side, HP ([[PA-RISC]]) is also reasonably close to Alpha, but these CPUs are running at significantly lower clock rates (MHz). The tables lack two important values: the power consumption and the price of a CPU.
+
+{{Col-begin}}
+{{Col-2}}
+{| class=&quot;wikitable&quot; style=&quot;text-align:center; font-size:98%&quot;
+! width=&quot;150&quot;| System
+! width=&quot;80&quot;| CPU
+! width=&quot;30&quot;| MHz
+! width=&quot;40&quot;| integer
+! width=&quot;50&quot;| floating point
+|-
+|+SPEC benchmark 1995 performance comparison (using ''SPECint95'' and ''SPECfp95'' results [http://www.spec.org/cpu95/results/])
+|-
+!AlphaServer 8400 5/350
+|21164 (EV5)||350||10.1||14.2
+|-
+!Intel Alder System (200&amp;nbsp;MHz, 256&amp;nbsp;KB L2)  
+|Pentium Pro||200||8.9||6.75
+|-
+!HP 9000 C160
+|PA 8000||160||10.4||16.3
+|-
+|}
+{{Col-2}}
+{| class=&quot;wikitable&quot; style=&quot;text-align:center; font-size:98%&quot;
+! width=&quot;150&quot;| System
+! width=&quot;80&quot;| CPU
+! width=&quot;30&quot;| MHz
+! width=&quot;40&quot;| integer
+! width=&quot;50&quot;| floating point
+|-
+|+2000 performance comparison (using ''SPECint95'' and ''SPECfp95'' results)
+|-
+!AlphaServer ES40 6/833
+|21264 (EV6)||833||50.0||100.0
+|-
+!Intel VC820 motherboard
+|Pentium III||1000||46.8||31.9
+|-
+!HP 9000 C3600 
+|PA-8600||552||42.1||64.0
+|-
+|}
+{{Col-end}}
+
+==Alpha-based systems==
+The first generation of DEC Alpha-based systems comprised the [[DEC 3000 AXP]] series workstations and low-end servers, [[DEC 4000 AXP]] series mid-range servers, and [[DEC 7000/10000 AXP|DEC 7000 AXP and 10000 AXP]] series high-end servers. The DEC 3000 AXP systems used the same [[TURBOchannel]] bus as the previous [[MIPS architecture|MIPS]]-based DECstation models, whereas the 4000 was based on [[Futurebus|FutureBus+]] and the 7000/10000 shared an architecture with corresponding [[VAX]] models.
+
+DEC also produced a [[personal computer|PC]]-like Alpha workstation with an [[Extended Industry Standard Architecture|EISA]] bus, the [[DECpc AXP 150]] (codename &quot;Jensen&quot;, also known as the DEC 2000 AXP). This was the first Alpha system to support [[Windows NT]]. DEC later produced Alpha versions of their Celebris XL and [[Digital Personal Workstation]] PC lines, with 21164 processors.
+
+Digital also produced [[single board computer]]s based on the [[VMEbus]] for embedded and industrial use. The first generation included the 21068-based AXPvme 64 and AXPvme 64LC, and the 21066-based AXPvme 160. These were introduced on March 1, 1994. Later models such as the AXPvme 100, AXPvme 166 and AXPvme 230 were based on the 21066A processor, while the Alpha VME 4/224 and Alpha VME 4/288 were based on the 21064A processor. The last models, the Alpha VME 5/352 and Alpha VME 5/480, were based on the 21164 processor.
+
+The 21066 chip was used in the [[DEC Multia]] VX40/41/42 compact workstation and the ALPHAbook 1 laptop from Tadpole Technology.
+
+In 1994, DEC launched a new range of [[AlphaStation]] and [[AlphaServer]] systems. These used 21064 or 21164 processors and introduced the [[Peripheral Component Interconnect|PCI]] bus, [[VGA]]-compatible [[frame buffer]]s and [[PS/2 connector|PS/2]]-style keyboards and mice. The AlphaServer 8000 series superseded the DEC 7000/10000 AXP and also employed XMI and FutureBus+ buses.
+
+The AlphaStation XP1000 was the first workstation based on the 21264 processor. Later AlphaServer/Station models based on the 21264 were categorised into ''DS'' (departmental server), ''ES'' (enterprise server) or ''GS'' (global server) families.
+
+The final 21364 chip was used in the AlphaServer ES47, ES80 and GS1280 models and the AlphaStation ES47.
+
+A number of [[Original equipment manufacturer|OEM]] [[motherboard]]s were produced by DEC, such as the 21066 and 21068-based AXPpci 33 &quot;NoName&quot;, which was part of a major push into the OEM market by the company,&lt;ref&gt;Reinhardt Krause. &quot;DEC launching Alpha board push&quot;. Electronic News, April 4, 1994.&lt;/ref&gt; the 21164-based AlphaPC 164 and AlphaPC 164LX, the 21164PC-based AlphaPC 164SX and AlphaPC 164RX and the 21264-based AlphaPC 264DP. Several third parties such as Samsung and API also produced OEM motherboards such as the API UP1000 and UP2000.
+
+To assist third parties in developing hardware and software for the platform, DEC produced Evaluation Boards, such as the EB64+ and EB164 for the Alpha 21064A and 21164 microprocessors respectively.
+
+The 21164 and 21264 processors were used by [[NetApp]] in various [[network-attached storage]] systems, while the 21064 and 21164 processors were used by [[Cray]] in their [[Cray T3D|T3D]] and [[Cray T3E|T3E]] [[massively parallel]] supercomputers.
+
+===Supercomputers===
+The fastest supercomputer based on Alpha processors was the [[ASCI Q]] at Los Alamos National Laboratory. The machine was built as an HP AlphaServer SC45/GS Cluster. It had 4096 Alpha (21264 EV-68, 1.25&amp;nbsp;GHz) CPUs, and reached an R&lt;sub&gt;max&lt;/sub&gt; of 7.727 Teraflops.&lt;ref&gt;{{cite web 
+ |url=http://www.sandia.gov/supercomp/sc2002/flyers/ASCI_Q_rev.pdf 
+ |title=The ASCI Q System: 30 TeraOPS Capability at Los Alamos National Laboratory 
+ |author=Los Alamos National Laboratories 
+ |year=2002 
+ |accessdate=2010-06-06 
+ |url-status=dead 
+ |archiveurl=https://web.archive.org/web/20110112020420/http://www.sandia.gov/supercomp/sc2002/flyers/ASCI_Q_rev.pdf 
+ |archivedate=2011-01-12 
+ }}&lt;/ref&gt;
+
+==References==
+{{Reflist|30em}}
+
+==External links==
+* [http://www.o3one.org/hwdocs/alpha/alphaahb.pdf The Alpha Architecture Handbook, Version 4]
+* [https://www.cs.cmu.edu/afs/cs/academic/class/15213-f98/doc/alpha-ref.pdf The Alpha Architecture Handbook, Version 3]
+* [http://www.hpl.hp.com/hpjournal/dtj/vol4num4/toc.htm Digital Technical Journal, Volume 4, Number 4, Special Issue 1992 Alpha AXP Architecture and Systems] This issue contains several articles from Alpha's Architects
+* [https://web.archive.org/web/20080404230535/http://h18002.www1.hp.com/alphaserver/technology/chip-docs.html Archived technical documentation library] This link features the hardware reference manuals and datasheets for Alpha microprocessors, chipsets and OEM motherboards. Includes the Alpha Architecture Handbook and various programming manuals.
+* [http://queue.acm.org/detail.cfm?id=957732 A Conversation with Dan Dobberpuhl (October 1, 2003)]
+* [https://www.cs.auckland.ac.nz/courses/compsci210s2c/resources/AlphaArch.pdf Dr. Bruce Hutton's lecture notes on Computer Architecture]
+
+{{DEC microprocessors}}
+{{RISC-based processor architectures}}
+{{CPU technologies}}
+
+[[Category:DEC microprocessors]]
+[[Category:Instruction set architectures]]
+[[Category:64-bit computers]]</text>
+      <sha1>q84ardr90p6lulw4lg674015k7sa5v5</sha1>
+    </revision>
+  </page>

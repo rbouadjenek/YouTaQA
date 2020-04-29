@@ -1,0 +1,172 @@
+  <page>
+    <title>Document Object Model</title>
+    <ns>0</ns>
+    <id>8743</id>
+    <revision>
+      <id>932262242</id>
+      <parentid>927575025</parentid>
+      <timestamp>2019-12-24T15:38:55Z</timestamp>
+      <contributor>
+        <username>Mike Peel</username>
+        <id>214232</id>
+      </contributor>
+      <minor />
+      <comment>Using lcfirst parameter in the Commons category link</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{short description|Convention for representing and interacting with objects in HTML, XHTML and XML documents}}
+{{More footnotes|date=August 2010}}
+{{Infobox technology standard
+| title             = Document Object Model
+| image             = DOM-model.svg
+| caption           = Example of DOM hierarchy in an HTML document
+| status            = 
+| year_started      = 
+| first_published   = {{Start date and age|1998|10|1}}
+| version           = DOM4&lt;ref&gt;All versioning refers to W3C DOM only.&lt;/ref&gt;
+| version_date      = {{Start date and age|2015|11|19}}
+| preview           = 
+| preview_date      = 
+| organization      = [[World Wide Web Consortium]], [[WHATWG]]
+| committee         = 
+| editors           = 
+| authors           = 
+| base_standards    = [https://dom.spec.whatwg.org/ WHATWG DOM Living Standard]&lt;br /&gt;[https://www.w3.org/TR/dom/ W3C DOM4]
+| related_standards = 
+| abbreviation      = DOM
+| domain            = 
+| license           = 
+}}
+{{HTML}} 
+The '''Document Object Model''' ('''DOM''') is a [[cross-platform]] and [[programming language|language]]-independent interface that treats an [[XML]] or [[HTML]] document as a [[tree structure]] wherein each [[Node (computer science)|node]] is an [[Object (computer science)|object]] representing a part of the document. The DOM represents a document with a logical tree. Each branch of the tree ends in a node, and each node contains objects. DOM methods allow programmatic access to the tree; with them one can change the structure, style or content of a document. Nodes can have event handlers attached to them. Once an event is triggered, the event handlers get executed.&lt;ref name=&quot;Introduction&quot;&gt;{{cite web
+| accessdate = 2012-01-12
+| location = http://www.w3.org/
+| publisher = W3C 
+| title = Document Object Model (DOM)
+| quote = The Document Object Model is a platform- and language-neutral interface that will allow programs and scripts to dynamically access and update the content, structure and style of documents. 
+| url = http://www.w3.org/DOM/#what}}&lt;/ref&gt;
+
+The principal standardization of the DOM was handled by the [[World Wide Web Consortium]], which last developed a recommendation in 2004. [[WHATWG]] took over development of the standard, publishing it as a [[living document]]. The W3C now publishes stable snapshots of the WHATWG standard.
+
+==History==
+The history of the Document Object Model is intertwined with the history of the &quot;[[browser wars]]&quot; of the late 1990s between [[Netscape Navigator]] and [[Microsoft Internet Explorer]], as well as with that of [[JavaScript]] and [[JScript]], the first [[scripting language]]s to be widely implemented in the [[JavaScript engine|JavaScript engines]] of [[web browser]]s.
+
+JavaScript was released by [[Netscape Communications]] in 1995 within Netscape Navigator 2.0. Netscape's competitor, [[Microsoft]], released [[Internet Explorer 3|Internet Explorer 3.0]] the following year with a reimplementation of JavaScript called JScript. JavaScript and JScript let [[web developer]]s create web pages with [[client-side]] interactivity. The limited facilities for detecting user-generated [[Event (computing)|events]] and modifying the HTML document in the first generation of these languages eventually became known as &quot;DOM Level 0&quot; or &quot;Legacy DOM.&quot; No independent standard was developed for DOM Level 0, but it was partly described in the specifications for [[HTML4|HTML 4]].
+
+Legacy DOM was limited in the kinds of [[HTML element|element]]s that could be accessed. [[Form (web)|Form]], [[Hyperlink|link]] and image elements could be referenced with a hierarchical name that began with the root document object. A hierarchical name could make use of either the names or the sequential index of the traversed elements. For example, a [[Text box|form input element]] could be accessed as either &lt;code&gt;document.formName.inputName&lt;/code&gt; or &lt;code&gt;document.forms[0].elements[0]&lt;/code&gt;.
+
+The Legacy DOM enabled client-side form validation and the popular &quot;[[Rollover (web design)|rollover]]&quot; effect.
+
+In 1997, Netscape and Microsoft released version 4.0 of Netscape Navigator and Internet Explorer respectively, adding support for [[Dynamic HTML]] (DHTML) functionality enabling changes to a loaded HTML document. DHTML required extensions to the rudimentary document object that was available in the Legacy DOM implementations. Although the Legacy DOM implementations were largely compatible since JScript was based on JavaScript, the DHTML DOM extensions were developed in parallel by each browser maker and remained incompatible. These versions of the DOM became known as the &quot;Intermediate DOM.&quot;
+
+After the standardization of [[ECMAScript]], the [[World Wide Web Consortium|W3C]] DOM Working Group began drafting a standard DOM specification. The completed specification, known as &quot;DOM Level 1&quot;, became a W3C Recommendation in late 1998. By 2005, large parts of W3C DOM were well-supported by common ECMAScript-enabled browsers, including [[Microsoft Internet Explorer 6|Microsoft Internet Explorer version 6]] (from 2001), [[Opera (web browser)|Opera]], [[Safari (web browser)|Safari]] and [[Gecko (layout engine)|Gecko]]-based browsers (like [[Mozilla Application Suite|Mozilla]], [[Mozilla Firefox|Firefox]], [[SeaMonkey]] and [[Camino (web browser)|Camino]]).
+
+==Standards==
+The [[W3C]] DOM Working Group published its final recommendation and subsequently disbanded in 2004. Development efforts migrated to the [[WHATWG]], which continues to maintain a living standard.&lt;ref&gt;{{cite web|url=https://dom.spec.whatwg.org/|title=DOM Standard|publisher=|accessdate=23 September 2016}}&lt;/ref&gt; In 2009, the Web Applications group reorganized DOM activities at the W3C.&lt;ref&gt;{{cite web|url=https://www.w3.org/DOM/|title=W3C Document Object Model|publisher=|accessdate=23 September 2016}}&lt;/ref&gt; In 2013, due to a lack of progress and the impending release of [[HTML5]], the DOM Level 4 specification was reassigned to the [[HTML Working Group]] to expedite its completion.&lt;ref&gt;{{cite web|url=https://lists.w3.org/Archives/Public/public-html-admin/2013Sep/0129.html|title=New Charter for the HTML Working Group from Philippe Le Hegaret on 2013-09-30 (public-html-admin@w3.org from September 2013)|first=Philippe Le Hegaret|last=(plh@w3.org)|publisher=|accessdate=23 September 2016}}&lt;/ref&gt; Meanwhile, in 2015, the Web Applications group was disbanded and DOM stewardship passed to the Web Platform group.&lt;ref&gt;{{cite web|url=https://www.w3.org/2008/webapps/wiki/PubStatus|title=PubStatus - WEBAPPS|publisher=|accessdate=23 September 2016}}&lt;/ref&gt; Beginning with the publication of DOM Level 4 in 2015, the W3C creates new recommendations based on snapshots of the WHATWG standard.
+
+* DOM Level 1 provided a complete model for an entire HTML or [[XML]] document, including the means to change any portion of the document.
+* DOM Level 2 was published in late 2000. It introduced the &lt;code&gt;getElementById&lt;/code&gt; function as well as an [[DOM Events|event model]] and support for [[XML namespace]]s and CSS.
+* DOM Level 3, published in April 2004, added support for [[XPath]] and keyboard [[event handling]], as well as an interface for [[serialization|serializing]] documents as XML.
+* DOM Level 4 was published in 2015. It is a snapshot of the WHATWG living standard.&lt;ref&gt;{{cite web|url=https://www.w3.org/TR/2015/REC-dom-20151119/|title=W3C DOM4|publisher=|accessdate=23 September 2016}}&lt;/ref&gt;
+
+==Applications==
+
+===Web browsers===
+To [[Web browser engine|render]] a document such as a HTML page, most web browsers use an internal model similar to the '''DOM'''. The nodes of every document are organized in a [[tree structure]], called the ''DOM tree'', with the topmost node named as &quot;Document object&quot;. When an HTML page is rendered in browsers, the browser downloads the HTML into local memory and automatically parses it to display the page on screen.&lt;ref&gt;&quot;[https://www.researchgate.net/publication/329502453_A_Survey_of_Techniques_for_Improving_Efficiency_of_Mobile_Web_Browsing A Survey of Techniques for Improving Efficiency of Mobile Web Browsing]&quot;, Concurrency and Computation, 2018&lt;/ref&gt;
+
+===JavaScript===
+When a web page is loaded, the browser creates a Document Object Model of the page, which is an object oriented representation of an HTML document that acts as an interface between JavaScript and the document itself. This allows the creation of dynamic web pages,&lt;ref&gt;{{cite web|url=https://www.w3schools.com/js/js_htmldom.asp|title=JavaScript HTML DOM|publisher=|accessdate=23 September 2016}}&lt;/ref&gt; because within a page JavaScript can:
+
+* add, change, and remove any of the HTML elements and attributes
+* change any of the CSS styles
+* react to all the existing events
+* create new events
+
+==Implementations==
+Because the DOM supports navigation in any direction (e.g., parent and previous sibling) and allows for arbitrary modifications, an implementation must at least buffer the document that has been read so far (or some parsed form of it).&lt;ref&gt;{{Cite book|url=https://books.google.es/books?id=HuSQGrRY7F4C|title=Ajax Black Book, New Edition (With Cd)|last=Kogent Solutions Inc.|first=|publisher=Dreamtech Press|year=2008|isbn=978-8177228380|location=|pages=40}}&lt;/ref&gt;
+
+===Layout engines===
+{{See also|Comparison of layout engines (Document Object Model)}}
+
+Web browsers rely on [[web browser engine|layout engine]]s to parse HTML into a DOM. Some layout engines, such as [[Trident (layout engine)|Trident/MSHTML]], are associated primarily or exclusively with a particular browser, such as Internet Explorer. Others, including [[Blink (layout engine)|Blink]], [[WebKit]], and [[Gecko (layout engine)|Gecko]], are shared by a number of browsers, such as [[Google Chrome]], [[Opera (web browser)|Opera]], [[Safari (web browser)|Safari]], and [[Firefox]]. The different layout engines implement the DOM standards to varying degrees of compliance.
+
+===Libraries===
+DOM implementations:
+
+* [[libxml2]]
+* [[MSXML]]
+* [[Xerces]] is a collection of DOM implementations written in C++, Java and Perl
+* XML for &amp;lt;SCRIPT&amp;gt; is a JavaScript-based DOM implementation&lt;ref&gt;{{cite web|url=http://xmljs.sourceforge.net/|title=XML for &lt;SCRIPT&gt; Cross Platform XML Parser in JavaScript|publisher=|accessdate=23 September 2016}}&lt;/ref&gt;
+* [https://github.com/PhpGt/Dom PHP.Gt DOM] is a server-side DOM implementation based on [[libxml2]] and brings DOM level 4 compatibility&lt;ref&gt;{{cite web|url=https://php.gt/dom#features-at-a-glance|title=The modern DOM API for PHP 7 projects}}&lt;/ref&gt; to the [[PHP]] programming language
+* [https://github.com/fgnass/domino/ Domino] is a Server-side (Node.js) DOM implementation based on Mozilla's dom.js. Domino is used in the [[MediaWiki]] stack with Visual Editor.
+
+APIs that expose DOM implementations:
+
+* [[Java API for XML Processing|JAXP]] (Java API for XML Processing) is an API for accessing DOM providers
+* [[Lazarus (IDE)|Lazarus]] ([[Free Pascal]] IDE) contains two variants of the DOM - with UTF-8 and ANSI format
+
+Inspection tools:
+
+* [[DOM Inspector]] is a web developer tool
+
+==References==
+{{Reflist}}
+
+==Sources==
+*{{cite book
+  | last = Flanagan
+  | first = David
+  | title = JavaScript: The Definitive Guide
+  | publisher = O'Reilly &amp; Associates
+  | year = 2006
+  | pages = 312–313
+  | isbn = 0-596-10199-6 }}
+*{{cite web
+  | last = Koch
+  | first = Peter-Paul
+  | title = The Document Object Model: an Introduction
+  | work = Digital Web Magazine
+  | date = May 14, 2001
+  | url = http://www.digital-web.com/articles/the_document_object_model/
+  | archive-url = https://web.archive.org/web/20170427220310/http://www.digital-web.com/articles/the_document_object_model/
+  | archive-date = April 17, 2018
+  | accessdate = January 10, 2009 }}
+*{{cite web
+  | last = Le Hégaret
+  | first = Philippe
+  | title = The W3C Document Object Model (DOM)
+  | publisher = World Wide Web Consortium
+  | year = 2002
+  | url = http://www.w3.org/2002/07/26-dom-article.html
+  | accessdate = January 10, 2009 }}
+*{{cite web
+  | last = Guisset
+  | first = Fabian
+  | title = What does each DOM Level bring?
+  | publisher = Mozilla Project
+  | work = Mozilla Developer Center
+  | url = https://developer.mozilla.org/en/docs/DOM_Levels
+  | accessdate = January 10, 2009 }}
+
+==External links==
+{{Commons category|Document object models|lcfirst=yes}}
+
+* [https://dom.spec.whatwg.org/ DOM Living Standard] by the WHATWG
+* [https://www.w3.org/DOM/ Original W3C DOM hub] by the W3C DOM Working Group (outdated)
+* [https://www.w3.org/WebPlatform/WG/ Web Platform Working Group] (current steward of W3C DOM)
+
+{{JavaScript}}
+{{Web browsers}}
+{{W3C Standards}}
+{{Web interfaces}}
+{{Authority control}}
+
+{{DEFAULTSORT:Document Object Model}}
+[[Category:Application programming interfaces]]
+[[Category:HTML]]
+[[Category:Object models]]
+[[Category:World Wide Web Consortium standards]]
+[[Category:XML-based standards]]</text>
+      <sha1>9rm9wmnf1wt5tukopc91nad7l0yf4z1</sha1>
+    </revision>
+  </page>

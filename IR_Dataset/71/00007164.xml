@@ -1,0 +1,363 @@
+  <page>
+    <title>Color temperature</title>
+    <ns>0</ns>
+    <id>7164</id>
+    <revision>
+      <id>942260459</id>
+      <parentid>938939550</parentid>
+      <timestamp>2020-02-23T16:36:50Z</timestamp>
+      <contributor>
+        <username>Rjwilmsi</username>
+        <id>203434</id>
+      </contributor>
+      <minor />
+      <comment>/* Aquaculture */Journal cites:, added 1 PMID</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{Short description|property of light sources related to black-body radiation}}
+
+:''Not to be confused with [[Color theory#Warm vs. cool colors|warm and cool colors]]''.
+{{refimprove|date=June 2012}}[[File:PlanckianLocus.png|right|thumb|300px|The [[CIE 1931]] ''x,y'' chromaticity space, also showing the chromaticities of black-body light sources of various temperatures ([[Planckian locus]]), and lines of constant [[#Correlated color temperature|correlated color temperature]].]]
+
+The '''color temperature''' of a light source is the [[temperature]] of an ideal [[black-body radiation|black-body radiator]] that radiates light of a color comparable to that of the light source. Color temperature is a characteristic of [[visible light]] that has important applications in [[lighting]], [[photography]], [[videography]], [[publishing]], [[manufacturing]], [[astrophysics]], [[horticulture]], and other fields. In practice, color temperature is meaningful only for light sources that do in fact correspond somewhat closely to the radiation of some black body, i.e., light in a range going from red to orange to yellow to [[white]] to blueish white; it does not make sense to speak of the color temperature of, e.g., a green or a purple light. Color temperature is conventionally expressed in [[kelvin]]s&lt;!-- pluralized – see Kelvin#Usage conventions --&gt;, using the symbol K, a [[unit of measure]] for absolute temperature.
+
+Color temperatures over 5000&amp;nbsp;K are called &quot;cool colors&quot; (bluish), while lower color temperatures (2700–3000&amp;nbsp;K) are called &quot;warm colors&quot; (yellowish). &quot;Warm&quot; in this context is an analogy to radiated heat flux of traditional [[incandescent light]]ing rather than temperature. The spectral peak of warm-coloured light is closer to infrared, and most natural warm-coloured light sources emit significant infrared radiation. The fact that &quot;warm&quot; lighting in this sense actually has a &quot;cooler&quot; color temperature often leads to confusion.&lt;ref&gt;See the comments section of this LightNowBlog.com [http://www.lightnowblog.com/2016/07/ama-issues-led-streetlighting-guidance-controversy-ensues/ article] {{webarchive|url=https://web.archive.org/web/20170307123725/http://www.lightnowblog.com/2016/07/ama-issues-led-streetlighting-guidance-controversy-ensues/ |date=2017-03-07 }} on the recommendations of the [[American Medical Association]] to prefer LED-lighting with ''cooler'' color temperatures (i.e. ''warmer'' color).&lt;/ref&gt;
+
+==Categorizing different lighting==
+{{Color temperature scale}}
+
+[[File:Black body visible spectrum.gif|thumb|300px|The [[black-body]] radiance (B{{sub|λ}}) vs. wavelength (λ) curves for the [[visible spectrum]]. The vertical axes of [[Planck's law]] plots building this animation were proportionally transformed to keep equal areas between functions and horizontal axis for wavelengths 380–780 nm.  K indicates the color temperature in [[kelvin]]s, and M indicates the color temperature in micro reciprocal degrees.]]
+The color temperature of the [[electromagnetic radiation]] emitted from an ideal [[black body]] is defined as its surface temperature in [[kelvin]]s, or alternatively in [[mired|micro reciprocal degree]]s (mired).&lt;ref&gt;{{cite book
+| title = Principles of Lighting
+| author = Wallace Roberts Stevens
+| publisher = Constable
+| year = 1951
+| url = https://books.google.com/?id=gH5RAAAAMAAJ&amp;q=micro-reciprocal-degree+date:0-1960&amp;dq=micro-reciprocal-degree+date:0-1960 }}
+&lt;/ref&gt; This permits the definition of a standard by which light sources are compared.
+
+To the extent that a hot surface emits [[thermal radiation]] but is not an ideal black-body radiator, the color temperature of the light is not the actual temperature of the surface. An [[incandescent lamp]]'s light is thermal radiation, and the bulb approximates an ideal black-body radiator, so its color temperature is essentially the temperature of the filament. Thus a relatively low temperature emits a dull red and a high temperature emits the almost white of the traditional incandescent light bulb. Metal workers are able to judge the temperature of hot metals by their color, from dark red to orange-white and then white (see [[red heat]]).
+
+Many other light sources, such as [[fluorescent lamp]]s, or light emitting diodes ([[LED]]s) emit light primarily by processes other than thermal radiation. This means that the emitted radiation does not follow the form of a [[Planck's law|black-body spectrum]]. These sources are assigned what is known as a [[Color temperature#Correlated color temperature|correlated color temperature]] (CCT). CCT is the color temperature of a black-body radiator which to [[color vision|human color perception]] most closely matches the light from the lamp. Because such an approximation is not required for incandescent light, the CCT for an incandescent light is simply its unadjusted temperature, derived from comparison to a black-body radiator.
+
+===The Sun===
+The [[Sun]] closely approximates a black-body radiator. The effective temperature, defined by the total radiative power per square unit, is about 5780&amp;nbsp;K.&lt;ref&gt;{{cite web |last=Williams |first=D. R. |year=2004 |title=Sun Fact Sheet |url=http://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html |publisher=[[NASA]] |access-date=2010-09-27 |url-status=live |archive-url=https://web.archive.org/web/20131206053849/http://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html |archive-date=2013-12-06 }}&lt;/ref&gt; The color temperature of [[sunlight]] above the atmosphere is about 5900&amp;nbsp;K.&lt;ref&gt;{{cite web |url=http://www.crisp.nus.edu.sg/~research/tutorial/optical.htm |title=Principles of Remote Sensing |publisher=[[Centre for Remote Imaging, Sensing and Processing|CRISP]] |access-date=2012-06-18 |url-status=live |archive-url=https://web.archive.org/web/20120702174159/http://www.crisp.nus.edu.sg/~research/tutorial/optical.htm |archive-date=2012-07-02 }}&lt;/ref&gt;
+
+The Sun may appear red, orange, yellow, or white from Earth, depending on [[position of the Sun|its position]] in the sky. The changing color of the Sun over the course of the day is mainly a result of the [[scattering]] of sunlight and is not due to changes in black-body radiation. [[Rayleigh scattering]] of sunlight by [[Earth's atmosphere]] causes the blue color of the sky, which tends to scatter blue light more than red light.
+
+Some [[daylight]] in the early [[morning]] and late [[afternoon]] (the [[golden hour (photography)|golden hours]]) has a lower (&quot;warmer&quot;) color temperature due to increased [[light scattering by particles|scattering]] of shorter-wavelength sunlight by [[particulates|atmospheric particles]] – an [[optical phenomenon]] called the [[Tyndall effect]].
+
+Daylight has a spectrum similar to that of a black body with a correlated color temperature of 6500&amp;nbsp;K ([[CIE Standard Illuminant D65|D65]] viewing standard) or 5500&amp;nbsp;K (daylight-balanced photographic film standard).
+
+{{Clear}}
+[[File:Color temperature black body 800-12200K.svg|thumb|center|512px|Hues of the Planckian locus on a linear scale (values in kelvin)]]
+
+For colors based on black-body theory, blue occurs at higher temperatures, whereas red occurs at lower temperatures. This is the opposite of the cultural associations attributed to colors, in which &quot;red&quot; is &quot;hot&quot;, and &quot;blue&quot; is &quot;cold&quot;.&lt;ref&gt;
+{{cite book
+ | title = Mastering Digital Flash Photography: The Complete Reference Guide
+ | author = Chris George
+ | publisher = [[Sterling Publishing|Sterling]]
+ | year = 2008
+ | isbn = 978-1-60059-209-6
+ | page = 11
+ | url = https://books.google.com/?id=j728wJySfyQC&amp;dq=blue+cool+red+hot+color-temperature+sun
+ }}&lt;/ref&gt;
+
+==Applications==
+
+===Lighting===
+[[File:Incand-3500-5500-color-temp-comparison.png|thumb|alt=Color temperature comparison of common electric lamps|Color temperature comparison of common electric lamps]]
+
+For lighting building interiors, it is often important to take into account the color temperature of illumination. A warmer (i.e., a lower color temperature) light is often used in public areas to promote relaxation, while a cooler (higher color temperature) light is used to enhance concentration, for example in schools and offices.&lt;ref&gt;{{cite book
+ | title = Encyclopedia of Laser Physics and Technology
+ | author = Rüdiger Paschotta
+ | publisher = Wiley-VCH
+ | year = 2008
+ | isbn = 978-3-527-40828-3
+ | page = 219
+ | url = https://books.google.com/?id=BN026ye2fJAC&amp;pg=PA219&amp;dq=lighting+color-temperature+relaxing&amp;q=lighting%20color-temperature%20relaxing
+ }}&lt;/ref&gt;
+
+CCT dimming for LED technology is regarded as a difficult task, since binning, age and temperature drift effects of LEDs change the actual color value output. Here feedback loop systems are used, for example with color sensors, to actively monitor and control the color output of multiple color mixing LEDs.&lt;ref&gt;{{cite book
+ | title = Sensors and Feedback Control of Multi-Color LED Systems
+ | author = Thomas Nimz, Fredrik Hailer and Kevin Jensen
+ | publisher = LED Professional
+ | year = 2012
+ | issn = 1993-890X
+ | pages = 2–5
+ | url = http://www.mazet.de/en/english-documents/english/featured-articles/sensors-and-feedback-control-of-multi-color-led-systems-1/download#.UX7VXYIcUZI
+ | url-status = dead
+ | archiveurl = https://web.archive.org/web/20140429162806/http://www.mazet.de/en/english-documents/english/featured-articles/sensors-and-feedback-control-of-multi-color-led-systems-1/download#.UX7VXYIcUZI
+ | archivedate = 2014-04-29
+ }}&lt;/ref&gt;
+
+===Aquaculture===
+
+In [[fishkeeping]], color temperature has different functions and foci in the various branches.
+
+* In freshwater aquaria, color temperature is generally of concern only for producing a more attractive display.{{citation needed|date=August 2012}} Lights tend to be designed to produce an attractive spectrum, sometimes with secondary attention paid to keeping the plants in the aquaria alive.
+* In a saltwater/reef [[aquarium]], color temperature is an essential part of tank health.  Within about 400 to 3000 nanometers, light of shorter wavelength can [[Electromagnetic absorption by water#Visible light absorption in liquid water|penetrate deeper into water]] than longer wavelengths,&lt;ref&gt;{{cite web|url=http://www.lsbu.ac.uk/water/vibrat.html|title=Water Absorption Spectrum|last=Chaplin|first=Martin|accessdate=2012-08-01|url-status=live|archiveurl=https://web.archive.org/web/20120717061228/http://www.lsbu.ac.uk/water/vibrat.html|archivedate=2012-07-17}}&lt;/ref&gt;&lt;ref&gt;{{cite journal |author=Pope R. M., Fry E. S. |year=1997 |title=Absorption spectrum (380–700 nm) of pure water. II. Integrating cavity measurements |journal=Applied Optics |volume=36 |issue=33 |pages=8710–8723 |publisher=Optical Society of America |doi=10.1364/AO.36.008710 |bibcode=1997ApOpt..36.8710P |pmid=18264420 }}&lt;/ref&gt;&lt;ref&gt;{{cite book |author=Jerlov N. G. |title=Marine Optics. |series=Elsevie Oceanography Series. |volume=14 |pages=128–129 |year=1976 |publisher=Elsevier Scientific Publishing Company |isbn=0-444-41490-8 |location=Amsterdam |url=https://books.google.com/books?id=tzwgrtnW_lYC&amp;lpg=PA128&amp;pg=PA128#v=onepage&amp;q&amp;f=false |accessdate=August 1, 2012 |url-status=live |archiveurl=https://web.archive.org/web/20171221064443/https://books.google.com/books?id=tzwgrtnW_lYC&amp;lpg=PA128&amp;pg=PA128#v=onepage&amp;q&amp;f=false |archivedate=December 21, 2017 }}&lt;/ref&gt; providing essential energy sources to the algae hosted in (and sustaining) coral. This is equivalent to an increase of color temperature with water depth in this spectral range. Because coral typically live in shallow water and receive intense, direct tropical sunlight, the focus was once on simulating this situation with 6500&amp;nbsp;K lights. In the meantime higher temperature light sources have become more popular, first with 10000&amp;nbsp;K and more recently 16000&amp;nbsp;K and 20000&amp;nbsp;K.{{citation needed|date=August 2012}} [[Actinic lighting]] at the violet end of the visible range (420–460&amp;nbsp;nm) is used to allow night viewing without increasing algae bloom or enhancing photosynthesis, and to make the somewhat [[fluorescent]] colors of many corals and fish &quot;pop&quot;, creating brighter display tanks.
+
+===Digital photography===
+In [[digital photography]], the term color temperature sometimes refers to remapping of color values to simulate variations in ambient color temperature. Most digital cameras and raw image software provide presets simulating specific ambient values (e.g., sunny, cloudy, tungsten, etc.) while others allow explicit entry of white balance values in kelvins. These settings vary color values along the blue–yellow axis, while some software includes additional controls (sometimes labeled &quot;tint&quot;) adding the magenta–green axis, and are to some extent arbitrary and a matter of artistic interpretation.&lt;ref&gt;{{cite web |url=http://www.chriskern.net/essay/realityCheck.html |title=Reality Check: Ambiguity and Ambivalence in Digital Color Photography |last=Kern |first=Chris |accessdate=2011-03-11 |url-status=live |archiveurl=https://web.archive.org/web/20110722001411/http://www.chriskern.net/essay/realityCheck.html |archivedate=2011-07-22 }}&lt;/ref&gt;
+
+===Photographic film===
+{{unreferenced section|date=June 2012}}
+Photographic emulsion film does not respond to lighting color identically to the human retina or visual perception. An object that appears to the observer to be white may turn out to be very blue or orange in a photograph. The [[color balance]] may need to be corrected during printing to achieve a neutral color print.  The extent of this correction is limited since color film normally has three layers sensitive to different colors and when used under the &quot;wrong&quot; light source, every layer may not respond proportionally, giving odd color casts in the shadows, although the mid-tones may have been correctly white-balanced under the enlarger.  Light sources with discontinuous spectra, such as fluorescent tubes, cannot be fully corrected in printing either, since one of the layers may barely have recorded an image at all.
+
+Photographic film is made for specific light sources (most commonly daylight film and [[tungsten film]]), and, used properly, will create a neutral color print. Matching the [[sensitometry|sensitivity of the film]] to the color temperature of the light source is one way to balance color. If tungsten film is used indoors with incandescent lamps, the yellowish-orange light of the [[tungsten]] incandescent lamps will appear as white (3200&amp;nbsp;K) in the photograph.  Color negative film is almost always daylight-balanced, since it is assumed that color can be adjusted in printing (with limitations, see above).  Color transparency film, being the final artefact in the process, has to be matched to the light source or filters must be used to correct color.
+
+[[filter (photography)|Filters]] on a camera lens, or [[color gel]]s over the light source(s) may be used to correct color balance. When shooting with a bluish light (high color temperature) source such as on an overcast day, in the shade, in window light, or if using tungsten film with white or blue light, a yellowish-orange filter will correct this. For shooting with daylight film (calibrated to 5600&amp;nbsp;K) under warmer (low color temperature) light sources such as sunsets, candlelight or [[tungsten lighting]], a bluish (e.g. #80A) filter may be used. More-subtle filters are needed to correct for the difference between, say 3200&amp;nbsp;K and 3400&amp;nbsp;K tungsten lamps or to correct for the slightly blue cast of some flash tubes, which may be 6000&amp;nbsp;K.
+
+If there is more than one light source with varied color temperatures, one way to balance the color is to use daylight film and place color-correcting gel filters over each light source.
+
+Photographers sometimes use color temperature meters. These are usually designed to read only two regions along the visible spectrum (red and blue); more expensive ones read three regions (red, green, and blue). However, they are ineffective with sources such as fluorescent or discharge lamps, whose light varies in color and may be harder to correct for. Because this light is often greenish, a magenta filter may correct it. More sophisticated [[colorimetry]] tools can be used if such meters are lacking.
+
+===Desktop publishing===
+{{unreferenced section|date=June 2012}}
+In the desktop publishing industry, it is important to know a monitor’s color temperature. Color matching software, such as Apple's [[ColorSync]] for Mac OS, measures a monitor's color temperature and then adjusts its settings accordingly. This enables on-screen color to more closely match printed color. Common monitor color temperatures, along with matching [[standard illuminant]]s in parentheses, are as follows:
+
+*5000&amp;nbsp;K (CIE D50)
+*5500&amp;nbsp;K (CIE D55)
+*6500&amp;nbsp;K ([[CIE Standard Illuminant D65|D65]])
+*7500&amp;nbsp;K (CIE D75)
+*9300&amp;nbsp;K
+
+D50 is scientific shorthand for a [[standard illuminant]]: the daylight spectrum at a correlated color temperature of 5000&amp;nbsp;K. Similar definitions exist for D55, D65 and D75. Designations such as ''D50'' are used to help classify color temperatures of [[light table]]s and viewing booths. When viewing a [[Reversal film|color slide]] at a light table, it is important that the light be balanced properly so that the colors are not shifted towards the red or blue.
+
+[[Digital camera]]s, web graphics, [[DVD]]s, etc., are normally designed for a 6500&amp;nbsp;K color temperature. The [[sRGB color space|sRGB standard]] commonly used for images on the Internet stipulates (among other things) a 6500&amp;nbsp;K display [[white point]].
+
+===TV, video, and digital still cameras===
+{{unreferenced section|date=June 2012}}
+The [[NTSC]] and [[PAL]] TV norms call for a compliant TV screen to display an electrically black and white signal (minimal color saturation) at a color temperature of 6500&amp;nbsp;K. On many consumer-grade televisions, there is a very noticeable deviation from this requirement. However, higher-end consumer-grade televisions can have their color temperatures adjusted to 6500&amp;nbsp;K by using a preprogrammed setting or a custom calibration. Current versions of [[ATSC (standards)|ATSC]] explicitly call for the color temperature data to be included in the data stream, but old versions of ATSC allowed this data to be omitted. In this case, current versions of ATSC cite default colorimetry standards depending on the format. Both of the cited standards specify a 6500&amp;nbsp;K color temperature.
+
+Most video and digital still cameras can adjust for color temperature by zooming into a white or neutral colored object and setting the manual &quot;white balance&quot; (telling the camera that &quot;this object is white&quot;); the camera then shows true white as white and adjusts all the other colors accordingly. White-balancing is necessary especially when indoors under fluorescent lighting and when moving the camera from one lighting situation to another. Most cameras also have an automatic white balance function that attempts to determine the color of the light and correct accordingly. While these settings were once unreliable, they are much improved in today's digital cameras and produce an accurate white balance in a wide variety of lighting situations.
+
+===Artistic application via control of color temperature===
+{{unreferenced section|date=June 2012}}
+[[File:Example different color temp.jpg|right|thumb|180px|The house above appears a light cream during midday, but seems to be bluish white here in the dim light before full sunrise. Note the color temperature of the sunrise in the background.]]
+
+Video [[camera operator]]s can white-balance objects that are not white, downplaying the color of the object used for white-balancing. For instance, they can bring more warmth into a picture by white-balancing off something that is light blue, such as faded blue denim; in this way white-balancing can replace a filter or lighting gel when those are not available.
+
+[[Cinematographer]]s do not “white balance” in the same way as video camera operators; they use techniques such as filters, choice of film stock, [[pre-flashing]], and, after shooting, [[color grading]], both by exposure at the labs and also digitally. Cinematographers also work closely with set designers and lighting crews to achieve the desired color effects.
+
+For artists, most pigments and papers have a cool or warm cast, as the human eye can detect even a minute amount of saturation. Gray mixed with yellow, orange, or red is a “warm gray”. Green, blue, or purple create “cool grays”. Note that this sense of temperature is the reverse of that of real temperature; bluer is described as “cooler” even though it corresponds to a higher-temperature [[black body]].
+
+{| style=&quot;border:1px solid #aaaaaa; background-color:white; padding:5px; font-size:95%; margin: 0px 12px 12px 0px; float: left; margin-left: 10px&quot;
+|- align=center
+|colspan=2|[[Image:grays.svg|240px]]
+|- align=center
+||'''&quot;Warm&quot; gray'''
+||'''&quot;Cool&quot; gray'''
+|- align=center
+||Mixed with 6% yellow.
+||Mixed with 6% blue.
+|}
+
+[[Lighting designers]] sometimes select [[filter (optics)|filter]]s by color temperature, commonly to match light that is theoretically white. Since fixtures using [[Metal halide lamp|discharge]] type lamps produce a light of a considerably higher color temperature than do [[Incandescent light bulb|tungsten lamps]], using the two in conjunction could potentially produce a stark contrast, so sometimes fixtures with [[High-intensity discharge lamp|HID lamps]], commonly producing light of 6000–7000&amp;nbsp;K, are fitted with 3200&amp;nbsp;K filters to emulate tungsten light. Fixtures with color mixing features or with multiple colors, (if including 3200&amp;nbsp;K) are also capable of producing tungsten-like light. Color temperature may also be a factor when selecting [[Electric light|lamps]], since each is likely to have a different color temperature.
+&lt;div style=&quot;clear: both;&quot;&gt;&lt;/div&gt;
+
+==Correlated color temperature==&lt;!-- This section is linked from [[Color temperature]] --&gt;
+[[File:Blackbody_peak_wavelength_exitance_vs_temperature.svg|thumb|250px|Log-log graphs of [[Wien's_displacement_law|peak emission wavelength]] and [[radiant exitance]] vs [[black-body]] temperature &amp;ndash; red arrows show that [[photosphere|5780 K]] black bodies have 501 nm peak wavelength and 63.3 MW/m&amp;#178; radiant exitance]]
+{{quote|The '''correlated color temperature''' (CCT, T&lt;sub&gt;cp&lt;/sub&gt;) is the temperature of the Planckian radiator whose perceived color most closely resembles that of a given stimulus at the same brightness and under specified viewing conditions| [http://www.cie.co.at/publ/abst/17-4-89.html CIE/IEC 17.4:1987]|International Lighting Vocabulary ({{ISBN|3900734070}})&lt;ref&gt;{{cite journal|title=The concept of correlated colour temperature revisited|first=Ákos|last=Borbély|volume=26|issue=6|pages=450–457|date=December 2001|doi=10.1002/col.1065|journal=Color Research &amp; Application|url=http://www.knt.vein.hu/staff/schandaj/SJCV-Publ-2005/462.doc|last2=Sámson|first2=Árpád|last3=Schanda|first3=János|url-status=dead|archiveurl=https://web.archive.org/web/20090205040121/http://www.knt.vein.hu/staff/schandaj/SJCV-Publ-2005/462.doc|archivedate=2009-02-05}}&lt;/ref&gt;}}
+
+===Motivation===
+[[Black-body]] radiators are the reference by which the whiteness of light sources is judged. A black body can be described by its temperature and produces light of a particular hue, as depicted above. This set of colors is called ''color temperature''. By analogy, nearly Planckian light sources such as certain [[fluorescent lamp|fluorescent]] or [[high-intensity discharge lamp]]s can be judged by their correlated color temperature (CCT), the temperature of the Planckian radiator whose color best approximates them. For light source spectra that are not Planckian, matching them to that of a black body is not well defined; the concept of correlated color temperature was extended to map such sources as well as possible onto the one-dimensional scale of color temperature, where &quot;as well as possible&quot; is defined in the context of an objective color space.
+
+===Background===
+[[File:Judd's (r,g) diagram.svg|thumb|200px|Judd's (r,g) diagram. The concentric curves indicate the loci of constant [[colorfulness|purity]].]]
+
+[[File:Judd's Maxwell triangle.svg|thumb|200px|Judd's Maxwell triangle. Planckian locus in gray. Translating from trilinear co-ordinates into Cartesian co-ordinates leads to the next diagram.]]
+
+[[File:Judd's-UCS.png|thumb|200px|Judd's uniform chromaticity space (UCS), with the Planckian locus and the isotherms from 1000&amp;nbsp;K to 10000&amp;nbsp;K, perpendicular to the locus. Judd calculated the isotherms in this space before translating them back into the (x,y) chromaticity space, as depicted in the diagram at the top of the article.]]
+
+[[File:Planckian-locus-in-mireds.png|thumb|200px|Close up of the Planckian locus in the CIE 1960 UCS, with the isotherms in [[mired]]s. Note the even spacing of the isotherms when using the reciprocal temperature scale and compare with the similar figure below. The even spacing of the isotherms on the locus implies that the mired scale is a better measure of perceptual color difference than the temperature scale.]]
+
+The notion of using Planckian radiators as a yardstick against which to judge other light sources is not new.&lt;ref&gt;{{cite journal|first=Edward P.|last=Hyde|date=June 1911|quote=This existence of a color match is a consequence of there being approximately the same energy distribution in the visible spectra.|publisher=The American Physical Society|journal=Physical Review | series = Series I|volume=32|pages=632–633|doi=10.1103/PhysRevSeriesI.32.632|title=A New Determination of the Selective Radiation from Tantalum (abstract)|issue=6}}&lt;/ref&gt; In 1923, writing about &quot;grading of illuminants with reference to quality of color ... the temperature of the source as an index of the quality of color&quot;, Priest essentially described CCT as we understand it today, going so far as to use the term &quot;apparent color temperature&quot;, and astutely recognized three cases:&lt;ref name=priest&gt;{{cite journal|first=Irwin G.|last=Priest|title=The colorimetry and photometry of daylight ·and incandescent illuminants by the method of rotatory dispersion|journal=[[JOSA]]|volume=7|issue=12|pages=1175–1209|year=1923| quote=''The color temperature of a source is the temperature at which a Planckian radiator would emit radiant energy competent to evoke a color of the same quality as that evoked by the radiant energy from the source in question''. The color temperature is not necessarily the same as the 'true temperature' of the source; but this circumstance has no significance whatever in the use of the color temperature as a means to the end of establishing a scale for the quality of the color of illuminants. For this purpose no knowledge of the temperature of the source nor indeed of its emissive properties is required. ''All that is involved in giving the color temperature of any illuminant is the affirmation that the color of the luminant is of the same quality as the color of a Planckian radiator at the given temperature''.|doi=10.1364/JOSA.7.001175|bibcode=1923JOSA....7.1175P}}&lt;/ref&gt;
+* &quot;Those for which the spectral distribution of energy is identical with that given by the Planckian formula.&quot;
+* &quot;Those for which the spectral distribution of energy is not identical with that given by the Planckian formula, but still is of such a form that the quality of the color evoked is the same as would be evoked by the energy from a Planckian radiator at the given color temperature.&quot;
+* &quot;Those for which the spectral distribution of energy is such that the color can be matched only approximately by a stimulus of the Planckian form of spectral distribution.&quot;
+
+Several important developments occurred in 1931. In chronological order:
+
+# Raymond Davis published a paper on &quot;correlated color temperature&quot; (his term). Referring to the [[Planckian locus]] on the r-g diagram, he defined the CCT as the average of the &quot;primary component temperatures&quot; (RGB CCTs), using [[trilinear coordinates]].&lt;ref name=davis&gt;{{cite journal|first=Raymond|last=Davis|authorlink=Raymond Davis, Jr.|title=A Correlated Color Temperature for Illuminants|journal= Bureau of Standards Journal of Research|volume=7|issue=4|pages=659–681|year=1931|quote=The ideal correlated colour temperature of a light source is the absolute temperature at which the Planckian radiator emits radiant energy component to evoke a colour which, of all Planckian colours, most closely approximates the colour evoked by the source in question.|doi=10.6028/jres.007.039}} from Research Paper 365&lt;/ref&gt;
+# The CIE announced the [[XYZ color space]].
+# [[Deane B. Judd]] published a paper on the nature of &quot;[[just noticeable difference|least perceptible differences]]&quot; with respect to chromatic stimuli. By empirical means he determined that the difference in sensation, which he termed [[color difference|ΔE]] for a &quot;discriminatory step between colors ... ''Empfindung''&quot; (German for sensation) was proportional to the distance of the colors on the chromaticity diagram. Referring to the (r,g) chromaticity diagram depicted aside, he hypothesized that&lt;ref name=judd&gt;{{cite journal|title=Chromaticity sensibility to stimulus differences|journal=[[JOSA]]|first=Deane B.|last=Judd|pages=72–108|volume=22|year=1931|issue=2|doi=10.1364/JOSA.22.000072}}&lt;/ref&gt;
+
+:::''K''Δ''E'' = |''c''&lt;sub&gt;1&lt;/sub&gt; − ''c''&lt;sub&gt;2&lt;/sub&gt;| = max(|''r''&lt;sub&gt;1&lt;/sub&gt; − ''r''&lt;sub&gt;2&lt;/sub&gt;|, |''g''&lt;sub&gt;1&lt;/sub&gt; − ''g''&lt;sub&gt;2&lt;/sub&gt;|).
+
+These developments paved the way for the development of new chromaticity spaces that are more suited to estimating correlated color temperatures and chromaticity differences. Bridging the concepts of color difference and color temperature, Priest made the observation that the eye is sensitive to constant differences in &quot;reciprocal&quot; temperature:&lt;ref&gt;{{cite journal|title=A proposed scale for use in specifying the chromaticity of incandescent illuminants and various phases of daylight|first=Irwin G.|last=Priest|date=February 1933|journal=[[JOSA]]|volume=23|issue=2|pages=42|doi=10.1364/JOSA.23.000041|bibcode=1933JOSA...23...41P}}&lt;/ref&gt;
+
+{{quote|A difference of one [[mired|micro-reciprocal-degree]] (μrd) is fairly representative of the doubtfully perceptible difference under the most favorable conditions of observation.}}
+
+Priest proposed to use &quot;the scale of temperature as a scale for arranging the chromaticities of the several illuminants in a serial order&quot;. Over the next few years, Judd published three more significant papers:
+
+The first verified the findings of Priest,&lt;ref name=priest/&gt; Davis,&lt;ref name=davis/&gt; and Judd,&lt;ref name=judd/&gt; with a paper on sensitivity to change in color temperature.&lt;ref&gt;{{cite journal|first=Deane B.|last=Judd|date=January 1933|journal=[[JOSA]]|volume=23|issue=1| title=Sensibility to Color-Temperature Change as a Function of Temperature| quote=Regarding (Davis, 1931): This simpler statement of the spectral-centroid relation might have been deduced by combining two previous findings, one by Gibson (see footnote 10, p. 12) concerning a spectral-centroid relation between incident and transmitted light for daylight filters, the other by Langmuir and Orange (Trans. A.I.E.E., 32, 1944–1946 (1913)) concerning a similar relation involving reciprocal temperature. The mathematical analysis on which this latter finding is based was given later by Foote, Mohler and Fairchild, J. Wash. Acad. Sci. 7, 545–549 (1917), and Gage, Trans. I.E.S. 16, 428–429 (1921) also called attention to this relation.|doi=10.1364/JOSA.23.000007|pages=7|bibcode=1933JOSA...23....7J}}&lt;/ref&gt;
+
+The second proposed a new chromaticity space, guided by a principle that has become the holy grail of color spaces: [[perceptual uniformity]] (chromaticity distance should be commensurate with perceptual difference). By means of a [[projective transformation]], Judd found a more &quot;uniform chromaticity space&quot; (UCS) in which to find the CCT. Judd determined the &quot;nearest color temperature&quot; by simply finding the point on the [[Planckian locus]] nearest to the chromaticity of the stimulus on [[James Clerk Maxwell|Maxwell]]'s [[color triangle]], depicted aside. The [[transformation matrix]] he used to convert X,Y,Z tristimulus values to R,G,B coordinates was:&lt;ref&gt;{{cite journal |url= https://nvlpubs.nist.gov/nistpubs/jres/14/jresv14n1p41_A1b.pdf |title=A Maxwell Triangle Yielding Uniform Chromaticity Scales|journal=[[JOSA]]|first=Deane B.|last=Judd|volume=25|issue=1|date=January 1935|pages=24–35| quote=An important application of this coordinate system is its use in finding from any series of colors the one most resembling a neighboring color of the same brilliance, for example, the finding of the nearest color temperature for a neighboring non-Planckian stimulus. The method is to draw the shortest line from the point representing the non-Planckian stimulus to the Planckian locus.|doi=10.1364/JOSA.25.000024|bibcode=1935JOSA...25...24J}}&lt;/ref&gt;
+
+:&lt;math&gt;\begin{bmatrix} R \\ G \\ B \end{bmatrix} = \begin{bmatrix} 3.1956 &amp; 2.4478 &amp; -0.1434 \\ -2.5455 &amp; 7.0492 &amp; 0.9963 \\ 0.0000 &amp; 0.0000 &amp; 1.0000 \end{bmatrix} \begin{bmatrix} X \\ Y \\ Z \end{bmatrix}.&lt;/math&gt;
+
+From this, one can find these chromaticities:&lt;ref&gt;{{cite journal|journal=[[JOSA]]|title=Quantitative data and methods for colorimetry|volume=34|issue=11|date=November 1944|author=OSA Committee on Colorimetry| pages=633–688|doi=10.1364/JOSA.34.000633|bibcode=1944JOSA...34..633C}} (recommended reading)&lt;/ref&gt;
+
+:&lt;math&gt;u=\frac{0.4661x+0.1593y}{y-0.15735x+0.2424}, \quad v=\frac{0.6581y}{y-0.15735x+0.2424}.&lt;/math&gt;
+
+The third depicted the locus of the isothermal chromaticities on the CIE 1931 ''x,y'' chromaticity diagram.&lt;ref&gt;{{cite journal |url= https://nvlpubs.nist.gov/nistpubs/jres/17/jresv17n5p771_A1b.pdf |title=Estimation of Chromaticity Differences and Nearest Color Temperatures on the Standard 1931 I.C.I. Colorimetric Coordinate System|journal=[[JOSA]]|first=Deane B.|last=Judd|volume=26|issue=11|pages=421–426|date=November 1936|doi=10.1364/JOSA.26.000421|bibcode=1936JOSA...26..421J}}&lt;/ref&gt; Since the isothermal points formed [[Normal (geometry)|normals]] on his UCS diagram, transformation back into the xy plane revealed them still to be lines, but no longer perpendicular to the locus.
+
+[[File:CIE 1960 UCS.png|thumb|250px|MacAdam's &quot;uniform chromaticity scale&quot; diagram; a simplification of Judd's UCS.]]
+
+===Calculation===
+Judd's idea of determining the nearest point to the Planckian locus on a uniform chromaticity space is current. In 1937, MacAdam suggested a &quot;modified uniform chromaticity scale diagram&quot;, based on certain simplifying geometrical considerations:&lt;ref&gt;{{cite journal|title=Projective transformations of I.C.I. color specifications|first=David L.|last=MacAdam|journal=[[JOSA]]|date=August 1937|volume=27|issue=8|pages=294–299|doi=10.1364/JOSA.27.000294|bibcode=1937JOSA...27..294M}}&lt;/ref&gt;
+
+:&lt;math&gt;u = \frac{4x}{-2x+12y+3}, \quad v = \frac{6y}{-2x+12y+3}.&lt;/math&gt;
+
+This (u,v) chromaticity space became the [[CIE 1960 color space]], which is still used to calculate the CCT (even though MacAdam did not devise it with this purpose in mind).&lt;ref&gt;[http://www.delta.dk/C1256ED600446B80/sysOakFil/i102/$File/I102%20Correlated%20Colour%20Temperature.pdf The CIE definition of correlated color temperature (removed)] {{webarchive|url=https://web.archive.org/web/20090205040122/http://www.delta.dk/C1256ED600446B80/sysOakFil/i102/%24File/I102%20Correlated%20Colour%20Temperature.pdf |date=2009-02-05 }}&lt;/ref&gt; Using other chromaticity spaces, such as ''u'v''', leads to non-standard results that may nevertheless be perceptually meaningful.&lt;ref&gt;{{cite journal
+|title=Correlated Color-Temperature Calculations in the CIE 1976 Chromaticity Diagram
+|journal=Color Research &amp; Application
+|publisher=[[Wiley Interscience]]
+|last1=Schanda
+|last2=Danyi
+|first1=János
+|first2=M.
+|volume=2
+|issue=4
+|pages=161–163
+|year=1977
+|doi=10.1002/col.5080020403
+|quote=Correlated color temperature can be calculated using the new diagram, leading to somewhat different results than those calculated according to the CIE 1960 uv diagram.
+}}&lt;/ref&gt;
+
+[[File:Planckian-locus.png|550px|thumb|center|Close up of the [[CIE 1960 color space|CIE 1960 UCS]]. The isotherms are perpendicular to the Planckian locus, and are drawn to indicate the maximum distance from the locus that the CIE considers the correlated color temperature to be meaningful: &lt;math&gt;\Delta uv=\pm 0.05&lt;/math&gt;]]
+
+The distance from the locus (i.e., degree of departure from a black body) is traditionally indicated in units of &lt;math&gt;\Delta uv&lt;/math&gt;; positive for points above the locus. This concept of distance has evolved to become [[color difference#Delta E|Delta E]], which continues to be used today.
+
+====Robertson's method====
+Before the advent of powerful [[personal computer]]s, it was common to estimate the correlated color temperature by way of interpolation from look-up tables and charts.&lt;ref name=kelly/&gt; The most famous such method is Robertson's,&lt;ref&gt;{{cite journal|title=Computation of Correlated Color Temperature and Distribution Temperature|first=Alan R.|last=Robertson|journal=[[JOSA]]|volume=58|issue=11|pages=1528–1535|date=November 1968|doi=10.1364/JOSA.58.001528|bibcode=1968JOSA...58.1528R}}&lt;/ref&gt; who took advantage of the relatively even spacing of the mired scale (see above) to calculate the CCT T&lt;sub&gt;c&lt;/sub&gt; using [[linear interpolation]] of the isotherm's mired values:&lt;ref&gt;[http://www.brucelindbloom.com/index.html?Eqn_XYZ_to_T.html ANSI C implementation] {{webarchive|url=https://web.archive.org/web/20080422034438/http://www.brucelindbloom.com/index.html?Eqn_XYZ_to_T.html |date=2008-04-22 }}, Bruce Lindbloom&lt;/ref&gt;
+
+[[File:Robertson's CCT computation method.svg|300px|thumb|Computation of the CCT T&lt;sub&gt;c&lt;/sub&gt; corresponding to the chromaticity coordinate &lt;math&gt;\scriptstyle (u_T,v_T)&lt;/math&gt; in the CIE 1960 UCS.]]
+
+:&lt;math&gt;\frac{1}{T_c}=\frac{1}{T_i}+\frac{\theta_1}{\theta_1+\theta_2} \left( \frac{1}{T_{i+1}} - \frac{1}{T_i} \right),&lt;/math&gt;
+
+where &lt;math&gt;T_i&lt;/math&gt; and &lt;math&gt;T_{i+1}&lt;/math&gt; are the color temperatures of the look-up isotherms and ''i'' is chosen such that &lt;math&gt;T_i &lt; T_c &lt; T_{i+1}&lt;/math&gt;. (Furthermore, the test chromaticity lies between the only two adjacent lines for which &lt;math&gt;d_i/d_{i+1} &lt; 0&lt;/math&gt;.)
+
+If the isotherms are tight enough, one can assume &lt;math&gt;\theta_1/\theta_2 \approx \sin \theta_1/\sin \theta_2&lt;/math&gt;, leading to
+
+:&lt;math&gt;\frac{1}{T_c}=\frac{1}{T_i}+\frac{d_i}{d_i-d_{i+1}} \left( \frac{1}{T_{i+1}} - \frac{1}{T_i} \right).&lt;/math&gt;
+
+The distance of the test point to the ''i''-th isotherm is given by
+
+:&lt;math&gt;d_i=\frac{ (v_T-v_i)-m_i (u_T-u_i) }{\sqrt {1+m_i^2}},&lt;/math&gt;
+
+where &lt;math&gt;(u_i,v_i)&lt;/math&gt; is the chromaticity coordinate of the ''i''-th isotherm on the Planckian locus and ''m&lt;sub&gt;i&lt;/sub&gt;'' is the isotherm's [[slope]]. Since it is perpendicular to the locus, it follows that &lt;math&gt;m_i=-1/l_i&lt;/math&gt; where ''l&lt;sub&gt;i&lt;/sub&gt;'' is the slope of the locus at &lt;math&gt;(u_i,v_i)&lt;/math&gt;.
+
+===Precautions===
+Although the CCT can be calculated for any chromaticity coordinate, the result is meaningful only if the light sources are nearly white.&lt;ref&gt;{{cite journal|title=Determination of correlated color temperature based on a color-appearance model|first=Wolfgang|last=Walter|journal=Color Research &amp; Application|volume=17|issue=1|pages=24–30|date=February 1992|doi=10.1002/col.5080170107|quote=The concept of correlated color temperature is only useful for lamps with chromaticity points close to the black body…}}&lt;/ref&gt; The CIE recommends that &quot;The concept of correlated color temperature should not be used if the chromaticity of the test source differs more than [&lt;math&gt;\scriptstyle\Delta_{uv} = 5 \times 10^{-2}&lt;/math&gt;] from the Planckian radiator.&quot;&lt;ref name=schanda&gt;{{cite book|title=Colorimetry: Understanding the CIE System|first=János|last=Schanda|publisher=[[Wiley Interscience]]|year=2007|chapter=3: CIE Colorimetry|pages=37–46|isbn=978-0-470-04904-4|doi=10.1002/9780470175637.ch3}}&lt;/ref&gt;
+Beyond a certain value of &lt;math&gt;\scriptstyle\Delta uv&lt;/math&gt;, a chromaticity co-ordinate may be equidistant to two points on the locus, causing ambiguity in the CCT.
+
+===Approximation===
+If a narrow range of color temperatures is considered—those encapsulating daylight being the most practical case—one can approximate the Planckian locus in order to calculate the CCT in terms of chromaticity coordinates. Following Kelly's observation that the isotherms intersect in the purple region near (''x'' = 0.325, ''y'' = 0.154),&lt;ref name=kelly&gt;{{cite journal|last=Kelly|first=Kenneth L.|date=August 1963|title=Lines of Constant Correlated Color Temperature Based on MacAdam's (u,v) Uniform Chromaticity Transformation of the CIE Diagram|journal=JOSA|volume=53|issue=8|pages=999–1002|doi=10.1364/JOSA.53.000999|bibcode=1963JOSA...53..999K}}&lt;/ref&gt; McCamy proposed this cubic approximation:&lt;ref&gt;{{cite journal|title=Correlated color temperature as an explicit function of chromaticity coordinates|volume=17|issue=2|pages=142–144|journal=Color Research &amp; Application|first=Calvin S.|date=April 1992|last=McCamy| doi=10.1002/col.5080170211}} plus erratum {{doi|10.1002/col.5080180222}}&lt;/ref&gt;
+
+:&lt;math&gt;CCT(x, y) = -449 n^3 + 3525 n^2 - 6823.3 n + 5520.33,&lt;/math&gt;
+
+where {{math | ''n'' {{=}} (''x'' − ''x&lt;sub&gt;e&lt;/sub&gt;'')/(''y'' - ''y&lt;sub&gt;e&lt;/sub&gt;'')}} is the inverse slope line, and {{math | (''x&lt;sub&gt;e&lt;/sub&gt;'' {{=}} 0.3320, ''y&lt;sub&gt;e&lt;/sub&gt;'' {{=}} 0.1858)}} is the &quot;epicenter&quot;; quite close to the intersection point mentioned by Kelly. The maximum absolute error for color temperatures ranging from 2856&amp;nbsp;K (illuminant A) to 6504&amp;nbsp;K ([[CIE Standard Illuminant D65|D65]]) is under 2&amp;nbsp;K.
+
+A more recent proposal, using exponential terms, considerably extends the applicable range by adding a second epicenter for high color temperatures:&lt;ref&gt;{{cite journal|title=Calculating Correlated Color Temperatures Across the Entire Gamut of Daylight and Skylight Chromaticities|first=Javier|last=Hernández-Andrés|journal=Applied Optics|volume=38|issue=27|pages=5703–5709|date=September 20, 1999|doi=10.1364/AO.38.005703|url=http://www.usna.edu/Users/oceano/raylee/papers/RLee_AO_CCTpaper.pdf|pmid=18324081|last2=Lee|first2=RL|last3=Romero|first3=J|url-status=live|archiveurl=https://web.archive.org/web/20160401133754/http://www.usna.edu/Users/oceano/raylee/papers/RLee_AO_CCTpaper.pdf|archivedate=April 1, 2016|bibcode=1999ApOpt..38.5703H}}&lt;/ref&gt;
+
+:&lt;math&gt; CCT(x, y) = A_0 + A_1 \exp(-n/t_1) + A_2 \exp(-n/t_2) + A_3 \exp(-n/t_3)&lt;/math&gt;
+
+where {{mvar | n}}  is as before and the other constants are defined below:
+
+{| class=&quot;wikitable&quot;
+|-
+!
+! 3–50&amp;nbsp;kK
+! 50–800&amp;nbsp;kK
+|-
+| ''x&lt;sub&gt;e&lt;/sub&gt;''
+| 0.3366
+| 0.3356
+|-
+| ''y&lt;sub&gt;e&lt;/sub&gt;''
+| 0.1735
+| 0.1691
+|-
+| ''A''&lt;sub&gt;0&lt;/sub&gt;
+| −949.86315
+| 36284.48953
+|-
+| ''A''&lt;sub&gt;1&lt;/sub&gt;
+| 6253.80338
+| 0.00228
+|-
+| ''t''&lt;sub&gt;1&lt;/sub&gt;
+| 0.92159
+| 0.07861
+|-
+| ''A''&lt;sub&gt;2&lt;/sub&gt;
+| 28.70599
+| 5.4535×10&lt;sup&gt;−36&lt;/sup&gt;
+|-
+| ''t''&lt;sub&gt;2&lt;/sub&gt;
+| 0.20039
+| 0.01543
+|-
+| ''A''&lt;sub&gt;3&lt;/sub&gt;
+| 0.00004
+|
+|-
+| ''t''&lt;sub&gt;3&lt;/sub&gt;
+| 0.07125
+|
+|}
+
+The author suggests that one use the low-temperature equation to determine whether the higher-temperature parameters are needed.
+
+The inverse calculation, from color temperature to corresponding chromaticity coordinates, is discussed in {{section link|Planckian locus|Approximation}}.
+
+==Color rendering index==
+The [[International Commission on Illumination|CIE]] [[color rendering index]] (CRI) is a method to determine how well a light source's illumination of eight sample patches compares to the illumination provided by a reference source. Cited together, the CRI and CCT give a numerical estimate of what reference (ideal) light source best approximates a particular artificial light, and what the difference is.
+
+==Spectral power distribution==
+[[File:Spectral Power Distributions.png|right|frame|Characteristic spectral power distributions (SPDs) for an [[Incandescent light bulb|incandescent lamp]] (left) and a [[fluorescent lamp]] (right). The horizontal axes are wavelengths in [[nanometer]]s, and the vertical axes show relative intensity in arbitrary units.]]
+
+Light sources and illuminants may be characterized by their [[spectral power distribution]] (SPD). The relative SPD curves provided by many manufacturers may have been produced using 10&amp;nbsp;[[nanometer|nm]] increments or more on their [[spectroradiometer]].&lt;ref&gt;Gretag's [http://www.xrite.com/documents/literature/gmb/en/200_spectrolino_manual_en.pdf SpectroLino] {{webarchive|url=https://web.archive.org/web/20061110131804/http://www.xrite.com/documents/literature/gmb/en/200_spectrolino_manual_en.pdf |date=2006-11-10 }} and X-Rite's [http://www.pictureline.com/images/pdf/L11-246%20CM%20CompetitCompr_03-17-08.pdf ColorMunki]  {{webarchive|url=https://web.archive.org/web/20090205040118/http://www.pictureline.com/images/pdf/L11-246%20CM%20CompetitCompr_03-17-08.pdf |date=2009-02-05 }} have an optical resolution of 10 nm.&lt;/ref&gt; The result is what would seem to be a smoother (&quot;[[full-spectrum light|fuller spectrum]]&quot;) power distribution than the lamp actually has. Owing to their spiky distribution, much finer increments are advisable for taking measurements of fluorescent lights, and this requires more expensive equipment.
+
+==Color temperature in astronomy==
+In [[astronomy]], the color temperature is defined by the local slope of the SPD at a given wavelength, or, in practice, a wavelength range. Given, for example, the [[UBV photometric system|color magnitudes]] ''B'' and ''V'' which are calibrated to be equal for an [[A-type main sequence star|A0V star]] (e.g. [[Vega]]), the stellar color temperature &lt;math&gt;T_C&lt;/math&gt; is given by the temperature for which the color index &lt;math&gt;B-V&lt;/math&gt; of a black-body radiator fits the stellar one. Besides the &lt;math&gt;B-V&lt;/math&gt;, other color indices can be used as well. The color temperature (as well as the correlated color temperature defined above) may differ largely from the effective temperature given by the radiative flux of the stellar surface. For example, the color temperature of an A0V star is about 15000 K compared to an effective temperature of about 9500 K.&lt;ref&gt;{{cite book | last=Unsöld | first=Albrecht  |author2=Bodo Baschek | title = Der neue Kosmos | edition = 6 | publisher = Springer | location = Berlin, Heidelberg, New York | year = 1999 | isbn = 3-540-64165-3}}&lt;/ref&gt;
+
+&lt;gallery widths=&quot;320px&quot; heights=&quot;200px&quot;&gt;
+File:A0V-blackbody SPD comparison.png|Characteristic spectral power distribution of an A0V star (''T''&lt;sub&gt;eff&lt;/sub&gt; = 9500 K, cf. [[Vega]]) compared to black-body spectra. The 15000 K black-body spectrum (dashed line) matches the visible part of the stellar SPD much better than the black body of 9500 K. All spectra are normalized to intersect at 555 nanometers.
+&lt;/gallery&gt;
+
+==See also==
+* [[Brightness temperature]]
+* [[Color balance]]
+* [[Effective temperature]]
+* [[Kruithof curve]]
+* [[Luminous efficacy]]
+* [[Metamerism (color)#Metamerism and industry|Color metamerism]]
+* [[Over-illumination]]
+* [[Whiteness]]
+
+==References==
+{{Reflist}}
+
+==Further reading==
+* {{cite book | last = Stroebel | first= Leslie |author2=John Compton |author3=Ira Current |author4= Richard Zakia  | title = Basic Photographic Materials and Processes | edition = 2nd | publisher = Focal Press | location = Boston | year = 2000 | isbn = 0-240-80405-8}}
+* {{cite book | first = Günter|last=Wyszecki|author2=Stiles, Walter Stanley | year = 1982 | title = Color Science: Concept and Methods, Quantitative Data and Formulæ | chapter=3.11: Distribution Temperature, Color Temperature, and Correlated Color Temperature| pages=224–229|publisher= Wiley | location = New York | isbn=0-471-02106-7}}
+
+==External links==
+* [http://academo.org/demos/colour-temperature-relationship/ Kelvin to RGB calculator] from Academo.org
+* Boyd, Andrew. [https://web.archive.org/web/20110508234524/http://thediscerningphotographer.com/2009/08/16/kelvin-temperature-in-photography/ Kelvin temperature in photography]  at The Discerning Photographer.
+* Charity, Mitchell. [http://www.vendian.org/mncharity/dir3/blackbody/ What color is a black body?] sRGB values corresponding to blackbodies of varying temperature.
+* Lindbloom, Bruce. [http://www.brucelindbloom.com/Eqn_XYZ_to_T.html ANSI C implementation of Robertson's method to calculate the correlated color temperature of a color in XYZ].
+* Konica Minolta Sensing. [http://www.konicaminolta.eu/en/measuring-instruments/learning-centre/light-measurement/the-language-of-light.html The Language of Light].
+
+{{photography subject}}
+{{Artificial light sources}}
+{{Color topics}}
+
+[[Category:Color]]
+[[Category:Lighting]]</text>
+      <sha1>sv7zak60qb84i2fkctotfvyhanjuqwe</sha1>
+    </revision>
+  </page>

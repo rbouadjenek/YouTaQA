@@ -1,0 +1,101 @@
+  <page>
+    <title>Control store</title>
+    <ns>0</ns>
+    <id>6559</id>
+    <revision>
+      <id>931665736</id>
+      <parentid>931664976</parentid>
+      <timestamp>2019-12-20T10:56:18Z</timestamp>
+      <contributor>
+        <username>DVdm</username>
+        <id>262666</id>
+      </contributor>
+      <minor />
+      <comment>Reverted edits by [[Special:Contributions/Pheo1|Pheo1]] ([[User talk:Pheo1|talk]]): nonconstructive edits ([[WP:HG|HG]]) (3.4.9)</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">A '''control store''' is the part of a [[Central processing unit|CPU's]] [[control unit]] that stores the CPU's [[microprogram]].  It is usually accessed by a [[microsequencer]]. Early types of control store took the form of diode-arrays that were accessed via address decoders, but were later implemented as writable microcode that was stored in a form of [[read-only memory]] called a writable control store. The outputs generally had to go through a register to prevent a race condition from occurring. The register was clocked by the clock signal of the system it was running on.
+
+==Implementation==
+
+===Early use===
+Early control stores were implemented as a diode-array accessed via address decoders, a form of read-only memory. This tradition dates back to the ''program timing matrix'' on the [[MIT Whirlwind]], first described in 1947. Modern [[VLSI]] processors instead use matrices of [[field-effect transistor]]s to build the [[Read-only memory|ROM]] and/or [[programmable logic array|PLA]] structures used to control the processor as well as its internal sequencer in a [[microcode]]d implementation. IBM System/360 used a variety of techniques:  [[CCROS]] (Card Capacitor Read-Only Storage) on the [[IBM System/360 Model 30|Model 30]],  [[TROS]]  (Transformer Read-Only Storage) on the [[IBM System/360 Model 40|Model 40]], and [[BCROS]] (Balanced Capacitor Read-Only Storage) on the [[IBM System/360 Model 50|Model 50]].
+
+===Writable stores===
+
+Some computers were built using &quot;writable microcode&quot; — rather than storing the microcode in ROM or hard-wired logic, the microcode was stored in a RAM called a ''writable control store'' or ''WCS''. Such a computer is sometimes called a ''Writable Instruction Set Computer'' or ''WISC''.&lt;ref&gt;[http://www.ece.cmu.edu/~koopman/forth/rochester_87.pdf &quot;Writable instruction set, stack oriented computers: The WISC Concept&quot;] article by Philip Koopman Jr. 1987&lt;/ref&gt; Many of these machines were experimental laboratory prototypes, such as the WISC CPU/16&lt;ref&gt;[http://www.ece.cmu.edu/~koopman/stack_computers/sec4_2.html &quot;Architecture of the WISC CPU/16&quot;] by Phil Koopman 1989&lt;/ref&gt; and the RTX 32P.&lt;ref&gt;[http://www.ece.cmu.edu/~koopman/stack_computers/sec5_3.html &quot;Architecture of the RTX 32P&quot;] by Philip Koopman 1989&lt;/ref&gt;
+
+The original [[IBM System/360|System/360]] models of [[IBM mainframe]] had read-only control store, but later System/360, [[IBM System/370|System/370]] and successor models loaded part or all of their microprograms from floppy disks or other DASD into a writable control store consisting of ultra-high speed [[random-access memory|random-access]] [[read-write memory]]. The System/370 architecture included a facility called '''Initial-Microprogram Load''' ('''IML''' or '''IMPL''')&lt;ref&gt;{{cite manual
+ |     author = IBM
+ |      title = IBM System/370 Principles of Operation
+ |         id = GA22-7000-4
+ |    version = Fourth Edition
+ |       date = September 1974
+ |        url = http://www.bitsavers.org/pdf/ibm/370/princOps/GA22-7000-4_370_Principles_Of_Operation_Sep75.pdf
+ |      pages = 98, 245
+ |mode=cs2
+ }}&lt;/ref&gt; that could be invoked from the console, as part of '''[[Power-on reset#Power-on reset on IBM mainframes|Power On Reset]]''' ('''POR''') or from another processor in a [[Tightly coupled system|tightly coupled]] [[multiprocessor]] complex.  This permitted IBM to easily repair microprogramming defects in the field. Even when the majority of the control store is stored in ROM, computer vendors would often sell writable control store as an option, allowing the customers to customize the machine's microprogram. Other vendors, e.g., IBM, use the WCS to run microcode for emulator features&lt;ref&gt;{{cite manual
+ |     author = IBM
+ |      title = IBM System/360 Model 85 Functional Characteristics
+ |         id = A22-6916-1
+ |        url = http://www.bitsavers.org/pdf/ibm/360/funcChar/A22-6916-1_360-85_funcChar_Jun68.pdf
+ |    version = SECOND EDITION
+ |       date = June 1968
+ |mode=cs2
+ }}&lt;/ref&gt;&lt;ref&gt;{{cite manual
+ |     author = IBM
+ |      title = IBM System/360 Special Feature Description 709/7090/7094 Compatibility Feature for IBM System/360 Model 85
+ |         id = GA27-2733-0
+ |    version = First Edition
+ |       date = March 1969
+ |mode=cs2
+ }}&lt;/ref&gt; and hardware diagnostics.&lt;ref&gt;{{cite manual
+ |     author = IBM
+ |      title = IBM System/370 Model 155 Functional Characteristics
+ |         id = GA22-6942-1
+ |        url = http://www.bitsavers.org/pdf/ibm/370/funcChar/GA22-6942-1_370-155_funcChar_Jan71.pdf
+ |    version = SECOND EDITION
+ |       date = January 1971
+ |mode=cs2
+ }}&lt;/ref&gt;
+
+Other commercial machines that used writable microcode include the [[Burroughs Small Systems]] (1970s and 1980s), the Xerox processors in their [[Lisp machine]]s and  [[Xerox Star]] workstations, the [[Digital Equipment Corporation|DEC]] [[VAX]] 8800 (&quot;Nautilus&quot;) family, and the [[Symbolics]] L- and G-machines (1980s). Some DEC [[PDP-10]] machines stored their microcode in SRAM chips (about 80 bits wide x 2 Kwords), which was typically loaded on power-on through some other front-end CPU.&lt;ref&gt;http://pdp10.nocrew.org/cpu/kl10-ucode.txt&lt;/ref&gt;  Many more machines offered user-programmable writable control stores as an option (including the [[HP 2100]], DEC [[PDP-11|PDP-11/60]] and [[Varian Data Machines]] V-70 series [[minicomputer]]s).
+The [[Mentec PDP-11#M11|Mentec M11]] and [[Mentec PDP-11#M1|Mentec M1]] stored its microcode in SRAM chips, loaded on power-on through another CPU.
+The [[Data General Eclipse MV/8000]] (&quot;Eagle&quot;) had a SRAM writable control store, loaded on power-on through another CPU.&lt;ref&gt;{{cite web|author=Mark Smotherman|title=CPSC 330 / The Soul of a New Machine|url=http://www.cs.clemson.edu/~mark/330/eagle.html|quote=4096 x 75-bit SRAM writeable control store: 74-bit microinstruction with 1 parity bit (18 fields)}}&lt;/ref&gt;
+
+WCS offered several advantages including the ease of patching the microprogram and, for certain hardware generations, faster access than ROMs could provide. User-programmable WCS allowed the user to optimize the machine for specific purposes.
+
+Some CPU designs compile the instruction set to a writable [[RAM]] or [[Flash memory|FLASH]] inside the CPU (such as the [[Rekursiv]] processor and the [[Imsys]] [[Cjip]]),&lt;ref&gt;{{cite web|url=http://cpushack.com/CPU/cpu7.html |title=Great Microprocessors of the Past and Present (V 13.4.0) |publisher=Cpushack.com |date= |accessdate=2010-04-26}}&lt;/ref&gt; or an FPGA ([[reconfigurable computing]]).
+
+Several Intel CPUs in the [[x86]] architecture family have writable microcode,&lt;ref&gt;
+[http://www.intel.com/Assets/PDF/manual/253668.pdf &quot;Intel(R) 64 and IA-32 Architectures Software Developer’s Manual&quot;, Volume 3A: System Programming Guide, Part 1], chapter 9.11: &quot;Microcode update facilities&quot;, December 2009.
+&lt;/ref&gt; starting with the [[Pentium Pro]] in 1995.&lt;ref&gt;{{cite magazine |last=Gwennap |first=Linley |date=1997-09-15 |title=P6 Microcode can be Patched |url=https://www.ele.uva.es/~jesman/BigSeti/ftp/Cajon_Desastre/MPR/111204.pdf |magazine=[[Microprocessor Report]] |access-date=2017-06-26 }}&lt;/ref&gt;
+This has allowed bugs in the [[Intel Core 2]] microcode and Intel [[Xeon]] microcode to be fixed in software, rather than requiring the entire chip to be replaced.
+Such fixes can be installed by Linux,&lt;ref&gt;{{cite web|url=http://urbanmyth.org/microcode/|title=Intel Microcode Update Utility for Linux|archive-url=https://web.archive.org/web/20120226174302/http://urbanmyth.org/microcode/|archive-date=2012-02-26}}&lt;/ref&gt; [[FreeBSD]],&lt;ref&gt;{{cite mailing list |url=https://lists.freebsd.org/pipermail/freebsd-hackers/2018-March/052359.html |title=New microcode updating tool for FreeBSD |author=Stefan Blachmann |mailing-list=freebsd-hackers |date=2018-03-02 |accessdate=2019-07-09}}&lt;/ref&gt; Microsoft Windows,&lt;ref&gt;[http://support.microsoft.com/kb/936357 &quot;A microcode reliability update is available that improves the reliability of systems that use Intel processors&quot;]&lt;/ref&gt; or the motherboard BIOS.&lt;ref&gt;[http://www.intel.com/support/motherboards/server/sb/cs-021619.htm &quot;BIOS Update required when Missing Microcode message is seen during POST&quot;]&lt;/ref&gt;
+
+===Timing, latching and avoiding a race condition===
+The control store usually has a register on its outputs. The outputs that go back into the sequencer to determine the next address have to go through some sort of register to prevent the creation of a [[race condition]]. In most designs all of the other bits also go through a register. This is because the machine will work faster if the execution of the next microinstruction is delayed by one cycle. This register is known as a pipeline register. Very often the execution of the next microinstruction is dependent on the result of the current microinstruction, which will not be stable until the end of the current microcycle. It can be seen that either way, all of the outputs of the control store go into one big register. Historically it used to be possible to buy EPROMs with these register bits on the same chip.
+
+The [[clock signal]] determining the [[clock rate]], which is the cycle time of the system, primarily clocks this register.
+
+== References ==
+{{wikibooks
+ |1= Microprocessor Design
+ |2= Microcode
+}}
+
+{{Reflist|30em}}
+
+&lt;!-- The link is dead and the paper can't be found on the server.
+* {{Cite paper | author=Everett, R.R., and Swain, F.E. | title=Whirlwind I Computer Block Diagrams | publisher=MIT Servomechanisms Laboratory | year=1947 | version=Report R-127 | url=http://www.cs.stthomas.edu/faculty/resmith/papers/WhirlwindR-127.pdf |format=PDF| accessdate=2006-06-21 }} --&gt;
+* {{cite journal | last=Smith | first=Richard E. | title=A Historical Overview of Computer Architecture | journal=Annals of the History of Computing | year=1988 | volume=10 | issue=4 | pages=277–303 | url=http://doi.ieeecomputersociety.org/10.1109/MAHC.1988.10039 | doi = 10.1109/MAHC.1988.10039 | accessdate=2006-06-21}}
+
+{{-}}
+{{CPU technologies}}
+
+{{DEFAULTSORT:Control Store}}
+[[Category:Instruction processing]]
+[[Category:Firmware]]</text>
+      <sha1>kz0wa6v4c7wnjjk5bpe0frwwugxo6dp</sha1>
+    </revision>
+  </page>

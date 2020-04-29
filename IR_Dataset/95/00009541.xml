@@ -1,0 +1,370 @@
+  <page>
+    <title>Design of experiments</title>
+    <ns>0</ns>
+    <id>9541</id>
+    <revision>
+      <id>942804418</id>
+      <parentid>942804272</parentid>
+      <timestamp>2020-02-26T23:10:41Z</timestamp>
+      <contributor>
+        <username>Acrouch</username>
+        <id>1102565</id>
+      </contributor>
+      <comment>removed citations needed issue at top of page</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{for|the book|The Design of Experiments}}
+{{short description|design of experiments}}
+{{Multiple issues|
+{{original research|date=September 2015}}
+}}
+
+{{Use dmy dates|date=July 2013}}
+[[File:Response surface metodology.jpg|thumb|Design of experiments with full [[factorial design]] (left), [[response surface]] with second-degree polynomial (right)]]
+
+The '''design of experiments''' ('''DOE''', '''DOX''', or '''experimental design''') is the design of any task that aims to describe and explain the variation of information under conditions that are hypothesized to reflect the variation. The term is generally associated with [[experiments]] in which the design introduces conditions that directly affect the variation, but may also refer to the design of [[quasi-experiment]]s, in which [[naturalistic observation|natural]] conditions that influence the variation are selected for observation.
+
+In its simplest form, an experiment aims at predicting the outcome by introducing a change of the preconditions, which is represented by one or more [[Dependent and independent variables|independent variables]], also referred to as &quot;input variables&quot; or &quot;predictor variables.&quot; The change in one or more independent variables is generally hypothesized to result in a change in one or more [[Dependent and independent variables|dependent variables]], also referred to as &quot;output variables&quot; or &quot;response variables.&quot; The experimental design may also identify [[controlling for a variable|control variables]] that must be held constant to prevent external factors from affecting the results. Experimental design involves not only the selection of suitable independent, dependent, and control variables, but planning the delivery of the experiment under statistically optimal conditions given the constraints of available resources.  There are multiple approaches for determining the set of design points (unique combinations of the settings of the independent variables) to be used in the experiment.
+
+Main concerns in experimental design include the establishment of [[Validity (statistics)|validity]], [[Reliability (statistics)|reliability]], and [[Reproducibility|replicability]]. For example, these concerns can be partially addressed by carefully choosing the independent variable, reducing the risk of measurement error, and ensuring that the documentation of the method is sufficiently detailed. Related concerns include achieving appropriate levels of [[statistical power]] and [[Sensitivity and specificity|sensitivity]].
+
+Correctly designed experiments advance knowledge in the natural and social sciences and engineering. Other applications include marketing and policy making. The study of the design of experiments is an important topic in [[metascience]].
+
+==History==
+
+===Statistical experiments, following Charles S. Peirce===
+{{Main|Frequentist statistics}}
+{{See also|Randomization}}
+A theory of statistical inference was developed by [[Charles Sanders Peirce|Charles S. Peirce]] in &quot;[[Charles Sanders Peirce bibliography#illus|Illustrations of the Logic of Science]]&quot; (1877–1878)&lt;ref&gt;Peirce, Charles Sanders (1887). &quot;Illustrations of the Logic of Science&quot;. Open Court (June 10, 2014). {{ISBN|0812698495}}.&lt;/ref&gt;  and  &quot;[[Charles Sanders Peirce bibliography#SIL|A Theory of Probable Inference]]&quot; (1883),&lt;ref&gt;Peirce, Charles Sanders (1883). &quot;A Theory of Probable Inference&quot;. In C. S. Peirce (Ed.), Studies in logic by members of the Johns Hopkins University (p. 126–181). Little, Brown and Co (1883)&lt;/ref&gt; two publications that emphasized the importance of randomization-based inference in statistics.&lt;ref name=Stigler78&gt;{{cite journal |last1=Stigler |first=Stephen M. |author-link=Stephen Stigler |year=1978 |title=Mathematical statistics in the early States |url=http://projecteuclid.org/euclid.aos/1176344123 |journal=Annals of Statistics |volume=6 |issue= 2|pages=239–65 [248] |quote=&quot;Indeed, Pierce's work contains one of the earliest explicit endorsements of mathematical randomization as a basis for inference of which I am aware (Peirce, 1957, pages 216-219&quot; | doi=10.1214/aos/1176344123 |jstor=2958876 |mr=483118}}&lt;/ref&gt;
+
+====Randomized experiments====
+{{Main|Random assignment}}
+{{See also|Repeated measures design}}
+Charles S. Peirce randomly assigned volunteers to a [[blinding (medicine)|blinded]], [[repeated measures design|repeated-measures design]] to evaluate their ability to discriminate weights.&lt;ref name=&quot;smalldiff&quot;&gt;{{Cite journal| last1= Peirce|first1=Charles Sanders|last2=Jastrow|first2=Joseph |authorlink1=Charles Sanders Peirce|authorlink2=Joseph Jastrow|year=1885|title=On Small Differences in Sensation|url=http://psychclassics.yorku.ca/Peirce/small-diffs.htm| journal=Memoirs of the National Academy of Sciences|volume=3|pages=73–83}}&lt;/ref&gt;&lt;ref name=&quot;telepathy&quot;&gt;
+{{Cite journal|first=Ian |last=Hacking|  authorlink=Ian Hacking | title=Telepathy: Origins of Randomization in Experimental Design|journal=[[Isis (journal)|Isis]]|issue=3|volume=79|date=September 1988 |pages=427–451|jstor=234674|mr=1013489 | doi=10.1086/354775}}&lt;/ref&gt;&lt;ref name=&quot;stigler&quot;&gt;
+{{Cite journal|author=Stephen M. Stigler|title=A Historical View of Statistical Concepts in Psychology and Educational Research| journal=American Journal of Education| volume=101|issue=1|date=November 1992|pages=60–70|jstor=1085417|doi=10.1086/444032
+|author-link=Stephen M. Stigler}}&lt;/ref&gt;&lt;ref name=&quot;dehue&quot;&gt;
+{{Cite journal|author=Trudy Dehue|title=Deception, Efficiency, and Random Groups: Psychology and the Gradual Origination of the Random Group Design|journal=[[Isis (journal)|Isis]]|volume=88|issue=4|date=December 1997|pages=653–673|doi=10.1086/383850|pmid=9519574|url=https://www.rug.nl/research/portal/en/publications/deception-efficiency-and-random-groups(459e54f0-1e56-4390-876a-46a33e80621d).html}}&lt;/ref&gt;
+Peirce's experiment inspired other researchers in psychology and education, which developed a research tradition of randomized experiments in laboratories and specialized textbooks in the 1800s.&lt;ref name=&quot;smalldiff&quot;/&gt;&lt;ref name=&quot;telepathy&quot;/&gt;&lt;ref name=&quot;stigler&quot;/&gt;&lt;ref name=&quot;dehue&quot;/&gt;
+
+====Optimal designs for regression models====
+{{Main|Response surface methodology}}
+{{See also|Optimal design}}
+[[Charles Sanders Peirce|Charles S. Peirce]] also contributed the first English-language publication on an [[optimal design]] for [[Regression analysis|regression]] [[statistical model|models]] in 1876.&lt;ref&gt;{{cite journal| author=Peirce, C. S. | year=1876| title=Note on the Theory of the Economy of Research | journal=Coast Survey Report | pages=197–201| author-link=Charles Sanders Peirce}}, actually published 1879, NOAA [http://docs.lib.noaa.gov/rescue/cgs/001_pdf/CSC-0025.PDF#page=222 PDF Eprint].&lt;br /&gt; Reprinted in ''[[Charles Sanders Peirce bibliography#CP|Collected Papers]]'' '''7''', paragraphs 139–157, also in ''[[Charles Sanders Peirce bibliography#W|Writings]]'' '''4''', pp. 72–78, and in {{cite journal| author=Peirce, C. S. |date=July–August 1967
+| title=Note on the Theory of the Economy of Research
+| journal=Operations Research
+|volume=15 | issue=4|pages=643–648
+| jstor=168276|doi=10.1287/opre.15.4.643
+|author-link=Charles Sanders Peirce
+}}&lt;/ref&gt; A pioneering [[optimal design]] for [[polynomial regression]] was suggested by [[Joseph Diaz Gergonne|Gergonne]] in 1815. In 1918, [[Kirstine Smith]] published optimal designs for polynomials of degree six (and less).&lt;ref name=GL2009&gt;{{cite journal |last=Guttorp |first=P. |last2=Lindgren |first2=G. |title= Karl Pearson and the Scandinavian school of statistics |journal= International Statistical Review |volume=77 |year=2009 |page=64 |doi=10.1111/j.1751-5823.2009.00069.x|citeseerx=10.1.1.368.8328 }}&lt;/ref&gt; &lt;ref name=&quot;polynomials&quot;&gt;{{Cite journal| last1= Smith| first1=Kirstine| authorlink1=Kirstine Smith| year=1918| title=On the standard deviations of adjusted and interpolated values of an observed polynomial function and its constants and the guidance they give towards a proper choice of the distribution of observations.| url=https://www.google.com/books/edition/Biometrika/UMNLAAAAYAAJ?hl=en&amp;gbpv=0 | journal=Biometrika|volume=12|pages=1-85}}&lt;/ref&gt;
+
+===Sequences of experiments===
+{{Main|Sequential analysis}}
+{{See also|Multi-armed bandit problem|Gittins index|Optimal design}}
+The use of a sequence of experiments, where the design of each may depend on the results of previous experiments, including the possible decision to stop experimenting, is within the scope of [[Sequential analysis]], a field that was pioneered&lt;ref&gt;Johnson, N.L. (1961). &quot;Sequential analysis: a survey.&quot; ''[[Journal of the Royal Statistical Society]]'', Series A. Vol. 124 (3), 372&amp;ndash;411. (pages 375&amp;ndash;376)&lt;/ref&gt; by [[Abraham Wald]] in the context of sequential tests of statistical hypotheses.&lt;ref&gt;Wald, A. (1945) &quot;Sequential Tests of Statistical Hypotheses&quot;, [[Annals of Mathematical Statistics]], 16 (2), 117&amp;ndash;186.&lt;/ref&gt; [[Herman Chernoff]] wrote an overview of optimal sequential designs,&lt;ref name=&quot;ref3&quot;/&gt; while [[Minimisation (clinical trials)|adaptive designs]] have been surveyed by S. Zacks.&lt;ref&gt;Zacks, S. (1996) &quot;Adaptive Designs for Parametric Models&quot;. In: Ghosh, S. and Rao, C. R., (Eds) (1996). &quot;Design and Analysis of Experiments,&quot; ''Handbook of Statistics'', Volume 13. North-Holland. {{ISBN|0-444-82061-2}}.  (pages 151&amp;ndash;180)&lt;/ref&gt; One specific type of sequential design is the &quot;two-armed bandit&quot;, generalized to the [[multi-armed bandit]], on which early work was done by [[Herbert Robbins]] in 1952.&lt;ref&gt;{{cite journal | doi = 10.1090/S0002-9904-1952-09620-8 | last1 = Robbins | first1 = H. | year = 1952 | title = Some Aspects of the Sequential Design of Experiments | url = | journal = Bulletin of the American Mathematical Society | volume = 58 | issue = 5| pages = 527–535 }}&lt;/ref&gt;
+
+==Fisher's principles==
+
+A methodology for designing experiments was proposed by [[Ronald Fisher]], in his innovative books: ''The Arrangement of Field Experiments'' (1926) and ''[[The Design of Experiments]]'' (1935).  Much of his pioneering work dealt with agricultural applications of statistical methods.  As a mundane example, he described how to test the [[lady tasting tea]] [[hypothesis]], that a certain lady could distinguish by flavour alone whether the milk or the tea was first placed in the cup. These methods have been broadly adapted in biological, psychological, and agricultural research.  &lt;ref name=&quot;Miller00&quot;&gt;[[Geoffrey Miller (psychologist)|Miller, Geoffrey]] (2000). ''The Mating Mind: how sexual choice shaped the evolution of human nature'', London: Heineman, {{ISBN|0-434-00741-2}} (also Doubleday, {{ISBN|0-385-49516-1}}) &quot;To biologists, he was an architect of the 'modern synthesis' that used mathematical models to integrate Mendelian genetics with Darwin's selection theories. To psychologists, Fisher was the inventor of various statistical tests that are still supposed to be used whenever possible in psychology journals. To farmers, Fisher was the founder of experimental agricultural research, saving millions from starvation through rational crop breeding programs.&quot; p.54.&lt;/ref&gt;
+
+;Comparison
+:In some fields of study it is not possible to have independent measurements to a traceable [[Standard (metrology)|metrology standard]].  Comparisons between treatments are much more valuable and are usually preferable, and often compared against a [[scientific control]] or traditional treatment that acts as baseline.
+
+;[[Randomization]]
+:Random assignment is the process of assigning individuals at random to groups or to different groups in an experiment, so that each individual of the population has the same chance of becoming a participant in the study. The random assignment of individuals to groups (or conditions within a group) distinguishes a rigorous, &quot;true&quot; experiment from an observational study or &quot;quasi-experiment&quot;.&lt;ref&gt;Creswell, J.W. (2008), ''Educational research: Planning, conducting, and evaluating quantitative and qualitative research (3rd edition)'', Upper Saddle River, NJ: Prentice Hall. 2008, p. 300. {{ISBN|0-13-613550-1}}&lt;/ref&gt; There is an extensive body of mathematical theory that explores the consequences of making the allocation of units to treatments by means of some random mechanism (such as tables of random numbers, or the use of randomization devices such as playing cards or dice). Assigning units to treatments at random tends to mitigate [[confounding]], which makes effects due to factors other than the treatment to appear to result from the treatment.
+
+:The risks associated with random allocation (such as having a serious imbalance in a key characteristic between a treatment group and a control group) are calculable and hence can be managed down to an acceptable level by using enough experimental units. However, if the population is divided into several subpopulations that somehow differ, and the research requires each subpopulation to be equal in size, stratified sampling can be used. In that way, the units in each subpopulation are randomized, but not the whole sample. The results of an experiment can be generalized reliably from the experimental units to a larger [[statistical population]] of units only if the experimental units are a [[Sampling (statistics)|random sample]] from the larger population; the probable error of such an extrapolation depends on the sample size, among other things.
+
+;[[Replication (statistics)|Statistical replication]]
+:Measurements are usually subject to variation and [[measurement uncertainty]]; thus they are repeated and full experiments are replicated to help identify the sources of variation, to better estimate the true effects of treatments, to further strengthen the experiment's reliability and validity, and to add to the existing knowledge of the topic.&lt;ref&gt;{{cite web|last=Dr. Hani|title=Replication study|url=http://www.experiment-resources.com/replication-study.html|accessdate=27 October 2011|year=2009|archive-url=https://web.archive.org/web/20120602061136/http://www.experiment-resources.com/replication-study.html|archive-date=2 June 2012|url-status=dead}}&lt;/ref&gt; However, certain conditions must be met before the replication of the experiment is commenced: the original research question has been published in a [[peer-review]]ed journal or widely cited, the researcher is independent of the original experiment, the researcher must first try to replicate the original findings using the original data, and the write-up should state that the study conducted is a replication study that tried to follow the original study as strictly as possible.&lt;ref&gt;{{citation|last=Burman|first=Leonard E.|title=A call for replication studies|url=http://pfr.sagepub.com|journal=[[Public Finance Review]] | volume=38 |issue=6|accessdate=27 October 2011|author2=Robert W. Reed |author3=James Alm |pages=787–793|doi=10.1177/1091142110385210|year=2010}}&lt;/ref&gt;
+
+;[[Blocking (statistics)|Blocking]]
+:Blocking is the non-random arrangement of experimental units into groups (blocks) consisting of units that are similar to one another. Blocking reduces known but irrelevant sources of variation between units and thus allows greater precision in the estimation of the source of variation under study.
+
+;[[Orthogonality#Statistics.2C econometrics.2C and economics|Orthogonality]]
+[[File:Factorial Design.svg|thumb|Example of orthogonal factorial design]]
+:Orthogonality concerns the forms of comparison (contrasts) that can be legitimately and efficiently carried out. Contrasts can be represented by vectors and sets of orthogonal contrasts are uncorrelated and independently distributed if the data are normal. Because of this independence, each orthogonal treatment provides different information to the others. If there are ''T'' treatments and ''T'' – 1 orthogonal contrasts, all the information that can be captured from the experiment is obtainable from the set of contrasts.
+
+;[[Factorial experiment]]s
+:Use of factorial experiments instead of the one-factor-at-a-time method.  These are efficient at evaluating the effects and possible [[Interaction (statistics)|interactions]] of several factors (independent variables). Analysis of [[experiment]] design is built on the foundation of the [[analysis of variance]], a collection of models that partition the observed variance into components, according to what factors the experiment must estimate or test.
+
+==Example==
+[[File:Balance à tabac 1850.JPG|right|240px]]
+This example of design experiments is attributed to [[Harold Hotelling]], building on examples from [[Frank Yates]].&lt;ref&gt;{{cite journal| last = Hotelling| first = Harold | title = Some Improvements in Weighing and Other Experimental Techniques| journal = Annals of Mathematical Statistics| volume = 15 | issue = 3| pages = 297-306 | date = 1944 | doi = 10.1214/aoms/1177731236 | url=https://projecteuclid.org/euclid.aoms/1177731236}}&lt;/ref&gt;&lt;ref&gt;{{cite book | last1 = Giri | first1 = Narayan C.  | last2 = Das | first2 = M. N. | title = Design and Analysis of Experiments | publisher = Wiley | location = New York, N.Y | year = 1979 | isbn = 9780852269145 | url = https://www.google.com/books/edition/Design_and_Analysis_of_Experiments/-vGlnx-ZVvEC?hl=en&amp;gbpv=0 | pages=350-359 }}&lt;/ref&gt; &lt;ref name=&quot;ref3&quot;&gt;[[Herman Chernoff]], ''Sequential Analysis and Optimal Design'', [[Society for Industrial and Applied Mathematics|SIAM]] Monograph, 1972.&lt;/ref&gt; The experiments designed in this example involve [[combinatorial design]]s.&lt;ref name=&quot;yout_Howt&quot;&gt;{{Cite web
+| title = How to Use Design of Experiments to Create Robust Designs With High Yield
+| author = Jack Sifri
+| work = youtube.com
+| date = 8 December 2014
+| accessdate = 2015-02-11
+| url = https://www.youtube.com/watch?v=hfdZabCVwzc
+| quote = 
+}}&lt;/ref&gt;
+
+Weights of eight objects are measured using a [[pan balance]] and set of standard weights.  Each weighing measures the weight difference between objects in the left pan and any objects in the right pan by adding calibrated weights to the lighter pan until the balance is in equilibrium. Each measurement has a [[errors and residuals in statistics|random error]].  The average error is zero; the [[standard deviation]]s of the [[probability distribution]] of the errors is the same number σ on different weighings; errors on different weighings are [[statistical independence|independent]].  Denote the true weights by
+
+:&lt;math&gt;\theta_1, \dots, \theta_8.\,&lt;/math&gt;
+
+We consider two different experiments:
+
+# Weigh each object in one pan, with the other pan empty.  Let ''X''&lt;sub&gt;''i''&lt;/sub&gt; be the measured weight of the object, for ''i'' = 1, ..., 8.
+# Do the eight weighings according to the following schedule and let ''Y''&lt;sub&gt;''i''&lt;/sub&gt; be the measured difference for ''i'' = 1, ..., 8:
+
+:: &lt;math&gt;
+\begin{array}{lcc}
+&amp; \text{left pan} &amp; \text{right pan} \\
+\hline
+\text{1st weighing:} &amp; 1\ 2\ 3\ 4\ 5\ 6\ 7\ 8 &amp; \text{(empty)} \\ 
+\text{2nd:} &amp; 1\ 2\ 3\ 8\ &amp; 4\ 5\ 6\ 7 \\
+\text{3rd:} &amp; 1\ 4\ 5\ 8\ &amp; 2\ 3\ 6\ 7 \\
+\text{4th:} &amp; 1\ 6\ 7\ 8\ &amp; 2\ 3\ 4\ 5 \\
+\text{5th:} &amp; 2\ 4\ 6\ 8\ &amp; 1\ 3\ 5\ 7 \\
+\text{6th:} &amp; 2\ 5\ 7\ 8\ &amp; 1\ 3\ 4\ 6 \\
+\text{7th:} &amp; 3\ 4\ 7\ 8\ &amp; 1\ 2\ 5\ 6 \\
+\text{8th:} &amp; 3\ 5\ 6\ 8\ &amp; 1\ 2\ 4\ 7
+\end{array}
+&lt;/math&gt;
+
+: Then the estimated value of the weight ''&amp;theta;''&lt;sub&gt;1&lt;/sub&gt; is
+
+:: &lt;math&gt;\widehat{\theta}_1 = \frac{Y_1 + Y_2 + Y_3 + Y_4 - Y_5 - Y_6 - Y_7 - Y_8}{8}. &lt;/math&gt;
+
+:Similar estimates can be found for the weights of the other items. For example
+
+:: &lt;math&gt;
+\begin{align}
+\widehat{\theta}_2 &amp; = \frac{Y_1 + Y_2 - Y_3 - Y_4 + Y_5 + Y_6 - Y_7 - Y_8} 8. \\[5pt]
+\widehat{\theta}_3 &amp; = \frac{Y_1 + Y_2 - Y_3 - Y_4 - Y_5 - Y_6 + Y_7 + Y_8} 8. \\[5pt]
+\widehat{\theta}_4 &amp; = \frac{Y_1 - Y_2 + Y_3 - Y_4 + Y_5 - Y_6 + Y_7 - Y_8} 8. \\[5pt]
+\widehat{\theta}_5 &amp; = \frac{Y_1 - Y_2 + Y_3 - Y_4 - Y_5 + Y_6 - Y_7 + Y_8} 8. \\[5pt]
+\widehat{\theta}_6 &amp; = \frac{Y_1 - Y_2 - Y_3 + Y_4 + Y_5 - Y_6 - Y_7 + Y_8} 8. \\[5pt]
+\widehat{\theta}_7 &amp; = \frac{Y_1 - Y_2 - Y_3 + Y_4 - Y_5 + Y_6 + Y_7 - Y_8} 8. \\[5pt]
+\widehat{\theta}_8 &amp; = \frac{Y_1 + Y_2 + Y_3 + Y_4 + Y_5 + Y_6 + Y_7 + Y_8} 8.
+\end{align}
+&lt;/math&gt;
+
+The question of design of experiments is: which experiment is better?
+
+The variance of the estimate ''X''&lt;sub&gt;1&lt;/sub&gt; of θ&lt;sub&gt;1&lt;/sub&gt; is σ&lt;sup&gt;2&lt;/sup&gt; if we use the first experiment.  But if we use the second experiment, the variance of the estimate given above is σ&lt;sup&gt;2&lt;/sup&gt;/8.  Thus the second experiment gives us 8 times as much precision for the estimate of a single item, and estimates all items simultaneously, with the same precision. What the second experiment achieves with eight would require 64 weighings if the items are weighed separately. However, note that the estimates for the items obtained in the second experiment have errors that correlate with each other.
+
+Many problems of the design of experiments involve [[combinatorial design]]s, as in this example and others.&lt;ref name=&quot;yout_Howt&quot;/&gt;
+
+==Avoiding false positives==
+{{see also|Metascience}}
+[[False positive]] conclusions, often resulting from the [[Publish or perish|pressure to publish]] or the author's own [[confirmation bias]], are an inherent hazard in many fields. A good way to prevent biases potentially leading to false positives in the data collection phase is to use a double-blind design. When a double-blind design is used, participants are randomly assigned to experimental groups but the researcher is unaware of what participants belong to which group. Therefore, the researcher can not affect the participants' response to the intervention.  
+Experimental designs with undisclosed degrees of freedom are a problem.&lt;ref&gt;{{cite journal| last = Simmons| first = Joseph|author2=Leif Nelson |author3=Uri Simonsohn | title = False-Positive Psychology: Undisclosed Flexibility in Data Collection and Analysis Allows Presenting Anything as Significant| journal = Psychological Science| volume = 22| issue = 11| pages = 1359–1366| date = November 2011| issn = 0956-7976| doi = 10.1177/0956797611417632| pmid = 22006061}}
+&lt;/ref&gt;  This can lead to conscious or unconscious &quot;[[p-hacking]]&quot;: trying multiple things until you get the desired result.  It typically involves the manipulation - perhaps unconsciously - of the process of [[statistical analysis]] and the degrees of freedom until they return a figure below the p&lt;.05 level of statistical significance.&lt;ref&gt;{{cite news
+ | url=http://www.kplu.org/post/science-trust-and-psychology-crisis
+ | title=Science, Trust And Psychology In Crisis
+ | work=[[KNKX|KPLU]]
+ | date=2014-06-02
+ | accessdate=2014-06-12
+ | archive-url=https://web.archive.org/web/20140714151939/http://www.kplu.org/post/science-trust-and-psychology-crisis
+ | archive-date=14 July 2014
+ | url-status=dead
+ }}&lt;/ref&gt;&lt;ref&gt;{{cite news
+ | url=https://psmag.com/environment/statistically-significant-studies-arent-necessarily-significant-82832
+ | title=Why Statistically Significant Studies Can Be Insignificant
+ | work=Pacific Standard
+ | date=2014-06-04
+ | accessdate=2014-06-12 }}
+&lt;/ref&gt;  So the design of the experiment should include a clear statement proposing the analyses to be undertaken. P-hacking can be prevented by preregistering researches, in which researchers have to send their data analysis plan to the journal they wish to publish their paper in before they even start their data collection, so no data manipulation is possible (https://osf.io). Another way to prevent this is taking the double-blind design to the data-analysis phase, where the data are sent to a data-analyst unrelated to the research who scrambles up the data so there is no way to know which participants belong to before they are potentially taken away as outliers.
+
+Clear and complete documentation of the experimental methodology is also important in order to support replication of results.&lt;ref&gt;{{cite news
+ | url=https://www.theguardian.com/science/head-quarters/2014/jun/10/physics-envy-do-hard-sciences-hold-the-solution-to-the-replication-crisis-in-psychology
+ | title=Physics envy: Do 'hard' sciences hold the solution to the replication crisis in psychology?
+ | work=theguardian.com
+ | author=Chris Chambers
+ | date=2014-06-10
+ | accessdate=2014-06-12 }}
+&lt;/ref&gt;
+
+==Discussion topics when setting up an experimental design==
+An experimental design or randomized clinical trial requires careful consideration of several factors before actually doing the experiment.&lt;ref&gt;Ader, Mellenberg &amp; Hand (2008) &quot;Advising on Research Methods: A consultant's companion&quot;&lt;/ref&gt; An experimental design is the laying out of a detailed experimental plan in advance of doing the experiment. Some of the following topics  have already been discussed in the principles of experimental design section:
+
+# How many factors does the design have, and are the levels of these factors fixed or random?
+# Are control conditions needed, and what should they be?
+# Manipulation checks; did the manipulation really work?
+# What are the background variables?
+# What is the sample size. How many units must be collected for the experiment to be generalisable and have enough [[Statistical power|power]]?
+# What is the relevance of interactions between factors?
+# What is the influence of delayed effects of substantive factors on outcomes?
+# How do response shifts affect self-report measures?
+# How feasible is repeated administration of the same measurement instruments to the same units at different occasions, with a post-test and follow-up tests?
+# What about using a proxy pretest?
+# Are there lurking variables?
+# Should the client/patient, researcher or even the analyst of the data be blind to conditions?
+# What is the feasibility of subsequent application of different conditions to the same units?
+# How many of each control and noise factors should be taken into account?
+
+The independent variable of a study often has many levels or different groups. In a true experiment, researchers can have an experimental group, which is where their intervention testing the hypothesis is implemented, and a control group, which has all the same element as the experimental group, without the interventional element. Thus, when everything else except for one intervention is held constant, researchers can certify with some certainty that this one element is what caused the observed change. In some instances, having a control group is not ethical. This is sometimes solved using two different experimental groups. In some cases, independent variables cannot be manipulated, for example when testing the difference between two groups who have a different disease, or testing the difference between genders (obviously variables that would be hard or unethical to assign participants to). In these cases, a quasi-experimental design may be used.
+
+==Causal attributions==
+In the pure experimental design, the independent (predictor) variable is manipulated by the researcher - that is - every participant of the research is chosen randomly from the population, and each participant chosen is assigned randomly to conditions of the independent variable. Only when this is done is it possible to certify with high probability that the reason for the differences in the outcome variables are caused by the different conditions. Therefore, researchers should choose the experimental design over other design types whenever possible. However, the nature of the independent variable does not always allow for manipulation. In those cases, researchers must be aware of not certifying about causal attribution when their design doesn't allow for it. For example, in observational designs, participants are not assigned randomly to conditions, and so if there are differences found in outcome variables between conditions, it is likely that there is something other than the differences between the conditions that causes the differences in outcomes, that is - a third variable. The same goes for studies with correlational design. (Adér &amp; Mellenbergh, 2008).
+
+==Statistical control==
+It is best that a process be in reasonable statistical control prior to conducting designed experiments.  When this is not possible, proper blocking, replication, and randomization allow for the careful conduct of designed experiments.&lt;ref&gt;Bisgaard, S (2008) &quot;Must a Process be in Statistical Control before Conducting Designed Experiments?&quot;, ''Quality Engineering'', ASQ, 20 (2), pp 143 - 176&lt;/ref&gt;
+To control for nuisance variables, researchers institute '''control checks''' as additional measures.  Investigators should ensure that uncontrolled influences (e.g., source credibility perception) do not skew the findings of the study.  A [[manipulation checks|manipulation check]] is one example of a control check.  Manipulation checks allow investigators to isolate the chief variables to strengthen support that these variables are operating as planned.
+
+One of the most important requirements of experimental research designs is the necessity of eliminating the effects of [[spurious relationship|spurious]], intervening, and [[antecedent variable]]s. In the most basic model, cause (X) leads to effect (Y). But there could be a third variable (Z) that influences (Y), and X might not be the true cause at all. Z is said to be a spurious variable and must be controlled for. The same is true for [[intervening variable]]s (a variable in between the supposed cause (X) and the effect (Y)), and anteceding variables (a variable prior to the supposed cause (X) that is the true cause). When a third variable is involved and has not been controlled for, the relation is said to be a [[zero order (statistics)|zero order]] relationship. In most practical applications of experimental research designs there are several causes (X1, X2, X3). In most designs, only one of these causes is manipulated at a time.
+
+==Experimental designs after Fisher==
+Some efficient designs for estimating several main effects were found independently and in near succession by [[Raj Chandra Bose]] and K. Kishen in 1940 at the [[Indian Statistical Institute]], but remained little known until the [[Plackett–Burman design]]s were published in ''[[Biometrika]]'' in 1946. About the same time, [[C. R. Rao]] introduced the concepts of [[orthogonal array]]s as experimental designs. This concept played a central role in the development of [[Taguchi methods]] by [[Genichi Taguchi]], which took place during his visit to Indian Statistical Institute in early 1950s. His methods were successfully applied and adopted by Japanese and Indian industries and subsequently were also embraced by US industry albeit with some reservations.
+
+In 1950, [[Gertrude Mary Cox]] and [[William Gemmell Cochran]] published the book ''Experimental Designs,'' which became the major reference work on the design of experiments for statisticians for years afterwards.
+
+Developments of the theory of [[linear model]]s have encompassed and surpassed the cases that concerned early writers. Today, the theory rests on advanced topics in [[linear algebra]], [[algebraic statistics|algebra]] and [[combinatorial design|combinatorics]].
+
+As with other branches of statistics, experimental design is pursued using both [[frequentist statistics|frequentist]] and [[Bayesian experimental design|Bayesian]] approaches: In evaluating statistical procedures like experimental designs, [[frequentist statistics]] studies the [[sampling distribution]] while [[Bayesian statistics]] updates a [[Bayesian probability|probability distribution]] on the parameter space.
+
+Some important contributors to the field of experimental designs are [[Charles Sanders Peirce|C. S. Peirce]], [[R. A. Fisher]], [[Frank Yates|F. Yates]], [[R. C. Bose]], A. C. Atkinson, [[Rosemary A. Bailey|R. A. Bailey]], [[David R. Cox|D. R. Cox]], [[G. E. P. Box]], [[William G. Cochran|W. G. Cochran]], W. T. Federer,  V. V. Fedorov, A. S. Hedayat, [[Jack Kiefer (mathematician)|J. Kiefer]], [[Oscar Kempthorne|O. Kempthorne]], [[John Nelder|J. A. Nelder]],  Andrej Pázman, Friedrich Pukelsheim, [[D. Raghavarao]], [[C. R. Rao]], [[Shrikhande S. S.]], [[Jagdish N. Srivastava|J. N. Srivastava]], William J. Studden, [[Genichi Taguchi|G. Taguchi]] and H. P. Wynn.&lt;ref&gt;{{cite book | last1 = Giri | first1 = Narayan C.  | last2 = Das | first2 = M. N. | title = Design and Analysis of Experiments | publisher = Wiley | location = New York, N.Y | year = 1979 | isbn = 9780852269145 | url = https://www.google.com/books/edition/Design_and_Analysis_of_Experiments/-vGlnx-ZVvEC?hl=en&amp;gbpv=0 | pages=53, 159, 264,   }}&lt;/ref&gt;
+
+The textbooks of D. Montgomery, R. Myers, and G. Box/W. Hunter/J.S. Hunter have reached generations of students and practitioners.
+&lt;ref&gt;{{cite book | last = Montgomery | first = Douglas 
+| title = Design and analysis of experiments 
+| publisher = John Wiley &amp; Sons, Inc | location = Hoboken, NJ
+| edition = 8th 
+| year = 2013 | isbn = 9781118146927 }}&lt;/ref&gt;
+&lt;ref&gt;
+{{cite book 
+| last1 = Walpole | first1 = Ronald E.
+| last2 = Myers | first2 = Raymond H. 
+| last3 = Myers | first3 = Sharon L.
+| last4 = Ye | first4 = Keying
+| title = Probability &amp; statistics for engineers &amp; scientists 
+| publisher = Pearson Prentice Hall | location = Upper Saddle River, NJ
+| edition = 8 
+| year = 2007 | isbn = 978-0131877115 }}&lt;/ref&gt;
+&lt;ref&gt;
+{{cite book 
+| last1 = Myers | first1 = Raymond H.
+| last2 = Montgomery | first2 = Douglas C.
+| last3 = Vining | first3 = G. Geoffrey
+| last4 = Robinson | first4 = Timothy J. 
+| title = Generalized linear models : with applications in engineering and the sciences 
+| publisher = Wiley | location = Hoboken, N.J.
+| edition = 2 
+| year = 2010 | isbn = 978-0470454633 }}&lt;/ref&gt;
+&lt;ref&gt;
+{{cite book | last1 = Box | first1 = George E.P. | last2 = Hunter | first2 = William G. | last3 = Hunter | first3 = J. Stuart | title = Statistics for Experimenters : An Introduction to Design, Data Analysis, and Model Building | publisher = Wiley | location = New York | year = 1978 | isbn = 978-0-471-09315-2 | url = https://archive.org/details/statisticsforexp00geor }}&lt;/ref&gt;
+&lt;ref&gt;
+{{cite book 
+| last1 = Box | first1 = George E.P.
+| last2 = Hunter | first2 = William G.
+| last3 = Hunter | first3 = J. Stuart
+| title = Statistics for Experimenters : Design, Innovation, and Discovery 
+| publisher = Wiley | location = Hoboken, N.J.
+| edition = 2 
+| year = 2005 | isbn = 978-0471718130 }}&lt;/ref&gt;
+
+Some discussion of experimental design in the context of [[system identification]] (model building for static or dynamic models) is given in &lt;ref&gt;{{cite journal | last1 = Spall | first1 = J. C. | year = 2010 | title = Factorial Design for Efficient Experimentation: Generating Informative Data for System Identification | journal = IEEE Control Systems Magazine | volume = 30 | issue = 5| pages = 38–53 | doi=10.1109/MCS.2010.937677}}&lt;/ref&gt; and.&lt;ref&gt;{{cite journal | last1 = Pronzato | first1 = L | year = 2008 | title = Optimal experimental design and some related control problems | url = | journal = Automatica | volume = 44 | issue = 2| pages = 303–325 | doi=10.1016/j.automatica.2007.05.016| arxiv = 0802.4381}}&lt;/ref&gt;
+
+==Human participant constraints==
+Laws and ethical considerations preclude some carefully designed 
+experiments with human subjects.  Legal constraints are dependent on 
+[[Human subject research|jurisdiction]].  Constraints may involve 
+[[institutional review board]]s, [[informed consent]] 
+and [[confidentiality]] affecting both clinical (medical) trials and 
+behavioral and social science experiments.&lt;ref&gt;
+{{cite book | last1 = Moore | first1 = David S. 
+| last2 = Notz | first2 = William I.
+| title = Statistics : concepts and controversies 
+| publisher = W.H. Freeman | location = New York | year = 2006 
+| isbn = 9780716786368 | edition = 6th
+| pages =  Chapter 7: Data ethics}}&lt;/ref&gt;
+In the field of toxicology, for example, experimentation is performed 
+on laboratory ''animals'' with the goal of defining safe exposure limits 
+for ''humans''.&lt;ref&gt;
+{{cite book | last = Ottoboni | first = M. Alice | title = The dose makes the poison : a plain-language guide to toxicology | publisher = Van Nostrand Reinhold | location = New York, N.Y | year = 1991 | isbn = 978-0442006600 | edition = 2nd | url = https://archive.org/details/dosemakespoison00otto }}&lt;/ref&gt;  Balancing
+the constraints are views from the medical field.&lt;ref&gt;{{cite book | last = Glantz | first = Stanton A. | title = Primer of biostatistics | edition = 3rd | year = 1992 | isbn = 978-0-07-023511-3 | url = https://archive.org/details/primerofbiostati00glan_0 }}&lt;/ref&gt;  Regarding the randomization of patients, 
+&quot;... if no one knows which therapy is better, there is no ethical 
+imperative to use one therapy or another.&quot; (p 380)  Regarding 
+experimental design, &quot;...it is clearly not ethical to place subjects 
+at risk to collect data in a poorly designed study when this situation 
+can be easily avoided...&quot;. (p 393)
+
+==See also==
+{{Div col}}
+* [[Adversarial collaboration]]
+* [[Bayesian experimental design]]
+* [[Block design]]
+* [[Box–Behnken design]]
+* [[Central composite design]]
+* [[Clinical trial]]
+* [[Clinical study design]]
+* [[Computer experiment]]
+* [[Control variable]]
+* [[Controlling for a variable]]
+* [[Experimetrics]] ([[econometrics]]-related experiments)
+* [[Factor analysis]]
+* [[Fractional factorial design]]
+* [[Glossary of experimental design]]
+* [[Grey box model]]
+* [[Industrial engineering]]
+* [[Instrument effect]]
+* [[Law of large numbers]]
+* [[Manipulation checks]]
+* [[Multifactor design of experiments software]]
+* [[One-factor-at-a-time method]]
+* [[Optimal design]]
+* [[Plackett-Burman design]]
+* [[Probabilistic design]]
+* [[Protocol (natural sciences)]]
+* [[Quasi-experimental design]]
+* [[Randomized block design]]
+* [[Randomized controlled trial]]
+* [[Research design]]
+* [[Robust parameter design (RPD)|Robust parameter design]]
+* [[Sample size determination]]
+* [[Plackett–Burman design#Supersaturated designs|Supersaturated]] design
+* [[Survey sampling]]
+* [[System identification]]
+* [[Taguchi methods]]
+{{div col end}}
+
+== References ==
+
+{{Reflist}}
+
+=== Sources ===
+{{refbegin}}
+* [[Charles Sanders Peirce|Peirce, C. S.]] (1877–1878), &quot;Illustrations of the Logic of Science&quot; (series), ''Popular Science Monthly'', vols. 12-13. Relevant individual papers:
+** (1878 March), &quot;The Doctrine of Chances&quot;, ''Popular Science Monthly'', v. 12, March issue, pp. [https://books.google.com/books?id=ZKMVAAAAYAAJ&amp;jtp=604 604]–615.  ''Internet Archive'' [https://archive.org/stream/popscimonthly12yoummiss#page/612/mode/1up Eprint].
+** (1878 April), &quot;The Probability of Induction&quot;, ''Popular Science Monthly'', v. 12, pp. [https://books.google.com/books?id=ZKMVAAAAYAAJ&amp;jtp=705 705]–718. ''Internet Archive'' [https://archive.org/stream/popscimonthly12yoummiss#page/715/mode/1up Eprint].
+** (1878 June), &quot;The Order of Nature&quot;, ''Popular Science Monthly'', v. 13, pp. [https://books.google.com/books?id=u8sWAQAAIAAJ&amp;jtp=203 203]–217.''Internet Archive'' [https://archive.org/stream/popularsciencemo13newy#page/203/mode/1up Eprint].
+** (1878 August), &quot;Deduction, Induction, and Hypothesis&quot;, ''Popular Science Monthly'', v. 13, pp. [https://books.google.com/books?id=u8sWAQAAIAAJ&amp;jtp=470 470]–482. ''Internet Archive'' [https://archive.org/stream/popularsciencemo13newy#page/470/mode/1up Eprint].
+** [[Charles Sanders Peirce|Peirce, C. S.]] (1883), &quot;A Theory of Probable Inference&quot;, ''Studies in Logic'', pp. [https://archive.org/details/bub_gb_V7oIAAAAQAAJ/page/n134 126-181], Little, Brown, and Company. (Reprinted 1983, John Benjamins Publishing Company, {{ISBN|90-272-3271-7}})
+{{refend}}
+
+== External links ==
+{{Commons category}}
+{{Library resources box 
+|by = no 
+|onlinebooks = no 
+|others = no 
+|about = yes 
+|label = Experimental design
+}}
+* A [http://www.itl.nist.gov/div898/handbook/pri/section1/pri1.htm chapter] from a [http://www.itl.nist.gov/div898/handbook/ &quot;NIST/SEMATECH Handbook on Engineering Statistics&quot;] at [[National Institute of Standards and Technology|NIST]]
+* [http://www.itl.nist.gov/div898/handbook/pri/section3/pri3362.htm Box–Behnken designs] from a [http://www.itl.nist.gov/div898/handbook/ &quot;NIST/SEMATECH Handbook on Engineering Statistics&quot;] at [[National Institute of Standards and Technology|NIST]]
+* [https://archive.org/details/OperaMagistris Detailed mathematical developments of most common DoE] in the Opera Magistris v3.6 online reference Chapter 15, section 7.4, {{ISBN|978-2-8399-0932-7}}.
+
+{{-}}
+{{Experimental design |state = collapsed }}
+{{Statistics | collection |state = collapsed&lt;!-- expanded --&gt; }}
+{{Medical research studies |state = collapsed}}
+{{Six Sigma Tools |state = collapsed }}
+
+{{Authority control}}
+
+{{DEFAULTSORT:Design Of Experiments}}
+[[Category:Design of experiments| ]]
+[[Category:Statistical theory]]
+[[Category:Industrial engineering]]
+[[Category:Systems engineering]]
+[[Category:Statistical process control]]
+[[Category:Quantitative research]]
+[[Category:Experiments]]
+[[Category:Metascience]]</text>
+      <sha1>l0sf6h3uefwz0jfcla9ffq2r4ehrlx9</sha1>
+    </revision>
+  </page>

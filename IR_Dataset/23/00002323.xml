@@ -1,0 +1,203 @@
+  <page>
+    <title>Amdahl's law</title>
+    <ns>0</ns>
+    <id>2323</id>
+    <revision>
+      <id>939927726</id>
+      <parentid>924763937</parentid>
+      <timestamp>2020-02-09T15:33:03Z</timestamp>
+      <contributor>
+        <username>Finnusertop</username>
+        <id>19089174</id>
+      </contributor>
+      <minor />
+      <comment>[[MOS:ORDER]]</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{more footnotes|date=April 2017}}
+   [[File:AmdahlsLaw.svg|thumb|400px|Evolution according to Amdahl's law of the theoretical speedup is latency of the execution of a program in function of the number of processors executing it. The speedup is limited by the serial part of the program. For example, if 95% of the program can be parallelized, the theoretical maximum speedup using parallel computing would be 20 times.]]
+
+In [[computer architecture]], '''Amdahl's law''' (or '''Amdahl's argument'''&lt;ref&gt;{{harvnb|Rodgers|1985|p=226}}&lt;/ref&gt;) is a formula which gives the theoretical [[speedup]] in [[latency (engineering)|latency]] of the execution of a task at fixed [[workload]] that can be expected of a system whose resources are improved. It is named after computer scientist [[Gene Amdahl]], and was presented at the [[American Federation of Information Processing Societies|AFIPS]] Spring Joint Computer Conference in 1967.
+
+Amdahl's law is often used in [[parallel computing]] to predict the theoretical speedup when using multiple processors. For example, if a program needs 20 hours using a single processor core, and a particular part of the program which takes one hour to execute cannot be parallelized, while the remaining 19 hours ({{nowrap|1=''p'' = 0.95}}) of execution time can be parallelized, then regardless of how many processors are devoted to a parallelized execution of this program, the minimum execution time cannot be less than that critical one hour. Hence, the theoretical speedup is limited to at most 20 times &lt;math&gt;\left(\dfrac{1}{1-p} = 20\right)&lt;/math&gt;. For this reason, parallel computing with many processors is useful only for highly parallelizable programs.
+
+== Definition ==
+
+Amdahl's law can be formulated in the following way:
+: &lt;math&gt;S_\text{latency}(s) = \frac 1 {(1 - p) + \frac p s}&lt;/math&gt;
+where
+* ''S''&lt;sub&gt;latency&lt;/sub&gt; is the theoretical speedup of the execution of the whole task;
+* ''s'' is the speedup of the part of the task that benefits from improved system resources;
+* ''p'' is the proportion of execution time that the part benefiting from improved resources originally occupied.
+
+Furthermore,
+
+: &lt;math&gt;
+\begin{cases}
+S_\text{latency}(s) \leq \dfrac 1 {1 - p} \\[8pt]
+\lim\limits_{s \to \infty} S_\text{latency}(s) = \dfrac 1 {1 - p}.
+\end{cases}
+&lt;/math&gt;
+
+shows that the theoretical speedup of the execution of the whole task increases with the improvement of the resources of the system and that regardless of the magnitude of the improvement, the theoretical speedup is always limited by the part of the task that cannot benefit from the improvement.
+
+Amdahl's law applies only to the cases where the problem size is fixed. In practice, as more computing resources become available, they tend to get used on larger problems (larger datasets), and the time spent in the parallelizable part often grows much faster than the inherently serial work. In this case, [[Gustafson's law]] gives a less pessimistic and more realistic assessment of the parallel performance.&lt;ref&gt;{{cite book
+| author1=Michael McCool
+| author2=James Reinders
+| author3=Arch Robison
+| title=Structured Parallel Programming: Patterns for Efficient Computation
+| publisher=Elsevier
+| year=2013
+| pages=61}}&lt;/ref&gt;
+
+== Derivation ==
+
+A task executed by a system whose resources are improved compared to an initial similar system can be split up into two parts:
+
+* a part that does not benefit from the improvement of the resources of the system;
+* a part that benefits from the improvement of the resources of the system.
+
+An example is a computer program that processes files from disk. A part of that program may scan the directory of the disk and create a list of files internally in memory. After that, another part of the program passes each file to a separate [[Thread (computing)|thread]] for processing. The part that scans the directory and creates the file list cannot be sped up on a parallel computer, but the part that processes the files can.
+
+The execution time of the whole task before the improvement of the resources of the system is denoted as &lt;math&gt; T &lt;/math&gt;. It includes the execution time of the part that would not benefit from the improvement of the resources and the execution time of the one that would benefit from it. The fraction of the execution time of the task that would benefit from the improvement of the resources is denoted by &lt;math&gt; p &lt;/math&gt;. The one concerning the part that would not benefit from it is therefore {{nowrap |&lt;math&gt; 1 - p &lt;/math&gt;}}. Then:
+
+: &lt;math&gt;T = (1 - p)T + pT.&lt;/math&gt;
+
+It is the execution of the part that benefits from the improvement of the resources that is accelerated by the factor &lt;math&gt; s &lt;/math&gt; after the improvement of the resources. Consequently, the execution time of the part that does not benefit from it remains the same, while the part that benefits from it becomes:
+
+: &lt;math&gt;\frac{p}{s}T.&lt;/math&gt;
+
+The theoretical execution time &lt;math&gt; T (s) &lt;/math&gt; of the whole task after the improvement of the resources is then:
+
+: &lt;math&gt;T(s) = (1 - p)T + \frac p s T.&lt;/math&gt;
+
+Amdahl's law gives the theoretical [[speedup]] in [[Latency (engineering)|latency]] of the execution of the whole task ''at fixed workload &lt;math&gt; W &lt;/math&gt;'', which yields
+: &lt;math&gt;S_\text{latency}(s) = \frac{TW}{T(s)W} = \frac{T}{T(s)} = \frac 1 {1 - p + \frac p s}.&lt;/math&gt;
+
+=== Parallel programs ===
+
+If 30% of the execution time may be the subject of a speedup, ''p'' will be 0.3; if the improvement makes the affected part twice as fast, ''s'' will be&amp;nbsp;2. Amdahl's law states that the overall speedup of applying the improvement will be:
+
+: &lt;math&gt;S_\text{latency} = \frac{1}{1 - p + \frac{p}{s}} = \frac 1 {1 - 0.3 + \frac {0.3} 2} = 1.18.&lt;/math&gt;
+
+For example, assume that we are given a serial task which is split into four consecutive parts, whose percentages of execution time are {{nowrap|1=''p''1 = 0.11}}, {{nowrap|1=''p''2 = 0.18}}, {{nowrap|1=''p''3 = 0.23}}, and {{nowrap|1=''p''4 = 0.48}} respectively. Then we are told that the 1st part is not sped up, so {{nowrap|1=''s''1 = 1}}, while the 2nd part is sped up 5 times, so {{nowrap|1=''s''2 = 5}}, the 3rd part is sped up 20 times, so {{nowrap|1=''s''3 = 20}}, and the 4th part is sped up 1.6 times, so {{nowrap|1=''s''4 = 1.6}}. By using Amdahl's law, the overall speedup is
+: &lt;math&gt;S_\text{latency} = \frac{1}{\frac{p1}{s1} + \frac{p2}{s2} + \frac{p3}{s3} + \frac{p4}{s4}} = \frac{1}{\frac{0.11}{1} + \frac{0.18}{5} + \frac{0.23}{20} + \frac{0.48}{1.6}} = 2.19.&lt;/math&gt;
+Notice how the 5 times and 20 times speedup on the 2nd and 3rd parts respectively don't have much effect on the overall speedup when the 4th part (48% of the execution time) is accelerated by only 1.6 times.
+
+=== Serial programs ===
+[[File:Optimizing-different-parts.svg|thumb|400px|Assume that a task has two independent parts, ''A'' and ''B''. Part ''B'' takes roughly 25% of the time of the whole computation. By working very hard, one may be able to make this part 5 times faster, but this reduces the time of the whole computation only slightly. In contrast, one may need to perform less work to make part ''A'' perform twice as fast. This will make the computation much faster than by optimizing part ''B'', even though part ''B'''s speedup is greater in terms of the ratio, (5 times versus 2 times).]]
+
+For example, with a serial program in two parts ''A'' and ''B'' for which {{nowrap|1=''T''&lt;sub&gt;''A''&lt;/sub&gt; = 3 s}} and {{nowrap|1=''T''&lt;sub&gt;''B''&lt;/sub&gt; = 1 s}},
+* if part ''B'' is made to run 5 times faster, that is {{nowrap|1=''s'' = 5}} and {{nowrap|1=''p'' = ''T''&lt;sub&gt;''B''&lt;/sub&gt;/(''T''&lt;sub&gt;''A''&lt;/sub&gt; + ''T''&lt;sub&gt;''B''&lt;/sub&gt;) = 0.25}}, then
+: &lt;math&gt;S_\text{latency} = \frac 1 {1 - 0.25 + \frac{0.25}{5}} = 1.25;&lt;/math&gt;
+*if part ''A'' is made to run 2 times faster, that is {{nowrap|1=''s'' = 2}} and {{nowrap|1=''p'' = ''T''&lt;sub&gt;''A''&lt;/sub&gt;/(''T''&lt;sub&gt;''A''&lt;/sub&gt; + ''T''&lt;sub&gt;''B''&lt;/sub&gt;) = 0.75}}, then
+: &lt;math&gt;S_\text{latency} = \frac 1 {1 - 0.75 + \frac{0.75}{2}} = 1.60.&lt;/math&gt;
+
+Therefore, making part ''A'' to run 2 times faster is better than making part ''B'' to run 5 times faster. The percentage improvement in speed can be calculated as
+: &lt;math&gt;\text{percentage improvement} = 100 \left(1 - \frac 1 {S_\text{latency}}\right).&lt;/math&gt;
+
+* Improving part ''A'' by a factor of 2 will increase overall program speed by a factor of 1.60, which makes it 37.5% faster than the original computation.
+* However, improving part ''B'' by a factor of 5, which presumably requires more effort, will achieve an overall speedup factor of 1.25 only, which makes it 20% faster.
+
+=== Optimizing the sequential part of parallel programs ===
+
+If the non-parallelizable part is optimized by a factor of {{nowrap |&lt;math&gt; O &lt;/math&gt;}}, then
+
+: &lt;math&gt;T(O,s) =  (1 - p)\frac{T}{O} + \frac{p}{s} T.&lt;/math&gt;
+
+It follows from Amdahl's law that the speedup due to parallelism is given by
+: &lt;math&gt;S_\text{latency}(O,s) = \frac{T(O)}{T(O,s)} = \frac {(1 - p)\frac{1}{O} + {p} } {\frac{1 - p}{O} + \frac p s}.&lt;/math&gt;
+
+When &lt;math&gt;s=1&lt;/math&gt;, we have &lt;math&gt;S_\text{latency}(O,s)=1&lt;/math&gt;, meaning that the speedup is
+measured with respect to the execution time after the non-parallelizable part is optimized.
+
+When  &lt;math&gt;s=\infty&lt;/math&gt;, 
+: &lt;math&gt;S_\text{latency}(O,\infty) = \frac{T(O)}{T(O,s)} = \frac {(1 - p)\frac{1}{O} + {p} } {\frac{1 - p}{O} + \frac p s}= 1 + \frac{p}{1-p}O.&lt;/math&gt;
+
+If  &lt;math&gt;1-p=0.4&lt;/math&gt;, &lt;math&gt;O=2&lt;/math&gt; and &lt;math&gt;s=5&lt;/math&gt;, then:
+
+: &lt;math&gt;S_\text{latency}(O,s) = \frac{T(O)}{T(O,s)} = \frac{ {0.4} \frac{1}{2} + 0.6} {\frac{0.4}{2} + \frac{0.6}{5} }   = 2.5.&lt;/math&gt;
+
+=== Transforming sequential parts of parallel programs into parallelizable ===
+
+Next, we consider the case wherein the non-parallelizable part is reduced by a factor of {{nowrap |&lt;math&gt; O' &lt;/math&gt;}}, and the parallelizable part is correspondingly increased. Then
+
+: &lt;math&gt;T'(O',s) =  \frac{1 - p}{O'} T + \left(1-\frac{1-p}{O'}\right) \frac{T}{s}.&lt;/math&gt;
+
+It follows from Amdahl's law that the speedup due to parallelism is given by
+: &lt;math&gt;S'_\text{latency}(O',s) = \frac{T'(O')}{T'(O',s)} = \frac { 1  } {  \frac{1 - p}{O'} + \left(1-\frac{1-p}{O'}\right) \frac{1}{s}}.&lt;/math&gt;
+
+The derivation above is in agreement with Jakob Jenkov's analysis of the execution time vs. speedup tradeoff.&lt;ref&gt;http://tutorials.jenkov.com/java-concurrency/amdahls-law.html&lt;/ref&gt;
+
+== Relation to the law of diminishing returns ==
+
+Amdahl's law is often conflated with the [[law of diminishing returns]], whereas only a special case of applying Amdahl's law demonstrates law of diminishing returns. If one picks optimally (in terms of the achieved speedup) what to improve, then one will see monotonically decreasing improvements as one improves. If, however, one picks non-optimally, after improving a sub-optimal component and moving on to improve a more optimal component, one can see an increase in the return. Note that it is often rational to improve a system in an order that is &quot;non-optimal&quot; in this sense, given that some improvements are more difficult or require larger development time than others.
+
+Amdahl's law does represent the law of diminishing returns if on considering what sort of return one gets by adding more processors to a machine, if one is running a fixed-size computation that will use all available processors to their capacity. Each new processor added to the system will add less usable power than the previous one. Each time one doubles the number of processors the speedup ratio will diminish, as the total throughput heads toward the limit of 1/(1&amp;nbsp;−&amp;nbsp;''p'').
+
+This analysis neglects other potential bottlenecks such as [[memory bandwidth]] and I/O bandwidth. If these resources do not scale with the number of processors, then merely adding processors provides even lower returns.
+
+An implication of Amdahl's law is that to speedup real applications which have both serial and parallel portions, [[heterogeneous computing]] techniques are required.&lt;ref&gt;&quot;Amdahl's Law in the Multicore Era&quot;, Computer, 41 (7), 33–38, 2008 &lt;/ref&gt; For example, a CPU-GPU heterogeneous processor may provide higher performance and energy efficiency than a CPU-only or GPU-only processor.&lt;ref&gt;&quot;[https://www.academia.edu/12355899/A_Survey_of_CPU-GPU_Heterogeneous_Computing_Techniques A Survey of CPU-GPU Heterogeneous Computing Techniques]&quot;, ACM Computing Surveys, 47(4),  69:1–69:35, 2015 &lt;/ref&gt;
+
+== See also ==
+
+* [[Gustafson's law]]
+* [[Critical path method]]
+* [[Moore's law]]
+
+== References ==
+{{reflist}}
+
+=== Works cited ===
+* {{cite journal
+| last = Rodgers
+| first = David P.
+| date = June 1985
+| title = Improvements in multiprocessor system design
+| journal = ACM SIGARCH Computer Architecture News
+| volume = 13
+| issue = 3
+| pages = 225–231
+| issn = 0163-5964
+| publisher = [[Association for Computing Machinery|ACM]]
+| location = New York, NY, USA
+| doi = 10.1145/327070.327215
+| ref=harv
+| isbn=0-8186-0634-7}}
+
+== Further reading ==
+
+* {{cite journal
+| first = Gene M.
+| last = Amdahl
+| url = http://www-inst.eecs.berkeley.edu/~n252/paper/Amdahl.pdf
+| doi=10.1145/1465482.1465560
+| title = Validity of the Single Processor Approach to Achieving Large-Scale Computing Capabilities
+| journal = AFIPS Conference Proceedings
+| issue = 30
+| pages = 483–485
+| year = 1967
+| ref=harv}}
+
+== External links ==
+{{commonscat}}
+
+* {{Cite web |url=http://www.futurechips.org/thoughts-for-researchers/parallel-programming-gene-amdahl-said.html |title=Parallel Programming: When Amdahl's law is inapplicable? |access-date=2011-06-26 |archive-url=https://archive.is/20130414224506/http://www.futurechips.org/thoughts-for-researchers/parallel-programming-gene-amdahl-said.html |archive-date=2013-04-14 |url-status=dead|date=2011-06-25 }}
+
+* {{citation |author=Gene M. Amdahl|hdl=11299/104341|title=Oral history interview with Gene M. Amdahl|publisher=[[Charles Babbage Institute]], University of Minnesota |year=1989}}. Amdahl discusses his graduate work at the University of Wisconsin and his design of [[Wisconsin Integrally Synchronized Computer|WISC]]. Discusses his role in the design of several computers for IBM including the [[IBM Stretch|STRETCH]], [[IBM 701]], and [[IBM 704]]. He discusses his work with [[Nathaniel Rochester (computer scientist)|Nathaniel Rochester]] and IBM's management of the design process. Mentions work with [[TRW Inc.|Ramo-Wooldridge]], [[Aeronutronic]], and [[Computer Sciences Corporation]]
+* [http://www.julianbrowne.com/article/viewer/amdahls-law Amdahl's Law: Not all performance improvements are created equal] (2007)
+* [http://demonstrations.wolfram.com/AmdahlsLaw/ &quot;Amdahl's Law&quot;] by Joel F. Klein, [[Wolfram Demonstrations Project]] (2007)
+* [https://research.cs.wisc.edu/multifacet/amdahl/ Amdahl's Law in the Multicore Era] (July 2008)
+* [http://www.cprogramming.com/parallelism.html What the $#@! is Parallelism, Anyhow?] (Charles Leiserson, May 2008)
+* [https://web.archive.org/web/20160304000551/https://www.cs.sfu.ca/~fedorova/papers/TurboBoostEvaluation.pdf Evaluation of the Intel Core i7 Turbo Boost feature], by James Charles, Preet Jassi, Ananth Narayan S, Abbas Sadat and Alexandra Fedorova (2009)
+* [https://www.researchgate.net/publication/228569958 Calculation of the acceleration of parallel programs as a function of the number of threads], by George Popov, Valeri Mladenov and Nikos Mastorakis (January 2010)
+* [https://www.webofstories.com/play/danny.hillis/109 Danny Hillis - Proving Amdahl's Law wrong, video recorded October 2016]
+
+{{Computer laws}}
+{{Parallel Computing}}
+
+[[Category:Analysis of parallel algorithms]]
+[[Category:Computer architecture statements]]</text>
+      <sha1>o5v2hiw2w0dnipxx7icx6rglebt6b37</sha1>
+    </revision>
+  </page>

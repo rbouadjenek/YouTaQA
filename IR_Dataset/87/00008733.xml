@@ -1,0 +1,210 @@
+  <page>
+    <title>Digital video</title>
+    <ns>0</ns>
+    <id>8733</id>
+    <revision>
+      <id>943141439</id>
+      <parentid>943141419</parentid>
+      <timestamp>2020-02-29T02:55:17Z</timestamp>
+      <contributor>
+        <username>ShawCannon90</username>
+        <id>36404770</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{about|digital techniques applied to video|the standard format for storing digital video|DV|other uses}}
+{{short description|digital electronic representation of moving visual images}}
+
+{{more citations needed|date=January 2010}}
+
+'''[[Digital rights management|Digital]] video''' is an electronic representation of moving visual images ([[video]]) in the form of encoded [[digital data]]. This is in contrast to [[analog video]], which represents moving visual images with [[analog signal]]s. Digital video comprises a series of [[digital image]]s displayed in rapid succession.
+
+Digital video was first introduced commercially in 1986 with the [[D1 (Sony)|Sony D1]] format,&lt;ref&gt;{{cite web|url=https://mosdellmedia.blogspot.com/2013/12/understanding-video-technology.html|title=Media Production: Understanding Video Technology|last=Unknown|date=2013-12-04|website=Media Production|access-date=2019-06-10}}&lt;/ref&gt; which recorded an uncompressed [[standard definition]] [[component video]] signal in digital form. In addition to uncompressed formats, popular [[Data compression|compressed]] digital video formats today include [[H.264]] and [[MPEG-4]]. Modern interconnect standards for digital video include [[HDMI]], [[DisplayPort]], [[Digital Visual Interface]] (DVI) and [[serial digital interface]] (SDI).
+
+Digital video can be copied with no degradation in quality. In contrast, when analog sources are copied, they experience [[generation loss]]. Digital video can be stored on digital media such as [[Blu-ray Disc]], on [[computer data storage]] or [[streaming video|streamed]] over the [[Internet]] to [[end user]]s who watch content on a [[desktop computer]] screen or a digital [[smart TV]]. In everyday practice, digital video content such as [[TV show]]s and [[movie]]s also includes a [[digital audio]] soundtrack.
+
+==History==
+===Digital video cameras===
+{{See|Digital cinematography|Image sensor|Video camera}}
+
+The basis for [[digital video camera]]s are [[metal-oxide-semiconductor]] (MOS) [[image sensors]].&lt;ref name=&quot;Williams&quot;&gt;{{cite book |last1=Williams |first1=J. B. |title=The Electronics Revolution: Inventing the Future |date=2017 |publisher=Springer |isbn=9783319490885 |pages=245–8 |url=https://books.google.com/books?id=v4QlDwAAQBAJ&amp;pg=PA245}}&lt;/ref&gt; The first practical [[semiconductor]] image sensor was the [[charge-coupled device]] (CCD), invented in 1969,&lt;ref&gt;{{Cite book | title = Scientific charge-coupled devices | author = James R. Janesick | publisher = SPIE Press | year = 2001 | isbn = 978-0-8194-3698-6 | pages = 3–4 | url = https://books.google.com/?id=3GyE4SWytn4C&amp;pg=PA3 }}&lt;/ref&gt; based on [[MOS capacitor]] technology.&lt;ref name=&quot;Williams&quot;/&gt; Following the commercialization of CCD sensors during the late 1970s to early 1980s, the [[entertainment industry]] slowly began transitioning to [[digital imaging]] and digital video over the next two decades.&lt;ref&gt;{{cite book |last1=Stump |first1=David |title=Digital Cinematography: Fundamentals, Tools, Techniques, and Workflows |date=2014 |publisher=[[CRC Press]] |isbn=978-1-136-04042-9 |pages=83–5 |url=https://books.google.com/books?id=c-MjAwAAQBAJ&amp;pg=PA83}}&lt;/ref&gt; The CCD was followed by the [[CMOS]] [[active-pixel sensor]] ([[CMOS sensor]]),&lt;ref&gt;{{cite book |last1=Stump |first1=David |title=Digital Cinematography: Fundamentals, Tools, Techniques, and Workflows |date=2014 |publisher=[[CRC Press]] |isbn=978-1-136-04042-9 |pages=19–22 |url=https://books.google.com/books?id=c-MjAwAAQBAJ&amp;pg=PA19}}&lt;/ref&gt; developed in the 1990s.&lt;ref name=&quot;Fossum2014&quot;&gt;{{cite journal |last1=Fossum |first1=Eric R. |author1-link=Eric Fossum |last2=Hondongwa |first2=D. B. |title=A Review of the Pinned Photodiode for CCD and CMOS Image Sensors |journal=IEEE Journal of the Electron Devices Society |date=2014 |volume=2 |issue=3 |pages=33–43 |doi=10.1109/JEDS.2014.2306412 }}&lt;/ref&gt;&lt;ref name=fossum93&gt;{{cite journal |last1=Fossum |first1=Eric R. |author1-link=Eric Fossum |title=Active pixel sensors: are CCDs dinosaurs? |journal=SPIE Proceedings Vol. 1900: Charge-Coupled Devices and Solid State Optical Sensors III |volume=1900 |date=12 July 1993 |doi=10.1117/12.148585 |bibcode=1993SPIE.1900....2F |citeseerx=10.1.1.408.6558 |publisher=International Society for Optics and Photonics |pages=2–14 |editor1-last=Blouke |editor1-first=Morley M.}}&lt;/ref&gt;
+
+===Digital video coding===
+{{See|Video coding format#History}}
+
+The earliest forms of digital [[video coding]] began in the 1970s, with uncompressed [[pulse-code modulation]] (PCM) video, requiring high [[bitrate]]s between 45{{ndash}}140 [[Mbps]] for [[standard definition]] (SD) content. Practical digital video coding was eventually made possible with the [[discrete cosine transform]] (DCT), a form of [[lossy compression]].&lt;ref name=&quot;Ghanbari&quot;&gt;{{cite book |last1=Ghanbari |first1=Mohammed |title=Standard Codecs: Image Compression to Advanced Video Coding |date=2003 |publisher=[[Institution of Engineering and Technology]] |isbn=9780852967102 |pages=1–2 |url=https://books.google.com/books?id=7XuU8T3ooOAC&amp;pg=PA1}}&lt;/ref&gt; DCT compression was first proposed by [[N. Ahmed|Nasir Ahmed]] in 1972, and then developed by Ahmed with T. Natarajan and [[K. R. Rao]] at the [[University of Texas]] in 1973.&lt;ref name=&quot;Ahmed&quot;&gt;{{cite journal |last=Ahmed |first=Nasir |author-link=N. Ahmed |title=How I Came Up With the Discrete Cosine Transform |journal=[[Digital Signal Processing (journal)|Digital Signal Processing]] |date=January 1991 |volume=1 |issue=1 |pages=4–5 |doi=10.1016/1051-2004(91)90086-Z |url=https://www.scribd.com/doc/52879771/DCT-History-How-I-Came-Up-with-the-Discrete-Cosine-Transform}}&lt;/ref&gt;&lt;ref name=&quot;pubDCT&quot;&gt;{{Citation |first=Nasir |last=Ahmed |author1-link=N. Ahmed |first2=T. |last2=Natarajan |first3=K. R. |last3=Rao |title=Discrete Cosine Transform |journal=IEEE Transactions on Computers |date=January 1974 |volume=C-23 |issue=1 |pages=90–93 |doi=10.1109/T-C.1974.223784}}&lt;/ref&gt;&lt;ref name=&quot;pubRaoYip&quot;&gt;{{Citation |last1=Rao |first1=K. R. |authorlink1=K. R. Rao |last2=Yip |first2=P. |title=Discrete Cosine Transform: Algorithms, Advantages, Applications |publisher=Academic Press |location=Boston |year=1990 |isbn=978-0-12-580203-1}}&lt;/ref&gt; DCT would later become the standard for digital [[video compression]] since the late 1980s.&lt;ref name=&quot;Ghanbari&quot;/&gt;
+
+The first digital [[video coding standard]] was [[H.120]], created by the [[ITU-T|CCITT]] (now ITU-T) in 1984. H.120 was not practical, due to weak performance.&lt;ref name=&quot;history&quot;&gt;{{cite web |title=The History of Video File Formats Infographic |url=http://www.real.com/resources/digital-video-file-formats/ |website=[[RealNetworks]] |accessdate=5 August 2019 |date=22 April 2012}}&lt;/ref&gt; H.120 was based on [[differential pulse-code modulation]] (DPCM), a lossless compression algorithm that was inefficient for video coding. During the late 1980s, a number of companies began experimenting with DCT, a much more efficient form of compression for video coding. The CCITT received 14 proposals for DCT-based video compression formats, in contrast to a single proposal based on [[vector quantization]] (VQ) compression. The [[H.261]] standard was developed based on DCT compression.&lt;ref name=&quot;Ghanbari&quot;/&gt; H.261 was the first practical video coding standard.&lt;ref name=&quot;history&quot; /&gt; Since H.261, DCT compression has been adopted by all the major video coding standards that followed.&lt;ref name=&quot;Ghanbari&quot;/&gt;
+
+[[MPEG-1]], developed by the [[Motion Picture Experts Group]] (MPEG), followed in 1991, and it was designed to compress [[VHS]]-quality video. It was succeeded in 1994 by [[MPEG-2]]/[[H.262/MPEG-2 Part 2|H.262]],&lt;ref name=&quot;history&quot;/&gt; which became the standard video format for [[DVD]] and [[Standard definition|SD]] [[digital television]].&lt;ref name=&quot;history&quot;/&gt; It was followed by [[MPEG-4 Visual|MPEG-4]]/[[H.263]] in 1999, and then in 2003 it was followed by [[H.264/MPEG-4 AVC]], which has become the most widely used video coding standard.&lt;ref name=&quot;history&quot;/&gt;
+
+===Digital video production===
+Starting in the late 1970s to the early 1980s, several types of [[video production]] equipment that were digital in their internal workings were introduced. These included [[time base corrector]]s (TBC){{efn|For example the [[Thomson-CSF]] 9100 Digital Video Processor, an internally all-digital full-frame TBC introduced in 1980.}} and [[digital video effects]] (DVE) units.{{efn|For example the [[Ampex]] ADO, and the [[Nippon Electric Corporation]] (NEC) DVE.}} They operated by taking a standard analog [[composite video]] input and digitizing it internally. This made it easier to either correct or enhance the video signal, as in the case of a TBC, or to manipulate and add effects to the video, in the case of a DVE unit. The digitized and processed video information was then converted back to standard analog video for output.
+
+Later on in the 1970s, manufacturers of professional video broadcast equipment, such as [[Robert Bosch GmbH|Bosch]] (through their [[Fernseh]] division) and [[Ampex]] developed prototype digital [[videotape recorder]]s (VTR) in their research and development labs. Bosch's machine used a modified [[1 inch type B videotape]] transport, and recorded an early form of [[CCIR 601]] digital video. Ampex's prototype digital video recorder used a modified [[2 inch Quadruplex videotape]] VTR (an Ampex AVR-3), but fitted with custom digital video electronics, and a special &quot;octaplex&quot; 8-head headwheel (regular analog 2&quot; Quad machines only used 4 heads). Like standard 2&quot; Quad, the audio on the Ampex prototype digital machine, nicknamed by its developers as &quot;Annie&quot;, still recorded the audio in analog as linear tracks on the tape. None of these machines from these manufacturers were ever marketed commercially.
+
+Digital video was first introduced commercially in 1986 with the Sony [[D-1 (Sony)|D1]] format, which recorded an uncompressed [[standard definition]] [[component video]] signal in digital form. Component video connections required 3 cables and most [[television]] facilities were wired for composite NTSC or PAL video using one cable. Due this incompatibility and also due to the cost of the recorder, D1 was used primarily by large [[television network]]s and other component-video capable video studios.
+
+In 1988, Sony and Ampex co-developed and released the [[D-2 (video)|D2]] digital videocassette format, which recorded video digitally without compression in [[ITU-601]] format, much like D1. But D2 had the major difference of encoding the video in composite form to the NTSC standard, thereby only requiring single-cable composite video connections to and from a D2 VCR, making it a perfect fit for the majority of television facilities at the time. D2 was a successful format in the [[television broadcast]] industry throughout the late '80s and the '90s. D2 was also widely used in that era as the master tape format for mastering [[laserdiscs]].{{efn|Prior to D2, most laserdiscs were mastered using analog [[1&quot; Type C videotape]]}}
+
+D1 &amp; D2 would eventually be replaced by cheaper systems using [[video compression]], most notably Sony's [[Digital Betacam]]{{efn|Digital Betacam is still heavily used as an [[electronic field production]] (EFP) recording format by professional television producers}} that were introduced into the network's [[television studio]]s. Other examples of digital video formats utilizing compression were Ampex's [[DCT (videocassette format)|DCT]] (the first to employ such when introduced in 1992), the industry-standard [[DV]] and MiniDV and its professional variations, Sony's [[DVCAM]] and Panasonic's [[DVCPRO]], and [[Betacam SX]], a lower-cost variant of Digital Betacam using [[MPEG-2]] compression.{{cn|date=June 2018}}
+
+One of the first digital video products to run on personal computers was ''PACo: The PICS Animation Compiler'' from The Company of Science &amp; Art in Providence, RI, which was developed starting in 1990 and first shipped in May 1991. PACo could stream unlimited-length video with synchronized sound from a single file (with the &quot;.CAV&quot; [[file extension]]) on CD-ROM. Creation required a Mac; playback was possible on Macs, PCs, and Sun [[SPARCstation]]s.&lt;ref&gt;{{cite web |title=CoSA Lives: The Story of the Company Behind After Effects |url=http://www.motionworks.com.au/2009/11/cosa-lives/ |archive-url=https://web.archive.org/web/20110227132422/http://motionworks.com.au/2009/11/cosa-lives/ |archive-date=2011-02-27 |access-date=2009-11-16 |url-status=live }}&lt;/ref&gt;
+
+[[QuickTime]], [[Apple Computer]]'s multimedia framework appeared in June 1991. [[Audio Video Interleave]] from [[Microsoft]] followed in 1992. Initial consumer-level content creation tools were crude, requiring an analog video source to be digitized to a computer-readable format. While low-quality at first, consumer digital video increased rapidly in quality, first with the introduction of playback standards such as [[MPEG-1]] and [[MPEG-2]] (adopted for use in television transmission and [[DVD]] media), and then the introduction of the [[DV]] tape format allowing recordings in the format to be transferred direct to digital video files using a [[FireWire]] port on an editing computer. This simplified the process, allowing [[non-linear editing system]]s (NLE) to be deployed cheaply and widely on [[desktop computer]]s with no external playback or recording equipment needed.
+
+The widespread adoption of digital video and accompanying compression formats has reduced the bandwidth needed for a [[high-definition video]] signal (with [[HDV]] and [[AVCHD]], as well as several commercial variants such as [[DVCPRO]]-HD, all using less bandwidth than a standard definition analog signal). These savings have increased the number of channels available on [[cable television]] and [[direct broadcast satellite]] systems, created opportunities for [[spectrum reallocation]] of [[terrestrial television]] broadcast frequencies, made [[tapeless camcorder]]s based on [[flash memory]] possible among other innovations and efficiencies.
+
+==Overview ==
+
+Digital video comprises a series of [[digital image]]s displayed in rapid succession. In the context of video these images are called [[film frame|frames]].{{efn|In fact the still images correspond to frames only in the case of progressive scan video. In interlaced video they correspond to fields. See section about interlacing for clarification.}} The rate at which frames are displayed is known as the [[frame rate]] and is measured in frames per second (FPS). Every frame is an orthogonal bitmap digital image and so comprises a raster of [[pixel]]s. Pixels have only one property, their color. The color of a pixel is represented by a fixed number of bits. The more bits the more subtle variations of colors can be reproduced. This is called the [[color depth]] of the video.
+
+===Interlacing===
+In [[interlaced video]] each ''frame'' is composed of two halves of an image. The first half contains only the odd-numbered lines of a full frame. The second half contains only the even-numbered lines. Those halves are referred to individually as ''fields''. Two consecutive fields compose a full frame. If an interlaced video has a frame rate of 30 frames per second the field rate is 60 fields per second. All the properties discussed here apply equally to interlaced video but one should be careful not to confuse the fields-per-second rate with the frames-per-second rate.
+
+===Bit rate and BPP===
+By its definition, [[bit rate]] is a measure of the rate of information content of the digital video stream. In the case of uncompressed video, bit rate corresponds directly to the quality of the video as bit rate is proportional to every property that affects the [[video quality]]. Bit rate is an important property when transmitting video because the transmission link must be capable of supporting that bit rate. Bit rate is also important when dealing with the storage of video because, as shown above, the video size is proportional to the bit rate and the duration. [[Video compression]] is used to greatly reduce the bit rate while having a lesser effect on quality. 
+
+Bits per pixel (BPP) is a measure of the efficiency of compression. A true-color video with no compression at all may have a BPP of 24 bits/pixel. [[Chroma subsampling]] can reduce the BPP to 16 or 12 bits/pixel. Applying [[jpeg]] compression on every frame can reduce the BPP to 8 or even 1 bits/pixel. Applying video compression algorithms like [[MPEG1]], [[MPEG2]] or [[MPEG4]] allows for fractional BPP values.
+
+====Constant bit rate versus variable bit rate====
+BPP represents the ''average'' bits per pixel. There are compression algorithms that keep the BPP almost constant throughout the entire duration of the video. In this case, we also get video output with a [[constant bitrate]] (CBR). This CBR video is suitable for real-time, non-buffered, fixed bandwidth video streaming (e.g. in videoconferencing). As not all frames can be compressed at the same level, because quality is more severely impacted for scenes of high complexity, some algorithms try to constantly adjust the BPP. They keep it high while compressing complex scenes and low for less demanding scenes. This way, one gets the best quality at the smallest average bit rate (and the smallest file size, accordingly). This method produces a [[variable bitrate]] because it tracks the variations of the BPP.
+
+==Technical overview==
+Standard [[film stock]]s typically record at 24 [[frame rate|frames per second]]. For video, there are two frame rate standards: [[NTSC]], at 30/1.001 (about 29.97) frames per second (about 59.94 fields per second), and [[PAL]], 25 frames per second (50 fields per second). Digital video cameras come in two different image capture formats: [[Interlaced video|interlace]]d and [[progressive scan]]. Interlaced cameras record the image in alternating sets of lines: the odd-numbered lines are scanned, and then the even-numbered lines are scanned, then the odd-numbered lines are scanned again, and so on. One set of odd or even lines is referred to as a ''field'', and a consecutive pairing of two fields of opposite parity is called a ''frame''. Progressive scan cameras record all lines in each frame as a single unit. Thus, interlaced video captures samples the scene motion twice as often as progressive video does, for the same frame rate. Progressive-scan generally produces a slightly sharper image. However, motion may not be as smooth as interlaced video.
+
+Digital video can be copied with no generation loss which degrades quality in analog systems. However a change in parameters like frame size or a change of the digital format can decrease the quality of the video due to [[image scaling]] and [[transcoding]] losses. Digital video can be manipulated and edited on a [[non-linear editing]] systems frequently implemented using commodity computer hardware and software.
+
+Digital video has a significantly lower cost than 35&amp;nbsp;mm film. In comparison to the high cost of [[film stock]], the digital media used for digital video recording, such as [[flash memory]] or [[hard disk drive]], used for recording digital video is very inexpensive. Digital video also allows footage to be viewed on location without the expensive and time-consuming chemical processing required by film. Network transfer of digital video makes physical deliveries of tapes and film reels unnecessary. 
+
+[[Digital television]] (including higher quality [[High Definition Television|HDTV]]) was introduced in most developed countries in early 2000s. Digital video is used in modern [[mobile phone]]s and [[Video teleconference|video conferencing]] systems. Digital video is used for [[Internet]] distribution of media, including [[streaming video]] and [[peer-to-peer]] movie distribution. 
+
+Many types of [[video compression]] exist for serving digital video over the internet and on optical disks. The file sizes of digital video used for professional editing are generally not practical for these purposes, and the video requires further compression with codecs.
+
+{{As of|2011}}, the highest resolution demonstrated for digital video generation is 35 [[megapixel]]s (8192 x 4320). The highest speed is attained in industrial and scientific [[high speed camera]]s that are capable of filming 1024x1024 video at up to 1 million frames per second for brief periods of recording.&lt;!--[[User:Kvng/RTH]]--&gt;
+
+== Properties ==
+An example video can have a '''duration (T)''' of 1 hour (3600''sec''), a frame size of 640x480 ''(WxH)'' at a color depth of 24 ''bits'' and a frame rate of 25''fps''. This example video has the following properties:
+* '''pixels per frame''' = 640 * 480 = 307,200
+* '''bits per frame''' = 307,200 * 24 = 7,372,800 = 7.37 ''Mbits''
+* '''bit rate (BR)''' = 7.37 * 25 = 184.25 '''''Mbits/sec'''''
+* '''video size (VS)'''&lt;ref&gt;the term ''video size'' is used instead of just ''size'' in order to avoid confusion with the ''frame size''&lt;/ref&gt; = 184 ''Mbits/sec'' * 3600 ''sec'' = 662,400 ''Mbits'' = 82,800 ''Mbytes'' = 82.8 '''''Gbytes'''''
+
+The most important properties are ''bit rate'' and ''video size''. The formulas relating those two with all other properties are:
+
+ BR = W * H * CD * FPS
+ VS = BR * T = W * H * CD * FPS * T
+ (units are: BR in bit/s, W and H in pixels, CD in bits, VS in bits, T in seconds)
+
+while some secondary formulas are:
+ ''pixels_per_frame'' = W * H
+ ''pixels_per_second'' = W * H * FPS
+ ''bits_per_frame'' = W * H * CD
+
+The above are accurate for [[uncompressed video]]. Because of the relatively high bit rate of uncompressed video, [[video compression]] is extensively used. In the case of compressed video each frame requires a small percentage of the original bits. Assuming a [[compression algorithm]] that shrinks the input data by a factor of '''CF''', the bit rate and video size would equal to:
+
+ BR = W * H * CD * FPS / CF
+ VS = BR * T / CF
+
+Note that it is not necessary that all frames are equally compressed by a factor of CF. In practice they are not, so CF is the ''average'' factor of compression for ''all'' the frames taken together.
+
+The above equation for the bit rate can be rewritten by combining the compression factor and the color depth like this:
+
+ BR = W * H * ( CD / CF ) * FPS
+
+The value '''(CD / CF)''' represents the '''average bits per pixel (BPP)'''. As an example, if there is a color depth of 12 bits/pixel and an algorithm that compresses at 40x, then BPP equals 0.3 (12/40). So in the case of compressed video the formula for bit rate is:
+
+ BR = W * H * BPP * FPS
+
+The same formula is valid for uncompressed video because in that case one can assume that the &quot;compression&quot; factor is 1 and that the average bits per pixel equal the color depth.
+
+==Interfaces and cables==
+
+Many interfaces have been designed specifically to handle the requirements of uncompressed digital video (from roughly 400 Mbit/s to 10 Gbit/s):
+
+*[[HDMI|High-Definition Multimedia Interface]]
+*[[Digital Visual Interface]]
+*[[Serial Digital Interface]]
+*[[DisplayPort]]
+*[[Digital component video]]
+*[[Unified Display Interface]]
+*[[IEEE 1394|FireWire]]
+*[[Universal Serial Bus|USB]]
+
+The following interface has been designed for carrying [[Moving Picture Experts Group|MPEG]]-Transport compressed video:
+* [[Digital Video Broadcasting|DVB]]-[[Asynchronous serial communication|ASI]]
+Compressed video is also carried using [[User Datagram Protocol|UDP]]-[[Internet Protocol|IP]] over [[Ethernet]]. Two approaches exist for this:
+* Using [[Real-time Transport Protocol|RTP]] as a wrapper for video packets
+* 1–7 [[MPEG transport stream|MPEG Transport Packets]] are placed directly in the [[User Datagram Protocol|UDP]] packet
+
+Alternative methods of carrying video over IP include:
+* [[Network Device Interface]]
+
+==Storage formats==
+
+===Encoding===
+All current formats, which are listed below, are [[Pulse-code modulation|PCM]] based.
+*[[CCIR 601]] used for broadcast stations
+*[[MPEG-4]] good for online distribution of large videos and video recorded to [[flash memory]]
+*[[MPEG-2]] used for DVDs, Super-VCDs, and many broadcast television formats
+*[[MPEG-1]] used for video CDs
+*[[H.261]]
+*[[H.263]]
+*[[H.264/MPEG-4 AVC|H.264]] also known as ''MPEG-4 Part 10'', or as ''AVC'', used for [[Blu-ray Disc]]s and some broadcast television formats
+*[[Theora]] used for video on Wikipedia
+
+===Tapes===
+{{main|Video tape}}
+* [[Betacam|Betacam SX]], [[Betacam IMX]], [[Digital Betacam]], or DigiBeta — Commercial video systems by [[Sony]], based on original [[Betamax]] technology
+* [[D-VHS]] — MPEG-2 format data recorded on a tape similar to [[S-VHS]]
+* [[D1 (Sony)|D1]], [[D2 (video format)|D2]], [[D3 (video)|D3]], [[D5 HD|D5]], [[D9 (video)|D9]] (also known as Digital-S) — various [[SMPTE]] commercial digital video standards
+* [[Digital8]] — DV-format data recorded on [[Hi8]]-compatible cassettes; largely a consumer format
+* [[DV]], [[MiniDV]] — used in most of today's videotape-based consumer camcorders; designed for high quality and easy editing; can also record high-definition data ([[HDV]]) in MPEG-2 format
+* [[DVCAM]], [[DVCPRO]] — used in professional broadcast operations; similar to DV but generally considered more robust; though DV-compatible, these formats have better audio handling.
+* [[DVCPRO]]50, [[DVCPRO]]HD support higher bandwidths as compared to Panasonic's DVCPRO.
+* [[HDCAM]] was introduced by Sony as a high-definition alternative to DigiBeta.
+* [[MicroMV]] — MPEG-2-format data recorded on a very small, matchbook-sized cassette; obsolete
+* [[ProHD]] — name used by JVC for its MPEG-2-based professional camcorders
+
+===Discs===
+{{main|Optical disc}}
+* [[Blu-ray Disc]]
+* [[DVD]]
+* [[VCD]]
+
+==See also==
+{{Div col|colwidth=20em}}
+*[[Digital audio]]
+*[[Digital cinematography]]
+*[[List of video topics]]
+*[[Video coding]]
+*[[Video editing software]]
+*[[Video hosting service]]
+*[[Webcam]]
+{{Div col end}}
+
+==Notes==
+{{Noteslist}}
+
+==References==
+{{reflist}}
+
+==External links==
+* [http://www.adamwilt.com/DV.html The DV, DVCAM, &amp; DVCPRO Formats – tech details, FAQ, and links]
+* [https://web.archive.org/web/20161021230910/http://www.equasys.de/videoformats.html Standard digital TV and video formats.]
+
+{{Digital systems}}
+{{Video storage formats}}
+
+{{DEFAULTSORT:Digital Video}}
+[[Category:Film and video technology]]
+[[Category:Video signal]]
+[[Category:Television terminology]]
+[[Category:Audiovisual introductions in 1986]]
+[[Category:Film and video terminology]]
+
+[[pl:Digital video]]
+[[pt:Vídeo digital]]</text>
+      <sha1>s9ttkq0dvl0o2wxe5bf1ebbdsr4msht</sha1>
+    </revision>
+  </page>

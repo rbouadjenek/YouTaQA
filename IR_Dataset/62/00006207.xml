@@ -1,0 +1,260 @@
+  <page>
+    <title>Electric current</title>
+    <ns>0</ns>
+    <id>6207</id>
+    <revision>
+      <id>938071868</id>
+      <parentid>937245602</parentid>
+      <timestamp>2020-01-28T23:29:08Z</timestamp>
+      <contributor>
+        <username>Srich32977</username>
+        <id>8372814</id>
+      </contributor>
+      <comment>Adding/removing wikilink(s)</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{short description|flow of electric charge}}
+{{pp-vandalism|small=yes}}
+{{Infobox physical quantity
+| name = Electric current
+| image = Ohm's Law with Voltage source TeX.svg
+| caption = A simple electric circuit, where current is represented by the letter ''i''. The relationship between the voltage (V), resistance (R), and current (I) is V=IR; this is known as [[Ohm's law]].
+| unit = [[ampere]]
+| otherunits =
+| symbols = ''I''
+| baseunits =
+| dimension = '''I'''
+| extensive =
+| intensive =
+| conserved =
+| transformsas =
+| derivations = &lt;math&gt;I = {V \over R} \, , I = {Q \over t} &lt;/math&gt;
+}}{{Electromagnetism|Network}}
+An '''electric current''' is the rate of flow of [[electric charge]] past a point&lt;ref name=&quot;horowitz&quot;&gt;{{cite book|title=The art of electronics|last1=Horowitz|first1=Paul|last2=Hill|first2=Winfield|author-link1=Paul Horowitz (scientist)|author-link2=Winfield Hill|date=2015|publisher=[[Cambridge University Press]]|isbn=978-0-521-80926-9|edition=3rd}}&lt;/ref&gt;{{rp|2}}&lt;ref name =&quot;Walker&quot;&gt;{{Cite book|url=|title=Fundamentals of physics|last1=Walker| first1=Jearl|date=2014| publisher=Wiley|last2=Halliday| first2=David |last3=Resnick |first3=Robert |isbn=978-1118230732|edition=10th |location=Hoboken, NJ |oclc=950235056}}&lt;/ref&gt;{{rp|622}} or region.&lt;ref name =&quot;Walker&quot;/&gt;{{rp|614}} An electric current is said to exist when there is a net flow of electric charge through a region.&lt;ref name=&quot;SerwayJewett2004&quot;&gt;{{cite book | last = Serway | first = Raymond A. | author2 = Jewett, John W. | title = Physics for Scientists and Engineers | edition = 6th | publisher = Thomson Brooks/Cole | year = 2004 | isbn = 0-534-40842-7 | url-access = registration | url = https://archive.org/details/physicssciengv2p00serw }}&lt;/ref&gt;{{rp|832}} In [[electric circuit]]s this charge is often carried by [[electron]]s moving through a [[wire]]. It can also be carried by [[ion]]s in an [[Electrolyte#Electrochemistry|electrolyte]], or by both ions and electrons such as in an ionized gas ([[Plasma (physics)|plasma]]).&lt;ref&gt;{{cite book
+ | title = The electronics companion
+ | author = Anthony C. Fischer-Cripps
+ | publisher = CRC Press
+ | year = 2004
+ | isbn = 978-0-7503-1012-3
+ | page = 13
+ | url = https://books.google.com/books?id=3SsYctmvZkoC&amp;pg=PA13
+ }}&lt;/ref&gt;
+
+The [[International System of Units|SI]] unit of electric current is the [[ampere]], which is the flow of electric charge across a surface at the rate of one [[coulomb]] per second. The ampere (symbol: A) is an SI base unit&lt;ref name=&quot;SI&quot;&gt;{{SIbrochure9th}}&lt;/ref&gt;{{rp|15}} Electric current is measured using a device called an [[ammeter]].&lt;ref name=Walker/&gt;{{rp|788}}
+
+Electric currents cause [[Joule heating]], which creates [[light]] in [[incandescent light bulbs]]. They also create [[magnetic fields]], which are used in motors, inductors and generators.
+
+The moving charged particles in an electric current are called [[charge carrier]]s.  In [[metal]]s, one or more electrons from each atom are loosely bound to the atom, and can move freely about within the metal. These [[conduction electron]]s are the charge carriers in metal conductors.
+
+==Symbol==
+The conventional symbol for current is {{math|''I''}}, which originates from the French phrase ''intensité du courant'', (current intensity).&lt;ref&gt;T. L. Lowe, John Rounce, ''Calculations for A-level Physics'', p. 2, Nelson Thornes, 2002 {{ISBN|0-7487-6748-7}}.&lt;/ref&gt;&lt;ref&gt;Howard M. Berlin, Frank C. Getz, ''Principles of Electronic Instrumentation and Measurement'', p. 37, Merrill Pub. Co., 1988 {{ISBN|0-675-20449-6}}.&lt;/ref&gt; Current intensity is often referred to simply as ''current''.&lt;ref&gt;K. S. Suresh Kumar, ''Electric Circuit Analysis'', Pearson Education India, 2013, {{ISBN|9332514100}}, section 1.2.3 &quot;'Current intensity' is usually referred to as 'current' itself.&quot;&lt;/ref&gt;  The {{math|''I''}} symbol was used by [[André-Marie Ampère]], after whom the unit of electric current is named, in formulating [[Ampère's force law]] (1820).&lt;ref&gt;A-M Ampère, [http://www.ampere.cnrs.fr/textes/recueil/pdf/recueilobservationsd.pdf ''Recueil d'Observations Électro-dynamiques''], p. 56, Paris: Chez Crochard Libraire 1822 (in French).&lt;/ref&gt;  The notation travelled from France to Great Britain, where it became standard, although at least one journal did not change from using {{math|''C''}} to {{math|''I''}} until 1896.&lt;ref&gt;[https://books.google.com/books?id=BCZLAAAAYAAJ ''Electric Power''], vol. 6, p. 411, 1894.&lt;/ref&gt;
+
+=={{anchor|Current}}Conventions==&lt;!-- This section is linked from [[Hall effect]] and [[conventional current]] --&gt;
+[[Image:Current notation.svg|thumb|left|230px|The [[electron]]s, the [[charge carrier]]s in an electrical circuit, flow in the opposite direction of the conventional electric current.]]
+[[File:Battery symbol2.svg|thumb|right|100px|The [[electronic symbol|symbol]] for a battery in a [[circuit diagram]].]]
+
+In a [[electrical conductor|conductive material]], the moving charged particles that constitute the electric current are called [[charge carrier]]s.  In metals, which make up the wires and other conductors in most [[electrical circuit]]s, the positively charged [[atomic nucleus|atomic nuclei]] of the atoms are held in a fixed position, and the negatively charged [[electron]]s are the charge carriers, free to move about in the metal. In other materials, notably the [[semiconductor]]s, the charge carriers can be positive ''or'' negative, depending on the [[dopant]] used. Positive and negative charge carriers may even be present at the same time, as happens in an [[electrolyte]] in an [[electrochemical cell]].
+
+A flow of positive charges gives the same electric current, and has the same effect in a circuit, as an equal flow of negative charges in the opposite direction. Since current can be the flow of either positive or negative charges, or both, a convention is needed for the direction of current that is independent of the type of [[charge carrier]]s.  The direction of ''conventional current'' is arbitrarily defined as the same direction as positive charges flow.
+
+Since electrons, the charge carriers in metal wires and most other parts of electric circuits, have a negative charge, as a consequence, they flow in the opposite direction of conventional current flow in an electrical circuit.
+
+===Reference direction===
+Since the current in a wire or component can flow in either direction, when a variable {{math|''I''}} is defined to represent that current, the direction representing positive current must be specified, usually by an arrow on the circuit [[schematic diagram]].  This is called the ''reference direction'' of current {{math|''I''}}.  If the current flows in the opposite direction, the variable {{math|''I''}} has a negative value.
+
+When analyzing electrical circuits, the actual direction of current through a specific circuit element is usually unknown. Consequently, the reference directions of currents are often assigned arbitrarily. When the circuit is solved, a negative value for the variable means that the actual direction of current through that circuit element is opposite that of the chosen reference direction. In electronic circuits, the reference current directions are often chosen so that all currents are toward ground. This often corresponds to the actual current direction, because in many circuits the [[power supply]] voltage is positive with respect to ground.
+
+==Ohm's law==
+{{Main|Ohm's law}}
+
+Ohm's law states that the current through a conductor between two points is directly [[Proportionality (mathematics)|proportional]] to the [[potential difference]] across the two points.  Introducing the constant of proportionality, the [[Electrical resistance|resistance]],&lt;ref&gt;{{cite book
+ | title = Automotive ignition systems
+ |author1=Consoliver, Earl L. |author2=Mitchell, Grover I.
+ | publisher = McGraw-Hill
+ | year = 1920
+ | isbn =
+ | page = 4
+ | url = https://books.google.com/books?id=_dYNAAAAYAAJ&amp;pg=PA4&amp;dq=ohm%27s+law+current+proportional+voltage+resistance
+ }}&lt;/ref&gt; one arrives at the usual mathematical equation that describes this relationship:&lt;ref name=Millikan&gt;{{cite book
+ | title = Elements of Electricity
+ | author = [[Robert A. Millikan]] and E. S. Bishop
+ | publisher = American Technical Society
+ | year = 1917
+ | page = 54
+ | url = https://books.google.com/books?id=dZM3AAAAMAAJ&amp;pg=PA54&amp;dq=%22Ohm%27s+law%22++current+directly+proportional
+ }}&lt;/ref&gt;
+:&lt;math&gt;I = \frac{V}{R}&lt;/math&gt;
+
+where ''I'' is the current through the conductor in units of [[ampere]]s, ''V'' is the potential difference measured ''across'' the conductor in units of [[volt]]s,  and ''R'' is the [[electrical resistance|resistance]] of the conductor in units of [[ohm]]s.  More specifically, Ohm's law states that the ''R'' in this relation is constant, independent of the current.&lt;ref&gt;{{cite book
+ | title = Electrical papers
+ | volume = 1
+ | author = Oliver Heaviside
+ | publisher = Macmillan and Co
+ | year = 1894
+ | page = 283
+ | url = https://books.google.com/books?id=lKV-AAAAMAAJ&amp;pg=PA284&amp;dq=ohm%27s+law+constant+ratio&amp;q=ohm's%20law%20constant%20ratio
+ | isbn = 978-0-8218-2840-3
+ }}&lt;/ref&gt;
+
+==Alternating and direct current==
+{{Anchor|AC and DC}}
+{{See also|War of the currents}}
+In [[alternating current]] (AC) systems, the movement of [[electric charge]] periodically reverses direction. AC is the form of [[electric power]] most commonly delivered to businesses and residences. The usual [[waveform]] of an [[AC power]] circuit is a [[sine wave]]. Certain applications use different waveforms, such as [[Triangle wave|triangular]] or [[square wave]]s. [[Audio frequency|Audio]] and [[Radio frequency|radio]] signals carried on electrical wires are also examples of alternating current. An important goal in these applications is recovery of information encoded (or ''[[modulated]]'') onto the AC signal.
+
+In contrast, [[direct current]] (DC) is the unidirectional flow of electric charge, or a system in which the movement of electric charge is in one direction only. Direct current is produced by sources such as [[battery (electrical)|batteries]], [[thermocouple]]s, [[solar cell]]s, and [[commutator (electric)|commutator]]-type electric machines of the [[dynamo]] type. Direct current may flow in a [[conductor (material)|conductor]] such as a wire, but can also flow through [[semiconductor]]s, [[electrical insulation|insulators]], or even through a [[vacuum]] as in [[electron beam|electron or ion beams]]. An [[archaism|old name]] for direct current was ''galvanic current''.&lt;ref&gt;{{cite book |title=Clinical Electrophysiology: Electrotherapy and Electrophysiologic Testing |author1=Andrew J. Robinson |author2=Lynn Snyder-Mackler |edition=3rd|year=2007 |publisher= Lippincott Williams &amp; Wilkins|isbn= 978-0-7817-4484-3|page=10|url=https://books.google.com/books?id=C2-9bcIjPBsC&amp;pg=PA10&amp;dq=%22galvanic+current%22+%22direct+current%22#v=onepage&amp;q=%22galvanic%20current%22%20%22direct%20current%22&amp;f=false}}&lt;/ref&gt;
+
+==Occurrences==
+Natural observable examples of electrical current include [[lightning]], [[static electricity|static electric discharge]], and the [[solar wind]], the source of the [[polar aurora]]s.
+
+Man-made occurrences of electric current include the flow of conduction electrons in metal wires such as the overhead power lines that deliver [[electric power transmission|electrical energy]] across long distances and the smaller wires within electrical and electronic equipment. [[Eddy current]]s are electric currents that occur in conductors exposed to changing magnetic fields. Similarly, electric currents occur, particularly in the surface, of conductors exposed to [[electromagnetic wave]]s. When oscillating electric currents flow at the correct voltages within [[radio antenna]]s, [[radio wave]]s are generated.
+
+In [[electronics]], other forms of electric current include the flow of electrons through [[resistor]]s or through the vacuum in a [[vacuum tube]], the flow of ions inside a [[Battery (electricity)|battery]] or a [[neuron]], and the flow of [[Electron hole|holes]] within metals and [[semiconductor]]s.
+
+==Current measurement==
+Current can be measured using an [[ammeter]].
+
+Electric current can be directly measured with a [[galvanometer]], but this method involves breaking the [[electrical circuit]], which is sometimes inconvenient. 
+
+Current can also be measured without breaking the circuit by detecting the magnetic field associated with the current. 
+Devices, at the circuit level, use various [[Current sensing techniques|techniques]] to measure current:
+* [[Shunt resistor]]s&lt;ref&gt;[http://www.ti.com/analog/docs/microsite.tsp?sectionId=560&amp;tabId=2180&amp;micrositeId=7 What is a Current Sensor and How is it Used?]. Focus.ti.com. Retrieved on 2011-12-22.&lt;/ref&gt;
+* [[Hall effect]] current sensor transducers
+* [[Current transformer|Transformers]] (however DC cannot be measured)
+* [[Magnetoresistance|Magnetoresistive]] field sensors&lt;ref&gt;Andreas P. Friedrich, Helmuth Lemme [http://www.sensorsmag.com/sensors/electric-magnetic/the-universal-current-sensor-1029 The Universal Current Sensor]. Sensorsmag.com (2000-05-01). Retrieved on 2011-12-22.&lt;/ref&gt;
+* [[Rogowski coil]]s
+* [[current clamp]]s
+
+==Resistive heating==
+{{Main|Joule heating}}
+Joule heating, also known as ''ohmic heating'' and ''resistive heating'', is the process of [[power dissipation]]&lt;ref name=&quot;JaffeTaylor&quot;&gt;{{cite book |last1=Jaffe |first1=Robert L. |last2=Taylor |first2=Washington |title=The physics of energy |date=2018 |publisher=Cambridge University Press }}&lt;/ref&gt;{{rp|36}} by which the passage of an electric current through a [[conductor (material)|conductor]] increases the [[internal energy]] of the conductor&lt;ref name=&quot;SerwayJewett2004&quot;/&gt;{{rp|846}}, converting [[thermodynamic work]] into [[heat]].&lt;ref name=&quot;SerwayJewett2004&quot;/&gt;{{rp|846, fn. 5}} The phenomenon was first studied by [[James Prescott Joule]] in 1841. Joule immersed a length of wire in a fixed [[mass]] of [[water]] and measured the [[temperature]] rise due to a known current through the wire for a 30 [[minute]] period. By varying the current and the length of the wire he deduced that the heat produced was [[proportionality (mathematics)|proportional]] to the [[square (algebra)|square]] of the current multiplied by the [[electrical resistance]] of the wire.
+
+:&lt;math&gt;P \propto I^2 R &lt;/math&gt;
+
+This relationship is known as [[Joule's first law|Joule's Law]].&lt;ref name=&quot;JaffeTaylor&quot;/&gt;{{rp|36}} The [[SI unit]] of [[energy]] was subsequently named the [[joule]] and given the symbol ''J''.&lt;ref name=&quot;SI&quot;/&gt;{{rp|20}} The commonly known SI unit of power, the [[watt]] (symbol: W), is equivalent to one joule per second.&lt;ref name=&quot;SI&quot;/&gt;{{rp|20}}
+
+==Electromagnetism==
+
+===Electromagnet===
+{{Main|Electromagnet}}In an electromagnet a coil of wires behaves like a magnet when an electric current flows through it. When the current is switched off, the coil loses its magnetism immediately.
+[[Image:Electromagnetism.svg|175px|thumb|According to [[Ampère's circuital law]], an electric current produces a [[magnetic field]].]]
+Electric current produces a [[magnetic field]].  The magnetic field can be visualized as a pattern of circular field lines surrounding the wire that persists as long as there is current.
+
+===Electromagnetic induction===
+{{Main|Electromagnetic induction}}
+Magnetic fields can also be used to make electric currents. When a changing magnetic field is applied to a conductor, an [[electromotive force]] (EMF) is induced,&lt;ref name=&quot;SerwayJewett2004&quot; /&gt;{{rp|1004}} which starts an electric current, when there is a suitable path.
+
+===Radio waves===
+{{Main|Radio waves}}
+{{Further|Radio-frequency current}}
+When an electric current flows in a [[antenna (radio)|suitably shaped conductor]] at [[radio frequencies]], [[radio waves]] can be generated. These travel at the [[speed of light]] and can cause electric currents in distant conductors.
+
+{{clear}}
+
+==Conduction mechanisms in various media==
+{{Main|Electrical conductivity|Charge transport mechanisms}}
+In metallic solids, electric charge flows by means of [[electron]]s, from lower to higher [[electrical potential]]. In other media, any stream of charged objects (ions, for example) may constitute an electric current.  To provide a definition of current independent of the type of charge carriers, ''conventional current'' is defined as moving in the same direction as the positive charge flow. So, in metals where the charge carriers (electrons) are negative, conventional current is in the opposite direction to the overall electron movement.  In conductors where the charge carriers are positive, conventional current is in the same direction as the charge carriers.
+
+In a [[vacuum]], a beam of ions or electrons may be formed. In other conductive materials, the electric current is due to the flow of both positively and negatively charged particles at the same time. In still others, the current is entirely due to [[proton conductor|positive charge flow]]. For example, the electric currents in [[electrolyte]]s are flows of positively and negatively charged ions. In a common lead-acid [[electrochemistry|electrochemical]] cell, electric currents are composed of positive [[hydronium]] ions flowing in one direction, and negative sulfate ions flowing in the other. Electric currents in [[electric spark|sparks]] or [[Plasma physics|plasma]] are flows of electrons as well as positive and negative ions. In ice and in certain solid electrolytes, the electric current is entirely composed of flowing ions.
+
+=== Metals ===
+
+In a [[metal]], some of the outer electrons in each atom are not bound to the individual atom as they are in insulating materials, but are free to move within the [[Metal#Definition|metal lattice]]. These [[conduction electron]]s can serve as [[charge carrier]]s, carrying a current. Metals are particularly conductive because there are many of these free electrons, typically one per atom in the lattice. With no external [[electric field]] applied, these electrons move about randomly due to [[thermal energy]] but, on average, there is zero net current within the metal. At room temperature, the average speed of these random motions is 10&lt;sup&gt;6&lt;/sup&gt; metres per second.&lt;ref&gt;[http://library.thinkquest.org/C0111709/English/DC-Circuts/mechanism.html &quot;The Mechanism Of Conduction In Metals&quot;] {{Webarchive|url=https://web.archive.org/web/20121025004809/http://library.thinkquest.org/C0111709/English/DC-Circuts/mechanism.html |date=2012-10-25 }}, Think Quest.&lt;/ref&gt; Given a surface through which a metal wire passes, electrons move in both directions across the surface at an equal rate. As [[George Gamow]] wrote in his [[popular science]] book, ''[[One, Two, Three...Infinity]]'' (1947), &quot;The metallic substances differ from all other materials by the fact that the outer shells of their atoms are bound rather loosely, and often let one of their electrons go free. Thus the interior of a metal is filled up with a large number of unattached electrons that travel aimlessly around like a crowd of displaced persons. When a metal wire is subjected to electric force applied on its opposite ends, these free electrons rush in the direction of the force, thus forming what we call an electric current.&quot;
+
+When a metal wire is connected across the two terminals of a [[Direct current|DC]] [[voltage source]] such as a [[battery (electricity)|battery]], the source places an electric field across the conductor. The moment contact is made, the free electrons of the conductor are forced to drift toward the [[Positive (electricity)|positive]] terminal under the influence of this field. The free electrons are therefore the [[charge carrier]] in a typical solid conductor.
+
+For a steady flow of charge through a surface, the current ''I'' (in amperes) can be calculated with the following equation:
+:&lt;math&gt;I = {Q \over t} \, ,&lt;/math&gt;
+where ''Q'' is the electric charge transferred through the surface over a [[time]] ''t''.  If ''Q'' and ''t'' are measured in [[coulomb]]s and seconds respectively, ''I'' is in amperes.
+
+More generally, electric current can be represented as the rate at which charge flows through a given surface as:
+:&lt;math&gt;I = \frac{\mathrm{d}Q}{\mathrm{d}t} \, .&lt;/math&gt;
+
+===Electrolytes===
+{{Main|Conductivity (electrolytic)}}
+Electric currents in [[electrolyte]]s are flows of electrically charged particles ([[ion]]s). For example, if an electric field is placed across a solution of [[sodium|Na]]&lt;sup&gt;+&lt;/sup&gt; and [[chlorine|Cl]]&lt;sup&gt;−&lt;/sup&gt; (and conditions are right) the sodium ions move towards the negative electrode (cathode), while the chloride ions move towards the positive electrode (anode). Reactions take place at both electrode surfaces, neutralizing each ion.
+
+Water-ice and certain solid electrolytes called [[proton conductor]]s contain positive hydrogen ions (&quot;[[proton]]s&quot;) that are mobile. In these materials, electric currents are composed of moving protons, as opposed to the moving electrons in metals.
+
+In certain electrolyte mixtures, brightly coloured ions are the moving electric charges. The slow progress of the colour makes the current visible.&lt;ref&gt;Rudolf Holze, [https://books.google.com/books?id=TbcDvDcDFB0C&amp;pg=PA44#v=onepage&amp;q&amp;f=true ''Experimental Electrochemistry: A Laboratory Textbook''], page 44, John Wiley &amp; Sons, 2009 {{ISBN|3527310983}}.&lt;/ref&gt;
+
+===Gases and plasmas===
+In air and other ordinary [[gas]]es below the breakdown field, the dominant source of electrical conduction is via relatively few mobile ions produced by radioactive gases, ultraviolet light, or cosmic rays. Since the electrical conductivity is low, gases are [[dielectric]]s or [[Electrical insulation|insulators]]. However, once the applied [[electric field]] approaches the [[dielectric breakdown|breakdown]] value, free electrons become sufficiently accelerated by the electric field to create additional free electrons by colliding, and [[ionizing]], neutral gas atoms or molecules in a process called [[avalanche breakdown]]. The breakdown process forms a [[Plasma (physics)|plasma]] that contains enough mobile electrons and positive ions to make it an electrical conductor. In the process, it forms a light emitting conductive path, such as a [[Electrostatic discharge|spark]], [[electric arc|arc]] or [[lightning]].
+
+[[Plasma (physics)|Plasma]] is the state of matter where some of the electrons in a gas are stripped or &quot;ionized&quot; from their [[molecule]]s or atoms. A plasma can be formed by high [[temperature]], or by application of a high electric or alternating magnetic field as noted above. Due to their lower mass, the electrons in a plasma accelerate more quickly in response to an electric field than the heavier positive ions, and hence carry the bulk of the current. The free ions recombine to create new chemical compounds (for example, breaking atmospheric oxygen into single oxygen [O&lt;sub&gt;2&lt;/sub&gt; → 2O], which then recombine creating [[ozone]] [O&lt;sub&gt;3&lt;/sub&gt;]).&lt;ref&gt;{{cite web | title = Lab Note #106 ''Environmental Impact of Arc Suppression'' | publisher = Arc Suppression Technologies | date = April 2011 | url = http://www.arcsuppressiontechnologies.com/arc-suppression-facts/lab-app-notes/ | accessdate = March 15, 2012}}&lt;/ref&gt;
+
+===Vacuum===
+Since a &quot;[[free space|perfect vacuum]]&quot; contains no charged particles, it normally behaves as a perfect insulator. However, metal electrode surfaces can cause a region of the vacuum to become conductive by injecting free electrons or [[ion]]s through either [[field electron emission]] or [[thermionic emission]]. Thermionic emission occurs when the thermal energy exceeds the metal's [[work function]], while [[field electron emission]] occurs when the electric field at the surface of the metal is high enough to cause [[quantum tunneling|tunneling]], which results in the ejection of free electrons from the metal into the vacuum. Externally heated electrodes are often used to generate an [[electron cloud]] as in the [[electrical filament|filament]] or indirectly [[hot cathode|heated cathode]] of [[vacuum tube]]s. [[cold cathode|Cold electrodes]] can also spontaneously produce electron clouds via thermionic emission when small incandescent regions (called '''cathode spots''' or '''anode spots''') are formed. These are incandescent regions of the electrode surface that are created by a localized high current. These regions may be initiated by [[field electron emission]], but are then sustained by localized thermionic emission once a [[vacuum arc]] forms. These small electron-emitting regions can form quite rapidly, even explosively, on a metal surface subjected to a high electrical field. [[Vacuum tube]]s and [[Krytron|sprytrons]] are some of the electronic switching and amplifying devices based on vacuum conductivity.
+
+===Superconductivity===
+{{Main|Superconductivity}}
+
+Superconductivity is a phenomenon of exactly zero [[Electrical resistance and conductance|electrical resistance]] and expulsion of [[magnetic field]]s occurring in certain materials when [[cryogenics|cooled]] below a characteristic [[Critical point (thermodynamics)|critical temperature]]. It was discovered by [[Heike Kamerlingh Onnes]] on April&amp;nbsp;8, 1911 in [[Leiden]]. Like [[ferromagnetism]] and [[atomic spectral line]]s, superconductivity is a [[quantum mechanics|quantum mechanical]] phenomenon. It is characterized by the [[Meissner effect]], the complete ejection of [[magnetic field|magnetic field lines]] from the interior of the superconductor as it transitions into the superconducting state. The occurrence of the Meissner effect indicates that superconductivity cannot be understood simply as the idealization of ''[[perfect conductor|perfect conductivity]]'' in [[classical physics]].
+
+===Semiconductor===
+{{Main|Semiconductor}}
+
+In a [[semiconductor]] it is sometimes useful to think of the current as due to the flow of positive &quot;[[electron hole|holes]]&quot; (the mobile positive charge carriers that are places where the semiconductor crystal is missing a valence electron). This is the case in a p-type semiconductor. A semiconductor has [[electrical conductivity]] intermediate in magnitude between that of a [[Electrical Conductor|conductor]] and an [[Insulator (electrical)|insulator]]. This means a conductivity roughly in the range of 10&lt;sup&gt;−2&lt;/sup&gt;  to 10&lt;sup&gt;4&lt;/sup&gt; [[Siemens (unit)|siemens]] per centimeter (S⋅cm&lt;sup&gt;−1&lt;/sup&gt;).
+
+In the classic crystalline semiconductors, electrons can have energies only within certain bands (i.e. ranges of levels of energy). Energetically,  these bands are located between the energy of the ground state, the state in which electrons are tightly bound to the atomic nuclei of the material, and the free electron energy, the latter describing the energy required for an electron to escape entirely from the material. The energy bands each correspond to many discrete [[quantum state]]s of the electrons, and most of the states with low energy (closer to the nucleus) are occupied, up to a particular band called the ''[[valence band]]''. Semiconductors and insulators are distinguished from [[metals]] because the valence band in any given metal is nearly filled with electrons under usual operating conditions, while very few (semiconductor) or virtually none (insulator) of them are available in the ''conduction band'', the band immediately above the valence band.
+
+The ease of exciting electrons in the semiconductor from the valence band to the conduction band depends on the [[band gap]] between the bands. The size of this energy band gap serves as an arbitrary dividing line (roughly 4 [[electronvolt|eV]]) between semiconductors and [[Electrical insulation|insulators]].
+
+With covalent bonds, an electron moves by hopping to a neighboring bond. The [[Pauli exclusion principle]] requires that the electron be lifted into the higher anti-bonding state of that bond. For delocalized states, for example in one dimension{{snd}}that is in a [[nanowire]], for every energy there is a state with electrons flowing in one direction and another state with the electrons flowing in the other. For a net current to flow, more states for one direction than for the other direction must be occupied. For this to occur, energy is required, as in the semiconductor the next higher states lie above the band gap. Often this is stated as: full bands do not contribute to the [[electrical conductivity]]. However, as a semiconductor's temperature rises above [[absolute zero]], there is more energy in the semiconductor to spend on lattice vibration and on exciting electrons into the conduction band. The current-carrying electrons in the conduction band are known as ''free electrons'', though they are often simply called ''electrons'' if that is clear in context.
+
+==Current density and Ohm's law==
+{{Main|Current density}}
+Current density is the rate at which charge passes through a chosen unit area.&lt;ref name=&quot;Zangwill2013&quot;&gt;{{cite book|first=Andrew |last=Zangwill|title=Modern Electrodynamics|year=2013|publisher=Cambridge University Press|isbn=978-0-521-89697-9}}&lt;/ref&gt;{{rp|31}} It is defined as a [[Vector (geometric)|vector]] whose magnitude is the current per unit cross-sectional area.&lt;ref name=Walker/&gt;{{rp|749}} As discussed in [[Electric current#Reference direction|Reference direction]], the direction is arbitrary. Conventionally, if the moving charges are positive, then the current density has the same sign as the velocity of the charges.  For negative charges, the sign of the current density is opposite to the velocity of the charges.&lt;ref name=Walker/&gt;{{rp|749}} In [[SI|SI units]], current density (symbol: j) is expressed in the SI base units of amperes per square metre.&lt;ref name=&quot;SI&quot;/&gt;{{rp|22}}
+
+In linear materials such as metals, and under low frequencies, the current density across the conductor surface is uniform. In such conditions, [[Ohm's law]] states that the current is directly proportional to the potential difference between two ends (across) of that metal (ideal) [[resistor]] (or other [[ohmic device]]):
+:&lt;math&gt;I = {V \over R} \, ,&lt;/math&gt;
+
+where &lt;math&gt;I&lt;/math&gt; is the current, measured in amperes; &lt;math&gt;V&lt;/math&gt; is the [[potential difference]], measured in [[volt]]s; and &lt;math&gt;R&lt;/math&gt; is the [[electrical resistance|resistance]], measured in [[Ohm (unit)|ohms]]. For [[alternating current]]s, especially at higher frequencies, [[skin effect]] causes the current to spread unevenly across the conductor cross-section, with higher density near the surface, thus increasing the apparent resistance.
+
+==Drift speed==
+The mobile charged particles within a conductor move constantly in random directions, like the particles of a [[gas]].  (More accurately, a [[Fermi gas]].) To create a net flow of charge, the particles must also move together with an average drift rate. Electrons are the charge carriers in most [[metal]]s and they follow an erratic path, bouncing from atom to atom, but generally drifting in the opposite direction of the electric field. The speed they drift at can be calculated from the equation:
+:&lt;math&gt;I=nAvQ \, ,&lt;/math&gt;
+where
+:&lt;math&gt;I&lt;/math&gt; is the electric current
+:&lt;math&gt;n&lt;/math&gt; is number of charged particles per unit volume (or charge carrier density)
+:&lt;math&gt;A&lt;/math&gt; is the cross-sectional area of the conductor
+:&lt;math&gt;v&lt;/math&gt; is the [[drift velocity]], and
+:&lt;math&gt;Q&lt;/math&gt; is the charge on each particle.
+Typically, electric charges in solids flow slowly.  For example, in a [[copper]] wire of cross-section 0.5&amp;nbsp;mm&lt;sup&gt;2&lt;/sup&gt;, carrying a current of 5&amp;nbsp;A, the [[drift velocity]] of the electrons is on the order of a millimetre per second. To take a different example, in the near-vacuum inside a [[cathode ray tube]], the electrons travel in near-straight lines at about a tenth of the [[speed of light]].
+
+Any accelerating electric charge, and therefore any changing electric current, gives rise to an [[Electromagnetism|electromagnetic]] wave that propagates at very high speed outside the surface of the conductor.  This speed is usually a significant fraction of the speed of light, as can be deduced from [[Maxwell's Equations]], and is therefore many times faster than the drift velocity of the electrons. For example, in [[electric power transmission|AC power lines]], the waves of electromagnetic energy propagate through the space between the wires, moving from a source to a distant [[external electric load|load]], even though the electrons in the wires only move back and forth over a tiny distance.
+
+The ratio of the speed of the electromagnetic wave to the speed of light in free space is called the [[velocity factor]], and depends on the electromagnetic properties of the conductor and the insulating materials surrounding it, and on their shape and size.
+
+The magnitudes (not the natures) of these three velocities can be illustrated by an analogy with the three similar velocities associated with gases. (See also [[hydraulic analogy]].)
+* The low drift velocity of charge carriers is analogous to air motion; in other words, winds.
+* The high speed of electromagnetic waves is roughly analogous to the speed of sound in a gas (sound waves move through air much faster than large-scale motions such as [[convection]])
+* The random motion of charges is analogous to heat{{snd}}the thermal velocity of randomly vibrating gas particles.
+
+==See also==
+{{Portal|Electronics}}
+{{Wiktionary|amperage}}
+{{colbegin}}
+* [[Current density]]
+* [[Electric shock]]
+* [[Electrical measurements]]
+* [[History of electrical engineering]]
+* [[International System of Quantities]]
+* [[SI electromagnetism units]]
+* [[Single-phase electric power]]
+* [[Three-phase electric power]]
+* [[Two-phase electric power]]
+{{colend}}
+
+==References==
+{{Reflist|30em}}
+
+{{SI base quantities}}
+
+{{Authority control}}
+
+{{DEFAULTSORT:Electric Current}}
+[[Category:Electric current| ]]
+[[Category:SI base quantities]]</text>
+      <sha1>lyftyobqojhp0pw9uw2kaf6g6glfuqo</sha1>
+    </revision>
+  </page>

@@ -1,0 +1,301 @@
+  <page>
+    <title>Earley parser</title>
+    <ns>0</ns>
+    <id>9685</id>
+    <revision>
+      <id>941660663</id>
+      <parentid>920548014</parentid>
+      <timestamp>2020-02-19T23:13:34Z</timestamp>
+      <contributor>
+        <username>Reyk</username>
+        <id>378651</id>
+      </contributor>
+      <comment>reduce verbosity per [[Wikipedia:Manual_of_Style/Words_to_watch#Editorializing]] and [[MOS:NOTE]]</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">
+In [[computer science]], the '''Earley parser''' is an [[algorithm]] for [[parsing]] [[String (computer science)|strings]] that belong to a given [[context-free language]], though (depending on the variant) it may suffer problems with certain nullable grammars.&lt;ref&gt;{{cite web|last=Kegler|first=Jeffrey|title=What is the Marpa algorithm?|url=http://blogs.perl.org/users/jeffrey_kegler/2011/11/what-is-the-marpa-algorithm.html|accessdate=20 August 2013}}&lt;/ref&gt; The algorithm, named after its inventor, [[Jay Earley]], is a [[chart parser]] that uses [[dynamic programming]]; it is mainly used for parsing in [[computational linguistics]]. It was first introduced in his dissertation&lt;ref name=Earley1&gt;{{cite book
+ | last=Earley
+ | first=Jay
+ | title=An Efficient Context-Free Parsing Algorithm
+ | year=1968
+ | publisher=Carnegie-Mellon Dissertation
+ | url=http://reports-archive.adm.cs.cmu.edu/anon/anon/usr/ftp/scan/CMU-CS-68-earley.pdf}}&lt;/ref&gt; in 1968 (and later appeared in an abbreviated, more legible, form in a journal&lt;ref name=&quot;Earley2&quot;&gt;{{citation
+ | last = Earley | first = Jay | authorlink = Jay Earley
+ | doi = 10.1145/362007.362035 | url = https://web.archive.org/web/20040708052627/http://www-2.cs.cmu.edu/afs/cs.cmu.edu/project/cmt-55/lti/Courses/711/Class-notes/p94-earley.pdf
+ | issue = 2
+ | journal = [[Communications of the ACM]]
+ | pages = 94–102
+ | title = An efficient context-free parsing algorithm
+ | volume = 13
+ | year = 1970}}&lt;/ref&gt;).
+
+Earley parsers are appealing because they can parse all context-free languages, unlike [[LR parser]]s and [[LL parser]]s, which are more typically used in [[compiler]]s but which can only handle restricted classes of languages.  The Earley parser executes in cubic time in the general case &lt;math&gt;{O}(n^3)&lt;/math&gt;, where ''n'' is the length of the parsed string, quadratic time for unambiguous grammars &lt;math&gt;{O}(n^2)&lt;/math&gt;,&lt;ref&gt;{{cite book | isbn=978-0-201-02988-8 | author=John E. Hopcroft and Jeffrey D. Ullman | title=Introduction to Automata Theory, Languages, and Computation | location=Reading/MA | publisher=Addison-Wesley | year=1979 | url-access=registration | url=https://archive.org/details/introductiontoau00hopc }} p.145&lt;/ref&gt; and linear time for all [[LR parser|LR(k) grammars]]. It performs particularly well when the rules are written [[left recursion|left-recursively]].
+
+== Earley recogniser ==
+The following algorithm describes the Earley recogniser. The recogniser can be easily modified to create a parse tree as it recognises, and in that way can be turned into a parser.
+
+== The algorithm ==
+In the following descriptions, α, β, and γ represent any [[string (computer science)|string]] of [[Terminal and nonterminal symbols|terminals/nonterminals]] (including the [[empty string]]), X and Y represent single nonterminals, and ''a'' represents a terminal symbol.
+
+Earley's algorithm is a top-down [[dynamic programming]] algorithm. In the following, we use Earley's dot notation: given a [[Formal grammar#The syntax of grammars|production]] X → αβ, the notation X → α • β represents a condition in which α has already been parsed and β is expected.
+
+Input position 0 is the position prior to input.  Input position ''n'' is the position after accepting the ''n''th token.  (Informally, input positions can be thought of as locations at [[Lexical analysis|token]] boundaries.)  For every input position, the parser generates a ''state set''.  Each state is a [[tuple]] (X → α • β, ''i''), consisting of
+
+* the production currently being matched (X → α β)
+* the current position in that production (represented by the dot)
+* the position ''i'' in the input at which the matching of this production began: the ''origin position''
+
+(Earley's original algorithm included a look-ahead in the state; later research showed this to have little practical effect on the parsing efficiency, and it has subsequently been dropped from most implementations.)
+
+The state set at input position ''k'' is called S(''k'').  The parser is seeded with S(0) consisting of only the top-level rule.  The parser then repeatedly executes three operations:  ''prediction'', ''scanning'', and ''completion''.
+
+* ''Prediction'':  For every state in S(''k'') of the form (X → α • Y β, ''j'') (where ''j'' is the origin position as above), add (Y → • γ, ''k'') to S(''k'') for every production in the grammar with Y on the left-hand side (Y → γ).
+* ''Scanning'': If ''a'' is the next symbol in the input stream, for every state in S(''k'') of the form (X → α • ''a'' β, ''j''), add (X → α ''a'' • β, ''j'') to S(''k''+1).
+* ''Completion'': For every state in S(''k'') of the form (Y → γ •, ''j''), find all states in S(''j'') of the form (X → α • Y β, ''i'') and add (X → α Y • β, ''i'') to S(''k'').
+
+Duplicate states are not added to the state set, only new ones.  These three operations are repeated until no new states can be added to the set.  The set is generally implemented as a queue of states to process, with the operation to be performed depending on what kind of state it is.
+
+The algorithm accepts if (X → γ •, 0) ends up in S(''n''), where (X → γ) is the top level-rule and ''n'' the input length, otherwise it rejects.
+
+== Pseudocode ==
+Adapted from Speech and Language Processing&lt;ref name=Jurafsky&gt;{{cite book|last=Jurafsky|first=D.|title=Speech and Language Processing: An Introduction to Natural Language Processing, Computational Linguistics, and Speech Recognition|year=2009|publisher=Pearson Prentice Hall|isbn=9780131873216|url=https://books.google.com/books?id=fZmj5UNK8AQC}}&lt;/ref&gt; by [[Daniel Jurafsky]] and James H. Martin, 
+
+&lt;syntaxhighlight lang=&quot;text&quot;&gt;
+DECLARE ARRAY S;
+
+function INIT(words)
+    S ← CREATE-ARRAY(LENGTH(words) + 1)
+    for k ← from 0 to LENGTH(words) do
+        S[k] ← EMPTY-ORDERED-SET
+
+function EARLEY-PARSE(words, grammar)
+    INIT(words)
+    ADD-TO-SET((γ → •S, 0), S[0])
+    for k ← from 0 to LENGTH(words) do
+        for each state in S[k] do  // S[k] can expand during this loop
+            if not FINISHED(state) then
+                if NEXT-ELEMENT-OF(state) is a nonterminal then
+                    PREDICTOR(state, k, grammar)         // non-terminal
+                else do
+                    SCANNER(state, k, words)             // terminal
+            else do
+                COMPLETER(state, k)
+        end
+    end
+    return chart
+
+procedure PREDICTOR((A → α•Bβ, j), k, grammar)
+    for each (B → γ) in GRAMMAR-RULES-FOR(B, grammar) do
+        ADD-TO-SET((B → •γ, k), S[k])
+    end
+
+procedure SCANNER((A → α•aβ, j), k, words)
+    if a ⊂ PARTS-OF-SPEECH(words[k]) then
+        ADD-TO-SET((A → αa•β, j), S[k+1])
+    end
+
+procedure COMPLETER((B → γ•, x), k)
+    for each (A → α•Bβ, j) in S[x] do
+        ADD-TO-SET((A → αB•β, j), S[k])
+    end
+&lt;/syntaxhighlight&gt;
+
+== Example ==
+Consider the following simple grammar for arithmetic expressions:
+&lt;syntaxhighlight lang=&quot;text&quot;&gt;
+&lt;P&gt; ::= &lt;S&gt;      # the start rule
+&lt;S&gt; ::= &lt;S&gt; &quot;+&quot; &lt;M&gt; | &lt;M&gt;
+&lt;M&gt; ::= &lt;M&gt; &quot;*&quot; &lt;T&gt; | &lt;T&gt;
+&lt;T&gt; ::= &quot;1&quot; | &quot;2&quot; | &quot;3&quot; | &quot;4&quot;
+&lt;/syntaxhighlight&gt;
+With the input:
+ 2 + 3 * 4
+
+This is the sequence of state sets:
+{| class=&quot;wikitable&quot;
+! (state no.) !! Production !! (Origin) !! Comment
+|-----------------------------------------
+! scope=&quot;row&quot; colspan=&quot;4&quot; style=&quot;text-align:left; background:#e9e9e9;font-family:monospace&quot; | S(0): • 2 + 3 * 4
+|-
+| 1 || style=&quot;font-family:monospace&quot; |P → • S          || 0 ||  start rule 
+|-
+| 2 || style=&quot;font-family:monospace&quot; |S → • S + M      || 0 ||  predict from (1) 
+|-
+| 3 || style=&quot;font-family:monospace&quot; |S → • M          || 0 ||  predict from (1) 
+|-
+| 4 || style=&quot;font-family:monospace&quot; |M → • M * T      || 0 ||  predict from (3) 
+|-
+| 5 || style=&quot;font-family:monospace&quot; |M → • T          || 0 ||  predict from (3) 
+|-
+| 6 || style=&quot;font-family:monospace&quot; |T → • number     || 0 ||  predict from (5) 
+|-
+! scope=&quot;row&quot; colspan=&quot;4&quot; style=&quot;text-align:left; background:#e9e9e9;font-family:monospace&quot; | S(1): 2 • + 3 * 4
+|-
+| 1 || style=&quot;font-family:monospace&quot; |T → number •     || 0 ||  scan from S(0)(6) 
+|-
+| 2 || style=&quot;font-family:monospace&quot; |M → T •          || 0 ||  complete from (1) and S(0)(5) 
+|-
+| 3 || style=&quot;font-family:monospace&quot; |M → M • * T      || 0 ||  complete from (2) and S(0)(4) 
+|-
+| 4 || style=&quot;font-family:monospace&quot; |S → M •          || 0 ||  complete from (2) and S(0)(3) 
+|-
+| 5 || style=&quot;font-family:monospace&quot; |S → S • + M      || 0 ||  complete from (4) and S(0)(2) 
+|-
+| 6 || style=&quot;font-family:monospace&quot; |P → S •          || 0 ||  complete from (4) and S(0)(1) 
+|-
+! scope=&quot;row&quot; colspan=&quot;4&quot; style=&quot;text-align:left; background:#e9e9e9;font-family:monospace&quot; | S(2): 2 + • 3 * 4
+|-
+| 1 || style=&quot;font-family:monospace&quot; |S → S + • M      || 0 ||  scan from S(1)(5) 
+|-
+| 2 || style=&quot;font-family:monospace&quot; |M → • M * T      || 2 ||  predict from (1) 
+|-
+| 3 || style=&quot;font-family:monospace&quot; |M → • T          || 2 ||  predict from (1) 
+|-
+| 4 || style=&quot;font-family:monospace&quot; |T → • number     || 2 ||  predict from (3) 
+|-
+! scope=&quot;row&quot; colspan=&quot;4&quot; style=&quot;text-align:left; background:#e9e9e9;font-family:monospace&quot; | S(3): 2 + 3 • * 4
+|-
+| 1 || style=&quot;font-family:monospace&quot; |T → number •     || 2 ||  scan from S(2)(4) 
+|-
+| 2 || style=&quot;font-family:monospace&quot; |M → T •          || 2 ||  complete from (1) and S(2)(3) 
+|-
+| 3 || style=&quot;font-family:monospace&quot; |M → M • * T      || 2 ||  complete from (2) and S(2)(2) 
+|-
+| 4 || style=&quot;font-family:monospace&quot; |S → S + M •      || 0 ||  complete from (2) and S(2)(1) 
+|-
+| 5 || style=&quot;font-family:monospace&quot; |S → S • + M      || 0 ||  complete from (4) and S(0)(2) 
+|-
+| 6 || style=&quot;font-family:monospace&quot; |P → S •          || 0 ||  complete from (4) and S(0)(1) 
+|-
+! scope=&quot;row&quot; colspan=&quot;4&quot; style=&quot;text-align:left; background:#e9e9e9;font-family:monospace&quot; | S(4): 2 + 3 * • 4
+|-
+| 1 || style=&quot;font-family:monospace&quot; |M → M * • T      || 2 ||  scan from S(3)(3) 
+|-
+| 2 || style=&quot;font-family:monospace&quot; |T → • number     || 4 ||  predict from (1) 
+|-
+! scope=&quot;row&quot; colspan=&quot;4&quot; style=&quot;text-align:left; background:#e9e9e9;font-family:monospace&quot; | S(5): 2 + 3 * 4 •
+|-
+| 1 || style=&quot;font-family:monospace&quot; |T → number •     || 4 ||  scan from S(4)(2) 
+|-
+| 2 || style=&quot;font-family:monospace&quot; |M → M * T •      || 2 ||  complete from (1) and S(4)(1) 
+|-
+| 3 || style=&quot;font-family:monospace&quot; |M → M • * T      || 2 ||  complete from (2) and S(2)(2) 
+|-
+| 4 || style=&quot;font-family:monospace&quot; |S → S + M •      || 0 ||  complete from (2) and S(2)(1) 
+|-
+| 5 || style=&quot;font-family:monospace&quot; |S → S • + M      || 0 ||  complete from (4) and S(0)(2) 
+|-
+| 6 || style=&quot;font-family:monospace&quot; |P → S •          || 0 ||  complete from (4) and S(0)(1) 
+|-
+|}
+The state (P → S •, 0) represents a completed parse.  This state also appears in S(3) and S(1), which are complete sentences.
+
+== Constructing the parse forest ==
+Earley's dissertation&lt;ref name=Earley3&gt;{{cite book
+ | last=Earley
+ | first=Jay
+ | title=An Efficient Context-Free Parsing Algorithm
+ | year=1968
+ | publisher=Carnegie-Mellon Dissertation
+ | page=106
+ | url=http://reports-archive.adm.cs.cmu.edu/anon/anon/usr/ftp/scan/CMU-CS-68-earley.pdf}}&lt;/ref&gt; briefly describes an algorithm for constructing parse trees by adding a set of pointers from each non-terminal in an Earley item back to the items that caused it to be recognized.  But [[Masaru Tomita|Tomita]] noticed&lt;ref&gt;{{cite book|last1=Tomita|first1=Masaru|title=Efficient Parsing for Natural Language: A Fast Algorithm for Practical Systems|date=April 17, 2013|publisher=Springer Science and Business Media|isbn=978-1475718850|page=74|url=https://books.google.com/?id=DAjkBwAAQBAJ&amp;lpg=PP13&amp;dq=Tomita%20Efficient%20Parsing%20for%20natural%20Language&amp;pg=PA74#v=onepage&amp;q&amp;f=false|accessdate=16 September 2015}}&lt;/ref&gt; that this does not take into account the relations between symbols, so if we consider the grammar S → SS | b and the string bbb, it only notes that each S can match one or two b's, and thus produces spurious derivations for bb and bbbb as well as the two correct derivations for bbb.
+
+Another method&lt;ref&gt;{{cite journal|last1=Scott|first1=Elizabeth|title=SPPF-Style Parsing From Earley Recognizers|journal=Electronic Notes in Theoretical Computer Science|date=April 1, 2008|volume=203|issue=2|pages=53–67|doi=10.1016/j.entcs.2008.03.044}}&lt;/ref&gt; is to build the parse forest as you go, augmenting each Earley item with a pointer to a shared packed parse forest (SPPF) node labelled with a triple (s, i, j) where s is a symbol or an LR(0) item (production rule with dot), and i and j give the section of the input string derived by this node. A node's contents are either a pair of child pointers giving a single derivation, or a list of &quot;packed&quot; nodes each containing a pair of pointers and representing one derivation.  SPPF nodes are unique (there is only one with a given label), but may contain more than one derivation for ambiguous parses.  So even if an operation does not add an Earley item (because it already exists), it may still add a derivation to the item's parse forest.
+
+* Predicted items have a null SPPF pointer.
+* The scanner creates an SPPF node representing the non-terminal it is scanning.
+* Then when the scanner or completer advance an item, they add a derivation whose children are the node from the item whose dot was advanced, and the one for the new symbol that was advanced over (the non-terminal or completed item).
+
+SPPF nodes are never labeled with a completed LR(0) item: instead they are labelled with the symbol that is produced so that all derivations are combined under one node regardless of which alternative production they come from.
+
+== See also ==
+* [[CYK algorithm]]
+* [[Context-free grammar]]
+* [[List of algorithms#Parsing|Parsing algorithms]]
+
+== Citations ==
+{{Reflist}}
+
+== Other reference materials ==
+*{{cite journal
+ | last1 = Aycock | first1 = John
+ | last2 = Horspool | first2 = R. Nigel | author2-link = Nigel Horspool
+ | doi = 10.1093/comjnl/45.6.620
+ | issue = 6
+ | journal = [[The Computer Journal]]
+ | pages = 620–630
+ | title = Practical Earley Parsing
+ | volume = 45
+ | year = 2002| citeseerx = 10.1.1.12.4254
+ }}
+*{{citation
+ | last = Leo | first = Joop M. I. M.
+ | doi = 10.1016/0304-3975(91)90180-A
+ | issue = 1
+ | journal = [[Theoretical Computer Science (journal)|Theoretical Computer Science]]
+ | mr = 1112117
+ | pages = 165–176
+ | title = A general context-free parsing algorithm running in linear time on every LR(''k'') grammar without using lookahead
+ | volume = 82
+ | year = 1991
+}}
+
+*{{cite conference |first= Masaru|last= Tomita|title= LR parsers for natural languages |conference= 10th International Conference on Computational Linguistics |booktitle= COLING|pages= 354–357|year= 1984|url=https://aclanthology.info/pdf/P/P84/P84-1073.pdf}}
+
+== Implementations ==
+
+=== C, C++ ===
+* [https://github.com/vnmakarov/yaep 'Yet Another Earley Parser (YAEP)'] – [[C (programming language)|C]]/[[C++]] libraries
+* [https://bitbucket.org/amirouche/c-earley-parser/src 'C Earley Parser'] – an Earley parser C
+
+=== Haskell ===
+* [https://hackage.haskell.org/package/Earley 'Earley'] – an Earley parser [[Domain-specific language|DSL]] in [[Haskell (programming language)|Haskell]]
+
+=== Java ===
+* [http://www.cs.umanitoba.ca/~comp4190/Earley/Earley.java] – a Java implementation of the Earley algorithm
+* [https://web.archive.org/web/20160303182122/http://linguateca.dei.uc.pt/index.php?sep=recursos PEN] – a Java library that implements the Earley algorithm
+* [http://www.coffeeblack.org/#projects-pep Pep] – a Java library that implements the Earley algorithm and provides charts and parse trees as parsing artifacts
+* [https://github.com/digitalheir/java-probabilistic-earley-parser digitalheir/java-probabilistic-earley-parser] - a Java library that implements the probabilistic Earley algorithm, which is useful to determine the most likely parse tree from an ambiguous sentence
+
+=== C# ===
+
+* [https://github.com/coonsta/earley coonsta/earley] - An Earley parser in C#
+* [https://github.com/patrickhuber/Pliant patrickhuber/pliant] - An Earley parser that integrates the improvements adopted by Marpa and demonstrates Elizabeth Scott's tree building algorithm.
+* [https://github.com/ellisonch/CFGLib ellisonch/CFGLib] - Probabilistic Context Free Grammar (PCFG) Library for C# (Earley + SPPF, CYK)
+
+=== JavaScript ===
+* [https://github.com/Hardmath123/nearley Nearley] – an Earley parser that's starting to integrate the improvements that Marpa adopted
+* [https://joshuagrams.github.io/pep/ A Pint-sized Earley Parser] – a toy parser (with annotated pseudocode) to demonstrate Elizabeth Scott's technique for building the shared packed parse forest
+* [https://github.com/lagodiuk/earley-parser-js lagodiuk/earley-parser-js] – a tiny JavaScript implementation of Earley parser (including generation of the parsing-forest)
+* [https://github.com/digitalheir/probabilistic-earley-parser-javascript digitalheir/probabilistic-earley-parser-javascript] - JavaScript implementation of the probabilistic Earley parser
+
+=== OCaml ===
+* [https://github.com/tomjridge/tjr_simple_earley Simple Earley] - An implementation of a simple Earley-like parsing algorithm, with documentation.
+
+=== Perl ===
+* [https://metacpan.org/module/Marpa::R2 Marpa::R2] – a [[Perl]] module.  [https://jeffreykegler.github.com/Marpa-web-site/ Marpa] is an Earley's algorithm that includes the improvements made by Joop Leo, and by Aycock and Horspool.
+* [https://metacpan.org/module/Parse::Earley Parse::Earley] – a Perl module implementing Jay Earley's original algorithm
+
+=== Python ===
+* [https://github.com/erezsh/lark/blob/master/lark/parsers/earley.py Lark] – an object-oriented, procedural implementation of an Earley parser in under 200 lines of code
+* [http://nltk.org/ NLTK] – a [[Python (programming language)|Python]] toolkit with an Earley parser
+* [http://pages.cpsc.ucalgary.ca/~aycock/spark/ Spark] – an object-oriented ''little language framework'' for Python implementing an Earley parser
+* [https://pypi.python.org/pypi/spark_parser spark_parser] – updated and packaged version of the Spark parser above, which runs in both Python 3 and Python 2
+* [https://github.com/tomerfiliba/tau/blob/master/earley3.py earley3.py] – a stand-alone implementation of the algorithm in less than 150 lines of code, including generation of the parsing-forest and samples
+* [https://github.com/tomjridge/tjr_python_earley_parser tjr_python_earley_parser] - a minimal Earley parser in Python
+
+=== Common Lisp ===
+* [http://www.cliki.net/CL-EARLEY-PARSER CL-Earley-parser] – a Common Lisp library implementing an Earley parser
+
+=== Scheme, Racket ===
+* [https://web.archive.org/web/20160401103410/http://www.cavar.me/damir/charty/scheme/ Charty-Racket] – a [[Scheme (programming language)|Scheme]]-[[Racket (programming language)|Racket]] implementation of an Earley parser
+
+=== Resources ===
+* [http://accent.compilertools.net/Entire.html The Accent compiler-compiler]
+{{parsers}}
+[[Category:Parsing algorithms]]
+[[Category:Dynamic programming]]</text>
+      <sha1>mqkcoyxjc0xxoswpv7hatbkyke1q9yd</sha1>
+    </revision>
+  </page>

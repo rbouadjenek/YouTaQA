@@ -1,0 +1,145 @@
+  <page>
+    <title>Eric S. Raymond</title>
+    <ns>0</ns>
+    <id>9469</id>
+    <revision>
+      <id>939213082</id>
+      <parentid>938465504</parentid>
+      <timestamp>2020-02-05T01:54:02Z</timestamp>
+      <contributor>
+        <username>Dmd3e</username>
+        <id>4640</id>
+      </contributor>
+      <comment>uh, no.    Undid revision 938465504 by [[Special:Contributions/Ashley McQueen|Ashley McQueen]] ([[User talk:Ashley McQueen|talk]])</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{short description|American computer programmer, author, and advocate for the open source movement}}
+{{Redirect|Eric Raymond}}
+{{third-party|date=July 2015}}
+{{Use mdy dates|date=September 2012}}
+{{Infobox person
+| name = Eric S. Raymond
+| image = Eric S Raymond portrait.jpg
+| caption = Raymond at [[Linucon]] 2004
+| birth_date = {{birth date and age|mf=yes|1957|12|4}}
+| birth_place = [[Boston, Massachusetts]]
+| residence = [[Pennsylvania]]
+| nationality = American
+| alma_mater = [[University of Pennsylvania]] (dropped out)&lt;ref name=&quot;resume&quot;&gt;{{cite web | url = http://catb.org/~esr/resume.html | title = Resume of Eric Steven Raymond | first = Eric S. | last = Raymond |authorlink=Eric S._Raymond|date = January 29, 2003 | accessdate = November 23, 2009 }}&lt;/ref&gt;
+| occupation = [[Software developer]], author
+| website = {{URL|http://www.catb.org/esr/}}
+}}
+
+'''Eric Steven Raymond''' (born December 4, 1957), often referred to as '''ESR''', is an American [[software developer]], [[open-source software]] advocate, and author of the 1997 essay and 1999 book ''[[The Cathedral and the Bazaar]]''. He wrote a guidebook for the [[Roguelike]] game ''[[NetHack]]''.&lt;ref name=&quot;nethack&quot;/&gt; In the 1990s, he edited and updated the [[Jargon File]], currently in print as ''The New Hacker's Dictionary''.&lt;ref&gt;{{Cite book | isbn = 0-262-68092-0 | title = The New Hacker's Dictionary | last1 = Raymond | first1 = Eric S. | date = {{date|1996-10-11|mdy}} | authorlink1 = Eric S. Raymond }}&lt;/ref&gt;
+
+== Early life ==
+Raymond was born in [[Boston, Massachusetts]], in 1957 and lived in Venezuela as a child. His family moved to [[Pennsylvania]] in 1971.&lt;ref&gt;{{cite web  | url = http://laweekly.com/art+books/cyber/man-against-the-fud/6614/  | title = Man Against the FUD  | accessdate = July 7, 2008  | archiveurl = https://web.archive.org/web/20071013123601/http://laweekly.com/art+books/cyber/man-against-the-fud/6614/  | archivedate = October 13, 2007  | url-status = dead  | df = mdy-all  }}&lt;/ref&gt; He developed [[cerebral palsy]] at birth; his weakened physical condition motivated him to go into computing.&lt;ref name=&quot;let my software go&quot;&gt;{{cite news | url = http://www.salon.com/1998/03/30/feature947788266/ | date = April 1998 | title = Let my software go! | first = Andrew | last = Leonard | work = [[Salon.com]] | publisher = [[Salon Media Group]] | location = San Francisco | accessdate = November 23, 2009 }}&lt;/ref&gt;
+
+==Career==
+Raymond began his programming career writing proprietary software, between 1980 and 1985.&lt;ref name=&quot;resume&quot;/&gt; In 1990, noting that the [[Jargon File]] had not been maintained since about 1983, he adopted it; he currently has a third edition in print. [[Paul Dourish]] maintains an archived original version of the Jargon File, because, he says, Raymond's updates &quot;essentially destroyed what held it together.&quot;&lt;ref&gt;{{cite web |url=http://www.dourish.com/goodies/jargon.html  | title = The Original Hacker's Dictionary | work = dourish.com | accessdate=November 5, 2011}}&lt;/ref&gt;
+
+In 1996 Raymond took over development of the open-source email software &quot;popclient&quot;, renaming it to [[Fetchmail]].&lt;ref&gt;{{cite web|url=http://www.fetchmail.info/|title=Fetchmail}}&lt;/ref&gt; Soon after this experience, in 1997, he wrote the essay &quot;[[The Cathedral and the Bazaar]]&quot;, detailing his thoughts on [[open-source software development]] and why it should be done as openly as possible (the &quot;bazaar&quot; approach). The essay was based in part on his experience in developing Fetchmail. He first presented his thesis at the annual [[Linux Kongress]] on May 27, 1997. He later expanded the essay into a book, ''The Cathedral and the Bazaar: Musings on Linux and Open Source by an Accidental Revolutionary'', in 1999. The essay has been widely cited.&lt;ref&gt;{{cite web|title=Citations for &quot;The Cathedral And The Bazaar&quot;|url=http://dl.acm.org/citation.cfm?id=580808|publisher=ACM Digital Library|accessdate=10 February 2015}}&lt;/ref&gt; The internal white paper by Frank Hecker that led to the release of the [[Mozilla]] (then [[Netscape (web browser)|Netscape]]) source code in 1998 cited ''The Cathedral and the Bazaar'' as &quot;independent validation&quot; of ideas proposed by [[Eric Hahn]] and [[Jamie Zawinski]].&lt;ref&gt;{{cite web | url = http://www.openoffice.org/editorial/ec1May.html| title = Interview: Frank Hecker | last = Suarez-Potts | first = Louis | year = 2001 |accessdate = November 5, 2011}}&lt;/ref&gt; Hahn would later describe the 1999 book as &quot;clearly influential&quot;.&lt;ref&gt;{{Cite book | isbn = 0-7382-0670-9 | title = Rebel Code: Linux and the Open Source Revolution | last1 = Moody | first1 = Glyn | date = 2002-07-25 | publisher = Basic Books | url = https://archive.org/details/rebelcodeinside000mood }}&lt;/ref&gt;{{rp|190}}
+
+From the late 1990s onward, due in part to the popularity of his essay, Raymond became a prominent voice in the open source movement. He co-founded the [[Open Source Initiative]] in 1998, taking on the self-appointed role of ambassador of [[Open-source model|open source]] to the press, business and public. He remains active in OSI, and stepped down as president of the initiative in February 2005.&lt;ref&gt;{{cite web | url = http://opensource.org/pressreleases/expansion.php | title = Open Source Initiative (OSI) Announces expanded programs, counsel, AND board | last = Raymond | first = Eric S. |authorlink=Eric S. Raymond| date = January 31, 2005 |accessdate = January 14, 2010 }}&lt;/ref&gt; In 1998 Raymond received and published a Microsoft document expressing worry about the quality of rival open-source software.&lt;ref&gt;{{cite web |url=https://www.nytimes.com/library/tech/98/11/biztech/articles/03memo.html |title=Internal Memo Shows Microsoft Executives' Concern Over Free Software |last=Harmon |first=Amy |work=The New York Times |date=November 3, 1998|accessdate=November 5, 2011}}&lt;/ref&gt; Raymond named this document, together with others subsequently leaked, &quot;''the [[Halloween Documents]]''&quot;.
+
+In 2000–2002 he created [[Configuration Menu Language|Configuration Menu Language 2]] (CML2), a source code configuration system; while originally intended for the [[Linux kernel|Linux operating system]], it was rejected by kernel developers.&lt;ref&gt;{{cite web |url=http://kerneltrap.org/node/17 |title=CML2, ESR, &amp; The LKML |work=KernelTrap |date=February 17, 2002 |url-status=dead |archiveurl=https://web.archive.org/web/20070807034449/http://kerneltrap.org/node/17 |archivedate=August 7, 2007 |df=mdy }}&lt;/ref&gt; Raymond attributed this rejection to &quot;kernel list politics&quot;.&lt;ref&gt;{{cite web | url= http://www-106.ibm.com/developerworks/linux/library/l-ivesr.html?ca=dgr-lnxw09EricRaymond | title = Interview: Eric Raymond goes back to basics | work = IBM developerWorks | first = Rob | last = McMillan }}&lt;/ref&gt; [[Linus Torvalds]] on the other hand said in a 2007 mailing list [https://lkml.org/lkml/2007/7/28/145 post] that as a matter of policy, the development team preferred more incremental changes. His 2003 book ''[[The Art of Unix Programming]]'' discusses user tools for programming and other tasks.
+
+Raymond is currently the administrator of the project page for the [[Global Positioning System]] data tool [[gpsd]].&lt;ref&gt;{{cite web |url=https://savannah.nongnu.org/projects/gpsd | title = GPSD – Summary | work = savannah.nongnu.org | accessdate=October 30, 2011}}&lt;/ref&gt; Also, some versions of [[NetHack]] include his guide.&lt;ref name=&quot;nethack&quot;&gt;{{cite web |url=http://www.nethack.org/v343/Guidebook.html |title=A Guide to the Mazes of Menace (Guidebook of Nethack) |last=Raymond |first=Eric S. |authorlink=Eric S. Raymond|work=NetHack.org |date=December 8, 2003 |accessdate=December 15, 2008}}&lt;/ref&gt; He has also contributed code and content to the free software video game ''[[The Battle for Wesnoth]]''.&lt;ref&gt;{{cite web | url = http://gna.org/users/esr | title = People at Gna!: Eric S. Raymond Profile | work = [[Gna.org]] | archive-url = https://web.archive.org/web/20170301021140/http://gna.org/users/esr | archive-date = March 1, 2017 | accessdate = 2017-09-13 | url-status = dead | df = mdy-all }}&lt;/ref&gt;
+
+Raymond is also the main developer on [[NTPSec]], a &quot;secure, hardened replacement&quot; for the Unix utility [[Network Time Protocol|NTP]].&lt;ref&gt;{{cite web |url=https://blog.ntpsec.org | accessdate=January 9, 2020}}&lt;/ref&gt;
+
+== Views on open source ==
+Raymond coined an [[aphorism]] he dubbed [[Linus's law]], inspired by [[Linus Torvalds]]: &quot;Given enough eyeballs, all [[software bug|bugs]] are shallow&quot;.&lt;ref&gt;{{cite news|last1=Greenstein|first1=Shane|title=The Range of Linus' Law|volume=32|work=IEEE Micro|issue=1|publisher=IEEE Computer Society|date=January 2012}}&lt;/ref&gt; It first appeared in his book ''The Cathedral and the Bazaar''.&lt;ref&gt;{{Cite book | isbn = 1-56592-724-9 | title = The Cathedral and the Bazaar: Musings on Linux and Open Source by an Accidental Revolutionary | last1 = Raymond | first1 = Eric S. | authorlink1 = Eric S. Raymond | year = 1999 | publisher = O'Reilly Media }}&lt;/ref&gt;{{rp|30}}
+
+Raymond has refused to speculate on whether the &quot;bazaar&quot; development model could be applied to works such as books and music, saying that he does not want to &quot;weaken the winning argument for open-sourcing software by tying it to a potential loser&quot;.&lt;ref&gt;{{cite web | url = http://www.catb.org/~esr/writings/cathedral-bazaar/afterword/ | title = Afterword: Beyond Software? | last = Raymond | first = Eric S. |authorlink=Eric S._Raymond| year = 2000 |accessdate = July 24, 2007}}&lt;/ref&gt;
+
+Raymond has had a number of public [[free software movement#Subgroups and schisms|disputes]] with other figures in the [[free software movement]]. As head of the Open Source Initiative, he argued that advocates should focus on the potential for better products. The &quot;very seductive&quot; moral and ethical rhetoric of [[Richard Stallman]] and the [[Free Software Foundation]] fails, he said, &quot;not because his principles are wrong, but because that kind of language ... simply does not persuade anybody&quot;.&lt;ref&gt;{{cite web|url=http://www.linuxtoday.com/developer/1999062802310NWSM |title=Shut Up And Show Them The Code |last=Raymond |first=Eric S. |authorlink=Eric S._Raymond |work=Linux Today |date=July 28, 1999 |accessdate=July 5, 2017 }}&lt;/ref&gt;
+
+In a 2008 essay he &quot;defended the right of programmers to issue work under proprietary licenses because I think that if a programmer wants to write a program and sell it, it's neither my business nor anyone else's but his customer's what the terms of sale are&quot;.&lt;ref&gt;{{cite web | url = http://esr.ibiblio.org/?p=556 | title = Why I Hate Proprietary Software | first = Eric S. | last = Raymond |authorlink=Eric S._Raymond|date = October 1, 2008 | accessdate = November 5, 2011 }}&lt;/ref&gt; In the same essay he also said that the &quot;logic of the system&quot; puts developers into &quot;dysfunctional roles&quot;, with bad code the result.
+
+==Political beliefs and activism==
+Raymond is a member of the [[Libertarian Party (United States)|Libertarian Party]]. He is a [[Right to keep and bear arms|gun rights]] advocate.&lt;ref&gt;[http://innovate.ucsb.edu/799-richard-stallman-free-software-and-copyleft Richard Stallman, Free Software, and Copyleft] {{Webarchive|url=https://web.archive.org/web/20170624201402/http://innovate.ucsb.edu/799-richard-stallman-free-software-and-copyleft |date=June 24, 2017 }} 2011&lt;/ref&gt; He has endorsed the open source firearms organization [[Defense Distributed]], calling them &quot;friends of freedom&quot; and writing &quot;I approve of any development that makes it more difficult for governments and criminals to monopolize the use of force. As 3D printers become less expensive and more ubiquitous, this could be a major step in the right direction.&quot;&lt;ref name=&quot;ESR&quot;&gt;{{cite web|url=http://esr.ibiblio.org/?p=4521|title=Defense Distributed|first=Eric|last=Raymond|authorlink=Eric S._Raymond|publisher=Armed and Dangerous|date=August 23, 2012|accessdate=January 14, 2013}}&lt;/ref&gt;&lt;ref name=&quot;Verge3&quot;&gt;{{cite news|last=Kopfstein|first=Janus|title=Guns want to be free: what happens when 3D printing and crypto-anarchy collide?|url=https://www.theverge.com/2013/4/12/4209364/guns-want-to-be-free-what-happens-when-3d-printing-and-crypto-anarchy|journal=[[The Verge]]|date=April 12, 2013}}&lt;/ref&gt;
+
+In 2015 Raymond accused the [[Ada Initiative]] and other [[Women in STEM fields|women in tech]] groups of attempting to entrap male open source leaders and accuse them of rape, saying &quot;Try to avoid even being alone, ever, because there is a chance that a 'women in tech' advocacy group is going to try to collect your scalp.&quot;&lt;ref&gt;{{Cite news|url=https://www.theregister.co.uk/2015/11/06/linus_torvalds_targeted_by_honeytraps_says_eric_raymond/|title=Linus Torvalds targeted by honeytraps, claims Eric S. Raymond|access-date=2017-11-25|language=en}}&lt;/ref&gt;&lt;ref&gt;{{Cite news|url=http://nymag.com/selectall/2015/11/this-the-perfect-insane-anti-feminist-rumor.html|title=Is This Crazy Anti-Feminist Rumor the Platonic Ideal of the Men's-Rights Internet?|work=Select All|access-date=2017-11-25|language=en}}&lt;/ref&gt;
+
+Raymond has claimed that &quot;Gays experimented with unfettered promiscuity in the 1970s and got AIDS as a consequence&quot;, and that &quot;Police who react to a random black male behaving suspiciously who might be in the critical age range as though he is an near-imminent lethal threat, are being rational, not racist.&quot;&lt;ref&gt;{{cite web | last=Raymond | first=Eric | date=2002-06-16 | url=http://esr.ibiblio.org/?p=26 | title=The Elephant in the Bath-House | access-date=2018-08-27}}&lt;/ref&gt;&lt;ref&gt;{{cite web | last=Raymond | first=Eric | date=2016-09-24 | url=http://esr.ibiblio.org/?p=7239 | title=Dilemmatizing the NRA | access-date=2018-08-27}}&lt;/ref&gt; Progressive campaign The Great Slate was successful in raising funds for candidates in part by asking for contributions from tech workers in return for not posting similar quotes by Raymond. [[NCC Group|Matasano Security]] employee and Great Slate fundraiser Thomas Ptacek said, &quot;I’ve been torturing Twitter with lurid Eric S. Raymond quotes for years. Every time I do, 20 people beg me to stop.&quot; It is estimated that as of March 2018 over $30,000 has been raised in this way.&lt;ref&gt;{{cite news |last=Jeong |first=Sarah |date=2018-03-08 |title=Meet the campaign connecting affluent techies with progressive candidates around the country |url=https://www.theverge.com/2018/3/8/17092684/great-slate-fundraising-congressional-campaign |work=The Verge |access-date=2018-03-08 }}&lt;/ref&gt;
+
+==Personal life==
+Raymond describes himself as [[neo-pagan]].&lt;ref name=&quot;let my software go&quot; /&gt;
+
+== Bibliography ==
+* Hamerly, Jim, Paquin, Tom and Walton, Susan;'' [http://oreilly.com/catalog/opensources/book/netrev.html Freeing the Source: The Story of Mozilla]'', in ''Open Sources: Voices from the Open Source Revolution'', O'Reilly, 1999. 280pp, {{ISBN|1-56592-582-3}}
+* Wayner, Peter; ''[http://www.wayner.org/node/5 Free for All: How LINUX and the Free Software Movement Undercut the High-Tech Titans]'', HarperCollins, 2000, 340pp, {{ISBN|0-06-662050-3}}
+* Suarez-Potts, Louis;'' [http://www.openoffice.org/editorial/ec1May.html Interview: Frank Hecker]'', Community Articles, May 1, 2001, www.openoffice.org, OpenOffice website
+* Moody, Glyn; ''Rebel Code: Linux and the Open Source Revolution'', Basic Books 2002, 342pp, {{ISBN|978-0-7382-0333-1}}
+
+=== By Eric Raymond ===
+
+==== Books ====
+* ''The New Hacker's Dictionary'' (editor) (MIT Press {{ISBN|0-262-68092-0}}) – printed version of the [[Jargon File]] with Raymond listed as the editor.
+* ''The Cathedral and the Bazaar'' (O'Reilly; hardcover {{ISBN|1-56592-724-9}}, October 1999) – includes &quot;[[The Cathedral and the Bazaar]]&quot;, &quot;[[Homesteading the Noosphere]]&quot;, &quot;[[The Magic Cauldron (essay)|The Magic Cauldron]]&quot; and [http://www.catb.org/~esr/writings/cathedral-bazaar/hacker-revenge/ &quot;Revenge of the Hackers&quot;]
+* ''[[The Art of Unix Programming]]'' (Addison-Wesley, October 2003; {{ISBN|0-13-142901-9}})
+* ''[[Learning GNU Emacs, 3rd Edition]]'' Cameron, Debra; Elliott, James; Loy, Marc; Raymond, Eric; Rosenblatt, Bill (O'Reilly Media, December 2004; {{ISBN|978-0-596-00648-8}})
+
+==== Writings posted or archived on his website ====
+* ''[http://www.catb.org/~esr/writings/taouu/html/ The Art of Unix Usability]'', the book about programming and user interface philosophy in UNIX
+* ''[http://www.catb.org/~esr/faqs/smart-questions.html How to Ask Questions the Smart Way]'', mirrored on personal site
+* ''[http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/ar01s04.html Release Early, Release Often]'', excerpt from ''The Cathedral and the Bazaar'', mirrored on personal site
+* ''[http://www.catb.org/~esr/faqs/ Eric Raymond's FAQ collection]'', mirrored on his personal site. Includes links to Linux Documentation Project.
+
+== See also ==
+{{Portal|Open Source Software}}
+* ''[[Revolution OS]]'' (film)
+* [[Hacker ethic]]
+* [[Halloween documents]]
+* [[Release early, release often]]
+
+== References ==
+{{reflist}}
+
+== Further reading ==
+
+{{refbegin}}
+
+* {{Cite web |last1=Byfield |first1=Bruce |title=The Decline and Fall of Eric S. Raymond |work=[[Linux Magazine]] |date=2015-12-22 |url=http://www.linux-magazine.com/Online/Blogs/Off-the-Beat-Bruce-Byfield-s-Blog/The-Decline-and-Fall-of-Eric-S.-Raymond |language=en-US |accessdate=2018-07-15 |df=mdy-all }}
+
+{{refend}}
+
+==External links==
+{{commons|Eric S. Raymond|Eric S. Raymond}}
+{{wikiquote}}
+* {{official website}}
+* [http://esr.ibiblio.org Blog (&quot;Armed and Dangerous&quot;)]
+* {{Gutenberg author |id=Raymond,+Eric+S. | name=Eric S. Raymond}}
+* {{Internet Archive author |sname=Eric Steven Raymond}}
+* {{IMDb name|id=0713253|name=Eric S. Raymond}}
+
+{{Linux people}}
+
+{{Authority control}}
+
+{{DEFAULTSORT:Raymond, Eric S.}}
+[[Category:1957 births]]
+[[Category:American bloggers]]
+[[Category:American gun rights activists]]
+[[Category:American libertarians]]
+[[Category:American technology writers]]
+[[Category:American speculative fiction critics]]
+[[Category:Free software programmers]]
+[[Category:Geeknet]]
+[[Category:Living people]]
+[[Category:Massachusetts Libertarians]]
+[[Category:Members of the Open Source Initiative board of directors]]
+[[Category:Open source advocates]]
+[[Category:American neopagans]]
+[[Category:Pennsylvania Libertarians]]
+[[Category:People with cerebral palsy]]
+[[Category:Science fiction fans]]
+[[Category:Science fiction critics]]
+[[Category:Writers from Boston]]
+[[Category:University of Pennsylvania alumni]]
+[[Category:21st-century American non-fiction writers]]
+[[Category:Hackers]]</text>
+      <sha1>p4xefc4km4bxvc8wnx7j931u8339vc2</sha1>
+    </revision>
+  </page>

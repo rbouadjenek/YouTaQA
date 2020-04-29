@@ -1,0 +1,265 @@
+  <page>
+    <title>Acorn Electron</title>
+    <ns>0</ns>
+    <id>2078</id>
+    <revision>
+      <id>933419208</id>
+      <parentid>912154103</parentid>
+      <timestamp>2019-12-31T20:48:24Z</timestamp>
+      <contributor>
+        <username>Egel</username>
+        <id>1497209</id>
+      </contributor>
+      <comment>/* P.R.E.S. Advanced Plus 5 */ Adding/removing external link(s)</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{Use dmy dates|date=December 2013}}
+{{Use British English|date=December 2013}}
+{{Infobox computer
+|Name         = Acorn Electron
+|Logo         = 
+|image        = Acorn Electron 4x3.jpg
+|Caption      = An Acorn Electron
+|Type         = [[8-bit]] [[microcomputer]]
+|Developer    = [[Acorn Computers]]
+|Released     = {{Start date and age|1983|08|25}}
+|Discontinued = 
+|Processor    = [[Synertek]] [[6502|SY6502A]] clocked at 2[[megahertz|MHz]] when accessing [[read-only memory|ROM]] and 1 [[megahertz|MHz]] when accessing [[Random Access Memory|RAM]]
+|Memory       = 32 [[kilobyte|kB]] [[Random Access Memory|RAM]], 32 [[kilobyte|kB]] [[read-only memory|ROM]]
+|Media        = [[Cassette tape]], [[floppy disk]] (optional), [[ROM cartridge]] (optional)
+|Graphics     = 160×256 (4 or 16 colours), 320×256 (2 or 4 colours), 640×256 (2 colours), 320×200 (2 colours — spaced display with two blank horizontal lines following every 8 pixel lines), 640×200 (2 colours — spaced display)
+|Display      = [[RF modulator]], [[composite video]], [[RGB]] monitor output
+|Input        = [[Keyboard (computing)|Keyboard]]
+|Connectivity = 
+|OS           = [[Acorn MOS]] v1.0
+|Baseprice    = 
+}}
+
+The '''Acorn Electron''' was a budget version of the [[BBC Micro]] educational/[[home computer]] made by [[Acorn Computers Ltd]]. It has 32 [[kilobyte]]s of [[Random Access Memory|RAM]], and its [[Read-only memory|ROM]] includes [[BBC BASIC]] v2 along with its [[Acorn MOS|operating system]].
+
+The Electron was able to save and load programs onto [[compact audio cassette|audio cassette]] via a supplied converter cable that connected it to any standard [[tape recorder]] that had the correct sockets. It was capable of basic graphics, and could display onto either a television set, a colour ([[RGB]]) monitor or a &quot;[[Green-screen display|green screen]]&quot; monitor.
+
+For a short period, the Electron was reportedly the best selling micro in the [[United Kingdom]].&lt;ref name=&quot;ElectronUser198601&quot;&gt;{{cite journal | url=https://archive.org/stream/ElectronUserVol3/Electron%20User%20%20Vol%203%20No.5#page/n6/mode/1up | periodical=Electron User | volume=3 | issue=5 | page=7 | publisher=Database Publications | title=Spectrum Toppled | date=February 1986 | accessdate=2015-11-01}}&lt;/ref&gt;
+
+==History==
+[[File:Hard reset Acorn Electron.gif|thumb|BASIC prompt after switch-on or hard reset (soft reset was similar but did not contain the Acorn trademark).]]
+
+After [[Acorn Computer]] released the [[BBC Micro]], executives believed that the company needed a less-expensive computer for the mass market. In June 1982, cofounder [[Hermann Hauser]] was asked about the recently announced £175 [[Sinclair ZX Spectrum]]'s potential to hurt sales of the BBC Micro. Hauser responded that in the third quarter of that year Acorn would release a new £120-150 computer which &quot;will probably be called the Electron&quot;, with graphics superior to the Spectrum's and compatibility with BBC Micro software. Acorn's [[Chris Curry]] stated that &quot;the Electron is designed to compete with the Spectrum. The idea is to get the starting price very low, but not preclude expansion in the long term.&quot; The company reduced the number of chips in the Electron by 90% from the BBC Micro's about 100, with most functionality on a single [[Uncommitted Logic Array]] (ULA). Problems with the ULA delayed the Electron, however, and Acorn repeatedly missed deadlines to ship the computer.&lt;ref name=&quot;smith20130823&quot;&gt;{{cite web | url=https://www.theregister.co.uk/2013/08/23/acorn_electron_history_at_30/ | title=Acorn’s would-be ZX Spectrum killer, the Electron, is 30 | publisher=The Register | work=2013-08-23 | accessdate=12 January 2015 | author=Smith, Tony}}&lt;/ref&gt;
+
+Acorn formally announced the Electron at the [[Acorn User|''Acorn User'' Exhibition]] in August 1983, one year after Hauser mentioned the computer, by which time its price had risen to £175 while the Spectrum cost £130. The company expected to ship the Electron before Christmas, and sell 100,000 by February 1984. Reviews were generally favorable, noting its excellent graphics compared to the [[Commodore 64]]. While its speed was acceptable compared to the Commodore and competing computers the Electron was, however, much slower than the BBC Micro; ''[[Popular Computing Weekly]]'' reported, for example, that BBC Micro games ran &quot;at less than half the speed, with very significant effects on their appeal&quot;.&lt;ref name=&quot;smith20130823&quot; /&gt;
+
+The reduced processor speed was attributable to the use of a 4 bit wide memory system instead of the 8 bit wide memory system of the [[BBC Micro]] to reduce cost. The Electron used just 4 64kbit RAM devices instead of the 16 16kbit RAM devices deployed on the BBC Model B. In the [[BBC Micro]], the RAM ran at twice the speed (4&amp;nbsp;MHz) of the CPU (2&amp;nbsp;MHz) allowing the video (screen refresh) and CPU memory access to be interleaved with each accessor running at 2&amp;nbsp;MHz.  On the Electron two accesses have to be made to get an 8 bit word (albeit with a single [[Dynamic random-access memory#Page mode DRAM|RAS]]), delivering an effective RAM access frequency of 2&amp;nbsp;MHz. In display modes employing the most screen memory, the CPU is unable to access its RAM while screen refresh accesses are happening, and in other modes the CPU and video accesses are interleaved with each accessor running at 1&amp;nbsp;MHz. Outside the screen refresh periods, the CPU is only able to access RAM at 1&amp;nbsp;MHz. This reduces the effective CPU speed by as much as a factor of four in the more demanding display modes, and as much as a factor of two otherwise.&lt;ref&gt;{{cite web|url=http://chrisacorns.computinghistory.org.uk/docs/Acorn/Manuals/Acorn_ElectronSM.pdf|title=Electron Service Manual|date=January 1987|accessdate=24 Feb 2019}}&lt;/ref&gt;
+
+The ULA continued to cause problems, delaying large-scale manufacturing. By October 1983 Acorn had received orders for more than 150,000 units, and expected to produce 25,000 a month before Christmas; the existing backlog would take more than six months to fulfil. Demand for the Electron was high but only two of [[WH Smith]]'s London branches had inventory. As the company increased production during 1984, however, the British home-computer market greatly weakened; one Acorn executive later said, &quot;after Christmas [1983] they were just delivering and the company ended up with £43&amp;nbsp;million of unsaleable stock&quot;. Acorn's Christmas 1984 sales were greatly below expectations and in January 1985 the company reduced the Electron's price to £129. In conjunction with an unsuccessful expansion into the United States, by February Acorn's [[market capitalization]] declined 85% from the previous year. [[Olivetti]] acquired the company later that year and [[Dixons Retail]] acquired the remaining Electron inventory for less than manufacturing cost, ending Acorn's home-computer business.&lt;ref name=&quot;smith20130823&quot; /&gt;
+
+With hindsight, the large screen memory required too much processing power to manipulate and left too little space available to programs for the machine to take on the prevailing Spectrum (with less than 7K of screen memory) and Commodore 64 (with hardware sprites) in gaming. Despite this, several features that would later be associated with [[BBC Master]] and [[Acorn Archimedes|Archimedes]] were first features of Electron expansion units, including ROM cartridge slots and the [[Advanced Disc Filing System]], a hierarchical improvement to the BBC's original [[Disc Filing System]].
+
+While it may not have been as popular as the Spectrum, Commodore 64 or [[Amstrad CPC]], it did sell in sufficient numbers to ensure that new software was being produced right up until the early 1990s. This meant the Electron had a lifespan not much shorter than those more popular micros and much longer than competitors such as the [[Oric-1]] and [[Dragon 32]].
+
+==Popular upgrades==
+
+===Acorn Plus 1===
+[[File:Acorn Electron and Plus 1.jpg|thumb|left|250px|An Acorn Electron with Plus 1 expansion unit attached]]
+The Acorn Plus 1 added two ROM cartridge slots, an analogue interface (supporting four channels) and a Centronics parallel port. The analogue interface was normally used for joysticks, the parallel for a printer. Game ROM cartridges would boot automatically. Languages in paged ROM cartridges would take precedence over BASIC. (The slot at the front of the interface took priority if both were populated).
+
+Access to ROM memory occurred at 2&amp;nbsp;MHz until RAM access was required, so theoretically programs released on ROM could run up to twice as fast as those released on tape or disc. Despite this all of the games released on ROM were packaged as ROM file cartridges, from which the micro would load programs into main memory in exactly the same way as if it were loading from tape. This meant that programs did not need to be modified for their new memory location and could be written in BASIC but gave no execution speed benefits.
+
+The Cartridge slots provided additional control lines (compared to the lines available via the Edge-connector on the rear of the Electron) to ease implementation of ROM cartridges. &lt;ref&gt;Electron Advanced User Guide -  Appendix E&lt;/ref&gt;
+
+Additional peripheral cartridge-holders by companies such as P.R.E.S. (via their [http://www.acornelectron.co.uk/hardware/cats/acp_pres.html ARA/ARA2/ASR] products) allowed [[Sideways address space|'Sideways ROM']] capability, that allowed the standard Acorn ROM space to be programmatically mapped out for alternative EPROMs, either physically via ZIF Sockets, or 'virtually' via ROM-images loaded into (battery-backed) RAM in the same ROM memory space. This enabled the Electron to achieve the same functionality as that provided by the Expansion-ROM slots under the keyboard and on the bottom-left of the BBC Micro B keyboard.
+
+The addition of the Plus 1 added a number of new *FX or OSBYTE calls that allowed the OS to read values from the analogue interface and write to the parallel interface.
+
+====Compatibility====
+The Plus 1 needed memory page &amp;D for its workspace, and some games used this space. To disable the Plus 1, after pressing BREAK, the following commands could be issued:
+
+ *FX163,128,1&lt;br&gt;
+ ?&amp;212=&amp;D6&lt;br&gt;
+ ?&amp;213=&amp;F1&lt;br&gt;
+ ?&amp;2AC=0
+
+===Acorn Plus 2===
+Per a News article on Page #9 of the October 1984 issue of Acorn User, the Acorn 'Plus 2' interface was due to provide [[Econet]] capability. This interface did not make it to market.
+
+===Acorn Plus 3===
+[[File:Acorn ALA13 Electron Plus 3 (front).jpg|thumb|Acorn Plus 3, showing the connector and disc drive]]
+The Acorn Plus 3 was a hardware module that connected independently of the Plus 1 and provided a double-density 3½&quot; disc drive connected through a [[WD1770]] drive controller and an [[Advanced Disc Filing System|ADFS]] ROM. There were two versions of the Plus 3 produced: A Single-sided and a Double-sided drive version. Because the WD1770 is capable of single density mode and uses the same IBM360 derived floppy disc format as the Intel 8271 found in the BBC Micro, it was also possible to run a [[Disc Filing System|DFS]] filing system with an alternate ROM, such as the P.R.E.S AP4 interface.
+
+The Plus 3 reset PAGE to &amp;1D00, reducing the amount of free RAM available to user. The ADFS system could be temporarily disabled (and PAGE reset to &amp;E00) via the &lt;tt&gt;*NOADFS&lt;/tt&gt; command. Alternative WD1770-based DFS and ADFS interfaces such as the P.R.E.S AP4 and 'ADFS E00' products left PAGE at &amp;E00, and did not require the presence of the ZYSYSHELP file (see below)
+
+Disks had to be manually mounted and dismounted using the &lt;tt&gt;*MOUNT / *DISMOUNT&lt;/tt&gt; commands, or using the &lt;tt&gt;CTRL-A+BREAK&lt;/tt&gt; key combination. Disks could also be booted from via the standard &quot;Shift+BREAK&quot; key-combination, if the !BOOT file was present on the disk. This behaviour was the same as on the BBC Micro.
+
+The Plus 3 included an uprated square black power supply unit with mains cord, manufactured by STC, designed and manufactured in England to BS 415 and BS 5850, that was designed to power the Plus 3, in addition to the Electron and the Plus 1 interface as well. This replaced the original cream-coloured &quot;wall wart&quot; style power supply, designed to BS 415 and manufactured in Hong Kong.
+
+*'''Original'''; Part no: unknown; input 220/240 V AC/50&amp;nbsp;Hz; output 19 V AC/0.737 A/14 W:  '''Usage''':   Electron, Electron+Plus1
+*'''Uprated''' Part no: 865-010;   input 240 V AC/50&amp;nbsp;Hz 50 W; output 21 V AC/1.75 A/36.75 W: '''Usage''': Electron+Plus3, Electron+Plus3+Plus1
+
+The original Electron Edge-connector was repeated on the back of the Plus3, in addition to a secondary smaller edge-connector, that enabled additional drives to be connected ([[Shugart bus|Shugart]]-compatible connection). These required their own power-supply. The secondary edge-connector could not power external drives.
+
+Repair note: If the internal power-supply connector, used to power the existing internal 3.5&quot; drive is damaged, and requires replacement, then the original AMP 800-930 4-pin connector, which was already in short supply during the original production run, may be replaced with a Molex 5264 50-37-5043 &quot;Mini-SPOX&quot; connector as an alternative.&lt;ref&gt;{{cite web|url=http://www.stardot.org.uk/forums/download/file.php?id=4417&amp;sid=0a0f02b8369739630c42f2d91c6594be |title=Acorn Electron Disc Drive Connector - Internal Memo |date= |accessdate=28 May 2013}}&lt;/ref&gt;
+
+If using the Plus3 in screen modes 0-3, the pseudo-variable &lt;tt&gt;TIME&lt;/tt&gt; would be thrown off, as the interrupts were disabled during disk access in these modes.
+
+Per a News article on page 9 of the October 1984 issue of Acorn User, the Plus 3 was originally designed to have used the Intel 8272 disk controller, (and not 8271, which were in short supply at the time).
+
+====ADFS quirks====
+The ADFS file format used the bytes &lt;tt&gt;[[Advanced Disc Filing System|Hugo]]&lt;/tt&gt; to delimit the directory names on the disc, named after ADFS author Hugo Tyson. Another quirk was the presence of the file  &lt;tt&gt;ZYSYSHELP&lt;/tt&gt; which was required by the system, and created during formatting. This was a kludge. Acorn's v1.0 ADFS implementation on the Electron was unreliable when writing to the first few tracks of a floppy disc, so this was a &quot;fix&quot; and simply involved writing a file full of garbage to the suspect part. The ADFS would then skip it. Disc corruption could also occur if attempting to use the &lt;tt&gt;*COMPACT&lt;/tt&gt; command without disabling the blinking cursor with the following command:
+&lt;pre&gt;VDU23,1,0;0;0;0; &lt;/pre&gt; This was due to the fact that the &lt;tt&gt;*COMPACT&lt;/tt&gt; command used screen memory (by default) as working space during the operation, and the software-implemented blinking cursor corrupted that memory space.  An alternative would be to give arguments to make it use non-screen memory for workspace, for example &lt;tt&gt;*COMPACT 40 20&lt;/tt&gt; in &lt;tt&gt;MODE 6&lt;/tt&gt;.  Tyson recalls that this bug was found during late testing but not fixed in the initial ROM release in order to avoid late changes, as workarounds exist.&lt;ref&gt;{{cite web|url=http://www.portices.fr/formation/Res/Info/Dimet/Ordinateurs/AcornBBC/www.stairwaytohell.com/Ressources/r-EU-ACP-E00ADFS.html |title=Stairwaytohell.Com - Hardware |publisher=Portices.fr |date= |accessdate=28 May 2013}}&lt;/ref&gt;&lt;ref&gt;On the BBC Micro, the blinking cursor, if enabled, was superimposed onto the display output by the 6845 CRTC and Acorn's video ULA, without changing any screen memory. The Acorn Electron did not have this extra hardware and had to alter screen memory in software to blink the cursor.&lt;/ref&gt;
+
+Disc formatting was done via the &lt;tt&gt;*EFORM&lt;/tt&gt; command, vs the more familiar &lt;tt&gt;*FORM40/*FORM80&lt;/tt&gt; DFS commands. Note additionally that the &lt;tt&gt;*EFORM&lt;/tt&gt; command differs from the equivalent &lt;tt&gt;*AFORM&lt;/tt&gt; command for the 1770 ADFS on the BBC Microcomputer. This is possibly as a result of needing to create the ZYSYSHELP file on the Electron. The *EFORM command was only supplied on the Welcome disc that was shipped with the Plus3, and was not included in the ROM.
+
+===First Byte Joystick Interface===
+As a games machine the Electron shared the same failing as the Sinclair Spectrum in not having a joystick port. This was quickly remedied by First Byte Computers who developed an interface and software which allowed a &quot;switched&quot; joystick to be used with the majority of software titles. This interface became very popular and was sold by W.H. Smiths, Boots, Comet and hundreds of independent computer dealers.
+
+===P.R.E.S. Advanced Plus 3===
+[[File:Advanced Plus 3.jpg|thumb|right|250px|The P.R.E.S. Advanced Plus 3 with a 3½&quot; drive]]
+The Advanced Plus 3 was very similar to the Acorn Plus 3 but packaged as an ADFS ROM cartridge for the Plus 1 with a disc drive connector at the head. This made it possible to connect a 5¼&quot; floppy disc drive as used by BBC Micro owners or a more common 3½&quot; drive.
+
+===P.R.E.S. Advanced Plus 5===
+[http://www.acornelectron.co.uk/info/electron/acp_pres/Advanced-Plus-5.html AP5] Provided User Port (all lines), 1&amp;nbsp;MHz bus and 'Tube' bus capability, enabling second processor usage.
+For the PRES5, and other similar interfaces, the User Port is usually implemented via a 6522 VIA chip.
+
+===Slogger/Elektuur Turbo Board===
+The Slogger and Elektuur Turbo Boards were born out of a hack initially devised at Acorn. By shadowing the lowest 8&amp;nbsp;kB of RAM with a static RAM chip outside of reach of the ULA, the CPU could always access it at 2&amp;nbsp;MHz. The tradeoff was that the screen could not be located in that 8&amp;nbsp;kB. In practice the operating system ROMs always put the screen into the top 20&amp;nbsp;kB and as a result this probably only broke compatibility with around 2% of software.
+
+The Slogger Turbo Board was a professionally fitted upgrade whereas the Elektuur modification was described in an article in Dutch Electronics magazine Elektuur and intended for users to perform at home.&lt;ref name=&quot;8bs&quot;&gt;{{cite web|url=http://www.8bs.com/see/kupers_electron_6.jpg |title= kupers_electron_6 |publisher=8bs.com|accessdate=17 September 2015}}&lt;/ref&gt;
+
+Speeding up the low portion of memory is particularly useful on 6502 derived machines because that processor has a faster addressing mode for the first 256 bytes and so it is common for software to put any variables involved in time critical sections of program into that region.
+
+The cost of the 64 Kbit SRAM chip would have been more than that of doubling the four 64 KBit DRAM chips to give 8-bit RAM access, fixing both the modest memory and poor performance issues of the Electron.
+
+===Slogger Master RAM Board===
+A development of the Turbo Board, the Master RAM Board duplicated the Turbo Board functionality and added a further option of running the micro with 32&amp;nbsp;kB of static shadow RAM in addition to the ordinary 32&amp;nbsp;kB —  giving 64&amp;nbsp;kB total. Some clever program counter catches meant that the ordinary system ROMs and any software using the OS calls could function without significant modification, making substantially more memory available for BASIC, View, Viewsheet and almost every other business application. By providing extra storage this modification also allowed some games and applications intended for the BBC Micro to function on the Electron despite the lack of a native Mode 7.&lt;ref name=&quot;Hobbyist page describing BBC Micro software compatibility using 64 bK expansion cards&quot;&gt;{{cite web
+  | title = Andy's guide to using BBC software on a 64K modified Acorn Electron.
+  | url = http://www.andysarcade.net/personal/elk/64kmod/64kelectron.htm
+  | accessdate = 4 July 2008}}&lt;/ref&gt;
+
+Applications could not directly address video memory in shadow mode without modification, so it was incompatible with most games, although there is no inherent reason why a game could not be written to function in shadow mode. A switch mounted through the case switched between normal, turbo and shadow modes.
+
+During its decline, Turbo Boards and Master RAM Boards were offered already fitted to new Electrons in an attempt to increase sales.
+
+===Jafa Systems Mode 7 Display Unit===
+Of the capabilities present in the BBC Micro but absent from the Electron, the [[teletext]]-style ''mode 7'' was particularly conspicuous because of the very low memory usage in that mode (just less than 1&amp;nbsp;kB) and the high number of BBC programs that used it. Jafa Systems provided a number of solutions to redress this deficiency.&lt;ref&gt;http://www.acornelectron.co.uk/hardware/cats/jafa.html&lt;/ref&gt; (Note - the Jafa interface did not provide Teletext interface itself, but it did work in conjunction with specific CEEFAX/Teletext/Prestel adaptors from other manufacturers such as Morley&lt;ref&gt;{{cite web|url=http://www.acornelectron.co.uk/mags/aab/revs/jafa/r-m7du.html |title=A&amp;B Computing review |publisher=Acornelectron.co.uk |date= |accessdate=28 May 2013}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.acornelectron.co.uk/hardware/cats/morley.html |title=Acorn Electron World - Hardware, Information &amp; Link Archives |publisher=Acornelectron.co.uk |date= |accessdate=28 May 2013}}&lt;/ref&gt;)
+
+The most basic solution was a pure software system supplied on a ROM cartridge that drew a low resolution approximation of the mode 7 display in a graphics mode. Although cheap and effective in enabling use of some software that only used official ROM entry points for text output, this solution proved very slow because the Electron had to be placed into an 80-byte-pitch display to be able to get anywhere near to reproducing mode 7 and the CPU spent a lot of time drawing approximations of mode 7 characters and graphics that in a hardware solution would be achieved without any CPU processing. It also used up 20&amp;nbsp;kB of RAM for the graphics display rather than the 1&amp;nbsp;kB of a hardware mode 7.
+
+Two solutions with additional hardware were provided. The first used the same graphics processor as the BBC Micro in mode 7 — the [[SAA5050]] — but used software to ensure that it was fed with the correct graphics data. A software ROM would put the machine into an ordinary 40-byte-pitch display. While the ULA would read the display from memory in the usual fashion, the SAA5050 would listen to the data it was reading and produce a mode 7 interpretation of the same information. When necessary the hardware would switch between the graphics output being produced by the micro and that being produced by the add-on.
+
+The disadvantage to this system is that while the SAA5050 would expect to be repeatedly fed the same 40 bytes of data for every display scanline of each character row, the ULA would read a different set of 40 bytes for every display scanline in order to produce a full graphics display. A software ROM worked around this by duplicating the data intended for a mode 7 display in memory. Although this produced a mode 7 that barely impacted upon CPU performance and gave the same visual quality as the BBC Micro, it remained compatible only with software that used the ROM routines for outputting text and graphics and still used 10&amp;nbsp;kB of memory for the display.
+
+A second version of the hardware add-on corrected these problems. By adding a [[CRTC6845]] to the package, a full hardware solution was created that did not reduce CPU performance and only used 1&amp;nbsp;kB of memory for the display. A software ROM was still supplied, but this did no more than expand the hardware ROM so that it knew mode 7 now existed and was able to switch into it.
+
+===Electron Second Processor===
+During the latter years, PMS produced a 2nd Processor specifically for the Electron. This provided an alternative to buying the combination of the P.R.E.S. Advanced Plus 5 and Acorn 6502 2nd Processor.&lt;ref&gt;http://www.acornelectron.co.uk/mags/aab/revs/pms/r-e2p.html&lt;/ref&gt;
+
+==Merlin M2105==
+An unusual variant of the Electron was sold by [[British Telecom]] Business Systems as the BT Merlin M2105 Communications Terminal. This consisted of a de-badged Electron plus a large expansion unit containing 32&amp;nbsp;kB of RAM, 48&amp;nbsp;kB of ROM, a [[Centronics printer port]] and a [[modem]]. The ROM firmware provided [[dial-up]] communications facilities. These were used by the [[Interflora]] florists network in the UK for over a decade.&lt;ref&gt;{{cite web|url=http://www.acornelectron.co.uk/hardware/cats/bt.html |title=Merlin M2105 information |publisher=Acornelectron.co.uk |date= |accessdate=28 May 2013}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://chrisacorns.computinghistory.org.uk/Computers/BT_MerlinM2105.html |title=Chris's Acorns: BT Merlin M2105 |publisher=chrisacorns.computinghistory.org.uk |date=16 January 2008 |accessdate=1 October 2015}}&lt;/ref&gt;
+
+==Technical information==
+The hardware of the BBC Micro was emulated by a single customized ULA chip designed by Acorn in conjunction with [[Ferranti]]. It had feature limitations such as the inability to output more than one channel of sound or provide [[teletext]] mode.&lt;ref name=&quot;smith20130823&quot; /&gt; By contrast, the BBC Micro was capable of three-way polyphony (plus one noise channel).
+
+The edge-connector on the rear of the Electron exposed almost all the Bus lines, but not all. (The BBC Micro, courtesy of all its ports, exposed all lines.) {{Citation needed|reason=A perusal of the circuit diagrams does not support this, with there being little difference between the CPU signal connectivity between the Electron and BBC Micro, maybe only the PHI 1 signal from the CPU is available only on the BBC Micro, whereas the Electron exposes an input clock signal instead.|date=March 2019}}
+
+For Issue 1-4 motherboards, the ULA had an issue similar to those experienced by other socketed CPU's. Over time, the thermal heating and cooling could cause the ULA to rise slightly out of its socket just enough to cause the machine to start exhibiting 'hanging' or other startup-failure issues, such as a continuous 'startup beep'. This was despite a metal cover, and locking-bar mechanism designed to prevent this from occurring. Pushing down on the metal cover to reseat the ULA was normally sufficient to rectify these issues.&lt;ref name=&quot;computerhistory&quot;&gt;{{cite web|url=http://archive.computerhistory.org/resources/physical-object/acorn/102688877.lg.jpg|title=Image: 102688877.lg.jpg, (500 × 359 px)|publisher=archive.computerhistory.org|accessdate=17 September 2015}}&lt;/ref&gt;&lt;ref name=&quot;blogspot&quot;&gt;{{cite web|url=http://3.bp.blogspot.com/-7zQebyfYlPE/T0dYrkTIIpI/AAAAAAAAAVY/injg8GeCoco/s1600/DSCF3052.JPG|title=Image: DSCF3052.JPG, (1600 × 1200 px)|publisher=3.bp.blogspot.com|accessdate=17 September 2015}}&lt;/ref&gt;&lt;ref name=&quot;blogspot2&quot;&gt;{{cite web|url=http://1.bp.blogspot.com/-kyRwGNknHnU/T0dZHG8ThnI/AAAAAAAAAVo/JMFmxQLJstY/s1600/DSCF3055.JPG|title=Image: DSCF3055.JPG, (1600 × 1200 px)|publisher=1.bp.blogspot.com|accessdate=17 September 2015}}&lt;/ref&gt;&lt;ref name=&quot;bygonebytes&quot;&gt;{{cite web|url=http://www.bygonebytes.co.uk/images/electron_issue4.jpg|title=Image: electron_issue4.jpg, (350 × 221 px)|publisher=bygonebytes.co.uk|accessdate=17 September 2015}}&lt;/ref&gt; Issue 5 and 6 boards utilized a different epoxy resin covering directly over the ULA, which resolved this issue.&lt;ref name=&quot;bygonebytes2&quot;&gt;{{cite web|url=http://www.bygonebytes.co.uk/images/electron_issue6.jpg|title=Image: electron_issue6.jpg, (350 × 220 px)|publisher=bygonebytes.co.uk|accessdate=17 September 2015}}&lt;/ref&gt;
+
+The keyboard included a form of single-key keyword input, similar to that used on the [[Sinclair Spectrum]], via the 'func' key. However, unlike the Spectrum, the single-keypress keyword-entry was optional, and keywords could be entered manually if preferred.
+
+The ULA controlled memory access and was able to provide 32K × 8 bits of addressable RAM using 4 × 64K × 1-bit [[random-access memory|RAM]] chips (4164). Due to needing two accesses to each chip instead of one, and the complications of the video hardware also needing access, reading or writing RAM was much slower than on the BBC Micro. This meant that although ROM applications ran at similar speeds, there was a substantial speed decrease on applications running from RAM. The Electron used the Synertek variant of the 6502 processor as that allowed the clock to be stopped for the entire 40 microseconds the ULA required exclusive DRAM access per raster line.
+
+===Hardware===
+[[File:Acorn ALF03 Data Recorder (top).jpg|thumb|Acorn ALF03 Data Recorder]]
+* [[central processing unit|CPU]]: [[Synertek]] [[6502|SY6502A]]&lt;ref name=&quot;pastraiser&quot;&gt;{{cite web|url=http://www.pastraiser.com/computers/acornelectron/acornelectron.html|title=Acorn Electron Hardware|publisher=pastraiser.com|accessdate=17 September 2015}}&lt;/ref&gt;
+* Clock rate: variable. CPU runs at 2 [[megahertz|MHz]] when accessing ROM and 1&amp;nbsp;MHz when accessing RAM. The CPU is also periodically halted&lt;ref&gt;The Electron's Service Manual (p.7) also notes the following: &quot;In screen modes 0, 1, 2 and 3 the screen uses all the available memory time slots during the display period. The processor is denied RAM access during 40 microseconds of each 64 microseconds of the 256 lines in 312 which is the display period, and it is made to wait for RAM access until the end of the period.&quot;&lt;/ref&gt;. The Electron is widely misquoted as operating at 1.79&amp;nbsp;MHz after measurements derived from speed testing against the 2&amp;nbsp;MHz BBC Micro for various pieces of 'common software'&lt;ref&gt;BBC Micro RAM is clocked at 4&amp;nbsp;MHz which permits interleaved CPU and display circuitry access at 2&amp;nbsp;MHz. Electron RAM is divided into four DRAM chips each providing one bit per access, with the retrieval of a byte therefore requiring two DRAM accesses. This arrangement only supports the retrieval of a single byte per 2&amp;nbsp;MHz cycle, with this memory bandwidth being shared by the CPU and display circuitry.&lt;/ref&gt;.
+* Glue logic: [[Ferranti|Ferranti Semiconductor]] Custom [[gate array|ULA]]
+* [[random-access memory|RAM]]: 32 [[kilobyte|kB]]
+* [[read-only memory|ROM]]: 32 [[kilobyte|kB]]
+* Text modes: 20×32, 40×25, 40×32, 80×25, 80×32 (all text output produced by software in graphics modes)
+* Graphics modes: 160×256 (4 or 16 colours), 320×256 (2 or 4 colours), 640×256 (2 colours), 320×200 (2 colours — spaced display with two blank horizontal lines following every 8 pixel lines), 640×200 (2 colours — spaced display)
+* Colours: 8 colours (TTL combinations of RGB primaries) + 8 flashing versions of the same colours
+* Sound: 1 channel of sound, 7 octaves; built-in speaker. Software emulation of noise channel supported
+* Dimensions: 16×34×6.5&amp;nbsp;cm
+* I/O ports: Expansion port, tape recorder connector (1200 [[baud]] CUTS variation on the [[Kansas City standard]] for data encoding, via a 7-pin circular [[DIN connector]]), aerial TV connector ([[RF modulator]]), [[composite video]] and [[RGB]] monitor output
+* Power supply: External PSU, 19[[volt|V]] [[alternating current|AC]]
+
+===Quirks===
+[[File:ExileElectron.png|thumb|left|''[[Exile (1988 video game)|Exile]]'' is an example of a game where the developers left non-graphical data visible in the display buffer to gain additional memory space.]]
+Like the [[BBC Micro]], the Electron was constrained by limited memory resources. Of the 32&amp;nbsp;kB RAM, 3½ kB was allocated to the OS at startup and at least 10&amp;nbsp;kB was taken up by the display buffer in contiguous display modes.
+
+Due to the timing of interrupts it was possible to disable either the top 100 or bottom 156 lines of the display with palette changes. Many games took advantage of this, gaining storage by leaving non-graphical data in the disabled area.
+
+Other games would load non-graphical data into the display, leaving it visible as regions of apparently randomly coloured pixels.
+
+Although [[page flipping]] was a hardware possibility, the limited memory forced most applications to do all their drawing directly to the visible screen, often resulting in graphical [[Flicker (screen)|flicker]] or visible redraw. A notable exception is [[Players (publisher)|Players]]' ''[[Joe Blade]]'' series.
+
+===Tricks===
+
+====FireTrack: smooth vertical scrolling====
+Although programs can alter the position of the screen in memory, the non-linear format of the display means that vertical scrolling can only be done in blocks of 8 pixels without further work.
+
+''[[Firetrack|FireTrack]]'' exploits a division in the way the Electron handles its display — of the seven available graphics modes, two are configured so that the final two of every ten scanlines are blank and are not based on the contents of RAM. If 16 scanlines of continuous graphical data are written to a character-block-aligned portion of the screen then they will appear as a continuous block in most modes but in the two non-continuous modes they will be displayed as two blocks of eight scanlines, separated in the middle by two blank scanlines.
+
+In order to keep track of its position within the display, the Electron maintains an internal display address counter. The same counter is used in both the continuous and non-continuous graphics modes and switching modes mid-frame does not cause any adjustment to the counter.
+
+''FireTrack'' switches from a non-continuous to a continuous graphics mode part way down the display. By using the palette to mask the top area of the display and taking care about when it changes mode it can shift the continuous graphics at the bottom of the display down in two pixel increments because the internal display counter is not incremented on blank scanlines during non-continuous graphics modes.
+
+====Exile: sampled speech====
+''[[Exile (1988 video game)|Exile]]'' turns the Electron's one channel output into a digital speaker for [[Pulse-code modulation|PCM]] output.
+
+The speaker can be programmatically switched on or off at any time but is permanently attached to a hardware counter so is normally only able to output a square wave. But if set to a frequency outside the human audible range then the ear can't perceive the square wave, only the difference between the speaker being switched on and off. This gives the effect of a simple toggle speaker similar to that seen in the 48&amp;nbsp;kB [[Sinclair ZX Spectrum]]. ''Exile'' uses this to output 1-bit audio samples.
+
+====Frak! and Zalaga: Polyphonic music====
+Aardvark Software's &quot;[[Frak!]]&quot; and &quot;Zalaga&quot; As part of the copy protection, illegal copies of the games would cause a pseudo-polyphonic rendition of Trumpet Hornpipe, the [[Captain Pugwash]] theme tune, to play endlessly rather than loading the game properly (Pugwash being a pirate). On the Electron version of Frak!, the tune was the main theme from &quot;Benny Hill&quot; ([[Boots Randolph]]'s &quot;[[Yakety Sax]]&quot;). The polyphony was achieved via fast note-switching to achieve the necessary chords.
+
+==Popular games==
+{{see also|List of Acorn Electron games}}
+Although not as well supported by the biggest software publishers as rivals like the [[Commodore 64]] and [[Sinclair ZX Spectrum]], a good range of games were available for the Electron. The traditional [[BBC Micro]] publishers such as [[Acornsoft]], [[Superior Software]] and [[Micro Power]] offered the widest support. Notable popular games particularly associated with the Electron include:[[File:CrystalCastles Electron.gif|thumb|''[[Crystal Castles (video game)|Crystal Castles]]'' is an example of a popular arcade game officially ported to the Electron (US Gold).]]
+* ''[[Starship Command]]'' ([[Acornsoft]], 1983)
+* ''[[Chuckie Egg]]'' (A'n'F, 1984)
+* ''[[Elite (video game)|Elite]]'' ([[Acornsoft]], 1984)
+* the ''[[Repton (video game)|Repton]]'' series ([[Superior Software]], 1985–1989)
+* ''[[Thrust (video game)|Thrust]]'' ([[Superior Software]], 1986)
+* ''[[Exile (1988 video game)|Exile]]'' ([[Superior Software]], 1988)
+
+There were also many popular games officially converted to the Electron from arcade machines (including ''[[Crystal Castles (video game)|Crystal Castles]]'', ''[[Tempest (arcade game)|Tempest]]'', ''[[Commando (arcade game)|Commando]]'', ''[[Paperboy (video game)|Paperboy]]'' and ''[[Yie Ar Kung-Fu]]'') or other home computer systems (including ''[[Impossible Mission]]'', ''[[Jet Set Willy]]'', ''[[The Way of the Exploding Fist]]'', ''[[Tetris]]'', ''[[The Last Ninja]]'', ''[[Barbarian (computer game)|Barbarian]]'' and ''[[SimCity (1989 video game)|SimCity]]'').
+
+Despite Acorn themselves effectively shelving the Electron in 1985, games continued to be developed and released by professional software houses until 1991. There were around 1,400 games released for the Acorn Electron, several thousand extra public domain titles were released on disc through Public Domain libraries. Notable enterprises which produced discs of such software are [[BBC PD]], [[EUG (Electron User Group)|Electron User Group]] and [[HeadFirst PD]].
+
+==Emulation==
+Several emulators of the machine exist: [[ElectrEm]]&lt;ref&gt;{{cite web|url=http://electrem.emuunlim.com |title=ElectrEm |publisher=Electrem.emuunlim.com |date= |accessdate=28 May 2013}}&lt;/ref&gt; for [[Microsoft Windows|Windows]]/[[Linux]]/[[macOS]], Elkulator&lt;ref&gt;{{cite web|url=http://elkulator.acornelectron.co.uk |title=Elkulator - The Acorn Electron emulator |publisher=Elkulator.acornelectron.co.uk |date= |accessdate=28 May 2013}}&lt;/ref&gt; for [[Microsoft Windows|Windows]]/[[Linux]]/[[DOS]], ElkJS&lt;ref&gt;{{cite web|url=http://elkjs.azurewebsites.net |title=ElkJS }} - JavaScript browser based Acorn Electron emulator&lt;/ref&gt; is a browser-based (JavaScript/HTML5) emulator, and the multi-system emulators [[MESS]] and Clock Signal&lt;ref&gt;{{cite web |last1=Harte |first1=Thomas |title=Clock Signal |url=https://github.com/TomHarte/CLK |publisher=GitHub |accessdate=31 March 2019}}&lt;/ref&gt; feature support for the Electron. Electron software is predominantly archived in the [[UEF (file format)|UEF]] [[file format]].
+
+There are also two known [[Field-programmable gate array|FPGA]] based recreations of the Acorn Electron hardware. ElectronFPGA&lt;ref&gt;{{cite web|url=https://github.com/hoglet67/ElectronFpga|title=ElectronFPGA}} - Acorn Electron core for the Papilio Duo&lt;/ref&gt; for the Papilio Duo hardware and the Acorn-Electron&lt;ref&gt;{{cite web|url=http://www.fpgaarcade.com/kb/acorn-electron/|title=Acorn-Electron}} - Acorn Electron core for the FPGA Arcade &quot;Replay&quot; board&lt;/ref&gt; core for the FPGA Arcade &quot;Replay&quot; board.
+
+==Design team==
+The operating system ROM locations 0xFC00-0xFDFF contain the following text, which is different from the 'thanks' list in the original [[BBC Micro|BBC Model B]]:
+
+{{quote box|(C) 1983 Acorn Computers Ltd. Thanks are due to the following contributors to the development of the Electron (among others too numerous to mention):- Bob Austin, Astec, Harry Barman, Paul Bond, [[Allen Boothroyd]], Ben Bridgewater, Cambridge, John Cox, [[Chris Curry]], 6502 designers, Jeremy Dion, Tim Dobson, Joe Dunn, [[Ferranti]], [[Steve Furber]], David Gale, Andrew Gordon, Martyn Gilbert, Lawrence Hardwick, [[Hermann Hauser]], John Herbert, Hitachi, [[Andy Hopper]], Paul Jephcot, Brian Jones, Chris Jordan, [[University of Cambridge Computer Laboratory|Computer Laboratory]], Tony Mann, Peter Miller, Trevor Morris, Steve Parsons, Robin Pain, Glyn Phillips, Brian Robertson, [[Peter Robinson (computer scientist)|Peter Robinson]], David Seal, Kim Spence-Jones, Graham Tebby, Jon Thackray, Topexpress, Chris Turner, [[Advanced Disk Filing System|Hugo Tyson]], John Umney, Alex van Someren, Geoff Vincent, Adrian Warner, Robin Williamson, [[Sophie Wilson|Roger Wilson]].}}
+
+Additionally, the last bytes of both the BASIC ROM and 'Plus 3 Interface' ADFS v1.0 ROM include the word &quot;Roger&quot;, thought to be a reference to [[Sophie Wilson|Roger Wilson]].
+
+The case was designed by industrial designer [[Allen Boothroyd]] of Cambridge Product Design Ltd.
+
+==See also==
+* [[Electron User]], the most popular Acorn Electron focused magazine
+
+== References ==
+{{Reflist}}
+;Notes
+{{refbegin}}
+[https://www.theregister.co.uk/2013/08/23/acorn_electron_history_at_30/?page=1 Acorn Electron History at 30]
+{{refend}}
+
+==External links==
+{{commons category|Acorn Electron}}
+* [http://www.stairwaytohell.com Stairway To Hell]
+* [http://www.acornelectron.co.uk Acorn Electron World]
+* [http://www.bygonebytes.co.uk/Mode7.html Electron MODE 7 Photos]
+
+{{Acorn computers}}
+
+[[Category:Acorn Computers|Electron]]
+[[Category:6502-based home computers]]
+[[Category:Home computers]]
+[[Category:British computers]]</text>
+      <sha1>toxeoe8nhgv6gx4qzydkycjqx25549j</sha1>
+    </revision>
+  </page>
