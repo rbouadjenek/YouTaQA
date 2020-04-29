@@ -167,7 +167,7 @@ class Indexer:
                 "wish", "with", "within", "without", "won't", "wonder",
                 "would", "would", "wouldn't", "x", "y", "yes", "yet", "you",
                 "you'd", "you'll", "you're", "you've", "your", "yours"])
-                
+
     analyzer = RegexTokenizer() | LowercaseFilter() | IntraWordFilter(splitwords=True, splitnums=True) | StopFilter(stoplist= CustomStopList, lang="en") | StemFilter()
 
     def __init__(self, index_dir):
@@ -205,7 +205,7 @@ class Indexer:
                 pbar.update(1)
                 doc = Document(file)  # this parse the wikipedia page
                 self.index_document(doc)  # this indexes the wikipedia page
-                
+
         self.close()
 
     def index_document(self, doc):
@@ -229,7 +229,7 @@ class Indexer:
         self.writer.commit()
 
 class Searcher:
-    
+
     def search(searchDir, query):
         """
         Method that searches through documents
@@ -289,4 +289,3 @@ if __name__ == "__main__":
     The main function.
     """
     main(sys.argv[1:])
-
