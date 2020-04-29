@@ -237,7 +237,6 @@ class Searcher:
         """
         if index.exists_in(searchDir) is True:
             searchIndex = index.open_dir(searchDir)
-            print(type(searchIndex))
             QueryParse = MultifieldParser(["title_article", "content_section"],
                                                         schema=Schema(id_article=ID(stored=True),
                                                         title_article=TEXT(analyzer=Indexer.analyzer, stored=True),
@@ -249,6 +248,8 @@ class Searcher:
             searcher = searchIndex.searcher(weighting=scoring.BM25F())
             result = searcher.search(Query)
             return result
+        elif index.exists_in(searchDir) is False:
+            print("No index found")
 
 
 def main(argv):
