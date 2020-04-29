@@ -55,6 +55,7 @@ collecting template definitions.
 """
 
 from __future__ import unicode_literals, division
+from math import floor, ceil, pi, e, trunc, exp, log as ln, sin, cos, tan, asin, acos, atan
 
 import sys
 import argparse
@@ -85,13 +86,15 @@ if PY2:
     text_type = unicode
 
     class SimpleNamespace(object):
-        def __init__ (self, **kwargs):
+        def __init__(self, **kwargs):
             self.__dict__.update(kwargs)
-        def __repr__ (self):
+
+        def __repr__(self):
             keys = sorted(self.__dict__)
             items = ("{}={!r}".format(k, self.__dict__[k]) for k in keys)
             return "{}({})".format(type(self).__name__, ", ".join(items))
-        def __eq__ (self, other):
+
+        def __eq__(self, other):
             return self.__dict__ == other.__dict__
 else:
     from urllib.parse import quote
@@ -113,18 +116,18 @@ options = SimpleNamespace(
     ##
     # Defined in <siteinfo>
     # We include as default Template, when loading external template file.
-    knownNamespaces = {'Template': 10},
+    knownNamespaces={'Template': 10},
 
     ##
     # The namespace used for template definitions
     # It is the name associated with namespace key=10 in the siteinfo header.
-    templateNamespace = '',
-    templatePrefix = '',
+    templateNamespace='',
+    templatePrefix='',
 
     ##
     # The namespace used for module definitions
     # It is the name associated with namespace key=828 in the siteinfo header.
-    moduleNamespace = '',
+    moduleNamespace='',
 
     ##
     # Recognize only these namespaces in links
@@ -132,71 +135,71 @@ options = SimpleNamespace(
     # wiktionary: Wiki dictionary
     # wikt: shortcut for Wiktionary
     #
-    acceptedNamespaces = ['w', 'wiktionary', 'wikt'],
+    acceptedNamespaces=['w', 'wiktionary', 'wikt'],
 
     # This is obtained from <siteinfo>
-    urlbase = '',
+    urlbase='',
 
     ##
     # Filter disambiguation pages
-    filter_disambig_pages = False,
+    filter_disambig_pages=False,
 
     ##
     # Drop tables from the article
-    keep_tables = False,
+    keep_tables=False,
 
     ##
     # Whether to preserve links in output
-    keepLinks = False,
+    keepLinks=False,
 
     ##
     # Whether to preserve section titles
-    keepSections = False,
+    keepSections=False,
 
     ##
     # Whether to preserve lists
-    keepLists = False,
+    keepLists=False,
 
     ##
     # Whether to output HTML instead of text
-    toHTML = False,
+    toHTML=False,
 
     ##
     # Whether to write json instead of the xml-like default output format
-    write_json = False,
+    write_json=False,
 
     ##
     # Whether to expand templates
-    expand_templates = True,
+    expand_templates=True,
 
     ##
-    ## Whether to escape doc content
-    escape_doc = False,
+    # Whether to escape doc content
+    escape_doc=False,
 
     ##
     # Print the wikipedia article revision
-    print_revision = False,
+    print_revision=False,
 
     ##
     # Minimum expanded text length required to print document
-    min_text_length = 0,
+    min_text_length=0,
 
     # Shared objects holding templates, redirects and cache
-    templates = {},
-    redirects = {},
+    templates={},
+    redirects={},
     # cache of parser templates
     # FIXME: sharing this with a Manager slows down.
-    templateCache = {},
+    templateCache={},
 
     # Elements to ignore/discard
 
-    ignored_tag_patterns = [],
-    filter_category_include = set(),
-    filter_category_exclude = set(),
+    ignored_tag_patterns=[],
+    filter_category_include=set(),
+    filter_category_exclude=set(),
 
-    log_file = None,
+    log_file=None,
 
-    discardElements = [
+    discardElements=[
         'gallery', 'timeline', 'noinclude', 'pre',
         'table', 'tr', 'td', 'th', 'caption', 'div',
         'form', 'input', 'select', 'option', 'textarea',
@@ -212,15 +215,18 @@ templateKeys = set(['10', '828'])
 
 ##
 # Regex for identifying disambig pages
-filter_disambig_page_pattern = re.compile("{{disambig(uation)?(\|[^}]*)?}}|__DISAMBIG__")
+filter_disambig_page_pattern = re.compile(
+    "{{disambig(uation)?(\|[^}]*)?}}|__DISAMBIG__")
 
 ##
 g_page_total = 0
-g_page_articl_total=0
-g_page_articl_used_total=0
+g_page_articl_total = 0
+g_page_articl_used_total = 0
 # page filtering logic -- remove templates, undesired xml namespaces, and disambiguation pages
+
+
 def keepPage(ns, catSet, page):
-    global g_page_articl_total,g_page_total,g_page_articl_used_total
+    global g_page_articl_total, g_page_total, g_page_articl_used_total
     g_page_total += 1
     if ns != '0':               # Aritcle
         return False
@@ -230,10 +236,10 @@ def keepPage(ns, catSet, page):
         for line in page:
             if filter_disambig_page_pattern.match(line):
                 return False
-    if len(options.filter_category_include) > 0 and len(options.filter_category_include & catSet)==0:
+    if len(options.filter_category_include) > 0 and len(options.filter_category_include & catSet) == 0:
         logging.debug("***No include  " + str(catSet))
         return False
-    if len(options.filter_category_exclude) > 0 and len(options.filter_category_exclude & catSet)>0:
+    if len(options.filter_category_exclude) > 0 and len(options.filter_category_exclude & catSet) > 0:
         logging.debug("***Exclude  " + str(catSet))
         return False
     g_page_articl_used_total += 1
@@ -358,20 +364,22 @@ nowiki = re.compile(r'<nowiki>.*?</nowiki>')
 
 
 def ignoreTag(tag):
-    left = re.compile(r'<%s\b.*?>' % tag, re.IGNORECASE | re.DOTALL)  # both <ref> and <reference>
+    left = re.compile(r'<%s\b.*?>' % tag, re.IGNORECASE |
+                      re.DOTALL)  # both <ref> and <reference>
     right = re.compile(r'</\s*%s>' % tag, re.IGNORECASE)
     options.ignored_tag_patterns.append((left, right))
+
 
 # Match selfClosing HTML tags
 selfClosing_tag_patterns = [
     re.compile(r'<\s*%s\b[^>]*/\s*>' % tag, re.DOTALL | re.IGNORECASE) for tag in selfClosingTags
-    ]
+]
 
 # Match HTML placeholder tags
 placeholder_tag_patterns = [
     (re.compile(r'<\s*%s(\s*| [^>]+?)>.*?<\s*/\s*%s\s*>' % (tag, tag), re.DOTALL | re.IGNORECASE),
      repl) for tag, repl in placeholder_tags.items()
-    ]
+]
 
 # Match preformatted lines
 preformatted = re.compile(r'^ .*?$')
@@ -418,7 +426,6 @@ class Template(list):
         tpl.append(TemplateText(body[start:]))  # leftover
         return tpl
 
-
     def subst(self, params, extractor, depth=0):
         # We perform parameter substitutions recursively.
         # We also limit the maximum number of iterations to avoid too long or
@@ -448,7 +455,6 @@ class Template(list):
 
 class TemplateText(text_type):
     """Fixed text of template"""
-
 
     def subst(self, params, extractor, depth):
         return self
@@ -486,7 +492,6 @@ class TemplateArg(object):
         else:
             return '{{{%s}}}' % self.name
 
-
     def subst(self, params, extractor, depth):
         """
         Substitute value for this argument from dict :param params:
@@ -499,7 +504,8 @@ class TemplateArg(object):
         paramName = extractor.transform(paramName)
         res = ''
         if paramName in params:
-            res = params[paramName]  # use parameter value specified in template invocation
+            # use parameter value specified in template invocation
+            res = params[paramName]
         elif self.default:  # use the default value
             defaultValue = self.default.subst(params, extractor, depth + 1)
             res = extractor.transform(defaultValue)
@@ -515,32 +521,33 @@ class Frame(object):
         self.prev = prev
         self.depth = prev.depth + 1 if prev else 0
 
-
     def push(self, title, args):
         return Frame(title, args, self)
 
-
     def pop(self):
         return self.prev
-
 
     def __str__(self):
         res = ''
         prev = self.prev
         while prev:
-            if res: res += ', '
+            if res:
+                res += ', '
             res += '(%s, %s)' % (prev.title, prev.args)
             prev = prev.prev
         return '<Frame [' + res + ']>'
 
 # ======================================================================
 
+
 substWords = 'subst:|safesubst:'
+
 
 class Extractor(object):
     """
     An extraction task on a article.
     """
+
     def __init__(self, id, revid, title, lines):
         """
         :param id: id of page.
@@ -592,7 +599,7 @@ class Extractor(object):
             for line in text:
                 if out == sys.stdout:   # option -a or -o -
                     line = line.encode('utf-8')
-                #hna rahou yktb les lignes
+                # hna rahou yktb les lignes
                 out.write(line)
                 out.write('\n')
             # out.write(footer)
@@ -608,23 +615,24 @@ class Extractor(object):
             title_str = '<h1>' + self.title + '</h1>'
         else:
             title_str = self.title + '\n'
-        
+
         # https://www.mediawiki.org/wiki/Help:Magic_words
         colon = self.title.find(':')
         if colon != -1:
             ns = self.title[:colon]
-            pagename = self.title[colon+1:]
+            pagename = self.title[colon + 1:]
         else:
-            ns = '' # Main
+            ns = ''  # Main
             pagename = self.title
         self.magicWords['NAMESPACE'] = ns
-        self.magicWords['NAMESPACENUMBER'] = options.knownNamespaces.get(ns, '0')
+        self.magicWords['NAMESPACENUMBER'] = options.knownNamespaces.get(
+            ns, '0')
         self.magicWords['PAGENAME'] = pagename
         self.magicWords['FULLPAGENAME'] = self.title
         slash = pagename.rfind('/')
         if slash != -1:
             self.magicWords['BASEPAGENAME'] = pagename[:slash]
-            self.magicWords['SUBPAGENAME'] = pagename[slash+1:]
+            self.magicWords['SUBPAGENAME'] = pagename[slash + 1:]
         else:
             self.magicWords['BASEPAGENAME'] = pagename
             self.magicWords['SUBPAGENAME'] = ''
@@ -666,7 +674,6 @@ class Extractor(object):
             logging.warn("Template errors in article '%s' (%s): title(%d) recursion(%d, %d, %d)",
                          self.title, self.id, *errs)
 
-
     def transform(self, wikitext):
         """
         Transforms wiki markup.
@@ -676,12 +683,12 @@ class Extractor(object):
         res = ''
         cur = 0
         for m in nowiki.finditer(wikitext, cur):
-            res += self.transform1(wikitext[cur:m.start()]) + wikitext[m.start():m.end()]
+            res += self.transform1(wikitext[cur:m.start()]) + \
+                wikitext[m.start():m.end()]
             cur = m.end()
         # leftover
         res += self.transform1(wikitext[cur:])
         return res
-
 
     def transform1(self, text):
         """Transform text not containing <nowiki>"""
@@ -692,7 +699,6 @@ class Extractor(object):
         else:
             # Drop transclusions (template, parser functions)
             return dropNested(text, r'{{', r'}}')
-
 
     def wiki2text(self, text):
         #
@@ -749,7 +755,6 @@ class Extractor(object):
         text = res + unescape(text[cur:])
         return text
 
-
     def clean(self, text):
         """
         Removes irrelevant parts from :param: text.
@@ -778,7 +783,8 @@ class Extractor(object):
 
         # Drop discarded elements
         for tag in options.discardElements:
-            text = dropNested(text, r'<\s*%s\b[^>/]*>' % tag, r'<\s*/\s*%s>' % tag)
+            text = dropNested(
+                text, r'<\s*%s\b[^>/]*>' % tag, r'<\s*/\s*%s>' % tag)
 
         if not options.toHTML:
             # Turn into text what is left (&amp;nbsp;) and <syntaxhighlight>
@@ -788,7 +794,8 @@ class Extractor(object):
         for pattern, placeholder in placeholder_tag_patterns:
             index = 1
             for match in pattern.finditer(text):
-                text = text.replace(match.group(), '%s_%d' % (placeholder, index))
+                text = text.replace(match.group(), '%s_%d' %
+                                    (placeholder, index))
                 index += 1
 
         text = text.replace('<<', '«').replace('>>', '»')
@@ -801,7 +808,8 @@ class Extractor(object):
         text = dots.sub('...', text)
         text = re.sub(' (,:\.\)\]»)', r'\1', text)
         text = re.sub('(\[\(«) ', r'\1', text)
-        text = re.sub(r'\n\W+?\n', '\n', text, flags=re.U)  # lines with only punctuations
+        # lines with only punctuations
+        text = re.sub(r'\n\W+?\n', '\n', text, flags=re.U)
         text = text.replace(',,', ',').replace(',.', '.')
         text = text.replace('==', '=').replace('==', '=')
         if options.keep_tables:
@@ -809,7 +817,8 @@ class Extractor(object):
             # yet keep the content. The order here is imporant so we remove certain markup like {| and then
             # then the future html attributes such as 'style'. Finally we drop the remaining '|-' that delimits cells.
             text = re.sub(r'!(?:\s)?style=\"[a-z]+:(?:\d+)%;\"', r'', text)
-            text = re.sub(r'!(?:\s)?style="[a-z]+:(?:\d+)%;[a-z]+:(?:#)?(?:[0-9a-z]+)?"', r'', text)
+            text = re.sub(
+                r'!(?:\s)?style="[a-z]+:(?:\d+)%;[a-z]+:(?:#)?(?:[0-9a-z]+)?"', r'', text)
             text = text.replace('|+', 'Title => ')
             text = text.replace('!! ', 'H => ')
             text = text.replace('!', 'H => ')
@@ -825,7 +834,6 @@ class Extractor(object):
             text = html.escape(text)
         return text
 
-
     # ----------------------------------------------------------------------
     # Expand templates
 
@@ -834,7 +842,6 @@ class Extractor(object):
 
     # check for template beginning
     reOpen = re.compile('(?<!{){{(?!{)', re.DOTALL)
-
 
     def expand(self, wikitext):
         """
@@ -869,14 +876,13 @@ class Extractor(object):
         cur = 0
         # look for matching {{...}}
         for s, e in findMatchingBraces(wikitext, 2):
-            #hna dar 200 hello
+            # hna dar 200 hello
             res += wikitext[cur:s] + self.expandTemplate(wikitext[s + 2:e - 2])
             cur = e
         # leftover
         res += wikitext[cur:]
         # logging.debug('%*sexpand> %s', self.frame.depth, '', res)
         return res
-
 
     def templateParams(self, parameters):
         """
@@ -945,7 +951,6 @@ class Extractor(object):
                 templateParams[str(unnamedParameterCounter)] = param
         # logging.debug('%*stemplateParams> %s', self.frame.length, '', '|'.join(templateParams.values()))
         return templateParams
-
 
     def expandTemplate(self, body):
         """Expands template invocation.
@@ -1034,7 +1039,8 @@ class Extractor(object):
         colon = title.find(':')
         if colon > 1:
             funct = title[:colon]
-            parts[0] = title[colon + 1:].strip()  # side-effect (parts[0] not used later)
+            # side-effect (parts[0] not used later)
+            parts[0] = title[colon + 1:].strip()
             # arguments after first are not evaluated
             ret = callParserFunction(funct, parts, self)
             logging.debug('%*s<EXPAND %s %s', self.frame.depth, '', funct, ret)
@@ -1062,7 +1068,8 @@ class Extractor(object):
             logging.debug('%*s<EXPAND %s %s', self.frame.depth, '', title, '')
             return ''
 
-        logging.debug('%*sTEMPLATE %s: %s', self.frame.depth, '', title, template)
+        logging.debug('%*sTEMPLATE %s: %s',
+                      self.frame.depth, '', title, template)
 
         # tplarg          = "{{{" parts "}}}"
         # parts           = [ title *( "|" part ) ]
@@ -1281,7 +1288,7 @@ def findMatchingBraces(text, ldelim=0):
                     break
                 elif len(stack) == 1 and 0 < stack[0] < ldelim:
                     # ambiguous {{{{{ }}} }}
-                    #yield m1.start() + stack[0], end
+                    # yield m1.start() + stack[0], end
                     cur = end
                     break
             elif brac == '[':  # [[
@@ -1315,7 +1322,8 @@ def findBalanced(text, openDelim=['[['], closeDelim=[']]']):
     """
     openPat = '|'.join([re.escape(x) for x in openDelim])
     # pattern for delimiters expected after each opening delimiter
-    afterPat = {o: re.compile(openPat + '|' + c, re.DOTALL) for o, c in zip(openDelim, closeDelim)}
+    afterPat = {o: re.compile(openPat + '|' + c, re.DOTALL)
+                for o, c in zip(openDelim, closeDelim)}
     stack = []
     start = 0
     cur = 0
@@ -1411,7 +1419,7 @@ def functionParams(args, vars):
     for var in vars:
         value = args.get(var)
         if value is None:
-            value = args.get(str(index)) # positional argument
+            value = args.get(str(index))  # positional argument
             if value is None:
                 value = ''
             else:
@@ -1423,20 +1431,23 @@ def functionParams(args, vars):
 def string_sub(args):
     params = functionParams(args, ('s', 'i', 'j'))
     s = params.get('s', '')
-    i = int(params.get('i', 1) or 1) # or handles case of '' value
+    i = int(params.get('i', 1) or 1)  # or handles case of '' value
     j = int(params.get('j', -1) or -1)
-    if i > 0: i -= 1             # lua is 1-based
-    if j < 0: j += 1
-    if j == 0: j = len(s)
+    if i > 0:
+        i -= 1             # lua is 1-based
+    if j < 0:
+        j += 1
+    if j == 0:
+        j = len(s)
     return s[i:j]
 
 
 def string_sublength(args):
     params = functionParams(args, ('s', 'i', 'len'))
     s = params.get('s', '')
-    i = int(params.get('i', 1) or 1) - 1 # lua is 1-based
+    i = int(params.get('i', 1) or 1) - 1  # lua is 1-based
     len = int(params.get('len', 1) or 1)
-    return s[i:i+len]
+    return s[i:i + len]
 
 
 def string_len(args):
@@ -1449,12 +1460,12 @@ def string_find(args):
     params = functionParams(args, ('source', 'target', 'start', 'plain'))
     source = params.get('source', '')
     pattern = params.get('target', '')
-    start = int('0'+params.get('start', 1)) - 1 # lua is 1-based
-    plain = int('0'+params.get('plain', 1))
+    start = int('0' + params.get('start', 1)) - 1  # lua is 1-based
+    plain = int('0' + params.get('plain', 1))
     if source == '' or pattern == '':
         return 0
     if plain:
-        return source.find(pattern, start) + 1 # lua is 1-based
+        return source.find(pattern, start) + 1  # lua is 1-based
     else:
         return (re.compile(pattern).search(source, start) or -1) + 1
 
@@ -1464,12 +1475,13 @@ def string_pos(args):
     target = params.get('target', '')
     pos = int(params.get('pos', 1) or 1)
     if pos > 0:
-        pos -= 1 # The first character has an index value of 1
+        pos -= 1  # The first character has an index value of 1
     return target[pos]
 
 
 def string_replace(args):
-    params = functionParams(args, ('source', 'pattern', 'replace', 'count', 'plain'))
+    params = functionParams(
+        args, ('source', 'pattern', 'replace', 'count', 'plain'))
     source = params.get('source', '')
     pattern = params.get('pattern', '')
     replace = params.get('replace', '')
@@ -1524,6 +1536,7 @@ def roman_main(args):
     return toRoman(num, smallRomans)
 
 # ----------------------------------------------------------------------
+
 
 modules = {
     'convert': {
@@ -1773,14 +1786,11 @@ class Infix:
 ROUND = Infix(lambda x, y: round(x, y))
 
 
-from math import floor, ceil, pi, e, trunc, exp, log as ln, sin, cos, tan, asin, acos, atan
-
-
 def sharp_expr(extr, expr):
     """Tries converting a lua expr into a Python expr."""
     try:
         expr = extr.expand(expr)
-        expr = re.sub('(?<![!<>])=', '==', expr) # negative lookbehind
+        expr = re.sub('(?<![!<>])=', '==', expr)  # negative lookbehind
         expr = re.sub('mod', '%', expr)          # no \b here
         expr = re.sub('\bdiv\b', '/', expr)
         expr = re.sub('\bround\b', '|ROUND|', expr)
@@ -1795,11 +1805,11 @@ def sharp_if(extr, testValue, valueIfTrue, valueIfFalse=None, *args):
     if testValue.strip():
         # The {{#if:}} function is an if-then-else construct.
         # The applied condition is: "The condition string is non-empty".
-        valueIfTrue = extr.expand(valueIfTrue.strip()) # eval
+        valueIfTrue = extr.expand(valueIfTrue.strip())  # eval
         if valueIfTrue:
             return valueIfTrue
     elif valueIfFalse:
-        return extr.expand(valueIfFalse.strip()) # eval
+        return extr.expand(valueIfFalse.strip())  # eval
     return ""
 
 
@@ -1896,19 +1906,20 @@ parserFunctions = {
 
     '#ifexpr': lambda *args: '',  # not supported
 
-    '#ifexist': lambda extr, title, ifex, ifnex: extr.expand(ifnex), # assuming title is not present
+    # assuming title is not present
+    '#ifexist': lambda extr, title, ifex, ifnex: extr.expand(ifnex),
 
     '#rel2abs': lambda *args: '',  # not supported
 
     '#switch': sharp_switch,
 
-    '#language': lambda *args: '', # not supported
+    '#language': lambda *args: '',  # not supported
 
     '#time': lambda *args: '',     # not supported
 
     '#timel': lambda *args: '',    # not supported
 
-    '#titleparts': lambda *args: '', # not supported
+    '#titleparts': lambda *args: '',  # not supported
 
     # This function is used in some pages to construct links
     # http://meta.wikimedia.org/wiki/Help:URL
@@ -1942,7 +1953,8 @@ def callParserFunction(functionName, args, extractor):
         functionName = functionName.lower()
         if functionName == '#invoke':
             module, fun = args[0].strip(), args[1].strip()
-            logging.debug('%*s#invoke %s %s %s', extractor.frame.depth, '', module, fun, args[2:])
+            logging.debug('%*s#invoke %s %s %s',
+                          extractor.frame.depth, '', module, fun, args[2:])
             # special handling of frame
             if len(args) == 2:
                 # find parameters in frame whose title is the one of the original
@@ -1958,10 +1970,12 @@ def callParserFunction(functionName, args, extractor):
                         break
                     frame = frame.prev
             else:
-                params = [extractor.transform(p) for p in args[2:]] # evaluates them
+                params = [extractor.transform(p)
+                          for p in args[2:]]  # evaluates them
                 params = extractor.templateParams(params)
             ret = sharp_invoke(module, fun, params)
-            logging.debug('%*s<#invoke %s %s %s', extractor.frame.depth, '', module, fun, ret)
+            logging.debug('%*s<#invoke %s %s %s',
+                          extractor.frame.depth, '', module, fun, ret)
             return ret
         if functionName in parserFunctions:
             # branching functions use the extractor to selectively evaluate args
@@ -1989,6 +2003,7 @@ def callParserFunction(functionName, args, extractor):
 reNoinclude = re.compile(r'<noinclude>(?:.*?)</noinclude>', re.DOTALL)
 reIncludeonly = re.compile(r'<includeonly>|</includeonly>', re.DOTALL)
 
+
 def define_template(title, page):
     """
     Adds a template defined in the :param page:.
@@ -1997,7 +2012,8 @@ def define_template(title, page):
     # title = normalizeTitle(title)
 
     # sanity check (empty template, e.g. Template:Crude Oil Prices))
-    if not page: return
+    if not page:
+        return
 
     # check for redirects
     m = re.match('#REDIRECT.*?\[\[([^\]]*)]]', page[0], re.IGNORECASE)
@@ -2529,7 +2545,8 @@ def makeExternalImage(url, alt=''):
 # match tail after wikilink
 tailRE = re.compile('\w+')
 
-syntaxhighlight = re.compile('&lt;syntaxhighlight .*?&gt;(.*?)&lt;/syntaxhighlight&gt;', re.DOTALL)
+syntaxhighlight = re.compile(
+    '&lt;syntaxhighlight .*?&gt;(.*?)&lt;/syntaxhighlight&gt;', re.DOTALL)
 
 # skip level 1, it is page name level
 section = re.compile(r'(==+)\s*(.*?)\s*\1')
@@ -2549,7 +2566,8 @@ def compact(text):
     headers = {}          # Headers for unfilled sections
     emptySection = False  # empty sections are discarded
     listLevel = []        # nesting of lists
-    listCount = []        # count of each list (it should be always in the same length of listLevel)
+    # count of each list (it should be always in the same length of listLevel)
+    listCount = []
     for line in text.split('\n'):
         if not line:            # collapse empty lines
             # if there is an opening list, close it if we see an empty line
@@ -2568,7 +2586,7 @@ def compact(text):
         m = section.match(line)
         if m:
             title = m.group(2)
-            lev = len(m.group(1)) # header level
+            lev = len(m.group(1))  # header level
             if options.toHTML:
                 page.append("<h%d>%s</h%d>" % (lev, title, lev))
             if title and title[-1] not in '!?':
@@ -2576,7 +2594,7 @@ def compact(text):
             headers[lev] = title
             # drop previous headers
             for i in list(headers.keys()):
-                #--------------------------------------------------------------
+                # --------------------------------------------------------------
                 #sectionTitle = ""
                 sectionTitle = '#' + str(i) + " " + str(headers[i])
                 if i > lev:
@@ -2602,7 +2620,7 @@ def compact(text):
             # c: current level char
             # n: next level char
             for c, n in zip_longest(listLevel, line, fillvalue=''):
-                if not n or n not in '*#;:': # shorter or different
+                if not n or n not in '*#;:':  # shorter or different
                     if c:
                         if options.toHTML:
                             page.append(listClose[c])
@@ -2637,9 +2655,10 @@ def compact(text):
                     # use item count for #-lines
                     listCount[i - 1] += 1
                     bullet = '%d. ' % listCount[i - 1] if n == '#' else '- '
-                    page.append('{0:{1}s}'.format(bullet, len(listLevel)) + line)
+                    page.append('{0:{1}s}'.format(
+                        bullet, len(listLevel)) + line)
                 elif options.toHTML:
-                    if n not in listItem: 
+                    if n not in listItem:
                         n = '*'
                     page.append(listItem[n] % line)
         elif len(listLevel):
@@ -2673,7 +2692,8 @@ def compact(text):
 
 def handle_unicode(entity):
     numeric_code = int(entity[2:-1])
-    if numeric_code >= 0x10000: return ''
+    if numeric_code >= 0x10000:
+        return ''
     return chr(numeric_code)
 
 
@@ -2711,7 +2731,7 @@ class NextFile(object):
 
     def _filepath(self):
         return self.path_name + '/tmp.txt'
-        
+
 
 class OutputSplitter(object):
     """
@@ -2755,7 +2775,9 @@ class OutputSplitter(object):
 tagRE = re.compile(r'(.*?)<(/?\w+)[^>]*?>(?:([^<]*)(<.*?>)?)?')
 #                    1     2               3      4
 keyRE = re.compile(r'key="(\d*)"')
-catRE = re.compile(r'\[\[Category:([^\|]+).*\]\].*')  # capture the category name [[Category:Category name|Sortkey]]"
+# capture the category name [[Category:Category name|Sortkey]]"
+catRE = re.compile(r'\[\[Category:([^\|]+).*\]\].*')
+
 
 def load_templates(file, output_file=None):
     """
@@ -2768,7 +2790,7 @@ def load_templates(file, output_file=None):
     if output_file:
         output = codecs.open(output_file, 'wb', 'utf-8')
     for page_count, page_data in enumerate(pages_from(file)):
-        id, revid, title, ns,catSet, page = page_data
+        id, revid, title, ns, catSet, page = page_data
         if not output_file and (not options.templateNamespace or
                                 not options.moduleNamespace):  # do not know it yet
             # reconstruct templateNamespace and moduleNamespace from the first title
@@ -2818,7 +2840,8 @@ def pages_from(input):
     redirect = False
     title = None
     for line in input:
-        if not isinstance(line, text_type): line = line.decode('utf-8')
+        if not isinstance(line, text_type):
+            line = line.decode('utf-8')
         if '<' not in line:  # faster than doing re.search()
             if inText:
                 page.append(line)
@@ -2847,7 +2870,8 @@ def pages_from(input):
         elif tag == 'redirect':
             redirect = True
         elif tag == 'text':
-            if m.lastindex == 3 and line[m.start(3)-2] == '/': # self closing
+            # self closing
+            if m.lastindex == 3 and line[m.start(3) - 2] == '/':
                 # <text xml:space="preserve" />
                 continue
             inText = True
@@ -2863,7 +2887,7 @@ def pages_from(input):
             page.append(line)
         elif tag == '/page':
             if id != last_id and not redirect:
-                yield (id, revid, title, ns,catSet, page)
+                yield (id, revid, title, ns, catSet, page)
                 last_id = id
                 ns = '0'
             id = None
@@ -2932,11 +2956,13 @@ def process_dump(input_file, template_file, out_file, file_size, file_compress,
             else:
                 if input_file == '-':
                     # can't scan then reset stdin; must error w/ suggestion to specify template_file
-                    raise ValueError("to use templates with stdin dump, must supply explicit template-file")
+                    raise ValueError(
+                        "to use templates with stdin dump, must supply explicit template-file")
                 # logging.info("Preprocessing '%s' to collect template definitions: this may take some time.", input_file)
                 load_templates(input, template_file)
                 input.close()
-                input = fileinput.FileInput(input_file, openhook=fileinput.hook_compressed)
+                input = fileinput.FileInput(
+                    input_file, openhook=fileinput.hook_compressed)
         template_load_elapsed = default_timer() - template_load_start
         # logging.info("Loaded %d templates in %.1fs", len(options.templates), template_load_elapsed)
 
@@ -2990,13 +3016,13 @@ def process_dump(input_file, template_file, out_file, file_size, file_compress,
             delay = 0
             if spool_length.value > max_spool_length:
                 # reduce to 10%
-                while spool_length.value > max_spool_length/10:
+                while spool_length.value > max_spool_length / 10:
                     time.sleep(10)
                     delay += 10
             # if delay:
                 # logging.info('Delay %ds', delay)
             job = (id, revid, title, page, page_num)
-            jobs_queue.put(job) # goes to any available extract_process
+            jobs_queue.put(job)  # goes to any available extract_process
             page_num += 1
         page = None             # free memory
 
@@ -3017,7 +3043,7 @@ def process_dump(input_file, template_file, out_file, file_size, file_compress,
     extract_duration = default_timer() - extract_start
     extract_rate = page_num / extract_duration
     # logging.info("Finished %d-process extraction of %d articles in %.1fs (%.1f art/s)",
-                #  process_count, page_num, extract_duration, extract_rate)
+    #  process_count, page_num, extract_duration, extract_rate)
     # logging.info("total of page: %d, total of articl page: %d; total of used articl page: %d" % (g_page_total, g_page_articl_total,g_page_articl_used_total))
 
 
@@ -3039,13 +3065,12 @@ def extract_process(opts, i, jobs_queue, output_queue):
 
     out = StringIO()                 # memory buffer
 
-
     while True:
         job = jobs_queue.get()  # job is (id, title, page, page_num)
         if job:
             id, revid, title, page, page_num = job
             try:
-                e = Extractor(*job[:4]) # (id, revid, title, page)
+                e = Extractor(*job[:4])  # (id, revid, title, page)
                 page = None              # free memory
                 e.extract(out)
                 text = out.getvalue()
@@ -3063,6 +3088,8 @@ def extract_process(opts, i, jobs_queue, output_queue):
 
 
 report_period = 10000           # progress report period
+
+
 def reduce_process(opts, output_queue, spool_length,
                    out_file=None, file_size=0, file_compress=True):
     """Pull finished article text, write series of files (or stdout)
@@ -3085,7 +3112,8 @@ def reduce_process(opts, output_queue, spool_length,
     else:
         output = sys.stdout if PY2 else sys.stdout.buffer
         if file_compress:
-            logging.warn("writing to stdout, so no output compression (use an external tool)")
+            logging.warn(
+                "writing to stdout, so no output compression (use an external tool)")
 
     interval_start = default_timer()
     # FIXME: use a heap
@@ -3099,7 +3127,8 @@ def reduce_process(opts, output_queue, spool_length,
             spool_length.value = len(spool)
             # progress report
             if next_page % report_period == 0:
-                interval_rate = report_period / (default_timer() - interval_start)
+                interval_rate = report_period / \
+                    (default_timer() - interval_start)
                 # logging.info("Extracted %d articles (%.1f art/s)",
                 #              next_page, interval_rate)
                 interval_start = default_timer()
@@ -3126,6 +3155,7 @@ def reduce_process(opts, output_queue, spool_length,
 # Minimum size of output files
 minFileSize = 200 * 1024
 
+
 def main():
 
     parser = argparse.ArgumentParser(prog=os.path.basename(sys.argv[0]),
@@ -3143,7 +3173,6 @@ def main():
                         help="compress output files using bzip")
     groupO.add_argument("--json", action="store_true",
                         help="write output in json format instead of the default one")
-
 
     groupP = parser.add_argument_group('Processing')
     groupP.add_argument("--html", action="store_true",
@@ -3260,9 +3289,10 @@ def main():
                 with open(args.templates) as file:
                     load_templates(file)
 
-        file = fileinput.FileInput(input_file, openhook=fileinput.hook_compressed)
+        file = fileinput.FileInput(
+            input_file, openhook=fileinput.hook_compressed)
         for page_data in pages_from(file):
-            id, revid, title, ns,catSet, page = page_data
+            id, revid, title, ns, catSet, page = page_data
             Extractor(id, revid, title, page).extract(sys.stdout)
         file.close()
         return
@@ -3276,14 +3306,14 @@ def main():
             return
 
     filter_category = args.filter_category
-    if (filter_category != None and len(filter_category)>0):
+    if (filter_category != None and len(filter_category) > 0):
         with open(filter_category) as f:
             error_cnt = 0
             for line in f.readlines():
                 try:
                     line = str(line.strip())
                     if line.startswith('#') or len(line) == 0:
-                        continue;
+                        continue
                     elif line.startswith('^'):
                         options.filter_category_exclude.add(line.lstrip('^'))
                     else:
@@ -3298,6 +3328,7 @@ def main():
     process_dump(input_file, args.templates, output_path, file_size,
                  args.compress, args.processes)
 
+
 def createLogger(quiet, debug, log_file):
     logger = logging.getLogger()
     if not quiet:
@@ -3308,6 +3339,7 @@ def createLogger(quiet, debug, log_file):
     if log_file:
         fileHandler = logging.FileHandler(log_file)
         logger.addHandler(fileHandler)
+
 
 if __name__ == '__main__':
     main()
