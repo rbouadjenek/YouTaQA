@@ -5,9 +5,15 @@ from nltk.corpus import stopwords
 
 
 class CosineSimilarity:
+    """
+    A class which calculates the Cosian similarity between two strings
+    """
     STOP_WORDS = stopwords.words('english')
 
     def clean_string(self, text):
+        """
+        A function that eliminates stopWords, punctuation and caps
+        """
         text = ''.join(
             [word for word in text if word not in string.punctuation])
         text = text.lower()
@@ -16,15 +22,20 @@ class CosineSimilarity:
         return text
 
     def cosine_sim_vectors(self, vec1, vec2):
+        """
+        Calculate the Cosine Similarity between two vectors
+        """
         vec1 = vec1.reshape(1, -1)
         vec2 = vec2.reshape(1, -1)
         return 100 * cosine_similarity(vec1, vec2)[0][0]
 
     def similarity(self, string_1, string_2):
+        """
+        Calculate the percentage of similarity
+        """
         self.sentences = [string_1, string_2]
         cleaned = list(map(self.clean_string, self.sentences))
         vectorizer = CountVectorizer().fit_transform(cleaned)
         vectors = vectorizer.toarray()
         cos_Sim = self.cosine_sim_vectors(vectors[0], vectors[1])
-
         return round(cos_Sim, 2)
