@@ -11,11 +11,31 @@ from whoosh.fields import Schema, TEXT, ID
 from whoosh.qparser import MultifieldParser
 from xml.dom import minidom
 from indexer import Indexer, Section, Document, Searcher
+from cosine_similarity import CosineSimilarity
+from termcolor import colored, cprint
 inputQuery = ""
+CosineSimilarity = CosineSimilarity()
+
 while inputQuery != "exit":
     inputQuery = input("Enter your request, otherwise tape 'exit' to exit\n")
-    result = Searcher.search(os.getcwd() + "/index", inputQuery)
+    if inputQuery == "exit":
+        break
+    result = Searcher().search(os.getcwd() + "/index", inputQuery)
     if result.is_empty() is True:
         print("No result found")
     else:
-        print(result[0])
+        print("#" * 100)
+        print("#" * 100)
+        content = ""
+        for hit in result:
+            content = hit["content_section"]
+            if content != "":
+                break
+        print(content)
+        print("#" * 50)
+        CosSim = CosineSimilarity.similarity(inputQuery, content)
+        if CosSim < 70:
+            cprint(CosSim, "red")
+        else:
+            cprint(CosSim, "green")
+        print("#" * 100)

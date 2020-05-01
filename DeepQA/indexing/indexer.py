@@ -236,7 +236,7 @@ class Indexer:
 
 class Searcher:
 
-    def search(searchDir, query):
+    def search(self, searchDir, query):
         """
         Method that searches through documents
         searchDir : the path to the folder that contains the index.
