@@ -10,7 +10,6 @@ from whoosh.analysis import *
 from whoosh.fields import Schema, TEXT, ID
 from whoosh.qparser import MultifieldParser
 from xml.dom import minidom
-from termcolor import colored, cprint
 
 
 class Document:
@@ -205,7 +204,7 @@ class Indexer:
         files = glob.glob(folder2index + '**/*.xml', recursive=True)
         num_lines = len(files)
         print("\n")
-        cprint('==> Start processing....',"green")
+        print('==> Start processing....')
         print("\n")
         # Iterate in the files paths list
         with tqdm(total=num_lines) as pbar:
@@ -214,7 +213,7 @@ class Indexer:
                 doc = Document(file)  # this parse the wikipedia page
                 self.index_document(doc)  # this indexes the wikipedia page
         print("\n")
-        cprint("==> Please wait ...", "yellow")
+        print("==> Please wait ...")
         self.close()
 
     def index_document(self, doc):
@@ -262,7 +261,7 @@ class Searcher:
             return result
         elif index.exists_in(searchDir) is False:
             print("\n")
-            cprint("No index found", "red")
+            print("No index found")
 
 
 def main(argv):
@@ -287,7 +286,7 @@ def main(argv):
             input_dir = arg
             if not os.path.isdir(input_dir):
                 print("\n")
-                cprint(input_dir + ' does not exist.', "red")
+                print(input_dir + ' does not exist.')
                 print("\n")
                 sys.exit(2)
         elif opt in ("-o", "--ofile"):
@@ -296,7 +295,7 @@ def main(argv):
         the_indexer = Indexer(output_dir)
         the_indexer.index_folder(input_dir)
         print("\n")
-        cprint(" ==> Documents successfully indexed ", "green")
+        print(" ==> Documents successfully indexed ")
     else:
         print('indexer.py -i <input_folder> -o <output_folder>')
         sys.exit(2)

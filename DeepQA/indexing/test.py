@@ -12,7 +12,6 @@ from whoosh.qparser import MultifieldParser
 from xml.dom import minidom
 from indexer import Indexer, Section, Document, Searcher
 from cosine_similarity import CosineSimilarity
-from termcolor import colored, cprint
 inputQuery = ""
 CosineSimilarity = CosineSimilarity()
 
@@ -34,8 +33,5 @@ while inputQuery != "exit":
         print(content)
         print("#" * 50)
         CosSim = CosineSimilarity.similarity(inputQuery, content)
-        if CosSim < 70:
-            cprint(CosSim, "red")
-        else:
-            cprint(CosSim, "green")
+        print(CosSim)
         print("#" * 100)
