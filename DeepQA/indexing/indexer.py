@@ -203,17 +203,14 @@ class Indexer:
         # Browse all the files from root and store the paths
         files = glob.glob(folder2index + '**/*.xml', recursive=True)
         num_lines = len(files)
-        print("\n")
-        print('==> Start processing....')
-        print("\n")
+        print('\n==> Start processing....\n')
         # Iterate in the files paths list
         with tqdm(total=num_lines) as pbar:
             for file in files:
                 pbar.update(1)
                 doc = Document(file)  # this parse the wikipedia page
                 self.index_document(doc)  # this indexes the wikipedia page
-        print("\n")
-        print("==> Please wait ...")
+        print("\n==> Please wait ...\n")
         self.close()
 
     def index_document(self, doc):
@@ -260,8 +257,7 @@ class Searcher:
             result = searcher.search(Query)
             return result
         elif index.exists_in(searchDir) is False:
-            print("\n")
-            print("No index found")
+            print("\nNo index found\n")
 
 
 def main(argv):
@@ -294,8 +290,7 @@ def main(argv):
     if input_dir != '' and output_dir != '':
         the_indexer = Indexer(output_dir)
         the_indexer.index_folder(input_dir)
-        print("\n")
-        print(" ==> Documents successfully indexed ")
+        print("==> Documents successfully indexed \n")
     else:
         print('indexer.py -i <input_folder> -o <output_folder>')
         sys.exit(2)
