@@ -11,10 +11,10 @@ from whoosh.fields import Schema, TEXT, ID
 from whoosh.qparser import MultifieldParser
 from xml.dom import minidom
 from indexer import Indexer, Section, Document, Searcher
-from cosine_similarity import CosineSimilarity
-inputQuery = ""
-CosineSimilarity = CosineSimilarity()
-
+# from cosine_similarity import CosineSimilarity
+# inputQuery = ""
+# CosineSimilarity = CosineSimilarity()
+#
 # while inputQuery != "exit":
 #     inputQuery = input("Enter your request, otherwise tape 'exit' to exit\n")
 #     if inputQuery == "exit":
@@ -36,8 +36,8 @@ CosineSimilarity = CosineSimilarity()
 #         print(CosSim)
 #         print("#" * 100)
 i=0
-if index.exists_in("/Users/younesagabi/Desktop/DeepQA/DeepQA/indexing/index") is True:
-    index=index.open_dir("/Users/younesagabi/Desktop/DeepQA/DeepQA/indexing/index")
+if index.exists_in("/Users/younesagabi/Desktop/index") is True:
+    index=index.open_dir("/Users/younesagabi/Desktop/index")
     all_docs = index.searcher().documents()
     for doc in all_docs:
         i+=1
