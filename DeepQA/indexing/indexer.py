@@ -231,7 +231,7 @@ class Indexer:
 
     def close(self):
         # close the index
-        self.writer.commit()
+        self.writer.commit(optimize=True)
 
 
 class Searcher:
@@ -254,7 +254,7 @@ class Searcher:
                 group=qparser.OrGroup)
             Query = QueryParse.parse(query)
             searcher = searchIndex.searcher(weighting=scoring.BM25F())
-            result = searcher.search(Query)
+            result = searcher.search(Query, limit=1)
             return result
         elif index.exists_in(searchDir) is False:
             print("\nNo index found\n")

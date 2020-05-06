@@ -11,15 +11,17 @@ from whoosh.fields import Schema, TEXT, ID
 from whoosh.qparser import MultifieldParser
 from xml.dom import minidom
 from indexer import Indexer, Section, Document, Searcher
-from cosine_similarity import CosineSimilarity
+from similarity import Similarity
 inputQuery = ""
-CosineSimilarity = CosineSimilarity()
+Similarity = Similarity()
 
 while inputQuery != "exit":
     inputQuery = input("Enter your request, otherwise tape 'exit' to exit\n")
     if inputQuery == "exit":
         break
-    result = Searcher().search("/Users/younesagabi/Desktop/index", inputQuery)
+    result = Searcher().search(
+        "/Users/younesagabi/Desktop/DeepQA/DeepQA/indexing/index", inputQuery)
+
     if result.is_empty() is True:
         print("No result found")
     else:
@@ -31,19 +33,11 @@ while inputQuery != "exit":
             if content != "":
                 break
         print(content)
-        print("#" * 50)
-        CosSim = CosineSimilarity.similarity(inputQuery, content)
-        print(CosSim)
         print("#" * 100)
-
-        
-# i=0
-# if index.exists_in("/Users/younesagabi/Desktop/DeepQA/DeepQA/indexing/index") is True:
-#     index=index.open_dir("/Users/younesagabi/Desktop/index")
-#     all_docs = index.searcher().documents()
-#     for doc in all_docs:
-#         i+=1
-#         print(i)
-#     print(i)
-# else :
-#     print("Error")
+        CosSim = Similarity.cosine_similarity(inputQuery, content)
+        jacSim = Similarity.jaccard_similarity(inputQuery, content)
+        diceSim = Similarity.dice_similarity(inputQuery, content)
+        print("=> Cosiane similarity : ", CosSim)
+        print("=> Jaccard similarity : ", jacSim)
+        print("=> Dice similarity : ", diceSim)
+        print("#" * 100)
