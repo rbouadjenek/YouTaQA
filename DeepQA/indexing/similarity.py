@@ -1,12 +1,13 @@
 import string
+import textdistance
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import CountVectorizer
 from nltk.corpus import stopwords
 
 
-class CosineSimilarity:
+class Similarity:
     """
-    A class which calculates the Cosian similarity between two strings
+    A class that caculatess string similarity
     """
     STOP_WORDS = stopwords.words('english')
 
@@ -28,6 +29,18 @@ class CosineSimilarity:
         vec1 = vec1.reshape(1, -1)
         vec2 = vec2.reshape(1, -1)
         return 100 * cosine_similarity(vec1, vec2)[0][0]
+    
+    def dice_similarity(self, string_1, string_2):
+        """
+        Calculate the Dice Distance between two string lists
+        """
+        return textdistance.sorensen(string_1 , string_2)
+    
+    def jaccard_similarity(self, string_1, string_2):
+        """
+        Calculate the Jaccard Distance between two string lists
+        """
+        return textdistance.jaccard(string_1 , string_2)
 
     def similarity(self, string_1, string_2):
         """
