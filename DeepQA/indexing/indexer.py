@@ -192,7 +192,7 @@ class Indexer:
         self.myIndex = index.create_in(index_dir, self.mySchema)
         # batch writing is faster.
         self.writer = self.myIndex.writer(
-            procs=4, limitmb=128, multisegment=True)
+            procs=4, limitmb=1024)
 
     def index_folder(self, folder2index):
         """
