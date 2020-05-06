@@ -33,7 +33,7 @@ while inputQuery != "exit":
             if content != "":
                 break
         print(content)
-        print("#" * 100)
+        print("#" * 50)
         CosSim = Similarity.cosine_similarity(inputQuery, content)
         jacSim = Similarity.jaccard_similarity(inputQuery, content)
         diceSim = Similarity.dice_similarity(inputQuery, content)
