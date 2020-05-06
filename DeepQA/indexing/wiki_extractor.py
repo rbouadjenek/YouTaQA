@@ -599,7 +599,6 @@ class Extractor(object):
             for line in text:
                 if out == sys.stdout:   # option -a or -o -
                     line = line.encode('utf-8')
-                # hna rahou yktb les lignes
                 out.write(line)
                 out.write('\n')
             # out.write(footer)
@@ -876,7 +875,6 @@ class Extractor(object):
         cur = 0
         # look for matching {{...}}
         for s, e in findMatchingBraces(wikitext, 2):
-            # hna dar 200 hello
             res += wikitext[cur:s] + self.expandTemplate(wikitext[s + 2:e - 2])
             cur = e
         # leftover
