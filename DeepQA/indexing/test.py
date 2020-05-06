@@ -40,4 +40,4 @@ while inputQuery != "exit":
         print("=> Cosiane similarity : ", CosSim)
         print("=> Jaccard similarity : ", jacSim)
         print("=> Dice similarity : ", diceSim)
-        print("#" * 100)
+        print("#" * 50)
