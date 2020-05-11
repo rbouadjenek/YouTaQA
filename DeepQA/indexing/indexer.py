@@ -5,14 +5,16 @@ import os.path
 import sys
 
 import lucene
-import wiki_extractor
-from java.nio.file import Paths
-from java.util import Arrays
-from org.apache.lucene.analysis import CharArraySet
 from org.apache.lucene.analysis.en import EnglishAnalyzer
-from org.apache.lucene.document import Document, StringField, Field, TextField
-from org.apache.lucene.index import IndexWriterConfig, IndexWriter
+from org.apache.lucene.index import IndexWriterConfig, IndexWriter, DirectoryReader
+from org.apache.lucene.codecs.simpletext import SimpleTextCodec
 from org.apache.lucene.store import FSDirectory
+from java.nio.file import Path, Paths
+from org.apache.lucene.document import Document, StringField, Field, TextField
+from org.apache.lucene.search import IndexSearcher
+from org.apache.lucene.queryparser.classic import QueryParser
+from org.apache.lucene.analysis import StopwordAnalyzerBase, CharArraySet
+from java.util import List, Arrays
 from tqdm import tqdm
 from xml.dom import minidom
 
@@ -337,24 +339,16 @@ class Searcher:
         Method that searches through documents
         searchDir : the path to the folder that contains the index.
         """
-        if index.exists_in(searchDir) is True:
-            searchIndex = index.open_dir(searchDir)
-            QueryParse = MultifieldParser(["title_article", "content_section"],
-                                          schema=Schema(id_article=ID(stored=True),
-                                                        title_article=TEXT(
-                                                            analyzer=Indexer.analyzer, stored=True),
-                                                        id_section=ID(
-                                                            stored=True),
-                                                        title_section=TEXT(
-                                                            analyzer=Indexer.analyzer, stored=True),
-                                                        content_section=TEXT(analyzer=Indexer.analyzer, stored=True)),
-                                          group=qparser.OrGroup)
-            Query = QueryParse.parse(query)
-            searcher = searchIndex.searcher(weighting=scoring.BM25F())
-            result = searcher.search(Query, limit=1)
-            return result
-        elif index.exists_in(searchDir) is False:
-            print("\nNo index found\n")
+        # Now search the index:
+        self.analyzer = EnglishAnalyzer(Indexer.ENGLISH_STOP_WORDS_SET)
+        self.directory = FSDirectory.open(Paths.get(searchDir))
+        self.reader = DirectoryReader.open(self.directory)
+        self.searcher = IndexSearcher(self.reader)
+        # Parse a simple query that searches for "text":
+        parser = QueryParser("content_section", self.analyzer)
+        query = parser.parse(query)
+        hits = self.searcher.search(query, 1).scoreDocs
+        return hits
 
 
 def main(argv):
