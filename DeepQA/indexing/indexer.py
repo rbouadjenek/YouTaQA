@@ -317,8 +317,8 @@ class Indexer:
         """
         # Method that indexes documents
         i = 0
-        doc = Document()
         for section in wiki_doc.sections:
+            doc = Document()
             doc.add(StringField("id_article", wiki_doc.id, Field.Store.YES))
             doc.add(TextField("title_article", wiki_doc.title, Field.Store.YES))
             doc.add(StringField("id_section", str(wiki_doc.id) + "_" + str(i), Field.Store.YES))
