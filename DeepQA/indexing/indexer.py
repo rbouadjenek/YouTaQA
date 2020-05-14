@@ -3,7 +3,7 @@ import glob
 import os
 import os.path
 import sys
-
+import wiki_extractor
 import lucene
 from org.apache.lucene.analysis.en import EnglishAnalyzer
 from org.apache.lucene.index import IndexWriterConfig, IndexWriter, DirectoryReader
