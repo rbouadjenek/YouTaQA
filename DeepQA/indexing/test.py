@@ -28,7 +28,7 @@ while inputQuery != "exit":
         break
     searchObject = Searcher()
     result = searchObject.search(
-        "/Users/younesagabi/Desktop/DeepQA/DeepQA/indexing/index", inputQuery)
+        "/Users/younesagabi/Desktop/index_Wiki_v6.0", inputQuery)
 
     print("#" * 100)
     print("#" * 100)
