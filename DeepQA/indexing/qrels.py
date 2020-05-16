@@ -27,7 +27,7 @@ class qrels:
     def __init__(self):
         super().__init__()
 
-    def get_id_section(self, index_dir, input_query):
+    def get_id_section(index_dir, input_query):
         """
         This is the function that returns the id of the passage that is similar to the context.
         :param index_dir: the folder where the dataset index is stored.
@@ -45,7 +45,7 @@ class qrels:
         searchObject.directory.close()
         return id
     
-    def process(self, input_file, index_dir, output_dir):
+    def process(input_file, index_dir, output_dir):
         """
         This is the main function that creates the qrels file.
         :param input_file: the file to process.
