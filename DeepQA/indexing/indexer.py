@@ -346,7 +346,7 @@ class Searcher:
         self.searcher = IndexSearcher(self.reader)
         # Parse a simple query that searches for "text":
         parser = QueryParser("content_section", self.analyzer)
-        query = parser.parse(query)
+        query = parser.parse(QueryParser.escape(query))
         hits = self.searcher.search(query, 1).scoreDocs
         return hits
 

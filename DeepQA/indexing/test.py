@@ -22,13 +22,14 @@ from similarity import Similarity
 inputQuery = ""
 Similarity = Similarity()
 
+
 while inputQuery != "exit":
     inputQuery = input("Enter your request, otherwise tape 'exit' to exit\n")
     if inputQuery == "exit":
         break
     searchObject = Searcher()
     result = searchObject.search(
-        "/Users/younesagabi/Desktop/index_Wiki_v6.0", inputQuery)
+        "/Users/younesagabi/Desktop/DeepQA/index_Wiki_v6.0", inputQuery)
 
     print("#" * 100)
     print("#" * 100)
