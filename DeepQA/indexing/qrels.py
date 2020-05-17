@@ -35,7 +35,7 @@ class qrels:
         :return:
         """
         searchObject = Searcher()
-        result = searchObject.search(index_dir, input_query)
+        result = searchObject.simpleSearch(index_dir, input_query)
         for i in range(len(result)):
             hitDoc = searchObject.searcher.doc(result[i].doc)
             id = hitDoc.get("id_section")
@@ -45,7 +45,7 @@ class qrels:
         searchObject.reader.close()
         searchObject.directory.close()
         return id, content
-    
+
     def process(input_file, index_dir, output_dir):
         """
         This is the main function that creates the qrels file.

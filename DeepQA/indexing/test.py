@@ -28,7 +28,7 @@ while inputQuery != "exit":
     if inputQuery == "exit":
         break
     searchObject = Searcher()
-    result = searchObject.search(
+    result = searchObject.MultiFieldsSearch(
         "/Users/younesagabi/Desktop/DeepQA/index_Wiki_v6.0", inputQuery)
 
     print("#" * 100)
