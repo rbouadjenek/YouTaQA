@@ -36,11 +36,13 @@ while inputQuery != "exit":
     content = ""
     for i in range(len(result)):
         hitDoc = searchObject.searcher.doc(result[i].doc)
+        score = result[i].score
         content = hitDoc.get("content_section")
         if content != "":
             break
     searchObject.reader.close()
     searchObject.directory.close()
+    print("score =>>", score)
     print(content)
     print("#" * 50)
     CosSim = Similarity.cosine_similarity(inputQuery, content)
