@@ -354,7 +354,7 @@ class Searcher:
         parser = QueryParser("content_section", self.analyzer)
         query = parser.parse(QueryParser.escape(query))
         self.searcher.setSimilarity(self.sim)
-        hits = self.searcher.search(query, 1).scoreDocs
+        hits = self.searcher.search(query, 1000).scoreDocs
         return hits
 
     def MultiFieldsSearch(self, searchDir, query):
@@ -372,7 +372,7 @@ class Searcher:
         parser.setDefaultOperator(QueryParserBase.OR_OPERATOR)
         query = MultiFieldQueryParser.parse(parser, QueryParser.escape(query))
         self.searcher.setSimilarity(self.sim)
-        hits = self.searcher.search(query, 1).scoreDocs
+        hits = self.searcher.search(query, 1000).scoreDocs
         return hits
 
 
