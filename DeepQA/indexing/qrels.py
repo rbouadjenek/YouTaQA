@@ -62,7 +62,11 @@ class qrels:
                 for par in p['paragraphs']:
                     num_lines += 1
 
-        output_file = open(output_dir + "/qrels.txt", 'a+', encoding="utf-8")
+<<<<<<< HEAD
+        output_file = open(output_dir+"/qrels.txt", 'a+', encoding="utf-8")
+=======
+        output_file = open(output_dir + "./qrels.txt", 'a+', encoding="utf-8")
+>>>>>>> 1b5f6e3bfc4293d632d9998a38be58ef919fac4a
         with tqdm(total=num_lines) as pbar:
             with open(input_file, encoding="utf-8") as json_file:
                 data = json.load(json_file)
