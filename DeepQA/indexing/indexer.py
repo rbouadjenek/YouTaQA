@@ -22,6 +22,7 @@ from xml.dom import minidom
 
 lucene.initVM(vmargs=['-Djava.awt.headless=true'])
 
+
 class WikiDocument:
     """
     A class to represent a wikipedia document as extracted from the page tag in the wikipedia dump.
@@ -307,7 +308,8 @@ class Indexer:
                 self.index_document(doc)  # this indexes the wikipedia page
         print("\n==> Please wait ...\n")
         self.writer.commit()
-        print('A total of ' + str(self.writer.getDocStats().numDocs) + ' have been indexed.')
+        print('A total of ' + str(self.writer.getDocStats().numDocs) +
+              ' have been indexed.')
         self.close()
 
     def index_document(self, wiki_doc):
@@ -322,7 +324,8 @@ class Indexer:
             doc = Document()
             doc.add(StringField("id_article", wiki_doc.id, Field.Store.YES))
             doc.add(TextField("title_article", wiki_doc.title, Field.Store.YES))
-            doc.add(StringField("id_section", str(wiki_doc.id) + "_" + str(i), Field.Store.YES))
+            doc.add(StringField("id_section", str(
+                wiki_doc.id) + "_" + str(i), Field.Store.YES))
             doc.add(TextField("title_section", section.title, Field.Store.YES))
             doc.add(TextField("content_section", section.text, Field.Store.YES))
             self.writer.addDocument(doc)
@@ -335,7 +338,7 @@ class Indexer:
 
 class Searcher:
 
-    sim = BM25Similarity() # or TFIDFSimilarity() or ClassicSimilarity
+    sim = BM25Similarity()  # or ClassicSimilarity
 
     def simpleSearch(self, searchDir, query):
         """
@@ -364,11 +367,11 @@ class Searcher:
         self.directory = FSDirectory.open(Paths.get(searchDir))
         self.reader = DirectoryReader.open(self.directory)
         self.searcher = IndexSearcher(self.reader)
-        parser = MultiFieldQueryParser(["content_section", "title_article"], self.analyzer)
+        parser = MultiFieldQueryParser(
+            ["content_section", "title_article"], self.analyzer)
         parser.setDefaultOperator(QueryParserBase.OR_OPERATOR)
         query = MultiFieldQueryParser.parse(parser, QueryParser.escape(query))
         self.searcher.setSimilarity(self.sim)
-        print(self.searcher.getSimilarity())
         hits = self.searcher.search(query, 1).scoreDocs
         return hits
 
