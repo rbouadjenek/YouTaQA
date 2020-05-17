@@ -39,11 +39,12 @@ class qrels:
         for i in range(len(result)):
             hitDoc = searchObject.searcher.doc(result[i].doc)
             id = hitDoc.get("id_section")
+            content = hitDoc.get("content_section")
             if id != "":
                 break
         searchObject.reader.close()
         searchObject.directory.close()
-        return id
+        return id, content
     
     def process(input_file, index_dir, output_dir):
         """
@@ -67,10 +68,12 @@ class qrels:
                 for p in data['data']:
                     for par in p['paragraphs']:
                         pbar.update(1)
-                        psg_id = qrels.get_id_section(index_dir, par["context"])
+                        psg_id, content = qrels.get_id_section(index_dir, par["context"])
+                        #print("Content: "+content+"\n")
                         for q in par["qas"]:
                             qst_id = q["id"]
-                            output_file.write(qst_id+" 0 "+psg_id+" 1\n")
+                            similarity = round(len(set(par["context"]) & set(content)) / len(set(par["context"])),2)
+                            output_file.write(qst_id+" 0 "+psg_id+" 1 "+str(similarity)+"\n")
                 print("==> Qrels successfully created.\n")
 
 def main(argv):
