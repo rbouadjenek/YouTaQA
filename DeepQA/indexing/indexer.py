@@ -362,7 +362,6 @@ class Searcher:
         Method that searches through documents using content_section and title_article Fields
         searchDir : the path to the folder that contains the index.
         """
-        # Now search the index:
         self.analyzer = EnglishAnalyzer(Indexer.ENGLISH_STOP_WORDS_SET)
         self.directory = FSDirectory.open(Paths.get(searchDir))
         self.reader = DirectoryReader.open(self.directory)
