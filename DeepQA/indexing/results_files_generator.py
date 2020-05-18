@@ -56,7 +56,7 @@ class ResultsGenerator:
     #         hits = searcher.search(query, 1000).scoreDocs
     #         return hits
 
-    def question_content(input_file, index_dir, output_file, rank_metric):
+    def question_content(self, input_file, index_dir, output_file, rank_metric):
         with open(input_file, encoding="utf-8") as json_file:
             data = json.load(json_file)
             for p in data['data']:
@@ -67,7 +67,7 @@ class ResultsGenerator:
                         for h in hits:
                             output_file.write(q["id"]+" Q0 "+str(h.doc)+" "+str(i)+" "+str(h.score)+" RUN1\n")
 
-    def question_title_content(input_file, index_dir, output_file, rank_metric):
+    def question_title_content(self,input_file, index_dir, output_file, rank_metric):
         with open(input_file, encoding="utf-8") as json_file:
             data = json.load(json_file)
             for p in data['data']:
@@ -79,7 +79,7 @@ class ResultsGenerator:
                         for h in hits:
                             output_file.write(q["id"]+" Q0 "+str(h.doc)+" "+str(i)+" "+str(h.score)+" RUN1\n")
 
-    def question_content_title(input_file, index_dir, output_file, rank_metric):
+    def question_content_title(self, input_file, index_dir, output_file, rank_metric):
         with open(input_file, encoding="utf-8") as json_file:
             data = json.load(json_file)
             for p in data['data']:
@@ -90,7 +90,7 @@ class ResultsGenerator:
                         for h in hits:
                             output_file.write(q["id"]+" Q0 "+str(h.doc)+" "+str(i)+" "+str(h.score)+" RUN1\n")
 
-    def question_title_content_title(input_file, index_dir, output_file, rank_metric):
+    def question_title_content_title(self, input_file, index_dir, output_file, rank_metric):
         with open(input_file, encoding="utf-8") as json_file:
             data = json.load(json_file)
             for p in data['data']:
