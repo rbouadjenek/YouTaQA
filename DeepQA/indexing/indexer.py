@@ -273,8 +273,7 @@ class Indexer:
                                                                                       "would", "would", "wouldn't", "x",
                                                                                       "y", "yes", "yet", "you",
                                                                                       "you'd", "you'll", "you're",
-                                                                                      "you've", "your", "yours"]),
-                                                                       False))
+                                                                                      "you've", "your", "yours"]),False))
 
     def __init__(self, index_dir):
         """
@@ -284,7 +283,12 @@ class Indexer:
         self.indexDir = index_dir
         if not os.path.exists(index_dir):
             os.mkdir(index_dir)
-        self.analyzer = EnglishAnalyzer(Indexer.ENGLISH_STOP_WORDS_SET)
+        self.analyzer = CustomAnalyzer.builder().withTokenizer(StandardTokenizerFactory.class)
+   .addTokenFilter(StandardFilterFactory.class)
+   .addTokenFilter(LowerCaseFilterFactory.class)
+   .addTokenFilter(StopFilterFactory.class, "ignoreCase", "false", "words", "stopwords.txt", "format", "wordset")
+   .addTokenFilter(EnglishAnalyzer.class, Indexer.ENGLISH_STOP_WORDS_SET )
+   .build()
         conf = IndexWriterConfig(self.analyzer)
         conf.setUseCompoundFile(False)
         directory = FSDirectory.open(Paths.get(index_dir))
