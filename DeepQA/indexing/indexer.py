@@ -292,7 +292,6 @@ class Indexer:
 
     def index_folder(self, folder2index):
         """
-
         :param folder2index: the folder to be indexed.
         :return:
         """
@@ -314,7 +313,6 @@ class Indexer:
 
     def index_document(self, wiki_doc):
         """
-
         :param wiki_doc: the document to be indexed.
         :return:
         """
@@ -334,46 +332,6 @@ class Indexer:
     def close(self):
         # close the index
         self.writer.close()
-
-
-class Searcher:
-
-    sim = BM25Similarity()  # or ClassicSimilarity
-
-    def simpleSearch(self, searchDir, query):
-        """
-        Method that searches through documents using only content_section Field
-        searchDir : the path to the folder that contains the index.
-        """
-        # Now search the index:
-        self.analyzer = EnglishAnalyzer(Indexer.ENGLISH_STOP_WORDS_SET)
-        self.directory = FSDirectory.open(Paths.get(searchDir))
-        self.reader = DirectoryReader.open(self.directory)
-        self.searcher = IndexSearcher(self.reader)
-        # Parse a simple query that searches for "text":
-        parser = QueryParser("content_section", self.analyzer)
-        query = parser.parse(QueryParser.escape(query))
-        self.searcher.setSimilarity(self.sim)
-        hits = self.searcher.search(query, 1000).scoreDocs
-        return hits
-
-    def MultiFieldsSearch(self, searchDir, query):
-        """
-        Method that searches through documents using content_section and title_article Fields
-        searchDir : the path to the folder that contains the index.
-        """
-        # Now search the index:
-        self.analyzer = EnglishAnalyzer(Indexer.ENGLISH_STOP_WORDS_SET)
-        self.directory = FSDirectory.open(Paths.get(searchDir))
-        self.reader = DirectoryReader.open(self.directory)
-        self.searcher = IndexSearcher(self.reader)
-        parser = MultiFieldQueryParser(
-            ["content_section", "title_article"], self.analyzer)
-        parser.setDefaultOperator(QueryParserBase.OR_OPERATOR)
-        query = MultiFieldQueryParser.parse(parser, QueryParser.escape(query))
-        self.searcher.setSimilarity(self.sim)
-        hits = self.searcher.search(query, 1000).scoreDocs
-        return hits
 
 
 def main(argv):
