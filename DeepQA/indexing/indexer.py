@@ -360,8 +360,6 @@ class Indexer:
         self.writer.close()
 
 
-<<<<<<< HEAD
-=======
 class Searcher:
 
     sim = BM25Similarity()  # or ClassicSimilarity
@@ -401,7 +399,7 @@ class Searcher:
         return hits
 
 
->>>>>>> 3d8860f76a8333257c7f5f9f385ed1c8b62787df
+
 def main(argv):
     """
     Main function that read input arguments to lunch the script.

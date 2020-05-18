@@ -20,7 +20,7 @@ from search import Searcher
 class ResultsGenerator:
    
     def __init__(self):
-       searcher = Searcher()
+       self.searcher = Searcher()
     # def simpleSearch(searchDir, query, sim):
     #         """
     #         Method that searches through documents using only content_section Field
@@ -62,7 +62,7 @@ class ResultsGenerator:
             for p in data['data']:
                 for par in p['paragraphs']:
                     for q in par["qas"]:
-                        hits = searcher.simpleSearch(index_dir,q["question"],rank_metric)
+                        hits = self.searcher.simpleSearch(index_dir,q["question"],rank_metric)
                         i = 1
                         for h in hits:
                             output_file.write(q["id"]+" Q0 "+str(h.doc)+" "+str(i)+" "+str(h.score)+" RUN1\n")
@@ -115,8 +115,8 @@ def main(argv):
     input_file = "C:\\Dataset-SQUAD\\train-v2.0.json"
     index_dir = "C:\\Dataset-indexed-final"
     rank_metric = BM25Similarity()
-
-    ResultsGenerator.question_content(input_file, index_dir, output_file, rank_metric)
+    Results_generator = ResultsGenerator()
+    Results_generator.question_content(input_file, index_dir, output_file, rank_metric)
 
 
 if __name__ == "__main__":
