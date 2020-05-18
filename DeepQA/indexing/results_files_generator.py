@@ -74,7 +74,7 @@ class ResultsGenerator:
                 title = p["title"]
                 for par in p['paragraphs']:
                     for q in par["qas"]:
-                        hits = searcher.simpleSearch(index_dir,title +" "+q["question"],rank_metric)
+                        hits = self.searcher.simpleSearch(index_dir,title +" "+q["question"],rank_metric)
                         i = 1
                         for h in hits:
                             output_file.write(q["id"]+" Q0 "+str(h.doc)+" "+str(i)+" "+str(h.score)+" RUN1\n")
