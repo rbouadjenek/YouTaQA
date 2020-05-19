@@ -24,7 +24,7 @@ lucene.initVM(vmargs=['-Djava.awt.headless=true'])
 
 class MyAnalyzer(StopwordAnalyzerBase):
     stemExclusionSet= None
-    ENGLISH_STOP_WORDS_SET = CharArraySet.unmodifiableSet(CharArraySet(Arrays.asList(["a", "a's", "able",
+    self.ENGLISH_STOP_WORDS_SET = CharArraySet.unmodifiableSet(CharArraySet(Arrays.asList(["a", "a's", "able",
                                                                                     "about", "above", "according",
                                                                                     "accordingly", "across",
                                                                                     "actually", "after", "afterwards",
@@ -307,7 +307,7 @@ class Indexer:
 
         :param index_dir: the dir where to store the index.
         """
-        ENGLISH_STOP_WORDS_SET = CharArraySet.unmodifiableSet(CharArraySet(Arrays.asList(["a", "a's", "able",
+        self.ENGLISH_STOP_WORDS_SET = CharArraySet.unmodifiableSet(CharArraySet(Arrays.asList(["a", "a's", "able",
                                                                                         "about", "above", "according",
                                                                                         "accordingly", "across",
                                                                                         "actually", "after", "afterwards",
