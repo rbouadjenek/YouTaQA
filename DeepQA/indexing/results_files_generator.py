@@ -51,7 +51,7 @@ class ResultsGenerator:
             for p in data['data']:
                 for par in p['paragraphs']:
                     for q in par["qas"]:
-                        hits = MultiFieldsSearch(index_dir,q["question"],rank_metric)
+                        hits = self.searcher.MultiFieldsSearch(index_dir,q["question"],rank_metric)
                         i = 1
                         for h in hits:
                             output_file.write(q["id"]+" Q0 "+str(h.doc)+" "+str(i)+" "+str(h.score)+" RUN1\n")
@@ -63,7 +63,7 @@ class ResultsGenerator:
                 title = p["title"]
                 for par in p['paragraphs']:
                     for q in par["qas"]:
-                        hits = MultiFieldsSearch(index_dir,title +" "+q["question"],rank_metric)
+                        hits = self.searcher.MultiFieldsSearch(index_dir,title +" "+q["question"],rank_metric)
                         i = 1
                         for h in hits:
                             output_file.write(q["id"]+" Q0 "+str(h.doc)+" "+str(i)+" "+str(h.score)+" RUN1\n")
