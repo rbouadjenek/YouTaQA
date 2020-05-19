@@ -38,7 +38,7 @@ class Searcher:
         # Parse a simple query that searches for "text":
         parser = QueryParser("content_section", self.analyzer)
         query = parser.parse(QueryParser.escape(query))
-        self.searcher.setSimilarity(self.sim)
+        self.searcher.setSimilarity(sim)
         hits = self.searcher.search(query, 1000).scoreDocs
         return hits
 
@@ -56,6 +56,6 @@ class Searcher:
             ["content_section", "title_article"], self.analyzer)
         parser.setDefaultOperator(QueryParserBase.OR_OPERATOR)
         query = MultiFieldQueryParser.parse(parser, QueryParser.escape(query))
-        self.searcher.setSimilarity(self.sim)
+        self.searcher.setSimilarity(sim)
         hits = self.searcher.search(query, 1000).scoreDocs
         return hits
