@@ -21,40 +21,6 @@ class ResultsGenerator:
    
     def __init__(self):
        self.searcher = Searcher()
-    # def simpleSearch(searchDir, query, sim):
-    #         """
-    #         Method that searches through documents using only content_section Field
-    #         searchDir : the path to the folder that contains the index.
-    #         """
-    #         # Now search the index:
-    #         analyzer = EnglishAnalyzer(Indexer.ENGLISH_STOP_WORDS_SET)
-    #         directory = FSDirectory.open(Paths.get(searchDir))
-    #         reader = DirectoryReader.open(directory)
-    #         searcher = IndexSearcher(reader)
-    #         # Parse a simple query that searches for "text":
-    #         parser = QueryParser("content_section", analyzer)
-    #         query = parser.parse(QueryParser.escape(query))
-    #         searcher.setSimilarity(sim)
-    #         hits = searcher.search(query, 1000).scoreDocs
-    #         return hits
-
-    # def MultiFieldsSearch(searchDir, query, sim):
-    #         """
-    #         Method that searches through documents using content_section and title_article Fields
-    #         searchDir : the path to the folder that contains the index.
-    #         """
-    #         # Now search the index:
-    #         analyzer = EnglishAnalyzer(Indexer.ENGLISH_STOP_WORDS_SET)
-    #         directory = FSDirectory.open(Paths.get(searchDir))
-    #         reader = DirectoryReader.open(directory)
-    #         searcher = IndexSearcher(reader)
-    #         parser = MultiFieldQueryParser(
-    #             ["content_section", "title_article"], analyzer)
-    #         parser.setDefaultOperator(QueryParserBase.OR_OPERATOR)
-    #         query = MultiFieldQueryParser.parse(parser, QueryParser.escape(query))
-    #         searcher.setSimilarity(sim)
-    #         hits = searcher.search(query, 1000).scoreDocs
-    #         return hits
 
     def question_content(self, input_file, index_dir, output_file, rank_metric):
         with open(input_file, encoding="utf-8") as json_file:
