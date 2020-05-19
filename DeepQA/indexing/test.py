@@ -15,13 +15,14 @@ from org.apache.lucene.document import Document, StringField, Field, TextField
 from org.apache.lucene.search import IndexSearcher
 from org.apache.lucene.queryparser.classic import QueryParser
 from org.apache.lucene.analysis import StopwordAnalyzerBase, CharArraySet
+from org.apache.lucene.search.similarities import *
 from java.util import List, Arrays
 from xml.dom import minidom
-from indexer import Indexer, Section, Document, Searcher
+from indexer import Indexer, Section, Document
+from search import Searcher
 from similarity import Similarity
 inputQuery = ""
 Similarity = Similarity()
-
 
 while inputQuery != "exit":
     inputQuery = input("Enter your request, otherwise tape 'exit' to exit\n")
@@ -29,7 +30,7 @@ while inputQuery != "exit":
         break
     searchObject = Searcher()
     result = searchObject.MultiFieldsSearch(
-        "/Users/younesagabi/Desktop/DeepQA/index_Wiki_v6.0", inputQuery)
+        "/Users/younesagabi/Desktop/DeepQA/DeepQA/indexing/index", inputQuery, BM25Similarity())
 
     print("#" * 100)
     print("#" * 100)
