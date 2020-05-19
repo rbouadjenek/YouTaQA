@@ -87,7 +87,6 @@ class Indexer:
          "wish", "with", "within", "without", "won't", "wonder", "would", "would", "wouldn't", "x", "y", "yes",
          "yet", "you", "you'd", "you'll", "you're", "you've", "your", "yours"]), False))
 
-
     def __init__(self, index_dir):
         """
 
@@ -145,7 +144,6 @@ class Indexer:
     def close(self):
         # close the index
         self.writer.close()
-
 
 
 def main(argv):

@@ -29,9 +29,13 @@ from wiki_doc import *
 from tqdm import tqdm
 from xml.dom import minidom
 
+
 class Searcher:
 
-    #sim = BM25Similarity()  # or ClassicSimilarity
+    """
+    Class that contains the search methods
+    """
+    # sim = BM25Similarity()  # or ClassicSimilarity
 
     def simpleSearch(self, searchDir, query, sim):
         """
@@ -39,7 +43,8 @@ class Searcher:
         searchDir : the path to the folder that contains the index.
         """
         # Now search the index:
-        self.analyzer = MyPythonEnglishAnalyzer(stopwords=Indexer.ENGLISH_STOP_WORDS_SET)
+        self.analyzer = MyPythonEnglishAnalyzer(
+            stopwords=Indexer.ENGLISH_STOP_WORDS_SET)
         self.directory = FSDirectory.open(Paths.get(searchDir))
         self.reader = DirectoryReader.open(self.directory)
         self.searcher = IndexSearcher(self.reader)
@@ -56,7 +61,8 @@ class Searcher:
         searchDir : the path to the folder that contains the index.
         """
         # Now search the index:
-        self.analyzer = MyPythonEnglishAnalyzer(stopwords=Indexer.ENGLISH_STOP_WORDS_SET)
+        self.analyzer = MyPythonEnglishAnalyzer(
+            stopwords=Indexer.ENGLISH_STOP_WORDS_SET)
         self.directory = FSDirectory.open(Paths.get(searchDir))
         self.reader = DirectoryReader.open(self.directory)
         self.searcher = IndexSearcher(self.reader)

@@ -26,7 +26,12 @@ from org.apache.lucene.analysis.miscellaneous import SetKeywordMarkerFilter
 
 lucene.initVM(vmargs=['-Djava.awt.headless=true'])
 
+
 class DiacriticFilter(PythonTokenFilter):
+    """
+    Class of the filter which makes the text in unicode and remove special characters
+    """
+
     def __init__(self, input):
         super().__init__(input)
         self.termAtt = self.addAttribute(CharTermAttribute.class_)
@@ -44,6 +49,16 @@ class DiacriticFilter(PythonTokenFilter):
 
 
 class MyPythonEnglishAnalyzer(PythonEnglishAnalyzer):
+    """
+    Class of our custom analyzer that uses filters:
+        -StandardTokenizer.
+        -EnglishPossessiveFilter.
+        -LowerCaseFilter.
+        -DiacriticFilter.
+        -StopFilter.
+        -SetKeywordMarkerFilter
+    """
+
     ENGLISH_STOP_WORDS_SET = CharArraySet.unmodifiableSet(CharArraySet(Arrays.asList(
         ["a", "an", "and", "are", "as", "at", "be", "but", "by", "for", "if", "in", "into", "is", "it", "no", "not",
          "of", "on", "or", "such", "that", "the", "their", "then", "there", "these", "they", "this", "to", "was",

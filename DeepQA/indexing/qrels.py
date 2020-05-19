@@ -20,10 +20,12 @@ from xml.dom import minidom
 from indexer import Indexer, Section, Document, Searcher
 from similarity import Similarity
 
+
 class qrels:
     """
     A class to create the qrels of the questions for SQUAD dataset.
     """
+
     def __init__(self):
         super().__init__()
 
@@ -59,22 +61,26 @@ class qrels:
             data = json.load(json_file)
             for p in data['data']:
                 for par in p['paragraphs']:
-                    num_lines += 1;
+                    num_lines += 1
 
-        output_file = open(output_dir+"/qrels.txt", 'a+', encoding="utf-8")
+        output_file = open(output_dir + "/qrels.txt", 'a+', encoding="utf-8")
         with tqdm(total=num_lines) as pbar:
             with open(input_file, encoding="utf-8") as json_file:
                 data = json.load(json_file)
                 for p in data['data']:
                     for par in p['paragraphs']:
                         pbar.update(1)
-                        psg_id, content = qrels.get_id_section(index_dir, par["context"])
+                        psg_id, content = qrels.get_id_section(
+                            index_dir, par["context"])
                         #print("Content: "+content+"\n")
                         for q in par["qas"]:
                             qst_id = q["id"]
-                            similarity = round(len(set(par["context"]) & set(content)) / len(set(par["context"])),2)
-                            output_file.write(qst_id+" 0 "+psg_id+" 1 "+str(similarity)+"\n")
+                            similarity = round(len(set(par["context"]) & set(
+                                content)) / len(set(par["context"])), 2)
+                            output_file.write(
+                                qst_id + " 0 " + psg_id + " 1 " + str(similarity) + "\n")
                 print("==> Qrels successfully created.\n")
+
 
 def main(argv):
     """
@@ -87,7 +93,8 @@ def main(argv):
     output_dir = ''
     index_dir = ''
     try:
-        opts, args = getopt.getopt(argv, "hi:d:o:", ["ifile=", "dfile=", "ofile="])
+        opts, args = getopt.getopt(
+            argv, "hi:d:o:", ["ifile=", "dfile=", "ofile="])
     except getopt.GetoptError:
         print('qrels.py -i <input_file> -d <index_dir> -o <output_folder>')
         sys.exit(2)
@@ -98,19 +105,19 @@ def main(argv):
         elif opt in ("-i", "--ifile"):
             input_file = arg
             if not os.path.isfile(input_file):
-                print(input_file+' does not exist.')
+                print(input_file + ' does not exist.')
                 print("\n")
                 sys.exit(2)
         elif opt in ("-o", "--ofile"):
             output_dir = arg
             if not os.path.isdir(output_dir):
-                print(output_dir+' does not exist.')
+                print(output_dir + ' does not exist.')
                 print("\n")
                 sys.exit(2)
         elif opt in ("-d"):
             index_dir = arg
             if not os.path.isdir(index_dir):
-                print(index_dir+' does not exist.')
+                print(index_dir + ' does not exist.')
                 print("\n")
                 sys.exit(2)
 
@@ -119,6 +126,7 @@ def main(argv):
     else:
         print('qrels.py -i <input_file> -d <index_dir> -o <output_folder>')
         sys.exit(2)
+
 
 if __name__ == "__main__":
     """

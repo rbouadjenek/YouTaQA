@@ -7,7 +7,7 @@ from nltk.corpus import stopwords
 
 class Similarity:
     """
-    A class that caculatess string similarity
+    A class that caculates string similarity
     """
     STOP_WORDS = stopwords.words('english')
 

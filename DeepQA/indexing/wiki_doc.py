@@ -27,6 +27,7 @@ from my_custom_analyzer import *
 from tqdm import tqdm
 from xml.dom import minidom
 
+
 class WikiDocument:
     """
     A class to represent a wikipedia document as extracted from the page tag in the wikipedia dump.
