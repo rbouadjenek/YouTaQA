@@ -3,29 +3,34 @@ import glob
 import os
 import os.path
 import sys
+from xml.dom import minidom
+
+from tqdm import tqdm
+
 import lucene
 import unidecode
 import wiki_extractor
 from java.nio.file import Paths
 from java.util import Arrays
-from org.apache.lucene.analysis import CharArraySet
-from org.apache.lucene.analysis import LowerCaseFilter, Analyzer
+from org.apache.lucene.analysis import (Analyzer, CharArraySet,
+                                        LowerCaseFilter, StopFilter)
+from org.apache.lucene.analysis.en import (EnglishPossessiveFilter,
+                                           PorterStemFilter)
+from org.apache.lucene.analysis.miscellaneous import SetKeywordMarkerFilter
 from org.apache.lucene.analysis.standard import StandardTokenizer
 from org.apache.lucene.analysis.tokenattributes import CharTermAttribute
 from org.apache.lucene.codecs.simpletext import SimpleTextCodec
-from org.apache.lucene.document import Document, StringField, Field, TextField
-from org.apache.lucene.index import IndexWriterConfig, IndexWriter, DirectoryReader
-from org.apache.lucene.queryparser.classic import QueryParser, MultiFieldQueryParser, QueryParserBase
+from org.apache.lucene.document import Document, Field, StringField, TextField
+from org.apache.lucene.index import (DirectoryReader, IndexWriter,
+                                     IndexWriterConfig)
+from org.apache.lucene.queryparser.classic import (MultiFieldQueryParser,
+                                                   QueryParser,
+                                                   QueryParserBase)
 from org.apache.lucene.search import IndexSearcher
 from org.apache.lucene.search.similarities import *
 from org.apache.lucene.store import FSDirectory
-from org.apache.pylucene.analysis import PythonEnglishAnalyzer, PythonTokenFilter
-from org.apache.lucene.analysis.en import EnglishPossessiveFilter, PorterStemFilter
-from org.apache.lucene.analysis import StopFilter
-from org.apache.lucene.analysis.miscellaneous import SetKeywordMarkerFilter
-from my_custom_analyzer import *
-from tqdm import tqdm
-from xml.dom import minidom
+from org.apache.pylucene.analysis import (PythonEnglishAnalyzer,
+                                          PythonTokenFilter)
 
 
 class WikiDocument:

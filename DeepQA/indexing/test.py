@@ -1,26 +1,9 @@
-import getopt
-import glob
-import os
-import os.path
-import sys
-import wiki_extractor
-from tqdm import tqdm
 import lucene
-from org.apache.lucene.analysis.en import EnglishAnalyzer
-from org.apache.lucene.index import IndexWriterConfig, IndexWriter, DirectoryReader
-from org.apache.lucene.codecs.simpletext import SimpleTextCodec
-from org.apache.lucene.store import FSDirectory
-from java.nio.file import Path, Paths
-from org.apache.lucene.document import Document, StringField, Field, TextField
-from org.apache.lucene.search import IndexSearcher
-from org.apache.lucene.queryparser.classic import QueryParser
-from org.apache.lucene.analysis import StopwordAnalyzerBase, CharArraySet
+import wiki_extractor
 from org.apache.lucene.search.similarities import *
-from java.util import List, Arrays
-from xml.dom import minidom
-from indexer import Indexer, Section, Document
 from search import Searcher
 from similarity import Similarity
+
 inputQuery = ""
 Similarity = Similarity()
 
@@ -28,9 +11,8 @@ while inputQuery != "exit":
     inputQuery = input("Enter your request, otherwise tape 'exit' to exit\n")
     if inputQuery == "exit":
         break
-    searchObject = Searcher()
-    result = searchObject.MultiFieldsSearch(
-        "/Users/younesagabi/Desktop/DeepQA/DeepQA/indexing/index", inputQuery, BM25Similarity())
+    searchObject = Searcher("C:\Dataset-indexed-final")
+    result = searchObject.MultiFieldsSearch(inputQuery, BM25Similarity())
 
     print("#" * 100)
     print("#" * 100)

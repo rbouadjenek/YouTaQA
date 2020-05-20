@@ -1,23 +1,16 @@
-import json
 import getopt
-import glob
-import os
+import json
 import os.path
 import sys
+
 from tqdm import tqdm
+
 import lucene
-from org.apache.lucene.analysis.en import EnglishAnalyzer
-from org.apache.lucene.index import IndexWriterConfig, IndexWriter, DirectoryReader
-from org.apache.lucene.codecs.simpletext import SimpleTextCodec
-from org.apache.lucene.store import FSDirectory
-from java.nio.file import Path, Paths
-from org.apache.lucene.document import Document, StringField, Field, TextField
-from org.apache.lucene.search import IndexSearcher
-from org.apache.lucene.queryparser.classic import QueryParser
-from org.apache.lucene.analysis import StopwordAnalyzerBase, CharArraySet
-from java.util import List, Arrays
-from xml.dom import minidom
-from indexer import Indexer, Section, Document, Searcher
+from indexer import Document, Searcher, Section
+from java.nio.file import Path
+from org.apache.lucene.document import Document, Field
+from org.apache.lucene.index import (DirectoryReader, IndexWriter,
+                                     IndexWriterConfig)
 from similarity import Similarity
 
 
