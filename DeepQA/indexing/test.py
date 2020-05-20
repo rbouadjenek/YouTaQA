@@ -11,8 +11,14 @@ while inputQuery != "exit":
     inputQuery = input("Enter your request, otherwise tape 'exit' to exit\n")
     if inputQuery == "exit":
         break
+<<<<<<< HEAD
     searchObject = Searcher("C:\Dataset-indexed-final")
     result = searchObject.MultiFieldsSearch(inputQuery, BM25Similarity())
+=======
+    searchObject = Searcher()
+    result = searchObject.MultiFieldsSearch(
+        "/Users/younesagabi/Desktop/DeepQA/index_wiki_v7.0", inputQuery, BM25Similarity())
+>>>>>>> 9b89498e42513f33646a05a3ccc91b8946db00cc
 
     print("#" * 100)
     print("#" * 100)
