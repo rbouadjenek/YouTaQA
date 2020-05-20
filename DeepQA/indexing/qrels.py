@@ -4,8 +4,11 @@ import os.path
 import sys
 from tqdm import tqdm
 import lucene
-from indexer import Document, Searcher, Section
+from indexer import Document
+from search import Searcher
+from wiki_doc import Section
 from java.nio.file import Path
+from org.apache.lucene.search.similarities import *
 from org.apache.lucene.document import Document, Field
 from org.apache.lucene.index import (DirectoryReader, IndexWriter,
                                      IndexWriterConfig)
@@ -27,8 +30,8 @@ class qrels:
         :param input_query: the query that represents the context.
         :return:
         """
-        searchObject = Searcher()
-        result = searchObject.simpleSearch(index_dir, input_query)
+        searchObject = Searcher(index_dir)
+        result = searchObject.simpleSearch(input_query, BM25Similarity())
         for i in range(len(result)):
             hitDoc = searchObject.searcher.doc(result[i].doc)
             id = hitDoc.get("id_section")
