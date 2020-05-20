@@ -4,9 +4,7 @@ import os
 import os.path
 import sys
 from xml.dom import minidom
-
 from tqdm import tqdm
-
 import lucene
 import unidecode
 import wiki_extractor

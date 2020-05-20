@@ -2,9 +2,7 @@ import getopt
 import json
 import os.path
 import sys
-
 from tqdm import tqdm
-
 import lucene
 from indexer import Document, Searcher, Section
 from java.nio.file import Path
