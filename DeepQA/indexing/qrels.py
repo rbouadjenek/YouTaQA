@@ -58,7 +58,7 @@ class qrels:
                         psg_id, content = self.get_id_section(
                             (p['title'], par["context"]))
                         # print("Content: "+content+"\n")
-                        similarity = 0
+                        similarity = round(len(set(par["context"]) & set(content)) / len(set(par["context"])), 2)
                         for q in par["qas"]:
                             qst_id = q["id"]
                             output_file.write(
@@ -98,7 +98,7 @@ def main(argv):
                 print(output_dir + ' does not exist.')
                 print("\n")
                 sys.exit(2)
-        elif opt in ("-d"):
+        elif opt in "-d":
             index_dir = arg
             if not os.path.isdir(index_dir):
                 print(index_dir + ' does not exist.')
