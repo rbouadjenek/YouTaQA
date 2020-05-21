@@ -9,7 +9,7 @@ from search import Searcher
 
 
 class ResultsGenerator:
-    
+
     def __init__(self, index_dir):
         self.searcher = Searcher(index_dir)
 

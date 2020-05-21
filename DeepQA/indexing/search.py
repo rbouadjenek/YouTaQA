@@ -44,7 +44,7 @@ class Searcher:
             ["content_section", "title_article"], self.analyzer)
         parser.setDefaultOperator(QueryParserBase.OR_OPERATOR)
         query = MultiFieldQueryParser.parse(parser, QueryParser.escape(query))
-        
+
         self.searcher.setSimilarity(sim)
         hits = self.searcher.search(query, 1000).scoreDocs
         return hits
@@ -55,7 +55,7 @@ class Searcher:
         searchDir : the path to the folder that contains the index.
         """
         # Now search the index:
-        title = pair[0].replace('_', ' ') 
+        title = pair[0].replace('_', ' ')
         content = pair[1]
         parser = QueryParser("content_section", self.analyzer)
         query1 = parser.parse(QueryParser.escape(title))
@@ -76,13 +76,14 @@ class Searcher:
         searchDir : the path to the folder that contains the index.
         """
         # Now search the index:
-        title = pair[0].replace('_', ' ') 
+        title = pair[0].replace('_', ' ')
         content = pair[1]
         parser = MultiFieldQueryParser(
             ["content_section", "title_article"], self.analyzer)
         parser.setDefaultOperator(QueryParserBase.OR_OPERATOR)
         query1 = MultiFieldQueryParser.parse(parser, QueryParser.escape(title))
-        query2 = MultiFieldQueryParser.parse(parser, QueryParser.escape(content))
+        query2 = MultiFieldQueryParser.parse(
+            parser, QueryParser.escape(content))
 
         bq = BooleanQuery.Builder()
         bq.add(query1, BooleanClause.Occur.FILTER)
