@@ -91,6 +91,8 @@ class ResultsGenerator:
                             for index in question_title_content_m_TDF:
                                 output_file_8.write(
                                     q["id"] + " Q0 " + str(index.doc) + " " + str(i) + " " + str(index.score) + " RUN1\n")
+                print("==> Results files successfully created.\n")
+
 
 
 def main(argv):
