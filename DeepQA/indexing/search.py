@@ -16,13 +16,13 @@ class Searcher:
     """
     Class that contains the search methods
     """
+
     def __init__(self, searchDir):
         self.analyzer = MyPythonEnglishAnalyzer(
             stopwords=Indexer.ENGLISH_STOP_WORDS_SET)
         self.directory = FSDirectory.open(Paths.get(searchDir))
         self.reader = DirectoryReader.open(self.directory)
         self.searcher = IndexSearcher(self.reader)
-        
 
     def simpleSearch(self, query, sim):
         """

@@ -2,9 +2,7 @@ import getopt
 import glob
 import os
 import sys
-
 from tqdm import tqdm
-
 import lucene
 from java.nio.file import Paths
 from java.util import Arrays
@@ -85,7 +83,8 @@ class Indexer:
         self.indexDir = index_dir
         if not os.path.exists(index_dir):
             os.mkdir(index_dir)
-        self.analyzer = MyPythonEnglishAnalyzer(stopwords=self.ENGLISH_STOP_WORDS_SET)
+        self.analyzer = MyPythonEnglishAnalyzer(
+            stopwords=self.ENGLISH_STOP_WORDS_SET)
         conf = IndexWriterConfig(self.analyzer)
         conf.setUseCompoundFile(False)
         # conf.setCodec(SimpleTextCodec())
