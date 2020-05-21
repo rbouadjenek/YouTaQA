@@ -2,9 +2,7 @@ import getopt
 import json
 import os.path
 import sys
-
 from tqdm import tqdm
-
 import lucene
 from org.apache.lucene.search.similarities import *
 from search import Searcher
