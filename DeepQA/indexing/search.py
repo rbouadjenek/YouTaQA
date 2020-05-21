@@ -1,18 +1,16 @@
-import lucene
 from indexer import Indexer
 from java.nio.file import Paths
 from my_python_english_analyzer import MyPythonEnglishAnalyzer
 from org.apache.lucene.index import DirectoryReader
-from org.apache.lucene.queryparser.classic import (MultiFieldQueryParser,
-                                                   QueryParser,
-                                                   QueryParserBase)
+from org.apache.lucene.queryparser.classic import MultiFieldQueryParser, QueryParser, QueryParserBase
+from org.apache.lucene.search import BooleanClause, BooleanQuery
+
+
 from org.apache.lucene.search import IndexSearcher
 from org.apache.lucene.store import FSDirectory
-from org.apache.pylucene.analysis import PythonEnglishAnalyzer
 
 
 class Searcher:
-
     """
     Class that contains the search methods
     """
@@ -24,16 +22,27 @@ class Searcher:
         self.reader = DirectoryReader.open(self.directory)
         self.searcher = IndexSearcher(self.reader)
 
-    def simpleSearch(self, query, sim):
+    def simpleSearch(self, pair, sim):
         """
         Method that searches through documents using only content_section Field
         searchDir : the path to the folder that contains the index.
         """
         # Now search the index:
+        title= pair[0].replace('_',' ')
+        content = pair[1]
         parser = QueryParser("content_section", self.analyzer)
-        query = parser.parse(QueryParser.escape(query))
+        query1 = parser.parse(QueryParser.escape(title))
+        query2 = parser.parse(QueryParser.escape(content))
+
+        bq = BooleanQuery.Builder()
+        bq.add(query1, BooleanClause.Occur.FILTER)
+        bq.add(query2, BooleanClause.Occur.SHOULD)
+
+
+
         self.searcher.setSimilarity(sim)
-        hits = self.searcher.search(query, 1000).scoreDocs
+        # print(bq.build())
+        hits = self.searcher.search(bq.build(), 1).scoreDocs
         return hits
 
     def MultiFieldsSearch(self, query, sim):
@@ -47,5 +56,5 @@ class Searcher:
         parser.setDefaultOperator(QueryParserBase.OR_OPERATOR)
         query = MultiFieldQueryParser.parse(parser, QueryParser.escape(query))
         self.searcher.setSimilarity(sim)
-        hits = self.searcher.search(query, 1000).scoreDocs
+        hits = self.searcher.search(query, 1).scoreDocs
         return hits
