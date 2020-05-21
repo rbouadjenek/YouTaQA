@@ -53,10 +53,10 @@ class qrels:
                 data = json.load(json_file)
                 for p in data['data']:
 
-
                     for par in p['paragraphs']:
                         pbar.update(1)
-                        psg_id, content = self.get_id_section((p['title'], par["context"]))
+                        psg_id, content = self.get_id_section(
+                            (p['title'], par["context"]))
                         # print("Content: "+content+"\n")
                         similarity = 0
                         for q in par["qas"]:

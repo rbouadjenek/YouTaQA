@@ -28,7 +28,7 @@ class Searcher:
         searchDir : the path to the folder that contains the index.
         """
         # Now search the index:
-        title= pair[0].replace('_',' ')
+        title = pair[0].replace('_', ' ')
         content = pair[1]
         parser = QueryParser("content_section", self.analyzer)
         query1 = parser.parse(QueryParser.escape(title))
@@ -37,8 +37,6 @@ class Searcher:
         bq = BooleanQuery.Builder()
         bq.add(query1, BooleanClause.Occur.FILTER)
         bq.add(query2, BooleanClause.Occur.SHOULD)
-
-
 
         self.searcher.setSimilarity(sim)
         # print(bq.build())
