@@ -22,7 +22,7 @@ class qrels:
         :param input_query: the query that represents the context.
         :return:
         """
-        result = self.searchObject.simpleSearch(pair, BM25Similarity())
+        result = self.searchObject.pairSearch(pair, BM25Similarity())
         id = None
         for i in range(len(result)):
             hitDoc = self.searchObject.searcher.doc(result[i].doc)

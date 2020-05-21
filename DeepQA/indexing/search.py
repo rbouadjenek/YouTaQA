@@ -22,13 +22,39 @@ class Searcher:
         self.reader = DirectoryReader.open(self.directory)
         self.searcher = IndexSearcher(self.reader)
 
-    def simpleSearch(self, pair, sim):
+    def simpleSearch(self, query, sim):
         """
         Method that searches through documents using only content_section Field
         searchDir : the path to the folder that contains the index.
         """
         # Now search the index:
-        title = pair[0].replace('_', ' ')
+        parser = QueryParser("content_section", self.analyzer)
+        query = parser.parse(QueryParser.escape(query))
+        self.searcher.setSimilarity(sim)
+        hits = self.searcher.search(query, 1000).scoreDocs
+        return hits
+
+    def multiFieldsSearch(self, query, sim):
+        """
+        Method that searches through documents using content_section and title_article Fields
+        searchDir : the path to the folder that contains the index.
+        """
+        # Now search the index:
+        parser = MultiFieldQueryParser(
+            ["content_section", "title_article"], self.analyzer)
+        parser.setDefaultOperator(QueryParserBase.OR_OPERATOR)
+        query = MultiFieldQueryParser.parse(parser, QueryParser.escape(query))
+        self.searcher.setSimilarity(sim)
+        hits = self.searcher.search(query, 1000).scoreDocs
+        return hits
+
+    def pairSearch(self, pair, sim):
+        """
+        Method that searches through documents using only content_section Field
+        searchDir : the path to the folder that contains the index.
+        """
+        # Now search the index:
+        title = pair[0].replace('_', ' ') 
         content = pair[1]
         parser = QueryParser("content_section", self.analyzer)
         query1 = parser.parse(QueryParser.escape(title))
@@ -43,16 +69,25 @@ class Searcher:
         hits = self.searcher.search(bq.build(), 1000).scoreDocs
         return hits
 
-    def MultiFieldsSearch(self, query, sim):
+    def multiFieldsPairSearch(self, pair, sim):
         """
-        Method that searches through documents using content_section and title_article Fields
+        Method that searches through documents using only content_section Field
         searchDir : the path to the folder that contains the index.
         """
         # Now search the index:
+        title = pair[0].replace('_', ' ') 
+        content = pair[1]
         parser = MultiFieldQueryParser(
             ["content_section", "title_article"], self.analyzer)
         parser.setDefaultOperator(QueryParserBase.OR_OPERATOR)
-        query = MultiFieldQueryParser.parse(parser, QueryParser.escape(query))
+        query1 = MultiFieldQueryParser.parse(QueryParser.escape(title))
+        query2 = MultiFieldQueryParser.parse(QueryParser.escape(content))
+
+        bq = BooleanQuery.Builder()
+        bq.add(query1, BooleanClause.Occur.FILTER)
+        bq.add(query2, BooleanClause.Occur.SHOULD)
+
         self.searcher.setSimilarity(sim)
-        hits = self.searcher.search(query, 1000).scoreDocs
+        # print(bq.build())
+        hits = self.searcher.search(bq.build(), 1000).scoreDocs
         return hits

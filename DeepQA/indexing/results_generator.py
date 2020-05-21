@@ -9,11 +9,11 @@ from search import Searcher
 
 
 class ResultsGenerator:
-
+    
     def __init__(self, index_dir):
         self.searcher = Searcher(index_dir)
 
-    def results_generator(self, input_file, index_dir, output_dir):
+    def process(self, input_file, index_dir, output_dir):
         output_file_1 = open(
             output_dir + "/results_BM25_1.txt", 'a+', encoding="utf-8")
         output_file_2 = open(
@@ -49,21 +49,21 @@ class ResultsGenerator:
                             pbar.update(1)
                             question_content_s_BM25 = self.searcher.simpleSearch(
                                 q["question"], BM25Similarity())
-                            question_title_content_s_BM25 = self.searcher.simpleSearch(
-                                title + " " + q["question"], BM25Similarity())
-                            question_content_m_BM25 = self.searcher.MultiFieldsSearch(
+                            question_title_content_s_BM25 = self.searcher.pairSearch(
+                                [title, q["question"]], BM25Similarity())
+                            question_content_m_BM25 = self.searcher.multiFieldsSearch(
                                 q["question"], BM25Similarity())
-                            question_title_content_m_BM25 = self.searcher.MultiFieldsSearch(
-                                title + " " + q["question"], BM25Similarity())
+                            question_title_content_m_BM25 = self.searcher.multiFieldsPairSearch(
+                                [title, q["question"]], BM25Similarity())
 
                             question_content_s_TDF = self.searcher.simpleSearch(
                                 q["question"], ClassicSimilarity())
-                            question_title_content_s_TDF = self.searcher.simpleSearch(
-                                title + " " + q["question"], ClassicSimilarity())
-                            question_content_m_TDF = self.searcher.MultiFieldsSearch(
+                            question_title_content_s_TDF = self.searcher.pairSearch(
+                                [title, q["question"]], ClassicSimilarity())
+                            question_content_m_TDF = self.searcher.multiFieldsSearch(
                                 q["question"], ClassicSimilarity())
-                            question_title_content_m_TDF = self.searcher.MultiFieldsSearch(
-                                title + " " + q["question"], ClassicSimilarity())
+                            question_title_content_m_TDF = self.searcher.multiFieldsPairSearch(
+                                [title, q["question"]], ClassicSimilarity())
 
                             i = 1
                             for index in question_content_s_BM25:
@@ -138,7 +138,7 @@ def main(argv):
 
     if input_file != '' and output_dir != '' and index_dir != '':
         rg = ResultsGenerator(index_dir)
-        rg.results_generator(input_file, index_dir, output_dir)
+        rg.process(input_file, index_dir, output_dir)
     else:
         print('results_generator.py -i <input_file> -d <index_dir> -o <output_folder>')
         sys.exit(2)

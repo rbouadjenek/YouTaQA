@@ -13,7 +13,7 @@ while inputQuery != "exit":
         break
 
     searchObject = Searcher("/Users/younesagabi/Desktop/DeepQA/index_wiki_v7.0")
-    result = searchObject.MultiFieldsSearch(inputQuery, BM25Similarity())
+    result = searchObject.multiFieldsSearch(inputQuery, BM25Similarity())
 
     print("#" * 100)
     print("#" * 100)
