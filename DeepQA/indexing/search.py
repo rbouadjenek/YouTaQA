@@ -40,7 +40,7 @@ class Searcher:
 
         self.searcher.setSimilarity(sim)
         # print(bq.build())
-        hits = self.searcher.search(bq.build(), 1).scoreDocs
+        hits = self.searcher.search(bq.build(), 1000).scoreDocs
         return hits
 
     def MultiFieldsSearch(self, query, sim):
@@ -54,5 +54,5 @@ class Searcher:
         parser.setDefaultOperator(QueryParserBase.OR_OPERATOR)
         query = MultiFieldQueryParser.parse(parser, QueryParser.escape(query))
         self.searcher.setSimilarity(sim)
-        hits = self.searcher.search(query, 1).scoreDocs
+        hits = self.searcher.search(query, 1000).scoreDocs
         return hits
