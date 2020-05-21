@@ -88,11 +88,11 @@ def main(argv):
         opts, args = getopt.getopt(
             argv, "hi:d:o:", ["ifile=", "dfile=", "ofile="])
     except getopt.GetoptError:
-        print('qrels.py -i <input_file> -d <index_dir> -o <output_folder>')
+        print('results_generator.py -i <input_file> -d <index_dir> -o <output_folder>')
         sys.exit(2)
     for opt, arg in opts:
         if opt == '-h':
-            print('qrels.py -i <input_file> -d <index_dir> -o <output_folder>')
+            print('results_generator.py -i <input_file> -d <index_dir> -o <output_folder>')
             sys.exit()
         elif opt in ("-i", "--ifile"):
             input_file = arg
