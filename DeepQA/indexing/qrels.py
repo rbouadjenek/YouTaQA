@@ -61,8 +61,9 @@ class qrels:
                         similarity = round(len(set(par["context"]) & set(content)) / len(set(par["context"])), 2)
                         for q in par["qas"]:
                             qst_id = q["id"]
-                            output_file.write(
-                                qst_id + " 0 " + psg_id + " 1 " + str(similarity) + "\n")
+                            if q["is_impossible"] == False:
+                                output_file.write(
+                                    qst_id + " 0 " + psg_id + " 1 " + str(similarity) + "\n")
                 print("==> Qrels successfully created.\n")
 
 
