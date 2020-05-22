@@ -9,7 +9,7 @@ from search import Searcher
 
 
 class ResultsGenerator:
-
+    
     def __init__(self, index_dir):
         self.searcher = Searcher(index_dir)
 
@@ -46,8 +46,8 @@ class ResultsGenerator:
                     title = p["title"]
                     for par in p['paragraphs']:
                         for q in par["qas"]:
-                            if q["is_impossible"] == False:
-                                pbar.update(1)
+                            pbar.update(1)
+                            if q["is_impossible"] is False:
                                 question_content_s_BM25 = self.searcher.simpleSearch(
                                     q["question"], BM25Similarity())
                                 question_title_content_s_BM25 = self.searcher.pairSearch(
@@ -80,7 +80,6 @@ class ResultsGenerator:
                                     output_file_4.write(
                                         q["id"] + " Q0 " + str(index.doc) + " " + str(i) + " " + str(index.score) + " RUN1\n")
 
-<<<<<<< HEAD
                                 for index in question_content_s_TDF:
                                     output_file_5.write(
                                         q["id"] + " Q0 " + str(index.doc) + " " + str(i) + " " + str(index.score) + " RUN1\n")
@@ -93,22 +92,6 @@ class ResultsGenerator:
                                 for index in question_title_content_m_TDF:
                                     output_file_8.write(
                                         q["id"] + " Q0 " + str(index.doc) + " " + str(i) + " " + str(index.score) + " RUN1\n")
-=======
-                            for index in question_content_s_TDF:
-                                output_file_5.write(
-                                    q["id"] + " Q0 " + str(index.doc) + " " + str(i) + " " + str(index.score) + " RUN1\n")
-                            for index in question_title_content_s_TDF:
-                                output_file_6.write(
-                                    q["id"] + " Q0 " + str(index.doc) + " " + str(i) + " " + str(index.score) + " RUN1\n")
-                            for index in question_content_m_TDF:
-                                output_file_7.write(
-                                    q["id"] + " Q0 " + str(index.doc) + " " + str(i) + " " + str(index.score) + " RUN1\n")
-                            for index in question_title_content_m_TDF:
-                                output_file_8.write(
-                                    q["id"] + " Q0 " + str(index.doc) + " " + str(i) + " " + str(index.score) + " RUN1\n")
-                print("==> Results files successfully created.\n")
-
->>>>>>> a776a69b38d862389556e8f30ee627290c87d128
 
 
 def main(argv):
