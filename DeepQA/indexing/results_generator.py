@@ -9,7 +9,7 @@ from search import Searcher
 
 
 class ResultsGenerator:
-    
+
     def __init__(self, index_dir):
         self.searcher = Searcher(index_dir)
 
@@ -46,39 +46,54 @@ class ResultsGenerator:
                     title = p["title"]
                     for par in p['paragraphs']:
                         for q in par["qas"]:
-                            pbar.update(1)
-                            question_content_s_BM25 = self.searcher.simpleSearch(
-                                q["question"], BM25Similarity())
-                            question_title_content_s_BM25 = self.searcher.pairSearch(
-                                [title, q["question"]], BM25Similarity())
-                            question_content_m_BM25 = self.searcher.multiFieldsSearch(
-                                q["question"], BM25Similarity())
-                            question_title_content_m_BM25 = self.searcher.multiFieldsPairSearch(
-                                [title, q["question"]], BM25Similarity())
+                            if q["is_impossible"] == False:
+                                pbar.update(1)
+                                question_content_s_BM25 = self.searcher.simpleSearch(
+                                    q["question"], BM25Similarity())
+                                question_title_content_s_BM25 = self.searcher.pairSearch(
+                                    [title, q["question"]], BM25Similarity())
+                                question_content_m_BM25 = self.searcher.multiFieldsSearch(
+                                    q["question"], BM25Similarity())
+                                question_title_content_m_BM25 = self.searcher.multiFieldsPairSearch(
+                                    [title, q["question"]], BM25Similarity())
 
-                            question_content_s_TDF = self.searcher.simpleSearch(
-                                q["question"], ClassicSimilarity())
-                            question_title_content_s_TDF = self.searcher.pairSearch(
-                                [title, q["question"]], ClassicSimilarity())
-                            question_content_m_TDF = self.searcher.multiFieldsSearch(
-                                q["question"], ClassicSimilarity())
-                            question_title_content_m_TDF = self.searcher.multiFieldsPairSearch(
-                                [title, q["question"]], ClassicSimilarity())
+                                question_content_s_TDF = self.searcher.simpleSearch(
+                                    q["question"], ClassicSimilarity())
+                                question_title_content_s_TDF = self.searcher.pairSearch(
+                                    [title, q["question"]], ClassicSimilarity())
+                                question_content_m_TDF = self.searcher.multiFieldsSearch(
+                                    q["question"], ClassicSimilarity())
+                                question_title_content_m_TDF = self.searcher.multiFieldsPairSearch(
+                                    [title, q["question"]], ClassicSimilarity())
 
-                            i = 1
-                            for index in question_content_s_BM25:
-                                output_file_1.write(
-                                    q["id"] + " Q0 " + str(index.doc) + " " + str(i) + " " + str(index.score) + " RUN1\n")
-                            for index in question_title_content_s_BM25:
-                                output_file_2.write(
-                                    q["id"] + " Q0 " + str(index.doc) + " " + str(i) + " " + str(index.score) + " RUN1\n")
-                            for index in question_content_m_BM25:
-                                output_file_3.write(
-                                    q["id"] + " Q0 " + str(index.doc) + " " + str(i) + " " + str(index.score) + " RUN1\n")
-                            for index in question_title_content_m_BM25:
-                                output_file_4.write(
-                                    q["id"] + " Q0 " + str(index.doc) + " " + str(i) + " " + str(index.score) + " RUN1\n")
+                                i = 1
+                                for index in question_content_s_BM25:
+                                    output_file_1.write(
+                                        q["id"] + " Q0 " + str(index.doc) + " " + str(i) + " " + str(index.score) + " RUN1\n")
+                                for index in question_title_content_s_BM25:
+                                    output_file_2.write(
+                                        q["id"] + " Q0 " + str(index.doc) + " " + str(i) + " " + str(index.score) + " RUN1\n")
+                                for index in question_content_m_BM25:
+                                    output_file_3.write(
+                                        q["id"] + " Q0 " + str(index.doc) + " " + str(i) + " " + str(index.score) + " RUN1\n")
+                                for index in question_title_content_m_BM25:
+                                    output_file_4.write(
+                                        q["id"] + " Q0 " + str(index.doc) + " " + str(i) + " " + str(index.score) + " RUN1\n")
 
+<<<<<<< HEAD
+                                for index in question_content_s_TDF:
+                                    output_file_5.write(
+                                        q["id"] + " Q0 " + str(index.doc) + " " + str(i) + " " + str(index.score) + " RUN1\n")
+                                for index in question_title_content_s_TDF:
+                                    output_file_6.write(
+                                        q["id"] + " Q0 " + str(index.doc) + " " + str(i) + " " + str(index.score) + " RUN1\n")
+                                for index in question_content_m_TDF:
+                                    output_file_7.write(
+                                        q["id"] + " Q0 " + str(index.doc) + " " + str(i) + " " + str(index.score) + " RUN1\n")
+                                for index in question_title_content_m_TDF:
+                                    output_file_8.write(
+                                        q["id"] + " Q0 " + str(index.doc) + " " + str(i) + " " + str(index.score) + " RUN1\n")
+=======
                             for index in question_content_s_TDF:
                                 output_file_5.write(
                                     q["id"] + " Q0 " + str(index.doc) + " " + str(i) + " " + str(index.score) + " RUN1\n")
@@ -91,6 +106,9 @@ class ResultsGenerator:
                             for index in question_title_content_m_TDF:
                                 output_file_8.write(
                                     q["id"] + " Q0 " + str(index.doc) + " " + str(i) + " " + str(index.score) + " RUN1\n")
+                print("==> Results files successfully created.\n")
+
+>>>>>>> a776a69b38d862389556e8f30ee627290c87d128
 
 
 def main(argv):
