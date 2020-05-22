@@ -66,33 +66,32 @@ class ResultsGenerator:
                                 question_title_content_m_TDF = self.searcher.multiFieldsPairSearch(
                                     [title, q["question"]], ClassicSimilarity())
 
-                                i = 1
-                                for index in question_content_s_BM25:
+                                for i, index in enumerate(question_content_s_BM25):
                                     output_file_1.write(
-                                        q["id"] + " Q0 " + str(index.doc) + " " + str(i) + " " + str(index.score) + " RUN1\n")
-                                for index in question_title_content_s_BM25:
+                                        q["id"] + " Q0 " + str(index.doc) + " " + str(i+1) + " " + str(index.score) + " STANDARD\n")
+                                for i, index in enumerate(question_title_content_s_BM25):
                                     output_file_2.write(
-                                        q["id"] + " Q0 " + str(index.doc) + " " + str(i) + " " + str(index.score) + " RUN1\n")
-                                for index in question_content_m_BM25:
+                                        q["id"] + " Q0 " + str(index.doc) + " " + str(i+1) + " " + str(index.score) + " STANDARD\n")
+                                for i, index in enumerate(question_content_m_BM25):
                                     output_file_3.write(
-                                        q["id"] + " Q0 " + str(index.doc) + " " + str(i) + " " + str(index.score) + " RUN1\n")
-                                for index in question_title_content_m_BM25:
+                                        q["id"] + " Q0 " + str(index.doc) + " " + str(i+1) + " " + str(index.score) + " STANDARD\n")
+                                for i, index in enumerate(question_title_content_m_BM25):
                                     output_file_4.write(
-                                        q["id"] + " Q0 " + str(index.doc) + " " + str(i) + " " + str(index.score) + " RUN1\n")
+                                        q["id"] + " Q0 " + str(index.doc) + " " + str(i+1) + " " + str(index.score) + " STANDARD\n")
 
-                                for index in question_content_s_TDF:
+                                for i, index in enumerate(question_content_s_TDF):
                                     output_file_5.write(
-                                        q["id"] + " Q0 " + str(index.doc) + " " + str(i) + " " + str(index.score) + " RUN1\n")
-                                for index in question_title_content_s_TDF:
+                                        q["id"] + " Q0 " + str(index.doc) + " " + str(i+1) + " " + str(index.score) + " STANDARD\n")
+                                for i, index in enumerate(question_title_content_s_TDF):
                                     output_file_6.write(
-                                        q["id"] + " Q0 " + str(index.doc) + " " + str(i) + " " + str(index.score) + " RUN1\n")
-                                for index in question_content_m_TDF:
+                                        q["id"] + " Q0 " + str(index.doc) + " " + str(i+1) + " " + str(index.score) + " STANDARD\n")
+                                for i, index in enumerate(question_content_m_TDF):
                                     output_file_7.write(
-                                        q["id"] + " Q0 " + str(index.doc) + " " + str(i) + " " + str(index.score) + " RUN1\n")
-                                for index in question_title_content_m_TDF:
+                                        q["id"] + " Q0 " + str(index.doc) + " " + str(i+1) + " " + str(index.score) + " STANDARD\n")
+                                for i, index in enumerate(question_title_content_m_TDF):
                                     output_file_8.write(
-                                        q["id"] + " Q0 " + str(index.doc) + " " + str(i) + " " + str(index.score) + " RUN1\n")
-                                i += 1
+                                        q["id"] + " Q0 " + str(index.doc) + " " + str(i+1) + " " + str(index.score) + " STANDARD\n")
+                                
         print("==> Results successfully created.\n")
 
 def main(argv):
