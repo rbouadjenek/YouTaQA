@@ -9,7 +9,7 @@ from search import Searcher
 
 
 class ResultsGenerator:
-    
+
     def __init__(self, index_dir):
         self.searcher = Searcher(index_dir)
 
@@ -93,7 +93,7 @@ class ResultsGenerator:
                                     output_file_8.write(
                                         q["id"] + " Q0 " + str(index.doc) + " " + str(i) + " " + str(index.score) + " RUN1\n")
                                 i += 1
-
+        print("==> Results successfully created.\n")
 
 def main(argv):
     """
