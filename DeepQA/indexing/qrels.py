@@ -58,12 +58,12 @@ class qrels:
                         psg_id, content = self.get_id_section(
                             (p['title'], par["context"]))
                         # print("Content: "+content+"\n")
-                        similarity = round(len(set(par["context"]) & set(content)) / len(set(par["context"])), 2)
+                        #similarity = round(len(set(par["context"]) & set(content)) / len(set(par["context"])), 2)
                         for q in par["qas"]:
                             qst_id = q["id"]
                             if q["is_impossible"] is False:
                                 output_file.write(
-                                    qst_id + " 0 " + psg_id + " 1 " + str(similarity) + "\n")
+                                    qst_id + " 0 " + psg_id + " 1 " + "\n")
                 print("==> Qrels successfully created.\n")
 
 
