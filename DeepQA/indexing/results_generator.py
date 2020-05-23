@@ -13,6 +13,13 @@ class ResultsGenerator:
     def __init__(self, index_dir):
         self.searcher = Searcher(index_dir)
 
+    def get_id_section(self, request):
+        idList = list()
+        for i in range(len(request)):
+            hitDoc = self.searcher.searcher.doc(request[i].doc)
+            idList.append(hitDoc.get("id_section"))
+        return idList
+
     def process(self, input_file, index_dir, output_dir):
         output_file_1 = open(
             output_dir + "/results_BM25_1.txt", 'a+', encoding="utf-8")
@@ -50,47 +57,62 @@ class ResultsGenerator:
                             if q["is_impossible"] is False:
                                 question_content_s_BM25 = self.searcher.simpleSearch(
                                     q["question"], BM25Similarity())
+                                id_question_content_s_BM25 = self.get_id_section(question_content_s_BM25)
+                                    
                                 question_title_content_s_BM25 = self.searcher.pairSearch(
                                     [title, q["question"]], BM25Similarity())
+                                id_question_title_content_s_BM25 = self.get_id_section(question_title_content_s_BM25)
+
                                 question_content_m_BM25 = self.searcher.multiFieldsSearch(
                                     q["question"], BM25Similarity())
+                                id_question_content_m_BM25 = self.get_id_section(question_content_m_BM25)
+
                                 question_title_content_m_BM25 = self.searcher.multiFieldsPairSearch(
                                     [title, q["question"]], BM25Similarity())
+                                id_question_title_content_m_BM25 = self.get_id_section(question_title_content_m_BM25)
+
 
                                 question_content_s_TDF = self.searcher.simpleSearch(
                                     q["question"], ClassicSimilarity())
+                                id_question_content_s_TDF = self.get_id_section(question_content_s_TDF)
+
                                 question_title_content_s_TDF = self.searcher.pairSearch(
                                     [title, q["question"]], ClassicSimilarity())
+                                id_question_title_content_s_TDF = self.get_id_section(question_title_content_s_TDF)
+
                                 question_content_m_TDF = self.searcher.multiFieldsSearch(
                                     q["question"], ClassicSimilarity())
+                                id_question_content_m_TDF = self.get_id_section(question_content_m_TDF)
+
                                 question_title_content_m_TDF = self.searcher.multiFieldsPairSearch(
                                     [title, q["question"]], ClassicSimilarity())
+                                id_question_title_content_m_TDF = self.get_id_section(question_title_content_m_TDF)
 
-                                for i, index in enumerate(question_content_s_BM25):
+                                for i in range(len(question_content_s_BM25)):
                                     output_file_1.write(
-                                        q["id"] + " Q0 " + str(index.doc) + " " + str(i+1) + " " + str(index.score) + " STANDARD\n")
-                                for i, index in enumerate(question_title_content_s_BM25):
+                                        q["id"] + " Q0 " + str(id_question_content_s_BM25[i]) + " " + str(i+1) + " " + str(question_content_s_BM25[i].score) + " STANDARD\n")
+                                for i in range(len(question_title_content_s_BM25)):
                                     output_file_2.write(
-                                        q["id"] + " Q0 " + str(index.doc) + " " + str(i+1) + " " + str(index.score) + " STANDARD\n")
-                                for i, index in enumerate(question_content_m_BM25):
+                                        q["id"] + " Q0 " + str(id_question_title_content_s_BM25[i]) + " " + str(i+1) + " " + str(question_title_content_s_BM25[i].score) + " STANDARD\n")
+                                for i in range(len(question_content_m_BM25)):
                                     output_file_3.write(
-                                        q["id"] + " Q0 " + str(index.doc) + " " + str(i+1) + " " + str(index.score) + " STANDARD\n")
-                                for i, index in enumerate(question_title_content_m_BM25):
+                                        q["id"] + " Q0 " + str(id_question_content_m_BM25[i]) + " " + str(i+1) + " " + str(question_content_m_BM25[i].score) + " STANDARD\n")
+                                for i in range(len(question_title_content_m_BM25)):
                                     output_file_4.write(
-                                        q["id"] + " Q0 " + str(index.doc) + " " + str(i+1) + " " + str(index.score) + " STANDARD\n")
+                                        q["id"] + " Q0 " + str(id_question_title_content_m_BM25[i]) + " " + str(i+1) + " " + str(question_title_content_m_BM25[i].score) + " STANDARD\n")
 
-                                for i, index in enumerate(question_content_s_TDF):
+                                for i in range(len(question_content_s_TDF)):
                                     output_file_5.write(
-                                        q["id"] + " Q0 " + str(index.doc) + " " + str(i+1) + " " + str(index.score) + " STANDARD\n")
-                                for i, index in enumerate(question_title_content_s_TDF):
+                                        q["id"] + " Q0 " + str(id_question_content_s_TDF[i]) + " " + str(i+1) + " " + str(question_content_s_TDF[i].score) + " STANDARD\n")
+                                for i in range(len(question_title_content_s_TDF)):
                                     output_file_6.write(
-                                        q["id"] + " Q0 " + str(index.doc) + " " + str(i+1) + " " + str(index.score) + " STANDARD\n")
-                                for i, index in enumerate(question_content_m_TDF):
+                                        q["id"] + " Q0 " + str(id_question_title_content_s_TDF[i]) + " " + str(i+1) + " " + str(question_title_content_s_TDF[i].score) + " STANDARD\n")
+                                for i in range(len(question_content_m_TDF)):
                                     output_file_7.write(
-                                        q["id"] + " Q0 " + str(index.doc) + " " + str(i+1) + " " + str(index.score) + " STANDARD\n")
-                                for i, index in enumerate(question_title_content_m_TDF):
+                                        q["id"] + " Q0 " + str(id_question_content_m_TDF[i]) + " " + str(i+1) + " " + str(question_content_m_TDF[i].score) + " STANDARD\n")
+                                for i in range(len(question_title_content_m_TDF)):
                                     output_file_8.write(
-                                        q["id"] + " Q0 " + str(index.doc) + " " + str(i+1) + " " + str(index.score) + " STANDARD\n")
+                                        q["id"] + " Q0 " + str(id_question_title_content_m_TDF[i]) + " " + str(i+1) + " " + str(question_title_content_m_TDF[i].score) + " STANDARD\n")
                                 
         print("==> Results successfully created.\n")
 
