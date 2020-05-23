@@ -88,7 +88,32 @@ abbr[data-original-title] {
   text-decoration: underline dotted;
   cursor: help;
   border-bottom: 0; }
-
+#search_qst_bar
+{ 
+  
+  background: rgba(0, 0, 0, 0.15) !important;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05) !important;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05) !important;
+}
+#search_qst_bar:hover
+{
+  opacity: 1 !important;
+}
+#search_qst_button
+{ 
+  background: #ee76ad !important;
+  background: -moz-linear-gradient(45deg, #512E5F 0%, #76448A 50%, #512E5F 100%) !important;
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, #1A5276), color-stop(100%, #512E5F)) !important;
+  background: -webkit-linear-gradient(45deg, #512E5F 0%, #76448A 50%, #512E5F 100%) !important;
+  background: -o-linear-gradient(45deg, #512E5F 0%, #76448A 50%, #512E5F 100%) !important;
+  background: -ms-linear-gradient(45deg, #512E5F 0%, #76448A 50%, #512E5F 100%) !important;
+  background: linear-gradient(45deg, #512E5F 0%, #76448A 50%, #512E5F 100%) !important;
+  opacity: 0.85 !important;
+}
+#search_qst_button:hover
+{
+  opacity: 1 !important;
+}
 address {
   margin-bottom: 1rem;
   font-style: normal;
