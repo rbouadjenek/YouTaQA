@@ -52,7 +52,6 @@ class qrels:
             with open(input_file, encoding="utf-8") as json_file:
                 data = json.load(json_file)
                 for p in data['data']:
-
                     for par in p['paragraphs']:
                         pbar.update(1)
                         psg_id, content = self.get_id_section(
@@ -63,7 +62,7 @@ class qrels:
                             qst_id = q["id"]
                             if q["is_impossible"] is False:
                                 output_file.write(
-                                    qst_id + " 0 " + psg_id + " 1 " + "\n")
+                                    qst_id + " 0 " + psg_id + " 1 \n")
                 print("==> Qrels successfully created.\n")
 
 
