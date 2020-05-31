@@ -120,9 +120,6 @@ def main(argv):
     :param argv:
     :return:
     """
-    # output_dir = "C:\\trec-eval-results"
-    # input_file = "C:\\Dataset-SQUAD\\train-v2.0.json"
-    # index_dir = "C:\\Dataset-indexed-final"
 
     input_file = ''
     output_dir = ''

@@ -66,7 +66,6 @@ class Searcher:
         bq.add(query2, BooleanClause.Occur.SHOULD)
 
         self.searcher.setSimilarity(sim)
-        # print(bq.build())
         hits = self.searcher.search(bq.build(), 1000).scoreDocs
         return hits
 
@@ -90,6 +89,5 @@ class Searcher:
         bq.add(query2, BooleanClause.Occur.SHOULD)
 
         self.searcher.setSimilarity(sim)
-        # print(bq.build())
         hits = self.searcher.search(bq.build(), 1000).scoreDocs
         return hits

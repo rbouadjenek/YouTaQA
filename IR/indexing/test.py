@@ -31,13 +31,8 @@ while inputQuery != "exit":
         print("#"*100)
         
         print("#"*100)
-        # if content != "":
-        #     break
     searchObject.reader.close()
     searchObject.directory.close()
-    # print("score =>>", score)
-    # print(content)
-    # print("#" * 50)
     CosSim = Similarity.cosine_similarity(inputQuery, content)
     jacSim = Similarity.jaccard_similarity(inputQuery, content)
     diceSim = Similarity.dice_similarity(inputQuery, content)

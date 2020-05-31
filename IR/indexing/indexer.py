@@ -87,7 +87,6 @@ class Indexer:
             stopwords=self.ENGLISH_STOP_WORDS_SET)
         conf = IndexWriterConfig(self.analyzer)
         conf.setUseCompoundFile(False)
-        # conf.setCodec(SimpleTextCodec())
         directory = FSDirectory.open(Paths.get(index_dir))
         self.writer = IndexWriter(directory, conf)
 
