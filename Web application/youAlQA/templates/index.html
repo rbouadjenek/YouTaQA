@@ -1,0 +1,266 @@
+{% load static %}<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>YouTaQA</title>
+  <meta charset="utf-8">
+  <link rel="icon" href="{% static 'images/logo.png' %}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href=" https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,700,800" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/open-iconic-bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+  <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+  <link rel="stylesheet" href="{% static 'css/aos.css' %}">
+  <link rel="stylesheet" href="{% static 'css/ionicons.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/bootstrap-datepicker.css' %}">
+  <link rel="stylesheet" href="{% static 'css/jquery.timepicker.css' %}">
+  <link rel="stylesheet" href="{% static 'css/flaticon.css' %}">
+  <link rel="stylesheet" href="{% static 'css/icomoon.css' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+  <!-- <div class="js-fullheight"> -->
+  <div class="hero-wrap js-fullheight">
+    <div class="overlay"></div>
+    <div id="particles-js"></div>
+    <div class="container">
+      <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true" id="addHere">
+        <div class="col-md-6 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }">
+          <img src="{% static 'images/logo.png' %}" alt="" height="400px" width="550px" style="margin-top: -200px">
+          <form action="#" method="POST" id="questionForm" class="subscribe-form" style="margin-top: -100px">
+            {% csrf_token %}
+            <div class="form-group">
+              <span class="icon icon-search"></span>
+
+              {{form}}
+              
+            </div>
+            <div class="form-group">
+              <input data-scrollax="properties: { translateY: '30%', opacity: 10 }" type="submit" name="submit" value="Search" class="btn btn-primary btn-outline-white px-5 py-3" style="margin-top : 15px" id="search_qst_button">
+            </div>
+          </form>
+        </div>
+      </div>
+       
+      
+
+    </div>
+  </div>
+
+
+  <section class="ftco-section testimony-section bg-light">
+    <div class="container">
+      <div class="row justify-content-center mb-5 pb-5">
+        <div class="col-md-7 text-center heading-section ftco-animate">
+          <h2 class="mb-4">Our Team</h2>
+          <p>This project has been realized with care and love <i class="icon-heart" aria-hidden="true"></i> by our team of developers.</p>
+        </div>
+      </div>
+      <div class="row ftco-animate">
+        <div class="col-md-12">
+          <div class="carousel-testimony owl-carousel ftco-owl">
+
+            <div class="item text-center">
+              <div class="testimony-wrap p-4 pb-5">
+                <div class="user-img mb-4" style="background-image: url({% static 'images/younes.png'%})">
+                </div>
+                <div class="text">
+                  <p class="name">Rayane Younes AGABI</p>
+                  <span class="position">AI engineer</span>
+                </div>
+              </div>
+            </div>
+            <div class="item text-center">
+              <div class="testimony-wrap p-4 pb-5">
+                <div class="user-img mb-4" style="background-image: url({% static 'images/asma.jpeg' %})">
+                </div>
+                <div class="text">
+                  <p class="name">Asma TIDAFI</p>
+                  <span class="position">AI engineer</span>
+                </div>
+              </div>
+            </div>
+            <div class="item text-center">
+              <div class="testimony-wrap p-4 pb-5">
+                <div class="user-img mb-4" style="background-image: url({% static 'images/amel.png' %})">
+                </div>
+                <div class="text">
+                  <p class="name">Amel ZIANI</p>
+                  <span class="position">Ph.D, Assistant Professor</span>
+                </div>
+              </div>
+            </div>
+            <div class="item text-center">
+              <div class="testimony-wrap p-4 pb-5">
+                <div class="user-img mb-4" style="background-image: url({% static 'images/reda.jpeg' %})">
+                </div>
+                <div class="text">
+                  <p class="name">Mohamed Reda BOUADJENEK</p>
+                  <span class="position">Ph.D, Lecturer, Applied Artificial Intelligence</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-section ftco-counter" id="section-counter">
+    <div class="container">
+      <div class="row justify-content-center mb-5 pb-5">
+        <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
+          <h2>Our achievements</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
+          <div class="block-18 text-center">
+            <div class="text">
+              <strong class="number" data-number="5">0</strong><strong style="color: #FFFFFF">Sec</strong>
+              <span>Average response time</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
+          <div class="block-18 text-center">
+            <div class="text">
+              <strong class="number" data-number="6082693">0</strong>
+              <span>The number of wikipedia articles in our knowledge base</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
+          <div class="block-18 text-center">
+            <div class="text">
+              <strong class="number" data-number="70">0</strong><strong style="color: #FFFFFF">%</strong>
+              <span>The accuracy of our YouTaQA model</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="ftco-footer ftco-bg-dark ftco-section">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2">YouTaQA</h2>
+            <p>YouTaQA is a Question-answering system that answers to all your questions with high precision in a relatively short time. YouTaQA is based on searching for information in a knowledge base of more than 6 million wikipedia articles. This
+              work belongs exclusively to the University of Algiers 1 and the University of Daekin, Copyright ©2020 All rights reserved</p>
+          </div>
+        </div>
+
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2">Contact Information</h2>
+            <ul class="list-unstyled">
+              <li><a href="mailto:younes.agabi03@gmail.com" class="py-2 d-block">younes.agabi03@gmail.com</a></li>
+              <li><a href="mailto:asma26tidafi@gmail.com" class="py-2 d-block">asma26tidafi@gmail.com</a></li>
+              <li><a href="mailto:zianiamel1911@gmail.com" class="py-2 d-block">zianiamel1911@gmail.com</a></li>
+              <li><a href="mailto:reda.bouadjenek@deakin.edu.au" class="py-2 d-block">reda.bouadjenek@deakin.edu.au</a></li>
+
+            </ul>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4">
+            <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
+              <li class="ftco-animate"><a href="https://github.com/rbouadjenek/DeepQA"><span class="icon-twitter"></span></a></li>
+              <li class="ftco-animate"><a href="https://github.com/rbouadjenek/DeepQA"><span class="icon-facebook"></span></a></li>
+              <li class="ftco-animate"><a href="https://github.com/rbouadjenek/DeepQA"><span class="icon-github"></span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+
+          <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>
+              document.write(new Date().getFullYear());
+            </script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" /></svg></div>
+
+
+  
+  <script src="{% static 'js/jquery.min.js' %}"></script>
+  <script src="{% static 'js/jquery-migrate-3.0.1.min.js' %}"></script>
+  <script src="{% static 'js/popper.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+  <script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+  <script src="{% static 'js/jquery.stellar.min.js' %}"></script>
+  <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+  <script src="{% static 'js/aos.js' %}"></script>
+  <script src="{% static 'js/jquery.animateNumber.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap-datepicker.js' %} "></script>
+  <script src="{% static 'js/jquery.timepicker.min.js' %}"></script>
+  <script src="{% static 'js/particles.min.js' %}"></script>
+  <script src="{% static 'js/particle.js' %}"></script>
+  <script src="{% static 'js/scrollax.min.js' %}"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="{% static 'js/google-map.js' %}"></script>
+  <script src="{% static 'js/main.js' %}"></script>
+
+{% block javascript %}
+<script>
+    /*
+        On submiting the form, send the POST ajax
+        request to server and after successfull submission
+        display the object.
+    */
+    $("#questionForm").submit(function (e) {
+        // preventing from page reload and default actions
+        e.preventDefault();
+        alert("helo");
+        // serialize the data for sending the form data.
+        var serializedData = $(this).serialize();
+        // make POST ajax call
+        $.ajax({
+            type: 'POST',
+            url: "{% url 'answerPOST' %}",
+            data: serializedData,
+            success: function (response) {
+            
+           
+               // var instance = JSON.parse(response.instance);
+                //var fields = instance[0]["fields"];
+                $("#addHere").append(
+                    `<span>${response.instance.question||""} </span>
+                    <p>${response.instance.answer||""} </p>`
+                    
+                )
+            },
+            error: function (response) {
+                // alert the error if any error occured
+                alert(response.error);
+            }
+        })
+    })
+</script>
+{% endblock javascript %}
+</body>
+
+</html>
