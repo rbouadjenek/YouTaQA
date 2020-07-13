@@ -12,7 +12,7 @@ while inputQuery != "exit":
     if inputQuery == "exit":
         break
 
-    searchObject = Searcher("/Users/younesagabi/Desktop/DeepQA/index_wiki_v7.0")
+    searchObject = Searcher("/Users/younesagabi/Desktop/YouTaQA/IR/index_wiki_v7.0")
     result = searchObject.multiFieldsSearch(inputQuery, BM25Similarity())
 
     print("#" * 100)
@@ -33,10 +33,3 @@ while inputQuery != "exit":
         print("#"*100)
     searchObject.reader.close()
     searchObject.directory.close()
-    CosSim = Similarity.cosine_similarity(inputQuery, content)
-    jacSim = Similarity.jaccard_similarity(inputQuery, content)
-    diceSim = Similarity.dice_similarity(inputQuery, content)
-    print("=> Cosiane similarity : ", CosSim)
-    print("=> Jaccard similarity : ", jacSim)
-    print("=> Dice similarity : ", diceSim)
-    print("#" * 50)
