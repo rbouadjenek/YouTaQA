@@ -17,7 +17,7 @@ def answerPOST(request):
             form = searchForm(request.POST)
             if form.is_valid():
                 instance = form.cleaned_data
-                answer = {'question': instance.get("question"),'answer':'test'}
+                answer = {'question': instance.get("question"),'answer':'younes'}
                 # serialize in new friend object in json
                # ser_instance = serializers.serialize('json',answer)
                 # send to client side.
