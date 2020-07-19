@@ -24,9 +24,7 @@ while inputQuery != "exit":
         content = hitDoc.get("content_section")
         print("#"*100)
         id = hitDoc.get("id_section")
-        print("id => ", id)
-        print("Section title => ", hitDoc.get("title_section"))
-        print("#"*50)
+
         print(content)
         print("#"*100)
         
