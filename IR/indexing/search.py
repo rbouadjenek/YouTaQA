@@ -66,7 +66,7 @@ class Searcher:
         bq.add(query2, BooleanClause.Occur.SHOULD)
 
         self.searcher.setSimilarity(sim)
-        hits = self.searcher.search(bq.build(), 1000).scoreDocs
+        hits = self.searcher.search(bq.build(), 5).scoreDocs
         return hits
 
     def multiFieldsPairSearch(self, pair, sim):
@@ -89,5 +89,5 @@ class Searcher:
         bq.add(query2, BooleanClause.Occur.SHOULD)
 
         self.searcher.setSimilarity(sim)
-        hits = self.searcher.search(bq.build(), 1000).scoreDocs
+        hits = self.searcher.search(bq.build(), 5).scoreDocs
         return hits
