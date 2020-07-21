@@ -33,7 +33,7 @@ class Searcher:
         self.searcher.setSimilarity(sim)
         hits = self.searcher.search(query, 5).scoreDocs
         return hits
-        
+
     def simpleSearchID(self, query, sim):
         """
         Method that searches through documents using only content_section Field
@@ -43,7 +43,7 @@ class Searcher:
         parser = QueryParser("id_section", self.analyzer)
         query = parser.parse(QueryParser.escape(query))
         self.searcher.setSimilarity(sim)
-        hits = self.searcher.search(query, 1).scoreDocs
+        hits = self.searcher.search(query, 5).scoreDocs
         return hits
 
     def multiFieldsSearch(self, query, sim):
