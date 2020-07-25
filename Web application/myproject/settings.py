@@ -10,7 +10,25 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
+
+
+import sys
+# insert at 1, 0 is the script path (or '' in REPL)
+#sys.path.insert(1, '/Users/younesagabi/Desktop/YouTaQA/IR/search')
+#sys.path.append("/Users/younesagabi/Desktop/YouTaQA/IR/search")
+import lucene
+from org.apache.lucene.search.similarities import *
+from search import Searcher
+import torch
+import numpy as np
+from transformers import BertForSequenceClassification
+from transformers import BertTokenizer
+from torch.utils.data import TensorDataset
+from torch.utils.data import DataLoader, SequentialSampler
+from transformers import BertTokenizer, BertForQuestionAnswering
+import torch
 import os
+# lucene.initVM(vmargs=['-Djava.awt.headless=true'])
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -103,6 +121,22 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
+SEARCHOBJECT = Searcher("/Users/younesagabi/Desktop/YouTaQA/IR/index_wiki_v7.0")
+
+
+
+
+THETOKENIZER = BertTokenizer.from_pretrained('bert-base-uncased', do_lower_case=True)
+MODELCLASSIFIER = BertForSequenceClassification.from_pretrained('bert-base-uncased',
+                                                       num_labels=2,
+                                                       output_attentions=False,
+                                                       output_hidden_states=False)
+                                                       
+DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+MODELCLASSIFIER.to(DEVICE)
+MODELCLASSIFIER.load_state_dict(torch.load('/Users/younesagabi/Desktop/YouTaQA/DeepLearning/Classifier/Models/BERT_ft_epoch10.model', map_location=torch.device(DEVICE)), strict=False)                                                       
+
+MODELEXTRACTOR = BertForQuestionAnswering.from_pretrained('bert-large-uncased-whole-word-masking-finetuned-squad')
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
 

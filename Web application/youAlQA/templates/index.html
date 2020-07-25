@@ -121,7 +121,7 @@
         <div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
           <div class="block-18 text-center">
             <div class="text">
-              <strong class="number" data-number="5">0</strong><strong style="color: #FFFFFF">Sec</strong>
+              <strong class="number" data-number="3">0</strong><strong style="color: #FFFFFF">Sec</strong>
               <span>Average response time</span>
             </div>
           </div>
@@ -137,7 +137,7 @@
         <div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
           <div class="block-18 text-center">
             <div class="text">
-              <strong class="number" data-number="70">0</strong><strong style="color: #FFFFFF">%</strong>
+              <strong class="number" data-number="84">0</strong><strong style="color: #FFFFFF">%</strong>
               <span>The accuracy of our YouTaQA model</span>
             </div>
           </div>
@@ -234,7 +234,6 @@
     $("#questionForm").submit(function (e) {
         // preventing from page reload and default actions
         e.preventDefault();
-        alert("helo");
         // serialize the data for sending the form data.
         var serializedData = $(this).serialize();
         // make POST ajax call
@@ -243,19 +242,25 @@
             url: "{% url 'answerPOST' %}",
             data: serializedData,
             success: function (response) {
-            
-           
+              
+              // if(response.instance.answer === undefined)
+              // {alert('Pas de reponse à votre question !');}
+
                // var instance = JSON.parse(response.instance);
                 //var fields = instance[0]["fields"];
                 $("#addHere").append(
-                    `<span>${response.instance.question||""} </span>
-                    <p>${response.instance.answer||""} </p>`
-                    
+                    `<div >
+                    <p class= "text-success">${response.instance.answer||""} </p>
+                     </div>`
                 )
             },
             error: function (response) {
                 // alert the error if any error occured
-                alert(response.error);
+                $("#addHere").append(
+                    `<div > 
+                    <p class= "text-danger">Pas de reponse possible ! </p>
+                    </div>`
+                )
             }
         })
     })
