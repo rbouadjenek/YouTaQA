@@ -56,7 +56,7 @@ def answerPOST(request):
                 # srobj.reader.close()
                 # srobj.directory.close()
                 #answer = {'question': instance.get("question"),'answer':'younes'}
-                if(len(tab) > 0):
+                if not (len(tab) == 1) or not(len(tab) == 0):
                     inputs = [[tab[0],tab[1]],[tab[0],tab[2]],[tab[0],tab[3]],[tab[0],tab[4]],[tab[0],tab[5]]]
                     x = np.array(inputs)
                     qst = x[0,0]
@@ -70,7 +70,7 @@ def answerPOST(request):
                         max_length=256,
                         return_tensors='pt'
                         )
-                        
+
                     input_ids = encoded_data['input_ids']
                     attention_masks = encoded_data['attention_mask']
 
@@ -124,8 +124,11 @@ def answerPOST(request):
                     all_tokens = tokenizer.convert_ids_to_tokens(input_ids)
 
                     a = ' '.join(all_tokens[torch.argmax(start_scores) : torch.argmax(end_scores)+1])
-                    answer={'answer':a}
-        
+                    answer_cleaned = a.replace("#", "")
+                    answer_cleaned = answer_cleaned.replace('\\', "")
+                    answer={'answer':answer_cleaned}
+
+
                 # serialize in new friend object in json
                # ser_instance = serializers.serialize('json',answer)
                 # send to client side.

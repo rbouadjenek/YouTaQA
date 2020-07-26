@@ -37,7 +37,7 @@
               <span class="icon icon-search"></span>
 
               {{form}}
-              
+
             </div>
             <div class="form-group">
               <input data-scrollax="properties: { translateY: '30%', opacity: 10 }" type="submit" name="submit" value="Search" class="btn btn-primary btn-outline-white px-5 py-3" style="margin-top : 15px" id="search_qst_button">
@@ -45,8 +45,8 @@
           </form>
         </div>
       </div>
-       
-      
+
+
 
     </div>
   </div>
@@ -203,7 +203,7 @@
       <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" /></svg></div>
 
 
-  
+
   <script src="{% static 'js/jquery.min.js' %}"></script>
   <script src="{% static 'js/jquery-migrate-3.0.1.min.js' %}"></script>
   <script src="{% static 'js/popper.min.js' %}"></script>
@@ -242,7 +242,7 @@
             url: "{% url 'answerPOST' %}",
             data: serializedData,
             success: function (response) {
-              
+
               // if(response.instance.answer === undefined)
               // {alert('Pas de reponse à votre question !');}
 
@@ -257,7 +257,7 @@
             error: function (response) {
                 // alert the error if any error occured
                 $("#addHere").append(
-                    `<div > 
+                    `<div >
                     <p class= "text-danger">Pas de reponse possible ! </p>
                     </div>`
                 )
