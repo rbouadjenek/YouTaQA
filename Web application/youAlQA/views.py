@@ -41,7 +41,7 @@ def answerPOST(request):
                 # lucene.initVM(vmargs=['-Djava.awt.headless=true'])
                 srobj=settings.SEARCHOBJECT
                 lucene.getVMEnv().attachCurrentThread()
-                result = srobj.simpleSearch(qst, BM25Similarity())
+                result = srobj.multiFieldsSearch(qst, BM25Similarity())
 
                 content = ""
                 tab=['']
