@@ -41,7 +41,7 @@ def answerPOST(request):
                 # lucene.initVM(vmargs=['-Djava.awt.headless=true'])
                 srobj=settings.SEARCHOBJECT
                 lucene.getVMEnv().attachCurrentThread()
-                result = srobj.multiFieldsSearch(qst, BM25Similarity())
+                result = srobj.simpleSearch(qst, BM25Similarity())
 
                 content = ""
                 tab=['']
@@ -57,7 +57,7 @@ def answerPOST(request):
                 # srobj.directory.close()
                 #answer = {'question': instance.get("question"),'answer':'younes'}
                 if not (len(tab) == 1) or not(len(tab) == 0):
-                    inputs = [[tab[0],tab[1]],[tab[0],tab[2]],[tab[0],tab[3]],[tab[0],tab[4]],[tab[0],tab[5]]]
+                    inputs = [[tab[0],tab[1]],[tab[0],tab[2]],[tab[0],tab[3]],[tab[0],tab[4]],[tab[0],tab[5]],[tab[0],tab[6]]]
                     x = np.array(inputs)
                     qst = x[0,0]
                     tokenizer = settings.THETOKENIZER
