@@ -34,7 +34,7 @@ For the search engine, you need to install PyLucene by [following this tutorial]
 **PS**: In order to install PyLucene properly, after downloading pylucene, you must put the `/IR/indexing/PythonEnglishAnalyzer.java` file in the `pylucene-8.3.0/java/org/apache/pylucene/analysis` folder before starting the installation.
 
 ## Wikipedia preprocessing
-Before starting wikipedia indexing, we split each wikipedia article into its own file, in a well-structured tree structure (For more information, please see the project [paper](https://github.com/rbouadjenek/YouTaQA/tree/master/Paper)).
+Before starting wikipedia indexing, we split each wikipedia article into its own file, in a well-structured tree structure (For more information, please see the project [paper](/Paper)).
 
 To do this, you have to download the dump from [wikipedia](https://tools.wmflabs.org/thibtools/dump-torrents/enwiki-20200401-pages-articles-multistream.xml.bz2.torrent) and decompress it. Then run the `IR/preprocessing/parse.py` script with the command: 
 > parse.py -i <input_file> -o <output_file>
@@ -59,14 +59,14 @@ To train the answer extraction model, please follow the steps indicated on the t
 
 ## Launching the YouTaQA application
 
-![YouTaQA Logo](/Paper/Figures/interface1.png)
+![YouTaQA Logo](/Paper/Figures/interface1.png | height=50)
 
 After having passed the previous steps, it is time to run and launch the web application of our YouTaQA system. To do this, you must first change the paths in `/'Web application"/myproject/setting.py` following the paths of your configuration (index path, classification model path, etc). After that, you can start the django server by running the script `/'Web application"/manage.py` with the following command : 
 > Python manage.py runserver
 
 then, open the browser in the port indicated in the terminal.
 
-For more information, you can read the PDF [paper](https://github.com/rbouadjenek/YouTaQA/tree/master/Paper) of this project or contact one of the developers responsible for this project:
+For more information, you can read the PDF [paper](/Paper) of this project or contact one of the developers responsible for this project:
 - [Rayane Younes AGABI](https://github.com/AgabiYounes)
 - [Mohamed Reda Bouadjenek](https://github.com/rbouadjenek)
 - [Tidafi Asma](https://github.com/AsLibDev)
