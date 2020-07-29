@@ -40,6 +40,9 @@
 
             </div>
             <div class="form-group">
+              <input type="text" name="" value="Your answer will appear here !" style="margin-top: 30px" id="responseInput" class="form-control" disabled>
+            </div>
+            <div class="form-group">
               <input data-scrollax="properties: { translateY: '30%', opacity: 10 }" type="submit" name="submit" value="Search" class="btn btn-primary btn-outline-white px-5 py-3" style="margin-top : 15px" id="search_qst_button">
             </div>
           </form>
@@ -203,7 +206,6 @@
       <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" /></svg></div>
 
 
-
   <script src="{% static 'js/jquery.min.js' %}"></script>
   <script src="{% static 'js/jquery-migrate-3.0.1.min.js' %}"></script>
   <script src="{% static 'js/popper.min.js' %}"></script>
@@ -226,6 +228,8 @@
 
 {% block javascript %}
 <script>
+var appear = false;
+$("#responseInput").hide();
     /*
         On submiting the form, send the POST ajax
         request to server and after successfull submission
@@ -248,19 +252,23 @@
 
                // var instance = JSON.parse(response.instance);
                 //var fields = instance[0]["fields"];
-                $("#addHere").append(
-                    `<div >
-                    <p class= "text-success">${response.instance.answer||""} </p>
-                     </div>`
-                )
+                if (response.instance.answer === "")
+                {
+                  $("#responseInput").show();
+                  $("#responseInput").val("Sorry, no answer possible!");
+                }
+                else 
+                {
+                appear = true;
+                $("#responseInput").show();
+                $("#responseInput").val("Answer : " + response.instance.answer);
+                }
             },
             error: function (response) {
                 // alert the error if any error occured
-                $("#addHere").append(
-                    `<div >
-                    <p class= "text-danger">Pas de reponse possible ! </p>
-                    </div>`
-                )
+                appear = true;
+                $("#responseInput").show();
+                $("#responseInput").val("Sorry, no answer possible!");
             }
         })
     })

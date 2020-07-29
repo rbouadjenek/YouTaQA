@@ -8,9 +8,10 @@ from torch.utils.data import DataLoader, SequentialSampler
 from transformers import BertTokenizer, BertForQuestionAnswering
 import torch
 
-
-
-
+"""
+this script contains the trained and ready to use classifier. 
+Such as inputs is an array of arrays that contains in each cell the pair [Question, passage].
+"""
 
 
 
@@ -79,19 +80,8 @@ predictions = evaluate(dataloader)
 preds_flat = np.argmax(predictions, axis=1).flatten()                                                      
 values = predictions[:,1]
 answer = x[np.where(values == max(values)),1]                                                    
-model = BertForQuestionAnswering.from_pretrained('bert-large-uncased-whole-word-masking-finetuned-squad')
-
-text = str(answer)
-q = question
-encoding = tokenizer.encode_plus(q, text)
-input_ids, token_type_ids = encoding["input_ids"], encoding["token_type_ids"]
-
-start_scores, end_scores = model(torch.tensor([input_ids]), token_type_ids=torch.tensor([token_type_ids]))
-all_tokens = tokenizer.convert_ids_to_tokens(input_ids)
-
-a = ' '.join(all_tokens[torch.argmax(start_scores) : torch.argmax(end_scores)+1])
-print(a)                                                
-                                                                              
+print(str(answer))
+                                                              
                         
                         
                         

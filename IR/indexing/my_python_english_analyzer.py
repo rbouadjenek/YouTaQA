@@ -12,7 +12,6 @@ from org.apache.pylucene.analysis import PythonEnglishAnalyzer
 
 lucene.initVM(vmargs=['-Djava.awt.headless=true'])
 
-
 class MyPythonEnglishAnalyzer(PythonEnglishAnalyzer):
     """
     Class of our custom analyzer that uses filters:

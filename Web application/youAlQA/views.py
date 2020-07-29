@@ -4,9 +4,6 @@ from django.core import serializers
 from django.http import JsonResponse
 import sys
 from django.conf import settings
-# insert at 1, 0 is the script path (or '' in REPL)
-#sys.path.insert(1, '/Users/younesagabi/Desktop/YouTaQA/IR/search')
-#sys.path.append("/Users/younesagabi/Desktop/YouTaQA/IR/search")
 import lucene
 from org.apache.lucene.search.similarities import *
 from search import Searcher
@@ -18,11 +15,6 @@ from transformers import BertTokenizer
 from torch.utils.data import TensorDataset
 from torch.utils.data import DataLoader, SequentialSampler
 from transformers import BertTokenizer, BertForQuestionAnswering
-import torch
-
-
-
-# Create your views here.
 from django.http import HttpResponse
 
 
@@ -33,18 +25,22 @@ def home(request):
 
 
 def answerPOST(request):
+    """
+    The work done here when receiving a POST request
+    """
     if request.is_ajax() and request.method=="POST":
             form = searchForm(request.POST)
             if form.is_valid():
                 instance = form.cleaned_data
+                #pick up the question
                 qst = instance.get("question")
-                # lucene.initVM(vmargs=['-Djava.awt.headless=true'])
                 srobj=settings.SEARCHOBJECT
                 lucene.getVMEnv().attachCurrentThread()
+                #launch a search using the search engine
                 result = srobj.multiFieldsSearch(qst, BM25Similarity())
-
                 content = ""
                 tab=['']
+                #create a list that contains in the first node the question and then the search results
                 tab.append(qst)
                 tab.pop(0)
                 j=0
@@ -53,15 +49,14 @@ def answerPOST(request):
                     content = hitDoc.get("content_section")
                     tab.append(content)
                     id = hitDoc.get("id_section")
-                # srobj.reader.close()
-                # srobj.directory.close()
-                #answer = {'question': instance.get("question"),'answer':'younes'}
                 if not (len(tab) == 1) or not(len(tab) == 0):
+                    # Convert the list into an array
                     inputs = [[tab[0],tab[1]],[tab[0],tab[2]],[tab[0],tab[3]],[tab[0],tab[4]],[tab[0],tab[5]],[tab[0],tab[6]]]
                     x = np.array(inputs)
                     qst = x[0,0]
+                    
+                    #Launch the document classifier
                     tokenizer = settings.THETOKENIZER
-                    #BertTokenizer.from_pretrained('bert-base-uncased', do_lower_case=True)
                     encoded_data = tokenizer.batch_encode_plus(
                         zip(x[:,0],x[:,1]),
                         add_special_tokens=True,
@@ -82,9 +77,7 @@ def answerPOST(request):
 
                     modelClassifier = settings.MODELCLASSIFIER
                     device = settings.DEVICE
-                # model.to(device)
-                # model.load_state_dict(settings.TORCHLOAD)
-                #model=settings.MODELONE
+                    
                     def evaluate(dataloader_val):
 
                         modelClassifier.eval()
@@ -114,7 +107,7 @@ def answerPOST(request):
                     values = predictions[:,1]
                     answer = x[np.where(values == max(values)),1]
                     modelExtractor = settings.MODELEXTRACTOR
-
+                    #Launch the answer extraction module
                     text = str(answer)
                     q = qst
                     encoding = tokenizer.encode_plus(q, text, max_length=256)
@@ -129,8 +122,6 @@ def answerPOST(request):
                     answer={'answer':answer_cleaned}
 
 
-                # serialize in new friend object in json
-               # ser_instance = serializers.serialize('json',answer)
                 # send to client side.
                 return JsonResponse({"instance": answer}, status=200)
             else:

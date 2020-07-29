@@ -11,7 +11,6 @@ from org.apache.lucene.search.similarities import *
 from org.apache.pylucene.analysis import PythonEnglishAnalyzer
 
 lucene.initVM(vmargs=['-Djava.awt.headless=true'])
-# lucene.getVMEnv().attachCurrentThread()
 
 class MyPythonEnglishAnalyzer(PythonEnglishAnalyzer):
     """
