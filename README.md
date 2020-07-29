@@ -48,8 +48,9 @@ Our classification model is based on [BERT](https://github.com/google-research/b
 
 ## Launching the YouTaQA application
 After having passed the previous steps, it is time to run and launch the web application of our YouTaQA system. To do this, you must first change the paths in `/'Web application"/myproject/setting.py` following the paths of your configuration (index path, classification model path, etc). After that, you can start the django server by running the script `/'Web application"/manage.py` with the following command : 
-> Python manage.py runserver 
-then open the browser in the port indicated in the terminal.
+> Python manage.py runserver
+
+then, open the browser in the port indicated in the terminal.
 
 For more information, you can read the PDF [paper](https://github.com/rbouadjenek/YouTaQA/tree/master/Paper) of this project or contact one of the developers responsible for this project:
 - [Rayane Younes AGABI](https://github.com/AgabiYounes)
