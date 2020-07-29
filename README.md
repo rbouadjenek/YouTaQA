@@ -59,7 +59,7 @@ To train the answer extraction model, please follow the steps indicated on the t
 
 ## Launching the YouTaQA application
 
-![YouTaQA Logo](https://github.com/rbouadjenek/YouTaQA/blob/master/Paper/Figures/'interface 1'.png)
+![YouTaQA Logo](https://github.com/rbouadjenek/YouTaQA/blob/master/Paper/Figures/"interface 1".png)
 
 After having passed the previous steps, it is time to run and launch the web application of our YouTaQA system. To do this, you must first change the paths in `/'Web application"/myproject/setting.py` following the paths of your configuration (index path, classification model path, etc). After that, you can start the django server by running the script `/'Web application"/manage.py` with the following command : 
 > Python manage.py runserver
