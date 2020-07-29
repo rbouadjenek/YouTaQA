@@ -13,9 +13,6 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 
 import sys
-# insert at 1, 0 is the script path (or '' in REPL)
-#sys.path.insert(1, '/Users/younesagabi/Desktop/YouTaQA/IR/search')
-#sys.path.append("/Users/younesagabi/Desktop/YouTaQA/IR/search")
 import lucene
 from org.apache.lucene.search.similarities import *
 from search import Searcher
@@ -28,7 +25,6 @@ from torch.utils.data import DataLoader, SequentialSampler
 from transformers import BertTokenizer, BertForQuestionAnswering
 import torch
 import os
-# lucene.initVM(vmargs=['-Djava.awt.headless=true'])
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
