@@ -69,7 +69,7 @@ then, open the browser in the port indicated in the terminal.
 For more information, you can read the PDF [paper](/Paper) of this project or contact one of the developers responsible for this project:
 - [Rayane Younes AGABI](https://github.com/AgabiYounes)
 - [Mohamed Reda Bouadjenek](https://github.com/rbouadjenek)
-- [Tidafi Asma](https://github.com/AsLibDev)
+- [Asma Tidafi](https://github.com/AsLibDev)
 
 
 
