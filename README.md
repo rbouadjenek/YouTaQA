@@ -1,5 +1,4 @@
 # YouTaQA
-![YouTaQA Logo](https://github.com/rbouadjenek/YouTaQA/blob/master/Paper/Figures/logo.png)
 YouTaQA is a powerful Q&A system that provides a complete pipeline. Unlike existing QA systems, our system allows users to have accurate answers to their questions based entirely on our search engine, saving the user from having to provide anything other than the question, and possibly making their task easier.
 To achieve the objective of our system, as shown in the general diagram, we designed an architecture composed of three basic modules and an interface to interact with the user:
 - A search engine (MRI) that serves to provide the 5 most relevant passages to a given question.
