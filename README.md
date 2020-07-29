@@ -26,6 +26,7 @@ In addition, you need to install nltk stop words by launching the linux/MacOS te
 > python
 > import nltk
 > nltk.download(stopwords)
+
 For the search engine, you need to install PyLucene by [following this tutorial](https://medium.com/@michaelaalcorn/how-to-use-pylucene-e2e2f540024c).
 
 **PS**: In order to install PyLucene properly, after downloading pylucene, you must put the `/IR/indexing/PythonEnglishAnalyzer.java` file in the `pylucene-8.3.0/java/org/apache/pylucene/analysis` folder before starting the installation.
@@ -35,11 +36,13 @@ Before starting wikipedia indexing, we split each wikipedia article into its own
 
 To do this, you have to download the dump from [wikipedia](https://tools.wmflabs.org/thibtools/dump-torrents/enwiki-20200401-pages-articles-multistream.xml.bz2.torrent) and decompress it. Then run the `IR/preprocessing/parse.py` script with the command: 
 > parse.py -i <input_file> -o <output_file>
+
 where `input_file` is the folder of the previously uncompressed wikipedia dump and `output_file` is the output folder where to put the article files (you need to allow 200GB space on the disk).
 
 ## Document indexing
 To index documents, you need to run the IR/indexing/indexer.py script with the command :
 > index.py -i <input_folder> -o <output_folder>
+
 where `input_folder` is the folder that contains the result of the preprocessing (the folder that contains the files of the Wikipedia articles) and `output_folder` is the output folder where to put the index.
 
 ## Context classification module
