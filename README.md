@@ -6,7 +6,7 @@ To achieve the objective of our system, as shown in the general diagram, we desi
 - Answer Extraction module (MER) based on BERT that extracts the correct answer from the passage chosen by classiﬁeur in the previous step.
 ![GitHub Logo](https://github.com/rbouadjenek/YouTaQA/blob/master/Paper/Figures/schema%20global.png)
 
-##Installation
+## Installation
 In order to use our system, you will need to install the following packages using pip:
 - tqdm 4.47.0
 - pathlib
@@ -22,7 +22,7 @@ In order to use our system, you will need to install the following packages usin
 - django
 - matplotlib  3.2.2
 
-In addition, install nltk stop words by launching the linux/MacOS terminal (this project has been tested on version 3.8.0) and apply the following steps:
+In addition, you need to install nltk stop words by launching the linux/MacOS terminal (this project has been tested on version 3.8.0) and apply the following steps:
 > python
 > import nltk
 > nltk.download(stopwords)
@@ -30,29 +30,29 @@ For the search engine, you need to install PyLucene by [following this tutorial]
 
 **PS**: In order to install PyLucene properly, after downloading pylucene, you must put the `/IR/indexing/PythonEnglishAnalyzer.java` file in the `pylucene-8.3.0/java/org/apache/pylucene/analysis` folder before starting the installation.
 
-##Wikipedia preprocessing
+## Wikipedia preprocessing
 Before starting wikipedia indexing, we split each wikipedia article into its own file, in a well-structured tree structure (For more information, please see the project [paper](https://github.com/rbouadjenek/YouTaQA/tree/master/Paper)).
 
 To do this, you have to download the dump from [wikipedia](https://tools.wmflabs.org/thibtools/dump-torrents/enwiki-20200401-pages-articles-multistream.xml.bz2.torrent) and decompress it. Then run the `IR/preprocessing/parse.py` script with the command: 
 > parse.py -i <input_file> -o <output_file>
 where `input_file` is the folder of the previously uncompressed wikipedia dump and `output_file` is the output folder where to put the article files (you need to allow 200GB space on the disk).
 
-##Document indexing
+## Document indexing
 To index documents, you need to run the IR/indexing/indexer.py script with the command :
 > index.py -i <input_folder> -o <output_folder>
 where `input_folder` is the folder that contains the result of the preprocessing (the folder that contains the files of the Wikipedia articles) and `output_folder` is the output folder where to put the index.
 
-##Context classification module
-###Training of the model
+## Context classification module
+### Training of the model
 Our classification model is based on [BERT](https://github.com/google-research/bert), it allows a score of **F1=80%**. In order to train the classification model, you just have to download the [QNLI dataset](https://gluebenchmark.com/tasks) and put the `train set` and the `dev set` files in the `/DeepLearning/Classifier/Data` folder and run the script `/DeepLearning/Classifier/training_classifier.py` with jupyter.
 
-##Launching the YouTaQA application
+## Launching the YouTaQA application
 After having passed the previous steps, it is time to run and launch the web application of our YouTaQA system. To do this, you must first change the paths in `/'Web application"/myproject/setting.py` following the paths of your configuration (index path, classification model path, etc). After that, you can start the django server by running the script `/'Web application"/manage.py` with the following command : 
 > Python manage.py runserver 
 then open the browser in the port indicated in the terminal.
 
 For more information, you can read the PDF [paper](https://github.com/rbouadjenek/YouTaQA/tree/master/Paper) of this project or contact one of the developers responsible for this project:
--[Rayane Younes AGABI](https://github.com/AgabiYounes)
+- [Rayane Younes AGABI](https://github.com/AgabiYounes)
 - [Mohamed Reda Bouadjenek](https://github.com/rbouadjenek)
 - [Tidafi Asma](https://github.com/AsLibDev)
 
