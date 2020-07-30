@@ -1,11 +1,11 @@
 # YouTaQA 
 
 YouTaQA is a powerful Q&A system that provides a complete pipeline. Unlike existing QA systems, our system allows users to have accurate answers to their questions based entirely on our search engine, saving the user from having to provide anything other than the question, and possibly making their task easier.
-To achieve the objective of our system, as shown in the general diagram, we designed an architecture composed of three basic modules and an interface to interact with the user:
+To achieve the objective of our system, as shown in the general diagram, we've conceived an architecture composed of three basic modules and an UI where the users enter their questions:
 
 -   A search engine (MRI) that serves to provide the 5 most relevant contexts to a given question.
--   A module of context classiﬁcation (MC) based on BERT to choose and identiﬁer among the 5 search engine results the best context likely to contain the correct answer to the question.
--   Answer Extraction module (MER) based on BERT that extracts the correct answer from the context chosen by classiﬁeur in the previous step.
+-   A module of context classiﬁcation (MC) based on BERT to choose and identify among the 5 search engine results the best context likely to contain the correct answer to the question.
+-   Answer Extraction module (MER) based on BERT that extracts the correct answer from the context chosen by classiﬁier in the previous step.
     ![YouTaQA Structure](/Paper/Figures/schemaGlobal.png)
 
 ## Installation
@@ -54,13 +54,13 @@ To index documents, you need to run the IR/indexing/indexer.py script with the c
 
 > index.py -i &lt;input_folder> -o &lt;output_folder>
 
-where `input_folder` is the folder that contains the result of the preprocessing (the folder that contains the files of the Wikipedia articles) and `output_folder` is the output folder where to put the index.
+Where `input_folder` is the folder that contains the result of the preprocessing (the folder that contains the files of the Wikipedia articles) and `output_folder` is the directory in which the index will be saved.
 
 ## Context classification module
 
 ### Training of the model
 
-Our classification model is based on [BERT](https://github.com/google-research/bert) and [transformers](https://github.com/huggingface/transformers), it allows a score of **F1=80%**. In order to train the classification model, you just have to download the [QNLI dataset](https://gluebenchmark.com/tasks) and put the `train set` and the `dev set` files in the `/DeepLearning/Classifier/Data` folder and run the script `/DeepLearning/Classifier/training_classifier.py` with jupyter.
+Our classification model is based on [BERT](https://github.com/google-research/bert) and [transformers](https://github.com/huggingface/transformers), it allows a score of **F1=80%**. In order to train the classification model, you just have to download the [QNLI dataset](https://gluebenchmark.com/tasks) and put the `train set` and the `dev set` files in the `/DeepLearning/Classifier/Data` folder and run the script `/DeepLearning/Classifier/training_classifier.py`.
 
 ## Answer Extraction module
 
@@ -72,11 +72,11 @@ To train the answer extraction model, please follow the steps indicated on the t
 
 ![YouTaQA Logo](/Paper/Figures/exempleSystemeYouTaQA.png)
 
-After having passed the previous steps, it is time to run and launch the web application of our YouTaQA system. To do this, you must first change the paths in `/Web application/myproject/setting.py` following the paths of your configuration (index path, classification model path, etc). After that, you can start the django server by running the script `/Web application/manage.py` with the following command : 
+After finishing the previous steps, it is time to run and launch the web application of our YouTaQA system. To do this, you must first change the paths in `/Web application/myproject/setting.py` following the paths of your configuration (index path, classification model path, etc). After that, you can start the django server by running the script `/Web application/manage.py` with the following command : 
 
 > Python manage.py runserver
 
-then, open the browser in the port indicated in the terminal.
+Then, open the browser in the port indicated in the terminal.
 
 For more information, you can read the PDF [paper](/Paper) of this project or contact one of the developers responsible for this project:
 
