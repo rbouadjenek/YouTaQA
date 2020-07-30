@@ -7,7 +7,6 @@ from django.conf import settings
 import lucene
 from org.apache.lucene.search.similarities import *
 from search import Searcher
-from similarity import Similarity
 import torch
 import numpy as np
 from transformers import BertForSequenceClassification
