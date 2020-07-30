@@ -39,21 +39,20 @@ def answerPOST(request):
                 #launch a search using the search engine
                 result = srobj.multiFieldsSearch(qst, BM25Similarity())
                 content = ""
-                tab=['']
+                list=['']
                 #create a list that contains in the first node the question and then the search results
-                tab.append(qst)
-                tab.pop(0)
+                list.append(qst)
+                list.pop(0)
                 j=0
                 for i in range(len(result)):
                     hitDoc = srobj.searcher.doc(result[i].doc)
                     content = hitDoc.get("content_section")
-                    # print("#"*100)
-                    # print(content)
-                    tab.append(content)
+                    list.append(content)
                     id = hitDoc.get("id_section")
-                if not (len(tab) == 1) or not(len(tab) == 0):
+                if not (len(list) == 1) or not(len(list) == 0):
                     # Convert the list into an array
-                    inputs = [[tab[0],tab[1]],[tab[0],tab[2]],[tab[0],tab[3]],[tab[0],tab[4]],[tab[0],tab[5]],[tab[0],tab[6]]]
+                    qst = list.pop(0)
+                    inputs = [((qst), i) for i in list]
                     x = np.array(inputs)
                     qst = x[0,0]
                     
@@ -119,7 +118,7 @@ def answerPOST(request):
                     all_tokens = tokenizer.convert_ids_to_tokens(input_ids)
 
                     a = ' '.join(all_tokens[torch.argmax(start_scores) : torch.argmax(end_scores)+1])
-                    answer_cleaned = a.replace("#", "")
+                    answer_cleaned = a.replace(" ##", "")
                     answer_cleaned = answer_cleaned.replace('\\', "")
                     answer={'answer':answer_cleaned}
 
