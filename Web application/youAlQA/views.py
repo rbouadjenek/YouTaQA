@@ -47,6 +47,8 @@ def answerPOST(request):
                 for i in range(len(result)):
                     hitDoc = srobj.searcher.doc(result[i].doc)
                     content = hitDoc.get("content_section")
+                    # print("#"*100)
+                    # print(content)
                     tab.append(content)
                     id = hitDoc.get("id_section")
                 if not (len(tab) == 1) or not(len(tab) == 0):
