@@ -31,7 +31,7 @@ class Searcher:
         parser = QueryParser("content_section", self.analyzer)
         query = parser.parse(QueryParser.escape(query))
         self.searcher.setSimilarity(sim)
-        hits = self.searcher.search(query, 50).scoreDocs
+        hits = self.searcher.search(query, 6).scoreDocs
         return hits
 
     def simpleSearchID(self, query, sim):
@@ -43,7 +43,7 @@ class Searcher:
         parser = QueryParser("id_section", self.analyzer)
         query = parser.parse(QueryParser.escape(query))
         self.searcher.setSimilarity(sim)
-        hits = self.searcher.search(query, 50).scoreDocs
+        hits = self.searcher.search(query, 6).scoreDocs
         return hits
 
     def multiFieldsSearch(self, query, sim):
@@ -60,7 +60,7 @@ class Searcher:
         query = MultiFieldQueryParser.parse(parser, QueryParser.escape(query))
 
         self.searcher.setSimilarity(sim)
-        hits = self.searcher.search(query, 50).scoreDocs
+        hits = self.searcher.search(query, 6).scoreDocs
         return hits
 
     def pairSearch(self, pair, sim):
@@ -80,7 +80,7 @@ class Searcher:
         bq.add(query2, BooleanClause.Occur.SHOULD)
 
         self.searcher.setSimilarity(sim)
-        hits = self.searcher.search(bq.build(), 50).scoreDocs
+        hits = self.searcher.search(bq.build(), 6).scoreDocs
         return hits
 
     def multiFieldsPairSearch(self, pair, sim):
@@ -103,5 +103,5 @@ class Searcher:
         bq.add(query2, BooleanClause.Occur.SHOULD)
 
         self.searcher.setSimilarity(sim)
-        hits = self.searcher.search(bq.build(), 50).scoreDocs
+        hits = self.searcher.search(bq.build(), 6).scoreDocs
         return hits
