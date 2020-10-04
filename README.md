@@ -66,7 +66,7 @@ Our classification model is based on [BERT](https://github.com/google-research/b
 
 ### Training of the model
 
-To train the answer extraction model, please follow the steps indicated on the transformers [project](https://github.com/huggingface/transformers/tree/master/examples/question-answering). This model scores an **F1_score=84%**.
+To train the answer extraction model, please follow the steps indicated on the transformers [project](https://github.com/huggingface/transformers/tree/master/examples/question-answering). This model scores an **F1_score=91.58%** and an **Exact_match=86.85**.
 
 ## Launching the YouTaQA application
 
