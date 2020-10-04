@@ -45,17 +45,13 @@ class Searcher:
         self.searcher.setSimilarity(sim)
         hits = self.searcher.search(query, 6).scoreDocs
         return hits
+    
 
     def multiFieldsSearch(self, query, sim):
-        """
-        Method that searches through documents using content_section and title_article Fields
-        searchDir : the path to the folder that contains the index.
-        """
-        # Now search the index:
         lucene.getVMEnv().attachCurrentThread()
 
         parser = MultiFieldQueryParser(
-            ["content_section", "title_article"], self.analyzer)
+            ["content_section", "title_section", 'title_article'], self.analyzer)
         parser.setDefaultOperator(QueryParserBase.OR_OPERATOR)
         query = MultiFieldQueryParser.parse(parser, QueryParser.escape(query))
 
