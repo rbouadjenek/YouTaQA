@@ -130,7 +130,7 @@ class ResultsGenerator:
                         num_lines += 1
 
         model = create_model()
-        model.load_weights("Model-2e-5-0.2.h5")
+        model.load_weights("5e-5 0.1.h5")
 
         with tqdm(total=num_lines) as pbar:
             with open(input_file, encoding="utf-8") as json_file:
