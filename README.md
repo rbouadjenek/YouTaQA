@@ -60,13 +60,13 @@ Where `input_folder` is the folder that contains the result of the preprocessing
 
 ### Training of the model
 
-Our classification model is based on [BERT](https://github.com/google-research/bert) and [transformers](https://github.com/huggingface/transformers), it allows a score of **F1=80%**. In order to train the classification model, you just have to download the [QNLI dataset](https://gluebenchmark.com/tasks) and put the `train set` and the `dev set` files in the `/DeepLearning/Classifier/Data` folder and run the script `/DeepLearning/Classifier/training_classifier.py`.
+Our classification model is based on [BERT](https://github.com/google-research/bert) and [transformers](https://github.com/huggingface/transformers), it allows a score of **F1=80%**. In order to train the classification model, you just have to download the [SQuAD dataset](https://rajpurkar.github.io/SQuAD-explorer/) and put the `train set` and the `dev set` files in the `/DeepLearning/Classifier/Data` folder and run the script `/DeepLearning/Classifier/training_classifier.py`.
 
 ## Answer Extraction module
 
 ### Training of the model
 
-To train the answer extraction model, please follow the steps indicated on the transformers [project](https://github.com/huggingface/transformers/tree/master/examples/question-answering). This model scores an **F1_score=91.58%** and an **Exact_match=86.85**.
+To train the answer extraction model, please follow the steps indicated on the transformers [project](https://github.com/huggingface/transformers/tree/master/examples/question-answering). This model scores an **F1_score=92%** and an **Exact_match=87**.
 
 ## Launching the YouTaQA application
 
