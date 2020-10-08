@@ -60,7 +60,7 @@ Where `input_folder` is the folder that contains the result of the preprocessing
 
 ### Training of the model
 
-Our classification model is based on [BERT](https://github.com/google-research/bert) and [transformers](https://github.com/huggingface/transformers), it allows a score of **F1=80%**. In order to train the classification model, you just have to download the [SQuAD dataset](https://rajpurkar.github.io/SQuAD-explorer/) and put the `train set` and the `dev set` files in the `/DeepLearning/Classifier/Data` folder and run the script `/DeepLearning/Classifier/training_classifier.py`.
+Our classification model is based on [BERT](https://github.com/google-research/bert) and [transformers](https://github.com/huggingface/transformers), it allows a precision of **89%**. In order to train the classification model, you just have to download the [SQuAD dataset](https://rajpurkar.github.io/SQuAD-explorer/) and put the `train set` and the `dev set` files in the `/DeepLearning/Classifier/Data` folder and run the script `/DeepLearning/Classifier/training_classifier.py`.
 
 ## Answer Extraction module
 
